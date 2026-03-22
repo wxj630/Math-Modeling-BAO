@@ -1,0 +1,17 @@
+kimi-agent-sdk
+kimi-cli
+kosong
+matplotlib
+numpy
+openai
+pillow
+pydantic
+python-dotenv
+requests
+scipy
+scikit-learn
+pandas
+seaborn
+ipython
+jupyterlab
+pytest
