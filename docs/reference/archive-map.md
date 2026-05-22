@@ -1,6 +1,6 @@
 # 归档路径说明
 
-本页说明教程中频繁出现的路径。路径本身保留在仓库根目录，教程页负责解释它们的用法。
+本页说明教程中频繁出现的路径。教程现在以赛题页为入口，赛题页负责把这些底层路径按小问递进链串起来。
 
 ## MCM/ICM
 
@@ -14,6 +14,7 @@
 | `mcm/question_reports/<year>/<code>/qXX/report.md` | 单问 advanced 报告。 |
 | `mcm/question_artifacts/<year>/<code>/qXX/` | 单问 advanced 表格、图片或辅助产物。 |
 | `docs/mcm-2015-2025/official_assets_extracted/` | COMAP 官方附件解压材料，本地保留，默认不进入 Git。 |
+| `docs/mcm-track/problems/<problem_id>.md` | MCM/ICM 赛题整体入口页。 |
 
 ## CUMCM
 
@@ -27,11 +28,12 @@
 | `cumcm/question_results/<year>/<code>/qXX/result.json` | 单问 advanced 结果。 |
 | `cumcm/question_reports/<year>/<code>/qXX/report.md` | 单问 advanced 报告。 |
 | `cumcm/question_artifacts/<year>/<code>/qXX/` | 单问 advanced 表格、图片、Excel 或辅助产物。 |
+| `docs/cumcm-track/problems/<problem_id>.md` | CUMCM 赛题整体入口页。 |
 
 ## 三层解法命名
 
 | 名称 | 当前状态 |
 |---|---|
-| Baseline solution | 已归档在 `generic_baselines/`。 |
-| Advanced solution | 已归档在 `question_solutions/`、`question_reports/` 等逐问目录。 |
-| Outstanding solution | 教程已预留标准与位置，后续可按题新增。 |
+| Baseline solution | 已归档在 `generic_baselines/`，在赛题页中作为每问起点。 |
+| Advanced solution | 已归档在 `question_solutions/`、`question_reports/` 等逐问目录，在赛题页中按递进顺序串联。 |
+| Outstanding solution | 教程已预留标准与位置，后续优先按完整赛题新增。 |

@@ -1,6 +1,6 @@
-# MCM/ICM 全量解法索引
+# MCM/ICM 逐问材料索引
 
-本页由仓库中的 `mcm/question_solution_index.csv` 和 `mcm/generic_baselines/generic_baseline_index.csv` 整理而来。每一行对应一个小问，串起 baseline solution、advanced solution 和 outstanding solution 预留位。
+本页是材料附录，不再作为主要学习入口。建议先从 [MCM/ICM 赛题整体索引](./problem-index.md) 进入完整赛题，再回到这里快速定位某个小问的 baseline report、advanced report 和 outstanding 预留位。
 
 | Problem | Question | 题目 | Baseline | Advanced | Outstanding |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # Math-Modeling-World
 
-MCM/ICM 与 CUMCM 建模教程站。仓库当前聚焦三层解法归档：
+MCM/ICM 与 CUMCM 建模教程站。仓库当前以完整赛题为入口，再把每道题的小问递进链连接到三层解法归档：
 
 - Baseline solution：最低可运行建模脚手架，用来快速形成第一版模型、结果和报告。
 - Advanced solution：按具体题意、真实数据和约束深化后的逐问解法。
@@ -15,13 +15,14 @@ MCM/ICM 与 CUMCM 建模教程站。仓库当前聚焦三层解法归档：
 | 路径 | 说明 |
 |---|---|
 | `docs/` | VitePress 教程站源码。 |
-| `docs/tutorial/` | 总教程入口、baseline、advanced、outstanding 三层说明。 |
-| `docs/mcm-track/` | MCM/ICM 学习路线和逐问解法索引。 |
-| `docs/cumcm-track/` | CUMCM 学习路线和逐问解法索引。 |
+| `docs/tutorial/` | 总教程入口、赛题阅读方法、baseline、advanced、outstanding 三层说明。 |
+| `docs/mcm-track/` | MCM/ICM 赛题入口、赛题整体索引、逐问材料附录。 |
+| `docs/cumcm-track/` | CUMCM 赛题入口、赛题整体索引、逐问材料附录。 |
 | `docs/case-studies/` | 代表案例拆解。 |
 | `docs/reference/` | 归档路径说明和复现命令。 |
 | `mcm/` | MCM/ICM baseline 与 advanced 逐问代码、报告、结果和轻量产物。 |
 | `cumcm/` | CUMCM baseline 与 advanced 逐问代码、报告、结果和轻量产物。 |
+| `tools/build_problem_pages.py` | 从现有 CSV 生成赛题整体索引和每道赛题页。 |
 | `.github/workflows/deploy.yml` | GitHub Pages 自动部署 workflow。 |
 
 大体积官方附件、原始压缩包、解压数据和本地实验草稿不进入 Git，相关规则写在 `.gitignore`。教程页保留路径说明，但线上仓库只保存阅读和复现教程需要的轻量内容。
@@ -58,6 +59,12 @@ python -m pip install -r requirements.txt
 
 - [运行与复现](docs/reference/reproduce.md)
 - [归档路径说明](docs/reference/archive-map.md)
+
+重建赛题页：
+
+```bash
+python tools/build_problem_pages.py
+```
 
 ## 发布
 

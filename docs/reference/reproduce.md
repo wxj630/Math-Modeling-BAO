@@ -78,3 +78,11 @@ npm run docs:dev
 ```bash
 npm run docs:build
 ```
+
+## 重建赛题页
+
+赛题整体索引和每道赛题页由现有 CSV 生成，不会重跑实验：
+
+```bash
+python tools/build_problem_pages.py
+```

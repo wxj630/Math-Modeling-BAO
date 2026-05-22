@@ -1,21 +1,28 @@
-# 从归档到论文
+# 从赛题到论文
 
-这个教程把仓库中已有的 MCM/ICM 与 CUMCM 解法整理成一条可学习、可复现、可继续深化的路线。每道题可以按三层阅读：
+数学建模不是把小问逐个“做完”，而是把一道赛题读成一个完整项目：前几问通常建立主模型和数据口径，中间问题加入情景、约束、预测或优化，最后问题把结果转成论文、备忘录或决策建议。
 
-| 层级 | 作用 | 仓库位置 | 适合什么时候看 |
-|---|---|---|---|
-| Baseline solution | 最低可运行建模脚手架，保留第一版模型选择、变量、约束和结果格式。 | `mcm/generic_baselines/`、`cumcm/generic_baselines/` | 刚读完题、需要快速落地一个能跑的模型时。 |
-| Advanced solution | 题意专门化解法，读取官方附件或题面参数，输出逐问结果、报告和实验产物。 | `mcm/question_solutions/`、`cumcm/question_solutions/` | 已经知道基础模型，想看到如何把题面约束接入代码时。 |
-| Outstanding solution | 预留给后续论文级解法，强调更强算法、敏感性、误差分析、可视化和写作表达。 | 教程预留结构，后续可新增到 `outstanding_solutions/` 或专题页。 | 准备冲高质量论文或复盘优秀论文时。 |
+所以这个教程现在按“赛题入口”组织：
+
+| 阅读层级 | 你要看的问题 | 入口 |
+|---|---|---|
+| 赛题整体 | 这道题的业务背景、主模型和小问递进链是什么？ | [MCM/ICM 赛题整体索引](/mcm-track/problem-index)、[CUMCM 赛题整体索引](/cumcm-track/problem-index) |
+| 小问材料 | 某一问的 baseline、advanced、结果和产物在哪里？ | 每个赛题页中的“小问递进链” |
+| 三层解法 | baseline 为什么只是起点，advanced 如何升级，outstanding 应补什么？ | [Baseline](./baseline.md)、[Advanced](./advanced.md)、[Outstanding](./outstanding.md) |
+| 复现运行 | 如何用现有代码和实验结果复查某道题？ | [运行与复现](/reference/reproduce) |
 
 ## 推荐阅读顺序
 
-1. 先读 [Baseline Solution](./baseline.md)，理解为什么要保留通用基线，以及它不能替代最终解法。
-2. 再读 [Advanced Solution](./advanced.md)，对照同一小问的 baseline 与进阶版，看数据接入、约束表达和输出结构如何升级。
-3. 读 [MCM/ICM 解法教程](/mcm-track/) 或 [CUMCM 解法教程](/cumcm-track/)，选择一个赛道进入。
-4. 用代表案例练手：[MCM 2024-C 网球势头](/case-studies/mcm-2024-c) 和 [CUMCM 2024-C 农作物规划](/case-studies/cumcm-2024-c)。
-5. 最后读 [Outstanding Solution](./outstanding.md)，把现有 advanced 解法当作骨架，继续补鲁棒性、图表和论文叙事。
+1. 先选择一条赛道：[MCM/ICM](/mcm-track/) 或 [CUMCM](/cumcm-track/)。
+2. 从赛题整体索引进入某一道题，例如 [MCM/ICM 2015-C](/mcm-track/problems/2015-C)。
+3. 在赛题页里按小问递进链阅读：主模型、动态/情景、成本/优化、验证/迁移、报告表达。
+4. 对每个小问只把 baseline 和 advanced 当作材料入口，不把它们当成互不相干的页面。
+5. 最后用 [Outstanding Solution](./outstanding.md) 的标准检查整题还缺哪些论文级增强。
+
+## 为什么从赛题入口开始
+
+以 2015-C 为例，第 1 问的人力资本网络不是孤立模型；第 2 问要把它变成流失动态，第 3 问把流失转成招聘培训预算，第 4/5 问做压力情景，第 6 问扩展为多层组织网络，第 7 问再把前面全部整理成报告。逐问索引能找到材料，但只有赛题页能保留这条因果链。
 
 ## 教程和归档的关系
 
-教程页负责讲“如何读、如何复现、如何升级”。完整逐问产物仍保存在原归档目录中，这样不会把 GitHub Pages 变成上百份重复报告，也便于脚本继续批量更新。
+代码和实验结果不重做。`mcm/`、`cumcm/` 中的 `solution.py`、`result.json`、`report.md` 和 artifacts 仍是唯一材料源；教程只把它们重新组织成更适合学习和写论文的路径。
