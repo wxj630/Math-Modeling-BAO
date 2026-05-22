@@ -15,6 +15,137 @@
 | 推荐模型族 | linear_trend_forecast_baseline；report_outline_baseline；threshold_classification_baseline |
 | 数据来源 | official_comap_xlsx |
 
+## Baseline 全局报告
+
+Baseline 层把整题拆成 5 个最低可运行脚手架，覆盖的通用模型族为：linear_trend_forecast_baseline×2；report_outline_baseline×2；threshold_classification_baseline×1。它的价值不是给出最终答案，而是快速回答三个问题：题面有哪些可用数字，应该从哪个经典模型族切入，代码、结果和报告是否能跑通。
+
+**q01 报告人数变化、3 月 1 日预测区间与困难模式比例**
+
+- 问题：The number of reported results vary daily. Develop a model to explain this variation and use your model to create a prediction interval for the number of reported results on March…
+- 建模：从 `linear_trend_forecast_baseline` 建立通用变量、约束和可运行脚手架。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q01/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q01/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q01/result.json)
+- 实验结果：method=linear_trend_forecast_baseline；baseline_score=0.685086；numeric_token_count=2；method_confidence=0.96
+- 分析：baseline 适合作为建模起点和覆盖检查；它还没有充分吸收题目专用数据、业务约束和论文表达要求。
+
+**q02 EERIE 在 2023-03-01 的得分分布预测**
+
+- 问题：For a given future solution word on a future date, develop a model that allows you to predict the associated percentages of (1, 2, 3, 4, 5, 6, X). Give a specific example for EERI…
+- 建模：从 `linear_trend_forecast_baseline` 建立通用变量、约束和可运行脚手架。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q02/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q02/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q02/result.json)
+- 实验结果：method=linear_trend_forecast_baseline；baseline_score=0.827143；numeric_token_count=15；method_confidence=0.96
+- 分析：baseline 适合作为建模起点和覆盖检查；它还没有充分吸收题目专用数据、业务约束和论文表达要求。
+
+**q03 答案词难度分类与 EERIE 难度**
+
+- 问题：Develop and summarize a model to classify solution words by difficulty. Identify attributes associated with each classification. Using your model, how difficult is EERIE? Discuss…
+- 建模：从 `threshold_classification_baseline` 建立通用变量、约束和可运行脚手架。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q03/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q03/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q03/result.json)
+- 实验结果：method=threshold_classification_baseline；baseline_score=0.692571；numeric_token_count=2；method_confidence=0.96
+- 分析：baseline 适合作为建模起点和覆盖检查；它还没有充分吸收题目专用数据、业务约束和论文表达要求。
+
+**q04 Wordle 数据集的其他有趣特征**
+
+- 问题：List and describe some other interesting features of this data set.
+- 建模：从 `report_outline_baseline` 建立通用变量、约束和可运行脚手架。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q04/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q04/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q04/result.json)
+- 实验结果：method=report_outline_baseline；baseline_score=0.512714；numeric_token_count=0；method_confidence=0.7
+- 分析：baseline 适合作为建模起点和覆盖检查；它还没有充分吸收题目专用数据、业务约束和论文表达要求。
+
+**q05 给纽约时报 Puzzle Editor 的摘要信**
+
+- 问题：Summarize your results in a one- to two-page letter to the Puzzle Editor of the New York Times.
+- 建模：从 `report_outline_baseline` 建立通用变量、约束和可运行脚手架。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q05/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q05/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q05/result.json)
+- 实验结果：method=report_outline_baseline；baseline_score=0.517514；numeric_token_count=0；method_confidence=0.83
+- 分析：baseline 适合作为建模起点和覆盖检查；它还没有充分吸收题目专用数据、业务约束和论文表达要求。
+
+**Baseline 读法。** 先看它选择的模型族和 baseline score/实验表，再回到题面判断它漏掉了哪些真实约束。凡是只停留在通用评分、关键词匹配或线性脚手架的地方，就是 advanced 需要升级的地方。
+
+## Advanced 全局报告
+
+Advanced 层使用当前仓库已有的题目专用代码和实验结果，把小问串成一条整题模型链。数据来源覆盖：official_comap_xlsx×5。阅读时重点看每问如何继承前问变量、约束、附件字段或情景设定。
+
+**q01 报告人数变化、3 月 1 日预测区间与困难模式比例**
+
+- 问题：The number of reported results vary daily. Develop a model to explain this variation and use your model to create a prediction interval for the number of reported results on March…
+- 建模：官方 Wordle Excel 清洗 + 对数报告人数 RidgeCV 时间趋势回归 + 词属性标准化回归解释困难模式比例 + 留出集误差评估。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q01/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q01/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q01/result.json)
+- 数据：official_comap_xlsx；columns: 12项；路径: docs/mcm-2015-2025/official_assets_extracted/2023/Problem…
+- 实验结果：report_count_model: model=log-linear RidgeCV for report counts; RidgeCV for hard-mode rate；prediction_date=2023-03-01；prediction_word=EERIE；model_features=days_since_start、days_since_start_sq…
+- 产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q01/reported_results_forecast.png)
+- 分析：advanced 已把当前小问落到可复现实验，读者可以直接沿 result.json、report.md 和 artifact 把结论改写成论文段落。
+
+**q02 EERIE 在 2023-03-01 的得分分布预测**
+
+- 问题：For a given future solution word on a future date, develop a model that allows you to predict the associated percentages of (1, 2, 3, 4, 5, 6, X). Give a specific example for EERI…
+- 建模：用官方历史分布训练多输出随机森林回归，预测 1/2/3/4/5/6/X 七个百分比桶，非负裁剪并归一化到 100%，用树分布和留出误差给出不确定性。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q02/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q02/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q02/result.json)
+- 数据：official_comap_xlsx；columns: 12项；路径: docs/mcm-2015-2025/official_assets_extracted/2023/Problem…
+- 实验结果：eerie_prediction: model=RandomForestRegressor on official percentage buckets, clipped and nor…；word=EERIE；date=2023-03-01
+- 产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q02/eerie_prediction.csv)
+- 分析：advanced 已把当前小问落到可复现实验，读者可以直接沿 result.json、report.md 和 artifact 把结论改写成论文段落。
+
+**q03 答案词难度分类与 EERIE 难度**
+
+- 问题：Develop and summarize a model to classify solution words by difficulty. Identify attributes associated with each classification. Using your model, how difficult is EERIE? Discuss…
+- 建模：用 1-6/X 百分比分布计算期望尝试次数，并按训练集三分位划分 easy/medium/hard；再用随机森林分类器从日期和词属性预测难度类别。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q03/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q03/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q03/result.json)
+- 数据：official_comap_xlsx；columns: 12项；路径: docs/mcm-2015-2025/official_assets_extracted/2023/Problem…
+- 实验结果：difficulty_model: model=difficulty tertiles by expected attempts plus RandomForestClassifier…；holdout_days=45；holdout_accuracy=0.422222
+- 产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q03/difficulty_by_word.csv)
+- 分析：advanced 已把当前小问落到可复现实验，读者可以直接沿 result.json、report.md 和 artifact 把结论改写成论文段落。
+
+**q04 Wordle 数据集的其他有趣特征**
+
+- 问题：List and describe some other interesting features of this data set.
+- 建模：统计报告人数年度衰减、困难模式平均占比、重复字母与期望尝试次数差异、星期效应和关键相关系数。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q04/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q04/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q04/result.json)
+- 数据：official_comap_xlsx；columns: 12项；路径: docs/mcm-2015-2025/official_assets_extracted/2023/Problem…
+- 实验结果：interesting_features: reported_results_first30_mean=243624；reported_results_last30_mean=22138.4；reported_results_change_pct_first30_to_last30=-90.91
+- 产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q04/wordle_clean_data.csv)
+- 分析：advanced 已把当前小问落到可复现实验，读者可以直接沿 result.json、report.md 和 artifact 把结论改写成论文段落。
+
+**q05 给纽约时报 Puzzle Editor 的摘要信**
+
+- 问题：Summarize your results in a one- to two-page letter to the Puzzle Editor of the New York Times.
+- 建模：把报告人数预测、EERIE 分布、难度分类和数据集洞察压缩成编辑可读的决策信。
+- 代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q05/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q05/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q05/result.json)
+- 数据：official_comap_xlsx；columns: 12项；路径: docs/mcm-2015-2025/official_assets_extracted/2023/Problem…
+- 实验结果：editor_letter=Dear Puzzle Editor,  Using the official 2022 Wordle result file, we m…；report_count_model: model=log-linear RidgeCV for report counts; RidgeCV for hard-mode rate；prediction_date=2023-03-01；prediction_word=EERIE；eerie_prediction: model=RandomForestRegressor on official percentage buckets, clipped and nor…；word=EERIE；date=2023-03-01；difficulty_model: model=difficulty tertiles by expected attempts plus RandomForestClassifier…；holdout_days=45；holdout_accuracy=0.422222；interesting_features: reported_results_first30_mean=243624；reported_results_last30_mean=22138.4；reported_results_change_pct_first30_to_last30=-90.91
+- 产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q05/eerie_distribution.png)
+- 分析：advanced 已把当前小问落到可复现实验，读者可以直接沿 result.json、report.md 和 artifact 把结论改写成论文段落。
+
+**Advanced 读法。** 先读模型升级列，确认它把题面数据、附件字段、情景假设或输出模板写进了变量和约束；再读实验结果列，确认 result.json 与 artifact 中已经留下可复现的表、图或决策结果。
+
+## Advanced 相对 Baseline 的优势
+
+**q01 报告人数变化、3 月 1 日预测区间与困难模式比例**
+
+- 建模优势：Baseline 从 `linear_trend_forecast_baseline` 的通用变量和评分出发；Advanced 升级为 官方 Wordle Excel 清洗 + 对数报告人数 RidgeCV 时间趋势回归 + 词属性标准化回归解释困难模式比例 + 留出集误差评估。，并把题面/附件里的真实数据、约束和输出格式纳入模型。
+- 结果优势：Baseline 主要给出 method=linear_trend_forecast_baseline；baseline_score=0.685086；numeric_token_count=2；method_confidence=0.96；Advanced 进一步给出 report_count_model: model=log-linear RidgeCV for report counts; RidgeCV for hard-mode rate；prediction_date=2023-03-01；prediction_word=EERIE；model_features=days_since_start、days_since_start_sq…，可直接支撑论文中的表格、图或策略解释。
+
+**q02 EERIE 在 2023-03-01 的得分分布预测**
+
+- 建模优势：Baseline 从 `linear_trend_forecast_baseline` 的通用变量和评分出发；Advanced 升级为 用官方历史分布训练多输出随机森林回归，预测 1/2/3/4/5/6/X 七个百分比桶，非负裁剪并归一化到 100%，用树分布和留出误差给出不确定性。，并把题面/附件里的真实数据、约束和输出格式纳入模型。
+- 结果优势：Baseline 主要给出 method=linear_trend_forecast_baseline；baseline_score=0.827143；numeric_token_count=15；method_confidence=0.96；Advanced 进一步给出 eerie_prediction: model=RandomForestRegressor on official percentage buckets, clipped and nor…；word=EERIE；date=2023-03-01，可直接支撑论文中的表格、图或策略解释。
+
+**q03 答案词难度分类与 EERIE 难度**
+
+- 建模优势：Baseline 从 `threshold_classification_baseline` 的通用变量和评分出发；Advanced 升级为 用 1-6/X 百分比分布计算期望尝试次数，并按训练集三分位划分 easy/medium/hard；再用随机森林分类器从日期和词属性预测难度类别。，并把题面/附件里的真实数据、约束和输出格式纳入模型。
+- 结果优势：Baseline 主要给出 method=threshold_classification_baseline；baseline_score=0.692571；numeric_token_count=2；method_confidence=0.96；Advanced 进一步给出 difficulty_model: model=difficulty tertiles by expected attempts plus RandomForestClassifier…；holdout_days=45；holdout_accuracy=0.422222，可直接支撑论文中的表格、图或策略解释。
+
+**q04 Wordle 数据集的其他有趣特征**
+
+- 建模优势：Baseline 从 `report_outline_baseline` 的通用变量和评分出发；Advanced 升级为 统计报告人数年度衰减、困难模式平均占比、重复字母与期望尝试次数差异、星期效应和关键相关系数。，并把题面/附件里的真实数据、约束和输出格式纳入模型。
+- 结果优势：Baseline 主要给出 method=report_outline_baseline；baseline_score=0.512714；numeric_token_count=0；method_confidence=0.7；Advanced 进一步给出 interesting_features: reported_results_first30_mean=243624；reported_results_last30_mean=22138.4；reported_results_change_pct_first30_to_last30=-90.91，可直接支撑论文中的表格、图或策略解释。
+
+**q05 给纽约时报 Puzzle Editor 的摘要信**
+
+- 建模优势：Baseline 从 `report_outline_baseline` 的通用变量和评分出发；Advanced 升级为 把报告人数预测、EERIE 分布、难度分类和数据集洞察压缩成编辑可读的决策信。，并把题面/附件里的真实数据、约束和输出格式纳入模型。
+- 结果优势：Baseline 主要给出 method=report_outline_baseline；baseline_score=0.517514；numeric_token_count=0；method_confidence=0.83；Advanced 进一步给出 editor_letter=Dear Puzzle Editor,  Using the official 2022 Wordle result file, we m…；report_count_model: model=log-linear RidgeCV for report counts; RidgeCV for hard-mode rate；prediction_date=2023-03-01；prediction_word=EERIE；eerie_prediction: model=RandomForestRegressor on official percentage buckets, clipped and nor…；word=EERIE；date=2023-03-01；difficulty_model: model=difficulty tertiles by expected attempts plus RandomForestClassifier…；holdout_days=45；holdout_accuracy=0.422222；interesting_features: reported_results_first30_mean=243624；reported_results_last30_mean=22138.4；reported_results_change_pct_first30_to_last30=-90.91，可直接支撑论文中的表格、图或策略解释。
+
+
+
 ## 小问递进链
 
 ### q01 报告人数变化、3 月 1 日预测区间与困难模式比例
@@ -23,8 +154,8 @@
 
 **题意摘要：** The number of reported results vary daily. Develop a model to explain this variation and use your model to create a prediction interval for the number of reported results on March 1, 2023. Do any attributes of the word…
 
-- Baseline：linear_trend_forecast_baseline；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q01/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q01/solution.py)
-- Advanced：official_comap_xlsx；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q01/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q01/solution.py)；[result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q01/result.json)
+- Baseline：从 `linear_trend_forecast_baseline` 的通用脚手架开始；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q01/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q01/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q01/result.json)；实验结果：method=linear_trend_forecast_baseline；baseline_score=0.685086；numeric_token_count=2；method_confidence=0.96
+- Advanced：official_comap_xlsx；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q01/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q01/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q01/result.json)；实验结果：report_count_model: model=log-linear RidgeCV for report counts; RidgeCV for hard-mode rate；prediction_date=2023-03-01；prediction_word=EERIE；model_features=days_since_start、days_since_start_sq…
 - 实验产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q01/reported_results_forecast.png)
 - Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。
 
@@ -34,8 +165,8 @@
 
 **题意摘要：** For a given future solution word on a future date, develop a model that allows you to predict the associated percentages of (1, 2, 3, 4, 5, 6, X). Give a specific example for EERIE on March 1, 2023 and discuss uncertain…
 
-- Baseline：linear_trend_forecast_baseline；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q02/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q02/solution.py)
-- Advanced：official_comap_xlsx；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q02/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q02/solution.py)；[result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q02/result.json)
+- Baseline：从 `linear_trend_forecast_baseline` 的通用脚手架开始；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q02/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q02/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q02/result.json)；实验结果：method=linear_trend_forecast_baseline；baseline_score=0.827143；numeric_token_count=15；method_confidence=0.96
+- Advanced：official_comap_xlsx；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q02/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q02/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q02/result.json)；实验结果：eerie_prediction: model=RandomForestRegressor on official percentage buckets, clipped and nor…；word=EERIE；date=2023-03-01
 - 实验产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q02/eerie_prediction.csv)
 - Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。
 
@@ -45,8 +176,8 @@
 
 **题意摘要：** Develop and summarize a model to classify solution words by difficulty. Identify attributes associated with each classification. Using your model, how difficult is EERIE? Discuss accuracy.
 
-- Baseline：threshold_classification_baseline；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q03/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q03/solution.py)
-- Advanced：official_comap_xlsx；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q03/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q03/solution.py)；[result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q03/result.json)
+- Baseline：从 `threshold_classification_baseline` 的通用脚手架开始；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q03/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q03/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q03/result.json)；实验结果：method=threshold_classification_baseline；baseline_score=0.692571；numeric_token_count=2；method_confidence=0.96
+- Advanced：official_comap_xlsx；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q03/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q03/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q03/result.json)；实验结果：difficulty_model: model=difficulty tertiles by expected attempts plus RandomForestClassifier…；holdout_days=45；holdout_accuracy=0.422222
 - 实验产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q03/difficulty_by_word.csv)
 - Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。
 
@@ -56,8 +187,8 @@
 
 **题意摘要：** List and describe some other interesting features of this data set.
 
-- Baseline：report_outline_baseline；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q04/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q04/solution.py)
-- Advanced：official_comap_xlsx；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q04/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q04/solution.py)；[result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q04/result.json)
+- Baseline：从 `report_outline_baseline` 的通用脚手架开始；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q04/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q04/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q04/result.json)；实验结果：method=report_outline_baseline；baseline_score=0.512714；numeric_token_count=0；method_confidence=0.7
+- Advanced：official_comap_xlsx；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q04/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q04/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q04/result.json)；实验结果：interesting_features: reported_results_first30_mean=243624；reported_results_last30_mean=22138.4；reported_results_change_pct_first30_to_last30=-90.91
 - 实验产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q04/wordle_clean_data.csv)
 - Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。
 
@@ -67,12 +198,12 @@
 
 **题意摘要：** Summarize your results in a one- to two-page letter to the Puzzle Editor of the New York Times.
 
-- Baseline：report_outline_baseline；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q05/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q05/solution.py)
-- Advanced：official_comap_xlsx；[report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q05/report.md)；[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q05/solution.py)；[result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q05/result.json)
+- Baseline：从 `report_outline_baseline` 的通用脚手架开始；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/solutions/2023/C-Wordle/q05/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/reports/2023/C-Wordle/q05/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/generic_baselines/results/2023/C-Wordle/q05/result.json)；实验结果：method=report_outline_baseline；baseline_score=0.517514；numeric_token_count=0；method_confidence=0.83
+- Advanced：official_comap_xlsx；代码入口：[solution.py](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_solutions/2023/C-Wordle/q05/solution.py) / [report.md](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_reports/2023/C-Wordle/q05/report.md) / [result.json](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_results/2023/C-Wordle/q05/result.json)；实验结果：editor_letter=Dear Puzzle Editor,  Using the official 2022 Wordle result file, we m…；report_count_model: model=log-linear RidgeCV for report counts; RidgeCV for hard-mode rate；prediction_date=2023-03-01；prediction_word=EERIE；eerie_prediction: model=RandomForestRegressor on official percentage buckets, clipped and nor…；word=EERIE；date=2023-03-01；difficulty_model: model=difficulty tertiles by expected attempts plus RandomForestClassifier…；holdout_days=45；holdout_accuracy=0.422222；interesting_features: reported_results_first30_mean=243624；reported_results_last30_mean=22138.4；reported_results_change_pct_first30_to_last30=-90.91
 - 实验产物：[artifact](https://github.com/wxj630/Math-Modeling-World/blob/main/mcm/question_artifacts/2023/C-Wordle/q05/eerie_distribution.png)
 - Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。
 
 ## 复现提示
 
-本页不复制代码和实验结果；代码、结果和报告仍保存在仓库原目录。需要运行时，回到 [运行与复现](/reference/reproduce) 查看命令。
+本页只抽取代码、结果和报告中的关键摘要；完整代码、result.json、report.md 和 artifact 仍保存在仓库原目录。需要运行时，回到 [运行与复现](/reference/reproduce) 查看命令。
 
