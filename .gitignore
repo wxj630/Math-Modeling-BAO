@@ -1,8 +1,32 @@
-# project
+# Local-only project leftovers and scratch work
 kimi-cli/
 kimi-agent-sdk/
 MathModelAgent/
 third_party/
+third-party/
+src/
+scripts/
+tests/
+example/
+setup.py
+notebook.ipynb
+*.ipynb
+binomial_verification.png
+docs/superpowers/
+
+# Large/raw contest source material kept outside Git
+mcm/source_materials/
+cumcm/source_materials/
+cumcm/cache/
+mcm/problems/
+cumcm/problems/
+cumcm/reports/
+cumcm/results/
+cumcm/solutions/
+docs/mcm-2015-2025/[0-9][0-9][0-9][0-9]/*/
+docs/mcm-2015-2025/official_assets/[0-9][0-9][0-9][0-9]*/
+docs/mcm-2015-2025/official_assets_extracted/[0-9][0-9][0-9][0-9]*/
+*.rar
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

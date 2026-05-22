@@ -1,63 +1,72 @@
 # Math-Modeling-World
 
-Math-Modeling-World bundles a MathModeling agent that couples `kimi-agent-sdk`, a local agent spec, and Jupyter-backed execution tools inspired by `MathModelAgent`.
+MCM/ICM 与 CUMCM 建模教程站。仓库当前聚焦三层解法归档：
 
-## Installation
+- Baseline solution：最低可运行建模脚手架，用来快速形成第一版模型、结果和报告。
+- Advanced solution：按具体题意、真实数据和约束深化后的逐问解法。
+- Outstanding solution：预留论文级表达、鲁棒性分析和可视化打磨位置，后续逐题补充。
 
-1. Activate the provided virtual environment: `source .venv/bin/activate`.
-2. Install the agent and its dependencies in editable mode: `uv pip install -e .`.
-3. Make sure `.env` contains `KIMI_BASE_URL`, `KIMI_API_KEY`, and optionally `KIMI_MODEL_NAME` (defaults to `kimi-k2.5`).
+在线站点：
 
-## Usage
+[https://wxj630.github.io/Math-Modeling-World/](https://wxj630.github.io/Math-Modeling-World/)
 
-```bash
-mm-world-agent --prompt "Analyze the competition problem" --port 8888
-```
+## 内容结构
 
-The runner prints the `http://0.0.0.0:<port>` URL so you can open Jupyter Lab (default port 8888, override via `--port` or `MATH_MODELING_JUPYTER_PORT`). The MathModeling agent loads the local `src/mm_world/agents/agent.yaml` spec, dispatches the Modeler/Coder/Writer workflow, and keeps detailed logs in `logs/`.
+| 路径 | 说明 |
+|---|---|
+| `docs/` | VitePress 教程站源码。 |
+| `docs/tutorial/` | 总教程入口、baseline、advanced、outstanding 三层说明。 |
+| `docs/mcm-track/` | MCM/ICM 学习路线和逐问解法索引。 |
+| `docs/cumcm-track/` | CUMCM 学习路线和逐问解法索引。 |
+| `docs/case-studies/` | 代表案例拆解。 |
+| `docs/reference/` | 归档路径说明和复现命令。 |
+| `mcm/` | MCM/ICM baseline 与 advanced 逐问代码、报告、结果和轻量产物。 |
+| `cumcm/` | CUMCM baseline 与 advanced 逐问代码、报告、结果和轻量产物。 |
+| `.github/workflows/deploy.yml` | GitHub Pages 自动部署 workflow。 |
 
-For dry runs or to inspect the logs without executing code, pass `--dry-run`. Use `--no-yolo` if you want to handle approval requests manually.
+大体积官方附件、原始压缩包、解压数据和本地实验草稿不进入 Git，相关规则写在 `.gitignore`。教程页保留路径说明，但线上仓库只保存阅读和复现教程需要的轻量内容。
 
-## Development Notes
+## 本地预览
 
-- The custom tools live under `src/mm_world/tools` and include a Jupyter-based local interpreter plus an OpenAlex scholar helper with a `search_enabled` toggle.
-- The custom agent spec exists in `src/mm_world/agents`, extends `default`, and wires Markdown-based Modeler/Coder/Writer prompts to orchestrate the workflow.
-
-## GitHub Pages Tutorial
-
-The tutorial site follows the VitePress structure used by `/Users/wuxiaojun/code/repo-template`.
-
-- Entry page: [`docs/index.md`](docs/index.md)
-- Learning route: [`docs/tutorial`](docs/tutorial/)
-- MCM/ICM tutorial: [`docs/mcm-track`](docs/mcm-track/)
-- CUMCM tutorial: [`docs/cumcm-track`](docs/cumcm-track/)
-- Reproduction guide: [`docs/reference/reproduce.md`](docs/reference/reproduce.md)
-
-Run the tutorial locally with:
+安装前端依赖：
 
 ```bash
 npm install
+```
+
+启动 VitePress：
+
+```bash
 npm run docs:dev
 ```
 
-Build the GitHub Pages artifact with:
+构建静态站点：
 
 ```bash
 npm run docs:build
 ```
 
-## MCM 2015-2025 Archive
+## 复现解法
 
-The curated MCM/ICM problem notes, model recommendations, runnable Python templates, and captured execution results live in [`docs/mcm-2015-2025`](docs/mcm-2015-2025/README.md).
-
-Regenerate the archive and rerun every solution template with:
+Python 逐问解法依赖保留在 `requirements.txt`，只包含教程复现需要的数值计算、数据处理、绘图和测试包。
 
 ```bash
-.venv/bin/python scripts/build_mcm_archive.py
+python -m pip install -r requirements.txt
 ```
 
-For each problem, the archive now includes a concrete `solution.py`, `problem_config.json`, `实验结果.md`, `experiment_results.json`, and `experiment_scores.png` generated from the per-question model mapping.
+常用命令见：
 
-Important correction: the earlier generated MCM `advanced/` and per-problem `solution.py` files used randomly generated smoke-test data and must not be treated as real contest-data solutions. See [`docs/mcm-2015-2025/REALITY_CHECK.md`](docs/mcm-2015-2025/REALITY_CHECK.md) and [`docs/mcm-2015-2025/synthetic_usage_audit.csv`](docs/mcm-2015-2025/synthetic_usage_audit.csv).
+- [运行与复现](docs/reference/reproduce.md)
+- [归档路径说明](docs/reference/archive-map.md)
 
-Real-data MCM work now starts under [`docs/mcm-2015-2025/real_solutions`](docs/mcm-2015-2025/real_solutions/README.md), using downloaded COMAP official assets in [`docs/mcm-2015-2025/official_assets_extracted`](docs/mcm-2015-2025/official_assets_extracted). The CUMCM-style runnable archive is [`mcm`](mcm/README.md), currently covering `2024-C`, `2024-D`, `2025-C`, and `2025-D` as 24 real-data per-question experiments.
+## 发布
+
+推送到 `main` 后，GitHub Actions 会自动构建 `docs/` 并发布到 GitHub Pages：
+
+```bash
+git push origin main
+```
+
+部署目标是：
+
+[https://wxj630.github.io/Math-Modeling-World/](https://wxj630.github.io/Math-Modeling-World/)

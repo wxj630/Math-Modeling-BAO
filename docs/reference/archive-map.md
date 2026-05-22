@@ -13,7 +13,7 @@
 | `mcm/question_results/<year>/<code>/qXX/result.json` | 单问 advanced 结果。 |
 | `mcm/question_reports/<year>/<code>/qXX/report.md` | 单问 advanced 报告。 |
 | `mcm/question_artifacts/<year>/<code>/qXX/` | 单问 advanced 表格、图片或辅助产物。 |
-| `docs/mcm-2015-2025/official_assets_extracted/` | COMAP 官方附件解压材料。 |
+| `docs/mcm-2015-2025/official_assets_extracted/` | COMAP 官方附件解压材料，本地保留，默认不进入 Git。 |
 
 ## CUMCM
 
