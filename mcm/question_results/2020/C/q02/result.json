@@ -1,0 +1,111 @@
+{
+  "problem_id": "2020-C",
+  "question": "q02",
+  "question_title": "产品声誉随时间增加或下降的模式",
+  "statement": "Identify and discuss time-based measures and patterns within each data set that might suggest a product's reputation is increasing or decreasing.",
+  "methods": "按 review_date 聚合月度 mean_star、review_count 和 low_rating_share，计算月度评分斜率和低分斜率判断声誉方向。",
+  "data_source": {
+    "type": "official_comap_tsv_zip",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "source_zip": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "rows": {
+      "hair_dryer.tsv": 11470,
+      "microwave.tsv": 1615,
+      "pacifier.tsv": 18939
+    },
+    "columns": [
+      "marketplace",
+      "customer_id",
+      "review_id",
+      "product_id",
+      "product_parent",
+      "product_title",
+      "product_category",
+      "star_rating",
+      "helpful_votes",
+      "total_votes",
+      "vine",
+      "verified_purchase",
+      "review_headline",
+      "review_body",
+      "review_date",
+      "helpfulness_rate",
+      "review_text",
+      "review_length_words",
+      "product_file"
+    ],
+    "official_requirement": "THE DATA FILES PROVIDED CONTAIN THE ONLY DATA YOU SHOULD USE FOR THIS PROBLEM."
+  },
+  "reputation_time_patterns": {
+    "method": "monthly official review aggregation by star rating, review volume, and low-rating share",
+    "trend_rows": [
+      {
+        "product_file": "hair_dryer.tsv",
+        "first_month": "2002-03-01",
+        "last_month": "2015-08-01",
+        "monthly_rating_slope": 0.008051,
+        "monthly_low_rating_slope": 0.001047,
+        "reputation_direction": "stable"
+      },
+      {
+        "product_file": "microwave.tsv",
+        "first_month": "2004-06-01",
+        "last_month": "2015-08-01",
+        "monthly_rating_slope": 0.000243,
+        "monthly_low_rating_slope": 0.001704,
+        "reputation_direction": "stable"
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "first_month": "2003-04-01",
+        "last_month": "2015-08-01",
+        "monthly_rating_slope": 0.019673,
+        "monthly_low_rating_slope": -0.00755,
+        "reputation_direction": "increasing"
+      }
+    ]
+  },
+  "rating_review_measures": {
+    "method": "official TSV review measures: star ratings, helpfulness, review length, verification, and product counts",
+    "product_rows": [
+      {
+        "product_file": "pacifier.tsv",
+        "review_count": 18939,
+        "unique_products": 6482,
+        "mean_star_rating": 4.3046,
+        "share_low_rating_1_2": 0.1128,
+        "mean_helpfulness_rate": 0.1735,
+        "mean_review_length_words": 53.0561,
+        "verified_purchase_share": 0.517
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "review_count": 11470,
+        "unique_products": 538,
+        "mean_star_rating": 4.116,
+        "share_low_rating_1_2": 0.1457,
+        "mean_helpfulness_rate": 0.2834,
+        "mean_review_length_words": 58.421,
+        "verified_purchase_share": 0.8554
+      },
+      {
+        "product_file": "microwave.tsv",
+        "review_count": 1615,
+        "unique_products": 80,
+        "mean_star_rating": 3.4446,
+        "share_low_rating_1_2": 0.3183,
+        "mean_helpfulness_rate": 0.4898,
+        "mean_review_length_words": 89.2594,
+        "verified_purchase_share": 0.6743
+      }
+    ],
+    "recommended_tracking_measures": [
+      "weekly mean star rating",
+      "low-rating share",
+      "helpfulness-weighted review length",
+      "verified-purchase review share",
+      "descriptor lift for enthusiastic and disappointed language"
+    ]
+  }
+}

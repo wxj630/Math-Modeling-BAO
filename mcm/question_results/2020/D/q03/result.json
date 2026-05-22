@@ -1,0 +1,173 @@
+{
+  "problem_id": "2020-D",
+  "question": "q03",
+  "question_title": "给 Huskies 教练的结构策略建议",
+  "statement": "Use the insights gained from your teamwork model to inform the coach about what kinds of structural strategies have been effective for the Huskies. Advise the coach on what changes the network analysis indicates that they should make next season to improve team success.",
+  "methods": "比较胜/负场协作指标差异与决策树特征重要性，形成互惠传球、midfield-forward 三角、传球多样性、赛后监测四类建议，并给出面向教练的非技术备忘录。对应模型：对比分析、特征重要性、策略决策表。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
+    "readme": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "rows": {
+      "matches.csv": 38,
+      "passingevents.csv": 23429,
+      "fullevents.csv": 59271
+    },
+    "official_scope": "38 Huskies matches, 23,429 official pass rows, and 59,271 official event rows from COMAP 2020 ICM-D."
+  },
+  "strategy_recommendations": {
+    "feature_gaps_win_minus_loss": {
+      "pass_advantage": 150.56923,
+      "passes": 22.8,
+      "duel_count": 22.42051,
+      "home_side": 0.4359,
+      "average_pass_length": 0.11547,
+      "foul_count": 0.09231,
+      "shot_count": 0.08718,
+      "network_reciprocity": 0.03986,
+      "contribution_gini": 0.0231,
+      "weighted_clustering": 0.00882,
+      "top_pair_share": 0.00091,
+      "network_density": -0.00113,
+      "forward_pass_share": -0.01071,
+      "pass_type_entropy": -0.013,
+      "attacking_third_share": -0.01731,
+      "players_involved": -0.15385
+    },
+    "actions": [
+      {
+        "action": "Keep the passing network reciprocal rather than hub-only.",
+        "evidence": "Season reciprocity is 0.893293; wins have reciprocity 0.7525 versus losses 0.7126.",
+        "model_family": "directed graph reciprocity and weighted centrality"
+      },
+      {
+        "action": "Use midfield-forward triangles as the default attacking build-up pattern.",
+        "evidence": "Wins average 146.77 triadic configurations versus 154.27 in losses.",
+        "model_family": "triadic network motifs and formation shares"
+      },
+      {
+        "action": "Protect pass diversity instead of relying on one repeated dyad.",
+        "evidence": "The best positive feature gap is pass_advantage = 150.5692.",
+        "model_family": "entropy, concentration, and contribution-distribution indicators"
+      },
+      {
+        "action": "Monitor match-by-match teamwork features after tactical changes.",
+        "evidence": "The holdout model uses only network/event indicators and predicts non-loss outcomes on the last 8 official matches.",
+        "model_family": "interpretable classification with temporal holdout"
+      }
+    ]
+  },
+  "teamwork_model": {
+    "target": "team_success_non_loss",
+    "target_definition": "1 for win or tie, 0 for loss; model inputs exclude goals and final score.",
+    "model": "deterministic DecisionTreeClassifier(max_depth=2, min_samples_leaf=3)",
+    "train_matches": 30,
+    "holdout_matches": 8,
+    "accuracy": 0.75,
+    "balanced_accuracy": 0.666667,
+    "holdout_predictions": [
+      {
+        "MatchID": 31,
+        "Outcome": "win",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 0
+      },
+      {
+        "MatchID": 32,
+        "Outcome": "loss",
+        "team_success_non_loss": 0,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 33,
+        "Outcome": "tie",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 34,
+        "Outcome": "tie",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 35,
+        "Outcome": "win",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 36,
+        "Outcome": "win",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 37,
+        "Outcome": "tie",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 38,
+        "Outcome": "loss",
+        "team_success_non_loss": 0,
+        "predicted_success_non_loss": 0
+      }
+    ],
+    "top_feature_importance": [
+      {
+        "feature": "network_density",
+        "importance": 0.5375315530755949
+      },
+      {
+        "feature": "average_pass_length",
+        "importance": 0.46246844692440525
+      },
+      {
+        "feature": "passes",
+        "importance": 0.0
+      },
+      {
+        "feature": "pass_advantage",
+        "importance": 0.0
+      },
+      {
+        "feature": "players_involved",
+        "importance": 0.0
+      },
+      {
+        "feature": "network_reciprocity",
+        "importance": 0.0
+      },
+      {
+        "feature": "weighted_clustering",
+        "importance": 0.0
+      },
+      {
+        "feature": "pass_type_entropy",
+        "importance": 0.0
+      }
+    ],
+    "feature_columns": [
+      "passes",
+      "pass_advantage",
+      "players_involved",
+      "network_density",
+      "network_reciprocity",
+      "weighted_clustering",
+      "pass_type_entropy",
+      "top_pair_share",
+      "contribution_gini",
+      "average_pass_length",
+      "forward_pass_share",
+      "attacking_third_share",
+      "shot_count",
+      "duel_count",
+      "foul_count",
+      "home_side"
+    ]
+  },
+  "coach_memo": "To the Huskies coach: use the season passing network as a tactical dashboard. The official data show that coordination should be managed as a graph, not as isolated player totals: track reciprocal passing links, midfield-forward triads, pass-type diversity, and whether one dyad is carrying too much of the build-up. For next season, rehearse possessions that keep at least three stable passing outlets around the ball, protect the midfield bridge players, and review the teamwork feature table after every match rather than waiting for final league results."
+}

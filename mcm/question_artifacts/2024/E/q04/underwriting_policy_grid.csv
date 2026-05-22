@@ -1,0 +1,181 @@
+hazard_frequency_index,severity_index,property_vulnerability,mitigation_effect,net_loss_ratio,affordability_penalty,underwriting_viability_score,decision
+0.85,0.85,0.45,0.0,0.2277,0.0283,0.638,approve standard or lightly conditioned underwriting
+0.85,0.85,0.45,0.15,0.1935,0.0283,0.7247,approve standard or lightly conditioned underwriting
+0.85,0.85,0.45,0.3,0.1594,0.0283,0.8113,approve standard or lightly conditioned underwriting
+0.85,0.85,0.6,0.0,0.3036,0.0283,0.5621,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,0.85,0.6,0.15,0.2581,0.0283,0.6602,approve standard or lightly conditioned underwriting
+0.85,0.85,0.6,0.3,0.2125,0.0283,0.7582,approve standard or lightly conditioned underwriting
+0.85,0.85,0.75,0.0,0.3795,0.0283,0.4862,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,0.85,0.75,0.15,0.3226,0.0283,0.5957,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,0.85,0.75,0.3,0.2657,0.0283,0.7051,approve standard or lightly conditioned underwriting
+0.85,1.0,0.45,0.0,0.2679,0.0283,0.5979,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.0,0.45,0.15,0.2277,0.0283,0.6905,approve standard or lightly conditioned underwriting
+0.85,1.0,0.45,0.3,0.1875,0.0283,0.7832,approve standard or lightly conditioned underwriting
+0.85,1.0,0.6,0.0,0.3572,0.0283,0.5086,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.0,0.6,0.15,0.3036,0.0283,0.6146,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.0,0.6,0.3,0.25,0.0283,0.7207,approve standard or lightly conditioned underwriting
+0.85,1.0,0.75,0.0,0.4465,0.0283,0.4193,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.0,0.75,0.15,0.3795,0.0283,0.5387,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.0,0.75,0.3,0.3125,0.0283,0.6582,approve standard or lightly conditioned underwriting
+0.85,1.2,0.45,0.0,0.3215,0.0283,0.5443,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.2,0.45,0.15,0.2732,0.0283,0.645,approve standard or lightly conditioned underwriting
+0.85,1.2,0.45,0.3,0.225,0.0283,0.7457,approve standard or lightly conditioned underwriting
+0.85,1.2,0.6,0.0,0.4286,0.0283,0.4371,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.2,0.6,0.15,0.3643,0.0283,0.5539,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.2,0.6,0.3,0.3,0.0283,0.6707,approve standard or lightly conditioned underwriting
+0.85,1.2,0.75,0.0,0.5358,0.0283,0.33,decline new underwriting until community-level risk reduction or public-private backstop exists
+0.85,1.2,0.75,0.15,0.4554,0.0283,0.4628,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.2,0.75,0.3,0.375,0.0283,0.5957,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.4,0.45,0.0,0.375,0.0283,0.4907,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.4,0.45,0.15,0.3188,0.0283,0.5995,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.4,0.45,0.3,0.2625,0.0283,0.7082,approve standard or lightly conditioned underwriting
+0.85,1.4,0.6,0.0,0.5,0.0283,0.3657,decline new underwriting until community-level risk reduction or public-private backstop exists
+0.85,1.4,0.6,0.15,0.425,0.0283,0.4932,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+0.85,1.4,0.6,0.3,0.35,0.0283,0.6207,approve standard or lightly conditioned underwriting
+0.85,1.4,0.75,0.0,0.6251,0.0283,0.2407,decline new underwriting until community-level risk reduction or public-private backstop exists
+0.85,1.4,0.75,0.15,0.5313,0.0283,0.3869,decline new underwriting until community-level risk reduction or public-private backstop exists
+0.85,1.4,0.75,0.3,0.4375,0.0283,0.5332,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,0.85,0.45,0.0,0.2679,0.0283,0.5979,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,0.85,0.45,0.15,0.2277,0.0283,0.6905,approve standard or lightly conditioned underwriting
+1.0,0.85,0.45,0.3,0.1875,0.0283,0.7832,approve standard or lightly conditioned underwriting
+1.0,0.85,0.6,0.0,0.3572,0.0283,0.5086,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,0.85,0.6,0.15,0.3036,0.0283,0.6146,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,0.85,0.6,0.3,0.25,0.0283,0.7207,approve standard or lightly conditioned underwriting
+1.0,0.85,0.75,0.0,0.4465,0.0283,0.4193,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,0.85,0.75,0.15,0.3795,0.0283,0.5387,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,0.85,0.75,0.3,0.3125,0.0283,0.6582,approve standard or lightly conditioned underwriting
+1.0,1.0,0.45,0.0,0.3152,0.0283,0.5506,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.0,0.45,0.15,0.2679,0.0283,0.6504,approve standard or lightly conditioned underwriting
+1.0,1.0,0.45,0.3,0.2206,0.0283,0.7501,approve standard or lightly conditioned underwriting
+1.0,1.0,0.6,0.0,0.4202,0.0283,0.4455,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.0,0.6,0.15,0.3572,0.0283,0.5611,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.0,0.6,0.3,0.2941,0.0283,0.6766,approve standard or lightly conditioned underwriting
+1.0,1.0,0.75,0.0,0.5253,0.0283,0.3405,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.0,0.75,0.15,0.4465,0.0283,0.4718,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.0,0.75,0.3,0.3677,0.0283,0.6031,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.2,0.45,0.0,0.3782,0.0283,0.4876,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.2,0.45,0.15,0.3215,0.0283,0.5968,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.2,0.45,0.3,0.2647,0.0283,0.706,approve standard or lightly conditioned underwriting
+1.0,1.2,0.6,0.0,0.5043,0.0283,0.3615,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.2,0.6,0.15,0.4286,0.0283,0.4896,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.2,0.6,0.3,0.353,0.0283,0.6178,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.2,0.75,0.0,0.6303,0.0283,0.2354,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.2,0.75,0.15,0.5358,0.0283,0.3825,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.2,0.75,0.3,0.4412,0.0283,0.5295,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.4,0.45,0.0,0.4412,0.0283,0.4245,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.4,0.45,0.15,0.375,0.0283,0.5432,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.4,0.45,0.3,0.3089,0.0283,0.6619,approve standard or lightly conditioned underwriting
+1.0,1.4,0.6,0.0,0.5883,0.0283,0.2774,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.4,0.6,0.15,0.5,0.0283,0.4182,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.4,0.6,0.3,0.4118,0.0283,0.5589,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.0,1.4,0.75,0.0,0.7354,0.0283,0.1304,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.4,0.75,0.15,0.6251,0.0283,0.2932,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.0,1.4,0.75,0.3,0.5148,0.0283,0.456,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,0.85,0.45,0.0,0.3081,0.0283,0.5577,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,0.85,0.45,0.15,0.2619,0.0283,0.6564,approve standard or lightly conditioned underwriting
+1.15,0.85,0.45,0.3,0.2156,0.0283,0.7551,approve standard or lightly conditioned underwriting
+1.15,0.85,0.6,0.0,0.4108,0.0283,0.455,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,0.85,0.6,0.15,0.3491,0.0283,0.5691,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,0.85,0.6,0.3,0.2875,0.0283,0.6832,approve standard or lightly conditioned underwriting
+1.15,0.85,0.75,0.0,0.5134,0.0283,0.3523,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,0.85,0.75,0.15,0.4364,0.0283,0.4818,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,0.85,0.75,0.3,0.3594,0.0283,0.6113,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.0,0.45,0.0,0.3624,0.0283,0.5033,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.0,0.45,0.15,0.3081,0.0283,0.6102,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.0,0.45,0.3,0.2537,0.0283,0.717,approve standard or lightly conditioned underwriting
+1.15,1.0,0.6,0.0,0.4832,0.0283,0.3825,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.0,0.6,0.15,0.4108,0.0283,0.5075,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.0,0.6,0.3,0.3383,0.0283,0.6325,approve standard or lightly conditioned underwriting
+1.15,1.0,0.75,0.0,0.6041,0.0283,0.2617,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.0,0.75,0.15,0.5134,0.0283,0.4048,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.0,0.75,0.3,0.4228,0.0283,0.5479,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.2,0.45,0.0,0.4349,0.0283,0.4308,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.2,0.45,0.15,0.3697,0.0283,0.5486,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.2,0.45,0.3,0.3044,0.0283,0.6663,approve standard or lightly conditioned underwriting
+1.15,1.2,0.6,0.0,0.5799,0.0283,0.2859,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.2,0.6,0.15,0.4929,0.0283,0.4253,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.2,0.6,0.3,0.4059,0.0283,0.5648,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.2,0.75,0.0,0.7249,0.0283,0.1409,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.2,0.75,0.15,0.6161,0.0283,0.3021,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.2,0.75,0.3,0.5074,0.0283,0.4633,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.4,0.45,0.0,0.5074,0.0283,0.3583,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.4,0.45,0.15,0.4313,0.0283,0.4869,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.4,0.45,0.3,0.3552,0.0283,0.6156,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.4,0.6,0.0,0.6765,0.0283,0.1892,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.4,0.6,0.15,0.5751,0.0283,0.3432,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.4,0.6,0.3,0.4736,0.0283,0.4972,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.15,1.4,0.75,0.0,0.8457,0.0283,0.0201,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.4,0.75,0.15,0.7188,0.0283,0.1994,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.15,1.4,0.75,0.3,0.592,0.0283,0.3788,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,0.85,0.45,0.0,0.3482,0.0283,0.5175,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,0.85,0.45,0.15,0.296,0.0283,0.6222,approve standard or lightly conditioned underwriting
+1.3,0.85,0.45,0.3,0.2438,0.0283,0.727,approve standard or lightly conditioned underwriting
+1.3,0.85,0.6,0.0,0.4643,0.0283,0.4014,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,0.85,0.6,0.15,0.3947,0.0283,0.5236,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,0.85,0.6,0.3,0.325,0.0283,0.6457,approve standard or lightly conditioned underwriting
+1.3,0.85,0.75,0.0,0.5804,0.0283,0.2853,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,0.85,0.75,0.15,0.4934,0.0283,0.4249,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,0.85,0.75,0.3,0.4063,0.0283,0.5644,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.0,0.45,0.0,0.4097,0.0283,0.456,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.0,0.45,0.15,0.3482,0.0283,0.57,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.0,0.45,0.3,0.2868,0.0283,0.6839,approve standard or lightly conditioned underwriting
+1.3,1.0,0.6,0.0,0.5463,0.0283,0.3195,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.0,0.6,0.15,0.4643,0.0283,0.4539,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.0,0.6,0.3,0.3824,0.0283,0.5883,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.0,0.75,0.0,0.6828,0.0283,0.1829,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.0,0.75,0.15,0.5804,0.0283,0.3378,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.0,0.75,0.3,0.478,0.0283,0.4928,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.2,0.45,0.0,0.4916,0.0283,0.3741,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.2,0.45,0.15,0.4179,0.0283,0.5003,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.2,0.45,0.3,0.3442,0.0283,0.6266,approve standard or lightly conditioned underwriting
+1.3,1.2,0.6,0.0,0.6555,0.0283,0.2102,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.2,0.6,0.15,0.5572,0.0283,0.361,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.2,0.6,0.3,0.4589,0.0283,0.5119,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.2,0.75,0.0,0.8194,0.0283,0.0463,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.2,0.75,0.15,0.6965,0.0283,0.2217,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.2,0.75,0.3,0.5736,0.0283,0.3972,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.4,0.45,0.0,0.5736,0.0283,0.2922,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.4,0.45,0.15,0.4875,0.0283,0.4307,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.4,0.45,0.3,0.4015,0.0283,0.5692,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.4,0.6,0.0,0.7648,0.0283,0.101,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.4,0.6,0.15,0.6501,0.0283,0.2682,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.4,0.6,0.3,0.5353,0.0283,0.4354,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.3,1.4,0.75,0.0,0.956,0.0283,-0.0902,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.4,0.75,0.15,0.8126,0.0283,0.1057,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.3,1.4,0.75,0.3,0.6692,0.0283,0.3016,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,0.85,0.45,0.0,0.3884,0.0283,0.4773,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,0.85,0.45,0.15,0.3302,0.0283,0.5881,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,0.85,0.45,0.3,0.2719,0.0283,0.6988,approve standard or lightly conditioned underwriting
+1.45,0.85,0.6,0.0,0.5179,0.0283,0.3478,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,0.85,0.6,0.15,0.4402,0.0283,0.478,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,0.85,0.6,0.3,0.3625,0.0283,0.6082,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,0.85,0.75,0.0,0.6474,0.0283,0.2184,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,0.85,0.75,0.15,0.5503,0.0283,0.368,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,0.85,0.75,0.3,0.4532,0.0283,0.5176,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.0,0.45,0.0,0.457,0.0283,0.4088,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.0,0.45,0.15,0.3884,0.0283,0.5298,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.0,0.45,0.3,0.3199,0.0283,0.6509,approve standard or lightly conditioned underwriting
+1.45,1.0,0.6,0.0,0.6093,0.0283,0.2564,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.0,0.6,0.15,0.5179,0.0283,0.4003,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.0,0.6,0.3,0.4265,0.0283,0.5442,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.0,0.75,0.0,0.7616,0.0283,0.1041,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.0,0.75,0.15,0.6474,0.0283,0.2709,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.0,0.75,0.3,0.5331,0.0283,0.4376,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.2,0.45,0.0,0.5484,0.0283,0.3174,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.2,0.45,0.15,0.4661,0.0283,0.4521,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.2,0.45,0.3,0.3839,0.0283,0.5869,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.2,0.6,0.0,0.7312,0.0283,0.1346,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.2,0.6,0.15,0.6215,0.0283,0.2967,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.2,0.6,0.3,0.5118,0.0283,0.4589,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.2,0.75,0.0,0.914,0.0283,-0.0482,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.2,0.75,0.15,0.7769,0.0283,0.1414,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.2,0.75,0.3,0.6398,0.0283,0.331,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.45,0.0,0.6398,0.0283,0.226,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.45,0.15,0.5438,0.0283,0.3744,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.45,0.3,0.4478,0.0283,0.5229,"conditional underwriting with mitigation, deductible, and reinsurance trigger"
+1.45,1.4,0.6,0.0,0.853,0.0283,0.0127,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.6,0.15,0.7251,0.0283,0.1932,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.6,0.3,0.5971,0.0283,0.3736,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.75,0.0,1.0663,0.0283,-0.2005,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.75,0.15,0.9063,0.0283,0.0119,decline new underwriting until community-level risk reduction or public-private backstop exists
+1.45,1.4,0.75,0.3,0.7464,0.0283,0.2243,decline new underwriting until community-level risk reduction or public-private backstop exists

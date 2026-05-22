@@ -1,0 +1,11 @@
+principle,description,weight,sustainability_e
+mixed_land_use,Mix land uses,0.1,economic
+compact_design,Take advantage of compact building design,0.1,environmental
+housing_choice,Create a range of housing opportunities and choices,0.1,social
+walkability,Create walkable neighborhoods,0.11,social
+sense_of_place,"Foster distinctive, attractive communities",0.08,social
+open_space,Preserve open space and environmental areas,0.11,environmental
+infill_development,Strengthen existing communities,0.1,economic
+transport_choice,Provide a variety of transportation choices,0.12,environmental
+fair_decisions,Make development decisions predictable and fair,0.09,economic
+stakeholder_collaboration,Encourage community collaboration,0.09,social

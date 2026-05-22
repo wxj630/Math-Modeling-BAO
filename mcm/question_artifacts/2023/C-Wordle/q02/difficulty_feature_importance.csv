@@ -1,0 +1,11 @@
+﻿feature,importance
+letter_frequency_score,0.187621
+days_since_start,0.132151
+days_since_start_sq,0.131605
+contest_number,0.130505
+rare_letter_count,0.092853
+weekday,0.06415
+repeated_letters,0.062474
+word_entropy,0.054908
+max_letter_count,0.053501
+unique_letters,0.034078

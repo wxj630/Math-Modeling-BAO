@@ -1,0 +1,163 @@
+{
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
+    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
+    "rows": {
+      "Sheet1": 58
+    },
+    "arrival_counts": {
+      "precheck": 58,
+      "regular": 47
+    },
+    "process_sample_counts": {
+      "precheck_arrivals": 58,
+      "regular_arrivals": 47,
+      "id_times": 16,
+      "mm_wave_times": 39,
+      "xray_times": 13,
+      "property_times": 29
+    }
+  },
+  "official_problem_parameters": {
+    "precheck_share_statement": 0.45,
+    "baseline_lane_ratio_statement": "often one Pre-Check lane open for every three regular lanes",
+    "property_time_normalization_note": "Workbook property-time cells display large h:mm:ss values that are plausibly seconds entered under time formatting; values >=10 minutes are divided by 60 and labeled as a normalization assumption."
+  },
+  "baseline_model": {
+    "precheck_lanes": 1,
+    "regular_lanes": 3,
+    "precheck": {
+      "servers": 1,
+      "passenger_count": 58,
+      "mean_wait_s": 1577.992103,
+      "p90_wait_s": 2945.2368,
+      "max_wait_s": 3169.007,
+      "mean_service_s": 67.384078,
+      "last_finish_s": 3908.2765
+    },
+    "regular": {
+      "servers": 3,
+      "passenger_count": 47,
+      "mean_wait_s": 283.902553,
+      "p90_wait_s": 596.03,
+      "max_wait_s": 696.51,
+      "mean_service_s": 89.751915,
+      "last_finish_s": 3659.41
+    },
+    "combined_mean_wait_s": 998.732971,
+    "combined_p90_wait_s": 2521.0776,
+    "combined_max_wait_s": 3169.007,
+    "checkpoint_clear_time_s": 3908.2765
+  },
+  "bottleneck_analysis": {
+    "stage_service_summary": [
+      {
+        "stage": "property divest/reclaim",
+        "median_s": 28.0,
+        "p90_s": 114.4
+      },
+      {
+        "stage": "x-ray belt headway",
+        "median_s": 2.35,
+        "p90_s": 15.548
+      },
+      {
+        "stage": "millimeter wave scanner headway",
+        "median_s": 11.0,
+        "p90_s": 15.532
+      },
+      {
+        "stage": "ID check",
+        "median_s": 10.995,
+        "p90_s": 15.11
+      }
+    ],
+    "queue_summary": [
+      {
+        "queue": "precheck",
+        "mean_wait_s": 1577.992103,
+        "p90_wait_s": 2945.2368,
+        "lanes": 1
+      },
+      {
+        "queue": "regular",
+        "mean_wait_s": 283.902553,
+        "p90_wait_s": 596.03,
+        "lanes": 3
+      }
+    ],
+    "bottlenecks": [
+      "Highest p90 process time: property divest/reclaim (114.4 s).",
+      "Largest queue p90 wait: precheck lane."
+    ]
+  },
+  "modification_experiments": {
+    "modifications": [
+      {
+        "modification": "hybrid: 2 PreCheck lanes plus divestment support",
+        "precheck_lanes": 2,
+        "regular_lanes": 2,
+        "combined_mean_wait_s": 460.08599,
+        "combined_p90_wait_s": 889.81664,
+        "mean_wait_change_vs_baseline_s": -538.646981,
+        "p90_wait_change_vs_baseline_s": -1631.26096,
+        "checkpoint_clear_time_s": 3650.319,
+        "rationale": "Combines lane balance with process support; included as a transparent upper-bound operational scenario."
+      },
+      {
+        "modification": "rebalance lanes to 2 PreCheck / 2 regular",
+        "precheck_lanes": 2,
+        "regular_lanes": 2,
+        "combined_mean_wait_s": 612.918324,
+        "combined_p90_wait_s": 1179.9978,
+        "mean_wait_change_vs_baseline_s": -385.814647,
+        "p90_wait_change_vs_baseline_s": -1341.0798,
+        "checkpoint_clear_time_s": 3659.41,
+        "rationale": "Problem statement says 45% are PreCheck but often only one PreCheck lane for every three regular lanes."
+      },
+      {
+        "modification": "parallel divestment support and bin preparation",
+        "precheck_lanes": 1,
+        "regular_lanes": 3,
+        "combined_mean_wait_s": 777.44832,
+        "combined_p90_wait_s": 2009.34959,
+        "mean_wait_change_vs_baseline_s": -221.284651,
+        "p90_wait_change_vs_baseline_s": -511.72801,
+        "checkpoint_clear_time_s": 3650.319,
+        "rationale": "Reduce Zone B/C property preparation variance without lowering security standards."
+      }
+    ]
+  },
+  "cultural_sensitivity": {
+    "method": "Deterministic one-at-a-time multipliers on official process samples; traveler styles are sensitivity scenarios, not observed cultures in the workbook.",
+    "traveler_styles": [
+      {
+        "traveler_style": "personal-space cautious",
+        "property_multiplier": 1.25,
+        "id_multiplier": 1.05,
+        "combined_mean_wait_s": 1224.9903,
+        "combined_p90_wait_s": 3041.7233,
+        "description": "More spacing and slower divestment/reclaim behavior."
+      },
+      {
+        "traveler_style": "collective-efficiency",
+        "property_multiplier": 0.85,
+        "id_multiplier": 0.95,
+        "combined_mean_wait_s": 859.504857,
+        "combined_p90_wait_s": 2199.2409,
+        "description": "Passengers coordinate bins and move when prompted."
+      },
+      {
+        "traveler_style": "individual-fast but variable",
+        "property_multiplier": 0.95,
+        "id_multiplier": 1.0,
+        "combined_mean_wait_s": 955.20771,
+        "combined_p90_wait_s": 2421.6731,
+        "description": "Faster median but less orderly behavior; modeled here without random variance."
+      }
+    ]
+  },
+  "security_manager_memo": "To TSA security managers: the official checkpoint workbook points to Zone B/C preparation and scanner/x-ray headways as the most visible sources of high-tail service time. Keep the security standard fixed, but reduce variance by staffing divestment support, improving bin flow, and dynamically balancing PreCheck versus regular lanes when observed demand differs from the legacy one-to-three lane ratio. Cultural or traveler-style differences should be handled with clearer signs, parallel preparation space, and queue marshals rather than by lowering screening intensity."
+}

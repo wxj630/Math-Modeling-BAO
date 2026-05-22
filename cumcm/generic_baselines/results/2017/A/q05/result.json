@@ -1,0 +1,92 @@
+{
+  "problem_id": "2017-A",
+  "title": "2017年 CUMCM A题：CT系统参数标定及成像",
+  "question_index": 5,
+  "question_label": "问题 1",
+  "statement": "-(4)中的所有数值结果均保留4位小数。同时提供(2)和(3)重建得到的介质吸收率的数据文件（大小为256×256，格式同附件1，文件名分别为problem2.xls和problem3.xls）",
+  "tasks": [
+    "-",
+    "(4)中的所有数值结果均保留4位小数。同时提供",
+    "(2)和",
+    "(3)重建得到的介质吸收率的数据文件（大小为256×256，格式同附件1，文件名分别为problem2.xls和problem3.xls）"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls",
+    "rows": 1280,
+    "columns": 256,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "-",
+      "(4)中的所有数值结果均保留4位小数。同时提供",
+      "(2)和",
+      "(3)重建得到的介质吸收率的数据文件（大小为256×256，格式同附件1，文件名分别为problem2.xls和problem3.xls）"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "r2": 1.0,
+    "mean_abs_error": 0.0
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2017/A/q05/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

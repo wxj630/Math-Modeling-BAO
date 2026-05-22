@@ -1,0 +1,222 @@
+{
+  "problem_id": "2022-D",
+  "title": "2022年 CUMCM D题：气象报文信息卫星通信传输",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "为了提高气象信息的地理密度，除了实现主站间气象报文的信息共享外，还需要 使用副站气象信息加以补充。 (1) 若要求在 𝐾 分钟内完成 𝑁 个主站间气象报文的信息共享，且每个主站满足条件：对 每支分队， 成功接收该分队至少一个副站的气象报文的概率不低于0.9。 请就 𝐾 (≥ 5) 的情形， 研究 𝑁 的最大值与 𝐾 的关系，并建立 𝐾 分钟内满足以上条件的信息传输的一般模型。若主 站间气象报文信息共享的传输方案与问题 1 相同，则只需给出副站气象报文的传输方案。 (2) 对于 𝐾 = 7， 给出 𝑁 的最大值， 并根据一般传输模型给出此时副站气象报文的传输方 案，将结果按表 2 的格式填报。求出在你们的传输方案下平均有多少个主站能成功接收每支分 队至少一个副站的气象报文，以及任一主站平均能成功接收多少个副站的气象报文。",
+  "tasks": [
+    "(1) 若要求在 𝐾 分钟内完成 𝑁 个主站间气象报文的信息共享，且每个主站满足条件：对 每支分队， 成功接收该分队至少一个副站的气象报文的概率不低于0.9。 请就 𝐾 (≥ 5) 的情形， 研究 𝑁 的最大值与 𝐾 的关系，并建立 𝐾 分钟内满足以上条件的信息传输的一般模型。若主 站间气象报文信息共享的传输方案与问题 1 相同，则只需给出副站气象报文的传输方案",
+    "(2) 对于 𝐾 = 7， 给出 𝑁 的最大值， 并根据一般传输模型给出此时副站气象报文的传输方 案，将结果按表 2 的格式填报。求出在你们的传输方案下平均有多少个主站能成功接收每支分 队至少一个副站的气象报文，以及任一主站平均能成功接收多少个副站的气象报文"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最大、方案"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "概率"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 0,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/D.md",
+    "rows": 28,
+    "columns": 7,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "(1) 若要求在 𝐾 分钟内完成 𝑁 个主站间气象报文的信息共享，且每个主站满足条件：对 每支分队， 成功接收该分队至少一个副站的气象报文的概率不低于0.9。 请就 𝐾 (≥ 5) 的情形， 研究 𝑁 的最大值与 𝐾 的关系，并建立 𝐾 分钟内满足以上条件的信息传输的一般模型。若主 站间气象报文信息共享的传输方案与问题 1 相同，则只需给出副站气象报文的传输方案",
+      "(2) 对于 𝐾 = 7， 给出 𝑁 的最大值， 并根据一般传输模型给出此时副站气象报文的传输方 案，将结果按表 2 的格式填报。求出在你们的传输方案下平均有多少个主站能成功接收每支分 队至少一个副站的气象报文，以及任一主站平均能成功接收多少个副站的气象报文"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "N: 气象分队数量，也是主站数量",
+      "K: 可用传输轮数/分钟数",
+      "r: 传输轮数序号",
+      "s_i: 第 i 个主站或副站",
+      "m_j: 来源于第 j 个站点的气象报文",
+      "p=0.8: 便携型卫星设备单次发送成功概率"
+    ],
+    "constraints": [
+      "每个设备每分钟最多发送 1 条消息。",
+      "车载型主站收发成功率为 1；便携型副站发送成功率为 0.8。",
+      "主站间共享要求每个主站最终拥有所有 N 个主站报文。",
+      "副站补充要求每个主站对每支分队至少成功接收一个副站报文的概率达到阈值。"
+    ],
+    "objective_or_equations": [
+      "q(t)=1-(1-p)^t，其中 t 为某分队副站对某主站的独立发送次数。",
+      "q(t)>=threshold => t>=ceil(log(1-threshold)/log(1-p))",
+      "2K >= tN => N_max=floor(2K/t)",
+      "slot=(receiver-1)t+(repeat-1), round=floor(slot/2)+1, substation=a/b 按 slot 奇偶分配。"
+    ],
+    "solution_steps": [
+      "先沿用问题 1 的主站轮转方案完成主站间报文共享。",
+      "计算达到概率阈值所需的副站重复发送次数 t。",
+      "用每支分队两个副站共 2K 次发送容量推导 N 最大值。",
+      "按时隙构造副站发送表，并校验每个便携副站每分钟最多发送 1 条消息。",
+      "计算期望成功主站数和任一主站期望收到的副站报文数。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "portable_substation_repeated_transmission_plan",
+    "K": 7,
+    "threshold": 0.9,
+    "portable_success_probability": 0.8,
+    "required_repeats_per_team_receiver": 2,
+    "N_max": 7,
+    "probability_at_least_one_sub_report": 0.96,
+    "expected_successful_main_stations_per_team": 6.72,
+    "expected_substation_reports_per_main": 11.2,
+    "schedule_feasibility": {
+      "feasible": true,
+      "sender_minute_conflicts": 0,
+      "team_receiver_repeat_mismatches": 0,
+      "max_round_used": 7,
+      "round_limit": 7,
+      "transmissions_per_team": 14,
+      "capacity_per_team": 14
+    },
+    "table2_rows": 98,
+    "sample_rows": [
+      {
+        "round": 1,
+        "sender": "1a",
+        "receiver": 1,
+        "message_origin": "1a",
+        "team": 1,
+        "repeat_index": 1,
+        "slot_index": 1
+      },
+      {
+        "round": 1,
+        "sender": "1b",
+        "receiver": 1,
+        "message_origin": "1b",
+        "team": 1,
+        "repeat_index": 2,
+        "slot_index": 2
+      },
+      {
+        "round": 1,
+        "sender": "2a",
+        "receiver": 1,
+        "message_origin": "2a",
+        "team": 2,
+        "repeat_index": 1,
+        "slot_index": 1
+      },
+      {
+        "round": 1,
+        "sender": "2b",
+        "receiver": 1,
+        "message_origin": "2b",
+        "team": 2,
+        "repeat_index": 2,
+        "slot_index": 2
+      },
+      {
+        "round": 1,
+        "sender": "3a",
+        "receiver": 1,
+        "message_origin": "3a",
+        "team": 3,
+        "repeat_index": 1,
+        "slot_index": 1
+      },
+      {
+        "round": 1,
+        "sender": "3b",
+        "receiver": 1,
+        "message_origin": "3b",
+        "team": 3,
+        "repeat_index": 2,
+        "slot_index": 2
+      },
+      {
+        "round": 1,
+        "sender": "4a",
+        "receiver": 1,
+        "message_origin": "4a",
+        "team": 4,
+        "repeat_index": 1,
+        "slot_index": 1
+      },
+      {
+        "round": 1,
+        "sender": "4b",
+        "receiver": 1,
+        "message_origin": "4b",
+        "team": 4,
+        "repeat_index": 2,
+        "slot_index": 2
+      },
+      {
+        "round": 1,
+        "sender": "5a",
+        "receiver": 1,
+        "message_origin": "5a",
+        "team": 5,
+        "repeat_index": 1,
+        "slot_index": 1
+      },
+      {
+        "round": 1,
+        "sender": "5b",
+        "receiver": 1,
+        "message_origin": "5b",
+        "team": 5,
+        "repeat_index": 2,
+        "slot_index": 2
+      },
+      {
+        "round": 1,
+        "sender": "6a",
+        "receiver": 1,
+        "message_origin": "6a",
+        "team": 6,
+        "repeat_index": 1,
+        "slot_index": 1
+      },
+      {
+        "round": 1,
+        "sender": "6b",
+        "receiver": 1,
+        "message_origin": "6b",
+        "team": 6,
+        "repeat_index": 2,
+        "slot_index": 2
+      }
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2022/D/q02/experiment_table.csv"
+  ]
+}

@@ -1,0 +1,8 @@
+dimension,weight,definition
+access_equity,0.18,"Students can enter, persist, and complete higher education across income, region, gender, race, and first-generation status."
+affordability,0.16,"Tuition, debt, living cost, and public aid do not block participation or completion."
+degree_value,0.16,"Graduates gain durable employment, civic, and personal value from credentials."
+quality_and_learning,0.14,"Institutions deliver strong instruction, student support, and measurable learning."
+research_and_exchange,0.12,"The system supports research, exchange of ideas, and international student flows."
+funding_stability,0.12,Public and private resources are stable enough for long-run planning.
+innovation_renewal,0.12,"The system can align around a shared vision, execute it, and renew itself over time."

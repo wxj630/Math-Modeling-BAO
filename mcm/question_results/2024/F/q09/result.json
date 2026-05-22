@@ -1,0 +1,123 @@
+{
+  "problem_id": "2024-F",
+  "question": "q09",
+  "question_title": "项目达成目标的可能性",
+  "statement": "How likely is the project to reach the expected goal?",
+  "methods": "围绕至少 20% cumulative reduction 目标给出基础达标概率，并把关键实施条件映射为概率上调或下调。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "official_requirements": {
+      "select_client": true,
+      "realistic_client_action": true,
+      "data_driven_five_year_project": true,
+      "additional_powers_and_resources": true,
+      "measurable_impact": true,
+      "goal_probability": true,
+      "contextualized_sensitivity_analysis": true,
+      "one_page_client_memo": true
+    },
+    "parameters": {
+      "max_illegal_trade_billion_usd": 26.5,
+      "project_years": 5,
+      "fourth_largest_illegal_trade": true,
+      "program_effectiveness_discount": 0.42,
+      "source_note": "Official PDF statement parameters only; project rows are deterministic scenario assumptions, not observed enforcement data."
+    }
+  },
+  "goal_probability": {
+    "base_probability": 0.64,
+    "probability_reach_goal": 0.69,
+    "goal": "at least 20% cumulative reduction from the no-project five-year trajectory",
+    "top_helpful_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      }
+    ],
+    "top_harmful_conditions": [
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      }
+    ]
+  },
+  "impact_projection": {
+    "baseline_illegal_trade_value_year5_billion_usd": 31.4737,
+    "projected_illegal_trade_value_year5_billion_usd": 20.8262,
+    "final_trade_reduction_pct": 33.83,
+    "annual_rows": [
+      {
+        "year": 1,
+        "baseline_illegal_trade_value_billion_usd": 27.4275,
+        "projected_illegal_trade_value_billion_usd": 26.6609,
+        "annual_project_reduction_pct": 2.795,
+        "cumulative_trade_reduction_pct": 2.795
+      },
+      {
+        "year": 2,
+        "baseline_illegal_trade_value_billion_usd": 28.3875,
+        "projected_illegal_trade_value_billion_usd": 26.1991,
+        "annual_project_reduction_pct": 5.055,
+        "cumulative_trade_reduction_pct": 7.709
+      },
+      {
+        "year": 3,
+        "baseline_illegal_trade_value_billion_usd": 29.381,
+        "projected_illegal_trade_value_billion_usd": 25.0463,
+        "annual_project_reduction_pct": 7.633,
+        "cumulative_trade_reduction_pct": 14.754
+      },
+      {
+        "year": 4,
+        "baseline_illegal_trade_value_billion_usd": 30.4094,
+        "projected_illegal_trade_value_billion_usd": 23.2169,
+        "annual_project_reduction_pct": 10.439,
+        "cumulative_trade_reduction_pct": 23.652
+      },
+      {
+        "year": 5,
+        "baseline_illegal_trade_value_billion_usd": 31.4737,
+        "projected_illegal_trade_value_billion_usd": 20.8262,
+        "annual_project_reduction_pct": 13.331,
+        "cumulative_trade_reduction_pct": 33.83
+      }
+    ],
+    "method": "compound no-project growth path compared with deterministic yearly intervention reductions under implementation maturity"
+  }
+}

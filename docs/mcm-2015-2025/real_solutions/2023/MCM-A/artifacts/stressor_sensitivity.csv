@@ -1,0 +1,6 @@
+scenario,pollution_load,habitat_quality,species_count,guild_mix,interval_years,severity_multiplier,mean_biomass_last20,biomass_cv_last20,mean_persistence_ratio,drought_generation_biomass,viability_score,richness_alive_final
+baseline,0.1,0.92,6,balanced,7,1.0,0.74,0.0101,0.6667,0.7293,0.7705,4
+high pollution,0.32,0.92,6,balanced,7,1.0,0.5891,0.0113,0.6667,0.5795,0.6859,4
+habitat reduction,0.1,0.62,6,balanced,7,1.0,0.5002,0.0096,0.6667,0.4933,0.6369,4
+combined pollution and habitat loss,0.32,0.62,6,balanced,7,1.0,0.3972,0.0106,0.6667,0.391,0.5792,4
+restoration buffer,0.06,1.0,6,balanced,7,1.0,0.837,0.0101,0.6667,0.825,0.8245,4

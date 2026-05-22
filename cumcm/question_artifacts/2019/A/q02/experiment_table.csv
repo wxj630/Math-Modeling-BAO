@@ -1,0 +1,2 @@
+﻿method,cam_profile_rows,needle_profile_rows,best_omega_rad_per_ms,best_omega_rad_per_s,best_rms_error_mpa,best_mean_pressure_mpa,best_pressure_span_mpa
+fuel_pipe_cam_plunger_speed_search,628,90,0.027,27.0,1.607503,98.920198,5.207542

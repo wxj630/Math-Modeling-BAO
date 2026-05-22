@@ -1,0 +1,186 @@
+# 2024-B 问题 2 建模求解实验报告
+
+## 题目原文与任务拆解
+
+- 题目：2024年 CUMCM B题：生产过程中的决策
+- 问题：问题 2
+- 原问：已知两种零配件和成品次品率，请为企业生产过程的各个阶段作出决策： (1) 对零配件（零配件 1 和/或零配件 2）是否进行检测，如果对某种零配件不检测，这 种零配件将直接进入到装配环节；否则将检测出的不合格零配件丢弃； (2) 对装配好的每一件成品是否进行检测， 如果不检测， 装配后的成品直接进入到市场； 否则只有检测合格的成品进入到市场； (3) 对检测出的不合格成品是否进行拆解，如果不拆解，直接将不合格成品丢弃；否则 对拆解后的零配件，重复步骤(1)和步骤(2)； (4) 对用户购买的不合格品，企业将无条件予以调换，并产生一定的调换损失（如物流 成本、企业信誉等）。对退回的不合格品，重复步骤(3)。 请根据你们所做的决策， 对表 1 中的情形给出具体的决策方案，并给出决策的依据及相 应的指标结果。
+
+### 本问需要完成什么
+- 任务 1：(3)。 请根据你们所做的决策， 对表 1 中的情形给出具体的决策方案，并给出决策的依据及相 应的指标结果
+
+## 适配模型
+
+- 主模型：规划优化与资源配置（CH3：函数极值与规划模型）
+- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+
+### 候选模型与适配理由
+- 规划优化与资源配置（CH3）：决策、成本、方案；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 概率统计与抽样检验（CH9）：次品；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 机器学习与统计识别（CH9）：检测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+
+## 变量、约束与公式
+
+### 建模假设
+- 以题面给出的数值、约束和输出格式为第一优先级构造模型。
+- 若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。
+- 所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。
+
+### 变量定义
+- d_i: 第 i 个零配件是否检测
+- d_s: 半成品是否检测
+- d_f: 成品是否检测
+- r_s,r_f: 半成品/成品不合格后是否拆解
+- q: 进入市场产品为合格品的概率
+- E[profit]: 单件期望利润
+
+### 约束条件
+- 被检测出的不合格零配件、半成品或成品不得直接进入下一环节。
+- 未检测成品进入市场后，按不合格概率产生调换损失。
+- 拆解只在检测发现或市场退回的不合格品上发生，并计入拆解费用与回收价值。
+- 所有检测/拆解决策均为 0-1 变量，通过枚举求全局最优。
+
+### 模型公式 / 目标函数
+- `max E[profit(policy)]`
+- `q = product(component_good_probability)*(1-p_assembly)`
+- `E[profit] = E[sales] - E[purchase+test+assembly+replacement] + E[salvage-disassembly]`
+
+## Python 代码与运行方式
+
+- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2024/B/q02/solution.py
+- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2024/B/q02/solution.py`
+- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+
+### 求解步骤
+- 步骤 1：按题面表 1 或表 2 录入次品率、购买单价、检测成本、装配成本、售价、调换损失和拆解费用。
+- 步骤 2：枚举零配件检测、成品/半成品检测和拆解决策组合。
+- 步骤 3：对每个组合计算成品合格率、调换风险、回收净值和单件期望利润。
+- 步骤 4：按期望利润排序，输出每个情形的最优决策和完整候选表。
+
+## 实验结果与解释
+
+### 产物文件
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/B/q02/experiment_table.csv
+
+### 数据来源
+- 类型：problem_statement
+- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md
+- 读取规模：49 行 x 13 列
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
+
+### result.json 核心结果
+
+```json
+{
+  "method": "two_component_policy_enumeration",
+  "case_count": 6,
+  "policy_count_per_case": 16,
+  "best_policies": [
+    {
+      "inspect_part1": false,
+      "inspect_part2": false,
+      "inspect_product": false,
+      "disassemble_defective_product": true,
+      "market_good_probability": 0.729,
+      "defective_to_market_probability": 0.271,
+      "expected_profit": 28.50677,
+      "expected_revenue": 56.0,
+      "expected_direct_cost": 28.0,
+      "expected_replacement_loss": 1.626,
+      "expected_salvage_net": 2.13277,
+      "case": 1,
+      "rank": 1
+    },
+    {
+      "inspect_part1": false,
+      "inspect_part2": false,
+      "inspect_product": false,
+      "disassemble_defective_product": true,
+      "market_good_probability": 0.512,
+      "defective_to_market_probability": 0.488,
+      "expected_profit": 28.21472,
+      "expected_revenue": 56.0,
+      "expected_direct_cost": 28.0,
+      "expected_replacement_loss": 2.928,
+      "expected_salvage_net": 3.14272,
+      "case": 2,
+      "rank": 1
+    },
+    {
+      "inspect_part1": false,
+      "inspect_part2": false,
+      "inspect_product": false,
+      "disassemble_defective_product": true,
+      "market_good_probability": 0.729,
+      "defective_to_market_probability": 0.271,
+      "expected_profit": 22.00277,
+      "expected_revenue": 56.0,
+      "expected_direct_cost": 28.0,
+      "expected_replacement_loss": 8.13,
+      "expected_salvage_net": 2.13277,
+      "case": 3,
+      "rank": 1
+    },
+    {
+      "inspect_part1": true,
+      "inspect_part2": false,
+      "inspect_product": false,
+      "disassemble_defective_product": true,
+      "market_good_probability": 0.64,
+      "defective_to_market_probability": 0.36,
+      "expected_profit": 17.4556,
+      "expected_revenue": 56.0,
+      "expected_direct_cost": 30.25,
+      "expected_replacement_loss": 10.8,
+      "expected_salvage_net": 2.5056,
+      "case": 4,
+      "rank": 1
+    },
+    {
+      "inspect_part1": false,
+      "inspect_part2": false,
+      "inspect_product": false,
+      "disassemble_defective_product": true,
+      "market_good_probability": 0.648,
+      "defective_to_market_probability": 0.352,
+      "expected_profit": 26.8384,
+      "expected_revenue": 56.0,
+      "expected_direct_cost": 28.0,
+      "expected_replacement_loss": 3.52,
+      "expected_salvage_net": 2.3584,
+      "case": 5,
+      "rank": 1
+    },
+    {
+      "inspect_part1": false,
+      "inspect_part2": false,
+      "inspect_product": false,
+      "disassemble_defective_product": false,
+      "market_good_probability": 0.857375,
+      "defective_to_market_probability": 0.142625,
+      "expected_profit": 26.57375,
+      "expected_revenue": 56.0,
+      "expected_direct_cost": 28.0,
+      "expected_replacement_loss": 1.42625,
+      "expected_salvage_net": 0.0,
+      "case": 6,
+      "rank": 1
+    }
+  ],
+  "average_best_profit": 24.932002,
+  "note": "利润为按一次装配尝试计的期望值；检测会减少流入市场的缺陷风险，拆解按可回收零配件价值扣除拆解费用估计。"
+}
+```
+
+### 结果解释
+- 本问用 `two_component_policy_enumeration` 将题面任务转化为可计算实验，并把关键数值写入 JSON 和 CSV 产物。
+- CSV 表是后续写论文表格、画图或替换真实附件数据的主要入口；如果题面要求 result*.xlsx，可在该表基础上按模板导出。
+- 数据来源字段会标明本问使用官方附件、题面参数还是专用题面常量；后续冲论文质量时，可在现有 CSV/JSON 基础上补充图表、误差分析和敏感性分析。
+
+## 实验报告
+
+本问的核心是：已知两种零配件和成品次品率，请为企业生产过程的各个阶段作出决策： (1) 对零配件（零配件 1 和/或零配件 2）是否进行检测，如果对某种零配件不检测，这 种零配件将直接进入到装配环节；否则将检测出的不合格零配件丢弃； (2) 对装配好的每一件成品是否进行检测， 如果不检测， 装配后的成品直接进入到市场； 否则只有检测合格的成品进入到市场； (3) 对检测…
+
+建模时先将题目要求拆成 1 个任务，再选择 `规划优化与资源配置`。求解过程严格对应变量定义、约束条件和目标函数：先构造可计算数据表，再调用 Python 数值算法得到实验结果，最后把结果写入 `result.json` 与 `experiment_table.csv`。
+
+报告写作时建议按以下结构展开：问题重述、符号说明、模型假设、模型建立、算法实现、结果表格、误差/敏感性分析、模型评价。

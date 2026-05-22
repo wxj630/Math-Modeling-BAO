@@ -1,0 +1,113 @@
+{
+  "problem_id": "2024-B",
+  "title": "2024年 CUMCM B题：生产过程中的决策",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "假设问题 2 和问题 3 中零配件、 半成品和成品的次品率均是通过抽样检测方法 （例如，你在问题 1 中使用的方法）得到的，请重新完成问题 2 和问题 3。 附录 说明 (1) 半成品、成品的次品率是将正品零配件（或者半成品）装配后的产品次品率； (2) 不合格成品中的调换损失是指除调换次品之外的损失 （如： 物流成本、企业信誉等） 。 (3) 购买单价、 检测成本、 装配成本、 市场售价、 调换损失和拆解费用的单位均为元/件。",
+  "tasks": [
+    "假设问题 2 和问题 3 中零配件、 半成品和成品的次品率均是通过抽样检测方法 （例如，你在问题 1 中使用的方法）得到的，请重新完成问题 2 和问题 3。 附录 说明",
+    "(1) 半成品、成品的次品率是将正品零配件（或者半成品）装配后的产品次品率",
+    "(2) 不合格成品中的调换损失是指除调换次品之外的损失 （如： 物流成本、企业信誉等）",
+    "(3) 购买单价、 检测成本、 装配成本、 市场售价、 调换损失和拆解费用的单位均为元/件"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "抽样、次品"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "成本"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检测"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 1,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md",
+    "rows": 49,
+    "columns": 13,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "假设问题 2 和问题 3 中零配件、 半成品和成品的次品率均是通过抽样检测方法 （例如，你在问题 1 中使用的方法）得到的，请重新完成问题 2 和问题 3。 附录 说明",
+      "(1) 半成品、成品的次品率是将正品零配件（或者半成品）装配后的产品次品率",
+      "(2) 不合格成品中的调换损失是指除调换次品之外的损失 （如： 物流成本、企业信誉等）",
+      "(3) 购买单价、 检测成本、 装配成本、 市场售价、 调换损失和拆解费用的单位均为元/件"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 6.160197122253828,
+    "decision": [
+      0.0,
+      0.0,
+      2.315599,
+      0.0
+    ],
+    "resource_slack": [
+      163.453561,
+      0.0,
+      0.556562
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/B/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

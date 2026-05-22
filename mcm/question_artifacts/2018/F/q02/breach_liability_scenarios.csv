@@ -1,0 +1,4 @@
+breach_type,affected_records_million,severity,liability_index_million_usd,responsible_parties
+identity theft sale,2.0,0.92,77.28,"collector, broker, and negligent processor"
+health record ransom,1.5,0.96,60.48,"collector, broker, and negligent processor"
+social graph leak,8.0,0.58,194.88,"collector, broker, and negligent processor"

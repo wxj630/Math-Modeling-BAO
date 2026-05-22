@@ -1,0 +1,188 @@
+{
+  "problem_id": "2018-E",
+  "question": "q03",
+  "question_title": "Non-top-ten tipping point",
+  "statement": "Apply the model to a non-top-ten state and predict when climate change may push it to become more fragile.",
+  "methods": "Project Jordan's fragility under rising climate multipliers and identify a tipping year.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "official_requirements": {
+      "fragile_vulnerable_stable_classification": true,
+      "top10_fragile_state_case": true,
+      "non_top10_tipping_point": true,
+      "state_interventions": true,
+      "scale_transfer": true
+    },
+    "parameters": {
+      "states": [
+        {
+          "state": "Yemen",
+          "top10": true,
+          "governance": 0.18,
+          "social_fragmentation": 0.82,
+          "climate_exposure": 0.88,
+          "adaptive_capacity": 0.2
+        },
+        {
+          "state": "Syria",
+          "top10": true,
+          "governance": 0.2,
+          "social_fragmentation": 0.86,
+          "climate_exposure": 0.72,
+          "adaptive_capacity": 0.24
+        },
+        {
+          "state": "Somalia",
+          "top10": true,
+          "governance": 0.16,
+          "social_fragmentation": 0.78,
+          "climate_exposure": 0.91,
+          "adaptive_capacity": 0.18
+        },
+        {
+          "state": "Jordan",
+          "top10": false,
+          "governance": 0.58,
+          "social_fragmentation": 0.42,
+          "climate_exposure": 0.74,
+          "adaptive_capacity": 0.5
+        },
+        {
+          "state": "Bangladesh",
+          "top10": false,
+          "governance": 0.48,
+          "social_fragmentation": 0.38,
+          "climate_exposure": 0.82,
+          "adaptive_capacity": 0.46
+        }
+      ],
+      "climate_stressors": [
+        "drought",
+        "temperature_increase",
+        "decreasing_arable_land",
+        "migration_pressure",
+        "natural_disasters"
+      ]
+    }
+  },
+  "non_top10_tipping_point": {
+    "state": "Jordan",
+    "projected_tipping_year": 2050,
+    "projection_rows": [
+      {
+        "state": "Jordan",
+        "year": 2018,
+        "climate_multiplier": 1.0,
+        "fragility_score": 0.5208
+      },
+      {
+        "state": "Jordan",
+        "year": 2022,
+        "climate_multiplier": 1.035,
+        "fragility_score": 0.5281
+      },
+      {
+        "state": "Jordan",
+        "year": 2026,
+        "climate_multiplier": 1.07,
+        "fragility_score": 0.5353
+      },
+      {
+        "state": "Jordan",
+        "year": 2030,
+        "climate_multiplier": 1.105,
+        "fragility_score": 0.5426
+      },
+      {
+        "state": "Jordan",
+        "year": 2034,
+        "climate_multiplier": 1.14,
+        "fragility_score": 0.5498
+      },
+      {
+        "state": "Jordan",
+        "year": 2038,
+        "climate_multiplier": 1.175,
+        "fragility_score": 0.5571
+      },
+      {
+        "state": "Jordan",
+        "year": 2042,
+        "climate_multiplier": 1.21,
+        "fragility_score": 0.5643
+      },
+      {
+        "state": "Jordan",
+        "year": 2046,
+        "climate_multiplier": 1.245,
+        "fragility_score": 0.5716
+      },
+      {
+        "state": "Jordan",
+        "year": 2050,
+        "climate_multiplier": 1.28,
+        "fragility_score": 0.5788
+      }
+    ]
+  },
+  "fragility_model": {
+    "state_rows": [
+      {
+        "state": "Yemen",
+        "top10": true,
+        "governance": 0.18,
+        "social_fragmentation": 0.82,
+        "climate_exposure": 0.88,
+        "adaptive_capacity": 0.2,
+        "fragility_score": 0.834,
+        "classification": "fragile"
+      },
+      {
+        "state": "Syria",
+        "top10": true,
+        "governance": 0.2,
+        "social_fragmentation": 0.86,
+        "climate_exposure": 0.72,
+        "adaptive_capacity": 0.24,
+        "fragility_score": 0.7864,
+        "classification": "fragile"
+      },
+      {
+        "state": "Somalia",
+        "top10": true,
+        "governance": 0.16,
+        "social_fragmentation": 0.78,
+        "climate_exposure": 0.91,
+        "adaptive_capacity": 0.18,
+        "fragility_score": 0.8424,
+        "classification": "fragile"
+      },
+      {
+        "state": "Jordan",
+        "top10": false,
+        "governance": 0.58,
+        "social_fragmentation": 0.42,
+        "climate_exposure": 0.74,
+        "adaptive_capacity": 0.5,
+        "fragility_score": 0.5208,
+        "classification": "vulnerable"
+      },
+      {
+        "state": "Bangladesh",
+        "top10": false,
+        "governance": 0.48,
+        "social_fragmentation": 0.38,
+        "climate_exposure": 0.82,
+        "adaptive_capacity": 0.46,
+        "fragility_score": 0.5732,
+        "classification": "vulnerable"
+      }
+    ],
+    "thresholds": {
+      "fragile": 0.7,
+      "vulnerable": 0.52
+    }
+  }
+}

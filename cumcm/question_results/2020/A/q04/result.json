@@ -1,0 +1,137 @@
+{
+  "problem_id": "2020-A",
+  "title": "2020年 CUMCM A题：炉温曲线",
+  "question_index": 4,
+  "question_label": "问题4",
+  "statement": "在焊接过程中，除满足制程界限外，还希望以峰值温度为中心线的两侧超过217ºC的炉温曲线应尽量对称（参见图2）。请结合问题3，进一步给出最优炉温曲线，以及各温区设定的温度及传送带过炉速度，并给出相应的指标值。",
+  "tasks": [
+    "请结合问题3，进一步给出最优炉温曲线，以及各温区设定的温度及传送带过炉速度，并给出相应的指标值"
+  ],
+  "selected_model": {
+    "key": "ode",
+    "name": "回焊炉温度曲线机理模型与制程优化",
+    "chapter": "CH2",
+    "chapter_title": "微分方程与动力系统",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "温度、炉温"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最优"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "速度"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/result.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/附件.xlsx",
+    "rows": 709,
+    "columns": 2,
+    "note": "本题专用算法读取附件.xlsx的实测炉温曲线标定一阶热惯性模型，并按result.csv模板输出0.5秒采样的炉温曲线。"
+  },
+  "formulation": {
+    "model_type": "回焊炉温度曲线机理模型与制程优化",
+    "task_breakdown": [
+      "请结合问题3，进一步给出最优炉温曲线，以及各温区设定的温度及传送带过炉速度，并给出相应的指标值"
+    ],
+    "assumptions": [
+      "焊接区域中心温度满足一阶热惯性模型，向当前位置炉内空气温度指数逼近。",
+      "炉内空气温度沿传送带方向由各小温区设定温度、炉前/炉后25摄氏度和相邻温区线性过渡插值得到。",
+      "附件实测曲线对应题面给定实验设定：速度70 cm/min，温区175/195/235/255/25摄氏度。",
+      "制程界限采用常见回流焊约束：升温/降温斜率不超过3摄氏度/秒，150-190摄氏度时间60-120秒，超过217摄氏度时间40-90秒，峰值240-250摄氏度。",
+      "温区1-5同温、8-9同温，10-11保持25摄氏度；优化时各加热温区相对基准设定允许上下10摄氏度调整，传送带速度65-100 cm/min。"
+    ],
+    "decision_variables": [
+      "T(t): 焊接区域中心温度",
+      "A(x): 炉内空气温度场，随传送带位置x变化",
+      "v: 传送带速度，单位cm/min",
+      "tau: 焊接区域等效热时间常数",
+      "theta=(T1_5,T6,T7,T8_9): 四组可调温区设定温度",
+      "S(T): 制程约束指标集合",
+      "J_area: 超过217摄氏度至峰值之间的面积",
+      "J_sym: 峰值两侧超过217摄氏度曲线的不对称指标"
+    ],
+    "constraints": [
+      "dT/dt = (A(vt/60)-T)/tau, tau>0。",
+      "65 <= v <= 100。",
+      "165<=T1_5<=185, 185<=T6<=205, 225<=T7<=245, 245<=T8_9<=265。",
+      "max dT/dt <= 3 且 max -dT/dt <= 3。",
+      "60 <= time(150<=T<=190) <= 120。",
+      "40 <= time(T>217) <= 90。",
+      "240 <= peak(T) <= 250。"
+    ],
+    "objective_or_equations": [
+      "calibrate tau = argmin_tau mean_k (T_model(t_k;tau)-T_measured(t_k))^2",
+      "A(x)=linear_interpolation(zone_centers, zone_setpoints)",
+      "J_area = integral_{t_first217}^{t_peak} max(T(t)-217,0) dt",
+      "J_sym = mean_s |T(t_peak-s)-T(t_peak+s)| over both sides above 217",
+      "Q3: min J_area subject to process constraints",
+      "Q4: min J_area + 100*J_sym subject to process constraints"
+    ],
+    "solution_steps": [
+      "复用问题3的可行参数网格和炉温曲线。",
+      "计算峰值两侧超过217摄氏度曲线的对称性指标。",
+      "以面积和对称性联合指标选择最优方案。",
+      "输出最优参数、炉温曲线、面积和对称性指标。"
+    ],
+    "model_reference": {
+      "key": "ode",
+      "name": "回焊炉温度曲线机理模型与制程优化",
+      "chapter": "CH2",
+      "chapter_title": "微分方程与动力系统",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    }
+  },
+  "experiment_result": {
+    "method": "reflow_symmetric_area_process_optimization",
+    "calibrated_tau_s": 109.09428,
+    "calibrated_air_gain": 1.29237,
+    "settings_c": {
+      "zone1_5": 175.0,
+      "zone6": 185.0,
+      "zone7": 230.0,
+      "zone8_9": 265.0,
+      "zone10_11": 25.0
+    },
+    "speed_cm_min": 90.0,
+    "objective_value": 850.916207,
+    "constraint_violation": 0.0,
+    "process_metrics": {
+      "peak_temperature_c": 241.34565583335566,
+      "peak_time_s": 227.5,
+      "time_150_190_s": 79.0,
+      "time_above_217_s": 40.0,
+      "max_heating_slope_c_per_s": 1.772881180403946,
+      "max_cooling_slope_c_per_s": 1.9560907149202365,
+      "area_217_to_peak": 327.4013098725805,
+      "symmetry_metric_c": 5.235148973660854,
+      "process_feasible": true
+    },
+    "report": [
+      "本问在允许温区和速度范围内枚举候选方案，并逐一仿真炉温曲线。",
+      "候选方案先接受制程界限筛选；若存在可行解，问题3最小化217摄氏度至峰值的面积，问题4进一步加入对称性惩罚。",
+      "输出 `optimal_plan.csv` 和对应 `reflow_curve.csv`，可直接用于论文中的参数表和曲线图。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2020/A/q04/reflow_curve.csv",
+    "question_artifacts/2020/A/q04/process_metrics.csv",
+    "question_artifacts/2020/A/q04/optimal_plan.csv"
+  ]
+}

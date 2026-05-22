@@ -1,0 +1,2549 @@
+﻿component,kind,units,year,month,month_name,date,value
+Lake Superior,level_m,meters,2000,1,Jan,2000-01-01,183.16
+Lake Superior,level_m,meters,2000,2,Feb,2000-02-01,183.08
+Lake Superior,level_m,meters,2000,3,Mar,2000-03-01,183.08
+Lake Superior,level_m,meters,2000,4,Apr,2000-04-01,183.12
+Lake Superior,level_m,meters,2000,5,May,2000-05-01,183.16
+Lake Superior,level_m,meters,2000,6,Jun,2000-06-01,183.24
+Lake Superior,level_m,meters,2000,7,Jul,2000-07-01,183.33
+Lake Superior,level_m,meters,2000,8,Aug,2000-08-01,183.31
+Lake Superior,level_m,meters,2000,9,Sep,2000-09-01,183.27
+Lake Superior,level_m,meters,2000,10,Oct,2000-10-01,183.2
+Lake Superior,level_m,meters,2000,11,Nov,2000-11-01,183.15
+Lake Superior,level_m,meters,2000,12,Dec,2000-12-01,183.06
+Lake Superior,level_m,meters,2001,1,Jan,2001-01-01,182.98
+Lake Superior,level_m,meters,2001,2,Feb,2001-02-01,182.94
+Lake Superior,level_m,meters,2001,3,Mar,2001-03-01,182.91
+Lake Superior,level_m,meters,2001,4,Apr,2001-04-01,183.01
+Lake Superior,level_m,meters,2001,5,May,2001-05-01,183.24
+Lake Superior,level_m,meters,2001,6,Jun,2001-06-01,183.33
+Lake Superior,level_m,meters,2001,7,Jul,2001-07-01,183.36
+Lake Superior,level_m,meters,2001,8,Aug,2001-08-01,183.39
+Lake Superior,level_m,meters,2001,9,Sep,2001-09-01,183.37
+Lake Superior,level_m,meters,2001,10,Oct,2001-10-01,183.3
+Lake Superior,level_m,meters,2001,11,Nov,2001-11-01,183.29
+Lake Superior,level_m,meters,2001,12,Dec,2001-12-01,183.3
+Lake Superior,level_m,meters,2002,1,Jan,2002-01-01,183.22
+Lake Superior,level_m,meters,2002,2,Feb,2002-02-01,183.14
+Lake Superior,level_m,meters,2002,3,Mar,2002-03-01,183.11
+Lake Superior,level_m,meters,2002,4,Apr,2002-04-01,183.14
+Lake Superior,level_m,meters,2002,5,May,2002-05-01,183.26
+Lake Superior,level_m,meters,2002,6,Jun,2002-06-01,183.31
+Lake Superior,level_m,meters,2002,7,Jul,2002-07-01,183.36
+Lake Superior,level_m,meters,2002,8,Aug,2002-08-01,183.4
+Lake Superior,level_m,meters,2002,9,Sep,2002-09-01,183.42
+Lake Superior,level_m,meters,2002,10,Oct,2002-10-01,183.44
+Lake Superior,level_m,meters,2002,11,Nov,2002-11-01,183.36
+Lake Superior,level_m,meters,2002,12,Dec,2002-12-01,183.26
+Lake Superior,level_m,meters,2003,1,Jan,2003-01-01,183.16
+Lake Superior,level_m,meters,2003,2,Feb,2003-02-01,183.07
+Lake Superior,level_m,meters,2003,3,Mar,2003-03-01,183.03
+Lake Superior,level_m,meters,2003,4,Apr,2003-04-01,183.08
+Lake Superior,level_m,meters,2003,5,May,2003-05-01,183.18
+Lake Superior,level_m,meters,2003,6,Jun,2003-06-01,183.23
+Lake Superior,level_m,meters,2003,7,Jul,2003-07-01,183.26
+Lake Superior,level_m,meters,2003,8,Aug,2003-08-01,183.29
+Lake Superior,level_m,meters,2003,9,Sep,2003-09-01,183.27
+Lake Superior,level_m,meters,2003,10,Oct,2003-10-01,183.26
+Lake Superior,level_m,meters,2003,11,Nov,2003-11-01,183.23
+Lake Superior,level_m,meters,2003,12,Dec,2003-12-01,183.19
+Lake Superior,level_m,meters,2004,1,Jan,2004-01-01,183.14
+Lake Superior,level_m,meters,2004,2,Feb,2004-02-01,183.07
+Lake Superior,level_m,meters,2004,3,Mar,2004-03-01,183.07
+Lake Superior,level_m,meters,2004,4,Apr,2004-04-01,183.13
+Lake Superior,level_m,meters,2004,5,May,2004-05-01,183.23
+Lake Superior,level_m,meters,2004,6,Jun,2004-06-01,183.35
+Lake Superior,level_m,meters,2004,7,Jul,2004-07-01,183.4
+Lake Superior,level_m,meters,2004,8,Aug,2004-08-01,183.42
+Lake Superior,level_m,meters,2004,9,Sep,2004-09-01,183.46
+Lake Superior,level_m,meters,2004,10,Oct,2004-10-01,183.47
+Lake Superior,level_m,meters,2004,11,Nov,2004-11-01,183.46
+Lake Superior,level_m,meters,2004,12,Dec,2004-12-01,183.38
+Lake Superior,level_m,meters,2005,1,Jan,2005-01-01,183.32
+Lake Superior,level_m,meters,2005,2,Feb,2005-02-01,183.27
+Lake Superior,level_m,meters,2005,3,Mar,2005-03-01,183.22
+Lake Superior,level_m,meters,2005,4,Apr,2005-04-01,183.26
+Lake Superior,level_m,meters,2005,5,May,2005-05-01,183.31
+Lake Superior,level_m,meters,2005,6,Jun,2005-06-01,183.39
+Lake Superior,level_m,meters,2005,7,Jul,2005-07-01,183.42
+Lake Superior,level_m,meters,2005,8,Aug,2005-08-01,183.38
+Lake Superior,level_m,meters,2005,9,Sep,2005-09-01,183.35
+Lake Superior,level_m,meters,2005,10,Oct,2005-10-01,183.38
+Lake Superior,level_m,meters,2005,11,Nov,2005-11-01,183.35
+Lake Superior,level_m,meters,2005,12,Dec,2005-12-01,183.3
+Lake Superior,level_m,meters,2006,1,Jan,2006-01-01,183.24
+Lake Superior,level_m,meters,2006,2,Feb,2006-02-01,183.18
+Lake Superior,level_m,meters,2006,3,Mar,2006-03-01,183.12
+Lake Superior,level_m,meters,2006,4,Apr,2006-04-01,183.16
+Lake Superior,level_m,meters,2006,5,May,2006-05-01,183.24
+Lake Superior,level_m,meters,2006,6,Jun,2006-06-01,183.3
+Lake Superior,level_m,meters,2006,7,Jul,2006-07-01,183.31
+Lake Superior,level_m,meters,2006,8,Aug,2006-08-01,183.3
+Lake Superior,level_m,meters,2006,9,Sep,2006-09-01,183.2
+Lake Superior,level_m,meters,2006,10,Oct,2006-10-01,183.13
+Lake Superior,level_m,meters,2006,11,Nov,2006-11-01,183.04
+Lake Superior,level_m,meters,2006,12,Dec,2006-12-01,182.98
+Lake Superior,level_m,meters,2007,1,Jan,2007-01-01,182.92
+Lake Superior,level_m,meters,2007,2,Feb,2007-02-01,182.83
+Lake Superior,level_m,meters,2007,3,Mar,2007-03-01,182.79
+Lake Superior,level_m,meters,2007,4,Apr,2007-04-01,182.85
+Lake Superior,level_m,meters,2007,5,May,2007-05-01,182.87
+Lake Superior,level_m,meters,2007,6,Jun,2007-06-01,182.94
+Lake Superior,level_m,meters,2007,7,Jul,2007-07-01,183.0
+Lake Superior,level_m,meters,2007,8,Aug,2007-08-01,183.01
+Lake Superior,level_m,meters,2007,9,Sep,2007-09-01,183.02
+Lake Superior,level_m,meters,2007,10,Oct,2007-10-01,183.18
+Lake Superior,level_m,meters,2007,11,Nov,2007-11-01,183.18
+Lake Superior,level_m,meters,2007,12,Dec,2007-12-01,183.11
+Lake Superior,level_m,meters,2008,1,Jan,2008-01-01,183.08
+Lake Superior,level_m,meters,2008,2,Feb,2008-02-01,183.03
+Lake Superior,level_m,meters,2008,3,Mar,2008-03-01,182.97
+Lake Superior,level_m,meters,2008,4,Apr,2008-04-01,183.01
+Lake Superior,level_m,meters,2008,5,May,2008-05-01,183.18
+Lake Superior,level_m,meters,2008,6,Jun,2008-06-01,183.29
+Lake Superior,level_m,meters,2008,7,Jul,2008-07-01,183.41
+Lake Superior,level_m,meters,2008,8,Aug,2008-08-01,183.42
+Lake Superior,level_m,meters,2008,9,Sep,2008-09-01,183.37
+Lake Superior,level_m,meters,2008,10,Oct,2008-10-01,183.32
+Lake Superior,level_m,meters,2008,11,Nov,2008-11-01,183.27
+Lake Superior,level_m,meters,2008,12,Dec,2008-12-01,183.19
+Lake Superior,level_m,meters,2009,1,Jan,2009-01-01,183.14
+Lake Superior,level_m,meters,2009,2,Feb,2009-02-01,183.1
+Lake Superior,level_m,meters,2009,3,Mar,2009-03-01,183.09
+Lake Superior,level_m,meters,2009,4,Apr,2009-04-01,183.12
+Lake Superior,level_m,meters,2009,5,May,2009-05-01,183.24
+Lake Superior,level_m,meters,2009,6,Jun,2009-06-01,183.3
+Lake Superior,level_m,meters,2009,7,Jul,2009-07-01,183.34
+Lake Superior,level_m,meters,2009,8,Aug,2009-08-01,183.39
+Lake Superior,level_m,meters,2009,9,Sep,2009-09-01,183.42
+Lake Superior,level_m,meters,2009,10,Oct,2009-10-01,183.36
+Lake Superior,level_m,meters,2009,11,Nov,2009-11-01,183.35
+Lake Superior,level_m,meters,2009,12,Dec,2009-12-01,183.3
+Lake Superior,level_m,meters,2010,1,Jan,2010-01-01,183.21
+Lake Superior,level_m,meters,2010,2,Feb,2010-02-01,183.14
+Lake Superior,level_m,meters,2010,3,Mar,2010-03-01,183.09
+Lake Superior,level_m,meters,2010,4,Apr,2010-04-01,183.08
+Lake Superior,level_m,meters,2010,5,May,2010-05-01,183.08
+Lake Superior,level_m,meters,2010,6,Jun,2010-06-01,183.13
+Lake Superior,level_m,meters,2010,7,Jul,2010-07-01,183.19
+Lake Superior,level_m,meters,2010,8,Aug,2010-08-01,183.2
+Lake Superior,level_m,meters,2010,9,Sep,2010-09-01,183.22
+Lake Superior,level_m,meters,2010,10,Oct,2010-10-01,183.19
+Lake Superior,level_m,meters,2010,11,Nov,2010-11-01,183.14
+Lake Superior,level_m,meters,2010,12,Dec,2010-12-01,183.07
+Lake Superior,level_m,meters,2011,1,Jan,2011-01-01,183.0
+Lake Superior,level_m,meters,2011,2,Feb,2011-02-01,182.93
+Lake Superior,level_m,meters,2011,3,Mar,2011-03-01,182.87
+Lake Superior,level_m,meters,2011,4,Apr,2011-04-01,182.91
+Lake Superior,level_m,meters,2011,5,May,2011-05-01,183.04
+Lake Superior,level_m,meters,2011,6,Jun,2011-06-01,183.15
+Lake Superior,level_m,meters,2011,7,Jul,2011-07-01,183.25
+Lake Superior,level_m,meters,2011,8,Aug,2011-08-01,183.28
+Lake Superior,level_m,meters,2011,9,Sep,2011-09-01,183.23
+Lake Superior,level_m,meters,2011,10,Oct,2011-10-01,183.21
+Lake Superior,level_m,meters,2011,11,Nov,2011-11-01,183.16
+Lake Superior,level_m,meters,2011,12,Dec,2011-12-01,183.09
+Lake Superior,level_m,meters,2012,1,Jan,2012-01-01,183.01
+Lake Superior,level_m,meters,2012,2,Feb,2012-02-01,182.94
+Lake Superior,level_m,meters,2012,3,Mar,2012-03-01,182.93
+Lake Superior,level_m,meters,2012,4,Apr,2012-04-01,183.0
+Lake Superior,level_m,meters,2012,5,May,2012-05-01,183.06
+Lake Superior,level_m,meters,2012,6,Jun,2012-06-01,183.2
+Lake Superior,level_m,meters,2012,7,Jul,2012-07-01,183.3
+Lake Superior,level_m,meters,2012,8,Aug,2012-08-01,183.27
+Lake Superior,level_m,meters,2012,9,Sep,2012-09-01,183.2
+Lake Superior,level_m,meters,2012,10,Oct,2012-10-01,183.12
+Lake Superior,level_m,meters,2012,11,Nov,2012-11-01,183.1
+Lake Superior,level_m,meters,2012,12,Dec,2012-12-01,183.05
+Lake Superior,level_m,meters,2013,1,Jan,2013-01-01,182.98
+Lake Superior,level_m,meters,2013,2,Feb,2013-02-01,182.94
+Lake Superior,level_m,meters,2013,3,Mar,2013-03-01,182.9
+Lake Superior,level_m,meters,2013,4,Apr,2013-04-01,182.92
+Lake Superior,level_m,meters,2013,5,May,2013-05-01,183.11
+Lake Superior,level_m,meters,2013,6,Jun,2013-06-01,183.26
+Lake Superior,level_m,meters,2013,7,Jul,2013-07-01,183.37
+Lake Superior,level_m,meters,2013,8,Aug,2013-08-01,183.44
+Lake Superior,level_m,meters,2013,9,Sep,2013-09-01,183.48
+Lake Superior,level_m,meters,2013,10,Oct,2013-10-01,183.45
+Lake Superior,level_m,meters,2013,11,Nov,2013-11-01,183.4
+Lake Superior,level_m,meters,2013,12,Dec,2013-12-01,183.35
+Lake Superior,level_m,meters,2014,1,Jan,2014-01-01,183.29
+Lake Superior,level_m,meters,2014,2,Feb,2014-02-01,183.24
+Lake Superior,level_m,meters,2014,3,Mar,2014-03-01,183.23
+Lake Superior,level_m,meters,2014,4,Apr,2014-04-01,183.27
+Lake Superior,level_m,meters,2014,5,May,2014-05-01,183.47
+Lake Superior,level_m,meters,2014,6,Jun,2014-06-01,183.6
+Lake Superior,level_m,meters,2014,7,Jul,2014-07-01,183.66
+Lake Superior,level_m,meters,2014,8,Aug,2014-08-01,183.67
+Lake Superior,level_m,meters,2014,9,Sep,2014-09-01,183.7
+Lake Superior,level_m,meters,2014,10,Oct,2014-10-01,183.71
+Lake Superior,level_m,meters,2014,11,Nov,2014-11-01,183.67
+Lake Superior,level_m,meters,2014,12,Dec,2014-12-01,183.6
+Lake Superior,level_m,meters,2015,1,Jan,2015-01-01,183.54
+Lake Superior,level_m,meters,2015,2,Feb,2015-02-01,183.47
+Lake Superior,level_m,meters,2015,3,Mar,2015-03-01,183.42
+Lake Superior,level_m,meters,2015,4,Apr,2015-04-01,183.44
+Lake Superior,level_m,meters,2015,5,May,2015-05-01,183.53
+Lake Superior,level_m,meters,2015,6,Jun,2015-06-01,183.63
+Lake Superior,level_m,meters,2015,7,Jul,2015-07-01,183.68
+Lake Superior,level_m,meters,2015,8,Aug,2015-08-01,183.68
+Lake Superior,level_m,meters,2015,9,Sep,2015-09-01,183.69
+Lake Superior,level_m,meters,2015,10,Oct,2015-10-01,183.6
+Lake Superior,level_m,meters,2015,11,Nov,2015-11-01,183.58
+Lake Superior,level_m,meters,2015,12,Dec,2015-12-01,183.59
+Lake Superior,level_m,meters,2016,1,Jan,2016-01-01,183.55
+Lake Superior,level_m,meters,2016,2,Feb,2016-02-01,183.49
+Lake Superior,level_m,meters,2016,3,Mar,2016-03-01,183.46
+Lake Superior,level_m,meters,2016,4,Apr,2016-04-01,183.48
+Lake Superior,level_m,meters,2016,5,May,2016-05-01,183.5
+Lake Superior,level_m,meters,2016,6,Jun,2016-06-01,183.61
+Lake Superior,level_m,meters,2016,7,Jul,2016-07-01,183.69
+Lake Superior,level_m,meters,2016,8,Aug,2016-08-01,183.7
+Lake Superior,level_m,meters,2016,9,Sep,2016-09-01,183.7
+Lake Superior,level_m,meters,2016,10,Oct,2016-10-01,183.68
+Lake Superior,level_m,meters,2016,11,Nov,2016-11-01,183.59
+Lake Superior,level_m,meters,2016,12,Dec,2016-12-01,183.54
+Lake Superior,level_m,meters,2017,1,Jan,2017-01-01,183.47
+Lake Superior,level_m,meters,2017,2,Feb,2017-02-01,183.43
+Lake Superior,level_m,meters,2017,3,Mar,2017-03-01,183.39
+Lake Superior,level_m,meters,2017,4,Apr,2017-04-01,183.41
+Lake Superior,level_m,meters,2017,5,May,2017-05-01,183.56
+Lake Superior,level_m,meters,2017,6,Jun,2017-06-01,183.67
+Lake Superior,level_m,meters,2017,7,Jul,2017-07-01,183.75
+Lake Superior,level_m,meters,2017,8,Aug,2017-08-01,183.78
+Lake Superior,level_m,meters,2017,9,Sep,2017-09-01,183.8
+Lake Superior,level_m,meters,2017,10,Oct,2017-10-01,183.81
+Lake Superior,level_m,meters,2017,11,Nov,2017-11-01,183.78
+Lake Superior,level_m,meters,2017,12,Dec,2017-12-01,183.72
+Lake Superior,level_m,meters,2018,1,Jan,2018-01-01,183.65
+Lake Superior,level_m,meters,2018,2,Feb,2018-02-01,183.58
+Lake Superior,level_m,meters,2018,3,Mar,2018-03-01,183.54
+Lake Superior,level_m,meters,2018,4,Apr,2018-04-01,183.47
+Lake Superior,level_m,meters,2018,5,May,2018-05-01,183.5
+Lake Superior,level_m,meters,2018,6,Jun,2018-06-01,183.56
+Lake Superior,level_m,meters,2018,7,Jul,2018-07-01,183.65
+Lake Superior,level_m,meters,2018,8,Aug,2018-08-01,183.65
+Lake Superior,level_m,meters,2018,9,Sep,2018-09-01,183.7
+Lake Superior,level_m,meters,2018,10,Oct,2018-10-01,183.77
+Lake Superior,level_m,meters,2018,11,Nov,2018-11-01,183.76
+Lake Superior,level_m,meters,2018,12,Dec,2018-12-01,183.67
+Lake Superior,level_m,meters,2019,1,Jan,2019-01-01,183.62
+Lake Superior,level_m,meters,2019,2,Feb,2019-02-01,183.58
+Lake Superior,level_m,meters,2019,3,Mar,2019-03-01,183.57
+Lake Superior,level_m,meters,2019,4,Apr,2019-04-01,183.61
+Lake Superior,level_m,meters,2019,5,May,2019-05-01,183.77
+Lake Superior,level_m,meters,2019,6,Jun,2019-06-01,183.84
+Lake Superior,level_m,meters,2019,7,Jul,2019-07-01,183.86
+Lake Superior,level_m,meters,2019,8,Aug,2019-08-01,183.86
+Lake Superior,level_m,meters,2019,9,Sep,2019-09-01,183.86
+Lake Superior,level_m,meters,2019,10,Oct,2019-10-01,183.88
+Lake Superior,level_m,meters,2019,11,Nov,2019-11-01,183.81
+Lake Superior,level_m,meters,2019,12,Dec,2019-12-01,183.74
+Lake Superior,level_m,meters,2020,1,Jan,2020-01-01,183.71
+Lake Superior,level_m,meters,2020,2,Feb,2020-02-01,183.64
+Lake Superior,level_m,meters,2020,3,Mar,2020-03-01,183.57
+Lake Superior,level_m,meters,2020,4,Apr,2020-04-01,183.62
+Lake Superior,level_m,meters,2020,5,May,2020-05-01,183.64
+Lake Superior,level_m,meters,2020,6,Jun,2020-06-01,183.7
+Lake Superior,level_m,meters,2020,7,Jul,2020-07-01,183.76
+Lake Superior,level_m,meters,2020,8,Aug,2020-08-01,183.81
+Lake Superior,level_m,meters,2020,9,Sep,2020-09-01,183.79
+Lake Superior,level_m,meters,2020,10,Oct,2020-10-01,183.76
+Lake Superior,level_m,meters,2020,11,Nov,2020-11-01,183.71
+Lake Superior,level_m,meters,2020,12,Dec,2020-12-01,183.63
+Lake Superior,level_m,meters,2021,1,Jan,2021-01-01,183.54
+Lake Superior,level_m,meters,2021,2,Feb,2021-02-01,183.46
+Lake Superior,level_m,meters,2021,3,Mar,2021-03-01,183.42
+Lake Superior,level_m,meters,2021,4,Apr,2021-04-01,183.48
+Lake Superior,level_m,meters,2021,5,May,2021-05-01,183.51
+Lake Superior,level_m,meters,2021,6,Jun,2021-06-01,183.55
+Lake Superior,level_m,meters,2021,7,Jul,2021-07-01,183.56
+Lake Superior,level_m,meters,2021,8,Aug,2021-08-01,183.54
+Lake Superior,level_m,meters,2021,9,Sep,2021-09-01,183.51
+Lake Superior,level_m,meters,2021,10,Oct,2021-10-01,183.48
+Lake Superior,level_m,meters,2021,11,Nov,2021-11-01,183.38
+Lake Superior,level_m,meters,2021,12,Dec,2021-12-01,183.31
+Lake Superior,level_m,meters,2022,1,Jan,2022-01-01,183.24
+Lake Superior,level_m,meters,2022,2,Feb,2022-02-01,183.17
+Lake Superior,level_m,meters,2022,3,Mar,2022-03-01,183.15
+Lake Superior,level_m,meters,2022,4,Apr,2022-04-01,183.24
+Lake Superior,level_m,meters,2022,5,May,2022-05-01,183.44
+Lake Superior,level_m,meters,2022,6,Jun,2022-06-01,183.57
+Lake Superior,level_m,meters,2022,7,Jul,2022-07-01,183.62
+Lake Superior,level_m,meters,2022,8,Aug,2022-08-01,183.65
+Lake Superior,level_m,meters,2022,9,Sep,2022-09-01,183.65
+Lake Superior,level_m,meters,2022,10,Oct,2022-10-01,183.6
+Lake Superior,level_m,meters,2022,11,Nov,2022-11-01,183.6
+Lake Superior,level_m,meters,2022,12,Dec,2022-12-01,183.57
+St. Mary's River,flow_cms,cubic meters per second,2008,12,Dec,2008-12-01,1830.9671248658703
+St. Mary's River,flow_cms,cubic meters per second,2009,1,Jan,2009-01-01,1567.3373084028135
+St. Mary's River,flow_cms,cubic meters per second,2009,2,Feb,2009-02-01,1584.8937516044348
+St. Mary's River,flow_cms,cubic meters per second,2009,3,Mar,2009-03-01,1657.9512087982787
+St. Mary's River,flow_cms,cubic meters per second,2009,4,Apr,2009-04-01,1668.4284410315045
+St. Mary's River,flow_cms,cubic meters per second,2009,5,May,2009-05-01,1916.4839933640906
+St. Mary's River,flow_cms,cubic meters per second,2009,6,Jun,2009-06-01,2147.266270933791
+St. Mary's River,flow_cms,cubic meters per second,2009,7,Jul,2009-07-01,2020.4068103801399
+St. Mary's River,flow_cms,cubic meters per second,2009,8,Aug,2009-08-01,1870.3275378501505
+St. Mary's River,flow_cms,cubic meters per second,2009,9,Sep,2009-09-01,2163.1237035029976
+St. Mary's River,flow_cms,cubic meters per second,2009,10,Oct,2009-10-01,1775.4661108736477
+St. Mary's River,flow_cms,cubic meters per second,2009,11,Nov,2009-11-01,1731.8581713083302
+St. Mary's River,flow_cms,cubic meters per second,2009,12,Dec,2009-12-01,1775.4661108736477
+St. Mary's River,flow_cms,cubic meters per second,2010,1,Jan,2010-01-01,1999.4523459136885
+St. Mary's River,flow_cms,cubic meters per second,2010,2,Feb,2010-02-01,1750.5472882648949
+St. Mary's River,flow_cms,cubic meters per second,2010,3,Mar,2010-03-01,1546.949180813834
+St. Mary's River,flow_cms,cubic meters per second,2010,4,Apr,2010-04-01,1653.9868506559772
+St. Mary's River,flow_cms,cubic meters per second,2010,5,May,2010-05-01,1503.341241248516
+St. Mary's River,flow_cms,cubic meters per second,2010,6,Jun,2010-06-01,1544.967001742683
+St. Mary's River,flow_cms,cubic meters per second,2010,7,Jul,2010-07-01,1554.0283917822294
+St. Mary's River,flow_cms,cubic meters per second,2010,8,Aug,2010-08-01,1532.5075904383066
+St. Mary's River,flow_cms,cubic meters per second,2010,9,Sep,2010-09-01,1515.234315675421
+St. Mary's River,flow_cms,cubic meters per second,2010,10,Oct,2010-10-01,1485.7847980468948
+St. Mary's River,flow_cms,cubic meters per second,2010,11,Nov,2010-11-01,1486.0679664856304
+St. Mary's River,flow_cms,cubic meters per second,2010,12,Dec,2010-12-01,1499.9432199836863
+St. Mary's River,flow_cms,cubic meters per second,2011,1,Jan,2011-01-01,1523.1630319600242
+St. Mary's River,flow_cms,cubic meters per second,2011,2,Feb,2011-02-01,1430.2837840546722
+St. Mary's River,flow_cms,cubic meters per second,2011,3,Mar,2011-03-01,1261.5153945681182
+St. Mary's River,flow_cms,cubic meters per second,2011,4,Apr,2011-04-01,1337.1213677105845
+St. Mary's River,flow_cms,cubic meters per second,2011,5,May,2011-05-01,1466.2461757741225
+St. Mary's River,flow_cms,cubic meters per second,2011,6,Jun,2011-06-01,1563.6561186992476
+St. Mary's River,flow_cms,cubic meters per second,2011,7,Jul,2011-07-01,1705.8066749446339
+St. Mary's River,flow_cms,cubic meters per second,2011,8,Aug,2011-08-01,1713.4522227905013
+St. Mary's River,flow_cms,cubic meters per second,2011,9,Sep,2011-09-01,1565.3551293316627
+St. Mary's River,flow_cms,cubic meters per second,2011,10,Oct,2011-10-01,1496.828367157592
+St. Mary's River,flow_cms,cubic meters per second,2011,11,Nov,2011-11-01,1533.357095754514
+St. Mary's River,flow_cms,cubic meters per second,2011,12,Dec,2011-12-01,1521.747189766345
+St. Mary's River,flow_cms,cubic meters per second,2012,1,Jan,2012-01-01,1473.3253867425183
+St. Mary's River,flow_cms,cubic meters per second,2012,2,Feb,2012-02-01,1467.09568109033
+St. Mary's River,flow_cms,cubic meters per second,2012,3,Mar,2012-03-01,1324.661956406208
+St. Mary's River,flow_cms,cubic meters per second,2012,4,Apr,2012-04-01,1469.6441970389524
+St. Mary's River,flow_cms,cubic meters per second,2012,5,May,2012-05-01,1476.4402395686125
+St. Mary's River,flow_cms,cubic meters per second,2012,6,Jun,2012-06-01,1577.5313721973032
+St. Mary's River,flow_cms,cubic meters per second,2012,7,Jul,2012-07-01,2042.7771170402702
+St. Mary's River,flow_cms,cubic meters per second,2012,8,Aug,2012-08-01,2107.622689510775
+St. Mary's River,flow_cms,cubic meters per second,2012,9,Sep,2012-09-01,1768.9532367827237
+St. Mary's River,flow_cms,cubic meters per second,2012,10,Oct,2012-10-01,1422.0718993313333
+St. Mary's River,flow_cms,cubic meters per second,2012,11,Nov,2012-11-01,1540.1531382841738
+St. Mary's River,flow_cms,cubic meters per second,2012,12,Dec,2012-12-01,1517.2164947465717
+St. Mary's River,flow_cms,cubic meters per second,2013,1,Jan,2013-01-01,1495.6956934026487
+St. Mary's River,flow_cms,cubic meters per second,2013,2,Feb,2013-02-01,1455.2026066634253
+St. Mary's River,flow_cms,cubic meters per second,2013,3,Mar,2013-03-01,1505.8897571971386
+St. Mary's River,flow_cms,cubic meters per second,2013,4,Apr,2013-04-01,1502.208567493573
+St. Mary's River,flow_cms,cubic meters per second,2013,5,May,2013-05-01,1572.4343403000585
+St. Mary's River,flow_cms,cubic meters per second,2013,6,Jun,2013-06-01,2170.4860829101294
+St. Mary's River,flow_cms,cubic meters per second,2013,7,Jul,2013-07-01,2332.7415983057595
+St. Mary's River,flow_cms,cubic meters per second,2013,8,Aug,2013-08-01,2663.199166310472
+St. Mary's River,flow_cms,cubic meters per second,2013,9,Sep,2013-09-01,2659.2348081681703
+St. Mary's River,flow_cms,cubic meters per second,2013,10,Oct,2013-10-01,2650.1734181286233
+St. Mary's River,flow_cms,cubic meters per second,2013,11,Nov,2013-11-01,2222.305907198786
+St. Mary's River,flow_cms,cubic meters per second,2013,12,Dec,2013-12-01,2158.8761769219605
+St. Mary's River,flow_cms,cubic meters per second,2014,1,Jan,2014-01-01,2034.2820638781955
+St. Mary's River,flow_cms,cubic meters per second,2014,2,Feb,2014-02-01,1960.0919329294084
+St. Mary's River,flow_cms,cubic meters per second,2014,3,Mar,2014-03-01,1967.45431233654
+St. Mary's River,flow_cms,cubic meters per second,2014,4,Apr,2014-04-01,2071.093960913853
+St. Mary's River,flow_cms,cubic meters per second,2014,5,May,2014-05-01,2297.911880341252
+St. Mary's River,flow_cms,cubic meters per second,2014,6,Jun,2014-06-01,2612.5120157767583
+St. Mary's River,flow_cms,cubic meters per second,2014,7,Jul,2014-07-01,3055.387453959595
+St. Mary's River,flow_cms,cubic meters per second,2014,8,Aug,2014-08-01,3069.5458758963864
+St. Mary's River,flow_cms,cubic meters per second,2014,9,Sep,2014-09-01,2780.147731508369
+St. Mary's River,flow_cms,cubic meters per second,2014,10,Oct,2014-10-01,2908.1398658169637
+St. Mary's River,flow_cms,cubic meters per second,2014,11,Nov,2014-11-01,2860.0012312318727
+St. Mary's River,flow_cms,cubic meters per second,2014,12,Dec,2014-12-01,2468.3792804602213
+St. Mary's River,flow_cms,cubic meters per second,2015,1,Jan,2015-01-01,2263.3653308154812
+St. Mary's River,flow_cms,cubic meters per second,2015,2,Feb,2015-02-01,2192.8563895702596
+St. Mary's River,flow_cms,cubic meters per second,2015,3,Mar,2015-03-01,2193.1395580089957
+St. Mary's River,flow_cms,cubic meters per second,2015,4,Apr,2015-04-01,1985.8602608543688
+St. Mary's River,flow_cms,cubic meters per second,2015,5,May,2015-05-01,2395.0386548276415
+St. Mary's River,flow_cms,cubic meters per second,2015,6,Jun,2015-06-01,2629.218953662172
+St. Mary's River,flow_cms,cubic meters per second,2015,7,Jul,2015-07-01,2947.78344723998
+St. Mary's River,flow_cms,cubic meters per second,2015,8,Aug,2015-08-01,2970.436922338846
+St. Mary's River,flow_cms,cubic meters per second,2015,9,Sep,2015-09-01,2671.127882595075
+St. Mary's River,flow_cms,cubic meters per second,2015,10,Oct,2015-10-01,2687.5516520417527
+St. Mary's River,flow_cms,cubic meters per second,2015,11,Nov,2015-11-01,2236.747497574313
+St. Mary's River,flow_cms,cubic meters per second,2015,12,Dec,2015-12-01,2360.2089368631346
+St. Mary's River,flow_cms,cubic meters per second,2016,1,Jan,2016-01-01,2491.3159239978236
+St. Mary's River,flow_cms,cubic meters per second,2016,2,Feb,2016-02-01,2459.8842272981465
+St. Mary's River,flow_cms,cubic meters per second,2016,3,Mar,2016-03-01,2455.919869155845
+St. Mary's River,flow_cms,cubic meters per second,2016,4,Apr,2016-04-01,2165.955387890356
+St. Mary's River,flow_cms,cubic meters per second,2016,5,May,2016-05-01,2414.577277100414
+St. Mary's River,flow_cms,cubic meters per second,2016,6,Jun,2016-06-01,2486.7852289780503
+St. Mary's River,flow_cms,cubic meters per second,2016,7,Jul,2016-07-01,2953.446816014696
+St. Mary's River,flow_cms,cubic meters per second,2016,8,Aug,2016-08-01,3035.565663248087
+St. Mary's River,flow_cms,cubic meters per second,2016,9,Sep,2016-09-01,2525.012968207387
+St. Mary's River,flow_cms,cubic meters per second,2016,10,Oct,2016-10-01,2728.3279072197124
+St. Mary's River,flow_cms,cubic meters per second,2016,11,Nov,2016-11-01,2586.743687851798
+St. Mary's River,flow_cms,cubic meters per second,2016,12,Dec,2016-12-01,2465.8307645115988
+St. Mary's River,flow_cms,cubic meters per second,2017,1,Jan,2017-01-01,2256.0029514083494
+St. Mary's River,flow_cms,cubic meters per second,2017,2,Feb,2017-02-01,2431.001046547092
+St. Mary's River,flow_cms,cubic meters per second,2017,3,Mar,2017-03-01,2436.6644153218085
+St. Mary's River,flow_cms,cubic meters per second,2017,4,Apr,2017-04-01,2267.3296889577828
+St. Mary's River,flow_cms,cubic meters per second,2017,5,May,2017-05-01,1998.0365037200093
+St. Mary's River,flow_cms,cubic meters per second,2017,6,Jun,2017-06-01,2399.5693498474147
+St. Mary's River,flow_cms,cubic meters per second,2017,7,Jul,2017-07-01,3157.3280919044932
+St. Mary's River,flow_cms,cubic meters per second,2017,8,Aug,2017-08-01,3191.308304552793
+St. Mary's River,flow_cms,cubic meters per second,2017,9,Sep,2017-09-01,2681.6051148283004
+St. Mary's River,flow_cms,cubic meters per second,2017,10,Oct,2017-10-01,2961.9418691767714
+St. Mary's River,flow_cms,cubic meters per second,2017,11,Nov,2017-11-01,2930.79334091583
+St. Mary's River,flow_cms,cubic meters per second,2017,12,Dec,2017-12-01,2248.9237404399537
+St. Mary's River,flow_cms,cubic meters per second,2018,1,Jan,2018-01-01,2066.56326589408
+St. Mary's River,flow_cms,cubic meters per second,2018,2,Feb,2018-02-01,2097.7117941550214
+St. Mary's River,flow_cms,cubic meters per second,2018,3,Mar,2018-03-01,2507.456525005766
+St. Mary's River,flow_cms,cubic meters per second,2018,4,Apr,2018-04-01,2339.8208092741547
+St. Mary's River,flow_cms,cubic meters per second,2018,5,May,2018-05-01,2368.1376531477376
+St. Mary's River,flow_cms,cubic meters per second,2018,6,Jun,2018-06-01,2564.939718069139
+St. Mary's River,flow_cms,cubic meters per second,2018,7,Jul,2018-07-01,2570.3199184051196
+St. Mary's River,flow_cms,cubic meters per second,2018,8,Aug,2018-08-01,2715.3021590378644
+St. Mary's River,flow_cms,cubic meters per second,2018,9,Sep,2018-09-01,2593.8228988201936
+St. Mary's River,flow_cms,cubic meters per second,2018,10,Oct,2018-10-01,2652.1555971997745
+St. Mary's River,flow_cms,cubic meters per second,2018,11,Nov,2018-11-01,2745.601181982598
+St. Mary's River,flow_cms,cubic meters per second,2018,12,Dec,2018-12-01,2205.882137752108
+St. Mary's River,flow_cms,cubic meters per second,2019,1,Jan,2019-01-01,2362.757452811757
+St. Mary's River,flow_cms,cubic meters per second,2019,2,Feb,2019-02-01,2534.923863563141
+St. Mary's River,flow_cms,cubic meters per second,2019,3,Mar,2019-03-01,2500.943650914842
+St. Mary's River,flow_cms,cubic meters per second,2019,4,Apr,2019-04-01,2410.0465820806407
+St. Mary's River,flow_cms,cubic meters per second,2019,5,May,2019-05-01,2353.129725894739
+St. Mary's River,flow_cms,cubic meters per second,2019,6,Jun,2019-06-01,2733.4249391169574
+St. Mary's River,flow_cms,cubic meters per second,2019,7,Jul,2019-07-01,2973.2686067262043
+St. Mary's River,flow_cms,cubic meters per second,2019,8,Aug,2019-08-01,3012.9121881492206
+St. Mary's River,flow_cms,cubic meters per second,2019,9,Sep,2019-09-01,2902.476497042247
+St. Mary's River,flow_cms,cubic meters per second,2019,10,Oct,2019-10-01,2704.2585899271667
+St. Mary's River,flow_cms,cubic meters per second,2019,11,Nov,2019-11-01,2822.0566604412716
+St. Mary's River,flow_cms,cubic meters per second,2019,12,Dec,2019-12-01,2614.7773632866447
+St. Mary's River,flow_cms,cubic meters per second,2020,1,Jan,2020-01-01,2504.3416721796716
+St. Mary's River,flow_cms,cubic meters per second,2020,2,Feb,2020-02-01,2411.1792558355837
+St. Mary's River,flow_cms,cubic meters per second,2020,3,Mar,2020-03-01,2374.367358799926
+St. Mary's River,flow_cms,cubic meters per second,2020,4,Apr,2020-04-01,2344.634672732664
+St. Mary's River,flow_cms,cubic meters per second,2020,5,May,2020-05-01,2392.2069704402834
+St. Mary's River,flow_cms,cubic meters per second,2020,6,Jun,2020-06-01,2423.921835578696
+St. Mary's River,flow_cms,cubic meters per second,2020,7,Jul,2020-07-01,2429.8683727921484
+St. Mary's River,flow_cms,cubic meters per second,2020,8,Aug,2020-08-01,2353.129725894739
+St. Mary's River,flow_cms,cubic meters per second,2020,9,Sep,2020-09-01,2492.7317661915026
+St. Mary's River,flow_cms,cubic meters per second,2020,10,Oct,2020-10-01,2425.6208462111113
+St. Mary's River,flow_cms,cubic meters per second,2020,11,Nov,2020-11-01,2381.163401329586
+St. Mary's River,flow_cms,cubic meters per second,2020,12,Dec,2020-12-01,2193.1395580089957
+St. Mary's River,flow_cms,cubic meters per second,2021,1,Jan,2021-01-01,2193.1395580089957
+St. Mary's River,flow_cms,cubic meters per second,2021,2,Feb,2021-02-01,2043.9097907952137
+St. Mary's River,flow_cms,cubic meters per second,2021,3,Mar,2021-03-01,2018.424631308989
+St. Mary's River,flow_cms,cubic meters per second,2021,4,Apr,2021-04-01,1947.6325216250318
+St. Mary's River,flow_cms,cubic meters per second,2021,5,May,2021-05-01,2367.0049793927947
+St. Mary's River,flow_cms,cubic meters per second,2021,6,Jun,2021-06-01,2212.395011843032
+St. Mary's River,flow_cms,cubic meters per second,2021,7,Jul,2021-07-01,2348.8821993137017
+St. Mary's River,flow_cms,cubic meters per second,2021,8,Aug,2021-08-01,2294.5138590764222
+St. Mary's River,flow_cms,cubic meters per second,2021,9,Sep,2021-09-01,2099.693973226172
+St. Mary's River,flow_cms,cubic meters per second,2021,10,Oct,2021-10-01,1911.1037930281097
+St. Mary's River,flow_cms,cubic meters per second,2021,11,Nov,2021-11-01,1814.2601869804564
+St. Mary's River,flow_cms,cubic meters per second,2021,12,Dec,2021-12-01,1715.1512334229162
+St. Mary's River,flow_cms,cubic meters per second,2022,1,Jan,2022-01-01,1694.7631058339366
+St. Mary's River,flow_cms,cubic meters per second,2022,2,Feb,2022-02-01,1406.7808036395984
+St. Mary's River,flow_cms,cubic meters per second,2022,3,Mar,2022-03-01,1408.4798142720133
+St. Mary's River,flow_cms,cubic meters per second,2022,4,Apr,2022-04-01,1662.198735379316
+St. Mary's River,flow_cms,cubic meters per second,2022,5,May,2022-05-01,1913.6523089767322
+St. Mary's River,flow_cms,cubic meters per second,2022,6,Jun,2022-06-01,2518.500094116463
+St. Mary's River,flow_cms,cubic meters per second,2022,7,Jul,2022-07-01,2632.900143365738
+St. Mary's River,flow_cms,cubic meters per second,2022,8,Aug,2022-08-01,2576.549624057308
+St. Mary's River,flow_cms,cubic meters per second,2022,9,Sep,2022-09-01,2569.7535815276483
+St. Mary's River,flow_cms,cubic meters per second,2022,10,Oct,2022-10-01,2510.8545462705956
+St. Mary's River,flow_cms,cubic meters per second,2022,11,Nov,2022-11-01,2498.678303404955
+Lake Michigan and Lake Huron,level_m,meters,2000,1,Jan,2000-01-01,175.92
+Lake Michigan and Lake Huron,level_m,meters,2000,2,Feb,2000-02-01,175.87
+Lake Michigan and Lake Huron,level_m,meters,2000,3,Mar,2000-03-01,175.9
+Lake Michigan and Lake Huron,level_m,meters,2000,4,Apr,2000-04-01,175.92
+Lake Michigan and Lake Huron,level_m,meters,2000,5,May,2000-05-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2000,6,Jun,2000-06-01,176.1
+Lake Michigan and Lake Huron,level_m,meters,2000,7,Jul,2000-07-01,176.13
+Lake Michigan and Lake Huron,level_m,meters,2000,8,Aug,2000-08-01,176.13
+Lake Michigan and Lake Huron,level_m,meters,2000,9,Sep,2000-09-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2000,10,Oct,2000-10-01,175.98
+Lake Michigan and Lake Huron,level_m,meters,2000,11,Nov,2000-11-01,175.89
+Lake Michigan and Lake Huron,level_m,meters,2000,12,Dec,2000-12-01,175.81
+Lake Michigan and Lake Huron,level_m,meters,2001,1,Jan,2001-01-01,175.77
+Lake Michigan and Lake Huron,level_m,meters,2001,2,Feb,2001-02-01,175.78
+Lake Michigan and Lake Huron,level_m,meters,2001,3,Mar,2001-03-01,175.78
+Lake Michigan and Lake Huron,level_m,meters,2001,4,Apr,2001-04-01,175.85
+Lake Michigan and Lake Huron,level_m,meters,2001,5,May,2001-05-01,175.95
+Lake Michigan and Lake Huron,level_m,meters,2001,6,Jun,2001-06-01,176.06
+Lake Michigan and Lake Huron,level_m,meters,2001,7,Jul,2001-07-01,176.05
+Lake Michigan and Lake Huron,level_m,meters,2001,8,Aug,2001-08-01,176.03
+Lake Michigan and Lake Huron,level_m,meters,2001,9,Sep,2001-09-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2001,10,Oct,2001-10-01,176.03
+Lake Michigan and Lake Huron,level_m,meters,2001,11,Nov,2001-11-01,176.05
+Lake Michigan and Lake Huron,level_m,meters,2001,12,Dec,2001-12-01,176.05
+Lake Michigan and Lake Huron,level_m,meters,2002,1,Jan,2002-01-01,175.99
+Lake Michigan and Lake Huron,level_m,meters,2002,2,Feb,2002-02-01,175.95
+Lake Michigan and Lake Huron,level_m,meters,2002,3,Mar,2002-03-01,175.99
+Lake Michigan and Lake Huron,level_m,meters,2002,4,Apr,2002-04-01,176.06
+Lake Michigan and Lake Huron,level_m,meters,2002,5,May,2002-05-01,176.19
+Lake Michigan and Lake Huron,level_m,meters,2002,6,Jun,2002-06-01,176.29
+Lake Michigan and Lake Huron,level_m,meters,2002,7,Jul,2002-07-01,176.33
+Lake Michigan and Lake Huron,level_m,meters,2002,8,Aug,2002-08-01,176.32
+Lake Michigan and Lake Huron,level_m,meters,2002,9,Sep,2002-09-01,176.24
+Lake Michigan and Lake Huron,level_m,meters,2002,10,Oct,2002-10-01,176.14
+Lake Michigan and Lake Huron,level_m,meters,2002,11,Nov,2002-11-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2002,12,Dec,2002-12-01,175.91
+Lake Michigan and Lake Huron,level_m,meters,2003,1,Jan,2003-01-01,175.82
+Lake Michigan and Lake Huron,level_m,meters,2003,2,Feb,2003-02-01,175.75
+Lake Michigan and Lake Huron,level_m,meters,2003,3,Mar,2003-03-01,175.73
+Lake Michigan and Lake Huron,level_m,meters,2003,4,Apr,2003-04-01,175.82
+Lake Michigan and Lake Huron,level_m,meters,2003,5,May,2003-05-01,175.92
+Lake Michigan and Lake Huron,level_m,meters,2003,6,Jun,2003-06-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2003,7,Jul,2003-07-01,176.04
+Lake Michigan and Lake Huron,level_m,meters,2003,8,Aug,2003-08-01,176.02
+Lake Michigan and Lake Huron,level_m,meters,2003,9,Sep,2003-09-01,175.94
+Lake Michigan and Lake Huron,level_m,meters,2003,10,Oct,2003-10-01,175.87
+Lake Michigan and Lake Huron,level_m,meters,2003,11,Nov,2003-11-01,175.89
+Lake Michigan and Lake Huron,level_m,meters,2003,12,Dec,2003-12-01,175.9
+Lake Michigan and Lake Huron,level_m,meters,2004,1,Jan,2004-01-01,175.87
+Lake Michigan and Lake Huron,level_m,meters,2004,2,Feb,2004-02-01,175.84
+Lake Michigan and Lake Huron,level_m,meters,2004,3,Mar,2004-03-01,175.9
+Lake Michigan and Lake Huron,level_m,meters,2004,4,Apr,2004-04-01,175.98
+Lake Michigan and Lake Huron,level_m,meters,2004,5,May,2004-05-01,176.12
+Lake Michigan and Lake Huron,level_m,meters,2004,6,Jun,2004-06-01,176.31
+Lake Michigan and Lake Huron,level_m,meters,2004,7,Jul,2004-07-01,176.37
+Lake Michigan and Lake Huron,level_m,meters,2004,8,Aug,2004-08-01,176.33
+Lake Michigan and Lake Huron,level_m,meters,2004,9,Sep,2004-09-01,176.28
+Lake Michigan and Lake Huron,level_m,meters,2004,10,Oct,2004-10-01,176.15
+Lake Michigan and Lake Huron,level_m,meters,2004,11,Nov,2004-11-01,176.1
+Lake Michigan and Lake Huron,level_m,meters,2004,12,Dec,2004-12-01,176.08
+Lake Michigan and Lake Huron,level_m,meters,2005,1,Jan,2005-01-01,176.08
+Lake Michigan and Lake Huron,level_m,meters,2005,2,Feb,2005-02-01,176.1
+Lake Michigan and Lake Huron,level_m,meters,2005,3,Mar,2005-03-01,176.1
+Lake Michigan and Lake Huron,level_m,meters,2005,4,Apr,2005-04-01,176.14
+Lake Michigan and Lake Huron,level_m,meters,2005,5,May,2005-05-01,176.19
+Lake Michigan and Lake Huron,level_m,meters,2005,6,Jun,2005-06-01,176.21
+Lake Michigan and Lake Huron,level_m,meters,2005,7,Jul,2005-07-01,176.19
+Lake Michigan and Lake Huron,level_m,meters,2005,8,Aug,2005-08-01,176.17
+Lake Michigan and Lake Huron,level_m,meters,2005,9,Sep,2005-09-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2005,10,Oct,2005-10-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2005,11,Nov,2005-11-01,175.93
+Lake Michigan and Lake Huron,level_m,meters,2005,12,Dec,2005-12-01,175.88
+Lake Michigan and Lake Huron,level_m,meters,2006,1,Jan,2006-01-01,175.88
+Lake Michigan and Lake Huron,level_m,meters,2006,2,Feb,2006-02-01,175.92
+Lake Michigan and Lake Huron,level_m,meters,2006,3,Mar,2006-03-01,175.93
+Lake Michigan and Lake Huron,level_m,meters,2006,4,Apr,2006-04-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2006,5,May,2006-05-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2006,6,Jun,2006-06-01,176.14
+Lake Michigan and Lake Huron,level_m,meters,2006,7,Jul,2006-07-01,176.14
+Lake Michigan and Lake Huron,level_m,meters,2006,8,Aug,2006-08-01,176.13
+Lake Michigan and Lake Huron,level_m,meters,2006,9,Sep,2006-09-01,176.04
+Lake Michigan and Lake Huron,level_m,meters,2006,10,Oct,2006-10-01,175.99
+Lake Michigan and Lake Huron,level_m,meters,2006,11,Nov,2006-11-01,175.94
+Lake Michigan and Lake Huron,level_m,meters,2006,12,Dec,2006-12-01,175.98
+Lake Michigan and Lake Huron,level_m,meters,2007,1,Jan,2007-01-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2007,2,Feb,2007-02-01,175.91
+Lake Michigan and Lake Huron,level_m,meters,2007,3,Mar,2007-03-01,175.92
+Lake Michigan and Lake Huron,level_m,meters,2007,4,Apr,2007-04-01,176.02
+Lake Michigan and Lake Huron,level_m,meters,2007,5,May,2007-05-01,176.06
+Lake Michigan and Lake Huron,level_m,meters,2007,6,Jun,2007-06-01,176.08
+Lake Michigan and Lake Huron,level_m,meters,2007,7,Jul,2007-07-01,176.05
+Lake Michigan and Lake Huron,level_m,meters,2007,8,Aug,2007-08-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2007,9,Sep,2007-09-01,175.95
+Lake Michigan and Lake Huron,level_m,meters,2007,10,Oct,2007-10-01,175.88
+Lake Michigan and Lake Huron,level_m,meters,2007,11,Nov,2007-11-01,175.77
+Lake Michigan and Lake Huron,level_m,meters,2007,12,Dec,2007-12-01,175.68
+Lake Michigan and Lake Huron,level_m,meters,2008,1,Jan,2008-01-01,175.7
+Lake Michigan and Lake Huron,level_m,meters,2008,2,Feb,2008-02-01,175.76
+Lake Michigan and Lake Huron,level_m,meters,2008,3,Mar,2008-03-01,175.78
+Lake Michigan and Lake Huron,level_m,meters,2008,4,Apr,2008-04-01,175.92
+Lake Michigan and Lake Huron,level_m,meters,2008,5,May,2008-05-01,176.04
+Lake Michigan and Lake Huron,level_m,meters,2008,6,Jun,2008-06-01,176.16
+Lake Michigan and Lake Huron,level_m,meters,2008,7,Jul,2008-07-01,176.24
+Lake Michigan and Lake Huron,level_m,meters,2008,8,Aug,2008-08-01,176.22
+Lake Michigan and Lake Huron,level_m,meters,2008,9,Sep,2008-09-01,176.18
+Lake Michigan and Lake Huron,level_m,meters,2008,10,Oct,2008-10-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2008,11,Nov,2008-11-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2008,12,Dec,2008-12-01,175.97
+Lake Michigan and Lake Huron,level_m,meters,2009,1,Jan,2009-01-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2009,2,Feb,2009-02-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2009,3,Mar,2009-03-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2009,4,Apr,2009-04-01,176.2
+Lake Michigan and Lake Huron,level_m,meters,2009,5,May,2009-05-01,176.34
+Lake Michigan and Lake Huron,level_m,meters,2009,6,Jun,2009-06-01,176.42
+Lake Michigan and Lake Huron,level_m,meters,2009,7,Jul,2009-07-01,176.44
+Lake Michigan and Lake Huron,level_m,meters,2009,8,Aug,2009-08-01,176.44
+Lake Michigan and Lake Huron,level_m,meters,2009,9,Sep,2009-09-01,176.37
+Lake Michigan and Lake Huron,level_m,meters,2009,10,Oct,2009-10-01,176.29
+Lake Michigan and Lake Huron,level_m,meters,2009,11,Nov,2009-11-01,176.27
+Lake Michigan and Lake Huron,level_m,meters,2009,12,Dec,2009-12-01,176.22
+Lake Michigan and Lake Huron,level_m,meters,2010,1,Jan,2010-01-01,176.15
+Lake Michigan and Lake Huron,level_m,meters,2010,2,Feb,2010-02-01,176.11
+Lake Michigan and Lake Huron,level_m,meters,2010,3,Mar,2010-03-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2010,4,Apr,2010-04-01,176.11
+Lake Michigan and Lake Huron,level_m,meters,2010,5,May,2010-05-01,176.13
+Lake Michigan and Lake Huron,level_m,meters,2010,6,Jun,2010-06-01,176.19
+Lake Michigan and Lake Huron,level_m,meters,2010,7,Jul,2010-07-01,176.26
+Lake Michigan and Lake Huron,level_m,meters,2010,8,Aug,2010-08-01,176.24
+Lake Michigan and Lake Huron,level_m,meters,2010,9,Sep,2010-09-01,176.16
+Lake Michigan and Lake Huron,level_m,meters,2010,10,Oct,2010-10-01,176.07
+Lake Michigan and Lake Huron,level_m,meters,2010,11,Nov,2010-11-01,175.96
+Lake Michigan and Lake Huron,level_m,meters,2010,12,Dec,2010-12-01,175.86
+Lake Michigan and Lake Huron,level_m,meters,2011,1,Jan,2011-01-01,175.81
+Lake Michigan and Lake Huron,level_m,meters,2011,2,Feb,2011-02-01,175.78
+Lake Michigan and Lake Huron,level_m,meters,2011,3,Mar,2011-03-01,175.81
+Lake Michigan and Lake Huron,level_m,meters,2011,4,Apr,2011-04-01,175.91
+Lake Michigan and Lake Huron,level_m,meters,2011,5,May,2011-05-01,176.1
+Lake Michigan and Lake Huron,level_m,meters,2011,6,Jun,2011-06-01,176.21
+Lake Michigan and Lake Huron,level_m,meters,2011,7,Jul,2011-07-01,176.26
+Lake Michigan and Lake Huron,level_m,meters,2011,8,Aug,2011-08-01,176.24
+Lake Michigan and Lake Huron,level_m,meters,2011,9,Sep,2011-09-01,176.13
+Lake Michigan and Lake Huron,level_m,meters,2011,10,Oct,2011-10-01,176.08
+Lake Michigan and Lake Huron,level_m,meters,2011,11,Nov,2011-11-01,176.07
+Lake Michigan and Lake Huron,level_m,meters,2011,12,Dec,2011-12-01,176.04
+Lake Michigan and Lake Huron,level_m,meters,2012,1,Jan,2012-01-01,175.99
+Lake Michigan and Lake Huron,level_m,meters,2012,2,Feb,2012-02-01,175.96
+Lake Michigan and Lake Huron,level_m,meters,2012,3,Mar,2012-03-01,176.0
+Lake Michigan and Lake Huron,level_m,meters,2012,4,Apr,2012-04-01,176.03
+Lake Michigan and Lake Huron,level_m,meters,2012,5,May,2012-05-01,176.05
+Lake Michigan and Lake Huron,level_m,meters,2012,6,Jun,2012-06-01,176.07
+Lake Michigan and Lake Huron,level_m,meters,2012,7,Jul,2012-07-01,176.04
+Lake Michigan and Lake Huron,level_m,meters,2012,8,Aug,2012-08-01,175.97
+Lake Michigan and Lake Huron,level_m,meters,2012,9,Sep,2012-09-01,175.86
+Lake Michigan and Lake Huron,level_m,meters,2012,10,Oct,2012-10-01,175.74
+Lake Michigan and Lake Huron,level_m,meters,2012,11,Nov,2012-11-01,175.68
+Lake Michigan and Lake Huron,level_m,meters,2012,12,Dec,2012-12-01,175.61
+Lake Michigan and Lake Huron,level_m,meters,2013,1,Jan,2013-01-01,175.57
+Lake Michigan and Lake Huron,level_m,meters,2013,2,Feb,2013-02-01,175.61
+Lake Michigan and Lake Huron,level_m,meters,2013,3,Mar,2013-03-01,175.63
+Lake Michigan and Lake Huron,level_m,meters,2013,4,Apr,2013-04-01,175.75
+Lake Michigan and Lake Huron,level_m,meters,2013,5,May,2013-05-01,175.93
+Lake Michigan and Lake Huron,level_m,meters,2013,6,Jun,2013-06-01,176.05
+Lake Michigan and Lake Huron,level_m,meters,2013,7,Jul,2013-07-01,176.09
+Lake Michigan and Lake Huron,level_m,meters,2013,8,Aug,2013-08-01,176.08
+Lake Michigan and Lake Huron,level_m,meters,2013,9,Sep,2013-09-01,176.04
+Lake Michigan and Lake Huron,level_m,meters,2013,10,Oct,2013-10-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2013,11,Nov,2013-11-01,176.01
+Lake Michigan and Lake Huron,level_m,meters,2013,12,Dec,2013-12-01,175.97
+Lake Michigan and Lake Huron,level_m,meters,2014,1,Jan,2014-01-01,175.95
+Lake Michigan and Lake Huron,level_m,meters,2014,2,Feb,2014-02-01,175.95
+Lake Michigan and Lake Huron,level_m,meters,2014,3,Mar,2014-03-01,175.95
+Lake Michigan and Lake Huron,level_m,meters,2014,4,Apr,2014-04-01,176.06
+Lake Michigan and Lake Huron,level_m,meters,2014,5,May,2014-05-01,176.27
+Lake Michigan and Lake Huron,level_m,meters,2014,6,Jun,2014-06-01,176.38
+Lake Michigan and Lake Huron,level_m,meters,2014,7,Jul,2014-07-01,176.46
+Lake Michigan and Lake Huron,level_m,meters,2014,8,Aug,2014-08-01,176.48
+Lake Michigan and Lake Huron,level_m,meters,2014,9,Sep,2014-09-01,176.51
+Lake Michigan and Lake Huron,level_m,meters,2014,10,Oct,2014-10-01,176.54
+Lake Michigan and Lake Huron,level_m,meters,2014,11,Nov,2014-11-01,176.54
+Lake Michigan and Lake Huron,level_m,meters,2014,12,Dec,2014-12-01,176.53
+Lake Michigan and Lake Huron,level_m,meters,2015,1,Jan,2015-01-01,176.51
+Lake Michigan and Lake Huron,level_m,meters,2015,2,Feb,2015-02-01,176.5
+Lake Michigan and Lake Huron,level_m,meters,2015,3,Mar,2015-03-01,176.48
+Lake Michigan and Lake Huron,level_m,meters,2015,4,Apr,2015-04-01,176.53
+Lake Michigan and Lake Huron,level_m,meters,2015,5,May,2015-05-01,176.59
+Lake Michigan and Lake Huron,level_m,meters,2015,6,Jun,2015-06-01,176.68
+Lake Michigan and Lake Huron,level_m,meters,2015,7,Jul,2015-07-01,176.73
+Lake Michigan and Lake Huron,level_m,meters,2015,8,Aug,2015-08-01,176.72
+Lake Michigan and Lake Huron,level_m,meters,2015,9,Sep,2015-09-01,176.7
+Lake Michigan and Lake Huron,level_m,meters,2015,10,Oct,2015-10-01,176.58
+Lake Michigan and Lake Huron,level_m,meters,2015,11,Nov,2015-11-01,176.54
+Lake Michigan and Lake Huron,level_m,meters,2015,12,Dec,2015-12-01,176.55
+Lake Michigan and Lake Huron,level_m,meters,2016,1,Jan,2016-01-01,176.57
+Lake Michigan and Lake Huron,level_m,meters,2016,2,Feb,2016-02-01,176.56
+Lake Michigan and Lake Huron,level_m,meters,2016,3,Mar,2016-03-01,176.61
+Lake Michigan and Lake Huron,level_m,meters,2016,4,Apr,2016-04-01,176.77
+Lake Michigan and Lake Huron,level_m,meters,2016,5,May,2016-05-01,176.82
+Lake Michigan and Lake Huron,level_m,meters,2016,6,Jun,2016-06-01,176.84
+Lake Michigan and Lake Huron,level_m,meters,2016,7,Jul,2016-07-01,176.84
+Lake Michigan and Lake Huron,level_m,meters,2016,8,Aug,2016-08-01,176.82
+Lake Michigan and Lake Huron,level_m,meters,2016,9,Sep,2016-09-01,176.78
+Lake Michigan and Lake Huron,level_m,meters,2016,10,Oct,2016-10-01,176.69
+Lake Michigan and Lake Huron,level_m,meters,2016,11,Nov,2016-11-01,176.59
+Lake Michigan and Lake Huron,level_m,meters,2016,12,Dec,2016-12-01,176.51
+Lake Michigan and Lake Huron,level_m,meters,2017,1,Jan,2017-01-01,176.47
+Lake Michigan and Lake Huron,level_m,meters,2017,2,Feb,2017-02-01,176.48
+Lake Michigan and Lake Huron,level_m,meters,2017,3,Mar,2017-03-01,176.53
+Lake Michigan and Lake Huron,level_m,meters,2017,4,Apr,2017-04-01,176.66
+Lake Michigan and Lake Huron,level_m,meters,2017,5,May,2017-05-01,176.8
+Lake Michigan and Lake Huron,level_m,meters,2017,6,Jun,2017-06-01,176.88
+Lake Michigan and Lake Huron,level_m,meters,2017,7,Jul,2017-07-01,176.99
+Lake Michigan and Lake Huron,level_m,meters,2017,8,Aug,2017-08-01,177.0
+Lake Michigan and Lake Huron,level_m,meters,2017,9,Sep,2017-09-01,176.93
+Lake Michigan and Lake Huron,level_m,meters,2017,10,Oct,2017-10-01,176.87
+Lake Michigan and Lake Huron,level_m,meters,2017,11,Nov,2017-11-01,176.85
+Lake Michigan and Lake Huron,level_m,meters,2017,12,Dec,2017-12-01,176.79
+Lake Michigan and Lake Huron,level_m,meters,2018,1,Jan,2018-01-01,176.73
+Lake Michigan and Lake Huron,level_m,meters,2018,2,Feb,2018-02-01,176.74
+Lake Michigan and Lake Huron,level_m,meters,2018,3,Mar,2018-03-01,176.76
+Lake Michigan and Lake Huron,level_m,meters,2018,4,Apr,2018-04-01,176.79
+Lake Michigan and Lake Huron,level_m,meters,2018,5,May,2018-05-01,176.92
+Lake Michigan and Lake Huron,level_m,meters,2018,6,Jun,2018-06-01,176.98
+Lake Michigan and Lake Huron,level_m,meters,2018,7,Jul,2018-07-01,176.98
+Lake Michigan and Lake Huron,level_m,meters,2018,8,Aug,2018-08-01,176.94
+Lake Michigan and Lake Huron,level_m,meters,2018,9,Sep,2018-09-01,176.94
+Lake Michigan and Lake Huron,level_m,meters,2018,10,Oct,2018-10-01,176.89
+Lake Michigan and Lake Huron,level_m,meters,2018,11,Nov,2018-11-01,176.86
+Lake Michigan and Lake Huron,level_m,meters,2018,12,Dec,2018-12-01,176.83
+Lake Michigan and Lake Huron,level_m,meters,2019,1,Jan,2019-01-01,176.8
+Lake Michigan and Lake Huron,level_m,meters,2019,2,Feb,2019-02-01,176.82
+Lake Michigan and Lake Huron,level_m,meters,2019,3,Mar,2019-03-01,176.85
+Lake Michigan and Lake Huron,level_m,meters,2019,4,Apr,2019-04-01,176.96
+Lake Michigan and Lake Huron,level_m,meters,2019,5,May,2019-05-01,177.17
+Lake Michigan and Lake Huron,level_m,meters,2019,6,Jun,2019-06-01,177.31
+Lake Michigan and Lake Huron,level_m,meters,2019,7,Jul,2019-07-01,177.37
+Lake Michigan and Lake Huron,level_m,meters,2019,8,Aug,2019-08-01,177.32
+Lake Michigan and Lake Huron,level_m,meters,2019,9,Sep,2019-09-01,177.27
+Lake Michigan and Lake Huron,level_m,meters,2019,10,Oct,2019-10-01,177.28
+Lake Michigan and Lake Huron,level_m,meters,2019,11,Nov,2019-11-01,177.26
+Lake Michigan and Lake Huron,level_m,meters,2019,12,Dec,2019-12-01,177.24
+Lake Michigan and Lake Huron,level_m,meters,2020,1,Jan,2020-01-01,177.26
+Lake Michigan and Lake Huron,level_m,meters,2020,2,Feb,2020-02-01,177.24
+Lake Michigan and Lake Huron,level_m,meters,2020,3,Mar,2020-03-01,177.22
+Lake Michigan and Lake Huron,level_m,meters,2020,4,Apr,2020-04-01,177.29
+Lake Michigan and Lake Huron,level_m,meters,2020,5,May,2020-05-01,177.37
+Lake Michigan and Lake Huron,level_m,meters,2020,6,Jun,2020-06-01,177.44
+Lake Michigan and Lake Huron,level_m,meters,2020,7,Jul,2020-07-01,177.45
+Lake Michigan and Lake Huron,level_m,meters,2020,8,Aug,2020-08-01,177.42
+Lake Michigan and Lake Huron,level_m,meters,2020,9,Sep,2020-09-01,177.34
+Lake Michigan and Lake Huron,level_m,meters,2020,10,Oct,2020-10-01,177.25
+Lake Michigan and Lake Huron,level_m,meters,2020,11,Nov,2020-11-01,177.2
+Lake Michigan and Lake Huron,level_m,meters,2020,12,Dec,2020-12-01,177.14
+Lake Michigan and Lake Huron,level_m,meters,2021,1,Jan,2021-01-01,177.06
+Lake Michigan and Lake Huron,level_m,meters,2021,2,Feb,2021-02-01,176.99
+Lake Michigan and Lake Huron,level_m,meters,2021,3,Mar,2021-03-01,176.94
+Lake Michigan and Lake Huron,level_m,meters,2021,4,Apr,2021-04-01,176.94
+Lake Michigan and Lake Huron,level_m,meters,2021,5,May,2021-05-01,176.95
+Lake Michigan and Lake Huron,level_m,meters,2021,6,Jun,2021-06-01,176.93
+Lake Michigan and Lake Huron,level_m,meters,2021,7,Jul,2021-07-01,177.0
+Lake Michigan and Lake Huron,level_m,meters,2021,8,Aug,2021-08-01,177.01
+Lake Michigan and Lake Huron,level_m,meters,2021,9,Sep,2021-09-01,176.93
+Lake Michigan and Lake Huron,level_m,meters,2021,10,Oct,2021-10-01,176.9
+Lake Michigan and Lake Huron,level_m,meters,2021,11,Nov,2021-11-01,176.77
+Lake Michigan and Lake Huron,level_m,meters,2021,12,Dec,2021-12-01,176.69
+Lake Michigan and Lake Huron,level_m,meters,2022,1,Jan,2022-01-01,176.6
+Lake Michigan and Lake Huron,level_m,meters,2022,2,Feb,2022-02-01,176.54
+Lake Michigan and Lake Huron,level_m,meters,2022,3,Mar,2022-03-01,176.53
+Lake Michigan and Lake Huron,level_m,meters,2022,4,Apr,2022-04-01,176.66
+Lake Michigan and Lake Huron,level_m,meters,2022,5,May,2022-05-01,176.75
+Lake Michigan and Lake Huron,level_m,meters,2022,6,Jun,2022-06-01,176.8
+Lake Michigan and Lake Huron,level_m,meters,2022,7,Jul,2022-07-01,176.81
+Lake Michigan and Lake Huron,level_m,meters,2022,8,Aug,2022-08-01,176.79
+Lake Michigan and Lake Huron,level_m,meters,2022,9,Sep,2022-09-01,176.71
+Lake Michigan and Lake Huron,level_m,meters,2022,10,Oct,2022-10-01,176.6
+Lake Michigan and Lake Huron,level_m,meters,2022,11,Nov,2022-11-01,176.55
+Lake Michigan and Lake Huron,level_m,meters,2022,12,Dec,2022-12-01,176.46
+St. Clair River,flow_cms,cubic meters per second,2008,10,Oct,2008-10-01,5235.784432225478
+St. Clair River,flow_cms,cubic meters per second,2008,11,Nov,2008-11-01,5122.517056731146
+St. Clair River,flow_cms,cubic meters per second,2008,12,Dec,2008-12-01,4808.200089734376
+St. Clair River,flow_cms,cubic meters per second,2009,1,Jan,2009-01-01,4442.912803765157
+St. Clair River,flow_cms,cubic meters per second,2009,2,Feb,2009-02-01,4723.249558113627
+St. Clair River,flow_cms,cubic meters per second,2009,3,Mar,2009-03-01,5000.75462807474
+St. Clair River,flow_cms,cubic meters per second,2009,4,Apr,2009-04-01,5230.1210634507615
+St. Clair River,flow_cms,cubic meters per second,2009,5,May,2009-05-01,5329.230017008302
+St. Clair River,flow_cms,cubic meters per second,2009,6,Jun,2009-06-01,5504.794449024515
+St. Clair River,flow_cms,cubic meters per second,2009,7,Jul,2009-07-01,5513.289502186591
+St. Clair River,flow_cms,cubic meters per second,2009,8,Aug,2009-08-01,5450.992445664708
+St. Clair River,flow_cms,cubic meters per second,2009,9,Sep,2009-09-01,5487.804342700366
+St. Clair River,flow_cms,cubic meters per second,2009,10,Oct,2009-10-01,5402.853811079617
+St. Clair River,flow_cms,cubic meters per second,2009,11,Nov,2009-11-01,5501.962764637157
+St. Clair River,flow_cms,cubic meters per second,2009,12,Dec,2009-12-01,5366.041914043959
+St. Clair River,flow_cms,cubic meters per second,2010,1,Jan,2010-01-01,4731.7446112757025
+St. Clair River,flow_cms,cubic meters per second,2010,2,Feb,2010-02-01,4145.585943092537
+St. Clair River,flow_cms,cubic meters per second,2010,3,Mar,2010-03-01,5054.556631434548
+St. Clair River,flow_cms,cubic meters per second,2010,4,Apr,2010-04-01,5275.428013648494
+St. Clair River,flow_cms,cubic meters per second,2010,5,May,2010-05-01,5105.526950406997
+St. Clair River,flow_cms,cubic meters per second,2010,6,Jun,2010-06-01,5080.041790920772
+St. Clair River,flow_cms,cubic meters per second,2010,7,Jul,2010-07-01,5133.8437942805795
+St. Clair River,flow_cms,cubic meters per second,2010,8,Aug,2010-08-01,5247.111169774911
+St. Clair River,flow_cms,cubic meters per second,2010,9,Sep,2010-09-01,5283.923066810569
+St. Clair River,flow_cms,cubic meters per second,2010,10,Oct,2010-10-01,5249.942854162269
+St. Clair River,flow_cms,cubic meters per second,2010,11,Nov,2010-11-01,5048.893262659831
+St. Clair River,flow_cms,cubic meters per second,2010,12,Dec,2010-12-01,4983.764521750591
+St. Clair River,flow_cms,cubic meters per second,2011,1,Jan,2011-01-01,4077.6255177959374
+St. Clair River,flow_cms,cubic meters per second,2011,2,Feb,2011-02-01,3802.9521322221835
+St. Clair River,flow_cms,cubic meters per second,2011,3,Mar,2011-03-01,4244.694896650077
+St. Clair River,flow_cms,cubic meters per second,2011,4,Apr,2011-04-01,4825.190196058526
+St. Clair River,flow_cms,cubic meters per second,2011,5,May,2011-05-01,4961.111046651724
+St. Clair River,flow_cms,cubic meters per second,2011,6,Jun,2011-06-01,5031.903156335681
+St. Clair River,flow_cms,cubic meters per second,2011,7,Jul,2011-07-01,4963.942731039082
+St. Clair River,flow_cms,cubic meters per second,2011,8,Aug,2011-08-01,5181.982428865671
+St. Clair River,flow_cms,cubic meters per second,2011,9,Sep,2011-09-01,5080.041790920772
+St. Clair River,flow_cms,cubic meters per second,2011,10,Oct,2011-10-01,5074.3784221460555
+St. Clair River,flow_cms,cubic meters per second,2011,11,Nov,2011-11-01,4995.091259300023
+St. Clair River,flow_cms,cubic meters per second,2011,12,Dec,2011-12-01,4785.54661463551
+St. Clair River,flow_cms,cubic meters per second,2012,1,Jan,2012-01-01,4714.754504951553
+St. Clair River,flow_cms,cubic meters per second,2012,2,Feb,2012-02-01,4782.714930248152
+St. Clair River,flow_cms,cubic meters per second,2012,3,Mar,2012-03-01,4836.516933607959
+St. Clair River,flow_cms,cubic meters per second,2012,4,Apr,2012-04-01,5122.517056731146
+St. Clair River,flow_cms,cubic meters per second,2012,5,May,2012-05-01,5006.417996849456
+St. Clair River,flow_cms,cubic meters per second,2012,6,Jun,2012-06-01,4966.77441542644
+St. Clair River,flow_cms,cubic meters per second,2012,7,Jul,2012-07-01,4904.477358904558
+St. Clair River,flow_cms,cubic meters per second,2012,8,Aug,2012-08-01,4955.447677877008
+St. Clair River,flow_cms,cubic meters per second,2012,9,Sep,2012-09-01,4859.170408706826
+St. Clair River,flow_cms,cubic meters per second,2012,10,Oct,2012-10-01,4819.526827283809
+St. Clair River,flow_cms,cubic meters per second,2012,11,Nov,2012-11-01,4709.091136176836
+St. Clair River,flow_cms,cubic meters per second,2012,12,Dec,2012-12-01,4621.308920168729
+St. Clair River,flow_cms,cubic meters per second,2013,1,Jan,2013-01-01,4309.823637559317
+St. Clair River,flow_cms,cubic meters per second,2013,2,Feb,2013-02-01,4168.239418191402
+St. Clair River,flow_cms,cubic meters per second,2013,3,Mar,2013-03-01,4556.180179259489
+St. Clair River,flow_cms,cubic meters per second,2013,4,Apr,2013-04-01,4607.1504982319375
+St. Clair River,flow_cms,cubic meters per second,2013,5,May,2013-05-01,4983.764521750591
+St. Clair River,flow_cms,cubic meters per second,2013,6,Jun,2013-06-01,4989.427890525307
+St. Clair River,flow_cms,cubic meters per second,2013,7,Jul,2013-07-01,4881.823883805691
+St. Clair River,flow_cms,cubic meters per second,2013,8,Aug,2013-08-01,5003.586312462098
+St. Clair River,flow_cms,cubic meters per second,2013,9,Sep,2013-09-01,5026.239787560965
+St. Clair River,flow_cms,cubic meters per second,2013,10,Oct,2013-10-01,4949.7843091022905
+St. Clair River,flow_cms,cubic meters per second,2013,11,Nov,2013-11-01,5085.705159695489
+St. Clair River,flow_cms,cubic meters per second,2013,12,Dec,2013-12-01,4961.111046651724
+St. Clair River,flow_cms,cubic meters per second,2014,1,Jan,2014-01-01,3746.3184444750177
+St. Clair River,flow_cms,cubic meters per second,2014,2,Feb,2014-02-01,4049.3086739223545
+St. Clair River,flow_cms,cubic meters per second,2014,3,Mar,2014-03-01,4728.912926888344
+St. Clair River,flow_cms,cubic meters per second,2014,4,Apr,2014-04-01,5128.180425505863
+St. Clair River,flow_cms,cubic meters per second,2014,5,May,2014-05-01,5317.903279458868
+St. Clair River,flow_cms,cubic meters per second,2014,6,Jun,2014-06-01,5459.487498826783
+St. Clair River,flow_cms,cubic meters per second,2014,7,Jul,2014-07-01,5572.754874321115
+St. Clair River,flow_cms,cubic meters per second,2014,8,Aug,2014-08-01,5550.101399222248
+St. Clair River,flow_cms,cubic meters per second,2014,9,Sep,2014-09-01,5649.210352779788
+St. Clair River,flow_cms,cubic meters per second,2014,10,Oct,2014-10-01,5872.913419381093
+St. Clair River,flow_cms,cubic meters per second,2014,11,Nov,2014-11-01,5867.250050606377
+St. Clair River,flow_cms,cubic meters per second,2014,12,Dec,2014-12-01,5912.5570008041095
+St. Clair River,flow_cms,cubic meters per second,2015,1,Jan,2015-01-01,4502.378175899681
+St. Clair River,flow_cms,cubic meters per second,2015,2,Feb,2015-02-01,4009.6650924993387
+St. Clair River,flow_cms,cubic meters per second,2015,3,Mar,2015-03-01,5292.418119972644
+St. Clair River,flow_cms,cubic meters per second,2015,4,Apr,2015-04-01,5952.200582227126
+St. Clair River,flow_cms,cubic meters per second,2015,5,May,2015-05-01,5940.873844677692
+St. Clair River,flow_cms,cubic meters per second,2015,6,Jun,2015-06-01,5938.042160290334
+St. Clair River,flow_cms,cubic meters per second,2015,7,Jul,2015-07-01,5753.982675112045
+St. Clair River,flow_cms,cubic meters per second,2015,8,Aug,2015-08-01,5816.279731633927
+St. Clair River,flow_cms,cubic meters per second,2015,9,Sep,2015-09-01,5895.56689447996
+St. Clair River,flow_cms,cubic meters per second,2015,10,Oct,2015-10-01,5821.943100408644
+St. Clair River,flow_cms,cubic meters per second,2015,11,Nov,2015-11-01,5799.289625309778
+St. Clair River,flow_cms,cubic meters per second,2015,12,Dec,2015-12-01,5824.774784796003
+St. Clair River,flow_cms,cubic meters per second,2016,1,Jan,2016-01-01,5810.616362859211
+St. Clair River,flow_cms,cubic meters per second,2016,2,Feb,2016-02-01,5703.012356139596
+St. Clair River,flow_cms,cubic meters per second,2016,3,Mar,2016-03-01,5943.7055290650505
+St. Clair River,flow_cms,cubic meters per second,2016,4,Apr,2016-04-01,6181.567017603147
+St. Clair River,flow_cms,cubic meters per second,2016,5,May,2016-05-01,6116.438276693906
+St. Clair River,flow_cms,cubic meters per second,2016,6,Jun,2016-06-01,6065.467957721457
+St. Clair River,flow_cms,cubic meters per second,2016,7,Jul,2016-07-01,6008.834269974292
+St. Clair River,flow_cms,cubic meters per second,2016,8,Aug,2016-08-01,5946.537213452409
+St. Clair River,flow_cms,cubic meters per second,2016,9,Sep,2016-09-01,6051.309535784666
+St. Clair River,flow_cms,cubic meters per second,2016,10,Oct,2016-10-01,5949.368897839767
+St. Clair River,flow_cms,cubic meters per second,2016,11,Nov,2016-11-01,5974.854057325992
+St. Clair River,flow_cms,cubic meters per second,2016,12,Dec,2016-12-01,5680.35888104073
+St. Clair River,flow_cms,cubic meters per second,2017,1,Jan,2017-01-01,5552.933083609607
+St. Clair River,flow_cms,cubic meters per second,2017,2,Feb,2017-02-01,5649.210352779788
+St. Clair River,flow_cms,cubic meters per second,2017,3,Mar,2017-03-01,5889.903525705243
+St. Clair River,flow_cms,cubic meters per second,2017,4,Apr,2017-04-01,5898.398578867318
+St. Clair River,flow_cms,cubic meters per second,2017,5,May,2017-05-01,5977.68574171335
+St. Clair River,flow_cms,cubic meters per second,2017,6,Jun,2017-06-01,6037.1511138478745
+St. Clair River,flow_cms,cubic meters per second,2017,7,Jul,2017-07-01,6221.2105990261625
+St. Clair River,flow_cms,cubic meters per second,2017,8,Aug,2017-08-01,6283.5076555480455
+St. Clair River,flow_cms,cubic meters per second,2017,9,Sep,2017-09-01,6286.339339935404
+St. Clair River,flow_cms,cubic meters per second,2017,10,Oct,2017-10-01,6130.596698630698
+St. Clair River,flow_cms,cubic meters per second,2017,11,Nov,2017-11-01,6232.537336575596
+St. Clair River,flow_cms,cubic meters per second,2017,12,Dec,2017-12-01,6054.141220172024
+St. Clair River,flow_cms,cubic meters per second,2018,1,Jan,2018-01-01,5063.051684596622
+St. Clair River,flow_cms,cubic meters per second,2018,2,Feb,2018-02-01,5510.4578177992325
+St. Clair River,flow_cms,cubic meters per second,2018,3,Mar,2018-03-01,6294.834393097479
+St. Clair River,flow_cms,cubic meters per second,2018,4,Apr,2018-04-01,6102.279854757115
+St. Clair River,flow_cms,cubic meters per second,2018,5,May,2018-05-01,6124.933329855981
+St. Clair River,flow_cms,cubic meters per second,2018,6,Jun,2018-06-01,6263.685864836537
+St. Clair River,flow_cms,cubic meters per second,2018,7,Jul,2018-07-01,6079.626379658249
+St. Clair River,flow_cms,cubic meters per second,2018,8,Aug,2018-08-01,6096.616485982398
+St. Clair River,flow_cms,cubic meters per second,2018,9,Sep,2018-09-01,6198.557123927297
+St. Clair River,flow_cms,cubic meters per second,2018,10,Oct,2018-10-01,6359.963134006719
+St. Clair River,flow_cms,cubic meters per second,2018,11,Nov,2018-11-01,6292.00270871012
+St. Clair River,flow_cms,cubic meters per second,2018,12,Dec,2018-12-01,6156.081858116922
+St. Clair River,flow_cms,cubic meters per second,2019,1,Jan,2019-01-01,5467.982551988858
+St. Clair River,flow_cms,cubic meters per second,2019,2,Feb,2019-02-01,5445.3290768899915
+St. Clair River,flow_cms,cubic meters per second,2019,3,Mar,2019-03-01,6150.418489342205
+St. Clair River,flow_cms,cubic meters per second,2019,4,Apr,2019-04-01,6393.943346655019
+St. Clair River,flow_cms,cubic meters per second,2019,5,May,2019-05-01,6538.359250410292
+St. Clair River,flow_cms,cubic meters per second,2019,6,Jun,2019-06-01,6657.2899946793395
+St. Clair River,flow_cms,cubic meters per second,2019,7,Jul,2019-07-01,6730.913788750655
+St. Clair River,flow_cms,cubic meters per second,2019,8,Aug,2019-08-01,6844.181164244987
+St. Clair River,flow_cms,cubic meters per second,2019,9,Sep,2019-09-01,6648.794941517264
+St. Clair River,flow_cms,cubic meters per second,2019,10,Oct,2019-10-01,6855.50790179442
+St. Clair River,flow_cms,cubic meters per second,2019,11,Nov,2019-11-01,6943.290117802527
+St. Clair River,flow_cms,cubic meters per second,2019,12,Dec,2019-12-01,6878.161376893287
+St. Clair River,flow_cms,cubic meters per second,2020,1,Jan,2020-01-01,6827.191057920837
+St. Clair River,flow_cms,cubic meters per second,2020,2,Feb,2020-02-01,6920.636642703661
+St. Clair River,flow_cms,cubic meters per second,2020,3,Mar,2020-03-01,6866.834639343853
+St. Clair River,flow_cms,cubic meters per second,2020,4,Apr,2020-04-01,6914.973273928944
+St. Clair River,flow_cms,cubic meters per second,2020,5,May,2020-05-01,7002.755489937051
+St. Clair River,flow_cms,cubic meters per second,2020,6,Jun,2020-06-01,6917.804958316302
+St. Clair River,flow_cms,cubic meters per second,2020,7,Jul,2020-07-01,6940.458433415169
+St. Clair River,flow_cms,cubic meters per second,2020,8,Aug,2020-08-01,7005.587174324409
+St. Clair River,flow_cms,cubic meters per second,2020,9,Sep,2020-09-01,7011.250543099126
+St. Clair River,flow_cms,cubic meters per second,2020,10,Oct,2020-10-01,6999.923805549693
+St. Clair River,flow_cms,cubic meters per second,2020,11,Nov,2020-11-01,6926.300011478377
+St. Clair River,flow_cms,cubic meters per second,2020,12,Dec,2020-12-01,6866.834639343853
+St. Clair River,flow_cms,cubic meters per second,2021,1,Jan,2021-01-01,6716.7553668138635
+St. Clair River,flow_cms,cubic meters per second,2021,2,Feb,2021-02-01,5414.1805486290505
+St. Clair River,flow_cms,cubic meters per second,2021,3,Mar,2021-03-01,6657.2899946793395
+St. Clair River,flow_cms,cubic meters per second,2021,4,Apr,2021-04-01,6527.032512860858
+St. Clair River,flow_cms,cubic meters per second,2021,5,May,2021-05-01,6456.240403176901
+St. Clair River,flow_cms,cubic meters per second,2021,6,Jun,2021-06-01,6071.131326496174
+St. Clair River,flow_cms,cubic meters per second,2021,7,Jul,2021-07-01,6198.557123927297
+St. Clair River,flow_cms,cubic meters per second,2021,8,Aug,2021-08-01,6249.527442899745
+St. Clair River,flow_cms,cubic meters per second,2021,9,Sep,2021-09-01,6320.319552583703
+St. Clair River,flow_cms,cubic meters per second,2021,10,Oct,2021-10-01,6226.87396780088
+St. Clair River,flow_cms,cubic meters per second,2021,11,Nov,2021-11-01,6082.458064045607
+St. Clair River,flow_cms,cubic meters per second,2021,12,Dec,2021-12-01,5940.873844677692
+St. Clair River,flow_cms,cubic meters per second,2022,1,Jan,2022-01-01,5419.843917403767
+St. Clair River,flow_cms,cubic meters per second,2022,2,Feb,2022-02-01,4697.764398627403
+St. Clair River,flow_cms,cubic meters per second,2022,3,Mar,2022-03-01,5804.952994084494
+St. Clair River,flow_cms,cubic meters per second,2022,4,Apr,2022-04-01,6008.834269974292
+St. Clair River,flow_cms,cubic meters per second,2022,5,May,2022-05-01,6068.2996421088155
+St. Clair River,flow_cms,cubic meters per second,2022,6,Jun,2022-06-01,6079.626379658249
+St. Clair River,flow_cms,cubic meters per second,2022,7,Jul,2022-07-01,6048.477851397307
+St. Clair River,flow_cms,cubic meters per second,2022,8,Aug,2022-08-01,6099.448170369757
+St. Clair River,flow_cms,cubic meters per second,2022,9,Sep,2022-09-01,6113.606592306548
+St. Clair River,flow_cms,cubic meters per second,2022,10,Oct,2022-10-01,5974.854057325992
+St. Clair River,flow_cms,cubic meters per second,2022,11,Nov,2022-11-01,5909.725316416751
+Lake St. Clair,level_m,meters,2000,1,Jan,2000-01-01,174.63
+Lake St. Clair,level_m,meters,2000,2,Feb,2000-02-01,174.44
+Lake St. Clair,level_m,meters,2000,3,Mar,2000-03-01,174.66
+Lake St. Clair,level_m,meters,2000,4,Apr,2000-04-01,174.76
+Lake St. Clair,level_m,meters,2000,5,May,2000-05-01,174.85
+Lake St. Clair,level_m,meters,2000,6,Jun,2000-06-01,174.96
+Lake St. Clair,level_m,meters,2000,7,Jul,2000-07-01,175.05
+Lake St. Clair,level_m,meters,2000,8,Aug,2000-08-01,175.03
+Lake St. Clair,level_m,meters,2000,9,Sep,2000-09-01,174.93
+Lake St. Clair,level_m,meters,2000,10,Oct,2000-10-01,174.8
+Lake St. Clair,level_m,meters,2000,11,Nov,2000-11-01,174.65
+Lake St. Clair,level_m,meters,2000,12,Dec,2000-12-01,174.75
+Lake St. Clair,level_m,meters,2001,1,Jan,2001-01-01,174.71
+Lake St. Clair,level_m,meters,2001,2,Feb,2001-02-01,174.69
+Lake St. Clair,level_m,meters,2001,3,Mar,2001-03-01,174.7
+Lake St. Clair,level_m,meters,2001,4,Apr,2001-04-01,174.74
+Lake St. Clair,level_m,meters,2001,5,May,2001-05-01,174.79
+Lake St. Clair,level_m,meters,2001,6,Jun,2001-06-01,174.89
+Lake St. Clair,level_m,meters,2001,7,Jul,2001-07-01,174.89
+Lake St. Clair,level_m,meters,2001,8,Aug,2001-08-01,174.81
+Lake St. Clair,level_m,meters,2001,9,Sep,2001-09-01,174.75
+Lake St. Clair,level_m,meters,2001,10,Oct,2001-10-01,174.73
+Lake St. Clair,level_m,meters,2001,11,Nov,2001-11-01,174.7
+Lake St. Clair,level_m,meters,2001,12,Dec,2001-12-01,174.74
+Lake St. Clair,level_m,meters,2002,1,Jan,2002-01-01,174.69
+Lake St. Clair,level_m,meters,2002,2,Feb,2002-02-01,174.77
+Lake St. Clair,level_m,meters,2002,3,Mar,2002-03-01,174.8
+Lake St. Clair,level_m,meters,2002,4,Apr,2002-04-01,174.94
+Lake St. Clair,level_m,meters,2002,5,May,2002-05-01,175.03
+Lake St. Clair,level_m,meters,2002,6,Jun,2002-06-01,175.09
+Lake St. Clair,level_m,meters,2002,7,Jul,2002-07-01,175.1
+Lake St. Clair,level_m,meters,2002,8,Aug,2002-08-01,175.05
+Lake St. Clair,level_m,meters,2002,9,Sep,2002-09-01,174.96
+Lake St. Clair,level_m,meters,2002,10,Oct,2002-10-01,174.84
+Lake St. Clair,level_m,meters,2002,11,Nov,2002-11-01,174.72
+Lake St. Clair,level_m,meters,2002,12,Dec,2002-12-01,174.62
+Lake St. Clair,level_m,meters,2003,1,Jan,2003-01-01,174.6
+Lake St. Clair,level_m,meters,2003,2,Feb,2003-02-01,174.6
+Lake St. Clair,level_m,meters,2003,3,Mar,2003-03-01,174.53
+Lake St. Clair,level_m,meters,2003,4,Apr,2003-04-01,174.73
+Lake St. Clair,level_m,meters,2003,5,May,2003-05-01,174.82
+Lake St. Clair,level_m,meters,2003,6,Jun,2003-06-01,174.89
+Lake St. Clair,level_m,meters,2003,7,Jul,2003-07-01,174.92
+Lake St. Clair,level_m,meters,2003,8,Aug,2003-08-01,174.92
+Lake St. Clair,level_m,meters,2003,9,Sep,2003-09-01,174.82
+Lake St. Clair,level_m,meters,2003,10,Oct,2003-10-01,174.69
+Lake St. Clair,level_m,meters,2003,11,Nov,2003-11-01,174.65
+Lake St. Clair,level_m,meters,2003,12,Dec,2003-12-01,174.68
+Lake St. Clair,level_m,meters,2004,1,Jan,2004-01-01,174.68
+Lake St. Clair,level_m,meters,2004,2,Feb,2004-02-01,174.66
+Lake St. Clair,level_m,meters,2004,3,Mar,2004-03-01,174.77
+Lake St. Clair,level_m,meters,2004,4,Apr,2004-04-01,174.86
+Lake St. Clair,level_m,meters,2004,5,May,2004-05-01,175.0
+Lake St. Clair,level_m,meters,2004,6,Jun,2004-06-01,175.12
+Lake St. Clair,level_m,meters,2004,7,Jul,2004-07-01,175.15
+Lake St. Clair,level_m,meters,2004,8,Aug,2004-08-01,175.12
+Lake St. Clair,level_m,meters,2004,9,Sep,2004-09-01,175.07
+Lake St. Clair,level_m,meters,2004,10,Oct,2004-10-01,174.89
+Lake St. Clair,level_m,meters,2004,11,Nov,2004-11-01,174.82
+Lake St. Clair,level_m,meters,2004,12,Dec,2004-12-01,174.86
+Lake St. Clair,level_m,meters,2005,1,Jan,2005-01-01,174.99
+Lake St. Clair,level_m,meters,2005,2,Feb,2005-02-01,175.0
+Lake St. Clair,level_m,meters,2005,3,Mar,2005-03-01,174.99
+Lake St. Clair,level_m,meters,2005,4,Apr,2005-04-01,175.08
+Lake St. Clair,level_m,meters,2005,5,May,2005-05-01,175.08
+Lake St. Clair,level_m,meters,2005,6,Jun,2005-06-01,175.05
+Lake St. Clair,level_m,meters,2005,7,Jul,2005-07-01,175.03
+Lake St. Clair,level_m,meters,2005,8,Aug,2005-08-01,174.96
+Lake St. Clair,level_m,meters,2005,9,Sep,2005-09-01,174.9
+Lake St. Clair,level_m,meters,2005,10,Oct,2005-10-01,174.82
+Lake St. Clair,level_m,meters,2005,11,Nov,2005-11-01,174.65
+Lake St. Clair,level_m,meters,2005,12,Dec,2005-12-01,174.71
+Lake St. Clair,level_m,meters,2006,1,Jan,2006-01-01,174.73
+Lake St. Clair,level_m,meters,2006,2,Feb,2006-02-01,174.8
+Lake St. Clair,level_m,meters,2006,3,Mar,2006-03-01,174.84
+Lake St. Clair,level_m,meters,2006,4,Apr,2006-04-01,174.88
+Lake St. Clair,level_m,meters,2006,5,May,2006-05-01,174.93
+Lake St. Clair,level_m,meters,2006,6,Jun,2006-06-01,174.99
+Lake St. Clair,level_m,meters,2006,7,Jul,2006-07-01,175.02
+Lake St. Clair,level_m,meters,2006,8,Aug,2006-08-01,175.01
+Lake St. Clair,level_m,meters,2006,9,Sep,2006-09-01,174.92
+Lake St. Clair,level_m,meters,2006,10,Oct,2006-10-01,174.86
+Lake St. Clair,level_m,meters,2006,11,Nov,2006-11-01,174.85
+Lake St. Clair,level_m,meters,2006,12,Dec,2006-12-01,174.87
+Lake St. Clair,level_m,meters,2007,1,Jan,2007-01-01,174.97
+Lake St. Clair,level_m,meters,2007,2,Feb,2007-02-01,174.86
+Lake St. Clair,level_m,meters,2007,3,Mar,2007-03-01,174.91
+Lake St. Clair,level_m,meters,2007,4,Apr,2007-04-01,174.96
+Lake St. Clair,level_m,meters,2007,5,May,2007-05-01,175.02
+Lake St. Clair,level_m,meters,2007,6,Jun,2007-06-01,174.99
+Lake St. Clair,level_m,meters,2007,7,Jul,2007-07-01,174.92
+Lake St. Clair,level_m,meters,2007,8,Aug,2007-08-01,174.9
+Lake St. Clair,level_m,meters,2007,9,Sep,2007-09-01,174.83
+Lake St. Clair,level_m,meters,2007,10,Oct,2007-10-01,174.7
+Lake St. Clair,level_m,meters,2007,11,Nov,2007-11-01,174.56
+Lake St. Clair,level_m,meters,2007,12,Dec,2007-12-01,174.56
+Lake St. Clair,level_m,meters,2008,1,Jan,2008-01-01,174.66
+Lake St. Clair,level_m,meters,2008,2,Feb,2008-02-01,174.85
+Lake St. Clair,level_m,meters,2008,3,Mar,2008-03-01,174.88
+Lake St. Clair,level_m,meters,2008,4,Apr,2008-04-01,174.99
+Lake St. Clair,level_m,meters,2008,5,May,2008-05-01,175.0
+Lake St. Clair,level_m,meters,2008,6,Jun,2008-06-01,175.05
+Lake St. Clair,level_m,meters,2008,7,Jul,2008-07-01,175.12
+Lake St. Clair,level_m,meters,2008,8,Aug,2008-08-01,175.05
+Lake St. Clair,level_m,meters,2008,9,Sep,2008-09-01,175.01
+Lake St. Clair,level_m,meters,2008,10,Oct,2008-10-01,174.85
+Lake St. Clair,level_m,meters,2008,11,Nov,2008-11-01,174.77
+Lake St. Clair,level_m,meters,2008,12,Dec,2008-12-01,174.81
+Lake St. Clair,level_m,meters,2009,1,Jan,2009-01-01,174.94
+Lake St. Clair,level_m,meters,2009,2,Feb,2009-02-01,174.96
+Lake St. Clair,level_m,meters,2009,3,Mar,2009-03-01,175.06
+Lake St. Clair,level_m,meters,2009,4,Apr,2009-04-01,175.14
+Lake St. Clair,level_m,meters,2009,5,May,2009-05-01,175.2
+Lake St. Clair,level_m,meters,2009,6,Jun,2009-06-01,175.25
+Lake St. Clair,level_m,meters,2009,7,Jul,2009-07-01,175.24
+Lake St. Clair,level_m,meters,2009,8,Aug,2009-08-01,175.2
+Lake St. Clair,level_m,meters,2009,9,Sep,2009-09-01,175.13
+Lake St. Clair,level_m,meters,2009,10,Oct,2009-10-01,174.99
+Lake St. Clair,level_m,meters,2009,11,Nov,2009-11-01,174.94
+Lake St. Clair,level_m,meters,2009,12,Dec,2009-12-01,174.87
+Lake St. Clair,level_m,meters,2010,1,Jan,2010-01-01,174.74
+Lake St. Clair,level_m,meters,2010,2,Feb,2010-02-01,174.44
+Lake St. Clair,level_m,meters,2010,3,Mar,2010-03-01,174.76
+Lake St. Clair,level_m,meters,2010,4,Apr,2010-04-01,174.9
+Lake St. Clair,level_m,meters,2010,5,May,2010-05-01,174.98
+Lake St. Clair,level_m,meters,2010,6,Jun,2010-06-01,175.08
+Lake St. Clair,level_m,meters,2010,7,Jul,2010-07-01,175.09
+Lake St. Clair,level_m,meters,2010,8,Aug,2010-08-01,175.05
+Lake St. Clair,level_m,meters,2010,9,Sep,2010-09-01,174.92
+Lake St. Clair,level_m,meters,2010,10,Oct,2010-10-01,174.85
+Lake St. Clair,level_m,meters,2010,11,Nov,2010-11-01,174.72
+Lake St. Clair,level_m,meters,2010,12,Dec,2010-12-01,174.7
+Lake St. Clair,level_m,meters,2011,1,Jan,2011-01-01,174.48
+Lake St. Clair,level_m,meters,2011,2,Feb,2011-02-01,174.5
+Lake St. Clair,level_m,meters,2011,3,Mar,2011-03-01,174.67
+Lake St. Clair,level_m,meters,2011,4,Apr,2011-04-01,174.89
+Lake St. Clair,level_m,meters,2011,5,May,2011-05-01,175.15
+Lake St. Clair,level_m,meters,2011,6,Jun,2011-06-01,175.22
+Lake St. Clair,level_m,meters,2011,7,Jul,2011-07-01,175.21
+Lake St. Clair,level_m,meters,2011,8,Aug,2011-08-01,175.16
+Lake St. Clair,level_m,meters,2011,9,Sep,2011-09-01,175.08
+Lake St. Clair,level_m,meters,2011,10,Oct,2011-10-01,175.02
+Lake St. Clair,level_m,meters,2011,11,Nov,2011-11-01,174.95
+Lake St. Clair,level_m,meters,2011,12,Dec,2011-12-01,175.08
+Lake St. Clair,level_m,meters,2012,1,Jan,2012-01-01,175.02
+Lake St. Clair,level_m,meters,2012,2,Feb,2012-02-01,174.99
+Lake St. Clair,level_m,meters,2012,3,Mar,2012-03-01,174.99
+Lake St. Clair,level_m,meters,2012,4,Apr,2012-04-01,174.99
+Lake St. Clair,level_m,meters,2012,5,May,2012-05-01,174.98
+Lake St. Clair,level_m,meters,2012,6,Jun,2012-06-01,174.98
+Lake St. Clair,level_m,meters,2012,7,Jul,2012-07-01,174.94
+Lake St. Clair,level_m,meters,2012,8,Aug,2012-08-01,174.85
+Lake St. Clair,level_m,meters,2012,9,Sep,2012-09-01,174.75
+Lake St. Clair,level_m,meters,2012,10,Oct,2012-10-01,174.6
+Lake St. Clair,level_m,meters,2012,11,Nov,2012-11-01,174.59
+Lake St. Clair,level_m,meters,2012,12,Dec,2012-12-01,174.54
+Lake St. Clair,level_m,meters,2013,1,Jan,2013-01-01,174.52
+Lake St. Clair,level_m,meters,2013,2,Feb,2013-02-01,174.54
+Lake St. Clair,level_m,meters,2013,3,Mar,2013-03-01,174.64
+Lake St. Clair,level_m,meters,2013,4,Apr,2013-04-01,174.75
+Lake St. Clair,level_m,meters,2013,5,May,2013-05-01,174.84
+Lake St. Clair,level_m,meters,2013,6,Jun,2013-06-01,174.99
+Lake St. Clair,level_m,meters,2013,7,Jul,2013-07-01,175.1
+Lake St. Clair,level_m,meters,2013,8,Aug,2013-08-01,175.02
+Lake St. Clair,level_m,meters,2013,9,Sep,2013-09-01,174.96
+Lake St. Clair,level_m,meters,2013,10,Oct,2013-10-01,174.85
+Lake St. Clair,level_m,meters,2013,11,Nov,2013-11-01,174.79
+Lake St. Clair,level_m,meters,2013,12,Dec,2013-12-01,174.79
+Lake St. Clair,level_m,meters,2014,1,Jan,2014-01-01,174.68
+Lake St. Clair,level_m,meters,2014,2,Feb,2014-02-01,174.61
+Lake St. Clair,level_m,meters,2014,3,Mar,2014-03-01,174.79
+Lake St. Clair,level_m,meters,2014,4,Apr,2014-04-01,174.96
+Lake St. Clair,level_m,meters,2014,5,May,2014-05-01,175.13
+Lake St. Clair,level_m,meters,2014,6,Jun,2014-06-01,175.21
+Lake St. Clair,level_m,meters,2014,7,Jul,2014-07-01,175.26
+Lake St. Clair,level_m,meters,2014,8,Aug,2014-08-01,175.27
+Lake St. Clair,level_m,meters,2014,9,Sep,2014-09-01,175.26
+Lake St. Clair,level_m,meters,2014,10,Oct,2014-10-01,175.18
+Lake St. Clair,level_m,meters,2014,11,Nov,2014-11-01,175.1
+Lake St. Clair,level_m,meters,2014,12,Dec,2014-12-01,175.13
+Lake St. Clair,level_m,meters,2015,1,Jan,2015-01-01,174.95
+Lake St. Clair,level_m,meters,2015,2,Feb,2015-02-01,174.74
+Lake St. Clair,level_m,meters,2015,3,Mar,2015-03-01,174.94
+Lake St. Clair,level_m,meters,2015,4,Apr,2015-04-01,175.17
+Lake St. Clair,level_m,meters,2015,5,May,2015-05-01,175.22
+Lake St. Clair,level_m,meters,2015,6,Jun,2015-06-01,175.44
+Lake St. Clair,level_m,meters,2015,7,Jul,2015-07-01,175.56
+Lake St. Clair,level_m,meters,2015,8,Aug,2015-08-01,175.48
+Lake St. Clair,level_m,meters,2015,9,Sep,2015-09-01,175.42
+Lake St. Clair,level_m,meters,2015,10,Oct,2015-10-01,175.26
+Lake St. Clair,level_m,meters,2015,11,Nov,2015-11-01,175.12
+Lake St. Clair,level_m,meters,2015,12,Dec,2015-12-01,175.12
+Lake St. Clair,level_m,meters,2016,1,Jan,2016-01-01,175.18
+Lake St. Clair,level_m,meters,2016,2,Feb,2016-02-01,175.17
+Lake St. Clair,level_m,meters,2016,3,Mar,2016-03-01,175.32
+Lake St. Clair,level_m,meters,2016,4,Apr,2016-04-01,175.49
+Lake St. Clair,level_m,meters,2016,5,May,2016-05-01,175.5
+Lake St. Clair,level_m,meters,2016,6,Jun,2016-06-01,175.51
+Lake St. Clair,level_m,meters,2016,7,Jul,2016-07-01,175.49
+Lake St. Clair,level_m,meters,2016,8,Aug,2016-08-01,175.46
+Lake St. Clair,level_m,meters,2016,9,Sep,2016-09-01,175.41
+Lake St. Clair,level_m,meters,2016,10,Oct,2016-10-01,175.32
+Lake St. Clair,level_m,meters,2016,11,Nov,2016-11-01,175.19
+Lake St. Clair,level_m,meters,2016,12,Dec,2016-12-01,175.12
+Lake St. Clair,level_m,meters,2017,1,Jan,2017-01-01,175.19
+Lake St. Clair,level_m,meters,2017,2,Feb,2017-02-01,175.22
+Lake St. Clair,level_m,meters,2017,3,Mar,2017-03-01,175.29
+Lake St. Clair,level_m,meters,2017,4,Apr,2017-04-01,175.47
+Lake St. Clair,level_m,meters,2017,5,May,2017-05-01,175.61
+Lake St. Clair,level_m,meters,2017,6,Jun,2017-06-01,175.64
+Lake St. Clair,level_m,meters,2017,7,Jul,2017-07-01,175.7
+Lake St. Clair,level_m,meters,2017,8,Aug,2017-08-01,175.66
+Lake St. Clair,level_m,meters,2017,9,Sep,2017-09-01,175.58
+Lake St. Clair,level_m,meters,2017,10,Oct,2017-10-01,175.46
+Lake St. Clair,level_m,meters,2017,11,Nov,2017-11-01,175.44
+Lake St. Clair,level_m,meters,2017,12,Dec,2017-12-01,175.36
+Lake St. Clair,level_m,meters,2018,1,Jan,2018-01-01,175.24
+Lake St. Clair,level_m,meters,2018,2,Feb,2018-02-01,175.32
+Lake St. Clair,level_m,meters,2018,3,Mar,2018-03-01,175.51
+Lake St. Clair,level_m,meters,2018,4,Apr,2018-04-01,175.6
+Lake St. Clair,level_m,meters,2018,5,May,2018-05-01,175.68
+Lake St. Clair,level_m,meters,2018,6,Jun,2018-06-01,175.72
+Lake St. Clair,level_m,meters,2018,7,Jul,2018-07-01,175.71
+Lake St. Clair,level_m,meters,2018,8,Aug,2018-08-01,175.64
+Lake St. Clair,level_m,meters,2018,9,Sep,2018-09-01,175.62
+Lake St. Clair,level_m,meters,2018,10,Oct,2018-10-01,175.52
+Lake St. Clair,level_m,meters,2018,11,Nov,2018-11-01,175.5
+Lake St. Clair,level_m,meters,2018,12,Dec,2018-12-01,175.47
+Lake St. Clair,level_m,meters,2019,1,Jan,2019-01-01,175.41
+Lake St. Clair,level_m,meters,2019,2,Feb,2019-02-01,175.41
+Lake St. Clair,level_m,meters,2019,3,Mar,2019-03-01,175.56
+Lake St. Clair,level_m,meters,2019,4,Apr,2019-04-01,175.7
+Lake St. Clair,level_m,meters,2019,5,May,2019-05-01,175.89
+Lake St. Clair,level_m,meters,2019,6,Jun,2019-06-01,175.99
+Lake St. Clair,level_m,meters,2019,7,Jul,2019-07-01,176.04
+Lake St. Clair,level_m,meters,2019,8,Aug,2019-08-01,175.96
+Lake St. Clair,level_m,meters,2019,9,Sep,2019-09-01,175.86
+Lake St. Clair,level_m,meters,2019,10,Oct,2019-10-01,175.77
+Lake St. Clair,level_m,meters,2019,11,Nov,2019-11-01,175.71
+Lake St. Clair,level_m,meters,2019,12,Dec,2019-12-01,175.68
+Lake St. Clair,level_m,meters,2020,1,Jan,2020-01-01,175.8
+Lake St. Clair,level_m,meters,2020,2,Feb,2020-02-01,175.79
+Lake St. Clair,level_m,meters,2020,3,Mar,2020-03-01,175.83
+Lake St. Clair,level_m,meters,2020,4,Apr,2020-04-01,175.91
+Lake St. Clair,level_m,meters,2020,5,May,2020-05-01,175.98
+Lake St. Clair,level_m,meters,2020,6,Jun,2020-06-01,176.02
+Lake St. Clair,level_m,meters,2020,7,Jul,2020-07-01,176.03
+Lake St. Clair,level_m,meters,2020,8,Aug,2020-08-01,175.97
+Lake St. Clair,level_m,meters,2020,9,Sep,2020-09-01,175.88
+Lake St. Clair,level_m,meters,2020,10,Oct,2020-10-01,175.74
+Lake St. Clair,level_m,meters,2020,11,Nov,2020-11-01,175.65
+Lake St. Clair,level_m,meters,2020,12,Dec,2020-12-01,175.63
+Lake St. Clair,level_m,meters,2021,1,Jan,2021-01-01,175.62
+Lake St. Clair,level_m,meters,2021,2,Feb,2021-02-01,175.47
+Lake St. Clair,level_m,meters,2021,3,Mar,2021-03-01,175.54
+Lake St. Clair,level_m,meters,2021,4,Apr,2021-04-01,175.54
+Lake St. Clair,level_m,meters,2021,5,May,2021-05-01,175.57
+Lake St. Clair,level_m,meters,2021,6,Jun,2021-06-01,175.62
+Lake St. Clair,level_m,meters,2021,7,Jul,2021-07-01,175.73
+Lake St. Clair,level_m,meters,2021,8,Aug,2021-08-01,175.71
+Lake St. Clair,level_m,meters,2021,9,Sep,2021-09-01,175.64
+Lake St. Clair,level_m,meters,2021,10,Oct,2021-10-01,175.61
+Lake St. Clair,level_m,meters,2021,11,Nov,2021-11-01,175.48
+Lake St. Clair,level_m,meters,2021,12,Dec,2021-12-01,175.42
+Lake St. Clair,level_m,meters,2022,1,Jan,2022-01-01,175.32
+Lake St. Clair,level_m,meters,2022,2,Feb,2022-02-01,175.07
+Lake St. Clair,level_m,meters,2022,3,Mar,2022-03-01,175.32
+Lake St. Clair,level_m,meters,2022,4,Apr,2022-04-01,175.4
+Lake St. Clair,level_m,meters,2022,5,May,2022-05-01,175.5
+Lake St. Clair,level_m,meters,2022,6,Jun,2022-06-01,175.55
+Lake St. Clair,level_m,meters,2022,7,Jul,2022-07-01,175.53
+Lake St. Clair,level_m,meters,2022,8,Aug,2022-08-01,175.5
+Lake St. Clair,level_m,meters,2022,9,Sep,2022-09-01,175.41
+Lake St. Clair,level_m,meters,2022,10,Oct,2022-10-01,175.25
+Lake St. Clair,level_m,meters,2022,11,Nov,2022-11-01,175.14
+Lake St. Clair,level_m,meters,2022,12,Dec,2022-12-01,175.12
+Detroit River,flow_cms,cubic meters per second,2008,10,Oct,2008-10-01,5292.418119972644
+Detroit River,flow_cms,cubic meters per second,2008,11,Nov,2008-11-01,5303.744857522077
+Detroit River,flow_cms,cubic meters per second,2008,12,Dec,2008-12-01,5142.338847442655
+Detroit River,flow_cms,cubic meters per second,2009,1,Jan,2009-01-01,4833.685249220601
+Detroit River,flow_cms,cubic meters per second,2009,2,Feb,2009-02-01,5292.418119972644
+Detroit River,flow_cms,cubic meters per second,2009,3,Mar,2009-03-01,5555.764767996965
+Detroit River,flow_cms,cubic meters per second,2009,4,Apr,2009-04-01,5490.636027087724
+Detroit River,flow_cms,cubic meters per second,2009,5,May,2009-05-01,5459.487498826783
+Detroit River,flow_cms,cubic meters per second,2009,6,Jun,2009-06-01,5561.428136771681
+Detroit River,flow_cms,cubic meters per second,2009,7,Jul,2009-07-01,5470.814236376216
+Detroit River,flow_cms,cubic meters per second,2009,8,Aug,2009-08-01,5459.487498826783
+Detroit River,flow_cms,cubic meters per second,2009,9,Sep,2009-09-01,5445.3290768899915
+Detroit River,flow_cms,cubic meters per second,2009,10,Oct,2009-10-01,5612.398455744131
+Detroit River,flow_cms,cubic meters per second,2009,11,Nov,2009-11-01,5615.230140131489
+Detroit River,flow_cms,cubic meters per second,2009,12,Dec,2009-12-01,5456.655814439425
+Detroit River,flow_cms,cubic meters per second,2010,1,Jan,2010-01-01,4828.021880445885
+Detroit River,flow_cms,cubic meters per second,2010,2,Feb,2010-02-01,4125.764152381028
+Detroit River,flow_cms,cubic meters per second,2010,3,Mar,2010-03-01,5230.1210634507615
+Detroit River,flow_cms,cubic meters per second,2010,4,Apr,2010-04-01,5244.279485387553
+Detroit River,flow_cms,cubic meters per second,2010,5,May,2010-05-01,5244.279485387553
+Detroit River,flow_cms,cubic meters per second,2010,6,Jun,2010-06-01,5190.477482027745
+Detroit River,flow_cms,cubic meters per second,2010,7,Jul,2010-07-01,5292.418119972644
+Detroit River,flow_cms,cubic meters per second,2010,8,Aug,2010-08-01,5184.814113253029
+Detroit River,flow_cms,cubic meters per second,2010,9,Sep,2010-09-01,5269.764644873778
+Detroit River,flow_cms,cubic meters per second,2010,10,Oct,2010-10-01,5351.8834921071675
+Detroit River,flow_cms,cubic meters per second,2010,11,Nov,2010-11-01,5145.170531830013
+Detroit River,flow_cms,cubic meters per second,2010,12,Dec,2010-12-01,5009.2496812368145
+Detroit River,flow_cms,cubic meters per second,2011,1,Jan,2011-01-01,4332.477112658184
+Detroit River,flow_cms,cubic meters per second,2011,2,Feb,2011-02-01,4020.9918300487716
+Detroit River,flow_cms,cubic meters per second,2011,3,Mar,2011-03-01,4808.200089734376
+Detroit River,flow_cms,cubic meters per second,2011,4,Apr,2011-04-01,5099.86358163228
+Detroit River,flow_cms,cubic meters per second,2011,5,May,2011-05-01,5300.913173134719
+Detroit River,flow_cms,cubic meters per second,2011,6,Jun,2011-06-01,5337.725070170376
+Detroit River,flow_cms,cubic meters per second,2011,7,Jul,2011-07-01,5272.596329261136
+Detroit River,flow_cms,cubic meters per second,2011,8,Aug,2011-08-01,5179.150744478312
+Detroit River,flow_cms,cubic meters per second,2011,9,Sep,2011-09-01,5309.408226296793
+Detroit River,flow_cms,cubic meters per second,2011,10,Oct,2011-10-01,5320.7349638462265
+Detroit River,flow_cms,cubic meters per second,2011,11,Nov,2011-11-01,5309.408226296793
+Detroit River,flow_cms,cubic meters per second,2011,12,Dec,2011-12-01,5400.022126692259
+Detroit River,flow_cms,cubic meters per second,2012,1,Jan,2012-01-01,5170.655691316238
+Detroit River,flow_cms,cubic meters per second,2012,2,Feb,2012-02-01,5281.09138242321
+Detroit River,flow_cms,cubic meters per second,2012,3,Mar,2012-03-01,5051.724947047189
+Detroit River,flow_cms,cubic meters per second,2012,4,Apr,2012-04-01,5167.8240069288795
+Detroit River,flow_cms,cubic meters per second,2012,5,May,2012-05-01,5006.417996849456
+Detroit River,flow_cms,cubic meters per second,2012,6,Jun,2012-06-01,5017.74473439889
+Detroit River,flow_cms,cubic meters per second,2012,7,Jul,2012-07-01,4966.77441542644
+Detroit River,flow_cms,cubic meters per second,2012,8,Aug,2012-08-01,4876.160515030975
+Detroit River,flow_cms,cubic meters per second,2012,9,Sep,2012-09-01,4842.180302382676
+Detroit River,flow_cms,cubic meters per second,2012,10,Oct,2012-10-01,4901.6456745172
+Detroit River,flow_cms,cubic meters per second,2012,11,Nov,2012-11-01,4785.54661463551
+Detroit River,flow_cms,cubic meters per second,2012,12,Dec,2012-12-01,4706.259451789478
+Detroit River,flow_cms,cubic meters per second,2013,1,Jan,2013-01-01,4219.209737163852
+Detroit River,flow_cms,cubic meters per second,2013,2,Feb,2013-02-01,4222.04142155121
+Detroit River,flow_cms,cubic meters per second,2013,3,Mar,2013-03-01,4740.239664437778
+Detroit River,flow_cms,cubic meters per second,2013,4,Apr,2013-04-01,4952.615993489649
+Detroit River,flow_cms,cubic meters per second,2013,5,May,2013-05-01,4944.120940327574
+Detroit River,flow_cms,cubic meters per second,2013,6,Jun,2013-06-01,5148.002216217371
+Detroit River,flow_cms,cubic meters per second,2013,7,Jul,2013-07-01,5037.566525110397
+Detroit River,flow_cms,cubic meters per second,2013,8,Aug,2013-08-01,4938.457571552857
+Detroit River,flow_cms,cubic meters per second,2013,9,Sep,2013-09-01,5071.546737758697
+Detroit River,flow_cms,cubic meters per second,2013,10,Oct,2013-10-01,5097.031897244922
+Detroit River,flow_cms,cubic meters per second,2013,11,Nov,2013-11-01,5281.09138242321
+Detroit River,flow_cms,cubic meters per second,2013,12,Dec,2013-12-01,5221.626010288686
+Detroit River,flow_cms,cubic meters per second,2014,1,Jan,2014-01-01,4241.863212262719
+Detroit River,flow_cms,cubic meters per second,2014,2,Feb,2014-02-01,4207.882999614419
+Detroit River,flow_cms,cubic meters per second,2014,3,Mar,2014-03-01,5091.368528470205
+Detroit River,flow_cms,cubic meters per second,2014,4,Apr,2014-04-01,5408.517179854333
+Detroit River,flow_cms,cubic meters per second,2014,5,May,2014-05-01,5507.6261334118735
+Detroit River,flow_cms,cubic meters per second,2014,6,Jun,2014-06-01,5652.042037167147
+Detroit River,flow_cms,cubic meters per second,2014,7,Jul,2014-07-01,5643.546984005072
+Detroit River,flow_cms,cubic meters per second,2014,8,Aug,2014-08-01,5595.408349419981
+Detroit River,flow_cms,cubic meters per second,2014,9,Sep,2014-09-01,5739.824253175254
+Detroit River,flow_cms,cubic meters per second,2014,10,Oct,2014-10-01,5977.68574171335
+Detroit River,flow_cms,cubic meters per second,2014,11,Nov,2014-11-01,5977.68574171335
+Detroit River,flow_cms,cubic meters per second,2014,12,Dec,2014-12-01,6218.378914638804
+Detroit River,flow_cms,cubic meters per second,2015,1,Jan,2015-01-01,5111.190319181714
+Detroit River,flow_cms,cubic meters per second,2015,2,Feb,2015-02-01,4471.22964763874
+Detroit River,flow_cms,cubic meters per second,2015,3,Mar,2015-03-01,5844.59657550751
+Detroit River,flow_cms,cubic meters per second,2015,4,Apr,2015-04-01,6376.9532403308685
+Detroit River,flow_cms,cubic meters per second,2015,5,May,2015-05-01,5855.923313056944
+Detroit River,flow_cms,cubic meters per second,2015,6,Jun,2015-06-01,6226.87396780088
+Detroit River,flow_cms,cubic meters per second,2015,7,Jul,2015-07-01,6003.1709011995745
+Detroit River,flow_cms,cubic meters per second,2015,8,Aug,2015-08-01,5901.230263254676
+Detroit River,flow_cms,cubic meters per second,2015,9,Sep,2015-09-01,5935.210475902975
+Detroit River,flow_cms,cubic meters per second,2015,10,Oct,2015-10-01,6014.497638749008
+Detroit River,flow_cms,cubic meters per second,2015,11,Nov,2015-11-01,5853.091628669586
+Detroit River,flow_cms,cubic meters per second,2015,12,Dec,2015-12-01,5904.061947642034
+Detroit River,flow_cms,cubic meters per second,2016,1,Jan,2016-01-01,6348.636396457286
+Detroit River,flow_cms,cubic meters per second,2016,2,Feb,2016-02-01,6561.0127255091575
+Detroit River,flow_cms,cubic meters per second,2016,3,Mar,2016-03-01,6861.171270569136
+Detroit River,flow_cms,cubic meters per second,2016,4,Apr,2016-04-01,6869.666323731211
+Detroit River,flow_cms,cubic meters per second,2016,5,May,2016-05-01,6073.963010883532
+Detroit River,flow_cms,cubic meters per second,2016,6,Jun,2016-06-01,6156.081858116922
+Detroit River,flow_cms,cubic meters per second,2016,7,Jul,2016-07-01,6045.646167009949
+Detroit River,flow_cms,cubic meters per second,2016,8,Aug,2016-08-01,5810.616362859211
+Detroit River,flow_cms,cubic meters per second,2016,9,Sep,2016-09-01,5983.349110488067
+Detroit River,flow_cms,cubic meters per second,2016,10,Oct,2016-10-01,6088.121432820323
+Detroit River,flow_cms,cubic meters per second,2016,11,Nov,2016-11-01,6139.091751792773
+Detroit River,flow_cms,cubic meters per second,2016,12,Dec,2016-12-01,5904.061947642034
+Detroit River,flow_cms,cubic meters per second,2017,1,Jan,2017-01-01,6088.121432820323
+Detroit River,flow_cms,cubic meters per second,2017,2,Feb,2017-02-01,6158.9135425042805
+Detroit River,flow_cms,cubic meters per second,2017,3,Mar,2017-03-01,6297.666077484837
+Detroit River,flow_cms,cubic meters per second,2017,4,Apr,2017-04-01,6283.5076555480455
+Detroit River,flow_cms,cubic meters per second,2017,5,May,2017-05-01,6164.576911278997
+Detroit River,flow_cms,cubic meters per second,2017,6,Jun,2017-06-01,6164.576911278997
+Detroit River,flow_cms,cubic meters per second,2017,7,Jul,2017-07-01,6266.517549223896
+Detroit River,flow_cms,cubic meters per second,2017,8,Aug,2017-08-01,6269.349233611254
+Detroit River,flow_cms,cubic meters per second,2017,9,Sep,2017-09-01,6342.973027682569
+Detroit River,flow_cms,cubic meters per second,2017,10,Oct,2017-10-01,6365.626502781436
+Detroit River,flow_cms,cubic meters per second,2017,11,Nov,2017-11-01,6592.1612537700985
+Detroit River,flow_cms,cubic meters per second,2017,12,Dec,2017-12-01,6351.468080844645
+Detroit River,flow_cms,cubic meters per second,2018,1,Jan,2018-01-01,5371.705282818676
+Detroit River,flow_cms,cubic meters per second,2018,2,Feb,2018-02-01,6054.141220172024
+Detroit River,flow_cms,cubic meters per second,2018,3,Mar,2018-03-01,6866.834639343853
+Detroit River,flow_cms,cubic meters per second,2018,4,Apr,2018-04-01,6730.913788750655
+Detroit River,flow_cms,cubic meters per second,2018,5,May,2018-05-01,6385.448293492944
+Detroit River,flow_cms,cubic meters per second,2018,6,Jun,2018-06-01,6628.973150805757
+Detroit River,flow_cms,cubic meters per second,2018,7,Jul,2018-07-01,6325.98292135842
+Detroit River,flow_cms,cubic meters per second,2018,8,Aug,2018-08-01,6195.725439539939
+Detroit River,flow_cms,cubic meters per second,2018,9,Sep,2018-09-01,6351.468080844645
+Detroit River,flow_cms,cubic meters per second,2018,10,Oct,2018-10-01,6609.151360094249
+Detroit River,flow_cms,cubic meters per second,2018,11,Nov,2018-11-01,6705.42862926443
+Detroit River,flow_cms,cubic meters per second,2018,12,Dec,2018-12-01,6464.735456338976
+Detroit River,flow_cms,cubic meters per second,2019,1,Jan,2019-01-01,5906.893632029392
+Detroit River,flow_cms,cubic meters per second,2019,2,Feb,2019-02-01,5640.715299617714
+Detroit River,flow_cms,cubic meters per second,2019,3,Mar,2019-03-01,6756.39894823688
+Detroit River,flow_cms,cubic meters per second,2019,4,Apr,2019-04-01,6866.834639343853
+Detroit River,flow_cms,cubic meters per second,2019,5,May,2019-05-01,6946.121802189885
+Detroit River,flow_cms,cubic meters per second,2019,6,Jun,2019-06-01,6974.438646063468
+Detroit River,flow_cms,cubic meters per second,2019,7,Jul,2019-07-01,6988.597068000259
+Detroit River,flow_cms,cubic meters per second,2019,8,Aug,2019-08-01,6923.468327091019
+Detroit River,flow_cms,cubic meters per second,2019,9,Sep,2019-09-01,6832.854426695553
+Detroit River,flow_cms,cubic meters per second,2019,10,Oct,2019-10-01,7079.210968395725
+Detroit River,flow_cms,cubic meters per second,2019,11,Nov,2019-11-01,7220.79518776364
+Detroit River,flow_cms,cubic meters per second,2019,12,Dec,2019-12-01,7314.240772546463
+Detroit River,flow_cms,cubic meters per second,2020,1,Jan,2020-01-01,7676.696374128324
+Detroit River,flow_cms,cubic meters per second,2020,2,Feb,2020-02-01,7520.953732823618
+Detroit River,flow_cms,cubic meters per second,2020,3,Mar,2020-03-01,7492.636888950035
+Detroit River,flow_cms,cubic meters per second,2020,4,Apr,2020-04-01,7373.706144680987
+Detroit River,flow_cms,cubic meters per second,2020,5,May,2020-05-01,7399.1913041672115
+Detroit River,flow_cms,cubic meters per second,2020,6,Jun,2020-06-01,7249.112031637223
+Detroit River,flow_cms,cubic meters per second,2020,7,Jul,2020-07-01,7212.300134601564
+Detroit River,flow_cms,cubic meters per second,2020,8,Aug,2020-08-01,7198.141712664773
+Detroit River,flow_cms,cubic meters per second,2020,9,Sep,2020-09-01,7257.607084799297
+Detroit River,flow_cms,cubic meters per second,2020,10,Oct,2020-10-01,7234.953609700431
+Detroit River,flow_cms,cubic meters per second,2020,11,Nov,2020-11-01,7181.151606340623
+Detroit River,flow_cms,cubic meters per second,2020,12,Dec,2020-12-01,7048.062440134783
+Detroit River,flow_cms,cubic meters per second,2021,1,Jan,2021-01-01,7016.913911873842
+Detroit River,flow_cms,cubic meters per second,2021,2,Feb,2021-02-01,5592.576665032622
+Detroit River,flow_cms,cubic meters per second,2021,3,Mar,2021-03-01,7025.408965035917
+Detroit River,flow_cms,cubic meters per second,2021,4,Apr,2021-04-01,6634.636519580473
+Detroit River,flow_cms,cubic meters per second,2021,5,May,2021-05-01,6467.567140726334
+Detroit River,flow_cms,cubic meters per second,2021,6,Jun,2021-06-01,6425.09187491596
+Detroit River,flow_cms,cubic meters per second,2021,7,Jul,2021-07-01,6532.695881635575
+Detroit River,flow_cms,cubic meters per second,2021,8,Aug,2021-08-01,6371.289871556152
+Detroit River,flow_cms,cubic meters per second,2021,9,Sep,2021-09-01,6657.2899946793395
+Detroit River,flow_cms,cubic meters per second,2021,10,Oct,2021-10-01,6685.606838552922
+Detroit River,flow_cms,cubic meters per second,2021,11,Nov,2021-11-01,6447.745350014826
+Detroit River,flow_cms,cubic meters per second,2021,12,Dec,2021-12-01,6334.477974520494
+Detroit River,flow_cms,cubic meters per second,2022,1,Jan,2022-01-01,5708.675724914312
+Detroit River,flow_cms,cubic meters per second,2022,2,Feb,2022-02-01,4904.477358904558
+Detroit River,flow_cms,cubic meters per second,2022,3,Mar,2022-03-01,6303.329446259553
+Detroit River,flow_cms,cubic meters per second,2022,4,Apr,2022-04-01,6209.88386147673
+Detroit River,flow_cms,cubic meters per second,2022,5,May,2022-05-01,6294.834393097479
+Detroit River,flow_cms,cubic meters per second,2022,6,Jun,2022-06-01,6362.794818394077
+Detroit River,flow_cms,cubic meters per second,2022,7,Jul,2022-07-01,6107.943223531831
+Detroit River,flow_cms,cubic meters per second,2022,8,Aug,2022-08-01,6090.953117207681
+Detroit River,flow_cms,cubic meters per second,2022,9,Sep,2022-09-01,6110.77490791919
+Detroit River,flow_cms,cubic meters per second,2022,10,Oct,2022-10-01,6198.557123927297
+Detroit River,flow_cms,cubic meters per second,2022,11,Nov,2022-11-01,6025.824376298441
+Lake Erie,level_m,meters,2000,1,Jan,2000-01-01,173.82
+Lake Erie,level_m,meters,2000,2,Feb,2000-02-01,173.75
+Lake Erie,level_m,meters,2000,3,Mar,2000-03-01,173.83
+Lake Erie,level_m,meters,2000,4,Apr,2000-04-01,173.95
+Lake Erie,level_m,meters,2000,5,May,2000-05-01,174.07
+Lake Erie,level_m,meters,2000,6,Jun,2000-06-01,174.18
+Lake Erie,level_m,meters,2000,7,Jul,2000-07-01,174.26
+Lake Erie,level_m,meters,2000,8,Aug,2000-08-01,174.22
+Lake Erie,level_m,meters,2000,9,Sep,2000-09-01,174.09
+Lake Erie,level_m,meters,2000,10,Oct,2000-10-01,174.0
+Lake Erie,level_m,meters,2000,11,Nov,2000-11-01,173.88
+Lake Erie,level_m,meters,2000,12,Dec,2000-12-01,173.83
+Lake Erie,level_m,meters,2001,1,Jan,2001-01-01,173.75
+Lake Erie,level_m,meters,2001,2,Feb,2001-02-01,173.84
+Lake Erie,level_m,meters,2001,3,Mar,2001-03-01,173.94
+Lake Erie,level_m,meters,2001,4,Apr,2001-04-01,174.02
+Lake Erie,level_m,meters,2001,5,May,2001-05-01,174.04
+Lake Erie,level_m,meters,2001,6,Jun,2001-06-01,174.09
+Lake Erie,level_m,meters,2001,7,Jul,2001-07-01,174.03
+Lake Erie,level_m,meters,2001,8,Aug,2001-08-01,173.94
+Lake Erie,level_m,meters,2001,9,Sep,2001-09-01,173.83
+Lake Erie,level_m,meters,2001,10,Oct,2001-10-01,173.8
+Lake Erie,level_m,meters,2001,11,Nov,2001-11-01,173.8
+Lake Erie,level_m,meters,2001,12,Dec,2001-12-01,173.86
+Lake Erie,level_m,meters,2002,1,Jan,2002-01-01,173.85
+Lake Erie,level_m,meters,2002,2,Feb,2002-02-01,173.97
+Lake Erie,level_m,meters,2002,3,Mar,2002-03-01,174.02
+Lake Erie,level_m,meters,2002,4,Apr,2002-04-01,174.2
+Lake Erie,level_m,meters,2002,5,May,2002-05-01,174.3
+Lake Erie,level_m,meters,2002,6,Jun,2002-06-01,174.33
+Lake Erie,level_m,meters,2002,7,Jul,2002-07-01,174.24
+Lake Erie,level_m,meters,2002,8,Aug,2002-08-01,174.15
+Lake Erie,level_m,meters,2002,9,Sep,2002-09-01,174.04
+Lake Erie,level_m,meters,2002,10,Oct,2002-10-01,173.95
+Lake Erie,level_m,meters,2002,11,Nov,2002-11-01,173.84
+Lake Erie,level_m,meters,2002,12,Dec,2002-12-01,173.81
+Lake Erie,level_m,meters,2003,1,Jan,2003-01-01,173.81
+Lake Erie,level_m,meters,2003,2,Feb,2003-02-01,173.73
+Lake Erie,level_m,meters,2003,3,Mar,2003-03-01,173.78
+Lake Erie,level_m,meters,2003,4,Apr,2003-04-01,173.97
+Lake Erie,level_m,meters,2003,5,May,2003-05-01,174.08
+Lake Erie,level_m,meters,2003,6,Jun,2003-06-01,174.17
+Lake Erie,level_m,meters,2003,7,Jul,2003-07-01,174.18
+Lake Erie,level_m,meters,2003,8,Aug,2003-08-01,174.17
+Lake Erie,level_m,meters,2003,9,Sep,2003-09-01,174.04
+Lake Erie,level_m,meters,2003,10,Oct,2003-10-01,173.92
+Lake Erie,level_m,meters,2003,11,Nov,2003-11-01,173.85
+Lake Erie,level_m,meters,2003,12,Dec,2003-12-01,173.89
+Lake Erie,level_m,meters,2004,1,Jan,2004-01-01,173.94
+Lake Erie,level_m,meters,2004,2,Feb,2004-02-01,173.85
+Lake Erie,level_m,meters,2004,3,Mar,2004-03-01,173.96
+Lake Erie,level_m,meters,2004,4,Apr,2004-04-01,174.12
+Lake Erie,level_m,meters,2004,5,May,2004-05-01,174.22
+Lake Erie,level_m,meters,2004,6,Jun,2004-06-01,174.36
+Lake Erie,level_m,meters,2004,7,Jul,2004-07-01,174.34
+Lake Erie,level_m,meters,2004,8,Aug,2004-08-01,174.29
+Lake Erie,level_m,meters,2004,9,Sep,2004-09-01,174.25
+Lake Erie,level_m,meters,2004,10,Oct,2004-10-01,174.07
+Lake Erie,level_m,meters,2004,11,Nov,2004-11-01,174.0
+Lake Erie,level_m,meters,2004,12,Dec,2004-12-01,174.01
+Lake Erie,level_m,meters,2005,1,Jan,2005-01-01,174.23
+Lake Erie,level_m,meters,2005,2,Feb,2005-02-01,174.26
+Lake Erie,level_m,meters,2005,3,Mar,2005-03-01,174.29
+Lake Erie,level_m,meters,2005,4,Apr,2005-04-01,174.38
+Lake Erie,level_m,meters,2005,5,May,2005-05-01,174.4
+Lake Erie,level_m,meters,2005,6,Jun,2005-06-01,174.32
+Lake Erie,level_m,meters,2005,7,Jul,2005-07-01,174.22
+Lake Erie,level_m,meters,2005,8,Aug,2005-08-01,174.14
+Lake Erie,level_m,meters,2005,9,Sep,2005-09-01,174.08
+Lake Erie,level_m,meters,2005,10,Oct,2005-10-01,174.0
+Lake Erie,level_m,meters,2005,11,Nov,2005-11-01,173.88
+Lake Erie,level_m,meters,2005,12,Dec,2005-12-01,173.84
+Lake Erie,level_m,meters,2006,1,Jan,2006-01-01,173.97
+Lake Erie,level_m,meters,2006,2,Feb,2006-02-01,174.06
+Lake Erie,level_m,meters,2006,3,Mar,2006-03-01,174.11
+Lake Erie,level_m,meters,2006,4,Apr,2006-04-01,174.16
+Lake Erie,level_m,meters,2006,5,May,2006-05-01,174.2
+Lake Erie,level_m,meters,2006,6,Jun,2006-06-01,174.25
+Lake Erie,level_m,meters,2006,7,Jul,2006-07-01,174.27
+Lake Erie,level_m,meters,2006,8,Aug,2006-08-01,174.23
+Lake Erie,level_m,meters,2006,9,Sep,2006-09-01,174.14
+Lake Erie,level_m,meters,2006,10,Oct,2006-10-01,174.08
+Lake Erie,level_m,meters,2006,11,Nov,2006-11-01,174.1
+Lake Erie,level_m,meters,2006,12,Dec,2006-12-01,174.15
+Lake Erie,level_m,meters,2007,1,Jan,2007-01-01,174.29
+Lake Erie,level_m,meters,2007,2,Feb,2007-02-01,174.22
+Lake Erie,level_m,meters,2007,3,Mar,2007-03-01,174.26
+Lake Erie,level_m,meters,2007,4,Apr,2007-04-01,174.32
+Lake Erie,level_m,meters,2007,5,May,2007-05-01,174.35
+Lake Erie,level_m,meters,2007,6,Jun,2007-06-01,174.26
+Lake Erie,level_m,meters,2007,7,Jul,2007-07-01,174.15
+Lake Erie,level_m,meters,2007,8,Aug,2007-08-01,174.13
+Lake Erie,level_m,meters,2007,9,Sep,2007-09-01,174.08
+Lake Erie,level_m,meters,2007,10,Oct,2007-10-01,173.94
+Lake Erie,level_m,meters,2007,11,Nov,2007-11-01,173.8
+Lake Erie,level_m,meters,2007,12,Dec,2007-12-01,173.86
+Lake Erie,level_m,meters,2008,1,Jan,2008-01-01,173.92
+Lake Erie,level_m,meters,2008,2,Feb,2008-02-01,174.09
+Lake Erie,level_m,meters,2008,3,Mar,2008-03-01,174.26
+Lake Erie,level_m,meters,2008,4,Apr,2008-04-01,174.39
+Lake Erie,level_m,meters,2008,5,May,2008-05-01,174.35
+Lake Erie,level_m,meters,2008,6,Jun,2008-06-01,174.32
+Lake Erie,level_m,meters,2008,7,Jul,2008-07-01,174.35
+Lake Erie,level_m,meters,2008,8,Aug,2008-08-01,174.23
+Lake Erie,level_m,meters,2008,9,Sep,2008-09-01,174.12
+Lake Erie,level_m,meters,2008,10,Oct,2008-10-01,174.0
+Lake Erie,level_m,meters,2008,11,Nov,2008-11-01,173.92
+Lake Erie,level_m,meters,2008,12,Dec,2008-12-01,173.96
+Lake Erie,level_m,meters,2009,1,Jan,2009-01-01,174.04
+Lake Erie,level_m,meters,2009,2,Feb,2009-02-01,174.07
+Lake Erie,level_m,meters,2009,3,Mar,2009-03-01,174.31
+Lake Erie,level_m,meters,2009,4,Apr,2009-04-01,174.42
+Lake Erie,level_m,meters,2009,5,May,2009-05-01,174.46
+Lake Erie,level_m,meters,2009,6,Jun,2009-06-01,174.45
+Lake Erie,level_m,meters,2009,7,Jul,2009-07-01,174.42
+Lake Erie,level_m,meters,2009,8,Aug,2009-08-01,174.35
+Lake Erie,level_m,meters,2009,9,Sep,2009-09-01,174.24
+Lake Erie,level_m,meters,2009,10,Oct,2009-10-01,174.13
+Lake Erie,level_m,meters,2009,11,Nov,2009-11-01,174.07
+Lake Erie,level_m,meters,2009,12,Dec,2009-12-01,174.02
+Lake Erie,level_m,meters,2010,1,Jan,2010-01-01,173.99
+Lake Erie,level_m,meters,2010,2,Feb,2010-02-01,173.92
+Lake Erie,level_m,meters,2010,3,Mar,2010-03-01,173.97
+Lake Erie,level_m,meters,2010,4,Apr,2010-04-01,174.09
+Lake Erie,level_m,meters,2010,5,May,2010-05-01,174.21
+Lake Erie,level_m,meters,2010,6,Jun,2010-06-01,174.31
+Lake Erie,level_m,meters,2010,7,Jul,2010-07-01,174.27
+Lake Erie,level_m,meters,2010,8,Aug,2010-08-01,174.19
+Lake Erie,level_m,meters,2010,9,Sep,2010-09-01,174.02
+Lake Erie,level_m,meters,2010,10,Oct,2010-10-01,173.97
+Lake Erie,level_m,meters,2010,11,Nov,2010-11-01,173.88
+Lake Erie,level_m,meters,2010,12,Dec,2010-12-01,173.86
+Lake Erie,level_m,meters,2011,1,Jan,2011-01-01,173.83
+Lake Erie,level_m,meters,2011,2,Feb,2011-02-01,173.75
+Lake Erie,level_m,meters,2011,3,Mar,2011-03-01,174.03
+Lake Erie,level_m,meters,2011,4,Apr,2011-04-01,174.2
+Lake Erie,level_m,meters,2011,5,May,2011-05-01,174.46
+Lake Erie,level_m,meters,2011,6,Jun,2011-06-01,174.58
+Lake Erie,level_m,meters,2011,7,Jul,2011-07-01,174.48
+Lake Erie,level_m,meters,2011,8,Aug,2011-08-01,174.38
+Lake Erie,level_m,meters,2011,9,Sep,2011-09-01,174.3
+Lake Erie,level_m,meters,2011,10,Oct,2011-10-01,174.27
+Lake Erie,level_m,meters,2011,11,Nov,2011-11-01,174.21
+Lake Erie,level_m,meters,2011,12,Dec,2011-12-01,174.4
+Lake Erie,level_m,meters,2012,1,Jan,2012-01-01,174.39
+Lake Erie,level_m,meters,2012,2,Feb,2012-02-01,174.37
+Lake Erie,level_m,meters,2012,3,Mar,2012-03-01,174.36
+Lake Erie,level_m,meters,2012,4,Apr,2012-04-01,174.31
+Lake Erie,level_m,meters,2012,5,May,2012-05-01,174.27
+Lake Erie,level_m,meters,2012,6,Jun,2012-06-01,174.22
+Lake Erie,level_m,meters,2012,7,Jul,2012-07-01,174.14
+Lake Erie,level_m,meters,2012,8,Aug,2012-08-01,174.04
+Lake Erie,level_m,meters,2012,9,Sep,2012-09-01,173.95
+Lake Erie,level_m,meters,2012,10,Oct,2012-10-01,173.82
+Lake Erie,level_m,meters,2012,11,Nov,2012-11-01,173.85
+Lake Erie,level_m,meters,2012,12,Dec,2012-12-01,173.82
+Lake Erie,level_m,meters,2013,1,Jan,2013-01-01,173.82
+Lake Erie,level_m,meters,2013,2,Feb,2013-02-01,173.86
+Lake Erie,level_m,meters,2013,3,Mar,2013-03-01,173.92
+Lake Erie,level_m,meters,2013,4,Apr,2013-04-01,174.02
+Lake Erie,level_m,meters,2013,5,May,2013-05-01,174.1
+Lake Erie,level_m,meters,2013,6,Jun,2013-06-01,174.23
+Lake Erie,level_m,meters,2013,7,Jul,2013-07-01,174.35
+Lake Erie,level_m,meters,2013,8,Aug,2013-08-01,174.28
+Lake Erie,level_m,meters,2013,9,Sep,2013-09-01,174.16
+Lake Erie,level_m,meters,2013,10,Oct,2013-10-01,174.07
+Lake Erie,level_m,meters,2013,11,Nov,2013-11-01,173.97
+Lake Erie,level_m,meters,2013,12,Dec,2013-12-01,173.94
+Lake Erie,level_m,meters,2014,1,Jan,2014-01-01,174.0
+Lake Erie,level_m,meters,2014,2,Feb,2014-02-01,173.94
+Lake Erie,level_m,meters,2014,3,Mar,2014-03-01,173.99
+Lake Erie,level_m,meters,2014,4,Apr,2014-04-01,174.2
+Lake Erie,level_m,meters,2014,5,May,2014-05-01,174.35
+Lake Erie,level_m,meters,2014,6,Jun,2014-06-01,174.4
+Lake Erie,level_m,meters,2014,7,Jul,2014-07-01,174.4
+Lake Erie,level_m,meters,2014,8,Aug,2014-08-01,174.37
+Lake Erie,level_m,meters,2014,9,Sep,2014-09-01,174.31
+Lake Erie,level_m,meters,2014,10,Oct,2014-10-01,174.25
+Lake Erie,level_m,meters,2014,11,Nov,2014-11-01,174.15
+Lake Erie,level_m,meters,2014,12,Dec,2014-12-01,174.17
+Lake Erie,level_m,meters,2015,1,Jan,2015-01-01,174.16
+Lake Erie,level_m,meters,2015,2,Feb,2015-02-01,174.03
+Lake Erie,level_m,meters,2015,3,Mar,2015-03-01,173.99
+Lake Erie,level_m,meters,2015,4,Apr,2015-04-01,174.22
+Lake Erie,level_m,meters,2015,5,May,2015-05-01,174.31
+Lake Erie,level_m,meters,2015,6,Jun,2015-06-01,174.53
+Lake Erie,level_m,meters,2015,7,Jul,2015-07-01,174.74
+Lake Erie,level_m,meters,2015,8,Aug,2015-08-01,174.62
+Lake Erie,level_m,meters,2015,9,Sep,2015-09-01,174.5
+Lake Erie,level_m,meters,2015,10,Oct,2015-10-01,174.34
+Lake Erie,level_m,meters,2015,11,Nov,2015-11-01,174.22
+Lake Erie,level_m,meters,2015,12,Dec,2015-12-01,174.17
+Lake Erie,level_m,meters,2016,1,Jan,2016-01-01,174.23
+Lake Erie,level_m,meters,2016,2,Feb,2016-02-01,174.27
+Lake Erie,level_m,meters,2016,3,Mar,2016-03-01,174.41
+Lake Erie,level_m,meters,2016,4,Apr,2016-04-01,174.6
+Lake Erie,level_m,meters,2016,5,May,2016-05-01,174.65
+Lake Erie,level_m,meters,2016,6,Jun,2016-06-01,174.61
+Lake Erie,level_m,meters,2016,7,Jul,2016-07-01,174.54
+Lake Erie,level_m,meters,2016,8,Aug,2016-08-01,174.46
+Lake Erie,level_m,meters,2016,9,Sep,2016-09-01,174.39
+Lake Erie,level_m,meters,2016,10,Oct,2016-10-01,174.33
+Lake Erie,level_m,meters,2016,11,Nov,2016-11-01,174.26
+Lake Erie,level_m,meters,2016,12,Dec,2016-12-01,174.17
+Lake Erie,level_m,meters,2017,1,Jan,2017-01-01,174.29
+Lake Erie,level_m,meters,2017,2,Feb,2017-02-01,174.4
+Lake Erie,level_m,meters,2017,3,Mar,2017-03-01,174.47
+Lake Erie,level_m,meters,2017,4,Apr,2017-04-01,174.64
+Lake Erie,level_m,meters,2017,5,May,2017-05-01,174.82
+Lake Erie,level_m,meters,2017,6,Jun,2017-06-01,174.83
+Lake Erie,level_m,meters,2017,7,Jul,2017-07-01,174.81
+Lake Erie,level_m,meters,2017,8,Aug,2017-08-01,174.7
+Lake Erie,level_m,meters,2017,9,Sep,2017-09-01,174.59
+Lake Erie,level_m,meters,2017,10,Oct,2017-10-01,174.49
+Lake Erie,level_m,meters,2017,11,Nov,2017-11-01,174.49
+Lake Erie,level_m,meters,2017,12,Dec,2017-12-01,174.44
+Lake Erie,level_m,meters,2018,1,Jan,2018-01-01,174.38
+Lake Erie,level_m,meters,2018,2,Feb,2018-02-01,174.44
+Lake Erie,level_m,meters,2018,3,Mar,2018-03-01,174.68
+Lake Erie,level_m,meters,2018,4,Apr,2018-04-01,174.77
+Lake Erie,level_m,meters,2018,5,May,2018-05-01,174.88
+Lake Erie,level_m,meters,2018,6,Jun,2018-06-01,174.89
+Lake Erie,level_m,meters,2018,7,Jul,2018-07-01,174.82
+Lake Erie,level_m,meters,2018,8,Aug,2018-08-01,174.72
+Lake Erie,level_m,meters,2018,9,Sep,2018-09-01,174.66
+Lake Erie,level_m,meters,2018,10,Oct,2018-10-01,174.57
+Lake Erie,level_m,meters,2018,11,Nov,2018-11-01,174.58
+Lake Erie,level_m,meters,2018,12,Dec,2018-12-01,174.6
+Lake Erie,level_m,meters,2019,1,Jan,2019-01-01,174.63
+Lake Erie,level_m,meters,2019,2,Feb,2019-02-01,174.61
+Lake Erie,level_m,meters,2019,3,Mar,2019-03-01,174.65
+Lake Erie,level_m,meters,2019,4,Apr,2019-04-01,174.83
+Lake Erie,level_m,meters,2019,5,May,2019-05-01,175.05
+Lake Erie,level_m,meters,2019,6,Jun,2019-06-01,175.14
+Lake Erie,level_m,meters,2019,7,Jul,2019-07-01,175.13
+Lake Erie,level_m,meters,2019,8,Aug,2019-08-01,175.02
+Lake Erie,level_m,meters,2019,9,Sep,2019-09-01,174.87
+Lake Erie,level_m,meters,2019,10,Oct,2019-10-01,174.74
+Lake Erie,level_m,meters,2019,11,Nov,2019-11-01,174.68
+Lake Erie,level_m,meters,2019,12,Dec,2019-12-01,174.68
+Lake Erie,level_m,meters,2020,1,Jan,2020-01-01,174.8
+Lake Erie,level_m,meters,2020,2,Feb,2020-02-01,174.9
+Lake Erie,level_m,meters,2020,3,Mar,2020-03-01,174.95
+Lake Erie,level_m,meters,2020,4,Apr,2020-04-01,175.05
+Lake Erie,level_m,meters,2020,5,May,2020-05-01,175.08
+Lake Erie,level_m,meters,2020,6,Jun,2020-06-01,175.1
+Lake Erie,level_m,meters,2020,7,Jul,2020-07-01,175.05
+Lake Erie,level_m,meters,2020,8,Aug,2020-08-01,174.93
+Lake Erie,level_m,meters,2020,9,Sep,2020-09-01,174.83
+Lake Erie,level_m,meters,2020,10,Oct,2020-10-01,174.72
+Lake Erie,level_m,meters,2020,11,Nov,2020-11-01,174.65
+Lake Erie,level_m,meters,2020,12,Dec,2020-12-01,174.65
+Lake Erie,level_m,meters,2021,1,Jan,2021-01-01,174.69
+Lake Erie,level_m,meters,2021,2,Feb,2021-02-01,174.57
+Lake Erie,level_m,meters,2021,3,Mar,2021-03-01,174.58
+Lake Erie,level_m,meters,2021,4,Apr,2021-04-01,174.63
+Lake Erie,level_m,meters,2021,5,May,2021-05-01,174.68
+Lake Erie,level_m,meters,2021,6,Jun,2021-06-01,174.71
+Lake Erie,level_m,meters,2021,7,Jul,2021-07-01,174.81
+Lake Erie,level_m,meters,2021,8,Aug,2021-08-01,174.79
+Lake Erie,level_m,meters,2021,9,Sep,2021-09-01,174.67
+Lake Erie,level_m,meters,2021,10,Oct,2021-10-01,174.67
+Lake Erie,level_m,meters,2021,11,Nov,2021-11-01,174.63
+Lake Erie,level_m,meters,2021,12,Dec,2021-12-01,174.58
+Lake Erie,level_m,meters,2022,1,Jan,2022-01-01,174.54
+Lake Erie,level_m,meters,2022,2,Feb,2022-02-01,174.43
+Lake Erie,level_m,meters,2022,3,Mar,2022-03-01,174.53
+Lake Erie,level_m,meters,2022,4,Apr,2022-04-01,174.59
+Lake Erie,level_m,meters,2022,5,May,2022-05-01,174.67
+Lake Erie,level_m,meters,2022,6,Jun,2022-06-01,174.68
+Lake Erie,level_m,meters,2022,7,Jul,2022-07-01,174.62
+Lake Erie,level_m,meters,2022,8,Aug,2022-08-01,174.55
+Lake Erie,level_m,meters,2022,9,Sep,2022-09-01,174.46
+Lake Erie,level_m,meters,2022,10,Oct,2022-10-01,174.32
+Lake Erie,level_m,meters,2022,11,Nov,2022-11-01,174.25
+Lake Erie,level_m,meters,2022,12,Dec,2022-12-01,174.2
+Niagara River,flow_cms,cubic meters per second,2000,1,Jan,2000-01-01,5180.0
+Niagara River,flow_cms,cubic meters per second,2000,2,Feb,2000-02-01,4980.0
+Niagara River,flow_cms,cubic meters per second,2000,3,Mar,2000-03-01,5030.0
+Niagara River,flow_cms,cubic meters per second,2000,4,Apr,2000-04-01,5320.0
+Niagara River,flow_cms,cubic meters per second,2000,5,May,2000-05-01,5570.0
+Niagara River,flow_cms,cubic meters per second,2000,6,Jun,2000-06-01,5740.0
+Niagara River,flow_cms,cubic meters per second,2000,7,Jul,2000-07-01,5830.0
+Niagara River,flow_cms,cubic meters per second,2000,8,Aug,2000-08-01,5750.0
+Niagara River,flow_cms,cubic meters per second,2000,9,Sep,2000-09-01,5530.0
+Niagara River,flow_cms,cubic meters per second,2000,10,Oct,2000-10-01,5380.0
+Niagara River,flow_cms,cubic meters per second,2000,11,Nov,2000-11-01,5410.0
+Niagara River,flow_cms,cubic meters per second,2000,12,Dec,2000-12-01,5350.0
+Niagara River,flow_cms,cubic meters per second,2001,1,Jan,2001-01-01,5050.0
+Niagara River,flow_cms,cubic meters per second,2001,2,Feb,2001-02-01,5210.0
+Niagara River,flow_cms,cubic meters per second,2001,3,Mar,2001-03-01,5270.0
+Niagara River,flow_cms,cubic meters per second,2001,4,Apr,2001-04-01,5390.0
+Niagara River,flow_cms,cubic meters per second,2001,5,May,2001-05-01,5540.0
+Niagara River,flow_cms,cubic meters per second,2001,6,Jun,2001-06-01,5400.0
+Niagara River,flow_cms,cubic meters per second,2001,7,Jul,2001-07-01,5220.0
+Niagara River,flow_cms,cubic meters per second,2001,8,Aug,2001-08-01,5210.0
+Niagara River,flow_cms,cubic meters per second,2001,9,Sep,2001-09-01,5020.0
+Niagara River,flow_cms,cubic meters per second,2001,10,Oct,2001-10-01,5260.0
+Niagara River,flow_cms,cubic meters per second,2001,11,Nov,2001-11-01,5130.0
+Niagara River,flow_cms,cubic meters per second,2001,12,Dec,2001-12-01,5480.0
+Niagara River,flow_cms,cubic meters per second,2002,1,Jan,2002-01-01,5470.0
+Niagara River,flow_cms,cubic meters per second,2002,2,Feb,2002-02-01,5770.0
+Niagara River,flow_cms,cubic meters per second,2002,3,Mar,2002-03-01,5690.0
+Niagara River,flow_cms,cubic meters per second,2002,4,Apr,2002-04-01,5890.0
+Niagara River,flow_cms,cubic meters per second,2002,5,May,2002-05-01,6160.0
+Niagara River,flow_cms,cubic meters per second,2002,6,Jun,2002-06-01,6020.0
+Niagara River,flow_cms,cubic meters per second,2002,7,Jul,2002-07-01,5750.0
+Niagara River,flow_cms,cubic meters per second,2002,8,Aug,2002-08-01,5540.0
+Niagara River,flow_cms,cubic meters per second,2002,9,Sep,2002-09-01,5350.0
+Niagara River,flow_cms,cubic meters per second,2002,10,Oct,2002-10-01,5270.0
+Niagara River,flow_cms,cubic meters per second,2002,11,Nov,2002-11-01,5310.0
+Niagara River,flow_cms,cubic meters per second,2002,12,Dec,2002-12-01,5340.0
+Niagara River,flow_cms,cubic meters per second,2003,1,Jan,2003-01-01,5100.0
+Niagara River,flow_cms,cubic meters per second,2003,2,Feb,2003-02-01,4950.0
+Niagara River,flow_cms,cubic meters per second,2003,3,Mar,2003-03-01,5020.0
+Niagara River,flow_cms,cubic meters per second,2003,4,Apr,2003-04-01,5180.0
+Niagara River,flow_cms,cubic meters per second,2003,5,May,2003-05-01,5610.0
+Niagara River,flow_cms,cubic meters per second,2003,6,Jun,2003-06-01,5590.0
+Niagara River,flow_cms,cubic meters per second,2003,7,Jul,2003-07-01,5640.0
+Niagara River,flow_cms,cubic meters per second,2003,8,Aug,2003-08-01,5670.0
+Niagara River,flow_cms,cubic meters per second,2003,9,Sep,2003-09-01,5450.0
+Niagara River,flow_cms,cubic meters per second,2003,10,Oct,2003-10-01,5410.0
+Niagara River,flow_cms,cubic meters per second,2003,11,Nov,2003-11-01,5440.0
+Niagara River,flow_cms,cubic meters per second,2003,12,Dec,2003-12-01,5490.0
+Niagara River,flow_cms,cubic meters per second,2004,1,Jan,2004-01-01,5590.0
+Niagara River,flow_cms,cubic meters per second,2004,2,Feb,2004-02-01,5200.0
+Niagara River,flow_cms,cubic meters per second,2004,3,Mar,2004-03-01,5440.0
+Niagara River,flow_cms,cubic meters per second,2004,4,Apr,2004-04-01,5690.0
+Niagara River,flow_cms,cubic meters per second,2004,5,May,2004-05-01,5960.0
+Niagara River,flow_cms,cubic meters per second,2004,6,Jun,2004-06-01,6030.0
+Niagara River,flow_cms,cubic meters per second,2004,7,Jul,2004-07-01,6010.0
+Niagara River,flow_cms,cubic meters per second,2004,8,Aug,2004-08-01,5960.0
+Niagara River,flow_cms,cubic meters per second,2004,9,Sep,2004-09-01,5790.0
+Niagara River,flow_cms,cubic meters per second,2004,10,Oct,2004-10-01,5680.0
+Niagara River,flow_cms,cubic meters per second,2004,11,Nov,2004-11-01,5610.0
+Niagara River,flow_cms,cubic meters per second,2004,12,Dec,2004-12-01,5800.0
+Niagara River,flow_cms,cubic meters per second,2005,1,Jan,2005-01-01,6030.0
+Niagara River,flow_cms,cubic meters per second,2005,2,Feb,2005-02-01,6070.0
+Niagara River,flow_cms,cubic meters per second,2005,3,Mar,2005-03-01,6090.0
+Niagara River,flow_cms,cubic meters per second,2005,4,Apr,2005-04-01,6300.0
+Niagara River,flow_cms,cubic meters per second,2005,5,May,2005-05-01,6250.0
+Niagara River,flow_cms,cubic meters per second,2005,6,Jun,2005-06-01,6000.0
+Niagara River,flow_cms,cubic meters per second,2005,7,Jul,2005-07-01,5790.0
+Niagara River,flow_cms,cubic meters per second,2005,8,Aug,2005-08-01,5540.0
+Niagara River,flow_cms,cubic meters per second,2005,9,Sep,2005-09-01,5420.0
+Niagara River,flow_cms,cubic meters per second,2005,10,Oct,2005-10-01,5280.0
+Niagara River,flow_cms,cubic meters per second,2005,11,Nov,2005-11-01,5570.0
+Niagara River,flow_cms,cubic meters per second,2005,12,Dec,2005-12-01,5420.0
+Niagara River,flow_cms,cubic meters per second,2006,1,Jan,2006-01-01,5550.0
+Niagara River,flow_cms,cubic meters per second,2006,2,Feb,2006-02-01,5870.0
+Niagara River,flow_cms,cubic meters per second,2006,3,Mar,2006-03-01,5710.0
+Niagara River,flow_cms,cubic meters per second,2006,4,Apr,2006-04-01,5720.0
+Niagara River,flow_cms,cubic meters per second,2006,5,May,2006-05-01,5760.0
+Niagara River,flow_cms,cubic meters per second,2006,6,Jun,2006-06-01,5520.0
+Niagara River,flow_cms,cubic meters per second,2006,7,Jul,2006-07-01,5880.0
+Niagara River,flow_cms,cubic meters per second,2006,8,Aug,2006-08-01,5700.0
+Niagara River,flow_cms,cubic meters per second,2006,9,Sep,2006-09-01,5600.0
+Niagara River,flow_cms,cubic meters per second,2006,10,Oct,2006-10-01,5940.0
+Niagara River,flow_cms,cubic meters per second,2006,11,Nov,2006-11-01,5710.0
+Niagara River,flow_cms,cubic meters per second,2006,12,Dec,2006-12-01,6150.0
+Niagara River,flow_cms,cubic meters per second,2007,1,Jan,2007-01-01,6410.0
+Niagara River,flow_cms,cubic meters per second,2007,2,Feb,2007-02-01,5730.0
+Niagara River,flow_cms,cubic meters per second,2007,3,Mar,2007-03-01,5970.0
+Niagara River,flow_cms,cubic meters per second,2007,4,Apr,2007-04-01,5990.0
+Niagara River,flow_cms,cubic meters per second,2007,5,May,2007-05-01,6160.0
+Niagara River,flow_cms,cubic meters per second,2007,6,Jun,2007-06-01,5710.0
+Niagara River,flow_cms,cubic meters per second,2007,7,Jul,2007-07-01,5430.0
+Niagara River,flow_cms,cubic meters per second,2007,8,Aug,2007-08-01,5520.0
+Niagara River,flow_cms,cubic meters per second,2007,9,Sep,2007-09-01,5440.0
+Niagara River,flow_cms,cubic meters per second,2007,10,Oct,2007-10-01,5300.0
+Niagara River,flow_cms,cubic meters per second,2007,11,Nov,2007-11-01,5220.0
+Niagara River,flow_cms,cubic meters per second,2007,12,Dec,2007-12-01,5440.0
+Niagara River,flow_cms,cubic meters per second,2008,1,Jan,2008-01-01,5610.0
+Niagara River,flow_cms,cubic meters per second,2008,2,Feb,2008-02-01,5430.0
+Niagara River,flow_cms,cubic meters per second,2008,3,Mar,2008-03-01,6020.0
+Niagara River,flow_cms,cubic meters per second,2008,4,Apr,2008-04-01,6270.0
+Niagara River,flow_cms,cubic meters per second,2008,5,May,2008-05-01,6220.0
+Niagara River,flow_cms,cubic meters per second,2008,6,Jun,2008-06-01,5930.0
+Niagara River,flow_cms,cubic meters per second,2008,7,Jul,2008-07-01,6070.0
+Niagara River,flow_cms,cubic meters per second,2008,8,Aug,2008-08-01,5790.0
+Niagara River,flow_cms,cubic meters per second,2008,9,Sep,2008-09-01,5530.0
+Niagara River,flow_cms,cubic meters per second,2008,10,Oct,2008-10-01,5470.0
+Niagara River,flow_cms,cubic meters per second,2008,11,Nov,2008-11-01,5460.0
+Niagara River,flow_cms,cubic meters per second,2008,12,Dec,2008-12-01,5830.0
+Niagara River,flow_cms,cubic meters per second,2009,1,Jan,2009-01-01,5610.0
+Niagara River,flow_cms,cubic meters per second,2009,2,Feb,2009-02-01,5760.0
+Niagara River,flow_cms,cubic meters per second,2009,3,Mar,2009-03-01,6100.0
+Niagara River,flow_cms,cubic meters per second,2009,4,Apr,2009-04-01,6270.0
+Niagara River,flow_cms,cubic meters per second,2009,5,May,2009-05-01,6420.0
+Niagara River,flow_cms,cubic meters per second,2009,6,Jun,2009-06-01,6100.0
+Niagara River,flow_cms,cubic meters per second,2009,7,Jul,2009-07-01,6250.0
+Niagara River,flow_cms,cubic meters per second,2009,8,Aug,2009-08-01,6140.0
+Niagara River,flow_cms,cubic meters per second,2009,9,Sep,2009-09-01,5830.0
+Niagara River,flow_cms,cubic meters per second,2009,10,Oct,2009-10-01,5780.0
+Niagara River,flow_cms,cubic meters per second,2009,11,Nov,2009-11-01,5600.0
+Niagara River,flow_cms,cubic meters per second,2009,12,Dec,2009-12-01,5850.0
+Niagara River,flow_cms,cubic meters per second,2010,1,Jan,2010-01-01,5540.0
+Niagara River,flow_cms,cubic meters per second,2010,2,Feb,2010-02-01,5230.0
+Niagara River,flow_cms,cubic meters per second,2010,3,Mar,2010-03-01,5340.0
+Niagara River,flow_cms,cubic meters per second,2010,4,Apr,2010-04-01,5630.0
+Niagara River,flow_cms,cubic meters per second,2010,5,May,2010-05-01,5810.0
+Niagara River,flow_cms,cubic meters per second,2010,6,Jun,2010-06-01,5990.0
+Niagara River,flow_cms,cubic meters per second,2010,7,Jul,2010-07-01,5910.0
+Niagara River,flow_cms,cubic meters per second,2010,8,Aug,2010-08-01,5650.0
+Niagara River,flow_cms,cubic meters per second,2010,9,Sep,2010-09-01,5430.0
+Niagara River,flow_cms,cubic meters per second,2010,10,Oct,2010-10-01,5340.0
+Niagara River,flow_cms,cubic meters per second,2010,11,Nov,2010-11-01,5280.0
+Niagara River,flow_cms,cubic meters per second,2010,12,Dec,2010-12-01,5400.0
+Niagara River,flow_cms,cubic meters per second,2011,1,Jan,2011-01-01,5080.0
+Niagara River,flow_cms,cubic meters per second,2011,2,Feb,2011-02-01,4910.0
+Niagara River,flow_cms,cubic meters per second,2011,3,Mar,2011-03-01,5540.0
+Niagara River,flow_cms,cubic meters per second,2011,4,Apr,2011-04-01,5810.0
+Niagara River,flow_cms,cubic meters per second,2011,5,May,2011-05-01,6420.0
+Niagara River,flow_cms,cubic meters per second,2011,6,Jun,2011-06-01,6550.0
+Niagara River,flow_cms,cubic meters per second,2011,7,Jul,2011-07-01,6180.0
+Niagara River,flow_cms,cubic meters per second,2011,8,Aug,2011-08-01,6110.0
+Niagara River,flow_cms,cubic meters per second,2011,9,Sep,2011-09-01,5820.0
+Niagara River,flow_cms,cubic meters per second,2011,10,Oct,2011-10-01,6030.0
+Niagara River,flow_cms,cubic meters per second,2011,11,Nov,2011-11-01,6010.0
+Niagara River,flow_cms,cubic meters per second,2011,12,Dec,2011-12-01,6570.0
+Niagara River,flow_cms,cubic meters per second,2012,1,Jan,2012-01-01,6690.0
+Niagara River,flow_cms,cubic meters per second,2012,2,Feb,2012-02-01,6480.0
+Niagara River,flow_cms,cubic meters per second,2012,3,Mar,2012-03-01,6250.0
+Niagara River,flow_cms,cubic meters per second,2012,4,Apr,2012-04-01,6040.0
+Niagara River,flow_cms,cubic meters per second,2012,5,May,2012-05-01,5730.0
+Niagara River,flow_cms,cubic meters per second,2012,6,Jun,2012-06-01,5660.0
+Niagara River,flow_cms,cubic meters per second,2012,7,Jul,2012-07-01,5440.0
+Niagara River,flow_cms,cubic meters per second,2012,8,Aug,2012-08-01,5320.0
+Niagara River,flow_cms,cubic meters per second,2012,9,Sep,2012-09-01,5130.0
+Niagara River,flow_cms,cubic meters per second,2012,10,Oct,2012-10-01,5030.0
+Niagara River,flow_cms,cubic meters per second,2012,11,Nov,2012-11-01,5220.0
+Niagara River,flow_cms,cubic meters per second,2012,12,Dec,2012-12-01,5090.0
+Niagara River,flow_cms,cubic meters per second,2013,1,Jan,2013-01-01,5390.0
+Niagara River,flow_cms,cubic meters per second,2013,2,Feb,2013-02-01,5270.0
+Niagara River,flow_cms,cubic meters per second,2013,3,Mar,2013-03-01,5260.0
+Niagara River,flow_cms,cubic meters per second,2013,4,Apr,2013-04-01,5460.0
+Niagara River,flow_cms,cubic meters per second,2013,5,May,2013-05-01,5570.0
+Niagara River,flow_cms,cubic meters per second,2013,6,Jun,2013-06-01,5630.0
+Niagara River,flow_cms,cubic meters per second,2013,7,Jul,2013-07-01,5910.0
+Niagara River,flow_cms,cubic meters per second,2013,8,Aug,2013-08-01,5850.0
+Niagara River,flow_cms,cubic meters per second,2013,9,Sep,2013-09-01,5590.0
+Niagara River,flow_cms,cubic meters per second,2013,10,Oct,2013-10-01,5720.0
+Niagara River,flow_cms,cubic meters per second,2013,11,Nov,2013-11-01,5750.0
+Niagara River,flow_cms,cubic meters per second,2013,12,Dec,2013-12-01,5660.0
+Niagara River,flow_cms,cubic meters per second,2014,1,Jan,2014-01-01,5300.0
+Niagara River,flow_cms,cubic meters per second,2014,2,Feb,2014-02-01,5280.0
+Niagara River,flow_cms,cubic meters per second,2014,3,Mar,2014-03-01,5360.0
+Niagara River,flow_cms,cubic meters per second,2014,4,Apr,2014-04-01,5780.0
+Niagara River,flow_cms,cubic meters per second,2014,5,May,2014-05-01,6190.0
+Niagara River,flow_cms,cubic meters per second,2014,6,Jun,2014-06-01,6090.0
+Niagara River,flow_cms,cubic meters per second,2014,7,Jul,2014-07-01,6130.0
+Niagara River,flow_cms,cubic meters per second,2014,8,Aug,2014-08-01,6040.0
+Niagara River,flow_cms,cubic meters per second,2014,9,Sep,2014-09-01,6000.0
+Niagara River,flow_cms,cubic meters per second,2014,10,Oct,2014-10-01,6040.0
+Niagara River,flow_cms,cubic meters per second,2014,11,Nov,2014-11-01,6130.0
+Niagara River,flow_cms,cubic meters per second,2014,12,Dec,2014-12-01,5970.0
+Niagara River,flow_cms,cubic meters per second,2015,1,Jan,2015-01-01,5810.0
+Niagara River,flow_cms,cubic meters per second,2015,2,Feb,2015-02-01,5550.0
+Niagara River,flow_cms,cubic meters per second,2015,3,Mar,2015-03-01,5450.0
+Niagara River,flow_cms,cubic meters per second,2015,4,Apr,2015-04-01,5900.0
+Niagara River,flow_cms,cubic meters per second,2015,5,May,2015-05-01,6070.0
+Niagara River,flow_cms,cubic meters per second,2015,6,Jun,2015-06-01,6420.0
+Niagara River,flow_cms,cubic meters per second,2015,7,Jul,2015-07-01,6930.0
+Niagara River,flow_cms,cubic meters per second,2015,8,Aug,2015-08-01,6760.0
+Niagara River,flow_cms,cubic meters per second,2015,9,Sep,2015-09-01,6370.0
+Niagara River,flow_cms,cubic meters per second,2015,10,Oct,2015-10-01,6160.0
+Niagara River,flow_cms,cubic meters per second,2015,11,Nov,2015-11-01,6210.0
+Niagara River,flow_cms,cubic meters per second,2015,12,Dec,2015-12-01,5990.0
+Niagara River,flow_cms,cubic meters per second,2016,1,Jan,2016-01-01,6320.0
+Niagara River,flow_cms,cubic meters per second,2016,2,Feb,2016-02-01,6270.0
+Niagara River,flow_cms,cubic meters per second,2016,3,Mar,2016-03-01,6360.0
+Niagara River,flow_cms,cubic meters per second,2016,4,Apr,2016-04-01,6690.0
+Niagara River,flow_cms,cubic meters per second,2016,5,May,2016-05-01,6840.0
+Niagara River,flow_cms,cubic meters per second,2016,6,Jun,2016-06-01,6610.0
+Niagara River,flow_cms,cubic meters per second,2016,7,Jul,2016-07-01,6500.0
+Niagara River,flow_cms,cubic meters per second,2016,8,Aug,2016-08-01,6280.0
+Niagara River,flow_cms,cubic meters per second,2016,9,Sep,2016-09-01,6020.0
+Niagara River,flow_cms,cubic meters per second,2016,10,Oct,2016-10-01,5990.0
+Niagara River,flow_cms,cubic meters per second,2016,11,Nov,2016-11-01,6160.0
+Niagara River,flow_cms,cubic meters per second,2016,12,Dec,2016-12-01,6300.0
+Niagara River,flow_cms,cubic meters per second,2017,1,Jan,2017-01-01,6320.0
+Niagara River,flow_cms,cubic meters per second,2017,2,Feb,2017-02-01,6540.0
+Niagara River,flow_cms,cubic meters per second,2017,3,Mar,2017-03-01,6510.0
+Niagara River,flow_cms,cubic meters per second,2017,4,Apr,2017-04-01,6880.0
+Niagara River,flow_cms,cubic meters per second,2017,5,May,2017-05-01,7320.0
+Niagara River,flow_cms,cubic meters per second,2017,6,Jun,2017-06-01,7200.0
+Niagara River,flow_cms,cubic meters per second,2017,7,Jul,2017-07-01,7170.0
+Niagara River,flow_cms,cubic meters per second,2017,8,Aug,2017-08-01,6940.0
+Niagara River,flow_cms,cubic meters per second,2017,9,Sep,2017-09-01,6580.0
+Niagara River,flow_cms,cubic meters per second,2017,10,Oct,2017-10-01,6610.0
+Niagara River,flow_cms,cubic meters per second,2017,11,Nov,2017-11-01,6820.0
+Niagara River,flow_cms,cubic meters per second,2017,12,Dec,2017-12-01,6800.0
+Niagara River,flow_cms,cubic meters per second,2018,1,Jan,2018-01-01,6320.0
+Niagara River,flow_cms,cubic meters per second,2018,2,Feb,2018-02-01,6540.0
+Niagara River,flow_cms,cubic meters per second,2018,3,Mar,2018-03-01,6900.0
+Niagara River,flow_cms,cubic meters per second,2018,4,Apr,2018-04-01,7240.0
+Niagara River,flow_cms,cubic meters per second,2018,5,May,2018-05-01,7400.0
+Niagara River,flow_cms,cubic meters per second,2018,6,Jun,2018-06-01,7270.0
+Niagara River,flow_cms,cubic meters per second,2018,7,Jul,2018-07-01,7050.0
+Niagara River,flow_cms,cubic meters per second,2018,8,Aug,2018-08-01,6930.0
+Niagara River,flow_cms,cubic meters per second,2018,9,Sep,2018-09-01,6660.0
+Niagara River,flow_cms,cubic meters per second,2018,10,Oct,2018-10-01,6760.0
+Niagara River,flow_cms,cubic meters per second,2018,11,Nov,2018-11-01,6990.0
+Niagara River,flow_cms,cubic meters per second,2018,12,Dec,2018-12-01,6920.0
+Niagara River,flow_cms,cubic meters per second,2019,1,Jan,2019-01-01,6980.0
+Niagara River,flow_cms,cubic meters per second,2019,2,Feb,2019-02-01,6820.0
+Niagara River,flow_cms,cubic meters per second,2019,3,Mar,2019-03-01,6810.0
+Niagara River,flow_cms,cubic meters per second,2019,4,Apr,2019-04-01,7060.0
+Niagara River,flow_cms,cubic meters per second,2019,5,May,2019-05-01,7850.0
+Niagara River,flow_cms,cubic meters per second,2019,6,Jun,2019-06-01,8070.0
+Niagara River,flow_cms,cubic meters per second,2019,7,Jul,2019-07-01,7830.0
+Niagara River,flow_cms,cubic meters per second,2019,8,Aug,2019-08-01,7650.0
+Niagara River,flow_cms,cubic meters per second,2019,9,Sep,2019-09-01,7280.0
+Niagara River,flow_cms,cubic meters per second,2019,10,Oct,2019-10-01,7150.0
+Niagara River,flow_cms,cubic meters per second,2019,11,Nov,2019-11-01,7200.0
+Niagara River,flow_cms,cubic meters per second,2019,12,Dec,2019-12-01,7190.0
+Niagara River,flow_cms,cubic meters per second,2020,1,Jan,2020-01-01,7530.0
+Niagara River,flow_cms,cubic meters per second,2020,2,Feb,2020-02-01,7700.0
+Niagara River,flow_cms,cubic meters per second,2020,3,Mar,2020-03-01,7660.0
+Niagara River,flow_cms,cubic meters per second,2020,4,Apr,2020-04-01,7920.0
+Niagara River,flow_cms,cubic meters per second,2020,5,May,2020-05-01,7830.0
+Niagara River,flow_cms,cubic meters per second,2020,6,Jun,2020-06-01,7790.0
+Niagara River,flow_cms,cubic meters per second,2020,7,Jul,2020-07-01,7700.0
+Niagara River,flow_cms,cubic meters per second,2020,8,Aug,2020-08-01,7420.0
+Niagara River,flow_cms,cubic meters per second,2020,9,Sep,2020-09-01,7170.0
+Niagara River,flow_cms,cubic meters per second,2020,10,Oct,2020-10-01,7020.0
+Niagara River,flow_cms,cubic meters per second,2020,11,Nov,2020-11-01,7170.0
+Niagara River,flow_cms,cubic meters per second,2020,12,Dec,2020-12-01,7200.0
+Lake Ontario,level_m,meters,2000,1,Jan,2000-01-01,74.5
+Lake Ontario,level_m,meters,2000,2,Feb,2000-02-01,74.45
+Lake Ontario,level_m,meters,2000,3,Mar,2000-03-01,74.58
+Lake Ontario,level_m,meters,2000,4,Apr,2000-04-01,74.82
+Lake Ontario,level_m,meters,2000,5,May,2000-05-01,75.1
+Lake Ontario,level_m,meters,2000,6,Jun,2000-06-01,75.26
+Lake Ontario,level_m,meters,2000,7,Jul,2000-07-01,75.24
+Lake Ontario,level_m,meters,2000,8,Aug,2000-08-01,75.06
+Lake Ontario,level_m,meters,2000,9,Sep,2000-09-01,74.81
+Lake Ontario,level_m,meters,2000,10,Oct,2000-10-01,74.61
+Lake Ontario,level_m,meters,2000,11,Nov,2000-11-01,74.46
+Lake Ontario,level_m,meters,2000,12,Dec,2000-12-01,74.47
+Lake Ontario,level_m,meters,2001,1,Jan,2001-01-01,74.49
+Lake Ontario,level_m,meters,2001,2,Feb,2001-02-01,74.55
+Lake Ontario,level_m,meters,2001,3,Mar,2001-03-01,74.65
+Lake Ontario,level_m,meters,2001,4,Apr,2001-04-01,74.84
+Lake Ontario,level_m,meters,2001,5,May,2001-05-01,74.93
+Lake Ontario,level_m,meters,2001,6,Jun,2001-06-01,74.99
+Lake Ontario,level_m,meters,2001,7,Jul,2001-07-01,74.97
+Lake Ontario,level_m,meters,2001,8,Aug,2001-08-01,74.82
+Lake Ontario,level_m,meters,2001,9,Sep,2001-09-01,74.63
+Lake Ontario,level_m,meters,2001,10,Oct,2001-10-01,74.53
+Lake Ontario,level_m,meters,2001,11,Nov,2001-11-01,74.47
+Lake Ontario,level_m,meters,2001,12,Dec,2001-12-01,74.52
+Lake Ontario,level_m,meters,2002,1,Jan,2002-01-01,74.56
+Lake Ontario,level_m,meters,2002,2,Feb,2002-02-01,74.68
+Lake Ontario,level_m,meters,2002,3,Mar,2002-03-01,74.79
+Lake Ontario,level_m,meters,2002,4,Apr,2002-04-01,74.98
+Lake Ontario,level_m,meters,2002,5,May,2002-05-01,75.22
+Lake Ontario,level_m,meters,2002,6,Jun,2002-06-01,75.33
+Lake Ontario,level_m,meters,2002,7,Jul,2002-07-01,75.19
+Lake Ontario,level_m,meters,2002,8,Aug,2002-08-01,74.91
+Lake Ontario,level_m,meters,2002,9,Sep,2002-09-01,74.65
+Lake Ontario,level_m,meters,2002,10,Oct,2002-10-01,74.49
+Lake Ontario,level_m,meters,2002,11,Nov,2002-11-01,74.36
+Lake Ontario,level_m,meters,2002,12,Dec,2002-12-01,74.32
+Lake Ontario,level_m,meters,2003,1,Jan,2003-01-01,74.33
+Lake Ontario,level_m,meters,2003,2,Feb,2003-02-01,74.29
+Lake Ontario,level_m,meters,2003,3,Mar,2003-03-01,74.35
+Lake Ontario,level_m,meters,2003,4,Apr,2003-04-01,74.73
+Lake Ontario,level_m,meters,2003,5,May,2003-05-01,74.95
+Lake Ontario,level_m,meters,2003,6,Jun,2003-06-01,75.12
+Lake Ontario,level_m,meters,2003,7,Jul,2003-07-01,75.05
+Lake Ontario,level_m,meters,2003,8,Aug,2003-08-01,74.99
+Lake Ontario,level_m,meters,2003,9,Sep,2003-09-01,74.75
+Lake Ontario,level_m,meters,2003,10,Oct,2003-10-01,74.63
+Lake Ontario,level_m,meters,2003,11,Nov,2003-11-01,74.64
+Lake Ontario,level_m,meters,2003,12,Dec,2003-12-01,74.73
+Lake Ontario,level_m,meters,2004,1,Jan,2004-01-01,74.83
+Lake Ontario,level_m,meters,2004,2,Feb,2004-02-01,74.75
+Lake Ontario,level_m,meters,2004,3,Mar,2004-03-01,74.72
+Lake Ontario,level_m,meters,2004,4,Apr,2004-04-01,74.89
+Lake Ontario,level_m,meters,2004,5,May,2004-05-01,75.04
+Lake Ontario,level_m,meters,2004,6,Jun,2004-06-01,75.14
+Lake Ontario,level_m,meters,2004,7,Jul,2004-07-01,75.09
+Lake Ontario,level_m,meters,2004,8,Aug,2004-08-01,75.02
+Lake Ontario,level_m,meters,2004,9,Sep,2004-09-01,74.95
+Lake Ontario,level_m,meters,2004,10,Oct,2004-10-01,74.7
+Lake Ontario,level_m,meters,2004,11,Nov,2004-11-01,74.5
+Lake Ontario,level_m,meters,2004,12,Dec,2004-12-01,74.55
+Lake Ontario,level_m,meters,2005,1,Jan,2005-01-01,74.74
+Lake Ontario,level_m,meters,2005,2,Feb,2005-02-01,74.85
+Lake Ontario,level_m,meters,2005,3,Mar,2005-03-01,74.84
+Lake Ontario,level_m,meters,2005,4,Apr,2005-04-01,75.03
+Lake Ontario,level_m,meters,2005,5,May,2005-05-01,75.11
+Lake Ontario,level_m,meters,2005,6,Jun,2005-06-01,75.02
+Lake Ontario,level_m,meters,2005,7,Jul,2005-07-01,74.94
+Lake Ontario,level_m,meters,2005,8,Aug,2005-08-01,74.79
+Lake Ontario,level_m,meters,2005,9,Sep,2005-09-01,74.69
+Lake Ontario,level_m,meters,2005,10,Oct,2005-10-01,74.6
+Lake Ontario,level_m,meters,2005,11,Nov,2005-11-01,74.58
+Lake Ontario,level_m,meters,2005,12,Dec,2005-12-01,74.55
+Lake Ontario,level_m,meters,2006,1,Jan,2006-01-01,74.63
+Lake Ontario,level_m,meters,2006,2,Feb,2006-02-01,74.86
+Lake Ontario,level_m,meters,2006,3,Mar,2006-03-01,74.82
+Lake Ontario,level_m,meters,2006,4,Apr,2006-04-01,74.83
+Lake Ontario,level_m,meters,2006,5,May,2006-05-01,74.84
+Lake Ontario,level_m,meters,2006,6,Jun,2006-06-01,74.89
+Lake Ontario,level_m,meters,2006,7,Jul,2006-07-01,74.98
+Lake Ontario,level_m,meters,2006,8,Aug,2006-08-01,74.95
+Lake Ontario,level_m,meters,2006,9,Sep,2006-09-01,74.81
+Lake Ontario,level_m,meters,2006,10,Oct,2006-10-01,74.74
+Lake Ontario,level_m,meters,2006,11,Nov,2006-11-01,74.79
+Lake Ontario,level_m,meters,2006,12,Dec,2006-12-01,74.83
+Lake Ontario,level_m,meters,2007,1,Jan,2007-01-01,74.98
+Lake Ontario,level_m,meters,2007,2,Feb,2007-02-01,74.97
+Lake Ontario,level_m,meters,2007,3,Mar,2007-03-01,74.85
+Lake Ontario,level_m,meters,2007,4,Apr,2007-04-01,75.01
+Lake Ontario,level_m,meters,2007,5,May,2007-05-01,75.05
+Lake Ontario,level_m,meters,2007,6,Jun,2007-06-01,74.98
+Lake Ontario,level_m,meters,2007,7,Jul,2007-07-01,74.86
+Lake Ontario,level_m,meters,2007,8,Aug,2007-08-01,74.71
+Lake Ontario,level_m,meters,2007,9,Sep,2007-09-01,74.56
+Lake Ontario,level_m,meters,2007,10,Oct,2007-10-01,74.42
+Lake Ontario,level_m,meters,2007,11,Nov,2007-11-01,74.31
+Lake Ontario,level_m,meters,2007,12,Dec,2007-12-01,74.32
+Lake Ontario,level_m,meters,2008,1,Jan,2008-01-01,74.56
+Lake Ontario,level_m,meters,2008,2,Feb,2008-02-01,74.75
+Lake Ontario,level_m,meters,2008,3,Mar,2008-03-01,74.87
+Lake Ontario,level_m,meters,2008,4,Apr,2008-04-01,75.18
+Lake Ontario,level_m,meters,2008,5,May,2008-05-01,75.3
+Lake Ontario,level_m,meters,2008,6,Jun,2008-06-01,75.19
+Lake Ontario,level_m,meters,2008,7,Jul,2008-07-01,75.12
+Lake Ontario,level_m,meters,2008,8,Aug,2008-08-01,75.06
+Lake Ontario,level_m,meters,2008,9,Sep,2008-09-01,74.81
+Lake Ontario,level_m,meters,2008,10,Oct,2008-10-01,74.6
+Lake Ontario,level_m,meters,2008,11,Nov,2008-11-01,74.51
+Lake Ontario,level_m,meters,2008,12,Dec,2008-12-01,74.55
+Lake Ontario,level_m,meters,2009,1,Jan,2009-01-01,74.76
+Lake Ontario,level_m,meters,2009,2,Feb,2009-02-01,74.82
+Lake Ontario,level_m,meters,2009,3,Mar,2009-03-01,74.92
+Lake Ontario,level_m,meters,2009,4,Apr,2009-04-01,75.12
+Lake Ontario,level_m,meters,2009,5,May,2009-05-01,75.19
+Lake Ontario,level_m,meters,2009,6,Jun,2009-06-01,75.16
+Lake Ontario,level_m,meters,2009,7,Jul,2009-07-01,75.12
+Lake Ontario,level_m,meters,2009,8,Aug,2009-08-01,75.03
+Lake Ontario,level_m,meters,2009,9,Sep,2009-09-01,74.78
+Lake Ontario,level_m,meters,2009,10,Oct,2009-10-01,74.6
+Lake Ontario,level_m,meters,2009,11,Nov,2009-11-01,74.5
+Lake Ontario,level_m,meters,2009,12,Dec,2009-12-01,74.48
+Lake Ontario,level_m,meters,2010,1,Jan,2010-01-01,74.51
+Lake Ontario,level_m,meters,2010,2,Feb,2010-02-01,74.54
+Lake Ontario,level_m,meters,2010,3,Mar,2010-03-01,74.55
+Lake Ontario,level_m,meters,2010,4,Apr,2010-04-01,74.66
+Lake Ontario,level_m,meters,2010,5,May,2010-05-01,74.71
+Lake Ontario,level_m,meters,2010,6,Jun,2010-06-01,74.85
+Lake Ontario,level_m,meters,2010,7,Jul,2010-07-01,74.97
+Lake Ontario,level_m,meters,2010,8,Aug,2010-08-01,74.9
+Lake Ontario,level_m,meters,2010,9,Sep,2010-09-01,74.72
+Lake Ontario,level_m,meters,2010,10,Oct,2010-10-01,74.61
+Lake Ontario,level_m,meters,2010,11,Nov,2010-11-01,74.5
+Lake Ontario,level_m,meters,2010,12,Dec,2010-12-01,74.52
+Lake Ontario,level_m,meters,2011,1,Jan,2011-01-01,74.49
+Lake Ontario,level_m,meters,2011,2,Feb,2011-02-01,74.41
+Lake Ontario,level_m,meters,2011,3,Mar,2011-03-01,74.61
+Lake Ontario,level_m,meters,2011,4,Apr,2011-04-01,74.85
+Lake Ontario,level_m,meters,2011,5,May,2011-05-01,75.23
+Lake Ontario,level_m,meters,2011,6,Jun,2011-06-01,75.33
+Lake Ontario,level_m,meters,2011,7,Jul,2011-07-01,75.14
+Lake Ontario,level_m,meters,2011,8,Aug,2011-08-01,74.94
+Lake Ontario,level_m,meters,2011,9,Sep,2011-09-01,74.76
+Lake Ontario,level_m,meters,2011,10,Oct,2011-10-01,74.66
+Lake Ontario,level_m,meters,2011,11,Nov,2011-11-01,74.58
+Lake Ontario,level_m,meters,2011,12,Dec,2011-12-01,74.62
+Lake Ontario,level_m,meters,2012,1,Jan,2012-01-01,74.8
+Lake Ontario,level_m,meters,2012,2,Feb,2012-02-01,74.99
+Lake Ontario,level_m,meters,2012,3,Mar,2012-03-01,74.97
+Lake Ontario,level_m,meters,2012,4,Apr,2012-04-01,74.92
+Lake Ontario,level_m,meters,2012,5,May,2012-05-01,74.91
+Lake Ontario,level_m,meters,2012,6,Jun,2012-06-01,74.9
+Lake Ontario,level_m,meters,2012,7,Jul,2012-07-01,74.79
+Lake Ontario,level_m,meters,2012,8,Aug,2012-08-01,74.65
+Lake Ontario,level_m,meters,2012,9,Sep,2012-09-01,74.5
+Lake Ontario,level_m,meters,2012,10,Oct,2012-10-01,74.34
+Lake Ontario,level_m,meters,2012,11,Nov,2012-11-01,74.29
+Lake Ontario,level_m,meters,2012,12,Dec,2012-12-01,74.28
+Lake Ontario,level_m,meters,2013,1,Jan,2013-01-01,74.38
+Lake Ontario,level_m,meters,2013,2,Feb,2013-02-01,74.52
+Lake Ontario,level_m,meters,2013,3,Mar,2013-03-01,74.57
+Lake Ontario,level_m,meters,2013,4,Apr,2013-04-01,74.72
+Lake Ontario,level_m,meters,2013,5,May,2013-05-01,74.88
+Lake Ontario,level_m,meters,2013,6,Jun,2013-06-01,75.1
+Lake Ontario,level_m,meters,2013,7,Jul,2013-07-01,75.14
+Lake Ontario,level_m,meters,2013,8,Aug,2013-08-01,74.99
+Lake Ontario,level_m,meters,2013,9,Sep,2013-09-01,74.79
+Lake Ontario,level_m,meters,2013,10,Oct,2013-10-01,74.64
+Lake Ontario,level_m,meters,2013,11,Nov,2013-11-01,74.6
+Lake Ontario,level_m,meters,2013,12,Dec,2013-12-01,74.53
+Lake Ontario,level_m,meters,2014,1,Jan,2014-01-01,74.64
+Lake Ontario,level_m,meters,2014,2,Feb,2014-02-01,74.61
+Lake Ontario,level_m,meters,2014,3,Mar,2014-03-01,74.55
+Lake Ontario,level_m,meters,2014,4,Apr,2014-04-01,74.83
+Lake Ontario,level_m,meters,2014,5,May,2014-05-01,75.14
+Lake Ontario,level_m,meters,2014,6,Jun,2014-06-01,75.17
+Lake Ontario,level_m,meters,2014,7,Jul,2014-07-01,75.09
+Lake Ontario,level_m,meters,2014,8,Aug,2014-08-01,74.96
+Lake Ontario,level_m,meters,2014,9,Sep,2014-09-01,74.78
+Lake Ontario,level_m,meters,2014,10,Oct,2014-10-01,74.59
+Lake Ontario,level_m,meters,2014,11,Nov,2014-11-01,74.46
+Lake Ontario,level_m,meters,2014,12,Dec,2014-12-01,74.46
+Lake Ontario,level_m,meters,2015,1,Jan,2015-01-01,74.56
+Lake Ontario,level_m,meters,2015,2,Feb,2015-02-01,74.5
+Lake Ontario,level_m,meters,2015,3,Mar,2015-03-01,74.41
+Lake Ontario,level_m,meters,2015,4,Apr,2015-04-01,74.62
+Lake Ontario,level_m,meters,2015,5,May,2015-05-01,74.81
+Lake Ontario,level_m,meters,2015,6,Jun,2015-06-01,75.02
+Lake Ontario,level_m,meters,2015,7,Jul,2015-07-01,75.21
+Lake Ontario,level_m,meters,2015,8,Aug,2015-08-01,75.11
+Lake Ontario,level_m,meters,2015,9,Sep,2015-09-01,74.91
+Lake Ontario,level_m,meters,2015,10,Oct,2015-10-01,74.67
+Lake Ontario,level_m,meters,2015,11,Nov,2015-11-01,74.56
+Lake Ontario,level_m,meters,2015,12,Dec,2015-12-01,74.47
+Lake Ontario,level_m,meters,2016,1,Jan,2016-01-01,74.63
+Lake Ontario,level_m,meters,2016,2,Feb,2016-02-01,74.82
+Lake Ontario,level_m,meters,2016,3,Mar,2016-03-01,74.97
+Lake Ontario,level_m,meters,2016,4,Apr,2016-04-01,75.11
+Lake Ontario,level_m,meters,2016,5,May,2016-05-01,75.09
+Lake Ontario,level_m,meters,2016,6,Jun,2016-06-01,75.02
+Lake Ontario,level_m,meters,2016,7,Jul,2016-07-01,74.95
+Lake Ontario,level_m,meters,2016,8,Aug,2016-08-01,74.84
+Lake Ontario,level_m,meters,2016,9,Sep,2016-09-01,74.7
+Lake Ontario,level_m,meters,2016,10,Oct,2016-10-01,74.54
+Lake Ontario,level_m,meters,2016,11,Nov,2016-11-01,74.48
+Lake Ontario,level_m,meters,2016,12,Dec,2016-12-01,74.46
+Lake Ontario,level_m,meters,2017,1,Jan,2017-01-01,74.62
+Lake Ontario,level_m,meters,2017,2,Feb,2017-02-01,74.82
+Lake Ontario,level_m,meters,2017,3,Mar,2017-03-01,75.0
+Lake Ontario,level_m,meters,2017,4,Apr,2017-04-01,75.35
+Lake Ontario,level_m,meters,2017,5,May,2017-05-01,75.8
+Lake Ontario,level_m,meters,2017,6,Jun,2017-06-01,75.81
+Lake Ontario,level_m,meters,2017,7,Jul,2017-07-01,75.69
+Lake Ontario,level_m,meters,2017,8,Aug,2017-08-01,75.43
+Lake Ontario,level_m,meters,2017,9,Sep,2017-09-01,75.08
+Lake Ontario,level_m,meters,2017,10,Oct,2017-10-01,74.86
+Lake Ontario,level_m,meters,2017,11,Nov,2017-11-01,74.87
+Lake Ontario,level_m,meters,2017,12,Dec,2017-12-01,74.77
+Lake Ontario,level_m,meters,2018,1,Jan,2018-01-01,74.83
+Lake Ontario,level_m,meters,2018,2,Feb,2018-02-01,74.9
+Lake Ontario,level_m,meters,2018,3,Mar,2018-03-01,74.93
+Lake Ontario,level_m,meters,2018,4,Apr,2018-04-01,75.01
+Lake Ontario,level_m,meters,2018,5,May,2018-05-01,75.26
+Lake Ontario,level_m,meters,2018,6,Jun,2018-06-01,75.22
+Lake Ontario,level_m,meters,2018,7,Jul,2018-07-01,75.06
+Lake Ontario,level_m,meters,2018,8,Aug,2018-08-01,74.91
+Lake Ontario,level_m,meters,2018,9,Sep,2018-09-01,74.74
+Lake Ontario,level_m,meters,2018,10,Oct,2018-10-01,74.62
+Lake Ontario,level_m,meters,2018,11,Nov,2018-11-01,74.62
+Lake Ontario,level_m,meters,2018,12,Dec,2018-12-01,74.71
+Lake Ontario,level_m,meters,2019,1,Jan,2019-01-01,74.83
+Lake Ontario,level_m,meters,2019,2,Feb,2019-02-01,74.97
+Lake Ontario,level_m,meters,2019,3,Mar,2019-03-01,74.97
+Lake Ontario,level_m,meters,2019,4,Apr,2019-04-01,75.15
+Lake Ontario,level_m,meters,2019,5,May,2019-05-01,75.7
+Lake Ontario,level_m,meters,2019,6,Jun,2019-06-01,75.91
+Lake Ontario,level_m,meters,2019,7,Jul,2019-07-01,75.8
+Lake Ontario,level_m,meters,2019,8,Aug,2019-08-01,75.53
+Lake Ontario,level_m,meters,2019,9,Sep,2019-09-01,75.24
+Lake Ontario,level_m,meters,2019,10,Oct,2019-10-01,75.04
+Lake Ontario,level_m,meters,2019,11,Nov,2019-11-01,75.04
+Lake Ontario,level_m,meters,2019,12,Dec,2019-12-01,75.0
+Lake Ontario,level_m,meters,2020,1,Jan,2020-01-01,75.05
+Lake Ontario,level_m,meters,2020,2,Feb,2020-02-01,75.12
+Lake Ontario,level_m,meters,2020,3,Mar,2020-03-01,75.18
+Lake Ontario,level_m,meters,2020,4,Apr,2020-04-01,75.32
+Lake Ontario,level_m,meters,2020,5,May,2020-05-01,75.36
+Lake Ontario,level_m,meters,2020,6,Jun,2020-06-01,75.29
+Lake Ontario,level_m,meters,2020,7,Jul,2020-07-01,75.18
+Lake Ontario,level_m,meters,2020,8,Aug,2020-08-01,75.05
+Lake Ontario,level_m,meters,2020,9,Sep,2020-09-01,74.85
+Lake Ontario,level_m,meters,2020,10,Oct,2020-10-01,74.7
+Lake Ontario,level_m,meters,2020,11,Nov,2020-11-01,74.6
+Lake Ontario,level_m,meters,2020,12,Dec,2020-12-01,74.62
+Lake Ontario,level_m,meters,2021,1,Jan,2021-01-01,74.62
+Lake Ontario,level_m,meters,2021,2,Feb,2021-02-01,74.53
+Lake Ontario,level_m,meters,2021,3,Mar,2021-03-01,74.49
+Lake Ontario,level_m,meters,2021,4,Apr,2021-04-01,74.62
+Lake Ontario,level_m,meters,2021,5,May,2021-05-01,74.72
+Lake Ontario,level_m,meters,2021,6,Jun,2021-06-01,74.71
+Lake Ontario,level_m,meters,2021,7,Jul,2021-07-01,74.81
+Lake Ontario,level_m,meters,2021,8,Aug,2021-08-01,74.85
+Lake Ontario,level_m,meters,2021,9,Sep,2021-09-01,74.79
+Lake Ontario,level_m,meters,2021,10,Oct,2021-10-01,74.78
+Lake Ontario,level_m,meters,2021,11,Nov,2021-11-01,74.86
+Lake Ontario,level_m,meters,2021,12,Dec,2021-12-01,74.87
+Lake Ontario,level_m,meters,2022,1,Jan,2022-01-01,74.86
+Lake Ontario,level_m,meters,2022,2,Feb,2022-02-01,74.88
+Lake Ontario,level_m,meters,2022,3,Mar,2022-03-01,74.99
+Lake Ontario,level_m,meters,2022,4,Apr,2022-04-01,75.13
+Lake Ontario,level_m,meters,2022,5,May,2022-05-01,75.17
+Lake Ontario,level_m,meters,2022,6,Jun,2022-06-01,75.13
+Lake Ontario,level_m,meters,2022,7,Jul,2022-07-01,74.95
+Lake Ontario,level_m,meters,2022,8,Aug,2022-08-01,74.74
+Lake Ontario,level_m,meters,2022,9,Sep,2022-09-01,74.55
+Lake Ontario,level_m,meters,2022,10,Oct,2022-10-01,74.41
+Lake Ontario,level_m,meters,2022,11,Nov,2022-11-01,74.4
+Lake Ontario,level_m,meters,2022,12,Dec,2022-12-01,74.47
+Ottawa River,flow_cms,cubic meters per second,2000,1,Jan,2000-01-01,2090.0
+Ottawa River,flow_cms,cubic meters per second,2000,2,Feb,2000-02-01,2003.0
+Ottawa River,flow_cms,cubic meters per second,2000,3,Mar,2000-03-01,2382.0
+Ottawa River,flow_cms,cubic meters per second,2000,4,Apr,2000-04-01,2847.0
+Ottawa River,flow_cms,cubic meters per second,2000,5,May,2000-05-01,2712.0
+Ottawa River,flow_cms,cubic meters per second,2000,6,Jun,2000-06-01,1842.0
+Ottawa River,flow_cms,cubic meters per second,2000,7,Jul,2000-07-01,1559.0
+Ottawa River,flow_cms,cubic meters per second,2000,8,Aug,2000-08-01,1392.0
+Ottawa River,flow_cms,cubic meters per second,2000,9,Sep,2000-09-01,1226.0
+Ottawa River,flow_cms,cubic meters per second,2000,10,Oct,2000-10-01,1016.0
+Ottawa River,flow_cms,cubic meters per second,2000,11,Nov,2000-11-01,1098.0
+Ottawa River,flow_cms,cubic meters per second,2000,12,Dec,2000-12-01,1485.0
+Ottawa River,flow_cms,cubic meters per second,2001,1,Jan,2001-01-01,1449.0
+Ottawa River,flow_cms,cubic meters per second,2001,2,Feb,2001-02-01,1657.0
+Ottawa River,flow_cms,cubic meters per second,2001,3,Mar,2001-03-01,1518.0
+Ottawa River,flow_cms,cubic meters per second,2001,4,Apr,2001-04-01,2872.0
+Ottawa River,flow_cms,cubic meters per second,2001,5,May,2001-05-01,1756.0
+Ottawa River,flow_cms,cubic meters per second,2001,6,Jun,2001-06-01,1439.0
+Ottawa River,flow_cms,cubic meters per second,2001,7,Jul,2001-07-01,1016.0
+Ottawa River,flow_cms,cubic meters per second,2001,8,Aug,2001-08-01,668.0
+Ottawa River,flow_cms,cubic meters per second,2001,9,Sep,2001-09-01,822.0
+Ottawa River,flow_cms,cubic meters per second,2001,10,Oct,2001-10-01,1837.0
+Ottawa River,flow_cms,cubic meters per second,2001,11,Nov,2001-11-01,2561.0
+Ottawa River,flow_cms,cubic meters per second,2001,12,Dec,2001-12-01,2798.0
+Ottawa River,flow_cms,cubic meters per second,2002,1,Jan,2002-01-01,2185.0
+Ottawa River,flow_cms,cubic meters per second,2002,2,Feb,2002-02-01,1970.0
+Ottawa River,flow_cms,cubic meters per second,2002,3,Mar,2002-03-01,2354.0
+Ottawa River,flow_cms,cubic meters per second,2002,4,Apr,2002-04-01,4171.0
+Ottawa River,flow_cms,cubic meters per second,2002,5,May,2002-05-01,3951.0
+Ottawa River,flow_cms,cubic meters per second,2002,6,Jun,2002-06-01,3691.0
+Ottawa River,flow_cms,cubic meters per second,2002,7,Jul,2002-07-01,1858.0
+Ottawa River,flow_cms,cubic meters per second,2002,8,Aug,2002-08-01,1105.0
+Ottawa River,flow_cms,cubic meters per second,2002,9,Sep,2002-09-01,886.0
+Ottawa River,flow_cms,cubic meters per second,2002,10,Oct,2002-10-01,826.0
+Ottawa River,flow_cms,cubic meters per second,2002,11,Nov,2002-11-01,900.0
+Ottawa River,flow_cms,cubic meters per second,2002,12,Dec,2002-12-01,956.0
+Ottawa River,flow_cms,cubic meters per second,2003,1,Jan,2003-01-01,1167.0
+Ottawa River,flow_cms,cubic meters per second,2003,2,Feb,2003-02-01,1249.0
+Ottawa River,flow_cms,cubic meters per second,2003,3,Mar,2003-03-01,1488.0
+Ottawa River,flow_cms,cubic meters per second,2003,4,Apr,2003-04-01,2373.0
+Ottawa River,flow_cms,cubic meters per second,2003,5,May,2003-05-01,1868.0
+Ottawa River,flow_cms,cubic meters per second,2003,6,Jun,2003-06-01,1725.0
+Ottawa River,flow_cms,cubic meters per second,2003,7,Jul,2003-07-01,1127.0
+Ottawa River,flow_cms,cubic meters per second,2003,8,Aug,2003-08-01,1487.0
+Ottawa River,flow_cms,cubic meters per second,2003,9,Sep,2003-09-01,1008.0
+Ottawa River,flow_cms,cubic meters per second,2003,10,Oct,2003-10-01,1816.0
+Ottawa River,flow_cms,cubic meters per second,2003,11,Nov,2003-11-01,3266.0
+Ottawa River,flow_cms,cubic meters per second,2003,12,Dec,2003-12-01,3096.0
+Ottawa River,flow_cms,cubic meters per second,2004,1,Jan,2004-01-01,2470.0
+Ottawa River,flow_cms,cubic meters per second,2004,2,Feb,2004-02-01,2040.0
+Ottawa River,flow_cms,cubic meters per second,2004,3,Mar,2004-03-01,2289.0
+Ottawa River,flow_cms,cubic meters per second,2004,4,Apr,2004-04-01,3217.0
+Ottawa River,flow_cms,cubic meters per second,2004,5,May,2004-05-01,3865.0
+Ottawa River,flow_cms,cubic meters per second,2004,6,Jun,2004-06-01,1936.0
+Ottawa River,flow_cms,cubic meters per second,2004,7,Jul,2004-07-01,1875.0
+Ottawa River,flow_cms,cubic meters per second,2004,8,Aug,2004-08-01,1091.0
+Ottawa River,flow_cms,cubic meters per second,2004,9,Sep,2004-09-01,1255.0
+Ottawa River,flow_cms,cubic meters per second,2004,10,Oct,2004-10-01,881.0
+Ottawa River,flow_cms,cubic meters per second,2004,11,Nov,2004-11-01,1095.0
+Ottawa River,flow_cms,cubic meters per second,2004,12,Dec,2004-12-01,1575.0
+Ottawa River,flow_cms,cubic meters per second,2005,1,Jan,2005-01-01,1942.0
+Ottawa River,flow_cms,cubic meters per second,2005,2,Feb,2005-02-01,1736.0
+Ottawa River,flow_cms,cubic meters per second,2005,3,Mar,2005-03-01,1373.0
+Ottawa River,flow_cms,cubic meters per second,2005,4,Apr,2005-04-01,4141.0
+Ottawa River,flow_cms,cubic meters per second,2005,5,May,2005-05-01,2499.0
+Ottawa River,flow_cms,cubic meters per second,2005,6,Jun,2005-06-01,1570.0
+Ottawa River,flow_cms,cubic meters per second,2005,7,Jul,2005-07-01,993.0
+Ottawa River,flow_cms,cubic meters per second,2005,8,Aug,2005-08-01,780.0
+Ottawa River,flow_cms,cubic meters per second,2005,9,Sep,2005-09-01,698.0
+Ottawa River,flow_cms,cubic meters per second,2005,10,Oct,2005-10-01,1068.0
+Ottawa River,flow_cms,cubic meters per second,2005,11,Nov,2005-11-01,1614.0
+Ottawa River,flow_cms,cubic meters per second,2005,12,Dec,2005-12-01,2258.0
+Ottawa River,flow_cms,cubic meters per second,2006,1,Jan,2006-01-01,2201.0
+Ottawa River,flow_cms,cubic meters per second,2006,2,Feb,2006-02-01,2308.0
+Ottawa River,flow_cms,cubic meters per second,2006,3,Mar,2006-03-01,2468.0
+Ottawa River,flow_cms,cubic meters per second,2006,4,Apr,2006-04-01,4144.0
+Ottawa River,flow_cms,cubic meters per second,2006,5,May,2006-05-01,2444.0
+Ottawa River,flow_cms,cubic meters per second,2006,6,Jun,2006-06-01,1568.0
+Ottawa River,flow_cms,cubic meters per second,2006,7,Jul,2006-07-01,1427.0
+Ottawa River,flow_cms,cubic meters per second,2006,8,Aug,2006-08-01,1360.0
+Ottawa River,flow_cms,cubic meters per second,2006,9,Sep,2006-09-01,1201.0
+Ottawa River,flow_cms,cubic meters per second,2006,10,Oct,2006-10-01,2591.0
+Ottawa River,flow_cms,cubic meters per second,2006,11,Nov,2006-11-01,3377.0
+Ottawa River,flow_cms,cubic meters per second,2006,12,Dec,2006-12-01,3299.0
+Ottawa River,flow_cms,cubic meters per second,2007,1,Jan,2007-01-01,2823.0
+Ottawa River,flow_cms,cubic meters per second,2007,2,Feb,2007-02-01,2176.0
+Ottawa River,flow_cms,cubic meters per second,2007,3,Mar,2007-03-01,2049.0
+Ottawa River,flow_cms,cubic meters per second,2007,4,Apr,2007-04-01,2841.0
+Ottawa River,flow_cms,cubic meters per second,2007,5,May,2007-05-01,1722.0
+Ottawa River,flow_cms,cubic meters per second,2007,6,Jun,2007-06-01,1979.0
+Ottawa River,flow_cms,cubic meters per second,2007,7,Jul,2007-07-01,1411.0
+Ottawa River,flow_cms,cubic meters per second,2007,8,Aug,2007-08-01,826.0
+Ottawa River,flow_cms,cubic meters per second,2007,9,Sep,2007-09-01,720.0
+Ottawa River,flow_cms,cubic meters per second,2007,10,Oct,2007-10-01,707.0
+Ottawa River,flow_cms,cubic meters per second,2007,11,Nov,2007-11-01,849.0
+Ottawa River,flow_cms,cubic meters per second,2007,12,Dec,2007-12-01,1221.0
+Ottawa River,flow_cms,cubic meters per second,2008,1,Jan,2008-01-01,2513.0
+Ottawa River,flow_cms,cubic meters per second,2008,2,Feb,2008-02-01,2243.0
+Ottawa River,flow_cms,cubic meters per second,2008,3,Mar,2008-03-01,2140.0
+Ottawa River,flow_cms,cubic meters per second,2008,4,Apr,2008-04-01,4783.0
+Ottawa River,flow_cms,cubic meters per second,2008,5,May,2008-05-01,3228.0
+Ottawa River,flow_cms,cubic meters per second,2008,6,Jun,2008-06-01,2027.0
+Ottawa River,flow_cms,cubic meters per second,2008,7,Jul,2008-07-01,2318.0
+Ottawa River,flow_cms,cubic meters per second,2008,8,Aug,2008-08-01,2182.0
+Ottawa River,flow_cms,cubic meters per second,2008,9,Sep,2008-09-01,1472.0
+Ottawa River,flow_cms,cubic meters per second,2008,10,Oct,2008-10-01,1323.0
+Ottawa River,flow_cms,cubic meters per second,2008,11,Nov,2008-11-01,1793.0
+Ottawa River,flow_cms,cubic meters per second,2008,12,Dec,2008-12-01,2085.0
+Ottawa River,flow_cms,cubic meters per second,2009,1,Jan,2009-01-01,2336.0
+Ottawa River,flow_cms,cubic meters per second,2009,2,Feb,2009-02-01,2220.0
+Ottawa River,flow_cms,cubic meters per second,2009,3,Mar,2009-03-01,2550.0
+Ottawa River,flow_cms,cubic meters per second,2009,4,Apr,2009-04-01,4193.0
+Ottawa River,flow_cms,cubic meters per second,2009,5,May,2009-05-01,3358.0
+Ottawa River,flow_cms,cubic meters per second,2009,6,Jun,2009-06-01,2244.0
+Ottawa River,flow_cms,cubic meters per second,2009,7,Jul,2009-07-01,1951.0
+Ottawa River,flow_cms,cubic meters per second,2009,8,Aug,2009-08-01,1886.0
+Ottawa River,flow_cms,cubic meters per second,2009,9,Sep,2009-09-01,1169.0
+Ottawa River,flow_cms,cubic meters per second,2009,10,Oct,2009-10-01,1349.0
+Ottawa River,flow_cms,cubic meters per second,2009,11,Nov,2009-11-01,1916.0
+Ottawa River,flow_cms,cubic meters per second,2009,12,Dec,2009-12-01,1936.0
+Ottawa River,flow_cms,cubic meters per second,2010,1,Jan,2010-01-01,1872.0
+Ottawa River,flow_cms,cubic meters per second,2010,2,Feb,2010-02-01,1949.0
+Ottawa River,flow_cms,cubic meters per second,2010,3,Mar,2010-03-01,2308.0
+Ottawa River,flow_cms,cubic meters per second,2010,4,Apr,2010-04-01,1614.0
+Ottawa River,flow_cms,cubic meters per second,2010,5,May,2010-05-01,948.0
+Ottawa River,flow_cms,cubic meters per second,2010,6,Jun,2010-06-01,789.0
+Ottawa River,flow_cms,cubic meters per second,2010,7,Jul,2010-07-01,730.0
+Ottawa River,flow_cms,cubic meters per second,2010,8,Aug,2010-08-01,640.0
+Ottawa River,flow_cms,cubic meters per second,2010,9,Sep,2010-09-01,981.0
+Ottawa River,flow_cms,cubic meters per second,2010,10,Oct,2010-10-01,1896.0
+Ottawa River,flow_cms,cubic meters per second,2010,11,Nov,2010-11-01,1867.0
+Ottawa River,flow_cms,cubic meters per second,2010,12,Dec,2010-12-01,2711.0
+Ottawa River,flow_cms,cubic meters per second,2011,1,Jan,2011-01-01,2224.0
+Ottawa River,flow_cms,cubic meters per second,2011,2,Feb,2011-02-01,2010.0
+Ottawa River,flow_cms,cubic meters per second,2011,3,Mar,2011-03-01,2477.0
+Ottawa River,flow_cms,cubic meters per second,2011,4,Apr,2011-04-01,3423.0
+Ottawa River,flow_cms,cubic meters per second,2011,5,May,2011-05-01,3640.0
+Ottawa River,flow_cms,cubic meters per second,2011,6,Jun,2011-06-01,2106.0
+Ottawa River,flow_cms,cubic meters per second,2011,7,Jul,2011-07-01,1465.0
+Ottawa River,flow_cms,cubic meters per second,2011,8,Aug,2011-08-01,899.0
+Ottawa River,flow_cms,cubic meters per second,2011,9,Sep,2011-09-01,832.0
+Ottawa River,flow_cms,cubic meters per second,2011,10,Oct,2011-10-01,876.0
+Ottawa River,flow_cms,cubic meters per second,2011,11,Nov,2011-11-01,1157.0
+Ottawa River,flow_cms,cubic meters per second,2011,12,Dec,2011-12-01,1881.0
+Ottawa River,flow_cms,cubic meters per second,2012,1,Jan,2012-01-01,1924.0
+Ottawa River,flow_cms,cubic meters per second,2012,2,Feb,2012-02-01,1909.0
+Ottawa River,flow_cms,cubic meters per second,2012,3,Mar,2012-03-01,3248.0
+Ottawa River,flow_cms,cubic meters per second,2012,4,Apr,2012-04-01,2315.0
+Ottawa River,flow_cms,cubic meters per second,2012,5,May,2012-05-01,1692.0
+Ottawa River,flow_cms,cubic meters per second,2012,6,Jun,2012-06-01,987.0
+Ottawa River,flow_cms,cubic meters per second,2012,7,Jul,2012-07-01,620.0
+Ottawa River,flow_cms,cubic meters per second,2012,8,Aug,2012-08-01,614.0
+Ottawa River,flow_cms,cubic meters per second,2012,9,Sep,2012-09-01,703.0
+Ottawa River,flow_cms,cubic meters per second,2012,10,Oct,2012-10-01,1223.0
+Ottawa River,flow_cms,cubic meters per second,2012,11,Nov,2012-11-01,2052.0
+Ottawa River,flow_cms,cubic meters per second,2012,12,Dec,2012-12-01,1843.0
+Ottawa River,flow_cms,cubic meters per second,2013,1,Jan,2013-01-01,2037.0
+Ottawa River,flow_cms,cubic meters per second,2013,2,Feb,2013-02-01,2370.0
+Ottawa River,flow_cms,cubic meters per second,2013,3,Mar,2013-03-01,2180.0
+Ottawa River,flow_cms,cubic meters per second,2013,4,Apr,2013-04-01,4037.0
+Ottawa River,flow_cms,cubic meters per second,2013,5,May,2013-05-01,4533.0
+Ottawa River,flow_cms,cubic meters per second,2013,6,Jun,2013-06-01,3244.0
+Ottawa River,flow_cms,cubic meters per second,2013,7,Jul,2013-07-01,1393.0
+Ottawa River,flow_cms,cubic meters per second,2013,8,Aug,2013-08-01,942.0
+Ottawa River,flow_cms,cubic meters per second,2013,9,Sep,2013-09-01,992.0
+Ottawa River,flow_cms,cubic meters per second,2013,10,Oct,2013-10-01,1440.0
+Ottawa River,flow_cms,cubic meters per second,2013,11,Nov,2013-11-01,2745.0
+Ottawa River,flow_cms,cubic meters per second,2013,12,Dec,2013-12-01,1980.0
+Ottawa River,flow_cms,cubic meters per second,2014,1,Jan,2014-01-01,2038.0
+Ottawa River,flow_cms,cubic meters per second,2014,2,Feb,2014-02-01,1991.0
+Ottawa River,flow_cms,cubic meters per second,2014,3,Mar,2014-03-01,1470.0
+Ottawa River,flow_cms,cubic meters per second,2014,4,Apr,2014-04-01,3749.0
+Ottawa River,flow_cms,cubic meters per second,2014,5,May,2014-05-01,4613.0
+Ottawa River,flow_cms,cubic meters per second,2014,6,Jun,2014-06-01,2368.0
+Ottawa River,flow_cms,cubic meters per second,2014,7,Jul,2014-07-01,1341.0
+Ottawa River,flow_cms,cubic meters per second,2014,8,Aug,2014-08-01,1120.0
+Ottawa River,flow_cms,cubic meters per second,2014,9,Sep,2014-09-01,1492.0
+Ottawa River,flow_cms,cubic meters per second,2014,10,Oct,2014-10-01,2300.0
+Ottawa River,flow_cms,cubic meters per second,2014,11,Nov,2014-11-01,2461.0
+Ottawa River,flow_cms,cubic meters per second,2014,12,Dec,2014-12-01,2302.0
+Ottawa River,flow_cms,cubic meters per second,2015,1,Jan,2015-01-01,2188.0
+Ottawa River,flow_cms,cubic meters per second,2015,2,Feb,2015-02-01,2008.0
+Ottawa River,flow_cms,cubic meters per second,2015,3,Mar,2015-03-01,1571.0
+Ottawa River,flow_cms,cubic meters per second,2015,4,Apr,2015-04-01,2929.0
+Ottawa River,flow_cms,cubic meters per second,2015,5,May,2015-05-01,2391.0
+Ottawa River,flow_cms,cubic meters per second,2015,6,Jun,2015-06-01,1724.0
+Ottawa River,flow_cms,cubic meters per second,2015,7,Jul,2015-07-01,1046.0
+Ottawa River,flow_cms,cubic meters per second,2015,8,Aug,2015-08-01,989.0
+Ottawa River,flow_cms,cubic meters per second,2015,9,Sep,2015-09-01,1057.0
+Ottawa River,flow_cms,cubic meters per second,2015,10,Oct,2015-10-01,874.0
+Ottawa River,flow_cms,cubic meters per second,2015,11,Nov,2015-11-01,1432.0
+Ottawa River,flow_cms,cubic meters per second,2015,12,Dec,2015-12-01,2408.0
+Ottawa River,flow_cms,cubic meters per second,2016,1,Jan,2016-01-01,2785.0
+Ottawa River,flow_cms,cubic meters per second,2016,2,Feb,2016-02-01,2588.0
+Ottawa River,flow_cms,cubic meters per second,2016,3,Mar,2016-03-01,3713.0
+Ottawa River,flow_cms,cubic meters per second,2016,4,Apr,2016-04-01,4843.0
+Ottawa River,flow_cms,cubic meters per second,2016,5,May,2016-05-01,3204.0
+Ottawa River,flow_cms,cubic meters per second,2016,6,Jun,2016-06-01,1900.0
+Ottawa River,flow_cms,cubic meters per second,2016,7,Jul,2016-07-01,1059.0
+Ottawa River,flow_cms,cubic meters per second,2016,8,Aug,2016-08-01,932.0
+Ottawa River,flow_cms,cubic meters per second,2016,9,Sep,2016-09-01,822.0
+Ottawa River,flow_cms,cubic meters per second,2016,10,Oct,2016-10-01,892.0
+Ottawa River,flow_cms,cubic meters per second,2016,11,Nov,2016-11-01,978.0
+Ottawa River,flow_cms,cubic meters per second,2016,12,Dec,2016-12-01,1582.0
+Ottawa River,flow_cms,cubic meters per second,2017,1,Jan,2017-01-01,1967.0
+Ottawa River,flow_cms,cubic meters per second,2017,2,Feb,2017-02-01,2187.0
+Ottawa River,flow_cms,cubic meters per second,2017,3,Mar,2017-03-01,3240.0
+Ottawa River,flow_cms,cubic meters per second,2017,4,Apr,2017-04-01,5650.0
+Ottawa River,flow_cms,cubic meters per second,2017,5,May,2017-05-01,6337.0
+Ottawa River,flow_cms,cubic meters per second,2017,6,Jun,2017-06-01,3253.0
+Ottawa River,flow_cms,cubic meters per second,2017,7,Jul,2017-07-01,2622.0
+Ottawa River,flow_cms,cubic meters per second,2017,8,Aug,2017-08-01,1540.0
+Ottawa River,flow_cms,cubic meters per second,2017,9,Sep,2017-09-01,1599.0
+Ottawa River,flow_cms,cubic meters per second,2017,10,Oct,2017-10-01,1335.0
+Ottawa River,flow_cms,cubic meters per second,2017,11,Nov,2017-11-01,2645.0
+Ottawa River,flow_cms,cubic meters per second,2017,12,Dec,2017-12-01,2273.0
+Ottawa River,flow_cms,cubic meters per second,2018,1,Jan,2018-01-01,2435.0
+Ottawa River,flow_cms,cubic meters per second,2018,2,Feb,2018-02-01,2407.0
+Ottawa River,flow_cms,cubic meters per second,2018,3,Mar,2018-03-01,2144.0
+Ottawa River,flow_cms,cubic meters per second,2018,4,Apr,2018-04-01,2535.0
+Ottawa River,flow_cms,cubic meters per second,2018,5,May,2018-05-01,4467.0
+Ottawa River,flow_cms,cubic meters per second,2018,6,Jun,2018-06-01,2435.0
+Ottawa River,flow_cms,cubic meters per second,2018,7,Jul,2018-07-01,1218.0
+Ottawa River,flow_cms,cubic meters per second,2018,8,Aug,2018-08-01,1313.0
+Ottawa River,flow_cms,cubic meters per second,2018,9,Sep,2018-09-01,1809.0
+Ottawa River,flow_cms,cubic meters per second,2018,10,Oct,2018-10-01,2244.0
+Ottawa River,flow_cms,cubic meters per second,2018,11,Nov,2018-11-01,2508.0
+Ottawa River,flow_cms,cubic meters per second,2018,12,Dec,2018-12-01,2251.0
+Ottawa River,flow_cms,cubic meters per second,2019,1,Jan,2019-01-01,2272.0
+Ottawa River,flow_cms,cubic meters per second,2019,2,Feb,2019-02-01,2347.0
+Ottawa River,flow_cms,cubic meters per second,2019,3,Mar,2019-03-01,2184.0
+Ottawa River,flow_cms,cubic meters per second,2019,4,Apr,2019-04-01,5404.0
+Ottawa River,flow_cms,cubic meters per second,2019,5,May,2019-05-01,7731.0
+Ottawa River,flow_cms,cubic meters per second,2019,6,Jun,2019-06-01,3964.0
+Ottawa River,flow_cms,cubic meters per second,2019,7,Jul,2019-07-01,1563.0
+Ottawa River,flow_cms,cubic meters per second,2019,8,Aug,2019-08-01,828.0
+Ottawa River,flow_cms,cubic meters per second,2019,9,Sep,2019-09-01,792.0
+Ottawa River,flow_cms,cubic meters per second,2019,10,Oct,2019-10-01,1054.0
+Ottawa River,flow_cms,cubic meters per second,2019,11,Nov,2019-11-01,2116.0
+Ottawa River,flow_cms,cubic meters per second,2019,12,Dec,2019-12-01,1741.0
+Ottawa River,flow_cms,cubic meters per second,2020,1,Jan,2020-01-01,2202.0
+Ottawa River,flow_cms,cubic meters per second,2020,2,Feb,2020-02-01,2128.0
+Ottawa River,flow_cms,cubic meters per second,2020,3,Mar,2020-03-01,2885.0
+Ottawa River,flow_cms,cubic meters per second,2020,4,Apr,2020-04-01,4761.0
+Ottawa River,flow_cms,cubic meters per second,2020,5,May,2020-05-01,2930.0
+Ottawa River,flow_cms,cubic meters per second,2020,6,Jun,2020-06-01,2049.0
+Ottawa River,flow_cms,cubic meters per second,2020,7,Jul,2020-07-01,1325.0
+Ottawa River,flow_cms,cubic meters per second,2020,8,Aug,2020-08-01,1531.0
+Ottawa River,flow_cms,cubic meters per second,2020,9,Sep,2020-09-01,1666.0
+Ottawa River,flow_cms,cubic meters per second,2020,10,Oct,2020-10-01,2182.0
+Ottawa River,flow_cms,cubic meters per second,2020,11,Nov,2020-11-01,2520.0
+Ottawa River,flow_cms,cubic meters per second,2020,12,Dec,2020-12-01,2501.0
+Ottawa River,flow_cms,cubic meters per second,2021,1,Jan,2021-01-01,2447.0
+Ottawa River,flow_cms,cubic meters per second,2021,2,Feb,2021-02-01,2262.0
+Ottawa River,flow_cms,cubic meters per second,2021,3,Mar,2021-03-01,2783.0
+Ottawa River,flow_cms,cubic meters per second,2021,4,Apr,2021-04-01,2182.0
+Ottawa River,flow_cms,cubic meters per second,2021,5,May,2021-05-01,1304.0
+Ottawa River,flow_cms,cubic meters per second,2021,6,Jun,2021-06-01,836.0
+Ottawa River,flow_cms,cubic meters per second,2021,7,Jul,2021-07-01,1413.0
+Ottawa River,flow_cms,cubic meters per second,2021,8,Aug,2021-08-01,1049.0
+Ottawa River,flow_cms,cubic meters per second,2021,9,Sep,2021-09-01,1089.0
+Ottawa River,flow_cms,cubic meters per second,2021,10,Oct,2021-10-01,2006.0
+Ottawa River,flow_cms,cubic meters per second,2021,11,Nov,2021-11-01,1839.0
+Ottawa River,flow_cms,cubic meters per second,2021,12,Dec,2021-12-01,2087.0
+Ottawa River,flow_cms,cubic meters per second,2022,1,Jan,2022-01-01,2148.0
+Ottawa River,flow_cms,cubic meters per second,2022,2,Feb,2022-02-01,2014.0
+Ottawa River,flow_cms,cubic meters per second,2022,3,Mar,2022-03-01,2472.0
+Ottawa River,flow_cms,cubic meters per second,2022,4,Apr,2022-04-01,4317.0
+Ottawa River,flow_cms,cubic meters per second,2022,5,May,2022-05-01,3990.0
+Ottawa River,flow_cms,cubic meters per second,2022,6,Jun,2022-06-01,3599.0
+Ottawa River,flow_cms,cubic meters per second,2022,7,Jul,2022-07-01,1605.0
+Ottawa River,flow_cms,cubic meters per second,2022,8,Aug,2022-08-01,1285.0
+Ottawa River,flow_cms,cubic meters per second,2022,10,Oct,2022-10-01,1462.0
+Ottawa River,flow_cms,cubic meters per second,2022,11,Nov,2022-11-01,1449.0
+Ottawa River,flow_cms,cubic meters per second,2022,12,Dec,2022-12-01,1840.0
+St. Lawrence River,flow_cms,cubic meters per second,2011,12,Dec,2011-12-01,7560.597314246634
+St. Lawrence River,flow_cms,cubic meters per second,2012,1,Jan,2012-01-01,6541.19093479765
+St. Lawrence River,flow_cms,cubic meters per second,2012,2,Feb,2012-02-01,6796.042529659896
+St. Lawrence River,flow_cms,cubic meters per second,2012,3,Mar,2012-03-01,8240.201567212624
+St. Lawrence River,flow_cms,cubic meters per second,2012,4,Apr,2012-04-01,7843.765752982463
+St. Lawrence River,flow_cms,cubic meters per second,2012,5,May,2012-05-01,7560.597314246634
+St. Lawrence River,flow_cms,cubic meters per second,2012,6,Jun,2012-06-01,6852.676217407062
+St. Lawrence River,flow_cms,cubic meters per second,2012,7,Jul,2012-07-01,6711.091998039147
+St. Lawrence River,flow_cms,cubic meters per second,2012,8,Aug,2012-08-01,6569.507778671233
+St. Lawrence River,flow_cms,cubic meters per second,2012,9,Sep,2012-09-01,6512.874090924067
+St. Lawrence River,flow_cms,cubic meters per second,2012,10,Oct,2012-10-01,6456.240403176901
+St. Lawrence River,flow_cms,cubic meters per second,2012,11,Nov,2012-11-01,5861.58668183166
+St. Lawrence River,flow_cms,cubic meters per second,2012,12,Dec,2012-12-01,6144.755120567489
+St. Lawrence River,flow_cms,cubic meters per second,2013,1,Jan,2013-01-01,5946.537213452409
+St. Lawrence River,flow_cms,cubic meters per second,2013,2,Feb,2013-02-01,5946.537213452409
+St. Lawrence River,flow_cms,cubic meters per second,2013,3,Mar,2013-03-01,6427.923559303318
+St. Lawrence River,flow_cms,cubic meters per second,2013,4,Apr,2013-04-01,6342.973027682569
+St. Lawrence River,flow_cms,cubic meters per second,2013,5,May,2013-05-01,6654.458310291981
+St. Lawrence River,flow_cms,cubic meters per second,2013,6,Jun,2013-06-01,6059.80458894674
+St. Lawrence River,flow_cms,cubic meters per second,2013,7,Jul,2013-07-01,7249.112031637223
+St. Lawrence River,flow_cms,cubic meters per second,2013,8,Aug,2013-08-01,7560.597314246634
+St. Lawrence River,flow_cms,cubic meters per second,2013,9,Sep,2013-09-01,7475.646782625885
+St. Lawrence River,flow_cms,cubic meters per second,2013,10,Oct,2013-10-01,7022.577280648559
+St. Lawrence River,flow_cms,cubic meters per second,2013,11,Nov,2013-11-01,6937.626749027811
+St. Lawrence River,flow_cms,cubic meters per second,2013,12,Dec,2013-12-01,7305.745719384388
+St. Lawrence River,flow_cms,cubic meters per second,2014,1,Jan,2014-01-01,6201.388808314655
+St. Lawrence River,flow_cms,cubic meters per second,2014,2,Feb,2014-02-01,6796.042529659896
+St. Lawrence River,flow_cms,cubic meters per second,2014,3,Mar,2014-03-01,6994.260436774976
+St. Lawrence River,flow_cms,cubic meters per second,2014,4,Apr,2014-04-01,6597.824622544816
+St. Lawrence River,flow_cms,cubic meters per second,2014,5,May,2014-05-01,7135.844656142891
+St. Lawrence River,flow_cms,cubic meters per second,2014,6,Jun,2014-06-01,8211.88472333904
+St. Lawrence River,flow_cms,cubic meters per second,2014,7,Jul,2014-07-01,8381.785786580538
+St. Lawrence River,flow_cms,cubic meters per second,2014,8,Aug,2014-08-01,8240.201567212624
+St. Lawrence River,flow_cms,cubic meters per second,2014,9,Sep,2014-09-01,8155.251035591875
+St. Lawrence River,flow_cms,cubic meters per second,2014,10,Oct,2014-10-01,7673.864689740965
+St. Lawrence River,flow_cms,cubic meters per second,2014,11,Nov,2014-11-01,7390.696251005136
+St. Lawrence River,flow_cms,cubic meters per second,2014,12,Dec,2014-12-01,6909.309905154228
+St. Lawrence River,flow_cms,cubic meters per second,2015,1,Jan,2015-01-01,6399.606715429735
+St. Lawrence River,flow_cms,cubic meters per second,2015,2,Feb,2015-02-01,6739.40884191273
+St. Lawrence River,flow_cms,cubic meters per second,2015,3,Mar,2015-03-01,6597.824622544816
+St. Lawrence River,flow_cms,cubic meters per second,2015,4,Apr,2015-04-01,6342.973027682569
+St. Lawrence River,flow_cms,cubic meters per second,2015,5,May,2015-05-01,6597.824622544816
+St. Lawrence River,flow_cms,cubic meters per second,2015,6,Jun,2015-06-01,6484.557247050484
+St. Lawrence River,flow_cms,cubic meters per second,2015,7,Jul,2015-07-01,7560.597314246634
+St. Lawrence River,flow_cms,cubic meters per second,2015,8,Aug,2015-08-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2015,9,Sep,2015-09-01,8636.637381442784
+St. Lawrence River,flow_cms,cubic meters per second,2015,10,Oct,2015-10-01,8098.617347844709
+St. Lawrence River,flow_cms,cubic meters per second,2015,11,Nov,2015-11-01,7872.082596856046
+St. Lawrence River,flow_cms,cubic meters per second,2015,12,Dec,2015-12-01,7815.44890910888
+St. Lawrence River,flow_cms,cubic meters per second,2016,1,Jan,2016-01-01,6229.705652188238
+St. Lawrence River,flow_cms,cubic meters per second,2016,2,Feb,2016-02-01,6512.874090924067
+St. Lawrence River,flow_cms,cubic meters per second,2016,3,Mar,2016-03-01,7957.033128476794
+St. Lawrence River,flow_cms,cubic meters per second,2016,4,Apr,2016-04-01,7362.379407131554
+St. Lawrence River,flow_cms,cubic meters per second,2016,5,May,2016-05-01,8410.102630454121
+St. Lawrence River,flow_cms,cubic meters per second,2016,6,Jun,2016-06-01,7957.033128476794
+St. Lawrence River,flow_cms,cubic meters per second,2016,7,Jul,2016-07-01,7503.963626499468
+St. Lawrence River,flow_cms,cubic meters per second,2016,8,Aug,2016-08-01,7419.013094878719
+St. Lawrence River,flow_cms,cubic meters per second,2016,9,Sep,2016-09-01,7390.696251005136
+St. Lawrence River,flow_cms,cubic meters per second,2016,10,Oct,2016-10-01,7050.894124522142
+St. Lawrence River,flow_cms,cubic meters per second,2016,11,Nov,2016-11-01,6937.626749027811
+St. Lawrence River,flow_cms,cubic meters per second,2016,12,Dec,2016-12-01,6909.309905154228
+St. Lawrence River,flow_cms,cubic meters per second,2017,1,Jan,2017-01-01,6229.705652188238
+St. Lawrence River,flow_cms,cubic meters per second,2017,2,Feb,2017-02-01,6711.091998039147
+St. Lawrence River,flow_cms,cubic meters per second,2017,3,Mar,2017-03-01,7447.329938752302
+St. Lawrence River,flow_cms,cubic meters per second,2017,4,Apr,2017-04-01,7787.132065235297
+St. Lawrence River,flow_cms,cubic meters per second,2017,5,May,2017-05-01,8580.003693695618
+St. Lawrence River,flow_cms,cubic meters per second,2017,6,Jun,2017-06-01,10222.380638363427
+St. Lawrence River,flow_cms,cubic meters per second,2017,7,Jul,2017-07-01,10392.281701604925
+St. Lawrence River,flow_cms,cubic meters per second,2017,8,Aug,2017-08-01,10392.281701604925
+St. Lawrence River,flow_cms,cubic meters per second,2017,9,Sep,2017-09-01,9599.410073144603
+St. Lawrence River,flow_cms,cubic meters per second,2017,10,Oct,2017-10-01,8636.637381442784
+St. Lawrence River,flow_cms,cubic meters per second,2017,11,Nov,2017-11-01,8353.468942706955
+St. Lawrence River,flow_cms,cubic meters per second,2017,12,Dec,2017-12-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2018,1,Jan,2018-01-01,6229.705652188238
+St. Lawrence River,flow_cms,cubic meters per second,2018,2,Feb,2018-02-01,8211.88472333904
+St. Lawrence River,flow_cms,cubic meters per second,2018,3,Mar,2018-03-01,8976.43950792578
+St. Lawrence River,flow_cms,cubic meters per second,2018,4,Apr,2018-04-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2018,5,May,2018-05-01,7730.498377488131
+St. Lawrence River,flow_cms,cubic meters per second,2018,6,Jun,2018-06-01,9344.558478282357
+St. Lawrence River,flow_cms,cubic meters per second,2018,7,Jul,2018-07-01,9118.023727293694
+St. Lawrence River,flow_cms,cubic meters per second,2018,8,Aug,2018-08-01,8636.637381442784
+St. Lawrence River,flow_cms,cubic meters per second,2018,9,Sep,2018-09-01,8410.102630454121
+St. Lawrence River,flow_cms,cubic meters per second,2018,10,Oct,2018-10-01,7843.765752982463
+St. Lawrence River,flow_cms,cubic meters per second,2018,11,Nov,2018-11-01,7815.44890910888
+St. Lawrence River,flow_cms,cubic meters per second,2018,12,Dec,2018-12-01,8211.88472333904
+St. Lawrence River,flow_cms,cubic meters per second,2019,1,Jan,2019-01-01,8381.785786580538
+St. Lawrence River,flow_cms,cubic meters per second,2019,2,Feb,2019-02-01,7475.646782625885
+St. Lawrence River,flow_cms,cubic meters per second,2019,3,Mar,2019-03-01,8721.587913063533
+St. Lawrence River,flow_cms,cubic meters per second,2019,4,Apr,2019-04-01,8636.637381442784
+St. Lawrence River,flow_cms,cubic meters per second,2019,5,May,2019-05-01,6088.121432820323
+St. Lawrence River,flow_cms,cubic meters per second,2019,6,Jun,2019-06-01,8919.805820178613
+St. Lawrence River,flow_cms,cubic meters per second,2019,7,Jul,2019-07-01,10392.281701604925
+St. Lawrence River,flow_cms,cubic meters per second,2019,8,Aug,2019-08-01,10420.598545478508
+St. Lawrence River,flow_cms,cubic meters per second,2019,9,Sep,2019-09-01,9995.845887374764
+St. Lawrence River,flow_cms,cubic meters per second,2019,10,Oct,2019-10-01,9089.70688342011
+St. Lawrence River,flow_cms,cubic meters per second,2019,11,Nov,2019-11-01,8863.172132431448
+St. Lawrence River,flow_cms,cubic meters per second,2019,12,Dec,2019-12-01,8863.172132431448
+St. Lawrence River,flow_cms,cubic meters per second,2020,1,Jan,2020-01-01,10194.063794489844
+St. Lawrence River,flow_cms,cubic meters per second,2020,2,Feb,2020-02-01,10307.331169984176
+St. Lawrence River,flow_cms,cubic meters per second,2020,3,Mar,2020-03-01,8778.221600810699
+St. Lawrence River,flow_cms,cubic meters per second,2020,4,Apr,2020-04-01,8495.05316207487
+St. Lawrence River,flow_cms,cubic meters per second,2020,5,May,2020-05-01,9004.756351799362
+St. Lawrence River,flow_cms,cubic meters per second,2020,6,Jun,2020-06-01,9542.776385397437
+St. Lawrence River,flow_cms,cubic meters per second,2020,7,Jul,2020-07-01,9231.291102788025
+St. Lawrence River,flow_cms,cubic meters per second,2020,8,Aug,2020-08-01,8806.538444684282
+St. Lawrence River,flow_cms,cubic meters per second,2020,9,Sep,2020-09-01,8438.419474327704
+St. Lawrence River,flow_cms,cubic meters per second,2020,10,Oct,2020-10-01,8410.102630454121
+St. Lawrence River,flow_cms,cubic meters per second,2020,11,Nov,2020-11-01,8240.201567212624
+St. Lawrence River,flow_cms,cubic meters per second,2020,12,Dec,2020-12-01,8070.300503971126
+St. Lawrence River,flow_cms,cubic meters per second,2021,1,Jan,2021-01-01,8948.122664052196
+St. Lawrence River,flow_cms,cubic meters per second,2021,2,Feb,2021-02-01,6965.9435929013935
+St. Lawrence River,flow_cms,cubic meters per second,2021,3,Mar,2021-03-01,8126.934191718292
+St. Lawrence River,flow_cms,cubic meters per second,2021,4,Apr,2021-04-01,7362.379407131554
+St. Lawrence River,flow_cms,cubic meters per second,2021,5,May,2021-05-01,7900.399440729629
+St. Lawrence River,flow_cms,cubic meters per second,2021,6,Jun,2021-06-01,7843.765752982463
+St. Lawrence River,flow_cms,cubic meters per second,2021,7,Jul,2021-07-01,7560.597314246634
+St. Lawrence River,flow_cms,cubic meters per second,2021,8,Aug,2021-08-01,8098.617347844709
+St. Lawrence River,flow_cms,cubic meters per second,2021,9,Sep,2021-09-01,8013.66681622396
+St. Lawrence River,flow_cms,cubic meters per second,2021,10,Oct,2021-10-01,7900.399440729629
+St. Lawrence River,flow_cms,cubic meters per second,2021,11,Nov,2021-11-01,8211.88472333904
+St. Lawrence River,flow_cms,cubic meters per second,2021,12,Dec,2021-12-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2022,1,Jan,2022-01-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2022,2,Feb,2022-02-01,7305.745719384388
+St. Lawrence River,flow_cms,cubic meters per second,2022,3,Mar,2022-03-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2022,4,Apr,2022-04-01,8693.27106918995
+St. Lawrence River,flow_cms,cubic meters per second,2022,5,May,2022-05-01,8551.686849822036
+St. Lawrence River,flow_cms,cubic meters per second,2022,6,Jun,2022-06-01,8693.27106918995
+St. Lawrence River,flow_cms,cubic meters per second,2022,7,Jul,2022-07-01,8749.904756937116
+St. Lawrence River,flow_cms,cubic meters per second,2022,8,Aug,2022-08-01,8523.370005948453
+St. Lawrence River,flow_cms,cubic meters per second,2022,9,Sep,2022-09-01,7957.033128476794
+St. Lawrence River,flow_cms,cubic meters per second,2022,10,Oct,2022-10-01,7390.696251005136
+St. Lawrence River,flow_cms,cubic meters per second,2022,11,Nov,2022-11-01,6654.458310291981
+St. Lawrence River,flow_cms,cubic meters per second,2022,12,Dec,2022-12-01,6739.40884191273

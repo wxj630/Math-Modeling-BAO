@@ -1,0 +1,98 @@
+{
+  "problem_id": "2019-D",
+  "title": "2019年 CUMCM D题：空气质量数据的校准",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "对自建点数据与国控点数据进行探索性数据分析。",
+  "tasks": [
+    "对自建点数据与国控点数据进行探索性数据分析"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "空气质量自建点数据校准模型",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、分析"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx",
+    "rows": 238917,
+    "columns": 19,
+    "note": "本题专用算法读取国控点小时数据和自建点分钟级污染物/气象数据，完成小时对齐、差异因素分析和多污染物校准。"
+  },
+  "formulation": {
+    "model_type": "空气质量自建点数据校准模型",
+    "task_breakdown": [
+      "对自建点数据与国控点数据进行探索性数据分析"
+    ],
+    "assumptions": [
+      "附件1国控点小时数据作为校准真值，附件2自建点分钟级数据按小时聚合后与国控点对齐。",
+      "同一小时内自建点多次观测取均值，气象变量也取小时均值。",
+      "差异定义为 self_built - national，用于探索零点漂移、量程漂移、交叉干扰和天气影响。",
+      "校准模型只使用自建点污染物、气象变量和时间特征预测国控点污染物，不把目标时刻国控点值泄漏为特征。",
+      "通用基线保留在 `cumcm/generic_baselines`，当前结果是从粗二次拟合推进到附件驱动空气质量校准的专用版本。"
+    ],
+    "decision_variables": [
+      "x_t: 自建点六污染物、气象和时间特征",
+      "y_t: 国控点六污染物浓度",
+      "e_t=x_pollutant-y_t: 自建点偏差",
+      "f_j(x_t): 第j种污染物的校准函数"
+    ],
+    "constraints": [
+      "时间对齐后仅保留国控点和自建点同时存在的小时。",
+      "校准预测值截断为非负浓度。",
+      "训练/测试按时间顺序切分，避免未来数据参与过去校准。"
+    ],
+    "objective_or_equations": [
+      "bias_j = mean(self_j - national_j)。",
+      "corr_j = corr(self_j, national_j)。",
+      "factor_importance = RandomForestRegressor(residual_j | pollutants, weather, time).feature_importances_。",
+      "calibrated_y = RandomForestRegressor(national pollutants | self pollutants, weather, time)。",
+      "improvement = (MAE_before - MAE_after) / MAE_before。"
+    ],
+    "solution_steps": [
+      "读取GBK编码CSV，解析时间并将附件2自建点分钟数据按小时聚合。",
+      "将附件1国控点数据与自建点小时均值按时间内连接。",
+      "第1问输出污染物均值、偏差、相关系数、MAE和RMSE。",
+      "第2问对每种污染物残差训练因素分析模型，输出特征重要性和天气相关性。",
+      "第3问按时间切分训练/测试，训练多输出校准模型并比较校准前后误差。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "空气质量自建点数据校准模型",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "air_quality_hourly_alignment_eda",
+    "matched_hour_count": 4137,
+    "pollutant_count": 6,
+    "self_record_count": 234717,
+    "national_record_count": 4200,
+    "mean_absolute_bias_pm25": 18.177565,
+    "strongest_raw_correlation_pollutant": "PM2.5",
+    "report": [
+      "附件2自建点分钟级数据按小时聚合，与附件1国控点小时数据按时间对齐。",
+      "EDA表给出六类污染物的均值偏差、MAE/RMSE、相关系数和95分位数差异。",
+      "输出 `hourly_aligned_air_quality.csv` 和 `pollutant_eda_summary.csv`，后续因素分析和校准均基于同一对齐数据。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2019/D/q01/hourly_aligned_air_quality.csv",
+    "question_artifacts/2019/D/q01/pollutant_eda_summary.csv",
+    "question_artifacts/2019/D/q01/experiment_table.csv"
+  ]
+}

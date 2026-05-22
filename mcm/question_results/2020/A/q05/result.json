@@ -1,0 +1,160 @@
+{
+  "problem_id": "2020-A",
+  "question": "q05",
+  "question_title": "Hook Line and Sinker 杂志文章",
+  "statement": "Write an article for Hook Line and Sinker explaining the results for a nontechnical audience.",
+  "methods": "把北迁情景、可达性时间、运营策略和领海风险整理成非技术杂志文章。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "official_requirements": {
+      "scottish_herring_and_mackerel": true,
+      "fifty_year_forecast": true,
+      "best_worst_most_likely_elapsed_times": true,
+      "small_fishing_company_operational_strategies": true,
+      "territorial_waters_impacts": true,
+      "hook_line_and_sinker_article": true
+    },
+    "parameters": {
+      "horizon_years": 50,
+      "species": [
+        {
+          "species": "Scottish herring",
+          "baseline_center_lat": 58.0,
+          "thermal_preference_c": 9.0,
+          "thermal_sensitivity_km_per_c": 120.0,
+          "stock_mobility": 0.62,
+          "small_boat_range_km": 130.0,
+          "current_distance_from_scotland_km": 75.0,
+          "economic_dependency": 0.58
+        },
+        {
+          "species": "Scottish mackerel",
+          "baseline_center_lat": 57.0,
+          "thermal_preference_c": 10.5,
+          "thermal_sensitivity_km_per_c": 155.0,
+          "stock_mobility": 0.74,
+          "small_boat_range_km": 170.0,
+          "current_distance_from_scotland_km": 95.0,
+          "economic_dependency": 0.72
+        }
+      ],
+      "temperature_scenarios": [
+        {
+          "scenario": "best_case_slow_warming",
+          "warming_c_50yr": 0.8,
+          "probability_weight": 0.22
+        },
+        {
+          "scenario": "most_likely_warming",
+          "warming_c_50yr": 1.6,
+          "probability_weight": 0.56
+        },
+        {
+          "scenario": "worst_case_fast_warming",
+          "warming_c_50yr": 2.6,
+          "probability_weight": 0.22
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; thermal shifts, fleet ranges, and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "magazine_article": "Hook Line and Sinker article: Moving north does not mean fish vanish overnight; it means the center of profitable herring and mackerel fishing drifts beyond the easiest reach of small Scottish vessels. The model compares best, most-likely, and worst warming paths over 50 years. In the faster paths, companies need cooperative vessels, cold-chain partnerships, and shared quota access before the habitat center crosses practical range limits. The same shift can also create territorial-water disputes, so operational adaptation and negotiated access must move together.",
+  "fishery_strategy": {
+    "strategy_rows": [
+      {
+        "strategy": "joint Scotland-Nordic access agreement",
+        "range_gain_km": 90,
+        "capital_burden": 0.38,
+        "labor_disruption": 0.22,
+        "quota_resilience": 0.5,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.442
+      },
+      {
+        "strategy": "seasonal cooperative vessel sharing",
+        "range_gain_km": 55,
+        "capital_burden": 0.34,
+        "labor_disruption": 0.26,
+        "quota_resilience": 0.24,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2816
+      },
+      {
+        "strategy": "cold-chain landing partnership",
+        "range_gain_km": 40,
+        "capital_burden": 0.28,
+        "labor_disruption": 0.18,
+        "quota_resilience": 0.34,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2802
+      },
+      {
+        "strategy": "alternative species portfolio",
+        "range_gain_km": 15,
+        "capital_burden": 0.18,
+        "labor_disruption": 0.32,
+        "quota_resilience": 0.42,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2427
+      },
+      {
+        "strategy": "nearshore gear modernization",
+        "range_gain_km": 25,
+        "capital_burden": 0.22,
+        "labor_disruption": 0.12,
+        "quota_resilience": 0.18,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2052
+      }
+    ],
+    "recommended_strategy": {
+      "strategy": "joint Scotland-Nordic access agreement",
+      "range_gain_km": 90,
+      "capital_burden": 0.38,
+      "labor_disruption": 0.22,
+      "quota_resilience": 0.5,
+      "fleet_pressure_index": 0.5333,
+      "adaptation_score": 0.442
+    },
+    "small_fishery_note": "Smaller firms are stressed first because range, cold-chain capacity, and quota flexibility lag behind the northward habitat shift."
+  },
+  "territorial_waters_analysis": {
+    "boundary_rows": [
+      {
+        "zone": "Scottish coastal access",
+        "northward_shift_threshold_km": 80,
+        "governance_risk": 0.2,
+        "mean_final_shift_km": 206.26,
+        "access_conflict_pressure": 1.0,
+        "policy_response": "negotiate shared quota and landing rights"
+      },
+      {
+        "zone": "UK exclusive economic zone edge",
+        "northward_shift_threshold_km": 190,
+        "governance_risk": 0.42,
+        "mean_final_shift_km": 206.26,
+        "access_conflict_pressure": 0.2326,
+        "policy_response": "negotiate shared quota and landing rights"
+      },
+      {
+        "zone": "Norwegian and Faroese negotiation zone",
+        "northward_shift_threshold_km": 310,
+        "governance_risk": 0.7,
+        "mean_final_shift_km": 206.26,
+        "access_conflict_pressure": 0.245,
+        "policy_response": "monitor boundary pressure"
+      },
+      {
+        "zone": "Icelandic high-latitude access zone",
+        "northward_shift_threshold_km": 480,
+        "governance_risk": 0.86,
+        "mean_final_shift_km": 206.26,
+        "access_conflict_pressure": 0.301,
+        "policy_response": "monitor boundary pressure"
+      }
+    ],
+    "interpretation": "Northward shifts can move profitable fishing effort across EEZ and negotiation zones before the species disappears from Scottish waters entirely."
+  }
+}

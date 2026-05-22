@@ -1,0 +1,6 @@
+﻿component,raw_value,normalized_score,audit_note
+statement_specificity,172,0.409524,Longer problem statements usually expose more constraints for a first-pass model.
+numeric_anchor_count,1,0.125,Counts numeric anchors visible in the question statement and method hint.
+model_keyword_match,1,0.2,Measures how clearly the question maps to a classical modeling family.
+source_strength,official_statement_parameters,0.72,Rewards official attachments and explicit official statement parameters.
+artifact_readiness,question_artifacts/2021/E/q02/food_system_transition_plan.csv,1.0,Rewards table-like artifacts that a baseline can inspect directly.

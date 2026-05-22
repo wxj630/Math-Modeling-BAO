@@ -1,0 +1,6 @@
+environment,variability_multiplier,final_mass_loss_pct,mean_richness_last60_days,mean_shannon_last60_days,dominant_species_final,remaining_litter_mass
+arid,1.0,99.276,1.0,0.573,fast opportunist,0.724
+semi-arid,1.0,99.847,1.0,0.696,fast opportunist,0.153
+temperate,1.0,99.695,1.083,0.647,balanced decomposer,0.305
+arboreal,1.0,99.149,2.0,0.712,balanced decomposer,0.851
+tropical rain forest,1.0,98.433,2.0,0.702,moisture generalist,1.567

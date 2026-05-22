@@ -1,0 +1,162 @@
+{
+  "problem_id": "2018-E",
+  "question": "q01",
+  "question_title": "Climate-fragility classification model",
+  "statement": "Develop a model that determines country fragility while measuring climate-change impact.",
+  "methods": "Combine governance, social fragmentation, climate exposure, and adaptive capacity into fragile, vulnerable, and stable classifications.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "official_requirements": {
+      "fragile_vulnerable_stable_classification": true,
+      "top10_fragile_state_case": true,
+      "non_top10_tipping_point": true,
+      "state_interventions": true,
+      "scale_transfer": true
+    },
+    "parameters": {
+      "states": [
+        {
+          "state": "Yemen",
+          "top10": true,
+          "governance": 0.18,
+          "social_fragmentation": 0.82,
+          "climate_exposure": 0.88,
+          "adaptive_capacity": 0.2
+        },
+        {
+          "state": "Syria",
+          "top10": true,
+          "governance": 0.2,
+          "social_fragmentation": 0.86,
+          "climate_exposure": 0.72,
+          "adaptive_capacity": 0.24
+        },
+        {
+          "state": "Somalia",
+          "top10": true,
+          "governance": 0.16,
+          "social_fragmentation": 0.78,
+          "climate_exposure": 0.91,
+          "adaptive_capacity": 0.18
+        },
+        {
+          "state": "Jordan",
+          "top10": false,
+          "governance": 0.58,
+          "social_fragmentation": 0.42,
+          "climate_exposure": 0.74,
+          "adaptive_capacity": 0.5
+        },
+        {
+          "state": "Bangladesh",
+          "top10": false,
+          "governance": 0.48,
+          "social_fragmentation": 0.38,
+          "climate_exposure": 0.82,
+          "adaptive_capacity": 0.46
+        }
+      ],
+      "climate_stressors": [
+        "drought",
+        "temperature_increase",
+        "decreasing_arable_land",
+        "migration_pressure",
+        "natural_disasters"
+      ]
+    }
+  },
+  "fragility_model": {
+    "state_rows": [
+      {
+        "state": "Yemen",
+        "top10": true,
+        "governance": 0.18,
+        "social_fragmentation": 0.82,
+        "climate_exposure": 0.88,
+        "adaptive_capacity": 0.2,
+        "fragility_score": 0.834,
+        "classification": "fragile"
+      },
+      {
+        "state": "Syria",
+        "top10": true,
+        "governance": 0.2,
+        "social_fragmentation": 0.86,
+        "climate_exposure": 0.72,
+        "adaptive_capacity": 0.24,
+        "fragility_score": 0.7864,
+        "classification": "fragile"
+      },
+      {
+        "state": "Somalia",
+        "top10": true,
+        "governance": 0.16,
+        "social_fragmentation": 0.78,
+        "climate_exposure": 0.91,
+        "adaptive_capacity": 0.18,
+        "fragility_score": 0.8424,
+        "classification": "fragile"
+      },
+      {
+        "state": "Jordan",
+        "top10": false,
+        "governance": 0.58,
+        "social_fragmentation": 0.42,
+        "climate_exposure": 0.74,
+        "adaptive_capacity": 0.5,
+        "fragility_score": 0.5208,
+        "classification": "vulnerable"
+      },
+      {
+        "state": "Bangladesh",
+        "top10": false,
+        "governance": 0.48,
+        "social_fragmentation": 0.38,
+        "climate_exposure": 0.82,
+        "adaptive_capacity": 0.46,
+        "fragility_score": 0.5732,
+        "classification": "vulnerable"
+      }
+    ],
+    "thresholds": {
+      "fragile": 0.7,
+      "vulnerable": 0.52
+    }
+  },
+  "intervention_strategy": {
+    "intervention_rows": [
+      {
+        "intervention": "drought-resilient water systems",
+        "fragility_risk_reduction": 0.0776,
+        "estimated_cost_billion_usd": 2.4,
+        "priority_score": 0.0323
+      },
+      {
+        "intervention": "heat-adaptive agriculture extension",
+        "fragility_risk_reduction": 0.059,
+        "estimated_cost_billion_usd": 1.6,
+        "priority_score": 0.0369
+      },
+      {
+        "intervention": "local conflict mediation and service delivery",
+        "fragility_risk_reduction": 0.0712,
+        "estimated_cost_billion_usd": 1.1,
+        "priority_score": 0.0647
+      },
+      {
+        "intervention": "climate migration planning",
+        "fragility_risk_reduction": 0.0574,
+        "estimated_cost_billion_usd": 0.9,
+        "priority_score": 0.0638
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic climate-fragility inputs; it does not use random placeholder data.",
+    "model_limits": [
+      "Fragile State Index data are referenced by the prompt but not attached by COMAP; state rows are explicit contest-model inputs."
+    ]
+  }
+}

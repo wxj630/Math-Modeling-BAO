@@ -1,0 +1,8 @@
+feature,correlation_with_opioid_rate_per_1000,usable_county_year_rows,interpretation
+disability_pct,0.176142,1748,positive association
+foreign_born_pct,-0.15202,1748,negative association
+bachelor_or_higher_pct,-0.130754,3051,negative association
+high_school_or_higher_pct,-0.122604,3051,negative association
+civilian_veteran_pct,-0.106733,1748,negative association
+total_households,-0.048063,3051,negative association
+same_house_one_year_pct,0.008547,1748,positive association

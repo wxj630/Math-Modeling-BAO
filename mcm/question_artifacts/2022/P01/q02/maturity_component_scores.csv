@@ -1,0 +1,13 @@
+component,kpi,component_weight,importance,current_score,target_score,gap_to_target,weighted_gap
+technology,integrated cargo data platform,0.31,0.3,2.1,4.3,2.2,0.2046
+people,data stewardship ownership,0.34,0.26,2.2,4.4,2.2,0.1945
+process,data quality incident workflow,0.35,0.27,2.4,4.4,2.0,0.189
+technology,metadata and lineage coverage,0.31,0.24,1.9,4.2,2.3,0.1711
+process,supplier and customer data protocol,0.35,0.25,2.1,4.0,1.9,0.1662
+people,analytics role coverage,0.34,0.28,2.6,4.2,1.6,0.1523
+process,analytics value review cycle,0.35,0.22,2.2,4.1,1.9,0.1463
+process,access and privacy controls,0.35,0.26,2.9,4.5,1.6,0.1456
+technology,operational model monitoring,0.31,0.23,2.0,4.0,2.0,0.1426
+people,cross-functional decision forums,0.34,0.26,2.8,4.1,1.3,0.1149
+technology,secure customer-facing analytics,0.31,0.23,2.5,4.1,1.6,0.1141
+people,training and literacy cadence,0.34,0.2,2.4,4.0,1.6,0.1088

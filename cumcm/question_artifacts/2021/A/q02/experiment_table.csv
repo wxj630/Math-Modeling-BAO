@@ -1,0 +1,2 @@
+﻿alpha_deg,beta_deg,vertex_x_m,vertex_y_m,vertex_z_m,focus_x_m,focus_y_m,focus_z_m,focal_length_m,active_node_count,rms_surface_error_before_m,rms_surface_error_after_m,max_abs_actuator_stroke_m,mean_abs_actuator_stroke_m,edge_constraint_scale
+36.795,78.169,-49.358619,-36.918247,-294.248552,-26.336895,-19.698931,-157.005878,140.221454,692,0.317532,0.186601,0.210032,0.123374,0.41234

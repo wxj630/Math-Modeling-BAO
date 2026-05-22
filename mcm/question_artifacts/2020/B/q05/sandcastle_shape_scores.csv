@@ -1,0 +1,7 @@
+shape,water_fraction,wave_exposure,erosion_rate_index,construction_score,expected_lifetime_hours
+low circular mound,0.12,0.871,0.54,0.92,22.854
+truncated cone,0.12,0.9818,0.6691,0.86,18.443
+triangular prism ridge,0.12,1.12,0.6944,0.82,17.773
+hemisphere,0.12,0.9784,0.7571,0.72,16.301
+square frustum,0.12,1.2166,0.7917,0.78,15.588
+steep cylinder tower,0.12,2.0222,2.2804,0.55,5.412

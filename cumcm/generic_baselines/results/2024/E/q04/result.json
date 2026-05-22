@@ -1,0 +1,105 @@
+{
+  "problem_id": "2024-E",
+  "title": "2024年 CUMCM E题：交通流量管控",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "五一黄金周期间，该小镇对景区周边道路实行了临时性交通管理措施，具体 管控措施见附件 3。请结合数据评价临时管控措施在两条主路上的效果。 附件 1 路段行驶方向编号及交叉口之间的距离 附件 2 纬中路各交叉口车辆信息 附件 3 五一黄金周期间交通管控措施",
+  "tasks": [
+    "请结合数据评价临时管控措施在两条主路上的效果"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "交通、交叉口"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "距离"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx",
+    "rows": 7,
+    "columns": 3,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "请结合数据评价临时管控措施在两条主路上的效果"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "G=(V,E): 交通/转运/关系网络",
+      "w_ij: 边成本、距离或时间",
+      "d_i: 从源点到节点 i 的最短距离",
+      "pre_i: 最短路前驱节点"
+    ],
+    "constraints": [
+      "边权非负",
+      "路径必须由网络中已有边组成"
+    ],
+    "objective_or_equations": [
+      "d_j = min_i(d_i + w_ij)",
+      "min path_cost(source, target)"
+    ],
+    "solution_steps": [
+      "把题面地点、平台或转运关系抽象为图。",
+      "构造边权矩阵。",
+      "运行 Dijkstra 最短路。",
+      "输出各节点最短距离和前驱。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "dijkstra_shortest_path",
+    "node_count": 3,
+    "source": 0,
+    "distances": [
+      0.0,
+      1.111111,
+      1.333333
+    ],
+    "predecessors": [
+      -9999,
+      0,
+      0
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/E/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

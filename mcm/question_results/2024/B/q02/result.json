@@ -1,0 +1,104 @@
+{
+  "problem_id": "2024-B",
+  "question": "q02",
+  "question_title": "主船与救援船搜索装备准备",
+  "statement": "Prepare - What, if any, additional search equipment would you recommend the company carry on the host ship to deploy if necessary? You may consider different types of equipment but must also consider costs associated with availability, maintenance, readiness, and usage of this equipment. What additional equipment might a rescue vessel need to bring in to assist if necessary?",
+  "methods": "多指标装备评价：覆盖面积、探测质量、准备时间、使用成本和维护负担加权，区分主船常备设备与救援船重型设备。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "official_requirements": {
+      "loss_of_communication": true,
+      "possible_loss_of_propulsion": true,
+      "predict_location_over_time": true,
+      "seafloor_or_neutral_buoyancy": true,
+      "currents_densities_and_geography": true,
+      "prepare_search_equipment": true,
+      "probability_of_finding_as_function_of_time": true,
+      "caribbean_and_multiple_submersibles": true,
+      "memo_to_greek_government": true
+    },
+    "parameters": {
+      "purpose": "deterministic rescue-planning example for the official PDF-only problem; not observed incident data",
+      "deployment_area": "Ionian Sea tourist wreck-search site near a host ship",
+      "initial_fix_error_km": 0.18,
+      "submersible_speed_kmh_before_failure": 3.0,
+      "time_since_last_fix_hours": 0.5,
+      "surface_current_kmh": 1.15,
+      "deep_current_kmh": 0.35,
+      "current_direction_degrees": 58.0,
+      "current_uncertainty_kmh": 0.24,
+      "cross_current_uncertainty_kmh": 0.14,
+      "depth_state_ambiguity_km": 0.55,
+      "seafloor_terrain_uncertainty_km": 0.35,
+      "neutral_buoyancy_share": 0.55,
+      "seafloor_share": 0.45,
+      "acoustic_range_km": 4.0
+    }
+  },
+  "equipment_recommendations": {
+    "model": "multi-criteria equipment scoring over coverage, detection quality, readiness, usage cost, and maintenance burden",
+    "host_ship_equipment": [
+      {
+        "asset": "shipboard USBL acoustic locator",
+        "availability": "must be aboard host ship",
+        "maintenance": "medium: calibration before tourist dives",
+        "readiness_hours": 0.25,
+        "usage_cost_index": 2.0,
+        "coverage_km2_per_hour": 7.5,
+        "quality": 0.72,
+        "search_value_score": 0.5135,
+        "role": "quickly interrogate emergency pingers and reduce horizontal uncertainty"
+      },
+      {
+        "asset": "AUV with multibeam sonar",
+        "availability": "rescue vessel or prearranged regional contractor",
+        "maintenance": "high: mission planning, batteries, recovery crew",
+        "readiness_hours": 5.0,
+        "usage_cost_index": 5.0,
+        "coverage_km2_per_hour": 10.5,
+        "quality": 0.75,
+        "search_value_score": 0.455,
+        "role": "expand search when the first host-ship pattern fails"
+      },
+      {
+        "asset": "drop transponder/LBL beacons",
+        "availability": "portable kit aboard host ship",
+        "maintenance": "low-to-medium: battery and timing checks",
+        "readiness_hours": 0.8,
+        "usage_cost_index": 2.8,
+        "coverage_km2_per_hour": 4.2,
+        "quality": 0.8,
+        "search_value_score": 0.4048,
+        "role": "create a local acoustic baseline around the predicted ellipse"
+      },
+      {
+        "asset": "side-scan sonar towfish",
+        "availability": "host ship or nearby contracted survey vessel",
+        "maintenance": "medium: tow cable, fish, and winch inspection",
+        "readiness_hours": 1.2,
+        "usage_cost_index": 3.3,
+        "coverage_km2_per_hour": 5.8,
+        "quality": 0.68,
+        "search_value_score": 0.3897,
+        "role": "scan seafloor-likely sectors when the submersible has lost propulsion"
+      }
+    ],
+    "rescue_vessel_equipment": [
+      {
+        "asset": "work-class ROV with lift/umbilical tools",
+        "reason": "needed for confirmed deep contact, intervention, and connection to lifting or life-support systems"
+      },
+      {
+        "asset": "dynamic-positioning rescue vessel",
+        "reason": "keeps the rescue platform over the contact while operating tethered tools"
+      },
+      {
+        "asset": "medical decompression and survivor reception team",
+        "reason": "turns a location success into safe recovery and post-rescue care"
+      }
+    ],
+    "recommendation": "The host ship should carry acoustic localization, drop beacons, a side-scan option, and an inspection ROV; heavier lift and intervention assets can be pre-contracted for rescue-vessel arrival."
+  }
+}

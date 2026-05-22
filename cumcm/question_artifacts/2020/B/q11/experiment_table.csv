@@ -1,0 +1,3 @@
+﻿level,method,reached_finish,finish_day,final_cash,initial_water_boxes,initial_food_boxes,initial_load_kg,load_feasible,mining_days,map_note
+第五关,multi_player_resource_interaction_model,True,8,9530.0,28,33,150,True,0,13节点按链式主路加矿山支路近似重建。
+第六关,multi_player_resource_interaction_model,True,24,9843.33333,214,242,1126,True,10,25节点按5x5行列网格近似重建。

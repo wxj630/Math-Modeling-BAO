@@ -1,0 +1,119 @@
+{
+  "problem_id": "2025-D",
+  "question": "q04",
+  "question_title": "对其他利益相关者的影响",
+  "statement": "How does the recommended project impact other stakeholders?",
+  "methods": "从居民、港口货运、通勤者、公交运营方、沿街商户和过境车辆角度整理收益和代价。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "rows": {
+      "edges_drive.csv": 91227,
+      "nodes_drive.csv": 37163,
+      "Bus_Stops.csv": 2654,
+      "Bus_Routes.csv": 66,
+      "MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv": 2398,
+      "DataDictionary.csv": 111
+    }
+  },
+  "project_recommendations": {
+    "recommended_projects": [
+      {
+        "project": "Rebuild and harden the Francis Scott Key / I-695 harbor crossing corridor.",
+        "primary_benefit": "Restores direct connectivity for Key Bridge west-east approaches under the removal scenario.",
+        "resident_benefit": "Improves access between port-adjacent jobs, east/south neighborhoods, and regional highways.",
+        "other_stakeholders": "Port freight, commuters, emergency services, and pass-through traffic gain reliability; construction staging creates short-run delays.",
+        "disruption": "Major capital cost, detours, construction noise, and possible induced traffic unless paired with transit and safety improvements."
+      },
+      {
+        "project": "Install shelters, lighting, ADA boarding pads, and bus-priority curb management at the highest-ridership unsheltered stops.",
+        "primary_benefit": "Targets 16266 boardings/alightings at the top 10 unsheltered high-ridership stops.",
+        "resident_benefit": "Benefits bus-dependent residents directly through weather protection, safer waiting areas, and more reliable boarding.",
+        "other_stakeholders": "Transit agency operations improve, nearby businesses may gain foot traffic, drivers may face curb-management changes.",
+        "disruption": "Temporary sidewalk work, curb reallocation, and potential parking/loading conflicts near priority stops."
+      }
+    ],
+    "top_traffic_segments": [
+      {
+        "road_name": "OWINGS MILLS BLVD",
+        "station_id": "B030151",
+        "aadt_current": 36665,
+        "lanes": 4,
+        "aadt_per_lane": 9166.25,
+        "functional_class": "Minor Arterial",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "HONEYGO BLVD",
+        "station_id": "B030128",
+        "aadt_current": 34120,
+        "lanes": 4,
+        "aadt_per_lane": 8530.0,
+        "functional_class": "Minor Arterial",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "PULASKI HWY",
+        "station_id": "B030104",
+        "aadt_current": 33802,
+        "lanes": 4,
+        "aadt_per_lane": 8450.5,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "EDMONDSON AVE",
+        "station_id": "BC015",
+        "aadt_current": 33702,
+        "lanes": 6,
+        "aadt_per_lane": 5617.0,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": true,
+        "matched_length_m": 28172.95
+      },
+      {
+        "road_name": "LOCH RAVEN BLVD",
+        "station_id": "B1087",
+        "aadt_current": 31942,
+        "lanes": 4,
+        "aadt_per_lane": 7985.5,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "REISTERSTOWN RD",
+        "station_id": "B1026",
+        "aadt_current": 31442,
+        "lanes": 4,
+        "aadt_per_lane": 7860.5,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "E LOMBARD ST",
+        "station_id": "S2009240015",
+        "aadt_current": 30975,
+        "lanes": 4,
+        "aadt_per_lane": 7743.75,
+        "functional_class": "Minor Arterial",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "W NORTHERN PKWY",
+        "station_id": "B240076",
+        "aadt_current": 28722,
+        "lanes": 6,
+        "aadt_per_lane": 4787.0,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+region_type,vehicle_share,charger_density_factor,chargers_at_90pct_ev,build_priority
+urban,0.42,1.4,3238434,balanced early mix
+suburban,0.38,0.82,1716150,balanced early mix
+rural,0.2,0.56,616845,corridor coverage before dense local buildout

@@ -1,0 +1,413 @@
+{
+  "problem_id": "2017-E",
+  "title": "Sustainable Cities Needed!",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "official_requirements": {
+      "two_mid_sized_cities": true,
+      "different_continents": true,
+      "three_es": [
+        "economic",
+        "equity",
+        "environment"
+      ],
+      "ten_smart_growth_principles": true,
+      "population_plus_50pct_by_2050": true
+    },
+    "parameters": {
+      "selected_cities": [
+        {
+          "city": "Boulder",
+          "country": "United States",
+          "continent": "North America",
+          "population": 108250,
+          "growth_rate": 0.011,
+          "economic_opportunity": 0.78,
+          "geography_constraint": 0.64,
+          "current_plan": "compact infill, open-space boundary, multimodal corridors",
+          "environmental_pressure": 0.42
+        },
+        {
+          "city": "Freiburg im Breisgau",
+          "country": "Germany",
+          "continent": "Europe",
+          "population": 229650,
+          "growth_rate": 0.008,
+          "economic_opportunity": 0.74,
+          "geography_constraint": 0.58,
+          "current_plan": "transit-oriented districts, renewable energy, green wedges",
+          "environmental_pressure": 0.36
+        }
+      ],
+      "principles": [
+        {
+          "principle": "mixed_land_use",
+          "description": "Mix land uses",
+          "weight": 0.1,
+          "sustainability_e": "economic"
+        },
+        {
+          "principle": "compact_design",
+          "description": "Take advantage of compact building design",
+          "weight": 0.1,
+          "sustainability_e": "environmental"
+        },
+        {
+          "principle": "housing_choice",
+          "description": "Create a range of housing opportunities and choices",
+          "weight": 0.1,
+          "sustainability_e": "social"
+        },
+        {
+          "principle": "walkability",
+          "description": "Create walkable neighborhoods",
+          "weight": 0.11,
+          "sustainability_e": "social"
+        },
+        {
+          "principle": "sense_of_place",
+          "description": "Foster distinctive, attractive communities",
+          "weight": 0.08,
+          "sustainability_e": "social"
+        },
+        {
+          "principle": "open_space",
+          "description": "Preserve open space and environmental areas",
+          "weight": 0.11,
+          "sustainability_e": "environmental"
+        },
+        {
+          "principle": "infill_development",
+          "description": "Strengthen existing communities",
+          "weight": 0.1,
+          "sustainability_e": "economic"
+        },
+        {
+          "principle": "transport_choice",
+          "description": "Provide a variety of transportation choices",
+          "weight": 0.12,
+          "sustainability_e": "environmental"
+        },
+        {
+          "principle": "fair_decisions",
+          "description": "Make development decisions predictable and fair",
+          "weight": 0.09,
+          "sustainability_e": "economic"
+        },
+        {
+          "principle": "stakeholder_collaboration",
+          "description": "Encourage community collaboration",
+          "weight": 0.09,
+          "sustainability_e": "social"
+        }
+      ]
+    }
+  },
+  "smart_growth_metric": {
+    "principle_rows": [
+      {
+        "principle": "mixed_land_use",
+        "description": "Mix land uses",
+        "weight": 0.1,
+        "sustainability_e": "economic"
+      },
+      {
+        "principle": "compact_design",
+        "description": "Take advantage of compact building design",
+        "weight": 0.1,
+        "sustainability_e": "environmental"
+      },
+      {
+        "principle": "housing_choice",
+        "description": "Create a range of housing opportunities and choices",
+        "weight": 0.1,
+        "sustainability_e": "social"
+      },
+      {
+        "principle": "walkability",
+        "description": "Create walkable neighborhoods",
+        "weight": 0.11,
+        "sustainability_e": "social"
+      },
+      {
+        "principle": "sense_of_place",
+        "description": "Foster distinctive, attractive communities",
+        "weight": 0.08,
+        "sustainability_e": "social"
+      },
+      {
+        "principle": "open_space",
+        "description": "Preserve open space and environmental areas",
+        "weight": 0.11,
+        "sustainability_e": "environmental"
+      },
+      {
+        "principle": "infill_development",
+        "description": "Strengthen existing communities",
+        "weight": 0.1,
+        "sustainability_e": "economic"
+      },
+      {
+        "principle": "transport_choice",
+        "description": "Provide a variety of transportation choices",
+        "weight": 0.12,
+        "sustainability_e": "environmental"
+      },
+      {
+        "principle": "fair_decisions",
+        "description": "Make development decisions predictable and fair",
+        "weight": 0.09,
+        "sustainability_e": "economic"
+      },
+      {
+        "principle": "stakeholder_collaboration",
+        "description": "Encourage community collaboration",
+        "weight": 0.09,
+        "sustainability_e": "social"
+      }
+    ],
+    "definition": "Weighted three-E score over the ten official smart-growth principles."
+  },
+  "current_plan_assessment": {
+    "city_rows": [
+      {
+        "city": "Boulder",
+        "continent": "North America",
+        "population": 108250,
+        "current_plan": "compact infill, open-space boundary, multimodal corridors",
+        "economic_score": 0.814,
+        "equity_score": 0.5848,
+        "environment_score": 0.745,
+        "smart_growth_score": 0.6892
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "continent": "Europe",
+        "population": 229650,
+        "current_plan": "transit-oriented districts, renewable energy, green wedges",
+        "economic_score": 0.802,
+        "equity_score": 0.5956,
+        "environment_score": 0.76,
+        "smart_growth_score": 0.7
+      }
+    ]
+  },
+  "redesigned_growth_plan": {
+    "plan_rows": [
+      {
+        "city": "Boulder",
+        "initiative": "mixed-use infill zoning",
+        "economic_gain": 0.18,
+        "equity_gain": 0.11,
+        "environment_gain": 0.08,
+        "metric_gain": 0.1051,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Boulder",
+        "initiative": "bus rapid transit and cycling priority",
+        "economic_gain": 0.14,
+        "equity_gain": 0.16,
+        "environment_gain": 0.12,
+        "metric_gain": 0.1212,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Boulder",
+        "initiative": "affordable housing near job centers",
+        "economic_gain": 0.1,
+        "equity_gain": 0.22,
+        "environment_gain": 0.07,
+        "metric_gain": 0.1109,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Boulder",
+        "initiative": "green stormwater and heat refuges",
+        "economic_gain": 0.08,
+        "equity_gain": 0.1,
+        "environment_gain": 0.2,
+        "metric_gain": 0.1074,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Boulder",
+        "initiative": "brownfield redevelopment",
+        "economic_gain": 0.17,
+        "equity_gain": 0.08,
+        "environment_gain": 0.1,
+        "metric_gain": 0.0984,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Boulder",
+        "initiative": "participatory capital budget",
+        "economic_gain": 0.09,
+        "equity_gain": 0.2,
+        "environment_gain": 0.06,
+        "metric_gain": 0.0976,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "mixed-use infill zoning",
+        "economic_gain": 0.18,
+        "equity_gain": 0.11,
+        "environment_gain": 0.08,
+        "metric_gain": 0.1069,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "bus rapid transit and cycling priority",
+        "economic_gain": 0.14,
+        "equity_gain": 0.16,
+        "environment_gain": 0.12,
+        "metric_gain": 0.123,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "affordable housing near job centers",
+        "economic_gain": 0.1,
+        "equity_gain": 0.22,
+        "environment_gain": 0.07,
+        "metric_gain": 0.1127,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "green stormwater and heat refuges",
+        "economic_gain": 0.08,
+        "equity_gain": 0.1,
+        "environment_gain": 0.2,
+        "metric_gain": 0.1092,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "brownfield redevelopment",
+        "economic_gain": 0.17,
+        "equity_gain": 0.08,
+        "environment_gain": 0.1,
+        "metric_gain": 0.1002,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "participatory capital budget",
+        "economic_gain": 0.09,
+        "equity_gain": 0.2,
+        "environment_gain": 0.06,
+        "metric_gain": 0.0994,
+        "implementation_basis": "geography, growth rate, economic opportunity, and the official three-E smart-growth objective"
+      }
+    ]
+  },
+  "initiative_ranking": {
+    "ranking_rows": [
+      {
+        "city": "Boulder",
+        "initiative": "bus rapid transit and cycling priority",
+        "potential_score": 0.1212,
+        "rank_within_city": 1
+      },
+      {
+        "city": "Boulder",
+        "initiative": "affordable housing near job centers",
+        "potential_score": 0.1109,
+        "rank_within_city": 2
+      },
+      {
+        "city": "Boulder",
+        "initiative": "green stormwater and heat refuges",
+        "potential_score": 0.1074,
+        "rank_within_city": 3
+      },
+      {
+        "city": "Boulder",
+        "initiative": "mixed-use infill zoning",
+        "potential_score": 0.1051,
+        "rank_within_city": 4
+      },
+      {
+        "city": "Boulder",
+        "initiative": "brownfield redevelopment",
+        "potential_score": 0.0984,
+        "rank_within_city": 5
+      },
+      {
+        "city": "Boulder",
+        "initiative": "participatory capital budget",
+        "potential_score": 0.0976,
+        "rank_within_city": 6
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "bus rapid transit and cycling priority",
+        "potential_score": 0.123,
+        "rank_within_city": 1
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "affordable housing near job centers",
+        "potential_score": 0.1127,
+        "rank_within_city": 2
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "green stormwater and heat refuges",
+        "potential_score": 0.1092,
+        "rank_within_city": 3
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "mixed-use infill zoning",
+        "potential_score": 0.1069,
+        "rank_within_city": 4
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "brownfield redevelopment",
+        "potential_score": 0.1002,
+        "rank_within_city": 5
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "initiative": "participatory capital budget",
+        "potential_score": 0.0994,
+        "rank_within_city": 6
+      }
+    ]
+  },
+  "population_growth_stress": {
+    "stress_rows": [
+      {
+        "city": "Boulder",
+        "current_population": 108250,
+        "population_2050_plus_50pct": 162375,
+        "service_capacity_index": 0.8684,
+        "supports_growth": true,
+        "growth_support_mechanism": "infill housing, multimodal transport, open-space protection, and phased public investment"
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "current_population": 229650,
+        "population_2050_plus_50pct": 344475,
+        "service_capacity_index": 0.876,
+        "supports_growth": true,
+        "growth_support_mechanism": "infill housing, multimodal transport, open-space protection, and phased public investment"
+      }
+    ]
+  },
+  "summary_sheet": "Summary for the International City Management Group: Boulder and Freiburg already have credible compact-growth plans, but the redesigned portfolio improves equity by prioritizing affordable housing near jobs and transit before 2050 growth pressure arrives.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic planning inputs; it does not use random placeholder data.",
+    "model_limits": [
+      "No COMAP numeric attachment is supplied.",
+      "City scores are auditable scenario inputs for a contest planning model, not official municipal performance statistics."
+    ]
+  }
+}

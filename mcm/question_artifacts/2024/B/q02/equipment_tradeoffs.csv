@@ -1,0 +1,6 @@
+asset,availability,maintenance,readiness_hours,usage_cost_index,coverage_km2_per_hour,quality,role,readiness_penalty,cost_penalty,search_value_score
+shipboard USBL acoustic locator,must be aboard host ship,medium: calibration before tourist dives,0.25,2.0,7.5,0.72,quickly interrogate emergency pingers and reduce horizontal uncertainty,0.05,0.4,0.5135
+drop transponder/LBL beacons,portable kit aboard host ship,low-to-medium: battery and timing checks,0.8,2.8,4.2,0.8,create a local acoustic baseline around the predicted ellipse,0.16,0.5599999999999999,0.4048
+side-scan sonar towfish,host ship or nearby contracted survey vessel,"medium: tow cable, fish, and winch inspection",1.2,3.3,5.8,0.68,scan seafloor-likely sectors when the submersible has lost propulsion,0.24,0.6599999999999999,0.3897
+inspection-class ROV,host ship if tourist operation is approved,"high: tether, thrusters, cameras, manipulator",1.5,4.2,1.4,0.92,"confirm contact and attach lift, air, or communication line",0.3,0.8400000000000001,0.3144
+AUV with multibeam sonar,rescue vessel or prearranged regional contractor,"high: mission planning, batteries, recovery crew",5.0,5.0,10.5,0.75,expand search when the first host-ship pattern fails,1.0,1.0,0.455

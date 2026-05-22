@@ -1,0 +1,16 @@
+state,sector,demand_maf,allocated_maf,deficit_maf,service_ratio,priority_weight
+AZ,residential,0.68,0.6528,0.0272,0.96,0.94
+AZ,industry,0.28,0.2016,0.0784,0.72,0.658
+AZ,agriculture,1.25,0.725,0.525,0.58,0.4888
+CA,residential,1.05,1.008,0.042,0.96,0.88
+CA,industry,0.42,0.3024,0.1176,0.72,0.616
+CA,agriculture,2.2,1.276,0.924,0.58,0.4576
+WY,residential,0.12,0.1152,0.0048,0.96,1.08
+WY,industry,0.15,0.108,0.042,0.72,0.756
+WY,agriculture,0.42,0.2436,0.1764,0.58,0.5616
+NM,residential,0.24,0.2304,0.0096,0.96,1.04
+NM,industry,0.13,0.0936,0.0364,0.72,0.728
+NM,agriculture,0.54,0.3132,0.2268,0.58,0.5408
+CO,residential,0.42,0.0382,0.3818,0.091,1.02
+CO,industry,0.24,0.0,0.24,0.0,0.714
+CO,agriculture,0.76,0.0,0.76,0.0,0.5304

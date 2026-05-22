@@ -1,0 +1,9 @@
+drone,length_in,width_in,height_in,max_payload_lbs,speed_kmh,flight_time_min,video,medical,cargo_bay_type,estimated_roundtrip_range_km,package_types_fit,mission_score,recommended_count
+C,60,50,30,14.0,64,35,True,True,2,29.12,MED1;MED2;MED3,0.8533,9
+B,30,30,22,8.0,79,40,True,True,1,41.08,MED1;MED2;MED3,0.829,6
+G,32,32,17,20.0,64,16,True,True,2,13.312,MED1;MED2;MED3,0.7609,9
+E,25,20,27,15.0,60,15,True,True,2,11.7,MED1;MED2;MED3,0.7475,0
+D,25,20,25,11.0,60,18,True,True,1,14.04,MED1;MED2;MED3,0.6737,0
+F,40,40,25,22.0,79,24,False,True,2,24.648,MED1;MED2;MED3,0.6554,3
+A,45,45,25,3.5,40,35,True,True,1,18.2,MED1;MED2;MED3,0.4707,0
+H tethered,65,75,41,0.0,0,1440,False,False,0,0.0,,0.0,2

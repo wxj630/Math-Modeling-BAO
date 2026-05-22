@@ -2,6 +2,7 @@
 kimi-cli/
 kimi-agent-sdk/
 MathModelAgent/
+third_party/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -211,3 +212,9 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 .opencode
+
+# Node / VitePress documentation site
+node_modules/
+.npm-cache/
+docs/.vitepress/cache/
+docs/.vitepress/dist/

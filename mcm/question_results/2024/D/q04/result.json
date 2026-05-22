@@ -1,0 +1,84 @@
+{
+  "problem_id": "2024-D",
+  "question": "q04",
+  "question_title": "环境条件变化敏感性",
+  "statement": "How sensitive is the algorithm to environmental changes such as precipitation, snowpack, and ice jams?",
+  "methods": "用偏离分月目标带的高水位/月低水位月数、平均 stakeholder cost 和最大偏离量作为环境冲击敏感性指标。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "records": 2548,
+    "level_records": 1380,
+    "flow_records": 1168,
+    "sheets": [
+      "Detroit River",
+      "Lake Erie",
+      "Lake Michigan and Lake Huron",
+      "Lake Ontario",
+      "Lake St. Clair",
+      "Lake Superior",
+      "Niagara River",
+      "Ottawa River",
+      "St. Clair River",
+      "St. Lawrence River",
+      "St. Mary's River"
+    ]
+  },
+  "sensitivity": {
+    "dam_outflow_sensitivity": [
+      {
+        "lake": "Lake Superior",
+        "control_flow": "St. Mary's River",
+        "rows": 168,
+        "rmse_m": 0.066173,
+        "standardized_outflow_sensitivity": -0.005175,
+        "interpretation": "negative means larger outflow tends to lower next-month lake level"
+      },
+      {
+        "lake": "Lake Ontario",
+        "control_flow": "St. Lawrence River",
+        "rows": 109,
+        "rmse_m": 0.136944,
+        "standardized_outflow_sensitivity": -0.122293,
+        "interpretation": "negative means larger outflow tends to lower next-month lake level"
+      }
+    ],
+    "environmental_condition_sensitivity": [
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "mean_monthly_cost": 0.624493,
+        "high_water_months": 70,
+        "low_water_months": 70,
+        "max_abs_deviation_m": 1.28
+      },
+      {
+        "lake": "Lake St. Clair",
+        "mean_monthly_cost": 0.522971,
+        "high_water_months": 71,
+        "low_water_months": 67,
+        "max_abs_deviation_m": 0.94
+      },
+      {
+        "lake": "Lake Erie",
+        "mean_monthly_cost": 0.453043,
+        "high_water_months": 72,
+        "low_water_months": 68,
+        "max_abs_deviation_m": 0.83
+      },
+      {
+        "lake": "Lake Ontario",
+        "mean_monthly_cost": 0.321993,
+        "high_water_months": 71,
+        "low_water_months": 71,
+        "max_abs_deviation_m": 0.78
+      },
+      {
+        "lake": "Lake Superior",
+        "mean_monthly_cost": 0.308841,
+        "high_water_months": 71,
+        "low_water_months": 71,
+        "max_abs_deviation_m": 0.53
+      }
+    ]
+  }
+}

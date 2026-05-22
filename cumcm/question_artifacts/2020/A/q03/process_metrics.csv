@@ -1,0 +1,2 @@
+﻿peak_temperature_c,peak_time_s,time_150_190_s,time_above_217_s,max_heating_slope_c_per_s,max_cooling_slope_c_per_s,area_217_to_peak,symmetry_metric_c,process_feasible
+240.462994,215.5,72.0,40.0,1.831977,1.947204,321.239053,5.344108,True

@@ -1,0 +1,100 @@
+{
+  "problem_id": "2016-C",
+  "title": "2016年 CUMCM C题：电池剩余放电时间预测",
+  "question_index": 2,
+  "question_label": "问题2",
+  "statement": "试建立以20A到100A之间任一恒定电流强度放电时的放电曲线的数学模型，并用MRE评估模型的精度。用表格和图形给出电流强度为55A时的放电曲线。",
+  "tasks": [
+    "试建立以20A到100A之间任一恒定电流强度放电时的放电曲线的数学模型，并用MRE评估模型的精度",
+    "用表格和图形给出电流强度为55A时的放电曲线"
+  ],
+  "selected_model": {
+    "key": "ode",
+    "name": "微分方程与动态仿真",
+    "chapter": "CH2",
+    "chapter_title": "微分方程与动力系统",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "放电"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "曲线"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "评估"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx",
+    "rows": 2188,
+    "columns": 11,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "微分方程与动态仿真",
+    "task_breakdown": [
+      "试建立以20A到100A之间任一恒定电流强度放电时的放电曲线的数学模型，并用MRE评估模型的精度",
+      "用表格和图形给出电流强度为55A时的放电曲线"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "y(t): 系统状态",
+      "k: 调节/衰减系数",
+      "y_env: 环境或稳态值",
+      "t: 时间"
+    ],
+    "constraints": [
+      "k > 0",
+      "初值 y(0)=y0",
+      "状态向稳态单调或振荡趋近"
+    ],
+    "objective_or_equations": [
+      "dy/dt = -k*(y-y_env)",
+      "y(0)=y0"
+    ],
+    "solution_steps": [
+      "把题面动态过程抽象为一阶微分方程。",
+      "设置初值和参数。",
+      "调用 solve_ivp 数值积分。",
+      "输出时间-状态轨迹。"
+    ],
+    "model_reference": {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "chapter_title": "微分方程与动力系统",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    }
+  },
+  "experiment_result": {
+    "method": "first_order_dynamic_simulation",
+    "y0": 15.0,
+    "steady_state": 195.0,
+    "k": 0.005,
+    "final_value": 74.34234964193044
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2016/C/q02/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

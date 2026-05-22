@@ -1,0 +1,173 @@
+{
+  "problem_id": "2024-E",
+  "question": "q06",
+  "question_title": "识别需要保存保护的重要建筑",
+  "statement": "As a community leader, how could you identify buildings in a community that should be preserved and protected due to their cultural, historical, economic, or community significance?",
+  "methods": "构造文化、历史、经济和社区意义加权分，并乘以灾害暴露形成保护紧迫度，排除 Cape Hatteras Lighthouse 后选择 St. Augustine Lighthouse 做应用。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "official_requirements": {
+      "underwrite_conditions": true,
+      "choose_when_to_take_risk": true,
+      "property_owner_influence": true,
+      "rising_extreme_weather_events": true,
+      "two_continents_demonstration": true,
+      "where_how_whether_to_build": true,
+      "historic_landmark_not_cape_hatteras": true,
+      "community_letter": true
+    },
+    "parameters": {
+      "recent_damage_trillion_usd": 1.0,
+      "recent_extreme_event_count": 1000,
+      "claim_increase_2022": 1.15,
+      "premium_increase_2040_range": [
+        0.3,
+        0.6
+      ],
+      "protection_gap": 0.57,
+      "source_note": "Official PDF statement parameters only; region rows below are deterministic demonstration scenarios, not observed insurance portfolios."
+    }
+  },
+  "preservation_model": {
+    "landmark": "St. Augustine Lighthouse",
+    "model": "weighted cultural, historical, economic, and community significance multiplied by exposure urgency and checked against benefit/cost ratio",
+    "priority_ranking": [
+      {
+        "building": "St. Augustine Lighthouse",
+        "cultural": 0.92,
+        "historical": 0.88,
+        "economic": 0.76,
+        "community": 0.84,
+        "exposure": 0.69,
+        "intervention_cost_musd": 8.5,
+        "significance_score": 0.858,
+        "preservation_urgency": 0.592,
+        "estimated_community_benefit_musd": 23.436,
+        "benefit_cost_ratio": 2.757,
+        "recommended_action": "selective retrofit and archival/documentation plan"
+      },
+      {
+        "building": "historic waterfront market",
+        "cultural": 0.74,
+        "historical": 0.68,
+        "economic": 0.83,
+        "community": 0.79,
+        "exposure": 0.77,
+        "intervention_cost_musd": 5.2,
+        "significance_score": 0.7555,
+        "preservation_urgency": 0.5817,
+        "estimated_community_benefit_musd": 21.601,
+        "benefit_cost_ratio": 4.154,
+        "recommended_action": "protect in place with phased hardening and emergency response covenant"
+      },
+      {
+        "building": "old civic theater",
+        "cultural": 0.81,
+        "historical": 0.72,
+        "economic": 0.61,
+        "community": 0.87,
+        "exposure": 0.55,
+        "intervention_cost_musd": 3.8,
+        "significance_score": 0.7625,
+        "preservation_urgency": 0.4194,
+        "estimated_community_benefit_musd": 20.435,
+        "benefit_cost_ratio": 5.378,
+        "recommended_action": "selective retrofit and archival/documentation plan"
+      },
+      {
+        "building": "redundant warehouse district",
+        "cultural": 0.39,
+        "historical": 0.42,
+        "economic": 0.51,
+        "community": 0.36,
+        "exposure": 0.62,
+        "intervention_cost_musd": 4.6,
+        "significance_score": 0.414,
+        "preservation_urgency": 0.2567,
+        "estimated_community_benefit_musd": 12.168,
+        "benefit_cost_ratio": 2.645,
+        "recommended_action": "selective retrofit and archival/documentation plan"
+      }
+    ]
+  },
+  "landmark_application": {
+    "landmark": "St. Augustine Lighthouse",
+    "landmark_context": {
+      "name": "St. Augustine Lighthouse",
+      "location": "St. Augustine, Florida, USA",
+      "hazard_context": "Atlantic hurricanes, coastal flooding, saltwater corrosion, and tourism disruption",
+      "cultural_value_index": 0.92,
+      "historical_value_index": 0.88,
+      "economic_value_index": 0.76,
+      "community_value_index": 0.84,
+      "exposure_index": 0.69
+    },
+    "priority_ranking": [
+      {
+        "building": "St. Augustine Lighthouse",
+        "cultural": 0.92,
+        "historical": 0.88,
+        "economic": 0.76,
+        "community": 0.84,
+        "exposure": 0.69,
+        "intervention_cost_musd": 8.5,
+        "significance_score": 0.858,
+        "preservation_urgency": 0.592,
+        "estimated_community_benefit_musd": 23.436,
+        "benefit_cost_ratio": 2.757,
+        "recommended_action": "selective retrofit and archival/documentation plan"
+      },
+      {
+        "building": "historic waterfront market",
+        "cultural": 0.74,
+        "historical": 0.68,
+        "economic": 0.83,
+        "community": 0.79,
+        "exposure": 0.77,
+        "intervention_cost_musd": 5.2,
+        "significance_score": 0.7555,
+        "preservation_urgency": 0.5817,
+        "estimated_community_benefit_musd": 21.601,
+        "benefit_cost_ratio": 4.154,
+        "recommended_action": "protect in place with phased hardening and emergency response covenant"
+      },
+      {
+        "building": "old civic theater",
+        "cultural": 0.81,
+        "historical": 0.72,
+        "economic": 0.61,
+        "community": 0.87,
+        "exposure": 0.55,
+        "intervention_cost_musd": 3.8,
+        "significance_score": 0.7625,
+        "preservation_urgency": 0.4194,
+        "estimated_community_benefit_musd": 20.435,
+        "benefit_cost_ratio": 5.378,
+        "recommended_action": "selective retrofit and archival/documentation plan"
+      },
+      {
+        "building": "redundant warehouse district",
+        "cultural": 0.39,
+        "historical": 0.42,
+        "economic": 0.51,
+        "community": 0.36,
+        "exposure": 0.62,
+        "intervention_cost_musd": 4.6,
+        "significance_score": 0.414,
+        "preservation_urgency": 0.2567,
+        "estimated_community_benefit_musd": 12.168,
+        "benefit_cost_ratio": 2.645,
+        "recommended_action": "selective retrofit and archival/documentation plan"
+      }
+    ],
+    "recommended_plan": {
+      "phase_1": "0-12 months: engineering survey, corrosion/wind inspection, emergency shutters, drainage maintenance, and visitor closure triggers",
+      "phase_2": "1-3 years: foundation drainage, roof and lantern-room hardening, floodproof utilities, and insurance inspection covenant",
+      "phase_3": "3-7 years: evaluate managed retreat only if erosion and storm-surge triggers exceed the conditional underwriting band",
+      "cost_proposal_musd": 8.5,
+      "benefit_cost_ratio": 2.757
+    }
+  }
+}

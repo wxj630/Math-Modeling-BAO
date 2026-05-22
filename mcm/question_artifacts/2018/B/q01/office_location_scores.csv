@@ -1,0 +1,9 @@
+city,language,region,market_access,cost_efficiency,long_term_growth,office_score
+Mumbai,Hindi,South Asia,0.84,0.66,0.88,0.806
+Lagos,English,West Africa,0.78,0.7,0.9,0.7976
+Jakarta,Indonesian,Southeast Asia,0.7,0.74,0.86,0.7616
+Mexico City,Spanish,Americas,0.86,0.64,0.72,0.758
+Cairo,Arabic,Middle East,0.74,0.68,0.82,0.75
+Shanghai,Mandarin Chinese,East Asia,0.88,0.52,0.62,0.7032
+Sao Paulo,Portuguese,South America,0.8,0.58,0.65,0.6948
+Paris,French,Europe,0.72,0.42,0.56,0.5908

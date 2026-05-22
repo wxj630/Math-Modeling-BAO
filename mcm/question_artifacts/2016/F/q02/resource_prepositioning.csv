@@ -1,0 +1,5 @@
+﻿resource,required_units,available_units,unmet_units,priority_weight,weighted_gap,prepositioning_action
+shelter,715.0,730.0,0.0,0.33,0.0,preposition modular shelter near route bottlenecks and high-capacity destinations
+healthcare,271.7,310.0,0.0,0.27,0.0,deploy mobile clinics and vaccination/triage teams at entry points
+water,1036.75,1140.0,0.0,0.22,0.0,"stage purification, trucking, and sanitation units near camps"
+food,915.2,1040.0,0.0,0.18,0.0,stage dry rations and local procurement contracts

@@ -1,0 +1,74 @@
+{
+  "problem_id": "2022-C",
+  "question": "q03",
+  "question_title": "交易成本敏感性",
+  "statement": "Determine how sensitive the strategy is to transaction costs. How do transaction costs affect the strategy and results?",
+  "methods": "保持官方黄金手续费 1% 基线，枚举比特币手续费 0%-12%，重新运行同一因果策略并输出最终价值、收益率和交易次数。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
+    "rows": {
+      "LBMA-GOLD.csv": 1265,
+      "BCHAIN-MKPRU.csv": 1826
+    },
+    "date_range": [
+      "2016-09-11",
+      "2021-09-10"
+    ]
+  },
+  "transaction_cost_sensitivity": [
+    {
+      "alpha_gold": 0.01,
+      "alpha_bitcoin": 0.0,
+      "final_value": 73117.910721,
+      "total_return_percent": 7211.791072,
+      "trade_count": 1
+    },
+    {
+      "alpha_gold": 0.01,
+      "alpha_bitcoin": 0.01,
+      "final_value": 73108.110721,
+      "total_return_percent": 7210.811072,
+      "trade_count": 1
+    },
+    {
+      "alpha_gold": 0.01,
+      "alpha_bitcoin": 0.02,
+      "final_value": 73098.310721,
+      "total_return_percent": 7209.831072,
+      "trade_count": 1
+    },
+    {
+      "alpha_gold": 0.01,
+      "alpha_bitcoin": 0.04,
+      "final_value": 71720.870017,
+      "total_return_percent": 7072.087002,
+      "trade_count": 1
+    },
+    {
+      "alpha_gold": 0.01,
+      "alpha_bitcoin": 0.08,
+      "final_value": 69064.541498,
+      "total_return_percent": 6806.45415,
+      "trade_count": 1
+    },
+    {
+      "alpha_gold": 0.01,
+      "alpha_bitcoin": 0.12,
+      "final_value": 66597.95073,
+      "total_return_percent": 6559.795073,
+      "trade_count": 1
+    }
+  ],
+  "trading_strategy": {
+    "name": "buy_hold_bitcoin",
+    "initial_cash": 1000.0,
+    "final_value": 73098.310721,
+    "total_return_percent": 7209.831072,
+    "max_drawdown": -0.8337,
+    "trade_count": 1,
+    "uses_future_prices": false,
+    "decision_rule": "At each date, compute only weights from current and prior official prices; the selected expert is the best-performing causal candidate rule in the transparent candidate family."
+  }
+}

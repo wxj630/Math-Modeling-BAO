@@ -1,0 +1,6 @@
+country,current_health_score,weakest_dimension,attainable_health_score,room_for_improvement,access_equity_score,affordability_score,degree_value_score,quality_and_learning_score,research_and_exchange_score,funding_stability_score,innovation_renewal_score
+Germany,0.7584,innovation_renewal,0.7715,0.0131,0.76,0.86,0.74,0.76,0.72,0.78,0.66
+Australia,0.7,affordability,0.7456,0.0456,0.7,0.6,0.72,0.74,0.82,0.62,0.72
+Japan,0.6656,innovation_renewal,0.7297,0.0641,0.68,0.64,0.7,0.72,0.62,0.7,0.58
+United States,0.6508,affordability,0.7321,0.0813,0.56,0.42,0.78,0.74,0.88,0.54,0.7
+Brazil,0.4844,funding_stability,0.6331,0.1487,0.48,0.54,0.52,0.5,0.44,0.42,0.46

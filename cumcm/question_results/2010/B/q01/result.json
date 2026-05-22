@@ -1,0 +1,109 @@
+{
+  "problem_id": "2010-B",
+  "title": "2010年 CUMCM B题：2010年上海世博会影响力的定量评估",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "2010年上海世博会是首次在中国举办的世界博览会。从1851年伦敦的“万国工业博览会”开始，世博会正日益成为各国人民交流历史文化、展示科技成果、体现合作精神、展望未来发展等的重要舞台。请你们选择感兴趣的某个侧面，建立数学模型，利用互联网数据，定量评估2010年上海世博会的影响力",
+  "tasks": [
+    "请你们选择感兴趣的某个侧面，建立数学模型，利用互联网数据，定量评估2010年上海世博会的影响力"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "未来"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "评估"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/B.md",
+    "rows": 8,
+    "columns": 3,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "请你们选择感兴趣的某个侧面，建立数学模型，利用互联网数据，定量评估2010年上海世博会的影响力"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": 1865.660714285715,
+    "slope": -190.64404761904774,
+    "r2": 0.1899603616350951,
+    "next_12_forecast": [
+      -7475.897619,
+      -7666.541667,
+      -7857.185714,
+      -8047.829762,
+      -8238.47381,
+      -8429.117857,
+      -8619.761905,
+      -8810.405952,
+      -9001.05,
+      -9191.694048,
+      -9382.338095,
+      -9572.982143
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2010/B/q01/experiment_table.csv"
+  ]
+}

@@ -1,0 +1,7 @@
+hour_after_loss,uncertainty_area_km2,cumulative_effective_swept_area_km2,cumulative_detection_hazard,probability_found,posterior_not_found
+4,3.4126,3.24,0.9494,0.613,0.387
+8,8.4809,5.8291,1.2547,0.7148,0.2852
+12,16.9261,7.9795,1.3818,0.7489,0.2511
+16,28.7487,10.1765,1.4582,0.7673,0.2327
+20,43.9491,12.2989,1.5065,0.7783,0.2217
+24,62.5273,13.1232,1.5197,0.7812,0.2188

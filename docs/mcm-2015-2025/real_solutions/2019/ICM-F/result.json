@@ -1,0 +1,295 @@
+{
+  "problem_id": "2019-P06",
+  "title": "Universal, Decentralized, Digital Currency: Is it possible?",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "official_requirements": {
+      "universal_decentralized_digital_currency": true,
+      "growth_access_security_stability": true,
+      "individual_national_global_levels": true,
+      "adoption_strategy_not_existing_coin": true,
+      "oversight_mechanisms": true,
+      "long_term_effects": true,
+      "one_page_policy_recommendation": true
+    },
+    "parameters": {
+      "country_archetypes": [
+        {
+          "archetype": "high inflation cash-dependent economy",
+          "unbanked_share": 0.54,
+          "digital_access": 0.48,
+          "regulatory_trust": 0.36,
+          "currency_instability": 0.82,
+          "illicit_flow_risk": 0.5
+        },
+        {
+          "archetype": "advanced banking economy",
+          "unbanked_share": 0.05,
+          "digital_access": 0.92,
+          "regulatory_trust": 0.84,
+          "currency_instability": 0.18,
+          "illicit_flow_risk": 0.32
+        },
+        {
+          "archetype": "remittance-dependent middle-income economy",
+          "unbanked_share": 0.28,
+          "digital_access": 0.7,
+          "regulatory_trust": 0.58,
+          "currency_instability": 0.44,
+          "illicit_flow_risk": 0.42
+        },
+        {
+          "archetype": "capital-control cautious economy",
+          "unbanked_share": 0.17,
+          "digital_access": 0.78,
+          "regulatory_trust": 0.62,
+          "currency_instability": 0.3,
+          "illicit_flow_risk": 0.66
+        },
+        {
+          "archetype": "small open trade hub",
+          "unbanked_share": 0.08,
+          "digital_access": 0.88,
+          "regulatory_trust": 0.76,
+          "currency_instability": 0.27,
+          "illicit_flow_risk": 0.45
+        }
+      ],
+      "adoption_strategies": [
+        {
+          "strategy": "wallet-first inclusion pilot",
+          "access_gain": 0.3,
+          "security_gain": 0.12,
+          "stability_gain": 0.08,
+          "sovereignty_cost": 0.18
+        },
+        {
+          "strategy": "regulated stable settlement layer",
+          "access_gain": 0.18,
+          "security_gain": 0.24,
+          "stability_gain": 0.27,
+          "sovereignty_cost": 0.24
+        },
+        {
+          "strategy": "cross-border remittance corridor",
+          "access_gain": 0.22,
+          "security_gain": 0.16,
+          "stability_gain": 0.14,
+          "sovereignty_cost": 0.12
+        },
+        {
+          "strategy": "full national-currency substitution",
+          "access_gain": 0.32,
+          "security_gain": 0.18,
+          "stability_gain": 0.22,
+          "sovereignty_cost": 0.58
+        },
+        {
+          "strategy": "public oversight plus privacy-preserving compliance",
+          "access_gain": 0.2,
+          "security_gain": 0.34,
+          "stability_gain": 0.24,
+          "sovereignty_cost": 0.2
+        }
+      ],
+      "oversight_mechanisms": [
+        "transparent reserve or collateral audits for value stability",
+        "privacy-preserving identity attestation for high-risk transactions",
+        "international dispute, sanctions, and consumer-protection protocol",
+        "cybersecurity stress tests and public incident reporting",
+        "monetary-policy interface so countries do not have to abandon local currency"
+      ],
+      "source_note": "Official PDF statement factors only; country archetypes and scores are explicit deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "adoption_viability_model": {
+    "country_rows": [
+      {
+        "archetype": "advanced banking economy",
+        "unbanked_share": 0.05,
+        "digital_access": 0.92,
+        "regulatory_trust": 0.84,
+        "currency_instability": 0.18,
+        "illicit_flow_risk": 0.32,
+        "growth_pressure": 0.313,
+        "access_score": 0.5285,
+        "security_score": 0.776,
+        "stability_score": 0.846,
+        "adoption_viability_score": 0.5967,
+        "recommended_path": "pilot access layer before monetary substitution"
+      },
+      {
+        "archetype": "small open trade hub",
+        "unbanked_share": 0.08,
+        "digital_access": 0.88,
+        "regulatory_trust": 0.76,
+        "currency_instability": 0.27,
+        "illicit_flow_risk": 0.45,
+        "growth_pressure": 0.3465,
+        "access_score": 0.52,
+        "security_score": 0.676,
+        "stability_score": 0.769,
+        "adoption_viability_score": 0.5627,
+        "recommended_path": "pilot access layer before monetary substitution"
+      },
+      {
+        "archetype": "remittance-dependent middle-income economy",
+        "unbanked_share": 0.28,
+        "digital_access": 0.7,
+        "regulatory_trust": 0.58,
+        "currency_instability": 0.44,
+        "illicit_flow_risk": 0.42,
+        "growth_pressure": 0.441,
+        "access_score": 0.511,
+        "security_score": 0.58,
+        "stability_score": 0.594,
+        "adoption_viability_score": 0.5261,
+        "recommended_path": "pilot access layer before monetary substitution"
+      },
+      {
+        "archetype": "capital-control cautious economy",
+        "unbanked_share": 0.17,
+        "digital_access": 0.78,
+        "regulatory_trust": 0.62,
+        "currency_instability": 0.3,
+        "illicit_flow_risk": 0.66,
+        "growth_pressure": 0.368,
+        "access_score": 0.5055,
+        "security_score": 0.508,
+        "stability_score": 0.692,
+        "adoption_viability_score": 0.5068,
+        "recommended_path": "pilot access layer before monetary substitution"
+      },
+      {
+        "archetype": "high inflation cash-dependent economy",
+        "unbanked_share": 0.54,
+        "digital_access": 0.48,
+        "regulatory_trust": 0.36,
+        "currency_instability": 0.82,
+        "illicit_flow_risk": 0.5,
+        "growth_pressure": 0.623,
+        "access_score": 0.507,
+        "security_score": 0.416,
+        "stability_score": 0.294,
+        "adoption_viability_score": 0.472,
+        "recommended_path": "pilot access layer before monetary substitution"
+      }
+    ],
+    "model": "weighted viability model over growth, access, security, and stability factors named in the official statement"
+  },
+  "adoption_strategy_model": {
+    "strategy_rows": [
+      {
+        "strategy": "public oversight plus privacy-preserving compliance",
+        "access_gain": 0.2,
+        "security_gain": 0.34,
+        "stability_gain": 0.24,
+        "sovereignty_cost": 0.2,
+        "portfolio_score": 0.2388
+      },
+      {
+        "strategy": "regulated stable settlement layer",
+        "access_gain": 0.18,
+        "security_gain": 0.24,
+        "stability_gain": 0.27,
+        "sovereignty_cost": 0.24,
+        "portfolio_score": 0.1822
+      },
+      {
+        "strategy": "cross-border remittance corridor",
+        "access_gain": 0.22,
+        "security_gain": 0.16,
+        "stability_gain": 0.14,
+        "sovereignty_cost": 0.12,
+        "portfolio_score": 0.1724
+      },
+      {
+        "strategy": "wallet-first inclusion pilot",
+        "access_gain": 0.3,
+        "security_gain": 0.12,
+        "stability_gain": 0.08,
+        "sovereignty_cost": 0.18,
+        "portfolio_score": 0.148
+      },
+      {
+        "strategy": "full national-currency substitution",
+        "access_gain": 0.32,
+        "security_gain": 0.18,
+        "stability_gain": 0.22,
+        "sovereignty_cost": 0.58,
+        "portfolio_score": 0.0648
+      }
+    ],
+    "recommended_strategy": {
+      "strategy": "public oversight plus privacy-preserving compliance",
+      "access_gain": 0.2,
+      "security_gain": 0.34,
+      "stability_gain": 0.24,
+      "sovereignty_cost": 0.2,
+      "portfolio_score": 0.2388
+    },
+    "adoption_rule": "start with regulated settlement, remittance, and wallet inclusion layers; avoid forcing full currency abandonment early."
+  },
+  "oversight_mechanism": {
+    "mechanisms": [
+      "transparent reserve or collateral audits for value stability",
+      "privacy-preserving identity attestation for high-risk transactions",
+      "international dispute, sanctions, and consumer-protection protocol",
+      "cybersecurity stress tests and public incident reporting",
+      "monetary-policy interface so countries do not have to abandon local currency"
+    ],
+    "oversight_design": "decentralized ledger operation can coexist with public oversight if high-risk entry points, reserves, consumer protection, and cybersecurity evidence are auditable."
+  },
+  "long_term_effects": {
+    "effect_rows": [
+      {
+        "sector": "banking industry",
+        "effect": "margin compression on payments, new custody and compliance services",
+        "risk": 0.62,
+        "opportunity": 0.74
+      },
+      {
+        "sector": "local economy",
+        "effect": "better inclusion and remittances, but faster capital flight if rules are weak",
+        "risk": 0.58,
+        "opportunity": 0.7
+      },
+      {
+        "sector": "regional economy",
+        "effect": "lower settlement friction and more visible cross-border flows",
+        "risk": 0.44,
+        "opportunity": 0.68
+      },
+      {
+        "sector": "world economy",
+        "effect": "common settlement rails improve liquidity but amplify cyber and governance shocks",
+        "risk": 0.66,
+        "opportunity": 0.72
+      },
+      {
+        "sector": "international relations",
+        "effect": "new disputes over oversight, sanctions, taxation, and monetary sovereignty",
+        "risk": 0.71,
+        "opportunity": 0.55
+      }
+    ],
+    "interpretation": "The system is possible only as a governed financial network, not as an unregulated replacement for every national currency."
+  },
+  "policy_recommendation": "Policy recommendation for national leaders: support a universal decentralized digital currency only through phased pilots, regulated settlement rails, privacy-preserving compliance, and audited stability mechanisms. Do not require immediate abandonment of national currencies. Countries with high unbanked shares and unstable currency conditions should start with wallet access and remittance corridors; high-trust banking economies should focus on oversight, custody, and interoperability.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic policy scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide country-level banking, crypto adoption, or cybersecurity data for this problem.",
+      "Country archetypes and policy weights are transparent scenario inputs, not a forecast of any named existing currency.",
+      "A full policy paper should calibrate with World Bank Findex, IMF inflation, BIS payment data, chain-risk metrics, and national legal constraints."
+    ]
+  },
+  "artifacts": {
+    "adoption_viability": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_adoption_viability.csv",
+    "strategy_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_strategy_scores.csv",
+    "long_term_effects": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_long_term_effects.csv",
+    "viability_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_viability_frontier.png"
+  }
+}

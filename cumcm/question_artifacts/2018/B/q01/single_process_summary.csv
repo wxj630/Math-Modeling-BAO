@@ -1,0 +1,4 @@
+﻿case,mode,finished_count,fault_count,scrap_count,efficiency,rgv_busy_rate,last_unload_start_s
+1,single_process,384,0,0,0.934307,0.580278,28633.0
+2,single_process,369,0,0,0.929471,0.634236,28678.0
+3,single_process,393,0,0,0.93128,0.584271,28609.0

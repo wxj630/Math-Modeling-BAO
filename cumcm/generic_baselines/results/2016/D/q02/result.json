@@ -1,0 +1,95 @@
+{
+  "problem_id": "2016-D",
+  "title": "2016年 CUMCM D题：风电场运行状况分析及优化",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "附件2给出了该风电场几个典型风机所在处的风速信息，其中4#、16#、24#风机属于一期工程，33#、49#、57#风机属于二期工程，它们的主要参数见附件3。风机生产企业还提供了部分新型号风机，它们的主要参数见附件4。试从风能资源与风机匹配角度判断新型号风机是否比现有风机更为适合。",
+  "tasks": [
+    "附件2给出了该风电场几个典型风机所在处的风速信息，其中4#、16#、24#风机属于一期工程，33#、49#、57#风机属于二期工程，它们的主要参数见附件3",
+    "试从风能资源与风机匹配角度判断新型号风机是否比现有风机更为适合"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "角度"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "参数"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 27,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls",
+    "rows": 75,
+    "columns": 12,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "附件2给出了该风电场几个典型风机所在处的风速信息，其中4#、16#、24#风机属于一期工程，33#、49#、57#风机属于二期工程，它们的主要参数见附件3",
+      "试从风能资源与风机匹配角度判断新型号风机是否比现有风机更为适合"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      2.291499,
+      0.206145
+    ],
+    "radius": 2.6971297449493727,
+    "mean_squared_error": 0.018940261363720644,
+    "success": true
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2016/D/q02/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

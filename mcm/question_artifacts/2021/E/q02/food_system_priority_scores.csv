@@ -1,0 +1,5 @@
+priority,mean_country_score,sustainability_weight,equity_weight,profitability_weight,objective_score
+equity_sustainability_balanced,0.5401,0.3,0.28,0.12,0.5807
+regional_resilience,0.5597,0.22,0.2,0.16,0.5667
+profit_with_guardrails,0.5597,0.22,0.18,0.24,0.5627
+current_efficiency_profit,0.5742,0.16,0.12,0.3,0.552

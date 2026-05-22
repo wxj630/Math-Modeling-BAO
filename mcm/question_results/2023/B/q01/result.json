@@ -1,0 +1,112 @@
+{
+  "problem_id": "2023-B",
+  "question": "q01",
+  "question_title": "保护区内不同区域的政策和管理策略",
+  "statement": "Consider and recommend specific policies and management strategies for different areas within the current preserve that will protect wildlife and other natural resources while also balancing the interests of the people who live in the area. These policies and strategies should help mitigate the impacts of lost opportunities experienced by the people who live near the preserve, as well as minimize negative interactions between animals and the people attracted to the preserve.",
+  "methods": "官方 PDF 题面 + Maasai Mara 分区多指标评价：wildlife value、habitat fragility、resident pressure、conflict exposure、tourism value；对应教程模型：综合评价与权重决策、空间分区。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
+    "parameters": {
+      "wildlife_act_year": 2013,
+      "management_amendment_year": 2020,
+      "focus_preserve": "Maasai Mara",
+      "requirements": [
+        "recommend policies and management strategies for different areas within the current preserve",
+        "protect wildlife and natural resources while balancing interests of local residents",
+        "mitigate lost opportunities for people near the preserve",
+        "minimize negative interactions between animals and people attracted to the preserve",
+        "rank and compare outcomes from the methodology",
+        "predict long-term trends and discuss transfer to other wildlife management areas",
+        "provide a two-page non-technical report for the Kenyan Tourism and Wildlife Committee"
+      ],
+      "source_note": "Official PDF statement parameters only; zone scores and policy coefficients are deterministic scenario assumptions, not observed Maasai Mara field data."
+    },
+    "scenario_assumption_note": "All zone scores, policy gains, costs, and projections are deterministic assumptions for a reproducible policy experiment; they are not observed Maasai Mara field measurements."
+  },
+  "zoning_policy_model": {
+    "model": "zone-level multi-criteria scoring for wildlife value, habitat fragility, resident pressure, conflict exposure, and tourism value",
+    "zones": [
+      {
+        "zone": "core migration corridor",
+        "wildlife_value": 0.96,
+        "tourism_value": 0.84,
+        "resident_pressure": 0.36,
+        "conflict_exposure": 0.58,
+        "habitat_fragility": 0.91,
+        "recommended_policy": "strict habitat protection with community revenue sharing",
+        "conservation_priority": 0.8584,
+        "community_priority": 0.4576,
+        "balance_need": 0.4008,
+        "management_intensity": "high"
+      },
+      {
+        "zone": "riverine habitat and watering points",
+        "wildlife_value": 0.9,
+        "tourism_value": 0.72,
+        "resident_pressure": 0.42,
+        "conflict_exposure": 0.66,
+        "habitat_fragility": 0.87,
+        "recommended_policy": "seasonal access zoning and riparian buffer enforcement",
+        "conservation_priority": 0.8196,
+        "community_priority": 0.5196,
+        "balance_need": 0.3,
+        "management_intensity": "high"
+      },
+      {
+        "zone": "community conservancy interface",
+        "wildlife_value": 0.72,
+        "tourism_value": 0.62,
+        "resident_pressure": 0.86,
+        "conflict_exposure": 0.82,
+        "habitat_fragility": 0.63,
+        "recommended_policy": "co-managed conservancy with livestock compensation and grazing calendar",
+        "conservation_priority": 0.6968,
+        "community_priority": 0.7456,
+        "balance_need": 0.0488,
+        "management_intensity": "high"
+      },
+      {
+        "zone": "settlement and agriculture edge",
+        "wildlife_value": 0.48,
+        "tourism_value": 0.35,
+        "resident_pressure": 0.93,
+        "conflict_exposure": 0.88,
+        "habitat_fragility": 0.52,
+        "recommended_policy": "fencing hotspots, predator-proof bomas, crop protection and benefit payments",
+        "conservation_priority": 0.5424,
+        "community_priority": 0.8116,
+        "balance_need": 0.2692,
+        "management_intensity": "high"
+      },
+      {
+        "zone": "restoration buffer outside current boundary",
+        "wildlife_value": 0.69,
+        "tourism_value": 0.5,
+        "resident_pressure": 0.74,
+        "conflict_exposure": 0.7,
+        "habitat_fragility": 0.76,
+        "recommended_policy": "voluntary easements, grassland restoration and rotational grazing contracts",
+        "conservation_priority": 0.681,
+        "community_priority": 0.6796,
+        "balance_need": 0.0014,
+        "management_intensity": "medium"
+      },
+      {
+        "zone": "tourism lodge cluster",
+        "wildlife_value": 0.64,
+        "tourism_value": 0.91,
+        "resident_pressure": 0.51,
+        "conflict_exposure": 0.54,
+        "habitat_fragility": 0.59,
+        "recommended_policy": "visitor caps, concession fees, waste-water standards, local hiring quota",
+        "conservation_priority": 0.6512,
+        "community_priority": 0.4584,
+        "balance_need": 0.1928,
+        "management_intensity": "medium"
+      }
+    ],
+    "policy_principle": "Use stricter protection in high wildlife/high fragility zones and co-management/compensation in high resident-pressure interfaces."
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "problem_id": "2015-C",
+  "question": "q06",
+  "question_title": "团队科学与多层组织网络扩展",
+  "statement": "Summarize the potential use of team science and multilayer networks to realize the HR manager's vision of connecting the human capital network to information flow, trust, influence, and friendship layers.",
+  "methods": "把人力资本网络扩展为信息流、信任、影响力、友谊和培训依赖的 multiplex 网络，用跨层中心性识别关键员工和关键岗位。对应模型：团队科学、多层网络、multiplex centrality、组织网络分析。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "parameters": {
+      "total_positions": 370,
+      "seven_person_departments": 46,
+      "four_person_offices": 12,
+      "current_fill_rate": 0.85,
+      "active_recruiting_low_rate": 0.08,
+      "active_recruiting_high_rate": 0.1,
+      "base_attrition_rate": 0.18,
+      "middle_manager_turnover_multiplier": 2.0,
+      "middle_manager_shock_attrition_rate": 0.3,
+      "target_min_fill_rate": 0.8,
+      "level_table_rows": [
+        {
+          "level": "senior_manager_executive",
+          "positions": 10,
+          "recruit_time_months": 7,
+          "recruit_cost_sigma": 1.2,
+          "salary_sigma": 8.0,
+          "training_cost_sigma": 0.5
+        },
+        {
+          "level": "junior_manager_administrator",
+          "positions": 20,
+          "recruit_time_months": 6,
+          "recruit_cost_sigma": 0.7,
+          "salary_sigma": 4.0,
+          "training_cost_sigma": 0.6
+        },
+        {
+          "level": "experienced_supervisor_branch",
+          "positions": 25,
+          "recruit_time_months": 5,
+          "recruit_cost_sigma": 0.6,
+          "salary_sigma": 2.0,
+          "training_cost_sigma": 0.2
+        },
+        {
+          "level": "inexperienced_supervisor_division",
+          "positions": 25,
+          "recruit_time_months": 4,
+          "recruit_cost_sigma": 0.6,
+          "salary_sigma": 1.5,
+          "training_cost_sigma": 0.3
+        },
+        {
+          "level": "experienced_staff",
+          "positions": 110,
+          "recruit_time_months": 3,
+          "recruit_cost_sigma": 0.3,
+          "salary_sigma": 1.0,
+          "training_cost_sigma": 0.1
+        },
+        {
+          "level": "inexperienced_staff",
+          "positions": 150,
+          "recruit_time_months": 1,
+          "recruit_cost_sigma": 0.1,
+          "salary_sigma": 0.9,
+          "training_cost_sigma": 0.3
+        },
+        {
+          "level": "administrative_clerk",
+          "positions": 30,
+          "recruit_time_months": 2,
+          "recruit_cost_sigma": 0.3,
+          "salary_sigma": 0.9,
+          "training_cost_sigma": 0.05
+        }
+      ]
+    },
+    "assumptions": {
+      "active_recruiting_rate_used": 0.09,
+      "recruiting_readiness_factor": 0.7,
+      "attrition_contact_influence_weight": 0.35,
+      "dissatisfaction_weight_for_middle_layers": 0.45,
+      "promotion_training_extra_sigma": 0.2,
+      "promotion_pool_share_experienced_staff_to_supervisor": 0.2,
+      "promotion_pool_share_inexperienced_supervisor_to_experienced_supervisor": 0.35,
+      "promotion_pool_share_experienced_supervisor_to_junior_manager": 0.25,
+      "truthfulness": "Only official statement parameters are treated as inputs; coefficients above are scenario assumptions for an auditable aggregate model."
+    }
+  },
+  "team_science_extension": {
+    "team_science_summary": [
+      "Represent each work unit as a team layer with formal reporting edges and informal collaboration edges.",
+      "Track trust, information flow, influence, and friendship as separate layers sharing the same employee nodes.",
+      "Use multiplex centrality to find employees whose departure would damage several layers at once."
+    ],
+    "recommended_next_layers": [
+      "information_flow",
+      "trust",
+      "influence",
+      "friendship",
+      "training_dependency"
+    ],
+    "models": [
+      "multilayer network",
+      "Markov workforce transition",
+      "queue/capacity model for recruiting",
+      "multi-criteria HR health index"
+    ]
+  },
+  "workforce_network": {
+    "model": "aggregate multilayer human-capital network with hierarchy layer, work-unit layer, and attrition-influence layer",
+    "organization_units": {
+      "seven_person_departments": 46,
+      "four_person_offices": 12,
+      "total_units": 58,
+      "positions_reconciled": 370
+    },
+    "current_staffing": {
+      "total_positions": 370,
+      "filled_positions_at_85pct": 314.5,
+      "vacancies_at_85pct": 55.5,
+      "active_recruiting_range_positions": [
+        29.6,
+        37.0
+      ]
+    },
+    "level_rows": [
+      {
+        "level": "senior_manager_executive",
+        "label": "Senior managers / executives",
+        "positions": 10,
+        "filled_positions": 8.5,
+        "vacant_positions": 1.5,
+        "baseline_attrition_rate": 0.12,
+        "knowledge_risk_score": 0.96
+      },
+      {
+        "level": "junior_manager_administrator",
+        "label": "Junior managers / administrators",
+        "positions": 20,
+        "filled_positions": 17.0,
+        "vacant_positions": 3.0,
+        "baseline_attrition_rate": 0.3,
+        "knowledge_risk_score": 1.056
+      },
+      {
+        "level": "experienced_supervisor_branch",
+        "label": "Experienced supervisors (branch)",
+        "positions": 25,
+        "filled_positions": 21.25,
+        "vacant_positions": 3.75,
+        "baseline_attrition_rate": 0.3,
+        "knowledge_risk_score": 0.492
+      },
+      {
+        "level": "inexperienced_supervisor_division",
+        "label": "Inexperienced supervisors (division)",
+        "positions": 25,
+        "filled_positions": 21.25,
+        "vacant_positions": 3.75,
+        "baseline_attrition_rate": 0.28,
+        "knowledge_risk_score": 0.3024
+      },
+      {
+        "level": "experienced_staff",
+        "label": "Experienced staff",
+        "positions": 110,
+        "filled_positions": 93.5,
+        "vacant_positions": 16.5,
+        "baseline_attrition_rate": 0.16,
+        "knowledge_risk_score": 0.0768
+      },
+      {
+        "level": "inexperienced_staff",
+        "label": "Inexperienced staff",
+        "positions": 150,
+        "filled_positions": 127.5,
+        "vacant_positions": 22.5,
+        "baseline_attrition_rate": 0.18,
+        "knowledge_risk_score": 0.0567
+      },
+      {
+        "level": "administrative_clerk",
+        "label": "Administrative clerks",
+        "positions": 30,
+        "filled_positions": 25.5,
+        "vacant_positions": 4.5,
+        "baseline_attrition_rate": 0.15,
+        "knowledge_risk_score": 0.0338
+      }
+    ],
+    "highest_knowledge_risk_levels": [
+      {
+        "level": "junior_manager_administrator",
+        "label": "Junior managers / administrators",
+        "positions": 20,
+        "filled_positions": 17.0,
+        "vacant_positions": 3.0,
+        "baseline_attrition_rate": 0.3,
+        "knowledge_risk_score": 1.056
+      },
+      {
+        "level": "senior_manager_executive",
+        "label": "Senior managers / executives",
+        "positions": 10,
+        "filled_positions": 8.5,
+        "vacant_positions": 1.5,
+        "baseline_attrition_rate": 0.12,
+        "knowledge_risk_score": 0.96
+      },
+      {
+        "level": "experienced_supervisor_branch",
+        "label": "Experienced supervisors (branch)",
+        "positions": 25,
+        "filled_positions": 21.25,
+        "vacant_positions": 3.75,
+        "baseline_attrition_rate": 0.3,
+        "knowledge_risk_score": 0.492
+      }
+    ]
+  }
+}

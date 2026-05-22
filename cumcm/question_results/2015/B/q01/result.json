@@ -1,0 +1,98 @@
+{
+  "problem_id": "2015-B",
+  "title": "2015年 CUMCM B题：互联网+”时代的出租车资源配置",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "试建立合理的指标，并分析不同时空出租车资源的“供求匹配”程度。",
+  "tasks": [
+    "试建立合理的指标，并分析不同时空出租车资源的“供求匹配”程度"
+  ],
+  "selected_model": {
+    "key": "evaluation",
+    "name": "综合评价与权重决策",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "分析"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "指标"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/B.md",
+    "rows": 5,
+    "columns": 3,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "综合评价与权重决策",
+    "task_breakdown": [
+      "试建立合理的指标，并分析不同时空出租车资源的“供求匹配”程度"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "a_ij: 方案 i 在指标 j 上的标准化表现",
+      "w_j: 指标权重",
+      "D_i^+: 到理想解距离",
+      "C_i: TOPSIS 贴近度"
+    ],
+    "constraints": [
+      "各指标同向化后归一化",
+      "sum_j w_j = 1, w_j >= 0"
+    ],
+    "objective_or_equations": [
+      "w_j = std(a_.j)/sum_j std(a_.j)",
+      "C_i = D_i^-/(D_i^+ + D_i^-)",
+      "rank = argsort(-C_i)"
+    ],
+    "solution_steps": [
+      "构造评价指标矩阵。",
+      "用离散度生成客观权重。",
+      "计算正负理想解距离与贴近度。",
+      "输出排名和最优方案。"
+    ],
+    "model_reference": {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "std_weight_topsis",
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "scores": [
+      1.0,
+      0.0,
+      0.0,
+      0.25,
+      1.0
+    ],
+    "best_option": 1
+  },
+  "artifact_paths": [
+    "question_artifacts/2015/B/q01/experiment_table.csv"
+  ]
+}

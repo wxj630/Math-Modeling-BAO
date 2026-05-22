@@ -1,0 +1,105 @@
+{
+  "problem_id": "2018-C",
+  "question": "q06",
+  "question_title": "给四州州长的能源政策备忘录",
+  "statement": "Write a concise memo to the Governors of Arizona, California, New Mexico, and Texas explaining the model results and recommending compact actions.",
+  "methods": "把四州能源画像、2009 最佳 benchmark、2025/2050 gap 和政策行动翻译为州长可读备忘录。对应模型：非技术决策报告、政策建议、模型结果解释。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Energy Production.pdf",
+    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production/2018_MCM_Problem_C_Data.xlsx",
+    "rows": {
+      "seseds": 105744,
+      "msncodes": 605
+    },
+    "states": [
+      "AZ",
+      "CA",
+      "NM",
+      "TX"
+    ],
+    "years": [
+      1960,
+      2009
+    ]
+  },
+  "governors_memo": "To the Governors of Arizona, California, New Mexico, and Texas: the official SEDS workbook shows that the four states start from different energy profiles, so the compact should set a shared renewable-share target while allowing different resource mixes. Use the 2009 best-profile benchmark as the minimum political target, then require each state to close its projected 2025 and 2050 gaps with renewable portfolio standards, transmission/storage cooperation, and demand efficiency.",
+  "compact_targets": {
+    "target_rule": "Set compact targets at least as high as the 2009 best state and above the projected median baseline.",
+    "targets": [
+      {
+        "state": "AZ",
+        "year": 2025,
+        "baseline_renewable_share": 0.025953,
+        "compact_target_share": 0.089027,
+        "required_gap": 0.063074
+      },
+      {
+        "state": "CA",
+        "year": 2025,
+        "baseline_renewable_share": 0.082612,
+        "compact_target_share": 0.089027,
+        "required_gap": 0.006415
+      },
+      {
+        "state": "NM",
+        "year": 2025,
+        "baseline_renewable_share": 0.067057,
+        "compact_target_share": 0.089027,
+        "required_gap": 0.02197
+      },
+      {
+        "state": "TX",
+        "year": 2025,
+        "baseline_renewable_share": 0.029067,
+        "compact_target_share": 0.089027,
+        "required_gap": 0.05996
+      },
+      {
+        "state": "AZ",
+        "year": 2050,
+        "baseline_renewable_share": 0.0,
+        "compact_target_share": 0.137493,
+        "required_gap": 0.137493
+      },
+      {
+        "state": "CA",
+        "year": 2050,
+        "baseline_renewable_share": 0.070503,
+        "compact_target_share": 0.137493,
+        "required_gap": 0.06699
+      },
+      {
+        "state": "NM",
+        "year": 2050,
+        "baseline_renewable_share": 0.110853,
+        "compact_target_share": 0.137493,
+        "required_gap": 0.02664
+      },
+      {
+        "state": "TX",
+        "year": 2050,
+        "baseline_renewable_share": 0.044482,
+        "compact_target_share": 0.137493,
+        "required_gap": 0.093011
+      }
+    ]
+  },
+  "compact_actions": {
+    "actions": [
+      {
+        "action": "Create a four-state renewable portfolio standard with tradable clean-energy credits.",
+        "model_link": "Raises renewable_consumption_share toward the compact target while allowing state-specific resource mixes."
+      },
+      {
+        "action": "Build transmission and storage projects that connect Texas wind, California solar, and Arizona/New Mexico solar resources.",
+        "model_link": "Addresses geography differences visible in the official state profiles and reduces curtailment risk."
+      },
+      {
+        "action": "Pair demand efficiency with electrification so total energy per capita falls while renewable electricity grows.",
+        "model_link": "Targets energy_consumption_per_capita_mmbtu as well as renewable share."
+      }
+    ]
+  }
+}

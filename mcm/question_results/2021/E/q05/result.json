@@ -1,0 +1,235 @@
+{
+  "problem_id": "2021-E",
+  "question": "q05",
+  "question_title": "十五年迁移路线图",
+  "statement": "Discuss how long an equity and sustainability transition would take to implement and how the benefits and costs would occur over time.",
+  "methods": "生成 1-15 年 diagnose and pilot、scale and finance、institutionalize 三阶段路线图，跟踪区域采购、减损、营养覆盖和再生面积比例。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "official_requirements": {
+      "optimize_efficiency_profitability_sustainability_equity": true,
+      "developed_and_developing_country_applications": true,
+      "benefits_and_costs_over_time": true,
+      "scalability_and_adaptability": true,
+      "twenty_five_page_limit": true
+    },
+    "parameters": {
+      "global_hunger_millions": 821,
+      "food_system_ghg_share": 0.29,
+      "food_system_biodiversity_loss_share": 0.8,
+      "food_system_deforestation_share": 0.8,
+      "food_system_freshwater_share": 0.7,
+      "transition_years": 15,
+      "source_note": "Official PDF statement parameters only; country and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "transition_plan": {
+    "years_to_implement": 15,
+    "timeline_rows": [
+      {
+        "year": 1,
+        "phase": "diagnose and pilot",
+        "regional_procurement_share": 0.228,
+        "waste_reduction_share": 0.0587,
+        "nutrition_access_coverage": 0.2147,
+        "regenerative_area_share": 0.104,
+        "projected_food_system_score": 0.4468
+      },
+      {
+        "year": 2,
+        "phase": "diagnose and pilot",
+        "regional_procurement_share": 0.256,
+        "waste_reduction_share": 0.0773,
+        "nutrition_access_coverage": 0.2493,
+        "regenerative_area_share": 0.128,
+        "projected_food_system_score": 0.4534
+      },
+      {
+        "year": 3,
+        "phase": "diagnose and pilot",
+        "regional_procurement_share": 0.284,
+        "waste_reduction_share": 0.096,
+        "nutrition_access_coverage": 0.284,
+        "regenerative_area_share": 0.152,
+        "projected_food_system_score": 0.4601
+      },
+      {
+        "year": 4,
+        "phase": "scale and finance",
+        "regional_procurement_share": 0.312,
+        "waste_reduction_share": 0.1147,
+        "nutrition_access_coverage": 0.3187,
+        "regenerative_area_share": 0.176,
+        "projected_food_system_score": 0.4668
+      },
+      {
+        "year": 5,
+        "phase": "scale and finance",
+        "regional_procurement_share": 0.34,
+        "waste_reduction_share": 0.1333,
+        "nutrition_access_coverage": 0.3533,
+        "regenerative_area_share": 0.2,
+        "projected_food_system_score": 0.4734
+      },
+      {
+        "year": 6,
+        "phase": "scale and finance",
+        "regional_procurement_share": 0.368,
+        "waste_reduction_share": 0.152,
+        "nutrition_access_coverage": 0.388,
+        "regenerative_area_share": 0.224,
+        "projected_food_system_score": 0.4801
+      },
+      {
+        "year": 7,
+        "phase": "scale and finance",
+        "regional_procurement_share": 0.396,
+        "waste_reduction_share": 0.1707,
+        "nutrition_access_coverage": 0.4227,
+        "regenerative_area_share": 0.248,
+        "projected_food_system_score": 0.4868
+      },
+      {
+        "year": 8,
+        "phase": "scale and finance",
+        "regional_procurement_share": 0.424,
+        "waste_reduction_share": 0.1893,
+        "nutrition_access_coverage": 0.4573,
+        "regenerative_area_share": 0.272,
+        "projected_food_system_score": 0.4934
+      },
+      {
+        "year": 9,
+        "phase": "scale and finance",
+        "regional_procurement_share": 0.452,
+        "waste_reduction_share": 0.208,
+        "nutrition_access_coverage": 0.492,
+        "regenerative_area_share": 0.296,
+        "projected_food_system_score": 0.5001
+      },
+      {
+        "year": 10,
+        "phase": "institutionalize",
+        "regional_procurement_share": 0.48,
+        "waste_reduction_share": 0.2267,
+        "nutrition_access_coverage": 0.5267,
+        "regenerative_area_share": 0.32,
+        "projected_food_system_score": 0.5068
+      },
+      {
+        "year": 11,
+        "phase": "institutionalize",
+        "regional_procurement_share": 0.508,
+        "waste_reduction_share": 0.2453,
+        "nutrition_access_coverage": 0.5613,
+        "regenerative_area_share": 0.344,
+        "projected_food_system_score": 0.5134
+      },
+      {
+        "year": 12,
+        "phase": "institutionalize",
+        "regional_procurement_share": 0.536,
+        "waste_reduction_share": 0.264,
+        "nutrition_access_coverage": 0.596,
+        "regenerative_area_share": 0.368,
+        "projected_food_system_score": 0.5201
+      },
+      {
+        "year": 13,
+        "phase": "institutionalize",
+        "regional_procurement_share": 0.564,
+        "waste_reduction_share": 0.2827,
+        "nutrition_access_coverage": 0.6307,
+        "regenerative_area_share": 0.392,
+        "projected_food_system_score": 0.5268
+      },
+      {
+        "year": 14,
+        "phase": "institutionalize",
+        "regional_procurement_share": 0.592,
+        "waste_reduction_share": 0.3013,
+        "nutrition_access_coverage": 0.6653,
+        "regenerative_area_share": 0.416,
+        "projected_food_system_score": 0.5334
+      },
+      {
+        "year": 15,
+        "phase": "institutionalize",
+        "regional_procurement_share": 0.62,
+        "waste_reduction_share": 0.32,
+        "nutrition_access_coverage": 0.7,
+        "regenerative_area_share": 0.44,
+        "projected_food_system_score": 0.5401
+      }
+    ],
+    "implementation_logic": "early pilots protect affordability; years 4-9 scale procurement, storage, water, and producer risk sharing; years 10-15 lock in measurement and finance rules"
+  },
+  "benefit_cost_analysis": {
+    "method": "transparent intervention benefit-cost scoring by timing, equity gain, sustainability gain, and profitability cost",
+    "benefit_cost_rows": [
+      {
+        "intervention": "regenerative production and water stewardship",
+        "primary_dimension": "sustainability",
+        "sustainability_gain": 0.18,
+        "equity_gain": 0.05,
+        "profitability_cost": 0.07,
+        "first_benefit_year": 5,
+        "estimated_benefit_index": 0.2193,
+        "net_priority_gain": 0.16,
+        "developed_country_fit": 0.6625,
+        "developing_country_fit": 0.6
+      },
+      {
+        "intervention": "small producer market access and risk sharing",
+        "primary_dimension": "equity",
+        "sustainability_gain": 0.07,
+        "equity_gain": 0.15,
+        "profitability_cost": 0.06,
+        "first_benefit_year": 4,
+        "estimated_benefit_index": 0.1925,
+        "net_priority_gain": 0.16,
+        "developed_country_fit": 0.555,
+        "developing_country_fit": 0.7175
+      },
+      {
+        "intervention": "nutritious access vouchers and school meals",
+        "primary_dimension": "nutrition_resilience",
+        "sustainability_gain": 0.04,
+        "equity_gain": 0.16,
+        "profitability_cost": 0.05,
+        "first_benefit_year": 2,
+        "estimated_benefit_index": 0.171,
+        "net_priority_gain": 0.15,
+        "developed_country_fit": 0.5275,
+        "developing_country_fit": 0.815
+      },
+      {
+        "intervention": "transparent waste reduction and storage upgrades",
+        "primary_dimension": "efficiency",
+        "sustainability_gain": 0.09,
+        "equity_gain": 0.08,
+        "profitability_cost": 0.02,
+        "first_benefit_year": 2,
+        "estimated_benefit_index": 0.1548,
+        "net_priority_gain": 0.15,
+        "developed_country_fit": 0.585,
+        "developing_country_fit": 0.735
+      },
+      {
+        "intervention": "regional procurement and shorter supply loops",
+        "primary_dimension": "efficiency",
+        "sustainability_gain": 0.1,
+        "equity_gain": 0.07,
+        "profitability_cost": 0.04,
+        "first_benefit_year": 3,
+        "estimated_benefit_index": 0.1565,
+        "net_priority_gain": 0.13,
+        "developed_country_fit": 0.59,
+        "developing_country_fit": 0.6667
+      }
+    ],
+    "timing_note": "nutrition access and waste/storage upgrades pay off earliest; regenerative production and producer risk sharing require longer implementation but improve durability"
+  }
+}

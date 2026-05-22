@@ -1,0 +1,6 @@
+environment,variability_multiplier,final_mass_loss_pct,mean_richness_last60_days,mean_shannon_last60_days,dominant_species_final,remaining_litter_mass,species_count,species_pool
+temperate,1.7,81.485,1.0,0.0,fast opportunist,18.515,1,fast opportunist
+temperate,1.7,99.822,1.0,0.049,balanced decomposer,0.178,2,fast opportunist; balanced decomposer
+temperate,1.7,99.719,2.0,0.35,balanced decomposer,0.281,3,fast opportunist; balanced decomposer; moisture generalist
+temperate,1.7,99.589,1.75,0.574,balanced decomposer,0.411,4,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain
+temperate,1.7,99.533,1.583,0.68,balanced decomposer,0.467,5,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist

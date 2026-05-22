@@ -1,0 +1,144 @@
+{
+  "problem_id": "2017-B",
+  "question": "q02",
+  "question_title": "轻交通与重交通吞吐性能",
+  "statement": "Determine the performance of your solution in light and heavy traffic.",
+  "methods": "用收费亭服务率、下游车道容量和并道冲突惩罚估算 light/heavy demand 下的通过量、瓶颈和平均延误，确保所有容量参数可审计替换。对应模型：通行能力、瓶颈分析、排队延误估计。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "official_problem_parameters": {
+      "example_lanes": 3,
+      "example_tollbooths": 8,
+      "condition": "BASE_TOLLBOOTHS > BASE_LANES",
+      "condition_holds": true,
+      "objectives": [
+        "accident prevention",
+        "throughput",
+        "land and road construction cost"
+      ],
+      "traffic_cases": [
+        "light traffic",
+        "heavy traffic"
+      ],
+      "booth_types": [
+        "conventional",
+        "exact_change",
+        "electronic"
+      ]
+    }
+  },
+  "traffic_performance": {
+    "light_traffic": {
+      "traffic_case": "light_traffic",
+      "demand_vph": 2400.0,
+      "throughput_vph": 2400.0,
+      "tollbooth_capacity_vph": 4620.0,
+      "merge_capacity_vph": 5623.481992,
+      "utilization": 0.519481,
+      "mean_delay_minutes": 0.0
+    },
+    "heavy_traffic": {
+      "traffic_case": "heavy_traffic",
+      "demand_vph": 6200.0,
+      "throughput_vph": 4620.0,
+      "tollbooth_capacity_vph": 4620.0,
+      "merge_capacity_vph": 5623.481992,
+      "utilization": 1.0,
+      "mean_delay_minutes": 6.155844
+    },
+    "interpretation": "Light demand clears without queueing; heavy demand is limited by booth service and merge throat capacity, so throughput rises until the controlled bottleneck is reached."
+  },
+  "merge_design": {
+    "official_condition": "B tollbooths fan in to L travel lanes with B > L.",
+    "candidates": [
+      {
+        "design": "short_direct_taper",
+        "egress_lanes": 8,
+        "outgoing_lanes": 3,
+        "merge_length_m": 260.0,
+        "control": "single fan-in taper",
+        "speed_management": "advisory signs only",
+        "conflict_multiplier": 1.34,
+        "control_complexity": 0.15,
+        "width_m": 28.8,
+        "lane_drop_count": 5,
+        "conflict_index": 2.576923,
+        "cost_index": 9.288,
+        "safety_score": 53.615385,
+        "throughput_capacity_vph": 4620.0,
+        "objective_score": 47.877502
+      },
+      {
+        "design": "staged_zipper_merge",
+        "egress_lanes": 8,
+        "outgoing_lanes": 3,
+        "merge_length_m": 420.0,
+        "control": "two-stage zipper merge with lane assignment",
+        "speed_management": "posted speed taper and lane-use signs",
+        "conflict_multiplier": 0.72,
+        "control_complexity": 0.35,
+        "width_m": 28.8,
+        "lane_drop_count": 5,
+        "conflict_index": 0.857143,
+        "cost_index": 16.296,
+        "safety_score": 84.571429,
+        "throughput_capacity_vph": 4620.0,
+        "objective_score": 57.93568
+      },
+      {
+        "design": "collector_distributor_split",
+        "egress_lanes": 8,
+        "outgoing_lanes": 3,
+        "merge_length_m": 560.0,
+        "control": "parallel collector lanes merge into three-lane trunk",
+        "speed_management": "metered merge at final throat",
+        "conflict_multiplier": 0.61,
+        "control_complexity": 0.55,
+        "width_m": 28.8,
+        "lane_drop_count": 5,
+        "conflict_index": 0.544643,
+        "cost_index": 22.728,
+        "safety_score": 90.196429,
+        "throughput_capacity_vph": 4620.0,
+        "objective_score": 57.59674
+      },
+      {
+        "design": "wide_plaza_metered_merge",
+        "egress_lanes": 8,
+        "outgoing_lanes": 3,
+        "merge_length_m": 700.0,
+        "control": "long fan-in with signal-metered platoons",
+        "speed_management": "active metering and variable signs",
+        "conflict_multiplier": 0.54,
+        "control_complexity": 0.78,
+        "width_m": 28.8,
+        "lane_drop_count": 5,
+        "conflict_index": 0.385714,
+        "cost_index": 29.52,
+        "safety_score": 93.057143,
+        "throughput_capacity_vph": 4620.0,
+        "objective_score": 55.9456
+      }
+    ],
+    "recommended_design": {
+      "design": "staged_zipper_merge",
+      "egress_lanes": 8,
+      "outgoing_lanes": 3,
+      "merge_length_m": 420.0,
+      "control": "two-stage zipper merge with lane assignment",
+      "speed_management": "posted speed taper and lane-use signs",
+      "conflict_multiplier": 0.72,
+      "control_complexity": 0.35,
+      "width_m": 28.8,
+      "lane_drop_count": 5,
+      "conflict_index": 0.857143,
+      "cost_index": 16.296,
+      "safety_score": 84.571429,
+      "throughput_capacity_vph": 4620.0,
+      "objective_score": 57.93568
+    },
+    "recommendation": "Use a staged zipper merge: it removes five lanes over two controlled merge zones, keeps the 8-to-3 official example, and avoids the land cost of a very long metered plaza."
+  }
+}

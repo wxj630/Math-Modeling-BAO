@@ -1,0 +1,4 @@
+﻿transition_seconds,transition_open_ms,stable_150mpa_open_ms,post_ramp_rms_error_mpa,mean_final_pressure_mpa
+2.0,7.152853,7.152853,0.875691,150.754314
+5.0,7.152853,7.152853,1.363672,151.325742
+10.0,7.152853,7.152853,1.365538,151.32767

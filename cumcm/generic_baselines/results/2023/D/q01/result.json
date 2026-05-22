@@ -1,0 +1,91 @@
+{
+  "problem_id": "2023-D",
+  "title": "2023年 CUMCM D题：圈养湖羊的空间利用率",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "不考虑不确定因素和种羊的淘汰更新，假定自然交配期 20 天，母羊都能受孕，孕 期 149 天，每胎产羔 2 只，哺乳期 40 天，羔羊育肥期 210 天，母羊空怀休整期 20 天。该湖羊 养殖场现有 112 个标准羊栏，在实现连续生产的条件下，试确定养殖场种公羊与基础母羊的合 理数量， 并估算年化出栏羊只数量的范围。 若该养殖场希望每年出栏不少于 1500 只羊，试估算 现有标准羊栏数量的缺口。",
+  "tasks": [
+    "不考虑不确定因素和种羊的淘汰更新，假定自然交配期 20 天，母羊都能受孕，孕 期 149 天，每胎产羔 2 只，哺乳期 40 天，羔羊育肥期 210 天，母羊空怀休整期 20 天",
+    "该湖羊 养殖场现有 112 个标准羊栏，在实现连续生产的条件下，试确定养殖场种公羊与基础母羊的合 理数量， 并估算年化出栏羊只数量的范围"
+  ],
+  "selected_model": {
+    "key": "probability",
+    "name": "概率统计与抽样检验",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "不确定"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 0,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2023/D.md",
+    "rows": 36,
+    "columns": 17,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "概率统计与抽样检验",
+    "task_breakdown": [
+      "不考虑不确定因素和种羊的淘汰更新，假定自然交配期 20 天，母羊都能受孕，孕 期 149 天，每胎产羔 2 只，哺乳期 40 天，羔羊育肥期 210 天，母羊空怀休整期 20 天",
+      "该湖羊 养殖场现有 112 个标准羊栏，在实现连续生产的条件下，试确定养殖场种公羊与基础母羊的合 理数量， 并估算年化出栏羊只数量的范围"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n: 抽样量",
+      "c: 接收阈值",
+      "p0: 标称缺陷率/基准概率",
+      "p1: 风险备择概率"
+    ],
+    "constraints": [
+      "P_reject(p0)<=alpha",
+      "P_accept(p1)<=beta",
+      "n 为正整数，c 为非负整数"
+    ],
+    "objective_or_equations": [
+      "P_reject(p0)=1-F_Binomial(c;n,p0)",
+      "P_accept(p1)=F_Binomial(c;n,p1)",
+      "min n subject to producer/consumer risk"
+    ],
+    "solution_steps": [
+      "从题面提取标称比例。",
+      "设置生产方和使用方风险。",
+      "枚举 n 与 c 检查二项分布尾概率。",
+      "输出最小可行抽样方案。"
+    ],
+    "model_reference": {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "binomial_sampling_design",
+    "p0": 0.2,
+    "p1": 0.33000000000000007,
+    "alpha": 0.05,
+    "beta": 0.1,
+    "sample_size": 699,
+    "acceptance_number": 139,
+    "reject_good_probability": null,
+    "accept_bad_probability": null
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2023/D/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

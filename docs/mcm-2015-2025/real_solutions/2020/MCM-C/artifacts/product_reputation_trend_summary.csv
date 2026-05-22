@@ -1,0 +1,4 @@
+product_file,first_month,last_month,monthly_rating_slope,monthly_low_rating_slope,reputation_direction
+hair_dryer.tsv,2002-03-01,2015-08-01,0.008051,0.001047,stable
+microwave.tsv,2004-06-01,2015-08-01,0.000243,0.001704,stable
+pacifier.tsv,2003-04-01,2015-08-01,0.019673,-0.00755,increasing

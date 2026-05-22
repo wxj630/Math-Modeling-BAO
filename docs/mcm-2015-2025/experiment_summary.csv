@@ -1,0 +1,65 @@
+year,problem,success,question_count,recommended_models,mean_score
+2015,P01 Is it sustainable,True,5,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,129.261556
+2015,P02 Managing Human Capital in Organizations,True,2,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,114.108685
+2016,ICM-D Measuring the Evolution and Influence in Society’s Information Networks,True,2,机器学习建模、统计回归与拟合、文本与信号分析、多指标评价模型、图论与网络流,129.968575
+2016,ICM-E Are we heading towards a thirsty planet,True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,108.590726
+2016,ICM-F Modeling Refugee Immigration Policies,True,12,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,132.15785
+2016,MCM-A A Hot Bath,True,2,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,64.257694
+2016,MCM-B Space Junk,True,3,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,102.761845
+2016,MCM-C The Goodgrant Challenge,True,1,时间序列预测、统计回归与拟合、机器学习建模、多指标评价模型、文本与信号分析,95.302678
+2017,ICM-D Optimizing the Passenger Throughput at an Airport Security Checkpoint,True,3,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、微分方程与系统动力学,230.105283
+2017,ICM-E Sustainable Cities Needed!,True,2,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,235.228442
+2017,ICM-F Migration to Mars - Utopian Workforce of the 2100 Urban Society,True,12,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,241.284705
+2017,MCM-A Managing The Zambezi River,True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,116.917042
+2017,MCM-B Merge After Toll,True,4,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛,316.669161
+2017,MCM-C “Cooperate and navigate”,True,7,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,187.118318
+2018,"ICM-D Out of Gas and Driving on E (for electric, not empty)",True,12,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,146.427123
+2018,ICM-E How does climate change influence regional instability,True,5,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,311.50837
+2018,ICM-F - Cost of Privacy,True,12,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,392.217103
+2018,MCM-A Multi-hop HF Radio Propagation,True,4,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,143.013723
+2018,MCM-B Many Languages - How Many Languages,True,5,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,817.312486
+2018,MCM-C Energy Production,True,6,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,131.035795
+2019,ICM-D Time to leave the Louvre,True,1,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、时间序列预测,134.322524
+2019,ICM-E What is the Cost of Environmental Degradation,True,6,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,128.596236
+2019,MCM-A Game of Ecology,True,7,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,136.893813
+2019,MCM-B Send in the Drones - Developing an Aerial Disaster Relief Response System,True,7,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、时间序列预测,312.116937
+2019,MCM-C The Opioid Crisis,True,1,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、机器学习建模,89.914077
+2019,"P06 Universal, Decentralized, Digital Currency - Is it possible",True,1,时间序列预测、统计回归与拟合、机器学习建模、多指标评价模型、文本与信号分析,1217.69751
+2020,ICM-D - Teaming Strategies,True,2,优化规划模型、统计回归与拟合、仿真与蒙特卡洛,145.921732
+2020,ICM-E Drowning in Plastic,True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,116.451781
+2020,ICM-F The Place I Called Home - The Place I Called Home,True,8,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、机器学习建模,120.418253
+2020,MCM-A Moving North,True,1,优化规划模型、统计回归与拟合、仿真与蒙特卡洛,127.372037
+2020,MCM-B The Longest Lasting Sandcastle(s),True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,124.79199
+2020,MCM-C A Wealth of Data,True,5,时间序列预测、统计回归与拟合、机器学习建模、多指标评价模型、文本与信号分析,575.305906
+2021,ICM-D - The Influence of Music,True,2,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、机器学习建模,118.128561
+2021,ICM-E Re-Optimizing Food Systems,True,6,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,122.97725
+2021,ICM-F Checking the Pulse and Temperature of Higher Education,True,2,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、机器学习建模,407.717904
+2021,MCM-A Fungi,True,4,机器学习建模、统计回归与拟合、文本与信号分析、多指标评价模型、微分方程与系统动力学,61.551087
+2021,MCM-B Fighting Wildfires,True,1,微分方程与系统动力学、统计回归与拟合、几何与空间分析、仿真与蒙特卡洛、优化规划模型,124.145222
+2021,MCM-C A Confirming the Buzz about Hornets - Confirming the Buzz about Hornets,True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,105.129812
+2022,ICM-E Forestry for Carbon Sequestration,True,11,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、统计回归与拟合,130.033418
+2022,ICM-F All for One and One (Space) for All!,True,8,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,123.597243
+2022,MCM-A Power Profile of a Cyclist,True,5,时间序列预测、统计回归与拟合、机器学习建模、多指标评价模型、优化规划模型,326.735658
+2022,MCM-B Water and Hydroelectric Power Sharing,True,9,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,118.585781
+2022,MCM-C Trading Strategies,True,4,时间序列预测、统计回归与拟合、机器学习建模、多指标评价模型、优化规划模型,327.440372
+2022,P01 Data Paralysis Use Our Analysis!,True,4,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,126.225589
+2023,ICM-D Prioritizing the UN Sustainability Goals,True,5,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、机器学习建模,125.934624
+2023,ICM-E Light Pollution,True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,95.682905
+2023,ICM-F Green GDP,True,6,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,319.010613
+2023,ICM-F The Future of the Olympics,True,1,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、时间序列预测,151.144661
+2023,MCM-A Drought-Stricken Plant Communities,True,9,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、统计回归与拟合,72.886469
+2023,MCM-B Reimagining Maasai Mara,True,3,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,112.821904
+2023,MCM-C Predicting Wordle Results,True,4,时间序列预测、统计回归与拟合、机器学习建模、多指标评价模型、文本与信号分析,133.461339
+2023,MCM-C Understanding Used Sailboat Prices,True,5,图论与网络流、优化规划模型、群体智能与启发式、仿真与蒙特卡洛、时间序列预测,705.740463
+2024,ICM-D Great Lakes Water Problem,True,5,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、统计回归与拟合,132.93465
+2024,ICM-E Sustainability of Property Insurance,True,7,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,136.119128
+2024,ICM-F Reducing Illegal Wildlife Trade,True,10,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,216.811149
+2024,MCM-A Resource Availability and Sex Ratios,True,4,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、统计回归与拟合,64.05802
+2024,MCM-B Searching for Submersibles,True,4,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛,139.461509
+2024,MCM-C Momentum in Tennis,True,1,时间序列预测、机器学习建模、统计回归与拟合、仿真与蒙特卡洛、优化规划模型,150.83612
+2025,ICM-D A Roadmap to a Better City,True,5,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,181.744472
+2025,ICM-E Making Room for Agriculture,True,7,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,153.240875
+2025,ICM-F Cyber Strong,True,3,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,864.335877
+2025,MCM-A Testing Time - The Constant Wear On Stairs,True,8,微分方程与系统动力学、统计回归与拟合、几何与空间分析、仿真与蒙特卡洛、优化规划模型,20.856193
+2025,MCM-B Managing Sustainable Tourism,True,3,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、图论与网络流,128.458774
+2025,MCM-C Models for Olympic Medal Tables,True,1,微分方程与系统动力学、优化规划模型、多指标评价模型、仿真与蒙特卡洛、时间序列预测,1166.498517

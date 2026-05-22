@@ -1,0 +1,108 @@
+{
+  "problem_id": "2016-B",
+  "question": "q02",
+  "question_title": "成本、风险、收益与重要因素估计",
+  "statement": "Your model should include quantitative and/or qualitative estimates of costs, risks, benefits, as well as other important factors.",
+  "methods": "对 water jets、high energy lasers、sweeper satellites、tracking subscription 逐项估计 capex、opex、revenue、10 年移除数量、技术风险、监管风险和 scalability。对应模型：多指标综合评价、成本效益分析、风险矩阵。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "official_problem_parameters": {
+      "tracked_debris_count": 500000,
+      "reference_collision_year": 2009,
+      "reference_collision": "Kosmos-2251 / Iridium-33",
+      "candidate_methods_named_in_statement": [
+        "space-based water jets",
+        "high energy lasers",
+        "large sweeper satellites"
+      ],
+      "report_requirement": "two-page executive summary for high-level policy makers and news media analysts"
+    },
+    "assumptions": {
+      "market_note": "Private-firm revenue is a transparent scenario variable for service contracts with satellite operators and insurers; it is not observed COMAP data.",
+      "risk_score_definition": "risk_score = 0.55 technical risk + 0.45 regulatory risk, lower is better",
+      "benefit_definition": "collision risk reduction proxy combines tracked-debris removal and collision-avoidance service value over a 10-year horizon",
+      "commercial_rule": "commercial opportunity is attractive if NPV is positive and risk-adjusted score exceeds 0.05",
+      "combination_synergy": "hybrid active removal plus avoidance gets a small revenue/risk-reduction synergy but also integration cost"
+    }
+  },
+  "alternative_assessment": {
+    "method": "deterministic private-firm screening over cost, revenue, risk, scalability, and 10-year debris-risk reduction proxy",
+    "alternatives": [
+      {
+        "option": "laser_tracking_subscription",
+        "category": "collision_avoidance_service",
+        "capex_musd": 85.0,
+        "annual_opex_musd": 18.0,
+        "annual_revenue_musd": 72.0,
+        "ten_year_debris_removed": 0,
+        "ten_year_collision_risk_reduction_proxy": 0.16,
+        "risk_score": 0.153,
+        "npv_musd": 277.344,
+        "risk_adjusted_score": 0.541494,
+        "commercially_attractive": true,
+        "statement_link": "innovative alternative for avoiding collisions if removal is not commercially viable"
+      },
+      {
+        "option": "high_energy_lasers",
+        "category": "active_removal_or_deflection",
+        "capex_musd": 260.0,
+        "annual_opex_musd": 38.0,
+        "annual_revenue_musd": 92.0,
+        "ten_year_debris_removed": 24000,
+        "ten_year_collision_risk_reduction_proxy": 0.036,
+        "risk_score": 0.407,
+        "npv_musd": 102.344,
+        "risk_adjusted_score": 0.102994,
+        "commercially_attractive": true,
+        "statement_link": "high energy lasers targeting specific debris"
+      },
+      {
+        "option": "space_based_water_jets",
+        "category": "active_removal",
+        "capex_musd": 420.0,
+        "annual_opex_musd": 55.0,
+        "annual_revenue_musd": 105.0,
+        "ten_year_debris_removed": 18000,
+        "ten_year_collision_risk_reduction_proxy": 0.0324,
+        "risk_score": 0.397,
+        "npv_musd": -84.496,
+        "risk_adjusted_score": -0.117226,
+        "commercially_attractive": false,
+        "statement_link": "small space-based water jets targeting debris"
+      },
+      {
+        "option": "sweeper_satellites",
+        "category": "active_removal",
+        "capex_musd": 780.0,
+        "annual_opex_musd": 95.0,
+        "annual_revenue_musd": 135.0,
+        "ten_year_debris_removed": 52000,
+        "ten_year_collision_risk_reduction_proxy": 0.0624,
+        "risk_score": 0.481,
+        "npv_musd": -511.597,
+        "risk_adjusted_score": -0.543127,
+        "commercially_attractive": false,
+        "statement_link": "large satellites designed to sweep up debris"
+      }
+    ]
+  },
+  "commercial_opportunity": {
+    "recommended_action": "laser_tracking_subscription",
+    "best_candidate": {
+      "combination": "high_energy_lasers+laser_tracking_subscription",
+      "option_count": 2,
+      "capex_musd": 365.7,
+      "annual_opex_musd": 58.24,
+      "annual_revenue_musd": 172.2,
+      "ten_year_debris_removed": 25920,
+      "ten_year_collision_risk_reduction_proxy": 0.2156,
+      "risk_score": 0.2935,
+      "npv_musd": 398.981,
+      "risk_adjusted_score": 0.644386,
+      "commercially_attractive": true
+    },
+    "interpretation": "A full debris-removal business is capital intensive; the most attractive private opportunity is a staged service model that sells collision avoidance and selectively adds laser deflection/removal when contracts support it."
+  }
+}

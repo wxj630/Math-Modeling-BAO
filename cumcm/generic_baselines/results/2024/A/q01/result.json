@@ -1,0 +1,88 @@
+{
+  "problem_id": "2024-A",
+  "title": "2024年 CUMCM A题：板凳龙”  闹元宵",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "舞龙队沿螺距为 55 cm 的等距螺线顺时针盘入，各把手中心均位于螺线上。龙 头前把手的行进速度始终保持 1 m/s。初始时，龙头位于螺线第 16 圈 A 点处（见图 4）。请 给出从初始时刻到 300 s 为止，每秒整个舞龙队的位置和速度（指龙头、龙身和龙尾各前把 手及龙尾后把手中心的位置和速度，下同），将结果保存到文件 result1.xlsx 中（模板文件见 附件，其中“龙尾 （后）”表示龙尾后把手， 其余的均是前把手，结果保留 6 位小数， 下同）。 同时在论文中给出 0 s、60 s、120 s、180 s、240 s、300 s 时，龙头前把手、龙头后面第 1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度（格式见表 1 和表 2）。 27.5 cm 第 2 个孔，孔径 5.5 cm 27.5 cm 第 1 个孔，孔径 5.5 cm 30 cm 27.5 cm 27.5 cm 30 cm 220 cm 第 2 个孔， 孔径 5.5 cm 第 1 个孔， 孔径 5.5 cm 27.5 cm 27.5 cm 前一节龙身后部 后一节龙身前部 前把手 341 cm 2",
+  "tasks": [
+    "请 给出从初始时刻到 300 s 为止，每秒整个舞龙队的位置和速度（指龙头、龙身和龙尾各前把 手及龙尾后把手中心的位置和速度，下同），将结果保存到文件 result1.xlsx 中（模板文件见 附件，其中“龙尾 （后）”表示龙尾后把手， 其余的均是前把手，结果保留 6 位小数， 下同）",
+    "同时在论文中给出 0 s、60 s、120 s、180 s、240 s、300 s 时，龙头前把手、龙头后面第 1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度（格式见表 1 和表 2）"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "螺线、把手、位置、速度"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
+    "rows": 674,
+    "columns": 301,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "请 给出从初始时刻到 300 s 为止，每秒整个舞龙队的位置和速度（指龙头、龙身和龙尾各前把 手及龙尾后把手中心的位置和速度，下同），将结果保存到文件 result1.xlsx 中（模板文件见 附件，其中“龙尾 （后）”表示龙尾后把手， 其余的均是前把手，结果保留 6 位小数， 下同）",
+      "同时在论文中给出 0 s、60 s、120 s、180 s、240 s、300 s 时，龙头前把手、龙头后面第 1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度（格式见表 1 和表 2）"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      1.653695,
+      1.640855
+    ],
+    "radius": 7.2800100360582105,
+    "mean_squared_error": 0.004081474244681732,
+    "success": true
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/A/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

@@ -1,0 +1,249 @@
+{
+  "problem_id": "2020-D",
+  "question": "q04",
+  "question_title": "从足球团队推广到一般跨学科团队",
+  "statement": "As our societies increasingly solve problems involving teams, can you generalize your findings to say something about how to design and monitor successful teams in other settings?",
+  "methods": "把球员映射为专家，把传球映射为任务交接，提炼互惠信息流、冗余三元组、互动类型多样性和持续监控机制，说明如何迁移到科研、工程、医疗或应急团队。对应模型：复杂网络类比、组织协作指标迁移。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
+    "readme": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "rows": {
+      "matches.csv": 38,
+      "passingevents.csv": 23429,
+      "fullevents.csv": 59271
+    },
+    "official_scope": "38 Huskies matches, 23,429 official pass rows, and 59,271 official event rows from COMAP 2020 ICM-D."
+  },
+  "generalization_memo": "The soccer result generalizes to interdisciplinary teams by replacing players with specialists and passes with task handoffs. Successful interdisciplinary teams should have reciprocal information flow, redundant triads that prevent single-point failure, enough diversity of interaction types to adapt under pressure, and a monitoring routine that compares current teamwork indicators with past successful patterns.",
+  "passing_network": {
+    "huskies_player_count": 30,
+    "huskies_pass_count": 10435,
+    "directed_edge_count": 656,
+    "season_network_density": 0.754023,
+    "season_network_reciprocity": 0.893293,
+    "season_weighted_clustering": 0.049912,
+    "season_triangles": 2263,
+    "top_pass_pairs": [
+      {
+        "origin": "Huskies_M1",
+        "destination": "Huskies_F2",
+        "origin_position": "M",
+        "destination_position": "F",
+        "pass_count": 182
+      },
+      {
+        "origin": "Huskies_M3",
+        "destination": "Huskies_M1",
+        "origin_position": "M",
+        "destination_position": "M",
+        "pass_count": 168
+      },
+      {
+        "origin": "Huskies_M1",
+        "destination": "Huskies_M3",
+        "origin_position": "M",
+        "destination_position": "M",
+        "pass_count": 143
+      },
+      {
+        "origin": "Huskies_D3",
+        "destination": "Huskies_G1",
+        "origin_position": "D",
+        "destination_position": "G",
+        "pass_count": 120
+      },
+      {
+        "origin": "Huskies_F2",
+        "destination": "Huskies_M1",
+        "origin_position": "F",
+        "destination_position": "M",
+        "pass_count": 117
+      },
+      {
+        "origin": "Huskies_D1",
+        "destination": "Huskies_G1",
+        "origin_position": "D",
+        "destination_position": "G",
+        "pass_count": 107
+      },
+      {
+        "origin": "Huskies_D1",
+        "destination": "Huskies_D3",
+        "origin_position": "D",
+        "destination_position": "D",
+        "pass_count": 105
+      },
+      {
+        "origin": "Huskies_D3",
+        "destination": "Huskies_D1",
+        "origin_position": "D",
+        "destination_position": "D",
+        "pass_count": 98
+      },
+      {
+        "origin": "Huskies_D5",
+        "destination": "Huskies_F2",
+        "origin_position": "D",
+        "destination_position": "F",
+        "pass_count": 97
+      },
+      {
+        "origin": "Huskies_D1",
+        "destination": "Huskies_M1",
+        "origin_position": "D",
+        "destination_position": "M",
+        "pass_count": 92
+      },
+      {
+        "origin": "Huskies_M3",
+        "destination": "Huskies_D4",
+        "origin_position": "M",
+        "destination_position": "D",
+        "pass_count": 88
+      },
+      {
+        "origin": "Huskies_M1",
+        "destination": "Huskies_D1",
+        "origin_position": "M",
+        "destination_position": "D",
+        "pass_count": 85
+      }
+    ],
+    "top_central_players": [
+      {
+        "player": "Huskies_M1",
+        "position": "M",
+        "weighted_out_degree": 1255,
+        "weighted_in_degree": 1017,
+        "pagerank": 0.089594,
+        "betweenness": 0.029686,
+        "teamwork_centrality": 0.088349
+      },
+      {
+        "player": "Huskies_F2",
+        "position": "F",
+        "weighted_out_degree": 859,
+        "weighted_in_degree": 927,
+        "pagerank": 0.081094,
+        "betweenness": 0.015097,
+        "teamwork_centrality": 0.068323
+      },
+      {
+        "player": "Huskies_M3",
+        "position": "M",
+        "weighted_out_degree": 887,
+        "weighted_in_degree": 717,
+        "pagerank": 0.062069,
+        "betweenness": 0.020334,
+        "teamwork_centrality": 0.061749
+      },
+      {
+        "player": "Huskies_D1",
+        "position": "D",
+        "weighted_out_degree": 851,
+        "weighted_in_degree": 678,
+        "pagerank": 0.055192,
+        "betweenness": 0.025639,
+        "teamwork_centrality": 0.058507
+      },
+      {
+        "player": "Huskies_D3",
+        "position": "D",
+        "weighted_out_degree": 727,
+        "weighted_in_degree": 582,
+        "pagerank": 0.049954,
+        "betweenness": 0.023575,
+        "teamwork_centrality": 0.051578
+      },
+      {
+        "player": "Huskies_D5",
+        "position": "D",
+        "weighted_out_degree": 625,
+        "weighted_in_degree": 581,
+        "pagerank": 0.052494,
+        "betweenness": 0.013418,
+        "teamwork_centrality": 0.047269
+      },
+      {
+        "player": "Huskies_D4",
+        "position": "D",
+        "weighted_out_degree": 569,
+        "weighted_in_degree": 615,
+        "pagerank": 0.054918,
+        "betweenness": 0.014144,
+        "teamwork_centrality": 0.046626
+      },
+      {
+        "player": "Huskies_M6",
+        "position": "M",
+        "weighted_out_degree": 508,
+        "weighted_in_degree": 537,
+        "pagerank": 0.05317,
+        "betweenness": 0.017747,
+        "teamwork_centrality": 0.044515
+      },
+      {
+        "player": "Huskies_M4",
+        "position": "M",
+        "weighted_out_degree": 497,
+        "weighted_in_degree": 521,
+        "pagerank": 0.050837,
+        "betweenness": 0.019296,
+        "teamwork_centrality": 0.043406
+      },
+      {
+        "player": "Huskies_D2",
+        "position": "D",
+        "weighted_out_degree": 580,
+        "weighted_in_degree": 467,
+        "pagerank": 0.03979,
+        "betweenness": 0.017384,
+        "teamwork_centrality": 0.040836
+      }
+    ]
+  },
+  "strategy_recommendations": {
+    "feature_gaps_win_minus_loss": {
+      "pass_advantage": 150.56923,
+      "passes": 22.8,
+      "duel_count": 22.42051,
+      "home_side": 0.4359,
+      "average_pass_length": 0.11547,
+      "foul_count": 0.09231,
+      "shot_count": 0.08718,
+      "network_reciprocity": 0.03986,
+      "contribution_gini": 0.0231,
+      "weighted_clustering": 0.00882,
+      "top_pair_share": 0.00091,
+      "network_density": -0.00113,
+      "forward_pass_share": -0.01071,
+      "pass_type_entropy": -0.013,
+      "attacking_third_share": -0.01731,
+      "players_involved": -0.15385
+    },
+    "actions": [
+      {
+        "action": "Keep the passing network reciprocal rather than hub-only.",
+        "evidence": "Season reciprocity is 0.893293; wins have reciprocity 0.7525 versus losses 0.7126.",
+        "model_family": "directed graph reciprocity and weighted centrality"
+      },
+      {
+        "action": "Use midfield-forward triangles as the default attacking build-up pattern.",
+        "evidence": "Wins average 146.77 triadic configurations versus 154.27 in losses.",
+        "model_family": "triadic network motifs and formation shares"
+      },
+      {
+        "action": "Protect pass diversity instead of relying on one repeated dyad.",
+        "evidence": "The best positive feature gap is pass_advantage = 150.5692.",
+        "model_family": "entropy, concentration, and contribution-distribution indicators"
+      },
+      {
+        "action": "Monitor match-by-match teamwork features after tactical changes.",
+        "evidence": "The holdout model uses only network/event indicators and predicts non-loss outcomes on the last 8 official matches.",
+        "model_family": "interpretable classification with temporal holdout"
+      }
+    ]
+  }
+}

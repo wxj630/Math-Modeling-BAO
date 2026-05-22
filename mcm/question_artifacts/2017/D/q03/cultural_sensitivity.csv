@@ -1,0 +1,4 @@
+traveler_style,property_multiplier,id_multiplier,combined_mean_wait_s,combined_p90_wait_s,description
+personal-space cautious,1.25,1.05,1224.9903,3041.7233,More spacing and slower divestment/reclaim behavior.
+collective-efficiency,0.85,0.95,859.504857,2199.2409,Passengers coordinate bins and move when prompted.
+individual-fast but variable,0.95,1.0,955.20771,2421.6731,Faster median but less orderly behavior; modeled here without random variance.

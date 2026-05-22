@@ -1,0 +1,89 @@
+{
+  "problem_id": "2021-E",
+  "question": "q01",
+  "question_title": "效率、利润、可持续与公平的食物系统目标函数",
+  "statement": "Provide a food system model robust enough to be adjusted to optimize for various levels of efficiency, profitability, sustainability, and/or equity.",
+  "methods": "将官方题面四类优先级扩展为 efficiency、profitability、sustainability、equity 和 nutrition resilience 的透明加权指标，比较当前效率-利润导向与再优化方案。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "official_requirements": {
+      "optimize_efficiency_profitability_sustainability_equity": true,
+      "developed_and_developing_country_applications": true,
+      "benefits_and_costs_over_time": true,
+      "scalability_and_adaptability": true,
+      "twenty_five_page_limit": true
+    },
+    "parameters": {
+      "global_hunger_millions": 821,
+      "food_system_ghg_share": 0.29,
+      "food_system_biodiversity_loss_share": 0.8,
+      "food_system_deforestation_share": 0.8,
+      "food_system_freshwater_share": 0.7,
+      "transition_years": 15,
+      "source_note": "Official PDF statement parameters only; country and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "priority_model": {
+    "method": "weighted food-system health score over efficiency, profitability, sustainability, equity, and nutrition resilience",
+    "priority_rows": [
+      {
+        "priority": "equity_sustainability_balanced",
+        "mean_country_score": 0.5401,
+        "sustainability_weight": 0.3,
+        "equity_weight": 0.28,
+        "profitability_weight": 0.12,
+        "objective_score": 0.5807
+      },
+      {
+        "priority": "regional_resilience",
+        "mean_country_score": 0.5597,
+        "sustainability_weight": 0.22,
+        "equity_weight": 0.2,
+        "profitability_weight": 0.16,
+        "objective_score": 0.5667
+      },
+      {
+        "priority": "profit_with_guardrails",
+        "mean_country_score": 0.5597,
+        "sustainability_weight": 0.22,
+        "equity_weight": 0.18,
+        "profitability_weight": 0.24,
+        "objective_score": 0.5627
+      },
+      {
+        "priority": "current_efficiency_profit",
+        "mean_country_score": 0.5742,
+        "sustainability_weight": 0.16,
+        "equity_weight": 0.12,
+        "profitability_weight": 0.3,
+        "objective_score": 0.552
+      }
+    ],
+    "current_system": {
+      "priority": "current_efficiency_profit",
+      "mean_country_score": 0.5742,
+      "sustainability_weight": 0.16,
+      "equity_weight": 0.12,
+      "profitability_weight": 0.3,
+      "objective_score": 0.552
+    },
+    "recommended_priority": {
+      "priority": "equity_sustainability_balanced",
+      "mean_country_score": 0.5401,
+      "sustainability_weight": 0.3,
+      "equity_weight": 0.28,
+      "profitability_weight": 0.12,
+      "objective_score": 0.5807
+    }
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic planning scenarios; it does not invent placeholder x1/x2/x3 data.",
+    "model_limits": [
+      "COMAP did not provide country food-system workbooks for this problem.",
+      "Country scores are auditable planning inputs that should be replaced by FAO, World Bank, national nutrition, emissions, and water records in a full contest paper.",
+      "Weights are policy choices; a final paper should test stakeholder alternatives and uncertainty bands."
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "problem_id": "2023-C-Boats",
+  "question": "q04",
+  "question_title": "帆船数据的其他推论",
+  "statement": "Identify and discuss any other interesting and informative inferences or conclusions drawn from the data.",
+  "methods": "统计单体船/双体船中位价、双体船溢价、价格与长度/船龄相关性、区域-船型中位价和高价品牌。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
+    "records": 3491,
+    "rows": {
+      "monohull": 2346,
+      "catamaran": 1145
+    },
+    "sheets": [
+      "Monohulled Sailboats ",
+      "Catamarans"
+    ],
+    "regions": [
+      "Caribbean",
+      "Europe",
+      "USA"
+    ],
+    "columns": [
+      "Make",
+      "Variant",
+      "Length (ft)",
+      "Geographic Region",
+      "Country/Region/State",
+      "Listing Price (USD)",
+      "Year"
+    ]
+  },
+  "interesting_inferences": {
+    "catamaran_median_price_usd": 431654.0,
+    "monohull_median_price_usd": 193182.5,
+    "catamaran_median_premium_pct": 123.444,
+    "price_length_correlation": 0.369121,
+    "price_age_correlation": -0.473493,
+    "region_hull_summary": [
+      {
+        "hull_type": "catamaran",
+        "region": "Caribbean",
+        "count": 302,
+        "median_price": 380000.0,
+        "median_length": 44.6
+      },
+      {
+        "hull_type": "catamaran",
+        "region": "Europe",
+        "count": 735,
+        "median_price": 449087.0,
+        "median_length": 43.6
+      },
+      {
+        "hull_type": "catamaran",
+        "region": "USA",
+        "count": 108,
+        "median_price": 449000.0,
+        "median_length": 43.0
+      },
+      {
+        "hull_type": "monohull",
+        "region": "Caribbean",
+        "count": 178,
+        "median_price": 176131.0,
+        "median_length": 45.0
+      },
+      {
+        "hull_type": "monohull",
+        "region": "Europe",
+        "count": 1783,
+        "median_price": 193137.0,
+        "median_length": 45.0
+      },
+      {
+        "hull_type": "monohull",
+        "region": "USA",
+        "count": 385,
+        "median_price": 210000.0,
+        "median_length": 43.0
+      }
+    ],
+    "high_median_price_makes": [
+      {
+        "hull_type": "catamaran",
+        "make": "Bali",
+        "count": 54,
+        "median_price": 455973.0
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "count": 682,
+        "median_price": 445456.5
+      },
+      {
+        "hull_type": "monohull",
+        "make": "X-Yachts",
+        "count": 42,
+        "median_price": 403894.0
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Fountaine Pajot",
+        "count": 160,
+        "median_price": 398964.5
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Nautitech",
+        "count": 80,
+        "median_price": 381105.0
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Leopard",
+        "count": 89,
+        "median_price": 350000.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Grand Soleil",
+        "count": 65,
+        "median_price": 259945.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Dehler",
+        "count": 28,
+        "median_price": 205284.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Hanse",
+        "count": 179,
+        "median_price": 204500.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Catalina",
+        "count": 37,
+        "median_price": 204069.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Dufour",
+        "count": 164,
+        "median_price": 194376.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "count": 514,
+        "median_price": 194351.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Wauquiez",
+        "count": 20,
+        "median_price": 190707.5
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "count": 516,
+        "median_price": 180191.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Elan",
+        "count": 89,
+        "median_price": 167605.0
+      }
+    ]
+  }
+}

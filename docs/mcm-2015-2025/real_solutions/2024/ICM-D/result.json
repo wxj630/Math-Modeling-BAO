@@ -1,0 +1,335 @@
+{
+  "problem": "2024 ICM-D Great Lakes Water Problem",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "records": 2548,
+    "level_records": 1380,
+    "flow_records": 1168,
+    "sheets": [
+      "Detroit River",
+      "Lake Erie",
+      "Lake Michigan and Lake Huron",
+      "Lake Ontario",
+      "Lake St. Clair",
+      "Lake Superior",
+      "Niagara River",
+      "Ottawa River",
+      "St. Clair River",
+      "St. Lawrence River",
+      "St. Mary's River"
+    ]
+  },
+  "network_model": {
+    "lakes": [
+      "Lake Superior",
+      "Lake Michigan and Lake Huron",
+      "Lake St. Clair",
+      "Lake Erie",
+      "Lake Ontario"
+    ],
+    "connecting_flows": [
+      "St. Mary's River",
+      "St. Clair River",
+      "Detroit River",
+      "Niagara River",
+      "Ottawa River",
+      "St. Lawrence River"
+    ],
+    "control_dams": [
+      {
+        "lake": "Lake Superior",
+        "controlled_outflow": "St. Mary's River",
+        "control": "Soo Locks / Compensating Works"
+      },
+      {
+        "lake": "Lake Ontario",
+        "controlled_outflow": "St. Lawrence River",
+        "control": "Moses-Saunders Dam"
+      }
+    ]
+  },
+  "target_levels": {
+    "method": "monthly historical median with interquartile operating band",
+    "lake_summary": [
+      {
+        "lake": "Lake Erie",
+        "annual_target_mean_m": 174.203333,
+        "mean_operating_band_width_m": 0.424583,
+        "seasonal_target_min_m": 174.02,
+        "seasonal_target_max_m": 174.36
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "annual_target_mean_m": 176.1375,
+        "mean_operating_band_width_m": 0.669167,
+        "seasonal_target_min_m": 175.96,
+        "seasonal_target_max_m": 176.33
+      },
+      {
+        "lake": "Lake Ontario",
+        "annual_target_mean_m": 74.818333,
+        "mean_operating_band_width_m": 0.2325,
+        "seasonal_target_min_m": 74.51,
+        "seasonal_target_max_m": 75.13
+      },
+      {
+        "lake": "Lake St. Clair",
+        "annual_target_mean_m": 174.986667,
+        "mean_operating_band_width_m": 0.494167,
+        "seasonal_target_min_m": 174.85,
+        "seasonal_target_max_m": 175.15
+      },
+      {
+        "lake": "Lake Superior",
+        "annual_target_mean_m": 183.293333,
+        "mean_operating_band_width_m": 0.381667,
+        "seasonal_target_min_m": 183.11,
+        "seasonal_target_max_m": 183.44
+      }
+    ]
+  },
+  "control_policy": {
+    "rule": "monthly median flow plus 900 cms per meter above target, clipped to historical 10th-90th percentile by month",
+    "summary": [
+      {
+        "lake": "Lake Ontario",
+        "control_flow": "St. Lawrence River",
+        "mean_abs_level_deviation_m": 0.152681,
+        "mean_abs_recommended_change_cms": 136.499176,
+        "max_recommended_change_cms": 702.0
+      },
+      {
+        "lake": "Lake Superior",
+        "control_flow": "St. Mary's River",
+        "mean_abs_level_deviation_m": 0.186775,
+        "mean_abs_recommended_change_cms": 159.972069,
+        "max_recommended_change_cms": 449.218411
+      }
+    ]
+  },
+  "evaluation_2017": {
+    "year": 2017,
+    "actual_total_stakeholder_cost": 51.325,
+    "mean_control_effort_cms": 295.631961,
+    "highest_cost_months": [
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-05-01",
+        "level_m": 75.8,
+        "target_m": 75.1,
+        "deviation_m": 0.7,
+        "cost_total": 2.425
+      },
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-06-01",
+        "level_m": 75.81,
+        "target_m": 75.13,
+        "deviation_m": 0.68,
+        "cost_total": 2.39
+      },
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-07-01",
+        "level_m": 75.69,
+        "target_m": 75.09,
+        "deviation_m": 0.6,
+        "cost_total": 2.19
+      },
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-08-01",
+        "level_m": 75.43,
+        "target_m": 74.95,
+        "deviation_m": 0.48,
+        "cost_total": 1.65
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-11-01",
+        "level_m": 176.85,
+        "target_m": 176.07,
+        "deviation_m": 0.78,
+        "cost_total": 1.62
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-12-01",
+        "level_m": 176.79,
+        "target_m": 176.05,
+        "deviation_m": 0.74,
+        "cost_total": 1.49
+      },
+      {
+        "lake": "Lake St. Clair",
+        "date": "2017-11-01",
+        "level_m": 175.44,
+        "target_m": 174.85,
+        "deviation_m": 0.59,
+        "cost_total": 1.415
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-10-01",
+        "level_m": 176.87,
+        "target_m": 176.14,
+        "deviation_m": 0.73,
+        "cost_total": 1.405
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-08-01",
+        "level_m": 177.0,
+        "target_m": 176.32,
+        "deviation_m": 0.68,
+        "cost_total": 1.265
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-09-01",
+        "level_m": 176.93,
+        "target_m": 176.24,
+        "deviation_m": 0.69,
+        "cost_total": 1.245
+      }
+    ],
+    "interpretation": "The policy is evaluated as an advisory release rule, not a full hydraulic simulator; it flags months where controlled outflow should move toward historical operating bands."
+  },
+  "sensitivity": {
+    "dam_outflow_sensitivity": [
+      {
+        "lake": "Lake Superior",
+        "control_flow": "St. Mary's River",
+        "rows": 168,
+        "rmse_m": 0.066173,
+        "standardized_outflow_sensitivity": -0.005175,
+        "interpretation": "negative means larger outflow tends to lower next-month lake level"
+      },
+      {
+        "lake": "Lake Ontario",
+        "control_flow": "St. Lawrence River",
+        "rows": 109,
+        "rmse_m": 0.136944,
+        "standardized_outflow_sensitivity": -0.122293,
+        "interpretation": "negative means larger outflow tends to lower next-month lake level"
+      }
+    ],
+    "environmental_condition_sensitivity": [
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "mean_monthly_cost": 0.624493,
+        "high_water_months": 70,
+        "low_water_months": 70,
+        "max_abs_deviation_m": 1.28
+      },
+      {
+        "lake": "Lake St. Clair",
+        "mean_monthly_cost": 0.522971,
+        "high_water_months": 71,
+        "low_water_months": 67,
+        "max_abs_deviation_m": 0.94
+      },
+      {
+        "lake": "Lake Erie",
+        "mean_monthly_cost": 0.453043,
+        "high_water_months": 72,
+        "low_water_months": 68,
+        "max_abs_deviation_m": 0.83
+      },
+      {
+        "lake": "Lake Ontario",
+        "mean_monthly_cost": 0.321993,
+        "high_water_months": 71,
+        "low_water_months": 71,
+        "max_abs_deviation_m": 0.78
+      },
+      {
+        "lake": "Lake Superior",
+        "mean_monthly_cost": 0.308841,
+        "high_water_months": 71,
+        "low_water_months": 71,
+        "max_abs_deviation_m": 0.53
+      }
+    ]
+  },
+  "lake_ontario_focus": {
+    "lake": "Lake Ontario",
+    "records": 276,
+    "high_water_months": 71,
+    "low_water_months": 71,
+    "mean_abs_deviation_m": 0.152681,
+    "correlation_with_flows": {
+      "Niagara River": 0.745267,
+      "Ottawa River": 0.396294,
+      "St. Lawrence River": 0.629777
+    },
+    "average_recommended_st_lawrence_adjustment_cms": 136.499176,
+    "stakeholder_factors": [
+      "shoreline flood risk when levels exceed the monthly high operating band",
+      "navigation draft risk when levels fall below the monthly low operating band",
+      "hydropower and downstream flow constraints at Moses-Saunders",
+      "ecosystem and wetland exposure to prolonged high or low deviations",
+      "Ottawa River inflow contribution to downstream Montreal/St. Lawrence flooding context"
+    ],
+    "highest_cost_months": [
+      {
+        "date": "2019-06-01",
+        "level_m": 75.91,
+        "target_m": 75.13,
+        "deviation_m": 0.78,
+        "cost_total": 2.79
+      },
+      {
+        "date": "2019-07-01",
+        "level_m": 75.8,
+        "target_m": 75.09,
+        "deviation_m": 0.71,
+        "cost_total": 2.63
+      },
+      {
+        "date": "2017-05-01",
+        "level_m": 75.8,
+        "target_m": 75.1,
+        "deviation_m": 0.7,
+        "cost_total": 2.425
+      },
+      {
+        "date": "2017-06-01",
+        "level_m": 75.81,
+        "target_m": 75.13,
+        "deviation_m": 0.68,
+        "cost_total": 2.39
+      },
+      {
+        "date": "2017-07-01",
+        "level_m": 75.69,
+        "target_m": 75.09,
+        "deviation_m": 0.6,
+        "cost_total": 2.19
+      },
+      {
+        "date": "2019-08-01",
+        "level_m": 75.53,
+        "target_m": 74.95,
+        "deviation_m": 0.58,
+        "cost_total": 2.05
+      },
+      {
+        "date": "2019-05-01",
+        "level_m": 75.7,
+        "target_m": 75.1,
+        "deviation_m": 0.6,
+        "cost_total": 2.025
+      },
+      {
+        "date": "2019-11-01",
+        "level_m": 75.04,
+        "target_m": 74.51,
+        "deviation_m": 0.53,
+        "cost_total": 1.82
+      }
+    ]
+  },
+  "ijc_memo": "IJC should select a transparent monthly target-band controller: it uses official historical lake levels to define stakeholder operating bands, then adjusts the two controllable outflows toward those bands while clipping releases to historical monthly 10th-90th percentile flow ranges. The model is auditable, shows where 2017 levels were costly, and highlights Lake Ontario months where Moses-Saunders decisions should balance shoreline flooding, navigation drafts, hydropower, wetlands, and downstream Ottawa/St. Lawrence flood context."
+}

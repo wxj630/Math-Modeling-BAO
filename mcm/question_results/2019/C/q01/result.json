@@ -1,0 +1,366 @@
+{
+  "problem_id": "2019-C",
+  "question": "q01",
+  "question_title": "NFLIS 县域传播、起始位置与 2020 风险预测",
+  "statement": "Using the NFLIS data provided, build a mathematical model to describe the spread and characteristics of the reported synthetic opioid and heroin incidents in and between the five states and their counties over time. Identify possible locations where specific opioid use might have started, and forecast future threshold concerns.",
+  "methods": "读取官方 MCM_NFLIS_Data.xlsx，按 FIPS/year/state/county 汇总 heroin 与 synthetic_or_other_analgesic 报告，构建县-年面板；用最早阳性县和 2010-2017 每县 OLS 趋势识别起点和 2020 高风险阈值。对应模型：时空面板、趋势回归、阈值预警。",
+  "data_source": {
+    "type": "official_comap_xlsx_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "rows": {
+      "MCM_NFLIS_Data.xlsx": 24062,
+      "ACS county-year rows": 3245
+    },
+    "acs_years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "official_nflis_states": [
+      "KY",
+      "OH",
+      "PA",
+      "VA",
+      "WV"
+    ],
+    "state_note": "The official workbook contains KY, OH, PA, VA, and WV records; this workflow does not add Tennessee records that are absent from the file."
+  },
+  "spread_model": {
+    "county_year_rows": 3480,
+    "county_count": 461,
+    "substance_classes": [
+      "heroin",
+      "synthetic_or_other_analgesic"
+    ],
+    "likely_origins_by_state": [
+      {
+        "state": "KY",
+        "earliest_year": 2010,
+        "candidate_counties": [
+          {
+            "county": "JEFFERSON",
+            "fips": 21111,
+            "opioid_reports": 1293,
+            "heroin_reports": 154,
+            "synthetic_or_other_analgesic_reports": 1139,
+            "rate_per_1000_drug_reports": 238.297088
+          },
+          {
+            "county": "FAYETTE",
+            "fips": 21067,
+            "opioid_reports": 547,
+            "heroin_reports": 32,
+            "synthetic_or_other_analgesic_reports": 515,
+            "rate_per_1000_drug_reports": 278.08846
+          },
+          {
+            "county": "KENTON",
+            "fips": 21117,
+            "opioid_reports": 499,
+            "heroin_reports": 216,
+            "synthetic_or_other_analgesic_reports": 283,
+            "rate_per_1000_drug_reports": 465.051258
+          }
+        ]
+      },
+      {
+        "state": "OH",
+        "earliest_year": 2010,
+        "candidate_counties": [
+          {
+            "county": "HAMILTON",
+            "fips": 39061,
+            "opioid_reports": 3628,
+            "heroin_reports": 1917,
+            "synthetic_or_other_analgesic_reports": 1711,
+            "rate_per_1000_drug_reports": 263.280116
+          },
+          {
+            "county": "MONTGOMERY",
+            "fips": 39113,
+            "opioid_reports": 1685,
+            "heroin_reports": 1265,
+            "synthetic_or_other_analgesic_reports": 420,
+            "rate_per_1000_drug_reports": 216.081046
+          },
+          {
+            "county": "DELAWARE",
+            "fips": 39041,
+            "opioid_reports": 1265,
+            "heroin_reports": 1123,
+            "synthetic_or_other_analgesic_reports": 142,
+            "rate_per_1000_drug_reports": 713.07779
+          }
+        ]
+      },
+      {
+        "state": "PA",
+        "earliest_year": 2010,
+        "candidate_counties": [
+          {
+            "county": "PHILADELPHIA",
+            "fips": 42101,
+            "opioid_reports": 6259,
+            "heroin_reports": 3910,
+            "synthetic_or_other_analgesic_reports": 2349,
+            "rate_per_1000_drug_reports": 186.763346
+          },
+          {
+            "county": "ALLEGHENY",
+            "fips": 42003,
+            "opioid_reports": 3415,
+            "heroin_reports": 2592,
+            "synthetic_or_other_analgesic_reports": 823,
+            "rate_per_1000_drug_reports": 401.764706
+          },
+          {
+            "county": "BUCKS",
+            "fips": 42017,
+            "opioid_reports": 1421,
+            "heroin_reports": 618,
+            "synthetic_or_other_analgesic_reports": 803,
+            "rate_per_1000_drug_reports": 231.433225
+          }
+        ]
+      },
+      {
+        "state": "VA",
+        "earliest_year": 2010,
+        "candidate_counties": [
+          {
+            "county": "RICHMOND",
+            "fips": 51760,
+            "opioid_reports": 599,
+            "heroin_reports": 333,
+            "synthetic_or_other_analgesic_reports": 266,
+            "rate_per_1000_drug_reports": 207.697642
+          },
+          {
+            "county": "FAIRFAX",
+            "fips": 51059,
+            "opioid_reports": 383,
+            "heroin_reports": 102,
+            "synthetic_or_other_analgesic_reports": 281,
+            "rate_per_1000_drug_reports": 114.773749
+          },
+          {
+            "county": "ROANOKE",
+            "fips": 51770,
+            "opioid_reports": 317,
+            "heroin_reports": 130,
+            "synthetic_or_other_analgesic_reports": 187,
+            "rate_per_1000_drug_reports": 287.398005
+          }
+        ]
+      },
+      {
+        "state": "WV",
+        "earliest_year": 2010,
+        "candidate_counties": [
+          {
+            "county": "KANAWHA",
+            "fips": 54039,
+            "opioid_reports": 340,
+            "heroin_reports": 72,
+            "synthetic_or_other_analgesic_reports": 268,
+            "rate_per_1000_drug_reports": 236.111111
+          },
+          {
+            "county": "MERCER",
+            "fips": 54055,
+            "opioid_reports": 326,
+            "heroin_reports": 0,
+            "synthetic_or_other_analgesic_reports": 326,
+            "rate_per_1000_drug_reports": 555.366269
+          },
+          {
+            "county": "MONONGALIA",
+            "fips": 54061,
+            "opioid_reports": 228,
+            "heroin_reports": 219,
+            "synthetic_or_other_analgesic_reports": 9,
+            "rate_per_1000_drug_reports": 676.557864
+          }
+        ]
+      }
+    ]
+  },
+  "forecast_concerns": {
+    "method": "Per-county ordinary least squares trend on official 2010-2017 NFLIS opioid reports.",
+    "county_forecasts_2020": [
+      {
+        "FIPS_Combined": 39061,
+        "state": "OH",
+        "county": "HAMILTON",
+        "slope_reports_per_year": 909.440476,
+        "observed_2017_reports": 9995.0,
+        "forecast_2020_reports": 11277.99,
+        "forecast_threshold": "high",
+        "in_sample_mae": 768.631,
+        "in_sample_r2": 0.8258
+      },
+      {
+        "FIPS_Combined": 39035,
+        "state": "OH",
+        "county": "CUYAHOGA",
+        "slope_reports_per_year": 859.738095,
+        "observed_2017_reports": 7381.0,
+        "forecast_2020_reports": 9042.05,
+        "forecast_threshold": "high",
+        "in_sample_mae": 456.5893,
+        "in_sample_r2": 0.9302
+      },
+      {
+        "FIPS_Combined": 42101,
+        "state": "PA",
+        "county": "PHILADELPHIA",
+        "slope_reports_per_year": 337.380952,
+        "observed_2017_reports": 9156.0,
+        "forecast_2020_reports": 8544.23,
+        "forecast_threshold": "high",
+        "in_sample_mae": 790.6756,
+        "in_sample_r2": 0.3714
+      },
+      {
+        "FIPS_Combined": 42003,
+        "state": "PA",
+        "county": "ALLEGHENY",
+        "slope_reports_per_year": 258.72619,
+        "observed_2017_reports": 4653.0,
+        "forecast_2020_reports": 5830.85,
+        "forecast_threshold": "high",
+        "in_sample_mae": 230.9435,
+        "in_sample_r2": 0.8404
+      },
+      {
+        "FIPS_Combined": 39049,
+        "state": "OH",
+        "county": "FRANKLIN",
+        "slope_reports_per_year": 322.988095,
+        "observed_2017_reports": 3016.0,
+        "forecast_2020_reports": 4292.05,
+        "forecast_threshold": "high",
+        "in_sample_mae": 201.372,
+        "in_sample_r2": 0.912
+      },
+      {
+        "FIPS_Combined": 39113,
+        "state": "OH",
+        "county": "MONTGOMERY",
+        "slope_reports_per_year": 239.511905,
+        "observed_2017_reports": 3560.0,
+        "forecast_2020_reports": 4278.2,
+        "forecast_threshold": "high",
+        "in_sample_mae": 156.3958,
+        "in_sample_r2": 0.8813
+      },
+      {
+        "FIPS_Combined": 39085,
+        "state": "OH",
+        "county": "LAKE",
+        "slope_reports_per_year": 265.797619,
+        "observed_2017_reports": 2127.0,
+        "forecast_2020_reports": 2922.56,
+        "forecast_threshold": "high",
+        "in_sample_mae": 141.375,
+        "in_sample_r2": 0.9049
+      },
+      {
+        "FIPS_Combined": 42045,
+        "state": "PA",
+        "county": "DELAWARE",
+        "slope_reports_per_year": 118.166667,
+        "observed_2017_reports": 1667.0,
+        "forecast_2020_reports": 2119.83,
+        "forecast_threshold": "high",
+        "in_sample_mae": 62.7083,
+        "in_sample_r2": 0.9195
+      },
+      {
+        "FIPS_Combined": 21111,
+        "state": "KY",
+        "county": "JEFFERSON",
+        "slope_reports_per_year": 45.678571,
+        "observed_2017_reports": 2124.0,
+        "forecast_2020_reports": 2044.29,
+        "forecast_threshold": "high",
+        "in_sample_mae": 210.9911,
+        "in_sample_r2": 0.1837
+      },
+      {
+        "FIPS_Combined": 39017,
+        "state": "OH",
+        "county": "BUTLER",
+        "slope_reports_per_year": 109.285714,
+        "observed_2017_reports": 1275.0,
+        "forecast_2020_reports": 1616.11,
+        "forecast_threshold": "high",
+        "in_sample_mae": 66.0,
+        "in_sample_r2": 0.9047
+      },
+      {
+        "FIPS_Combined": 39151,
+        "state": "OH",
+        "county": "STARK",
+        "slope_reports_per_year": 150.97619,
+        "observed_2017_reports": 1155.0,
+        "forecast_2020_reports": 1529.85,
+        "forecast_threshold": "high",
+        "in_sample_mae": 186.753,
+        "in_sample_r2": 0.7058
+      },
+      {
+        "FIPS_Combined": 39093,
+        "state": "OH",
+        "county": "LORAIN",
+        "slope_reports_per_year": 174.178571,
+        "observed_2017_reports": 1072.0,
+        "forecast_2020_reports": 1525.29,
+        "forecast_threshold": "high",
+        "in_sample_mae": 188.5268,
+        "in_sample_r2": 0.7645
+      },
+      {
+        "FIPS_Combined": 42133,
+        "state": "PA",
+        "county": "YORK",
+        "slope_reports_per_year": 101.940476,
+        "observed_2017_reports": 1168.0,
+        "forecast_2020_reports": 1518.24,
+        "forecast_threshold": "high",
+        "in_sample_mae": 67.9167,
+        "in_sample_r2": 0.8911
+      },
+      {
+        "FIPS_Combined": 51087,
+        "state": "VA",
+        "county": "HENRICO",
+        "slope_reports_per_year": 124.22619,
+        "observed_2017_reports": 1039.0,
+        "forecast_2020_reports": 1391.6,
+        "forecast_threshold": "high",
+        "in_sample_mae": 53.2589,
+        "in_sample_r2": 0.9566
+      },
+      {
+        "FIPS_Combined": 42079,
+        "state": "PA",
+        "county": "LUZERNE",
+        "slope_reports_per_year": 93.892857,
+        "observed_2017_reports": 1025.0,
+        "forecast_2020_reports": 1380.43,
+        "forecast_threshold": "high",
+        "in_sample_mae": 104.5982,
+        "in_sample_r2": 0.6947
+      }
+    ],
+    "high_threshold_reports": 100,
+    "watch_threshold_reports": 25,
+    "median_in_sample_mae": 14.3036
+  }
+}

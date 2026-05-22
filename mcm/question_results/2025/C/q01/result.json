@@ -1,0 +1,41 @@
+{
+  "problem_id": "2025-C",
+  "question": "q01",
+  "question_title": "奖牌数模型、精度与不确定性",
+  "statement": "Develop a model for medal counts for each country, for Gold and total medals at a minimum. Include uncertainty/precision estimates and model performance measures.",
+  "methods": "特征工程 + 随机森林回归 + 2024 留出检验 + 树分布 80% 预测区间。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "rows": {
+      "summerOly_medal_counts.csv": 1435,
+      "summerOly_athletes.csv": 252565,
+      "summerOly_hosts.csv": 35,
+      "summerOly_programs.csv": 74,
+      "data_dictionary.csv": 50
+    }
+  },
+  "evaluation": {
+    "holdout_year": 2024,
+    "Gold": {
+      "mae_2024": 0.782524,
+      "rmse_2024": 1.760735
+    },
+    "Total": {
+      "mae_2024": 1.709571,
+      "rmse_2024": 4.031028
+    }
+  },
+  "model_features": [
+    "prev_gold",
+    "prev_total",
+    "rolling_gold_3",
+    "rolling_total_3",
+    "is_host",
+    "athlete_count",
+    "entered_sports",
+    "entered_events",
+    "event_count",
+    "sport_count"
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "problem_id": "2021-D",
+  "question": "q05",
+  "question_title": "音乐革命性跃迁与革命者艺术家",
+  "statement": "Identify if there are characteristics that might signify revolutions or major leaps in musical evolution from these data. What artists represent revolutionaries in your network?",
+  "methods": "综合网络影响力、出边规模和影响者到追随者的平均标准化特征距离，构建 revolutionary_score，筛选高影响且带来大特征跃迁的艺术家。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
+    "rows": {
+      "influence_data.csv": 42770,
+      "full_music_data.csv": 98340,
+      "data_by_artist.csv": 5854,
+      "data_by_year.csv": 100
+    },
+    "only_allowed_files": [
+      "influence_data.csv",
+      "full_music_data.csv",
+      "data_by_artist.csv",
+      "data_by_year.csv"
+    ]
+  },
+  "revolutionary_artists": {
+    "method": "Rank artists by directed-network influence plus average feature distance to followers, identifying high-impact artists associated with major stylistic jumps.",
+    "artists": [
+      {
+        "artist_id": 617196,
+        "artist_name": "Brian Eno",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "out_degree": 135,
+        "in_degree": 15,
+        "pagerank": 0.0002198747,
+        "mean_follower_feature_distance": 4.917926,
+        "feature_link_count": 135.0,
+        "revolutionary_score": 0.977773
+      },
+      {
+        "artist_id": 346336,
+        "artist_name": "Pink Floyd",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 142,
+        "in_degree": 16,
+        "pagerank": 0.0001258841,
+        "mean_follower_feature_distance": 3.715158,
+        "feature_link_count": 142.0,
+        "revolutionary_score": 0.953067
+      },
+      {
+        "artist_id": 423829,
+        "artist_name": "Miles Davis",
+        "main_genre": "Jazz",
+        "active_start": 1940,
+        "out_degree": 160,
+        "in_degree": 16,
+        "pagerank": 0.000185042,
+        "mean_follower_feature_distance": 3.500365,
+        "feature_link_count": 160.0,
+        "revolutionary_score": 0.942815
+      },
+      {
+        "artist_id": 175553,
+        "artist_name": "John Coltrane",
+        "main_genre": "Jazz",
+        "active_start": 1940,
+        "out_degree": 118,
+        "in_degree": 15,
+        "pagerank": 0.0001469792,
+        "mean_follower_feature_distance": 3.619001,
+        "feature_link_count": 118.0,
+        "revolutionary_score": 0.942731
+      },
+      {
+        "artist_id": 91650,
+        "artist_name": "Black Flag",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "out_degree": 93,
+        "in_degree": 18,
+        "pagerank": 0.0001622362,
+        "mean_follower_feature_distance": 3.384994,
+        "feature_link_count": 93.0,
+        "revolutionary_score": 0.918361
+      },
+      {
+        "artist_id": 937003,
+        "artist_name": "My Bloody Valentine",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "out_degree": 51,
+        "in_degree": 18,
+        "pagerank": 0.0001606991,
+        "mean_follower_feature_distance": 3.826274,
+        "feature_link_count": 51.0,
+        "revolutionary_score": 0.910357
+      },
+      {
+        "artist_id": 755156,
+        "artist_name": "Sonic Youth",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "out_degree": 71,
+        "in_degree": 38,
+        "pagerank": 0.0003276058,
+        "mean_follower_feature_distance": 3.236479,
+        "feature_link_count": 71.0,
+        "revolutionary_score": 0.907731
+      },
+      {
+        "artist_id": 211758,
+        "artist_name": "Charlie Parker",
+        "main_genre": "Jazz",
+        "active_start": 1930,
+        "out_degree": 95,
+        "in_degree": 8,
+        "pagerank": 0.0001446102,
+        "mean_follower_feature_distance": 3.450395,
+        "feature_link_count": 95.0,
+        "revolutionary_score": 0.899958
+      },
+      {
+        "artist_id": 76057,
+        "artist_name": "King Crimson",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 50,
+        "in_degree": 14,
+        "pagerank": 0.000130761,
+        "mean_follower_feature_distance": 4.413811,
+        "feature_link_count": 50.0,
+        "revolutionary_score": 0.899811
+      },
+      {
+        "artist_id": 490004,
+        "artist_name": "Ramones",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "out_degree": 127,
+        "in_degree": 33,
+        "pagerank": 0.0005681892,
+        "mean_follower_feature_distance": 3.052471,
+        "feature_link_count": 127.0,
+        "revolutionary_score": 0.898613
+      },
+      {
+        "artist_id": 336783,
+        "artist_name": "Nick Drake",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 60,
+        "in_degree": 14,
+        "pagerank": 0.0002007603,
+        "mean_follower_feature_distance": 3.459488,
+        "feature_link_count": 60.0,
+        "revolutionary_score": 0.88979
+      },
+      {
+        "artist_id": 745964,
+        "artist_name": "The Allman Brothers Band",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 53,
+        "in_degree": 17,
+        "pagerank": 0.0001557105,
+        "mean_follower_feature_distance": 3.47108,
+        "feature_link_count": 53.0,
+        "revolutionary_score": 0.888887
+      }
+    ]
+  },
+  "influence_network": {
+    "node_count": 5603,
+    "edge_count": 42770,
+    "weak_component_count": 3,
+    "largest_weak_component_nodes": 5599,
+    "top_influencers": [
+      {
+        "artist_id": 754032,
+        "artist_name": "The Beatles",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 31,
+        "out_degree": 615,
+        "pagerank": 0.0002282929,
+        "influence_score": 4.108035
+      },
+      {
+        "artist_id": 894465,
+        "artist_name": "The Rolling Stones",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 39,
+        "out_degree": 319,
+        "pagerank": 0.0002368474,
+        "influence_score": 3.891589
+      },
+      {
+        "artist_id": 66915,
+        "artist_name": "Bob Dylan",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 29,
+        "out_degree": 389,
+        "pagerank": 0.0002517577,
+        "influence_score": 3.88022
+      },
+      {
+        "artist_id": 354105,
+        "artist_name": "Jimi Hendrix",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 32,
+        "out_degree": 201,
+        "pagerank": 0.0002409752,
+        "influence_score": 3.617318
+      },
+      {
+        "artist_id": 531986,
+        "artist_name": "David Bowie",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 25,
+        "out_degree": 238,
+        "pagerank": 0.0002294209,
+        "influence_score": 3.609331
+      },
+      {
+        "artist_id": 139026,
+        "artist_name": "Led Zeppelin",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 24,
+        "out_degree": 221,
+        "pagerank": 0.0001898493,
+        "influence_score": 3.561608
+      },
+      {
+        "artist_id": 379125,
+        "artist_name": "Neil Young",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 31,
+        "out_degree": 148,
+        "pagerank": 0.0003573324,
+        "influence_score": 3.47193
+      },
+      {
+        "artist_id": 490004,
+        "artist_name": "Ramones",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "in_degree": 33,
+        "out_degree": 127,
+        "pagerank": 0.0005681892,
+        "influence_score": 3.429004
+      },
+      {
+        "artist_id": 357406,
+        "artist_name": "Nirvana",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "in_degree": 39,
+        "out_degree": 110,
+        "pagerank": 0.0003416334,
+        "influence_score": 3.417229
+      },
+      {
+        "artist_id": 418740,
+        "artist_name": "Sex Pistols",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "in_degree": 23,
+        "out_degree": 153,
+        "pagerank": 0.0001821943,
+        "influence_score": 3.382591
+      },
+      {
+        "artist_id": 75747,
+        "artist_name": "The Clash",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "in_degree": 26,
+        "out_degree": 136,
+        "pagerank": 0.0002584058,
+        "influence_score": 3.372702
+      },
+      {
+        "artist_id": 631774,
+        "artist_name": "The Byrds",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 20,
+        "out_degree": 158,
+        "pagerank": 0.0001515477,
+        "influence_score": 3.349621
+      },
+      {
+        "artist_id": 316834,
+        "artist_name": "Marvin Gaye",
+        "main_genre": "R&B;",
+        "active_start": 1950,
+        "in_degree": 18,
+        "out_degree": 169,
+        "pagerank": 0.0001663387,
+        "influence_score": 3.34499
+      },
+      {
+        "artist_id": 446509,
+        "artist_name": "Metallica",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "in_degree": 29,
+        "out_degree": 112,
+        "pagerank": 0.0003151287,
+        "influence_score": 3.324046
+      },
+      {
+        "artist_id": 577627,
+        "artist_name": "The Who",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 20,
+        "out_degree": 149,
+        "pagerank": 0.0001499389,
+        "influence_score": 3.323368
+      }
+    ],
+    "pop_rock_subnetwork": {
+      "node_count": 2808,
+      "edge_count": 22049
+    }
+  }
+}

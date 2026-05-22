@@ -1,0 +1,6 @@
+﻿program,annual_cost_billion_usd,twenty_year_cost_billion_usd,estimated_score_gain,score_gain_per_billion_usd,description
+clean_water_and_sanitation,0.18,3.6,0.035173,0.00977,"rural water systems, sanitation extension, and maintenance training"
+distributed_clean_energy,0.14,2.8,0.0242,0.008643,"micro-hydro, solar mini-grids, clean cooking, and resilient local maintenance"
+forest_and_disaster_risk_management,0.1,2.0,0.0146,0.0073,"community forestry, slope risk monitoring, disaster preparedness, and watershed protection"
+education_and_livelihoods,0.2,4.0,0.02488,0.00622,"technical training, women-focused entrepreneurship, and local value-chain support"
+climate_resilient_agriculture,0.16,3.2,0.01848,0.005775,"terrace stabilization, irrigation efficiency, seed resilience, and farmer cooperatives"

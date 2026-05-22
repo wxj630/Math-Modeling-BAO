@@ -1,0 +1,119 @@
+{
+  "problem_id": "2024-E",
+  "title": "2024年 CUMCM E题：交通流量管控",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "五一黄金周期间，该小镇对景区周边道路实行了临时性交通管理措施，具体 管控措施见附件 3。请结合数据评价临时管控措施在两条主路上的效果。 附件 1 路段行驶方向编号及交叉口之间的距离 附件 2 纬中路各交叉口车辆信息 附件 3 五一黄金周期间交通管控措施",
+  "tasks": [
+    "请结合数据评价临时管控措施在两条主路上的效果"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "交通、交叉口"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "距离"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
+    "rows": 8844996,
+    "columns": 4,
+    "note": "本题专用算法分块读取附件2的884万条车辆记录，结合附件1方向/距离信息构建交通流量、信号配时、巡游车和管控效果摘要。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "请结合数据评价临时管控措施在两条主路上的效果"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n_{t,i,d}: 时段 t、交叉口 i、方向 d 的车辆通过数",
+      "q_{t,i,p}: 时段 t、交叉口 i、相位 p 的估计流率",
+      "g_{i,p}: 交叉口 i 的相位 p 绿灯时间",
+      "v_i: 交叉口 i 所属路段的速度指数",
+      "z_m: 车牌 m 是否判定为五一巡游车辆"
+    ],
+    "constraints": [
+      "附件 2 记录的是停车线后方监控点，不直接给出左转/直行/右转，转向比例需由方向流量做可解释估计。",
+      "信号周期固定为 120 s，每个主相位最小绿灯 25 s，最大绿灯 90 s。",
+      "车辆通行能力用饱和流率和绿信比估计，速度指数用 BPR 型流量-速度关系近似。",
+      "巡游车辆需在五一期间出现次数、活动时长、覆盖交叉口数和景区出入口出现次数同时达到阈值。"
+    ],
+    "objective_or_equations": [
+      "effect = control_period_metric - baseline_period_metric",
+      "baseline: 2024-04-24 to 2024-04-30; control: 2024-05-01 to 2024-05-05",
+      "score = speed_improvement - congestion_penalty - cruising_penalty"
+    ],
+    "solution_steps": [
+      "构造管控前基线窗口和五一管控窗口。",
+      "比较总流量、峰值小时流量、速度指数和巡游车辆占比。",
+      "按两条主路和整体给出管控效果评价。",
+      "输出 before-after 指标表和综合评价结论。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "temporary_control_before_after_effect_evaluation",
+    "baseline_period": {
+      "start_date": "2024-04-24",
+      "end_date": "2024-04-30",
+      "total_vehicle_records": 1808261,
+      "peak_hour_records": 20377,
+      "average_speed_index_kmh": 35.9523,
+      "peak_active_cruising_vehicles": 0,
+      "cruising_peak_rate": 0.0
+    },
+    "control_period": {
+      "start_date": "2024-05-01",
+      "end_date": "2024-05-05",
+      "total_vehicle_records": 1412072,
+      "peak_hour_records": 23959,
+      "average_speed_index_kmh": 35.7961,
+      "peak_active_cruising_vehicles": 10391,
+      "cruising_peak_rate": 0.433699
+    },
+    "speed_delta_kmh": -0.1562,
+    "peak_hour_delta_pct": 17.5786,
+    "cruising_peak_rate_delta": 0.433699,
+    "effect_score": -9.1818,
+    "interpretation": "score>0 表示速度改善能覆盖峰值流量和巡游占比上升带来的压力；score<=0 表示管控效果需谨慎评价。"
+  },
+  "artifact_paths": [
+    "question_artifacts/2024/E/q04/experiment_table.csv"
+  ]
+}

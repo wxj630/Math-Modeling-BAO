@@ -1,0 +1,2 @@
+﻿latitude_deg,longitude_deg,rmse_m,scale_or_height_m,axis_rotation_deg,method,candidate_count
+18.0,111.0,0.004116,1.881392,15.909145,solar_shadow_known_date_location_search,20

@@ -1,0 +1,461 @@
+[
+  {
+    "year": "2010",
+    "code": "A",
+    "problem_id": "2010-A",
+    "problem": "cumcm/problems/2010/A.md",
+    "solution": "cumcm/solutions/2010/A/solution.py",
+    "result": "cumcm/results/2010/A/result.json",
+    "report": "cumcm/reports/2010/A/report.md"
+  },
+  {
+    "year": "2010",
+    "code": "B",
+    "problem_id": "2010-B",
+    "problem": "cumcm/problems/2010/B.md",
+    "solution": "cumcm/solutions/2010/B/solution.py",
+    "result": "cumcm/results/2010/B/result.json",
+    "report": "cumcm/reports/2010/B/report.md"
+  },
+  {
+    "year": "2010",
+    "code": "C",
+    "problem_id": "2010-C",
+    "problem": "cumcm/problems/2010/C.md",
+    "solution": "cumcm/solutions/2010/C/solution.py",
+    "result": "cumcm/results/2010/C/result.json",
+    "report": "cumcm/reports/2010/C/report.md"
+  },
+  {
+    "year": "2010",
+    "code": "D",
+    "problem_id": "2010-D",
+    "problem": "cumcm/problems/2010/D.md",
+    "solution": "cumcm/solutions/2010/D/solution.py",
+    "result": "cumcm/results/2010/D/result.json",
+    "report": "cumcm/reports/2010/D/report.md"
+  },
+  {
+    "year": "2011",
+    "code": "A",
+    "problem_id": "2011-A",
+    "problem": "cumcm/problems/2011/A.md",
+    "solution": "cumcm/solutions/2011/A/solution.py",
+    "result": "cumcm/results/2011/A/result.json",
+    "report": "cumcm/reports/2011/A/report.md"
+  },
+  {
+    "year": "2011",
+    "code": "B",
+    "problem_id": "2011-B",
+    "problem": "cumcm/problems/2011/B.md",
+    "solution": "cumcm/solutions/2011/B/solution.py",
+    "result": "cumcm/results/2011/B/result.json",
+    "report": "cumcm/reports/2011/B/report.md"
+  },
+  {
+    "year": "2011",
+    "code": "C",
+    "problem_id": "2011-C",
+    "problem": "cumcm/problems/2011/C.md",
+    "solution": "cumcm/solutions/2011/C/solution.py",
+    "result": "cumcm/results/2011/C/result.json",
+    "report": "cumcm/reports/2011/C/report.md"
+  },
+  {
+    "year": "2011",
+    "code": "D",
+    "problem_id": "2011-D",
+    "problem": "cumcm/problems/2011/D.md",
+    "solution": "cumcm/solutions/2011/D/solution.py",
+    "result": "cumcm/results/2011/D/result.json",
+    "report": "cumcm/reports/2011/D/report.md"
+  },
+  {
+    "year": "2014",
+    "code": "A",
+    "problem_id": "2014-A",
+    "problem": "cumcm/problems/2014/A.md",
+    "solution": "cumcm/solutions/2014/A/solution.py",
+    "result": "cumcm/results/2014/A/result.json",
+    "report": "cumcm/reports/2014/A/report.md"
+  },
+  {
+    "year": "2014",
+    "code": "B",
+    "problem_id": "2014-B",
+    "problem": "cumcm/problems/2014/B.md",
+    "solution": "cumcm/solutions/2014/B/solution.py",
+    "result": "cumcm/results/2014/B/result.json",
+    "report": "cumcm/reports/2014/B/report.md"
+  },
+  {
+    "year": "2014",
+    "code": "C",
+    "problem_id": "2014-C",
+    "problem": "cumcm/problems/2014/C.md",
+    "solution": "cumcm/solutions/2014/C/solution.py",
+    "result": "cumcm/results/2014/C/result.json",
+    "report": "cumcm/reports/2014/C/report.md"
+  },
+  {
+    "year": "2014",
+    "code": "D",
+    "problem_id": "2014-D",
+    "problem": "cumcm/problems/2014/D.md",
+    "solution": "cumcm/solutions/2014/D/solution.py",
+    "result": "cumcm/results/2014/D/result.json",
+    "report": "cumcm/reports/2014/D/report.md"
+  },
+  {
+    "year": "2015",
+    "code": "A",
+    "problem_id": "2015-A",
+    "problem": "cumcm/problems/2015/A.md",
+    "solution": "cumcm/solutions/2015/A/solution.py",
+    "result": "cumcm/results/2015/A/result.json",
+    "report": "cumcm/reports/2015/A/report.md"
+  },
+  {
+    "year": "2015",
+    "code": "B",
+    "problem_id": "2015-B",
+    "problem": "cumcm/problems/2015/B.md",
+    "solution": "cumcm/solutions/2015/B/solution.py",
+    "result": "cumcm/results/2015/B/result.json",
+    "report": "cumcm/reports/2015/B/report.md"
+  },
+  {
+    "year": "2015",
+    "code": "C",
+    "problem_id": "2015-C",
+    "problem": "cumcm/problems/2015/C.md",
+    "solution": "cumcm/solutions/2015/C/solution.py",
+    "result": "cumcm/results/2015/C/result.json",
+    "report": "cumcm/reports/2015/C/report.md"
+  },
+  {
+    "year": "2015",
+    "code": "D",
+    "problem_id": "2015-D",
+    "problem": "cumcm/problems/2015/D.md",
+    "solution": "cumcm/solutions/2015/D/solution.py",
+    "result": "cumcm/results/2015/D/result.json",
+    "report": "cumcm/reports/2015/D/report.md"
+  },
+  {
+    "year": "2016",
+    "code": "A",
+    "problem_id": "2016-A",
+    "problem": "cumcm/problems/2016/A.md",
+    "solution": "cumcm/solutions/2016/A/solution.py",
+    "result": "cumcm/results/2016/A/result.json",
+    "report": "cumcm/reports/2016/A/report.md"
+  },
+  {
+    "year": "2016",
+    "code": "B",
+    "problem_id": "2016-B",
+    "problem": "cumcm/problems/2016/B.md",
+    "solution": "cumcm/solutions/2016/B/solution.py",
+    "result": "cumcm/results/2016/B/result.json",
+    "report": "cumcm/reports/2016/B/report.md"
+  },
+  {
+    "year": "2016",
+    "code": "C",
+    "problem_id": "2016-C",
+    "problem": "cumcm/problems/2016/C.md",
+    "solution": "cumcm/solutions/2016/C/solution.py",
+    "result": "cumcm/results/2016/C/result.json",
+    "report": "cumcm/reports/2016/C/report.md"
+  },
+  {
+    "year": "2016",
+    "code": "D",
+    "problem_id": "2016-D",
+    "problem": "cumcm/problems/2016/D.md",
+    "solution": "cumcm/solutions/2016/D/solution.py",
+    "result": "cumcm/results/2016/D/result.json",
+    "report": "cumcm/reports/2016/D/report.md"
+  },
+  {
+    "year": "2017",
+    "code": "A",
+    "problem_id": "2017-A",
+    "problem": "cumcm/problems/2017/A.md",
+    "solution": "cumcm/solutions/2017/A/solution.py",
+    "result": "cumcm/results/2017/A/result.json",
+    "report": "cumcm/reports/2017/A/report.md"
+  },
+  {
+    "year": "2017",
+    "code": "B",
+    "problem_id": "2017-B",
+    "problem": "cumcm/problems/2017/B.md",
+    "solution": "cumcm/solutions/2017/B/solution.py",
+    "result": "cumcm/results/2017/B/result.json",
+    "report": "cumcm/reports/2017/B/report.md"
+  },
+  {
+    "year": "2017",
+    "code": "C",
+    "problem_id": "2017-C",
+    "problem": "cumcm/problems/2017/C.md",
+    "solution": "cumcm/solutions/2017/C/solution.py",
+    "result": "cumcm/results/2017/C/result.json",
+    "report": "cumcm/reports/2017/C/report.md"
+  },
+  {
+    "year": "2017",
+    "code": "D",
+    "problem_id": "2017-D",
+    "problem": "cumcm/problems/2017/D.md",
+    "solution": "cumcm/solutions/2017/D/solution.py",
+    "result": "cumcm/results/2017/D/result.json",
+    "report": "cumcm/reports/2017/D/report.md"
+  },
+  {
+    "year": "2018",
+    "code": "A",
+    "problem_id": "2018-A",
+    "problem": "cumcm/problems/2018/A.md",
+    "solution": "cumcm/solutions/2018/A/solution.py",
+    "result": "cumcm/results/2018/A/result.json",
+    "report": "cumcm/reports/2018/A/report.md"
+  },
+  {
+    "year": "2018",
+    "code": "B",
+    "problem_id": "2018-B",
+    "problem": "cumcm/problems/2018/B.md",
+    "solution": "cumcm/solutions/2018/B/solution.py",
+    "result": "cumcm/results/2018/B/result.json",
+    "report": "cumcm/reports/2018/B/report.md"
+  },
+  {
+    "year": "2018",
+    "code": "C",
+    "problem_id": "2018-C",
+    "problem": "cumcm/problems/2018/C.md",
+    "solution": "cumcm/solutions/2018/C/solution.py",
+    "result": "cumcm/results/2018/C/result.json",
+    "report": "cumcm/reports/2018/C/report.md"
+  },
+  {
+    "year": "2018",
+    "code": "D",
+    "problem_id": "2018-D",
+    "problem": "cumcm/problems/2018/D.md",
+    "solution": "cumcm/solutions/2018/D/solution.py",
+    "result": "cumcm/results/2018/D/result.json",
+    "report": "cumcm/reports/2018/D/report.md"
+  },
+  {
+    "year": "2019",
+    "code": "A",
+    "problem_id": "2019-A",
+    "problem": "cumcm/problems/2019/A.md",
+    "solution": "cumcm/solutions/2019/A/solution.py",
+    "result": "cumcm/results/2019/A/result.json",
+    "report": "cumcm/reports/2019/A/report.md"
+  },
+  {
+    "year": "2019",
+    "code": "B",
+    "problem_id": "2019-B",
+    "problem": "cumcm/problems/2019/B.md",
+    "solution": "cumcm/solutions/2019/B/solution.py",
+    "result": "cumcm/results/2019/B/result.json",
+    "report": "cumcm/reports/2019/B/report.md"
+  },
+  {
+    "year": "2019",
+    "code": "C",
+    "problem_id": "2019-C",
+    "problem": "cumcm/problems/2019/C.md",
+    "solution": "cumcm/solutions/2019/C/solution.py",
+    "result": "cumcm/results/2019/C/result.json",
+    "report": "cumcm/reports/2019/C/report.md"
+  },
+  {
+    "year": "2019",
+    "code": "D",
+    "problem_id": "2019-D",
+    "problem": "cumcm/problems/2019/D.md",
+    "solution": "cumcm/solutions/2019/D/solution.py",
+    "result": "cumcm/results/2019/D/result.json",
+    "report": "cumcm/reports/2019/D/report.md"
+  },
+  {
+    "year": "2019",
+    "code": "E",
+    "problem_id": "2019-E",
+    "problem": "cumcm/problems/2019/E.md",
+    "solution": "cumcm/solutions/2019/E/solution.py",
+    "result": "cumcm/results/2019/E/result.json",
+    "report": "cumcm/reports/2019/E/report.md"
+  },
+  {
+    "year": "2020",
+    "code": "A",
+    "problem_id": "2020-A",
+    "problem": "cumcm/problems/2020/A.md",
+    "solution": "cumcm/solutions/2020/A/solution.py",
+    "result": "cumcm/results/2020/A/result.json",
+    "report": "cumcm/reports/2020/A/report.md"
+  },
+  {
+    "year": "2020",
+    "code": "B",
+    "problem_id": "2020-B",
+    "problem": "cumcm/problems/2020/B.md",
+    "solution": "cumcm/solutions/2020/B/solution.py",
+    "result": "cumcm/results/2020/B/result.json",
+    "report": "cumcm/reports/2020/B/report.md"
+  },
+  {
+    "year": "2020",
+    "code": "C",
+    "problem_id": "2020-C",
+    "problem": "cumcm/problems/2020/C.md",
+    "solution": "cumcm/solutions/2020/C/solution.py",
+    "result": "cumcm/results/2020/C/result.json",
+    "report": "cumcm/reports/2020/C/report.md"
+  },
+  {
+    "year": "2020",
+    "code": "D",
+    "problem_id": "2020-D",
+    "problem": "cumcm/problems/2020/D.md",
+    "solution": "cumcm/solutions/2020/D/solution.py",
+    "result": "cumcm/results/2020/D/result.json",
+    "report": "cumcm/reports/2020/D/report.md"
+  },
+  {
+    "year": "2020",
+    "code": "E",
+    "problem_id": "2020-E",
+    "problem": "cumcm/problems/2020/E.md",
+    "solution": "cumcm/solutions/2020/E/solution.py",
+    "result": "cumcm/results/2020/E/result.json",
+    "report": "cumcm/reports/2020/E/report.md"
+  },
+  {
+    "year": "2021",
+    "code": "A",
+    "problem_id": "2021-A",
+    "problem": "cumcm/problems/2021/A.md",
+    "solution": "cumcm/solutions/2021/A/solution.py",
+    "result": "cumcm/results/2021/A/result.json",
+    "report": "cumcm/reports/2021/A/report.md"
+  },
+  {
+    "year": "2021",
+    "code": "B",
+    "problem_id": "2021-B",
+    "problem": "cumcm/problems/2021/B.md",
+    "solution": "cumcm/solutions/2021/B/solution.py",
+    "result": "cumcm/results/2021/B/result.json",
+    "report": "cumcm/reports/2021/B/report.md"
+  },
+  {
+    "year": "2021",
+    "code": "C",
+    "problem_id": "2021-C",
+    "problem": "cumcm/problems/2021/C.md",
+    "solution": "cumcm/solutions/2021/C/solution.py",
+    "result": "cumcm/results/2021/C/result.json",
+    "report": "cumcm/reports/2021/C/report.md"
+  },
+  {
+    "year": "2021",
+    "code": "D",
+    "problem_id": "2021-D",
+    "problem": "cumcm/problems/2021/D.md",
+    "solution": "cumcm/solutions/2021/D/solution.py",
+    "result": "cumcm/results/2021/D/result.json",
+    "report": "cumcm/reports/2021/D/report.md"
+  },
+  {
+    "year": "2021",
+    "code": "E",
+    "problem_id": "2021-E",
+    "problem": "cumcm/problems/2021/E.md",
+    "solution": "cumcm/solutions/2021/E/solution.py",
+    "result": "cumcm/results/2021/E/result.json",
+    "report": "cumcm/reports/2021/E/report.md"
+  },
+  {
+    "year": "2022",
+    "code": "B",
+    "problem_id": "2022-B",
+    "problem": "cumcm/problems/2022/B.md",
+    "solution": "cumcm/solutions/2022/B/solution.py",
+    "result": "cumcm/results/2022/B/result.json",
+    "report": "cumcm/reports/2022/B/report.md"
+  },
+  {
+    "year": "2022",
+    "code": "D",
+    "problem_id": "2022-D",
+    "problem": "cumcm/problems/2022/D.md",
+    "solution": "cumcm/solutions/2022/D/solution.py",
+    "result": "cumcm/results/2022/D/result.json",
+    "report": "cumcm/reports/2022/D/report.md"
+  },
+  {
+    "year": "2023",
+    "code": "D",
+    "problem_id": "2023-D",
+    "problem": "cumcm/problems/2023/D.md",
+    "solution": "cumcm/solutions/2023/D/solution.py",
+    "result": "cumcm/results/2023/D/result.json",
+    "report": "cumcm/reports/2023/D/report.md"
+  },
+  {
+    "year": "2024",
+    "code": "A",
+    "problem_id": "2024-A",
+    "problem": "cumcm/problems/2024/A.md",
+    "solution": "cumcm/solutions/2024/A/solution.py",
+    "result": "cumcm/results/2024/A/result.json",
+    "report": "cumcm/reports/2024/A/report.md"
+  },
+  {
+    "year": "2024",
+    "code": "B",
+    "problem_id": "2024-B",
+    "problem": "cumcm/problems/2024/B.md",
+    "solution": "cumcm/solutions/2024/B/solution.py",
+    "result": "cumcm/results/2024/B/result.json",
+    "report": "cumcm/reports/2024/B/report.md"
+  },
+  {
+    "year": "2024",
+    "code": "C",
+    "problem_id": "2024-C",
+    "problem": "cumcm/problems/2024/C.md",
+    "solution": "cumcm/solutions/2024/C/solution.py",
+    "result": "cumcm/results/2024/C/result.json",
+    "report": "cumcm/reports/2024/C/report.md"
+  },
+  {
+    "year": "2024",
+    "code": "D",
+    "problem_id": "2024-D",
+    "problem": "cumcm/problems/2024/D.md",
+    "solution": "cumcm/solutions/2024/D/solution.py",
+    "result": "cumcm/results/2024/D/result.json",
+    "report": "cumcm/reports/2024/D/report.md"
+  },
+  {
+    "year": "2024",
+    "code": "E",
+    "problem_id": "2024-E",
+    "problem": "cumcm/problems/2024/E.md",
+    "solution": "cumcm/solutions/2024/E/solution.py",
+    "result": "cumcm/results/2024/E/result.json",
+    "report": "cumcm/reports/2024/E/report.md"
+  }
+]

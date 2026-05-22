@@ -1,0 +1,53 @@
+rider,rider_type,gender_profile,course,segment,distance_km,grade,turns,wind_mps,target_power_w,speed_kph,segment_time_s,energy_kj
+male time trial specialist,time trial specialist,male,2021 Olympic Time Trial course in Tokyo,Fuji Speedway exit,7.2,0.01,3,0.0,366.42,44.579,588.36,215.59
+male time trial specialist,time trial specialist,male,2021 Olympic Time Trial course in Tokyo,rolling approach,9.6,0.028,2,0.0,397.17,37.906,916.33,363.94
+male time trial specialist,time trial specialist,male,2021 Olympic Time Trial course in Tokyo,technical descent,8.1,-0.018,5,0.0,363.12,58.407,510.78,185.47
+male time trial specialist,time trial specialist,male,2021 Olympic Time Trial course in Tokyo,speedway return,6.7,0.004,4,0.0,373.12,47.885,512.93,191.38
+male time trial specialist,time trial specialist,male,2021 UCI World Championship time trial course in Flanders,coastal flats,10.4,0.002,3,0.0,353.03,47.87,789.03,278.55
+male time trial specialist,time trial specialist,male,2021 UCI World Championship time trial course in Flanders,open crosswind sector,12.8,0.004,4,0.0,364.44,47.447,980.41,357.3
+male time trial specialist,time trial specialist,male,2021 UCI World Championship time trial course in Flanders,urban approach,8.3,0.006,7,0.0,383.28,47.408,646.4,247.75
+male time trial specialist,time trial specialist,male,2021 UCI World Championship time trial course in Flanders,finish boulevards,6.1,-0.001,3,0.0,362.55,49.86,447.35,162.19
+male time trial specialist,time trial specialist,male,custom technical loop with four sharp turns and a nontrivial road grade,start straight,4.8,0.0,1,0.0,342.24,48.336,359.8,123.14
+male time trial specialist,time trial specialist,male,custom technical loop with four sharp turns and a nontrivial road grade,sharp-turn climb,5.4,0.052,4,0.0,443.7,31.222,631.85,280.36
+male time trial specialist,time trial specialist,male,custom technical loop with four sharp turns and a nontrivial road grade,ridge wind sector,6.2,0.018,2,0.0,382.6,41.614,540.97,206.98
+male time trial specialist,time trial specialist,male,custom technical loop with four sharp turns and a nontrivial road grade,technical descent,5.6,-0.036,5,0.0,361.53,67.08,312.06,112.82
+male time trial specialist,time trial specialist,male,custom technical loop with four sharp turns and a nontrivial road grade,return to start,4.9,-0.004,2,0.0,358.38,51.171,349.33,125.2
+female time trial specialist,time trial specialist,female,2021 Olympic Time Trial course in Tokyo,Fuji Speedway exit,7.2,0.01,3,0.0,281.71,41.837,626.29,176.43
+female time trial specialist,time trial specialist,female,2021 Olympic Time Trial course in Tokyo,rolling approach,9.6,0.028,2,0.0,305.35,35.519,977.49,298.48
+female time trial specialist,time trial specialist,female,2021 Olympic Time Trial course in Tokyo,technical descent,8.1,-0.018,5,0.0,279.17,54.927,542.14,151.35
+female time trial specialist,time trial specialist,female,2021 Olympic Time Trial course in Tokyo,speedway return,6.7,0.004,4,0.0,286.86,44.964,545.43,156.46
+female time trial specialist,time trial specialist,female,2021 UCI World Championship time trial course in Flanders,coastal flats,10.4,0.002,3,0.0,271.41,44.957,839.55,227.87
+female time trial specialist,time trial specialist,female,2021 UCI World Championship time trial course in Flanders,open crosswind sector,12.8,0.004,4,0.0,280.18,44.552,1043.29,292.31
+female time trial specialist,time trial specialist,female,2021 UCI World Championship time trial course in Flanders,urban approach,8.3,0.006,7,0.0,294.68,44.51,687.06,202.46
+female time trial specialist,time trial specialist,female,2021 UCI World Championship time trial course in Flanders,finish boulevards,6.1,-0.001,3,0.0,278.74,46.837,475.61,132.57
+female time trial specialist,time trial specialist,female,custom technical loop with four sharp turns and a nontrivial road grade,start straight,4.8,0.0,1,0.0,263.12,45.401,382.86,100.74
+female time trial specialist,time trial specialist,female,custom technical loop with four sharp turns and a nontrivial road grade,sharp-turn climb,5.4,0.052,4,0.0,341.13,29.206,674.62,230.13
+female time trial specialist,time trial specialist,female,custom technical loop with four sharp turns and a nontrivial road grade,ridge wind sector,6.2,0.018,2,0.0,294.15,39.028,576.4,169.55
+female time trial specialist,time trial specialist,female,custom technical loop with four sharp turns and a nontrivial road grade,technical descent,5.6,-0.036,5,0.0,277.95,63.133,330.57,91.88
+female time trial specialist,time trial specialist,female,custom technical loop with four sharp turns and a nontrivial road grade,return to start,4.9,-0.004,2,0.0,275.53,48.08,371.39,102.33
+male climber-puncheur,climber-puncheur,male,2021 Olympic Time Trial course in Tokyo,Fuji Speedway exit,7.2,0.01,3,0.0,336.87,42.235,619.86,208.81
+male climber-puncheur,climber-puncheur,male,2021 Olympic Time Trial course in Tokyo,rolling approach,9.6,0.028,2,0.0,365.14,36.875,941.33,343.72
+male climber-puncheur,climber-puncheur,male,2021 Olympic Time Trial course in Tokyo,technical descent,8.1,-0.018,5,0.0,333.84,53.463,555.69,185.51
+male climber-puncheur,climber-puncheur,male,2021 Olympic Time Trial course in Tokyo,speedway return,6.7,0.004,4,0.0,343.03,44.965,544.63,186.82
+male climber-puncheur,climber-puncheur,male,2021 UCI World Championship time trial course in Flanders,coastal flats,10.4,0.002,3,0.0,324.56,44.843,841.07,272.98
+male climber-puncheur,climber-puncheur,male,2021 UCI World Championship time trial course in Flanders,open crosswind sector,12.8,0.004,4,0.0,335.05,44.562,1042.28,349.21
+male climber-puncheur,climber-puncheur,male,2021 UCI World Championship time trial course in Flanders,urban approach,8.3,0.006,7,0.0,352.37,44.631,683.85,240.97
+male climber-puncheur,climber-puncheur,male,2021 UCI World Championship time trial course in Flanders,finish boulevards,6.1,-0.001,3,0.0,333.31,46.512,478.29,159.42
+male climber-puncheur,climber-puncheur,male,custom technical loop with four sharp turns and a nontrivial road grade,start straight,4.8,0.0,1,0.0,314.64,45.16,384.69,121.04
+male climber-puncheur,climber-puncheur,male,custom technical loop with four sharp turns and a nontrivial road grade,sharp-turn climb,5.4,0.052,4,0.0,407.92,31.296,629.38,256.74
+male climber-puncheur,climber-puncheur,male,custom technical loop with four sharp turns and a nontrivial road grade,ridge wind sector,6.2,0.018,2,0.0,351.75,39.887,563.69,198.28
+male climber-puncheur,climber-puncheur,male,custom technical loop with four sharp turns and a nontrivial road grade,technical descent,5.6,-0.036,5,0.0,332.37,60.552,343.2,114.07
+male climber-puncheur,climber-puncheur,male,custom technical loop with four sharp turns and a nontrivial road grade,return to start,4.9,-0.004,2,0.0,329.48,47.555,375.05,123.57
+female climber-puncheur,climber-puncheur,female,2021 Olympic Time Trial course in Tokyo,Fuji Speedway exit,7.2,0.01,3,0.0,253.15,39.227,666.82,168.8
+female climber-puncheur,climber-puncheur,female,2021 Olympic Time Trial course in Tokyo,rolling approach,9.6,0.028,2,0.0,274.39,34.078,1018.16,279.37
+female climber-puncheur,climber-puncheur,female,2021 Olympic Time Trial course in Tokyo,technical descent,8.1,-0.018,5,0.0,250.87,49.98,593.52,148.89
+female climber-puncheur,climber-puncheur,female,2021 Olympic Time Trial course in Tokyo,speedway return,6.7,0.004,4,0.0,257.77,41.832,584.66,150.71
+female climber-puncheur,climber-puncheur,female,2021 UCI World Championship time trial course in Flanders,coastal flats,10.4,0.002,3,0.0,243.89,41.737,903.09,220.26
+female climber-puncheur,climber-puncheur,female,2021 UCI World Championship time trial course in Flanders,open crosswind sector,12.8,0.004,4,0.0,251.77,41.455,1119.62,281.89
+female climber-puncheur,climber-puncheur,female,2021 UCI World Championship time trial course in Flanders,urban approach,8.3,0.006,7,0.0,264.8,41.502,734.08,194.38
+female climber-puncheur,climber-puncheur,female,2021 UCI World Championship time trial course in Flanders,finish boulevards,6.1,-0.001,3,0.0,250.47,43.325,512.91,128.47
+female climber-puncheur,climber-puncheur,female,custom technical loop with four sharp turns and a nontrivial road grade,start straight,4.8,0.0,1,0.0,236.44,42.054,412.92,97.63
+female climber-puncheur,climber-puncheur,female,custom technical loop with four sharp turns and a nontrivial road grade,sharp-turn climb,5.4,0.052,4,0.0,306.54,28.756,684.1,209.7
+female climber-puncheur,climber-puncheur,female,custom technical loop with four sharp turns and a nontrivial road grade,ridge wind sector,6.2,0.018,2,0.0,264.32,36.965,607.85,160.67
+female climber-puncheur,climber-puncheur,female,custom technical loop with four sharp turns and a nontrivial road grade,technical descent,5.6,-0.036,5,0.0,249.77,56.76,365.26,91.23
+female climber-puncheur,climber-puncheur,female,custom technical loop with four sharp turns and a nontrivial road grade,return to start,4.9,-0.004,2,0.0,247.59,44.328,401.97,99.53

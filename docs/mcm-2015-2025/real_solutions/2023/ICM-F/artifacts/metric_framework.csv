@@ -1,0 +1,8 @@
+dimension,weight,definition,direction
+economic,0.2,"Host public cost, repeatable venue economics, and risk of post-Games debt.",higher is lower burden and better long-run value
+land_use,0.14,"Need for new land, temporary construction, and reuse of existing venues.",higher is less new land pressure
+human_satisfaction,0.16,"Athlete, resident, volunteer, and spectator experience.",higher is better satisfaction
+travel,0.12,"Travel burden, emissions exposure, and operational complexity.",higher is lower travel burden
+future_improvement,0.13,"Learning curve, infrastructure legacy, and capacity to improve future Games.",higher is more repeatable improvement
+host_prestige,0.11,"Prestige, local identity, and incentive for cities or nations to participate.",higher is stronger host incentive
+unity_through_sport,0.14,Ability to keep the Olympics globally meaningful and inclusive.,higher is stronger global unity

@@ -1,0 +1,51 @@
+{
+  "problem_id": "2023-E",
+  "question": "q01",
+  "question_title": "通用光污染风险指标",
+  "statement": "Develop a broadly applicable metric to identify the light pollution risk level of a location.",
+  "methods": "官方 PDF 题面现象 + 0-100 综合评价指标：sky glow、生态暴露、人类健康、安全眩光和夜空损失；对应教程模型：综合评价与权重决策。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "official_requirements": {
+      "four_location_types": [
+        "protected_land",
+        "rural",
+        "suburban",
+        "urban"
+      ],
+      "phenomena": [
+        "light trespass",
+        "over-illumination",
+        "light clutter",
+        "sky glow",
+        "glare"
+      ],
+      "concerns": [
+        "human health",
+        "safety",
+        "wildlife migration",
+        "plant maturation",
+        "night sky visibility"
+      ],
+      "intervention_count_required": 3,
+      "promotion_flyer_required": true
+    },
+    "scenario_assumption_note": "Location profiles, weights, intervention reductions, costs, and feasibility values are deterministic assumptions for reproducible experiments; they are not observed field measurements."
+  },
+  "risk_metric": {
+    "light_pollution_risk_metric": {
+      "scale": "0-100",
+      "formula": "100*(0.24*sky_glow + 0.25*ecological + 0.20*human_health + 0.16*safety_glare + 0.15*night_sky_loss)",
+      "components": [
+        "sky_glow",
+        "ecological_exposure",
+        "human_health",
+        "safety_glare",
+        "night_sky_loss"
+      ],
+      "human_and_nonhuman_balance": "Ecological sensitivity and human exposure receive comparable total weight, matching the prompt's human and non-human concerns."
+    }
+  }
+}

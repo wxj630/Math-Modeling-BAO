@@ -1,0 +1,2 @@
+﻿date,latitude_deg,longitude_deg,rmse_m,scale_or_height_m,axis_rotation_deg,method,video_file_available
+2015-02-03,34.0,114.0,0.002001,2.811798,-9.737309,solar_shadow_video_fallback_location_date_model,False

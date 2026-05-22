@@ -1,0 +1,93 @@
+{
+  "problem_id": "2010-A",
+  "title": "2010年 CUMCM A题：储油罐的变位识别与罐容表标定",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "为了掌握罐体变位后对罐容表的影响，利用如图4的小椭圆型储油罐（两端平头的椭圆柱体），分别对罐体无变位和倾斜角为α=4.10的纵向变位两种情况做了实验，实验数据如附件1所示。请建立数学模型研究罐体变位后对罐容表的影响，并给出罐体变位后油位高度间隔为1cm的罐容表标定值。",
+  "tasks": [
+    "请建立数学模型研究罐体变位后对罐容表的影响，并给出罐体变位后油位高度间隔为1cm的罐容表标定值"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "圆、油位"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、标定"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls",
+    "rows": 205,
+    "columns": 6,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "请建立数学模型研究罐体变位后对罐容表的影响，并给出罐体变位后油位高度间隔为1cm的罐容表标定值"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      1099.484684,
+      10.322237,
+      -0.022967
+    ],
+    "r2": 0.11164130346540502,
+    "mean_abs_error": 798.1218840784884
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2010/A/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

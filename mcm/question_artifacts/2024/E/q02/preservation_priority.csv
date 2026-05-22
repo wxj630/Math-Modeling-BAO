@@ -1,0 +1,5 @@
+building,cultural,historical,economic,community,exposure,intervention_cost_musd,significance_score,preservation_urgency,estimated_community_benefit_musd,benefit_cost_ratio,recommended_action
+St. Augustine Lighthouse,0.92,0.88,0.76,0.84,0.69,8.5,0.858,0.592,23.436,2.757,selective retrofit and archival/documentation plan
+historic waterfront market,0.74,0.68,0.83,0.79,0.77,5.2,0.7555,0.5817,21.601,4.154,protect in place with phased hardening and emergency response covenant
+old civic theater,0.81,0.72,0.61,0.87,0.55,3.8,0.7625,0.4194,20.435,5.378,selective retrofit and archival/documentation plan
+redundant warehouse district,0.39,0.42,0.51,0.36,0.62,4.6,0.414,0.2567,12.168,2.645,selective retrofit and archival/documentation plan

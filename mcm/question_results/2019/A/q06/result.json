@@ -1,0 +1,157 @@
+{
+  "problem_id": "2019-A",
+  "question": "q06",
+  "question_title": "干旱、暖温带与北极迁移差异",
+  "statement": "Would moving a dragon between an arid region, a warm temperate region, and an arctic region make a big difference in the resources required to maintain and grow a dragon?",
+  "methods": "复用气候敏感性表解释迁移造成的猎物、水源、热损失和巢址变化，强调暖温带为最低支撑压力情景。对应模型：迁移情景分析、资源压力比较。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "official_requirements": {
+      "three_living_dragons": true,
+      "hatchling_10kg_one_year_30_to_40kg": true,
+      "energy_expenditure_and_caloric_intake": true,
+      "area_required_for_three_dragons": true,
+      "community_support_levels": true,
+      "arid_temperate_arctic_climates": true,
+      "letter_to_george_rr_martin": true,
+      "real_world_analogy": true
+    },
+    "parameters": {
+      "life_stages": [
+        {
+          "stage": "hatchling",
+          "mass_kg": 10.0,
+          "age_years": 0,
+          "growth_energy_share": 0.35
+        },
+        {
+          "stage": "one_year_old",
+          "mass_kg": 35.0,
+          "age_years": 1,
+          "growth_energy_share": 0.22
+        },
+        {
+          "stage": "large_living_dragon",
+          "mass_kg": 850.0,
+          "age_years": 8,
+          "growth_energy_share": 0.08
+        }
+      ],
+      "dragon_profiles": [
+        {
+          "dragon": "Drogon",
+          "mass_kg": 950.0,
+          "flight_hours_per_day": 2.2,
+          "fire_events_per_day": 0.8,
+          "dominance_factor": 1.1
+        },
+        {
+          "dragon": "Rhaegal",
+          "mass_kg": 760.0,
+          "flight_hours_per_day": 1.8,
+          "fire_events_per_day": 0.45,
+          "dominance_factor": 0.96
+        },
+        {
+          "dragon": "Viserion",
+          "mass_kg": 720.0,
+          "flight_hours_per_day": 1.6,
+          "fire_events_per_day": 0.35,
+          "dominance_factor": 0.92
+        }
+      ],
+      "climate_regions": [
+        {
+          "climate": "arid",
+          "thermoregulation_multiplier": 1.16,
+          "prey_density_kg_km2_year": 520.0,
+          "water_stress_multiplier": 1.35,
+          "nesting_penalty": 0.18
+        },
+        {
+          "climate": "warm_temperate",
+          "thermoregulation_multiplier": 1.0,
+          "prey_density_kg_km2_year": 1250.0,
+          "water_stress_multiplier": 1.0,
+          "nesting_penalty": 0.04
+        },
+        {
+          "climate": "arctic",
+          "thermoregulation_multiplier": 1.42,
+          "prey_density_kg_km2_year": 310.0,
+          "water_stress_multiplier": 0.82,
+          "nesting_penalty": 0.31
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; dragon mass, prey density, and support rows are explicit deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "climate_sensitivity": {
+    "climate_rows": [
+      {
+        "climate": "arid",
+        "daily_kcal_three_dragons": 75818.41,
+        "annual_prey_kg": 21287.48,
+        "habitat_area_km2": 40.937,
+        "water_stress_multiplier": 1.35,
+        "story_guidance": "requires migration, supplemental feeding, or lower density"
+      },
+      {
+        "climate": "warm_temperate",
+        "daily_kcal_three_dragons": 65360.7,
+        "annual_prey_kg": 18351.27,
+        "habitat_area_km2": 14.681,
+        "water_stress_multiplier": 1.0,
+        "story_guidance": "best long-run ecological fit"
+      },
+      {
+        "climate": "arctic",
+        "daily_kcal_three_dragons": 92812.19,
+        "annual_prey_kg": 26058.81,
+        "habitat_area_km2": 84.061,
+        "water_stress_multiplier": 0.82,
+        "story_guidance": "requires migration, supplemental feeding, or lower density"
+      }
+    ],
+    "sensitivity_summary": "Climate matters through prey density, thermoregulation, nesting stress, and water access; arid and arctic settings both expand the required support area."
+  },
+  "community_support_model": {
+    "support_rows": [
+      {
+        "human_food_share": 0.0,
+        "veterinary_support": 0.0,
+        "supplied_prey_kg_day": 0.0,
+        "herding_households_needed": 0,
+        "specialized_handlers_needed": 18,
+        "community_scale": "small town support network"
+      },
+      {
+        "human_food_share": 0.25,
+        "veterinary_support": 0.1,
+        "supplied_prey_kg_day": 12.569,
+        "herding_households_needed": 30,
+        "specialized_handlers_needed": 30,
+        "community_scale": "small town support network"
+      },
+      {
+        "human_food_share": 0.5,
+        "veterinary_support": 0.18,
+        "supplied_prey_kg_day": 25.139,
+        "herding_households_needed": 60,
+        "specialized_handlers_needed": 41,
+        "community_scale": "small town support network"
+      },
+      {
+        "human_food_share": 0.75,
+        "veterinary_support": 0.25,
+        "supplied_prey_kg_day": 37.709,
+        "herding_households_needed": 90,
+        "specialized_handlers_needed": 51,
+        "community_scale": "small town support network"
+      }
+    ],
+    "interpretation": "Community size rises sharply when people directly provision food; veterinary and handler support is smaller but essential for risk control."
+  }
+}

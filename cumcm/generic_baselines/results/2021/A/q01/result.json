@@ -1,0 +1,93 @@
+{
+  "problem_id": "2021-A",
+  "title": "2021年 CUMCM A题：FAST”主动反射面的形状调节",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "当待观测天体𝑆位于基准球面正上方，即𝛼 = 0°, 𝛽 = 90°时，结合考虑反射面板调节因 素，确定理想抛物面。",
+  "tasks": [
+    "当待观测天体𝑆位于基准球面正上方，即𝛼 = 0°, 𝛽 = 90°时，结合考虑反射面板调节因 素，确定理想抛物面"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "通用优化建模"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "通用数据建模"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv",
+    "rows": 2226,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "当待观测天体𝑆位于基准球面正上方，即𝛼 = 0°, 𝛽 = 90°时，结合考虑反射面板调节因 素，确定理想抛物面"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      0.002375,
+      0.000614
+    ],
+    "radius": 1.3300604842358803,
+    "mean_squared_error": 0.23061498649728718,
+    "success": true
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2021/A/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

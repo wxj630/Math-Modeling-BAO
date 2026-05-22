@@ -1,0 +1,6 @@
+exit,public,baseline_capacity_person_min,security_level,familiarity,bottleneck_index,management_action
+Portes Des Lions,False,150,0.82,0.38,0.7687,pre-authorize emergency-only opening with staff escorts
+Passage Richelieu,False,210,0.88,0.52,0.5599,pre-authorize emergency-only opening with staff escorts
+Carrousel du Louvre,False,260,0.86,0.58,0.4743,pre-authorize emergency-only opening with staff escorts
+vertical circulation between underground floors and main concourse,True,0,0.72,0.46,0.2663,meter upstream galleries and reserve stair capacity for disabled visitors and responders
+Pyramid entrance,True,420,0.94,0.95,0.2135,push multilingual app routing

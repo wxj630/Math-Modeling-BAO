@@ -1,0 +1,6 @@
+intervention,primary_dimension,sustainability_gain,equity_gain,profitability_cost,first_benefit_year,estimated_benefit_index,net_priority_gain,developed_country_fit,developing_country_fit
+regenerative production and water stewardship,sustainability,0.18,0.05,0.07,5,0.2193,0.16,0.6625,0.6
+small producer market access and risk sharing,equity,0.07,0.15,0.06,4,0.1925,0.16,0.555,0.7175
+nutritious access vouchers and school meals,nutrition_resilience,0.04,0.16,0.05,2,0.171,0.15,0.5275,0.815
+transparent waste reduction and storage upgrades,efficiency,0.09,0.08,0.02,2,0.1548,0.15,0.585,0.735
+regional procurement and shorter supply loops,efficiency,0.1,0.07,0.04,3,0.1565,0.13,0.59,0.6667

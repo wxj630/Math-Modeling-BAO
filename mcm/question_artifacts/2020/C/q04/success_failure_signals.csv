@@ -1,0 +1,4 @@
+product_file,success_signal_score,reputation_direction,most_confident_tracking_signal
+pacifier.tsv,0.6532,increasing,low-rating share plus disappointed descriptor lift
+hair_dryer.tsv,0.619,stable,low-rating share plus disappointed descriptor lift
+microwave.tsv,0.5246,stable,low-rating share plus disappointed descriptor lift

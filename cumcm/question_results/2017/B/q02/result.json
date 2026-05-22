@@ -1,0 +1,163 @@
+{
+  "problem_id": "2017-B",
+  "title": "2017年 CUMCM B题：拍照赚钱”的任务定价",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "请完成下面的问题： 研究附件一中项目的任务定价规律，分析任务未完成的原因",
+  "tasks": [
+    "请完成下面的问题： 研究附件一中项目的任务定价规律，分析任务未完成的原因"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "众包任务地理供需定价与完成概率模型",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "分析"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件三：新项目任务数据.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx",
+    "rows": 4778,
+    "columns": 5,
+    "note": "本题专用算法读取历史任务、会员信息和新项目任务，构建地理供需特征、完成概率模型、重定价方案、打包聚类和新项目定价评估。"
+  },
+  "formulation": {
+    "model_type": "众包任务地理供需定价与完成概率模型",
+    "task_breakdown": [
+      "请完成下面的问题： 研究附件一中项目的任务定价规律，分析任务未完成的原因"
+    ],
+    "assumptions": [
+      "任务是否完成主要受任务标价、周边会员供给能力、会员信誉、任务密集度和地理距离共同影响。",
+      "会员预订限额近似表示可承接能力；信誉越高、距离越近，对任务完成概率贡献越大。",
+      "新项目没有完成标签，使用附件一训练的完成概率模型迁移到附件三，并通过价格网格搜索给出可复现报价。",
+      "集中任务打包时，用空间聚类识别近邻任务组，打包价格在单任务报价基础上给予效率折扣并提高预期完成概率。",
+      "通用基线继续保留在 `cumcm/generic_baselines`，本专用解法保留从通用LP/TOPSIS到真实附件驱动模型的进步轨迹。"
+    ],
+    "decision_variables": [
+      "p_i: 第 i 个任务的定价",
+      "y_i in {0,1}: 历史任务完成状态",
+      "d_i: 第 i 个任务到最近会员的距离",
+      "m_i, c_i, r_i: 任务周边会员数、预订能力和信誉供给",
+      "rho_i: 任务周边竞争密度",
+      "P_i = P(y_i=1 | p_i,d_i,m_i,c_i,r_i,rho_i): 完成概率"
+    ],
+    "constraints": [
+      "历史任务使用附件一原始标价和完成状态训练模型。",
+      "推荐价格限定在历史价格范围附近，且以0.5元为步长便于平台执行。",
+      "打包任务只合并空间距离较近的任务，单任务仍保留可拆分报价作为对照。",
+      "新项目评价以预测完成率、预算和高风险任务比例为核心指标。"
+    ],
+    "objective_or_equations": [
+      "logit(P_i)=beta0+beta1*p_i+beta2*d_i+beta3*m_i+beta4*c_i+beta5*r_i+beta6*rho_i",
+      "p_i^*=min p subject to P_i(p)>=target_probability",
+      "bundle_price_g = discount * sum_{i in g} p_i^* + density_bonus_g",
+      "expected_completion_rate = mean_i P_i(p_i^*)"
+    ],
+    "solution_steps": [
+      "读取附件一历史任务、附件二会员和附件三新任务，并清洗GPS坐标。",
+      "计算每个任务的最近会员距离、3公里会员数、3公里能力/信誉供给和1公里任务密度。",
+      "用逻辑回归拟合完成概率，解释未完成原因。",
+      "对历史任务和新任务做价格网格搜索，得到满足目标完成概率的最小推荐价。",
+      "用空间聚类识别集中任务，生成打包价格、预期完成率和实施效果评价表。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "众包任务地理供需定价与完成概率模型",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "crowdsourcing_pricing_completion_diagnosis",
+    "historical_task_count": 835,
+    "member_count": 1877,
+    "new_task_count": 2066,
+    "priced_task_count": 2066,
+    "observed_completion_rate": 0.62515,
+    "completion_model_auc": 0.69251,
+    "average_original_price": 69.1108,
+    "average_recommended_price": 85.9431,
+    "expected_completion_rate_after_repricing": 0.690689,
+    "unfinished_reason_summary": [
+      {
+        "reason": "price_too_low",
+        "task_count": 161,
+        "share_of_unfinished": 0.514377,
+        "explanation": "标价处于历史低位，价格激励不足。"
+      },
+      {
+        "reason": "far_from_members",
+        "task_count": 59,
+        "share_of_unfinished": 0.188498,
+        "explanation": "距离附近会员较远，可承接人群少。"
+      },
+      {
+        "reason": "weak_nearby_capacity",
+        "task_count": 58,
+        "share_of_unfinished": 0.185304,
+        "explanation": "3公里范围预订能力低，供给不足。"
+      },
+      {
+        "reason": "high_task_density",
+        "task_count": 129,
+        "share_of_unfinished": 0.412141,
+        "explanation": "周边任务密集，存在竞争分流。"
+      },
+      {
+        "reason": "low_model_probability",
+        "task_count": 167,
+        "share_of_unfinished": 0.533546,
+        "explanation": "综合完成概率偏低，需提价或打包。"
+      }
+    ],
+    "pricing_comparison": [
+      {
+        "scenario": "original",
+        "completion_rate": 0.6251497005988024,
+        "average_price": 69.11077844311377,
+        "total_budget": 57707.5
+      },
+      {
+        "scenario": "optimized",
+        "completion_rate": 0.6906893461077844,
+        "average_price": 85.94311377245509,
+        "total_budget": 71762.5
+      }
+    ],
+    "bundle_count": 610,
+    "clustered_bundle_count": 77,
+    "bundle_expected_completion_rate": 0.702582,
+    "expected_completion_rate": 0.742044,
+    "new_project_average_price": 69.6776,
+    "total_budget": 143954.0,
+    "high_risk_task_count": 94,
+    "report": [
+      "本题用附件一的历史任务训练地理供需完成概率模型，附件二会员数据提供周边会员数量、限额和信誉供给。",
+      "未完成原因按低价格、远离会员、附近能力不足、任务密集竞争和模型低概率五类归因。",
+      "历史重定价和新项目定价均通过价格网格搜索得到满足目标完成概率的最低可执行报价。",
+      "密集任务用DBSCAN空间聚类打包，输出打包价格和预期完成率，通用基线仍保留作对照。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2017/B/q02/historical_task_features.csv",
+    "question_artifacts/2017/B/q02/unfinished_reason_summary.csv",
+    "question_artifacts/2017/B/q02/repricing_scheme.csv",
+    "question_artifacts/2017/B/q02/pricing_comparison.csv",
+    "question_artifacts/2017/B/q02/bundle_pricing.csv",
+    "question_artifacts/2017/B/q02/new_project_pricing.csv",
+    "question_artifacts/2017/B/q02/new_project_effect_evaluation.csv",
+    "question_artifacts/2017/B/q02/completion_model_coefficients.csv",
+    "question_artifacts/2017/B/q02/experiment_table.csv"
+  ]
+}

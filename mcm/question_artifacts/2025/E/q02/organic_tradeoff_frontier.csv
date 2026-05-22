@@ -1,0 +1,6 @@
+scenario,crop_yield_index,pest_pressure,biodiversity_index,ecosystem_stability_score,net_margin_index,sustainability_score,cost_effectiveness
+organic_full,135.0,0.02,1.23,2.133,120.6,1.4659,2.5769
+organic_partial,135.0,0.02,1.23,2.133,117.56,1.4659,3.4946
+bats_and_edge_habitat,135.0,0.02,1.23,2.133,113.245,1.4659,4.1703
+remove_herbicide,78.65,0.1694,0.1923,0.5573,65.925,0.3651,5.1807
+baseline_chemical,2.0,0.02,0.02,0.029,-11.99,0.019,-0.857

@@ -1,0 +1,108 @@
+{
+  "problem_id": "2021-A",
+  "title": "2021年 CUMCM A题：FAST”主动反射面的形状调节",
+  "question_index": 7,
+  "question_label": "问题 4",
+  "statement": "电磁波信号及反射信号均视为直线传播。",
+  "tasks": [
+    "电磁波信号及反射信号均视为直线传播"
+  ],
+  "selected_model": {
+    "key": "signal",
+    "name": "图像文本与信号特征",
+    "chapter": "CH10",
+    "chapter_title": "图像、文本与信号数据",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+  },
+  "candidate_models": [
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "信号"
+    },
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "传播"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv",
+    "rows": 2226,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图像文本与信号特征",
+    "task_breakdown": [
+      "电磁波信号及反射信号均视为直线传播"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "s_t: 信号/图像/文本序列特征",
+      "S_k: 傅里叶谱",
+      "k*: 主要频率成分",
+      "E: 信号能量"
+    ],
+    "constraints": [
+      "输入序列先中心化",
+      "主要特征取谱幅值最大的频段"
+    ],
+    "objective_or_equations": [
+      "S_k=|FFT(s_t-mean(s))|",
+      "E=sum_t s_t^2",
+      "top_k=argsort(S_k)"
+    ],
+    "solution_steps": [
+      "把图像/文本/信号转成数值序列。",
+      "中心化并计算 FFT。",
+      "提取主要频率幅值。",
+      "输出谱特征表。"
+    ],
+    "model_reference": {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "chapter_title": "图像、文本与信号数据",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+    }
+  },
+  "experiment_result": {
+    "method": "fft_feature_extraction",
+    "top_frequency_bins": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10
+    ],
+    "top_amplitudes": [
+      8350.455023,
+      4186.760844,
+      2806.391971,
+      2125.452757,
+      1731.030143,
+      1489.231162,
+      1304.123165,
+      1045.149258
+    ],
+    "signal_energy": 454968.1171875
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2021/A/q07/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

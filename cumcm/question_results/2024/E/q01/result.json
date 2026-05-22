@@ -1,0 +1,237 @@
+{
+  "problem_id": "2024-E",
+  "title": "2024年 CUMCM E题：交通流量管控",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "对经中路-纬中路交叉口，根据车流量的差异，可将一天分成若干个时段，估 计不同时段各个相位（包括四个方向直行、转弯）车流量。",
+  "tasks": [
+    "对经中路-纬中路交叉口，根据车流量的差异，可将一天分成若干个时段，估 计不同时段各个相位（包括四个方向直行、转弯）车流量"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "时段"
+    },
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "交叉口"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
+    "rows": 8844996,
+    "columns": 4,
+    "note": "本题专用算法分块读取附件2的884万条车辆记录，结合附件1方向/距离信息构建交通流量、信号配时、巡游车和管控效果摘要。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "对经中路-纬中路交叉口，根据车流量的差异，可将一天分成若干个时段，估 计不同时段各个相位（包括四个方向直行、转弯）车流量"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n_{t,i,d}: 时段 t、交叉口 i、方向 d 的车辆通过数",
+      "q_{t,i,p}: 时段 t、交叉口 i、相位 p 的估计流率",
+      "g_{i,p}: 交叉口 i 的相位 p 绿灯时间",
+      "v_i: 交叉口 i 所属路段的速度指数",
+      "z_m: 车牌 m 是否判定为五一巡游车辆"
+    ],
+    "constraints": [
+      "附件 2 记录的是停车线后方监控点，不直接给出左转/直行/右转，转向比例需由方向流量做可解释估计。",
+      "信号周期固定为 120 s，每个主相位最小绿灯 25 s，最大绿灯 90 s。",
+      "车辆通行能力用饱和流率和绿信比估计，速度指数用 BPR 型流量-速度关系近似。",
+      "巡游车辆需在五一期间出现次数、活动时长、覆盖交叉口数和景区出入口出现次数同时达到阈值。"
+    ],
+    "objective_or_equations": [
+      "hourly_count = groupby(date,hour,intersection,direction).size()",
+      "segment(hour)=low/offpeak/peak by central-intersection hourly total quantiles",
+      "phase_flow = approach_flow * turn_split, turn_split=(straight 0.65, left 0.18, right 0.17)"
+    ],
+    "solution_steps": [
+      "分块读取 884 万行官方 CSV，构建交叉口-小时-方向流量摘要缓存。",
+      "筛选经中路-纬中路交叉口，按小时平均流量的分位数划分低谷、平峰和高峰。",
+      "在缺少转向记录的前提下，用可解释固定转向比例把方向流量拆成直行、左转和右转相位。",
+      "输出各时段、各方向、各转向的估计车流量表。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "time_segment_phase_flow_estimation",
+    "source_rows": 8844996,
+    "central_intersection": "经中路-纬中路",
+    "observed_days": 36,
+    "segment_thresholds_avg_hourly_records": {
+      "low_q": 944.6378,
+      "high_q": 1828.8972
+    },
+    "hour_segments": {
+      "00": "低谷",
+      "01": "低谷",
+      "02": "低谷",
+      "03": "低谷",
+      "04": "低谷",
+      "05": "低谷",
+      "06": "平峰",
+      "07": "平峰",
+      "08": "平峰",
+      "09": "平峰",
+      "10": "平峰",
+      "11": "高峰",
+      "12": "高峰",
+      "13": "高峰",
+      "14": "高峰",
+      "15": "高峰",
+      "16": "高峰",
+      "17": "平峰",
+      "18": "高峰",
+      "19": "高峰",
+      "20": "平峰",
+      "21": "平峰",
+      "22": "低谷",
+      "23": "低谷"
+    },
+    "turn_split_assumption": {
+      "straight": 0.65,
+      "left": 0.18,
+      "right": 0.17
+    },
+    "sample_phase_rows": [
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 1,
+        "direction_name": "east-west",
+        "movement": "直行",
+        "estimated_flow_veh_per_hour": 73.2627,
+        "approach_flow_veh_per_hour": 112.7118
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 1,
+        "direction_name": "east-west",
+        "movement": "左转",
+        "estimated_flow_veh_per_hour": 20.2881,
+        "approach_flow_veh_per_hour": 112.7118
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 1,
+        "direction_name": "east-west",
+        "movement": "右转",
+        "estimated_flow_veh_per_hour": 19.161,
+        "approach_flow_veh_per_hour": 112.7118
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 2,
+        "direction_name": "west-east",
+        "movement": "直行",
+        "estimated_flow_veh_per_hour": 28.0403,
+        "approach_flow_veh_per_hour": 43.1389
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 2,
+        "direction_name": "west-east",
+        "movement": "左转",
+        "estimated_flow_veh_per_hour": 7.765,
+        "approach_flow_veh_per_hour": 43.1389
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 2,
+        "direction_name": "west-east",
+        "movement": "右转",
+        "estimated_flow_veh_per_hour": 7.3336,
+        "approach_flow_veh_per_hour": 43.1389
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 3,
+        "direction_name": "south-north",
+        "movement": "直行",
+        "estimated_flow_veh_per_hour": 42.399,
+        "approach_flow_veh_per_hour": 65.2292
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 3,
+        "direction_name": "south-north",
+        "movement": "左转",
+        "estimated_flow_veh_per_hour": 11.7413,
+        "approach_flow_veh_per_hour": 65.2292
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 3,
+        "direction_name": "south-north",
+        "movement": "右转",
+        "estimated_flow_veh_per_hour": 11.089,
+        "approach_flow_veh_per_hour": 65.2292
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 4,
+        "direction_name": "north-south",
+        "movement": "直行",
+        "estimated_flow_veh_per_hour": 84.0554,
+        "approach_flow_veh_per_hour": 129.316
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 4,
+        "direction_name": "north-south",
+        "movement": "左转",
+        "estimated_flow_veh_per_hour": 23.2769,
+        "approach_flow_veh_per_hour": 129.316
+      },
+      {
+        "segment": "低谷",
+        "hours": "00,01,02,03,04,05,22,23",
+        "direction": 4,
+        "direction_name": "north-south",
+        "movement": "右转",
+        "estimated_flow_veh_per_hour": 21.9837,
+        "approach_flow_veh_per_hour": 129.316
+      }
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2024/E/q01/experiment_table.csv"
+  ]
+}

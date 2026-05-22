@@ -1,0 +1,26 @@
+environment,variability_multiplier,final_mass_loss_pct,mean_richness_last60_days,mean_shannon_last60_days,dominant_species_final,remaining_litter_mass,species_count,species_pool
+arid,1.0,99.829,1.0,0.0,fast opportunist,0.171,1,fast opportunist
+semi-arid,1.0,99.978,1.0,0.0,fast opportunist,0.022,1,fast opportunist
+temperate,1.0,69.645,1.0,0.0,fast opportunist,30.355,1,fast opportunist
+arboreal,1.0,34.085,1.0,0.0,fast opportunist,65.915,1,fast opportunist
+tropical rain forest,1.0,16.073,1.0,0.0,fast opportunist,83.927,1,fast opportunist
+arid,1.0,99.694,1.0,0.118,fast opportunist,0.306,2,fast opportunist; balanced decomposer
+semi-arid,1.0,99.953,1.0,0.191,fast opportunist,0.047,2,fast opportunist; balanced decomposer
+temperate,1.0,99.891,1.0,0.042,balanced decomposer,0.109,2,fast opportunist; balanced decomposer
+arboreal,1.0,99.642,1.0,0.036,balanced decomposer,0.358,2,fast opportunist; balanced decomposer
+tropical rain forest,1.0,95.771,1.0,0.036,balanced decomposer,4.229,2,fast opportunist; balanced decomposer
+arid,1.0,99.55,1.0,0.296,fast opportunist,0.45,3,fast opportunist; balanced decomposer; moisture generalist
+semi-arid,1.0,99.921,1.0,0.374,fast opportunist,0.079,3,fast opportunist; balanced decomposer; moisture generalist
+temperate,1.0,99.824,1.833,0.325,balanced decomposer,0.176,3,fast opportunist; balanced decomposer; moisture generalist
+arboreal,1.0,99.457,2.0,0.405,balanced decomposer,0.543,3,fast opportunist; balanced decomposer; moisture generalist
+tropical rain forest,1.0,98.92,1.167,0.309,moisture generalist,1.08,3,fast opportunist; balanced decomposer; moisture generalist
+arid,1.0,99.362,1.0,0.496,fast opportunist,0.638,4,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain
+semi-arid,1.0,99.876,1.0,0.567,fast opportunist,0.124,4,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain
+temperate,1.0,99.735,1.167,0.549,balanced decomposer,0.265,4,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain
+arboreal,1.0,99.235,2.0,0.633,balanced decomposer,0.765,4,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain
+tropical rain forest,1.0,98.564,2.0,0.652,moisture generalist,1.436,4,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain
+arid,1.0,99.276,1.0,0.573,fast opportunist,0.724,5,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist
+semi-arid,1.0,99.847,1.0,0.696,fast opportunist,0.153,5,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist
+temperate,1.0,99.695,1.083,0.647,balanced decomposer,0.305,5,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist
+arboreal,1.0,99.149,2.0,0.712,balanced decomposer,0.851,5,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist
+tropical rain forest,1.0,98.433,2.0,0.702,moisture generalist,1.567,5,fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist

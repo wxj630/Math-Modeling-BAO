@@ -1,0 +1,7 @@
+variable,correlation_with_vcdb_incident_count,usable_countries,interpretation
+internet_users_pct,0.189,12,"positive association likely reflects exposure and reporting capacity, not necessarily worse security"
+gdp_per_capita_usd,0.4609,12,"positive association likely reflects exposure and reporting capacity, not necessarily worse security"
+education_spending_pct_gdp,0.236,12,positive descriptive association in a small policy panel
+policy_maturity_score,0.241,12,positive association should be read with reporting bias: mature countries may record more incidents
+mandatory_reporting,0.2744,12,positive descriptive association in a small policy panel
+international_cooperation,0.2292,12,positive descriptive association in a small policy panel

@@ -1,0 +1,120 @@
+{
+  "problem_id": "2021-B",
+  "title": "2021年 CUMCM B题：乙醇偶合制备 C4 烯烃",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "如何选择催化剂组合与温度，使得在相同实验条件下 C4 烯烃收率尽可能 高。若使温度低于 350 度，又如何选择催化剂组合与温度，使得 C4 烯烃收率尽可 能高。",
+  "tasks": [
+    "如何选择催化剂组合与温度，使得在相同实验条件下 C4 烯烃收率尽可能 高",
+    "若使温度低于 350 度，又如何选择催化剂组合与温度，使得 C4 烯烃收率尽可 能高"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "乙醇偶合C4烯烃响应面拟合与实验设计",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "温度"
+    },
+    {
+      "key": "metaheuristic",
+      "name": "启发式搜索与群体智能",
+      "chapter": "CH5",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md",
+      "reason": "组合"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
+    "rows": 121,
+    "columns": 18,
+    "note": "本题专用算法读取附件1性能数据表和附件2稳定性测试，解析催化剂组合特征，计算C4烯烃收率并做响应面优化与新增实验设计。"
+  },
+  "formulation": {
+    "model_type": "乙醇偶合C4烯烃响应面拟合与实验设计",
+    "task_breakdown": [
+      "如何选择催化剂组合与温度，使得在相同实验条件下 C4 烯烃收率尽可能 高",
+      "若使温度低于 350 度，又如何选择催化剂组合与温度，使得 C4 烯烃收率尽可 能高"
+    ],
+    "assumptions": [
+      "附件1中同一催化剂组合跨温度的空白编号沿用上一行催化剂编号和组合说明。",
+      "C4烯烃收率按题面定义取乙醇转化率与C4烯烃选择性的乘积再除以100。",
+      "温度-性能关系在实验温区内用二次响应面近似；离散催化剂组合用解析出的Co负载量、装料比、乙醇浓度和装料方式表征。",
+      "附件2稳定性测试在350摄氏度下分析时间趋势，不直接外推到其他温度。",
+      "新增5次实验优先选择预测收率高、温度低于或接近优选区、且与既有实验点有一定差异的候选点。"
+    ],
+    "decision_variables": [
+      "x_1: 温度T",
+      "x_2: Co负载量wt%",
+      "x_3: Co/SiO2装料质量",
+      "x_4: HAP装料质量",
+      "x_5: 乙醇进料浓度",
+      "m: 装料方式A/B",
+      "Y_conv: 乙醇转化率",
+      "S_c4: C4烯烃选择性",
+      "R_c4: C4烯烃收率"
+    ],
+    "constraints": [
+      "R_c4 = Y_conv * S_c4 / 100。",
+      "预测温度限制在附件1覆盖温区的邻近范围，默认250-400摄氏度。",
+      "低温优化情景要求T < 350摄氏度。",
+      "新增实验不得重复已有催化剂-温度组合。"
+    ],
+    "objective_or_equations": [
+      "per_catalyst: Y=a+bT+cT^2",
+      "global_response: R_c4 = beta0 + beta1*T + beta2*T^2 + beta3*Co + beta4*ratio + beta5*flow + beta6*mode_B + epsilon",
+      "influence_j = standardized linear coefficient or correlation score",
+      "best_overall = argmax_{catalyst,T} predicted R_c4",
+      "best_below_350 = argmax_{catalyst,T<350} predicted R_c4",
+      "new_experiment_score = predicted_yield + 0.15*uncertainty_proxy + diversity_bonus"
+    ],
+    "solution_steps": [
+      "计算附件1每条实验的C4烯烃收率。",
+      "对每种催化剂组合建立温度-收率二次响应曲线，并在250-400摄氏度网格上预测。",
+      "分别搜索全温区最大收率和低于350摄氏度的最大收率方案。",
+      "输出响应面网格和优化结果表。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "乙醇偶合C4烯烃响应面拟合与实验设计",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "ethanol_coupling_c4_yield_optimization",
+    "performance_sample_count": 114,
+    "catalyst_count": 21,
+    "best_overall": {
+      "catalyst_id": "A2",
+      "temperature_c": 400.0,
+      "c4_yield_percent": 56.583721,
+      "catalyst_combination": "200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min"
+    },
+    "best_below_350": {
+      "catalyst_id": "A2",
+      "temperature_c": 349.0,
+      "c4_yield_percent": 26.459214,
+      "catalyst_combination": "200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min"
+    },
+    "report": [
+      "本问按题面定义计算C4烯烃收率，并对每个催化剂组合拟合温度-收率二次响应曲线。",
+      "在250-400摄氏度网格上搜索最大预测收率，同时单独给出低于350摄氏度约束下的最优方案。",
+      "响应面网格和优化结果分别写入 `response_surface_grid.csv` 与 `yield_optimization.csv`。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2021/B/q03/response_surface_grid.csv",
+    "question_artifacts/2021/B/q03/yield_optimization.csv"
+  ]
+}

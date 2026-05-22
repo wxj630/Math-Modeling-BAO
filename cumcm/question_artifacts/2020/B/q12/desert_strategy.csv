@@ -1,0 +1,10 @@
+﻿day,level,weather,area,action,remaining_cash,remaining_water,remaining_food,from_area,water_consumed,food_consumed,mining_income
+0,第五关,,1,buy_initial_resources,9530.0,28,33,,,,
+1,第五关,晴朗,2,move,9530.0,26,30,1,2,3,0.0
+2,第五关,高温,3,move,9530.0,20,24,2,6,6,0.0
+3,第五关,晴朗,6,move,9530.0,18,21,3,2,3,0.0
+4,第五关,晴朗,7,move,9530.0,16,18,6,2,3,0.0
+5,第五关,晴朗,8,move,9530.0,14,15,7,2,3,0.0
+6,第五关,晴朗,11,move,9530.0,12,12,8,2,3,0.0
+7,第五关,高温,12,move,9530.0,6,6,11,6,6,0.0
+8,第五关,高温,13,move,9530.0,0,0,12,6,6,0.0

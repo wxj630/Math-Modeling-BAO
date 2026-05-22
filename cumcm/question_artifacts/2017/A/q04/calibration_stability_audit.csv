@@ -1,0 +1,4 @@
+﻿scenario,parameter,value,expected_effect
+angle_shift_minus_1,angle_shift_deg,160,边缘轻微模糊，中心和间距基本稳定
+angle_shift_plus_1,angle_shift_deg,162,方向偏差使细节旋转，查询点吸收率变化
+detector_noise_1pct,sinogram_noise,0.01,ramp滤波放大高频噪声，需平滑或正则化

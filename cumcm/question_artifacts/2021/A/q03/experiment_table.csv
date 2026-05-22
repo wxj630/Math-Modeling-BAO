@@ -1,0 +1,3 @@
+﻿surface,active_panel_count,total_panel_area_m2,hit_panel_area_m2,reception_ratio,hit_panel_count,median_hit_distance_m
+baseline_sphere,1295,70995.37931564,3681.55465778,0.05185626,65,2.86490275
+adjusted_paraboloid,1295,70942.72925429,6173.02923247,0.08701426,110,1.75559792

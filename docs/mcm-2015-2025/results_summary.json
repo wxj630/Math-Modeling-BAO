@@ -1,0 +1,741 @@
+{
+  "problem_count": 64,
+  "success_count": 64,
+  "failed_count": 0,
+  "results": [
+    {
+      "year": "2015",
+      "problem": "P01 Is it sustainable",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2015",
+      "problem": "P02 Managing Human Capital in Organizations",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2016",
+      "problem": "ICM-D Measuring the Evolution and Influence in Society’s Information Networks",
+      "success": true,
+      "models_run": [
+        "fit_regression",
+        "text_feature_baseline",
+        "topsis_score",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2016",
+      "problem": "ICM-E Are we heading towards a thirsty planet",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2016",
+      "problem": "ICM-F Modeling Refugee Immigration Policies",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2016",
+      "problem": "MCM-A A Hot Bath",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2016",
+      "problem": "MCM-B Space Junk",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2016",
+      "problem": "MCM-C The Goodgrant Challenge",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "topsis_score",
+        "text_feature_baseline"
+      ]
+    },
+    {
+      "year": "2017",
+      "problem": "ICM-D Optimizing the Passenger Throughput at an Airport Security Checkpoint",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo",
+        "simulate_dynamics"
+      ]
+    },
+    {
+      "year": "2017",
+      "problem": "ICM-E Sustainable Cities Needed!",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2017",
+      "problem": "ICM-F Migration to Mars - Utopian Workforce of the 2100 Urban Society",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2017",
+      "problem": "MCM-A Managing The Zambezi River",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2017",
+      "problem": "MCM-B Merge After Toll",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2017",
+      "problem": "MCM-C “Cooperate and navigate”",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2018",
+      "problem": "ICM-D Out of Gas and Driving on E (for electric, not empty)",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2018",
+      "problem": "ICM-E How does climate change influence regional instability",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2018",
+      "problem": "ICM-F - Cost of Privacy",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2018",
+      "problem": "MCM-A Multi-hop HF Radio Propagation",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2018",
+      "problem": "MCM-B Many Languages - How Many Languages",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2018",
+      "problem": "MCM-C Energy Production",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2019",
+      "problem": "ICM-D Time to leave the Louvre",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2019",
+      "problem": "ICM-E What is the Cost of Environmental Degradation",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2019",
+      "problem": "MCM-A Game of Ecology",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2019",
+      "problem": "MCM-B Send in the Drones - Developing an Aerial Disaster Relief Response System",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2019",
+      "problem": "MCM-C The Opioid Crisis",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2019",
+      "problem": "P06 Universal, Decentralized, Digital Currency - Is it possible",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "topsis_score",
+        "text_feature_baseline"
+      ]
+    },
+    {
+      "year": "2020",
+      "problem": "ICM-D - Teaming Strategies",
+      "success": true,
+      "models_run": [
+        "solve_linear_program",
+        "fit_regression",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2020",
+      "problem": "ICM-E Drowning in Plastic",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2020",
+      "problem": "ICM-F The Place I Called Home - The Place I Called Home",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2020",
+      "problem": "MCM-A Moving North",
+      "success": true,
+      "models_run": [
+        "solve_linear_program",
+        "fit_regression",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2020",
+      "problem": "MCM-B The Longest Lasting Sandcastle(s)",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2020",
+      "problem": "MCM-C A Wealth of Data",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "topsis_score",
+        "text_feature_baseline"
+      ]
+    },
+    {
+      "year": "2021",
+      "problem": "ICM-D - The Influence of Music",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2021",
+      "problem": "ICM-E Re-Optimizing Food Systems",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2021",
+      "problem": "ICM-F Checking the Pulse and Temperature of Higher Education",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2021",
+      "problem": "MCM-A Fungi",
+      "success": true,
+      "models_run": [
+        "fit_regression",
+        "text_feature_baseline",
+        "topsis_score",
+        "simulate_dynamics"
+      ]
+    },
+    {
+      "year": "2021",
+      "problem": "MCM-B Fighting Wildfires",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "fit_regression",
+        "spatial_distance_model",
+        "monte_carlo",
+        "solve_linear_program"
+      ]
+    },
+    {
+      "year": "2021",
+      "problem": "MCM-C A Confirming the Buzz about Hornets - Confirming the Buzz about Hornets",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2022",
+      "problem": "ICM-E Forestry for Carbon Sequestration",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "fit_regression"
+      ]
+    },
+    {
+      "year": "2022",
+      "problem": "ICM-F All for One and One (Space) for All!",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2022",
+      "problem": "MCM-A Power Profile of a Cyclist",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "topsis_score",
+        "solve_linear_program"
+      ]
+    },
+    {
+      "year": "2022",
+      "problem": "MCM-B Water and Hydroelectric Power Sharing",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2022",
+      "problem": "MCM-C Trading Strategies",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "topsis_score",
+        "solve_linear_program"
+      ]
+    },
+    {
+      "year": "2022",
+      "problem": "P01 Data Paralysis Use Our Analysis!",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-D Prioritizing the UN Sustainability Goals",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-E Light Pollution",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-F Green GDP",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-F The Future of the Olympics",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-A Drought-Stricken Plant Communities",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "fit_regression"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-B Reimagining Maasai Mara",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-C Predicting Wordle Results",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "topsis_score",
+        "text_feature_baseline"
+      ]
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-C Understanding Used Sailboat Prices",
+      "success": true,
+      "models_run": [
+        "graph_analysis",
+        "solve_linear_program",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    },
+    {
+      "year": "2024",
+      "problem": "ICM-D Great Lakes Water Problem",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "fit_regression"
+      ]
+    },
+    {
+      "year": "2024",
+      "problem": "ICM-E Sustainability of Property Insurance",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2024",
+      "problem": "ICM-F Reducing Illegal Wildlife Trade",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2024",
+      "problem": "MCM-A Resource Availability and Sex Ratios",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "fit_regression"
+      ]
+    },
+    {
+      "year": "2024",
+      "problem": "MCM-B Searching for Submersibles",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo"
+      ]
+    },
+    {
+      "year": "2024",
+      "problem": "MCM-C Momentum in Tennis",
+      "success": true,
+      "models_run": [
+        "forecast_time_series",
+        "fit_regression",
+        "monte_carlo",
+        "solve_linear_program"
+      ]
+    },
+    {
+      "year": "2025",
+      "problem": "ICM-D A Roadmap to a Better City",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2025",
+      "problem": "ICM-E Making Room for Agriculture",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2025",
+      "problem": "ICM-F Cyber Strong",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2025",
+      "problem": "MCM-A Testing Time - The Constant Wear On Stairs",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "fit_regression",
+        "spatial_distance_model",
+        "monte_carlo",
+        "solve_linear_program"
+      ]
+    },
+    {
+      "year": "2025",
+      "problem": "MCM-B Managing Sustainable Tourism",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "graph_analysis"
+      ]
+    },
+    {
+      "year": "2025",
+      "problem": "MCM-C Models for Olympic Medal Tables",
+      "success": true,
+      "models_run": [
+        "simulate_dynamics",
+        "solve_linear_program",
+        "topsis_score",
+        "monte_carlo",
+        "forecast_time_series"
+      ]
+    }
+  ]
+}

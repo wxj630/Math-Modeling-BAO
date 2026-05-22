@@ -1,0 +1,891 @@
+{
+  "problem_count": 64,
+  "success_count": 64,
+  "failed_count": 0,
+  "results": [
+    {
+      "year": "2015",
+      "problem": "P01 Is it sustainable",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 129.261556
+    },
+    {
+      "year": "2015",
+      "problem": "P02 Managing Human Capital in Organizations",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 114.108685
+    },
+    {
+      "year": "2016",
+      "problem": "ICM-D Measuring the Evolution and Influence in Society’s Information Networks",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "机器学习建模",
+        "统计回归与拟合",
+        "文本与信号分析",
+        "多指标评价模型",
+        "图论与网络流"
+      ],
+      "mean_score": 129.968575
+    },
+    {
+      "year": "2016",
+      "problem": "ICM-E Are we heading towards a thirsty planet",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 108.590726
+    },
+    {
+      "year": "2016",
+      "problem": "ICM-F Modeling Refugee Immigration Policies",
+      "success": true,
+      "question_count": 12,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 132.15785
+    },
+    {
+      "year": "2016",
+      "problem": "MCM-A A Hot Bath",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 64.257694
+    },
+    {
+      "year": "2016",
+      "problem": "MCM-B Space Junk",
+      "success": true,
+      "question_count": 3,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 102.761845
+    },
+    {
+      "year": "2016",
+      "problem": "MCM-C The Goodgrant Challenge",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "时间序列预测",
+        "统计回归与拟合",
+        "机器学习建模",
+        "多指标评价模型",
+        "文本与信号分析"
+      ],
+      "mean_score": 95.302678
+    },
+    {
+      "year": "2017",
+      "problem": "ICM-D Optimizing the Passenger Throughput at an Airport Security Checkpoint",
+      "success": true,
+      "question_count": 3,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "微分方程与系统动力学"
+      ],
+      "mean_score": 230.105283
+    },
+    {
+      "year": "2017",
+      "problem": "ICM-E Sustainable Cities Needed!",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 235.228442
+    },
+    {
+      "year": "2017",
+      "problem": "ICM-F Migration to Mars - Utopian Workforce of the 2100 Urban Society",
+      "success": true,
+      "question_count": 12,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 241.284705
+    },
+    {
+      "year": "2017",
+      "problem": "MCM-A Managing The Zambezi River",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 116.917042
+    },
+    {
+      "year": "2017",
+      "problem": "MCM-B Merge After Toll",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 316.669161
+    },
+    {
+      "year": "2017",
+      "problem": "MCM-C “Cooperate and navigate”",
+      "success": true,
+      "question_count": 7,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 187.118318
+    },
+    {
+      "year": "2018",
+      "problem": "ICM-D Out of Gas and Driving on E (for electric, not empty)",
+      "success": true,
+      "question_count": 12,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 146.427123
+    },
+    {
+      "year": "2018",
+      "problem": "ICM-E How does climate change influence regional instability",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 311.50837
+    },
+    {
+      "year": "2018",
+      "problem": "ICM-F - Cost of Privacy",
+      "success": true,
+      "question_count": 12,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 392.217103
+    },
+    {
+      "year": "2018",
+      "problem": "MCM-A Multi-hop HF Radio Propagation",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 143.013723
+    },
+    {
+      "year": "2018",
+      "problem": "MCM-B Many Languages - How Many Languages",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 817.312486
+    },
+    {
+      "year": "2018",
+      "problem": "MCM-C Energy Production",
+      "success": true,
+      "question_count": 6,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 131.035795
+    },
+    {
+      "year": "2019",
+      "problem": "ICM-D Time to leave the Louvre",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 134.322524
+    },
+    {
+      "year": "2019",
+      "problem": "ICM-E What is the Cost of Environmental Degradation",
+      "success": true,
+      "question_count": 6,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 128.596236
+    },
+    {
+      "year": "2019",
+      "problem": "MCM-A Game of Ecology",
+      "success": true,
+      "question_count": 7,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 136.893813
+    },
+    {
+      "year": "2019",
+      "problem": "MCM-B Send in the Drones - Developing an Aerial Disaster Relief Response System",
+      "success": true,
+      "question_count": 7,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 312.116937
+    },
+    {
+      "year": "2019",
+      "problem": "MCM-C The Opioid Crisis",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "机器学习建模"
+      ],
+      "mean_score": 89.914077
+    },
+    {
+      "year": "2019",
+      "problem": "P06 Universal, Decentralized, Digital Currency - Is it possible",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "时间序列预测",
+        "统计回归与拟合",
+        "机器学习建模",
+        "多指标评价模型",
+        "文本与信号分析"
+      ],
+      "mean_score": 1217.69751
+    },
+    {
+      "year": "2020",
+      "problem": "ICM-D - Teaming Strategies",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "优化规划模型",
+        "统计回归与拟合",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 145.921732
+    },
+    {
+      "year": "2020",
+      "problem": "ICM-E Drowning in Plastic",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 116.451781
+    },
+    {
+      "year": "2020",
+      "problem": "ICM-F The Place I Called Home - The Place I Called Home",
+      "success": true,
+      "question_count": 8,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "机器学习建模"
+      ],
+      "mean_score": 120.418253
+    },
+    {
+      "year": "2020",
+      "problem": "MCM-A Moving North",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "优化规划模型",
+        "统计回归与拟合",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 127.372037
+    },
+    {
+      "year": "2020",
+      "problem": "MCM-B The Longest Lasting Sandcastle(s)",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 124.79199
+    },
+    {
+      "year": "2020",
+      "problem": "MCM-C A Wealth of Data",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "时间序列预测",
+        "统计回归与拟合",
+        "机器学习建模",
+        "多指标评价模型",
+        "文本与信号分析"
+      ],
+      "mean_score": 575.305906
+    },
+    {
+      "year": "2021",
+      "problem": "ICM-D - The Influence of Music",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "机器学习建模"
+      ],
+      "mean_score": 118.128561
+    },
+    {
+      "year": "2021",
+      "problem": "ICM-E Re-Optimizing Food Systems",
+      "success": true,
+      "question_count": 6,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 122.97725
+    },
+    {
+      "year": "2021",
+      "problem": "ICM-F Checking the Pulse and Temperature of Higher Education",
+      "success": true,
+      "question_count": 2,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "机器学习建模"
+      ],
+      "mean_score": 407.717904
+    },
+    {
+      "year": "2021",
+      "problem": "MCM-A Fungi",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "机器学习建模",
+        "统计回归与拟合",
+        "文本与信号分析",
+        "多指标评价模型",
+        "微分方程与系统动力学"
+      ],
+      "mean_score": 61.551087
+    },
+    {
+      "year": "2021",
+      "problem": "MCM-B Fighting Wildfires",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "统计回归与拟合",
+        "几何与空间分析",
+        "仿真与蒙特卡洛",
+        "优化规划模型"
+      ],
+      "mean_score": 124.145222
+    },
+    {
+      "year": "2021",
+      "problem": "MCM-C A Confirming the Buzz about Hornets - Confirming the Buzz about Hornets",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 105.129812
+    },
+    {
+      "year": "2022",
+      "problem": "ICM-E Forestry for Carbon Sequestration",
+      "success": true,
+      "question_count": 11,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "统计回归与拟合"
+      ],
+      "mean_score": 130.033418
+    },
+    {
+      "year": "2022",
+      "problem": "ICM-F All for One and One (Space) for All!",
+      "success": true,
+      "question_count": 8,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 123.597243
+    },
+    {
+      "year": "2022",
+      "problem": "MCM-A Power Profile of a Cyclist",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "时间序列预测",
+        "统计回归与拟合",
+        "机器学习建模",
+        "多指标评价模型",
+        "优化规划模型"
+      ],
+      "mean_score": 326.735658
+    },
+    {
+      "year": "2022",
+      "problem": "MCM-B Water and Hydroelectric Power Sharing",
+      "success": true,
+      "question_count": 9,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 118.585781
+    },
+    {
+      "year": "2022",
+      "problem": "MCM-C Trading Strategies",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "时间序列预测",
+        "统计回归与拟合",
+        "机器学习建模",
+        "多指标评价模型",
+        "优化规划模型"
+      ],
+      "mean_score": 327.440372
+    },
+    {
+      "year": "2022",
+      "problem": "P01 Data Paralysis Use Our Analysis!",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 126.225589
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-D Prioritizing the UN Sustainability Goals",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "机器学习建模"
+      ],
+      "mean_score": 125.934624
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-E Light Pollution",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 95.682905
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-F Green GDP",
+      "success": true,
+      "question_count": 6,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 319.010613
+    },
+    {
+      "year": "2023",
+      "problem": "ICM-F The Future of the Olympics",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 151.144661
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-A Drought-Stricken Plant Communities",
+      "success": true,
+      "question_count": 9,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "统计回归与拟合"
+      ],
+      "mean_score": 72.886469
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-B Reimagining Maasai Mara",
+      "success": true,
+      "question_count": 3,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 112.821904
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-C Predicting Wordle Results",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "时间序列预测",
+        "统计回归与拟合",
+        "机器学习建模",
+        "多指标评价模型",
+        "文本与信号分析"
+      ],
+      "mean_score": 133.461339
+    },
+    {
+      "year": "2023",
+      "problem": "MCM-C Understanding Used Sailboat Prices",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "图论与网络流",
+        "优化规划模型",
+        "群体智能与启发式",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 705.740463
+    },
+    {
+      "year": "2024",
+      "problem": "ICM-D Great Lakes Water Problem",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "统计回归与拟合"
+      ],
+      "mean_score": 132.93465
+    },
+    {
+      "year": "2024",
+      "problem": "ICM-E Sustainability of Property Insurance",
+      "success": true,
+      "question_count": 7,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 136.119128
+    },
+    {
+      "year": "2024",
+      "problem": "ICM-F Reducing Illegal Wildlife Trade",
+      "success": true,
+      "question_count": 10,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 216.811149
+    },
+    {
+      "year": "2024",
+      "problem": "MCM-A Resource Availability and Sex Ratios",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "统计回归与拟合"
+      ],
+      "mean_score": 64.05802
+    },
+    {
+      "year": "2024",
+      "problem": "MCM-B Searching for Submersibles",
+      "success": true,
+      "question_count": 4,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛"
+      ],
+      "mean_score": 139.461509
+    },
+    {
+      "year": "2024",
+      "problem": "MCM-C Momentum in Tennis",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "时间序列预测",
+        "机器学习建模",
+        "统计回归与拟合",
+        "仿真与蒙特卡洛",
+        "优化规划模型"
+      ],
+      "mean_score": 150.83612
+    },
+    {
+      "year": "2025",
+      "problem": "ICM-D A Roadmap to a Better City",
+      "success": true,
+      "question_count": 5,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 181.744472
+    },
+    {
+      "year": "2025",
+      "problem": "ICM-E Making Room for Agriculture",
+      "success": true,
+      "question_count": 7,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 153.240875
+    },
+    {
+      "year": "2025",
+      "problem": "ICM-F Cyber Strong",
+      "success": true,
+      "question_count": 3,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 864.335877
+    },
+    {
+      "year": "2025",
+      "problem": "MCM-A Testing Time - The Constant Wear On Stairs",
+      "success": true,
+      "question_count": 8,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "统计回归与拟合",
+        "几何与空间分析",
+        "仿真与蒙特卡洛",
+        "优化规划模型"
+      ],
+      "mean_score": 20.856193
+    },
+    {
+      "year": "2025",
+      "problem": "MCM-B Managing Sustainable Tourism",
+      "success": true,
+      "question_count": 3,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "图论与网络流"
+      ],
+      "mean_score": 128.458774
+    },
+    {
+      "year": "2025",
+      "problem": "MCM-C Models for Olympic Medal Tables",
+      "success": true,
+      "question_count": 1,
+      "recommended_models": [
+        "微分方程与系统动力学",
+        "优化规划模型",
+        "多指标评价模型",
+        "仿真与蒙特卡洛",
+        "时间序列预测"
+      ],
+      "mean_score": 1166.498517
+    }
+  ]
+}

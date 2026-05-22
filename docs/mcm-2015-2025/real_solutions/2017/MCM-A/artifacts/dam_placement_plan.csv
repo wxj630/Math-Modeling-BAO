@@ -1,0 +1,16 @@
+﻿dam_id,river_coordinate_0_100,segment,local_storage_share_pct,primary_role
+D01,6.0,upstream_lake_control,7.2,replace Kariba storage and regulate lake-level transitions
+D02,12.29,upstream_lake_control,7.2,replace Kariba storage and regulate lake-level transitions
+D03,18.57,upstream_lake_control,7.2,replace Kariba storage and regulate lake-level transitions
+D04,24.86,upstream_lake_control,7.2,replace Kariba storage and regulate lake-level transitions
+D05,31.14,mid_river_flood_buffer,7.2,attenuate flood peaks and distribute release timing
+D06,37.43,mid_river_flood_buffer,7.2,attenuate flood peaks and distribute release timing
+D07,43.71,mid_river_flood_buffer,7.2,attenuate flood peaks and distribute release timing
+D08,50.0,mid_river_flood_buffer,7.2,attenuate flood peaks and distribute release timing
+D09,56.29,downstream_power_and_irrigation,6.133,support low-flow releases for users
+D10,62.57,downstream_power_and_irrigation,6.133,support low-flow releases for users
+D11,68.86,downstream_power_and_irrigation,6.133,support low-flow releases for users
+D12,75.14,downstream_power_and_irrigation,6.133,support low-flow releases for users
+D13,81.43,delta_ecology_protection,6.133,limit extreme exposure in sensitive downstream reaches
+D14,87.71,delta_ecology_protection,6.133,limit extreme exposure in sensitive downstream reaches
+D15,94.0,delta_ecology_protection,6.133,limit extreme exposure in sensitive downstream reaches

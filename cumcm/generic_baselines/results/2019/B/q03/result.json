@@ -1,0 +1,93 @@
+{
+  "problem_id": "2019-B",
+  "title": "2019年 CUMCM B题：同心协力”策略研究",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "在现实情形中，根据问题 2 的模型，你们在问题 1 中给出的策略是否需 要调整？如果需要，如何调整？",
+  "tasks": [
+    "在现实情形中，根据问题 2 的模型，你们在问题 1 中给出的策略是否需 要调整？"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "策略"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2019/B.md",
+    "rows": 32,
+    "columns": 17,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "在现实情形中，根据问题 2 的模型，你们在问题 1 中给出的策略是否需 要调整？"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 3.921667972717475,
+    "decision": [
+      0.0,
+      0.0,
+      2.329794,
+      0.0
+    ],
+    "resource_slack": [
+      171.444141,
+      0.0,
+      0.503437
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2019/B/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

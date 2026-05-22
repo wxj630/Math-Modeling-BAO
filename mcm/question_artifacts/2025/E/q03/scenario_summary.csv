@@ -1,0 +1,6 @@
+scenario,producer_stability,consumer_stability,biodiversity_index,volatility_penalty,pest_pressure,crop_yield_index,ecosystem_stability_score,gross_revenue_index,chemical_cost_index,organic_transition_cost_index,net_margin_index,sustainability_score,cost_effectiveness,herbicide,pesticide,organic_input,habitat_edge,bat_box,beneficial_release,premium_price,transition_cost
+organic_full,1.2667,0.984,1.23,0.0,0.02,135.0,2.133,167.4,0.32,46.48,120.6,1.4659,2.5769,0.0,0.04,0.82,0.68,0.68,0.62,1.24,0.28
+organic_partial,1.2667,0.984,1.23,0.0,0.02,135.0,2.133,151.2,2.39,31.25,117.56,1.4659,3.4946,0.1,0.18,0.55,0.52,0.55,0.45,1.12,0.18
+bats_and_edge_habitat,1.2667,0.984,1.23,0.0,0.02,135.0,2.133,140.4,5.175,21.98,113.245,1.4659,4.1703,0.25,0.35,0.3,0.48,0.62,0.25,1.04,0.12
+remove_herbicide,0.542,0.0645,0.1923,0.0396,0.1694,78.65,0.5573,78.65,6.075,6.65,65.925,0.3651,5.1807,0.05,0.7,0.1,0.18,0.0,0.0,1.0,0.04
+baseline_chemical,0.02,0.02,0.02,0.0,0.02,2.0,0.029,2.0,12.44,1.55,-11.99,0.019,-0.857,0.72,0.7,0.05,0.12,0.0,0.0,1.0,0.0

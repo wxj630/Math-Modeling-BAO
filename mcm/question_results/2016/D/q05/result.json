@@ -1,0 +1,166 @@
+{
+  "problem_id": "2016-D",
+  "question": "q05",
+  "question_title": "信息价值、偏见、来源和拓扑强度敏感性",
+  "statement": "Determine how information value, people's initial opinion and bias, form of the message or its source, and the topology or strength of the information network in a region, country, or worldwide could be used to spread information and influence public opinion.",
+  "methods": "在同一观点影响公式上做 one-at-a-time 敏感性分析，识别 information value、source credibility、initial bias、message form、network strength 中最能改变传播和观点结果的因素。对应模型：敏感性分析、影响因子排序、舆论传播策略设计。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "official_problem_parameters": {
+      "periods": [
+        "1870s_telegraph_train_newspaper",
+        "1920s_radio",
+        "1970s_television",
+        "1990s_early_internet",
+        "2010s_smartphone"
+      ],
+      "period_descriptions": {
+        "1870s_telegraph_train_newspaper": "newspapers delivered by trains and stories passed by telegraph",
+        "1920s_radio": "radios became a more common household item",
+        "1970s_television": "televisions were in most homes",
+        "1990s_early_internet": "households began connecting to the early internet",
+        "2010s_smartphone": "we can carry a connection to the world on our phones"
+      },
+      "prediction_year": 2050,
+      "example_events_named_in_statement": [
+        "Taylor Swift engagement rumor if it had happened in 1860",
+        "important person assassinated today",
+        "US President Abraham Lincoln assassination"
+      ],
+      "required_factors": [
+        "information value",
+        "initial opinion and bias",
+        "message form or source",
+        "network topology or strength"
+      ]
+    },
+    "assumptions": {
+      "era_coefficients": "media_access, transmission_speed, network_connectivity, gatekeeping_filter, and channel_capacity are transparent normalized assumptions anchored to the five eras named in the official PDF.",
+      "awareness_model": "awareness(t) = reachable_population * (1 - exp(-diffusion_rate * t)); diffusion_rate increases with speed, connectivity, information value, and source credibility.",
+      "news_filter_rule": "news_score = 0.34 value + 0.24 source credibility + 0.18 affected population + 0.14 novelty + 0.10 shareability; items above threshold qualify as news.",
+      "opinion_model": "A one-step DeGroot-style influence score estimates opinion shift from value, source credibility, bias alignment, message format, and network strength.",
+      "capacity_projection": "2050 capacity extrapolates log channel capacity against era year and caps the multiplier to avoid claiming an unbounded physical law."
+    }
+  },
+  "factor_sensitivity": {
+    "method": "one-at-a-time sensitivity on the opinion influence score",
+    "top_factor": "information_value",
+    "rows": [
+      {
+        "factor": "information_value",
+        "direction": "positive",
+        "low_score": 0.399,
+        "baseline_score": 0.459,
+        "high_score": 0.519,
+        "absolute_swing": 0.12
+      },
+      {
+        "factor": "source_credibility",
+        "direction": "positive",
+        "low_score": 0.407,
+        "baseline_score": 0.459,
+        "high_score": 0.511,
+        "absolute_swing": 0.104
+      },
+      {
+        "factor": "initial_bias",
+        "direction": "negative",
+        "low_score": 0.503,
+        "baseline_score": 0.459,
+        "high_score": 0.415,
+        "absolute_swing": 0.088
+      },
+      {
+        "factor": "network_strength",
+        "direction": "positive",
+        "low_score": 0.419,
+        "baseline_score": 0.459,
+        "high_score": 0.499,
+        "absolute_swing": 0.08
+      },
+      {
+        "factor": "message_form_strength",
+        "direction": "positive",
+        "low_score": 0.431,
+        "baseline_score": 0.459,
+        "high_score": 0.487,
+        "absolute_swing": 0.056
+      }
+    ]
+  },
+  "opinion_influence": {
+    "method": "one-step influence score inspired by DeGroot opinion updating and threshold persuasion",
+    "scenarios": [
+      {
+        "scenario": "trusted_public_health_warning",
+        "information_value": 0.9,
+        "source_credibility": 0.92,
+        "initial_bias": 0.2,
+        "message_form_strength": 0.7,
+        "network_strength": 0.86,
+        "persuasion_index": 0.7352,
+        "final_support_share": 0.83084,
+        "opinion_shift_from_neutral": 0.33084
+      },
+      {
+        "scenario": "local_emergency_from_official_source",
+        "information_value": 0.84,
+        "source_credibility": 0.88,
+        "initial_bias": 0.18,
+        "message_form_strength": 0.66,
+        "network_strength": 0.62,
+        "persuasion_index": 0.6576,
+        "final_support_share": 0.79592,
+        "opinion_shift_from_neutral": 0.29592
+      },
+      {
+        "scenario": "scientific_correction_after_false_post",
+        "information_value": 0.62,
+        "source_credibility": 0.82,
+        "initial_bias": 0.7,
+        "message_form_strength": 0.48,
+        "network_strength": 0.58,
+        "persuasion_index": 0.4284,
+        "final_support_share": 0.69278,
+        "opinion_shift_from_neutral": 0.19278
+      },
+      {
+        "scenario": "celebrity_rumor_visual_shortform",
+        "information_value": 0.3,
+        "source_credibility": 0.46,
+        "initial_bias": 0.55,
+        "message_form_strength": 0.9,
+        "network_strength": 0.88,
+        "persuasion_index": 0.3906,
+        "final_support_share": 0.67577,
+        "opinion_shift_from_neutral": 0.17577
+      },
+      {
+        "scenario": "partisan_low_credibility_claim",
+        "information_value": 0.55,
+        "source_credibility": 0.28,
+        "initial_bias": 0.82,
+        "message_form_strength": 0.62,
+        "network_strength": 0.74,
+        "persuasion_index": 0.2922,
+        "final_support_share": 0.63149,
+        "opinion_shift_from_neutral": 0.13149
+      }
+    ]
+  },
+  "capacity_2050": {
+    "prediction_year": 2050,
+    "baseline_era": "2010s_smartphone",
+    "projected_channel_capacity_index": 2483.157,
+    "capacity_multiplier_vs_2010s": 4.775,
+    "relationships": {
+      "human_to_human": "dense social graph remains dominant for interpretation and trust",
+      "human_to_platform": "algorithmic filtering increasingly controls attention allocation",
+      "machine_to_machine": "sensor and agent networks add high-volume low-latency communication",
+      "local_to_global": "regional topology matters less for raw speed but still matters for trust and language communities"
+    },
+    "method": "log-linear extrapolation of assumed era capacity, capped for conservative reporting"
+  }
+}

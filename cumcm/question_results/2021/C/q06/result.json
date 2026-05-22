@@ -1,0 +1,117 @@
+{
+  "problem_id": "2021-C",
+  "title": "2021年 CUMCM C题：生产企业原材料的订购与运输",
+  "question_index": 6,
+  "question_label": "问题 2",
+  "statement": "供应商的供货量：第一列为供应商的名称； 第二列为供应商供应原材料的类别； 第三列及以后共240 列为各供应商每周的供货量 （单位： 立方米） ； 数值 “0” 表示相应 的周（所在列）供应商（所在行）没有供货。 附件 2 的数据说明 第一列为转运商的名称； 第二列及以后共240 列为每周各转运商的运输损耗率 （%）， 即 100%−=供货量 接收量损耗率 供货量 ；数值“0”表示没有运送。",
+  "tasks": [
+    "供应商的供货量：第一列为供应商的名称",
+    "第二列为供应商供应原材料的类别",
+    "第三列及以后共240 列为各供应商每周的供货量 （单位： 立方米）",
+    "数值 “0” 表示相应 的周（所在列）供应商（所在行）没有供货",
+    "附件 2 的数据说明 第一列为转运商的名称",
+    "第二列及以后共240 列为每周各转运商的运输损耗率 （%）， 即 100%−=供货量 接收量损耗率 供货量"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "订购-转运联合规划优化",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "运输、转运"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件1 近5年402家供应商的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件2 近5年8家转运商的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件A 订购方案数据结果.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件B 转运方案数据结果.xlsx",
+    "rows": 410,
+    "columns": 240,
+    "note": "本题专用算法读取附件1的402家供应商240周订货/供货量、附件2的8家转运商240周损耗率，并按附件A/B模板生成24周订购与转运方案。"
+  },
+  "formulation": {
+    "model_type": "订购-转运联合规划优化",
+    "task_breakdown": [
+      "供应商的供货量：第一列为供应商的名称",
+      "第二列为供应商供应原材料的类别",
+      "第三列及以后共240 列为各供应商每周的供货量 （单位： 立方米）",
+      "数值 “0” 表示相应 的周（所在列）供应商（所在行）没有供货",
+      "附件 2 的数据说明 第一列为转运商的名称",
+      "第二列及以后共240 列为每周各转运商的运输损耗率 （%）， 即 100%−=供货量 接收量损耗率 供货量"
+    ],
+    "assumptions": [
+      "附件1的近240周订货量、供货量可代表供应商未来短期供给能力和履约稳定性。",
+      "A、B、C类原材料单位产品消耗量分别为0.60、0.66、0.72立方米，采购单价相对C类分别为1.20、1.10、1.00。",
+      "每家转运商每周运输能力为6000立方米，供应商每周供货尽量由一家转运商承运；超出容量时才拆分。",
+      "未来24周计划使用历史近48周和近24周供给统计形成稳健供给上限，方案结果是可复现实验基线而非官方唯一最优解。"
+    ],
+    "decision_variables": [
+      "s_i: 第 i 家供应商的重要性综合得分",
+      "x_{i,t}: 第 t 周向供应商 i 的订货量",
+      "y_{i,t}: 第 t 周供应商 i 的预期供货量",
+      "z_{i,k,t}: 第 t 周由转运商 k 承运供应商 i 的供货量",
+      "I_t: 第 t 周折算为产成品体积的可用接收原料能力"
+    ],
+    "constraints": [
+      "0 <= y_{i,t} <= cap_i，其中 cap_i 由供应商近48周稳健供给能力估计。",
+      "sum_i received_{i,t}/coef_i >= 28200，保证每周2.82万立方米产能需求。",
+      "sum_i z_{i,k,t} <= 6000，任一转运商每周承运量不超过6000立方米。",
+      "sum_k z_{i,k,t} = y_{i,t}，所有预期供货量均安排转运。",
+      "问题3增加A类优先、C类惩罚；问题4放松产能目标并最大化可实现周产能。"
+    ],
+    "objective_or_equations": [
+      "data_audit = shape(orders, supply, losses) + missing_rate + nonzero_rate",
+      "validate attachment fields before optimization."
+    ],
+    "solution_steps": [
+      "读取附件1和附件2，核对供应商数、周数、转运商数。",
+      "统计订货、供货和损耗率数据的非零比例。",
+      "输出附件字段说明与可用于前4问建模的数据字典。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "订购-转运联合规划优化",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "attachment_data_dictionary_audit",
+    "orders_shape": [
+      402,
+      240
+    ],
+    "supply_shape": [
+      402,
+      240
+    ],
+    "loss_shape": [
+      8,
+      240
+    ],
+    "supplier_count": 402,
+    "transporter_count": 8,
+    "report": [
+      "该条目来自题面附件说明被解析成的附加问题，不是正式竞赛第5问/第6问。",
+      "实验在这里保留数据字典审计结果，说明前4问专用模型使用的数据字段、规模和非零比例。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2021/C/q06/experiment_table.csv"
+  ]
+}

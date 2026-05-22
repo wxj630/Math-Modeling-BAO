@@ -1,0 +1,5 @@
+location_type,example_location,development_level,population_pressure,biodiversity_sensitivity,geography_exposure,climate_clear_sky_factor,baseline_lighting_intensity,safety_need,sky_glow_component,ecological_component,human_health_component,safety_glare_component,night_sky_loss_component,light_pollution_risk_score,risk_level
+protected_land,dark-sky sensitive protected habitat,0.12,0.08,0.94,0.36,0.74,0.18,0.2,0.0362,0.1412,0.0451,0.0275,0.0926,7.13,low
+rural,low-density agricultural village,0.28,0.22,0.7,0.44,0.66,0.32,0.36,0.1021,0.2039,0.1057,0.0925,0.1682,13.67,low
+suburban,residential-commercial edge community,0.64,0.58,0.48,0.55,0.54,0.66,0.62,0.4006,0.3325,0.3656,0.3955,0.3703,37.12,moderate
+urban,dense mixed-use city district,0.92,0.88,0.3,0.7,0.42,0.94,0.86,0.783,0.3805,0.6854,0.8092,0.5584,63.34,high

@@ -1,0 +1,310 @@
+{
+  "problem_id": "2016-E",
+  "question": "q05",
+  "question_title": "有干预水资源预测与关键问题判断",
+  "statement": "Use the intervention from Task 4 and your model to project water availability into the future. Can the region become less susceptible to water scarcity? Will water become a critical issue, and when?",
+  "methods": "对比无干预和有干预 15 年 stress index，判断是否降低易受缺水影响以及是否仍为 critical。对应模型：反事实预测、情景对比、政策效果评估。",
+  "data_source": {
+    "type": "official_pdf_and_world_bank_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "selected_region": "Jordan",
+    "rows": {
+      "world_bank_jordan_water_indicators.csv": 528
+    },
+    "indicators": {
+      "SP.POP.TOTL": "Population, total",
+      "ER.H2O.FWTL.ZS": "Annual freshwater withdrawals, total (% of internal resources)",
+      "ER.H2O.FWAG.ZS": "Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",
+      "ER.H2O.FWIN.ZS": "Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",
+      "ER.H2O.FWDM.ZS": "Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",
+      "SH.H2O.BASW.ZS": "People using at least basic drinking water services",
+      "SH.STA.BASS.ZS": "People using at least basic sanitation services",
+      "NY.GDP.PCAP.KD": "GDP per capita, constant 2015 US$"
+    },
+    "official_problem_parameters": {
+      "un_water_scarcity_people": 1600000000,
+      "water_use_growth_vs_population_rate": 2.0,
+      "forecast_horizon_years": 15,
+      "scarcity_types": [
+        "physical scarcity",
+        "economic scarcity"
+      ]
+    }
+  },
+  "intervention_forecast": {
+    "horizon_years": 15,
+    "annual_reduction_pct_points": 7.5,
+    "stress_index_after_15_years": 1.489763,
+    "stress_reduction_vs_no_intervention": 1.124986,
+    "rows": [
+      {
+        "year_after_start": 0,
+        "freshwater_withdrawal_pct_internal_resources": 139.277,
+        "stress_index": 1.392771,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 1,
+        "freshwater_withdrawal_pct_internal_resources": 137.75,
+        "stress_index": 1.377501,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 2,
+        "freshwater_withdrawal_pct_internal_resources": 136.479,
+        "stress_index": 1.364793,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 3,
+        "freshwater_withdrawal_pct_internal_resources": 135.476,
+        "stress_index": 1.354757,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 4,
+        "freshwater_withdrawal_pct_internal_resources": 134.751,
+        "stress_index": 1.347506,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 5,
+        "freshwater_withdrawal_pct_internal_resources": 134.316,
+        "stress_index": 1.343161,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 6,
+        "freshwater_withdrawal_pct_internal_resources": 134.185,
+        "stress_index": 1.341846,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 7,
+        "freshwater_withdrawal_pct_internal_resources": 134.369,
+        "stress_index": 1.343691,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 8,
+        "freshwater_withdrawal_pct_internal_resources": 134.883,
+        "stress_index": 1.348832,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 9,
+        "freshwater_withdrawal_pct_internal_resources": 135.741,
+        "stress_index": 1.35741,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 10,
+        "freshwater_withdrawal_pct_internal_resources": 136.957,
+        "stress_index": 1.369572,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 11,
+        "freshwater_withdrawal_pct_internal_resources": 138.547,
+        "stress_index": 1.385472,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 12,
+        "freshwater_withdrawal_pct_internal_resources": 140.527,
+        "stress_index": 1.40527,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 13,
+        "freshwater_withdrawal_pct_internal_resources": 142.913,
+        "stress_index": 1.429134,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 14,
+        "freshwater_withdrawal_pct_internal_resources": 145.724,
+        "stress_index": 1.457237,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 15,
+        "freshwater_withdrawal_pct_internal_resources": 148.976,
+        "stress_index": 1.489763,
+        "status": "critical"
+      }
+    ],
+    "can_become_less_susceptible": true,
+    "will_water_be_critical_without_intervention": true
+  },
+  "no_intervention_forecast": {
+    "horizon_years": 15,
+    "recent_population_growth_rate": 0.021443,
+    "water_use_growth_rate_assumption": 0.042886,
+    "critical_threshold_index": 1.5,
+    "first_year_crossing_critical_threshold": 2,
+    "stress_index_after_15_years": 2.614749,
+    "rows": [
+      {
+        "year_after_start": 0,
+        "freshwater_withdrawal_pct_internal_resources": 139.277,
+        "stress_index": 1.392771,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 1,
+        "freshwater_withdrawal_pct_internal_resources": 145.25,
+        "stress_index": 1.452501,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 2,
+        "freshwater_withdrawal_pct_internal_resources": 151.479,
+        "stress_index": 1.514792,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 3,
+        "freshwater_withdrawal_pct_internal_resources": 157.976,
+        "stress_index": 1.579755,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 4,
+        "freshwater_withdrawal_pct_internal_resources": 164.75,
+        "stress_index": 1.647504,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 5,
+        "freshwater_withdrawal_pct_internal_resources": 171.816,
+        "stress_index": 1.718158,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 6,
+        "freshwater_withdrawal_pct_internal_resources": 179.184,
+        "stress_index": 1.791842,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 7,
+        "freshwater_withdrawal_pct_internal_resources": 186.869,
+        "stress_index": 1.868687,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 8,
+        "freshwater_withdrawal_pct_internal_resources": 194.883,
+        "stress_index": 1.948826,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 9,
+        "freshwater_withdrawal_pct_internal_resources": 203.24,
+        "stress_index": 2.032403,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 10,
+        "freshwater_withdrawal_pct_internal_resources": 211.956,
+        "stress_index": 2.119564,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 11,
+        "freshwater_withdrawal_pct_internal_resources": 221.046,
+        "stress_index": 2.210463,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 12,
+        "freshwater_withdrawal_pct_internal_resources": 230.526,
+        "stress_index": 2.30526,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 13,
+        "freshwater_withdrawal_pct_internal_resources": 240.412,
+        "stress_index": 2.404122,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 14,
+        "freshwater_withdrawal_pct_internal_resources": 250.722,
+        "stress_index": 2.507225,
+        "status": "critical"
+      },
+      {
+        "year_after_start": 15,
+        "freshwater_withdrawal_pct_internal_resources": 261.475,
+        "stress_index": 2.614749,
+        "status": "critical"
+      }
+    ],
+    "citizen_impact": "Without intervention, higher stress implies more intermittent supply, higher water prices, more agricultural constraints, and greater health risk during drought periods."
+  },
+  "intervention_plan": {
+    "selected_region": "Jordan",
+    "horizon_years": 15,
+    "strategy": "combine demand reduction, reuse, leakage control, new non-conventional supply, and watershed recharge; avoid relying on one megaproject",
+    "programs": [
+      {
+        "program": "agricultural_efficiency",
+        "annual_cost_musd": 120,
+        "fifteen_year_cost_musd": 1800,
+        "annual_withdrawal_reduction_pct_points": 2.4,
+        "annual_quality_gain_pct_points": 0.2,
+        "efficiency_score_per_billion_usd": 1.388889,
+        "neighbor_ecosystem_note": "lower irrigation withdrawals leave more water in shared basins and reduce salinity pressure"
+      },
+      {
+        "program": "leakage_reduction_and_metering",
+        "annual_cost_musd": 85,
+        "fifteen_year_cost_musd": 1275,
+        "annual_withdrawal_reduction_pct_points": 1.5,
+        "annual_quality_gain_pct_points": 0.3,
+        "efficiency_score_per_billion_usd": 1.294118,
+        "neighbor_ecosystem_note": "demand management lowers pressure on regional aquifers without shifting scarcity elsewhere"
+      },
+      {
+        "program": "wastewater_reuse_and_sanitation",
+        "annual_cost_musd": 95,
+        "fifteen_year_cost_musd": 1425,
+        "annual_withdrawal_reduction_pct_points": 1.1,
+        "annual_quality_gain_pct_points": 0.9,
+        "efficiency_score_per_billion_usd": 1.087719,
+        "neighbor_ecosystem_note": "treated reuse reduces downstream pollution but requires careful brine/sludge management"
+      },
+      {
+        "program": "rainwater_harvesting_and_aquifer_recharge",
+        "annual_cost_musd": 70,
+        "fifteen_year_cost_musd": 1050,
+        "annual_withdrawal_reduction_pct_points": 0.8,
+        "annual_quality_gain_pct_points": 0.2,
+        "efficiency_score_per_billion_usd": 0.857143,
+        "neighbor_ecosystem_note": "small decentralized gains improve drought resilience and reduce flash-flood losses"
+      },
+      {
+        "program": "desalination_and_renewable_energy",
+        "annual_cost_musd": 220,
+        "fifteen_year_cost_musd": 3300,
+        "annual_withdrawal_reduction_pct_points": 1.7,
+        "annual_quality_gain_pct_points": 0.4,
+        "efficiency_score_per_billion_usd": 0.575758,
+        "neighbor_ecosystem_note": "adds supply but has coastal brine and energy tradeoffs; pair with renewable power"
+      }
+    ],
+    "strengths": [
+      "addresses both physical and economic scarcity",
+      "prioritizes agriculture and leakage before expensive new supply",
+      "explicitly tracks ecosystem spillovers"
+    ],
+    "weaknesses": [
+      "requires governance capacity and pricing reform",
+      "desalination can shift environmental burden to energy/brine",
+      "national World Bank indicators hide local inequity"
+    ]
+  }
+}

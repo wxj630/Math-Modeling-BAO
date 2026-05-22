@@ -1,0 +1,118 @@
+{
+  "problem_id": "2022-E",
+  "question": "q10",
+  "question_title": "从现行时间线过渡到延长 10 年的采伐间隔",
+  "statement": "Suppose the best management plan includes a time between harvests that is 10 years longer than current practices in the forest. Discuss a transition strategy.",
+  "methods": "把 40 年现行间隔逐步过渡到 50 年目标间隔，列出库存基线、合同缓冲、长寿命产品转向和社区阈值。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "official_requirements": {
+      "hundred_year_carbon_accounting": true,
+      "forest_products_lifecycle": true,
+      "balance_carbon_with_biodiversity_recreation_cultural_values": true,
+      "apply_to_various_forests": true,
+      "transition_from_current_timeline": true,
+      "community_article": true
+    },
+    "parameters": {
+      "horizon_years": 100,
+      "current_practice_rotation_years": 40,
+      "requested_transition_extension_years": 10,
+      "forest_products_store_carbon": true,
+      "balance_carbon_with_other_values": true,
+      "apply_to_various_forests": true,
+      "community_article_required": true,
+      "source_note": "Official PDF statement parameters only; forest rows below are deterministic scenario assumptions for audit and replacement, not observed inventory records."
+    }
+  },
+  "transition_strategy": {
+    "current_practice_rotation_years": 40,
+    "target_rotation_years": 50,
+    "recommended_forest": "temperate mixed hardwood community forest",
+    "timeline": [
+      {
+        "year": 0,
+        "rotation_years": 40,
+        "action": "publish stand inventory, carbon baseline, and product-use accounting before changing harvest contracts"
+      },
+      {
+        "year": 2,
+        "rotation_years": 42,
+        "action": "delay low-risk stands first and use local mill contracts to protect jobs during the first extension"
+      },
+      {
+        "year": 5,
+        "rotation_years": 45,
+        "action": "shift harvested volume toward long-lived lumber and panels; report living and product carbon together"
+      },
+      {
+        "year": 8,
+        "rotation_years": 48,
+        "action": "expand recreation, habitat buffers, and cultural access investments funded by product revenue"
+      },
+      {
+        "year": 10,
+        "rotation_years": 50,
+        "action": "adopt the new 50-year interval after monitoring confirms carbon, revenue, and community access thresholds"
+      }
+    ],
+    "sensitivity_note": "The transition should pause if annual product revenue, habitat score, or community access falls below its baseline threshold."
+  },
+  "forest_applications": {
+    "application_rows": [
+      {
+        "forest": "temperate mixed hardwood community forest",
+        "region_type": "temperate",
+        "best_carbon_plan": "no_harvest",
+        "best_social_plan": "selective_60_year",
+        "recommended_plan": "selective_60_year",
+        "carbon_100_years_co2_per_ha": 1066.4192,
+        "decision_score": 0.786,
+        "include_harvest": true
+      },
+      {
+        "forest": "managed pine production forest",
+        "region_type": "subtropical plantation",
+        "best_carbon_plan": "extended_50_year",
+        "best_social_plan": "extended_50_year",
+        "recommended_plan": "extended_50_year",
+        "carbon_100_years_co2_per_ha": 925.2247,
+        "decision_score": 0.7745,
+        "include_harvest": true
+      },
+      {
+        "forest": "old-growth coastal conifer reserve",
+        "region_type": "cool wet conifer",
+        "best_carbon_plan": "no_harvest",
+        "best_social_plan": "no_harvest",
+        "recommended_plan": "no_harvest",
+        "carbon_100_years_co2_per_ha": 1453.4899,
+        "decision_score": 0.7698,
+        "include_harvest": false
+      },
+      {
+        "forest": "dry interior fire-adapted pine forest",
+        "region_type": "dry interior",
+        "best_carbon_plan": "no_harvest",
+        "best_social_plan": "selective_60_year",
+        "recommended_plan": "selective_60_year",
+        "carbon_100_years_co2_per_ha": 746.6779,
+        "decision_score": 0.7287,
+        "include_harvest": true
+      }
+    ],
+    "harvest_inclusion_case": {
+      "forest": "temperate mixed hardwood community forest",
+      "region_type": "temperate",
+      "best_carbon_plan": "no_harvest",
+      "best_social_plan": "selective_60_year",
+      "recommended_plan": "selective_60_year",
+      "carbon_100_years_co2_per_ha": 1066.4192,
+      "decision_score": 0.786,
+      "include_harvest": true
+    },
+    "interpretation": "The decision model separates the carbon-only winner from the socially balanced recommendation; harvesting appears only where product need and forest suitability offset biodiversity loss."
+  }
+}

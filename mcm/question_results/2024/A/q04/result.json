@@ -1,0 +1,274 @@
+{
+  "problem_id": "2024-A",
+  "question": "q04",
+  "question_title": "对寄生虫和其他生态系统成员的优势",
+  "statement": "Can an ecosystem with variable sex ratios in the lamprey population offer advantages to others in the ecosystem, such as parasites?",
+  "methods": "从宿主鱼、七鳃鳗寄生者、捕食者/人类食物资源三类受益方分析可变性别比稳定七鳃鳗丰度后的间接收益与代价。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "official_requirements": {
+      "resource_dependent_lamprey_sex_ratio": true,
+      "ecosystem_interactions": true,
+      "advantages_and_disadvantages": true,
+      "stability_and_other_species": true
+    },
+    "parameters": {
+      "low_food_male_ratio": 0.78,
+      "high_food_male_ratio": 0.56,
+      "months_simulated": 240,
+      "source_statement": "low food male percentage can reach approximately 78%; high food male percentage observed approximately 56%"
+    }
+  },
+  "parasite_and_other_species_effects": {
+    "beneficiaries": [
+      {
+        "species_group": "host fish",
+        "condition": "benefits when lamprey reduction pressure lowers parasitic mortality"
+      },
+      {
+        "species_group": "parasites of lampreys",
+        "condition": "benefit when lamprey abundance remains moderate to high"
+      },
+      {
+        "species_group": "predators / human harvest using lampreys as food",
+        "condition": "benefit from sustained lamprey biomass"
+      }
+    ],
+    "tradeoff": "variable sex ratios can indirectly help parasites and lamprey consumers by stabilizing lamprey persistence, but high lamprey density harms host fish"
+  },
+  "ecosystem_stability": {
+    "adaptive_medium_food": {
+      "scenario": "medium_food_adaptive",
+      "mean_resource_index": 0.5,
+      "mean_male_ratio": 0.67,
+      "mean_lamprey": 1.3729,
+      "mean_host_fish": 0.05,
+      "mean_parasites": 1.2,
+      "mean_food_web_benefit": 1.2,
+      "mean_mating_success": 0.8834,
+      "state_volatility": 0.0033,
+      "host_damage_index": 0.77,
+      "ecosystem_stability_score": 0.2568
+    },
+    "fixed_equal_ratio": {
+      "scenario": "fixed_equal_ratio",
+      "mean_resource_index": 0.5,
+      "mean_male_ratio": 0.5,
+      "mean_lamprey": 1.3586,
+      "mean_host_fish": 0.05,
+      "mean_parasites": 1.2,
+      "mean_food_web_benefit": 1.2,
+      "mean_mating_success": 1.0,
+      "state_volatility": 0.0034,
+      "host_damage_index": 0.77,
+      "ecosystem_stability_score": 0.258
+    },
+    "adaptive_vs_fixed_stability_gain": -0.0012,
+    "surface_best_cases": [
+      {
+        "resource_index": 0.0,
+        "lamprey_reduction_pressure": 0.5,
+        "mean_male_ratio": 0.7732,
+        "mean_lamprey": 0.4698,
+        "mean_host_fish": 0.4767,
+        "state_volatility": 0.002,
+        "host_damage_index": 0.3433,
+        "ecosystem_stability_score": 0.4829
+      },
+      {
+        "resource_index": 0.0,
+        "lamprey_reduction_pressure": 0.4,
+        "mean_male_ratio": 0.7732,
+        "mean_lamprey": 0.555,
+        "mean_host_fish": 0.3596,
+        "state_volatility": 0.0035,
+        "host_damage_index": 0.4604,
+        "ecosystem_stability_score": 0.4342
+      },
+      {
+        "resource_index": 0.1,
+        "lamprey_reduction_pressure": 0.5,
+        "mean_male_ratio": 0.758,
+        "mean_lamprey": 0.5747,
+        "mean_host_fish": 0.3329,
+        "state_volatility": 0.0047,
+        "host_damage_index": 0.4871,
+        "ecosystem_stability_score": 0.4222
+      },
+      {
+        "resource_index": 0.0,
+        "lamprey_reduction_pressure": 0.3,
+        "mean_male_ratio": 0.7732,
+        "mean_lamprey": 0.6403,
+        "mean_host_fish": 0.2499,
+        "state_volatility": 0.0042,
+        "host_damage_index": 0.5701,
+        "ecosystem_stability_score": 0.3842
+      },
+      {
+        "resource_index": 0.1,
+        "lamprey_reduction_pressure": 0.4,
+        "mean_male_ratio": 0.758,
+        "mean_lamprey": 0.6563,
+        "mean_host_fish": 0.23,
+        "state_volatility": 0.0052,
+        "host_damage_index": 0.59,
+        "ecosystem_stability_score": 0.3753
+      },
+      {
+        "resource_index": 0.2,
+        "lamprey_reduction_pressure": 0.5,
+        "mean_male_ratio": 0.736,
+        "mean_lamprey": 0.7106,
+        "mean_host_fish": 0.169,
+        "state_volatility": 0.005,
+        "host_damage_index": 0.651,
+        "ecosystem_stability_score": 0.349
+      },
+      {
+        "resource_index": 0.0,
+        "lamprey_reduction_pressure": 0.2,
+        "mean_male_ratio": 0.7732,
+        "mean_lamprey": 0.7256,
+        "mean_host_fish": 0.1554,
+        "state_volatility": 0.0049,
+        "host_damage_index": 0.6646,
+        "ecosystem_stability_score": 0.3429
+      },
+      {
+        "resource_index": 0.1,
+        "lamprey_reduction_pressure": 0.3,
+        "mean_male_ratio": 0.758,
+        "mean_lamprey": 0.738,
+        "mean_host_fish": 0.1426,
+        "state_volatility": 0.0069,
+        "host_damage_index": 0.6774,
+        "ecosystem_stability_score": 0.3379
+      }
+    ],
+    "surface_worst_cases": [
+      {
+        "resource_index": 1.0,
+        "lamprey_reduction_pressure": 0.5,
+        "mean_male_ratio": 0.5668,
+        "mean_lamprey": 1.3979,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0008,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 1.0,
+        "lamprey_reduction_pressure": 0.4,
+        "mean_male_ratio": 0.5668,
+        "mean_lamprey": 1.4,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 0.6,
+        "lamprey_reduction_pressure": 0.0,
+        "mean_male_ratio": 0.648,
+        "mean_lamprey": 1.3986,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0005,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 0.7,
+        "lamprey_reduction_pressure": 0.0,
+        "mean_male_ratio": 0.626,
+        "mean_lamprey": 1.4,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 0.7,
+        "lamprey_reduction_pressure": 0.1,
+        "mean_male_ratio": 0.626,
+        "mean_lamprey": 1.3997,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0002,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 0.8,
+        "lamprey_reduction_pressure": 0.0,
+        "mean_male_ratio": 0.604,
+        "mean_lamprey": 1.4,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 0.8,
+        "lamprey_reduction_pressure": 0.1,
+        "mean_male_ratio": 0.604,
+        "mean_lamprey": 1.4,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "resource_index": 0.9,
+        "lamprey_reduction_pressure": 0.0,
+        "mean_male_ratio": 0.582,
+        "mean_lamprey": 1.4,
+        "mean_host_fish": 0.05,
+        "state_volatility": 0.0,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      }
+    ]
+  },
+  "lamprey_population_tradeoffs": {
+    "low_food": {
+      "scenario": "low_food_adaptive",
+      "mean_resource_index": 0.12,
+      "mean_male_ratio": 0.7536,
+      "mean_lamprey": 1.0066,
+      "mean_host_fish": 0.05,
+      "mean_parasites": 1.2,
+      "mean_food_web_benefit": 1.2,
+      "mean_mating_success": 0.7418,
+      "state_volatility": 0.0028,
+      "host_damage_index": 0.77,
+      "ecosystem_stability_score": 0.2783,
+      "male_ratio": 0.7536
+    },
+    "high_food": {
+      "scenario": "high_food_adaptive",
+      "mean_resource_index": 0.9,
+      "mean_male_ratio": 0.582,
+      "mean_lamprey": 1.4,
+      "mean_host_fish": 0.05,
+      "mean_parasites": 1.2,
+      "mean_food_web_benefit": 1.2,
+      "mean_mating_success": 0.9721,
+      "state_volatility": 0.0,
+      "host_damage_index": 0.77,
+      "ecosystem_stability_score": 0.2552,
+      "male_ratio": 0.582
+    },
+    "advantages": [
+      "male-biased low-food cohorts preserve mating opportunities when larval resources are poor",
+      "resource-sensitive sex ratios prevent overproduction of females when juvenile survival is low",
+      "adaptive ratios can dampen population overshoot relative to a fixed sex ratio"
+    ],
+    "disadvantages": [
+      "strong male bias lowers female availability and can bottleneck reproduction",
+      "sex-ratio plasticity makes population forecasts more sensitive to resource measurement error",
+      "host-fish damage can remain high if lamprey survival is also resource-supported"
+    ]
+  }
+}

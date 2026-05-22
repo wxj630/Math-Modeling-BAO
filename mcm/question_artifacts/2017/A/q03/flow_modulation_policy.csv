@@ -1,0 +1,5 @@
+﻿condition,trigger_flow_index,release_rule,safety_cost_tradeoff
+normal wet-season inflow,60-85,"store first 30% of surplus upstream, pass 50% through mid-river buffers, reserve 20% for downstream ecological pulse",moderate storage with low emergency spill risk
+normal dry-season inflow,35-60,coordinate weekly low-flow support from downstream and mid-river dams while preserving upstream reserve,protect water users while limiting turbine and ecology stress
+flood emergency,>85,"pre-release upstream dams, stagger mid-river gates by 8-12 hours, cap downstream rise rate",higher short-term spill cost to avoid synchronized flood peak
+prolonged low-water emergency,<35 for 30 days,"shift to drought rationing, suspend noncritical hydropower peaking, protect drinking water and ecological minimum flow",economic generation loss accepted to preserve health and minimum river function

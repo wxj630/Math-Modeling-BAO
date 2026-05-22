@@ -1,0 +1,17 @@
+feature,importance
+network_density,0.5375315530755949
+average_pass_length,0.46246844692440525
+passes,0.0
+pass_advantage,0.0
+players_involved,0.0
+network_reciprocity,0.0
+weighted_clustering,0.0
+pass_type_entropy,0.0
+top_pair_share,0.0
+contribution_gini,0.0
+forward_pass_share,0.0
+attacking_third_share,0.0
+shot_count,0.0
+duel_count,0.0
+foul_count,0.0
+home_side,0.0

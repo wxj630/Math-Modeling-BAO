@@ -1,0 +1,4 @@
+queue,servers,passenger_count,mean_wait_s,p90_wait_s,max_wait_s,mean_service_s,last_finish_s
+precheck,1,58,1577.992103,2945.2368,3169.007,67.384078,3908.2765
+regular,3,47,283.902553,596.03,696.51,89.751915,3659.41
+combined,4,105,998.732971,2521.0776,3169.007,,3908.2765

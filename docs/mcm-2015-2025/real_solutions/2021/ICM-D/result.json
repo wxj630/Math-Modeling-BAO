@@ -1,0 +1,753 @@
+{
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
+    "rows": {
+      "influence_data.csv": 42770,
+      "full_music_data.csv": 98340,
+      "data_by_artist.csv": 5854,
+      "data_by_year.csv": 100
+    },
+    "only_allowed_files": [
+      "influence_data.csv",
+      "full_music_data.csv",
+      "data_by_artist.csv",
+      "data_by_year.csv"
+    ]
+  },
+  "influence_network": {
+    "node_count": 5603,
+    "edge_count": 42770,
+    "weak_component_count": 3,
+    "largest_weak_component_nodes": 5599,
+    "top_influencers": [
+      {
+        "artist_id": 754032,
+        "artist_name": "The Beatles",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 31,
+        "out_degree": 615,
+        "pagerank": 0.0002282929,
+        "influence_score": 4.108035
+      },
+      {
+        "artist_id": 894465,
+        "artist_name": "The Rolling Stones",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 39,
+        "out_degree": 319,
+        "pagerank": 0.0002368474,
+        "influence_score": 3.891589
+      },
+      {
+        "artist_id": 66915,
+        "artist_name": "Bob Dylan",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 29,
+        "out_degree": 389,
+        "pagerank": 0.0002517577,
+        "influence_score": 3.88022
+      },
+      {
+        "artist_id": 354105,
+        "artist_name": "Jimi Hendrix",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 32,
+        "out_degree": 201,
+        "pagerank": 0.0002409752,
+        "influence_score": 3.617318
+      },
+      {
+        "artist_id": 531986,
+        "artist_name": "David Bowie",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 25,
+        "out_degree": 238,
+        "pagerank": 0.0002294209,
+        "influence_score": 3.609331
+      },
+      {
+        "artist_id": 139026,
+        "artist_name": "Led Zeppelin",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 24,
+        "out_degree": 221,
+        "pagerank": 0.0001898493,
+        "influence_score": 3.561608
+      },
+      {
+        "artist_id": 379125,
+        "artist_name": "Neil Young",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 31,
+        "out_degree": 148,
+        "pagerank": 0.0003573324,
+        "influence_score": 3.47193
+      },
+      {
+        "artist_id": 490004,
+        "artist_name": "Ramones",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "in_degree": 33,
+        "out_degree": 127,
+        "pagerank": 0.0005681892,
+        "influence_score": 3.429004
+      },
+      {
+        "artist_id": 357406,
+        "artist_name": "Nirvana",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "in_degree": 39,
+        "out_degree": 110,
+        "pagerank": 0.0003416334,
+        "influence_score": 3.417229
+      },
+      {
+        "artist_id": 418740,
+        "artist_name": "Sex Pistols",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "in_degree": 23,
+        "out_degree": 153,
+        "pagerank": 0.0001821943,
+        "influence_score": 3.382591
+      },
+      {
+        "artist_id": 75747,
+        "artist_name": "The Clash",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "in_degree": 26,
+        "out_degree": 136,
+        "pagerank": 0.0002584058,
+        "influence_score": 3.372702
+      },
+      {
+        "artist_id": 631774,
+        "artist_name": "The Byrds",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 20,
+        "out_degree": 158,
+        "pagerank": 0.0001515477,
+        "influence_score": 3.349621
+      },
+      {
+        "artist_id": 316834,
+        "artist_name": "Marvin Gaye",
+        "main_genre": "R&B;",
+        "active_start": 1950,
+        "in_degree": 18,
+        "out_degree": 169,
+        "pagerank": 0.0001663387,
+        "influence_score": 3.34499
+      },
+      {
+        "artist_id": 446509,
+        "artist_name": "Metallica",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "in_degree": 29,
+        "out_degree": 112,
+        "pagerank": 0.0003151287,
+        "influence_score": 3.324046
+      },
+      {
+        "artist_id": 577627,
+        "artist_name": "The Who",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "in_degree": 20,
+        "out_degree": 149,
+        "pagerank": 0.0001499389,
+        "influence_score": 3.323368
+      }
+    ],
+    "pop_rock_subnetwork": {
+      "node_count": 2808,
+      "edge_count": 22049
+    }
+  },
+  "similarity_model": {
+    "method": "Standardize official data_by_artist audio features; compare artists to same-genre centroids and compare genre centroids with the same distance-to-similarity transform. The matrix artifact also records cosine similarity between genre centroids.",
+    "artist_count_with_genre": 5599,
+    "top_genres_used": [
+      "Pop/Rock",
+      "R&B;",
+      "Jazz",
+      "Country",
+      "Latin",
+      "Electronic",
+      "Vocal",
+      "Reggae",
+      "Blues",
+      "Folk",
+      "Religious",
+      "International"
+    ],
+    "within_genre_mean_similarity": 0.276927,
+    "between_genre_mean_similarity": 0.334467,
+    "most_similar_genre_pairs": [
+      {
+        "genre_a": "Folk",
+        "genre_b": "Vocal",
+        "centroid_cosine_similarity": 0.946537
+      },
+      {
+        "genre_a": "R&B;",
+        "genre_b": "Reggae",
+        "centroid_cosine_similarity": 0.835508
+      },
+      {
+        "genre_a": "International",
+        "genre_b": "Jazz",
+        "centroid_cosine_similarity": 0.822085
+      },
+      {
+        "genre_a": "Blues",
+        "genre_b": "Folk",
+        "centroid_cosine_similarity": 0.813213
+      },
+      {
+        "genre_a": "Blues",
+        "genre_b": "International",
+        "centroid_cosine_similarity": 0.805344
+      },
+      {
+        "genre_a": "Folk",
+        "genre_b": "International",
+        "centroid_cosine_similarity": 0.789064
+      },
+      {
+        "genre_a": "Blues",
+        "genre_b": "Vocal",
+        "centroid_cosine_similarity": 0.739653
+      },
+      {
+        "genre_a": "Latin",
+        "genre_b": "R&B;",
+        "centroid_cosine_similarity": 0.736557
+      },
+      {
+        "genre_a": "International",
+        "genre_b": "Vocal",
+        "centroid_cosine_similarity": 0.721847
+      },
+      {
+        "genre_a": "Folk",
+        "genre_b": "Jazz",
+        "centroid_cosine_similarity": 0.6756
+      }
+    ]
+  },
+  "genre_evolution": {
+    "method": "Merge official full_music_data first artist id to official influence genres, then estimate per-year feature slopes by genre.",
+    "song_rows_with_genre": 96065,
+    "global_feature_trends": [
+      {
+        "feature": "danceability",
+        "slope_per_year": 0.00096202,
+        "change_1921_2020": 0.09524
+      },
+      {
+        "feature": "energy",
+        "slope_per_year": 0.00527362,
+        "change_1921_2020": 0.522088
+      },
+      {
+        "feature": "valence",
+        "slope_per_year": -0.00043763,
+        "change_1921_2020": -0.043325
+      },
+      {
+        "feature": "tempo",
+        "slope_per_year": 0.15438956,
+        "change_1921_2020": 15.284567
+      },
+      {
+        "feature": "loudness",
+        "slope_per_year": 0.09965966,
+        "change_1921_2020": 9.866307
+      },
+      {
+        "feature": "acousticness",
+        "slope_per_year": -0.00897028,
+        "change_1921_2020": -0.888058
+      },
+      {
+        "feature": "instrumentalness",
+        "slope_per_year": -0.0038141,
+        "change_1921_2020": -0.377596
+      }
+    ],
+    "genre_profiles": [
+      {
+        "main_genre": "Country",
+        "year_min": 1930,
+        "year_max": 2020,
+        "year_count": 81,
+        "danceability_slope_per_year": 0.00039228,
+        "danceability_change_1921_2020": 0.035305,
+        "energy_slope_per_year": 0.00510168,
+        "energy_change_1921_2020": 0.459151,
+        "valence_slope_per_year": -0.00130886,
+        "valence_change_1921_2020": -0.117797,
+        "tempo_slope_per_year": 0.08234446,
+        "tempo_change_1921_2020": 7.411001,
+        "loudness_slope_per_year": 0.08852863,
+        "loudness_change_1921_2020": 7.967577,
+        "acousticness_slope_per_year": -0.0082735,
+        "acousticness_change_1921_2020": -0.744615,
+        "instrumentalness_slope_per_year": -0.00082789,
+        "instrumentalness_change_1921_2020": -0.07451
+      },
+      {
+        "main_genre": "Pop/Rock",
+        "year_min": 1925,
+        "year_max": 2020,
+        "year_count": 76,
+        "danceability_slope_per_year": 0.00028059,
+        "danceability_change_1921_2020": 0.026656,
+        "energy_slope_per_year": 0.00397957,
+        "energy_change_1921_2020": 0.378059,
+        "valence_slope_per_year": -0.00259899,
+        "valence_change_1921_2020": -0.246904,
+        "tempo_slope_per_year": 0.17815824,
+        "tempo_change_1921_2020": 16.925032,
+        "loudness_slope_per_year": 0.08042179,
+        "loudness_change_1921_2020": 7.64007,
+        "acousticness_slope_per_year": -0.0083611,
+        "acousticness_change_1921_2020": -0.794304,
+        "instrumentalness_slope_per_year": -0.00063506,
+        "instrumentalness_change_1921_2020": -0.06033
+      },
+      {
+        "main_genre": "Latin",
+        "year_min": 1939,
+        "year_max": 2020,
+        "year_count": 78,
+        "danceability_slope_per_year": 0.002285,
+        "danceability_change_1921_2020": 0.185085,
+        "energy_slope_per_year": 0.00443588,
+        "energy_change_1921_2020": 0.359306,
+        "valence_slope_per_year": -0.00010422,
+        "valence_change_1921_2020": -0.008442,
+        "tempo_slope_per_year": 0.12579292,
+        "tempo_change_1921_2020": 10.189227,
+        "loudness_slope_per_year": 0.09574466,
+        "loudness_change_1921_2020": 7.755318,
+        "acousticness_slope_per_year": -0.0085915,
+        "acousticness_change_1921_2020": -0.695911,
+        "instrumentalness_slope_per_year": -0.00353205,
+        "instrumentalness_change_1921_2020": -0.286096
+      },
+      {
+        "main_genre": "R&B;",
+        "year_min": 1927,
+        "year_max": 2020,
+        "year_count": 78,
+        "danceability_slope_per_year": 0.00210223,
+        "danceability_change_1921_2020": 0.195507,
+        "energy_slope_per_year": 0.00365762,
+        "energy_change_1921_2020": 0.340159,
+        "valence_slope_per_year": -0.00047797,
+        "valence_change_1921_2020": -0.044452,
+        "tempo_slope_per_year": 0.05426066,
+        "tempo_change_1921_2020": 5.046241,
+        "loudness_slope_per_year": 0.07739827,
+        "loudness_change_1921_2020": 7.198039,
+        "acousticness_slope_per_year": -0.00862034,
+        "acousticness_change_1921_2020": -0.801692,
+        "instrumentalness_slope_per_year": -0.00076307,
+        "instrumentalness_change_1921_2020": -0.070966
+      },
+      {
+        "main_genre": "Reggae",
+        "year_min": 1931,
+        "year_max": 2020,
+        "year_count": 67,
+        "danceability_slope_per_year": 0.00357238,
+        "danceability_change_1921_2020": 0.317942,
+        "energy_slope_per_year": 0.00357091,
+        "energy_change_1921_2020": 0.317811,
+        "valence_slope_per_year": 0.00204273,
+        "valence_change_1921_2020": 0.181803,
+        "tempo_slope_per_year": 0.08171575,
+        "tempo_change_1921_2020": 7.272702,
+        "loudness_slope_per_year": 0.07143271,
+        "loudness_change_1921_2020": 6.357511,
+        "acousticness_slope_per_year": -0.00816169,
+        "acousticness_change_1921_2020": -0.72639,
+        "instrumentalness_slope_per_year": -0.00527914,
+        "instrumentalness_change_1921_2020": -0.469844
+      },
+      {
+        "main_genre": "International",
+        "year_min": 1930,
+        "year_max": 2017,
+        "year_count": 79,
+        "danceability_slope_per_year": 0.00130258,
+        "danceability_change_1921_2020": 0.113324,
+        "energy_slope_per_year": 0.0035231,
+        "energy_change_1921_2020": 0.30651,
+        "valence_slope_per_year": -0.00182366,
+        "valence_change_1921_2020": -0.158658,
+        "tempo_slope_per_year": 0.08970943,
+        "tempo_change_1921_2020": 7.80472,
+        "loudness_slope_per_year": 0.0252278,
+        "loudness_change_1921_2020": 2.194819,
+        "acousticness_slope_per_year": -0.00962757,
+        "acousticness_change_1921_2020": -0.837599,
+        "instrumentalness_slope_per_year": -0.00176636,
+        "instrumentalness_change_1921_2020": -0.153673
+      },
+      {
+        "main_genre": "Vocal",
+        "year_min": 1924,
+        "year_max": 2019,
+        "year_count": 91,
+        "danceability_slope_per_year": -0.00025868,
+        "danceability_change_1921_2020": -0.024575,
+        "energy_slope_per_year": 0.0020721,
+        "energy_change_1921_2020": 0.19685,
+        "valence_slope_per_year": -0.00074462,
+        "valence_change_1921_2020": -0.070739,
+        "tempo_slope_per_year": 0.045612,
+        "tempo_change_1921_2020": 4.33314,
+        "loudness_slope_per_year": 0.03407825,
+        "loudness_change_1921_2020": 3.237433,
+        "acousticness_slope_per_year": -0.00336469,
+        "acousticness_change_1921_2020": -0.319646,
+        "instrumentalness_slope_per_year": -0.00063218,
+        "instrumentalness_change_1921_2020": -0.060058
+      },
+      {
+        "main_genre": "Folk",
+        "year_min": 1943,
+        "year_max": 2014,
+        "year_count": 62,
+        "danceability_slope_per_year": 0.00011477,
+        "danceability_change_1921_2020": 0.008149,
+        "energy_slope_per_year": 0.00244118,
+        "energy_change_1921_2020": 0.173324,
+        "valence_slope_per_year": -0.0013115,
+        "valence_change_1921_2020": -0.093116,
+        "tempo_slope_per_year": 0.16944352,
+        "tempo_change_1921_2020": 12.03049,
+        "loudness_slope_per_year": 0.08597356,
+        "loudness_change_1921_2020": 6.104123,
+        "acousticness_slope_per_year": -0.00276518,
+        "acousticness_change_1921_2020": -0.196328,
+        "instrumentalness_slope_per_year": -0.00025575,
+        "instrumentalness_change_1921_2020": -0.018158
+      },
+      {
+        "main_genre": "Jazz",
+        "year_min": 1924,
+        "year_max": 2019,
+        "year_count": 90,
+        "danceability_slope_per_year": 0.00018485,
+        "danceability_change_1921_2020": 0.017561,
+        "energy_slope_per_year": 0.00169225,
+        "energy_change_1921_2020": 0.160764,
+        "valence_slope_per_year": -0.00228562,
+        "valence_change_1921_2020": -0.217134,
+        "tempo_slope_per_year": -0.11445949,
+        "tempo_change_1921_2020": -10.873652,
+        "loudness_slope_per_year": 0.02229061,
+        "loudness_change_1921_2020": 2.117608,
+        "acousticness_slope_per_year": -0.00563398,
+        "acousticness_change_1921_2020": -0.535228,
+        "instrumentalness_slope_per_year": -0.00200538,
+        "instrumentalness_change_1921_2020": -0.190511
+      },
+      {
+        "main_genre": "Classical",
+        "year_min": 1921,
+        "year_max": 2018,
+        "year_count": 82,
+        "danceability_slope_per_year": -0.00105452,
+        "danceability_change_1921_2020": -0.102289,
+        "energy_slope_per_year": -0.00085455,
+        "energy_change_1921_2020": -0.082891,
+        "valence_slope_per_year": -0.00266497,
+        "valence_change_1921_2020": -0.258502,
+        "tempo_slope_per_year": 0.04141156,
+        "tempo_change_1921_2020": 4.016921,
+        "loudness_slope_per_year": -0.10168689,
+        "loudness_change_1921_2020": -9.863628,
+        "acousticness_slope_per_year": -0.00054088,
+        "acousticness_change_1921_2020": -0.052465,
+        "instrumentalness_slope_per_year": 0.00376021,
+        "instrumentalness_change_1921_2020": 0.36474
+      }
+    ]
+  },
+  "influence_evidence": {
+    "method": "Join official influence edges to official data_by_artist features; high influencer-follower correlation and lower feature distance support measurable influence.",
+    "edge_pairs_with_features": 42752,
+    "same_genre_edge_similarity": 0.292389,
+    "cross_genre_edge_similarity": 0.261837,
+    "feature_contagion": [
+      {
+        "feature": "acousticness",
+        "influencer_follower_correlation": 0.612968,
+        "mean_absolute_gap": 0.187655
+      },
+      {
+        "feature": "energy",
+        "influencer_follower_correlation": 0.574354,
+        "mean_absolute_gap": 0.149097
+      },
+      {
+        "feature": "popularity",
+        "influencer_follower_correlation": 0.474367,
+        "mean_absolute_gap": 9.774316
+      },
+      {
+        "feature": "speechiness",
+        "influencer_follower_correlation": 0.459942,
+        "mean_absolute_gap": 0.027893
+      },
+      {
+        "feature": "danceability",
+        "influencer_follower_correlation": 0.437535,
+        "mean_absolute_gap": 0.09689
+      },
+      {
+        "feature": "instrumentalness",
+        "influencer_follower_correlation": 0.430589,
+        "mean_absolute_gap": 0.12431
+      },
+      {
+        "feature": "loudness",
+        "influencer_follower_correlation": 0.423209,
+        "mean_absolute_gap": 3.108901
+      },
+      {
+        "feature": "valence",
+        "influencer_follower_correlation": 0.364264,
+        "mean_absolute_gap": 0.150469
+      },
+      {
+        "feature": "duration_ms",
+        "influencer_follower_correlation": 0.274204,
+        "mean_absolute_gap": 58797.094514
+      },
+      {
+        "feature": "tempo",
+        "influencer_follower_correlation": 0.160258,
+        "mean_absolute_gap": 14.137096
+      },
+      {
+        "feature": "liveness",
+        "influencer_follower_correlation": 0.112703,
+        "mean_absolute_gap": 0.083873
+      }
+    ]
+  },
+  "revolutionary_artists": {
+    "method": "Rank artists by directed-network influence plus average feature distance to followers, identifying high-impact artists associated with major stylistic jumps.",
+    "artists": [
+      {
+        "artist_id": 617196,
+        "artist_name": "Brian Eno",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "out_degree": 135,
+        "in_degree": 15,
+        "pagerank": 0.0002198747,
+        "mean_follower_feature_distance": 4.917926,
+        "feature_link_count": 135.0,
+        "revolutionary_score": 0.977773
+      },
+      {
+        "artist_id": 346336,
+        "artist_name": "Pink Floyd",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 142,
+        "in_degree": 16,
+        "pagerank": 0.0001258841,
+        "mean_follower_feature_distance": 3.715158,
+        "feature_link_count": 142.0,
+        "revolutionary_score": 0.953067
+      },
+      {
+        "artist_id": 423829,
+        "artist_name": "Miles Davis",
+        "main_genre": "Jazz",
+        "active_start": 1940,
+        "out_degree": 160,
+        "in_degree": 16,
+        "pagerank": 0.000185042,
+        "mean_follower_feature_distance": 3.500365,
+        "feature_link_count": 160.0,
+        "revolutionary_score": 0.942815
+      },
+      {
+        "artist_id": 175553,
+        "artist_name": "John Coltrane",
+        "main_genre": "Jazz",
+        "active_start": 1940,
+        "out_degree": 118,
+        "in_degree": 15,
+        "pagerank": 0.0001469792,
+        "mean_follower_feature_distance": 3.619001,
+        "feature_link_count": 118.0,
+        "revolutionary_score": 0.942731
+      },
+      {
+        "artist_id": 91650,
+        "artist_name": "Black Flag",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "out_degree": 93,
+        "in_degree": 18,
+        "pagerank": 0.0001622362,
+        "mean_follower_feature_distance": 3.384994,
+        "feature_link_count": 93.0,
+        "revolutionary_score": 0.918361
+      },
+      {
+        "artist_id": 937003,
+        "artist_name": "My Bloody Valentine",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "out_degree": 51,
+        "in_degree": 18,
+        "pagerank": 0.0001606991,
+        "mean_follower_feature_distance": 3.826274,
+        "feature_link_count": 51.0,
+        "revolutionary_score": 0.910357
+      },
+      {
+        "artist_id": 755156,
+        "artist_name": "Sonic Youth",
+        "main_genre": "Pop/Rock",
+        "active_start": 1980,
+        "out_degree": 71,
+        "in_degree": 38,
+        "pagerank": 0.0003276058,
+        "mean_follower_feature_distance": 3.236479,
+        "feature_link_count": 71.0,
+        "revolutionary_score": 0.907731
+      },
+      {
+        "artist_id": 211758,
+        "artist_name": "Charlie Parker",
+        "main_genre": "Jazz",
+        "active_start": 1930,
+        "out_degree": 95,
+        "in_degree": 8,
+        "pagerank": 0.0001446102,
+        "mean_follower_feature_distance": 3.450395,
+        "feature_link_count": 95.0,
+        "revolutionary_score": 0.899958
+      },
+      {
+        "artist_id": 76057,
+        "artist_name": "King Crimson",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 50,
+        "in_degree": 14,
+        "pagerank": 0.000130761,
+        "mean_follower_feature_distance": 4.413811,
+        "feature_link_count": 50.0,
+        "revolutionary_score": 0.899811
+      },
+      {
+        "artist_id": 490004,
+        "artist_name": "Ramones",
+        "main_genre": "Pop/Rock",
+        "active_start": 1970,
+        "out_degree": 127,
+        "in_degree": 33,
+        "pagerank": 0.0005681892,
+        "mean_follower_feature_distance": 3.052471,
+        "feature_link_count": 127.0,
+        "revolutionary_score": 0.898613
+      },
+      {
+        "artist_id": 336783,
+        "artist_name": "Nick Drake",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 60,
+        "in_degree": 14,
+        "pagerank": 0.0002007603,
+        "mean_follower_feature_distance": 3.459488,
+        "feature_link_count": 60.0,
+        "revolutionary_score": 0.88979
+      },
+      {
+        "artist_id": 745964,
+        "artist_name": "The Allman Brothers Band",
+        "main_genre": "Pop/Rock",
+        "active_start": 1960,
+        "out_degree": 53,
+        "in_degree": 17,
+        "pagerank": 0.0001557105,
+        "mean_follower_feature_distance": 3.47108,
+        "feature_link_count": 53.0,
+        "revolutionary_score": 0.888887
+      }
+    ]
+  },
+  "cultural_influence_context": {
+    "decade_edge_counts": [
+      {
+        "follower_active_start": 1930,
+        "edge_count": 193
+      },
+      {
+        "follower_active_start": 1940,
+        "edge_count": 741
+      },
+      {
+        "follower_active_start": 1950,
+        "edge_count": 2860
+      },
+      {
+        "follower_active_start": 1960,
+        "edge_count": 6478
+      },
+      {
+        "follower_active_start": 1970,
+        "edge_count": 6781
+      },
+      {
+        "follower_active_start": 1980,
+        "edge_count": 8523
+      },
+      {
+        "follower_active_start": 1990,
+        "edge_count": 10911
+      },
+      {
+        "follower_active_start": 2000,
+        "edge_count": 5472
+      },
+      {
+        "follower_active_start": 2010,
+        "edge_count": 811
+      }
+    ],
+    "pre_1990_edges": 25576,
+    "1990_2000_edges": 16383,
+    "post_2000_edges": 811,
+    "interpretation": "Follower active-start decades show how the observed influence network concentrates across eras; this is a network signal, not a causal proof of internet or political effects."
+  },
+  "one_page_icm_society_memo": "To the ICM Society: our network approach turns the provided artist influence lists into a directed graph and links that graph to the provided Spotify-style audio features. The top network influencers in this run include The Beatles, The Rolling Stones, Bob Dylan. Within-genre similarity (0.276927) is higher than between-genre similarity (0.334467), so genres have measurable feature signatures while still showing cross-genre bridges. With richer data, the same pipeline should add lyrics, geography, collaborations, release chronology, and external historical events; those additions would allow stronger causal claims about cultural, social, political, or technological influence. The current results are valuable as an auditable map of influence, similarity, and musical evolution using only the four contest files."
+}

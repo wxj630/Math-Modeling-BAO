@@ -1,0 +1,226 @@
+# 2021-C 问题 2 建模求解实验报告
+
+## 题目原文与任务拆解
+
+- 题目：2021年 CUMCM C题：生产企业原材料的订购与运输
+- 问题：问题 2
+- 原问：参考问题1， 该企业应至少选择多少家供应商供应原材料才可能满足生产的需求？ 针对这些供应商，为该企业制定未来 24 周每周最经济的原材料订购方案，并据此制定 损耗最少的转运方案。试对订购方案和转运方案的实施效果进行分析。
+
+### 本问需要完成什么
+- 任务 1：试对订购方案和转运方案的实施效果进行分析
+
+## 适配模型
+
+- 主模型：订购-转运联合规划优化（CH3：函数极值与规划模型）
+- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+
+### 候选模型与适配理由
+- 规划优化与资源配置（CH3）：方案、订购；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 时间序列预测（CH8）：未来；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 图论网络与路径调度（CH4）：转运；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+
+## 变量、约束与公式
+
+### 建模假设
+- 附件1的近240周订货量、供货量可代表供应商未来短期供给能力和履约稳定性。
+- A、B、C类原材料单位产品消耗量分别为0.60、0.66、0.72立方米，采购单价相对C类分别为1.20、1.10、1.00。
+- 每家转运商每周运输能力为6000立方米，供应商每周供货尽量由一家转运商承运；超出容量时才拆分。
+- 未来24周计划使用历史近48周和近24周供给统计形成稳健供给上限，方案结果是可复现实验基线而非官方唯一最优解。
+
+### 变量定义
+- s_i: 第 i 家供应商的重要性综合得分
+- x_{i,t}: 第 t 周向供应商 i 的订货量
+- y_{i,t}: 第 t 周供应商 i 的预期供货量
+- z_{i,k,t}: 第 t 周由转运商 k 承运供应商 i 的供货量
+- I_t: 第 t 周折算为产成品体积的可用接收原料能力
+
+### 约束条件
+- 0 <= y_{i,t} <= cap_i，其中 cap_i 由供应商近48周稳健供给能力估计。
+- sum_i received_{i,t}/coef_i >= 28200，保证每周2.82万立方米产能需求。
+- sum_i z_{i,k,t} <= 6000，任一转运商每周承运量不超过6000立方米。
+- sum_k z_{i,k,t} = y_{i,t}，所有预期供货量均安排转运。
+- 问题3增加A类优先、C类惩罚；问题4放松产能目标并最大化可实现周产能。
+
+### 模型公式 / 目标函数
+- `min sum_{i,t} unit_cost_i*x_{i,t} + loss_penalty*sum_{i,k,t} loss_{k,t}*z_{i,k,t}`
+- `find smallest n such that sum_{i in TopN} cap_i*(1-loss_min)/coef_i >= 1.02*28200`
+- `greedy fill demand by effective unit cost, then assign each shipment to the lowest-loss transporter with remaining capacity.`
+
+## Python 代码与运行方式
+
+- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/C/q02/solution.py
+- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/C/q02/solution.py`
+- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+
+### 求解步骤
+- 步骤 1：先按问题1重要性得分排序，逐个累加稳健产能得到满足生产需求的最少供应商数。
+- 步骤 2：在这些供应商内按单位产品成本、低损耗和重要性排序生成24周订购量。
+- 步骤 3：逐周将供货量分配给损耗率最低且容量未满的转运商。
+- 步骤 4：输出订购方案、转运方案、周度满足率和成本损耗汇总。
+
+## 实验结果与解释
+
+### 产物文件
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_supplier_scores.csv
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_weekly_summary.csv
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_order_plan.csv
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_transport_plan.csv
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_附件A_订购方案填报.xlsx
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_附件B_转运方案填报.xlsx
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/experiment_table.csv
+
+### 数据来源
+- 类型：attachment
+- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件1 近5年402家供应商的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件2 近5年8家转运商的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件A 订购方案数据结果.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件B 转运方案数据结果.xlsx
+- 读取规模：410 行 x 240 列
+- 说明：本题专用算法读取附件1的402家供应商240周订货/供货量、附件2的8家转运商240周损耗率，并按附件A/B模板生成24周订购与转运方案。
+
+### result.json 核心结果
+
+```json
+{
+  "method": "minimum_supplier_cost_transport_plan",
+  "minimum_supplier_count": 46,
+  "covered_weekly_product_capacity_m3": 28968.768472,
+  "selected_supplier_sample": [
+    "S229",
+    "S361",
+    "S275",
+    "S329",
+    "S282",
+    "S268",
+    "S306",
+    "S194",
+    "S151",
+    "S356",
+    "S352",
+    "S108",
+    "S340",
+    "S247",
+    "S143"
+  ],
+  "summary": {
+    "supplier_count": 46,
+    "total_expected_supply_m3": 446415.337932,
+    "A_share": 0.323356,
+    "B_share": 0.311145,
+    "C_share": 0.365499,
+    "mean_weekly_product_capacity_m3": 28228.199932,
+    "min_demand_satisfaction_ratio": 1.001,
+    "mean_loss_rate_pct": 0.026944,
+    "total_cost_proxy": 549345.497886
+  },
+  "weekly_summary_sample": [
+    {
+      "week": 1,
+      "supplier_count_used": 46,
+      "order_volume_m3": 20859.261475,
+      "expected_supply_m3": 18595.754995,
+      "expected_received_m3": 18595.691845,
+      "product_equivalent_m3": 28228.2,
+      "demand_satisfaction_ratio": 1.001,
+      "weighted_loss_rate_pct": 0.00034,
+      "cost_proxy": 22883.246386,
+      "A_supply_m3": 6014.631679,
+      "B_supply_m3": 5782.607162,
+      "C_supply_m3": 6798.516154
+    },
+    {
+      "week": 2,
+      "supplier_count_used": 44,
+      "order_volume_m3": 20859.193142,
+      "expected_supply_m3": 18595.691845,
+      "expected_received_m3": 18595.691845,
+      "product_equivalent_m3": 28228.2,
+      "demand_satisfaction_ratio": 1.001,
+      "weighted_loss_rate_pct": 0.0,
+      "cost_proxy": 22883.17122,
+      "A_supply_m3": 6014.631679,
+      "B_supply_m3": 5782.544012,
+      "C_supply_m3": 6798.516154
+    },
+    {
+      "week": 3,
+      "supplier_count_used": 46,
+      "order_volume_m3": 20859.485909,
+      "expected_supply_m3": 18595.962412,
+      "expected_received_m3": 18595.691845,
+      "product_equivalent_m3": 28228.2,
+      "demand_satisfaction_ratio": 1.001,
+      "weighted_loss_rate_pct": 0.001455,
+      "cost_proxy": 22883.493264,
+      "A_supply_m3": 6014.631679,
+      "B_supply_m3": 5782.814579,
+      "C_supply_m3": 6798.516154
+    },
+    {
+      "week": 4,
+      "supplier_count_used": 44,
+      "order_volume_m3": 20859.193142,
+      "expected_supply_m3": 18595.691845,
+      "expected_received_m3": 18595.691845,
+      "product_equivalent_m3": 28228.2,
+      "demand_satisfaction_ratio": 1.001,
+      "weighted_loss_rate_pct": 0.0,
+      "cost_proxy": 22883.17122,
+      "A_supply_m3": 6014.631679,
+      "B_supply_m3": 5782.544012,
+      "C_supply_m3": 6798.516154
+    },
+    {
+      "week": 5,
+      "supplier_count_used": 46,
+      "order_volume_m3": 20874.885478,
+      "expected_supply_m3": 18609.572366,
+      "expected_received_m3": 18595.603625,
+      "product_equivalent_m3": 28228.199291,
+      "demand_satisfaction_ratio": 1.001,
+      "weighted_loss_rate_pct": 0.075062,
+      "cost_proxy": 22900.432789,
+      "A_supply_m3": 6014.631679,
+      "B_supply_m3": 5796.424533,
+      "C_supply_m3": 6798.516154
+    },
+    {
+      "week": 6,
+      "supplier_count_used": 46,
+      "order_volume_m3": 20863.795165,
+      "expected_supply_m3": 18599.94651,
+      "expected_received_m3": 18595.691689,
+      "product_equivalent_m3": 28228.199764,
+      "demand_satisfaction_ratio": 1.001,
+      "weighted_loss_rate_pct": 0.022875,
+      "cost_proxy": 22888.233445,
+      "A_supply_m3": 6014.631679,
+      "B_supply_m3": 5786.798677,
+      "C_supply_m3": 6798.516154
+    }
+  ],
+  "report": [
+    "按问题1得分排序累加稳健供给能力，至少选择 46 家供应商时，考虑最低损耗后可覆盖约 28968.77 m³/周产成品等价原料。",
+    "订购方案以满足2.82万m³/周产能为硬约束，以相对采购成本和运输损耗为排序准则逐周填充。",
+    "24周最小需求满足率为 1.0010，平均运输损耗率为 0.0269%。",
+    "附件A/B模板已在本问产物目录中生成填报版，同时保留长表CSV便于检查每个供应商、每周、每个转运商的决策量。"
+  ]
+}
+```
+
+### 结果解释
+- 本问用 `minimum_supplier_cost_transport_plan` 将题面任务转化为可计算实验，并把关键数值写入 JSON 和 CSV 产物。
+- CSV 表是后续写论文表格、画图或替换真实附件数据的主要入口；如果题面要求 result*.xlsx，可在该表基础上按模板导出。
+- 数据来源字段会标明本问使用官方附件、题面参数还是专用题面常量；后续冲论文质量时，可在现有 CSV/JSON 基础上补充图表、误差分析和敏感性分析。
+
+## 专用实验报告
+
+- 按问题1得分排序累加稳健供给能力，至少选择 46 家供应商时，考虑最低损耗后可覆盖约 28968.77 m³/周产成品等价原料。
+- 订购方案以满足2.82万m³/周产能为硬约束，以相对采购成本和运输损耗为排序准则逐周填充。
+- 24周最小需求满足率为 1.0010，平均运输损耗率为 0.0269%。
+- 附件A/B模板已在本问产物目录中生成填报版，同时保留长表CSV便于检查每个供应商、每周、每个转运商的决策量。
+
+## 实验报告
+
+本问的核心是：参考问题1， 该企业应至少选择多少家供应商供应原材料才可能满足生产的需求？ 针对这些供应商，为该企业制定未来 24 周每周最经济的原材料订购方案，并据此制定 损耗最少的转运方案。试对订购方案和转运方案的实施效果进行分析。
+
+建模时先将题目要求拆成 1 个任务，再选择 `订购-转运联合规划优化`。求解过程严格对应变量定义、约束条件和目标函数：先构造可计算数据表，再调用 Python 数值算法得到实验结果，最后把结果写入 `result.json` 与 `experiment_table.csv`。
+
+报告写作时建议按以下结构展开：问题重述、符号说明、模型假设、模型建立、算法实现、结果表格、误差/敏感性分析、模型评价。

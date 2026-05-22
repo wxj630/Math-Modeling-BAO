@@ -1,0 +1,4 @@
+scenario,volume_factor,complexity_factor,customer_visibility_need,adapted_maturity_score,adapted_band,minimum_required_protocol
+small feeder port,0.42,0.58,0.54,2.495,repeatable,lighter catalog and quality workflow
+ICM current large seaport,1.0,1.0,0.82,2.502,managed,"full catalog, lineage, quality workflow, and customer dashboard"
+mega transshipment hub,1.85,1.42,0.92,2.418,repeatable,"full catalog, lineage, quality workflow, and customer dashboard"

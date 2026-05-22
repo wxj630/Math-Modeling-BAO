@@ -1,0 +1,176 @@
+{
+  "problem_id": "2022-D",
+  "title": "2022年 CUMCM D题：气象报文信息卫星通信传输",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "(1) 要求在 𝐾 分钟内完成 𝑁 (≥ 5) 支分队主站间气象报文的信息共享，请研究 𝐾 的最小值与 𝑁 的关系，并建立 𝐾 分钟内实现 𝑁 个主站间气象报文信息共享的一般传输 模型。 (2) 在上述模型中， 取 𝑁 = 9， 给出 𝐾 的相应最小值， 并根据一般传输模型给出此时主站 间气象报文的信息共享方案，将结果按表 1 的格式填报。填报结果时，注意消息的完整性，例 如：在“发送信息所属站点序号”一栏中填写“5”，表示本轮所发送消息来自于第 5 号主站，",
+  "tasks": [
+    "(1) 要求在 𝐾 分钟内完成 𝑁 (≥ 5) 支分队主站间气象报文的信息共享，请研究 𝐾 的最小值与 𝑁 的关系，并建立 𝐾 分钟内实现 𝑁 个主站间气象报文信息共享的一般传输 模型",
+    "(2) 在上述模型中， 取 𝑁 = 9， 给出 𝐾 的相应最小值， 并根据一般传输模型给出此时主站 间气象报文的信息共享方案，将结果按表 1 的格式填报。填报结果时，注意消息的完整性，例 如：在“发送信息所属站点序号”一栏中填写“5”，表示本轮所发送消息来自于第 5 号主站，"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最小、方案"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 0,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/D.md",
+    "rows": 28,
+    "columns": 7,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "(1) 要求在 𝐾 分钟内完成 𝑁 (≥ 5) 支分队主站间气象报文的信息共享，请研究 𝐾 的最小值与 𝑁 的关系，并建立 𝐾 分钟内实现 𝑁 个主站间气象报文信息共享的一般传输 模型",
+      "(2) 在上述模型中， 取 𝑁 = 9， 给出 𝐾 的相应最小值， 并根据一般传输模型给出此时主站 间气象报文的信息共享方案，将结果按表 1 的格式填报。填报结果时，注意消息的完整性，例 如：在“发送信息所属站点序号”一栏中填写“5”，表示本轮所发送消息来自于第 5 号主站，"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "N: 气象分队数量，也是主站数量",
+      "K: 可用传输轮数/分钟数",
+      "r: 传输轮数序号",
+      "s_i: 第 i 个主站或副站",
+      "m_j: 来源于第 j 个站点的气象报文",
+      "p=0.8: 便携型卫星设备单次发送成功概率"
+    ],
+    "constraints": [
+      "每个设备每分钟最多发送 1 条消息。",
+      "车载型主站收发成功率为 1；便携型副站发送成功率为 0.8。",
+      "主站间共享要求每个主站最终拥有所有 N 个主站报文。",
+      "副站补充要求每个主站对每支分队至少成功接收一个副站报文的概率达到阈值。"
+    ],
+    "objective_or_equations": [
+      "K_min(N)=N-1",
+      "round r: 主站 i 将本站报文发送给 ((i+r-1) mod N)+1",
+      "总发送次数 N(N-1)，每轮最多 N 次，因此下界 N-1 可由循环方案达到。"
+    ],
+    "solution_steps": [
+      "建立主站完全信息共享的轮转传输模型。",
+      "证明每个主站需收到其余 N-1 个报文，因此 K>=N-1。",
+      "用循环接收者构造达到下界的传输方案。",
+      "对 N=9 输出表 1 形式的 8 轮传输计划。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "round_robin_main_station_broadcast",
+    "N": 9,
+    "K_min": 8,
+    "general_relation": "K_min(N)=N-1",
+    "proof": "每个主站必须接收其余 N-1 个主站报文；循环轮转每轮让每个主站发送一次，N-1 轮后每个主站恰好收到所有其他报文。",
+    "table1_rows": 72,
+    "sample_rows": [
+      {
+        "round": 1,
+        "sender": 1,
+        "receiver": 2,
+        "message_origin": "1",
+        "receiver_has_after_round": "2, plus message 1"
+      },
+      {
+        "round": 1,
+        "sender": 2,
+        "receiver": 3,
+        "message_origin": "2",
+        "receiver_has_after_round": "3, plus message 2"
+      },
+      {
+        "round": 1,
+        "sender": 3,
+        "receiver": 4,
+        "message_origin": "3",
+        "receiver_has_after_round": "4, plus message 3"
+      },
+      {
+        "round": 1,
+        "sender": 4,
+        "receiver": 5,
+        "message_origin": "4",
+        "receiver_has_after_round": "5, plus message 4"
+      },
+      {
+        "round": 1,
+        "sender": 5,
+        "receiver": 6,
+        "message_origin": "5",
+        "receiver_has_after_round": "6, plus message 5"
+      },
+      {
+        "round": 1,
+        "sender": 6,
+        "receiver": 7,
+        "message_origin": "6",
+        "receiver_has_after_round": "7, plus message 6"
+      },
+      {
+        "round": 1,
+        "sender": 7,
+        "receiver": 8,
+        "message_origin": "7",
+        "receiver_has_after_round": "8, plus message 7"
+      },
+      {
+        "round": 1,
+        "sender": 8,
+        "receiver": 9,
+        "message_origin": "8",
+        "receiver_has_after_round": "9, plus message 8"
+      },
+      {
+        "round": 1,
+        "sender": 9,
+        "receiver": 1,
+        "message_origin": "9",
+        "receiver_has_after_round": "1, plus message 9"
+      },
+      {
+        "round": 2,
+        "sender": 1,
+        "receiver": 3,
+        "message_origin": "1",
+        "receiver_has_after_round": "3, plus message 1"
+      },
+      {
+        "round": 2,
+        "sender": 2,
+        "receiver": 4,
+        "message_origin": "2",
+        "receiver_has_after_round": "4, plus message 2"
+      },
+      {
+        "round": 2,
+        "sender": 3,
+        "receiver": 5,
+        "message_origin": "3",
+        "receiver_has_after_round": "5, plus message 3"
+      }
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2022/D/q01/experiment_table.csv"
+  ]
+}

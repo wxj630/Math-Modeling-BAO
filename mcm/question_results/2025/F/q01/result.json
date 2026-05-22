@@ -1,0 +1,344 @@
+{
+  "problem_id": "2025-F",
+  "question": "q01",
+  "question_title": "全球网络犯罪分布与报告偏差",
+  "statement": "How is cybercrime distributed across the globe? Which countries are disproportionately high targets of cybercrimes, where are cybercrimes successful, where are cybercrimes thwarted, where are cybercrimes reported, where are cybercrimes prosecuted? Do you notice any patterns?",
+  "methods": "官方 PDF 题面 + 题面引用 VCDB/VERIS 公开事件样本：按受害国统计事件、披露事件和有公开引用的报告事件，并明确起诉/挫败字段在 VCDB 中不可完整观测。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "official_requirements": {
+      "use_existing_cybersecurity_measures": true,
+      "do_not_create_new_cybersecurity_index": true,
+      "consider_gci_veris_vcdb": true,
+      "share_nontechnical_leader_memo": true
+    },
+    "parameters": {
+      "problem_year": 2025,
+      "problem_letter": "F",
+      "official_asset": "2025_ICM_Problem_F.pdf"
+    },
+    "referenced_public_sources": {
+      "VCDB": "https://github.com/vz-risk/VCDB",
+      "VERIS": "https://veriscommunity.net/",
+      "World Bank": "https://api.worldbank.org/v2/",
+      "ITU GCI framework": "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx",
+      "vcdb_records_used": 237
+    }
+  },
+  "cybercrime_distribution": {
+    "model": "descriptive country distribution from a deterministic VCDB validated-incident sample",
+    "records_used": 237,
+    "country_count": 13,
+    "top_target_countries": [
+      {
+        "iso3": "USA",
+        "country": "United States",
+        "vcdb_incident_count": 191,
+        "share_of_sample": 0.80591,
+        "confirmed_disclosure_count": 132,
+        "reference_reported_count": 173,
+        "earliest_year": 2005,
+        "latest_year": 2025,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "CAN",
+        "country": "Canada",
+        "vcdb_incident_count": 16,
+        "share_of_sample": 0.06751,
+        "confirmed_disclosure_count": 12,
+        "reference_reported_count": 16,
+        "earliest_year": 2003,
+        "latest_year": 2019,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "GBR",
+        "country": "United Kingdom",
+        "vcdb_incident_count": 13,
+        "share_of_sample": 0.05485,
+        "confirmed_disclosure_count": 9,
+        "reference_reported_count": 13,
+        "earliest_year": 2011,
+        "latest_year": 2025,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "AUS",
+        "country": "Australia",
+        "vcdb_incident_count": 4,
+        "share_of_sample": 0.01688,
+        "confirmed_disclosure_count": 4,
+        "reference_reported_count": 4,
+        "earliest_year": 2013,
+        "latest_year": 2018,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "IND",
+        "country": "India",
+        "vcdb_incident_count": 3,
+        "share_of_sample": 0.01266,
+        "confirmed_disclosure_count": 2,
+        "reference_reported_count": 3,
+        "earliest_year": 2015,
+        "latest_year": 2016,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "ESP",
+        "country": "Spain",
+        "vcdb_incident_count": 2,
+        "share_of_sample": 0.00844,
+        "confirmed_disclosure_count": 1,
+        "reference_reported_count": 2,
+        "earliest_year": 2019,
+        "latest_year": 2020,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "ZAF",
+        "country": "South Africa",
+        "vcdb_incident_count": 2,
+        "share_of_sample": 0.00844,
+        "confirmed_disclosure_count": 2,
+        "reference_reported_count": 2,
+        "earliest_year": 2016,
+        "latest_year": 2021,
+        "dominant_action_type": "physical"
+      },
+      {
+        "iso3": "RUS",
+        "country": "Russian Federation",
+        "vcdb_incident_count": 1,
+        "share_of_sample": 0.00422,
+        "confirmed_disclosure_count": 0,
+        "reference_reported_count": 1,
+        "earliest_year": 2013,
+        "latest_year": 2013,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "IRL",
+        "country": "Ireland",
+        "vcdb_incident_count": 1,
+        "share_of_sample": 0.00422,
+        "confirmed_disclosure_count": 0,
+        "reference_reported_count": 1,
+        "earliest_year": 2007,
+        "latest_year": 2007,
+        "dominant_action_type": "physical"
+      },
+      {
+        "iso3": "SGP",
+        "country": "Singapore",
+        "vcdb_incident_count": 1,
+        "share_of_sample": 0.00422,
+        "confirmed_disclosure_count": 0,
+        "reference_reported_count": 1,
+        "earliest_year": 2013,
+        "latest_year": 2013,
+        "dominant_action_type": "hacking"
+      }
+    ],
+    "successful_or_disclosed_countries": [
+      {
+        "iso3": "USA",
+        "country": "United States",
+        "vcdb_incident_count": 191,
+        "share_of_sample": 0.80591,
+        "confirmed_disclosure_count": 132,
+        "reference_reported_count": 173,
+        "earliest_year": 2005,
+        "latest_year": 2025,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "CAN",
+        "country": "Canada",
+        "vcdb_incident_count": 16,
+        "share_of_sample": 0.06751,
+        "confirmed_disclosure_count": 12,
+        "reference_reported_count": 16,
+        "earliest_year": 2003,
+        "latest_year": 2019,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "GBR",
+        "country": "United Kingdom",
+        "vcdb_incident_count": 13,
+        "share_of_sample": 0.05485,
+        "confirmed_disclosure_count": 9,
+        "reference_reported_count": 13,
+        "earliest_year": 2011,
+        "latest_year": 2025,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "AUS",
+        "country": "Australia",
+        "vcdb_incident_count": 4,
+        "share_of_sample": 0.01688,
+        "confirmed_disclosure_count": 4,
+        "reference_reported_count": 4,
+        "earliest_year": 2013,
+        "latest_year": 2018,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "IND",
+        "country": "India",
+        "vcdb_incident_count": 3,
+        "share_of_sample": 0.01266,
+        "confirmed_disclosure_count": 2,
+        "reference_reported_count": 3,
+        "earliest_year": 2015,
+        "latest_year": 2016,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "ZAF",
+        "country": "South Africa",
+        "vcdb_incident_count": 2,
+        "share_of_sample": 0.00844,
+        "confirmed_disclosure_count": 2,
+        "reference_reported_count": 2,
+        "earliest_year": 2016,
+        "latest_year": 2021,
+        "dominant_action_type": "physical"
+      },
+      {
+        "iso3": "ESP",
+        "country": "Spain",
+        "vcdb_incident_count": 2,
+        "share_of_sample": 0.00844,
+        "confirmed_disclosure_count": 1,
+        "reference_reported_count": 2,
+        "earliest_year": 2019,
+        "latest_year": 2020,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "BRA",
+        "country": "Brazil",
+        "vcdb_incident_count": 1,
+        "share_of_sample": 0.00422,
+        "confirmed_disclosure_count": 1,
+        "reference_reported_count": 1,
+        "earliest_year": 2020,
+        "latest_year": 2020,
+        "dominant_action_type": "misuse"
+      }
+    ],
+    "reported_countries": [
+      {
+        "iso3": "USA",
+        "country": "United States",
+        "vcdb_incident_count": 191,
+        "share_of_sample": 0.80591,
+        "confirmed_disclosure_count": 132,
+        "reference_reported_count": 173,
+        "earliest_year": 2005,
+        "latest_year": 2025,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "CAN",
+        "country": "Canada",
+        "vcdb_incident_count": 16,
+        "share_of_sample": 0.06751,
+        "confirmed_disclosure_count": 12,
+        "reference_reported_count": 16,
+        "earliest_year": 2003,
+        "latest_year": 2019,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "GBR",
+        "country": "United Kingdom",
+        "vcdb_incident_count": 13,
+        "share_of_sample": 0.05485,
+        "confirmed_disclosure_count": 9,
+        "reference_reported_count": 13,
+        "earliest_year": 2011,
+        "latest_year": 2025,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "AUS",
+        "country": "Australia",
+        "vcdb_incident_count": 4,
+        "share_of_sample": 0.01688,
+        "confirmed_disclosure_count": 4,
+        "reference_reported_count": 4,
+        "earliest_year": 2013,
+        "latest_year": 2018,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "IND",
+        "country": "India",
+        "vcdb_incident_count": 3,
+        "share_of_sample": 0.01266,
+        "confirmed_disclosure_count": 2,
+        "reference_reported_count": 3,
+        "earliest_year": 2015,
+        "latest_year": 2016,
+        "dominant_action_type": "hacking"
+      },
+      {
+        "iso3": "ESP",
+        "country": "Spain",
+        "vcdb_incident_count": 2,
+        "share_of_sample": 0.00844,
+        "confirmed_disclosure_count": 1,
+        "reference_reported_count": 2,
+        "earliest_year": 2019,
+        "latest_year": 2020,
+        "dominant_action_type": "error"
+      },
+      {
+        "iso3": "ZAF",
+        "country": "South Africa",
+        "vcdb_incident_count": 2,
+        "share_of_sample": 0.00844,
+        "confirmed_disclosure_count": 2,
+        "reference_reported_count": 2,
+        "earliest_year": 2016,
+        "latest_year": 2021,
+        "dominant_action_type": "physical"
+      },
+      {
+        "iso3": "RUS",
+        "country": "Russian Federation",
+        "vcdb_incident_count": 1,
+        "share_of_sample": 0.00422,
+        "confirmed_disclosure_count": 0,
+        "reference_reported_count": 1,
+        "earliest_year": 2013,
+        "latest_year": 2013,
+        "dominant_action_type": "hacking"
+      }
+    ],
+    "prosecution_note": "VCDB records do not consistently encode prosecution outcomes; prosecution is treated as a policy-capacity proxy rather than as a direct incident outcome.",
+    "patterns": [
+      "high counts concentrate in English-language and high-reporting economies, especially the United States, so exposure and reporting bias must be separated from true victimization risk",
+      "data-disclosure records form a more conservative success proxy than raw incident counts",
+      "countries with mature reporting regimes can look worse in incident data because more events become visible"
+    ]
+  },
+  "limitations": {
+    "data_quality_concerns": [
+      "VCDB is incident-report based and not a complete census of global cybercrime",
+      "English-language and public-reporting bias heavily affects country counts",
+      "successful, thwarted, reported, and prosecuted outcomes are not uniformly encoded in one global dataset",
+      "policy feature scores are a transparent rubric over published policy capabilities, not causal estimates",
+      "World Bank demographic indicators describe national context but can confound exposure, capability, and reporting visibility"
+    ],
+    "sample_record_count": 237,
+    "recommended_validation": "replace the sample with the full VCDB export plus ITU GCI country tables and national CERT/prosecution statistics when preparing a competition paper"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "problem_id": "2014-A",
+  "title": "2014年 CUMCM A题：嫦娥三号软着陆轨道设计与控制策略",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "对于你们设计的着陆轨道和控制策略做相应的误差分析和敏感性分析。 附件1： 问题的背景与参考资料； 附件2： 嫦娥三号着陆过程的六个阶段及其状态要求； 附件3：距月面2400m处的数字高程图； 附件4：距月面100m处的数字高程图。",
+  "tasks": [
+    "对于你们设计的着陆轨道和控制策略做相应的误差分析和敏感性分析"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "策略、设计"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "轨道、着陆"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "误差"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 10,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/A.md",
+    "rows": 13,
+    "columns": 6,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "对于你们设计的着陆轨道和控制策略做相应的误差分析和敏感性分析"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      1.596702,
+      1.583168
+    ],
+    "radius": 2.6559562943654074,
+    "mean_squared_error": 0.001737823550789533,
+    "success": true
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2014/A/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

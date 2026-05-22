@@ -1,0 +1,179 @@
+{
+  "problem_id": "2023-F",
+  "question": "q04",
+  "question_title": "写给 IOC 的一页政策备忘录",
+  "statement": "Write a one-page memorandum to the IOC describing your strategy and policy recommendations.",
+  "methods": "把指标框架、策略评分、推荐路线、永久举办地/四季分拆的备选价值和下一步治理动作压缩成 IOC 可读备忘录。对应模型：非技术政策报告、执行摘要。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "official_requirements": {
+      "impact_dimensions": [
+        "economic",
+        "land_use",
+        "human_satisfaction",
+        "travel",
+        "future_improvement",
+        "host_prestige",
+        "unity_through_sport"
+      ],
+      "strategies_named_in_statement": [
+        "permanent_summer_winter_sites",
+        "four_season_split_games"
+      ],
+      "must_consider_feasibility": true,
+      "must_consider_timeline": true,
+      "must_consider_impact": true,
+      "ioc_memo_required": true
+    }
+  },
+  "one_page_ioc_memo": "To the IOC and COMAP Interdisciplinary Committee on Modern Games:\n\nThe core risk in the official 2023 ICM-F statement is that fewer cities are willing to bid because the Games can impose high short- and long-term burdens. I recommend adopting a regional rotation with venue reuse as the first policy path. It keeps host prestige and global unity while reducing new land pressure and public cost. The scorecard evaluates each option on economic burden, land use, human satisfaction, travel, future improvement, host prestige, and unity through sport. The recommended strategy scores 0.534 overall and can be moved through 6 governance milestones before the first full cycle decision. Permanent Summer/Winter sites and four seasonal Games remain useful contingency designs, but they require heavier governance changes and may weaken local prestige or calendar coherence. The immediate IOC action is to publish the metric charter, shortlist reusable host networks, and make future host contracts auditable on cost caps, public legacy, and venue reuse.",
+  "strategy_evaluation": {
+    "ranked_strategies": [
+      {
+        "strategy_id": "regional_rotation_with_reuse",
+        "description": "Rotate among vetted regional host networks that reuse existing venues and share operations.",
+        "timeline_years": 6,
+        "feasibility": 0.76,
+        "governance_complexity": 0.52,
+        "bid_attractiveness": 0.74,
+        "impact_score": 0.7254,
+        "total_score": 0.534,
+        "economic_score": 0.76,
+        "land_use_score": 0.78,
+        "human_satisfaction_score": 0.72,
+        "travel_score": 0.64,
+        "future_improvement_score": 0.7,
+        "host_prestige_score": 0.68,
+        "unity_through_sport_score": 0.76
+      },
+      {
+        "strategy_id": "status_quo_reformed_bidding",
+        "description": "Keep rotating host selection but require compact venues, cost caps, and public legacy guarantees.",
+        "timeline_years": 4,
+        "feasibility": 0.82,
+        "governance_complexity": 0.34,
+        "bid_attractiveness": 0.56,
+        "impact_score": 0.5933,
+        "total_score": 0.4881,
+        "economic_score": 0.58,
+        "land_use_score": 0.52,
+        "human_satisfaction_score": 0.6,
+        "travel_score": 0.46,
+        "future_improvement_score": 0.56,
+        "host_prestige_score": 0.75,
+        "unity_through_sport_score": 0.7
+      },
+      {
+        "strategy_id": "distributed_existing_venue_games",
+        "description": "Award event clusters to multiple cities with existing venues under one Games brand.",
+        "timeline_years": 7,
+        "feasibility": 0.66,
+        "governance_complexity": 0.66,
+        "bid_attractiveness": 0.7,
+        "impact_score": 0.6564,
+        "total_score": 0.4412,
+        "economic_score": 0.74,
+        "land_use_score": 0.82,
+        "human_satisfaction_score": 0.62,
+        "travel_score": 0.42,
+        "future_improvement_score": 0.74,
+        "host_prestige_score": 0.58,
+        "unity_through_sport_score": 0.6
+      },
+      {
+        "strategy_id": "four_season_split_games",
+        "description": "Split sports into Winter, Spring, Summer, and Fall Games to reduce the load on any one host.",
+        "timeline_years": 8,
+        "feasibility": 0.62,
+        "governance_complexity": 0.7,
+        "bid_attractiveness": 0.68,
+        "impact_score": 0.6795,
+        "total_score": 0.4252,
+        "economic_score": 0.72,
+        "land_use_score": 0.76,
+        "human_satisfaction_score": 0.7,
+        "travel_score": 0.5,
+        "future_improvement_score": 0.78,
+        "host_prestige_score": 0.55,
+        "unity_through_sport_score": 0.68
+      },
+      {
+        "strategy_id": "permanent_summer_winter_sites",
+        "description": "Select one recurring Summer host and one recurring Winter host with permanent Olympic infrastructure.",
+        "timeline_years": 10,
+        "feasibility": 0.54,
+        "governance_complexity": 0.78,
+        "bid_attractiveness": 0.48,
+        "impact_score": 0.6862,
+        "total_score": 0.3471,
+        "economic_score": 0.82,
+        "land_use_score": 0.86,
+        "human_satisfaction_score": 0.66,
+        "travel_score": 0.58,
+        "future_improvement_score": 0.72,
+        "host_prestige_score": 0.42,
+        "unity_through_sport_score": 0.62
+      }
+    ],
+    "recommended_strategy": {
+      "strategy_id": "regional_rotation_with_reuse",
+      "description": "Rotate among vetted regional host networks that reuse existing venues and share operations.",
+      "timeline_years": 6,
+      "feasibility": 0.76,
+      "governance_complexity": 0.52,
+      "bid_attractiveness": 0.74,
+      "impact_score": 0.7254,
+      "total_score": 0.534,
+      "economic_score": 0.76,
+      "land_use_score": 0.78,
+      "human_satisfaction_score": 0.72,
+      "travel_score": 0.64,
+      "future_improvement_score": 0.7,
+      "host_prestige_score": 0.68,
+      "unity_through_sport_score": 0.76
+    },
+    "selection_rule": "Maximize weighted impact, feasibility, and bid attractiveness while penalizing governance complexity and long transition time."
+  },
+  "implementation_timeline": {
+    "milestones": [
+      {
+        "year": 1,
+        "milestone": "Metric charter",
+        "action": "Adopt the seven-dimension Olympic impact scorecard and publish scoring rules before accepting bids.",
+        "owner": "IOC executive board"
+      },
+      {
+        "year": 2,
+        "milestone": "Host-network shortlist",
+        "action": "Identify candidate host networks with existing venues, transit capacity, and public legacy commitments.",
+        "owner": "IOC host commission"
+      },
+      {
+        "year": 3,
+        "milestone": "Pilot compact event clusters",
+        "action": "Run selected youth, qualifier, or test events under the recommended governance model.",
+        "owner": "International federations"
+      },
+      {
+        "year": 4,
+        "milestone": "Contract transition",
+        "action": "Write cost caps, reuse rules, and public reporting into host contracts.",
+        "owner": "IOC legal and host partners"
+      },
+      {
+        "year": 5,
+        "milestone": "First full cycle decision",
+        "action": "Choose the first Games cycle using regional_rotation_with_reuse if scorecard performance remains above the status quo benchmark.",
+        "owner": "IOC session"
+      },
+      {
+        "year": 6,
+        "milestone": "Regional rotation launch",
+        "action": "Publish the first three-cycle rotation plan and annual legacy audit schedule.",
+        "owner": "IOC host commission"
+      }
+    ]
+  }
+}

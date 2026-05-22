@@ -1,0 +1,177 @@
+{
+  "problem_id": "2020-D",
+  "question": "q02",
+  "question_title": "团队表现指标与协作成功模型",
+  "statement": "Identify performance indicators that reflect successful teamwork such as diversity in the types of plays, coordination among players or distribution of contributions. Use the performance indicators and team level processes that you have identified to create a model that captures structural, configurational, and dynamical aspects of teamwork.",
+  "methods": "构建逐场协作特征表：传球总数、相对传球优势、网络密度、互惠率、聚类、传球类型熵、头部传球对占比、贡献 Gini、平均传球距离、前向传球和进攻三区比例、射门/对抗/犯规事件；用前 30 场训练、后 8 场时间留出检验非输球分类模型。对应模型：指标体系、解释型决策树、时间留出验证。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
+    "readme": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "rows": {
+      "matches.csv": 38,
+      "passingevents.csv": 23429,
+      "fullevents.csv": 59271
+    },
+    "official_scope": "38 Huskies matches, 23,429 official pass rows, and 59,271 official event rows from COMAP 2020 ICM-D."
+  },
+  "teamwork_model": {
+    "target": "team_success_non_loss",
+    "target_definition": "1 for win or tie, 0 for loss; model inputs exclude goals and final score.",
+    "model": "deterministic DecisionTreeClassifier(max_depth=2, min_samples_leaf=3)",
+    "train_matches": 30,
+    "holdout_matches": 8,
+    "accuracy": 0.75,
+    "balanced_accuracy": 0.666667,
+    "holdout_predictions": [
+      {
+        "MatchID": 31,
+        "Outcome": "win",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 0
+      },
+      {
+        "MatchID": 32,
+        "Outcome": "loss",
+        "team_success_non_loss": 0,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 33,
+        "Outcome": "tie",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 34,
+        "Outcome": "tie",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 35,
+        "Outcome": "win",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 36,
+        "Outcome": "win",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 37,
+        "Outcome": "tie",
+        "team_success_non_loss": 1,
+        "predicted_success_non_loss": 1
+      },
+      {
+        "MatchID": 38,
+        "Outcome": "loss",
+        "team_success_non_loss": 0,
+        "predicted_success_non_loss": 0
+      }
+    ],
+    "top_feature_importance": [
+      {
+        "feature": "network_density",
+        "importance": 0.5375315530755949
+      },
+      {
+        "feature": "average_pass_length",
+        "importance": 0.46246844692440525
+      },
+      {
+        "feature": "passes",
+        "importance": 0.0
+      },
+      {
+        "feature": "pass_advantage",
+        "importance": 0.0
+      },
+      {
+        "feature": "players_involved",
+        "importance": 0.0
+      },
+      {
+        "feature": "network_reciprocity",
+        "importance": 0.0
+      },
+      {
+        "feature": "weighted_clustering",
+        "importance": 0.0
+      },
+      {
+        "feature": "pass_type_entropy",
+        "importance": 0.0
+      }
+    ],
+    "feature_columns": [
+      "passes",
+      "pass_advantage",
+      "players_involved",
+      "network_density",
+      "network_reciprocity",
+      "weighted_clustering",
+      "pass_type_entropy",
+      "top_pair_share",
+      "contribution_gini",
+      "average_pass_length",
+      "forward_pass_share",
+      "attacking_third_share",
+      "shot_count",
+      "duel_count",
+      "foul_count",
+      "home_side"
+    ]
+  },
+  "formation_patterns": {
+    "by_outcome": [
+      {
+        "Outcome": "loss",
+        "matches": 15.0,
+        "avg_passes": 279.2,
+        "avg_density": 0.5769,
+        "avg_reciprocity": 0.7126,
+        "avg_triads": 154.2667,
+        "avg_forward_share": 0.147,
+        "avg_midfield_share": 0.3859,
+        "avg_attacking_third": 0.3068,
+        "avg_goal_diff": -2.3333
+      },
+      {
+        "Outcome": "tie",
+        "matches": 10.0,
+        "avg_passes": 232.1,
+        "avg_density": 0.519,
+        "avg_reciprocity": 0.6778,
+        "avg_triads": 123.8,
+        "avg_forward_share": 0.1392,
+        "avg_midfield_share": 0.3793,
+        "avg_attacking_third": 0.2945,
+        "avg_goal_diff": 0.0
+      },
+      {
+        "Outcome": "win",
+        "matches": 13.0,
+        "avg_passes": 302.0,
+        "avg_density": 0.5758,
+        "avg_reciprocity": 0.7525,
+        "avg_triads": 146.7692,
+        "avg_forward_share": 0.1927,
+        "avg_midfield_share": 0.3517,
+        "avg_attacking_third": 0.2895,
+        "avg_goal_diff": 1.6154
+      }
+    ],
+    "scales_modeled": [
+      "micro: repeated dyadic pass pairs and top-pair concentration",
+      "meso: triadic configurations, weighted clustering, and position-share formations",
+      "macro: season-level directed passing network density and reciprocity",
+      "temporal: match-by-match features ordered across all 38 official matches"
+    ],
+    "time_scale_note": "MatchPeriod contains 1H/2H values; this workflow aggregates full-match features and keeps half-level fields available for minute-level extensions."
+  }
+}

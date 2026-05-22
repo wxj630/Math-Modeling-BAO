@@ -1,0 +1,314 @@
+{
+  "problem_id": "2020-C",
+  "title": "A Wealth of Data",
+  "data_source": {
+    "type": "official_comap_tsv_zip",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "source_zip": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "rows": {
+      "hair_dryer.tsv": 11470,
+      "microwave.tsv": 1615,
+      "pacifier.tsv": 18939
+    },
+    "columns": [
+      "marketplace",
+      "customer_id",
+      "review_id",
+      "product_id",
+      "product_parent",
+      "product_title",
+      "product_category",
+      "star_rating",
+      "helpful_votes",
+      "total_votes",
+      "vine",
+      "verified_purchase",
+      "review_headline",
+      "review_body",
+      "review_date",
+      "helpfulness_rate",
+      "review_text",
+      "review_length_words",
+      "product_file"
+    ],
+    "official_requirement": "THE DATA FILES PROVIDED CONTAIN THE ONLY DATA YOU SHOULD USE FOR THIS PROBLEM."
+  },
+  "rating_review_measures": {
+    "method": "official TSV review measures: star ratings, helpfulness, review length, verification, and product counts",
+    "product_rows": [
+      {
+        "product_file": "pacifier.tsv",
+        "review_count": 18939,
+        "unique_products": 6482,
+        "mean_star_rating": 4.3046,
+        "share_low_rating_1_2": 0.1128,
+        "mean_helpfulness_rate": 0.1735,
+        "mean_review_length_words": 53.0561,
+        "verified_purchase_share": 0.517
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "review_count": 11470,
+        "unique_products": 538,
+        "mean_star_rating": 4.116,
+        "share_low_rating_1_2": 0.1457,
+        "mean_helpfulness_rate": 0.2834,
+        "mean_review_length_words": 58.421,
+        "verified_purchase_share": 0.8554
+      },
+      {
+        "product_file": "microwave.tsv",
+        "review_count": 1615,
+        "unique_products": 80,
+        "mean_star_rating": 3.4446,
+        "share_low_rating_1_2": 0.3183,
+        "mean_helpfulness_rate": 0.4898,
+        "mean_review_length_words": 89.2594,
+        "verified_purchase_share": 0.6743
+      }
+    ],
+    "recommended_tracking_measures": [
+      "weekly mean star rating",
+      "low-rating share",
+      "helpfulness-weighted review length",
+      "verified-purchase review share",
+      "descriptor lift for enthusiastic and disappointed language"
+    ]
+  },
+  "reputation_time_patterns": {
+    "method": "monthly official review aggregation by star rating, review volume, and low-rating share",
+    "trend_rows": [
+      {
+        "product_file": "hair_dryer.tsv",
+        "first_month": "2002-03-01",
+        "last_month": "2015-08-01",
+        "monthly_rating_slope": 0.008051,
+        "monthly_low_rating_slope": 0.001047,
+        "reputation_direction": "stable"
+      },
+      {
+        "product_file": "microwave.tsv",
+        "first_month": "2004-06-01",
+        "last_month": "2015-08-01",
+        "monthly_rating_slope": 0.000243,
+        "monthly_low_rating_slope": 0.001704,
+        "reputation_direction": "stable"
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "first_month": "2003-04-01",
+        "last_month": "2015-08-01",
+        "monthly_rating_slope": 0.019673,
+        "monthly_low_rating_slope": -0.00755,
+        "reputation_direction": "increasing"
+      }
+    ]
+  },
+  "text_rating_relationships": {
+    "method": "descriptor lift: compare rating and helpfulness for reviews containing quality words against product baseline",
+    "descriptor_rows": [
+      {
+        "product_file": "hair_dryer.tsv",
+        "descriptor": "enthusiastic",
+        "matching_reviews": 6494,
+        "match_share": 0.5662,
+        "mean_rating_when_present": 4.5773,
+        "mean_rating_lift": 0.4613,
+        "mean_helpfulness_when_present": 0.2807
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "descriptor": "easy",
+        "matching_reviews": 1165,
+        "match_share": 0.1016,
+        "mean_rating_when_present": 4.4918,
+        "mean_rating_lift": 0.3758,
+        "mean_helpfulness_when_present": 0.3115
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "descriptor": "durable",
+        "matching_reviews": 1805,
+        "match_share": 0.1574,
+        "mean_rating_when_present": 3.7867,
+        "mean_rating_lift": -0.3293,
+        "mean_helpfulness_when_present": 0.3626
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "descriptor": "disappointed",
+        "matching_reviews": 883,
+        "match_share": 0.077,
+        "mean_rating_when_present": 2.5866,
+        "mean_rating_lift": -1.5294,
+        "mean_helpfulness_when_present": 0.4604
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "descriptor": "broken",
+        "matching_reviews": 808,
+        "match_share": 0.0704,
+        "mean_rating_when_present": 2.3144,
+        "mean_rating_lift": -1.8017,
+        "mean_helpfulness_when_present": 0.4102
+      },
+      {
+        "product_file": "microwave.tsv",
+        "descriptor": "enthusiastic",
+        "matching_reviews": 744,
+        "match_share": 0.4607,
+        "mean_rating_when_present": 4.2231,
+        "mean_rating_lift": 0.7785,
+        "mean_helpfulness_when_present": 0.5057
+      },
+      {
+        "product_file": "microwave.tsv",
+        "descriptor": "easy",
+        "matching_reviews": 262,
+        "match_share": 0.1622,
+        "mean_rating_when_present": 4.2214,
+        "mean_rating_lift": 0.7768,
+        "mean_helpfulness_when_present": 0.5781
+      },
+      {
+        "product_file": "microwave.tsv",
+        "descriptor": "durable",
+        "matching_reviews": 264,
+        "match_share": 0.1635,
+        "mean_rating_when_present": 2.5492,
+        "mean_rating_lift": -0.8953,
+        "mean_helpfulness_when_present": 0.6102
+      },
+      {
+        "product_file": "microwave.tsv",
+        "descriptor": "broken",
+        "matching_reviews": 226,
+        "match_share": 0.1399,
+        "mean_rating_when_present": 1.9159,
+        "mean_rating_lift": -1.5287,
+        "mean_helpfulness_when_present": 0.6477
+      },
+      {
+        "product_file": "microwave.tsv",
+        "descriptor": "disappointed",
+        "matching_reviews": 211,
+        "match_share": 0.1307,
+        "mean_rating_when_present": 1.8957,
+        "mean_rating_lift": -1.5488,
+        "mean_helpfulness_when_present": 0.6068
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "descriptor": "enthusiastic",
+        "matching_reviews": 11509,
+        "match_share": 0.6077,
+        "mean_rating_when_present": 4.658,
+        "mean_rating_lift": 0.3535,
+        "mean_helpfulness_when_present": 0.1789
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "descriptor": "easy",
+        "matching_reviews": 2446,
+        "match_share": 0.1292,
+        "mean_rating_when_present": 4.6043,
+        "mean_rating_lift": 0.2997,
+        "mean_helpfulness_when_present": 0.2269
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "descriptor": "durable",
+        "matching_reviews": 1684,
+        "match_share": 0.0889,
+        "mean_rating_when_present": 4.1105,
+        "mean_rating_lift": -0.1941,
+        "mean_helpfulness_when_present": 0.2975
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "descriptor": "broken",
+        "matching_reviews": 512,
+        "match_share": 0.027,
+        "mean_rating_when_present": 2.7148,
+        "mean_rating_lift": -1.5897,
+        "mean_helpfulness_when_present": 0.3542
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "descriptor": "disappointed",
+        "matching_reviews": 1059,
+        "match_share": 0.0559,
+        "mean_rating_when_present": 2.6969,
+        "mean_rating_lift": -1.6077,
+        "mean_helpfulness_when_present": 0.326
+      }
+    ]
+  },
+  "success_failure_signals": {
+    "method": "combine ratings, helpfulness, review text descriptors, and time trend into an interpretable product signal",
+    "product_signal_rows": [
+      {
+        "product_file": "pacifier.tsv",
+        "success_signal_score": 0.6532,
+        "reputation_direction": "increasing",
+        "most_confident_tracking_signal": "low-rating share plus disappointed descriptor lift"
+      },
+      {
+        "product_file": "hair_dryer.tsv",
+        "success_signal_score": 0.619,
+        "reputation_direction": "stable",
+        "most_confident_tracking_signal": "low-rating share plus disappointed descriptor lift"
+      },
+      {
+        "product_file": "microwave.tsv",
+        "success_signal_score": 0.5246,
+        "reputation_direction": "stable",
+        "most_confident_tracking_signal": "low-rating share plus disappointed descriptor lift"
+      }
+    ]
+  },
+  "star_rating_incitement": {
+    "method": "rolling previous-20-review context checks whether low-star periods are followed by longer review writing",
+    "incitement_rows": [
+      {
+        "product_file": "hair_dryer.tsv",
+        "reviews_after_low_context": 46,
+        "mean_review_length_after_low_context": 77.1957,
+        "reviews_after_high_context": 5358,
+        "mean_review_length_after_high_context": 52.8477
+      },
+      {
+        "product_file": "microwave.tsv",
+        "reviews_after_low_context": 318,
+        "mean_review_length_after_low_context": 115.4214,
+        "reviews_after_high_context": 106,
+        "mean_review_length_after_high_context": 85.9717
+      },
+      {
+        "product_file": "pacifier.tsv",
+        "reviews_after_low_context": 6,
+        "mean_review_length_after_low_context": 78.8333,
+        "reviews_after_high_context": 13113,
+        "mean_review_length_after_high_context": 49.9014
+      }
+    ]
+  },
+  "marketing_director_letter": "Letter to the Marketing Director of Sunshine Company: track low-star share, helpfulness-weighted review length, and disappointed/enthusiastic descriptor lift from launch week onward. The official Amazon review files show that the most useful early warning is not the mean rating alone; it is the combination of rating trend, low-rating share, and negative descriptors that other customers find helpful. Sunshine should compare microwave, pacifier, and hair dryer launches against these baselines and investigate product design features whenever low-rating share and broken/disappointed language rise together.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow reads the official COMAP TSV files from the official ZIP and does not use random placeholder data.",
+    "model_limits": [
+      "The analysis is descriptive and does not infer causal product design effects.",
+      "Review text descriptors are transparent keyword groups and should be upgraded to a validated NLP model in a full paper.",
+      "The official files cover competing products and historical review periods, not Sunshine Company launch outcomes."
+    ]
+  },
+  "artifacts": {
+    "product_review_measures": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/product_review_measures.csv",
+    "monthly_reputation_trends": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/monthly_reputation_trends.csv",
+    "text_descriptor_rating_lift": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/text_descriptor_rating_lift.csv",
+    "success_failure_signals": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/success_failure_signals.csv",
+    "star_rating_incitement": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/star_rating_incitement.csv",
+    "product_reputation_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/product_reputation_frontier.png"
+  }
+}

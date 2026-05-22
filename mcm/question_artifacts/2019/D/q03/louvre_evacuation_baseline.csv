@@ -1,0 +1,6 @@
+floor,share,vertical_delay_min,mobility_factor,estimated_peak_visitors,area_m2_allocated,baseline_evacuation_time_min
+level -2,0.16,6.5,1.16,1338,11637.6,7.99
+level -1,0.22,4.8,1.12,1839,16001.7,6.78
+ground,0.27,2.4,1.0,2257,19638.5,4.57
+level 1,0.23,3.8,1.07,1923,16729.0,5.78
+level 2,0.12,5.2,1.1,1003,8728.2,6.26

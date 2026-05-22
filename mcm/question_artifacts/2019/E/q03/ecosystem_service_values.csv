@@ -1,0 +1,6 @@
+service,annual_value_usd_ha,degradation_sensitivity,recovery_years,present_value_usd_ha_30yr,accounting_role
+water filtration,1350,0.74,18,26460.6,"include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+pollination and food production support,980,0.62,12,19208.43,"include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+carbon sequestration and oxygen cycling,720,0.58,25,14112.32,"include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+waste assimilation,1120,0.81,20,21952.49,"include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+biodiversity and habitat support,860,0.88,30,16856.38,"include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"

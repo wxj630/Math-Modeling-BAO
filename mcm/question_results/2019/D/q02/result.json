@@ -1,0 +1,208 @@
+{
+  "problem_id": "2019-D",
+  "question": "q02",
+  "question_title": "威胁情景、额外出口与救援进入权衡",
+  "statement": "Design an adaptable model for threats that can alter or remove route segments while allowing emergency personnel to enter quickly.",
+  "methods": "比较 main exits 全开、Pyramid 不可用、地下烟雾、河岸安全事件等情景，显式保留 responder corridor 并控制 service exits 的安全开启。对应模型：鲁棒路线组合、情景分析。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "official_requirements": {
+      "five_floors": true,
+      "two_underground_floors": true,
+      "visitors_2017_8_1_million": true,
+      "exhibits_380000": true,
+      "floor_area_72735_m2": true,
+      "four_main_entrances": true,
+      "affluences_app": true,
+      "extra_exits_security_tradeoff": true,
+      "adaptable_threat_model": true
+    },
+    "parameters": {
+      "visitors_2017_million": 8.1,
+      "floor_area_m2": 72735,
+      "max_wing_length_m": 480,
+      "entrances": [
+        {
+          "exit": "Pyramid entrance",
+          "public": true,
+          "baseline_capacity_person_min": 420,
+          "security_level": 0.94,
+          "familiarity": 0.95
+        },
+        {
+          "exit": "Passage Richelieu",
+          "public": false,
+          "baseline_capacity_person_min": 210,
+          "security_level": 0.88,
+          "familiarity": 0.52
+        },
+        {
+          "exit": "Carrousel du Louvre",
+          "public": false,
+          "baseline_capacity_person_min": 260,
+          "security_level": 0.86,
+          "familiarity": 0.58
+        },
+        {
+          "exit": "Portes Des Lions",
+          "public": false,
+          "baseline_capacity_person_min": 150,
+          "security_level": 0.82,
+          "familiarity": 0.38
+        }
+      ],
+      "floor_loads": [
+        {
+          "floor": "level -2",
+          "share": 0.16,
+          "vertical_delay_min": 6.5,
+          "mobility_factor": 1.16
+        },
+        {
+          "floor": "level -1",
+          "share": 0.22,
+          "vertical_delay_min": 4.8,
+          "mobility_factor": 1.12
+        },
+        {
+          "floor": "ground",
+          "share": 0.27,
+          "vertical_delay_min": 2.4,
+          "mobility_factor": 1.0
+        },
+        {
+          "floor": "level 1",
+          "share": 0.23,
+          "vertical_delay_min": 3.8,
+          "mobility_factor": 1.07
+        },
+        {
+          "floor": "level 2",
+          "share": 0.12,
+          "vertical_delay_min": 5.2,
+          "mobility_factor": 1.1
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; capacities and occupancy shares are explicit deterministic planning inputs for audit and replacement."
+    }
+  },
+  "threat_scenarios": {
+    "scenario_rows": [
+      {
+        "scenario": "underground corridor smoke",
+        "closed_exits": [
+          "Carrousel du Louvre"
+        ],
+        "extra_service_exits": 5,
+        "emergency_access_reserved_pct": 0.16,
+        "open_main_exit_capacity_person_min": 780,
+        "service_exit_capacity_person_min": 425,
+        "effective_public_capacity_person_min": 1012.2,
+        "estimated_clear_time_min": 12.76,
+        "responder_access_reserved_pct": 0.16,
+        "route_policy": "activate service exits only under staff control after threat-specific route screening"
+      },
+      {
+        "scenario": "riverside security incident",
+        "closed_exits": [
+          "Portes Des Lions"
+        ],
+        "extra_service_exits": 3,
+        "emergency_access_reserved_pct": 0.12,
+        "open_main_exit_capacity_person_min": 890,
+        "service_exit_capacity_person_min": 255,
+        "effective_public_capacity_person_min": 1007.6,
+        "estimated_clear_time_min": 12.8,
+        "responder_access_reserved_pct": 0.12,
+        "route_policy": "activate service exits only under staff control after threat-specific route screening"
+      },
+      {
+        "scenario": "baseline all main exits",
+        "closed_exits": [],
+        "extra_service_exits": 0,
+        "emergency_access_reserved_pct": 0.1,
+        "open_main_exit_capacity_person_min": 1040,
+        "service_exit_capacity_person_min": 0,
+        "effective_public_capacity_person_min": 936.0,
+        "estimated_clear_time_min": 13.43,
+        "responder_access_reserved_pct": 0.1,
+        "route_policy": "activate service exits only under staff control after threat-specific route screening"
+      },
+      {
+        "scenario": "pyramid unavailable",
+        "closed_exits": [
+          "Pyramid entrance"
+        ],
+        "extra_service_exits": 4,
+        "emergency_access_reserved_pct": 0.14,
+        "open_main_exit_capacity_person_min": 620,
+        "service_exit_capacity_person_min": 340,
+        "effective_public_capacity_person_min": 825.6,
+        "estimated_clear_time_min": 14.63,
+        "responder_access_reserved_pct": 0.14,
+        "route_policy": "activate service exits only under staff control after threat-specific route screening"
+      }
+    ],
+    "robustness_rule": "optimize a portfolio of safe exits, not a single shortest route, because threats can remove route segments."
+  },
+  "bottleneck_analysis": {
+    "bottleneck_rows": [
+      {
+        "exit": "Portes Des Lions",
+        "public": false,
+        "baseline_capacity_person_min": 150,
+        "security_level": 0.82,
+        "familiarity": 0.38,
+        "bottleneck_index": 0.7687,
+        "management_action": "pre-authorize emergency-only opening with staff escorts"
+      },
+      {
+        "exit": "Passage Richelieu",
+        "public": false,
+        "baseline_capacity_person_min": 210,
+        "security_level": 0.88,
+        "familiarity": 0.52,
+        "bottleneck_index": 0.5599,
+        "management_action": "pre-authorize emergency-only opening with staff escorts"
+      },
+      {
+        "exit": "Carrousel du Louvre",
+        "public": false,
+        "baseline_capacity_person_min": 260,
+        "security_level": 0.86,
+        "familiarity": 0.58,
+        "bottleneck_index": 0.4743,
+        "management_action": "pre-authorize emergency-only opening with staff escorts"
+      },
+      {
+        "exit": "vertical circulation between underground floors and main concourse",
+        "public": true,
+        "baseline_capacity_person_min": 0,
+        "security_level": 0.72,
+        "familiarity": 0.46,
+        "bottleneck_index": 0.2663,
+        "management_action": "meter upstream galleries and reserve stair capacity for disabled visitors and responders"
+      },
+      {
+        "exit": "Pyramid entrance",
+        "public": true,
+        "baseline_capacity_person_min": 420,
+        "security_level": 0.94,
+        "familiarity": 0.95,
+        "bottleneck_index": 0.2135,
+        "management_action": "push multilingual app routing"
+      }
+    ],
+    "priority_bottleneck": {
+      "exit": "Portes Des Lions",
+      "public": false,
+      "baseline_capacity_person_min": 150,
+      "security_level": 0.82,
+      "familiarity": 0.38,
+      "bottleneck_index": 0.7687,
+      "management_action": "pre-authorize emergency-only opening with staff escorts"
+    }
+  }
+}

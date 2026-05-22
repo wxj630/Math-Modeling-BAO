@@ -1,0 +1,99 @@
+{
+  "problem_id": "2021-E",
+  "title": "2021年 CUMCM E题：中药材的鉴别",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "根据附件 1 中几种药材的中红外光谱数据，研究不同种类药材的特 征和差异性，并鉴别药材的种类。",
+  "tasks": [
+    "根据附件 1 中几种药材的中红外光谱数据，研究不同种类药材的特 征和差异性，并鉴别药材的种类"
+  ],
+  "selected_model": {
+    "key": "ml",
+    "name": "机器学习与统计识别",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "光谱"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "鉴别"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件1.xlsx",
+    "rows": 426,
+    "columns": 3349,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "机器学习与统计识别",
+    "task_breakdown": [
+      "根据附件 1 中几种药材的中红外光谱数据，研究不同种类药材的特 征和差异性，并鉴别药材的种类"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "X: 样本特征矩阵",
+      "y: 类别/状态标签",
+      "theta: 逻辑回归参数",
+      "z_i: 聚类标签"
+    ],
+    "constraints": [
+      "特征标准化或同量纲",
+      "类别概率位于 [0,1]"
+    ],
+    "objective_or_equations": [
+      "P(y=1|x)=sigmoid(theta^T*x)",
+      "min cross_entropy(y, sigmoid(X*theta))",
+      "min within_cluster_sum_of_squares"
+    ],
+    "solution_steps": [
+      "构造或读取样本特征。",
+      "训练逻辑回归分类器。",
+      "用 KMeans 做无监督对照。",
+      "输出准确率、聚类数量和 PCA 投影。"
+    ],
+    "model_reference": {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "logistic_regression_plus_kmeans",
+    "training_accuracy": 0.5416666666666666,
+    "cluster_counts": [
+      239,
+      1
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2021/E/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

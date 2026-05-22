@@ -1,0 +1,6 @@
+strategy,lifetime_multiplier,allowed_materials
+orient broad face parallel to incoming waves,1.12,sand and water only
+build a shallow sacrificial apron,1.18,sand and water only
+compact in thin wet layers,1.15,sand and water only
+keep drainage grooves away from main wall,1.08,sand and water only
+move the foundation a small distance farther above swash line,1.25,same beach location class

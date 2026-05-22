@@ -1,0 +1,119 @@
+{
+  "problem_id": "2022-F",
+  "question": "q02",
+  "question_title": "小行星采矿未来愿景及公平影响",
+  "statement": "What might asteroid mining look like in the future, and how might asteroid mining impact global equity?",
+  "methods": "比较 private first mover、state-led blocs、UN licensed benefit sharing、open science coalition 四种未来愿景，计算公平、可行性和条约对齐得分。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "official_requirements": {
+      "outer_space_treaty_equity_principle": true,
+      "define_global_equity": true,
+      "measure_global_equity": true,
+      "asteroid_mining_future_vision": true,
+      "condition_sensitivity_required": true,
+      "un_policy_recommendations_required": true
+    }
+  },
+  "asteroid_mining_vision": {
+    "scenarios": [
+      {
+        "scenario_id": "un_licensed_benefit_sharing_regime",
+        "description": "The UN updates treaty practice through licenses, public reporting, safety rules, and a global benefit fund.",
+        "equity_score": 0.7648,
+        "feasibility_score": 0.664,
+        "outer_space_treaty_alignment": 0.804,
+        "total_score": 0.7517,
+        "benefit_sharing_score": 0.8,
+        "access_to_participation_score": 0.68,
+        "technology_transfer_score": 0.7,
+        "governance_voice_score": 0.84,
+        "risk_and_environmental_burden_score": 0.74,
+        "peaceful_use_and_conflict_prevention_score": 0.82
+      },
+      {
+        "scenario_id": "open_science_public_private_coalition",
+        "description": "Public agencies, firms, and universities share mission data while firms compete under common benefit obligations.",
+        "equity_score": 0.732,
+        "feasibility_score": 0.694,
+        "outer_space_treaty_alignment": 0.722,
+        "total_score": 0.7226,
+        "benefit_sharing_score": 0.66,
+        "access_to_participation_score": 0.78,
+        "technology_transfer_score": 0.84,
+        "governance_voice_score": 0.7,
+        "risk_and_environmental_burden_score": 0.7,
+        "peaceful_use_and_conflict_prevention_score": 0.74
+      },
+      {
+        "scenario_id": "state_led_resource_blocs",
+        "description": "Several spacefaring states run national programs and form exclusive resource blocs.",
+        "equity_score": 0.3772,
+        "feasibility_score": 0.662,
+        "outer_space_treaty_alignment": 0.33,
+        "total_score": 0.4257,
+        "benefit_sharing_score": 0.3,
+        "access_to_participation_score": 0.34,
+        "technology_transfer_score": 0.4,
+        "governance_voice_score": 0.32,
+        "risk_and_environmental_burden_score": 0.54,
+        "peaceful_use_and_conflict_prevention_score": 0.48
+      },
+      {
+        "scenario_id": "private_first_mover_concessions",
+        "description": "A few private firms and sponsor states finance extraction and retain most mineral profits.",
+        "equity_score": 0.2728,
+        "feasibility_score": 0.692,
+        "outer_space_treaty_alignment": 0.21,
+        "total_score": 0.3453,
+        "benefit_sharing_score": 0.18,
+        "access_to_participation_score": 0.24,
+        "technology_transfer_score": 0.28,
+        "governance_voice_score": 0.2,
+        "risk_and_environmental_burden_score": 0.46,
+        "peaceful_use_and_conflict_prevention_score": 0.42
+      }
+    ],
+    "recommended_vision": {
+      "scenario_id": "un_licensed_benefit_sharing_regime",
+      "description": "The UN updates treaty practice through licenses, public reporting, safety rules, and a global benefit fund.",
+      "equity_score": 0.7648,
+      "feasibility_score": 0.664,
+      "outer_space_treaty_alignment": 0.804,
+      "total_score": 0.7517,
+      "benefit_sharing_score": 0.8,
+      "access_to_participation_score": 0.68,
+      "technology_transfer_score": 0.7,
+      "governance_voice_score": 0.84,
+      "risk_and_environmental_burden_score": 0.74,
+      "peaceful_use_and_conflict_prevention_score": 0.82
+    },
+    "vision_note": "The recommended vision balances feasible public-private mining with UN licensing, benefit sharing, data access, and risk bonding."
+  },
+  "equity_model": {
+    "definition": "Global equity in asteroid mining means broad benefit sharing, fair access to participation, technology diffusion, multilateral voice, risk protection, and peaceful use.",
+    "dimensions": {
+      "benefit_sharing": "Mineral value and derived public benefits reach countries irrespective of economic or scientific development.",
+      "access_to_participation": "Emerging space nations, universities, and public agencies can participate in missions, data, and contracts.",
+      "technology_transfer": "Mission knowledge, safety practices, and enabling infrastructure diffuse beyond first movers.",
+      "governance_voice": "Rules are set through transparent multilateral governance, not only by mining states or firms.",
+      "risk_and_environmental_burden": "Launch, reentry, orbital-debris, market, and terrestrial environmental risks are not shifted to low-power countries.",
+      "peaceful_use_and_conflict_prevention": "Resource extraction remains aligned with the Outer Space Treaty and does not militarize access to space resources."
+    },
+    "weights": {
+      "benefit_sharing": 0.24,
+      "access_to_participation": 0.18,
+      "technology_transfer": 0.16,
+      "governance_voice": 0.18,
+      "risk_and_environmental_burden": 0.12,
+      "peaceful_use_and_conflict_prevention": 0.12
+    },
+    "validation_logic": [
+      "Outer Space Treaty benchmark: higher scores require benefits for all countries irrespective of development level.",
+      "International Space Station and satellite access benchmark: multinational access and shared technical infrastructure improve participation equity.",
+      "Exclusive concession benchmark: concentrated finance without benefit sharing lowers equity even when technical feasibility is high."
+    ]
+  }
+}

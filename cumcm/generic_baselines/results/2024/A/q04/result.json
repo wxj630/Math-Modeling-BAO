@@ -1,0 +1,102 @@
+{
+  "problem_id": "2024-A",
+  "title": "2024年 CUMCM A题：板凳龙”  闹元宵",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "盘入螺线的螺距为 1.7 m，盘出螺线与盘入螺线关于螺线中心呈中心对称，舞 龙队在问题 3 设定的调头空间内完成调头，调头路径是由两段圆弧相切连接而成的 S 形曲 线，前一段圆弧的半径是后一段的 2 倍， 它与盘入、盘出螺线均相切。能否调整圆弧， 仍保 持各部分相切，使得调头曲线变短？ 龙头前把手的行进速度始终保持 1 m/s。以调头开始时间为零时刻， 给出从−100 s 开始 到100 s 为止， 每秒舞龙队的位置和速度， 将结果存放到文件result4.xlsx 中 （模板文件见附 件） 。 同时在论文中给出−100 s、−50 s、0 s、50 s、100 s 时，龙头前把手、 龙头后面第1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度。",
+  "tasks": [
+    "以调头开始时间为零时刻， 给出从−100 s 开始 到100 s 为止， 每秒舞龙队的位置和速度， 将结果存放到文件result4.xlsx 中 （模板文件见附 件）",
+    "同时在论文中给出−100 s、−50 s、0 s、50 s、100 s 时，龙头前把手、 龙头后面第1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "螺线、把手、位置、速度、空间"
+    },
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "路径"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "曲线"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
+    "rows": 674,
+    "columns": 301,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "以调头开始时间为零时刻， 给出从−100 s 开始 到100 s 为止， 每秒舞龙队的位置和速度， 将结果存放到文件result4.xlsx 中 （模板文件见附 件）",
+      "同时在论文中给出−100 s、−50 s、0 s、50 s、100 s 时，龙头前把手、 龙头后面第1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      0.805375,
+      1.409971
+    ],
+    "radius": 5.506288052958869,
+    "mean_squared_error": 0.0033546582306843453,
+    "success": true
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/A/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

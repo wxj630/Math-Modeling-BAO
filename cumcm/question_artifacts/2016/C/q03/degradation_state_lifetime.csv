@@ -1,0 +1,5 @@
+﻿state,observed_sample_count,last_observed_voltage_v,last_observed_time_min
+新电池状态,301,9.0,1281.1
+衰减状态1,301,9.0,1104.8
+衰减状态2,301,9.0,979.0
+衰减状态3,148,9.765,596.2

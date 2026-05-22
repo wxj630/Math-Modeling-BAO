@@ -1,0 +1,7 @@
+condition,effect_on_goal_probability,type,base_probability,adjusted_probability
+high customs data-sharing compliance,0.13,helpful,0.64,0.77
+platform API cooperation and rapid takedown,0.1,helpful,0.64,0.74
+stable source-country community partners,0.08,helpful,0.64,0.72
+economic shock increasing poaching recruitment,-0.09,harmful,0.64,0.55
+corruption or leak of targeting rules,-0.12,harmful,0.64,0.52
+trafficker route displacement to unobserved corridors,-0.14,harmful,0.64,0.5

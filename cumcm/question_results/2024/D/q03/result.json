@@ -1,0 +1,115 @@
+{
+  "problem_id": "2024-D",
+  "title": "2024年 CUMCM D题：反潜航空深弹命中概率",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "由于单枚深弹命中率较低，为了增强杀伤效果，通常需要投掷多枚深弹。若一 架反潜飞机可携带 9 枚航空深弹， 所有深弹的定深引信引爆深度均相同， 投弹落点在平面上 呈阵列形状（见图 2） 。在问题2 的参数下，请设计投弹方案（包括定深引信引爆深度，以 及投弹落点之间的平面间隔） ，使得投弹命中（指至少一枚深弹命中潜艇）的概率最大。",
+  "tasks": [
+    "在问题2 的参数下，请设计投弹方案（包括定深引信引爆深度，以 及投弹落点之间的平面间隔） ，使得投弹命中（指至少一枚深弹命中潜艇）的概率最大"
+  ],
+  "selected_model": {
+    "key": "probability",
+    "name": "概率统计与抽样检验",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最大、方案、设计"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "概率、命中"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "形状"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 1,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/D.md",
+    "rows": 21,
+    "columns": 7,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "概率统计与抽样检验",
+    "task_breakdown": [
+      "在问题2 的参数下，请设计投弹方案（包括定深引信引爆深度，以 及投弹落点之间的平面间隔） ，使得投弹命中（指至少一枚深弹命中潜艇）的概率最大"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "(x_b,y_b): 航空深弹平面投弹落点",
+      "d: 定深引信引爆深度",
+      "(X,Y,Z): 潜艇中心真实位置随机变量",
+      "L,W,H: 潜艇长、宽、高",
+      "R: 深弹杀伤半径",
+      "P_hit: 命中概率"
+    ],
+    "constraints": [
+      "X,Y 独立服从 N(0,sigma^2)。",
+      "问题 1 中 Z=h0；问题 2 和 3 中 Z 服从下截尾正态分布。",
+      "触发引信命中：落点在潜艇水平投影内，且定深不浅于潜艇上表面。",
+      "定深引信命中：引爆点到潜艇长方体的最短距离不超过杀伤半径 R。"
+    ],
+    "objective_or_equations": [
+      "P_any = integral 1{union_j hit_j(X,Y,Z)} f_X f_Y f_Z dX dY dZ",
+      "max_{s,d} P_any(s,d), 9 枚深弹落点为 {-s,0,s} x {-s,0,s}"
+    ],
+    "solution_steps": [
+      "构造水平正态误差和截尾正态深度误差的确定性积分网格。",
+      "对 3x3 阵列间隔 s 和定深 d 做二维网格搜索。",
+      "每个候选方案计算至少一枚深弹命中的并集概率。",
+      "输出最优间隔、定深、最大命中概率和搜索表。"
+    ],
+    "model_reference": {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "nine_charge_array_spacing_depth_search",
+    "parameters": {
+      "length": 100.0,
+      "width": 20.0,
+      "height": 25.0,
+      "heading_deg": 90.0,
+      "kill_radius": 20.0,
+      "sigma_xy": 120.0,
+      "depth_mean": 150.0,
+      "sigma_z": 40.0,
+      "depth_min": 120.0
+    },
+    "best_plan": {
+      "array_spacing_m": 85.0,
+      "detonation_depth_m": 160.0,
+      "hit_probability": 0.28277588
+    },
+    "max_hit_probability": 0.28277588,
+    "array_shape": "3x3 square grid centered at the定位原点, coordinates {-s,0,s} x {-s,0,s}",
+    "expression": "P_any(s,d)=E[1{至少一个阵列落点满足触发引信或定深杀伤命中条件}]。"
+  },
+  "artifact_paths": [
+    "question_artifacts/2024/D/q03/experiment_table.csv"
+  ]
+}

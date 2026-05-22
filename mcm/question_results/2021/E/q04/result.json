@@ -1,0 +1,145 @@
+{
+  "problem_id": "2021-E",
+  "question": "q04",
+  "question_title": "改变食物系统优先级的收益、成本和发生时间",
+  "statement": "What are the benefits and costs of changing the priorities of a food system? When would they occur? How do these benefits and costs differ between developed and developing countries?",
+  "methods": "把区域采购、再生生产、营养券、仓储减损和小生产者风险共担列为干预，按收益指数、成本、首次见效年份和发达/发展中国家适配度排序。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "official_requirements": {
+      "optimize_efficiency_profitability_sustainability_equity": true,
+      "developed_and_developing_country_applications": true,
+      "benefits_and_costs_over_time": true,
+      "scalability_and_adaptability": true,
+      "twenty_five_page_limit": true
+    },
+    "parameters": {
+      "global_hunger_millions": 821,
+      "food_system_ghg_share": 0.29,
+      "food_system_biodiversity_loss_share": 0.8,
+      "food_system_deforestation_share": 0.8,
+      "food_system_freshwater_share": 0.7,
+      "transition_years": 15,
+      "source_note": "Official PDF statement parameters only; country and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "benefit_cost_analysis": {
+    "method": "transparent intervention benefit-cost scoring by timing, equity gain, sustainability gain, and profitability cost",
+    "benefit_cost_rows": [
+      {
+        "intervention": "regenerative production and water stewardship",
+        "primary_dimension": "sustainability",
+        "sustainability_gain": 0.18,
+        "equity_gain": 0.05,
+        "profitability_cost": 0.07,
+        "first_benefit_year": 5,
+        "estimated_benefit_index": 0.2193,
+        "net_priority_gain": 0.16,
+        "developed_country_fit": 0.6625,
+        "developing_country_fit": 0.6
+      },
+      {
+        "intervention": "small producer market access and risk sharing",
+        "primary_dimension": "equity",
+        "sustainability_gain": 0.07,
+        "equity_gain": 0.15,
+        "profitability_cost": 0.06,
+        "first_benefit_year": 4,
+        "estimated_benefit_index": 0.1925,
+        "net_priority_gain": 0.16,
+        "developed_country_fit": 0.555,
+        "developing_country_fit": 0.7175
+      },
+      {
+        "intervention": "nutritious access vouchers and school meals",
+        "primary_dimension": "nutrition_resilience",
+        "sustainability_gain": 0.04,
+        "equity_gain": 0.16,
+        "profitability_cost": 0.05,
+        "first_benefit_year": 2,
+        "estimated_benefit_index": 0.171,
+        "net_priority_gain": 0.15,
+        "developed_country_fit": 0.5275,
+        "developing_country_fit": 0.815
+      },
+      {
+        "intervention": "transparent waste reduction and storage upgrades",
+        "primary_dimension": "efficiency",
+        "sustainability_gain": 0.09,
+        "equity_gain": 0.08,
+        "profitability_cost": 0.02,
+        "first_benefit_year": 2,
+        "estimated_benefit_index": 0.1548,
+        "net_priority_gain": 0.15,
+        "developed_country_fit": 0.585,
+        "developing_country_fit": 0.735
+      },
+      {
+        "intervention": "regional procurement and shorter supply loops",
+        "primary_dimension": "efficiency",
+        "sustainability_gain": 0.1,
+        "equity_gain": 0.07,
+        "profitability_cost": 0.04,
+        "first_benefit_year": 3,
+        "estimated_benefit_index": 0.1565,
+        "net_priority_gain": 0.13,
+        "developed_country_fit": 0.59,
+        "developing_country_fit": 0.6667
+      }
+    ],
+    "timing_note": "nutrition access and waste/storage upgrades pay off earliest; regenerative production and producer risk sharing require longer implementation but improve durability"
+  },
+  "country_applications": {
+    "method": "apply the same priority score to developed and developing country cases requested by the official statement",
+    "country_rows": [
+      {
+        "country": "Germany",
+        "development_group": "developed",
+        "current_priority_score": 0.6928,
+        "target_priority_score": 0.6832,
+        "score_delta": -0.0096,
+        "food_insecurity_rate": 0.05,
+        "environmental_pressure": 0.55,
+        "recommended_implementation_years": 7,
+        "main_gap": "sustainability"
+      },
+      {
+        "country": "United States",
+        "development_group": "developed",
+        "current_priority_score": 0.6912,
+        "target_priority_score": 0.5776,
+        "score_delta": -0.1136,
+        "food_insecurity_rate": 0.11,
+        "environmental_pressure": 0.76,
+        "recommended_implementation_years": 9,
+        "main_gap": "sustainability"
+      },
+      {
+        "country": "Kenya",
+        "development_group": "developing",
+        "current_priority_score": 0.4216,
+        "target_priority_score": 0.4396,
+        "score_delta": 0.018,
+        "food_insecurity_rate": 0.25,
+        "environmental_pressure": 0.52,
+        "recommended_implementation_years": 10,
+        "main_gap": "equity"
+      },
+      {
+        "country": "India",
+        "development_group": "developing",
+        "current_priority_score": 0.4912,
+        "target_priority_score": 0.46,
+        "score_delta": -0.0312,
+        "food_insecurity_rate": 0.18,
+        "environmental_pressure": 0.68,
+        "recommended_implementation_years": 11,
+        "main_gap": "sustainability"
+      }
+    ],
+    "developed_case_count": 2,
+    "developing_case_count": 2
+  }
+}

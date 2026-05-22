@@ -1,0 +1,105 @@
+{
+  "problem_id": "2025-D",
+  "question": "q01",
+  "question_title": "Key Bridge 坍塌/重建的路网影响",
+  "statement": "What does the network model show is the impact of the Francis Scott Key Bridge collapse and/or reconstruction on Baltimore transportation stakeholders?",
+  "methods": "基于官方驾车路网构建加权有向图，移除 I-695/Baltimore Beltway 港口桥梁走廊边，比较关键 OD 最短路和断连状态。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "rows": {
+      "edges_drive.csv": 91227,
+      "nodes_drive.csv": 37163,
+      "Bus_Stops.csv": 2654,
+      "Bus_Routes.csv": 66,
+      "MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv": 2398,
+      "DataDictionary.csv": 111
+    }
+  },
+  "network_summary": {
+    "drive_nodes": 37162,
+    "drive_edges": 89958,
+    "largest_weak_component_nodes": 37162,
+    "bus_routes": 66,
+    "bus_stops": 2654
+  },
+  "bridge_impact": {
+    "anchor_nodes": {
+      "Key Bridge west approach": 37283075,
+      "Key Bridge east approach": 37574794,
+      "Downtown/Inner Harbor": 49488417,
+      "Port/Curtis Bay": 49506844,
+      "Dundalk/East Baltimore": 37805412,
+      "I-95 Southwest Gateway": 37800179,
+      "Mondawmin Transit Hub": 49390032,
+      "Rogers Avenue Metro": 49494946
+    },
+    "od_impacts": [
+      {
+        "od_pair": "Key Bridge west-east approaches",
+        "from": "Key Bridge west approach",
+        "to": "Key Bridge east approach",
+        "status_after_removal": "disconnected",
+        "baseline_km": 13.083,
+        "collapse_km": null,
+        "extra_km": null,
+        "extra_pct": null
+      },
+      {
+        "od_pair": "Port to Dundalk",
+        "from": "Port/Curtis Bay",
+        "to": "Dundalk/East Baltimore",
+        "status_after_removal": "connected",
+        "baseline_km": 59.505,
+        "collapse_km": 59.505,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Southwest Gateway to Dundalk",
+        "from": "I-95 Southwest Gateway",
+        "to": "Dundalk/East Baltimore",
+        "status_after_removal": "connected",
+        "baseline_km": 57.19,
+        "collapse_km": 57.19,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Downtown to Port",
+        "from": "Downtown/Inner Harbor",
+        "to": "Port/Curtis Bay",
+        "status_after_removal": "connected",
+        "baseline_km": 9.3,
+        "collapse_km": 9.3,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Mondawmin to Port jobs",
+        "from": "Mondawmin Transit Hub",
+        "to": "Port/Curtis Bay",
+        "status_after_removal": "connected",
+        "baseline_km": 13.748,
+        "collapse_km": 13.748,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Rogers Ave to Inner Harbor",
+        "from": "Rogers Avenue Metro",
+        "to": "Downtown/Inner Harbor",
+        "status_after_removal": "connected",
+        "baseline_km": 10.565,
+        "collapse_km": 10.565,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      }
+    ],
+    "mean_extra_km": 0.0,
+    "max_extra_pct": 0.0,
+    "disconnected_od_count": 1,
+    "removed_edge_count": 12,
+    "removed_total_km": 12.981
+  }
+}

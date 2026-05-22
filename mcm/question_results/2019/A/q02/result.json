@@ -1,0 +1,139 @@
+{
+  "problem_id": "2019-A",
+  "question": "q02",
+  "question_title": "龙的能量消耗与热量摄入",
+  "statement": "What are the energy expenditures of the dragons, and what are their caloric intake requirements?",
+  "methods": "用异速代谢基线叠加飞行、喷火、生长和创伤储备项，输出三条龙每日 kcal、猎物 kg 和饮水需求；所有质量和能量系数作为显式可替换假设。对应模型：异速生理模型、能量预算。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "official_requirements": {
+      "three_living_dragons": true,
+      "hatchling_10kg_one_year_30_to_40kg": true,
+      "energy_expenditure_and_caloric_intake": true,
+      "area_required_for_three_dragons": true,
+      "community_support_levels": true,
+      "arid_temperate_arctic_climates": true,
+      "letter_to_george_rr_martin": true,
+      "real_world_analogy": true
+    },
+    "parameters": {
+      "life_stages": [
+        {
+          "stage": "hatchling",
+          "mass_kg": 10.0,
+          "age_years": 0,
+          "growth_energy_share": 0.35
+        },
+        {
+          "stage": "one_year_old",
+          "mass_kg": 35.0,
+          "age_years": 1,
+          "growth_energy_share": 0.22
+        },
+        {
+          "stage": "large_living_dragon",
+          "mass_kg": 850.0,
+          "age_years": 8,
+          "growth_energy_share": 0.08
+        }
+      ],
+      "dragon_profiles": [
+        {
+          "dragon": "Drogon",
+          "mass_kg": 950.0,
+          "flight_hours_per_day": 2.2,
+          "fire_events_per_day": 0.8,
+          "dominance_factor": 1.1
+        },
+        {
+          "dragon": "Rhaegal",
+          "mass_kg": 760.0,
+          "flight_hours_per_day": 1.8,
+          "fire_events_per_day": 0.45,
+          "dominance_factor": 0.96
+        },
+        {
+          "dragon": "Viserion",
+          "mass_kg": 720.0,
+          "flight_hours_per_day": 1.6,
+          "fire_events_per_day": 0.35,
+          "dominance_factor": 0.92
+        }
+      ],
+      "climate_regions": [
+        {
+          "climate": "arid",
+          "thermoregulation_multiplier": 1.16,
+          "prey_density_kg_km2_year": 520.0,
+          "water_stress_multiplier": 1.35,
+          "nesting_penalty": 0.18
+        },
+        {
+          "climate": "warm_temperate",
+          "thermoregulation_multiplier": 1.0,
+          "prey_density_kg_km2_year": 1250.0,
+          "water_stress_multiplier": 1.0,
+          "nesting_penalty": 0.04
+        },
+        {
+          "climate": "arctic",
+          "thermoregulation_multiplier": 1.42,
+          "prey_density_kg_km2_year": 310.0,
+          "water_stress_multiplier": 0.82,
+          "nesting_penalty": 0.31
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; dragon mass, prey density, and support rows are explicit deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "energy_budget": {
+    "method": "allometric basal metabolism plus explicit flight, fire-breathing, growth, and trauma-reserve energy terms",
+    "dragon_rows": [
+      {
+        "dragon": "Drogon",
+        "mass_kg": 950.0,
+        "flight_hours_per_day": 2.2,
+        "fire_events_per_day": 0.8,
+        "dominance_factor": 1.1,
+        "basal_kcal_day": 11978.18,
+        "total_kcal_day": 26807.16,
+        "prey_kg_day_at_1300_kcal_per_kg": 20.621,
+        "water_l_day": 81.55
+      },
+      {
+        "dragon": "Rhaegal",
+        "mass_kg": 760.0,
+        "flight_hours_per_day": 1.8,
+        "fire_events_per_day": 0.45,
+        "dominance_factor": 0.96,
+        "basal_kcal_day": 10132.3,
+        "total_kcal_day": 20193.68,
+        "prey_kg_day_at_1300_kcal_per_kg": 15.534,
+        "water_l_day": 65.6
+      },
+      {
+        "dragon": "Viserion",
+        "mass_kg": 720.0,
+        "flight_hours_per_day": 1.6,
+        "fire_events_per_day": 0.35,
+        "dominance_factor": 0.92,
+        "basal_kcal_day": 9729.65,
+        "total_kcal_day": 18359.86,
+        "prey_kg_day_at_1300_kcal_per_kg": 14.123,
+        "water_l_day": 61.2
+      }
+    ],
+    "total_kcal_day": 65360.7,
+    "total_prey_kg_day": 50.278
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide measured dragon physiology or habitat records.",
+      "Mass, prey-density, thermoregulation, and community-support rows are scenario inputs for a fictional organism.",
+      "A full ecological paper would replace these rows with species-specific metabolism, prey surveys, fire-risk maps, and local livestock economics."
+    ]
+  }
+}

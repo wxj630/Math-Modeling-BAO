@@ -1,0 +1,12 @@
+feature,influencer_follower_correlation,mean_absolute_gap
+acousticness,0.612968,0.187655
+energy,0.574354,0.149097
+popularity,0.474367,9.774316
+speechiness,0.459942,0.027893
+danceability,0.437535,0.09689
+instrumentalness,0.430589,0.12431
+loudness,0.423209,3.108901
+valence,0.364264,0.150469
+duration_ms,0.274204,58797.094514
+tempo,0.160258,14.137096
+liveness,0.112703,0.083873

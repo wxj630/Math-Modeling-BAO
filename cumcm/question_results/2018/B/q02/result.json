@@ -1,0 +1,157 @@
+{
+  "problem_id": "2018-B",
+  "title": "2018年 CUMCM B题：赛题",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "两道工序的物料加工作业情况，每个物料的第一和第二道工序分别由两台不同的CNC依次加工完成；",
+  "tasks": [
+    "两道工序的物料加工作业情况，每个物料的第一和第二道工序分别由两台不同的CNC依次加工完成"
+  ],
+  "selected_model": {
+    "key": "ch3",
+    "name": "RGV离散事件仿真与动态调度",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "通用优化建模"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "通用数据建模"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement_and_output_templates",
+    "attachment_count": 7,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_1_result.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_2_result.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_3_result_1.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_3_result_2.xls",
+    "rows": 33,
+    "columns": 11,
+    "note": "本题专用算法使用题面表1三组RGV/CNC作业参数进行离散事件仿真；附件2的Case_*.xls为空白结果模板，用于确定输出字段。"
+  },
+  "formulation": {
+    "model_type": "RGV离散事件仿真与动态调度",
+    "task_breakdown": [
+      "两道工序的物料加工作业情况，每个物料的第一和第二道工序分别由两台不同的CNC依次加工完成"
+    ],
+    "assumptions": [
+      "8台CNC按1/2、3/4、5/6、7/8成对分布在4个轨道站位，RGV初始位于CNC1/2站位。",
+      "RGV移动1/2/3个站位的时间、奇偶号CNC上下料时间、清洗时间和加工时间均采用题面表1的三组参数。",
+      "一道工序中所有CNC等价；两道工序中枚举4台CNC执行工序1、其余4台执行工序2，并用完成件队列连接两道工序。",
+      "调度采用滚动贪心：在当前时刻选择可服务或最早可服务的CNC，使服务开始时间最早；同一CNC完成件下料和下一件上料合并为一次上下料作业。",
+      "故障情形使用固定随机种子的离散事件仿真；每次装入CNC的加工任务以1%概率在加工期间故障，故障件报废，维修时间在10至20分钟内均匀取样。"
+    ],
+    "decision_variables": [
+      "x_k: 第k次RGV服务选择的CNC编号",
+      "p_i: CNC i所在轨道站位",
+      "s_k: 第k次上/下料开始时间",
+      "r_i(t): CNC i在时刻t的可服务状态（空闲、加工、待下料、维修）",
+      "Q(t): 两道工序中等待进入工序2的半成品队列",
+      "F_j: 第j次故障事件的CNC、开始时间、结束时间和报废物料编号"
+    ],
+    "constraints": [
+      "0 <= s_k <= 28800秒，班次连续作业8小时。",
+      "RGV从站位a到b的移动时间为题面表1中 |a-b| 对应移动时间。",
+      "CNC加工任务必须先上料，经过上下料时间和加工时间后才可下料。",
+      "两道工序物料必须先完成工序1并进入等待队列，再由不同CNC完成工序2。",
+      "故障任务不产生合格成品，维修结束后CNC重新进入可调度序列。"
+    ],
+    "objective_or_equations": [
+      "travel(a,b)=T_{|a-b|}",
+      "ready_i = load_start_i + service_i + process_time_i",
+      "single-process objective: max N_finished over 0<=t<=28800",
+      "two-process objective: max N_finished with stage1/stage2 partition and FIFO semi-finished queue",
+      "efficiency = N_finished / floor(8*28800 / process_time_bottleneck)",
+      "fault repair time U(600,1200), P(fault per loaded job)=0.01"
+    ],
+    "solution_steps": [
+      "枚举8台CNC中4台承担工序1、4台承担工序2的所有划分。",
+      "对每个划分运行两道工序离散事件仿真，用FIFO队列传递半成品。",
+      "按班次完成成品数选择最优划分，输出每个成品两道工序的CNC与上下料时间。",
+      "比较三组参数下的瓶颈工序、完成数和设备效率。"
+    ],
+    "model_reference": {
+      "key": "ch3",
+      "name": "RGV离散事件仿真与动态调度",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "rgv_two_process_discrete_event_schedule",
+    "scenario_count": 3,
+    "best_case": 1,
+    "best_finished_count": 262,
+    "best_stage1_cnc": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "best_stage2_cnc": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "case_summaries": [
+      {
+        "case": 1,
+        "mode": "two_process",
+        "stage1_cnc": "1,3,5,7",
+        "stage2_cnc": "2,4,6,8",
+        "finished_count": 262,
+        "fault_count": 0,
+        "scrap_count": 0,
+        "efficiency": 0.909722,
+        "rgv_busy_rate": 0.796111,
+        "last_unload_start_s": 28783.0
+      },
+      {
+        "case": 2,
+        "mode": "two_process",
+        "stage1_cnc": "1,2,7,8",
+        "stage2_cnc": "3,4,5,6",
+        "finished_count": 210,
+        "fault_count": 0,
+        "scrap_count": 0,
+        "efficiency": 0.913043,
+        "rgv_busy_rate": 0.956771,
+        "last_unload_start_s": 28788.0
+      },
+      {
+        "case": 3,
+        "mode": "two_process",
+        "stage1_cnc": "2,5,6,8",
+        "stage2_cnc": "1,3,4,7",
+        "finished_count": 231,
+        "fault_count": 0,
+        "scrap_count": 0,
+        "efficiency": 0.913043,
+        "rgv_busy_rate": 0.978507,
+        "last_unload_start_s": 28682.0
+      }
+    ],
+    "report": [
+      "两道工序先枚举CNC分工，再用离散事件仿真评价每种分工在8小时内的成品数。",
+      "半成品按FIFO队列进入工序2，保证每件物料先完成工序1再进入不同CNC执行工序2。",
+      "输出 `two_process_schedule_all_cases.csv`，包含每件成品两道工序的CNC编号、上料和下料开始时间。",
+      "该专用模型对应教程中的规划优化和离散仿真思路，通用基线继续集中保留在 `cumcm/generic_baselines`。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2018/B/q02/two_process_schedule_all_cases.csv",
+    "question_artifacts/2018/B/q02/two_process_summary.csv",
+    "question_artifacts/2018/B/q02/experiment_table.csv"
+  ]
+}

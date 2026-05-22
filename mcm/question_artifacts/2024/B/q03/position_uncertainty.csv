@@ -1,0 +1,14 @@
+hour_after_loss,center_east_km,center_north_km,major_axis_km,minor_axis_km,position_uncertainty_area_km2,dominant_uncertainty
+0,0.0,0.0,1.0077,0.5436,1.721,current drift + depth-state ambiguity
+2,0.4181,0.2613,1.1162,0.6115,2.1443,current drift + depth-state ambiguity
+4,0.8362,0.5225,1.3918,0.7805,3.4126,current drift + depth-state ambiguity
+6,1.2543,0.7838,1.7576,1.0006,5.5247,current drift + depth-state ambiguity
+8,1.6724,1.045,2.1684,1.245,8.4809,current drift + depth-state ambiguity
+10,2.0904,1.3063,2.603,1.5018,12.2813,current drift + depth-state ambiguity
+12,2.5085,1.5675,3.0512,1.7658,16.9261,current drift + depth-state ambiguity
+14,2.9266,1.8288,3.5079,2.034,22.4152,current drift + depth-state ambiguity
+16,3.3447,2.09,3.97,2.305,28.7487,current drift + depth-state ambiguity
+18,3.7628,2.3513,4.436,2.578,35.9267,current drift + depth-state ambiguity
+20,4.1809,2.6125,4.9046,2.8523,43.9491,current drift + depth-state ambiguity
+22,4.599,2.8738,5.3753,3.1276,52.816,current drift + depth-state ambiguity
+24,5.0171,3.135,5.8475,3.4037,62.5273,current drift + depth-state ambiguity

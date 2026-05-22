@@ -1,0 +1,109 @@
+calendar_year,year_from_start,nation,scenario,population_at_risk_thousands,displacement_fraction
+2020,0,Maldives,managed_warming,0.0,0.0
+2030,10,Maldives,managed_warming,0.0,0.0
+2040,20,Maldives,managed_warming,0.0,0.0
+2050,30,Maldives,managed_warming,0.0,0.0
+2060,40,Maldives,managed_warming,3.553,0.0066
+2070,50,Maldives,managed_warming,13.61,0.0252
+2080,60,Maldives,managed_warming,26.328,0.0488
+2090,70,Maldives,managed_warming,40.931,0.0758
+2100,80,Maldives,managed_warming,57.048,0.1056
+2020,0,Maldives,middle_path,0.0,0.0
+2030,10,Maldives,middle_path,0.0,0.0
+2040,20,Maldives,middle_path,4.315,0.008
+2050,30,Maldives,middle_path,28.219,0.0523
+2060,40,Maldives,middle_path,60.121,0.1113
+2070,50,Maldives,middle_path,97.343,0.1803
+2080,60,Maldives,middle_path,138.743,0.2569
+2090,70,Maldives,middle_path,183.655,0.3401
+2100,80,Maldives,middle_path,231.63,0.4289
+2020,0,Maldives,high_emissions,0.0,0.0
+2030,10,Maldives,high_emissions,1.868,0.0035
+2040,20,Maldives,high_emissions,49.714,0.0921
+2050,30,Maldives,high_emissions,119.26,0.2209
+2060,40,Maldives,high_emissions,201.909,0.3739
+2070,50,Maldives,high_emissions,294.604,0.5456
+2080,60,Maldives,high_emissions,395.639,0.7327
+2090,70,Maldives,high_emissions,503.896,0.9331
+2100,80,Maldives,high_emissions,529.2,0.98
+2020,0,Tuvalu,managed_warming,0.0,0.0
+2030,10,Tuvalu,managed_warming,0.0,0.0
+2040,20,Tuvalu,managed_warming,0.0,0.0
+2050,30,Tuvalu,managed_warming,0.0,0.0
+2060,40,Tuvalu,managed_warming,0.074,0.0062
+2070,50,Tuvalu,managed_warming,0.254,0.0211
+2080,60,Tuvalu,managed_warming,0.478,0.0398
+2090,70,Tuvalu,managed_warming,0.734,0.0612
+2100,80,Tuvalu,managed_warming,1.016,0.0847
+2020,0,Tuvalu,middle_path,0.0,0.0
+2030,10,Tuvalu,middle_path,0.0,0.0
+2040,20,Tuvalu,middle_path,0.088,0.0073
+2050,30,Tuvalu,middle_path,0.511,0.0426
+2060,40,Tuvalu,middle_path,1.07,0.0892
+2070,50,Tuvalu,middle_path,1.72,0.1433
+2080,60,Tuvalu,middle_path,2.442,0.2035
+2090,70,Tuvalu,middle_path,3.225,0.2687
+2100,80,Tuvalu,middle_path,4.06,0.3383
+2020,0,Tuvalu,high_emissions,0.0,0.0
+2030,10,Tuvalu,high_emissions,0.043,0.0036
+2040,20,Tuvalu,high_emissions,0.888,0.074
+2050,30,Tuvalu,high_emissions,2.102,0.1752
+2060,40,Tuvalu,high_emissions,3.543,0.2952
+2070,50,Tuvalu,high_emissions,5.157,0.4297
+2080,60,Tuvalu,high_emissions,6.915,0.5762
+2090,70,Tuvalu,high_emissions,8.798,0.7332
+2100,80,Tuvalu,high_emissions,10.793,0.8994
+2020,0,Kiribati,managed_warming,0.0,0.0
+2030,10,Kiribati,managed_warming,0.0,0.0
+2040,20,Kiribati,managed_warming,0.0,0.0
+2050,30,Kiribati,managed_warming,0.0,0.0
+2060,40,Kiribati,managed_warming,0.368,0.0031
+2070,50,Kiribati,managed_warming,1.807,0.0151
+2080,60,Kiribati,managed_warming,3.676,0.0306
+2090,70,Kiribati,managed_warming,5.84,0.0487
+2100,80,Kiribati,managed_warming,8.239,0.0687
+2020,0,Kiribati,middle_path,0.0,0.0
+2030,10,Kiribati,middle_path,0.0,0.0
+2040,20,Kiribati,middle_path,0.473,0.0039
+2050,30,Kiribati,middle_path,3.956,0.033
+2060,40,Kiribati,middle_path,8.698,0.0725
+2070,50,Kiribati,middle_path,14.258,0.1188
+2080,60,Kiribati,middle_path,20.457,0.1705
+2090,70,Kiribati,middle_path,27.191,0.2266
+2100,80,Kiribati,middle_path,34.391,0.2866
+2020,0,Kiribati,high_emissions,0.0,0.0
+2030,10,Kiribati,high_emissions,0.144,0.0012
+2040,20,Kiribati,high_emissions,7.147,0.0596
+2050,30,Kiribati,high_emissions,17.538,0.1462
+2060,40,Kiribati,high_emissions,29.93,0.2494
+2070,50,Kiribati,high_emissions,43.848,0.3654
+2080,60,Kiribati,high_emissions,59.03,0.4919
+2090,70,Kiribati,high_emissions,75.306,0.6276
+2100,80,Kiribati,high_emissions,92.554,0.7713
+2020,0,Marshall Islands,managed_warming,0.0,0.0
+2030,10,Marshall Islands,managed_warming,0.0,0.0
+2040,20,Marshall Islands,managed_warming,0.0,0.0
+2050,30,Marshall Islands,managed_warming,0.0,0.0
+2060,40,Marshall Islands,managed_warming,0.0,0.0
+2070,50,Marshall Islands,managed_warming,0.386,0.0066
+2080,60,Marshall Islands,managed_warming,1.135,0.0192
+2090,70,Marshall Islands,managed_warming,2.051,0.0348
+2100,80,Marshall Islands,managed_warming,3.09,0.0524
+2020,0,Marshall Islands,middle_path,0.0,0.0
+2030,10,Marshall Islands,middle_path,0.0,0.0
+2040,20,Marshall Islands,middle_path,0.0,0.0
+2050,30,Marshall Islands,middle_path,1.252,0.0212
+2060,40,Marshall Islands,middle_path,3.29,0.0558
+2070,50,Marshall Islands,middle_path,5.746,0.0974
+2080,60,Marshall Islands,middle_path,8.516,0.1443
+2090,70,Marshall Islands,middle_path,11.544,0.1957
+2100,80,Marshall Islands,middle_path,14.796,0.2508
+2020,0,Marshall Islands,high_emissions,0.0,0.0
+2030,10,Marshall Islands,high_emissions,0.0,0.0
+2040,20,Marshall Islands,high_emissions,2.615,0.0443
+2050,30,Marshall Islands,high_emissions,7.209,0.1222
+2060,40,Marshall Islands,high_emissions,12.78,0.2166
+2070,50,Marshall Islands,high_emissions,19.08,0.3234
+2080,60,Marshall Islands,high_emissions,25.979,0.4403
+2090,70,Marshall Islands,high_emissions,33.392,0.566
+2100,80,Marshall Islands,high_emissions,41.261,0.6993

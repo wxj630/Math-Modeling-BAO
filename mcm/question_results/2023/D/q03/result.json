@@ -1,0 +1,276 @@
+{
+  "problem_id": "2023-D",
+  "question": "q03",
+  "question_title": "某一 SDG 达成后的网络结构和新增目标",
+  "statement": "If one of the SDGs is achieved (for example, there is no poverty or no hunger), what would be the structure of the resulting network? How would this achievement impact your team's priorities? Are there other goals that should be included or proposed to the UN for inclusion?",
+  "methods": "以 SDG 1 达成为情景，衰减其紧急依赖边，重算网络优先级，并提出 Digital Public Trust and Resilience 作为技术/危机治理补充目标。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "parameters": {
+      "sdg_count": 17,
+      "ten_year_horizon": 10,
+      "source_reference": "Transforming Our World: The 2030 Agenda for Sustainable Development, UN General Assembly, A/RES/70/1, 2015",
+      "requirements": [
+        "create a network of relationships between the 17 SDGs",
+        "use individual SDGs and network structure to set priorities",
+        "evaluate priority effectiveness and 10-year achievability",
+        "analyze resulting network if one SDG is achieved",
+        "discuss whether other goals should be proposed",
+        "analyze technology, pandemics, climate change, regional wars, refugees, or other crises",
+        "explain how the network approach helps other organizations set priorities"
+      ],
+      "source_note": "Official PDF statement parameters only; edge weights and crisis multipliers are deterministic scenario assumptions, not observed UN indicator data."
+    },
+    "scenario_assumption_note": "All network edges, edge weights, direct-need indices, and crisis multipliers are transparent deterministic assumptions for a reproducible network experiment; they are not observed UN indicator data."
+  },
+  "achieved_goal_scenario": {
+    "achieved_goal": 1,
+    "scenario": "SDG 1 No Poverty achieved, so poverty-centered incoming dependencies fall and downstream support becomes maintenance rather than emergency relief.",
+    "resulting_network_priorities": [
+      {
+        "sdg": 15,
+        "name": "SDG 15: Life on Land",
+        "post_achievement_pagerank": 0.17286
+      },
+      {
+        "sdg": 13,
+        "name": "SDG 13: Climate Action",
+        "post_achievement_pagerank": 0.1132
+      },
+      {
+        "sdg": 14,
+        "name": "SDG 14: Life Below Water",
+        "post_achievement_pagerank": 0.09142
+      },
+      {
+        "sdg": 11,
+        "name": "SDG 11: Sustainable Cities and Communities",
+        "post_achievement_pagerank": 0.09054
+      },
+      {
+        "sdg": 17,
+        "name": "SDG 17: Partnerships to achieve the Goal",
+        "post_achievement_pagerank": 0.06058
+      },
+      {
+        "sdg": 9,
+        "name": "SDG 9: Industry, Innovation and Infrastructure",
+        "post_achievement_pagerank": 0.06037
+      },
+      {
+        "sdg": 10,
+        "name": "SDG 10: Reduced Inequality",
+        "post_achievement_pagerank": 0.05828
+      },
+      {
+        "sdg": 16,
+        "name": "SDG 16: Peace and Justice Strong Institutions",
+        "post_achievement_pagerank": 0.05186
+      },
+      {
+        "sdg": 6,
+        "name": "SDG 6: Clean Water and Sanitation",
+        "post_achievement_pagerank": 0.04759
+      },
+      {
+        "sdg": 12,
+        "name": "SDG 12: Responsible Consumption and Production",
+        "post_achievement_pagerank": 0.04687
+      }
+    ],
+    "proposed_new_goal": {
+      "sdg": 18,
+      "name": "Digital Public Trust and Resilience",
+      "reason": "Technology and crisis governance appear repeatedly in the official prompt but are not represented as a standalone SDG."
+    }
+  },
+  "priority_model": {
+    "method": "priority = 55% network leverage + 45% direct human/environment need",
+    "priority_ranking": [
+      {
+        "sdg": 1,
+        "name": "No Poverty",
+        "category": "social",
+        "pagerank": 0.03465,
+        "betweenness": 0.15417,
+        "out_strength": 3.35,
+        "direct_need_index": 0.64,
+        "priority_score": 0.5962
+      },
+      {
+        "sdg": 17,
+        "name": "Partnerships to achieve the Goal",
+        "category": "governance",
+        "pagerank": 0.06004,
+        "betweenness": 0.19167,
+        "out_strength": 1.48,
+        "direct_need_index": 0.54,
+        "priority_score": 0.5429
+      },
+      {
+        "sdg": 10,
+        "name": "Reduced Inequality",
+        "category": "social",
+        "pagerank": 0.06337,
+        "betweenness": 0.10417,
+        "out_strength": 1.02,
+        "direct_need_index": 0.64,
+        "priority_score": 0.5346
+      },
+      {
+        "sdg": 15,
+        "name": "Life on Land",
+        "category": "environment",
+        "pagerank": 0.17171,
+        "betweenness": 0.0,
+        "out_strength": 0.0,
+        "direct_need_index": 0.58,
+        "priority_score": 0.525
+      },
+      {
+        "sdg": 13,
+        "name": "Climate Action",
+        "category": "environment",
+        "pagerank": 0.10951,
+        "betweenness": 0.01667,
+        "out_strength": 1.3,
+        "direct_need_index": 0.58,
+        "priority_score": 0.5219
+      },
+      {
+        "sdg": 4,
+        "name": "Quality Education",
+        "category": "social",
+        "pagerank": 0.02953,
+        "betweenness": 0.06667,
+        "out_strength": 2.22,
+        "direct_need_index": 0.64,
+        "priority_score": 0.4956
+      },
+      {
+        "sdg": 3,
+        "name": "Good Health and Well-being",
+        "category": "social",
+        "pagerank": 0.02932,
+        "betweenness": 0.0625,
+        "out_strength": 2.11,
+        "direct_need_index": 0.64,
+        "priority_score": 0.4927
+      },
+      {
+        "sdg": 16,
+        "name": "Peace and Justice Strong Institutions",
+        "category": "governance",
+        "pagerank": 0.05015,
+        "betweenness": 0.16667,
+        "out_strength": 0.76,
+        "direct_need_index": 0.54,
+        "priority_score": 0.4892
+      },
+      {
+        "sdg": 12,
+        "name": "Responsible Consumption and Production",
+        "category": "environment",
+        "pagerank": 0.04811,
+        "betweenness": 0.06667,
+        "out_strength": 1.79,
+        "direct_need_index": 0.58,
+        "priority_score": 0.4815
+      },
+      {
+        "sdg": 8,
+        "name": "Decent Work and Economic Growth",
+        "category": "economic",
+        "pagerank": 0.04506,
+        "betweenness": 0.1,
+        "out_strength": 1.32,
+        "direct_need_index": 0.5,
+        "priority_score": 0.4753
+      },
+      {
+        "sdg": 11,
+        "name": "Sustainable Cities and Communities",
+        "category": "infrastructure",
+        "pagerank": 0.09241,
+        "betweenness": 0.0375,
+        "out_strength": 0.97,
+        "direct_need_index": 0.5,
+        "priority_score": 0.4544
+      },
+      {
+        "sdg": 6,
+        "name": "Clean Water and Sanitation",
+        "category": "environment",
+        "pagerank": 0.04525,
+        "betweenness": 0.04167,
+        "out_strength": 1.53,
+        "direct_need_index": 0.58,
+        "priority_score": 0.451
+      },
+      {
+        "sdg": 2,
+        "name": "Zero Hunger",
+        "category": "social",
+        "pagerank": 0.02374,
+        "betweenness": 0.00417,
+        "out_strength": 2.28,
+        "direct_need_index": 0.64,
+        "priority_score": 0.428
+      },
+      {
+        "sdg": 14,
+        "name": "Life Below Water",
+        "category": "environment",
+        "pagerank": 0.09047,
+        "betweenness": 0.0,
+        "out_strength": 0.37,
+        "direct_need_index": 0.58,
+        "priority_score": 0.426
+      },
+      {
+        "sdg": 5,
+        "name": "Gender Equality",
+        "category": "social",
+        "pagerank": 0.03088,
+        "betweenness": 0.01667,
+        "out_strength": 1.18,
+        "direct_need_index": 0.64,
+        "priority_score": 0.4156
+      },
+      {
+        "sdg": 9,
+        "name": "Industry, Innovation and Infrastructure",
+        "category": "infrastructure",
+        "pagerank": 0.05839,
+        "betweenness": 0.0125,
+        "out_strength": 0.96,
+        "direct_need_index": 0.5,
+        "priority_score": 0.3863
+      },
+      {
+        "sdg": 7,
+        "name": "Affordable and Clean Energy",
+        "category": "infrastructure",
+        "pagerank": 0.01741,
+        "betweenness": 0.0,
+        "out_strength": 2.47,
+        "direct_need_index": 0.5,
+        "priority_score": 0.3413
+      }
+    ],
+    "ten_year_plan": {
+      "years": 10,
+      "first_wave_priorities": [
+        1,
+        17,
+        10,
+        15,
+        13
+      ],
+      "expected_network_progress_gain": 0.2285,
+      "evaluation_metric": "weighted reachable influence from funded priority goals, discounted by governance feasibility"
+    }
+  }
+}

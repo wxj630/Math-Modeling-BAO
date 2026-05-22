@@ -1,0 +1,98 @@
+{
+  "problem_id": "2021-B",
+  "title": "2021年 CUMCM B题：乙醇偶合制备 C4 烯烃",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "如果允许再增加 5 次实验，应如何设计，并给出详细理由。 附录：名词解释与附件说明 温度：反应温度。 选择性：某一个产物在所有产物中的占比。 时间：催化剂在乙醇氛围下的反应时间，单位分钟（min）。 Co 负载量： Co 与 SiO2 的重量之比。例如，“Co 负载量为 1wt%”表示 Co 与 SiO2 的重量之比为 1:100，记作“1wt%Co/SiO2”，依次类推。 HAP：一种催化剂载体，中文名称羟基磷灰石。 Co /SiO2 和 HAP 装料比：指 Co/SiO2 和 HAP 的质量比。 例如附件 1 中编号为 A14 的 催化剂组合 “33mg 1wt%Co/SiO2-67mg HAP -乙 醇浓度 1.68ml/min” 指 Co/SiO2 和 HAP 质量比为 33mg：67mg 且乙醇按每分钟 1.68 毫升加入，依次类推。 乙醇转化率：单位时间内乙醇的单程转化率，其值为 100 %  (乙醇进气量-乙 醇剩余量)/乙醇进气量。 C4 烯烃收率：其值为乙醇转化率  C4 烯烃的选择性。 附件 1：性能数据表。表中乙烯、C4 烯烃、乙醛、碳数为 4-12 脂肪醇等均为 反应的生成物；编号 A1~A14 的催化剂实验中使用装料方式 I，B1～B7 的催化剂实 验中使用装料方式 II。 附件 2：350 度时给定的某种催化剂组合的测试数据。",
+  "tasks": [
+    "如果允许再增加 5 次实验，应如何设计，并给出详细理由"
+  ],
+  "selected_model": {
+    "key": "ode",
+    "name": "微分方程与动态仿真",
+    "chapter": "CH2",
+    "chapter_title": "微分方程与动力系统",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "设计"
+    },
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "温度"
+    },
+    {
+      "key": "metaheuristic",
+      "name": "启发式搜索与群体智能",
+      "chapter": "CH5",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md",
+      "reason": "组合"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx",
+    "rows": 115,
+    "columns": 10,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "微分方程与动态仿真",
+    "task_breakdown": [
+      "如果允许再增加 5 次实验，应如何设计，并给出详细理由"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "y(t): 系统状态",
+      "k: 调节/衰减系数",
+      "y_env: 环境或稳态值",
+      "t: 时间"
+    ],
+    "constraints": [
+      "k > 0",
+      "初值 y(0)=y0",
+      "状态向稳态单调或振荡趋近"
+    ],
+    "objective_or_equations": [
+      "dy/dt = -k*(y-y_env)",
+      "y(0)=y0"
+    ],
+    "solution_steps": [
+      "把题面动态过程抽象为一阶微分方程。",
+      "设置初值和参数。",
+      "调用 solve_ivp 数值积分。",
+      "输出时间-状态轨迹。"
+    ],
+    "model_reference": {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "chapter_title": "微分方程与动力系统",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    }
+  },
+  "experiment_result": {
+    "method": "first_order_dynamic_simulation",
+    "y0": 4.0,
+    "steady_state": 300.0,
+    "k": 0.008695652173913044,
+    "final_value": 152.36591898718711
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2021/B/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

@@ -1,0 +1,5 @@
+﻿region,hull_type,log_effect_vs_europe,price_effect_pct,p_value,statistically_significant_5pct
+Caribbean,monohull,-0.099253,-9.449,8e-05,True
+Caribbean,catamaran,-0.094285,-8.998,0.881549,False
+USA,monohull,0.289064,33.518,0.0,True
+USA,catamaran,0.123468,13.141,1e-05,True

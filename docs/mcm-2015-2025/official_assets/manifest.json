@@ -1,0 +1,642 @@
+[
+  {
+    "year": 2015,
+    "label": "Managing Human Capital in Organizations",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2015/problems/2015_ICM_Problem_C.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2015/2015_ICM_Problem_C.pdf",
+    "status": "exists",
+    "bytes": 181114
+  },
+  {
+    "year": 2015,
+    "label": "Is it sustainable?",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2015/problems/2015_ICM_Problem_D.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2015/2015_ICM_Problem_D.pdf",
+    "status": "exists",
+    "bytes": 88945
+  },
+  {
+    "year": 2016,
+    "label": "MCM Problem A: A Hot Bath",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/2016_MCM_Problem_A.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/2016_MCM_Problem_A.pdf",
+    "status": "exists",
+    "bytes": 75127
+  },
+  {
+    "year": 2016,
+    "label": "MCM Problem B: Space Junk",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/2016_MCM_Problem_B.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/2016_MCM_Problem_B.pdf",
+    "status": "exists",
+    "bytes": 79384
+  },
+  {
+    "year": 2016,
+    "label": "MCM Problem C: The Goodgrant Challenge",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/2016_MCM_Problem_C.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/2016_MCM_Problem_C.pdf",
+    "status": "exists",
+    "bytes": 98137
+  },
+  {
+    "year": 2016,
+    "label": "MCM_PROBLEM_C_DATA.ZIP",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/ProblemCDATA.zip",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/ProblemCDATA.zip",
+    "status": "exists",
+    "bytes": 5599899
+  },
+  {
+    "year": 2016,
+    "label": "ICM Problem D: Measuring the Evolution and Influence in Societyâs Information Networks",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/2016_ICM_Problem_D.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/2016_ICM_Problem_D.pdf",
+    "status": "exists",
+    "bytes": 155359
+  },
+  {
+    "year": 2016,
+    "label": "ICM Problem E: Are we heading towards a thirsty planet?",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/2016_ICM_Problem_E.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/2016_ICM_Problem_E.pdf",
+    "status": "exists",
+    "bytes": 92578
+  },
+  {
+    "year": 2016,
+    "label": "ICM Problem F: Modeling Refugee Immigration Policies",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2016/problems/2016_ICM_Problem_F.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2016/2016_ICM_Problem_F.pdf",
+    "status": "exists",
+    "bytes": 104543
+  },
+  {
+    "year": 2017,
+    "label": "MCM Problem A: Managing The Zambezi River",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_MCM_Problem_A.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_MCM_Problem_A.pdf",
+    "status": "exists",
+    "bytes": 20553
+  },
+  {
+    "year": 2017,
+    "label": "MCM Problem B: Merge After Toll",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_MCM_Problem_B.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_MCM_Problem_B.pdf",
+    "status": "exists",
+    "bytes": 111655
+  },
+  {
+    "year": 2017,
+    "label": "MCM Problem C: âCooperate and navigateâ",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_MCM_Problem_C.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_MCM_Problem_C.pdf",
+    "status": "exists",
+    "bytes": 722864
+  },
+  {
+    "year": 2017,
+    "label": "MCM_PROBLEM_C_DATA.XLSX",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_MCM_Problem_C_Data.xlsx",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_MCM_Problem_C_Data.xlsx",
+    "status": "exists",
+    "bytes": 20391
+  },
+  {
+    "year": 2017,
+    "label": "ICM Problem D: Optimizing the Passenger Throughput at an Airport Security Checkpoint",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_ICM_Problem_D.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_D.pdf",
+    "status": "exists",
+    "bytes": 276192
+  },
+  {
+    "year": 2017,
+    "label": "ICM_PROBLEM_D_DATA.XLSX",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_ICM_Problem_D_Data.xlsx",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_D_Data.xlsx",
+    "status": "exists",
+    "bytes": 12103
+  },
+  {
+    "year": 2017,
+    "label": "ICM Problem E: Sustainable Cities Needed!",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_ICM_Problem_E.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "status": "exists",
+    "bytes": 134817
+  },
+  {
+    "year": 2017,
+    "label": "ICM Problem F: Migration to Mars: Utopian Workforce of the 2100 Urban Society",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2017/problems/2017_ICM_Problem_F.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
+    "status": "exists",
+    "bytes": 197563
+  },
+  {
+    "year": 2018,
+    "label": "Multi-hop HF Radio Propagation",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3375&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
+    "status": "exists",
+    "bytes": 136271
+  },
+  {
+    "year": 2018,
+    "label": "How Many Languages?",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3374&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
+    "status": "exists",
+    "bytes": 848893
+  },
+  {
+    "year": 2018,
+    "label": "Energy Production",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3373&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Energy Production",
+    "status": "exists",
+    "bytes": 2963538
+  },
+  {
+    "year": 2018,
+    "label": "Problem Data: Energy Production",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3373&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Problem Data- Energy Production",
+    "status": "exists",
+    "bytes": 2737733
+  },
+  {
+    "year": 2018,
+    "label": "Out of Gas and Driving on E (for electric, not empty)",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3372&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
+    "status": "exists",
+    "bytes": 245827
+  },
+  {
+    "year": 2018,
+    "label": "How does climate change influence regional instability?",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3371&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "status": "exists",
+    "bytes": 143540
+  },
+  {
+    "year": 2018,
+    "label": "Cost of Privacy",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3370&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
+    "status": "exists",
+    "bytes": 144393
+  },
+  {
+    "year": 2019,
+    "label": "Game of Ecology",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3365&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "status": "exists",
+    "bytes": 142475
+  },
+  {
+    "year": 2019,
+    "label": "Send in the Drones: Developing an Aerial Disaster Relief Response System",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3364&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "status": "exists",
+    "bytes": 810625
+  },
+  {
+    "year": 2019,
+    "label": "The Opioid Crisis",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3363&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/The Opioid Crisis",
+    "status": "exists",
+    "bytes": 409514
+  },
+  {
+    "year": 2019,
+    "label": "Problem Data: The Opioid Crisis",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3363&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Problem Data- The Opioid Crisis",
+    "status": "exists",
+    "bytes": 4430415
+  },
+  {
+    "year": 2019,
+    "label": "Time to leave the Louvre",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3360&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "status": "exists",
+    "bytes": 433395
+  },
+  {
+    "year": 2019,
+    "label": "What is the Cost of Environmental Degradation?",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3362&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "status": "exists",
+    "bytes": 146409
+  },
+  {
+    "year": 2019,
+    "label": "Universal, Decentralized, Digital Currency: Is it possible?",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3361&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "status": "exists",
+    "bytes": 237801
+  },
+  {
+    "year": 2020,
+    "label": "Moving North",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3348&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "status": "exists",
+    "bytes": 707257
+  },
+  {
+    "year": 2020,
+    "label": "The Longest Lasting Sandcastle(s)",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3349&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "status": "exists",
+    "bytes": 29210
+  },
+  {
+    "year": 2020,
+    "label": "A Wealth of Data",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3350&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "status": "exists",
+    "bytes": 322370
+  },
+  {
+    "year": 2020,
+    "label": "Problem Data: A Wealth of Data",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3350&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "status": "exists",
+    "bytes": 5031847
+  },
+  {
+    "year": 2020,
+    "label": "Teaming Strategies",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3353&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Teaming Strategies",
+    "status": "exists",
+    "bytes": 151563
+  },
+  {
+    "year": 2020,
+    "label": "Problem Data: Teaming Strategies",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3353&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- Teaming Strategies",
+    "status": "exists",
+    "bytes": 1410114
+  },
+  {
+    "year": 2020,
+    "label": "Drowning in Plastic",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3352&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "status": "exists",
+    "bytes": 144430
+  },
+  {
+    "year": 2020,
+    "label": "The Place I Called Home...",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3351&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "status": "exists",
+    "bytes": 528936
+  },
+  {
+    "year": 2021,
+    "label": "Fungi",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3337&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "status": "exists",
+    "bytes": 382665
+  },
+  {
+    "year": 2021,
+    "label": "Fighting Wildfires",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3338&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "status": "exists",
+    "bytes": 547677
+  },
+  {
+    "year": 2021,
+    "label": "Confirming the Buzz about Hornets",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3339&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Confirming the Buzz about Hornets",
+    "status": "exists",
+    "bytes": 5163240
+  },
+  {
+    "year": 2021,
+    "label": "Problem Data: Confirming the Buzz about Hornets",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3339&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Problem Data- Confirming the Buzz about Hornets",
+    "status": "exists",
+    "bytes": 4417418
+  },
+  {
+    "year": 2021,
+    "label": "The Influence of Music",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3342&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/The Influence of Music",
+    "status": "exists",
+    "bytes": 6773549
+  },
+  {
+    "year": 2021,
+    "label": "Problem Data: The Influence of Music",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3342&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Problem Data- The Influence of Music",
+    "status": "exists",
+    "bytes": 5365959
+  },
+  {
+    "year": 2021,
+    "label": "Re-Optimizing Food Systems",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3341&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "status": "exists",
+    "bytes": 136925
+  },
+  {
+    "year": 2021,
+    "label": "Checking the Pulse and Temperature of Higher Education",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3340&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "status": "exists",
+    "bytes": 136536
+  },
+  {
+    "year": 2022,
+    "label": "Power Profile of a Cyclist",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3336&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "status": "exists",
+    "bytes": 199388
+  },
+  {
+    "year": 2022,
+    "label": "Water and Hydroelectric Power Sharing",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3335&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "status": "exists",
+    "bytes": 236603
+  },
+  {
+    "year": 2022,
+    "label": "Trading Strategies",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3334&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Trading Strategies",
+    "status": "exists",
+    "bytes": 489103
+  },
+  {
+    "year": 2022,
+    "label": "Problem Data: Trading Strategies",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3334&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Problem Data- Trading Strategies",
+    "status": "exists",
+    "bytes": 18723
+  },
+  {
+    "year": 2022,
+    "label": "Data Paralysis? Use Our Analysis!",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3331&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "status": "exists",
+    "bytes": 324648
+  },
+  {
+    "year": 2022,
+    "label": "Forestry for Carbon Sequestration",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3332&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "status": "exists",
+    "bytes": 323224
+  },
+  {
+    "year": 2022,
+    "label": "All for One and One (Space) for All!",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3333&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "status": "exists",
+    "bytes": 265104
+  },
+  {
+    "year": 2023,
+    "label": "Drought-Stricken Plant Communities",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3326&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Drought-Stricken Plant Communities",
+    "status": "exists",
+    "bytes": 314471
+  },
+  {
+    "year": 2023,
+    "label": "Reimagining Maasai Mara",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3325&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Reimagining Maasai Mara",
+    "status": "exists",
+    "bytes": 212232
+  },
+  {
+    "year": 2023,
+    "label": "Predicting Wordle Results",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3324&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Predicting Wordle Results",
+    "status": "exists",
+    "bytes": 530619
+  },
+  {
+    "year": 2023,
+    "label": "Problem Data: Predicting Wordle Results",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3324&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Problem Data- Predicting Wordle Results",
+    "status": "exists",
+    "bytes": 33875
+  },
+  {
+    "year": 2023,
+    "label": "Understanding Used Sailboat Prices",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3319&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Understanding Used Sailboat Prices",
+    "status": "exists",
+    "bytes": 518290
+  },
+  {
+    "year": 2023,
+    "label": "Problem Data: Understanding Used Sailboat Prices",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3319&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Problem Data- Understanding Used Sailboat Prices",
+    "status": "exists",
+    "bytes": 155906
+  },
+  {
+    "year": 2023,
+    "label": "Prioritizing the UN Sustainability Goals",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3323&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Prioritizing the UN Sustainability Goals",
+    "status": "exists",
+    "bytes": 321963
+  },
+  {
+    "year": 2023,
+    "label": "Light Pollution",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3321&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Light Pollution",
+    "status": "exists",
+    "bytes": 533962
+  },
+  {
+    "year": 2023,
+    "label": "Green GDP",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3320&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/Green GDP",
+    "status": "exists",
+    "bytes": 380561
+  },
+  {
+    "year": 2023,
+    "label": "The Future of the Olympics",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3318&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2023/The Future of the Olympics",
+    "status": "exists",
+    "bytes": 218302
+  },
+  {
+    "year": 2024,
+    "label": "Resource Availability and Sex Ratios",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3309&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Resource Availability and Sex Ratios",
+    "status": "exists",
+    "bytes": 396786
+  },
+  {
+    "year": 2024,
+    "label": "Searching for Submersibles",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3303&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Searching for Submersibles",
+    "status": "exists",
+    "bytes": 448248
+  },
+  {
+    "year": 2024,
+    "label": "Momentum in Tennis",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3304&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Momentum in Tennis",
+    "status": "exists",
+    "bytes": 862380
+  },
+  {
+    "year": 2024,
+    "label": "Problem Data: Momentum in Tennis",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3304&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Problem Data- Momentum in Tennis",
+    "status": "exists",
+    "bytes": 202959
+  },
+  {
+    "year": 2024,
+    "label": "Great Lakes Water Problem",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3305&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Great Lakes Water Problem",
+    "status": "exists",
+    "bytes": 2665237
+  },
+  {
+    "year": 2024,
+    "label": "Data: Great Lakes Water Problem",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3305&element=979148b8-68eb-4e88-83df-a28439d5b0e5&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Data- Great Lakes Water Problem",
+    "status": "exists",
+    "bytes": 2116567
+  },
+  {
+    "year": 2024,
+    "label": "Sustainability of Property Insurance",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3306&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Sustainability of Property Insurance",
+    "status": "exists",
+    "bytes": 492022
+  },
+  {
+    "year": 2024,
+    "label": "Reducing Illegal Wildlife Trade",
+    "url": "https://www.comap.org/component/zoo/?task=callelement&format=raw&item_id=3302&element=71992483-3d3b-47dc-a146-3c901bdea04f&method=download",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2024/Reducing Illegal Wildlife Trade",
+    "status": "exists",
+    "bytes": 553859
+  },
+  {
+    "year": 2025,
+    "label": "MCM Problem A: Testing Time: The Constant Wear On Stairs",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_MCM_Problem_A.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_MCM_Problem_A.pdf",
+    "status": "exists",
+    "bytes": 246321
+  },
+  {
+    "year": 2025,
+    "label": "MCM Problem B: Managing Sustainable Tourism",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_MCM_Problem_B.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_MCM_Problem_B.pdf",
+    "status": "exists",
+    "bytes": 200244
+  },
+  {
+    "year": 2025,
+    "label": "MCM Problem C: Models for Olympic Medal Tables",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_MCM_Problem_C.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_MCM_Problem_C.pdf",
+    "status": "exists",
+    "bytes": 5119355
+  },
+  {
+    "year": 2025,
+    "label": "Problem C Data.zip",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_Problem_C_Data.zip",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_Problem_C_Data.zip",
+    "status": "exists",
+    "bytes": 3145600
+  },
+  {
+    "year": 2025,
+    "label": "ICM Problem D: A Roadmap to a Better City",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_ICM_Problem_D.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_ICM_Problem_D.pdf",
+    "status": "exists",
+    "bytes": 341287
+  },
+  {
+    "year": 2025,
+    "label": "Problem D Data.zip",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_Problem_D_Data.zip",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_Problem_D_Data.zip",
+    "status": "exists",
+    "bytes": 36997466
+  },
+  {
+    "year": 2025,
+    "label": "ICM Problem E: Making Room for Agriculture",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_ICM_Problem_E.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_ICM_Problem_E.pdf",
+    "status": "exists",
+    "bytes": 340992
+  },
+  {
+    "year": 2025,
+    "label": "ICM Problem F: Cyber Strong?",
+    "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/problems/2025_ICM_Problem_F.pdf",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2025/2025_ICM_Problem_F.pdf",
+    "status": "exists",
+    "bytes": 233064
+  }
+]

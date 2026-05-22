@@ -1,0 +1,11 @@
+base,destination,package,daily_quantity,assigned_drone,round_trip_km,sortie_minutes,schedule_block
+Ceiba east staging area,Caribbean Medical Center Fajardo,MED1,1,B,15.71,23.93,morning critical care
+Ceiba east staging area,Caribbean Medical Center Fajardo,MED3,1,C,15.71,26.73,afternoon chronic-care support
+San Juan logistics airport,Hospital HIMA San Pablo,MED1,2,G,49.334,58.25,morning critical care
+San Juan logistics airport,Hospital HIMA San Pablo,MED3,1,C,49.334,58.25,afternoon chronic-care support
+San Juan logistics airport,Hospital Pavia Santurce,MED1,1,B,14.768,23.22,morning critical care
+San Juan logistics airport,Hospital Pavia Santurce,MED2,1,B,14.768,23.22,midday resupply
+San Juan logistics airport,Puerto Rico Children's Hospital Bayamon,MED1,2,G,34.912,44.73,morning critical care
+San Juan logistics airport,Puerto Rico Children's Hospital Bayamon,MED2,1,B,34.912,38.52,midday resupply
+San Juan logistics airport,Puerto Rico Children's Hospital Bayamon,MED3,2,C,34.912,44.73,afternoon chronic-care support
+Arecibo north staging area,Hospital Pavia Arecibo,MED1,1,B,0.0,12.0,morning critical care

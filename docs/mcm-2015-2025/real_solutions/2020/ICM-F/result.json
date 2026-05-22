@@ -1,0 +1,1224 @@
+{
+  "problem_id": "2020-F",
+  "title": "The Place I Called Home...",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "official_requirements": {
+      "edp_scope_and_culture_risk": true,
+      "human_rights_and_cultural_preservation_policies": true,
+      "policy_impact_model": true,
+      "model_used_to_improve_policies": true,
+      "importance_of_implementation": true
+    },
+    "parameters": {
+      "horizon_years": 80,
+      "island_nations": [
+        {
+          "nation": "Maldives",
+          "population_thousands": 540,
+          "mean_elevation_m": 1.5,
+          "culture_uniqueness": 0.74,
+          "diaspora_capacity": 0.46,
+          "governance_capacity": 0.64
+        },
+        {
+          "nation": "Tuvalu",
+          "population_thousands": 12,
+          "mean_elevation_m": 1.8,
+          "culture_uniqueness": 0.88,
+          "diaspora_capacity": 0.32,
+          "governance_capacity": 0.52
+        },
+        {
+          "nation": "Kiribati",
+          "population_thousands": 120,
+          "mean_elevation_m": 2.0,
+          "culture_uniqueness": 0.86,
+          "diaspora_capacity": 0.3,
+          "governance_capacity": 0.5
+        },
+        {
+          "nation": "Marshall Islands",
+          "population_thousands": 59,
+          "mean_elevation_m": 2.1,
+          "culture_uniqueness": 0.82,
+          "diaspora_capacity": 0.38,
+          "governance_capacity": 0.56
+        }
+      ],
+      "sea_level_scenarios": [
+        {
+          "scenario": "managed_warming",
+          "sea_level_rise_m_2100": 0.45,
+          "storm_surge_multiplier": 1.1
+        },
+        {
+          "scenario": "middle_path",
+          "sea_level_rise_m_2100": 0.75,
+          "storm_surge_multiplier": 1.35
+        },
+        {
+          "scenario": "high_emissions",
+          "sea_level_rise_m_2100": 1.1,
+          "storm_surge_multiplier": 1.7
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; national, sea-level, and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "scope_model": {
+    "method": "sea-level exposure model for island nations named in the official issue paper, projected over 80 years",
+    "projection_rows": [
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 3.553,
+        "displacement_fraction": 0.0066
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 13.61,
+        "displacement_fraction": 0.0252
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 26.328,
+        "displacement_fraction": 0.0488
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 40.931,
+        "displacement_fraction": 0.0758
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Maldives",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 57.048,
+        "displacement_fraction": 0.1056
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 4.315,
+        "displacement_fraction": 0.008
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 28.219,
+        "displacement_fraction": 0.0523
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 60.121,
+        "displacement_fraction": 0.1113
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 97.343,
+        "displacement_fraction": 0.1803
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 138.743,
+        "displacement_fraction": 0.2569
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 183.655,
+        "displacement_fraction": 0.3401
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Maldives",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 231.63,
+        "displacement_fraction": 0.4289
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 1.868,
+        "displacement_fraction": 0.0035
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 49.714,
+        "displacement_fraction": 0.0921
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 119.26,
+        "displacement_fraction": 0.2209
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 201.909,
+        "displacement_fraction": 0.3739
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 294.604,
+        "displacement_fraction": 0.5456
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 395.639,
+        "displacement_fraction": 0.7327
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 503.896,
+        "displacement_fraction": 0.9331
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Maldives",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 529.2,
+        "displacement_fraction": 0.98
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.074,
+        "displacement_fraction": 0.0062
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.254,
+        "displacement_fraction": 0.0211
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.478,
+        "displacement_fraction": 0.0398
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.734,
+        "displacement_fraction": 0.0612
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Tuvalu",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 1.016,
+        "displacement_fraction": 0.0847
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.088,
+        "displacement_fraction": 0.0073
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.511,
+        "displacement_fraction": 0.0426
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 1.07,
+        "displacement_fraction": 0.0892
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 1.72,
+        "displacement_fraction": 0.1433
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 2.442,
+        "displacement_fraction": 0.2035
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 3.225,
+        "displacement_fraction": 0.2687
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Tuvalu",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 4.06,
+        "displacement_fraction": 0.3383
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.043,
+        "displacement_fraction": 0.0036
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.888,
+        "displacement_fraction": 0.074
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 2.102,
+        "displacement_fraction": 0.1752
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 3.543,
+        "displacement_fraction": 0.2952
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 5.157,
+        "displacement_fraction": 0.4297
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 6.915,
+        "displacement_fraction": 0.5762
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 8.798,
+        "displacement_fraction": 0.7332
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Tuvalu",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 10.793,
+        "displacement_fraction": 0.8994
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.368,
+        "displacement_fraction": 0.0031
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 1.807,
+        "displacement_fraction": 0.0151
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 3.676,
+        "displacement_fraction": 0.0306
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 5.84,
+        "displacement_fraction": 0.0487
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Kiribati",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 8.239,
+        "displacement_fraction": 0.0687
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.473,
+        "displacement_fraction": 0.0039
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 3.956,
+        "displacement_fraction": 0.033
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 8.698,
+        "displacement_fraction": 0.0725
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 14.258,
+        "displacement_fraction": 0.1188
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 20.457,
+        "displacement_fraction": 0.1705
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 27.191,
+        "displacement_fraction": 0.2266
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Kiribati",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 34.391,
+        "displacement_fraction": 0.2866
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.144,
+        "displacement_fraction": 0.0012
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 7.147,
+        "displacement_fraction": 0.0596
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 17.538,
+        "displacement_fraction": 0.1462
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 29.93,
+        "displacement_fraction": 0.2494
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 43.848,
+        "displacement_fraction": 0.3654
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 59.03,
+        "displacement_fraction": 0.4919
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 75.306,
+        "displacement_fraction": 0.6276
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Kiribati",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 92.554,
+        "displacement_fraction": 0.7713
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 0.386,
+        "displacement_fraction": 0.0066
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 1.135,
+        "displacement_fraction": 0.0192
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 2.051,
+        "displacement_fraction": 0.0348
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Marshall Islands",
+        "scenario": "managed_warming",
+        "population_at_risk_thousands": 3.09,
+        "displacement_fraction": 0.0524
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 1.252,
+        "displacement_fraction": 0.0212
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 3.29,
+        "displacement_fraction": 0.0558
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 5.746,
+        "displacement_fraction": 0.0974
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 8.516,
+        "displacement_fraction": 0.1443
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 11.544,
+        "displacement_fraction": 0.1957
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Marshall Islands",
+        "scenario": "middle_path",
+        "population_at_risk_thousands": 14.796,
+        "displacement_fraction": 0.2508
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 0.0,
+        "displacement_fraction": 0.0
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 2.615,
+        "displacement_fraction": 0.0443
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 7.209,
+        "displacement_fraction": 0.1222
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 12.78,
+        "displacement_fraction": 0.2166
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 19.08,
+        "displacement_fraction": 0.3234
+      },
+      {
+        "calendar_year": 2080,
+        "year_from_start": 60,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 25.979,
+        "displacement_fraction": 0.4403
+      },
+      {
+        "calendar_year": 2090,
+        "year_from_start": 70,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 33.392,
+        "displacement_fraction": 0.566
+      },
+      {
+        "calendar_year": 2100,
+        "year_from_start": 80,
+        "nation": "Marshall Islands",
+        "scenario": "high_emissions",
+        "population_at_risk_thousands": 41.261,
+        "displacement_fraction": 0.6993
+      }
+    ],
+    "scope_summary": [
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2020,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2030,
+        "population_at_risk_thousands": 2.055
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2040,
+        "population_at_risk_thousands": 60.364
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2050,
+        "population_at_risk_thousands": 146.109
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2060,
+        "population_at_risk_thousands": 248.16199999999998
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2070,
+        "population_at_risk_thousands": 362.68899999999996
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2080,
+        "population_at_risk_thousands": 487.563
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2090,
+        "population_at_risk_thousands": 621.392
+      },
+      {
+        "scenario": "high_emissions",
+        "calendar_year": 2100,
+        "population_at_risk_thousands": 673.8080000000001
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2020,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2030,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2040,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2050,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2060,
+        "population_at_risk_thousands": 3.995
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2070,
+        "population_at_risk_thousands": 16.057
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2080,
+        "population_at_risk_thousands": 31.617
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2090,
+        "population_at_risk_thousands": 49.556
+      },
+      {
+        "scenario": "managed_warming",
+        "calendar_year": 2100,
+        "population_at_risk_thousands": 69.393
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2020,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2030,
+        "population_at_risk_thousands": 0.0
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2040,
+        "population_at_risk_thousands": 4.876
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2050,
+        "population_at_risk_thousands": 33.938
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2060,
+        "population_at_risk_thousands": 73.179
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2070,
+        "population_at_risk_thousands": 119.06700000000001
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2080,
+        "population_at_risk_thousands": 170.158
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2090,
+        "population_at_risk_thousands": 225.615
+      },
+      {
+        "scenario": "middle_path",
+        "calendar_year": 2100,
+        "population_at_risk_thousands": 284.877
+      }
+    ]
+  },
+  "culture_risk_model": {
+    "method": "combine displacement pressure, cultural uniqueness, and diaspora continuity capacity",
+    "culture_rows": [
+      {
+        "nation": "Maldives",
+        "middle_path_displacement_fraction": 0.4289,
+        "culture_uniqueness": 0.74,
+        "diaspora_capacity": 0.46,
+        "culture_loss_risk_score": 0.2619,
+        "critical_culture_assets": "language, customary law, seafaring practice, kinship land ties, sacred sites"
+      },
+      {
+        "nation": "Tuvalu",
+        "middle_path_displacement_fraction": 0.3383,
+        "culture_uniqueness": 0.88,
+        "diaspora_capacity": 0.32,
+        "culture_loss_risk_score": 0.2615,
+        "critical_culture_assets": "language, customary law, seafaring practice, kinship land ties, sacred sites"
+      },
+      {
+        "nation": "Kiribati",
+        "middle_path_displacement_fraction": 0.2866,
+        "culture_uniqueness": 0.86,
+        "diaspora_capacity": 0.3,
+        "culture_loss_risk_score": 0.2184,
+        "critical_culture_assets": "language, customary law, seafaring practice, kinship land ties, sacred sites"
+      },
+      {
+        "nation": "Marshall Islands",
+        "middle_path_displacement_fraction": 0.2508,
+        "culture_uniqueness": 0.82,
+        "diaspora_capacity": 0.38,
+        "culture_loss_risk_score": 0.176,
+        "critical_culture_assets": "language, customary law, seafaring practice, kinship land ties, sacred sites"
+      }
+    ]
+  },
+  "policy_impact_model": {
+    "method": "score policies by human rights, cultural preservation, individual choice, and implementation difficulty",
+    "policy_rows": [
+      {
+        "policy": "UN-triggered EDP status protocol",
+        "human_rights_gain": 0.3,
+        "culture_gain": 0.18,
+        "cost_difficulty": 0.44,
+        "choice_protection": 0.24,
+        "policy_impact_score": 0.1484,
+        "mean_culture_risk_after_policy": 0.1634
+      },
+      {
+        "policy": "pre-negotiated migration compacts",
+        "human_rights_gain": 0.28,
+        "culture_gain": 0.14,
+        "cost_difficulty": 0.48,
+        "choice_protection": 0.22,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1746
+      },
+      {
+        "policy": "portable citizenship and legal identity",
+        "human_rights_gain": 0.22,
+        "culture_gain": 0.12,
+        "cost_difficulty": 0.34,
+        "choice_protection": 0.26,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1751
+      },
+      {
+        "policy": "cultural continuity trust",
+        "human_rights_gain": 0.1,
+        "culture_gain": 0.3,
+        "cost_difficulty": 0.28,
+        "choice_protection": 0.12,
+        "policy_impact_score": 0.1108,
+        "mean_culture_risk_after_policy": 0.1482
+      },
+      {
+        "policy": "host-community adaptation finance",
+        "human_rights_gain": 0.18,
+        "culture_gain": 0.1,
+        "cost_difficulty": 0.52,
+        "choice_protection": 0.16,
+        "policy_impact_score": 0.054,
+        "mean_culture_risk_after_policy": 0.19
+      }
+    ],
+    "recommended_policy_package": [
+      {
+        "policy": "UN-triggered EDP status protocol",
+        "human_rights_gain": 0.3,
+        "culture_gain": 0.18,
+        "cost_difficulty": 0.44,
+        "choice_protection": 0.24,
+        "policy_impact_score": 0.1484,
+        "mean_culture_risk_after_policy": 0.1634
+      },
+      {
+        "policy": "pre-negotiated migration compacts",
+        "human_rights_gain": 0.28,
+        "culture_gain": 0.14,
+        "cost_difficulty": 0.48,
+        "choice_protection": 0.22,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1746
+      },
+      {
+        "policy": "portable citizenship and legal identity",
+        "human_rights_gain": 0.22,
+        "culture_gain": 0.12,
+        "cost_difficulty": 0.34,
+        "choice_protection": 0.26,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1751
+      }
+    ]
+  },
+  "un_response_framework": {
+    "recommendations": [
+      "Create a UN-triggered EDP status protocol before total territorial loss.",
+      "Negotiate migration compacts that preserve individual choice and full civic participation in host states.",
+      "Fund cultural continuity trusts controlled by affected communities.",
+      "Maintain portable citizenship, legal identity, language education, and digital cultural archives.",
+      "Require high-emitting and high-capacity states to finance host-community adaptation."
+    ],
+    "selected_policy_package": [
+      "UN-triggered EDP status protocol",
+      "pre-negotiated migration compacts",
+      "portable citizenship and legal identity"
+    ],
+    "importance_of_implementation": "Rejecting a framework leaves relocation to emergency bargaining; accepting it lets rights, culture, and host capacity be planned while at-risk nations still have agency."
+  },
+  "icmf_brief": "Brief to the International Climate Migration Foundation: the UN should act before a disappearing island state reaches emergency relocation. The model estimates population at risk and culture loss risk for island nations named in the issue paper, then ranks policies that protect resettlement rights, individual choice, legal identity, and cultural continuity. A planned framework is more effective than ad hoc evacuation because it preserves agency while communities still have time to choose host relationships and cultural institutions.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide island elevation rasters, demographic microdata, treaty text, or host-country capacity tables.",
+      "Population, sea-level, and culture risk rows are scenario inputs and should be replaced with UN, IPCC, national census, geospatial, and community-led cultural data in a full paper.",
+      "Policy scores are planning comparisons, not legal determinations of refugee status."
+    ]
+  },
+  "artifacts": {
+    "edp_scope_projection": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/edp_scope_projection.csv",
+    "culture_risk_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/culture_risk_scores.csv",
+    "policy_impact_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/policy_impact_scores.csv",
+    "climate_migration_policy_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/climate_migration_policy_frontier.png",
+    "culture_risk_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/culture_risk_frontier.png"
+  }
+}

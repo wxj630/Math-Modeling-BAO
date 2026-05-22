@@ -1,0 +1,32 @@
+﻿section,receiver,beacons,located_x,located_y,true_x,true_y,localization_error_m,angle_residual_mse,extra_unknown_transmitters,candidate_sets_checked,zero_residual_candidate_sets,example_valid_set,conclusion,matching_note,round,emitters,estimated_x,estimated_y,target_x,target_y,move_distance,uav,x_current,y_current,x_target,y_target,dx,dy
+known_beacon_localization,FY04,"FY00,FY01,FY03",-52.102733,91.160876,-52.102733,91.160876,0.0,0.0,,,,,,,,,,,,,,,,,,,,
+unknown_transmitter_count,,,,,,,,,1,8,8,"[[2], [3], [4], [5], [6]]",ambiguous,one-extra case enumerates unlabeled angle permutations; two-extra case uses sorted angle fingerprint as a fast redundancy check,,,,,,,,,,,,,,
+unknown_transmitter_count,,,,,,,,,2,28,0,[],overdetermined_no_exact_alias,one-extra case enumerates unlabeled angle permutations; two-extra case uses sorted angle fingerprint as a fast redundancy check,,,,,,,,,,,,,,
+circle_adjustment,FY02,,,,,,,0.0,,,,,,,1,"FY00,FY01,FY04,FY07",74.962297,63.124116,76.604444,64.278761,2.007449,,,,,,,
+circle_adjustment,FY03,,,,,,,0.0,,,,,,,1,"FY00,FY01,FY04,FY07",19.044201,110.36901,17.364818,98.480775,12.006267,,,,,,,
+circle_adjustment,FY05,,,,,,,0.0,,,,,,,1,"FY00,FY01,FY04,FY07",-92.007702,33.742892,-93.969262,34.202014,2.014575,,,,,,,
+circle_adjustment,FY06,,,,,,,0.0,,,,,,,1,"FY00,FY01,FY04,FY07",-105.272291,-38.232771,-93.969262,-34.202014,12.000227,,,,,,,
+circle_adjustment,FY08,,,,,,,0.0,,,,,,,1,"FY00,FY01,FY04,FY07",17.3038,-96.460243,17.364818,-98.480775,2.021453,,,,,,,
+circle_adjustment,FY09,,,,,,,0.0,,,,,,,1,"FY00,FY01,FY04,FY07",86.147772,-71.572071,76.604444,-64.278761,12.01114,,,,,,,
+circle_adjustment,FY01,,,,,,,0.0,,,,,,,2,"FY00,FY02,FY05,FY08",100.0,0.0,100.0,0.0,0.0,,,,,,,
+circle_adjustment,FY03,,,,,,,0.0,,,,,,,2,"FY00,FY02,FY05,FY08",17.364818,98.480775,17.364818,98.480775,0.0,,,,,,,
+circle_adjustment,FY04,,,,,,,0.0,,,,,,,2,"FY00,FY02,FY05,FY08",-52.102733,91.160876,-50.0,86.60254,5.019951,,,,,,,
+circle_adjustment,FY06,,,,,,,0.0,,,,,,,2,"FY00,FY02,FY05,FY08",-93.969262,-34.202014,-93.969262,-34.202014,0.0,,,,,,,
+circle_adjustment,FY07,,,,,,,0.0,,,,,,,2,"FY00,FY02,FY05,FY08",-52.388866,-90.99674,-50.0,-86.60254,5.001567,,,,,,,
+circle_adjustment,FY09,,,,,,,0.0,,,,,,,2,"FY00,FY02,FY05,FY08",76.604444,-64.278761,76.604444,-64.278761,0.0,,,,,,,
+circle_adjustment,FY01,,,,,,,0.0,,,,,,,3,"FY00,FY03,FY06,FY09",100.0,0.0,100.0,0.0,0.0,,,,,,,
+circle_adjustment,FY02,,,,,,,0.0,,,,,,,3,"FY00,FY03,FY06,FY09",76.604444,64.278761,76.604444,64.278761,0.0,,,,,,,
+circle_adjustment,FY04,,,,,,,0.0,,,,,,,3,"FY00,FY03,FY06,FY09",-50.0,86.60254,-50.0,86.60254,0.0,,,,,,,
+circle_adjustment,FY05,,,,,,,0.0,,,,,,,3,"FY00,FY03,FY06,FY09",-93.969262,34.202014,-93.969262,34.202014,0.0,,,,,,,
+circle_adjustment,FY07,,,,,,,0.0,,,,,,,3,"FY00,FY03,FY06,FY09",-50.0,-86.60254,-50.0,-86.60254,0.0,,,,,,,
+circle_adjustment,FY08,,,,,,,0.0,,,,,,,3,"FY00,FY03,FY06,FY09",17.364818,-98.480775,17.364818,-98.480775,0.0,,,,,,,
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY00,0.0,0.0,0.0,0.0,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY01,100.0,0.0,100.0,0.0,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY02,76.604444,64.278761,76.604444,64.278761,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY03,17.364818,98.480775,17.364818,98.480775,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY04,-50.0,86.60254,-50.0,86.60254,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY05,-93.969262,34.202014,-93.969262,34.202014,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY06,-93.969262,-34.202014,-93.969262,-34.202014,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY07,-50.0,-86.60254,-50.0,-86.60254,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY08,17.364818,-98.480775,17.364818,-98.480775,0.0,0.0
+final_circle_error,,,,,,,,,,,,,,,,,,,,,0.0,FY09,76.604444,-64.278761,76.604444,-64.278761,0.0,0.0

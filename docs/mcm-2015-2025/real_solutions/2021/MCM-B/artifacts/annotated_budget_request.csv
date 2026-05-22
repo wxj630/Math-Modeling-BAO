@@ -1,0 +1,4 @@
+item,count,unit_cost_aud,justification,line_total_aud
+SSA drones,11,10000.0,thermal/video situational awareness and wearable telemetry monitoring,110000.0
+radio repeater drones,2,10000.0,20 km VHF/UHF relay coverage for forward teams and EOC,20000.0
+training and spares reserve,1,23400.0,"battery rotations, auxiliary payload swaps, operators, and field maintenance",23400.0

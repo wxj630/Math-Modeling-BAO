@@ -1,0 +1,132 @@
+{
+  "problem_id": "2021-E",
+  "question": "q03",
+  "question_title": "发达和发展中国家的模型应用",
+  "statement": "Once you have developed your food system model, apply your model to at least one developed and one developing country to support your findings.",
+  "methods": "将相同评分模型应用到 United States、Germany、India 和 Kenya，显式标注 developed/developing 分组、当前分、目标分和主要缺口。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "official_requirements": {
+      "optimize_efficiency_profitability_sustainability_equity": true,
+      "developed_and_developing_country_applications": true,
+      "benefits_and_costs_over_time": true,
+      "scalability_and_adaptability": true,
+      "twenty_five_page_limit": true
+    },
+    "parameters": {
+      "global_hunger_millions": 821,
+      "food_system_ghg_share": 0.29,
+      "food_system_biodiversity_loss_share": 0.8,
+      "food_system_deforestation_share": 0.8,
+      "food_system_freshwater_share": 0.7,
+      "transition_years": 15,
+      "source_note": "Official PDF statement parameters only; country and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "country_applications": {
+    "method": "apply the same priority score to developed and developing country cases requested by the official statement",
+    "country_rows": [
+      {
+        "country": "Germany",
+        "development_group": "developed",
+        "current_priority_score": 0.6928,
+        "target_priority_score": 0.6832,
+        "score_delta": -0.0096,
+        "food_insecurity_rate": 0.05,
+        "environmental_pressure": 0.55,
+        "recommended_implementation_years": 7,
+        "main_gap": "sustainability"
+      },
+      {
+        "country": "United States",
+        "development_group": "developed",
+        "current_priority_score": 0.6912,
+        "target_priority_score": 0.5776,
+        "score_delta": -0.1136,
+        "food_insecurity_rate": 0.11,
+        "environmental_pressure": 0.76,
+        "recommended_implementation_years": 9,
+        "main_gap": "sustainability"
+      },
+      {
+        "country": "Kenya",
+        "development_group": "developing",
+        "current_priority_score": 0.4216,
+        "target_priority_score": 0.4396,
+        "score_delta": 0.018,
+        "food_insecurity_rate": 0.25,
+        "environmental_pressure": 0.52,
+        "recommended_implementation_years": 10,
+        "main_gap": "equity"
+      },
+      {
+        "country": "India",
+        "development_group": "developing",
+        "current_priority_score": 0.4912,
+        "target_priority_score": 0.46,
+        "score_delta": -0.0312,
+        "food_insecurity_rate": 0.18,
+        "environmental_pressure": 0.68,
+        "recommended_implementation_years": 11,
+        "main_gap": "sustainability"
+      }
+    ],
+    "developed_case_count": 2,
+    "developing_case_count": 2
+  },
+  "priority_model": {
+    "method": "weighted food-system health score over efficiency, profitability, sustainability, equity, and nutrition resilience",
+    "priority_rows": [
+      {
+        "priority": "equity_sustainability_balanced",
+        "mean_country_score": 0.5401,
+        "sustainability_weight": 0.3,
+        "equity_weight": 0.28,
+        "profitability_weight": 0.12,
+        "objective_score": 0.5807
+      },
+      {
+        "priority": "regional_resilience",
+        "mean_country_score": 0.5597,
+        "sustainability_weight": 0.22,
+        "equity_weight": 0.2,
+        "profitability_weight": 0.16,
+        "objective_score": 0.5667
+      },
+      {
+        "priority": "profit_with_guardrails",
+        "mean_country_score": 0.5597,
+        "sustainability_weight": 0.22,
+        "equity_weight": 0.18,
+        "profitability_weight": 0.24,
+        "objective_score": 0.5627
+      },
+      {
+        "priority": "current_efficiency_profit",
+        "mean_country_score": 0.5742,
+        "sustainability_weight": 0.16,
+        "equity_weight": 0.12,
+        "profitability_weight": 0.3,
+        "objective_score": 0.552
+      }
+    ],
+    "current_system": {
+      "priority": "current_efficiency_profit",
+      "mean_country_score": 0.5742,
+      "sustainability_weight": 0.16,
+      "equity_weight": 0.12,
+      "profitability_weight": 0.3,
+      "objective_score": 0.552
+    },
+    "recommended_priority": {
+      "priority": "equity_sustainability_balanced",
+      "mean_country_score": 0.5401,
+      "sustainability_weight": 0.3,
+      "equity_weight": 0.28,
+      "profitability_weight": 0.12,
+      "objective_score": 0.5807
+    }
+  }
+}

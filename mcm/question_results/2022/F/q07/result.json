@@ -1,0 +1,172 @@
+{
+  "problem_id": "2022-F",
+  "question": "q07",
+  "question_title": "条件变化对全球公平的敏感性",
+  "statement": "How do changes in the conditions that you selected in defining a vision for the future of asteroid mining impact global equity?",
+  "methods": "逐一改变 benefit fund、license transparency、technology pool、exclusive claims、debris liability、dual-use pressure，输出公平分变化。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "official_requirements": {
+      "outer_space_treaty_equity_principle": true,
+      "define_global_equity": true,
+      "measure_global_equity": true,
+      "asteroid_mining_future_vision": true,
+      "condition_sensitivity_required": true,
+      "un_policy_recommendations_required": true
+    }
+  },
+  "sensitivity_analysis": {
+    "method": "one-at-a-time deterministic condition sensitivity on the recommended asteroid-mining vision",
+    "condition_tests": [
+      {
+        "condition": "benefit_fund_share",
+        "change": "raise global benefit levy from low to high",
+        "dimension": "benefit_sharing",
+        "delta": 0.18,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.808,
+        "equity_score_delta": 0.0432
+      },
+      {
+        "condition": "technology_pool",
+        "change": "share mission data and low-cost participation slots",
+        "dimension": "technology_transfer",
+        "delta": 0.14,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.7872,
+        "equity_score_delta": 0.0224
+      },
+      {
+        "condition": "license_transparency",
+        "change": "publish ownership, safety, and revenue reports",
+        "dimension": "governance_voice",
+        "delta": 0.12,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.7864,
+        "equity_score_delta": 0.0216
+      },
+      {
+        "condition": "orbital_debris_liability",
+        "change": "strict liability and cleanup bonding",
+        "dimension": "risk_and_environmental_burden",
+        "delta": 0.1,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.7768,
+        "equity_score_delta": 0.012
+      },
+      {
+        "condition": "military_dual_use_pressure",
+        "change": "weak inspection of dual-use infrastructure",
+        "dimension": "peaceful_use_and_conflict_prevention",
+        "delta": -0.14,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.748,
+        "equity_score_delta": -0.0168
+      },
+      {
+        "condition": "exclusive_property_claims",
+        "change": "allow broad private exclusion rights",
+        "dimension": "governance_voice",
+        "delta": -0.16,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.736,
+        "equity_score_delta": -0.0288
+      }
+    ],
+    "largest_positive_condition": {
+      "condition": "benefit_fund_share",
+      "change": "raise global benefit levy from low to high",
+      "dimension": "benefit_sharing",
+      "delta": 0.18,
+      "baseline_equity_score": 0.7648,
+      "adjusted_equity_score": 0.808,
+      "equity_score_delta": 0.0432
+    },
+    "largest_negative_condition": {
+      "condition": "exclusive_property_claims",
+      "change": "allow broad private exclusion rights",
+      "dimension": "governance_voice",
+      "delta": -0.16,
+      "baseline_equity_score": 0.7648,
+      "adjusted_equity_score": 0.736,
+      "equity_score_delta": -0.0288
+    }
+  },
+  "asteroid_mining_vision": {
+    "scenarios": [
+      {
+        "scenario_id": "un_licensed_benefit_sharing_regime",
+        "description": "The UN updates treaty practice through licenses, public reporting, safety rules, and a global benefit fund.",
+        "equity_score": 0.7648,
+        "feasibility_score": 0.664,
+        "outer_space_treaty_alignment": 0.804,
+        "total_score": 0.7517,
+        "benefit_sharing_score": 0.8,
+        "access_to_participation_score": 0.68,
+        "technology_transfer_score": 0.7,
+        "governance_voice_score": 0.84,
+        "risk_and_environmental_burden_score": 0.74,
+        "peaceful_use_and_conflict_prevention_score": 0.82
+      },
+      {
+        "scenario_id": "open_science_public_private_coalition",
+        "description": "Public agencies, firms, and universities share mission data while firms compete under common benefit obligations.",
+        "equity_score": 0.732,
+        "feasibility_score": 0.694,
+        "outer_space_treaty_alignment": 0.722,
+        "total_score": 0.7226,
+        "benefit_sharing_score": 0.66,
+        "access_to_participation_score": 0.78,
+        "technology_transfer_score": 0.84,
+        "governance_voice_score": 0.7,
+        "risk_and_environmental_burden_score": 0.7,
+        "peaceful_use_and_conflict_prevention_score": 0.74
+      },
+      {
+        "scenario_id": "state_led_resource_blocs",
+        "description": "Several spacefaring states run national programs and form exclusive resource blocs.",
+        "equity_score": 0.3772,
+        "feasibility_score": 0.662,
+        "outer_space_treaty_alignment": 0.33,
+        "total_score": 0.4257,
+        "benefit_sharing_score": 0.3,
+        "access_to_participation_score": 0.34,
+        "technology_transfer_score": 0.4,
+        "governance_voice_score": 0.32,
+        "risk_and_environmental_burden_score": 0.54,
+        "peaceful_use_and_conflict_prevention_score": 0.48
+      },
+      {
+        "scenario_id": "private_first_mover_concessions",
+        "description": "A few private firms and sponsor states finance extraction and retain most mineral profits.",
+        "equity_score": 0.2728,
+        "feasibility_score": 0.692,
+        "outer_space_treaty_alignment": 0.21,
+        "total_score": 0.3453,
+        "benefit_sharing_score": 0.18,
+        "access_to_participation_score": 0.24,
+        "technology_transfer_score": 0.28,
+        "governance_voice_score": 0.2,
+        "risk_and_environmental_burden_score": 0.46,
+        "peaceful_use_and_conflict_prevention_score": 0.42
+      }
+    ],
+    "recommended_vision": {
+      "scenario_id": "un_licensed_benefit_sharing_regime",
+      "description": "The UN updates treaty practice through licenses, public reporting, safety rules, and a global benefit fund.",
+      "equity_score": 0.7648,
+      "feasibility_score": 0.664,
+      "outer_space_treaty_alignment": 0.804,
+      "total_score": 0.7517,
+      "benefit_sharing_score": 0.8,
+      "access_to_participation_score": 0.68,
+      "technology_transfer_score": 0.7,
+      "governance_voice_score": 0.84,
+      "risk_and_environmental_burden_score": 0.74,
+      "peaceful_use_and_conflict_prevention_score": 0.82
+    },
+    "vision_note": "The recommended vision balances feasible public-private mining with UN licensing, benefit sharing, data access, and risk bonding."
+  }
+}

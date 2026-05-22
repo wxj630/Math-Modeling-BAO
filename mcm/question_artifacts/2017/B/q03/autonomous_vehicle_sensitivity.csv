@@ -1,0 +1,7 @@
+autonomous_vehicle_share,throughput_vph,mean_delay_minutes,recommended_merge_length_m,policy
+0.0,4620.0,6.155844,420.0,allow shorter headways but keep lane assignment until autonomous share exceeds 60%
+0.1,4620.0,6.155844,412.44,allow shorter headways but keep lane assignment until autonomous share exceeds 60%
+0.25,4620.0,6.155844,401.1,allow shorter headways but keep lane assignment until autonomous share exceeds 60%
+0.4,4620.0,6.155844,389.76,allow shorter headways but keep lane assignment until autonomous share exceeds 60%
+0.6,4620.0,6.155844,374.64,reserve a cooperative merge lane if vehicle-to-vehicle coordination is reliable
+0.8,4620.0,6.155844,359.52,reserve a cooperative merge lane if vehicle-to-vehicle coordination is reliable

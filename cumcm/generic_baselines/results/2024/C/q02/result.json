@@ -1,0 +1,107 @@
+{
+  "problem_id": "2024-C",
+  "title": "2024年 CUMCM C题：农作物的种植策略",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "根据经验，小麦和玉米未来的预期销售量有增长的趋势，平均年增长率介于5%~10% 之间， 其他农作物未来每年的预期销售量相对于 2023 年大约有±5%的变化。农作物的亩产量往往会 受气候等因素的影响， 每年会有±10%的变化。因受市场条件影响，农作物的种植成本平均每年增长 5%左右。粮食类作物的销售价格基本稳定；蔬菜类作物的销售价格有增长的趋势， 平均每年增长5% 左右。食用菌的销售价格稳中有降， 大约每年可下降1%~5%， 特别是羊肚菌的销售价格每年下降幅 度为5%。 请综合考虑各种农作物的预期销售量、亩产量、种植成本和销售价格的不确定性以及潜在的种 植风险，给出该乡村 2024~2030 年农作物的最优种植方案，将结果填入 result2.xlsx 中（模板文件见 附件 3）。",
+  "tasks": [
+    "请综合考虑各种农作物的预期销售量、亩产量、种植成本和销售价格的不确定性以及潜在的种 植风险，给出该乡村 2024~2030 年农作物的最优种植方案，将结果填入 result2.xlsx 中（模板文件见 附件 3）"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "未来、趋势、增长"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最优、成本、方案"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "风险、不确定"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件1.xlsx",
+    "rows": 100,
+    "columns": 5,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "请综合考虑各种农作物的预期销售量、亩产量、种植成本和销售价格的不确定性以及潜在的种 植风险，给出该乡村 2024~2030 年农作物的最优种植方案，将结果填入 result2.xlsx 中（模板文件见 附件 3）"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 23.963979880339547,
+    "decision": [
+      0.0,
+      0.0,
+      0.0,
+      1.569817
+    ],
+    "resource_slack": [
+      44.996458,
+      0.0,
+      1.037074
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/C/q02/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

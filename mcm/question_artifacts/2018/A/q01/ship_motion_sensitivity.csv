@@ -1,0 +1,4 @@
+sea_state,deck_motion_deg,ship_speed_knots,path_stability_index,retune_interval_minutes
+calm,1.0,8,0.9286,16.714
+moderate,4.5,14,0.6786,8.724
+turbulent,9.0,22,0.3571,2.922

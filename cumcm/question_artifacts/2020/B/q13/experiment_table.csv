@@ -1,0 +1,2 @@
+﻿level,method,reached_finish,finish_day,final_cash,initial_water_boxes,initial_food_boxes,initial_load_kg,load_feasible,mining_days,map_note
+第六关,adaptive_multi_player_desert_policy,True,24,9843.33333,214,242,1126,True,10,25节点按5x5行列网格近似重建。

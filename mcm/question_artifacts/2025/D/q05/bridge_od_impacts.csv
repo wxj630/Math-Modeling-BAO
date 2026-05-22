@@ -1,0 +1,7 @@
+﻿od_pair,from,to,status_after_removal,baseline_km,collapse_km,extra_km,extra_pct
+Key Bridge west-east approaches,Key Bridge west approach,Key Bridge east approach,disconnected,13.083,,,
+Port to Dundalk,Port/Curtis Bay,Dundalk/East Baltimore,connected,59.505,59.505,0.0,0.0
+Southwest Gateway to Dundalk,I-95 Southwest Gateway,Dundalk/East Baltimore,connected,57.19,57.19,0.0,0.0
+Downtown to Port,Downtown/Inner Harbor,Port/Curtis Bay,connected,9.3,9.3,0.0,0.0
+Mondawmin to Port jobs,Mondawmin Transit Hub,Port/Curtis Bay,connected,13.748,13.748,0.0,0.0
+Rogers Ave to Inner Harbor,Rogers Avenue Metro,Downtown/Inner Harbor,connected,10.565,10.565,0.0,0.0

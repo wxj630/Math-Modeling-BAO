@@ -1,0 +1,4 @@
+﻿scenario,completion_rate,average_price,total_budget
+original_observed,0.62515,69.1108,57707.5
+original_model_predicted,0.51378,69.1108,57707.5
+optimized_price,0.690689,85.9431,71762.5

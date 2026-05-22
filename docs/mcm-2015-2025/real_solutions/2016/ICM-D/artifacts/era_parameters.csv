@@ -1,0 +1,6 @@
+﻿era,representative_year,official_description,media_access,transmission_speed,network_connectivity,gatekeeping_filter,channel_capacity,openness,diffusion_rate_per_hour,reachable_population_share,influence_power
+1870s_telegraph_train_newspaper,1875,newspapers delivered by trains and stories passed by telegraph,0.18,0.1,0.08,0.78,1.0,0.22,0.124,0.3276,0.134
+1920s_radio,1925,radios became a more common household item,0.36,0.28,0.2,0.7,3.8,0.3,0.2364,0.4632,0.2796
+1970s_television,1975,televisions were in most homes,0.72,0.58,0.42,0.58,15.0,0.42,0.4276,0.7304,0.5452
+1990s_early_internet,1995,households began connecting to the early internet,0.46,0.74,0.64,0.42,85.0,0.58,0.5708,0.6132,0.5996
+2010s_smartphone,2015,we can carry a connection to the world on our phones,0.82,0.92,0.88,0.22,520.0,0.78,0.7324,0.8844,0.8568

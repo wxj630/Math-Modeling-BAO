@@ -1,0 +1,446 @@
+{
+  "problem_id": "2025-C",
+  "question": "q02",
+  "question_title": "2028 洛杉矶奖牌榜预测、进步与退步国家",
+  "statement": "Project the 2028 Los Angeles medal table, include prediction intervals, and identify countries likely to improve or do worse than 2024.",
+  "methods": "用 2024 国家状态外推到 2028，设置美国东道主变量，比较预测总奖牌与 2024 实际总奖牌。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "rows": {
+      "summerOly_medal_counts.csv": 1435,
+      "summerOly_athletes.csv": 252565,
+      "summerOly_hosts.csv": 35,
+      "summerOly_programs.csv": 74,
+      "data_dictionary.csv": 50
+    }
+  },
+  "prediction_2028_top_total": [
+    {
+      "NOC": "United States",
+      "pred_total": 107.51955,
+      "interval80": [
+        95.971429,
+        117.075
+      ],
+      "actual_2024_total": 126,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "China",
+      "pred_total": 84.470517,
+      "interval80": [
+        66.14,
+        100.68
+      ],
+      "actual_2024_total": 91,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "France",
+      "pred_total": 58.873614,
+      "interval80": [
+        45.9,
+        83.775
+      ],
+      "actual_2024_total": 64,
+      "actual_2024_gold": 16
+    },
+    {
+      "NOC": "Great Britain",
+      "pred_total": 45.577937,
+      "interval80": [
+        17.5,
+        63.342857
+      ],
+      "actual_2024_total": 65,
+      "actual_2024_gold": 14
+    },
+    {
+      "NOC": "Australia",
+      "pred_total": 45.329872,
+      "interval80": [
+        18.5,
+        73.05
+      ],
+      "actual_2024_total": 53,
+      "actual_2024_gold": 18
+    },
+    {
+      "NOC": "Germany",
+      "pred_total": 43.744927,
+      "interval80": [
+        22.9,
+        69.0
+      ],
+      "actual_2024_total": 33,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Italy",
+      "pred_total": 42.052496,
+      "interval80": [
+        22.0,
+        58.0
+      ],
+      "actual_2024_total": 40,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Japan",
+      "pred_total": 33.888143,
+      "interval80": [
+        12.333333,
+        62.0
+      ],
+      "actual_2024_total": 45,
+      "actual_2024_gold": 20
+    },
+    {
+      "NOC": "Canada",
+      "pred_total": 31.658298,
+      "interval80": [
+        22.0,
+        43.82
+      ],
+      "actual_2024_total": 27,
+      "actual_2024_gold": 9
+    },
+    {
+      "NOC": "Netherlands",
+      "pred_total": 31.375702,
+      "interval80": [
+        21.9,
+        44.033333
+      ],
+      "actual_2024_total": 34,
+      "actual_2024_gold": 15
+    },
+    {
+      "NOC": "Refugee Olympic Team",
+      "pred_total": 23.902372,
+      "interval80": [
+        2.666667,
+        49.333333
+      ],
+      "actual_2024_total": 1,
+      "actual_2024_gold": 0
+    },
+    {
+      "NOC": "Ivory Coast",
+      "pred_total": 23.531737,
+      "interval80": [
+        2.0,
+        49.333333
+      ],
+      "actual_2024_total": 1,
+      "actual_2024_gold": 0
+    },
+    {
+      "NOC": "Spain",
+      "pred_total": 23.170459,
+      "interval80": [
+        13.966667,
+        36.011111
+      ],
+      "actual_2024_total": 18,
+      "actual_2024_gold": 5
+    },
+    {
+      "NOC": "South Korea",
+      "pred_total": 22.864341,
+      "interval80": [
+        13.0,
+        30.35
+      ],
+      "actual_2024_total": 32,
+      "actual_2024_gold": 13
+    },
+    {
+      "NOC": "Brazil",
+      "pred_total": 22.471435,
+      "interval80": [
+        14.25,
+        32.666667
+      ],
+      "actual_2024_total": 20,
+      "actual_2024_gold": 3
+    }
+  ],
+  "prediction_2028_top_gold": [
+    {
+      "NOC": "United States",
+      "pred_gold": 41.089526,
+      "interval80": [
+        36.333333,
+        46.860317
+      ],
+      "actual_2024_total": 126,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "China",
+      "pred_gold": 32.589243,
+      "interval80": [
+        23.0,
+        41.1
+      ],
+      "actual_2024_total": 91,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "France",
+      "pred_gold": 24.923106,
+      "interval80": [
+        14.0,
+        36.516667
+      ],
+      "actual_2024_total": 64,
+      "actual_2024_gold": 16
+    },
+    {
+      "NOC": "Australia",
+      "pred_gold": 23.25275,
+      "interval80": [
+        7.191667,
+        41.0
+      ],
+      "actual_2024_total": 53,
+      "actual_2024_gold": 18
+    },
+    {
+      "NOC": "Germany",
+      "pred_gold": 21.23934,
+      "interval80": [
+        8.655556,
+        37.0
+      ],
+      "actual_2024_total": 33,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Great Britain",
+      "pred_gold": 14.826892,
+      "interval80": [
+        4.0,
+        24.0
+      ],
+      "actual_2024_total": 65,
+      "actual_2024_gold": 14
+    },
+    {
+      "NOC": "Italy",
+      "pred_gold": 13.932317,
+      "interval80": [
+        7.49,
+        23.7
+      ],
+      "actual_2024_total": 40,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Japan",
+      "pred_gold": 13.697753,
+      "interval80": [
+        4.0,
+        25.871429
+      ],
+      "actual_2024_total": 45,
+      "actual_2024_gold": 20
+    },
+    {
+      "NOC": "Netherlands",
+      "pred_gold": 10.024259,
+      "interval80": [
+        7.2,
+        13.0
+      ],
+      "actual_2024_total": 34,
+      "actual_2024_gold": 15
+    },
+    {
+      "NOC": "Canada",
+      "pred_gold": 9.922688,
+      "interval80": [
+        5.666667,
+        15.5
+      ],
+      "actual_2024_total": 27,
+      "actual_2024_gold": 9
+    },
+    {
+      "NOC": "Spain",
+      "pred_gold": 7.635556,
+      "interval80": [
+        3.0,
+        12.6
+      ],
+      "actual_2024_total": 18,
+      "actual_2024_gold": 5
+    },
+    {
+      "NOC": "South Korea",
+      "pred_gold": 7.041766,
+      "interval80": [
+        3.6625,
+        9.0
+      ],
+      "actual_2024_total": 32,
+      "actual_2024_gold": 13
+    },
+    {
+      "NOC": "New Zealand",
+      "pred_gold": 6.957873,
+      "interval80": [
+        3.25,
+        11.205
+      ],
+      "actual_2024_total": 20,
+      "actual_2024_gold": 10
+    },
+    {
+      "NOC": "Brazil",
+      "pred_gold": 6.812263,
+      "interval80": [
+        3.0,
+        12.0
+      ],
+      "actual_2024_total": 20,
+      "actual_2024_gold": 3
+    },
+    {
+      "NOC": "Refugee Olympic Team",
+      "pred_gold": 6.445373,
+      "interval80": [
+        0.5,
+        13.666667
+      ],
+      "actual_2024_total": 1,
+      "actual_2024_gold": 0
+    }
+  ],
+  "most_likely_improve": [
+    {
+      "NOC": "Refugee Olympic Team",
+      "actual_2024_total": 1,
+      "pred_2028_total": 23.902372,
+      "change": 22.902372
+    },
+    {
+      "NOC": "Ivory Coast",
+      "actual_2024_total": 1,
+      "pred_2028_total": 23.531737,
+      "change": 22.531737
+    },
+    {
+      "NOC": "Germany",
+      "actual_2024_total": 33,
+      "pred_2028_total": 43.744927,
+      "change": 10.744927
+    },
+    {
+      "NOC": "Korea",
+      "actual_2024_total": 0,
+      "pred_2028_total": 10.298167,
+      "change": 10.298167
+    },
+    {
+      "NOC": "Moldova",
+      "actual_2024_total": 4,
+      "pred_2028_total": 14.105338,
+      "change": 10.105338
+    },
+    {
+      "NOC": "Czechia",
+      "actual_2024_total": 0,
+      "pred_2028_total": 7.76505,
+      "change": 7.76505
+    },
+    {
+      "NOC": "Hong Kong",
+      "actual_2024_total": 4,
+      "pred_2028_total": 10.07823,
+      "change": 6.07823
+    },
+    {
+      "NOC": "Czech Republic",
+      "actual_2024_total": 5,
+      "pred_2028_total": 10.550329,
+      "change": 5.550329
+    },
+    {
+      "NOC": "Türkiye",
+      "actual_2024_total": 0,
+      "pred_2028_total": 5.28202,
+      "change": 5.28202
+    },
+    {
+      "NOC": "Spain",
+      "actual_2024_total": 18,
+      "pred_2028_total": 23.170459,
+      "change": 5.170459
+    }
+  ],
+  "most_likely_decline": [
+    {
+      "NOC": "Great Britain",
+      "actual_2024_total": 65,
+      "pred_2028_total": 45.577937,
+      "change": -19.422063
+    },
+    {
+      "NOC": "United States",
+      "actual_2024_total": 126,
+      "pred_2028_total": 107.51955,
+      "change": -18.48045
+    },
+    {
+      "NOC": "Japan",
+      "actual_2024_total": 45,
+      "pred_2028_total": 33.888143,
+      "change": -11.111857
+    },
+    {
+      "NOC": "South Korea",
+      "actual_2024_total": 32,
+      "pred_2028_total": 22.864341,
+      "change": -9.135659
+    },
+    {
+      "NOC": "Australia",
+      "actual_2024_total": 53,
+      "pred_2028_total": 45.329872,
+      "change": -7.670128
+    },
+    {
+      "NOC": "China",
+      "actual_2024_total": 91,
+      "pred_2028_total": 84.470517,
+      "change": -6.529483
+    },
+    {
+      "NOC": "France",
+      "actual_2024_total": 64,
+      "pred_2028_total": 58.873614,
+      "change": -5.126386
+    },
+    {
+      "NOC": "Kyrgyzstan",
+      "actual_2024_total": 6,
+      "pred_2028_total": 2.536803,
+      "change": -3.463197
+    },
+    {
+      "NOC": "Uzbekistan",
+      "actual_2024_total": 13,
+      "pred_2028_total": 9.610442,
+      "change": -3.389558
+    },
+    {
+      "NOC": "Netherlands",
+      "actual_2024_total": 34,
+      "pred_2028_total": 31.375702,
+      "change": -2.624298
+    }
+  ]
+}

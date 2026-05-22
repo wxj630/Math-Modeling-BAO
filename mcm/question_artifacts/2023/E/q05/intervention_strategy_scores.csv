@@ -1,0 +1,5 @@
+strategy,specific_actions,sky_glow_reduction,trespass_reduction,clutter_reduction,safety_penalty,cost_index,implementation_feasibility,ecological_benefit,human_benefit,strategy_value_score
+zoning ordinance and sign-lighting limits,"set lumen caps by district, restrict upward signage, enforce lighting permits",0.27,0.22,0.42,0.04,0.24,0.68,0.293,0.256,0.2898
+adaptive dimming and curfew controls,"dim after peak activity, use motion sensors, turn off decorative lighting overnight",0.38,0.26,0.24,0.07,0.36,0.76,0.2952,0.2405,0.2865
+shielded warm-spectrum fixtures,"replace unshielded lamps, require full cutoff optics, shift to warmer color temperature",0.3,0.34,0.18,0.02,0.46,0.82,0.2816,0.226,0.2758
+habitat buffer dark corridor,"create no-light buffers near habitat, shield road edges, preserve migration corridors",0.24,0.4,0.18,0.09,0.52,0.62,0.284,0.2125,0.2345

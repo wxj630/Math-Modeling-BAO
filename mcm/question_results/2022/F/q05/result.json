@@ -1,0 +1,44 @@
+{
+  "problem_id": "2022-F",
+  "question": "q05",
+  "question_title": "全球公平指标验证逻辑",
+  "statement": "Use your definition to develop a model that allows you to measure global equity. Validate your model; this might involve historical and/or regional analyses.",
+  "methods": "用 Outer Space Treaty、ISS/卫星接入、排他特许经营三类历史/制度基准检验指标方向是否合理。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "official_requirements": {
+      "outer_space_treaty_equity_principle": true,
+      "define_global_equity": true,
+      "measure_global_equity": true,
+      "asteroid_mining_future_vision": true,
+      "condition_sensitivity_required": true,
+      "un_policy_recommendations_required": true
+    }
+  },
+  "equity_model": {
+    "definition": "Global equity in asteroid mining means broad benefit sharing, fair access to participation, technology diffusion, multilateral voice, risk protection, and peaceful use.",
+    "dimensions": {
+      "benefit_sharing": "Mineral value and derived public benefits reach countries irrespective of economic or scientific development.",
+      "access_to_participation": "Emerging space nations, universities, and public agencies can participate in missions, data, and contracts.",
+      "technology_transfer": "Mission knowledge, safety practices, and enabling infrastructure diffuse beyond first movers.",
+      "governance_voice": "Rules are set through transparent multilateral governance, not only by mining states or firms.",
+      "risk_and_environmental_burden": "Launch, reentry, orbital-debris, market, and terrestrial environmental risks are not shifted to low-power countries.",
+      "peaceful_use_and_conflict_prevention": "Resource extraction remains aligned with the Outer Space Treaty and does not militarize access to space resources."
+    },
+    "weights": {
+      "benefit_sharing": 0.24,
+      "access_to_participation": 0.18,
+      "technology_transfer": 0.16,
+      "governance_voice": 0.18,
+      "risk_and_environmental_burden": 0.12,
+      "peaceful_use_and_conflict_prevention": 0.12
+    },
+    "validation_logic": [
+      "Outer Space Treaty benchmark: higher scores require benefits for all countries irrespective of development level.",
+      "International Space Station and satellite access benchmark: multinational access and shared technical infrastructure improve participation equity.",
+      "Exclusive concession benchmark: concentrated finance without benefit sharing lowers equity even when technical feasibility is high."
+    ]
+  }
+}

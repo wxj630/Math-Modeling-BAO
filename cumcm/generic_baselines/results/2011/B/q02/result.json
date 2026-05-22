@@ -1,0 +1,109 @@
+{
+  "problem_id": "2011-B",
+  "title": "2011年 CUMCM B题：交巡警服务平台的设置与调度",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "针对全市（主城六区A，B，C，D，E，F）的具体情况，按照设置交巡警服务平台的原则和任务，分析研究该市现有交巡警服务平台设置方案（参见附件）的合理性。如果有明显不合理，请给出解决方案。 如果该市地点P（第32个节点）处发生了重大刑事案件，在案发3分钟后接到报警，犯罪嫌疑人已驾车逃跑。为了快速搜捕嫌疑犯，请给出调度全市交巡警服务平台警力资源的最佳围堵方案。 附件1：A区和全市六区交通网络与平台设置的示意图。 附件2：全市六区交通网络与平台设置的相关数据表（共5个工作表）。",
+  "tasks": [
+    "针对全市（主城六区A，B，C，D，E，F）的具体情况，按照设置交巡警服务平台的原则和任务，分析研究该市现有交巡警服务平台设置方案（参见附件）的合理性",
+    "如果有明显不合理，请给出解决方案",
+    "为了快速搜捕嫌疑犯，请给出调度全市交巡警服务平台警力资源的最佳围堵方案"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "网络、节点、平台、交通、调度"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "方案、调度"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、分析"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/B.md",
+    "rows": 17,
+    "columns": 7,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "针对全市（主城六区A，B，C，D，E，F）的具体情况，按照设置交巡警服务平台的原则和任务，分析研究该市现有交巡警服务平台设置方案（参见附件）的合理性",
+      "如果有明显不合理，请给出解决方案",
+      "为了快速搜捕嫌疑犯，请给出调度全市交巡警服务平台警力资源的最佳围堵方案"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "G=(V,E): 交通/转运/关系网络",
+      "w_ij: 边成本、距离或时间",
+      "d_i: 从源点到节点 i 的最短距离",
+      "pre_i: 最短路前驱节点"
+    ],
+    "constraints": [
+      "边权非负",
+      "路径必须由网络中已有边组成"
+    ],
+    "objective_or_equations": [
+      "d_j = min_i(d_i + w_ij)",
+      "min path_cost(source, target)"
+    ],
+    "solution_steps": [
+      "把题面地点、平台或转运关系抽象为图。",
+      "构造边权矩阵。",
+      "运行 Dijkstra 最短路。",
+      "输出各节点最短距离和前驱。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "dijkstra_shortest_path",
+    "node_count": 3,
+    "source": 0,
+    "distances": [
+      0.0,
+      0.236842,
+      0.236842
+    ],
+    "predecessors": [
+      -9999,
+      0,
+      0
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2011/B/q02/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

@@ -1,0 +1,6 @@
+﻿candidate,start_quantum_minutes,with_breaks,total_workers,max_cycle_violation_minutes,service_workload_std
+fixed_3x8_without_break,,False,72,0.0,13.17451
+fixed_3x8_with_break,,True,72,0.0,13.17451
+staggered_120min_without_break,120,False,74,0.0,10.624828
+staggered_60min_without_break,60,False,72,0.0,10.088258
+staggered_30min_without_break,30,False,72,0.0,10.586714

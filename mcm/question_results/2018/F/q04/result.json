@@ -1,0 +1,181 @@
+{
+  "problem_id": "2018-F",
+  "question": "q04",
+  "question_title": "Monetary value of protecting private information",
+  "statement": "Determine the monetary value of keeping private information protected or the cost for others to use it.",
+  "methods": "Use normalized price indices by domain, subgroup, and data element value.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
+    "official_requirements": {
+      "three_domains": [
+        "social_media",
+        "financial_transactions",
+        "health_records"
+      ],
+      "pi_pp_ip_comparison": true,
+      "pricing_structure": true,
+      "network_effects": true,
+      "breach_cascade": true,
+      "policy_memo": true
+    },
+    "parameters": {
+      "domains": [
+        {
+          "domain": "social_media",
+          "sensitivity": 0.54,
+          "public_good_value": 0.28,
+          "commercial_value": 0.48,
+          "harm_multiplier": 0.52
+        },
+        {
+          "domain": "financial_transactions",
+          "sensitivity": 0.82,
+          "public_good_value": 0.22,
+          "commercial_value": 0.68,
+          "harm_multiplier": 0.86
+        },
+        {
+          "domain": "health_records",
+          "sensitivity": 0.92,
+          "public_good_value": 0.74,
+          "commercial_value": 0.58,
+          "harm_multiplier": 0.94
+        }
+      ],
+      "data_elements": [
+        {
+          "element": "name",
+          "base_value": 1.0,
+          "risk_weight": 0.18
+        },
+        {
+          "element": "date_of_birth",
+          "base_value": 1.8,
+          "risk_weight": 0.32
+        },
+        {
+          "element": "address",
+          "base_value": 2.2,
+          "risk_weight": 0.4
+        },
+        {
+          "element": "photo",
+          "base_value": 2.6,
+          "risk_weight": 0.48
+        },
+        {
+          "element": "citizenship_or_ssn",
+          "base_value": 8.0,
+          "risk_weight": 0.92
+        },
+        {
+          "element": "medical_condition",
+          "base_value": 7.2,
+          "risk_weight": 0.88
+        }
+      ],
+      "subgroups": [
+        {
+          "subgroup": "minors",
+          "risk_aversion": 0.92,
+          "regulatory_priority": 0.94
+        },
+        {
+          "subgroup": "elderly",
+          "risk_aversion": 0.78,
+          "regulatory_priority": 0.8
+        },
+        {
+          "subgroup": "public_employees",
+          "risk_aversion": 0.74,
+          "regulatory_priority": 0.72
+        },
+        {
+          "subgroup": "young_adults",
+          "risk_aversion": 0.46,
+          "regulatory_priority": 0.44
+        }
+      ]
+    }
+  },
+  "privacy_price_model": {
+    "domain_rows": [
+      {
+        "domain": "social_media",
+        "sensitivity": 0.54,
+        "public_good_value": 0.28,
+        "commercial_value": 0.48,
+        "harm_multiplier": 0.52,
+        "privacy_protection_price_index": 42.36,
+        "pricing_logic": "risk and harm raise price; public-good data use lowers private exclusion price"
+      },
+      {
+        "domain": "financial_transactions",
+        "sensitivity": 0.82,
+        "public_good_value": 0.22,
+        "commercial_value": 0.68,
+        "harm_multiplier": 0.86,
+        "privacy_protection_price_index": 67.4,
+        "pricing_logic": "risk and harm raise price; public-good data use lowers private exclusion price"
+      },
+      {
+        "domain": "health_records",
+        "sensitivity": 0.92,
+        "public_good_value": 0.74,
+        "commercial_value": 0.58,
+        "harm_multiplier": 0.94,
+        "privacy_protection_price_index": 65.08,
+        "pricing_logic": "risk and harm raise price; public-good data use lowers private exclusion price"
+      }
+    ],
+    "definition": "Price index for protecting private information by domain and subgroup risk."
+  },
+  "data_element_value_model": {
+    "element_rows": [
+      {
+        "element": "name",
+        "base_value": 1.0,
+        "risk_weight": 0.18,
+        "standalone_value_index": 1.18,
+        "value_with_photo_multiplier": 1.35
+      },
+      {
+        "element": "date_of_birth",
+        "base_value": 1.8,
+        "risk_weight": 0.32,
+        "standalone_value_index": 2.376,
+        "value_with_photo_multiplier": 1.0
+      },
+      {
+        "element": "address",
+        "base_value": 2.2,
+        "risk_weight": 0.4,
+        "standalone_value_index": 3.08,
+        "value_with_photo_multiplier": 1.0
+      },
+      {
+        "element": "photo",
+        "base_value": 2.6,
+        "risk_weight": 0.48,
+        "standalone_value_index": 3.848,
+        "value_with_photo_multiplier": 1.0
+      },
+      {
+        "element": "citizenship_or_ssn",
+        "base_value": 8.0,
+        "risk_weight": 0.92,
+        "standalone_value_index": 15.36,
+        "value_with_photo_multiplier": 1.0
+      },
+      {
+        "element": "medical_condition",
+        "base_value": 7.2,
+        "risk_weight": 0.88,
+        "standalone_value_index": 13.536,
+        "value_with_photo_multiplier": 1.0
+      }
+    ]
+  }
+}

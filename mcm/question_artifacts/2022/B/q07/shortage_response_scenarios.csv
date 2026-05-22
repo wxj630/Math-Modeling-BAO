@@ -1,0 +1,6 @@
+supply_multiplier,supply_maf,state_deficit_maf,minimum_service_met,estimated_years_until_demands_not_met_without_added_water,additional_water_needed_maf,lowest_service_ratio
+1.0,6.428,3.592,False,0.37,3.592,0.0
+0.85,5.464,4.556,False,0.29,4.556,0.0
+0.7,4.5,5.52,False,0.24,5.52,0.0
+0.55,3.535,6.485,False,0.2,6.485,0.0
+0.42,2.7,7.32,False,0.18,7.32,0.0

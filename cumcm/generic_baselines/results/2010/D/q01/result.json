@@ -1,0 +1,106 @@
+{
+  "problem_id": "2010-D",
+  "title": "2010年 CUMCM D题：对学生宿舍设计方案的评价",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "附件是四种比较典型的学生宿舍的设计方案。请你们用数学建模的方法就它们的经济性、舒适性和安全性作出综合量化评价和比较",
+  "tasks": [
+    "附件是四种比较典型的学生宿舍的设计方案",
+    "请你们用数学建模的方法就它们的经济性、舒适性和安全性作出综合量化评价和比较"
+  ],
+  "selected_model": {
+    "key": "evaluation",
+    "name": "综合评价与权重决策",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "评价、综合、比较、经济性、舒适性"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "方案、设计"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 10,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/D.md",
+    "rows": 2,
+    "columns": 2,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "综合评价与权重决策",
+    "task_breakdown": [
+      "附件是四种比较典型的学生宿舍的设计方案",
+      "请你们用数学建模的方法就它们的经济性、舒适性和安全性作出综合量化评价和比较"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "a_ij: 方案 i 在指标 j 上的标准化表现",
+      "w_j: 指标权重",
+      "D_i^+: 到理想解距离",
+      "C_i: TOPSIS 贴近度"
+    ],
+    "constraints": [
+      "各指标同向化后归一化",
+      "sum_j w_j = 1, w_j >= 0"
+    ],
+    "objective_or_equations": [
+      "w_j = std(a_.j)/sum_j std(a_.j)",
+      "C_i = D_i^-/(D_i^+ + D_i^-)",
+      "rank = argsort(-C_i)"
+    ],
+    "solution_steps": [
+      "构造评价指标矩阵。",
+      "用离散度生成客观权重。",
+      "计算正负理想解距离与贴近度。",
+      "输出排名和最优方案。"
+    ],
+    "model_reference": {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "std_weight_topsis",
+    "weights": [
+      0.245406,
+      0.141754,
+      0.193767,
+      0.211041,
+      0.208031
+    ],
+    "scores": [
+      0.435249,
+      0.297741,
+      0.368314,
+      0.578679,
+      0.664767,
+      0.396939,
+      0.120209
+    ],
+    "best_option": 5
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2010/D/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

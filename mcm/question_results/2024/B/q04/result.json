@@ -1,0 +1,107 @@
+{
+  "problem_id": "2024-B",
+  "question": "q04",
+  "question_title": "加勒比海迁移、多潜水器协调与希腊政府备忘录",
+  "statement": "Extrapolate - How might your model be expanded to account for other tourist destinations such as the Caribbean Sea? How will your model change to account for multiple submersibles moving in the same general vicinity? Prepare a two-page memo addressed to the Greek government to help win approval.",
+  "methods": "对加勒比海增大洋流和地形不确定性倍数；多潜水器用唯一声学编码、Voronoi 后验分区和资源冲突约束；输出给 Greek government 的审批备忘录。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "official_requirements": {
+      "loss_of_communication": true,
+      "possible_loss_of_propulsion": true,
+      "predict_location_over_time": true,
+      "seafloor_or_neutral_buoyancy": true,
+      "currents_densities_and_geography": true,
+      "prepare_search_equipment": true,
+      "probability_of_finding_as_function_of_time": true,
+      "caribbean_and_multiple_submersibles": true,
+      "memo_to_greek_government": true
+    },
+    "parameters": {
+      "purpose": "deterministic rescue-planning example for the official PDF-only problem; not observed incident data",
+      "deployment_area": "Ionian Sea tourist wreck-search site near a host ship",
+      "initial_fix_error_km": 0.18,
+      "submersible_speed_kmh_before_failure": 3.0,
+      "time_since_last_fix_hours": 0.5,
+      "surface_current_kmh": 1.15,
+      "deep_current_kmh": 0.35,
+      "current_direction_degrees": 58.0,
+      "current_uncertainty_kmh": 0.24,
+      "cross_current_uncertainty_kmh": 0.14,
+      "depth_state_ambiguity_km": 0.55,
+      "seafloor_terrain_uncertainty_km": 0.35,
+      "neutral_buoyancy_share": 0.55,
+      "seafloor_share": 0.45,
+      "acoustic_range_km": 4.0
+    }
+  },
+  "extrapolation": {
+    "caribbean_adjustments": {
+      "current_uncertainty_multiplier": 1.35,
+      "terrain_adjustment": "replace Ionian seafloor-wreck bathymetry with reef wall, trench, and strong surface-current layers",
+      "communications_adjustment": "predefine tourist-route LBL boxes because warm shallow shelves may create more multipath and recreational vessel noise",
+      "environmental_data_needed": [
+        "regional current forecast",
+        "reef/trench bathymetry",
+        "shipping density",
+        "hurricane-season operating rule"
+      ]
+    },
+    "multi_submersible": {
+      "coordination_rule": "assign each submersible a unique acoustic code, maintain non-overlapping safety corridors, and partition the search posterior into Voronoi sectors around last confirmed fixes",
+      "model_change": "state vector becomes one ellipse per submersible plus a collision/communication interference constraint matrix",
+      "search_allocation": "prioritize sectors by expected lives saved per hour: posterior probability mass divided by deployment time and resource conflicts"
+    }
+  },
+  "government_memo": "Memo to the Greek government: MCMS approval should require an auditable lost-submersible plan with periodic acoustic telemetry, a host-ship localization kit, preplanned deployment points, a probability-updated search log, and a rescue-vessel mobilization trigger when the 12-hour posterior still leaves substantial uncertainty.",
+  "search_plan": {
+    "model": "Bayesian-style survival update with deterministic swept-area coverage over the official location-model uncertainty ellipse",
+    "search_probability": {
+      "probability_found_by_12h": 0.7489,
+      "probability_found_by_24h": 0.7812,
+      "formula": "P_found(t)=1-exp(-sum_over_intervals(incremental_effective_swept_area/current_uncertainty_area))",
+      "detection_realism_factor": 0.16,
+      "detection_realism_note": "discounts nominal sensor sweep area for deep-water 3D ambiguity, acoustic multipath, terrain shadowing, and contact-confirmation delay"
+    },
+    "deployment_points": [
+      {
+        "point": "P0 predicted center",
+        "east_km": 2.509,
+        "north_km": 1.567,
+        "purpose": "deploy USBL and first drop beacon"
+      },
+      {
+        "point": "P1 down-current ellipse focus",
+        "east_km": 4.113,
+        "north_km": 2.57,
+        "purpose": "start creeping-line sonar along drift axis"
+      },
+      {
+        "point": "P2 up-current ellipse focus",
+        "east_km": 1.422,
+        "north_km": 0.888,
+        "purpose": "backtrack possible powerless descent path"
+      },
+      {
+        "point": "P3 cross-current high-uncertainty edge",
+        "east_km": 3.238,
+        "north_km": 0.399,
+        "purpose": "cover terrain and density-current ambiguity"
+      },
+      {
+        "point": "P4 opposite cross-current edge",
+        "east_km": 1.779,
+        "north_km": 2.736,
+        "purpose": "complete LBL bracket and close acoustic geometry"
+      }
+    ],
+    "search_pattern": [
+      "0-2 h: interrogate acoustic pingers from the host ship and deploy two LBL beacons around P0/P1",
+      "2-8 h: run creeping-line side-scan sonar along the drift-axis ellipse from P1 to P2",
+      "8-16 h: use ROV to inspect acoustic/sonar contacts and seafloor terrain traps",
+      "16-24 h: add AUV expanding-square search around remaining posterior mass if no confirmed contact"
+    ]
+  }
+}

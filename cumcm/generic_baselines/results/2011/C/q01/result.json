@@ -1,0 +1,103 @@
+{
+  "problem_id": "2011-C",
+  "title": "2011年 CUMCM C题：企业退休职工养老金制度的改革",
+  "question_index": 1,
+  "question_label": "问题一",
+  "statement": "对未来中国经济发展和工资增长的形势做出你认为是简化、合理的假设，并参考附件1，预测从2011年至2035年的山东省职工的年平均工资。",
+  "tasks": [
+    "对未来中国经济发展和工资增长的形势做出你认为是简化、合理的假设，并参考附件1，预测从2011年至2035年的山东省职工的年平均工资"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "预测、未来、年平均、增长"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "预测"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls",
+    "rows": 35,
+    "columns": 2,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "对未来中国经济发展和工资增长的形势做出你认为是简化、合理的假设，并参考附件1，预测从2011年至2035年的山东省职工的年平均工资"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": 2196.5578739495795,
+    "slope": -17.577973949579828,
+    "r2": 0.147315120451862,
+    "next_12_forecast": [
+      1335.23715,
+      1317.659176,
+      1300.081203,
+      1282.503229,
+      1264.925255,
+      1247.347281,
+      1229.769307,
+      1212.191333,
+      1194.613359,
+      1177.035385,
+      1159.457411,
+      1141.879437
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2011/C/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

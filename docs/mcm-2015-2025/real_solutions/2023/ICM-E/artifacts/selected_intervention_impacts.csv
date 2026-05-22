@@ -1,0 +1,3 @@
+location_type,strategy,risk_before,risk_after,risk_reduction_points,specific_actions
+protected_land,adaptive dimming and curfew controls,7.13,4.93,2.2,"dim after peak activity, use motion sensors, turn off decorative lighting overnight"
+urban,adaptive dimming and curfew controls,63.34,43.79,19.55,"dim after peak activity, use motion sensors, turn off decorative lighting overnight"

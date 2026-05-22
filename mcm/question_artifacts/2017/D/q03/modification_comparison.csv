@@ -1,0 +1,4 @@
+modification,precheck_lanes,regular_lanes,combined_mean_wait_s,combined_p90_wait_s,mean_wait_change_vs_baseline_s,p90_wait_change_vs_baseline_s,checkpoint_clear_time_s,rationale
+hybrid: 2 PreCheck lanes plus divestment support,2,2,460.08599,889.81664,-538.646981,-1631.26096,3650.319,Combines lane balance with process support; included as a transparent upper-bound operational scenario.
+rebalance lanes to 2 PreCheck / 2 regular,2,2,612.918324,1179.9978,-385.814647,-1341.0798,3659.41,Problem statement says 45% are PreCheck but often only one PreCheck lane for every three regular lanes.
+parallel divestment support and bin preparation,1,3,777.44832,2009.34959,-221.284651,-511.72801,3650.319,Reduce Zone B/C property preparation variance without lowering security standards.

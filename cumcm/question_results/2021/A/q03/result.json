@@ -1,0 +1,132 @@
+{
+  "problem_id": "2021-A",
+  "title": "2021年 CUMCM A题：FAST”主动反射面的形状调节",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "基于第2 问的反射面调节方案， 计算调节后馈源舱的接收比， 即馈源舱有效区域接收到 的反射信号与 300 米口径内反射面的反射信号之比，并与基准反射球面的接收比作比较。 附录：要求及相关参数",
+  "tasks": [
+    "基于第2 问的反射面调节方案， 计算调节后馈源舱的接收比， 即馈源舱有效区域接收到 的反射信号与 300 米口径内反射面的反射信号之比，并与基准反射球面的接收比作比较"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "FAST主动反射面几何调节与反射接收评估",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "信号"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "方案"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "参数"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件3.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件4.xlsx",
+    "rows": 8752,
+    "columns": 14,
+    "note": "本题专用算法读取附件1主索节点坐标、附件2促动器上下端点、附件3三角反射面板和附件4结果模板，建立理想抛物面、径向伸缩调节和几何光线接收比实验。"
+  },
+  "formulation": {
+    "model_type": "FAST主动反射面几何调节与反射接收评估",
+    "task_breakdown": [
+      "基于第2 问的反射面调节方案， 计算调节后馈源舱的接收比， 即馈源舱有效区域接收到 的反射信号与 300 米口径内反射面的反射信号之比，并与基准反射球面的接收比作比较"
+    ],
+    "assumptions": [
+      "基准球面球心位于坐标原点，主索节点坐标以附件1为准。",
+      "工作态只调节300米口径内的主索节点，口径外节点保持基准态。",
+      "促动器沿基准球面径向伸缩，趋向球心方向为正，伸缩量限制在[-0.6, 0.6]米。",
+      "下拉索长度固定，本实验用径向节点位移近似促动器顶端伸缩，并在结果中检查伸缩边界。",
+      "电磁波和反射波按直线传播，接收比用三角面板中心射线是否落入馈源舱1米直径有效圆盘估计。"
+    ],
+    "decision_variables": [
+      "u: 天体观测方向单位向量，由方位角alpha和仰角beta确定",
+      "P: 馈源舱接收平面中心，位于焦面与SC直线交点",
+      "d: 理想抛物面顶点沿观测轴的坐标",
+      "f: 理想抛物面的焦距，满足P=(d+f)u",
+      "rho_i: 主索节点i到观测轴的垂距",
+      "delta_i: 促动器径向伸缩量",
+      "x_i': 调节后主索节点坐标",
+      "eta: 馈源舱接收比"
+    ],
+    "constraints": [
+      "rho_i <= 150 的节点进入300米工作口径。",
+      "-0.6 <= delta_i <= 0.6。",
+      "x_i' = x_i - delta_i * x_i/||x_i||。",
+      "相邻节点边长变化率以附件3三角面板边为近似检查，最大变化率应尽量小。",
+      "接收命中条件为反射射线与馈源接收平面的交点到P的距离不超过0.5米。"
+    ],
+    "objective_or_equations": [
+      "u=(cos(beta)cos(alpha), cos(beta)sin(alpha), sin(beta))",
+      "paraboloid: t = d + rho^2/(4f), where t=x·u and f=P_axis-d",
+      "delta_i = clip((t_paraboloid-t_i)/(-r_i·u), -0.6, 0.6)",
+      "min RMS(t_i' - t_paraboloid) over candidate vertex coordinate d",
+      "reflection: v_ref = v_in - 2(n·v_in)n",
+      "eta = hit_panel_area / active_panel_area"
+    ],
+    "solution_steps": [
+      "复用第2问的调节方案，构造基准球面与调节后曲面的三角面板。",
+      "对每个主动三角面板计算法向量、入射方向和反射方向。",
+      "求反射射线与馈源舱接收平面的交点，统计落入0.5米半径有效圆盘的面板面积占比。",
+      "输出调节前后接收比、命中面板面积和改善倍数。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "FAST主动反射面几何调节与反射接收评估",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "fast_reflection_reception_ratio",
+    "node_count": 2226,
+    "panel_count": 4300,
+    "active_node_count": 692,
+    "baseline_reception_ratio": 0.0518562573123841,
+    "adjusted_reception_ratio": 0.08701426203023177,
+    "ratio_improvement": 1.6779896301820336,
+    "baseline": {
+      "active_panel_count": 1295,
+      "total_panel_area_m2": 70995.37931563653,
+      "hit_panel_area_m2": 3681.5546577819596,
+      "reception_ratio": 0.0518562573123841,
+      "hit_panel_count": 65,
+      "median_hit_distance_m": 2.864902746463702
+    },
+    "adjusted": {
+      "active_panel_count": 1295,
+      "total_panel_area_m2": 70942.72925428975,
+      "hit_panel_area_m2": 6173.029232472557,
+      "reception_ratio": 0.08701426203023177,
+      "hit_panel_count": 110,
+      "median_hit_distance_m": 1.7555979212814106
+    },
+    "report": [
+      "本问复用第2问调节方案，把每块主动三角面板视为局部平面镜。",
+      "由入射方向、面板法向量和镜面反射公式得到反射射线，并检查其是否落入馈源舱0.5米半径有效圆盘。",
+      "结果表比较基准球面和调节后抛物面的接收比，是一个可复现的几何光线追踪近似实验。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2021/A/q03/experiment_table.csv"
+  ]
+}

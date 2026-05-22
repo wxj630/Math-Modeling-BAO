@@ -1,0 +1,13 @@
+rider,rider_type,gender_profile,course,total_distance_km,total_time_s,total_time_min,total_energy_kj,energy_budget_kj,energy_budget_margin_kj,high_power_load_kj
+male time trial specialist,time trial specialist,male,2021 Olympic Time Trial course in Tokyo,31.6,2528.39,42.14,956.38,4300.0,3343.62,23.64
+male climber-puncheur,climber-puncheur,male,2021 Olympic Time Trial course in Tokyo,31.6,2661.5,44.358,924.86,3900.0,2975.14,22.34
+female time trial specialist,time trial specialist,female,2021 Olympic Time Trial course in Tokyo,31.6,2691.36,44.856,782.73,3250.0,2467.27,19.39
+female climber-puncheur,climber-puncheur,female,2021 Olympic Time Trial course in Tokyo,31.6,2863.16,47.719,747.78,2920.0,2172.22,18.16
+male time trial specialist,time trial specialist,male,2021 UCI World Championship time trial course in Flanders,37.6,2863.18,47.72,1045.79,4300.0,3254.21,7.29
+male climber-puncheur,climber-puncheur,male,2021 UCI World Championship time trial course in Flanders,37.6,3045.49,50.758,1022.58,3900.0,2877.42,7.09
+female time trial specialist,time trial specialist,female,2021 UCI World Championship time trial course in Flanders,37.6,3045.52,50.759,855.21,3250.0,2394.79,5.96
+female climber-puncheur,climber-puncheur,female,2021 UCI World Championship time trial course in Flanders,37.6,3269.7,54.495,825.0,2920.0,2095.0,5.72
+male time trial specialist,time trial specialist,male,custom technical loop with four sharp turns and a nontrivial road grade,26.9,2194.01,36.567,848.48,4300.0,3451.52,51.04
+male climber-puncheur,climber-puncheur,male,custom technical loop with four sharp turns and a nontrivial road grade,26.9,2296.0,38.267,813.69,3900.0,3086.31,46.98
+female time trial specialist,time trial specialist,female,custom technical loop with four sharp turns and a nontrivial road grade,26.9,2335.85,38.931,694.63,3250.0,2555.37,41.89
+female climber-puncheur,climber-puncheur,female,custom technical loop with four sharp turns and a nontrivial road grade,26.9,2472.11,41.202,658.76,2920.0,2261.24,38.34

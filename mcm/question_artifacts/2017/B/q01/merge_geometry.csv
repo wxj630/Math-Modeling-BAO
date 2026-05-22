@@ -1,0 +1,5 @@
+design,egress_lanes,outgoing_lanes,merge_length_m,control,speed_management,conflict_multiplier,control_complexity,width_m,lane_drop_count,conflict_index,cost_index,safety_score,throughput_capacity_vph,objective_score
+short_direct_taper,8,3,260.0,single fan-in taper,advisory signs only,1.34,0.15,28.8,5,2.576923,9.288,53.615385,4620.0,47.877502
+staged_zipper_merge,8,3,420.0,two-stage zipper merge with lane assignment,posted speed taper and lane-use signs,0.72,0.35,28.8,5,0.857143,16.296,84.571429,4620.0,57.93568
+collector_distributor_split,8,3,560.0,parallel collector lanes merge into three-lane trunk,metered merge at final throat,0.61,0.55,28.8,5,0.544643,22.728,90.196429,4620.0,57.59674
+wide_plaza_metered_merge,8,3,700.0,long fan-in with signal-metered platoons,active metering and variable signs,0.54,0.78,28.8,5,0.385714,29.52,93.057143,4620.0,55.9456

@@ -1,0 +1,94 @@
+{
+  "problem_id": "2019-C",
+  "title": "2019年 CUMCM C题：赛题",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "机场的出租车载客收益与载客的行驶里程有关，乘客的目的地有远有近，出租车司机不能选择乘客和拒载，但允许出租车多次往返载客。管理部门拟对某些短途载客再次返回的出租车给予一定的“优先权”，使得这些出租车的收益尽量均衡，试给出一个可行的“优先”安排方案。",
+  "tasks": [
+    "管理部门拟对某些短途载客再次返回的出租车给予一定的“优先权”，使得这些出租车的收益尽量均衡，试给出一个可行的“优先”安排方案"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "收益、方案"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2019/C.md",
+    "rows": 9,
+    "columns": 3,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "管理部门拟对某些短途载客再次返回的出租车给予一定的“优先权”，使得这些出租车的收益尽量均衡，试给出一个可行的“优先”安排方案"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 33.507232364376456,
+    "decision": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.641828,
+      2.463649
+    ],
+    "resource_slack": [
+      0.0,
+      0.0,
+      0.377563
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2019/C/q04/experiment_table.csv"
+  ]
+}

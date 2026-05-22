@@ -1,0 +1,308 @@
+{
+  "problem_id": "2019-C",
+  "question": "q03",
+  "question_title": "反制策略情景、参数边界与 DEA/NFLIS 备忘录",
+  "statement": "Using a combination of Part 1 and Part 2 results, identify a possible strategy for countering the opioid crisis. Use your models to test effectiveness and identify parameter bounds. Include a memo to the Chief Administrator, DEA/NFLIS Database.",
+  "methods": "基于 2020 预测设置 high/watch 县阈值，测试 lab feedback、treatment/prescriber outreach、combined supply/treatment 三类情景的报告减少幅度，并输出 DEA/NFLIS memo。对应模型：情景仿真、阈值政策、敏感性边界。",
+  "data_source": {
+    "type": "official_comap_xlsx_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "rows": {
+      "MCM_NFLIS_Data.xlsx": 24062,
+      "ACS county-year rows": 3245
+    },
+    "acs_years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "official_nflis_states": [
+      "KY",
+      "OH",
+      "PA",
+      "VA",
+      "WV"
+    ],
+    "state_note": "The official workbook contains KY, OH, PA, VA, and WV records; this workflow does not add Tennessee records that are absent from the file."
+  },
+  "counter_strategy": {
+    "strategy": "Prioritize counties forecast above 100 reports for integrated lab feedback, treatment access, and supply interruption; monitor 25-99 report counties as watch areas.",
+    "thresholds": {
+      "high": 100,
+      "watch": 25
+    },
+    "strategy_scenarios": [
+      {
+        "scenario": "baseline_no_new_intervention",
+        "affected_high_counties": 141,
+        "affected_watch_counties": 128,
+        "projected_2020_reports": 112463.35,
+        "reduction_vs_baseline_reports": 0.0,
+        "reduction_vs_baseline_pct": 0.0
+      },
+      {
+        "scenario": "early_warning_lab_feedback",
+        "affected_high_counties": 141,
+        "affected_watch_counties": 128,
+        "projected_2020_reports": 101750.01,
+        "reduction_vs_baseline_reports": 10713.34,
+        "reduction_vs_baseline_pct": 9.526
+      },
+      {
+        "scenario": "targeted_treatment_and_prescriber_outreach",
+        "affected_high_counties": 141,
+        "affected_watch_counties": 128,
+        "projected_2020_reports": 88949.07,
+        "reduction_vs_baseline_reports": 23514.28,
+        "reduction_vs_baseline_pct": 20.908
+      },
+      {
+        "scenario": "combined_supply_and_treatment_strategy",
+        "affected_high_counties": 141,
+        "affected_watch_counties": 128,
+        "projected_2020_reports": 78235.73,
+        "reduction_vs_baseline_reports": 34227.62,
+        "reduction_vs_baseline_pct": 30.434
+      }
+    ],
+    "parameter_bound": "The combined strategy reaches a material reduction only if high-risk counties achieve about 30%+ reduction and watch counties about 10%+ reduction in forecast reports."
+  },
+  "forecast_concerns": {
+    "method": "Per-county ordinary least squares trend on official 2010-2017 NFLIS opioid reports.",
+    "county_forecasts_2020": [
+      {
+        "FIPS_Combined": 39061,
+        "state": "OH",
+        "county": "HAMILTON",
+        "slope_reports_per_year": 909.440476,
+        "observed_2017_reports": 9995.0,
+        "forecast_2020_reports": 11277.99,
+        "forecast_threshold": "high",
+        "in_sample_mae": 768.631,
+        "in_sample_r2": 0.8258
+      },
+      {
+        "FIPS_Combined": 39035,
+        "state": "OH",
+        "county": "CUYAHOGA",
+        "slope_reports_per_year": 859.738095,
+        "observed_2017_reports": 7381.0,
+        "forecast_2020_reports": 9042.05,
+        "forecast_threshold": "high",
+        "in_sample_mae": 456.5893,
+        "in_sample_r2": 0.9302
+      },
+      {
+        "FIPS_Combined": 42101,
+        "state": "PA",
+        "county": "PHILADELPHIA",
+        "slope_reports_per_year": 337.380952,
+        "observed_2017_reports": 9156.0,
+        "forecast_2020_reports": 8544.23,
+        "forecast_threshold": "high",
+        "in_sample_mae": 790.6756,
+        "in_sample_r2": 0.3714
+      },
+      {
+        "FIPS_Combined": 42003,
+        "state": "PA",
+        "county": "ALLEGHENY",
+        "slope_reports_per_year": 258.72619,
+        "observed_2017_reports": 4653.0,
+        "forecast_2020_reports": 5830.85,
+        "forecast_threshold": "high",
+        "in_sample_mae": 230.9435,
+        "in_sample_r2": 0.8404
+      },
+      {
+        "FIPS_Combined": 39049,
+        "state": "OH",
+        "county": "FRANKLIN",
+        "slope_reports_per_year": 322.988095,
+        "observed_2017_reports": 3016.0,
+        "forecast_2020_reports": 4292.05,
+        "forecast_threshold": "high",
+        "in_sample_mae": 201.372,
+        "in_sample_r2": 0.912
+      },
+      {
+        "FIPS_Combined": 39113,
+        "state": "OH",
+        "county": "MONTGOMERY",
+        "slope_reports_per_year": 239.511905,
+        "observed_2017_reports": 3560.0,
+        "forecast_2020_reports": 4278.2,
+        "forecast_threshold": "high",
+        "in_sample_mae": 156.3958,
+        "in_sample_r2": 0.8813
+      },
+      {
+        "FIPS_Combined": 39085,
+        "state": "OH",
+        "county": "LAKE",
+        "slope_reports_per_year": 265.797619,
+        "observed_2017_reports": 2127.0,
+        "forecast_2020_reports": 2922.56,
+        "forecast_threshold": "high",
+        "in_sample_mae": 141.375,
+        "in_sample_r2": 0.9049
+      },
+      {
+        "FIPS_Combined": 42045,
+        "state": "PA",
+        "county": "DELAWARE",
+        "slope_reports_per_year": 118.166667,
+        "observed_2017_reports": 1667.0,
+        "forecast_2020_reports": 2119.83,
+        "forecast_threshold": "high",
+        "in_sample_mae": 62.7083,
+        "in_sample_r2": 0.9195
+      },
+      {
+        "FIPS_Combined": 21111,
+        "state": "KY",
+        "county": "JEFFERSON",
+        "slope_reports_per_year": 45.678571,
+        "observed_2017_reports": 2124.0,
+        "forecast_2020_reports": 2044.29,
+        "forecast_threshold": "high",
+        "in_sample_mae": 210.9911,
+        "in_sample_r2": 0.1837
+      },
+      {
+        "FIPS_Combined": 39017,
+        "state": "OH",
+        "county": "BUTLER",
+        "slope_reports_per_year": 109.285714,
+        "observed_2017_reports": 1275.0,
+        "forecast_2020_reports": 1616.11,
+        "forecast_threshold": "high",
+        "in_sample_mae": 66.0,
+        "in_sample_r2": 0.9047
+      },
+      {
+        "FIPS_Combined": 39151,
+        "state": "OH",
+        "county": "STARK",
+        "slope_reports_per_year": 150.97619,
+        "observed_2017_reports": 1155.0,
+        "forecast_2020_reports": 1529.85,
+        "forecast_threshold": "high",
+        "in_sample_mae": 186.753,
+        "in_sample_r2": 0.7058
+      },
+      {
+        "FIPS_Combined": 39093,
+        "state": "OH",
+        "county": "LORAIN",
+        "slope_reports_per_year": 174.178571,
+        "observed_2017_reports": 1072.0,
+        "forecast_2020_reports": 1525.29,
+        "forecast_threshold": "high",
+        "in_sample_mae": 188.5268,
+        "in_sample_r2": 0.7645
+      },
+      {
+        "FIPS_Combined": 42133,
+        "state": "PA",
+        "county": "YORK",
+        "slope_reports_per_year": 101.940476,
+        "observed_2017_reports": 1168.0,
+        "forecast_2020_reports": 1518.24,
+        "forecast_threshold": "high",
+        "in_sample_mae": 67.9167,
+        "in_sample_r2": 0.8911
+      },
+      {
+        "FIPS_Combined": 51087,
+        "state": "VA",
+        "county": "HENRICO",
+        "slope_reports_per_year": 124.22619,
+        "observed_2017_reports": 1039.0,
+        "forecast_2020_reports": 1391.6,
+        "forecast_threshold": "high",
+        "in_sample_mae": 53.2589,
+        "in_sample_r2": 0.9566
+      },
+      {
+        "FIPS_Combined": 42079,
+        "state": "PA",
+        "county": "LUZERNE",
+        "slope_reports_per_year": 93.892857,
+        "observed_2017_reports": 1025.0,
+        "forecast_2020_reports": 1380.43,
+        "forecast_threshold": "high",
+        "in_sample_mae": 104.5982,
+        "in_sample_r2": 0.6947
+      }
+    ],
+    "high_threshold_reports": 100,
+    "watch_threshold_reports": 25,
+    "median_in_sample_mae": 14.3036
+  },
+  "socioeconomic_model": {
+    "merged_county_year_rows": 3051,
+    "method": "County-year Pearson correlations between official NFLIS opioid rate and official ACS DP02 social characteristics.",
+    "target": "opioid_rate_per_1000_drug_reports",
+    "features": [
+      "total_households",
+      "high_school_or_higher_pct",
+      "bachelor_or_higher_pct",
+      "civilian_veteran_pct",
+      "disability_pct",
+      "foreign_born_pct",
+      "same_house_one_year_pct"
+    ],
+    "top_correlations": [
+      {
+        "feature": "disability_pct",
+        "correlation_with_opioid_rate_per_1000": 0.176142,
+        "usable_county_year_rows": 1748,
+        "interpretation": "positive association"
+      },
+      {
+        "feature": "foreign_born_pct",
+        "correlation_with_opioid_rate_per_1000": -0.15202,
+        "usable_county_year_rows": 1748,
+        "interpretation": "negative association"
+      },
+      {
+        "feature": "bachelor_or_higher_pct",
+        "correlation_with_opioid_rate_per_1000": -0.130754,
+        "usable_county_year_rows": 3051,
+        "interpretation": "negative association"
+      },
+      {
+        "feature": "high_school_or_higher_pct",
+        "correlation_with_opioid_rate_per_1000": -0.122604,
+        "usable_county_year_rows": 3051,
+        "interpretation": "negative association"
+      },
+      {
+        "feature": "civilian_veteran_pct",
+        "correlation_with_opioid_rate_per_1000": -0.106733,
+        "usable_county_year_rows": 1748,
+        "interpretation": "negative association"
+      },
+      {
+        "feature": "total_households",
+        "correlation_with_opioid_rate_per_1000": -0.048063,
+        "usable_county_year_rows": 3051,
+        "interpretation": "negative association"
+      },
+      {
+        "feature": "same_house_one_year_pct",
+        "correlation_with_opioid_rate_per_1000": 0.008547,
+        "usable_county_year_rows": 1748,
+        "interpretation": "positive association"
+      }
+    ],
+    "caution": "Associations are descriptive and cannot prove causality; the ACS attachment is DP02 social characteristics, not a complete economic panel."
+  },
+  "dea_memo": "To the Chief Administrator, DEA/NFLIS Database: this model uses only the provided NFLIS and ACS attachments. The most operational result is a county-year early warning panel: counties crossing 100 projected opioid/heroin reports by 2020 should receive rapid lab-feedback review, treatment capacity checks, and coordinated supply-disruption attention, while counties in the 25-99 range should be monitored before they become high-burden areas. The ACS correlations are useful triage signals but should be treated as descriptive, not causal, because the attachment is a social-characteristics panel and not a full economic or prescribing database."
+}

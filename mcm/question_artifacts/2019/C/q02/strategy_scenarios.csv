@@ -1,0 +1,5 @@
+scenario,affected_high_counties,affected_watch_counties,projected_2020_reports,reduction_vs_baseline_reports,reduction_vs_baseline_pct
+baseline_no_new_intervention,141,128,112463.35,0.0,0.0
+early_warning_lab_feedback,141,128,101750.01,10713.34,9.526
+targeted_treatment_and_prescriber_outreach,141,128,88949.07,23514.28,20.908
+combined_supply_and_treatment_strategy,141,128,78235.73,34227.62,30.434

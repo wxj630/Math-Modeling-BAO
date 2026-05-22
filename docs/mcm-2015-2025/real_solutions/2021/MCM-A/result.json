@@ -1,0 +1,700 @@
+{
+  "problem_id": "2021-A",
+  "title": "Fungi",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "official_requirements": {
+      "growth_rate_and_moisture_tolerance_traits": true,
+      "multi_species_interactions": true,
+      "different_environments": true,
+      "rapid_environmental_fluctuations": true,
+      "biodiversity_role": true,
+      "two_page_textbook_article": true
+    },
+    "parameters": {
+      "simulation_days": 365,
+      "fungal_species": [
+        {
+          "species": "fast opportunist",
+          "growth_rate_mm_day": 7.8,
+          "moisture_tolerance": 0.3,
+          "competition_rank": 0.82,
+          "niche_width": 0.22
+        },
+        {
+          "species": "balanced decomposer",
+          "growth_rate_mm_day": 5.2,
+          "moisture_tolerance": 0.58,
+          "competition_rank": 0.66,
+          "niche_width": 0.46
+        },
+        {
+          "species": "moisture generalist",
+          "growth_rate_mm_day": 3.4,
+          "moisture_tolerance": 0.78,
+          "competition_rank": 0.5,
+          "niche_width": 0.7
+        },
+        {
+          "species": "slow resilient strain",
+          "growth_rate_mm_day": 1.9,
+          "moisture_tolerance": 0.9,
+          "competition_rank": 0.38,
+          "niche_width": 0.82
+        },
+        {
+          "species": "dryland specialist",
+          "growth_rate_mm_day": 4.1,
+          "moisture_tolerance": 0.42,
+          "competition_rank": 0.58,
+          "niche_width": 0.36
+        }
+      ],
+      "environments": [
+        {
+          "environment": "arid",
+          "mean_moisture": 0.2,
+          "variability": 0.34,
+          "temperature_factor": 0.88
+        },
+        {
+          "environment": "semi-arid",
+          "mean_moisture": 0.35,
+          "variability": 0.26,
+          "temperature_factor": 0.96
+        },
+        {
+          "environment": "temperate",
+          "mean_moisture": 0.58,
+          "variability": 0.18,
+          "temperature_factor": 1.0
+        },
+        {
+          "environment": "arboreal",
+          "mean_moisture": 0.64,
+          "variability": 0.22,
+          "temperature_factor": 0.9
+        },
+        {
+          "environment": "tropical rain forest",
+          "mean_moisture": 0.84,
+          "variability": 0.16,
+          "temperature_factor": 1.08
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; trait rows are deterministic scenario inputs based on the two requested traits."
+    }
+  },
+  "decomposition_model": {
+    "method": "trait-based multi-species litter decomposition model using growth rate, moisture tolerance, competition rank, and moisture niche width",
+    "environment_results": [
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.276,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.573,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.724
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.847,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.696,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.153
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.695,
+        "mean_richness_last60_days": 1.083,
+        "mean_shannon_last60_days": 0.647,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.305
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.149,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.712,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.851
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 98.433,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.702,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.567
+      }
+    ],
+    "short_long_term_rule": "fast opportunists dominate early when moisture matches their narrow niche; slower tolerant strains persist through long-run fluctuations."
+  },
+  "environmental_sensitivity": {
+    "method": "repeat the same fungal community under half, baseline, 1.5x, and 2x local moisture variability",
+    "sensitivity_rows": [
+      {
+        "environment": "arid",
+        "variability_multiplier": 0.5,
+        "final_mass_loss_pct": 99.452,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.566,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.548
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.276,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.573,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.724
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.5,
+        "final_mass_loss_pct": 98.708,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.597,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 1.292
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 2.0,
+        "final_mass_loss_pct": 97.813,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.631,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 2.187
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 0.5,
+        "final_mass_loss_pct": 99.914,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.663,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.086
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.847,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.696,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.153
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.5,
+        "final_mass_loss_pct": 99.681,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.762,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.319
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 2.0,
+        "final_mass_loss_pct": 99.271,
+        "mean_richness_last60_days": 1.583,
+        "mean_shannon_last60_days": 0.92,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.729
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 0.5,
+        "final_mass_loss_pct": 99.775,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.63,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.225
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.695,
+        "mean_richness_last60_days": 1.083,
+        "mean_shannon_last60_days": 0.647,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.305
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.5,
+        "final_mass_loss_pct": 99.587,
+        "mean_richness_last60_days": 1.5,
+        "mean_shannon_last60_days": 0.67,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.413
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 2.0,
+        "final_mass_loss_pct": 99.439,
+        "mean_richness_last60_days": 1.917,
+        "mean_shannon_last60_days": 0.699,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.561
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 0.5,
+        "final_mass_loss_pct": 99.258,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.692,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.742
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.149,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.712,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.851
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.5,
+        "final_mass_loss_pct": 98.917,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.75,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 1.083
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 2.0,
+        "final_mass_loss_pct": 98.57,
+        "mean_richness_last60_days": 2.167,
+        "mean_shannon_last60_days": 0.797,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 1.43
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 0.5,
+        "final_mass_loss_pct": 98.453,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.704,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.547
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 98.433,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.702,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.567
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.5,
+        "final_mass_loss_pct": 98.305,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.707,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.695
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 2.0,
+        "final_mass_loss_pct": 98.144,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.712,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.855
+      }
+    ],
+    "atmospheric_trend_interpretation": "Increasing variability shifts advantage from fast narrow-niche fungi to slower broad-tolerance fungi and can reduce total decomposition in arid and semi-arid settings."
+  },
+  "interaction_dynamics": {
+    "persistence_rows": [
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.829,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.0,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.171,
+        "species_count": 1,
+        "species_pool": "fast opportunist"
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.978,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.0,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.022,
+        "species_count": 1,
+        "species_pool": "fast opportunist"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 69.645,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.0,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 30.355,
+        "species_count": 1,
+        "species_pool": "fast opportunist"
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 34.085,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.0,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 65.915,
+        "species_count": 1,
+        "species_pool": "fast opportunist"
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 16.073,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.0,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 83.927,
+        "species_count": 1,
+        "species_pool": "fast opportunist"
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.694,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.118,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.306,
+        "species_count": 2,
+        "species_pool": "fast opportunist; balanced decomposer"
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.953,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.191,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.047,
+        "species_count": 2,
+        "species_pool": "fast opportunist; balanced decomposer"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.891,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.042,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.109,
+        "species_count": 2,
+        "species_pool": "fast opportunist; balanced decomposer"
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.642,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.036,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.358,
+        "species_count": 2,
+        "species_pool": "fast opportunist; balanced decomposer"
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 95.771,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.036,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 4.229,
+        "species_count": 2,
+        "species_pool": "fast opportunist; balanced decomposer"
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.55,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.296,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.45,
+        "species_count": 3,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist"
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.921,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.374,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.079,
+        "species_count": 3,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.824,
+        "mean_richness_last60_days": 1.833,
+        "mean_shannon_last60_days": 0.325,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.176,
+        "species_count": 3,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist"
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.457,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.405,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.543,
+        "species_count": 3,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist"
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 98.92,
+        "mean_richness_last60_days": 1.167,
+        "mean_shannon_last60_days": 0.309,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.08,
+        "species_count": 3,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist"
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.362,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.496,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.638,
+        "species_count": 4,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain"
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.876,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.567,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.124,
+        "species_count": 4,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.735,
+        "mean_richness_last60_days": 1.167,
+        "mean_shannon_last60_days": 0.549,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.265,
+        "species_count": 4,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain"
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.235,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.633,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.765,
+        "species_count": 4,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain"
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 98.564,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.652,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.436,
+        "species_count": 4,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain"
+      },
+      {
+        "environment": "arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.276,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.573,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.724,
+        "species_count": 5,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist"
+      },
+      {
+        "environment": "semi-arid",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.847,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.696,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 0.153,
+        "species_count": 5,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.695,
+        "mean_richness_last60_days": 1.083,
+        "mean_shannon_last60_days": 0.647,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.305,
+        "species_count": 5,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist"
+      },
+      {
+        "environment": "arboreal",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 99.149,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.712,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.851,
+        "species_count": 5,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist"
+      },
+      {
+        "environment": "tropical rain forest",
+        "variability_multiplier": 1.0,
+        "final_mass_loss_pct": 98.433,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.702,
+        "dominant_species_final": "moisture generalist",
+        "remaining_litter_mass": 1.567,
+        "species_count": 5,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist"
+      }
+    ],
+    "relative_advantages": [
+      "fast opportunists give high early decay in stable matching moisture",
+      "moisture generalists and slow resilient strains protect decomposition when moisture fluctuates rapidly",
+      "dryland specialists persist in arid and semi-arid environments but are outcompeted in tropical rain forest conditions"
+    ]
+  },
+  "biodiversity_role": {
+    "diversity_rows": [
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.7,
+        "final_mass_loss_pct": 81.485,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.0,
+        "dominant_species_final": "fast opportunist",
+        "remaining_litter_mass": 18.515,
+        "species_count": 1,
+        "species_pool": "fast opportunist"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.7,
+        "final_mass_loss_pct": 99.822,
+        "mean_richness_last60_days": 1.0,
+        "mean_shannon_last60_days": 0.049,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.178,
+        "species_count": 2,
+        "species_pool": "fast opportunist; balanced decomposer"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.7,
+        "final_mass_loss_pct": 99.719,
+        "mean_richness_last60_days": 2.0,
+        "mean_shannon_last60_days": 0.35,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.281,
+        "species_count": 3,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.7,
+        "final_mass_loss_pct": 99.589,
+        "mean_richness_last60_days": 1.75,
+        "mean_shannon_last60_days": 0.574,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.411,
+        "species_count": 4,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain"
+      },
+      {
+        "environment": "temperate",
+        "variability_multiplier": 1.7,
+        "final_mass_loss_pct": 99.533,
+        "mean_richness_last60_days": 1.583,
+        "mean_shannon_last60_days": 0.68,
+        "dominant_species_final": "balanced decomposer",
+        "remaining_litter_mass": 0.467,
+        "species_count": 5,
+        "species_pool": "fast opportunist; balanced decomposer; moisture generalist; slow resilient strain; dryland specialist"
+      }
+    ],
+    "best_variable_environment_combination": {
+      "environment": "temperate",
+      "variability_multiplier": 1.7,
+      "final_mass_loss_pct": 99.822,
+      "mean_richness_last60_days": 1.0,
+      "mean_shannon_last60_days": 0.049,
+      "dominant_species_final": "balanced decomposer",
+      "remaining_litter_mass": 0.178,
+      "species_count": 2,
+      "species_pool": "fast opportunist; balanced decomposer"
+    },
+    "role_of_biodiversity": "Diversity improves system efficiency by keeping at least one active decomposer close to its moisture niche during rapid environmental changes."
+  },
+  "textbook_article": "Introductory college level biology textbook article: Fungi are not interchangeable decomposers. A fast-growing fungus can remove woody litter quickly when moisture is favorable, but it may lose dominance when moisture and temperature fluctuate. Slow-growing, moisture-tolerant fungi act like ecological insurance: they keep decomposition active through dry or rapidly changing periods. The model shows why biodiversity matters for the carbon cycle. A mixed fungal community contains species with different growth rates and moisture niches, so the community can continue breaking down wood across arid, temperate, arboreal, and tropical settings. Recent trait-based thinking therefore changes the textbook picture from a single decay rate to a dynamic competition among decomposers.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and deterministic trait scenarios; it does not invent random x1/x2/x3 placeholder data.",
+    "model_limits": [
+      "COMAP did not provide species-level measurements beyond the official figure descriptions.",
+      "Trait values are transparent scenario inputs and should be replaced with laboratory isolate data from the cited article for a full paper.",
+      "The model explains directional ecological dynamics, not site-calibrated carbon flux."
+    ]
+  },
+  "artifacts": {
+    "fungal_trait_table": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungal_trait_table.csv",
+    "fungal_environment_trajectories": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungal_environment_trajectories.csv",
+    "decomposition_environment_results": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/decomposition_environment_results.csv",
+    "environmental_variability_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/environmental_variability_sensitivity.csv",
+    "persistence_predictions": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/persistence_predictions.csv",
+    "biodiversity_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/biodiversity_sensitivity.csv",
+    "fungi_decomposition_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungi_decomposition_frontier.png"
+  }
+}

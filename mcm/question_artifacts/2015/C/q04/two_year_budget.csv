@@ -1,0 +1,8 @@
+﻿level,positions,annual_attrition_people,two_year_total_hires,two_year_recruiting_sigma,two_year_training_sigma,two_year_budget_sigma
+senior_manager_executive,10,1.02,3.54,4.248,1.77,6.018
+junior_manager_administrator,20,5.1,13.2,9.24,7.92,17.16
+experienced_supervisor_branch,25,6.38,16.5,9.9,3.3,13.2
+inexperienced_supervisor_division,25,5.95,15.65,9.39,4.695,14.085
+experienced_staff,110,14.96,46.42,13.926,4.642,18.568
+inexperienced_staff,150,22.95,68.4,6.84,20.52,27.36
+administrative_clerk,30,3.82,12.15,3.645,0.607,4.252

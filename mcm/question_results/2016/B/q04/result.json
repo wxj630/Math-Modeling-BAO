@@ -1,0 +1,98 @@
+{
+  "problem_id": "2016-B",
+  "question": "q04",
+  "question_title": "商业建议与两页执行摘要",
+  "statement": "Determine whether an economically attractive opportunity exists. If viable, compare options and recommend how debris should be removed; otherwise provide innovative alternatives for avoiding collisions. Include a two-page executive summary for non-technical decision makers and media analysts.",
+  "methods": "把最佳独立/组合候选、what-if 结果和 staged business model 写成给政策制定者与媒体分析师的非技术执行摘要。对应模型：执行摘要、政策建议、模型限制说明。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "official_problem_parameters": {
+      "tracked_debris_count": 500000,
+      "reference_collision_year": 2009,
+      "reference_collision": "Kosmos-2251 / Iridium-33",
+      "candidate_methods_named_in_statement": [
+        "space-based water jets",
+        "high energy lasers",
+        "large sweeper satellites"
+      ],
+      "report_requirement": "two-page executive summary for high-level policy makers and news media analysts"
+    },
+    "assumptions": {
+      "market_note": "Private-firm revenue is a transparent scenario variable for service contracts with satellite operators and insurers; it is not observed COMAP data.",
+      "risk_score_definition": "risk_score = 0.55 technical risk + 0.45 regulatory risk, lower is better",
+      "benefit_definition": "collision risk reduction proxy combines tracked-debris removal and collision-avoidance service value over a 10-year horizon",
+      "commercial_rule": "commercial opportunity is attractive if NPV is positive and risk-adjusted score exceeds 0.05",
+      "combination_synergy": "hybrid active removal plus avoidance gets a small revenue/risk-reduction synergy but also integration cost"
+    }
+  },
+  "commercial_opportunity": {
+    "recommended_action": "laser_tracking_subscription",
+    "best_candidate": {
+      "combination": "high_energy_lasers+laser_tracking_subscription",
+      "option_count": 2,
+      "capex_musd": 365.7,
+      "annual_opex_musd": 58.24,
+      "annual_revenue_musd": 172.2,
+      "ten_year_debris_removed": 25920,
+      "ten_year_collision_risk_reduction_proxy": 0.2156,
+      "risk_score": 0.2935,
+      "npv_musd": 398.981,
+      "risk_adjusted_score": 0.644386,
+      "commercially_attractive": true
+    },
+    "interpretation": "A full debris-removal business is capital intensive; the most attractive private opportunity is a staged service model that sells collision avoidance and selectively adds laser deflection/removal when contracts support it."
+  },
+  "executive_summary": "Executive summary for policy makers and media analysts:\n\nThe official problem states that more than 500,000 pieces of debris are tracked and that the 2009 Kosmos-2251 / Iridium-33 collision made the risk visible. A private company should not begin with an expensive sweeper-satellite-only business. In this screening model, the best near-term commercial option is high_energy_lasers+laser_tracking_subscription, with NPV 398.981 million USD and risk-adjusted score 0.644386. The recommended strategy is staged: sell tracking/avoidance subscriptions first, then add laser deflection for high-value debris when regulation and customer contracts are in place. If revenue weakens, collision-avoidance services remain the least risky fallback; if tracked debris grows faster, hybrid laser-plus-avoidance becomes more attractive.",
+  "what_if_scenarios": {
+    "method": "deterministic what-if stress tests over debris load and service-market revenue",
+    "rows": [
+      {
+        "scenario": "baseline",
+        "debris_multiplier": 1.0,
+        "revenue_multiplier": 1.0,
+        "best_option": "laser_tracking_subscription",
+        "best_npv_musd": 277.344,
+        "best_risk_adjusted_score": 0.541494,
+        "commercially_attractive": true
+      },
+      {
+        "scenario": "tracked_debris_doubles",
+        "debris_multiplier": 2.0,
+        "revenue_multiplier": 1.15,
+        "best_option": "laser_tracking_subscription",
+        "best_npv_musd": 349.813,
+        "best_risk_adjusted_score": 0.633163,
+        "commercially_attractive": true
+      },
+      {
+        "scenario": "insurance_market_weak",
+        "debris_multiplier": 1.0,
+        "revenue_multiplier": 0.72,
+        "best_option": "laser_tracking_subscription",
+        "best_npv_musd": 142.069,
+        "best_risk_adjusted_score": 0.370379,
+        "commercially_attractive": true
+      },
+      {
+        "scenario": "regulators_support_lasers",
+        "debris_multiplier": 1.1,
+        "revenue_multiplier": 1.05,
+        "best_option": "laser_tracking_subscription",
+        "best_npv_musd": 301.501,
+        "best_risk_adjusted_score": 0.572051,
+        "commercially_attractive": true
+      },
+      {
+        "scenario": "launch_cost_drop_active_removal",
+        "debris_multiplier": 1.35,
+        "revenue_multiplier": 1.0,
+        "best_option": "laser_tracking_subscription",
+        "best_npv_musd": 277.344,
+        "best_risk_adjusted_score": 0.541494,
+        "commercially_attractive": true
+      }
+    ]
+  }
+}

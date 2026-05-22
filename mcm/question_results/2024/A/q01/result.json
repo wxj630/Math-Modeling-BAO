@@ -1,0 +1,233 @@
+{
+  "problem_id": "2024-A",
+  "question": "q01",
+  "question_title": "七鳃鳗可变性别比对更大生态系统的影响",
+  "statement": "What is the impact on the larger ecological system when the population of lampreys can alter its sex ratio?",
+  "methods": "官方 PDF 题面参数 0.78/0.56 雄性比例端点 + 资源驱动性别比响应曲线 + 七鳃鳗-宿主鱼-寄生者-食物网差分方程。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "official_requirements": {
+      "resource_dependent_lamprey_sex_ratio": true,
+      "ecosystem_interactions": true,
+      "advantages_and_disadvantages": true,
+      "stability_and_other_species": true
+    },
+    "parameters": {
+      "low_food_male_ratio": 0.78,
+      "high_food_male_ratio": 0.56,
+      "months_simulated": 240,
+      "source_statement": "low food male percentage can reach approximately 78%; high food male percentage observed approximately 56%"
+    }
+  },
+  "sex_ratio_model": {
+    "model": "linear adaptive response between the two official male-ratio endpoints, embedded in monthly ecosystem dynamics",
+    "response_curve": [
+      {
+        "resource_index": 0.0,
+        "male_ratio": 0.78,
+        "female_ratio": 0.22,
+        "mating_success_index": 0.6864
+      },
+      {
+        "resource_index": 0.05,
+        "male_ratio": 0.769,
+        "female_ratio": 0.231,
+        "mating_success_index": 0.7106
+      },
+      {
+        "resource_index": 0.1,
+        "male_ratio": 0.758,
+        "female_ratio": 0.242,
+        "mating_success_index": 0.7337
+      },
+      {
+        "resource_index": 0.15,
+        "male_ratio": 0.747,
+        "female_ratio": 0.253,
+        "mating_success_index": 0.756
+      },
+      {
+        "resource_index": 0.2,
+        "male_ratio": 0.736,
+        "female_ratio": 0.264,
+        "mating_success_index": 0.7772
+      },
+      {
+        "resource_index": 0.25,
+        "male_ratio": 0.725,
+        "female_ratio": 0.275,
+        "mating_success_index": 0.7975
+      },
+      {
+        "resource_index": 0.3,
+        "male_ratio": 0.714,
+        "female_ratio": 0.286,
+        "mating_success_index": 0.8168
+      },
+      {
+        "resource_index": 0.35,
+        "male_ratio": 0.703,
+        "female_ratio": 0.297,
+        "mating_success_index": 0.8352
+      },
+      {
+        "resource_index": 0.4,
+        "male_ratio": 0.692,
+        "female_ratio": 0.308,
+        "mating_success_index": 0.8525
+      },
+      {
+        "resource_index": 0.45,
+        "male_ratio": 0.681,
+        "female_ratio": 0.319,
+        "mating_success_index": 0.869
+      },
+      {
+        "resource_index": 0.5,
+        "male_ratio": 0.67,
+        "female_ratio": 0.33,
+        "mating_success_index": 0.8844
+      },
+      {
+        "resource_index": 0.55,
+        "male_ratio": 0.659,
+        "female_ratio": 0.341,
+        "mating_success_index": 0.8989
+      },
+      {
+        "resource_index": 0.6,
+        "male_ratio": 0.648,
+        "female_ratio": 0.352,
+        "mating_success_index": 0.9124
+      },
+      {
+        "resource_index": 0.65,
+        "male_ratio": 0.637,
+        "female_ratio": 0.363,
+        "mating_success_index": 0.9249
+      },
+      {
+        "resource_index": 0.7,
+        "male_ratio": 0.626,
+        "female_ratio": 0.374,
+        "mating_success_index": 0.9365
+      },
+      {
+        "resource_index": 0.75,
+        "male_ratio": 0.615,
+        "female_ratio": 0.385,
+        "mating_success_index": 0.9471
+      },
+      {
+        "resource_index": 0.8,
+        "male_ratio": 0.604,
+        "female_ratio": 0.396,
+        "mating_success_index": 0.9567
+      },
+      {
+        "resource_index": 0.85,
+        "male_ratio": 0.593,
+        "female_ratio": 0.407,
+        "mating_success_index": 0.9654
+      },
+      {
+        "resource_index": 0.9,
+        "male_ratio": 0.582,
+        "female_ratio": 0.418,
+        "mating_success_index": 0.9731
+      },
+      {
+        "resource_index": 0.95,
+        "male_ratio": 0.571,
+        "female_ratio": 0.429,
+        "mating_success_index": 0.9798
+      },
+      {
+        "resource_index": 1.0,
+        "male_ratio": 0.56,
+        "female_ratio": 0.44,
+        "mating_success_index": 0.9856
+      }
+    ],
+    "formula": "male_ratio(resource)=0.78-(0.78-0.56)*resource_index"
+  },
+  "ecosystem_impact": {
+    "model": "lamprey-host-parasite-food-web difference equations with resource-dependent sex ratio and lamprey reduction pressure",
+    "scenario_comparison": [
+      {
+        "scenario": "fixed_equal_ratio",
+        "mean_resource_index": 0.5,
+        "mean_male_ratio": 0.5,
+        "mean_lamprey": 1.3586,
+        "mean_host_fish": 0.05,
+        "mean_parasites": 1.2,
+        "mean_food_web_benefit": 1.2,
+        "mean_mating_success": 1.0,
+        "state_volatility": 0.0034,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.258
+      },
+      {
+        "scenario": "high_food_adaptive",
+        "mean_resource_index": 0.9,
+        "mean_male_ratio": 0.582,
+        "mean_lamprey": 1.4,
+        "mean_host_fish": 0.05,
+        "mean_parasites": 1.2,
+        "mean_food_web_benefit": 1.2,
+        "mean_mating_success": 0.9721,
+        "state_volatility": 0.0,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2552
+      },
+      {
+        "scenario": "lamprey_reduced_control",
+        "mean_resource_index": 0.5,
+        "mean_male_ratio": 0.67,
+        "mean_lamprey": 1.1157,
+        "mean_host_fish": 0.05,
+        "mean_parasites": 1.2,
+        "mean_food_web_benefit": 1.2,
+        "mean_mating_success": 0.8834,
+        "state_volatility": 0.0029,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.274
+      },
+      {
+        "scenario": "low_food_adaptive",
+        "mean_resource_index": 0.12,
+        "mean_male_ratio": 0.7536,
+        "mean_lamprey": 1.0066,
+        "mean_host_fish": 0.05,
+        "mean_parasites": 1.2,
+        "mean_food_web_benefit": 1.2,
+        "mean_mating_success": 0.7418,
+        "state_volatility": 0.0028,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2783
+      },
+      {
+        "scenario": "medium_food_adaptive",
+        "mean_resource_index": 0.5,
+        "mean_male_ratio": 0.67,
+        "mean_lamprey": 1.3729,
+        "mean_host_fish": 0.05,
+        "mean_parasites": 1.2,
+        "mean_food_web_benefit": 1.2,
+        "mean_mating_success": 0.8834,
+        "state_volatility": 0.0033,
+        "host_damage_index": 0.77,
+        "ecosystem_stability_score": 0.2568
+      }
+    ],
+    "lamprey_reduction_effect": {
+      "control_scenario": "lamprey_reduced_control",
+      "mean_lamprey": 1.1157,
+      "mean_host_fish": 0.05,
+      "ecosystem_stability_score": 0.274,
+      "interpretation": "reducing lampreys relieves host fish but also reduces lamprey food-web value and parasite habitat"
+    }
+  }
+}

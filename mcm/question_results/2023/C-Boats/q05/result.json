@@ -1,0 +1,675 @@
+{
+  "problem_id": "2023-C-Boats",
+  "question": "q05",
+  "question_title": "给香港帆船经纪人的报告",
+  "statement": "Prepare a one- to two-page report for the Hong Kong (SAR) sailboat broker with a few well-chosen graphics.",
+  "methods": "把官方价格模型精度、区域效应、香港情景、双体/单体差异和经纪报价建议压缩成可执行摘要。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
+    "records": 3491,
+    "rows": {
+      "monohull": 2346,
+      "catamaran": 1145
+    },
+    "sheets": [
+      "Monohulled Sailboats ",
+      "Catamarans"
+    ],
+    "regions": [
+      "Caribbean",
+      "Europe",
+      "USA"
+    ],
+    "columns": [
+      "Make",
+      "Variant",
+      "Length (ft)",
+      "Geographic Region",
+      "Country/Region/State",
+      "Listing Price (USD)",
+      "Year"
+    ]
+  },
+  "broker_report": "For the Hong Kong broker, the COMAP workbook supports a reliable baseline for Europe, USA, and Caribbean listings, with a holdout MAPE of 0.161752 on official rows. Catamarans have a median price of $431,654, compared with $193,182 for monohulls, a median premium of 123.444%. Region matters after controlling for length, age, and hull type, but the effect is not identical for monohulls and catamarans. The official workbook contains no Hong Kong listings, so the Hong Kong analysis uses a separately documented current-listing scenario: catamaran: median HK effect 61.486% from 4 listings; monohull: median HK effect -2.396% from 3 listings. Treat these Hong Kong effects as broker calibration signals, not as COMAP official data. For pricing practice, quote an interval around the model price, then adjust for local inventory scarcity, survey condition, and equipment quality.",
+  "price_model": {
+    "model": "RandomForestRegressor on official COMAP rows with length, age, hull type, make, variant, region, country/state, and variant sample size",
+    "target": "log(Listing Price USD)",
+    "features": [
+      "length_ft",
+      "age_years",
+      "variant_observation_count",
+      "hull_type",
+      "make",
+      "variant",
+      "geographic_region",
+      "country_region_state"
+    ],
+    "train_rows": 2792,
+    "holdout_rows": 699,
+    "holdout_mae_usd": 42771.77,
+    "holdout_rmse_usd": 71407.35,
+    "holdout_mape": 0.161752,
+    "holdout_median_ape": 0.106591,
+    "precision_by_variant": [
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "450",
+        "holdout_count": 30,
+        "observed_median_price": 472657.5,
+        "predicted_median_price": 457933.4,
+        "median_abs_pct_error": 0.076469
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "42",
+        "holdout_count": 17,
+        "observed_median_price": 480291.0,
+        "predicted_median_price": 518398.16,
+        "median_abs_pct_error": 0.068159
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "440",
+        "holdout_count": 16,
+        "observed_median_price": 327712.5,
+        "predicted_median_price": 340632.05,
+        "median_abs_pct_error": 0.067211
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "400",
+        "holdout_count": 15,
+        "observed_median_price": 333781.0,
+        "predicted_median_price": 329393.69,
+        "median_abs_pct_error": 0.032397
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Bavaria",
+        "variant": "50 Cruiser",
+        "holdout_count": 11,
+        "observed_median_price": 133617.0,
+        "predicted_median_price": 135071.32,
+        "median_abs_pct_error": 0.12578
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Oceanis 45",
+        "holdout_count": 11,
+        "observed_median_price": 241786.0,
+        "predicted_median_price": 235775.08,
+        "median_abs_pct_error": 0.13826
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "500",
+        "holdout_count": 10,
+        "observed_median_price": 510198.5,
+        "predicted_median_price": 514944.3,
+        "median_abs_pct_error": 0.024505
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "450F",
+        "holdout_count": 10,
+        "observed_median_price": 558043.0,
+        "predicted_median_price": 529563.07,
+        "median_abs_pct_error": 0.065192
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Bavaria",
+        "variant": "Cruiser 46",
+        "holdout_count": 10,
+        "observed_median_price": 148803.0,
+        "predicted_median_price": 147819.21,
+        "median_abs_pct_error": 0.107113
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Oceanis 40",
+        "holdout_count": 10,
+        "observed_median_price": 130942.0,
+        "predicted_median_price": 109947.68,
+        "median_abs_pct_error": 0.12412
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Bavaria",
+        "variant": "40 Cruiser",
+        "holdout_count": 9,
+        "observed_median_price": 97162.0,
+        "predicted_median_price": 98908.06,
+        "median_abs_pct_error": 0.040773
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Oceanis 50",
+        "holdout_count": 9,
+        "observed_median_price": 199900.0,
+        "predicted_median_price": 204771.44,
+        "median_abs_pct_error": 0.083002
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Bavaria",
+        "variant": "56 Cruiser",
+        "holdout_count": 9,
+        "observed_median_price": 278165.0,
+        "predicted_median_price": 288238.19,
+        "median_abs_pct_error": 0.08961
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Cyclades 50.5",
+        "holdout_count": 9,
+        "observed_median_price": 144306.0,
+        "predicted_median_price": 150881.85,
+        "median_abs_pct_error": 0.094943
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Cyclades 39.3",
+        "holdout_count": 8,
+        "observed_median_price": 81394.5,
+        "predicted_median_price": 91254.32,
+        "median_abs_pct_error": 0.084499
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "39",
+        "holdout_count": 8,
+        "observed_median_price": 303715.0,
+        "predicted_median_price": 302522.89,
+        "median_abs_pct_error": 0.096672
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Oceanis 41",
+        "holdout_count": 8,
+        "observed_median_price": 186931.5,
+        "predicted_median_price": 183572.5,
+        "median_abs_pct_error": 0.097573
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "53",
+        "holdout_count": 8,
+        "observed_median_price": 206502.0,
+        "predicted_median_price": 220098.88,
+        "median_abs_pct_error": 0.127826
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "variant": "420",
+        "holdout_count": 7,
+        "observed_median_price": 337640.0,
+        "predicted_median_price": 324536.05,
+        "median_abs_pct_error": 0.041105
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Leopard",
+        "variant": "44",
+        "holdout_count": 7,
+        "observed_median_price": 339000.0,
+        "predicted_median_price": 349459.0,
+        "median_abs_pct_error": 0.042963
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 54 DS",
+        "holdout_count": 7,
+        "observed_median_price": 339500.0,
+        "predicted_median_price": 279207.43,
+        "median_abs_pct_error": 0.07963
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Bavaria",
+        "variant": "51 Cruiser",
+        "holdout_count": 7,
+        "observed_median_price": 206498.0,
+        "predicted_median_price": 215791.6,
+        "median_abs_pct_error": 0.14609
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 50 DS",
+        "holdout_count": 7,
+        "observed_median_price": 249013.0,
+        "predicted_median_price": 208121.61,
+        "median_abs_pct_error": 0.196684
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 389",
+        "holdout_count": 6,
+        "observed_median_price": 173596.0,
+        "predicted_median_price": 172573.38,
+        "median_abs_pct_error": 0.070728
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Bali",
+        "variant": "4.1",
+        "holdout_count": 6,
+        "observed_median_price": 484203.0,
+        "predicted_median_price": 472347.46,
+        "median_abs_pct_error": 0.08122
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 42i",
+        "holdout_count": 6,
+        "observed_median_price": 130555.5,
+        "predicted_median_price": 143754.28,
+        "median_abs_pct_error": 0.099477
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 439",
+        "holdout_count": 6,
+        "observed_median_price": 151521.5,
+        "predicted_median_price": 156404.64,
+        "median_abs_pct_error": 0.100826
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 39i",
+        "holdout_count": 6,
+        "observed_median_price": 102047.5,
+        "predicted_median_price": 104898.0,
+        "median_abs_pct_error": 0.134283
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Oceanis 43",
+        "holdout_count": 6,
+        "observed_median_price": 113148.0,
+        "predicted_median_price": 128596.01,
+        "median_abs_pct_error": 0.247016
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "variant": "Oceanis 423",
+        "holdout_count": 5,
+        "observed_median_price": 147900.0,
+        "predicted_median_price": 145889.3,
+        "median_abs_pct_error": 0.033948
+      }
+    ]
+  },
+  "region_effects": {
+    "model": "OLS on log price with controls for length, age, hull type, region, and hull-by-region interactions; Europe is the baseline region",
+    "controls": [
+      "length_ft",
+      "age_years",
+      "hull_type",
+      "region",
+      "hull_type:region"
+    ],
+    "baseline_region": "Europe",
+    "effects": [
+      {
+        "region": "Caribbean",
+        "hull_type": "monohull",
+        "log_effect_vs_europe": -0.099253,
+        "price_effect_pct": -9.449,
+        "p_value": 8e-05,
+        "statistically_significant_5pct": true
+      },
+      {
+        "region": "Caribbean",
+        "hull_type": "catamaran",
+        "log_effect_vs_europe": -0.094285,
+        "price_effect_pct": -8.998,
+        "p_value": 0.881549,
+        "statistically_significant_5pct": false
+      },
+      {
+        "region": "USA",
+        "hull_type": "monohull",
+        "log_effect_vs_europe": 0.289064,
+        "price_effect_pct": 33.518,
+        "p_value": 0.0,
+        "statistically_significant_5pct": true
+      },
+      {
+        "region": "USA",
+        "hull_type": "catamaran",
+        "log_effect_vs_europe": 0.123468,
+        "price_effect_pct": 13.141,
+        "p_value": 1e-05,
+        "statistically_significant_5pct": true
+      }
+    ],
+    "largest_practical_effects": [
+      {
+        "region": "USA",
+        "hull_type": "monohull",
+        "log_effect_vs_europe": 0.289064,
+        "price_effect_pct": 33.518,
+        "p_value": 0.0,
+        "statistically_significant_5pct": true
+      },
+      {
+        "region": "USA",
+        "hull_type": "catamaran",
+        "log_effect_vs_europe": 0.123468,
+        "price_effect_pct": 13.141,
+        "p_value": 1e-05,
+        "statistically_significant_5pct": true
+      },
+      {
+        "region": "Caribbean",
+        "hull_type": "monohull",
+        "log_effect_vs_europe": -0.099253,
+        "price_effect_pct": -9.449,
+        "p_value": 8e-05,
+        "statistically_significant_5pct": true
+      },
+      {
+        "region": "Caribbean",
+        "hull_type": "catamaran",
+        "log_effect_vs_europe": -0.094285,
+        "price_effect_pct": -8.998,
+        "p_value": 0.881549,
+        "statistically_significant_5pct": false
+      }
+    ],
+    "consistency_across_hulls": [
+      {
+        "region": "Caribbean",
+        "catamaran_minus_monohull_log_effect": 0.004968,
+        "interaction_p_value": 0.881549,
+        "consistent_at_5pct": true
+      },
+      {
+        "region": "USA",
+        "catamaran_minus_monohull_log_effect": -0.165597,
+        "interaction_p_value": 1e-05,
+        "consistent_at_5pct": false
+      }
+    ]
+  },
+  "hong_kong_market": {
+    "official_hk_rows_in_workbook": 0,
+    "interpretation": "The COMAP workbook has no Hong Kong rows; the Hong Kong effect is therefore a transparent supplemental-market scenario, not an official-COMAP estimate.",
+    "supplemental_source_count": 2,
+    "supplemental_sources": [
+      "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran",
+      "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+    ],
+    "comparables": [
+      {
+        "make": "Beneteau",
+        "variant": "Sense 43",
+        "hull_type": "monohull",
+        "length_ft": 43.0,
+        "year": 2013,
+        "listing_price_usd": 230000.0,
+        "known_region_model_price_median_usd": 221860.82,
+        "hk_effect_pct_vs_known_region_model": 3.669,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+      },
+      {
+        "make": "Beneteau",
+        "variant": "Sense 51",
+        "hull_type": "monohull",
+        "length_ft": 51.0,
+        "year": 2017,
+        "listing_price_usd": 445000.0,
+        "known_region_model_price_median_usd": 596342.91,
+        "hk_effect_pct_vs_known_region_model": -25.379,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+      },
+      {
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 389",
+        "hull_type": "monohull",
+        "length_ft": 38.9,
+        "year": 2019,
+        "listing_price_usd": 190000.0,
+        "known_region_model_price_median_usd": 194663.86,
+        "hk_effect_pct_vs_known_region_model": -2.396,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+      },
+      {
+        "make": "Lagoon",
+        "variant": "46",
+        "hull_type": "catamaran",
+        "length_ft": 46.0,
+        "year": 2020,
+        "listing_price_usd": 973092.0,
+        "known_region_model_price_median_usd": 760920.12,
+        "hk_effect_pct_vs_known_region_model": 27.884,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      },
+      {
+        "make": "Lagoon",
+        "variant": "42",
+        "hull_type": "catamaran",
+        "length_ft": 42.0,
+        "year": 2022,
+        "listing_price_usd": 904919.0,
+        "known_region_model_price_median_usd": 485906.43,
+        "hk_effect_pct_vs_known_region_model": 86.233,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      },
+      {
+        "make": "Lagoon",
+        "variant": "450",
+        "hull_type": "catamaran",
+        "length_ft": 45.0,
+        "year": 2014,
+        "listing_price_usd": 745426.0,
+        "known_region_model_price_median_usd": 475635.15,
+        "hk_effect_pct_vs_known_region_model": 56.722,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      },
+      {
+        "make": "Fountaine Pajot",
+        "variant": "Saba 50",
+        "hull_type": "catamaran",
+        "length_ft": 50.0,
+        "year": 2016,
+        "listing_price_usd": 1242844.0,
+        "known_region_model_price_median_usd": 747573.55,
+        "hk_effect_pct_vs_known_region_model": 66.25,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      }
+    ],
+    "effect_by_hull_type": [
+      {
+        "hull_type": "catamaran",
+        "sample_count": 4,
+        "median_hk_effect_pct": 61.486,
+        "mean_hk_effect_pct": 59.272,
+        "median_listing_price_usd": 939005.5
+      },
+      {
+        "hull_type": "monohull",
+        "sample_count": 3,
+        "median_hk_effect_pct": -2.396,
+        "mean_hk_effect_pct": -8.035,
+        "median_listing_price_usd": 230000.0
+      }
+    ]
+  },
+  "interesting_inferences": {
+    "catamaran_median_price_usd": 431654.0,
+    "monohull_median_price_usd": 193182.5,
+    "catamaran_median_premium_pct": 123.444,
+    "price_length_correlation": 0.369121,
+    "price_age_correlation": -0.473493,
+    "region_hull_summary": [
+      {
+        "hull_type": "catamaran",
+        "region": "Caribbean",
+        "count": 302,
+        "median_price": 380000.0,
+        "median_length": 44.6
+      },
+      {
+        "hull_type": "catamaran",
+        "region": "Europe",
+        "count": 735,
+        "median_price": 449087.0,
+        "median_length": 43.6
+      },
+      {
+        "hull_type": "catamaran",
+        "region": "USA",
+        "count": 108,
+        "median_price": 449000.0,
+        "median_length": 43.0
+      },
+      {
+        "hull_type": "monohull",
+        "region": "Caribbean",
+        "count": 178,
+        "median_price": 176131.0,
+        "median_length": 45.0
+      },
+      {
+        "hull_type": "monohull",
+        "region": "Europe",
+        "count": 1783,
+        "median_price": 193137.0,
+        "median_length": 45.0
+      },
+      {
+        "hull_type": "monohull",
+        "region": "USA",
+        "count": 385,
+        "median_price": 210000.0,
+        "median_length": 43.0
+      }
+    ],
+    "high_median_price_makes": [
+      {
+        "hull_type": "catamaran",
+        "make": "Bali",
+        "count": 54,
+        "median_price": 455973.0
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Lagoon",
+        "count": 682,
+        "median_price": 445456.5
+      },
+      {
+        "hull_type": "monohull",
+        "make": "X-Yachts",
+        "count": 42,
+        "median_price": 403894.0
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Fountaine Pajot",
+        "count": 160,
+        "median_price": 398964.5
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Nautitech",
+        "count": 80,
+        "median_price": 381105.0
+      },
+      {
+        "hull_type": "catamaran",
+        "make": "Leopard",
+        "count": 89,
+        "median_price": 350000.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Grand Soleil",
+        "count": 65,
+        "median_price": 259945.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Dehler",
+        "count": 28,
+        "median_price": 205284.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Hanse",
+        "count": 179,
+        "median_price": 204500.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Catalina",
+        "count": 37,
+        "median_price": 204069.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Dufour",
+        "count": 164,
+        "median_price": 194376.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Jeanneau",
+        "count": 514,
+        "median_price": 194351.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Wauquiez",
+        "count": 20,
+        "median_price": 190707.5
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Beneteau",
+        "count": 516,
+        "median_price": 180191.0
+      },
+      {
+        "hull_type": "monohull",
+        "make": "Elan",
+        "count": 89,
+        "median_price": 167605.0
+      }
+    ]
+  }
+}

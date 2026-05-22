@@ -1,0 +1,234 @@
+{
+  "problem_id": "2022-B",
+  "question": "q08",
+  "question_title": "需求变化、可再生能源和节水节电影响",
+  "statement": "What happens when demand changes over time, renewable technologies increase, and additional water and electricity conservation measures are implemented?",
+  "methods": "在同一分配规则下重跑人口/产业增长、收缩、可再生能源占比提高、节水节电和组合情景。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "official_requirements": {
+      "series_powell_mead_operations": true,
+      "five_state_allocation": true,
+      "height_volume_relationship": true,
+      "rerun_frequency": true,
+      "mexico_rights_and_gulf_flow": true,
+      "fixed_supply_demand_operations": true,
+      "competing_water_and_electricity_criteria": true,
+      "insufficient_water_response": true,
+      "demand_renewable_conservation_changes": true,
+      "do_not_use_existing_political_agreements": true,
+      "drought_and_thirst_article": true
+    },
+    "parameters": {
+      "reservoirs": {
+        "lake_powell": {
+          "dam": "Glen Canyon Dam",
+          "stated_height_ft": 3525.0,
+          "min_power_height_ft": 3490.0,
+          "full_pool_height_ft": 3700.0,
+          "active_capacity_maf": 24.3,
+          "usable_fraction_for_planning": 0.22,
+          "annual_inflow_maf": 5.25,
+          "evaporation_maf": 0.32
+        },
+        "lake_mead": {
+          "dam": "Hoover Dam",
+          "stated_height_ft": 1065.0,
+          "min_power_height_ft": 950.0,
+          "full_pool_height_ft": 1220.0,
+          "active_capacity_maf": 26.1,
+          "usable_fraction_for_planning": 0.18,
+          "annual_inflow_maf": 0.62,
+          "evaporation_maf": 0.45
+        }
+      },
+      "negotiating_states": [
+        {
+          "state": "AZ",
+          "agriculture_maf": 1.25,
+          "industry_maf": 0.28,
+          "residential_maf": 0.68,
+          "electricity_need_gwh": 2350,
+          "equity_weight": 0.94
+        },
+        {
+          "state": "CA",
+          "agriculture_maf": 2.2,
+          "industry_maf": 0.42,
+          "residential_maf": 1.05,
+          "electricity_need_gwh": 2850,
+          "equity_weight": 0.88
+        },
+        {
+          "state": "WY",
+          "agriculture_maf": 0.42,
+          "industry_maf": 0.15,
+          "residential_maf": 0.12,
+          "electricity_need_gwh": 430,
+          "equity_weight": 1.08
+        },
+        {
+          "state": "NM",
+          "agriculture_maf": 0.54,
+          "industry_maf": 0.13,
+          "residential_maf": 0.24,
+          "electricity_need_gwh": 650,
+          "equity_weight": 1.04
+        },
+        {
+          "state": "CO",
+          "agriculture_maf": 0.76,
+          "industry_maf": 0.24,
+          "residential_maf": 0.42,
+          "electricity_need_gwh": 1080,
+          "equity_weight": 1.02
+        }
+      ],
+      "sector_priority": {
+        "residential": {
+          "priority": 1.0,
+          "minimum_service": 0.96
+        },
+        "industry": {
+          "priority": 0.7,
+          "minimum_service": 0.72
+        },
+        "agriculture": {
+          "priority": 0.52,
+          "minimum_service": 0.58
+        }
+      },
+      "mexico_min_flow_maf": 0.9,
+      "gulf_ecological_flow_maf": 0.22,
+      "source_note": "Official PDF statement parameters only; heights, demands, and priority weights are transparent deterministic scenario assumptions for an auditable workflow."
+    }
+  },
+  "scenario_analysis": {
+    "method": "rerun the same allocation rule under demand growth/shrinkage, renewable substitution, and conservation multipliers",
+    "scenario_rows": [
+      {
+        "scenario": "baseline fixed demand",
+        "growth_multiplier": 1.0,
+        "renewable_share": 0.22,
+        "conservation_multiplier": 1.0,
+        "state_deficit_maf": 3.592,
+        "lowest_service_ratio": 0.0,
+        "effective_electric_need_gwh": 6841.86,
+        "hydropower_service_ratio": 0.1449,
+        "recommendation": "activate shortage protocol"
+      },
+      {
+        "scenario": "population and industrial growth",
+        "growth_multiplier": 1.12,
+        "renewable_share": 0.22,
+        "conservation_multiplier": 1.0,
+        "state_deficit_maf": 4.66,
+        "lowest_service_ratio": 0.0,
+        "effective_electric_need_gwh": 7662.88,
+        "hydropower_service_ratio": 0.1294,
+        "recommendation": "activate shortage protocol"
+      },
+      {
+        "scenario": "agricultural and population shrinkage",
+        "growth_multiplier": 0.9,
+        "renewable_share": 0.22,
+        "conservation_multiplier": 1.0,
+        "state_deficit_maf": 2.702,
+        "lowest_service_ratio": 0.0684,
+        "effective_electric_need_gwh": 6157.67,
+        "hydropower_service_ratio": 0.1611,
+        "recommendation": "activate shortage protocol"
+      },
+      {
+        "scenario": "renewable generation share increases",
+        "growth_multiplier": 1.0,
+        "renewable_share": 0.44,
+        "conservation_multiplier": 1.0,
+        "state_deficit_maf": 3.592,
+        "lowest_service_ratio": 0.0,
+        "effective_electric_need_gwh": 6323.71,
+        "hydropower_service_ratio": 0.1568,
+        "recommendation": "activate shortage protocol"
+      },
+      {
+        "scenario": "water and electricity conservation",
+        "growth_multiplier": 1.0,
+        "renewable_share": 0.3,
+        "conservation_multiplier": 0.86,
+        "state_deficit_maf": 2.346,
+        "lowest_service_ratio": 0.4293,
+        "effective_electric_need_gwh": 6653.44,
+        "hydropower_service_ratio": 0.1491,
+        "recommendation": "activate shortage protocol"
+      },
+      {
+        "scenario": "growth plus conservation response",
+        "growth_multiplier": 1.08,
+        "renewable_share": 0.38,
+        "conservation_multiplier": 0.88,
+        "state_deficit_maf": 3.151,
+        "lowest_service_ratio": 0.0,
+        "effective_electric_need_gwh": 6982.23,
+        "hydropower_service_ratio": 0.142,
+        "recommendation": "activate shortage protocol"
+      }
+    ]
+  },
+  "shortage_policy": {
+    "priority_rules": [
+      "Keep residential allocations above the minimum-service threshold whenever possible.",
+      "Do not cut Mexico minimum flow before agricultural and industrial reductions.",
+      "Use hydropower deficits to trigger renewable substitution and demand response rather than extra reservoir drawdown.",
+      "If minimum service cannot be met, rerun monthly and publish state-sector deficit tables."
+    ],
+    "shortage_rows": [
+      {
+        "supply_multiplier": 1.0,
+        "supply_maf": 6.428,
+        "state_deficit_maf": 3.592,
+        "minimum_service_met": false,
+        "estimated_years_until_demands_not_met_without_added_water": 0.37,
+        "additional_water_needed_maf": 3.592,
+        "lowest_service_ratio": 0.0
+      },
+      {
+        "supply_multiplier": 0.85,
+        "supply_maf": 5.464,
+        "state_deficit_maf": 4.556,
+        "minimum_service_met": false,
+        "estimated_years_until_demands_not_met_without_added_water": 0.29,
+        "additional_water_needed_maf": 4.556,
+        "lowest_service_ratio": 0.0
+      },
+      {
+        "supply_multiplier": 0.7,
+        "supply_maf": 4.5,
+        "state_deficit_maf": 5.52,
+        "minimum_service_met": false,
+        "estimated_years_until_demands_not_met_without_added_water": 0.24,
+        "additional_water_needed_maf": 5.52,
+        "lowest_service_ratio": 0.0
+      },
+      {
+        "supply_multiplier": 0.55,
+        "supply_maf": 3.535,
+        "state_deficit_maf": 6.485,
+        "minimum_service_met": false,
+        "estimated_years_until_demands_not_met_without_added_water": 0.2,
+        "additional_water_needed_maf": 6.485,
+        "lowest_service_ratio": 0.0
+      },
+      {
+        "supply_multiplier": 0.42,
+        "supply_maf": 2.7,
+        "state_deficit_maf": 7.32,
+        "minimum_service_met": false,
+        "estimated_years_until_demands_not_met_without_added_water": 0.18,
+        "additional_water_needed_maf": 7.32,
+        "lowest_service_ratio": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+city,current_population,population_2050_plus_50pct,service_capacity_index,supports_growth,growth_support_mechanism
+Boulder,108250,162375,0.8684,True,"infill housing, multimodal transport, open-space protection, and phased public investment"
+Freiburg im Breisgau,229650,344475,0.876,True,"infill housing, multimodal transport, open-space protection, and phased public investment"

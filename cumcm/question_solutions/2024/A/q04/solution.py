@@ -1,0 +1,104 @@
+# -*- coding: utf-8 -*-
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(ROOT / "lib"))
+from question_models import solve_question, write_question_report
+
+PAYLOAD = {
+  "problem_id": "2024-A",
+  "title": "2024年 CUMCM A题：板凳龙”  闹元宵",
+  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/A.md",
+  "question_index": 4,
+  "question": {
+    "label": "问题 4",
+    "statement": "盘入螺线的螺距为 1.7 m，盘出螺线与盘入螺线关于螺线中心呈中心对称，舞 龙队在问题 3 设定的调头空间内完成调头，调头路径是由两段圆弧相切连接而成的 S 形曲 线，前一段圆弧的半径是后一段的 2 倍， 它与盘入、盘出螺线均相切。能否调整圆弧， 仍保 持各部分相切，使得调头曲线变短？ 龙头前把手的行进速度始终保持 1 m/s。以调头开始时间为零时刻， 给出从−100 s 开始 到100 s 为止， 每秒舞龙队的位置和速度， 将结果存放到文件result4.xlsx 中 （模板文件见附 件） 。 同时在论文中给出−100 s、−50 s、0 s、50 s、100 s 时，龙头前把手、 龙头后面第1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度。",
+    "tasks": [
+      "以调头开始时间为零时刻， 给出从−100 s 开始 到100 s 为止， 每秒舞龙队的位置和速度， 将结果存放到文件result4.xlsx 中 （模板文件见附 件）",
+      "同时在论文中给出−100 s、−50 s、0 s、50 s、100 s 时，龙头前把手、 龙头后面第1、 51、101、151、201 节龙身前把手和龙尾后把手的位置和速度"
+    ],
+    "models": [
+      {
+        "key": "geometry_equations",
+        "name": "几何与方程模型",
+        "chapter": "CH1",
+        "keywords": [
+          "空间"
+        ]
+      },
+      {
+        "key": "ode_dynamics",
+        "name": "微分方程与动力系统",
+        "chapter": "CH2",
+        "keywords": [
+          "曲线"
+        ]
+      },
+      {
+        "key": "graph_network",
+        "name": "图论与复杂网络",
+        "chapter": "CH4",
+        "keywords": [
+          "路径"
+        ]
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/A题.pdf",
+      "name": "A题.pdf",
+      "suffix": ".pdf",
+      "kind": "document",
+      "size_bytes": 758066,
+      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+    },
+    {
+      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
+      "name": "result1.xlsx",
+      "suffix": ".xlsx",
+      "kind": "data",
+      "size_bytes": 517064,
+      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+    },
+    {
+      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result2.xlsx",
+      "name": "result2.xlsx",
+      "suffix": ".xlsx",
+      "kind": "data",
+      "size_bytes": 15292,
+      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+    },
+    {
+      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result4.xlsx",
+      "name": "result4.xlsx",
+      "suffix": ".xlsx",
+      "kind": "data",
+      "size_bytes": 346204,
+      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+    }
+  ]
+}
+RESULT_PATH = ROOT / "question_results" / "2024" / "A" / "q04" / "result.json"
+REPORT_PATH = ROOT / "question_reports" / "2024" / "A" / "q04" / "report.md"
+ARTIFACT_DIR = ROOT / "question_artifacts" / "2024" / "A" / "q04"
+
+
+def main() -> None:
+    result = solve_question(PAYLOAD, ARTIFACT_DIR)
+    RESULT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
+    RESULT_PATH.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_question_report(result, REPORT_PATH)
+    print(f"wrote {RESULT_PATH}")
+    print(f"wrote {REPORT_PATH}")
+    print(f"wrote artifacts under {ARTIFACT_DIR}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,134 @@
+{
+  "problem_id": "2019-E",
+  "title": "2019年 CUMCM E题：薄利多销”分析",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "建立适当的指标衡量商场每天的打折力度，并计算该商场从2016年11月30日到2019年1月2日每天的打折力度",
+  "tasks": [
+    "建立适当的指标衡量商场每天的打折力度，并计算该商场从2016年11月30日到2019年1月2日每天的打折力度"
+  ],
+  "selected_model": {
+    "key": "evaluation",
+    "name": "综合评价与权重决策",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "每天"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "指标"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 7,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件1.csv",
+    "rows": 2500,
+    "columns": 10,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "综合评价与权重决策",
+    "task_breakdown": [
+      "建立适当的指标衡量商场每天的打折力度，并计算该商场从2016年11月30日到2019年1月2日每天的打折力度"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "a_ij: 方案 i 在指标 j 上的标准化表现",
+      "w_j: 指标权重",
+      "D_i^+: 到理想解距离",
+      "C_i: TOPSIS 贴近度"
+    ],
+    "constraints": [
+      "各指标同向化后归一化",
+      "sum_j w_j = 1, w_j >= 0"
+    ],
+    "objective_or_equations": [
+      "w_j = std(a_.j)/sum_j std(a_.j)",
+      "C_i = D_i^-/(D_i^+ + D_i^-)",
+      "rank = argsort(-C_i)"
+    ],
+    "solution_steps": [
+      "构造评价指标矩阵。",
+      "用离散度生成客观权重。",
+      "计算正负理想解距离与贴近度。",
+      "输出排名和最优方案。"
+    ],
+    "model_reference": {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "std_weight_topsis",
+    "weights": [
+      0.001177,
+      0.998823
+    ],
+    "scores": [
+      1e-06,
+      0.999337,
+      0.999337,
+      0.999337,
+      0.999393,
+      0.999701,
+      0.999701,
+      0.999701,
+      0.999701,
+      0.999701,
+      0.999701,
+      0.999701,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999707,
+      0.999819,
+      0.999819,
+      0.999845,
+      0.999845,
+      0.999845,
+      0.999845,
+      0.99987,
+      0.99987,
+      0.99987,
+      0.99987,
+      0.999872,
+      0.999989,
+      0.999989,
+      0.999999
+    ],
+    "best_option": 40
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2019/E/q02/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

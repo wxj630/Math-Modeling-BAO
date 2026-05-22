@@ -1,0 +1,6 @@
+﻿scenario,information_value,source_credibility,initial_bias,message_form_strength,network_strength,persuasion_index,final_support_share,opinion_shift_from_neutral
+trusted_public_health_warning,0.9,0.92,0.2,0.7,0.86,0.7352,0.83084,0.33084
+local_emergency_from_official_source,0.84,0.88,0.18,0.66,0.62,0.6576,0.79592,0.29592
+scientific_correction_after_false_post,0.62,0.82,0.7,0.48,0.58,0.4284,0.69278,0.19278
+celebrity_rumor_visual_shortform,0.3,0.46,0.55,0.9,0.88,0.3906,0.67577,0.17577
+partisan_low_credibility_claim,0.55,0.28,0.82,0.62,0.74,0.2922,0.63149,0.13149

@@ -1,0 +1,7 @@
+element,base_value,risk_weight,standalone_value_index,value_with_photo_multiplier
+name,1.0,0.18,1.18,1.35
+date_of_birth,1.8,0.32,2.376,1.0
+address,2.2,0.4,3.08,1.0
+photo,2.6,0.48,3.848,1.0
+citizenship_or_ssn,8.0,0.92,15.36,1.0
+medical_condition,7.2,0.88,13.536,1.0

@@ -1,0 +1,4 @@
+﻿node,shortest_distance_from_0,predecessor
+0,0.0,-9999
+1,2.0,0
+2,3.80431,1

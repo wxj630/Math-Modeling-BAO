@@ -1,0 +1,96 @@
+{
+  "problem_id": "2024-D",
+  "question": "q01",
+  "question_title": "五大湖分月最优水位目标",
+  "statement": "Determine optimal water levels of the five Great Lakes at any time of year, considering stakeholder desires.",
+  "methods": "用官方月度水位历史中位数定义分月目标水位，用 25%-75% 分位数形成兼顾洪涝、航运和生态的运行带。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "records": 2548,
+    "level_records": 1380,
+    "flow_records": 1168,
+    "sheets": [
+      "Detroit River",
+      "Lake Erie",
+      "Lake Michigan and Lake Huron",
+      "Lake Ontario",
+      "Lake St. Clair",
+      "Lake Superior",
+      "Niagara River",
+      "Ottawa River",
+      "St. Clair River",
+      "St. Lawrence River",
+      "St. Mary's River"
+    ]
+  },
+  "network_model": {
+    "lakes": [
+      "Lake Superior",
+      "Lake Michigan and Lake Huron",
+      "Lake St. Clair",
+      "Lake Erie",
+      "Lake Ontario"
+    ],
+    "connecting_flows": [
+      "St. Mary's River",
+      "St. Clair River",
+      "Detroit River",
+      "Niagara River",
+      "Ottawa River",
+      "St. Lawrence River"
+    ],
+    "control_dams": [
+      {
+        "lake": "Lake Superior",
+        "controlled_outflow": "St. Mary's River",
+        "control": "Soo Locks / Compensating Works"
+      },
+      {
+        "lake": "Lake Ontario",
+        "controlled_outflow": "St. Lawrence River",
+        "control": "Moses-Saunders Dam"
+      }
+    ]
+  },
+  "target_levels": {
+    "method": "monthly historical median with interquartile operating band",
+    "lake_summary": [
+      {
+        "lake": "Lake Erie",
+        "annual_target_mean_m": 174.203333,
+        "mean_operating_band_width_m": 0.424583,
+        "seasonal_target_min_m": 174.02,
+        "seasonal_target_max_m": 174.36
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "annual_target_mean_m": 176.1375,
+        "mean_operating_band_width_m": 0.669167,
+        "seasonal_target_min_m": 175.96,
+        "seasonal_target_max_m": 176.33
+      },
+      {
+        "lake": "Lake Ontario",
+        "annual_target_mean_m": 74.818333,
+        "mean_operating_band_width_m": 0.2325,
+        "seasonal_target_min_m": 74.51,
+        "seasonal_target_max_m": 75.13
+      },
+      {
+        "lake": "Lake St. Clair",
+        "annual_target_mean_m": 174.986667,
+        "mean_operating_band_width_m": 0.494167,
+        "seasonal_target_min_m": 174.85,
+        "seasonal_target_max_m": 175.15
+      },
+      {
+        "lake": "Lake Superior",
+        "annual_target_mean_m": 183.293333,
+        "mean_operating_band_width_m": 0.381667,
+        "seasonal_target_min_m": 183.11,
+        "seasonal_target_max_m": 183.44
+      }
+    ]
+  }
+}

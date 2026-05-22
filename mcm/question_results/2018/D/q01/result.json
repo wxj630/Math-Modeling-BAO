@@ -1,0 +1,81 @@
+{
+  "problem_id": "2018-D",
+  "question": "q01",
+  "question_title": "Charging network at 10, 30, 50, and 90 percent EV adoption",
+  "statement": "Determine what the charging network should look like when electric vehicles represent 10, 30, 50, and 90 percent of all cars.",
+  "methods": "Use the official adoption levels and deterministic charger ratios to build a staged network plan.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
+    "official_requirements": {
+      "adoption_levels": [
+        0.1,
+        0.3,
+        0.5,
+        0.9
+      ],
+      "complete_switch_to_all_electric": true,
+      "urban_suburban_rural_distribution": true,
+      "country_transferability": true
+    },
+    "parameters": {
+      "vehicle_stock": 260000000,
+      "region_types": [
+        {
+          "region_type": "urban",
+          "vehicle_share": 0.42,
+          "charger_density_factor": 1.4
+        },
+        {
+          "region_type": "suburban",
+          "vehicle_share": 0.38,
+          "charger_density_factor": 0.82
+        },
+        {
+          "region_type": "rural",
+          "vehicle_share": 0.2,
+          "charger_density_factor": 0.56
+        }
+      ]
+    }
+  },
+  "charging_network_model": {
+    "adoption_rows": [
+      {
+        "ev_share": 0.1,
+        "electric_vehicles": 26000000,
+        "public_chargers_needed": 619048,
+        "fast_chargers_needed": 123810,
+        "network_form": "metro-first seed network"
+      },
+      {
+        "ev_share": 0.3,
+        "electric_vehicles": 78000000,
+        "public_chargers_needed": 1857143,
+        "fast_chargers_needed": 445714,
+        "network_form": "metro-first seed network"
+      },
+      {
+        "ev_share": 0.5,
+        "electric_vehicles": 130000000,
+        "public_chargers_needed": 3095238,
+        "fast_chargers_needed": 866667,
+        "network_form": "corridor plus dense city charging"
+      },
+      {
+        "ev_share": 0.9,
+        "electric_vehicles": 234000000,
+        "public_chargers_needed": 5571429,
+        "fast_chargers_needed": 2005714,
+        "network_form": "corridor plus dense city charging"
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic infrastructure inputs; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP supplies no vehicle registration or charger station table with this statement."
+    ]
+  }
+}

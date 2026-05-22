@@ -1,0 +1,4 @@
+product_file,reviews_after_low_context,mean_review_length_after_low_context,reviews_after_high_context,mean_review_length_after_high_context
+hair_dryer.tsv,46,77.1957,5358,52.8477
+microwave.tsv,318,115.4214,106,85.9717
+pacifier.tsv,6,78.8333,13113,49.9014

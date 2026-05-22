@@ -1,0 +1,213 @@
+{
+  "problem_id": "2020-A",
+  "question": "q03",
+  "question_title": "小型渔业公司的运营适应策略",
+  "statement": "Recommend operational changes that small fishing companies can make as fish move north.",
+  "methods": "比较 gear modernization、cooperative vessel sharing、cold-chain landing partnership、alternative species portfolio 和 joint access agreement 的 range gain、成本和配额韧性。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "official_requirements": {
+      "scottish_herring_and_mackerel": true,
+      "fifty_year_forecast": true,
+      "best_worst_most_likely_elapsed_times": true,
+      "small_fishing_company_operational_strategies": true,
+      "territorial_waters_impacts": true,
+      "hook_line_and_sinker_article": true
+    },
+    "parameters": {
+      "horizon_years": 50,
+      "species": [
+        {
+          "species": "Scottish herring",
+          "baseline_center_lat": 58.0,
+          "thermal_preference_c": 9.0,
+          "thermal_sensitivity_km_per_c": 120.0,
+          "stock_mobility": 0.62,
+          "small_boat_range_km": 130.0,
+          "current_distance_from_scotland_km": 75.0,
+          "economic_dependency": 0.58
+        },
+        {
+          "species": "Scottish mackerel",
+          "baseline_center_lat": 57.0,
+          "thermal_preference_c": 10.5,
+          "thermal_sensitivity_km_per_c": 155.0,
+          "stock_mobility": 0.74,
+          "small_boat_range_km": 170.0,
+          "current_distance_from_scotland_km": 95.0,
+          "economic_dependency": 0.72
+        }
+      ],
+      "temperature_scenarios": [
+        {
+          "scenario": "best_case_slow_warming",
+          "warming_c_50yr": 0.8,
+          "probability_weight": 0.22
+        },
+        {
+          "scenario": "most_likely_warming",
+          "warming_c_50yr": 1.6,
+          "probability_weight": 0.56
+        },
+        {
+          "scenario": "worst_case_fast_warming",
+          "warming_c_50yr": 2.6,
+          "probability_weight": 0.22
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; thermal shifts, fleet ranges, and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "fishery_strategy": {
+    "strategy_rows": [
+      {
+        "strategy": "joint Scotland-Nordic access agreement",
+        "range_gain_km": 90,
+        "capital_burden": 0.38,
+        "labor_disruption": 0.22,
+        "quota_resilience": 0.5,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.442
+      },
+      {
+        "strategy": "seasonal cooperative vessel sharing",
+        "range_gain_km": 55,
+        "capital_burden": 0.34,
+        "labor_disruption": 0.26,
+        "quota_resilience": 0.24,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2816
+      },
+      {
+        "strategy": "cold-chain landing partnership",
+        "range_gain_km": 40,
+        "capital_burden": 0.28,
+        "labor_disruption": 0.18,
+        "quota_resilience": 0.34,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2802
+      },
+      {
+        "strategy": "alternative species portfolio",
+        "range_gain_km": 15,
+        "capital_burden": 0.18,
+        "labor_disruption": 0.32,
+        "quota_resilience": 0.42,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2427
+      },
+      {
+        "strategy": "nearshore gear modernization",
+        "range_gain_km": 25,
+        "capital_burden": 0.22,
+        "labor_disruption": 0.12,
+        "quota_resilience": 0.18,
+        "fleet_pressure_index": 0.5333,
+        "adaptation_score": 0.2052
+      }
+    ],
+    "recommended_strategy": {
+      "strategy": "joint Scotland-Nordic access agreement",
+      "range_gain_km": 90,
+      "capital_burden": 0.38,
+      "labor_disruption": 0.22,
+      "quota_resilience": 0.5,
+      "fleet_pressure_index": 0.5333,
+      "adaptation_score": 0.442
+    },
+    "small_fishery_note": "Smaller firms are stressed first because range, cold-chain capacity, and quota flexibility lag behind the northward habitat shift."
+  },
+  "accessibility_timeline": {
+    "method": "first five-year step where the habitat center exceeds current small-boat range",
+    "timeline_rows": [
+      {
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "scenario_label": "worst",
+        "elapsed_years_until_small_fleet_stress": 15,
+        "calendar_year": 2035
+      },
+      {
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "scenario_label": "most_likely",
+        "elapsed_years_until_small_fleet_stress": 20,
+        "calendar_year": 2040
+      },
+      {
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "scenario_label": "best",
+        "elapsed_years_until_small_fleet_stress": 35,
+        "calendar_year": 2055
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "scenario_label": "worst",
+        "elapsed_years_until_small_fleet_stress": 15,
+        "calendar_year": 2035
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "scenario_label": "most_likely",
+        "elapsed_years_until_small_fleet_stress": 20,
+        "calendar_year": 2040
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "scenario_label": "best",
+        "elapsed_years_until_small_fleet_stress": 35,
+        "calendar_year": 2055
+      }
+    ],
+    "best_worst_most_likely": [
+      {
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "scenario_label": "worst",
+        "elapsed_years_until_small_fleet_stress": 15,
+        "calendar_year": 2035
+      },
+      {
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "scenario_label": "most_likely",
+        "elapsed_years_until_small_fleet_stress": 20,
+        "calendar_year": 2040
+      },
+      {
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "scenario_label": "best",
+        "elapsed_years_until_small_fleet_stress": 35,
+        "calendar_year": 2055
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "scenario_label": "worst",
+        "elapsed_years_until_small_fleet_stress": 15,
+        "calendar_year": 2035
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "scenario_label": "most_likely",
+        "elapsed_years_until_small_fleet_stress": 20,
+        "calendar_year": 2040
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "scenario_label": "best",
+        "elapsed_years_until_small_fleet_stress": 35,
+        "calendar_year": 2055
+      }
+    ]
+  }
+}

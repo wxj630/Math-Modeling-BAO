@@ -1,0 +1,103 @@
+{
+  "problem_id": "2024-E",
+  "title": "2024年 CUMCM E题：交通流量管控",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "对经中路-纬中路交叉口，根据车流量的差异，可将一天分成若干个时段，估 计不同时段各个相位（包括四个方向直行、转弯）车流量。",
+  "tasks": [
+    "对经中路-纬中路交叉口，根据车流量的差异，可将一天分成若干个时段，估 计不同时段各个相位（包括四个方向直行、转弯）车流量"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "时段"
+    },
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "交叉口"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx",
+    "rows": 7,
+    "columns": 3,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "对经中路-纬中路交叉口，根据车流量的差异，可将一天分成若干个时段，估 计不同时段各个相位（包括四个方向直行、转弯）车流量"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": -1.2857142857142847,
+    "slope": 1.6428571428571426,
+    "r2": 0.6547029702970297,
+    "next_12_forecast": [
+      79.214286,
+      80.857143,
+      82.5,
+      84.142857,
+      85.785714,
+      87.428571,
+      89.071429,
+      90.714286,
+      92.357143,
+      94.0,
+      95.642857,
+      97.285714
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/E/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

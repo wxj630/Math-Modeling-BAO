@@ -1,0 +1,6 @@
+scenario,mean_resource_index,mean_male_ratio,mean_lamprey,mean_host_fish,mean_parasites,mean_food_web_benefit,mean_mating_success,state_volatility,host_damage_index,ecosystem_stability_score
+fixed_equal_ratio,0.5,0.5,1.3586,0.05,1.2,1.2,1.0,0.0034,0.77,0.258
+high_food_adaptive,0.9,0.582,1.4,0.05,1.2,1.2,0.9721,0.0,0.77,0.2552
+lamprey_reduced_control,0.5,0.67,1.1157,0.05,1.2,1.2,0.8834,0.0029,0.77,0.274
+low_food_adaptive,0.12,0.7536,1.0066,0.05,1.2,1.2,0.7418,0.0028,0.77,0.2783
+medium_food_adaptive,0.5,0.67,1.3729,0.05,1.2,1.2,0.8834,0.0033,0.77,0.2568

@@ -1,0 +1,439 @@
+{
+  "problem_id": "2023-C-Wordle",
+  "question": "q05",
+  "question_title": "给纽约时报 Puzzle Editor 的摘要信",
+  "statement": "Summarize your results in a one- to two-page letter to the Puzzle Editor of the New York Times.",
+  "methods": "把报告人数预测、EERIE 分布、难度分类和数据集洞察压缩成编辑可读的决策信。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "records": 359,
+    "date_min": "2022-01-07",
+    "date_max": "2022-12-31",
+    "columns": [
+      "Date",
+      "Contest number",
+      "Word",
+      "Number of reported results",
+      "Number in hard mode",
+      "1 try",
+      "2 tries",
+      "3 tries",
+      "4 tries",
+      "5 tries",
+      "6 tries",
+      "7 or more tries (X)"
+    ]
+  },
+  "editor_letter": "Dear Puzzle Editor,\n\nUsing the official 2022 Wordle result file, we modeled participation, score distribution, and word difficulty from observed Twitter-reported outcomes rather than from generated placeholder data. Report counts decline strongly over the year, so the March 1, 2023 forecast is driven mainly by time trend with word attributes as secondary corrections. For EERIE on 2023-03-01, the model predicts about 23612 reports with an 80% interval of [20365, 30713]. The most likely score bucket is 4 tries at 30.668%. Its expected-attempt difficulty is 4.26407, classified as medium. Repeated letters and lower unique-letter counts are associated with higher expected attempts, which is consistent with EERIE's repeated vowel structure.\n\nThe data also show a participation drop from the first 30 days to the last 30 days of -90.91%, and a stable concentration of outcomes around the middle attempt buckets. We recommend using the model as an operational forecasting baseline and re-estimating it monthly as new official Wordle outcomes become available.\n\nSincerely,\nMCM modeling team",
+  "report_count_model": {
+    "model": "log-linear RidgeCV for report counts; RidgeCV for hard-mode rate",
+    "prediction_date": "2023-03-01",
+    "prediction_word": "EERIE",
+    "holdout_days": 45,
+    "holdout_mae_reported_results": 2025.209,
+    "holdout_rmse_reported_results": 3677.285,
+    "predicted_reported_results": 23612,
+    "prediction_interval_80": [
+      20365,
+      30713
+    ],
+    "hard_mode_holdout_mae_rate": 0.036428,
+    "predicted_hard_mode_rate": 0.137511,
+    "word_attribute_effects_on_hard_mode": [
+      {
+        "feature": "days_since_start",
+        "coefficient": 0.020859
+      },
+      {
+        "feature": "word_entropy",
+        "coefficient": -0.000888
+      },
+      {
+        "feature": "unique_letters",
+        "coefficient": -0.000797
+      },
+      {
+        "feature": "max_letter_count",
+        "coefficient": -0.000773
+      },
+      {
+        "feature": "vowel_count",
+        "coefficient": 0.000395
+      },
+      {
+        "feature": "rare_letter_count",
+        "coefficient": -0.000391
+      },
+      {
+        "feature": "letter_frequency_score",
+        "coefficient": -0.000355
+      },
+      {
+        "feature": "repeated_vowel_count",
+        "coefficient": 0.000261
+      }
+    ]
+  },
+  "eerie_prediction": {
+    "model": "RandomForestRegressor on official percentage buckets, clipped and normalized to 100%",
+    "word": "EERIE",
+    "date": "2023-03-01",
+    "holdout_mean_bucket_mae_percent_points": 3.711,
+    "predicted_distribution_percent": {
+      "1 try": 0.245,
+      "2 tries": 7.01,
+      "3 tries": 22.062,
+      "4 tries": 30.668,
+      "5 tries": 22.491,
+      "6 tries": 11.839,
+      "7 or more tries (X)": 5.685
+    },
+    "prediction_intervals_80": {
+      "1 try": [
+        0.0,
+        0.59
+      ],
+      "2 tries": [
+        2.614,
+        12.716
+      ],
+      "3 tries": [
+        15.059,
+        28.971
+      ],
+      "4 tries": [
+        24.759,
+        37.614
+      ],
+      "5 tries": [
+        18.154,
+        27.633
+      ],
+      "6 tries": [
+        7.173,
+        17.043
+      ],
+      "7 or more tries (X)": [
+        0.997,
+        14.713
+      ]
+    },
+    "bucket_holdout_mae_percent_points": {
+      "1 try": 0.578,
+      "2 tries": 2.617,
+      "3 tries": 6.811,
+      "4 tries": 4.12,
+      "5 tries": 4.758,
+      "6 tries": 4.958,
+      "7 or more tries (X)": 2.131
+    },
+    "table_rows": [
+      {
+        "bucket": "1 try",
+        "predicted_percent": 0.245,
+        "interval80_low": 0.0,
+        "interval80_high": 0.59,
+        "holdout_mae_percent_points": 0.578
+      },
+      {
+        "bucket": "2 tries",
+        "predicted_percent": 7.01,
+        "interval80_low": 2.614,
+        "interval80_high": 12.716,
+        "holdout_mae_percent_points": 2.617
+      },
+      {
+        "bucket": "3 tries",
+        "predicted_percent": 22.062,
+        "interval80_low": 15.059,
+        "interval80_high": 28.971,
+        "holdout_mae_percent_points": 6.811
+      },
+      {
+        "bucket": "4 tries",
+        "predicted_percent": 30.668,
+        "interval80_low": 24.759,
+        "interval80_high": 37.614,
+        "holdout_mae_percent_points": 4.12
+      },
+      {
+        "bucket": "5 tries",
+        "predicted_percent": 22.491,
+        "interval80_low": 18.154,
+        "interval80_high": 27.633,
+        "holdout_mae_percent_points": 4.758
+      },
+      {
+        "bucket": "6 tries",
+        "predicted_percent": 11.839,
+        "interval80_low": 7.173,
+        "interval80_high": 17.043,
+        "holdout_mae_percent_points": 4.958
+      },
+      {
+        "bucket": "7 or more tries (X)",
+        "predicted_percent": 5.685,
+        "interval80_low": 0.997,
+        "interval80_high": 14.713,
+        "holdout_mae_percent_points": 2.131
+      }
+    ]
+  },
+  "difficulty_model": {
+    "model": "difficulty tertiles by expected attempts plus RandomForestClassifier from date and word attributes",
+    "thresholds_expected_attempts": {
+      "easy_max": 4.033403,
+      "medium_max": 4.352357
+    },
+    "holdout_days": 45,
+    "holdout_accuracy": 0.422222,
+    "eerie_expected_attempts_from_distribution": 4.26407,
+    "eerie_class": "medium",
+    "eerie_classifier_class": "medium",
+    "feature_importance": [
+      {
+        "feature": "letter_frequency_score",
+        "importance": 0.187621
+      },
+      {
+        "feature": "days_since_start",
+        "importance": 0.132151
+      },
+      {
+        "feature": "days_since_start_sq",
+        "importance": 0.131605
+      },
+      {
+        "feature": "contest_number",
+        "importance": 0.130505
+      },
+      {
+        "feature": "rare_letter_count",
+        "importance": 0.092853
+      },
+      {
+        "feature": "weekday",
+        "importance": 0.06415
+      },
+      {
+        "feature": "repeated_letters",
+        "importance": 0.062474
+      },
+      {
+        "feature": "word_entropy",
+        "importance": 0.054908
+      },
+      {
+        "feature": "max_letter_count",
+        "importance": 0.053501
+      },
+      {
+        "feature": "unique_letters",
+        "importance": 0.034078
+      }
+    ],
+    "hardest_words": [
+      {
+        "date": "2022-09-16",
+        "word": "PARER",
+        "expected_attempts": 5.99,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-10-23",
+        "word": "MUMMY",
+        "expected_attempts": 5.475248,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-08-02",
+        "word": "COYLY",
+        "expected_attempts": 5.40404,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-04-19",
+        "word": "FOYER",
+        "expected_attempts": 5.30303,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-12-26",
+        "word": "JUDGE",
+        "expected_attempts": 5.232323,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-06-29",
+        "word": "GAWKY",
+        "expected_attempts": 5.131313,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-02-19",
+        "word": "SWILL",
+        "expected_attempts": 5.08,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-07-06",
+        "word": "FLUFF",
+        "expected_attempts": 4.98,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-03-11",
+        "word": "WATCH",
+        "expected_attempts": 4.96,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-10-07",
+        "word": "DANDY",
+        "expected_attempts": 4.95,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-07-26",
+        "word": "CINCH",
+        "expected_attempts": 4.910891,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-07-20",
+        "word": "TRITE",
+        "expected_attempts": 4.91,
+        "difficulty_class": "hard"
+      }
+    ],
+    "easiest_words": [
+      {
+        "date": "2022-05-04",
+        "word": "TRAIN",
+        "expected_attempts": 3.131313,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-04-22",
+        "word": "PLANT",
+        "expected_attempts": 3.336634,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-04-09",
+        "word": "STAIR",
+        "expected_attempts": 3.386139,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-12-20",
+        "word": "THIRD",
+        "expected_attempts": 3.435644,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-11-26",
+        "word": "CLEN",
+        "expected_attempts": 3.45,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-04-29",
+        "word": "TASH",
+        "expected_attempts": 3.46,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-12-19",
+        "word": "SLATE",
+        "expected_attempts": 3.464646,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-11-09",
+        "word": "RAINY",
+        "expected_attempts": 3.475248,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-08-06",
+        "word": "ALIEN",
+        "expected_attempts": 3.484848,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-08-20",
+        "word": "TREAT",
+        "expected_attempts": 3.485149,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-01-19",
+        "word": "POINT",
+        "expected_attempts": 3.505051,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-02-22",
+        "word": "THORN",
+        "expected_attempts": 3.505051,
+        "difficulty_class": "easy"
+      }
+    ]
+  },
+  "interesting_features": {
+    "reported_results_first30_mean": 243624.47,
+    "reported_results_last30_mean": 22138.43,
+    "reported_results_change_pct_first30_to_last30": -90.91,
+    "repeated_letter_word_count": 101,
+    "non_repeated_letter_word_count": 258,
+    "repeated_letter_expected_attempts_mean": 4.435085,
+    "non_repeated_expected_attempts_mean": 4.098676,
+    "hard_mode_rate_mean": 0.077634,
+    "correlations": {
+      "Number of reported results__hard_mode_rate": -0.435233,
+      "expected_attempts__repeated_letters": 0.405087,
+      "expected_attempts__unique_letters": -0.383098,
+      "expected_attempts__vowel_count": -0.042749
+    },
+    "weekday_summary": [
+      {
+        "weekday": "Mon",
+        "mean_reported_results": 90320.06,
+        "mean_expected_attempts": 4.200015
+      },
+      {
+        "weekday": "Tue",
+        "mean_reported_results": 92754.1,
+        "mean_expected_attempts": 4.230888
+      },
+      {
+        "weekday": "Wed",
+        "mean_reported_results": 93844.39,
+        "mean_expected_attempts": 4.210129
+      },
+      {
+        "weekday": "Thu",
+        "mean_reported_results": 91749.33,
+        "mean_expected_attempts": 4.187878
+      },
+      {
+        "weekday": "Fri",
+        "mean_reported_results": 91341.69,
+        "mean_expected_attempts": 4.154165
+      },
+      {
+        "weekday": "Sat",
+        "mean_reported_results": 88160.06,
+        "mean_expected_attempts": 4.162801
+      },
+      {
+        "weekday": "Sun",
+        "mean_reported_results": 88308.31,
+        "mean_expected_attempts": 4.208731
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+reservoir,dam,stated_height_ft,estimated_storage_maf,planning_storage_maf,net_inflow_maf,recommended_release_maf,estimated_hydropower_gwh
+lake_powell,Glen Canyon Dam,3525.0,1.115,0.245,4.93,5.175,552.46
+lake_mead,Hoover Dam,1065.0,6.013,1.082,0.17,1.252,439.26

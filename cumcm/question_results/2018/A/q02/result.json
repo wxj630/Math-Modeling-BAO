@@ -1,0 +1,121 @@
+{
+  "problem_id": "2018-A",
+  "title": "2018年 CUMCM A题：高温作业专用服装设计",
+  "question_index": 2,
+  "question_label": "问题 3",
+  "statement": "当环境温度为80时，确定II层和IV层的最优厚度，确保工作30分钟时，假人皮肤外侧温度不超过47ºC，且超过44ºC的时间不超过5分钟。 附件1. 专用服装材料的参数值 附件2. 假人皮肤外侧的测量温度",
+  "tasks": [
+    "当环境温度为80时，确定II层和IV层的最优厚度，确保工作30分钟时，假人皮肤外侧温度不超过47ºC，且超过44ºC的时间不超过5分钟"
+  ],
+  "selected_model": {
+    "key": "ode",
+    "name": "多层服装热阻-热容传热与厚度优化模型",
+    "chapter": "CH2",
+    "chapter_title": "微分方程与动力系统",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "参数、测量"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最优"
+    },
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "温度"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx",
+    "rows": 5405,
+    "columns": 7,
+    "note": "本题专用算法读取附件1四层材料热物性参数和附件2皮肤外侧实测温度，标定热阻-热容模型并搜索II/IV层厚度。"
+  },
+  "formulation": {
+    "model_type": "多层服装热阻-热容传热与厚度优化模型",
+    "task_breakdown": [
+      "当环境温度为80时，确定II层和IV层的最优厚度，确保工作30分钟时，假人皮肤外侧温度不超过47ºC，且超过44ºC的时间不超过5分钟"
+    ],
+    "assumptions": [
+      "服装沿厚度方向一维传热，I/II/III/IV层材料均匀，横向热流忽略。",
+      "人体侧维持37摄氏度，皮肤外侧温度用等效热阻-热容模型描述。",
+      "附件2的75摄氏度、II层6mm、IV层5mm实验用于标定人体侧等效热阻和时间常数比例。",
+      "厚度优化目标是在满足最高温度不超过47摄氏度、超过44摄氏度时间不超过5分钟的前提下尽量减小厚度。",
+      "通用基线仍保留在 `cumcm/generic_baselines`，当前结果是从一阶/二次通用模型推进到附件驱动传热设计模型的专用版本。"
+    ],
+    "decision_variables": [
+      "d_II: II层厚度(mm)",
+      "d_IV: IV层厚度(mm)",
+      "T_s(t): 皮肤外侧温度",
+      "R_skin: 人体侧等效热阻",
+      "eta_tau: 热容时间常数比例"
+    ],
+    "constraints": [
+      "max_t T_s(t) <= 47摄氏度。",
+      "measure({t: T_s(t)>44摄氏度}) <= 5分钟。",
+      "第2问固定 d_IV=5.5mm；第3问 d_IV 在附件给定0.6-6.4mm范围内搜索。"
+    ],
+    "objective_or_equations": [
+      "R_layers=sum_i d_i/k_i，C_layers=sum_i rho_i c_i d_i。",
+      "T_s(t)=37+(T_env-37)*R_skin/(R_layers+R_skin)*(1-exp(-t/tau))。",
+      "tau=eta_tau*C_layers*(R_layers*R_skin/(R_layers+R_skin))。",
+      "min d_II for q1; min d_II+d_IV for q2 subject to safety constraints。"
+    ],
+    "solution_steps": [
+      "读取附件1材料热物性参数和附件2实测皮肤外侧温度。",
+      "用75摄氏度实验标定R_skin和eta_tau，并输出拟合误差。",
+      "对候选厚度逐秒模拟温度曲线，计算最高温和超过44摄氏度时间。",
+      "选择满足约束的最小厚度方案，输出搜索表、最优温度曲线和Excel温度文件。"
+    ],
+    "model_reference": {
+      "key": "ode",
+      "name": "多层服装热阻-热容传热与厚度优化模型",
+      "chapter": "CH2",
+      "chapter_title": "微分方程与动力系统",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    }
+  },
+  "experiment_result": {
+    "method": "heat_clothing_layer2_layer4_joint_optimization",
+    "environment_temperature_c": 80.0,
+    "duration_min": 30.0,
+    "optimal_layer_ii_thickness_mm": 26.1,
+    "optimal_layer_iv_thickness_mm": 6.4,
+    "total_variable_thickness_mm": 32.5,
+    "max_skin_temperature_c": 44.622524,
+    "minutes_above_44_c": 4.9,
+    "final_temperature_c": 44.622524,
+    "calibration_mae_c": 0.08223,
+    "calibration_rmse_c": 0.188948,
+    "calibrated_r_skin_m2k_w": 0.116550437,
+    "calibrated_tau_scale": 0.289403597,
+    "layer_ii_nominal_upper_mm": 25.0,
+    "layer_iv_upper_mm": 6.4,
+    "report": [
+      "第3问在80摄氏度、30分钟条件下联合搜索II层和IV层厚度。",
+      "IV层按附件范围0.6-6.4mm搜索；若标定模型显示II层需要略超附件名义上限，结果中保留名义上限字段以便论文中讨论安全裕量。",
+      "输出联合搜索表和最优温度曲线Excel，可直接用于实验报告和复核。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2018/A/q02/thermal_calibration.csv",
+    "question_artifacts/2018/A/q02/joint_thickness_search.csv",
+    "question_artifacts/2018/A/q02/optimized_temperature_profile.csv",
+    "question_artifacts/2018/A/q02/optimized_temperature_profile.xlsx",
+    "question_artifacts/2018/A/q02/experiment_table.csv"
+  ]
+}

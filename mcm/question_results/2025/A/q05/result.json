@@ -1,0 +1,66 @@
+{
+  "problem_id": "2025-A",
+  "question": "q05",
+  "question_title": "楼梯年龄与可靠性",
+  "statement": "What is the age of the stairwell and how reliable is the estimate?",
+  "methods": "在材料磨损系数和可能日均交通量上做确定性网格，输出与历史年龄先验重叠的年龄区间和可靠性等级。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "official_requirements": {
+      "non_destructive": true,
+      "low_cost": true,
+      "small_team_minimal_tools": true,
+      "measurements_required": "team-defined measurements of tread geometry, wear depth, edge rounding, slope, material proxy, and repair indicators"
+    },
+    "parameters": {
+      "problem_year": 2025,
+      "problem_letter": "A",
+      "official_asset": "2025_MCM_Problem_A.pdf"
+    }
+  },
+  "age_reliability": {
+    "model": "deterministic uncertainty grid over material wear coefficient and plausible daily traffic",
+    "observed_depth_used_mm": 4.35,
+    "estimated_age_years": 340.3,
+    "plausible_interval_years": [
+      283.6,
+      397.0
+    ],
+    "plausible_grid_cells": 2,
+    "total_grid_cells": 30,
+    "reliability_rating": "medium: age is identifiable only jointly with material wear rate and daily traffic prior"
+  },
+  "worked_example_assumptions": {
+    "purpose": "deterministic calibration example showing how a filled measurement sheet is inverted; values are not official observations",
+    "material": "medium limestone / sandstone-like tread material",
+    "specific_wear_mm_per_100k_passages": 0.045,
+    "wear_coefficient_range_mm_per_100k_passages": [
+      0.025,
+      0.045,
+      0.075
+    ],
+    "candidate_age_years_for_traffic_inverse": 360,
+    "stair_geometry": {
+      "steps": 11,
+      "mean_tread_width_cm": 158.0,
+      "mean_tread_depth_cm": 32.0,
+      "mean_riser_height_cm": 16.5
+    },
+    "passages_per_user": "one stair user creates one passage across each tread used",
+    "measurement_method": "straightedge plus feeler gauge, phone inclinometer, caliper, scaled photographs, visual patch score, and non-destructive material proxy"
+  },
+  "historical_prior": {
+    "historical_age_range_years": [
+      250,
+      520
+    ],
+    "daily_life_prior": "religious/civic public interior, intermittent ceremonies plus regular service traffic",
+    "expected_daily_users_range": [
+      120,
+      900
+    ],
+    "known_renovation_markers": "patch boundaries, tool marks, color discontinuity, and abrupt adjacent-step wear jumps"
+  }
+}

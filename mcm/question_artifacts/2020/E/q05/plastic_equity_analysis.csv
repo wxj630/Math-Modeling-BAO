@@ -1,0 +1,6 @@
+region,responsibility_score,support_need_score,recommended_icm_equity_action
+small island and coastal developing states,0.038,0.78,finance transition
+major export manufacturing hubs,0.433,0.592,finance transition
+middle income rapidly urbanizing economies,0.512,0.58,finance transition
+landlocked consumer markets,0.274,0.438,finance transition
+high income coastal economies,0.48,0.372,fund producer responsibility and export controls

@@ -1,0 +1,93 @@
+{
+  "problem_id": "2016-B",
+  "title": "2016年 CUMCM B题：小区开放对道路通行的影响",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "小区开放产生的效果，可能会与小区结构及周边道路结构、车流量有关。请选取或构建不同类型的小区，应用你们建立的模型，定量比较各类型小区开放前后对道路通行的影响。",
+  "tasks": [
+    "请选取或构建不同类型的小区，应用你们建立的模型，定量比较各类型小区开放前后对道路通行的影响"
+  ],
+  "selected_model": {
+    "key": "evaluation",
+    "name": "综合评价与权重决策",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "比较"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 0,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2016/B.md",
+    "rows": 7,
+    "columns": 3,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "综合评价与权重决策",
+    "task_breakdown": [
+      "请选取或构建不同类型的小区，应用你们建立的模型，定量比较各类型小区开放前后对道路通行的影响"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "a_ij: 方案 i 在指标 j 上的标准化表现",
+      "w_j: 指标权重",
+      "D_i^+: 到理想解距离",
+      "C_i: TOPSIS 贴近度"
+    ],
+    "constraints": [
+      "各指标同向化后归一化",
+      "sum_j w_j = 1, w_j >= 0"
+    ],
+    "objective_or_equations": [
+      "w_j = std(a_.j)/sum_j std(a_.j)",
+      "C_i = D_i^-/(D_i^+ + D_i^-)",
+      "rank = argsort(-C_i)"
+    ],
+    "solution_steps": [
+      "构造评价指标矩阵。",
+      "用离散度生成客观权重。",
+      "计算正负理想解距离与贴近度。",
+      "输出排名和最优方案。"
+    ],
+    "model_reference": {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "std_weight_topsis",
+    "weights": [
+      0.520679,
+      0.479321
+    ],
+    "scores": [
+      0.736008,
+      0.30208,
+      0.264477,
+      0.121548,
+      0.30208,
+      0.174384,
+      0.0
+    ],
+    "best_option": 1
+  },
+  "artifact_paths": [
+    "question_artifacts/2016/B/q03/experiment_table.csv"
+  ]
+}

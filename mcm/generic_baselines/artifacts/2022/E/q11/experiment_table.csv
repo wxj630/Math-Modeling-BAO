@@ -1,0 +1,6 @@
+﻿component,raw_value,normalized_score,audit_note
+statement_specificity,187,0.445238,Longer problem statements usually expose more constraints for a first-pass model.
+numeric_anchor_count,0,0.0,Counts numeric anchors visible in the question statement and method hint.
+model_keyword_match,1,0.2,Measures how clearly the question maps to a classical modeling family.
+source_strength,official_statement_parameters,0.72,Rewards official attachments and explicit official statement parameters.
+artifact_readiness,question_artifacts/2022/E/q11/management_tradeoff_frontier.png,0.68,Rewards table-like artifacts that a baseline can inspect directly.

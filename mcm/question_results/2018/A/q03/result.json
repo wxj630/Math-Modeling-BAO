@@ -1,0 +1,276 @@
+{
+  "problem_id": "2018-A",
+  "question": "q03",
+  "question_title": "Shipboard receiver moving on turbulent ocean",
+  "statement": "Modify the model for a shipboard receiver moving on a turbulent ocean.",
+  "methods": "Use sea-state, deck-motion, and ship-speed rows to estimate path stability and retuning intervals.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
+    "official_requirements": {
+      "one_reflection_off_ionosphere": true,
+      "multi_hop_reflections": true,
+      "calm_ocean_reflections": true,
+      "mountainous_or_rugged_terrain": true,
+      "shipboard_receiver_turbulent_ocean": true
+    },
+    "parameters": {
+      "earth_radius_km": 6371.0,
+      "ionosphere_height_km": 250.0,
+      "takeoff_angles_deg": [
+        5,
+        8,
+        12,
+        16,
+        20,
+        25
+      ]
+    }
+  },
+  "moving_receiver_model": {
+    "sea_state_rows": [
+      {
+        "sea_state": "calm",
+        "deck_motion_deg": 1.0,
+        "ship_speed_knots": 8,
+        "path_stability_index": 0.9286,
+        "retune_interval_minutes": 16.714
+      },
+      {
+        "sea_state": "moderate",
+        "deck_motion_deg": 4.5,
+        "ship_speed_knots": 14,
+        "path_stability_index": 0.6786,
+        "retune_interval_minutes": 8.724
+      },
+      {
+        "sea_state": "turbulent",
+        "deck_motion_deg": 9.0,
+        "ship_speed_knots": 22,
+        "path_stability_index": 0.3571,
+        "retune_interval_minutes": 2.922
+      }
+    ]
+  },
+  "propagation_model": {
+    "hop_rows": [
+      {
+        "takeoff_angle_deg": 5,
+        "hops": 1,
+        "single_hop_km": 2568.235,
+        "maximum_path_km_calm_ocean": 2568.235
+      },
+      {
+        "takeoff_angle_deg": 5,
+        "hops": 2,
+        "single_hop_km": 2568.235,
+        "maximum_path_km_calm_ocean": 5136.471
+      },
+      {
+        "takeoff_angle_deg": 5,
+        "hops": 3,
+        "single_hop_km": 2568.235,
+        "maximum_path_km_calm_ocean": 7704.706
+      },
+      {
+        "takeoff_angle_deg": 5,
+        "hops": 4,
+        "single_hop_km": 2568.235,
+        "maximum_path_km_calm_ocean": 10272.941
+      },
+      {
+        "takeoff_angle_deg": 5,
+        "hops": 5,
+        "single_hop_km": 2568.235,
+        "maximum_path_km_calm_ocean": 12841.177
+      },
+      {
+        "takeoff_angle_deg": 5,
+        "hops": 6,
+        "single_hop_km": 2568.235,
+        "maximum_path_km_calm_ocean": 15409.412
+      },
+      {
+        "takeoff_angle_deg": 8,
+        "hops": 1,
+        "single_hop_km": 2148.144,
+        "maximum_path_km_calm_ocean": 2148.144
+      },
+      {
+        "takeoff_angle_deg": 8,
+        "hops": 2,
+        "single_hop_km": 2148.144,
+        "maximum_path_km_calm_ocean": 4296.288
+      },
+      {
+        "takeoff_angle_deg": 8,
+        "hops": 3,
+        "single_hop_km": 2148.144,
+        "maximum_path_km_calm_ocean": 6444.432
+      },
+      {
+        "takeoff_angle_deg": 8,
+        "hops": 4,
+        "single_hop_km": 2148.144,
+        "maximum_path_km_calm_ocean": 8592.576
+      },
+      {
+        "takeoff_angle_deg": 8,
+        "hops": 5,
+        "single_hop_km": 2148.144,
+        "maximum_path_km_calm_ocean": 10740.72
+      },
+      {
+        "takeoff_angle_deg": 8,
+        "hops": 6,
+        "single_hop_km": 2148.144,
+        "maximum_path_km_calm_ocean": 12888.863
+      },
+      {
+        "takeoff_angle_deg": 12,
+        "hops": 1,
+        "single_hop_km": 1722.086,
+        "maximum_path_km_calm_ocean": 1722.086
+      },
+      {
+        "takeoff_angle_deg": 12,
+        "hops": 2,
+        "single_hop_km": 1722.086,
+        "maximum_path_km_calm_ocean": 3444.172
+      },
+      {
+        "takeoff_angle_deg": 12,
+        "hops": 3,
+        "single_hop_km": 1722.086,
+        "maximum_path_km_calm_ocean": 5166.258
+      },
+      {
+        "takeoff_angle_deg": 12,
+        "hops": 4,
+        "single_hop_km": 1722.086,
+        "maximum_path_km_calm_ocean": 6888.345
+      },
+      {
+        "takeoff_angle_deg": 12,
+        "hops": 5,
+        "single_hop_km": 1722.086,
+        "maximum_path_km_calm_ocean": 8610.431
+      },
+      {
+        "takeoff_angle_deg": 12,
+        "hops": 6,
+        "single_hop_km": 1722.086,
+        "maximum_path_km_calm_ocean": 10332.517
+      },
+      {
+        "takeoff_angle_deg": 16,
+        "hops": 1,
+        "single_hop_km": 1409.242,
+        "maximum_path_km_calm_ocean": 1409.242
+      },
+      {
+        "takeoff_angle_deg": 16,
+        "hops": 2,
+        "single_hop_km": 1409.242,
+        "maximum_path_km_calm_ocean": 2818.484
+      },
+      {
+        "takeoff_angle_deg": 16,
+        "hops": 3,
+        "single_hop_km": 1409.242,
+        "maximum_path_km_calm_ocean": 4227.726
+      },
+      {
+        "takeoff_angle_deg": 16,
+        "hops": 4,
+        "single_hop_km": 1409.242,
+        "maximum_path_km_calm_ocean": 5636.967
+      },
+      {
+        "takeoff_angle_deg": 16,
+        "hops": 5,
+        "single_hop_km": 1409.242,
+        "maximum_path_km_calm_ocean": 7046.209
+      },
+      {
+        "takeoff_angle_deg": 16,
+        "hops": 6,
+        "single_hop_km": 1409.242,
+        "maximum_path_km_calm_ocean": 8455.451
+      },
+      {
+        "takeoff_angle_deg": 20,
+        "hops": 1,
+        "single_hop_km": 1174.832,
+        "maximum_path_km_calm_ocean": 1174.832
+      },
+      {
+        "takeoff_angle_deg": 20,
+        "hops": 2,
+        "single_hop_km": 1174.832,
+        "maximum_path_km_calm_ocean": 2349.664
+      },
+      {
+        "takeoff_angle_deg": 20,
+        "hops": 3,
+        "single_hop_km": 1174.832,
+        "maximum_path_km_calm_ocean": 3524.497
+      },
+      {
+        "takeoff_angle_deg": 20,
+        "hops": 4,
+        "single_hop_km": 1174.832,
+        "maximum_path_km_calm_ocean": 4699.329
+      },
+      {
+        "takeoff_angle_deg": 20,
+        "hops": 5,
+        "single_hop_km": 1174.832,
+        "maximum_path_km_calm_ocean": 5874.161
+      },
+      {
+        "takeoff_angle_deg": 20,
+        "hops": 6,
+        "single_hop_km": 1174.832,
+        "maximum_path_km_calm_ocean": 7048.993
+      },
+      {
+        "takeoff_angle_deg": 25,
+        "hops": 1,
+        "single_hop_km": 955.819,
+        "maximum_path_km_calm_ocean": 955.819
+      },
+      {
+        "takeoff_angle_deg": 25,
+        "hops": 2,
+        "single_hop_km": 955.819,
+        "maximum_path_km_calm_ocean": 1911.638
+      },
+      {
+        "takeoff_angle_deg": 25,
+        "hops": 3,
+        "single_hop_km": 955.819,
+        "maximum_path_km_calm_ocean": 2867.458
+      },
+      {
+        "takeoff_angle_deg": 25,
+        "hops": 4,
+        "single_hop_km": 955.819,
+        "maximum_path_km_calm_ocean": 3823.277
+      },
+      {
+        "takeoff_angle_deg": 25,
+        "hops": 5,
+        "single_hop_km": 955.819,
+        "maximum_path_km_calm_ocean": 4779.096
+      },
+      {
+        "takeoff_angle_deg": 25,
+        "hops": 6,
+        "single_hop_km": 955.819,
+        "maximum_path_km_calm_ocean": 5734.915
+      }
+    ]
+  }
+}

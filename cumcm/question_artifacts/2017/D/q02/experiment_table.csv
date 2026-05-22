@@ -1,0 +1,2 @@
+﻿total_workers,workers_by_shift,scheduled_visit_count,rest_event_count,meal_event_count,mean_service_minutes_per_worker,service_workload_std,max_cycle_gap_minutes,max_cycle_violation_minutes,method
+72,"{'B1:00:00-08:00': 24, 'B2:08:00-16:00': 24, 'B3:16:00-00:00': 24}",948,216,48,34.375,13.17451,240.0,0.0,inspection_shift_schedule_with_breaks

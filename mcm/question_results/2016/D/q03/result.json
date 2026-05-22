@@ -1,0 +1,134 @@
+{
+  "problem_id": "2016-D",
+  "question": "q03",
+  "question_title": "2050 通信网络关系与容量预测",
+  "statement": "Use your model to predict the communication networks' relationships and capacities around the year 2050.",
+  "methods": "将五个官方时期的 channel capacity 指数做保守 log-linear 外推，并给出 human-to-human、human-to-platform、machine-to-machine、local-to-global 四类关系变化。对应模型：趋势外推、技术扩散、容量预测、网络关系图谱。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "official_problem_parameters": {
+      "periods": [
+        "1870s_telegraph_train_newspaper",
+        "1920s_radio",
+        "1970s_television",
+        "1990s_early_internet",
+        "2010s_smartphone"
+      ],
+      "period_descriptions": {
+        "1870s_telegraph_train_newspaper": "newspapers delivered by trains and stories passed by telegraph",
+        "1920s_radio": "radios became a more common household item",
+        "1970s_television": "televisions were in most homes",
+        "1990s_early_internet": "households began connecting to the early internet",
+        "2010s_smartphone": "we can carry a connection to the world on our phones"
+      },
+      "prediction_year": 2050,
+      "example_events_named_in_statement": [
+        "Taylor Swift engagement rumor if it had happened in 1860",
+        "important person assassinated today",
+        "US President Abraham Lincoln assassination"
+      ],
+      "required_factors": [
+        "information value",
+        "initial opinion and bias",
+        "message form or source",
+        "network topology or strength"
+      ]
+    },
+    "assumptions": {
+      "era_coefficients": "media_access, transmission_speed, network_connectivity, gatekeeping_filter, and channel_capacity are transparent normalized assumptions anchored to the five eras named in the official PDF.",
+      "awareness_model": "awareness(t) = reachable_population * (1 - exp(-diffusion_rate * t)); diffusion_rate increases with speed, connectivity, information value, and source credibility.",
+      "news_filter_rule": "news_score = 0.34 value + 0.24 source credibility + 0.18 affected population + 0.14 novelty + 0.10 shareability; items above threshold qualify as news.",
+      "opinion_model": "A one-step DeGroot-style influence score estimates opinion shift from value, source credibility, bias alignment, message format, and network strength.",
+      "capacity_projection": "2050 capacity extrapolates log channel capacity against era year and caps the multiplier to avoid claiming an unbounded physical law."
+    }
+  },
+  "capacity_2050": {
+    "prediction_year": 2050,
+    "baseline_era": "2010s_smartphone",
+    "projected_channel_capacity_index": 2483.157,
+    "capacity_multiplier_vs_2010s": 4.775,
+    "relationships": {
+      "human_to_human": "dense social graph remains dominant for interpretation and trust",
+      "human_to_platform": "algorithmic filtering increasingly controls attention allocation",
+      "machine_to_machine": "sensor and agent networks add high-volume low-latency communication",
+      "local_to_global": "regional topology matters less for raw speed but still matters for trust and language communities"
+    },
+    "method": "log-linear extrapolation of assumed era capacity, capped for conservative reporting"
+  },
+  "era_model": {
+    "periods": [
+      {
+        "era": "1870s_telegraph_train_newspaper",
+        "representative_year": 1875,
+        "official_description": "newspapers delivered by trains and stories passed by telegraph",
+        "media_access": 0.18,
+        "transmission_speed": 0.1,
+        "network_connectivity": 0.08,
+        "gatekeeping_filter": 0.78,
+        "channel_capacity": 1.0,
+        "openness": 0.22,
+        "diffusion_rate_per_hour": 0.124,
+        "reachable_population_share": 0.3276,
+        "influence_power": 0.134
+      },
+      {
+        "era": "1920s_radio",
+        "representative_year": 1925,
+        "official_description": "radios became a more common household item",
+        "media_access": 0.36,
+        "transmission_speed": 0.28,
+        "network_connectivity": 0.2,
+        "gatekeeping_filter": 0.7,
+        "channel_capacity": 3.8,
+        "openness": 0.3,
+        "diffusion_rate_per_hour": 0.2364,
+        "reachable_population_share": 0.4632,
+        "influence_power": 0.2796
+      },
+      {
+        "era": "1970s_television",
+        "representative_year": 1975,
+        "official_description": "televisions were in most homes",
+        "media_access": 0.72,
+        "transmission_speed": 0.58,
+        "network_connectivity": 0.42,
+        "gatekeeping_filter": 0.58,
+        "channel_capacity": 15.0,
+        "openness": 0.42,
+        "diffusion_rate_per_hour": 0.4276,
+        "reachable_population_share": 0.7304,
+        "influence_power": 0.5452
+      },
+      {
+        "era": "1990s_early_internet",
+        "representative_year": 1995,
+        "official_description": "households began connecting to the early internet",
+        "media_access": 0.46,
+        "transmission_speed": 0.74,
+        "network_connectivity": 0.64,
+        "gatekeeping_filter": 0.42,
+        "channel_capacity": 85.0,
+        "openness": 0.58,
+        "diffusion_rate_per_hour": 0.5708,
+        "reachable_population_share": 0.6132,
+        "influence_power": 0.5996
+      },
+      {
+        "era": "2010s_smartphone",
+        "representative_year": 2015,
+        "official_description": "we can carry a connection to the world on our phones",
+        "media_access": 0.82,
+        "transmission_speed": 0.92,
+        "network_connectivity": 0.88,
+        "gatekeeping_filter": 0.22,
+        "channel_capacity": 520.0,
+        "openness": 0.78,
+        "diffusion_rate_per_hour": 0.7324,
+        "reachable_population_share": 0.8844,
+        "influence_power": 0.8568
+      }
+    ]
+  }
+}

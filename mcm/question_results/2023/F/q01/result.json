@@ -1,0 +1,90 @@
+{
+  "problem_id": "2023-F",
+  "question": "q01",
+  "question_title": "奥运会举办影响指标框架",
+  "statement": "Build metrics for the impacts of hosting the games from economic, land use, human satisfaction, travel, opportunity for future improvements, host city/nation prestige, and other criteria.",
+  "methods": "把官方题面列出的经济、土地利用、人类满意度、旅行、未来改进、主办声望和体育团结转成 7 维权重指标，并写入可审计 metric framework。对应模型：多指标评价、权重评分、政策指标体系。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "official_requirements": {
+      "impact_dimensions": [
+        "economic",
+        "land_use",
+        "human_satisfaction",
+        "travel",
+        "future_improvement",
+        "host_prestige",
+        "unity_through_sport"
+      ],
+      "strategies_named_in_statement": [
+        "permanent_summer_winter_sites",
+        "four_season_split_games"
+      ],
+      "must_consider_feasibility": true,
+      "must_consider_timeline": true,
+      "must_consider_impact": true,
+      "ioc_memo_required": true
+    }
+  },
+  "metric_framework": {
+    "metrics": [
+      {
+        "dimension": "economic",
+        "weight": 0.2,
+        "definition": "Host public cost, repeatable venue economics, and risk of post-Games debt.",
+        "direction": "higher is lower burden and better long-run value"
+      },
+      {
+        "dimension": "land_use",
+        "weight": 0.14,
+        "definition": "Need for new land, temporary construction, and reuse of existing venues.",
+        "direction": "higher is less new land pressure"
+      },
+      {
+        "dimension": "human_satisfaction",
+        "weight": 0.16,
+        "definition": "Athlete, resident, volunteer, and spectator experience.",
+        "direction": "higher is better satisfaction"
+      },
+      {
+        "dimension": "travel",
+        "weight": 0.12,
+        "definition": "Travel burden, emissions exposure, and operational complexity.",
+        "direction": "higher is lower travel burden"
+      },
+      {
+        "dimension": "future_improvement",
+        "weight": 0.13,
+        "definition": "Learning curve, infrastructure legacy, and capacity to improve future Games.",
+        "direction": "higher is more repeatable improvement"
+      },
+      {
+        "dimension": "host_prestige",
+        "weight": 0.11,
+        "definition": "Prestige, local identity, and incentive for cities or nations to participate.",
+        "direction": "higher is stronger host incentive"
+      },
+      {
+        "dimension": "unity_through_sport",
+        "weight": 0.14,
+        "definition": "Ability to keep the Olympics globally meaningful and inclusive.",
+        "direction": "higher is stronger global unity"
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters from the COMAP PDF and explicit deterministic planning assumptions; it does not use random placeholder data.",
+    "assumptions": {
+      "score_scale": "All strategy and metric values are deterministic 0-1 planning scores derived from official statement criteria.",
+      "no_attached_data": "The official problem supplies no CSV/XLSX attachment; the PDF asks teams to build metrics and compare policy strategies.",
+      "timeline": "Timeline years measure IOC governance and host-contract transition time, not construction duration for a specific city."
+    },
+    "artifact_rows": {
+      "metric_framework.csv": 7,
+      "olympic_strategy_scores.csv": 5,
+      "implementation_timeline.csv": 6
+    }
+  }
+}

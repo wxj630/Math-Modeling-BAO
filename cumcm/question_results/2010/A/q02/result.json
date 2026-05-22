@@ -1,0 +1,121 @@
+{
+  "problem_id": "2010-A",
+  "title": "2010年 CUMCM A题：储油罐的变位识别与罐容表标定",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "对于图1所示的实际储油罐，试建立罐体变位后标定罐容表的数学模型，即罐内储油量与油位高度及变位参数（纵向倾斜角度α和横向偏转角度β ）之间的一般关系。请利用罐体变位后在进/出油过程中的实际检测数据（附件2），根据你们所建立的数学模型确定变位参数，并给出罐体变位后油位高度间隔为10cm的罐容表标定值。进一步利用附件2中的实际检测数据来分析检验你们模型的正确性与方法的可靠性。 附件1：小椭圆储油罐的实验数据 附件2：实际储油罐的检测数据 PAGE PAGE 1",
+  "tasks": [
+    "对于图1所示的实际储油罐，试建立罐体变位后标定罐容表的数学模型，即罐内储油量与油位高度及变位参数（纵向倾斜角度α和横向偏转角度β ）之间的一般关系",
+    "请利用罐体变位后在进/出油过程中的实际检测数据（附件2），根据你们所建立的数学模型确定变位参数，并给出罐体变位后油位高度间隔为10cm的罐容表标定值",
+    "进一步利用附件2中的实际检测数据来分析检验你们模型的正确性与方法的可靠性"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "储油罐变位识别与罐容表标定",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、参数、分析、标定"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "角度、圆、油位"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检验"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls",
+    "rows": 864,
+    "columns": 14,
+    "note": "本题专用算法读取附件1小椭圆罐四组进/出油实验和附件2实际罐检测数据，完成倾斜罐容表、变位参数识别和流量守恒验证。"
+  },
+  "formulation": {
+    "model_type": "储油罐变位识别与罐容表标定",
+    "task_breakdown": [
+      "对于图1所示的实际储油罐，试建立罐体变位后标定罐容表的数学模型，即罐内储油量与油位高度及变位参数（纵向倾斜角度α和横向偏转角度β ）之间的一般关系",
+      "请利用罐体变位后在进/出油过程中的实际检测数据（附件2），根据你们所建立的数学模型确定变位参数，并给出罐体变位后油位高度间隔为10cm的罐容表标定值",
+      "进一步利用附件2中的实际检测数据来分析检验你们模型的正确性与方法的可靠性"
+    ],
+    "assumptions": [
+      "附件流量计记录为区间进/出油量，油高记录为该区间结束后的油位高度。",
+      "第1问小椭圆罐容量曲线在实验高度范围内单调，采用PCHIP保持单调形状；端点用空罐0L和无变位实验估计总容量约束。",
+      "第2问实际罐用圆截面等效长度几何模型做变位参数代理识别；纵倾alpha主要表现为探针位置相对罐体中心的等效高度偏移，横偏beta表现为垂向投影缩放。",
+      "通用基线保留在 `cumcm/generic_baselines`，当前结果是从二次拟合推进到附件流量守恒与几何标定的专用版本。"
+    ],
+    "decision_variables": [
+      "h: 油位计显示高度(mm)",
+      "V(h): 罐内油量(L)",
+      "alpha: 纵向倾斜角",
+      "beta: 横向偏转角",
+      "L_eff: 实际储油罐的等效几何长度"
+    ],
+    "constraints": [
+      "V(h)随h单调非降，且空罐容量为0。",
+      "进油过程 V_t=V_0+累计进油量，出油过程 V_t=V_0-累计出油量。",
+      "实际罐截面高度限制在[0, 2R]；alpha、beta在小角度范围内识别。"
+    ],
+    "objective_or_equations": [
+      "第1问: 用倾斜进油曲线估计出油实验初始油量，再用PCHIP插值得到1cm罐容表。",
+      "圆截面面积 A(h)=R^2 arccos((R-h)/R)-(R-h)sqrt(2Rh-h^2)。",
+      "第2问: V_hat(h;alpha,beta,L_eff)=A((h+Delta_alpha)cos beta)L_eff/10^6，最小化与流量守恒体积的均方误差。"
+    ],
+    "solution_steps": [
+      "读取附件1四张实验表，解析累加进/出油量和油位高度。",
+      "用已知初始油量把倾斜进油转成体积样本，并反推倾斜出油实验初始体积。",
+      "生成1cm小罐倾斜罐容表，并与无变位曲线比较倾斜影响。",
+      "读取附件2实际检测数据，用进/出油量递推流量守恒体积。",
+      "在圆截面等效几何模型中识别alpha、beta和等效长度，输出10cm罐容表及残差验证表。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "储油罐变位识别与罐容表标定",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "oil_tank_flow_balance_parameter_identification",
+    "actual_sample_count": 603,
+    "identified_alpha_deg": 4.996768,
+    "identified_beta_deg": 5.0,
+    "effective_length_mm": 9312.408311,
+    "height_offset_mm": 143.372149,
+    "flow_balance_mae_liter": 114.808429,
+    "displayed_vs_flow_mae_liter": 388.561725,
+    "capacity_table_interval_mm": 100,
+    "optimization_success": true,
+    "report": [
+      "附件2显示油量与流量守恒体积存在系统差异，先用进/出油量递推真实体积序列。",
+      "用圆截面等效长度模型识别alpha、beta、等效长度和高度零偏，目标是最小化流量守恒残差。",
+      "输出10cm罐容表、逐样本残差表和参数表；alpha/beta为小角度几何代理参数，适合用于方法复现和可靠性检验。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2010/A/q02/small_tank_tilted_capacity_1cm.csv",
+    "question_artifacts/2010/A/q02/small_tank_tilted_fit_samples.csv",
+    "question_artifacts/2010/A/q02/small_tank_tilt_impact_by_height.csv",
+    "question_artifacts/2010/A/q02/actual_tank_capacity_10cm.csv",
+    "question_artifacts/2010/A/q02/actual_tank_flow_validation.csv",
+    "question_artifacts/2010/A/q02/actual_tank_identified_parameters.csv",
+    "question_artifacts/2010/A/q02/experiment_table.csv"
+  ]
+}

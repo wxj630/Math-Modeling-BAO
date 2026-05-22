@@ -1,0 +1,7 @@
+﻿route,entry_point,popularity_weight,safety_score,accessibility_score,daily_processing_capacity,temporary_capacity,capacity_share,legal_entry_support,route_attractiveness
+West Mediterranean,Spain,0.08,0.58,0.5,2100,55000,0.08208955223880597,0.55,0.45697611940298505
+Central Mediterranean,Italy,0.13,0.28,0.48,2900,86000,0.12835820895522387,0.55,0.3557044776119403
+Eastern Mediterranean,Greece/Turkey,0.42,0.62,0.82,8200,284000,0.42388059701492536,0.65,0.6636985074626864
+West Balkans,Hungary/Serbia,0.24,0.5,0.68,4600,162000,0.2417910447761194,0.65,0.5369223880597015
+Eastern Borders,Eastern EU border,0.07,0.54,0.36,1350,48000,0.07164179104477612,0.55,0.3882955223880597
+Albania to Greece,Albania/Greece,0.06,0.6,0.42,1150,35000,0.05223880597014925,0.55,0.4280029850746269

@@ -1,0 +1,218 @@
+{
+  "problem_id": "2022-E",
+  "question": "q04",
+  "question_title": "决策模型可能建议的管理计划谱系",
+  "statement": "What is the spectrum of management plans that your decision model may suggest?",
+  "methods": "输出 no harvest、selective 60-year、extended 50-year、current 40-year、short 30-year 五类透明方案及适用条件。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "official_requirements": {
+      "hundred_year_carbon_accounting": true,
+      "forest_products_lifecycle": true,
+      "balance_carbon_with_biodiversity_recreation_cultural_values": true,
+      "apply_to_various_forests": true,
+      "transition_from_current_timeline": true,
+      "community_article": true
+    },
+    "parameters": {
+      "horizon_years": 100,
+      "current_practice_rotation_years": 40,
+      "requested_transition_extension_years": 10,
+      "forest_products_store_carbon": true,
+      "balance_carbon_with_other_values": true,
+      "apply_to_various_forests": true,
+      "community_article_required": true,
+      "source_note": "Official PDF statement parameters only; forest rows below are deterministic scenario assumptions for audit and replacement, not observed inventory records."
+    }
+  },
+  "management_plan_spectrum": {
+    "plans": [
+      {
+        "plan": "no_harvest",
+        "rotation_years": 999,
+        "harvest_intensity": 0.0,
+        "long_product_share": 0.0,
+        "medium_product_share": 0.0,
+        "short_product_share": 0.0,
+        "biodiversity_value": 0.92,
+        "recreation_value": 0.86,
+        "cultural_value": 0.88,
+        "product_value": 0.1,
+        "transition_burden": 0.18
+      },
+      {
+        "plan": "selective_60_year",
+        "rotation_years": 60,
+        "harvest_intensity": 0.28,
+        "long_product_share": 0.54,
+        "medium_product_share": 0.28,
+        "short_product_share": 0.08,
+        "biodiversity_value": 0.84,
+        "recreation_value": 0.8,
+        "cultural_value": 0.81,
+        "product_value": 0.54,
+        "transition_burden": 0.1
+      },
+      {
+        "plan": "extended_50_year",
+        "rotation_years": 50,
+        "harvest_intensity": 0.42,
+        "long_product_share": 0.5,
+        "medium_product_share": 0.3,
+        "short_product_share": 0.1,
+        "biodiversity_value": 0.74,
+        "recreation_value": 0.72,
+        "cultural_value": 0.74,
+        "product_value": 0.7,
+        "transition_burden": 0.06
+      },
+      {
+        "plan": "current_40_year",
+        "rotation_years": 40,
+        "harvest_intensity": 0.5,
+        "long_product_share": 0.45,
+        "medium_product_share": 0.32,
+        "short_product_share": 0.13,
+        "biodiversity_value": 0.62,
+        "recreation_value": 0.64,
+        "cultural_value": 0.66,
+        "product_value": 0.78,
+        "transition_burden": 0.0
+      },
+      {
+        "plan": "short_30_year",
+        "rotation_years": 30,
+        "harvest_intensity": 0.58,
+        "long_product_share": 0.36,
+        "medium_product_share": 0.34,
+        "short_product_share": 0.18,
+        "biodiversity_value": 0.48,
+        "recreation_value": 0.52,
+        "cultural_value": 0.54,
+        "product_value": 0.88,
+        "transition_burden": 0.08
+      }
+    ],
+    "no_cut_condition": "Leave the forest uncut when no_harvest has the highest decision score or when biodiversity sensitivity is high and community product need is low.",
+    "common_transition_point": "The 50-year interval is the first extension beyond current 40-year practice that preserves product flow while increasing living and product carbon."
+  },
+  "decision_model": {
+    "criteria_weights": {
+      "carbon_storage": 0.38,
+      "biodiversity": 0.22,
+      "recreation": 0.14,
+      "cultural": 0.1,
+      "forest_products": 0.16
+    },
+    "transition_thresholds": [
+      {
+        "forest": "dry interior fire-adapted pine forest",
+        "best_harvest_plan": "selective_60_year",
+        "carbon_gap_vs_no_harvest_co2_per_ha": 16.513,
+        "decision_score_gap_vs_no_harvest": 0.0131,
+        "transition_rule": "include harvest"
+      },
+      {
+        "forest": "managed pine production forest",
+        "best_harvest_plan": "extended_50_year",
+        "carbon_gap_vs_no_harvest_co2_per_ha": -37.313,
+        "decision_score_gap_vs_no_harvest": 0.1702,
+        "transition_rule": "include harvest"
+      },
+      {
+        "forest": "old-growth coastal conifer reserve",
+        "best_harvest_plan": "selective_60_year",
+        "carbon_gap_vs_no_harvest_co2_per_ha": 72.452,
+        "decision_score_gap_vs_no_harvest": -0.0569,
+        "transition_rule": "leave uncut unless product need or disturbance risk increases"
+      },
+      {
+        "forest": "temperate mixed hardwood community forest",
+        "best_harvest_plan": "selective_60_year",
+        "carbon_gap_vs_no_harvest_co2_per_ha": 5.329,
+        "decision_score_gap_vs_no_harvest": 0.0371,
+        "transition_rule": "include harvest"
+      }
+    ],
+    "decision_recommendations": [
+      {
+        "forest": "dry interior fire-adapted pine forest",
+        "region_type": "dry interior",
+        "plan": "selective_60_year",
+        "rotation_years": 60,
+        "harvest_intensity": 0.28,
+        "carbon_100_years_co2_per_ha": 746.6779,
+        "live_carbon_100_years_t_per_ha": 124.9668,
+        "product_carbon_100_years_t_per_ha": 19.3104,
+        "substitution_credit_100_years_t_carbon_per_ha": 3.8657,
+        "biodiversity_value": 0.84,
+        "recreation_value": 0.8,
+        "cultural_value": 0.81,
+        "product_value": 0.54,
+        "carbon_score": 0.9324,
+        "biodiversity_score": 0.5544,
+        "product_score": 0.27,
+        "social_decision_score": 0.7287
+      },
+      {
+        "forest": "managed pine production forest",
+        "region_type": "subtropical plantation",
+        "plan": "extended_50_year",
+        "rotation_years": 50,
+        "harvest_intensity": 0.42,
+        "carbon_100_years_co2_per_ha": 925.2247,
+        "live_carbon_100_years_t_per_ha": 157.4785,
+        "product_carbon_100_years_t_per_ha": 28.2486,
+        "substitution_credit_100_years_t_carbon_per_ha": 5.6755,
+        "biodiversity_value": 0.74,
+        "recreation_value": 0.72,
+        "cultural_value": 0.74,
+        "product_value": 0.7,
+        "carbon_score": 1.0,
+        "biodiversity_score": 0.3404,
+        "product_score": 0.574,
+        "social_decision_score": 0.7745
+      },
+      {
+        "forest": "old-growth coastal conifer reserve",
+        "region_type": "cool wet conifer",
+        "plan": "no_harvest",
+        "rotation_years": 999,
+        "harvest_intensity": 0.0,
+        "carbon_100_years_co2_per_ha": 1453.4899,
+        "live_carbon_100_years_t_per_ha": 268.1647,
+        "product_carbon_100_years_t_per_ha": 0.0,
+        "substitution_credit_100_years_t_carbon_per_ha": 0.0,
+        "biodiversity_value": 0.92,
+        "recreation_value": 0.86,
+        "cultural_value": 0.88,
+        "product_value": 0.1,
+        "carbon_score": 1.0,
+        "biodiversity_score": 0.874,
+        "product_score": 0.022,
+        "social_decision_score": 0.7698
+      },
+      {
+        "forest": "temperate mixed hardwood community forest",
+        "region_type": "temperate",
+        "plan": "selective_60_year",
+        "rotation_years": 60,
+        "harvest_intensity": 0.28,
+        "carbon_100_years_co2_per_ha": 1066.4192,
+        "live_carbon_100_years_t_per_ha": 175.4969,
+        "product_carbon_100_years_t_per_ha": 25.8676,
+        "substitution_credit_100_years_t_carbon_per_ha": 5.1784,
+        "biodiversity_value": 0.84,
+        "recreation_value": 0.8,
+        "cultural_value": 0.81,
+        "product_value": 0.54,
+        "carbon_score": 0.9823,
+        "biodiversity_score": 0.6888,
+        "product_score": 0.3024,
+        "social_decision_score": 0.786
+      }
+    ]
+  }
+}

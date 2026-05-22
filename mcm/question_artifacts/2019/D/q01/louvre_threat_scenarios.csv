@@ -1,0 +1,5 @@
+scenario,closed_exits,extra_service_exits,emergency_access_reserved_pct,open_main_exit_capacity_person_min,service_exit_capacity_person_min,effective_public_capacity_person_min,estimated_clear_time_min,responder_access_reserved_pct,route_policy
+underground corridor smoke,['Carrousel du Louvre'],5,0.16,780,425,1012.2,12.76,0.16,activate service exits only under staff control after threat-specific route screening
+riverside security incident,['Portes Des Lions'],3,0.12,890,255,1007.6,12.8,0.12,activate service exits only under staff control after threat-specific route screening
+baseline all main exits,[],0,0.1,1040,0,936.0,13.43,0.1,activate service exits only under staff control after threat-specific route screening
+pyramid unavailable,['Pyramid entrance'],4,0.14,620,340,825.6,14.63,0.14,activate service exits only under staff control after threat-specific route screening

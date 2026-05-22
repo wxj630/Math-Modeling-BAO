@@ -1,0 +1,112 @@
+{
+  "problem_id": "2015-A",
+  "title": "2015年 CUMCM A题：太阳影子定位",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "根据某固定直杆在水平地面上的太阳影子顶点坐标数据，建立数学模型确定直杆所处的地点和日期。将你们的模型分别应用于附件2和附件3的影子顶点坐标数据，给出若干个可能的地点与日期。",
+  "tasks": [
+    "根据某固定直杆在水平地面上的太阳影子顶点坐标数据，建立数学模型确定直杆所处的地点和日期",
+    "将你们的模型分别应用于附件2和附件3的影子顶点坐标数据，给出若干个可能的地点与日期"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "日期"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "坐标"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
+    "rows": 64,
+    "columns": 3,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "根据某固定直杆在水平地面上的太阳影子顶点坐标数据，建立数学模型确定直杆所处的地点和日期",
+      "将你们的模型分别应用于附件2和附件3的影子顶点坐标数据，给出若干个可能的地点与日期"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": 126.52003038194451,
+    "slope": -2.9064917200854716,
+    "r2": 0.04618828282258336,
+    "next_12_forecast": [
+      -15.898064,
+      -18.804556,
+      -21.711047,
+      -24.617539,
+      -27.524031,
+      -30.430523,
+      -33.337014,
+      -36.243506,
+      -39.149998,
+      -42.056489,
+      -44.962981,
+      -47.869473
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2015/A/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

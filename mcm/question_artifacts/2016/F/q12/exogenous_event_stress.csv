@@ -1,0 +1,7 @@
+﻿route,baseline_safety,post_event_safety,baseline_daily_capacity,post_event_daily_capacity,cascading_effect
+West Mediterranean,0.58,0.4988,2100,1638,queue spillover to neighboring routes and higher shelter/healthcare pressure
+Central Mediterranean,0.28,0.252,2900,2378,queue spillover to neighboring routes and higher shelter/healthcare pressure
+Eastern Mediterranean,0.62,0.4712,8200,5576,queue spillover to neighboring routes and higher shelter/healthcare pressure
+West Balkans,0.5,0.38,4600,3128,queue spillover to neighboring routes and higher shelter/healthcare pressure
+Eastern Borders,0.54,0.4644,1350,1053,queue spillover to neighboring routes and higher shelter/healthcare pressure
+Albania to Greece,0.6,0.516,1150,897,queue spillover to neighboring routes and higher shelter/healthcare pressure

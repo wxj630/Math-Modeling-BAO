@@ -1,0 +1,433 @@
+{
+  "problem_id": "2024-F",
+  "title": "Reducing Illegal Wildlife Trade",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "official_requirements": {
+      "select_client": true,
+      "realistic_client_action": true,
+      "data_driven_five_year_project": true,
+      "additional_powers_and_resources": true,
+      "measurable_impact": true,
+      "goal_probability": true,
+      "contextualized_sensitivity_analysis": true,
+      "one_page_client_memo": true
+    },
+    "parameters": {
+      "max_illegal_trade_billion_usd": 26.5,
+      "project_years": 5,
+      "fourth_largest_illegal_trade": true,
+      "program_effectiveness_discount": 0.42,
+      "source_note": "Official PDF statement parameters only; project rows are deterministic scenario assumptions, not observed enforcement data."
+    }
+  },
+  "client_selection": {
+    "model": "multi-criteria client fit score over mandate, cross-border power, data access, implementation capacity, mission alignment, and political feasibility",
+    "selected_client": "World Customs Organization coordinated customs task force",
+    "selection_reason": "highest fit because customs coordination has authority over border chokepoints and access to shipment-risk metadata",
+    "candidate_clients": [
+      {
+        "client": "World Customs Organization coordinated customs task force",
+        "mandate_fit": 0.94,
+        "cross_border_power": 0.92,
+        "data_access": 0.86,
+        "implementation_capacity": 0.82,
+        "mission_alignment": 0.9,
+        "political_feasibility": 0.74,
+        "client_fit_score": 0.8768
+      },
+      {
+        "client": "Global e-commerce marketplace trust-and-safety coalition",
+        "mandate_fit": 0.76,
+        "cross_border_power": 0.54,
+        "data_access": 0.92,
+        "implementation_capacity": 0.8,
+        "mission_alignment": 0.7,
+        "political_feasibility": 0.79,
+        "client_fit_score": 0.7458
+      },
+      {
+        "client": "Regional wildlife conservation NGO consortium",
+        "mandate_fit": 0.82,
+        "cross_border_power": 0.45,
+        "data_access": 0.61,
+        "implementation_capacity": 0.64,
+        "mission_alignment": 0.96,
+        "political_feasibility": 0.83,
+        "client_fit_score": 0.7
+      },
+      {
+        "client": "National park agency in a source country",
+        "mandate_fit": 0.88,
+        "cross_border_power": 0.36,
+        "data_access": 0.52,
+        "implementation_capacity": 0.58,
+        "mission_alignment": 0.92,
+        "political_feasibility": 0.68,
+        "client_fit_score": 0.6488
+      }
+    ]
+  },
+  "project_design": {
+    "duration_years": 5,
+    "project_name": "Targeted Corridor Disruption and Demand-Platform Friction Program",
+    "interventions": [
+      {
+        "intervention": "risk-scored customs inspections on high-probability routes",
+        "client_power_required": "customs targeting authority and shipment metadata access",
+        "annual_cost_musd": 8.5,
+        "year1_reduction_pct": 0.035,
+        "maturity_gain_pct_per_year": 0.01,
+        "evidence_basis": "network interdiction and targeted inspection are more efficient than uniform screening"
+      },
+      {
+        "intervention": "shared wildlife-trafficking intelligence graph",
+        "client_power_required": "data-sharing MOUs, secure analytics platform, common species/product taxonomy",
+        "annual_cost_musd": 6.2,
+        "year1_reduction_pct": 0.026,
+        "maturity_gain_pct_per_year": 0.014,
+        "evidence_basis": "multi-agency intelligence fusion reduces repeated blind spots across borders"
+      },
+      {
+        "intervention": "online listing takedown and seller re-entry friction",
+        "client_power_required": "platform APIs, trust-and-safety escalation, payment account flags",
+        "annual_cost_musd": 3.8,
+        "year1_reduction_pct": 0.018,
+        "maturity_gain_pct_per_year": 0.009,
+        "evidence_basis": "demand-side transaction friction reduces open-market availability"
+      },
+      {
+        "intervention": "community informant rewards and alternative-livelihood microgrants",
+        "client_power_required": "local NGO partners, audited reward fund, community project pipeline",
+        "annual_cost_musd": 5.5,
+        "year1_reduction_pct": 0.022,
+        "maturity_gain_pct_per_year": 0.011,
+        "evidence_basis": "source-area incentives reduce recruitment into poaching and improve reporting"
+      },
+      {
+        "intervention": "financial-flow screening for wildlife-product typologies",
+        "client_power_required": "FIU liaison, suspicious transaction typologies, privacy-preserving watchlists",
+        "annual_cost_musd": 4.9,
+        "year1_reduction_pct": 0.02,
+        "maturity_gain_pct_per_year": 0.012,
+        "evidence_basis": "following payment channels complements physical seizure data"
+      }
+    ],
+    "suitability_for_client": "The selected client can coordinate customs risk scoring, data-sharing rules, and enforcement operations while partnering with platforms, FIUs, and community groups."
+  },
+  "analysis_support": {
+    "modeling_processes": [
+      "multi-criteria client selection",
+      "deterministic intervention-impact projection",
+      "resource-constrained project costing",
+      "contextualized sensitivity analysis",
+      "complex-system influence network"
+    ],
+    "complexity_framework": {
+      "used": true,
+      "benefits": [
+        "captures route displacement and demand-channel substitution",
+        "makes synergy with anti-trafficking, financial crime, and climate/livelihood work explicit"
+      ],
+      "drawbacks": [
+        "requires scenario assumptions when official numerical network data are unavailable",
+        "can obscure accountability if every actor is treated as equally responsible"
+      ]
+    },
+    "complex_system_edges": [
+      {
+        "source": "source-area poaching",
+        "target": "transit-route smuggling",
+        "influence_weight": 0.85,
+        "relationship": "supply chain"
+      },
+      {
+        "source": "transit-route smuggling",
+        "target": "destination market availability",
+        "influence_weight": 0.78,
+        "relationship": "supply chain"
+      },
+      {
+        "source": "online demand signals",
+        "target": "destination market availability",
+        "influence_weight": 0.66,
+        "relationship": "demand amplification"
+      },
+      {
+        "source": "financial-flow screening",
+        "target": "transit-route smuggling",
+        "influence_weight": -0.42,
+        "relationship": "deterrence"
+      },
+      {
+        "source": "customs targeting",
+        "target": "transit-route smuggling",
+        "influence_weight": -0.58,
+        "relationship": "interdiction"
+      },
+      {
+        "source": "community rewards",
+        "target": "source-area poaching",
+        "influence_weight": -0.37,
+        "relationship": "source reduction"
+      },
+      {
+        "source": "platform takedown",
+        "target": "online demand signals",
+        "influence_weight": -0.45,
+        "relationship": "demand reduction"
+      },
+      {
+        "source": "climate and livelihood stress",
+        "target": "source-area poaching",
+        "influence_weight": 0.31,
+        "relationship": "external pressure"
+      }
+    ]
+  },
+  "resource_needs": {
+    "additional_budget_musd": 160.395,
+    "resource_rows": [
+      {
+        "intervention": "risk-scored customs inspections on high-probability routes",
+        "client_power_required": "customs targeting authority and shipment metadata access",
+        "startup_cost_musd": 4.675,
+        "annual_cost_musd": 8.5,
+        "five_year_cost_musd": 47.175
+      },
+      {
+        "intervention": "shared wildlife-trafficking intelligence graph",
+        "client_power_required": "data-sharing MOUs, secure analytics platform, common species/product taxonomy",
+        "startup_cost_musd": 3.41,
+        "annual_cost_musd": 6.2,
+        "five_year_cost_musd": 34.41
+      },
+      {
+        "intervention": "online listing takedown and seller re-entry friction",
+        "client_power_required": "platform APIs, trust-and-safety escalation, payment account flags",
+        "startup_cost_musd": 2.09,
+        "annual_cost_musd": 3.8,
+        "five_year_cost_musd": 21.09
+      },
+      {
+        "intervention": "community informant rewards and alternative-livelihood microgrants",
+        "client_power_required": "local NGO partners, audited reward fund, community project pipeline",
+        "startup_cost_musd": 3.025,
+        "annual_cost_musd": 5.5,
+        "five_year_cost_musd": 30.525
+      },
+      {
+        "intervention": "financial-flow screening for wildlife-product typologies",
+        "client_power_required": "FIU liaison, suspicious transaction typologies, privacy-preserving watchlists",
+        "startup_cost_musd": 2.695,
+        "annual_cost_musd": 4.9,
+        "five_year_cost_musd": 27.195
+      }
+    ],
+    "additional_powers": [
+      "customs data-sharing memorandum across high-risk ports",
+      "legal authority for risk-scored inspections and controlled deliveries",
+      "platform takedown escalation channel",
+      "financial intelligence liaison for wildlife-product typologies",
+      "audited community reward and microgrant mechanism"
+    ]
+  },
+  "impact_projection": {
+    "baseline_illegal_trade_value_year5_billion_usd": 31.4737,
+    "projected_illegal_trade_value_year5_billion_usd": 20.8262,
+    "final_trade_reduction_pct": 33.83,
+    "annual_rows": [
+      {
+        "year": 1,
+        "baseline_illegal_trade_value_billion_usd": 27.4275,
+        "projected_illegal_trade_value_billion_usd": 26.6609,
+        "annual_project_reduction_pct": 2.795,
+        "cumulative_trade_reduction_pct": 2.795
+      },
+      {
+        "year": 2,
+        "baseline_illegal_trade_value_billion_usd": 28.3875,
+        "projected_illegal_trade_value_billion_usd": 26.1991,
+        "annual_project_reduction_pct": 5.055,
+        "cumulative_trade_reduction_pct": 7.709
+      },
+      {
+        "year": 3,
+        "baseline_illegal_trade_value_billion_usd": 29.381,
+        "projected_illegal_trade_value_billion_usd": 25.0463,
+        "annual_project_reduction_pct": 7.633,
+        "cumulative_trade_reduction_pct": 14.754
+      },
+      {
+        "year": 4,
+        "baseline_illegal_trade_value_billion_usd": 30.4094,
+        "projected_illegal_trade_value_billion_usd": 23.2169,
+        "annual_project_reduction_pct": 10.439,
+        "cumulative_trade_reduction_pct": 23.652
+      },
+      {
+        "year": 5,
+        "baseline_illegal_trade_value_billion_usd": 31.4737,
+        "projected_illegal_trade_value_billion_usd": 20.8262,
+        "annual_project_reduction_pct": 13.331,
+        "cumulative_trade_reduction_pct": 33.83
+      }
+    ],
+    "method": "compound no-project growth path compared with deterministic yearly intervention reductions under implementation maturity"
+  },
+  "goal_probability": {
+    "base_probability": 0.64,
+    "probability_reach_goal": 0.69,
+    "goal": "at least 20% cumulative reduction from the no-project five-year trajectory",
+    "top_helpful_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      }
+    ],
+    "top_harmful_conditions": [
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      }
+    ]
+  },
+  "sensitivity_analysis": {
+    "method": "one-at-a-time contextual event adjustments around the base probability of meeting the 20% reduction goal",
+    "top_helpful_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      }
+    ],
+    "top_harmful_conditions": [
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      }
+    ],
+    "all_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      }
+    ]
+  },
+  "client_memo": "Memo to the World Customs Organization coordinated customs task force: adopt this 5-year corridor disruption project because illegal wildlife trade is valued up to 26.5 billion USD per year and is the fourth largest illegal trade. The program uses customs risk scoring, shared intelligence, platform takedowns, financial-flow screening, and community incentives to produce a measurable 33.83% reduction versus the no-project trajectory by year 5.",
+  "artifacts": {
+    "client_project_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/client_project_scores.csv",
+    "resource_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/resource_plan.csv",
+    "intervention_impact_projection": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/intervention_impact_projection.csv",
+    "sensitivity_analysis": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/sensitivity_analysis.csv",
+    "complex_system_edges": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/complex_system_edges.csv",
+    "wildlife_trade_project_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/wildlife_trade_project_frontier.png"
+  }
+}

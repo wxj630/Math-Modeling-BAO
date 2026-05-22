@@ -1,0 +1,17 @@
+﻿section,uav,x,y,receiver,emitters,estimated_x,estimated_y,target_x,target_y,dx,dy,move_distance,angle_residual_mse
+cone_target,FY00,0.0,0.0,,,,,,,,,,
+cone_target,FY01,-50.0,50.0,,,,,,,,,,
+cone_target,FY02,50.0,50.0,,,,,,,,,,
+cone_target,FY03,-100.0,100.0,,,,,,,,,,
+cone_target,FY04,100.0,100.0,,,,,,,,,,
+cone_target,FY05,-150.0,150.0,,,,,,,,,,
+cone_target,FY06,150.0,150.0,,,,,,,,,,
+cone_target,FY07,-200.0,200.0,,,,,,,,,,
+cone_target,FY08,200.0,200.0,,,,,,,,,,
+cone_target,FY09,0.0,125.0,,,,,,,,,,
+cone_adjustment,,,,FY01,"FY00,FY03,FY04,FY09",-53.293039,45.749812,-50.0,50.0,3.293039,4.250188,5.376635,0.0
+cone_adjustment,,,,FY02,"FY00,FY03,FY04,FY09",49.762084,47.067927,50.0,50.0,0.237916,2.932073,2.94171,0.0
+cone_adjustment,,,,FY05,"FY00,FY03,FY04,FY09",-151.112979,159.787784,-150.0,150.0,1.112979,-9.787784,9.85086,0.0
+cone_adjustment,,,,FY06,"FY00,FY03,FY04,FY09",144.036938,149.492872,150.0,150.0,5.963062,0.507128,5.984587,0.0
+cone_adjustment,,,,FY07,"FY00,FY03,FY04,FY09",-201.573007,194.249513,-200.0,200.0,1.573007,5.750487,5.961749,0.0
+cone_adjustment,,,,FY08,"FY00,FY03,FY04,FY09",194.041292,195.869424,200.0,200.0,5.958708,4.130576,7.250369,0.0

@@ -1,0 +1,110 @@
+{
+  "problem_id": "2014-B",
+  "title": "2014年 CUMCM B题：创意平板折叠桌",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "公司计划开发一种折叠桌设计软件，根据客户任意设定的折叠桌高度、桌面边缘线的形状大小和桌脚边缘线的大致形状，给出所需平板材料的形状尺寸和切实可行的最优设计加工参数，使得生产的折叠桌尽可能接近客户所期望的形状。你们团队的任务是帮助给出这一软件设计的数学模型，并根据所建立的模型给出几个你们自己设计的创意平板折叠桌。要求给出相应的设计加工参数，画出至少8张动态变化过程的示意图。",
+  "tasks": [
+    "公司计划开发一种折叠桌设计软件，根据客户任意设定的折叠桌高度、桌面边缘线的形状大小和桌脚边缘线的大致形状，给出所需平板材料的形状尺寸和切实可行的最优设计加工参数，使得生产的折叠桌尽可能接近客户所期望的形状",
+    "你们团队的任务是帮助给出这一软件设计的数学模型，并根据所建立的模型给出几个你们自己设计的创意平板折叠桌",
+    "要求给出相应的设计加工参数，画出至少8张动态变化过程的示意图"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最优、设计"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "客户"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "形状"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/B.md",
+    "rows": 16,
+    "columns": 6,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "公司计划开发一种折叠桌设计软件，根据客户任意设定的折叠桌高度、桌面边缘线的形状大小和桌脚边缘线的大致形状，给出所需平板材料的形状尺寸和切实可行的最优设计加工参数，使得生产的折叠桌尽可能接近客户所期望的形状",
+      "你们团队的任务是帮助给出这一软件设计的数学模型，并根据所建立的模型给出几个你们自己设计的创意平板折叠桌",
+      "要求给出相应的设计加工参数，画出至少8张动态变化过程的示意图"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 78.70500317042706,
+    "decision": [
+      0.0,
+      0.0,
+      0.0,
+      2.736529
+    ],
+    "resource_slack": [
+      302.679874,
+      0.0,
+      0.549603
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2014/B/q03/experiment_table.csv"
+  ]
+}

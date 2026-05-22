@@ -1,0 +1,37 @@
+year,policy,dimension,progress_to_full_effect,expected_dimension_gain
+1,completion advising and transfer pathways,access_equity,0.25,0.026
+1,innovation renewal councils,innovation_renewal,0.1,0.0097
+1,need-based affordability compact,affordability,0.2,0.0282
+2,completion advising and transfer pathways,access_equity,0.5,0.052
+2,innovation renewal councils,innovation_renewal,0.2,0.0194
+2,need-based affordability compact,affordability,0.4,0.0564
+2,public funding floor tied to completion and quality,funding_stability,0.1667,0.0186
+2,teaching quality and labor-market feedback system,quality_and_learning,0.2,0.0171
+3,completion advising and transfer pathways,access_equity,0.75,0.078
+3,innovation renewal councils,innovation_renewal,0.3,0.0291
+3,need-based affordability compact,affordability,0.6,0.0846
+3,public funding floor tied to completion and quality,funding_stability,0.3333,0.0372
+3,research and international exchange recovery plan,research_and_exchange,0.1667,0.0126
+3,teaching quality and labor-market feedback system,quality_and_learning,0.4,0.0341
+4,completion advising and transfer pathways,access_equity,1.0,0.104
+4,innovation renewal councils,innovation_renewal,0.4,0.0388
+4,need-based affordability compact,affordability,0.8,0.1128
+4,public funding floor tied to completion and quality,funding_stability,0.5,0.0558
+4,research and international exchange recovery plan,research_and_exchange,0.3333,0.0252
+4,teaching quality and labor-market feedback system,quality_and_learning,0.6,0.0512
+5,innovation renewal councils,innovation_renewal,0.5,0.0485
+5,need-based affordability compact,affordability,1.0,0.1409
+5,public funding floor tied to completion and quality,funding_stability,0.6667,0.0744
+5,research and international exchange recovery plan,research_and_exchange,0.5,0.0378
+5,teaching quality and labor-market feedback system,quality_and_learning,0.8,0.0682
+6,innovation renewal councils,innovation_renewal,0.6,0.0581
+6,public funding floor tied to completion and quality,funding_stability,0.8333,0.093
+6,research and international exchange recovery plan,research_and_exchange,0.6667,0.0503
+6,teaching quality and labor-market feedback system,quality_and_learning,1.0,0.0853
+7,innovation renewal councils,innovation_renewal,0.7,0.0678
+7,public funding floor tied to completion and quality,funding_stability,1.0,0.1116
+7,research and international exchange recovery plan,research_and_exchange,0.8333,0.0629
+8,innovation renewal councils,innovation_renewal,0.8,0.0775
+8,research and international exchange recovery plan,research_and_exchange,1.0,0.0755
+9,innovation renewal councils,innovation_renewal,0.9,0.0872
+10,innovation renewal councils,innovation_renewal,1.0,0.0969

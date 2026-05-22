@@ -1,0 +1,5 @@
+country,transferability_score,model_adjustment
+United States,0.822,"scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+China,0.7076,"scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+Norway,0.7992,"scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+India,0.4852,"scale by vehicle stock, grid reliability, urbanization, and corridor distance"

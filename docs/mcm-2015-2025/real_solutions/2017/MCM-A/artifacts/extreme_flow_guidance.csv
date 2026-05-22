@@ -1,0 +1,5 @@
+﻿scenario,flow_index,action,zra_guidance
+maximum_expected_discharge,100,open upstream pre-release gates and enforce downstream rise-rate cap,activate flood command center and evacuate exposed low banks
+high_flood,88,stagger mid-river releases and maximize flood-buffer storage,reduce synchronized peaks across adjacent segments
+low_flow,28,ration hydropower peaking and release ecological minimum flow,"prioritize drinking water, sanitation, and critical irrigation"
+minimum_expected_discharge,12,enter emergency drought rule curve and suspend discretionary releases,protect health and ecosystem refuges until inflow recovers

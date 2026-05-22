@@ -1,0 +1,87 @@
+{
+  "problem_id": "2019-B",
+  "title": "2019年 CUMCM B题：同心协力”策略研究",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "在现实情形中，队员发力时机和力度不可能做到精确控制，存在一定误 差， 于是鼓面可能出现倾斜。 试建立模型描述队员的发力时机和力度与某一特定 时刻的鼓面倾斜角度的关系。 设队员人数为8， 绳长为1.7m， 鼓面初始时刻是水 平静止的，初始位置较绳子水平时下降 11 cm，表 1 中给出了队员们的不同发力 时机和力度，求 0.1 s 时鼓面的倾斜角度。",
+  "tasks": [
+    "试建立模型描述队员的发力时机和力度与某一特定 时刻的鼓面倾斜角度的关系",
+    "设队员人数为8， 绳长为1.7m， 鼓面初始时刻是水 平静止的，初始位置较绳子水平时下降 11 cm，表 1 中给出了队员们的不同发力 时机和力度，求 0.1 s 时鼓面的倾斜角度"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置、角度"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2019/B.md",
+    "rows": 32,
+    "columns": 17,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "试建立模型描述队员的发力时机和力度与某一特定 时刻的鼓面倾斜角度的关系",
+      "设队员人数为8， 绳长为1.7m， 鼓面初始时刻是水 平静止的，初始位置较绳子水平时下降 11 cm，表 1 中给出了队员们的不同发力 时机和力度，求 0.1 s 时鼓面的倾斜角度"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      2.512678,
+      1.359846
+    ],
+    "radius": 3.185144341383319,
+    "mean_squared_error": 0.01756089026811107,
+    "success": true
+  },
+  "artifact_paths": [
+    "question_artifacts/2019/B/q02/experiment_table.csv"
+  ]
+}

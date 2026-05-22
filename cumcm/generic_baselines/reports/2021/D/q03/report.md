@@ -1,0 +1,67 @@
+# 2021-D 问题 3 通用基线报告
+
+> 这是题目专用化之前的第一版通用模型。它用于保留建模进步过程，不代表最终竞赛级解法。
+
+## 题目与任务
+
+- 题目：2021年 CUMCM D题：连铸切割的
+- 问题：问题 3
+- 原问：假设实时最优切割方案和结晶器出现异常的时刻均与问题 2 相同， 在满足基本要求和正常要求的条件下，对（1）用户目标值是 8.5 米，目标范围 是 8.0~9.0 米,（2）用户目标值是 11.1 米，目标范围是10.6~11.6 米两种情况 分别按 “初始切割方案、 调整后的切割方案、 切割损失” 等内容给出具体的最优 切割方案。 附录：参数与要求 工艺参数：切割机切断一块钢坯的时间为3 分钟，切割后，返回到工作起点 的时间为 1 分钟。从结晶器中心到切割机工作起点处钢坯的长度是 60.0 米，连 铸拉坯的速度为1.0 米/分钟。当结晶器出现异常时，报废段的长度是 0.8 米。 基本要求：切割后的钢坯长度必须在 4.8~12.6 米之间，否则无法运走，阻 碍生产。下道工序能够接受的钢坯长度是 8.0~11.6 米，如果不在此范围内，可 以将钢坯运走进行二次离线切割，但切割下的部分报废，从而产生损失。例如， 12.6 米的钢坯切掉1.0 米变成 11.6 米，切下来的1.0 米报废；而小于 8.0 米的 钢坯只能全部报废。 正常要求：正常切割是按照用户要求的长度进行切割。 用户要求包含目标值 和目标范围， 钢坯的切割长度应尽量满足目标值，而在目标范围内的长度也是可 以接受的。例如，目标值是 9.5 米，目标范围是 9.0~10.0 米，则切割长度尽量 是 9.5 米，而在 9.0~10.0 米之间的长度是允许的。当钢坯长度不在目标范围内 时，会产生损失。例如，钢坯长度是11.6 米，多出来的1.6 米报废。
+
+## 通用模型选择
+
+- 模型：规划优化与资源配置（CH3：函数极值与规划模型）
+- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 通用方法：`linear_programming`
+
+## 变量、约束与公式
+
+### 变量定义
+- x_i: 第 i 个方案/资源的选择强度
+- c_i: 单位收益或效用
+- A_ji: 第 j 类资源消耗
+- b_j: 第 j 类资源上限
+
+### 约束条件
+- A x <= b
+- x_i >= 0
+- 资源容量按题面约束映射为 b_j
+
+### 模型公式 / 目标函数
+- `max sum_i c_i*x_i`
+- `s.t. A*x <= b, x >= 0`
+
+## 运行与产物
+
+- 通用代码：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2021/D/q03/solution.py
+- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2021/D/q03/solution.py`
+- 结果 JSON：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/results/2021/D/q03/result.json
+- 实验报告：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/reports/2021/D/q03/report.md
+- 实验产物：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/artifacts/2021/D/q03/experiment_table.csv
+
+## 数据来源
+
+- 类型：problem_statement
+- 路径：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2021/D.md
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
+
+## 核心结果
+
+```json
+{
+  "method": "linear_programming",
+  "success": true,
+  "objective_max": 4.699898901423287,
+  "decision": [
+    0.0,
+    0.0,
+    0.0,
+    2.32524
+  ],
+  "resource_slack": [
+    213.365363,
+    0.0,
+    0.584382
+  ]
+}
+```

@@ -1,0 +1,146 @@
+{
+  "problem_id": "2023-C-Boats",
+  "question": "q03",
+  "question_title": "香港市场可比挂牌样本与区域效应情景",
+  "statement": "Discuss how the regional modeling can be useful in the Hong Kong (SAR) market. Choose an informative subset split between monohulls and catamarans, find comparable Hong Kong listing prices, and model the Hong Kong regional effect.",
+  "methods": "明确官方 Excel 没有香港行；用带来源 URL 的香港当前挂牌补充样本做情景校准，并与官方区域模型对同船型/长度/船龄的预测中位价比较。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
+    "records": 3491,
+    "rows": {
+      "monohull": 2346,
+      "catamaran": 1145
+    },
+    "sheets": [
+      "Monohulled Sailboats ",
+      "Catamarans"
+    ],
+    "regions": [
+      "Caribbean",
+      "Europe",
+      "USA"
+    ],
+    "columns": [
+      "Make",
+      "Variant",
+      "Length (ft)",
+      "Geographic Region",
+      "Country/Region/State",
+      "Listing Price (USD)",
+      "Year"
+    ]
+  },
+  "hong_kong_market": {
+    "official_hk_rows_in_workbook": 0,
+    "interpretation": "The COMAP workbook has no Hong Kong rows; the Hong Kong effect is therefore a transparent supplemental-market scenario, not an official-COMAP estimate.",
+    "supplemental_source_count": 2,
+    "supplemental_sources": [
+      "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran",
+      "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+    ],
+    "comparables": [
+      {
+        "make": "Beneteau",
+        "variant": "Sense 43",
+        "hull_type": "monohull",
+        "length_ft": 43.0,
+        "year": 2013,
+        "listing_price_usd": 230000.0,
+        "known_region_model_price_median_usd": 221860.82,
+        "hk_effect_pct_vs_known_region_model": 3.669,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+      },
+      {
+        "make": "Beneteau",
+        "variant": "Sense 51",
+        "hull_type": "monohull",
+        "length_ft": 51.0,
+        "year": 2017,
+        "listing_price_usd": 445000.0,
+        "known_region_model_price_median_usd": 596342.91,
+        "hk_effect_pct_vs_known_region_model": -25.379,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+      },
+      {
+        "make": "Jeanneau",
+        "variant": "Sun Odyssey 389",
+        "hull_type": "monohull",
+        "length_ft": 38.9,
+        "year": 2019,
+        "listing_price_usd": 190000.0,
+        "known_region_model_price_median_usd": 194663.86,
+        "hk_effect_pct_vs_known_region_model": -2.396,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/sailing-boats/2013-beneteau-sense-43-9833068/"
+      },
+      {
+        "make": "Lagoon",
+        "variant": "46",
+        "hull_type": "catamaran",
+        "length_ft": 46.0,
+        "year": 2020,
+        "listing_price_usd": 973092.0,
+        "known_region_model_price_median_usd": 760920.12,
+        "hk_effect_pct_vs_known_region_model": 27.884,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      },
+      {
+        "make": "Lagoon",
+        "variant": "42",
+        "hull_type": "catamaran",
+        "length_ft": 42.0,
+        "year": 2022,
+        "listing_price_usd": 904919.0,
+        "known_region_model_price_median_usd": 485906.43,
+        "hk_effect_pct_vs_known_region_model": 86.233,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      },
+      {
+        "make": "Lagoon",
+        "variant": "450",
+        "hull_type": "catamaran",
+        "length_ft": 45.0,
+        "year": 2014,
+        "listing_price_usd": 745426.0,
+        "known_region_model_price_median_usd": 475635.15,
+        "hk_effect_pct_vs_known_region_model": 56.722,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      },
+      {
+        "make": "Fountaine Pajot",
+        "variant": "Saba 50",
+        "hull_type": "catamaran",
+        "length_ft": 50.0,
+        "year": 2016,
+        "listing_price_usd": 1242844.0,
+        "known_region_model_price_median_usd": 747573.55,
+        "hk_effect_pct_vs_known_region_model": 66.25,
+        "source": "boats.com",
+        "source_url": "https://www.boats.com/boats-for-sale/?condition=used&country=hong-kong&class=sail-catamaran"
+      }
+    ],
+    "effect_by_hull_type": [
+      {
+        "hull_type": "catamaran",
+        "sample_count": 4,
+        "median_hk_effect_pct": 61.486,
+        "mean_hk_effect_pct": 59.272,
+        "median_listing_price_usd": 939005.5
+      },
+      {
+        "hull_type": "monohull",
+        "sample_count": 3,
+        "median_hk_effect_pct": -2.396,
+        "mean_hk_effect_pct": -8.035,
+        "median_listing_price_usd": 230000.0
+      }
+    ]
+  }
+}

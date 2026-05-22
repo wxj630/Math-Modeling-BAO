@@ -1,0 +1,33 @@
+{
+  "problem_id": "2016-C",
+  "question": "q01",
+  "question_title": "Goodgrant 慈善 ROI 定义与候选学校评分",
+  "statement": "Develop a model to determine an optimal investment strategy based on each candidate school's demonstrated potential for effective use of private funding and an estimated philanthropic ROI.",
+  "methods": "读取官方 ProblemCDATA.zip 中 Scorecard 主表、候选 IPEDS UID 表和数据字典，筛选 current operating、predominant degree 3/4、UGDS>500 的候选学校；构造 student_success、grant_need、leverage 三类指数和 charitable ROI。对应模型：多指标综合评价、标准化加权评分、教育投资 ROI。",
+  "data_source": {
+    "type": "official_comap_xlsx_zip",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
+    "scorecard_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
+    "candidate_uid_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
+    "dictionary_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
+    "ipeds_variables_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
+    "rows": {
+      "scorecard": 7804,
+      "candidate_uids": 2977,
+      "dictionary": 1953
+    }
+  },
+  "roi_model": {
+    "definition": "Charitable ROI = weighted student-success potential, demonstrated need, and scalable leverage per grant dollar. It is appropriate for philanthropy because it values Pell-serving institutions, completion/retention/repayment/earnings outcomes, and students reached rather than private profit.",
+    "candidate_rows_after_filters": 1454,
+    "candidate_rows_scored": 1454,
+    "weights": {
+      "student_success_index": 0.45,
+      "grant_need_index": 0.35,
+      "leverage_index": 0.2,
+      "portfolio_rank_blend": "70% ROI score + 30% ROI units per million"
+    },
+    "filtering": "Official candidate UID list joined to Scorecard, current operating schools, predominant degree 3 or 4, UGDS > 500."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "problem_id": "2019-E",
+  "question": "q01",
+  "question_title": "生态系统服务估值模型",
+  "statement": "Create an ecological services valuation model to understand true economic costs of land use projects.",
+  "methods": "使用官方题面列举的 water filtration、pollination/food support、carbon/oxygen cycling、waste assimilation、biodiversity/habitat services，构建 30 年贴现服务价值表。对应模型：生态系统服务估值、贴现现金流。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "official_requirements": {
+      "ecosystem_service_valuation": true,
+      "land_use_cost_benefit": true,
+      "varying_project_sizes": true,
+      "model_effectiveness": true,
+      "planner_manager_implications": true,
+      "model_changes_over_time": true
+    },
+    "parameters": {
+      "ecosystem_services": [
+        {
+          "service": "water filtration",
+          "annual_value_usd_ha": 1350,
+          "degradation_sensitivity": 0.74,
+          "recovery_years": 18
+        },
+        {
+          "service": "pollination and food production support",
+          "annual_value_usd_ha": 980,
+          "degradation_sensitivity": 0.62,
+          "recovery_years": 12
+        },
+        {
+          "service": "carbon sequestration and oxygen cycling",
+          "annual_value_usd_ha": 720,
+          "degradation_sensitivity": 0.58,
+          "recovery_years": 25
+        },
+        {
+          "service": "waste assimilation",
+          "annual_value_usd_ha": 1120,
+          "degradation_sensitivity": 0.81,
+          "recovery_years": 20
+        },
+        {
+          "service": "biodiversity and habitat support",
+          "annual_value_usd_ha": 860,
+          "degradation_sensitivity": 0.88,
+          "recovery_years": 30
+        }
+      ],
+      "land_use_projects": [
+        {
+          "project": "small community road and sewer extension",
+          "scale": "community",
+          "area_ha": 14,
+          "private_benefit_musd": 7.5,
+          "direct_cost_musd": 4.6,
+          "disturbance_index": 0.22,
+          "mitigation_share": 0.35
+        },
+        {
+          "project": "new suburban housing district",
+          "scale": "regional",
+          "area_ha": 95,
+          "private_benefit_musd": 84.0,
+          "direct_cost_musd": 55.0,
+          "disturbance_index": 0.46,
+          "mitigation_share": 0.42
+        },
+        {
+          "project": "corporate headquarters relocation",
+          "scale": "regional",
+          "area_ha": 180,
+          "private_benefit_musd": 230.0,
+          "direct_cost_musd": 155.0,
+          "disturbance_index": 0.38,
+          "mitigation_share": 0.5
+        },
+        {
+          "project": "cross-country pipeline corridor",
+          "scale": "national",
+          "area_ha": 1250,
+          "private_benefit_musd": 1400.0,
+          "direct_cost_musd": 910.0,
+          "disturbance_index": 0.57,
+          "mitigation_share": 0.48
+        },
+        {
+          "project": "expanded commercial waterway",
+          "scale": "national",
+          "area_ha": 820,
+          "private_benefit_musd": 960.0,
+          "direct_cost_musd": 640.0,
+          "disturbance_index": 0.64,
+          "mitigation_share": 0.4
+        }
+      ],
+      "discount_rate": 0.03,
+      "evaluation_years": 30,
+      "source_note": "Official PDF statement categories only; monetary values, sensitivities, and project rows are explicit deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "valuation_model": {
+    "service_rows": [
+      {
+        "service": "water filtration",
+        "annual_value_usd_ha": 1350,
+        "degradation_sensitivity": 0.74,
+        "recovery_years": 18,
+        "present_value_usd_ha_30yr": 26460.6,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "pollination and food production support",
+        "annual_value_usd_ha": 980,
+        "degradation_sensitivity": 0.62,
+        "recovery_years": 12,
+        "present_value_usd_ha_30yr": 19208.43,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "carbon sequestration and oxygen cycling",
+        "annual_value_usd_ha": 720,
+        "degradation_sensitivity": 0.58,
+        "recovery_years": 25,
+        "present_value_usd_ha_30yr": 14112.32,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "waste assimilation",
+        "annual_value_usd_ha": 1120,
+        "degradation_sensitivity": 0.81,
+        "recovery_years": 20,
+        "present_value_usd_ha_30yr": 21952.49,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "biodiversity and habitat support",
+        "annual_value_usd_ha": 860,
+        "degradation_sensitivity": 0.88,
+        "recovery_years": 30,
+        "present_value_usd_ha_30yr": 16856.38,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      }
+    ],
+    "valuation_rule": "environmental cost equals area disturbed times discounted service value times degradation sensitivity after mitigation",
+    "discount_rate": 0.03,
+    "evaluation_years": 30
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic valuation scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide a land-cover table, project cost ledger, or local ecosystem measurements.",
+      "Dollar values are transparent planning inputs inspired by the service categories named in the statement, not observed project accounts.",
+      "A full paper should replace them with local data.gov ecosystem data, satellite land cover, restoration bids, and monitoring records."
+    ]
+  }
+}

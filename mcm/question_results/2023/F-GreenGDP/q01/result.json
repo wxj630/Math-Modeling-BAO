@@ -1,0 +1,63 @@
+{
+  "problem_id": "2023-F-GreenGDP",
+  "question": "q01",
+  "question_title": "选择可审计的 Green GDP 计算方法",
+  "statement": "There are many proposed ways to calculate GGDP that have already been developed. Select one that your team believes could have a measurable impact on climate mitigation if it replaced GDP as the primary measure of economic health.",
+  "methods": "选用 World Bank adjusted-savings 风格的 GGDP：GDP 扣除 CO2 damage、natural resource depletion 和 net forest depletion，并将公式组件写入可审计表。对应模型：环境会计、指标体系。",
+  "data_source": {
+    "type": "official_pdf_and_world_bank_api",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
+    "world_bank_api": "https://api.worldbank.org/v2/",
+    "indicator_ids": {
+      "NY.GDP.MKTP.CD": "gdp_current_usd",
+      "NY.ADJ.DCO2.GN.ZS": "co2_damage_pct_gni",
+      "NY.ADJ.DRES.GN.ZS": "natural_resource_depletion_pct_gni",
+      "NY.ADJ.DFOR.GN.ZS": "net_forest_depletion_pct_gni",
+      "AG.LND.FRST.ZS": "forest_area_pct_land",
+      "NY.GDP.TOTL.RT.ZS": "natural_resource_rents_pct_gdp"
+    },
+    "countries": [
+      "WLD",
+      "BRA",
+      "CHN",
+      "USA",
+      "IND",
+      "IDN",
+      "COD",
+      "NOR"
+    ],
+    "official_requirements": [
+      "select_ggdp_formula",
+      "simple_global_climate_impact_model",
+      "global_upside_downside_assessment",
+      "country_specific_resource_analysis",
+      "one_page_country_leader_report"
+    ]
+  },
+  "selected_ggdp_method": {
+    "method_id": "adjusted_savings_green_gdp",
+    "description": "A World-Bank adjusted-savings style GGDP subtracts observed environmental damage and resource-depletion penalties from conventional GDP.",
+    "formula": "GGDP = GDP * (1 - observed adjusted-savings environmental penalty percent / 100).",
+    "penalty_components": [
+      "co2_damage_pct_gni",
+      "natural_resource_depletion_pct_gni",
+      "net_forest_depletion_pct_gni"
+    ],
+    "reason_for_selection": "It is already operationalized in public WDI adjusted-savings indicators, so the model can be audited without inventing hidden environmental accounts."
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses the official PDF and World Bank WDI observations with explicit policy-response assumptions.",
+    "assumptions": {
+      "formula": "GGDP = GDP * (1 - observed adjusted-savings environmental penalty percent / 100).",
+      "policy_response": "Impact scenarios apply transparent response fractions to observed World Bank CO2 damage and resource-depletion penalties.",
+      "country_choice": "Brazil is selected because the official prompt asks for one country and Brazil makes forest, resource-rent, GDP, and future-generation tradeoffs visible."
+    },
+    "artifact_rows": {
+      "ggdp_formula_components.csv": 4,
+      "world_bank_green_gdp_panel.csv": 8,
+      "global_impact_scenarios.csv": 3,
+      "brazil_country_analysis.csv": 4
+    }
+  }
+}

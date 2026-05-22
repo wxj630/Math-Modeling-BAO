@@ -1,0 +1,6 @@
+﻿program,annual_cost_musd,fifteen_year_cost_musd,annual_withdrawal_reduction_pct_points,annual_quality_gain_pct_points,efficiency_score_per_billion_usd,neighbor_ecosystem_note
+agricultural_efficiency,120,1800,2.4,0.2,1.388889,lower irrigation withdrawals leave more water in shared basins and reduce salinity pressure
+leakage_reduction_and_metering,85,1275,1.5,0.3,1.294118,demand management lowers pressure on regional aquifers without shifting scarcity elsewhere
+wastewater_reuse_and_sanitation,95,1425,1.1,0.9,1.087719,treated reuse reduces downstream pollution but requires careful brine/sludge management
+rainwater_harvesting_and_aquifer_recharge,70,1050,0.8,0.2,0.857143,small decentralized gains improve drought resilience and reduce flash-flood losses
+desalination_and_renewable_energy,220,3300,1.7,0.4,0.575758,adds supply but has coastal brine and energy tradeoffs; pair with renewable power

@@ -1,0 +1,171 @@
+{
+  "problem_id": "2018-D",
+  "title": "2018年 CUMCM D题：汽车总装线的配置",
+  "question_index": 5,
+  "question_label": "问题 3",
+  "statement": "同一品牌下相同配置车辆尽量连续，减少不同配置车辆之间的切换次数。",
+  "tasks": [
+    "同一品牌下相同配置车辆尽量连续，减少不同配置车辆之间的切换次数"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "汽车总装线约束排产与喷涂线分配",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "配置"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
+    "rows": 111,
+    "columns": 15,
+    "note": "本题专用算法读取附件中的9月17日至9月23日车型计划，按品牌/配置/动力/驱动/颜色生成一周总装顺序、喷涂线分配和schedule.xlsx。"
+  },
+  "formulation": {
+    "model_type": "汽车总装线约束排产与喷涂线分配",
+    "task_breakdown": [
+      "同一品牌下相同配置车辆尽量连续，减少不同配置车辆之间的切换次数"
+    ],
+    "assumptions": [
+      "附件中的每日车型数量是必须全部完成的刚性需求，每天总装460辆，白班和晚班各230辆。",
+      "每班均先安排A1再安排A2，且每个品牌每日数量均分到两个班次；若某车型数量为奇数，用前半班优先分配余数。",
+      "四驱、柴油、颜色搭配和黑色批次约束用带罚分的贪心启发式处理；不可完全满足时输出违约计数和代价，保留可复现实验轨迹。",
+      "喷涂线分配遵守蓝/黄/红只能C1、金只能C2的硬约束，其他颜色按减少颜色切换和线体负载平衡贪心选择。",
+      "通用基线继续保留在 `cumcm/generic_baselines`，本专用求解器把粗LP/拟合结果推进为附件驱动的一周排程。"
+    ],
+    "decision_variables": [
+      "x_{t,k}: 第 t 个总装位置选择第 k 类车型",
+      "l_t in {C1,C2}: 第 t 辆车分配到的喷涂线",
+      "brand, config, power, drive, color: 车型五属性",
+      "P(schedule): 四驱/柴油间隔、配置切换、颜色切换和搭配违约的综合罚分"
+    ],
+    "constraints": [
+      "每天排产数量等于附件计划，且一周合计3220辆。",
+      "每班230辆，先A1后A2；A1/A2在每天两个班次中各占当日品牌数量的一半。",
+      "四驱/柴油连续批次尽量不超过2辆，相邻批次之间尽量间隔至少10辆普通车辆。",
+      "蓝、黄、红分配到C1，金色分配到C2；其他颜色可分配到任一喷涂线。",
+      "同品牌相同配置尽量连续，非黑非白颜色在喷涂线上尽量同色连续。"
+    ],
+    "objective_or_equations": [
+      "min P = 1000*hard_spacing_violations + 100*black_run_violations + 50*color_pair_violations + 20*black_color_switches + 5*config_switches + 2*paint_color_switches",
+      "sum_k x_{d,k}=460, sum_k x_{d,shift,k}=230",
+      "paint_line(color)=C1 for color in {蓝,黄,红}; paint_line(金)=C2",
+      "brand_order(d,shift)=A1 block followed by A2 block"
+    ],
+    "solution_steps": [
+      "解析附件中7天A1/A2左右两块生产计划，把颜色、配置、动力、驱动转换为车型需求表。",
+      "按日期、班次和品牌拆分需求，构造必须排入的车辆多重集合。",
+      "在每个品牌块内用增量罚分贪心选择下一辆车，优先降低配置切换、四驱/柴油间隔和颜色搭配代价。",
+      "总装顺序确定后，按颜色硬约束和线体颜色切换成本分配C1/C2喷涂线。",
+      "输出一周排程、9月20日排程、成本审计、间隔审计、颜色喷涂审计和schedule.xlsx。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "汽车总装线约束排产与喷涂线分配",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "assembly_configuration_batching",
+    "total_vehicle_count": 3220,
+    "day_count": 7,
+    "model_type_count": 269,
+    "september_20_vehicle_count": 460,
+    "schedule_workbook_rows": 3220,
+    "objective_cost": 54381,
+    "spacing_summary": {
+      "four_drive_run_violations": 15,
+      "four_drive_gap_lt_5": 15,
+      "four_drive_gap_5_to_9": 7,
+      "diesel_run_violations": 6,
+      "diesel_gap_lt_5": 8,
+      "diesel_gap_5_to_9": 4
+    },
+    "switch_summary": {
+      "config_switches": 233,
+      "paint_color_switches": 233,
+      "black_color_switches": 75,
+      "color_pair_violations": 44,
+      "black_run_violations": 23
+    },
+    "brand_shift_split_sample": [
+      {
+        "date": "2018-09-17",
+        "shift": "晚班",
+        "brand": "A1",
+        "vehicle_count": 175
+      },
+      {
+        "date": "2018-09-17",
+        "shift": "晚班",
+        "brand": "A2",
+        "vehicle_count": 41
+      },
+      {
+        "date": "2018-09-17",
+        "shift": "白班",
+        "brand": "A1",
+        "vehicle_count": 189
+      },
+      {
+        "date": "2018-09-17",
+        "shift": "白班",
+        "brand": "A2",
+        "vehicle_count": 55
+      },
+      {
+        "date": "2018-09-18",
+        "shift": "晚班",
+        "brand": "A1",
+        "vehicle_count": 172
+      },
+      {
+        "date": "2018-09-18",
+        "shift": "晚班",
+        "brand": "A2",
+        "vehicle_count": 46
+      },
+      {
+        "date": "2018-09-18",
+        "shift": "白班",
+        "brand": "A1",
+        "vehicle_count": 184
+      },
+      {
+        "date": "2018-09-18",
+        "shift": "白班",
+        "brand": "A2",
+        "vehicle_count": 58
+      }
+    ],
+    "report": [
+      "本题把附件生产计划解析为车型多重集合，并在每个班次中强制先A1后A2。",
+      "启发式排程以综合罚分为目标，优先降低四驱/柴油间隔违约、配置切换、颜色切换和黑色切换代价。",
+      "输出 `weekly_schedule.csv`、`schedule_2018-09-20.csv` 与 `schedule.xlsx`，可直接作为论文附录和支撑材料的基础。",
+      "通用基线未删除，当前结果展示从粗通用模型到可复现实排程算法的进步过程。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2018/D/q05/production_plan_summary.csv",
+    "question_artifacts/2018/D/q05/brand_shift_split.csv",
+    "question_artifacts/2018/D/q05/spacing_audit.csv",
+    "question_artifacts/2018/D/q05/color_paint_audit.csv",
+    "question_artifacts/2018/D/q05/cost_audit.csv",
+    "question_artifacts/2018/D/q05/weekly_schedule.csv",
+    "question_artifacts/2018/D/q05/schedule_2018-09-20.csv",
+    "question_artifacts/2018/D/q05/schedule.xlsx",
+    "question_artifacts/2018/D/q05/experiment_table.csv"
+  ]
+}

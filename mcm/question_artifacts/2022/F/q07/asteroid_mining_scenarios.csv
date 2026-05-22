@@ -1,0 +1,5 @@
+scenario_id,description,equity_score,feasibility_score,outer_space_treaty_alignment,total_score,benefit_sharing_score,access_to_participation_score,technology_transfer_score,governance_voice_score,risk_and_environmental_burden_score,peaceful_use_and_conflict_prevention_score
+un_licensed_benefit_sharing_regime,"The UN updates treaty practice through licenses, public reporting, safety rules, and a global benefit fund.",0.7648,0.664,0.804,0.7517,0.8,0.68,0.7,0.84,0.74,0.82
+open_science_public_private_coalition,"Public agencies, firms, and universities share mission data while firms compete under common benefit obligations.",0.732,0.694,0.722,0.7226,0.66,0.78,0.84,0.7,0.7,0.74
+state_led_resource_blocs,Several spacefaring states run national programs and form exclusive resource blocs.,0.3772,0.662,0.33,0.4257,0.3,0.34,0.4,0.32,0.54,0.48
+private_first_mover_concessions,A few private firms and sponsor states finance extraction and retain most mineral profits.,0.2728,0.692,0.21,0.3453,0.18,0.24,0.28,0.2,0.46,0.42

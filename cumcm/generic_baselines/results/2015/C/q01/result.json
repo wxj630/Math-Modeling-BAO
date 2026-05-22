@@ -1,0 +1,109 @@
+{
+  "problem_id": "2015-C",
+  "title": "2015年 CUMCM C题：月上柳梢头",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "根据所建立的模型，分析2016年北京地区“月上柳梢头，人约黄昏后”发生的日期与时间。根据模型判断2016年在哈尔滨、上海、广州、昆明、成都、乌鲁木齐是否能发生这一情景？如果能，请给出相应的日期与时间；如果不能，请给出原因",
+  "tasks": [
+    "根据所建立的模型，分析2016年北京地区“月上柳梢头，人约黄昏后”发生的日期与时间",
+    "根据模型判断2016年在哈尔滨、上海、广州、昆明、成都、乌鲁木齐是否能发生这一情景？",
+    "如果能，请给出相应的日期与时间",
+    "如果不能，请给出原因"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "日期"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "分析"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/C.md",
+    "rows": 7,
+    "columns": 3,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "根据所建立的模型，分析2016年北京地区“月上柳梢头，人约黄昏后”发生的日期与时间",
+      "根据模型判断2016年在哈尔滨、上海、广州、昆明、成都、乌鲁木齐是否能发生这一情景？",
+      "如果能，请给出相应的日期与时间",
+      "如果不能，请给出原因"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": 2014.5857142857142,
+    "slope": -215.3142857142857,
+    "r2": 0.18699322145655617,
+    "next_12_forecast": [
+      -8535.814286,
+      -8751.128571,
+      -8966.442857,
+      -9181.757143,
+      -9397.071429,
+      -9612.385714,
+      -9827.7,
+      -10043.014286,
+      -10258.328571,
+      -10473.642857,
+      -10688.957143,
+      -10904.271429
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2015/C/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

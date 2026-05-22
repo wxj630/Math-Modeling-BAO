@@ -1,0 +1,120 @@
+{
+  "problem_id": "2021-C",
+  "question": "q01",
+  "question_title": "公众报告数据解释与扩散可预测性",
+  "statement": "Address and discuss whether or not the spread of this pest over time can be predicted, and with what level of precision.",
+  "methods": "读取官方 4440 条 sightings workbook，按 Positive ID 时间和经纬度构建阳性时间线与空间聚类；用题面 30km 新蜂后范围解释可预测精度边界。对应模型：空间统计、时间序列描述、风险地图。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
+    "background_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
+    "rows": {
+      "2021MCMProblemC_DataSet.xlsx": 4440,
+      "2021MCM_ProblemC_ Images_by_GlobalID.xlsx": 3305
+    },
+    "lab_status_counts": {
+      "Unverified": 2342,
+      "Negative ID": 2069,
+      "Unprocessed": 15,
+      "Positive ID": 14
+    },
+    "only_allowed_files": [
+      "2021MCMProblemC_DataSet.xlsx",
+      "2021MCM_ProblemC_ Images_by_GlobalID.xlsx",
+      "2021MCM_ProblemC_Vespamandarina.pdf"
+    ]
+  },
+  "spread_model": {
+    "queen_range_km": 30,
+    "positive_id_count": 14,
+    "first_positive_detection_date": "2019-09-19",
+    "last_positive_detection_date": "2020-10-01",
+    "max_distance_from_first_positive_km": 118.726431,
+    "positives_within_queen_range_of_prior_positive": 12,
+    "precision_statement": "Spread can be described as clustered public-report detections, but cannot be forecast with high spatial precision from 14 positives alone.",
+    "monthly_positive_timeline": [
+      {
+        "positive_count": 2,
+        "mean_latitude": 49.071643,
+        "mean_longitude": -123.322688,
+        "max_distance_from_first_positive_km": 92.03124423572977,
+        "month": "2019-09"
+      },
+      {
+        "positive_count": 1,
+        "mean_latitude": 48.971949,
+        "mean_longitude": -122.700941,
+        "max_distance_from_first_positive_km": 92.63278462892764,
+        "month": "2019-10"
+      },
+      {
+        "positive_count": 1,
+        "mean_latitude": 49.025831,
+        "mean_longitude": -122.810653,
+        "max_distance_from_first_positive_km": 83.60552745719035,
+        "month": "2019-11"
+      },
+      {
+        "positive_count": 1,
+        "mean_latitude": 48.980994,
+        "mean_longitude": -122.688503,
+        "max_distance_from_first_positive_km": 93.3032549999866,
+        "month": "2019-12"
+      },
+      {
+        "positive_count": 2,
+        "mean_latitude": 49.007901000000004,
+        "mean_longitude": -122.6513425,
+        "max_distance_from_first_positive_km": 95.88290657596217,
+        "month": "2020-05"
+      },
+      {
+        "positive_count": 1,
+        "mean_latitude": 48.777534,
+        "mean_longitude": -122.418612,
+        "max_distance_from_first_positive_km": 118.72643136731168,
+        "month": "2020-06"
+      },
+      {
+        "positive_count": 1,
+        "mean_latitude": 48.927519,
+        "mean_longitude": -122.745016,
+        "max_distance_from_first_positive_km": 90.75253324319569,
+        "month": "2020-08"
+      },
+      {
+        "positive_count": 4,
+        "mean_latitude": 48.983039500000004,
+        "mean_longitude": -122.5763975,
+        "max_distance_from_first_positive_km": 101.36981425465504,
+        "month": "2020-09"
+      },
+      {
+        "positive_count": 1,
+        "mean_latitude": 48.983375,
+        "mean_longitude": -122.582465,
+        "max_distance_from_first_positive_km": 100.83195726493696,
+        "month": "2020-10"
+      }
+    ]
+  },
+  "classification_model": {
+    "model": "deterministic split + TF-IDF report text + image metadata + date/coordinate features + distance to training positive sightings + class-weighted logistic regression",
+    "labeled_rows": 2083,
+    "positive_id_count": 14,
+    "negative_id_count": 2069,
+    "train_rows": 1388,
+    "holdout_rows": 695,
+    "holdout_positive_count": 5,
+    "holdout_metrics": {
+      "roc_auc": 0.895362,
+      "average_precision": 0.802732,
+      "positive_precision_at_0_5": 0.4,
+      "positive_recall_at_0_5": 0.8,
+      "positive_f1_at_0_5": 0.533333,
+      "positive_support": 5
+    },
+    "assumption_warning": "Only 14 official positive IDs are available, so interval uncertainty is large even when the holdout ranking is strong."
+  }
+}

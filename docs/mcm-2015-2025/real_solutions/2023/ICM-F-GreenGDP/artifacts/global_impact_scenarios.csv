@@ -1,0 +1,4 @@
+scenario,coverage_share,policy_response_fraction,transition_effort_index,co2_damage_reduction_pct_gni,resource_depletion_reduction_pct_gni,combined_environmental_benefit_pct_gni,benefit_index,effort_index,net_benefit_score
+cautious_multilateral_pilot,0.35,0.12,0.42,0.0655,0.0498,0.1153,3.671,39.06,-8.517
+phased_g20_plus_resource_exporters,0.65,0.25,0.58,0.2532,0.1928,0.446,14.204,50.46,17.381
+full_primary_metric_switch,0.9,0.38,0.78,0.533,0.4057,0.9387,29.893,63.96,57.7

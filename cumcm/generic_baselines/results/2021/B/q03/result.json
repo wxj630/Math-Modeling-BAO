@@ -1,0 +1,93 @@
+{
+  "problem_id": "2021-B",
+  "title": "2021年 CUMCM B题：乙醇偶合制备 C4 烯烃",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "如何选择催化剂组合与温度，使得在相同实验条件下 C4 烯烃收率尽可能 高。若使温度低于 350 度，又如何选择催化剂组合与温度，使得 C4 烯烃收率尽可 能高。",
+  "tasks": [
+    "如何选择催化剂组合与温度，使得在相同实验条件下 C4 烯烃收率尽可能 高",
+    "若使温度低于 350 度，又如何选择催化剂组合与温度，使得 C4 烯烃收率尽可 能高"
+  ],
+  "selected_model": {
+    "key": "ode",
+    "name": "微分方程与动态仿真",
+    "chapter": "CH2",
+    "chapter_title": "微分方程与动力系统",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "温度"
+    },
+    {
+      "key": "metaheuristic",
+      "name": "启发式搜索与群体智能",
+      "chapter": "CH5",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md",
+      "reason": "组合"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx",
+    "rows": 115,
+    "columns": 10,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "微分方程与动态仿真",
+    "task_breakdown": [
+      "如何选择催化剂组合与温度，使得在相同实验条件下 C4 烯烃收率尽可能 高",
+      "若使温度低于 350 度，又如何选择催化剂组合与温度，使得 C4 烯烃收率尽可 能高"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "y(t): 系统状态",
+      "k: 调节/衰减系数",
+      "y_env: 环境或稳态值",
+      "t: 时间"
+    ],
+    "constraints": [
+      "k > 0",
+      "初值 y(0)=y0",
+      "状态向稳态单调或振荡趋近"
+    ],
+    "objective_or_equations": [
+      "dy/dt = -k*(y-y_env)",
+      "y(0)=y0"
+    ],
+    "solution_steps": [
+      "把题面动态过程抽象为一阶微分方程。",
+      "设置初值和参数。",
+      "调用 solve_ivp 数值积分。",
+      "输出时间-状态轨迹。"
+    ],
+    "model_reference": {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "chapter_title": "微分方程与动力系统",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    }
+  },
+  "experiment_result": {
+    "method": "first_order_dynamic_simulation",
+    "y0": 4.0,
+    "steady_state": 300.0,
+    "k": 0.008695652173913044,
+    "final_value": 152.36591898718711
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2021/B/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

@@ -1,0 +1,83 @@
+{
+  "problem_id": "2016-F",
+  "question": "q12",
+  "question_title": "新增长期健康安全参数与时间阈值",
+  "statement": "Do new parameters need to be added? How does this increase the time required to resolve refugee placement, and what new issues might arise such as disease control, childbirth, and education?",
+  "methods": "加入 disease surveillance、birth/maternal care、school-age education、employment/housing absorption、social cohesion 等长期参数，并设置 180 天阈值触发长期政策。对应模型：长期安置系统动力学、公共卫生模型、教育和社会融合约束。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "official_problem_parameters": {
+      "asylum_applications_by_oct_2015": 715000,
+      "hungary_applications_per_100k": 1450,
+      "hungary_approval_rate_2014": 0.32,
+      "routes": [
+        "West Mediterranean",
+        "Central Mediterranean",
+        "Eastern Mediterranean",
+        "West Balkans",
+        "Eastern Borders",
+        "Albania to Greece"
+      ],
+      "most_popular_route": "Eastern Mediterranean",
+      "most_dangerous_route": "Central Mediterranean",
+      "scale_factor_required_in_task": 10
+    },
+    "assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  },
+  "scalability_10x": {
+    "scale_factor": 10,
+    "scaled_refugees": 7150000,
+    "baseline_resolution_days": 35.22,
+    "scaled_resolution_days_without_capacity_expansion": 352.22,
+    "time_threshold_days_for_new_considerations": 180,
+    "new_parameters_needed": [
+      "disease surveillance and vaccination coverage",
+      "birth and maternal care rate",
+      "school-age child education capacity",
+      "long-term employment and housing absorption",
+      "local social cohesion and misinformation risk"
+    ],
+    "non_scalable_features": [
+      "manual case processing",
+      "single-route bottleneck relief",
+      "short-term shelter-only planning",
+      "government-only resource deployment"
+    ],
+    "becomes_irrelevant_or_changes": [
+      "temporary camp capacity becomes less useful than long-term housing absorption",
+      "route popularity becomes less important than international burden sharing",
+      "daily transport becomes coupled to disease control and education continuity"
+    ]
+  },
+  "policy_package": {
+    "recommended_policies": [
+      "Open multiple entry points on high-volume routes to prevent single-border bottlenecks.",
+      "Shift refugees away from the Central Mediterranean when safer capacity exists.",
+      "Preposition shelter and healthcare before destinations hit maximum capacity.",
+      "Use a quota plus capacity trigger so France and Germany do not carry all resettlement burden.",
+      "Give NGOs formal logistics lanes for mobile clinics, water, food, and temporary shelter.",
+      "Protect local population health with registration, vaccination, sanitation, and transparent risk communication."
+    ],
+    "priority_resource": "shelter",
+    "policy_objective": "minimize unsafe movement and unmet basic needs while respecting legal and cultural constraints of affected countries",
+    "operational_metric": "weekly safe placements plus weighted unmet resource reduction"
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and explicit deterministic assumptions; it does not claim route capacity or resource bundle assumptions are observed data.",
+    "replaceable_assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  }
+}

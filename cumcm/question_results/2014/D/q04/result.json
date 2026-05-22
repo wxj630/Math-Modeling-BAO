@@ -1,0 +1,136 @@
+{
+  "problem_id": "2014-D",
+  "title": "2014年 CUMCM D题：储药柜的设计",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "附件2给出了每一种药品编号对应的最大日需求量。在储药槽的长度为1.5m、每天仅集中补药一次的情况下，请计算每一种药品需要的储药槽个数。为保证药房储药满足需求，根据问题3中单个储药柜的规格，计算最少需要多少个储药柜。",
+  "tasks": [
+    "附件2给出了每一种药品编号对应的最大日需求量",
+    "在储药槽的长度为1.5m、每天仅集中补药一次的情况下，请计算每一种药品需要的储药槽个数",
+    "为保证药房储药满足需求，根据问题3中单个储药柜的规格，计算最少需要多少个储药柜"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "储药柜隔板间距聚类与容量规划模型",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "每天"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最大"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls",
+    "rows": 3838,
+    "columns": 4,
+    "note": "本题专用算法读取药盒长高宽和日最大需求量，完成隔板间距类型设计、宽高冗余、储药槽数量和最少储药柜数量计算。"
+  },
+  "formulation": {
+    "model_type": "储药柜隔板间距聚类与容量规划模型",
+    "task_breakdown": [
+      "附件2给出了每一种药品编号对应的最大日需求量",
+      "在储药槽的长度为1.5m、每天仅集中补药一次的情况下，请计算每一种药品需要的储药槽个数",
+      "为保证药房储药满足需求，根据问题3中单个储药柜的规格，计算最少需要多少个储药柜"
+    ],
+    "assumptions": [
+      "竖向隔板间距至少为药盒宽度加两侧2mm间隙；横向隔板间距至少为药盒高度加上下2mm间隙。",
+      "同一间距类型可服务不超过该间距的多种药盒，冗余为间距减去药盒尺寸与必要间隙后的剩余量。",
+      "间距类型数量与冗余之间存在权衡；本模型用一维动态规划在给定类型数下最小化组内冗余，再用肘部准则选择合理类型数。",
+      "储药槽长度为1500mm，每个槽沿长度方向顺序存放同一种药品，槽容量为floor(1500/药盒长度)。",
+      "单个储药柜有效宽度2500mm、有效高度1500mm；以选定宽/高间距类型估计单柜槽位能力。"
+    ],
+    "decision_variables": [
+      "w_i,h_i,l_i: 第i种药盒宽、高、长",
+      "a_k: 第k类竖向隔板间距",
+      "b_m: 第m类横向隔板间距",
+      "x_{ik}, y_{im}: 药品到宽度/高度类型的分配",
+      "s_i: 第i种药品所需储药槽个数",
+      "N: 所需储药柜数量"
+    ],
+    "constraints": [
+      "a_k >= w_i + 4mm for assigned medicines",
+      "b_m >= h_i + 4mm for assigned medicines",
+      "sum_k x_{ik}=1, sum_m y_{im}=1",
+      "单柜宽度不超过2500mm，有效高度不超过1500mm，槽长固定1500mm。",
+      "s_i >= ceil(日最大需求量_i / floor(1500/l_i))"
+    ],
+    "objective_or_equations": [
+      "min sum_i (a_{g(i)} - w_i - 4) for fixed width type count",
+      "min sum_i (b_{r(i)} - h_i - 4)*(a_{g(i)} - w_i - 4) for fixed height type count",
+      "choose K by elbow: marginal_redundancy_reduction < threshold",
+      "N = ceil(sum_i s_i / estimated_slots_per_cabinet)"
+    ],
+    "solution_steps": [
+      "读取附件1药盒长高宽和附件2日最大需求量。",
+      "对宽度和高度分别做排序动态规划，枚举类型数并计算最小冗余。",
+      "用冗余下降肘部准则选取合理宽度/高度类型数，并导出药品到类型的分配。",
+      "根据1500mm槽长计算每个槽可存盒数和各药品所需槽数。",
+      "按单柜2500mm×1500mm有效尺寸估计单柜槽位能力，计算最少储药柜数量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "储药柜隔板间距聚类与容量规划模型",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "medicine_cabinet_slot_capacity_planning",
+    "medicine_count": 1919,
+    "width_type_count": 12,
+    "minimum_feasible_width_type_count": 3,
+    "height_type_count": 10,
+    "minimum_feasible_height_type_count": 3,
+    "total_width_redundancy_mm": 3224.0,
+    "mean_width_redundancy_mm": 1.680042,
+    "total_height_redundancy_mm": 8128.0,
+    "mean_height_redundancy_mm": 4.235539,
+    "total_plane_redundancy_mm2": 15194.0,
+    "slot_length_mm": 1500,
+    "total_required_slots": 2457,
+    "slots_per_cabinet": 1617,
+    "minimum_cabinet_count": 2,
+    "cabinet_capacity_summary": {
+      "total_required_slots": 2457,
+      "average_width_spacing_mm": 32.127391,
+      "average_height_spacing_mm": 71.128612,
+      "columns_per_cabinet": 77,
+      "rows_per_cabinet": 21,
+      "slots_per_cabinet": 1617,
+      "minimum_cabinet_count": 2
+    },
+    "report": [
+      "本题读取附件1的1919种药盒长高宽和附件2日最大需求量。",
+      "宽度/高度间距类型先按单盒可放入、双盒不能并排的区间约束分组；不交换长宽，因此不把水平旋转作为可行摆放。",
+      "第4问按1500mm槽长计算每种药品的单槽容量和所需槽数，并基于2500mm×1500mm有效柜体估计最少储药柜数。",
+      "通用基线仍保留在 `cumcm/generic_baselines`，当前结果是从通用LP到附件驱动柜体设计的专用版本。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2014/D/q04/width_spacing_types.csv",
+    "question_artifacts/2014/D/q04/medicine_width_assignment.csv",
+    "question_artifacts/2014/D/q04/width_type_tradeoff.csv",
+    "question_artifacts/2014/D/q04/height_spacing_types.csv",
+    "question_artifacts/2014/D/q04/medicine_height_assignment.csv",
+    "question_artifacts/2014/D/q04/plane_redundancy_summary.csv",
+    "question_artifacts/2014/D/q04/slot_requirement_by_medicine.csv",
+    "question_artifacts/2014/D/q04/cabinet_capacity_summary.csv",
+    "question_artifacts/2014/D/q04/experiment_table.csv"
+  ]
+}

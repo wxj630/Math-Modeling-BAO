@@ -1,0 +1,6 @@
+﻿reason,task_count,share_of_unfinished,explanation
+price_too_low,161,0.514377,标价处于历史低位，价格激励不足。
+far_from_members,59,0.188498,距离附近会员较远，可承接人群少。
+weak_nearby_capacity,58,0.185304,3公里范围预订能力低，供给不足。
+high_task_density,129,0.412141,周边任务密集，存在竞争分流。
+low_model_probability,167,0.533546,综合完成概率偏低，需提价或打包。

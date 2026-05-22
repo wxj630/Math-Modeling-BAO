@@ -1,0 +1,159 @@
+{
+  "problem_id": "2021-E",
+  "title": "2021年 CUMCM E题：中药材的鉴别",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "根据附件 3 中某一种药材的近红外和中红外数据，试鉴别该种药材 的产地，并将下表中所给出编号的药材产地的鉴别结果填入表中。 No 4 15 22 30 34 45 74 114 170 209 OP",
+  "tasks": [
+    "根据附件 3 中某一种药材的近红外和中红外数据，试鉴别该种药材 的产地，并将下表中所给出编号的药材产地的鉴别结果填入表中"
+  ],
+  "selected_model": {
+    "key": "ml",
+    "name": "红外光谱预处理、特征降维与药材鉴别",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "鉴别"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件3.xlsx",
+    "rows": 510,
+    "columns": 9448,
+    "note": "本题专用算法读取中药材近/中红外光谱附件，按题问分别完成无监督类别分群、OP产地分类、近/中红外融合分类以及Class+OP联合填表预测。"
+  },
+  "formulation": {
+    "model_type": "红外光谱预处理、特征降维与药材鉴别",
+    "task_breakdown": [
+      "根据附件 3 中某一种药材的近红外和中红外数据，试鉴别该种药材 的产地，并将下表中所给出编号的药材产地的鉴别结果填入表中"
+    ],
+    "assumptions": [
+      "附件中的每一行表示一个药材样本，No为样本编号，Class为药材类别，OP为产地，后续列为各波数下的吸光度。",
+      "吸光度可能为负值，保留原始校正值；缺失光谱点用同一波数列均值填补。",
+      "分类前对每条光谱做Savitzky-Golay一阶导数和平行标准正态变换，以削弱基线漂移和总体强度差异。",
+      "题目表格中留空的编号只参与预测，不用于模型训练；验证精度来自有标签样本的分层留出集。",
+      "通用基线集中保留在 `cumcm/generic_baselines`，当前结果是从通用聚类/拟合推进到附件光谱鉴别的专用版本。"
+    ],
+    "decision_variables": [
+      "X_i(lambda): 第i个样本在波数lambda处的吸光度",
+      "z_i: 经导数、SNV和降维后的光谱特征向量",
+      "c_i: 药材类别Class",
+      "o_i: 药材产地OP",
+      "p(y|z_i): 分类器给出的类别或产地概率"
+    ],
+    "constraints": [
+      "训练集只使用Class/OP非空的样本。",
+      "预测目标编号必须与题目表格给定No一致。",
+      "第3问近红外和中红外按同一No对齐后进行特征融合。",
+      "输出表保留样本编号、预测类别/产地和最大投票概率，便于直接填表。"
+    ],
+    "objective_or_equations": [
+      "SNV(x_i)=(x_i-mean(x_i))/std(x_i)",
+      "d_i(lambda)=SavitzkyGolayDerivative(x_i(lambda))",
+      "Q1: choose k maximizing silhouette(KMeans(PCA(SNV(X)), k)), k in [2,8]",
+      "Q2/Q3/Q4: y_hat=ExtraTreesClassifier(SNV(derivative(X)))",
+      "validation_accuracy = mean(y_hat_j == y_j) on stratified holdout"
+    ],
+    "solution_steps": [
+      "读取附件3近红外和中红外两张表，按No对齐样本和OP标签。",
+      "分别预处理两类光谱后进行特征拼接，训练融合产地分类器。",
+      "输出题面10个编号的OP预测以及融合模型验证指标。"
+    ],
+    "model_reference": {
+      "key": "ml",
+      "name": "红外光谱预处理、特征降维与药材鉴别",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "herbal_near_mid_ir_fusion_origin_classifier",
+    "sample_count": 255,
+    "near_wavelength_count": 5996,
+    "mid_wavelength_count": 3448,
+    "labeled_sample_count": 245,
+    "target_count": 10,
+    "origin_class_count": 17,
+    "validation_accuracy": 0.951613,
+    "validation_balanced_accuracy": 0.955882,
+    "target_predictions": [
+      {
+        "No": 4,
+        "predicted_OP": "17",
+        "confidence": 0.696667
+      },
+      {
+        "No": 15,
+        "predicted_OP": "11",
+        "confidence": 0.853333
+      },
+      {
+        "No": 22,
+        "predicted_OP": "1",
+        "confidence": 0.73
+      },
+      {
+        "No": 30,
+        "predicted_OP": "2",
+        "confidence": 0.9
+      },
+      {
+        "No": 34,
+        "predicted_OP": "16",
+        "confidence": 0.926667
+      },
+      {
+        "No": 45,
+        "predicted_OP": "3",
+        "confidence": 0.616667
+      },
+      {
+        "No": 74,
+        "predicted_OP": "4",
+        "confidence": 0.956667
+      },
+      {
+        "No": 114,
+        "predicted_OP": "10",
+        "confidence": 0.923333
+      },
+      {
+        "No": 170,
+        "predicted_OP": "9",
+        "confidence": 0.89
+      },
+      {
+        "No": 209,
+        "predicted_OP": "14",
+        "confidence": 0.83
+      }
+    ],
+    "report": [
+      "附件3的近红外和中红外按No一一对齐，分别预处理后拼接成融合特征。",
+      "融合模型利用两种光谱的互补信息识别17个产地类别，并预测题面10个空缺OP。",
+      "输出 `fusion_origin_predictions_attachment3.csv` 可直接填入问题3表格。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2021/E/q03/fusion_origin_predictions_attachment3.csv",
+    "question_artifacts/2021/E/q03/fusion_validation_metrics.csv",
+    "question_artifacts/2021/E/q03/experiment_table.csv"
+  ]
+}

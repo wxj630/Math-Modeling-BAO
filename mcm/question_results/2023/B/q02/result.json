@@ -1,0 +1,465 @@
+{
+  "problem_id": "2023-B",
+  "question": "q02",
+  "question_title": "政策结果排名、比较与动物-人类-经济模型",
+  "statement": "Develop and describe a methodology to determine which policies and management strategies will result in the best outcomes. Your report should discuss how to rank and compare outcomes from your methodology. Be sure to include descriptions and analyses of the models used to predict the interactions between animals and people, as well as the resulting economic impacts in the area within and around the preserve.",
+  "methods": "构建生态、居民、经济、治理可行性和成本惩罚的加权多目标评分；最高政策再进入人兽冲突动态和社区收益投影。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
+    "parameters": {
+      "wildlife_act_year": 2013,
+      "management_amendment_year": 2020,
+      "focus_preserve": "Maasai Mara",
+      "requirements": [
+        "recommend policies and management strategies for different areas within the current preserve",
+        "protect wildlife and natural resources while balancing interests of local residents",
+        "mitigate lost opportunities for people near the preserve",
+        "minimize negative interactions between animals and people attracted to the preserve",
+        "rank and compare outcomes from the methodology",
+        "predict long-term trends and discuss transfer to other wildlife management areas",
+        "provide a two-page non-technical report for the Kenyan Tourism and Wildlife Committee"
+      ],
+      "source_note": "Official PDF statement parameters only; zone scores and policy coefficients are deterministic scenario assumptions, not observed Maasai Mara field data."
+    },
+    "scenario_assumption_note": "All zone scores, policy gains, costs, and projections are deterministic assumptions for a reproducible policy experiment; they are not observed Maasai Mara field measurements."
+  },
+  "policy_evaluation": {
+    "methodology": "weighted multi-objective evaluation balancing ecological protection, local opportunity costs, conflict reduction, tourism revenue, feasibility, and cost",
+    "ranked_policies": [
+      {
+        "policy": "compensation and predator-proof livestock program",
+        "wildlife_protection_gain": 0.11,
+        "resident_benefit_gain": 0.26,
+        "conflict_reduction": 0.34,
+        "tourism_revenue_gain": 0.07,
+        "governance_feasibility": 0.73,
+        "implementation_cost_index": 0.38,
+        "ecological_score": 0.2708,
+        "resident_score": 0.3545,
+        "economic_score": 0.2344,
+        "composite_score": 0.1945
+      },
+      {
+        "policy": "community conservancy revenue sharing",
+        "wildlife_protection_gain": 0.18,
+        "resident_benefit_gain": 0.31,
+        "conflict_reduction": 0.23,
+        "tourism_revenue_gain": 0.18,
+        "governance_feasibility": 0.77,
+        "implementation_cost_index": 0.49,
+        "ecological_score": 0.285,
+        "resident_score": 0.3561,
+        "economic_score": 0.3174,
+        "composite_score": 0.1934
+      },
+      {
+        "policy": "integrated mosaic plan",
+        "wildlife_protection_gain": 0.3,
+        "resident_benefit_gain": 0.33,
+        "conflict_reduction": 0.35,
+        "tourism_revenue_gain": 0.21,
+        "governance_feasibility": 0.7,
+        "implementation_cost_index": 0.62,
+        "ecological_score": 0.3834,
+        "resident_score": 0.3961,
+        "economic_score": 0.327,
+        "composite_score": 0.1907
+      },
+      {
+        "policy": "restoration buffer and voluntary easements",
+        "wildlife_protection_gain": 0.25,
+        "resident_benefit_gain": 0.22,
+        "conflict_reduction": 0.28,
+        "tourism_revenue_gain": 0.13,
+        "governance_feasibility": 0.67,
+        "implementation_cost_index": 0.55,
+        "ecological_score": 0.3376,
+        "resident_score": 0.3177,
+        "economic_score": 0.2488,
+        "composite_score": 0.1469
+      },
+      {
+        "policy": "baseline enforcement only",
+        "wildlife_protection_gain": 0.04,
+        "resident_benefit_gain": 0.02,
+        "conflict_reduction": 0.03,
+        "tourism_revenue_gain": 0.03,
+        "governance_feasibility": 0.8,
+        "implementation_cost_index": 0.18,
+        "ecological_score": 0.1558,
+        "resident_score": 0.1457,
+        "economic_score": 0.1662,
+        "composite_score": 0.1453
+      },
+      {
+        "policy": "strict core zoning plus visitor caps",
+        "wildlife_protection_gain": 0.22,
+        "resident_benefit_gain": 0.09,
+        "conflict_reduction": 0.15,
+        "tourism_revenue_gain": 0.1,
+        "governance_feasibility": 0.64,
+        "implementation_cost_index": 0.42,
+        "ecological_score": 0.289,
+        "resident_score": 0.2137,
+        "economic_score": 0.1948,
+        "composite_score": 0.1173
+      }
+    ],
+    "best_policy": {
+      "policy": "compensation and predator-proof livestock program",
+      "wildlife_protection_gain": 0.11,
+      "resident_benefit_gain": 0.26,
+      "conflict_reduction": 0.34,
+      "tourism_revenue_gain": 0.07,
+      "governance_feasibility": 0.73,
+      "implementation_cost_index": 0.38,
+      "ecological_score": 0.2708,
+      "resident_score": 0.3545,
+      "economic_score": 0.2344,
+      "composite_score": 0.1945
+    },
+    "weights": {
+      "ecology": 0.36,
+      "resident_interest": 0.32,
+      "economic_impact": 0.22,
+      "governance_feasibility": 0.1,
+      "cost_penalty": "0.30 * cost + 0.10 * infeasibility"
+    }
+  },
+  "interaction_model": {
+    "model": "discrete annual projection for conflict, wildlife index, and resident acceptance under the highest-ranked policy package",
+    "selected_policy": "compensation and predator-proof livestock program",
+    "interaction_projection": [
+      {
+        "year": 1,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.9858,
+        "wildlife_population_index": 0.9887,
+        "resident_acceptance_index": 0.6007,
+        "implementation_maturity": 0.395
+      },
+      {
+        "year": 2,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.9691,
+        "wildlife_population_index": 0.9781,
+        "resident_acceptance_index": 0.6304,
+        "implementation_maturity": 0.44
+      },
+      {
+        "year": 3,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.9501,
+        "wildlife_population_index": 0.9684,
+        "resident_acceptance_index": 0.6601,
+        "implementation_maturity": 0.485
+      },
+      {
+        "year": 4,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.9287,
+        "wildlife_population_index": 0.9594,
+        "resident_acceptance_index": 0.6898,
+        "implementation_maturity": 0.53
+      },
+      {
+        "year": 5,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.9054,
+        "wildlife_population_index": 0.9512,
+        "resident_acceptance_index": 0.7195,
+        "implementation_maturity": 0.575
+      },
+      {
+        "year": 6,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.8801,
+        "wildlife_population_index": 0.9439,
+        "resident_acceptance_index": 0.7492,
+        "implementation_maturity": 0.62
+      },
+      {
+        "year": 7,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.853,
+        "wildlife_population_index": 0.9373,
+        "resident_acceptance_index": 0.7789,
+        "implementation_maturity": 0.665
+      },
+      {
+        "year": 8,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.8245,
+        "wildlife_population_index": 0.9316,
+        "resident_acceptance_index": 0.8086,
+        "implementation_maturity": 0.71
+      },
+      {
+        "year": 9,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.7946,
+        "wildlife_population_index": 0.9267,
+        "resident_acceptance_index": 0.8383,
+        "implementation_maturity": 0.755
+      },
+      {
+        "year": 10,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.7637,
+        "wildlife_population_index": 0.9226,
+        "resident_acceptance_index": 0.868,
+        "implementation_maturity": 0.8
+      },
+      {
+        "year": 11,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.7318,
+        "wildlife_population_index": 0.9193,
+        "resident_acceptance_index": 0.8977,
+        "implementation_maturity": 0.845
+      },
+      {
+        "year": 12,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.6993,
+        "wildlife_population_index": 0.9169,
+        "resident_acceptance_index": 0.9274,
+        "implementation_maturity": 0.89
+      },
+      {
+        "year": 13,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.6663,
+        "wildlife_population_index": 0.9152,
+        "resident_acceptance_index": 0.9571,
+        "implementation_maturity": 0.935
+      },
+      {
+        "year": 14,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.633,
+        "wildlife_population_index": 0.9144,
+        "resident_acceptance_index": 0.9868,
+        "implementation_maturity": 0.98
+      },
+      {
+        "year": 15,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.6006,
+        "wildlife_population_index": 0.9143,
+        "resident_acceptance_index": 1.0,
+        "implementation_maturity": 1.0
+      },
+      {
+        "year": 16,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.5698,
+        "wildlife_population_index": 0.9145,
+        "resident_acceptance_index": 1.0,
+        "implementation_maturity": 1.0
+      },
+      {
+        "year": 17,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.5406,
+        "wildlife_population_index": 0.9151,
+        "resident_acceptance_index": 1.0,
+        "implementation_maturity": 1.0
+      },
+      {
+        "year": 18,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.513,
+        "wildlife_population_index": 0.9161,
+        "resident_acceptance_index": 1.0,
+        "implementation_maturity": 1.0
+      },
+      {
+        "year": 19,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.4867,
+        "wildlife_population_index": 0.9175,
+        "resident_acceptance_index": 1.0,
+        "implementation_maturity": 1.0
+      },
+      {
+        "year": 20,
+        "policy": "compensation and predator-proof livestock program",
+        "conflict_index": 0.4618,
+        "wildlife_population_index": 0.9192,
+        "resident_acceptance_index": 1.0,
+        "implementation_maturity": 1.0
+      }
+    ],
+    "certainty_note": "Certainty is highest for direction-of-change comparisons across policies and lower for numeric year-20 levels because coefficients are scenario assumptions."
+  },
+  "economic_impact_model": {
+    "model": "tourism revenue and community benefit projection with revenue sharing and reduced local opportunity costs",
+    "community_revenue_projection": [
+      {
+        "year": 1,
+        "tourism_revenue_index": 1.0012,
+        "community_revenue_share": 0.1426,
+        "community_revenue_index": 0.1428,
+        "local_opportunity_cost_index": 0.2562,
+        "net_community_benefit_index": -0.1134
+      },
+      {
+        "year": 2,
+        "tourism_revenue_index": 1.0026,
+        "community_revenue_share": 0.1452,
+        "community_revenue_index": 0.1456,
+        "local_opportunity_cost_index": 0.2525,
+        "net_community_benefit_index": -0.1069
+      },
+      {
+        "year": 3,
+        "tourism_revenue_index": 1.0042,
+        "community_revenue_share": 0.1478,
+        "community_revenue_index": 0.1484,
+        "local_opportunity_cost_index": 0.2488,
+        "net_community_benefit_index": -0.1004
+      },
+      {
+        "year": 4,
+        "tourism_revenue_index": 1.0058,
+        "community_revenue_share": 0.1504,
+        "community_revenue_index": 0.1513,
+        "local_opportunity_cost_index": 0.2451,
+        "net_community_benefit_index": -0.0939
+      },
+      {
+        "year": 5,
+        "tourism_revenue_index": 1.0077,
+        "community_revenue_share": 0.153,
+        "community_revenue_index": 0.1542,
+        "local_opportunity_cost_index": 0.2416,
+        "net_community_benefit_index": -0.0874
+      },
+      {
+        "year": 6,
+        "tourism_revenue_index": 1.0096,
+        "community_revenue_share": 0.1556,
+        "community_revenue_index": 0.1571,
+        "local_opportunity_cost_index": 0.238,
+        "net_community_benefit_index": -0.0809
+      },
+      {
+        "year": 7,
+        "tourism_revenue_index": 1.0117,
+        "community_revenue_share": 0.1582,
+        "community_revenue_index": 0.1601,
+        "local_opportunity_cost_index": 0.2346,
+        "net_community_benefit_index": -0.0745
+      },
+      {
+        "year": 8,
+        "tourism_revenue_index": 1.014,
+        "community_revenue_share": 0.1608,
+        "community_revenue_index": 0.1631,
+        "local_opportunity_cost_index": 0.2311,
+        "net_community_benefit_index": -0.0681
+      },
+      {
+        "year": 9,
+        "tourism_revenue_index": 1.0164,
+        "community_revenue_share": 0.1634,
+        "community_revenue_index": 0.1661,
+        "local_opportunity_cost_index": 0.2278,
+        "net_community_benefit_index": -0.0617
+      },
+      {
+        "year": 10,
+        "tourism_revenue_index": 1.019,
+        "community_revenue_share": 0.166,
+        "community_revenue_index": 0.1692,
+        "local_opportunity_cost_index": 0.2244,
+        "net_community_benefit_index": -0.0553
+      },
+      {
+        "year": 11,
+        "tourism_revenue_index": 1.0217,
+        "community_revenue_share": 0.1686,
+        "community_revenue_index": 0.1723,
+        "local_opportunity_cost_index": 0.2212,
+        "net_community_benefit_index": -0.0489
+      },
+      {
+        "year": 12,
+        "tourism_revenue_index": 1.0246,
+        "community_revenue_share": 0.1712,
+        "community_revenue_index": 0.1754,
+        "local_opportunity_cost_index": 0.2179,
+        "net_community_benefit_index": -0.0425
+      },
+      {
+        "year": 13,
+        "tourism_revenue_index": 1.0276,
+        "community_revenue_share": 0.1738,
+        "community_revenue_index": 0.1786,
+        "local_opportunity_cost_index": 0.2148,
+        "net_community_benefit_index": -0.0362
+      },
+      {
+        "year": 14,
+        "tourism_revenue_index": 1.0307,
+        "community_revenue_share": 0.1764,
+        "community_revenue_index": 0.1818,
+        "local_opportunity_cost_index": 0.2116,
+        "net_community_benefit_index": -0.0298
+      },
+      {
+        "year": 15,
+        "tourism_revenue_index": 1.034,
+        "community_revenue_share": 0.179,
+        "community_revenue_index": 0.1851,
+        "local_opportunity_cost_index": 0.2085,
+        "net_community_benefit_index": -0.0234
+      },
+      {
+        "year": 16,
+        "tourism_revenue_index": 1.0373,
+        "community_revenue_share": 0.1816,
+        "community_revenue_index": 0.1884,
+        "local_opportunity_cost_index": 0.2055,
+        "net_community_benefit_index": -0.0171
+      },
+      {
+        "year": 17,
+        "tourism_revenue_index": 1.0405,
+        "community_revenue_share": 0.1842,
+        "community_revenue_index": 0.1917,
+        "local_opportunity_cost_index": 0.2025,
+        "net_community_benefit_index": -0.0108
+      },
+      {
+        "year": 18,
+        "tourism_revenue_index": 1.0438,
+        "community_revenue_share": 0.1868,
+        "community_revenue_index": 0.195,
+        "local_opportunity_cost_index": 0.1995,
+        "net_community_benefit_index": -0.0045
+      },
+      {
+        "year": 19,
+        "tourism_revenue_index": 1.0471,
+        "community_revenue_share": 0.1894,
+        "community_revenue_index": 0.1983,
+        "local_opportunity_cost_index": 0.1966,
+        "net_community_benefit_index": 0.0017
+      },
+      {
+        "year": 20,
+        "tourism_revenue_index": 1.0504,
+        "community_revenue_share": 0.192,
+        "community_revenue_index": 0.2017,
+        "local_opportunity_cost_index": 0.1937,
+        "net_community_benefit_index": 0.0079
+      }
+    ],
+    "year20_net_community_benefit_index": 0.0079,
+    "economic_interpretation": "The policy is valuable only if a visible share of tourism and conservation finance reaches households bearing wildlife opportunity costs."
+  }
+}

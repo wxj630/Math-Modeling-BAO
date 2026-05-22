@@ -1,0 +1,7 @@
+scenario,growth_multiplier,renewable_share,conservation_multiplier,state_deficit_maf,lowest_service_ratio,effective_electric_need_gwh,hydropower_service_ratio,recommendation
+baseline fixed demand,1.0,0.22,1.0,3.592,0.0,6841.86,0.1449,activate shortage protocol
+population and industrial growth,1.12,0.22,1.0,4.66,0.0,7662.88,0.1294,activate shortage protocol
+agricultural and population shrinkage,0.9,0.22,1.0,2.702,0.0684,6157.67,0.1611,activate shortage protocol
+renewable generation share increases,1.0,0.44,1.0,3.592,0.0,6323.71,0.1568,activate shortage protocol
+water and electricity conservation,1.0,0.3,0.86,2.346,0.4293,6653.44,0.1491,activate shortage protocol
+growth plus conservation response,1.08,0.38,0.88,3.151,0.0,6982.23,0.142,activate shortage protocol

@@ -1,0 +1,31 @@
+﻿hull_type,make,variant,holdout_count,observed_median_price,predicted_median_price,median_abs_pct_error
+catamaran,Lagoon,450,30,472657.5,457933.4,0.076469
+catamaran,Lagoon,42,17,480291.0,518398.16,0.068159
+catamaran,Lagoon,440,16,327712.5,340632.05,0.067211
+catamaran,Lagoon,400,15,333781.0,329393.69,0.032397
+monohull,Bavaria,50 Cruiser,11,133617.0,135071.32,0.12578
+monohull,Beneteau,Oceanis 45,11,241786.0,235775.08,0.13826
+catamaran,Lagoon,500,10,510198.5,514944.3,0.024505
+catamaran,Lagoon,450F,10,558043.0,529563.07,0.065192
+monohull,Bavaria,Cruiser 46,10,148803.0,147819.21,0.107113
+monohull,Beneteau,Oceanis 40,10,130942.0,109947.68,0.12412
+monohull,Bavaria,40 Cruiser,9,97162.0,98908.06,0.040773
+monohull,Beneteau,Oceanis 50,9,199900.0,204771.44,0.083002
+monohull,Bavaria,56 Cruiser,9,278165.0,288238.19,0.08961
+monohull,Beneteau,Cyclades 50.5,9,144306.0,150881.85,0.094943
+monohull,Beneteau,Cyclades 39.3,8,81394.5,91254.32,0.084499
+catamaran,Lagoon,39,8,303715.0,302522.89,0.096672
+monohull,Beneteau,Oceanis 41,8,186931.5,183572.5,0.097573
+monohull,Jeanneau,53,8,206502.0,220098.88,0.127826
+catamaran,Lagoon,420,7,337640.0,324536.05,0.041105
+catamaran,Leopard,44,7,339000.0,349459.0,0.042963
+monohull,Jeanneau,Sun Odyssey 54 DS,7,339500.0,279207.43,0.07963
+monohull,Bavaria,51 Cruiser,7,206498.0,215791.6,0.14609
+monohull,Jeanneau,Sun Odyssey 50 DS,7,249013.0,208121.61,0.196684
+monohull,Jeanneau,Sun Odyssey 389,6,173596.0,172573.38,0.070728
+catamaran,Bali,4.1,6,484203.0,472347.46,0.08122
+monohull,Jeanneau,Sun Odyssey 42i,6,130555.5,143754.28,0.099477
+monohull,Jeanneau,Sun Odyssey 439,6,151521.5,156404.64,0.100826
+monohull,Jeanneau,Sun Odyssey 39i,6,102047.5,104898.0,0.134283
+monohull,Beneteau,Oceanis 43,6,113148.0,128596.01,0.247016
+monohull,Beneteau,Oceanis 423,5,147900.0,145889.3,0.033948

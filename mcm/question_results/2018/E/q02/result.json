@@ -1,0 +1,134 @@
+{
+  "problem_id": "2018-E",
+  "question": "q02",
+  "question_title": "Fragile state case without climate effects",
+  "statement": "Select a top-ten fragile state and show how climate change may have increased its fragility.",
+  "methods": "Compare Yemen's climate-influenced fragility score with a reduced-climate counterfactual.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "official_requirements": {
+      "fragile_vulnerable_stable_classification": true,
+      "top10_fragile_state_case": true,
+      "non_top10_tipping_point": true,
+      "state_interventions": true,
+      "scale_transfer": true
+    },
+    "parameters": {
+      "states": [
+        {
+          "state": "Yemen",
+          "top10": true,
+          "governance": 0.18,
+          "social_fragmentation": 0.82,
+          "climate_exposure": 0.88,
+          "adaptive_capacity": 0.2
+        },
+        {
+          "state": "Syria",
+          "top10": true,
+          "governance": 0.2,
+          "social_fragmentation": 0.86,
+          "climate_exposure": 0.72,
+          "adaptive_capacity": 0.24
+        },
+        {
+          "state": "Somalia",
+          "top10": true,
+          "governance": 0.16,
+          "social_fragmentation": 0.78,
+          "climate_exposure": 0.91,
+          "adaptive_capacity": 0.18
+        },
+        {
+          "state": "Jordan",
+          "top10": false,
+          "governance": 0.58,
+          "social_fragmentation": 0.42,
+          "climate_exposure": 0.74,
+          "adaptive_capacity": 0.5
+        },
+        {
+          "state": "Bangladesh",
+          "top10": false,
+          "governance": 0.48,
+          "social_fragmentation": 0.38,
+          "climate_exposure": 0.82,
+          "adaptive_capacity": 0.46
+        }
+      ],
+      "climate_stressors": [
+        "drought",
+        "temperature_increase",
+        "decreasing_arable_land",
+        "migration_pressure",
+        "natural_disasters"
+      ]
+    }
+  },
+  "fragile_state_case": {
+    "selected_state": "Yemen",
+    "observed_score": 0.834,
+    "score_without_climate_effects": 0.7231,
+    "climate_increase": 0.1109
+  },
+  "fragility_model": {
+    "state_rows": [
+      {
+        "state": "Yemen",
+        "top10": true,
+        "governance": 0.18,
+        "social_fragmentation": 0.82,
+        "climate_exposure": 0.88,
+        "adaptive_capacity": 0.2,
+        "fragility_score": 0.834,
+        "classification": "fragile"
+      },
+      {
+        "state": "Syria",
+        "top10": true,
+        "governance": 0.2,
+        "social_fragmentation": 0.86,
+        "climate_exposure": 0.72,
+        "adaptive_capacity": 0.24,
+        "fragility_score": 0.7864,
+        "classification": "fragile"
+      },
+      {
+        "state": "Somalia",
+        "top10": true,
+        "governance": 0.16,
+        "social_fragmentation": 0.78,
+        "climate_exposure": 0.91,
+        "adaptive_capacity": 0.18,
+        "fragility_score": 0.8424,
+        "classification": "fragile"
+      },
+      {
+        "state": "Jordan",
+        "top10": false,
+        "governance": 0.58,
+        "social_fragmentation": 0.42,
+        "climate_exposure": 0.74,
+        "adaptive_capacity": 0.5,
+        "fragility_score": 0.5208,
+        "classification": "vulnerable"
+      },
+      {
+        "state": "Bangladesh",
+        "top10": false,
+        "governance": 0.48,
+        "social_fragmentation": 0.38,
+        "climate_exposure": 0.82,
+        "adaptive_capacity": 0.46,
+        "fragility_score": 0.5732,
+        "classification": "vulnerable"
+      }
+    ],
+    "thresholds": {
+      "fragile": 0.7,
+      "vulnerable": 0.52
+    }
+  }
+}

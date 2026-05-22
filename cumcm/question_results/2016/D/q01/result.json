@@ -1,0 +1,119 @@
+{
+  "problem_id": "2016-D",
+  "title": "2016年 CUMCM D题：风电场运行状况分析及优化",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "附件1给出了该风电场一年内每隔15分钟的各风机安装处的平均风速和风电场日实际输出功率。试利用这些数据对该风电场的风能资源及其利用情况进行评估。",
+  "tasks": [
+    "附件1给出了该风电场一年内每隔15分钟的各风机安装处的平均风速和风电场日实际输出功率"
+  ],
+  "selected_model": {
+    "key": "ch7",
+    "name": "风资源评估、机型匹配与维护排班优化",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "reason": "问题1需要综合风速、发电量、容量因子和低风停发等指标评价风资源利用情况。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "reason": "问题2需要把风速样本映射到机型功率曲线，比较现有机型和新机型的匹配程度。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "reason": "问题3是典型维护计划与人员排班优化，目标兼顾经济损失和工作量均衡。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 27,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201502.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201503.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201504.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201505.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201506.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201507.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201508.xls; ...",
+    "rows": 56940,
+    "columns": 3,
+    "note": "本题专用算法读取附件1全年15分钟风速/功率、附件2典型风机风速报表，以及附件3/4风机参数，完成风资源评估、机型匹配和维护排班。"
+  },
+  "formulation": {
+    "model_type": "风资源评估、机型匹配与维护排班优化",
+    "task_breakdown": [
+      "附件1给出了该风电场一年内每隔15分钟的各风机安装处的平均风速和风电场日实际输出功率"
+    ],
+    "assumptions": [
+      "附件1中功率单位为MW、风速单位为m/s，每个工作表对应一天，每天96个15分钟记录。",
+      "附件2为6台典型风机每2小时风速样本，4/16/24号代表一期，33/49/57号代表二期。",
+      "附件3现有机型I/II功率曲线按文档转换结果录入；附件4新机型III/IV/V用切入、额定、切出和额定功率构造三次功率曲线。",
+      "风机实际发电量按15分钟功率积分；装机容量按题面约20万kW取200MW计算容量因子。",
+      "维护排班把124台风机各安排两次2天维护，第二次与第一次间隔180天，满足不超过270天连续运行要求。",
+      "通用基线保留在 cumcm/generic_baselines，当前结果为附件驱动的风电场运行分析版本。"
+    ],
+    "decision_variables": [
+      "v_t: t时刻风电场平均风速",
+      "P_t: t时刻风电场实际输出功率",
+      "E_day: 日发电量",
+      "CF: 容量因子",
+      "f_m(v): 机型m在风速v下的功率曲线",
+      "x_{i,k}: 风机i第k次维护开始日期",
+      "y_{g,d}: 维修组g在日期d的任务（值班/维护/休息）"
+    ],
+    "constraints": [
+      "每台风机每年维护两次，每次连续2天。",
+      "两次维护之间间隔设置为180天，小于270天上限。",
+      "每天至少一组维修人员值班。",
+      "每组维修人员连续工作天数不超过6天。",
+      "维护尽量安排在相对低发电量时段，以降低经济损失。"
+    ],
+    "objective_or_equations": [
+      "E_day=sum_t P_t*0.25",
+      "CF=sum_day E_day/(200MW*24h*365)",
+      "available_energy_m = mean(f_m(v_t))*8760/1000",
+      "wind_match_score = expected_energy / rated_power",
+      "minimize lost_energy + workload_imbalance_penalty"
+    ],
+    "solution_steps": [
+      "读取12个月附件1，展开为全年15分钟功率/风速记录。",
+      "计算日、月风速均值、发电量、利用小时、容量因子和风功率密度指标。",
+      "按风速分箱统计实际功率曲线，评估风能资源与利用状况。",
+      "输出日汇总、月汇总和风速-功率分箱表。"
+    ],
+    "model_reference": {
+      "key": "ch7",
+      "name": "风资源评估、机型匹配与维护排班优化",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "wind_farm_resource_utilization_assessment",
+    "interval_record_count": 35039,
+    "day_count": 365,
+    "mean_wind_speed_mps": 5.668082,
+    "annual_energy_mwh": 335336.1975,
+    "capacity_factor": 0.191402,
+    "mean_power_mw": 38.28148,
+    "zero_power_ratio": 0.137732,
+    "report": [
+      "问题1读取附件1全年15分钟风速和功率记录，按日、月汇总风能资源和实际利用情况。",
+      "容量因子按题面约20万千瓦装机容量计算，风速-功率分箱用于观察实际功率曲线和低风停发情况。",
+      "通用二次拟合基线保留，本结果是附件全年运行数据驱动的评估版本。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2016/D/q01/wind_resource_daily_summary.csv",
+    "question_artifacts/2016/D/q01/wind_resource_monthly_summary.csv",
+    "question_artifacts/2016/D/q01/wind_power_curve_bins.csv",
+    "question_artifacts/2016/D/q01/experiment_table.csv"
+  ]
+}

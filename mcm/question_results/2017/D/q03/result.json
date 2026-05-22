@@ -1,0 +1,83 @@
+{
+  "problem_id": "2017-D",
+  "question": "q03",
+  "question_title": "文化规范与旅客风格敏感性",
+  "statement": "Consider how cultural norms may impact the way in which passengers process through checkpoints as a sensitivity analysis. How can the security system accommodate these differences in a manner that expedites passenger throughput and reduces variance?",
+  "methods": "在官方流程样本上施加 personal-space cautious、collective-efficiency、individual-fast but variable 三类确定性乘数，说明这些是旅客风格敏感性而非 workbook 中的文化观测。对应模型：敏感性分析、情景参数、服务时间扰动。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
+    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
+    "rows": {
+      "Sheet1": 58
+    },
+    "arrival_counts": {
+      "precheck": 58,
+      "regular": 47
+    },
+    "process_sample_counts": {
+      "precheck_arrivals": 58,
+      "regular_arrivals": 47,
+      "id_times": 16,
+      "mm_wave_times": 39,
+      "xray_times": 13,
+      "property_times": 29
+    }
+  },
+  "cultural_sensitivity": {
+    "method": "Deterministic one-at-a-time multipliers on official process samples; traveler styles are sensitivity scenarios, not observed cultures in the workbook.",
+    "traveler_styles": [
+      {
+        "traveler_style": "personal-space cautious",
+        "property_multiplier": 1.25,
+        "id_multiplier": 1.05,
+        "combined_mean_wait_s": 1224.9903,
+        "combined_p90_wait_s": 3041.7233,
+        "description": "More spacing and slower divestment/reclaim behavior."
+      },
+      {
+        "traveler_style": "collective-efficiency",
+        "property_multiplier": 0.85,
+        "id_multiplier": 0.95,
+        "combined_mean_wait_s": 859.504857,
+        "combined_p90_wait_s": 2199.2409,
+        "description": "Passengers coordinate bins and move when prompted."
+      },
+      {
+        "traveler_style": "individual-fast but variable",
+        "property_multiplier": 0.95,
+        "id_multiplier": 1.0,
+        "combined_mean_wait_s": 955.20771,
+        "combined_p90_wait_s": 2421.6731,
+        "description": "Faster median but less orderly behavior; modeled here without random variance."
+      }
+    ]
+  },
+  "baseline_model": {
+    "precheck_lanes": 1,
+    "regular_lanes": 3,
+    "precheck": {
+      "servers": 1,
+      "passenger_count": 58,
+      "mean_wait_s": 1577.992103,
+      "p90_wait_s": 2945.2368,
+      "max_wait_s": 3169.007,
+      "mean_service_s": 67.384078,
+      "last_finish_s": 3908.2765
+    },
+    "regular": {
+      "servers": 3,
+      "passenger_count": 47,
+      "mean_wait_s": 283.902553,
+      "p90_wait_s": 596.03,
+      "max_wait_s": 696.51,
+      "mean_service_s": 89.751915,
+      "last_finish_s": 3659.41
+    },
+    "combined_mean_wait_s": 998.732971,
+    "combined_p90_wait_s": 2521.0776,
+    "combined_max_wait_s": 3169.007,
+    "checkpoint_clear_time_s": 3908.2765
+  }
+}

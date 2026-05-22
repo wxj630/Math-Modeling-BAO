@@ -1,0 +1,59 @@
+# 2021-E 问题 1 通用基线报告
+
+> 这是题目专用化之前的第一版通用模型。它用于保留建模进步过程，不代表最终竞赛级解法。
+
+## 题目与任务
+
+- 题目：2021年 CUMCM E题：中药材的鉴别
+- 问题：问题 1
+- 原问：根据附件 1 中几种药材的中红外光谱数据，研究不同种类药材的特 征和差异性，并鉴别药材的种类。
+
+## 通用模型选择
+
+- 模型：机器学习与统计识别（CH9：机器学习与统计模型）
+- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 通用方法：`logistic_regression_plus_kmeans`
+
+## 变量、约束与公式
+
+### 变量定义
+- X: 样本特征矩阵
+- y: 类别/状态标签
+- theta: 逻辑回归参数
+- z_i: 聚类标签
+
+### 约束条件
+- 特征标准化或同量纲
+- 类别概率位于 [0,1]
+
+### 模型公式 / 目标函数
+- `P(y=1|x)=sigmoid(theta^T*x)`
+- `min cross_entropy(y, sigmoid(X*theta))`
+- `min within_cluster_sum_of_squares`
+
+## 运行与产物
+
+- 通用代码：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2021/E/q01/solution.py
+- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2021/E/q01/solution.py`
+- 结果 JSON：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/results/2021/E/q01/result.json
+- 实验报告：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/reports/2021/E/q01/report.md
+- 实验产物：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/artifacts/2021/E/q01/experiment_table.csv
+
+## 数据来源
+
+- 类型：attachment
+- 路径：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件1.xlsx
+- 说明：本问优先使用官方附件中的数值表生成实验结果。
+
+## 核心结果
+
+```json
+{
+  "method": "logistic_regression_plus_kmeans",
+  "training_accuracy": 0.5416666666666666,
+  "cluster_counts": [
+    239,
+    1
+  ]
+}
+```

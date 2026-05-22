@@ -1,0 +1,6 @@
+action,risk_reduction,owner_cost_index,insurer_confidence_gain,risk_score_after,affordability_load,insurer_score_gain
+elevate utilities and living floor above design flood,0.24,0.45,0.16,0.5928,0.1935,0.3613
+"community drainage, pumps, and warning triggers",0.2,0.38,0.15,0.624,0.1634,0.3173
+roof tie-downs and opening protection,0.16,0.28,0.1,0.6552,0.1204,0.2359
+parametric deductible reserve plus inspection covenant,0.11,0.18,0.13,0.6942,0.0774,0.2245
+defensible space / fire-resistant envelope,0.14,0.25,0.08,0.6708,0.1075,0.1985

@@ -1,0 +1,2 @@
+﻿method,enterprise_count,approved_count,rejected_count,total_credit_yuan,budget_yuan,mean_risk_approved,expected_interest_income_yuan,mean_loan_rate_approved,top_approved_enterprise
+credit_risk_loan_strategy,123,37,86,36447434.64,50000000.0,0.258241,346363.51,0.051689,E1

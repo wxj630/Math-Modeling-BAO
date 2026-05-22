@@ -1,0 +1,2 @@
+﻿method,turbine_count,maintenance_event_count,crew_count,min_crew_work_days,max_crew_work_days,max_consecutive_work_days,total_estimated_lost_energy_mwh
+wind_farm_maintenance_crew_schedule_optimization,124,248,4,215,216,3,3667.170118

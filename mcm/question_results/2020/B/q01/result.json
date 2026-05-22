@@ -1,0 +1,181 @@
+{
+  "problem_id": "2020-B",
+  "question": "q01",
+  "question_title": "同沙量同海滩条件下的最长寿基础形状",
+  "statement": "Construct a mathematical model to identify the best 3-dimensional geometric shape to use as a sandcastle foundation that will last the longest period of time under the same beach, sand, volume, distance, and water-to-sand proportion.",
+  "methods": "用暴露表面积、角部冲刷、坡度稳定性、足迹扩散和可建造性构造确定性 erosion index，比较 low mound、truncated cone、hemisphere、frustum、ridge 和 tower。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "official_requirements": {
+      "same_sand_same_volume_same_distance": true,
+      "same_water_to_sand_proportion_for_shape_comparison": true,
+      "no_additives_or_supports_for_mixture": true,
+      "rain_adjustment_required": true,
+      "vacation_magazine_article": true
+    },
+    "parameters": {
+      "tide_hours": 6,
+      "base_sand_volume_l": 40.0,
+      "foundation_shapes": [
+        {
+          "shape": "low circular mound",
+          "side_slope_deg": 28,
+          "footprint_factor": 1.24,
+          "surface_factor": 1.08,
+          "corner_factor": 0.0,
+          "construction_score": 0.92
+        },
+        {
+          "shape": "truncated cone",
+          "side_slope_deg": 36,
+          "footprint_factor": 1.1,
+          "surface_factor": 1.0,
+          "corner_factor": 0.08,
+          "construction_score": 0.86
+        },
+        {
+          "shape": "hemisphere",
+          "side_slope_deg": 42,
+          "footprint_factor": 0.98,
+          "surface_factor": 0.94,
+          "corner_factor": 0.02,
+          "construction_score": 0.72
+        },
+        {
+          "shape": "square frustum",
+          "side_slope_deg": 34,
+          "footprint_factor": 1.06,
+          "surface_factor": 1.04,
+          "corner_factor": 0.24,
+          "construction_score": 0.78
+        },
+        {
+          "shape": "triangular prism ridge",
+          "side_slope_deg": 30,
+          "footprint_factor": 1.18,
+          "surface_factor": 1.12,
+          "corner_factor": 0.18,
+          "construction_score": 0.82
+        },
+        {
+          "shape": "steep cylinder tower",
+          "side_slope_deg": 65,
+          "footprint_factor": 0.72,
+          "surface_factor": 1.3,
+          "corner_factor": 0.12,
+          "construction_score": 0.55
+        }
+      ],
+      "sand_water_mixtures": [
+        {
+          "water_fraction": 0.06,
+          "cohesion": 0.42,
+          "drainage": 0.92,
+          "slump_risk": 0.08
+        },
+        {
+          "water_fraction": 0.09,
+          "cohesion": 0.68,
+          "drainage": 0.82,
+          "slump_risk": 0.1
+        },
+        {
+          "water_fraction": 0.12,
+          "cohesion": 0.86,
+          "drainage": 0.72,
+          "slump_risk": 0.16
+        },
+        {
+          "water_fraction": 0.15,
+          "cohesion": 0.94,
+          "drainage": 0.58,
+          "slump_risk": 0.28
+        },
+        {
+          "water_fraction": 0.18,
+          "cohesion": 0.9,
+          "drainage": 0.42,
+          "slump_risk": 0.44
+        },
+        {
+          "water_fraction": 0.22,
+          "cohesion": 0.72,
+          "drainage": 0.24,
+          "slump_risk": 0.64
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; shape and mixture rows are deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "shape_model": {
+    "method": "deterministic erosion index from exposed surface, corners, side slope, footprint, and construction feasibility under the same sand volume and beach distance",
+    "shape_rows": [
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 22.854
+      },
+      {
+        "shape": "truncated cone",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9818,
+        "erosion_rate_index": 0.6691,
+        "construction_score": 0.86,
+        "expected_lifetime_hours": 18.443
+      },
+      {
+        "shape": "triangular prism ridge",
+        "water_fraction": 0.12,
+        "wave_exposure": 1.12,
+        "erosion_rate_index": 0.6944,
+        "construction_score": 0.82,
+        "expected_lifetime_hours": 17.773
+      },
+      {
+        "shape": "hemisphere",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9784,
+        "erosion_rate_index": 0.7571,
+        "construction_score": 0.72,
+        "expected_lifetime_hours": 16.301
+      },
+      {
+        "shape": "square frustum",
+        "water_fraction": 0.12,
+        "wave_exposure": 1.2166,
+        "erosion_rate_index": 0.7917,
+        "construction_score": 0.78,
+        "expected_lifetime_hours": 15.588
+      },
+      {
+        "shape": "steep cylinder tower",
+        "water_fraction": 0.12,
+        "wave_exposure": 2.0222,
+        "erosion_rate_index": 2.2804,
+        "construction_score": 0.55,
+        "expected_lifetime_hours": 5.412
+      }
+    ],
+    "recommended_shape": {
+      "shape": "low circular mound",
+      "water_fraction": 0.12,
+      "wave_exposure": 0.871,
+      "erosion_rate_index": 0.54,
+      "construction_score": 0.92,
+      "expected_lifetime_hours": 22.854
+    }
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide measured wave tanks, grain-size curves, or beach slope records.",
+      "Shape and mixture rows are explicit physics-inspired planning inputs, not observed erosion experiments.",
+      "A field-ready model should add sand grain distribution, tide gauge, swash velocity, rainfall infiltration, and compaction measurements."
+    ]
+  }
+}

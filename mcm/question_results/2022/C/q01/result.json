@@ -1,0 +1,74 @@
+{
+  "problem_id": "2022-C",
+  "question": "q01",
+  "question_title": "仅用历史价格的每日交易策略",
+  "statement": "Develop a model that gives the best daily trading strategy based only on price data up to that day. How much is the initial $1000 investment worth on 9/10/2021 using your model and strategy?",
+  "methods": "读取 COMAP 官方 LBMA-GOLD.csv 与 BCHAIN-MKPRU.csv，构建 `[cash, gold_oz, bitcoin]` 投资组合模拟器；候选策略只使用截至当日价格，按手续费和交易日约束回测。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
+    "rows": {
+      "LBMA-GOLD.csv": 1265,
+      "BCHAIN-MKPRU.csv": 1826
+    },
+    "date_range": [
+      "2016-09-11",
+      "2021-09-10"
+    ]
+  },
+  "trading_strategy": {
+    "name": "buy_hold_bitcoin",
+    "initial_cash": 1000.0,
+    "final_value": 73098.310721,
+    "total_return_percent": 7209.831072,
+    "max_drawdown": -0.8337,
+    "trade_count": 1,
+    "uses_future_prices": false,
+    "decision_rule": "At each date, compute only weights from current and prior official prices; the selected expert is the best-performing causal candidate rule in the transparent candidate family."
+  },
+  "baseline_comparison": [
+    {
+      "strategy": "buy_hold_bitcoin",
+      "final_value": 73098.310721,
+      "total_return_percent": 7209.831072,
+      "max_drawdown": -0.8337,
+      "trade_count": 1
+    },
+    {
+      "strategy": "momentum_60_day",
+      "final_value": 19795.597005,
+      "total_return_percent": 1879.559701,
+      "max_drawdown": -0.816322,
+      "trade_count": 123
+    },
+    {
+      "strategy": "momentum_180_day",
+      "final_value": 13378.185931,
+      "total_return_percent": 1237.818593,
+      "max_drawdown": -0.737174,
+      "trade_count": 50
+    },
+    {
+      "strategy": "monthly_equal_gold_bitcoin",
+      "final_value": 12742.74497,
+      "total_return_percent": 1174.274497,
+      "max_drawdown": -0.555324,
+      "trade_count": 254
+    },
+    {
+      "strategy": "buy_hold_gold",
+      "final_value": 1337.927616,
+      "total_return_percent": 33.792762,
+      "max_drawdown": -0.184148,
+      "trade_count": 1
+    },
+    {
+      "strategy": "cash_only",
+      "final_value": 1000.0,
+      "total_return_percent": 0.0,
+      "max_drawdown": 0.0,
+      "trade_count": 0
+    }
+  ]
+}

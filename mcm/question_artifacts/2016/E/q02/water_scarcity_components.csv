@@ -1,0 +1,5 @@
+﻿component,value,interpretation
+physical_stress,1.392771,withdrawals/internal renewable resources
+sanitation_quality_gap,0.035852,economic scarcity proxy through sanitation service gap
+basic_water_access_gap,0.007139,clean water access gap
+economic_capacity_offset,0.334736,GDP/capita ability to fund infrastructure

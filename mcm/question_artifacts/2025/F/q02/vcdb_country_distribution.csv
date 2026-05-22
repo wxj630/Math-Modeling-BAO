@@ -1,0 +1,14 @@
+iso3,country,vcdb_incident_count,share_of_sample,confirmed_disclosure_count,reference_reported_count,earliest_year,latest_year,dominant_action_type
+USA,United States,191,0.80591,132,173,2005,2025,hacking
+CAN,Canada,16,0.06751,12,16,2003,2019,hacking
+GBR,United Kingdom,13,0.05485,9,13,2011,2025,error
+AUS,Australia,4,0.01688,4,4,2013,2018,error
+IND,India,3,0.01266,2,3,2015,2016,hacking
+ESP,Spain,2,0.00844,1,2,2019,2020,error
+ZAF,South Africa,2,0.00844,2,2,2016,2021,physical
+RUS,Russian Federation,1,0.00422,0,1,2013,2013,hacking
+IRL,Ireland,1,0.00422,0,1,2007,2007,physical
+SGP,Singapore,1,0.00422,0,1,2013,2013,hacking
+BRA,Brazil,1,0.00422,1,1,2020,2020,misuse
+ITA,Italy,1,0.00422,1,0,2024,2024,hacking
+FRA,France,1,0.00422,1,1,2016,2016,misuse

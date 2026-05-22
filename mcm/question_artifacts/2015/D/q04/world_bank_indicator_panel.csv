@@ -1,0 +1,463 @@
+﻿countryiso3code,country,indicator_id,indicator_name,year,value,unit,sourceid,lastupdated,api_url
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2024,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2023,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2022,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2021,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2020,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2019,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2018,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2017,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2016,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2015,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2014,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2013,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2012,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2011,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2010,41.5907220090687,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2009,41.464269271015,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2008,41.3378165329613,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2007,41.2113637949076,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2006,41.0849110568539,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2005,40.9584583188001,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2004,40.8320055807464,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2003,40.7055528426927,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2002,40.579100104639,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2001,40.4526473665853,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),2000,40.3261946285316,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1999,40.3488391608392,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1998,40.2727832167832,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1997,40.1967272727273,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1996,40.1206713286713,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1995,40.0446153846154,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1994,39.9685594405594,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1993,39.8925034965035,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1992,39.8164475524475,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1991,39.7403916083916,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1990,39.6643356643357,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1989,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1988,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1987,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1986,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1985,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1984,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1983,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1982,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1981,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1980,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1979,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1978,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1977,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1976,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1975,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1974,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1973,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1972,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1971,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1970,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1969,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1968,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1967,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1966,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1965,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1964,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1963,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1962,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1961,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,AG.LND.FRST.ZS,Forest area (% of land area),1960,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.FRST.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2024,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2023,94.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2022,91.3,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2021,89.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2020,89.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2019,89.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2018,93.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2017,86.6,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2016,90.7,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2015,82.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2014,84.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2013,77.4,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2012,75.2,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2011,67.3,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2010,68.6,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2009,59.3,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2008,56.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2007,52.6,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2006,51.2,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2005,46.1,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2004,37.2,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2003,39.6,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2002,36.4,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2001,24.6,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),2000,29.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1999,25.3273544311523,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1998,21.7325325012207,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1997,18.1328678131104,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1996,17.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1995,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1994,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1993,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1992,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1991,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1990,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1989,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1988,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1987,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1986,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1985,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1984,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1983,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1982,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1981,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1980,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1979,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1978,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1977,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1976,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1975,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1974,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1973,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1972,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1971,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1970,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1969,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1968,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1967,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1966,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1965,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1964,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1963,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1962,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1961,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,EG.ELC.ACCS.ZS,Access to electricity (% of population),1960,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/EG.ELC.ACCS.ZS?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2024,1179.81272768386,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2023,1136.42769313825,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2022,1113.55462341223,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2021,1062.7888430629,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2020,1031.53618783934,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2019,1077.11796498188,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2018,1021.91492204011,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2017,951.857298563641,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2016,875.188943730855,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2015,875.543635474862,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2014,846.665541773599,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2013,801.039060847856,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2012,775.310578479839,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2011,742.617252662576,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2010,721.265221364302,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2009,692.400000816919,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2008,666.865095417138,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2007,633.226129136597,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2006,617.477638588722,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2005,603.190108570995,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2004,589.46992868617,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2003,570.28967363428,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2002,556.438454538796,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2001,564.28622920391,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),2000,547.221082273632,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1999,524.27256909301,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1998,511.54871132025,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1997,506.426874424217,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1996,492.212428031946,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1995,477.741099613336,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1994,472.951082824345,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1993,448.13094087379,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1992,443.462044821677,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1991,438.15619419594,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1990,422.724738575869,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1989,413.894023064039,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1988,405.638929689076,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1987,384.659636696973,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1986,386.340559561214,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1985,377.725353860231,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1984,364.032308849685,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1983,339.778376746619,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1982,358.609920101425,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1981,353.700814105005,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1980,334.219179007322,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1979,350.320446364022,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1978,350.30570504545,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1977,343.403337654578,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1976,340.906119257416,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1975,333.76929822544,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1974,336.306374003459,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1973,323.260045911092,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1972,331.963144339485,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1971,328.993729996026,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1970,340.306833356848,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1969,339.099773054614,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1968,331.720617039361,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1967,336.664372577306,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1966,349.354951533981,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1965,333.249080677851,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1964,344.303003365182,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1963,326.647935131857,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1962,326.931761367814,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1961,327.106042340229,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$),1960,327.155239909957,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/NY.GDP.PCAP.KD?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2024,93.6401246842117,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2023,93.1169638221139,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2022,92.5870336093326,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2021,92.0505329995059,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2020,91.5076217588488,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2019,90.9584624626018,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2018,90.4032337065468,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2017,89.8420840030234,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2016,89.2751913988418,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2015,88.7026979901049,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2014,88.1248062062868,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2013,87.5415795968781,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2012,86.9532837280701,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2011,86.3599023849968,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2010,85.7617588960131,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2009,85.158729874995,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2008,84.5508362701857,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2007,83.9381629345447,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2006,83.3207910288118,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2005,82.6989066918082,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2004,82.0725089382401,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2003,81.4416869635326,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2002,80.8065175847141,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2001,80.1670910944801,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),2000,79.4883969819743,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1999,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1998,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1997,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1996,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1995,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1994,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1993,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1992,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1991,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1990,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1989,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1988,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1987,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1986,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1985,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1984,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1983,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1982,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1981,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1980,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1979,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1978,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1977,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1976,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1975,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1974,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1973,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1972,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1971,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1970,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1969,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1968,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1967,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1966,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1965,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1964,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1963,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1962,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1961,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.H2O.BASW.ZS,People using at least basic drinking water services (% of population),1960,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.H2O.BASW.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2024,86.0259805937649,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2023,82.5877911140468,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2022,79.1866571655946,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2021,75.8233419830013,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2020,72.4985122908231,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2019,69.2128409973963,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2018,65.966994107957,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2017,62.7615781748289,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2016,59.5972467919298,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2015,56.4745599225782,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2014,53.394175397633,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2013,50.3565022636622,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2012,47.3622706946734,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2011,44.4117125540755,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2010,41.5056568805896,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2009,38.6441196454107,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2008,35.8273714281674,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2007,33.0557887006794,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2006,30.3297393254008,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2005,27.6497562651801,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2004,25.0160431336895,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2003,22.4289482098159,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2002,19.8888097263775,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2001,17.3959627043357,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),2000,14.8948751074731,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1999,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1998,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1997,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1996,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1995,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1994,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1993,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1992,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1991,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1990,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1989,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1988,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1987,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1986,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1985,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1984,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1983,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1982,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1981,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1980,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1979,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1978,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1977,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1976,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1975,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1974,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1973,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1972,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1971,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1970,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1969,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1968,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1967,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1966,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1965,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1964,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1963,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1962,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1961,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SH.STA.BASS.ZS,People using at least basic sanitation services (% of population),1960,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SH.STA.BASS.ZS?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2024,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2023,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2022,2.4,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2021,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2020,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2019,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2018,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2017,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2016,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2015,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2014,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2013,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2012,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2011,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2010,22.1,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2009,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2008,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2007,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2006,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2005,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2004,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2003,55.9,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2002,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2001,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),2000,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1999,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1998,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1997,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1996,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1995,71.1,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1994,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1993,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1992,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1991,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1990,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1989,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1988,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1987,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1986,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1985,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1984,83.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1983,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1982,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1981,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1980,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1979,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1978,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1977,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1976,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1975,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1974,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1973,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1972,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1971,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1970,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1969,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1968,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1967,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1966,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1965,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1964,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1963,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1962,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1961,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SI.POV.DDAY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),1960,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SI.POV.DDAY?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2025,,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2024,29651054.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2023,29694614.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2022,29715436.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2021,29475010.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2020,28966574.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2019,28414064.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2018,28079689.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2017,28011258.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2016,27955462.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2015,27823629.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2014,27672370.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2013,27589996.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2012,27534915.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2011,27464494.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2010,27341952.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2009,27173035.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2008,26990037.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2007,26788492.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2006,26565425.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2005,26309458.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2004,26016656.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2003,25688758.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2002,25328981.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2001,24946748.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",2000,24546509.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1999,24125199.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1998,23680357.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1997,23219463.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1996,22741862.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1995,22245439.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1994,21717479.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1993,21180159.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1992,20609707.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1991,20036500.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1990,19524573.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1989,19057807.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1988,18638661.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1987,18250505.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1986,17868124.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1985,17477692.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1984,17085242.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1983,16689119.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1982,16297987.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1981,15922423.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1980,15553105.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1979,15190590.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1978,14839695.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1977,14499175.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1976,14177649.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1975,13870695.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1974,13568435.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1973,13275239.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1972,12989099.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1971,12710061.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1970,12436190.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1969,12167036.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1968,11906266.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1967,11652716.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1966,11408710.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1965,11173411.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1964,10946392.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1963,10729818.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1962,10521116.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1961,10318396.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100
+NPL,Nepal,SP.POP.TOTL,"Population, total",1960,10123658.0,,2,2026-04-08,https://api.worldbank.org/v2/country/NPL/indicator/SP.POP.TOTL?format=json&per_page=100

@@ -1,0 +1,465 @@
+{
+  "problem_id": "2020-B",
+  "title": "The Longest Lasting Sandcastle(s)",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "official_requirements": {
+      "same_sand_same_volume_same_distance": true,
+      "same_water_to_sand_proportion_for_shape_comparison": true,
+      "no_additives_or_supports_for_mixture": true,
+      "rain_adjustment_required": true,
+      "vacation_magazine_article": true
+    },
+    "parameters": {
+      "tide_hours": 6,
+      "base_sand_volume_l": 40.0,
+      "foundation_shapes": [
+        {
+          "shape": "low circular mound",
+          "side_slope_deg": 28,
+          "footprint_factor": 1.24,
+          "surface_factor": 1.08,
+          "corner_factor": 0.0,
+          "construction_score": 0.92
+        },
+        {
+          "shape": "truncated cone",
+          "side_slope_deg": 36,
+          "footprint_factor": 1.1,
+          "surface_factor": 1.0,
+          "corner_factor": 0.08,
+          "construction_score": 0.86
+        },
+        {
+          "shape": "hemisphere",
+          "side_slope_deg": 42,
+          "footprint_factor": 0.98,
+          "surface_factor": 0.94,
+          "corner_factor": 0.02,
+          "construction_score": 0.72
+        },
+        {
+          "shape": "square frustum",
+          "side_slope_deg": 34,
+          "footprint_factor": 1.06,
+          "surface_factor": 1.04,
+          "corner_factor": 0.24,
+          "construction_score": 0.78
+        },
+        {
+          "shape": "triangular prism ridge",
+          "side_slope_deg": 30,
+          "footprint_factor": 1.18,
+          "surface_factor": 1.12,
+          "corner_factor": 0.18,
+          "construction_score": 0.82
+        },
+        {
+          "shape": "steep cylinder tower",
+          "side_slope_deg": 65,
+          "footprint_factor": 0.72,
+          "surface_factor": 1.3,
+          "corner_factor": 0.12,
+          "construction_score": 0.55
+        }
+      ],
+      "sand_water_mixtures": [
+        {
+          "water_fraction": 0.06,
+          "cohesion": 0.42,
+          "drainage": 0.92,
+          "slump_risk": 0.08
+        },
+        {
+          "water_fraction": 0.09,
+          "cohesion": 0.68,
+          "drainage": 0.82,
+          "slump_risk": 0.1
+        },
+        {
+          "water_fraction": 0.12,
+          "cohesion": 0.86,
+          "drainage": 0.72,
+          "slump_risk": 0.16
+        },
+        {
+          "water_fraction": 0.15,
+          "cohesion": 0.94,
+          "drainage": 0.58,
+          "slump_risk": 0.28
+        },
+        {
+          "water_fraction": 0.18,
+          "cohesion": 0.9,
+          "drainage": 0.42,
+          "slump_risk": 0.44
+        },
+        {
+          "water_fraction": 0.22,
+          "cohesion": 0.72,
+          "drainage": 0.24,
+          "slump_risk": 0.64
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; shape and mixture rows are deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "shape_model": {
+    "method": "deterministic erosion index from exposed surface, corners, side slope, footprint, and construction feasibility under the same sand volume and beach distance",
+    "shape_rows": [
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 22.854
+      },
+      {
+        "shape": "truncated cone",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9818,
+        "erosion_rate_index": 0.6691,
+        "construction_score": 0.86,
+        "expected_lifetime_hours": 18.443
+      },
+      {
+        "shape": "triangular prism ridge",
+        "water_fraction": 0.12,
+        "wave_exposure": 1.12,
+        "erosion_rate_index": 0.6944,
+        "construction_score": 0.82,
+        "expected_lifetime_hours": 17.773
+      },
+      {
+        "shape": "hemisphere",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9784,
+        "erosion_rate_index": 0.7571,
+        "construction_score": 0.72,
+        "expected_lifetime_hours": 16.301
+      },
+      {
+        "shape": "square frustum",
+        "water_fraction": 0.12,
+        "wave_exposure": 1.2166,
+        "erosion_rate_index": 0.7917,
+        "construction_score": 0.78,
+        "expected_lifetime_hours": 15.588
+      },
+      {
+        "shape": "steep cylinder tower",
+        "water_fraction": 0.12,
+        "wave_exposure": 2.0222,
+        "erosion_rate_index": 2.2804,
+        "construction_score": 0.55,
+        "expected_lifetime_hours": 5.412
+      }
+    ],
+    "recommended_shape": {
+      "shape": "low circular mound",
+      "water_fraction": 0.12,
+      "wave_exposure": 0.871,
+      "erosion_rate_index": 0.54,
+      "construction_score": 0.92,
+      "expected_lifetime_hours": 22.854
+    }
+  },
+  "mixture_model": {
+    "method": "scan official no-additives sand-water proportions using capillary cohesion, drainage, and slump risk",
+    "mixture_rows": [
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 22.854
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.09,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 22.193
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.15,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 21.985
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.06,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 20.523
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.18,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 19.654
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.22,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 15.684
+      }
+    ],
+    "recommended_mixture": {
+      "shape": "low circular mound",
+      "water_fraction": 0.12,
+      "wave_exposure": 0.871,
+      "erosion_rate_index": 0.54,
+      "construction_score": 0.92,
+      "expected_lifetime_hours": 22.854
+    }
+  },
+  "rain_sensitivity": {
+    "method": "apply rain intensity and duration as added surface runoff load on the same erosion index",
+    "rain_rows": [
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 22.854,
+        "rain_case": "no rain",
+        "rain_intensity_mm_hr": 0.0,
+        "duration_hours": 0.0
+      },
+      {
+        "shape": "truncated cone",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9818,
+        "erosion_rate_index": 0.6691,
+        "construction_score": 0.86,
+        "expected_lifetime_hours": 18.443,
+        "rain_case": "no rain",
+        "rain_intensity_mm_hr": 0.0,
+        "duration_hours": 0.0
+      },
+      {
+        "shape": "hemisphere",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9784,
+        "erosion_rate_index": 0.7571,
+        "construction_score": 0.72,
+        "expected_lifetime_hours": 16.301,
+        "rain_case": "no rain",
+        "rain_intensity_mm_hr": 0.0,
+        "duration_hours": 0.0
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.588,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 20.988,
+        "rain_case": "light shower",
+        "rain_intensity_mm_hr": 1.5,
+        "duration_hours": 1.0
+      },
+      {
+        "shape": "truncated cone",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9818,
+        "erosion_rate_index": 0.7233,
+        "construction_score": 0.86,
+        "expected_lifetime_hours": 17.063,
+        "rain_case": "light shower",
+        "rain_intensity_mm_hr": 1.5,
+        "duration_hours": 1.0
+      },
+      {
+        "shape": "hemisphere",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9784,
+        "erosion_rate_index": 0.811,
+        "construction_score": 0.72,
+        "expected_lifetime_hours": 15.217,
+        "rain_case": "light shower",
+        "rain_intensity_mm_hr": 1.5,
+        "duration_hours": 1.0
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.7961,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 15.503,
+        "rain_case": "steady rain",
+        "rain_intensity_mm_hr": 4.0,
+        "duration_hours": 2.0
+      },
+      {
+        "shape": "truncated cone",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9818,
+        "erosion_rate_index": 0.9578,
+        "construction_score": 0.86,
+        "expected_lifetime_hours": 12.885,
+        "rain_case": "steady rain",
+        "rain_intensity_mm_hr": 4.0,
+        "duration_hours": 2.0
+      },
+      {
+        "shape": "hemisphere",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9784,
+        "erosion_rate_index": 1.0447,
+        "construction_score": 0.72,
+        "expected_lifetime_hours": 11.813,
+        "rain_case": "steady rain",
+        "rain_intensity_mm_hr": 4.0,
+        "duration_hours": 2.0
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.8281,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 14.904,
+        "rain_case": "heavy burst",
+        "rain_intensity_mm_hr": 12.0,
+        "duration_hours": 0.75
+      },
+      {
+        "shape": "truncated cone",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9818,
+        "erosion_rate_index": 0.9939,
+        "construction_score": 0.86,
+        "expected_lifetime_hours": 12.417,
+        "rain_case": "heavy burst",
+        "rain_intensity_mm_hr": 12.0,
+        "duration_hours": 0.75
+      },
+      {
+        "shape": "hemisphere",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.9784,
+        "erosion_rate_index": 1.0807,
+        "construction_score": 0.72,
+        "expected_lifetime_hours": 11.42,
+        "rain_case": "heavy burst",
+        "rain_intensity_mm_hr": 12.0,
+        "duration_hours": 0.75
+      }
+    ],
+    "rain_case_winners": [
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.54,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 22.854,
+        "rain_case": "no rain",
+        "rain_intensity_mm_hr": 0.0,
+        "duration_hours": 0.0
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.588,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 20.988,
+        "rain_case": "light shower",
+        "rain_intensity_mm_hr": 1.5,
+        "duration_hours": 1.0
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.7961,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 15.503,
+        "rain_case": "steady rain",
+        "rain_intensity_mm_hr": 4.0,
+        "duration_hours": 2.0
+      },
+      {
+        "shape": "low circular mound",
+        "water_fraction": 0.12,
+        "wave_exposure": 0.871,
+        "erosion_rate_index": 0.8281,
+        "construction_score": 0.92,
+        "expected_lifetime_hours": 14.904,
+        "rain_case": "heavy burst",
+        "rain_intensity_mm_hr": 12.0,
+        "duration_hours": 0.75
+      }
+    ],
+    "shape_remains_best_under_rain": true
+  },
+  "longevity_strategies": {
+    "strategy_rows": [
+      {
+        "strategy": "orient broad face parallel to incoming waves",
+        "lifetime_multiplier": 1.12,
+        "allowed_materials": "sand and water only"
+      },
+      {
+        "strategy": "build a shallow sacrificial apron",
+        "lifetime_multiplier": 1.18,
+        "allowed_materials": "sand and water only"
+      },
+      {
+        "strategy": "compact in thin wet layers",
+        "lifetime_multiplier": 1.15,
+        "allowed_materials": "sand and water only"
+      },
+      {
+        "strategy": "keep drainage grooves away from main wall",
+        "lifetime_multiplier": 1.08,
+        "allowed_materials": "sand and water only"
+      },
+      {
+        "strategy": "move the foundation a small distance farther above swash line",
+        "lifetime_multiplier": 1.25,
+        "allowed_materials": "same beach location class"
+      }
+    ],
+    "best_no_additive_strategy": {
+      "strategy": "move the foundation a small distance farther above swash line",
+      "lifetime_multiplier": 1.25,
+      "allowed_materials": "same beach location class"
+    }
+  },
+  "vacation_magazine_article": "Fun in the Sun article: The most durable castle starts with a low, rounded foundation, not a tall tower. Our model gives each shape the same sand, beach distance, and water mix, then estimates how much surface and corner exposure waves can attack during a tide. A compact truncated cone or low circular mound lasts longer because waves climb over it gradually instead of cutting steep walls. The best water fraction is moist enough for capillary bridges but not so wet that the mound slumps. Rain lowers every lifetime, but broad low foundations remain safest because they shed runoff and avoid sharp corners.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide measured wave tanks, grain-size curves, or beach slope records.",
+      "Shape and mixture rows are explicit physics-inspired planning inputs, not observed erosion experiments.",
+      "A field-ready model should add sand grain distribution, tide gauge, swash velocity, rainfall infiltration, and compaction measurements."
+    ]
+  },
+  "artifacts": {
+    "sandcastle_shape_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sandcastle_shape_scores.csv",
+    "sand_water_mixture_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sand_water_mixture_scores.csv",
+    "rain_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/rain_sensitivity.csv",
+    "longevity_strategies": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/longevity_strategies.csv",
+    "sandcastle_longevity_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sandcastle_longevity_frontier.png"
+  }
+}

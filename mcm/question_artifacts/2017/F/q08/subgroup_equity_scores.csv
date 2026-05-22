@@ -1,0 +1,6 @@
+group,population,main_priorities,income_needs_met,education_needs_met,equality_needs_met
+life_support_operators,2200,"safe hours, redundancy, hazard pay",0.7444,0.78,0.7276
+habitat_builders,2000,"equipment safety, wage floor, training",0.7444,0.62,0.7276
+scientists_and_engineers,2400,"research time, autonomy, parental leave",0.7444,0.78,0.7276
+care_education_civic,1800,"childcare, equal promotion, stable staffing",0.7948,0.62,0.7892
+food_and_resource_producers,1600,"predictable shifts, family support, minimum wage",0.7948,0.62,0.7892

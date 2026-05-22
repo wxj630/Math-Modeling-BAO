@@ -1,0 +1,2 @@
+﻿method,sample_count,pole_height_m,date,latitude_deg,longitude_deg,min_shadow_length_m,max_shadow_length_m,noon_shadow_length_m
+solar_shadow_length_ephemeris_model,73,3.0,2015-10-22,39.90722222,116.39138889,3.841232,7.036536,3.841232

@@ -1,0 +1,168 @@
+{
+  "problem_id": "2020-F",
+  "question": "q03",
+  "question_title": "政策影响模型和改进机制",
+  "statement": "Describe the development of a model used to measure policy impact and explain how it was used to design or improve policies.",
+  "methods": "用 human rights gain、culture gain、choice protection 和 cost difficulty 对政策排序，并用平均文化风险下降检验政策组合。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "official_requirements": {
+      "edp_scope_and_culture_risk": true,
+      "human_rights_and_cultural_preservation_policies": true,
+      "policy_impact_model": true,
+      "model_used_to_improve_policies": true,
+      "importance_of_implementation": true
+    },
+    "parameters": {
+      "horizon_years": 80,
+      "island_nations": [
+        {
+          "nation": "Maldives",
+          "population_thousands": 540,
+          "mean_elevation_m": 1.5,
+          "culture_uniqueness": 0.74,
+          "diaspora_capacity": 0.46,
+          "governance_capacity": 0.64
+        },
+        {
+          "nation": "Tuvalu",
+          "population_thousands": 12,
+          "mean_elevation_m": 1.8,
+          "culture_uniqueness": 0.88,
+          "diaspora_capacity": 0.32,
+          "governance_capacity": 0.52
+        },
+        {
+          "nation": "Kiribati",
+          "population_thousands": 120,
+          "mean_elevation_m": 2.0,
+          "culture_uniqueness": 0.86,
+          "diaspora_capacity": 0.3,
+          "governance_capacity": 0.5
+        },
+        {
+          "nation": "Marshall Islands",
+          "population_thousands": 59,
+          "mean_elevation_m": 2.1,
+          "culture_uniqueness": 0.82,
+          "diaspora_capacity": 0.38,
+          "governance_capacity": 0.56
+        }
+      ],
+      "sea_level_scenarios": [
+        {
+          "scenario": "managed_warming",
+          "sea_level_rise_m_2100": 0.45,
+          "storm_surge_multiplier": 1.1
+        },
+        {
+          "scenario": "middle_path",
+          "sea_level_rise_m_2100": 0.75,
+          "storm_surge_multiplier": 1.35
+        },
+        {
+          "scenario": "high_emissions",
+          "sea_level_rise_m_2100": 1.1,
+          "storm_surge_multiplier": 1.7
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; national, sea-level, and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "policy_impact_model": {
+    "method": "score policies by human rights, cultural preservation, individual choice, and implementation difficulty",
+    "policy_rows": [
+      {
+        "policy": "UN-triggered EDP status protocol",
+        "human_rights_gain": 0.3,
+        "culture_gain": 0.18,
+        "cost_difficulty": 0.44,
+        "choice_protection": 0.24,
+        "policy_impact_score": 0.1484,
+        "mean_culture_risk_after_policy": 0.1634
+      },
+      {
+        "policy": "pre-negotiated migration compacts",
+        "human_rights_gain": 0.28,
+        "culture_gain": 0.14,
+        "cost_difficulty": 0.48,
+        "choice_protection": 0.22,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1746
+      },
+      {
+        "policy": "portable citizenship and legal identity",
+        "human_rights_gain": 0.22,
+        "culture_gain": 0.12,
+        "cost_difficulty": 0.34,
+        "choice_protection": 0.26,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1751
+      },
+      {
+        "policy": "cultural continuity trust",
+        "human_rights_gain": 0.1,
+        "culture_gain": 0.3,
+        "cost_difficulty": 0.28,
+        "choice_protection": 0.12,
+        "policy_impact_score": 0.1108,
+        "mean_culture_risk_after_policy": 0.1482
+      },
+      {
+        "policy": "host-community adaptation finance",
+        "human_rights_gain": 0.18,
+        "culture_gain": 0.1,
+        "cost_difficulty": 0.52,
+        "choice_protection": 0.16,
+        "policy_impact_score": 0.054,
+        "mean_culture_risk_after_policy": 0.19
+      }
+    ],
+    "recommended_policy_package": [
+      {
+        "policy": "UN-triggered EDP status protocol",
+        "human_rights_gain": 0.3,
+        "culture_gain": 0.18,
+        "cost_difficulty": 0.44,
+        "choice_protection": 0.24,
+        "policy_impact_score": 0.1484,
+        "mean_culture_risk_after_policy": 0.1634
+      },
+      {
+        "policy": "pre-negotiated migration compacts",
+        "human_rights_gain": 0.28,
+        "culture_gain": 0.14,
+        "cost_difficulty": 0.48,
+        "choice_protection": 0.22,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1746
+      },
+      {
+        "policy": "portable citizenship and legal identity",
+        "human_rights_gain": 0.22,
+        "culture_gain": 0.12,
+        "cost_difficulty": 0.34,
+        "choice_protection": 0.26,
+        "policy_impact_score": 0.1196,
+        "mean_culture_risk_after_policy": 0.1751
+      }
+    ]
+  },
+  "un_response_framework": {
+    "recommendations": [
+      "Create a UN-triggered EDP status protocol before total territorial loss.",
+      "Negotiate migration compacts that preserve individual choice and full civic participation in host states.",
+      "Fund cultural continuity trusts controlled by affected communities.",
+      "Maintain portable citizenship, legal identity, language education, and digital cultural archives.",
+      "Require high-emitting and high-capacity states to finance host-community adaptation."
+    ],
+    "selected_policy_package": [
+      "UN-triggered EDP status protocol",
+      "pre-negotiated migration compacts",
+      "portable citizenship and legal identity"
+    ],
+    "importance_of_implementation": "Rejecting a framework leaves relocation to emergency bargaining; accepting it lets rights, culture, and host capacity be planned while at-risk nations still have agency."
+  }
+}

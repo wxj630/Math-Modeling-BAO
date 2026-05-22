@@ -1,0 +1,179 @@
+{
+  "problem_id": "2017-C",
+  "title": "2017年 CUMCM C题：颜色与物质浓度辨识",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "附件Data1.xls中分别给出了5种物质在不同浓度下的颜色读数，讨论从这5组数据中能否确定颜色读数和物质浓度之间的关系，并给出一些准则来评价这5组数据的优劣",
+  "tasks": [
+    "附件Data1.xls中分别给出了5种物质在不同浓度下的颜色读数，讨论从这5组数据中能否确定颜色读数和物质浓度之间的关系，并给出一些准则来评价这5组数据的优劣"
+  ],
+  "selected_model": {
+    "key": "evaluation",
+    "name": "颜色读数与物质浓度辨识模型",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "评价"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data1.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data2.xls",
+    "rows": 73,
+    "columns": 7,
+    "note": "本题专用算法读取Data1的5种物质多浓度颜色读数和Data2二氧化硫重复测量数据，完成可辨识性排序、浓度预测模型和误差分析。"
+  },
+  "formulation": {
+    "model_type": "颜色读数与物质浓度辨识模型",
+    "task_breakdown": [
+      "附件Data1.xls中分别给出了5种物质在不同浓度下的颜色读数，讨论从这5组数据中能否确定颜色读数和物质浓度之间的关系，并给出一些准则来评价这5组数据的优劣"
+    ],
+    "assumptions": [
+      "同一浓度下的多行颜色读数视为重复测量，颜色通道读数先标准化后建模。",
+      "水样浓度记为0ppm；空白单元格表示同一浓度或同一物质的重复观测。",
+      "Data1用于比较5组数据的可辨识性，评价指标同时考虑组间分离、组内稳定、单调相关和交叉验证误差。",
+      "Data2用于建立二氧化硫浓度预测模型，采用PLS提取颜色潜变量后用二次Ridge回归刻画非线性响应。",
+      "通用基线继续保留在 `cumcm/generic_baselines`，当前结果是从粗二次拟合推进到附件驱动颜色-浓度辨识的专用版本。"
+    ],
+    "decision_variables": [
+      "x=(R,G,B,H,S): 颜色读数向量",
+      "c: 物质浓度(ppm)",
+      "z=PLS(x): 颜色潜变量",
+      "s_j: 第j组Data1数据质量评分"
+    ],
+    "constraints": [
+      "训练和验证按真实附件样本进行，不合成颜色读数。",
+      "预测浓度截断到非负区间，避免物理上无意义的负浓度。",
+      "同一浓度重复观测既用于估计组内方差，也用于误差验证。"
+    ],
+    "objective_or_equations": [
+      "separation = mean(||mu_i-mu_j||) / (mean within scatter + eps)。",
+      "quality = 0.35*separation_score + 0.25*monotonicity + 0.25*cv_score + 0.15*r2_score。",
+      "z = PLSRegression(StandardScaler(x), c)，c_hat = Ridge(PolynomialFeatures(z, degree=2))。",
+      "MAE = mean(|c-c_hat|), RMSE = sqrt(mean((c-c_hat)^2))。"
+    ],
+    "solution_steps": [
+      "清洗Data1/Data2，前向填充物质名和浓度，水样转为0ppm。",
+      "对Data1每种物质分别计算颜色组间分离度、主方向单调性、留一浓度验证误差和训练拟合优度。",
+      "把指标归一化后生成5组数据的可辨识性排序和样本预测表。",
+      "对Data2训练PLS+二次Ridge模型，输出训练误差、留一误差、逐样本残差和颜色通道影响摘要。"
+    ],
+    "model_reference": {
+      "key": "evaluation",
+      "name": "颜色读数与物质浓度辨识模型",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "color_concentration_identifiability_ranking",
+    "substance_count": 5,
+    "sample_count": 48,
+    "best_substance": "工业碱",
+    "best_quality_score": 0.899436,
+    "mean_group_cv_mae_ppm": 132.049014,
+    "ranking": [
+      {
+        "rank": 1,
+        "substance": "工业碱",
+        "sample_count": 7,
+        "concentration_count": 7,
+        "min_concentration_ppm": 0.0,
+        "max_concentration_ppm": 11.8,
+        "separation_ratio": 129290666971.88832,
+        "spearman_abs_pc1_concentration": 0.892857,
+        "train_mae_ppm": 1.570626,
+        "loo_mae_ppm": 3.909871,
+        "leave_one_concentration_mae_ppm": 3.909871,
+        "train_r2": 0.518703,
+        "quality_score": 0.899436
+      },
+      {
+        "rank": 2,
+        "substance": "硫酸铝钾",
+        "sample_count": 6,
+        "concentration_count": 6,
+        "min_concentration_ppm": 0.0,
+        "max_concentration_ppm": 5.0,
+        "separation_ratio": 66459777059.944115,
+        "spearman_abs_pc1_concentration": 0.885714,
+        "train_mae_ppm": 0.681665,
+        "loo_mae_ppm": 1.209778,
+        "leave_one_concentration_mae_ppm": 1.209778,
+        "train_r2": 0.61303,
+        "quality_score": 0.742805
+      },
+      {
+        "rank": 3,
+        "substance": "组胺",
+        "sample_count": 10,
+        "concentration_count": 5,
+        "min_concentration_ppm": 0.0,
+        "max_concentration_ppm": 100.0,
+        "separation_ratio": 21.175728,
+        "spearman_abs_pc1_concentration": 0.984732,
+        "train_mae_ppm": 2.429538,
+        "loo_mae_ppm": 4.183573,
+        "leave_one_concentration_mae_ppm": 15.080403,
+        "train_r2": 0.993728,
+        "quality_score": 0.639135
+      },
+      {
+        "rank": 4,
+        "substance": "溴酸钾",
+        "sample_count": 10,
+        "concentration_count": 5,
+        "min_concentration_ppm": 0.0,
+        "max_concentration_ppm": 100.0,
+        "separation_ratio": 66.505876,
+        "spearman_abs_pc1_concentration": 0.984732,
+        "train_mae_ppm": 1.561983,
+        "loo_mae_ppm": 3.054742,
+        "leave_one_concentration_mae_ppm": 22.688144,
+        "train_r2": 0.997509,
+        "quality_score": 0.636622
+      },
+      {
+        "rank": 5,
+        "substance": "奶中尿素",
+        "sample_count": 15,
+        "concentration_count": 6,
+        "min_concentration_ppm": 0.0,
+        "max_concentration_ppm": 2000.0,
+        "separation_ratio": 3.448139,
+        "spearman_abs_pc1_concentration": 0.897659,
+        "train_mae_ppm": 226.706865,
+        "loo_mae_ppm": 500.335856,
+        "leave_one_concentration_mae_ppm": 617.356872,
+        "train_r2": 0.852067,
+        "quality_score": 0.352225
+      }
+    ],
+    "report": [
+      "Data1按5种物质分别建模，质量评价综合颜色组间分离度、主成分单调性、交叉验证误差和训练拟合优度。",
+      "当前评分最高的是工业碱，说明其颜色读数随浓度变化最稳定、最容易辨识。",
+      "输出 `data1_group_quality.csv` 作为五组数据优劣准则，`data1_sample_predictions.csv` 保留逐样本预测与误差。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2017/C/q01/data1_group_quality.csv",
+    "question_artifacts/2017/C/q01/data1_sample_predictions.csv",
+    "question_artifacts/2017/C/q01/experiment_table.csv"
+  ]
+}

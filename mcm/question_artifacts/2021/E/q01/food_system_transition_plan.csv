@@ -1,0 +1,16 @@
+year,phase,regional_procurement_share,waste_reduction_share,nutrition_access_coverage,regenerative_area_share,projected_food_system_score
+1,diagnose and pilot,0.228,0.0587,0.2147,0.104,0.4468
+2,diagnose and pilot,0.256,0.0773,0.2493,0.128,0.4534
+3,diagnose and pilot,0.284,0.096,0.284,0.152,0.4601
+4,scale and finance,0.312,0.1147,0.3187,0.176,0.4668
+5,scale and finance,0.34,0.1333,0.3533,0.2,0.4734
+6,scale and finance,0.368,0.152,0.388,0.224,0.4801
+7,scale and finance,0.396,0.1707,0.4227,0.248,0.4868
+8,scale and finance,0.424,0.1893,0.4573,0.272,0.4934
+9,scale and finance,0.452,0.208,0.492,0.296,0.5001
+10,institutionalize,0.48,0.2267,0.5267,0.32,0.5068
+11,institutionalize,0.508,0.2453,0.5613,0.344,0.5134
+12,institutionalize,0.536,0.264,0.596,0.368,0.5201
+13,institutionalize,0.564,0.2827,0.6307,0.392,0.5268
+14,institutionalize,0.592,0.3013,0.6653,0.416,0.5334
+15,institutionalize,0.62,0.32,0.7,0.44,0.5401

@@ -1,0 +1,7 @@
+species_count,guild_mix,interval_years,severity_multiplier,pollution_load,habitat_quality,mean_biomass_last20,biomass_cv_last20,mean_persistence_ratio,drought_generation_biomass,viability_score,richness_alive_final,scenario
+6,balanced,11,1.0,0.1,0.92,0.7413,0.0191,0.6667,0.7214,0.7677,4,less frequent
+6,balanced,7,1.0,0.1,0.92,0.74,0.0101,0.6667,0.7293,0.7705,4,baseline irregular
+6,balanced,4,1.0,0.1,0.92,0.7158,0.0142,0.6667,0.7073,0.7565,4,more frequent
+6,balanced,3,1.0,0.1,0.92,0.7107,0.0111,0.6667,0.7033,0.7544,4,very frequent
+6,balanced,7,0.75,0.1,0.92,0.7456,0.0092,0.6667,0.7456,0.7757,4,milder variation
+6,balanced,7,1.25,0.1,0.92,0.7351,0.0114,0.6667,0.7219,0.767,4,wider severity variation

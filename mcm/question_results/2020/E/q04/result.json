@@ -1,0 +1,118 @@
+{
+  "problem_id": "2020-E",
+  "question": "q04",
+  "question_title": "全球危机与解决方案的公平问题",
+  "statement": "Discuss equity issues that arise from the global crisis and intended solutions, and how ICM should address them.",
+  "methods": "构造 responsibility_score 与 support_need_score，区分高消费高能力地区的义务和高负担低能力地区的资金技术支持需求。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "official_requirements": {
+      "safe_mitigation_capacity_model": true,
+      "reduce_to_environmentally_safe_level": true,
+      "global_minimal_achievable_target": true,
+      "equity_issues": true,
+      "two_page_icm_memo": true
+    },
+    "parameters": {
+      "recycled_share": 0.09,
+      "ocean_input_low_million_tons": 4.0,
+      "ocean_input_high_million_tons": 12.0,
+      "target_year": 2050,
+      "source_note": "Official PDF statement parameters only; regional and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "equity_analysis": {
+    "equity_rows": [
+      {
+        "region": "small island and coastal developing states",
+        "responsibility_score": 0.038,
+        "support_need_score": 0.78,
+        "recommended_icm_equity_action": "finance transition"
+      },
+      {
+        "region": "major export manufacturing hubs",
+        "responsibility_score": 0.433,
+        "support_need_score": 0.592,
+        "recommended_icm_equity_action": "finance transition"
+      },
+      {
+        "region": "middle income rapidly urbanizing economies",
+        "responsibility_score": 0.512,
+        "support_need_score": 0.58,
+        "recommended_icm_equity_action": "finance transition"
+      },
+      {
+        "region": "landlocked consumer markets",
+        "responsibility_score": 0.274,
+        "support_need_score": 0.438,
+        "recommended_icm_equity_action": "finance transition"
+      },
+      {
+        "region": "high income coastal economies",
+        "responsibility_score": 0.48,
+        "support_need_score": 0.372,
+        "recommended_icm_equity_action": "fund producer responsibility and export controls"
+      }
+    ],
+    "equity_rule": "Regions with high burden and low mitigation capacity receive finance and technology support; high-capacity high-consumption regions carry stronger reduction obligations."
+  },
+  "policy_packages": {
+    "policy_rows": [
+      {
+        "policy": "producer responsibility and deposit return",
+        "annual_reduction_rate": 0.03,
+        "cost_burden": 0.36,
+        "citizen_disruption": 0.22,
+        "accelerator": "audited recovery markets",
+        "net_feasibility_score": 0.4812
+      },
+      {
+        "policy": "reuse and refill infrastructure",
+        "annual_reduction_rate": 0.024,
+        "cost_burden": 0.42,
+        "citizen_disruption": 0.34,
+        "accelerator": "urban retail participation",
+        "net_feasibility_score": 0.3264
+      },
+      {
+        "policy": "single-use packaging standards",
+        "annual_reduction_rate": 0.02,
+        "cost_burden": 0.3,
+        "citizen_disruption": 0.26,
+        "accelerator": "harmonized labeling",
+        "net_feasibility_score": 0.2872
+      },
+      {
+        "policy": "informal waste-sector support",
+        "annual_reduction_rate": 0.014,
+        "cost_burden": 0.18,
+        "citizen_disruption": 0.12,
+        "accelerator": "equity finance",
+        "net_feasibility_score": 0.2188
+      },
+      {
+        "policy": "substitution for essential disposable uses",
+        "annual_reduction_rate": 0.018,
+        "cost_burden": 0.4,
+        "citizen_disruption": 0.3,
+        "accelerator": "safe alternatives",
+        "net_feasibility_score": 0.218
+      }
+    ],
+    "acceleration_conditions": [
+      "harmonized labeling",
+      "urban retail participation",
+      "audited recovery markets",
+      "equity finance",
+      "safe alternatives"
+    ],
+    "hindrance_conditions": [
+      "fragmented regulations",
+      "unsafe substitutes",
+      "insufficient transition finance",
+      "weak recycled-material markets"
+    ]
+  }
+}

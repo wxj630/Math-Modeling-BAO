@@ -1,0 +1,4 @@
+﻿option,description,normalized_cost,implementation_years,construction_disruption,safety_improvement,water_management_flexibility,main_benefit,main_risk,benefit_score,benefit_cost_ratio
+Option 1,Repairing the existing Kariba Dam,42.0,4,0.28,0.48,0.34,lowest near-term cost and fastest reduction of urgent maintenance risk,keeps single-point failure and limited operational flexibility,0.279,0.664286
+Option 2,Rebuilding the existing Kariba Dam,96.0,8,0.66,0.82,0.58,major safety reset while preserving Lake Kariba operating concept,high cost and long construction exposure,0.44,0.458333
+Option 3,Removing Kariba Dam and replacing it with 10 to 20 smaller dams,118.0,11,0.78,0.88,0.91,distributed redundancy and more flexible flood/low-flow control,"complex siting, ecological exposure, and coordination across many dams",0.5585,0.473305

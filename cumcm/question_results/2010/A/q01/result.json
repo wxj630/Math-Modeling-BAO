@@ -1,0 +1,104 @@
+{
+  "problem_id": "2010-A",
+  "title": "2010年 CUMCM A题：储油罐的变位识别与罐容表标定",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "为了掌握罐体变位后对罐容表的影响，利用如图4的小椭圆型储油罐（两端平头的椭圆柱体），分别对罐体无变位和倾斜角为α=4.10的纵向变位两种情况做了实验，实验数据如附件1所示。请建立数学模型研究罐体变位后对罐容表的影响，并给出罐体变位后油位高度间隔为1cm的罐容表标定值。",
+  "tasks": [
+    "请建立数学模型研究罐体变位后对罐容表的影响，并给出罐体变位后油位高度间隔为1cm的罐容表标定值"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "储油罐变位识别与罐容表标定",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "圆、油位"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、标定"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls",
+    "rows": 864,
+    "columns": 14,
+    "note": "本题专用算法读取附件1小椭圆罐四组进/出油实验和附件2实际罐检测数据，完成倾斜罐容表、变位参数识别和流量守恒验证。"
+  },
+  "formulation": {
+    "model_type": "储油罐变位识别与罐容表标定",
+    "task_breakdown": [
+      "请建立数学模型研究罐体变位后对罐容表的影响，并给出罐体变位后油位高度间隔为1cm的罐容表标定值"
+    ],
+    "assumptions": [
+      "附件流量计记录为区间进/出油量，油高记录为该区间结束后的油位高度。",
+      "第1问小椭圆罐容量曲线在实验高度范围内单调，采用PCHIP保持单调形状；端点用空罐0L和无变位实验估计总容量约束。",
+      "第2问实际罐用圆截面等效长度几何模型做变位参数代理识别；纵倾alpha主要表现为探针位置相对罐体中心的等效高度偏移，横偏beta表现为垂向投影缩放。",
+      "通用基线保留在 `cumcm/generic_baselines`，当前结果是从二次拟合推进到附件流量守恒与几何标定的专用版本。"
+    ],
+    "decision_variables": [
+      "h: 油位计显示高度(mm)",
+      "V(h): 罐内油量(L)",
+      "alpha: 纵向倾斜角",
+      "beta: 横向偏转角",
+      "L_eff: 实际储油罐的等效几何长度"
+    ],
+    "constraints": [
+      "V(h)随h单调非降，且空罐容量为0。",
+      "进油过程 V_t=V_0+累计进油量，出油过程 V_t=V_0-累计出油量。",
+      "实际罐截面高度限制在[0, 2R]；alpha、beta在小角度范围内识别。"
+    ],
+    "objective_or_equations": [
+      "第1问: 用倾斜进油曲线估计出油实验初始油量，再用PCHIP插值得到1cm罐容表。",
+      "圆截面面积 A(h)=R^2 arccos((R-h)/R)-(R-h)sqrt(2Rh-h^2)。",
+      "第2问: V_hat(h;alpha,beta,L_eff)=A((h+Delta_alpha)cos beta)L_eff/10^6，最小化与流量守恒体积的均方误差。"
+    ],
+    "solution_steps": [
+      "读取附件1四张实验表，解析累加进/出油量和油位高度。",
+      "用已知初始油量把倾斜进油转成体积样本，并反推倾斜出油实验初始体积。",
+      "生成1cm小罐倾斜罐容表，并与无变位曲线比较倾斜影响。",
+      "读取附件2实际检测数据，用进/出油量递推流量守恒体积。",
+      "在圆截面等效几何模型中识别alpha、beta和等效长度，输出10cm罐容表及残差验证表。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "储油罐变位识别与罐容表标定",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "oil_tank_tilted_pchip_capacity_table",
+    "tilt_angle_deg": 4.1,
+    "tilted_sample_count": 104,
+    "estimated_tilt_out_initial_liter": 3514.813522,
+    "small_tank_capacity_liter": 3968.91,
+    "capacity_table_interval_mm": 10,
+    "fit_mae_liter": 0.0,
+    "report": [
+      "附件1倾斜进油用已知初始215L转为体积样本；倾斜出油初始油量由进油PCHIP曲线反推。",
+      "PCHIP保持罐容表单调，并用0L与无变位实验估计总容量补足端点。",
+      "输出1cm间隔罐容表和同高度下倾斜-无变位容量差。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2010/A/q01/small_tank_tilted_capacity_1cm.csv",
+    "question_artifacts/2010/A/q01/small_tank_tilted_fit_samples.csv",
+    "question_artifacts/2010/A/q01/small_tank_tilt_impact_by_height.csv",
+    "question_artifacts/2010/A/q01/experiment_table.csv"
+  ]
+}

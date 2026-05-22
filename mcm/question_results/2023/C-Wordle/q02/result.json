@@ -1,0 +1,134 @@
+{
+  "problem_id": "2023-C-Wordle",
+  "question": "q02",
+  "question_title": "EERIE 在 2023-03-01 的得分分布预测",
+  "statement": "For a given future solution word on a future date, develop a model that allows you to predict the associated percentages of (1, 2, 3, 4, 5, 6, X). Give a specific example for EERIE on March 1, 2023 and discuss uncertainty.",
+  "methods": "用官方历史分布训练多输出随机森林回归，预测 1/2/3/4/5/6/X 七个百分比桶，非负裁剪并归一化到 100%，用树分布和留出误差给出不确定性。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "records": 359,
+    "date_min": "2022-01-07",
+    "date_max": "2022-12-31",
+    "columns": [
+      "Date",
+      "Contest number",
+      "Word",
+      "Number of reported results",
+      "Number in hard mode",
+      "1 try",
+      "2 tries",
+      "3 tries",
+      "4 tries",
+      "5 tries",
+      "6 tries",
+      "7 or more tries (X)"
+    ]
+  },
+  "eerie_prediction": {
+    "model": "RandomForestRegressor on official percentage buckets, clipped and normalized to 100%",
+    "word": "EERIE",
+    "date": "2023-03-01",
+    "holdout_mean_bucket_mae_percent_points": 3.711,
+    "predicted_distribution_percent": {
+      "1 try": 0.245,
+      "2 tries": 7.01,
+      "3 tries": 22.062,
+      "4 tries": 30.668,
+      "5 tries": 22.491,
+      "6 tries": 11.839,
+      "7 or more tries (X)": 5.685
+    },
+    "prediction_intervals_80": {
+      "1 try": [
+        0.0,
+        0.59
+      ],
+      "2 tries": [
+        2.614,
+        12.716
+      ],
+      "3 tries": [
+        15.059,
+        28.971
+      ],
+      "4 tries": [
+        24.759,
+        37.614
+      ],
+      "5 tries": [
+        18.154,
+        27.633
+      ],
+      "6 tries": [
+        7.173,
+        17.043
+      ],
+      "7 or more tries (X)": [
+        0.997,
+        14.713
+      ]
+    },
+    "bucket_holdout_mae_percent_points": {
+      "1 try": 0.578,
+      "2 tries": 2.617,
+      "3 tries": 6.811,
+      "4 tries": 4.12,
+      "5 tries": 4.758,
+      "6 tries": 4.958,
+      "7 or more tries (X)": 2.131
+    },
+    "table_rows": [
+      {
+        "bucket": "1 try",
+        "predicted_percent": 0.245,
+        "interval80_low": 0.0,
+        "interval80_high": 0.59,
+        "holdout_mae_percent_points": 0.578
+      },
+      {
+        "bucket": "2 tries",
+        "predicted_percent": 7.01,
+        "interval80_low": 2.614,
+        "interval80_high": 12.716,
+        "holdout_mae_percent_points": 2.617
+      },
+      {
+        "bucket": "3 tries",
+        "predicted_percent": 22.062,
+        "interval80_low": 15.059,
+        "interval80_high": 28.971,
+        "holdout_mae_percent_points": 6.811
+      },
+      {
+        "bucket": "4 tries",
+        "predicted_percent": 30.668,
+        "interval80_low": 24.759,
+        "interval80_high": 37.614,
+        "holdout_mae_percent_points": 4.12
+      },
+      {
+        "bucket": "5 tries",
+        "predicted_percent": 22.491,
+        "interval80_low": 18.154,
+        "interval80_high": 27.633,
+        "holdout_mae_percent_points": 4.758
+      },
+      {
+        "bucket": "6 tries",
+        "predicted_percent": 11.839,
+        "interval80_low": 7.173,
+        "interval80_high": 17.043,
+        "holdout_mae_percent_points": 4.958
+      },
+      {
+        "bucket": "7 or more tries (X)",
+        "predicted_percent": 5.685,
+        "interval80_low": 0.997,
+        "interval80_high": 14.713,
+        "holdout_mae_percent_points": 2.131
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "problem_id": "2015-A",
+  "title": "2015年 CUMCM A题：太阳影子定位",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "附件4为一根直杆在太阳下的影子变化的视频，并且已通过某种方式估计出直杆的高度为2米。请建立确定视频拍摄地点的数学模型，并应用你们的模型给出若干个可能的拍摄地点。 如果拍摄日期未知，你能否根据视频确定出拍摄地点与日期？",
+  "tasks": [
+    "请建立确定视频拍摄地点的数学模型，并应用你们的模型给出若干个可能的拍摄地点",
+    "如果拍摄日期未知，你能否根据视频确定出拍摄地点与日期？"
+  ],
+  "selected_model": {
+    "key": "signal",
+    "name": "图像文本与信号特征",
+    "chapter": "CH10",
+    "chapter_title": "图像、文本与信号数据",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "日期"
+    },
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "视频"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
+    "rows": 64,
+    "columns": 3,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图像文本与信号特征",
+    "task_breakdown": [
+      "请建立确定视频拍摄地点的数学模型，并应用你们的模型给出若干个可能的拍摄地点",
+      "如果拍摄日期未知，你能否根据视频确定出拍摄地点与日期？"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "s_t: 信号/图像/文本序列特征",
+      "S_k: 傅里叶谱",
+      "k*: 主要频率成分",
+      "E: 信号能量"
+    ],
+    "constraints": [
+      "输入序列先中心化",
+      "主要特征取谱幅值最大的频段"
+    ],
+    "objective_or_equations": [
+      "S_k=|FFT(s_t-mean(s))|",
+      "E=sum_t s_t^2",
+      "top_k=argsort(S_k)"
+    ],
+    "solution_steps": [
+      "把图像/文本/信号转成数值序列。",
+      "中心化并计算 FFT。",
+      "提取主要频率幅值。",
+      "输出谱特征表。"
+    ],
+    "model_reference": {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "chapter_title": "图像、文本与信号数据",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+    }
+  },
+  "experiment_result": {
+    "method": "fft_feature_extraction",
+    "top_frequency_bins": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22
+    ],
+    "top_amplitudes": [
+      2015.303575,
+      2014.619473,
+      2014.522313,
+      2014.4838,
+      2014.463312,
+      2014.450696,
+      2014.442216,
+      2014.436175
+    ],
+    "signal_energy": 3994468.473011159
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2015/A/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

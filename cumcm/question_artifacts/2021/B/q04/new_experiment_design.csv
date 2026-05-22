@@ -1,0 +1,6 @@
+﻿experiment_no,catalyst_id,temperature_c,predicted_c4_yield_percent,catalyst_combination,nearest_existing_temperature_distance_c,reason
+1,A2,400.0,56.583721,200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,50.0,高预测C4收率，同时避开已测温度点，用于验证响应面峰值或低温高收率潜力。
+2,A1,400.0,33.918171,200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,50.0,高预测C4收率，同时避开已测温度点，用于验证响应面峰值或低温高收率潜力。
+3,A4,390.0,31.627729,200mg 0.5wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,10.0,高预测C4收率，同时避开已测温度点，用于验证响应面峰值或低温高收率潜力。
+4,A3,390.0,30.969199,200mg 1wt%Co/SiO2- 200mg HAP-乙醇浓度0.9ml/min,10.0,高预测C4收率，同时避开已测温度点，用于验证响应面峰值或低温高收率潜力。
+5,A6,390.0,24.88785,200mg 5wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min,10.0,高预测C4收率，同时避开已测温度点，用于验证响应面峰值或低温高收率潜力。

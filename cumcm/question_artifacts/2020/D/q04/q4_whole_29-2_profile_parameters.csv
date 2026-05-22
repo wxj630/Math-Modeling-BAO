@@ -1,0 +1,14 @@
+﻿parameter,label,value
+x_span,x_span,16.120335
+z_span,z_span,10.476991
+slot_width,槽口宽度代理值,15.809123
+arc_radius_mean,圆弧半径中位数,5.865286
+arc_radius_min,arc_radius_min,0.495164
+arc_radius_max,arc_radius_max,31.719439
+center_distance_mean,相邻圆心距离中位数,1.401053
+arc_length_total,圆弧长度总和,17.691291
+horizontal_line_length_total,水平线段长度总和,0.0
+slant_line_length_total,斜线线段长度总和,1.071473
+line_length_total,line_length_total,13.96921
+slant_angle_deg,斜线与水平夹角中位数,32.795844
+herringbone_height,人字形线高度代理值,6.520668

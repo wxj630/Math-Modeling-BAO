@@ -1,0 +1,4 @@
+terrain,area_km2,terrain_complexity,eoc_distance_km,effective_repeater_range_km,coverage_area_per_drone_km2,coverage_repeaters_required,eoc_relay_chain_repeaters,recommended_hover_pattern
+coastal plain,120,0.3,16,17.72,986.46,1,0,triangular perimeter with one EOC-facing relay
+rolling forest,260,0.55,24,15.82,786.25,1,1,triangular perimeter with one EOC-facing relay
+Mt. Bogong alpine terrain,420,0.88,36,13.312,556.72,2,2,ridge line chain

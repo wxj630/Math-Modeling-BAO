@@ -1,0 +1,21 @@
+environment,variability_multiplier,final_mass_loss_pct,mean_richness_last60_days,mean_shannon_last60_days,dominant_species_final,remaining_litter_mass
+arid,0.5,99.452,1.0,0.566,fast opportunist,0.548
+arid,1.0,99.276,1.0,0.573,fast opportunist,0.724
+arid,1.5,98.708,1.0,0.597,fast opportunist,1.292
+arid,2.0,97.813,1.0,0.631,fast opportunist,2.187
+semi-arid,0.5,99.914,1.0,0.663,fast opportunist,0.086
+semi-arid,1.0,99.847,1.0,0.696,fast opportunist,0.153
+semi-arid,1.5,99.681,1.0,0.762,fast opportunist,0.319
+semi-arid,2.0,99.271,1.583,0.92,fast opportunist,0.729
+temperate,0.5,99.775,1.0,0.63,balanced decomposer,0.225
+temperate,1.0,99.695,1.083,0.647,balanced decomposer,0.305
+temperate,1.5,99.587,1.5,0.67,balanced decomposer,0.413
+temperate,2.0,99.439,1.917,0.699,balanced decomposer,0.561
+arboreal,0.5,99.258,2.0,0.692,balanced decomposer,0.742
+arboreal,1.0,99.149,2.0,0.712,balanced decomposer,0.851
+arboreal,1.5,98.917,2.0,0.75,balanced decomposer,1.083
+arboreal,2.0,98.57,2.167,0.797,balanced decomposer,1.43
+tropical rain forest,0.5,98.453,2.0,0.704,moisture generalist,1.547
+tropical rain forest,1.0,98.433,2.0,0.702,moisture generalist,1.567
+tropical rain forest,1.5,98.305,2.0,0.707,moisture generalist,1.695
+tropical rain forest,2.0,98.144,2.0,0.712,moisture generalist,1.855

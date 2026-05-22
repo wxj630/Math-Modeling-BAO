@@ -1,0 +1,4 @@
+﻿shape,surface_area_m2,water_depth_m,mean_abs_error_c,mean_spatial_range_c,comfort_score
+short_deep_tub,0.91,0.52,2.2632,7.9658,0.093582
+baseline_rectangular_tub,1.12,0.42,2.5754,8.1245,0.089888
+long_shallow_tub,1.4,0.34,3.0526,8.3607,0.08481

@@ -1,0 +1,111 @@
+{
+  "problem_id": "2018-D",
+  "title": "2018年 CUMCM D题：汽车总装线的配置",
+  "question_index": 1,
+  "question_label": "问题 一",
+  "statement": "问题背景 某汽车公司生产多种型号的汽车，每种型号由品牌、配置、动力、驱动、颜色5种属性确定。品牌分为A1和A2两种，配置分为B1、B2、B3、B4、B5和B6六种，动力分为汽油和柴油2种，驱动分为两驱和四驱2种，颜色分为黑、白、蓝、黄、红、银、棕、灰、金9种。 公司每天可装配各种型号的汽车460辆，其中白班、晚班（每班12小时）各230辆。每天生产各种型号车辆的具体数量根据市场需求和销售情况确定。附件给出了该企业2018年9月17日至9月23日一周的生产计划。 公司的装配流程如图1所示。待装配车辆按一定顺序排成一列，首先匀速通过总装线依次进行总装作业，随后按序分为C1、C2线进行喷涂作业。",
+  "tasks": [
+    "问题背景 某汽车公司生产多种型号的汽车，每种型号由品牌、配置、动力、驱动、颜色5种属性确定",
+    "每天生产各种型号车辆的具体数量根据市场需求和销售情况确定",
+    "附件给出了该企业2018年9月17日至9月23日一周的生产计划"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "每天"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "配置"
+    },
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "动力"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
+    "rows": 111,
+    "columns": 13,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "问题背景 某汽车公司生产多种型号的汽车，每种型号由品牌、配置、动力、驱动、颜色5种属性确定",
+      "每天生产各种型号车辆的具体数量根据市场需求和销售情况确定",
+      "附件给出了该企业2018年9月17日至9月23日一周的生产计划"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 5.132766306798882,
+    "decision": [
+      0.0,
+      0.0,
+      0.0,
+      2.891141
+    ],
+    "resource_slack": [
+      11557.380772,
+      0.0,
+      1.028052
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2018/D/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

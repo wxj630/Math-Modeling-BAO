@@ -1,0 +1,134 @@
+{
+  "problem_id": "2017-B",
+  "title": "2017年 CUMCM B题：拍照赚钱”的任务定价",
+  "question_index": 4,
+  "question_label": "问题 4",
+  "statement": "实际情况下，多个任务可能因为位置比较集中，导致用户会争相选择，一种考虑是将这些任务联合在一起打包发布",
+  "tasks": [
+    "实际情况下，多个任务可能因为位置比较集中，导致用户会争相选择，一种考虑是将这些任务联合在一起打包发布"
+  ],
+  "selected_model": {
+    "key": "evaluation",
+    "name": "综合评价与权重决策",
+    "chapter": "CH7",
+    "chapter_title": "权重生成与评价模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "比较"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls",
+    "rows": 835,
+    "columns": 5,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "综合评价与权重决策",
+    "task_breakdown": [
+      "实际情况下，多个任务可能因为位置比较集中，导致用户会争相选择，一种考虑是将这些任务联合在一起打包发布"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "a_ij: 方案 i 在指标 j 上的标准化表现",
+      "w_j: 指标权重",
+      "D_i^+: 到理想解距离",
+      "C_i: TOPSIS 贴近度"
+    ],
+    "constraints": [
+      "各指标同向化后归一化",
+      "sum_j w_j = 1, w_j >= 0"
+    ],
+    "objective_or_equations": [
+      "w_j = std(a_.j)/sum_j std(a_.j)",
+      "C_i = D_i^-/(D_i^+ + D_i^-)",
+      "rank = argsort(-C_i)"
+    ],
+    "solution_steps": [
+      "构造评价指标矩阵。",
+      "用离散度生成客观权重。",
+      "计算正负理想解距离与贴近度。",
+      "输出排名和最优方案。"
+    ],
+    "model_reference": {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "chapter_title": "权重生成与评价模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "std_weight_topsis",
+    "weights": [
+      0.991484,
+      0.008516
+    ],
+    "scores": [
+      1.7e-05,
+      0.025641,
+      0.051282,
+      0.076923,
+      0.102564,
+      0.128205,
+      0.153846,
+      0.179487,
+      0.205128,
+      0.230769,
+      0.25641,
+      0.282051,
+      0.307692,
+      0.333333,
+      0.358974,
+      0.384615,
+      0.410256,
+      0.435897,
+      0.461538,
+      0.487179,
+      0.512821,
+      0.538462,
+      0.564103,
+      0.589744,
+      0.615385,
+      0.641026,
+      0.666667,
+      0.692308,
+      0.717949,
+      0.74359,
+      0.769231,
+      0.794872,
+      0.820513,
+      0.846154,
+      0.871795,
+      0.897436,
+      0.923077,
+      0.948718,
+      0.974359,
+      0.999966
+    ],
+    "best_option": 40
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2017/B/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

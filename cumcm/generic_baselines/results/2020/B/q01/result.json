@@ -1,0 +1,98 @@
+{
+  "problem_id": "2020-B",
+  "title": "2020年 CUMCM B题：穿越沙漠",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "以天为基本时间单位，游戏的开始时间为第0天，玩家位于起点。玩家必须在截止日期或之前到达终点，到达终点后该玩家的游戏结束。",
+  "tasks": [
+    "以天为基本时间单位，游戏的开始时间为第0天，玩家位于起点",
+    "玩家必须在截止日期或之前到达终点，到达终点后该玩家的游戏结束"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "日期"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
+    "rows": 33,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "以天为基本时间单位，游戏的开始时间为第0天，玩家位于起点",
+      "玩家必须在截止日期或之前到达终点，到达终点后该玩家的游戏结束"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": -2.0359848484848477,
+    "slope": 0.9575534759358288,
+    "r2": 0.9846845049200885,
+    "next_12_forecast": [
+      44.884135,
+      45.841689,
+      46.799242,
+      47.756796,
+      48.714349,
+      49.671903,
+      50.629456,
+      51.58701,
+      52.544563,
+      53.502117,
+      54.45967,
+      55.417224
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2020/B/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

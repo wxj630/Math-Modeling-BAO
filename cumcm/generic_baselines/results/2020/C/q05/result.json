@@ -1,0 +1,93 @@
+{
+  "problem_id": "2020-C",
+  "title": "2020年 CUMCM C题：中小微企业的信贷决策",
+  "question_index": 5,
+  "question_label": "问题 2",
+  "statement": "销项发票：企业销售产品时为购货方开具的发票。",
+  "tasks": [
+    "销项发票：企业销售产品时为购货方开具的发票"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "通用优化建模"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "通用数据建模"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx",
+    "rows": 2500,
+    "columns": 8,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "销项发票：企业销售产品时为购货方开具的发票"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      2.421039,
+      81512.384259,
+      -1.209879
+    ],
+    "r2": 0.22716636061610596,
+    "mean_abs_error": 4229597.817632965
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2020/C/q05/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

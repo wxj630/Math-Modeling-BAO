@@ -1,0 +1,167 @@
+{
+  "problem_id": "2016-F",
+  "question": "q02",
+  "question_title": "六条路线容量约束难民流动模型",
+  "statement": "Create a model of optimal refugee movement that would incorporate projected flows of refugees across the six travel routes mentioned in the problem, with consideration of transportation routes/accessibility, safety of route and countries' resource capacities.",
+  "methods": "对 West/Central/Eastern Mediterranean、West Balkans、Eastern Borders、Albania to Greece 六条官方路线建立安全性、可达性、临时容量和日处理能力参数；按吸引力和容量进行整数分配，容量不足时显式记录 emergency overflow。对应模型：网络流、容量约束分配、整数流量分配、瓶颈分析。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "official_problem_parameters": {
+      "asylum_applications_by_oct_2015": 715000,
+      "hungary_applications_per_100k": 1450,
+      "hungary_approval_rate_2014": 0.32,
+      "routes": [
+        "West Mediterranean",
+        "Central Mediterranean",
+        "Eastern Mediterranean",
+        "West Balkans",
+        "Eastern Borders",
+        "Albania to Greece"
+      ],
+      "most_popular_route": "Eastern Mediterranean",
+      "most_dangerous_route": "Central Mediterranean",
+      "scale_factor_required_in_task": 10
+    },
+    "assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  },
+  "flow_model": {
+    "method": "capacity-constrained deterministic route allocation over the six official travel routes, with explicit emergency overflow when stated crisis scale exceeds temporary route capacity",
+    "route_allocations": [
+      {
+        "route": "West Mediterranean",
+        "entry_point": "Spain",
+        "allocated_refugees": 55000,
+        "share_of_total": 0.07692,
+        "safety_score": 0.58,
+        "accessibility_score": 0.5,
+        "route_attractiveness": 0.456976,
+        "daily_processing_capacity": 2100,
+        "estimated_processing_days": 26.19,
+        "risk_adjusted_safe_flow": 31900.0,
+        "capacity_binding": true,
+        "emergency_overflow_refugees": 0
+      },
+      {
+        "route": "Central Mediterranean",
+        "entry_point": "Italy",
+        "allocated_refugees": 86000,
+        "share_of_total": 0.12028,
+        "safety_score": 0.28,
+        "accessibility_score": 0.48,
+        "route_attractiveness": 0.355704,
+        "daily_processing_capacity": 2900,
+        "estimated_processing_days": 29.66,
+        "risk_adjusted_safe_flow": 24080.0,
+        "capacity_binding": true,
+        "emergency_overflow_refugees": 0
+      },
+      {
+        "route": "Eastern Mediterranean",
+        "entry_point": "Greece/Turkey",
+        "allocated_refugees": 329000,
+        "share_of_total": 0.46014,
+        "safety_score": 0.62,
+        "accessibility_score": 0.82,
+        "route_attractiveness": 0.663699,
+        "daily_processing_capacity": 8200,
+        "estimated_processing_days": 40.12,
+        "risk_adjusted_safe_flow": 203980.0,
+        "capacity_binding": true,
+        "emergency_overflow_refugees": 45000
+      },
+      {
+        "route": "West Balkans",
+        "entry_point": "Hungary/Serbia",
+        "allocated_refugees": 162000,
+        "share_of_total": 0.22657,
+        "safety_score": 0.5,
+        "accessibility_score": 0.68,
+        "route_attractiveness": 0.536922,
+        "daily_processing_capacity": 4600,
+        "estimated_processing_days": 35.22,
+        "risk_adjusted_safe_flow": 81000.0,
+        "capacity_binding": true,
+        "emergency_overflow_refugees": 0
+      },
+      {
+        "route": "Eastern Borders",
+        "entry_point": "Eastern EU border",
+        "allocated_refugees": 48000,
+        "share_of_total": 0.06713,
+        "safety_score": 0.54,
+        "accessibility_score": 0.36,
+        "route_attractiveness": 0.388296,
+        "daily_processing_capacity": 1350,
+        "estimated_processing_days": 35.56,
+        "risk_adjusted_safe_flow": 25920.0,
+        "capacity_binding": true,
+        "emergency_overflow_refugees": 0
+      },
+      {
+        "route": "Albania to Greece",
+        "entry_point": "Albania/Greece",
+        "allocated_refugees": 35000,
+        "share_of_total": 0.04895,
+        "safety_score": 0.6,
+        "accessibility_score": 0.42,
+        "route_attractiveness": 0.428003,
+        "daily_processing_capacity": 1150,
+        "estimated_processing_days": 30.43,
+        "risk_adjusted_safe_flow": 21000.0,
+        "capacity_binding": true,
+        "emergency_overflow_refugees": 0
+      }
+    ],
+    "total_allocated_refugees": 715000,
+    "temporary_capacity_total": 670000,
+    "emergency_overflow_total": 45000,
+    "safest_high_volume_route": "Eastern Mediterranean",
+    "most_dangerous_route_named_in_statement": "Central Mediterranean",
+    "most_popular_route_named_in_statement": "Eastern Mediterranean"
+  },
+  "crisis_metrics": {
+    "official_scale": 715000,
+    "hungary_applications_per_100k": 1450,
+    "hungary_approval_rate_2014": 0.32,
+    "hungary_homeless_per_100k_proxy": 986.0,
+    "enabling_factors": [
+      "safe route segments",
+      "available transport",
+      "multiple entry points",
+      "destination resource capacity",
+      "legal processing capacity",
+      "NGO mobile support"
+    ],
+    "inhibiting_factors": [
+      "dangerous sea crossings",
+      "bottlenecked borders",
+      "low approval rates",
+      "shelter and healthcare scarcity",
+      "local backlash after security shocks",
+      "rapidly changing political constraints"
+    ],
+    "measure_definitions": {
+      "route_attractiveness": "0.38 accessibility + 0.34 safety + 0.18 capacity share + 0.10 legal entry support",
+      "resource_gap": "required resource units minus ready government and NGO units",
+      "system_resilience": "ability to preserve safe flow when one route loses safety or capacity"
+    }
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and explicit deterministic assumptions; it does not claim route capacity or resource bundle assumptions are observed data.",
+    "replaceable_assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  }
+}

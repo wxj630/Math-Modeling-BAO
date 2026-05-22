@@ -1,0 +1,189 @@
+{
+  "problem_id": "2020-E",
+  "question": "q03",
+  "question_title": "2050 全球最低可达目标及影响",
+  "statement": "Set a target for the minimal achievable level of global single-use or disposable plastic product waste and discuss impacts.",
+  "methods": "以 2050 年剩余 single-use waste 是否低于全球安全容量作为目标判据，并说明对生活方式、环境和塑料产业的影响。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "official_requirements": {
+      "safe_mitigation_capacity_model": true,
+      "reduce_to_environmentally_safe_level": true,
+      "global_minimal_achievable_target": true,
+      "equity_issues": true,
+      "two_page_icm_memo": true
+    },
+    "parameters": {
+      "recycled_share": 0.09,
+      "ocean_input_low_million_tons": 4.0,
+      "ocean_input_high_million_tons": 12.0,
+      "target_year": 2050,
+      "source_note": "Official PDF statement parameters only; regional and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "global_target": {
+    "target_year": 2050,
+    "minimal_achievable_single_use_waste_million_tons": 4.797,
+    "target_is_below_safe_capacity": true,
+    "ocean_input_target_million_tons": 0.277,
+    "impact_note": "Achieving the target changes packaging, retail, sanitation, and petrochemical demand, but keeps essential medical and safety uses in a managed residual stream."
+  },
+  "policy_pathway": {
+    "timeline_rows": [
+      {
+        "year": 2020,
+        "remaining_single_use_waste_million_tons": 138.32,
+        "recycled_or_reused_share": 0.09,
+        "estimated_ocean_input_million_tons": 8.0,
+        "dominant_phase": "ban worst items"
+      },
+      {
+        "year": 2023,
+        "remaining_single_use_waste_million_tons": 98.832,
+        "recycled_or_reused_share": 0.144,
+        "estimated_ocean_input_million_tons": 5.716,
+        "dominant_phase": "ban worst items"
+      },
+      {
+        "year": 2026,
+        "remaining_single_use_waste_million_tons": 70.617,
+        "recycled_or_reused_share": 0.198,
+        "estimated_ocean_input_million_tons": 4.084,
+        "dominant_phase": "ban worst items"
+      },
+      {
+        "year": 2029,
+        "remaining_single_use_waste_million_tons": 50.457,
+        "recycled_or_reused_share": 0.252,
+        "estimated_ocean_input_million_tons": 2.918,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2032,
+        "remaining_single_use_waste_million_tons": 36.052,
+        "recycled_or_reused_share": 0.306,
+        "estimated_ocean_input_million_tons": 2.085,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2035,
+        "remaining_single_use_waste_million_tons": 25.76,
+        "recycled_or_reused_share": 0.36,
+        "estimated_ocean_input_million_tons": 1.49,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2038,
+        "remaining_single_use_waste_million_tons": 18.406,
+        "recycled_or_reused_share": 0.414,
+        "estimated_ocean_input_million_tons": 1.065,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2041,
+        "remaining_single_use_waste_million_tons": 13.151,
+        "recycled_or_reused_share": 0.468,
+        "estimated_ocean_input_million_tons": 0.761,
+        "dominant_phase": "hard-to-replace residuals"
+      },
+      {
+        "year": 2044,
+        "remaining_single_use_waste_million_tons": 9.397,
+        "recycled_or_reused_share": 0.522,
+        "estimated_ocean_input_million_tons": 0.543,
+        "dominant_phase": "hard-to-replace residuals"
+      },
+      {
+        "year": 2047,
+        "remaining_single_use_waste_million_tons": 6.714,
+        "recycled_or_reused_share": 0.576,
+        "estimated_ocean_input_million_tons": 0.388,
+        "dominant_phase": "hard-to-replace residuals"
+      },
+      {
+        "year": 2050,
+        "remaining_single_use_waste_million_tons": 4.797,
+        "recycled_or_reused_share": 0.63,
+        "estimated_ocean_input_million_tons": 0.277,
+        "dominant_phase": "hard-to-replace residuals"
+      }
+    ],
+    "combined_annual_reduction_rate": 0.106,
+    "target_row": {
+      "year": 2050,
+      "remaining_single_use_waste_million_tons": 4.797,
+      "recycled_or_reused_share": 0.63,
+      "estimated_ocean_input_million_tons": 0.277,
+      "dominant_phase": "hard-to-replace residuals"
+    }
+  },
+  "safe_mitigation_model": {
+    "method": "safe mitigation capacity is the disposable plastic flow that existing processing resources and policy capacity can manage without added environmental damage",
+    "regional_rows": [
+      {
+        "region": "middle income rapidly urbanizing economies",
+        "waste_million_tons": 96.0,
+        "mitigation_capacity": 0.38,
+        "single_use_share": 0.52,
+        "policy_capacity": 0.56,
+        "equity_burden": 0.58,
+        "single_use_waste_million_tons": 49.92,
+        "safe_mitigation_capacity_million_tons": 16.466,
+        "unsafe_overflow_million_tons": 33.454,
+        "required_reduction_to_safe_level_pct": 0.6702
+      },
+      {
+        "region": "major export manufacturing hubs",
+        "waste_million_tons": 74.0,
+        "mitigation_capacity": 0.44,
+        "single_use_share": 0.57,
+        "policy_capacity": 0.64,
+        "equity_burden": 0.62,
+        "single_use_waste_million_tons": 42.18,
+        "safe_mitigation_capacity_million_tons": 16.555,
+        "unsafe_overflow_million_tons": 25.625,
+        "required_reduction_to_safe_level_pct": 0.6075
+      },
+      {
+        "region": "high income coastal economies",
+        "waste_million_tons": 58.0,
+        "mitigation_capacity": 0.62,
+        "single_use_share": 0.44,
+        "policy_capacity": 0.82,
+        "equity_burden": 0.34,
+        "single_use_waste_million_tons": 25.52,
+        "safe_mitigation_capacity_million_tons": 14.968,
+        "unsafe_overflow_million_tons": 10.552,
+        "required_reduction_to_safe_level_pct": 0.4135
+      },
+      {
+        "region": "landlocked consumer markets",
+        "waste_million_tons": 32.0,
+        "mitigation_capacity": 0.46,
+        "single_use_share": 0.38,
+        "policy_capacity": 0.6,
+        "equity_burden": 0.4,
+        "single_use_waste_million_tons": 12.16,
+        "safe_mitigation_capacity_million_tons": 4.922,
+        "unsafe_overflow_million_tons": 7.238,
+        "required_reduction_to_safe_level_pct": 0.5952
+      },
+      {
+        "region": "small island and coastal developing states",
+        "waste_million_tons": 14.0,
+        "mitigation_capacity": 0.24,
+        "single_use_share": 0.61,
+        "policy_capacity": 0.42,
+        "equity_burden": 0.86,
+        "single_use_waste_million_tons": 8.54,
+        "safe_mitigation_capacity_million_tons": 1.693,
+        "unsafe_overflow_million_tons": 6.847,
+        "required_reduction_to_safe_level_pct": 0.8018
+      }
+    ],
+    "global_current_single_use_million_tons": 138.32,
+    "global_safe_capacity_million_tons": 54.604
+  }
+}

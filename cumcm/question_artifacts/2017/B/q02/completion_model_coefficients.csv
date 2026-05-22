@@ -1,0 +1,9 @@
+﻿feature,coefficient
+intercept,0.051145
+price,0.206261
+nearest_member_km,0.246374
+members_within_3km,-0.692761
+quota_within_3km,0.307019
+credit_within_3km,-0.134582
+task_density_1km,0.088456
+supply_score,0.005922

@@ -1,0 +1,371 @@
+environment,variability_multiplier,day,moisture_index,remaining_litter_mass,cumulative_mass_loss_pct,richness_alive,shannon_diversity,dominant_species
+arid,1.0,0,0.2439,96.7108,3.2892,5,1.6019,fast opportunist
+arid,1.0,5,0.2884,92.2166,7.7834,5,1.5831,fast opportunist
+arid,1.0,10,0.2854,87.5375,12.4625,5,1.555,fast opportunist
+arid,1.0,15,0.2549,83.2934,16.7066,5,1.5181,fast opportunist
+arid,1.0,20,0.2352,79.2992,20.7008,5,1.4741,fast opportunist
+arid,1.0,25,0.2531,74.8319,25.1681,5,1.4277,fast opportunist
+arid,1.0,30,0.3028,69.4343,30.5657,5,1.3827,fast opportunist
+arid,1.0,35,0.3498,64.6399,35.3601,5,1.3476,fast opportunist
+arid,1.0,40,0.3567,60.1205,39.8795,5,1.3143,fast opportunist
+arid,1.0,45,0.3116,55.3681,44.6319,5,1.271,fast opportunist
+arid,1.0,50,0.2373,51.7663,48.2337,5,1.2224,fast opportunist
+arid,1.0,55,0.175,49.2396,50.7604,4,1.1715,fast opportunist
+arid,1.0,60,0.1543,47.0574,52.9426,3,1.1211,fast opportunist
+arid,1.0,65,0.1718,44.6438,55.3562,2,1.0747,fast opportunist
+arid,1.0,70,0.1953,41.9529,58.0471,2,1.0327,fast opportunist
+arid,1.0,75,0.1889,39.454,60.546,2,0.993,fast opportunist
+arid,1.0,80,0.1415,37.669,62.331,2,0.9538,fast opportunist
+arid,1.0,85,0.0762,36.7318,63.2682,1,0.9166,fast opportunist
+arid,1.0,90,0.0335,36.3099,63.6901,1,0.887,fast opportunist
+arid,1.0,95,0.0416,35.7918,64.2082,1,0.857,fast opportunist
+arid,1.0,100,0.0955,34.6271,65.3729,1,0.8277,fast opportunist
+arid,1.0,105,0.1604,32.7172,67.2828,1,0.8014,fast opportunist
+arid,1.0,110,0.1977,30.4617,69.5383,1,0.7791,fast opportunist
+arid,1.0,115,0.1934,28.3908,71.6092,1,0.7587,fast opportunist
+arid,1.0,120,0.1678,26.7079,73.2921,1,0.7391,fast opportunist
+arid,1.0,125,0.1587,25.2012,74.7988,1,0.7209,fast opportunist
+arid,1.0,130,0.1922,23.4641,76.5359,1,0.7057,fast opportunist
+arid,1.0,135,0.2616,21.2438,78.7562,1,0.694,fast opportunist
+arid,1.0,140,0.3309,19.1424,80.8576,1,0.6877,fast opportunist
+arid,1.0,145,0.3615,17.4404,82.5596,1,0.6861,fast opportunist
+arid,1.0,150,0.3397,15.7626,84.2374,1,0.6816,fast opportunist
+arid,1.0,155,0.2868,14.1124,85.8876,1,0.6726,fast opportunist
+arid,1.0,160,0.2427,12.8627,87.1373,1,0.6631,fast opportunist
+arid,1.0,165,0.2357,11.7543,88.2457,1,0.6543,fast opportunist
+arid,1.0,170,0.2616,10.6251,89.3749,1,0.6471,fast opportunist
+arid,1.0,175,0.2875,9.4994,90.5006,1,0.6413,fast opportunist
+arid,1.0,180,0.2775,8.5271,91.4729,1,0.6358,fast opportunist
+arid,1.0,185,0.2206,7.8343,92.1657,1,0.6292,fast opportunist
+arid,1.0,190,0.1406,7.4285,92.5715,1,0.6216,fast opportunist
+arid,1.0,195,0.0789,7.2106,92.7894,1,0.6149,fast opportunist
+arid,1.0,200,0.0651,7.0351,92.9649,1,0.6091,fast opportunist
+arid,1.0,205,0.0955,6.7852,93.2148,1,0.6036,fast opportunist
+arid,1.0,210,0.1369,6.4406,93.5594,1,0.5986,fast opportunist
+arid,1.0,215,0.1522,6.0766,93.9234,1,0.594,fast opportunist
+arid,1.0,220,0.129,5.7847,94.2153,1,0.59,fast opportunist
+arid,1.0,225,0.0887,5.5926,94.4074,1,0.5867,fast opportunist
+arid,1.0,230,0.0701,5.4451,94.5549,1,0.5839,fast opportunist
+arid,1.0,235,0.1,5.2413,94.7587,1,0.5811,fast opportunist
+arid,1.0,240,0.1718,4.9055,95.0945,1,0.5787,fast opportunist
+arid,1.0,245,0.2495,4.4479,95.5521,1,0.5782,fast opportunist
+arid,1.0,250,0.2938,3.9582,96.0418,1,0.5788,fast opportunist
+arid,1.0,255,0.2902,3.5279,96.4721,1,0.5793,fast opportunist
+arid,1.0,260,0.2588,3.1864,96.8136,1,0.579,fast opportunist
+arid,1.0,265,0.238,2.903,97.097,1,0.5781,fast opportunist
+arid,1.0,270,0.2546,2.6265,97.3735,1,0.5779,fast opportunist
+arid,1.0,275,0.3028,2.3337,97.6663,1,0.5789,fast opportunist
+arid,1.0,280,0.3484,2.111,97.889,1,0.5839,fast opportunist
+arid,1.0,285,0.354,1.9139,98.0861,1,0.589,fast opportunist
+arid,1.0,290,0.3077,1.7045,98.2955,1,0.5892,fast opportunist
+arid,1.0,295,0.2325,1.5568,98.4432,1,0.5871,fast opportunist
+arid,1.0,300,0.1697,1.4585,98.5415,1,0.5839,fast opportunist
+arid,1.0,305,0.1487,1.3777,98.6223,1,0.5807,fast opportunist
+arid,1.0,310,0.1663,1.2922,98.7078,1,0.5782,fast opportunist
+arid,1.0,315,0.1903,1.2004,98.7996,1,0.5765,fast opportunist
+arid,1.0,320,0.1848,1.1175,98.8825,1,0.5749,fast opportunist
+arid,1.0,325,0.1385,1.0597,98.9403,1,0.5728,fast opportunist
+arid,1.0,330,0.0745,1.0299,98.9701,1,0.5715,fast opportunist
+arid,1.0,335,0.0332,1.0166,98.9834,1,0.5739,fast opportunist
+arid,1.0,340,0.0428,1.0,99.0,1,0.5742,fast opportunist
+arid,1.0,345,0.098,0.9632,99.0368,1,0.5723,fast opportunist
+arid,1.0,350,0.1641,0.9042,99.0958,1,0.5705,fast opportunist
+arid,1.0,355,0.2023,0.8358,99.1642,1,0.5697,fast opportunist
+arid,1.0,360,0.1987,0.7737,99.2263,1,0.569,fast opportunist
+arid,1.0,365,0.1733,0.7236,99.2764,1,0.5678,fast opportunist
+semi-arid,1.0,0,0.3836,95.0912,4.9088,5,1.6071,fast opportunist
+semi-arid,1.0,5,0.4176,90.1594,9.8406,5,1.6022,fast opportunist
+semi-arid,1.0,10,0.4153,85.3494,14.6506,5,1.5952,fast opportunist
+semi-arid,1.0,15,0.392,80.6778,19.3222,5,1.5847,fast opportunist
+semi-arid,1.0,20,0.3769,76.1114,23.8886,5,1.5709,fast opportunist
+semi-arid,1.0,25,0.3906,71.675,28.325,5,1.5565,fast opportunist
+semi-arid,1.0,30,0.4286,67.5261,32.4739,5,1.5458,fast opportunist
+semi-arid,1.0,35,0.4645,63.8571,36.1429,5,1.5397,fast opportunist
+semi-arid,1.0,40,0.4699,60.396,39.604,5,1.5343,fast opportunist
+semi-arid,1.0,45,0.4354,56.842,43.158,5,1.5248,fast opportunist
+semi-arid,1.0,50,0.3786,53.2655,46.7345,5,1.508,fast opportunist
+semi-arid,1.0,55,0.3309,49.7103,50.2897,5,1.483,fast opportunist
+semi-arid,1.0,60,0.315,46.1956,53.8044,5,1.4528,fast opportunist
+semi-arid,1.0,65,0.3284,42.8299,57.1701,5,1.4227,fast opportunist
+semi-arid,1.0,70,0.3464,39.6776,60.3224,4,1.3948,fast opportunist
+semi-arid,1.0,75,0.3415,36.6548,63.3452,4,1.3651,fast opportunist
+semi-arid,1.0,80,0.3053,33.6031,66.3969,3,1.3273,fast opportunist
+semi-arid,1.0,85,0.2553,31.1508,68.8492,3,1.2853,fast opportunist
+semi-arid,1.0,90,0.2227,29.1186,70.8814,3,1.2412,fast opportunist
+semi-arid,1.0,95,0.2289,27.0881,72.9119,3,1.198,fast opportunist
+semi-arid,1.0,100,0.2701,24.7566,75.2434,3,1.1585,fast opportunist
+semi-arid,1.0,105,0.3197,22.4247,77.5753,3,1.1255,fast opportunist
+semi-arid,1.0,110,0.3482,20.4292,79.5708,3,1.0998,fast opportunist
+semi-arid,1.0,115,0.345,18.5742,81.4258,3,1.0743,fast opportunist
+semi-arid,1.0,120,0.3253,16.775,83.225,3,1.0456,fast opportunist
+semi-arid,1.0,125,0.3184,15.0979,84.9021,3,1.0167,fast opportunist
+semi-arid,1.0,130,0.3441,13.6766,86.3234,2,0.9943,fast opportunist
+semi-arid,1.0,135,0.3971,12.5845,87.4155,2,0.986,fast opportunist
+semi-arid,1.0,140,0.4501,11.7828,88.2172,2,0.9939,fast opportunist
+semi-arid,1.0,145,0.4735,11.1211,88.8789,3,1.01,fast opportunist
+semi-arid,1.0,150,0.4568,10.438,89.562,3,1.0191,fast opportunist
+semi-arid,1.0,155,0.4164,9.6664,90.3336,3,1.0156,fast opportunist
+semi-arid,1.0,160,0.3827,8.8607,91.1393,3,1.0021,fast opportunist
+semi-arid,1.0,165,0.3773,8.1058,91.8942,3,0.9876,fast opportunist
+semi-arid,1.0,170,0.3971,7.4584,92.5416,2,0.9792,fast opportunist
+semi-arid,1.0,175,0.4169,6.9043,93.0957,2,0.9772,fast opportunist
+semi-arid,1.0,180,0.4092,6.3759,93.6241,2,0.9728,fast opportunist
+semi-arid,1.0,185,0.3658,5.8069,94.1931,2,0.9567,fast opportunist
+semi-arid,1.0,190,0.3046,5.181,94.819,1,0.9294,fast opportunist
+semi-arid,1.0,195,0.2574,4.6933,95.3067,1,0.9014,fast opportunist
+semi-arid,1.0,200,0.2469,4.2654,95.7346,1,0.8747,fast opportunist
+semi-arid,1.0,205,0.2701,3.8341,96.1659,1,0.8509,fast opportunist
+semi-arid,1.0,210,0.3017,3.4005,96.5995,1,0.83,fast opportunist
+semi-arid,1.0,215,0.3135,3.0264,96.9736,1,0.8122,fast opportunist
+semi-arid,1.0,220,0.2957,2.6829,97.3171,1,0.7937,fast opportunist
+semi-arid,1.0,225,0.2649,2.4094,97.5906,1,0.7755,fast opportunist
+semi-arid,1.0,230,0.2507,2.1758,97.8242,1,0.7581,fast opportunist
+semi-arid,1.0,235,0.2735,1.9439,98.0561,1,0.743,fast opportunist
+semi-arid,1.0,240,0.3284,1.7345,98.2655,1,0.7333,fast opportunist
+semi-arid,1.0,245,0.3879,1.5836,98.4164,1,0.7342,fast opportunist
+semi-arid,1.0,250,0.4217,1.4648,98.5352,1,0.7427,fast opportunist
+semi-arid,1.0,255,0.419,1.3536,98.6464,1,0.7501,fast opportunist
+semi-arid,1.0,260,0.395,1.2397,98.7603,1,0.7511,fast opportunist
+semi-arid,1.0,265,0.379,1.1286,98.8714,1,0.7486,fast opportunist
+semi-arid,1.0,270,0.3917,1.0323,98.9677,1,0.7488,fast opportunist
+semi-arid,1.0,275,0.4286,0.9578,99.0422,1,0.7577,fast opportunist
+semi-arid,1.0,280,0.4635,0.9008,99.0992,1,0.7756,fast opportunist
+semi-arid,1.0,285,0.4678,0.8487,99.1513,1,0.7942,fast opportunist
+semi-arid,1.0,290,0.4324,0.789,99.211,1,0.8014,fast opportunist
+semi-arid,1.0,295,0.3749,0.718,99.282,1,0.7944,fast opportunist
+semi-arid,1.0,300,0.3268,0.6417,99.3583,1,0.7797,fast opportunist
+semi-arid,1.0,305,0.3107,0.5696,99.4304,1,0.7639,fast opportunist
+semi-arid,1.0,310,0.3243,0.5079,99.4921,1,0.7511,fast opportunist
+semi-arid,1.0,315,0.3426,0.456,99.544,1,0.7419,fast opportunist
+semi-arid,1.0,320,0.3384,0.4086,99.5914,1,0.7328,fast opportunist
+semi-arid,1.0,325,0.303,0.3609,99.6391,1,0.7198,fast opportunist
+semi-arid,1.0,330,0.254,0.3249,99.6751,1,0.7063,fast opportunist
+semi-arid,1.0,335,0.2224,0.2965,99.7035,1,0.6929,fast opportunist
+semi-arid,1.0,340,0.2298,0.2696,99.7304,1,0.6809,fast opportunist
+semi-arid,1.0,345,0.272,0.2404,99.7596,1,0.6714,fast opportunist
+semi-arid,1.0,350,0.3225,0.2136,99.7864,1,0.6659,fast opportunist
+semi-arid,1.0,355,0.3518,0.192,99.808,1,0.6645,fast opportunist
+semi-arid,1.0,360,0.349,0.1724,99.8276,1,0.6627,fast opportunist
+semi-arid,1.0,365,0.3296,0.1535,99.8465,1,0.6587,fast opportunist
+temperate,1.0,0,0.6032,95.9,4.1,5,1.6052,balanced decomposer
+temperate,1.0,5,0.6268,91.814,8.186,5,1.5936,balanced decomposer
+temperate,1.0,10,0.6252,87.6531,12.3469,5,1.576,balanced decomposer
+temperate,1.0,15,0.6091,83.3655,16.6345,5,1.5532,balanced decomposer
+temperate,1.0,20,0.5986,79.0129,20.9871,5,1.526,balanced decomposer
+temperate,1.0,25,0.6081,74.7512,25.2488,5,1.496,balanced decomposer
+temperate,1.0,30,0.6344,70.7216,29.2784,4,1.4648,balanced decomposer
+temperate,1.0,35,0.6593,66.9367,33.0633,4,1.4335,balanced decomposer
+temperate,1.0,40,0.663,63.2706,36.7294,4,1.4018,balanced decomposer
+temperate,1.0,45,0.6391,59.5636,40.4364,4,1.3685,balanced decomposer
+temperate,1.0,50,0.5998,55.7432,44.2568,4,1.333,balanced decomposer
+temperate,1.0,55,0.5668,52.0095,47.9905,4,1.3,balanced decomposer
+temperate,1.0,60,0.5558,48.5104,51.4896,4,1.2687,balanced decomposer
+temperate,1.0,65,0.5651,45.1288,54.8712,4,1.2361,balanced decomposer
+temperate,1.0,70,0.5775,41.8521,58.1479,4,1.2022,balanced decomposer
+temperate,1.0,75,0.5741,38.7739,61.2261,4,1.1695,balanced decomposer
+temperate,1.0,80,0.549,36.0066,63.9934,4,1.1412,balanced decomposer
+temperate,1.0,85,0.5145,33.5784,66.4216,4,1.1186,balanced decomposer
+temperate,1.0,90,0.4918,31.4001,68.5999,4,1.1003,balanced decomposer
+temperate,1.0,95,0.4962,29.3252,70.6748,4,1.0817,balanced decomposer
+temperate,1.0,100,0.5247,27.2469,72.7531,4,1.0594,balanced decomposer
+temperate,1.0,105,0.559,25.1568,74.8432,3,1.0333,balanced decomposer
+temperate,1.0,110,0.5788,23.13,76.87,3,1.006,balanced decomposer
+temperate,1.0,115,0.5765,21.2551,78.7449,3,0.9803,balanced decomposer
+temperate,1.0,120,0.5629,19.563,80.437,2,0.9574,balanced decomposer
+temperate,1.0,125,0.5581,18.0088,81.9912,2,0.9361,balanced decomposer
+temperate,1.0,130,0.5759,16.5136,83.4864,2,0.9142,balanced decomposer
+temperate,1.0,135,0.6126,15.212,84.788,2,0.8947,balanced decomposer
+temperate,1.0,140,0.6493,14.0994,85.9006,2,0.8794,balanced decomposer
+temperate,1.0,145,0.6655,13.1019,86.8981,2,0.8665,balanced decomposer
+temperate,1.0,150,0.654,12.1459,87.8541,2,0.8535,balanced decomposer
+temperate,1.0,155,0.626,11.199,88.801,2,0.8391,balanced decomposer
+temperate,1.0,160,0.6026,10.2778,89.7222,2,0.8239,balanced decomposer
+temperate,1.0,165,0.5989,9.4221,90.5779,2,0.8094,balanced decomposer
+temperate,1.0,170,0.6126,8.6566,91.3434,2,0.7969,balanced decomposer
+temperate,1.0,175,0.6263,7.9716,92.0284,2,0.7863,balanced decomposer
+temperate,1.0,180,0.621,7.3316,92.6684,2,0.7761,balanced decomposer
+temperate,1.0,185,0.5909,6.7027,93.2973,2,0.7645,balanced decomposer
+temperate,1.0,190,0.5485,6.1534,93.8466,2,0.7549,balanced decomposer
+temperate,1.0,195,0.5159,5.6865,94.3135,2,0.7481,balanced decomposer
+temperate,1.0,200,0.5086,5.2621,94.7379,2,0.7423,balanced decomposer
+temperate,1.0,205,0.5247,4.852,95.148,2,0.7357,balanced decomposer
+temperate,1.0,210,0.5466,4.4525,95.5475,2,0.7281,balanced decomposer
+temperate,1.0,215,0.5547,4.078,95.922,2,0.7205,balanced decomposer
+temperate,1.0,220,0.5424,3.7441,96.2559,2,0.7142,balanced decomposer
+temperate,1.0,225,0.5211,3.4528,96.5472,2,0.7096,balanced decomposer
+temperate,1.0,230,0.5112,3.1904,96.8096,2,0.706,balanced decomposer
+temperate,1.0,235,0.5271,2.9377,97.0623,2,0.7016,balanced decomposer
+temperate,1.0,240,0.5651,2.6827,97.3173,2,0.6952,balanced decomposer
+temperate,1.0,245,0.6062,2.4548,97.5452,2,0.6898,balanced decomposer
+temperate,1.0,250,0.6297,2.2566,97.7434,2,0.6865,balanced decomposer
+temperate,1.0,255,0.6277,2.0735,97.9265,2,0.6833,balanced decomposer
+temperate,1.0,260,0.6111,1.8988,98.1012,2,0.6793,balanced decomposer
+temperate,1.0,265,0.6001,1.7348,98.2652,2,0.6747,balanced decomposer
+temperate,1.0,270,0.6089,1.5877,98.4123,2,0.6712,balanced decomposer
+temperate,1.0,275,0.6344,1.4604,98.5396,2,0.6698,balanced decomposer
+temperate,1.0,280,0.6585,1.3499,98.6501,2,0.6705,balanced decomposer
+temperate,1.0,285,0.6615,1.2485,98.7515,2,0.6715,balanced decomposer
+temperate,1.0,290,0.637,1.1491,98.8509,2,0.6705,balanced decomposer
+temperate,1.0,295,0.5972,1.0492,98.9508,2,0.6665,balanced decomposer
+temperate,1.0,300,0.5639,0.9578,99.0422,2,0.6626,balanced decomposer
+temperate,1.0,305,0.5528,0.8765,99.1235,2,0.6595,balanced decomposer
+temperate,1.0,310,0.5622,0.8004,99.1996,2,0.6562,balanced decomposer
+temperate,1.0,315,0.5749,0.7287,99.2713,1,0.6527,balanced decomposer
+temperate,1.0,320,0.5719,0.6639,99.3361,1,0.6495,balanced decomposer
+temperate,1.0,325,0.5475,0.608,99.392,1,0.6476,balanced decomposer
+temperate,1.0,330,0.5135,0.561,99.439,1,0.6475,balanced decomposer
+temperate,1.0,335,0.4917,0.5201,99.4799,1,0.6487,balanced decomposer
+temperate,1.0,340,0.4968,0.4817,99.5183,1,0.6496,balanced decomposer
+temperate,1.0,345,0.526,0.4432,99.5568,1,0.6488,balanced decomposer
+temperate,1.0,350,0.561,0.4046,99.5954,1,0.6463,balanced decomposer
+temperate,1.0,355,0.5812,0.3679,99.6321,1,0.6432,balanced decomposer
+temperate,1.0,360,0.5793,0.3345,99.6655,1,0.6403,balanced decomposer
+temperate,1.0,365,0.5659,0.305,99.695,1,0.6382,balanced decomposer
+arboreal,1.0,0,0.6684,96.6014,3.3986,5,1.6055,balanced decomposer
+arboreal,1.0,5,0.6972,93.2403,6.7597,5,1.5945,balanced decomposer
+arboreal,1.0,10,0.6953,89.801,10.199,5,1.5779,balanced decomposer
+arboreal,1.0,15,0.6755,86.2309,13.7691,5,1.5572,balanced decomposer
+arboreal,1.0,20,0.6628,82.59,17.41,5,1.5333,balanced decomposer
+arboreal,1.0,25,0.6744,79.0159,20.9841,5,1.5069,balanced decomposer
+arboreal,1.0,30,0.7065,75.6278,24.3722,4,1.4794,balanced decomposer
+arboreal,1.0,35,0.7369,72.4266,27.5734,4,1.4516,balanced decomposer
+arboreal,1.0,40,0.7414,69.2943,30.7057,4,1.4237,balanced decomposer
+arboreal,1.0,45,0.7122,66.0996,33.9004,4,1.3957,balanced decomposer
+arboreal,1.0,50,0.6642,62.7911,37.2089,4,1.3674,balanced decomposer
+arboreal,1.0,55,0.6238,59.4151,40.5849,4,1.3382,balanced decomposer
+arboreal,1.0,60,0.6104,56.0859,43.9141,3,1.3084,balanced decomposer
+arboreal,1.0,65,0.6217,52.9141,47.0859,3,1.2791,balanced decomposer
+arboreal,1.0,70,0.6369,49.9231,50.0769,3,1.2509,balanced decomposer
+arboreal,1.0,75,0.6328,47.0344,52.9656,3,1.2232,balanced decomposer
+arboreal,1.0,80,0.6022,44.1406,55.8594,3,1.1942,balanced decomposer
+arboreal,1.0,85,0.5599,41.3895,58.6105,3,1.1676,balanced decomposer
+arboreal,1.0,90,0.5322,38.9141,61.0859,3,1.1445,balanced decomposer
+arboreal,1.0,95,0.5375,36.5228,63.4772,3,1.1208,balanced decomposer
+arboreal,1.0,100,0.5724,34.0699,65.9301,3,1.0935,balanced decomposer
+arboreal,1.0,105,0.6143,31.8467,68.1533,3,1.068,balanced decomposer
+arboreal,1.0,110,0.6385,29.8338,70.1662,3,1.0456,balanced decomposer
+arboreal,1.0,115,0.6357,27.9216,72.0784,3,1.024,balanced decomposer
+arboreal,1.0,120,0.6191,26.061,73.939,3,1.0021,balanced decomposer
+arboreal,1.0,125,0.6133,24.2901,75.7099,3,0.9807,balanced decomposer
+arboreal,1.0,130,0.635,22.6921,77.3079,3,0.9622,balanced decomposer
+arboreal,1.0,135,0.6798,21.3207,78.6793,3,0.9492,balanced decomposer
+arboreal,1.0,140,0.7247,20.1511,79.8489,3,0.9423,balanced decomposer
+arboreal,1.0,145,0.7445,19.0941,80.9059,3,0.939,balanced decomposer
+arboreal,1.0,150,0.7304,18.0556,81.9444,3,0.9343,balanced decomposer
+arboreal,1.0,155,0.6962,16.9932,83.0068,3,0.9259,balanced decomposer
+arboreal,1.0,160,0.6676,15.9293,84.0707,3,0.915,balanced decomposer
+arboreal,1.0,165,0.6631,14.9195,85.0805,3,0.9042,balanced decomposer
+arboreal,1.0,170,0.6798,14.0031,85.9969,3,0.8958,balanced decomposer
+arboreal,1.0,175,0.6966,13.1717,86.8283,3,0.89,balanced decomposer
+arboreal,1.0,180,0.6901,12.3773,87.6227,3,0.8839,balanced decomposer
+arboreal,1.0,185,0.6533,11.5701,88.4299,3,0.8741,balanced decomposer
+arboreal,1.0,190,0.6015,10.7338,89.2662,3,0.8598,balanced decomposer
+arboreal,1.0,195,0.5616,9.9552,90.0448,2,0.8454,balanced decomposer
+arboreal,1.0,200,0.5527,9.2434,90.7566,2,0.832,balanced decomposer
+arboreal,1.0,205,0.5724,8.5472,91.4528,2,0.8183,balanced decomposer
+arboreal,1.0,210,0.5991,7.9122,92.0878,2,0.8062,balanced decomposer
+arboreal,1.0,215,0.6091,7.3331,92.6669,2,0.7957,balanced decomposer
+arboreal,1.0,220,0.5941,6.7784,93.2216,2,0.7844,balanced decomposer
+arboreal,1.0,225,0.568,6.2635,93.7365,2,0.7734,balanced decomposer
+arboreal,1.0,230,0.556,5.7989,94.2011,2,0.7634,balanced decomposer
+arboreal,1.0,235,0.5753,5.3473,94.6527,2,0.7532,balanced decomposer
+arboreal,1.0,240,0.6217,4.9593,95.0407,2,0.7465,balanced decomposer
+arboreal,1.0,245,0.672,4.6371,95.3629,2,0.7451,balanced decomposer
+arboreal,1.0,250,0.7007,4.3562,95.6438,2,0.7472,balanced decomposer
+arboreal,1.0,255,0.6984,4.0909,95.9091,2,0.7489,balanced decomposer
+arboreal,1.0,260,0.678,3.8292,96.1708,2,0.7482,balanced decomposer
+arboreal,1.0,265,0.6646,3.5763,96.4237,2,0.7461,balanced decomposer
+arboreal,1.0,270,0.6753,3.3458,96.6542,2,0.7453,balanced decomposer
+arboreal,1.0,275,0.7065,3.1461,96.8539,2,0.7484,balanced decomposer
+arboreal,1.0,280,0.736,2.9726,97.0274,2,0.7556,balanced decomposer
+arboreal,1.0,285,0.7396,2.8102,97.1898,2,0.7631,balanced decomposer
+arboreal,1.0,290,0.7097,2.6443,97.3557,2,0.766,balanced decomposer
+arboreal,1.0,295,0.6611,2.4692,97.5308,2,0.7629,balanced decomposer
+arboreal,1.0,300,0.6204,2.2906,97.7094,2,0.7559,balanced decomposer
+arboreal,1.0,305,0.6068,2.1199,97.8801,2,0.7481,balanced decomposer
+arboreal,1.0,310,0.6182,1.9651,98.0349,2,0.7417,balanced decomposer
+arboreal,1.0,315,0.6337,1.826,98.174,2,0.7371,balanced decomposer
+arboreal,1.0,320,0.6301,1.6955,98.3045,2,0.7324,balanced decomposer
+arboreal,1.0,325,0.6002,1.5664,98.4336,2,0.7253,balanced decomposer
+arboreal,1.0,330,0.5588,1.4479,98.5521,2,0.718,balanced decomposer
+arboreal,1.0,335,0.5321,1.3449,98.6551,2,0.7122,balanced decomposer
+arboreal,1.0,340,0.5383,1.2476,98.7524,2,0.7064,balanced decomposer
+arboreal,1.0,345,0.574,1.149,98.851,2,0.6997,balanced decomposer
+arboreal,1.0,350,0.6167,1.0635,98.9365,2,0.6957,balanced decomposer
+arboreal,1.0,355,0.6415,0.9885,99.0115,2,0.6941,balanced decomposer
+arboreal,1.0,360,0.6392,0.9184,99.0816,2,0.6924,balanced decomposer
+arboreal,1.0,365,0.6228,0.8509,99.1491,2,0.6894,balanced decomposer
+tropical rain forest,1.0,0,0.8607,97.0912,2.9088,5,1.6039,moisture generalist
+tropical rain forest,1.0,5,0.8816,94.1666,5.8334,5,1.589,moisture generalist
+tropical rain forest,1.0,10,0.8802,91.1158,8.8842,5,1.5675,moisture generalist
+tropical rain forest,1.0,15,0.8658,87.8852,12.1148,5,1.5414,moisture generalist
+tropical rain forest,1.0,20,0.8566,84.5453,15.4547,5,1.5122,moisture generalist
+tropical rain forest,1.0,25,0.865,81.2501,18.7499,5,1.4811,moisture generalist
+tropical rain forest,1.0,30,0.8884,78.1238,21.8762,5,1.4484,moisture generalist
+tropical rain forest,1.0,35,0.9105,75.191,24.809,3,1.4144,moisture generalist
+tropical rain forest,1.0,40,0.9138,72.308,27.692,3,1.38,moisture generalist
+tropical rain forest,1.0,45,0.8925,69.2905,30.7095,3,1.3471,moisture generalist
+tropical rain forest,1.0,50,0.8576,66.1203,33.8797,3,1.3158,moisture generalist
+tropical rain forest,1.0,55,0.8283,62.8624,37.1376,3,1.2861,moisture generalist
+tropical rain forest,1.0,60,0.8185,59.6517,40.3483,3,1.2576,moisture generalist
+tropical rain forest,1.0,65,0.8267,56.5998,43.4002,3,1.23,moisture generalist
+tropical rain forest,1.0,70,0.8378,53.721,46.279,3,1.2035,moisture generalist
+tropical rain forest,1.0,75,0.8348,50.9374,49.0626,3,1.1782,moisture generalist
+tropical rain forest,1.0,80,0.8125,48.1549,51.8451,3,1.1543,moisture generalist
+tropical rain forest,1.0,85,0.7817,45.3442,54.6558,3,1.1321,moisture generalist
+tropical rain forest,1.0,90,0.7616,42.6923,57.3077,3,1.1136,moisture generalist
+tropical rain forest,1.0,95,0.7655,40.1647,59.8353,3,1.0956,moisture generalist
+tropical rain forest,1.0,100,0.7908,37.7895,62.2105,3,1.0762,moisture generalist
+tropical rain forest,1.0,105,0.8213,35.6614,64.3386,3,1.0576,moisture generalist
+tropical rain forest,1.0,110,0.8389,33.7079,66.2921,3,1.0397,moisture generalist
+tropical rain forest,1.0,115,0.8369,31.8427,68.1573,3,1.0228,moisture generalist
+tropical rain forest,1.0,120,0.8248,30.0283,69.9717,3,1.0068,moisture generalist
+tropical rain forest,1.0,125,0.8206,28.294,71.706,3,0.9917,moisture generalist
+tropical rain forest,1.0,130,0.8363,26.7016,73.2984,3,0.9772,moisture generalist
+tropical rain forest,1.0,135,0.869,25.2896,74.7104,3,0.963,moisture generalist
+tropical rain forest,1.0,140,0.9016,24.0395,75.9605,3,0.9489,moisture generalist
+tropical rain forest,1.0,145,0.916,22.8913,77.1087,3,0.9344,moisture generalist
+tropical rain forest,1.0,150,0.9057,21.7607,78.2393,3,0.9213,moisture generalist
+tropical rain forest,1.0,155,0.8809,20.6194,79.3806,3,0.9093,moisture generalist
+tropical rain forest,1.0,160,0.8601,19.4877,80.5123,3,0.898,moisture generalist
+tropical rain forest,1.0,165,0.8568,18.4079,81.5921,3,0.8873,moisture generalist
+tropical rain forest,1.0,170,0.869,17.4093,82.5907,3,0.8769,moisture generalist
+tropical rain forest,1.0,175,0.8812,16.4855,83.5145,3,0.867,moisture generalist
+tropical rain forest,1.0,180,0.8764,15.5999,84.4001,3,0.8575,moisture generalist
+tropical rain forest,1.0,185,0.8497,14.7148,85.2852,3,0.8484,moisture generalist
+tropical rain forest,1.0,190,0.812,13.818,86.182,3,0.8399,moisture generalist
+tropical rain forest,1.0,195,0.783,12.9298,87.0702,3,0.8318,moisture generalist
+tropical rain forest,1.0,200,0.7765,12.0952,87.9048,3,0.8245,moisture generalist
+tropical rain forest,1.0,205,0.7908,11.3236,88.6764,3,0.8171,moisture generalist
+tropical rain forest,1.0,210,0.8103,10.624,89.376,3,0.8099,moisture generalist
+tropical rain forest,1.0,215,0.8175,9.9749,90.0251,3,0.8031,moisture generalist
+tropical rain forest,1.0,220,0.8066,9.3521,90.6479,3,0.7966,moisture generalist
+tropical rain forest,1.0,225,0.7876,8.7471,91.2529,3,0.7904,moisture generalist
+tropical rain forest,1.0,230,0.7789,8.1731,91.8269,3,0.7848,moisture generalist
+tropical rain forest,1.0,235,0.7929,7.6472,92.3528,3,0.7793,moisture generalist
+tropical rain forest,1.0,240,0.8267,7.1839,92.8161,3,0.7739,moisture generalist
+tropical rain forest,1.0,245,0.8633,6.7782,93.2218,3,0.7686,moisture generalist
+tropical rain forest,1.0,250,0.8841,6.4112,93.5888,3,0.7634,moisture generalist
+tropical rain forest,1.0,255,0.8824,6.0624,93.9376,3,0.7585,moisture generalist
+tropical rain forest,1.0,260,0.8677,5.722,94.278,3,0.7538,moisture generalist
+tropical rain forest,1.0,265,0.8579,5.3941,94.6059,3,0.7493,moisture generalist
+tropical rain forest,1.0,270,0.8657,5.0895,94.9105,2,0.745,moisture generalist
+tropical rain forest,1.0,275,0.8884,4.8148,95.1852,2,0.7409,moisture generalist
+tropical rain forest,1.0,280,0.9098,4.5671,95.4329,2,0.7364,moisture generalist
+tropical rain forest,1.0,285,0.9125,4.3334,95.6666,2,0.7321,moisture generalist
+tropical rain forest,1.0,290,0.8907,4.0999,95.9001,2,0.7286,moisture generalist
+tropical rain forest,1.0,295,0.8553,3.8629,96.1371,2,0.725,moisture generalist
+tropical rain forest,1.0,300,0.8257,3.6269,96.3731,2,0.7214,moisture generalist
+tropical rain forest,1.0,305,0.8158,3.4011,96.5989,2,0.7179,moisture generalist
+tropical rain forest,1.0,310,0.8242,3.1923,96.8077,2,0.7146,moisture generalist
+tropical rain forest,1.0,315,0.8354,3.0001,96.9999,2,0.7116,moisture generalist
+tropical rain forest,1.0,320,0.8328,2.8185,97.1815,2,0.7087,moisture generalist
+tropical rain forest,1.0,325,0.8111,2.641,97.359,2,0.7058,moisture generalist
+tropical rain forest,1.0,330,0.7809,2.4655,97.5345,2,0.703,moisture generalist
+tropical rain forest,1.0,335,0.7615,2.3055,97.6945,2,0.7024,moisture generalist
+tropical rain forest,1.0,340,0.766,2.1546,97.8454,2,0.7015,moisture generalist
+tropical rain forest,1.0,345,0.792,2.0138,97.9862,2,0.699,moisture generalist
+tropical rain forest,1.0,350,0.8231,1.8891,98.1109,2,0.6967,moisture generalist
+tropical rain forest,1.0,355,0.8411,1.7759,98.2241,2,0.6947,moisture generalist
+tropical rain forest,1.0,360,0.8394,1.6692,98.3308,2,0.6928,moisture generalist
+tropical rain forest,1.0,365,0.8275,1.5666,98.4334,2,0.6908,moisture generalist

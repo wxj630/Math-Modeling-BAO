@@ -1,0 +1,5 @@
+﻿option,category,capex_musd,annual_opex_musd,annual_revenue_musd,ten_year_debris_removed,ten_year_collision_risk_reduction_proxy,risk_score,npv_musd,risk_adjusted_score,commercially_attractive,statement_link
+laser_tracking_subscription,collision_avoidance_service,85.0,18.0,72.0,0,0.16,0.153,277.344,0.541494,True,innovative alternative for avoiding collisions if removal is not commercially viable
+high_energy_lasers,active_removal_or_deflection,260.0,38.0,92.0,24000,0.036,0.407,102.344,0.102994,True,high energy lasers targeting specific debris
+space_based_water_jets,active_removal,420.0,55.0,105.0,18000,0.0324,0.397,-84.496,-0.117226,False,small space-based water jets targeting debris
+sweeper_satellites,active_removal,780.0,95.0,135.0,52000,0.0624,0.481,-511.597,-0.543127,False,large satellites designed to sweep up debris

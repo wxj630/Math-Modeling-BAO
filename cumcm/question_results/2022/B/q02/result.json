@@ -1,0 +1,240 @@
+{
+  "problem_id": "2022-B",
+  "title": "2022年 CUMCM B题：无人机遂行编队飞行中的纯方位无源定位",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "实际飞行中， 无人机集群也可以是其他编队队形，例如锥形编队队形（见图 3，直 线上相邻两架无人机的间距相等，如 50 m）。仍考虑纯方位无源定位的情形，设计无人机位置 调整方案。",
+  "tasks": [
+    "仍考虑纯方位无源定位的情形，设计无人机位置 调整方案"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "方案、设计"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 0,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/B.md",
+    "rows": 29,
+    "columns": 8,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "仍考虑纯方位无源定位的情形，设计无人机位置 调整方案"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 第 i 架无人机在同一高度平面内的位置",
+      "b_j: 发射信号无人机的已知编号与坐标",
+      "alpha_{ab}(p): 接收机 p 观测到两架发射机 a,b 的夹角",
+      "e_i=p_i-p_i^*: 第 i 架无人机相对目标编队位置的偏差"
+    ],
+    "constraints": [
+      "所有无人机保持同一高度，因此定位问题化为二维平面几何。",
+      "纯方位信息只使用接收点到两架发射机连线的夹角，不使用距离量测。",
+      "FY00 位于圆心；FY01-FY09 在半径 100 m 圆周上相隔 40 度。",
+      "每轮最多选择 FY00 和圆周上 3 架无人机发射信号，其余无人机被动定位并调整。"
+    ],
+    "objective_or_equations": [
+      "target cone lattice: apex plus symmetric two arms with spacing 50 m",
+      "min_p sum angle residuals recovers current p, then project to assigned cone node p_i^*",
+      "adjustment vector delta_i=p_i^*-p_i"
+    ],
+    "solution_steps": [
+      "给出锥形编队的目标坐标格点：顶点、左右两臂和中轴补点。",
+      "选择顶点和两臂外侧无人机作为发射锚点，其他无人机用夹角残差定位。",
+      "把定位结果投影到对应锥形目标点，得到每架无人机的调整向量。",
+      "输出发射计划、目标坐标和调整表。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "bearing_angle_cone_formation_adjustment",
+    "spacing_m": 50.0,
+    "emitters": [
+      "FY00",
+      "FY03",
+      "FY04",
+      "FY09"
+    ],
+    "cone_nodes": 10,
+    "max_adjustment_distance_m": 9.85086,
+    "mean_adjustment_distance_m": 6.227652,
+    "target_coordinates": [
+      {
+        "section": "cone_target",
+        "uav": "FY00",
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY01",
+        "x": -50.0,
+        "y": 50.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY02",
+        "x": 50.0,
+        "y": 50.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY03",
+        "x": -100.0,
+        "y": 100.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY04",
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY05",
+        "x": -150.0,
+        "y": 150.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY06",
+        "x": 150.0,
+        "y": 150.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY07",
+        "x": -200.0,
+        "y": 200.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY08",
+        "x": 200.0,
+        "y": 200.0
+      },
+      {
+        "section": "cone_target",
+        "uav": "FY09",
+        "x": 0.0,
+        "y": 125.0
+      }
+    ],
+    "sample_adjustment_rows": [
+      {
+        "section": "cone_adjustment",
+        "receiver": "FY01",
+        "emitters": "FY00,FY03,FY04,FY09",
+        "estimated_x": -53.293039,
+        "estimated_y": 45.749812,
+        "target_x": -50.0,
+        "target_y": 50.0,
+        "dx": 3.293039,
+        "dy": 4.250188,
+        "move_distance": 5.376635,
+        "angle_residual_mse": 0.0
+      },
+      {
+        "section": "cone_adjustment",
+        "receiver": "FY02",
+        "emitters": "FY00,FY03,FY04,FY09",
+        "estimated_x": 49.762084,
+        "estimated_y": 47.067927,
+        "target_x": 50.0,
+        "target_y": 50.0,
+        "dx": 0.237916,
+        "dy": 2.932073,
+        "move_distance": 2.94171,
+        "angle_residual_mse": 0.0
+      },
+      {
+        "section": "cone_adjustment",
+        "receiver": "FY05",
+        "emitters": "FY00,FY03,FY04,FY09",
+        "estimated_x": -151.112979,
+        "estimated_y": 159.787784,
+        "target_x": -150.0,
+        "target_y": 150.0,
+        "dx": 1.112979,
+        "dy": -9.787784,
+        "move_distance": 9.85086,
+        "angle_residual_mse": 0.0
+      },
+      {
+        "section": "cone_adjustment",
+        "receiver": "FY06",
+        "emitters": "FY00,FY03,FY04,FY09",
+        "estimated_x": 144.036938,
+        "estimated_y": 149.492872,
+        "target_x": 150.0,
+        "target_y": 150.0,
+        "dx": 5.963062,
+        "dy": 0.507128,
+        "move_distance": 5.984587,
+        "angle_residual_mse": 0.0
+      },
+      {
+        "section": "cone_adjustment",
+        "receiver": "FY07",
+        "emitters": "FY00,FY03,FY04,FY09",
+        "estimated_x": -201.573007,
+        "estimated_y": 194.249513,
+        "target_x": -200.0,
+        "target_y": 200.0,
+        "dx": 1.573007,
+        "dy": 5.750487,
+        "move_distance": 5.961749,
+        "angle_residual_mse": 0.0
+      },
+      {
+        "section": "cone_adjustment",
+        "receiver": "FY08",
+        "emitters": "FY00,FY03,FY04,FY09",
+        "estimated_x": 194.041292,
+        "estimated_y": 195.869424,
+        "target_x": 200.0,
+        "target_y": 200.0,
+        "dx": 5.958708,
+        "dy": 4.130576,
+        "move_distance": 7.250369,
+        "angle_residual_mse": 0.0
+      }
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2022/B/q02/experiment_table.csv"
+  ]
+}

@@ -1,0 +1,4 @@
+product_file,review_count,unique_products,mean_star_rating,share_low_rating_1_2,mean_helpfulness_rate,mean_review_length_words,verified_purchase_share
+pacifier.tsv,18939,6482,4.3046,0.1128,0.1735,53.0561,0.517
+hair_dryer.tsv,11470,538,4.116,0.1457,0.2834,58.421,0.8554
+microwave.tsv,1615,80,3.4446,0.3183,0.4898,89.2594,0.6743

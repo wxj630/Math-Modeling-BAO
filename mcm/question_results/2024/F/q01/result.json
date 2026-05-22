@@ -1,0 +1,76 @@
+{
+  "problem_id": "2024-F",
+  "question": "q01",
+  "question_title": "客户是谁",
+  "statement": "Who is your client?",
+  "methods": "用 mandate、跨境权力、数据访问、执行能力、使命匹配和政治可行性构造客户多指标评分，选择 WCO coordinated customs task force。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "official_requirements": {
+      "select_client": true,
+      "realistic_client_action": true,
+      "data_driven_five_year_project": true,
+      "additional_powers_and_resources": true,
+      "measurable_impact": true,
+      "goal_probability": true,
+      "contextualized_sensitivity_analysis": true,
+      "one_page_client_memo": true
+    },
+    "parameters": {
+      "max_illegal_trade_billion_usd": 26.5,
+      "project_years": 5,
+      "fourth_largest_illegal_trade": true,
+      "program_effectiveness_discount": 0.42,
+      "source_note": "Official PDF statement parameters only; project rows are deterministic scenario assumptions, not observed enforcement data."
+    }
+  },
+  "client_selection": {
+    "model": "multi-criteria client fit score over mandate, cross-border power, data access, implementation capacity, mission alignment, and political feasibility",
+    "selected_client": "World Customs Organization coordinated customs task force",
+    "selection_reason": "highest fit because customs coordination has authority over border chokepoints and access to shipment-risk metadata",
+    "candidate_clients": [
+      {
+        "client": "World Customs Organization coordinated customs task force",
+        "mandate_fit": 0.94,
+        "cross_border_power": 0.92,
+        "data_access": 0.86,
+        "implementation_capacity": 0.82,
+        "mission_alignment": 0.9,
+        "political_feasibility": 0.74,
+        "client_fit_score": 0.8768
+      },
+      {
+        "client": "Global e-commerce marketplace trust-and-safety coalition",
+        "mandate_fit": 0.76,
+        "cross_border_power": 0.54,
+        "data_access": 0.92,
+        "implementation_capacity": 0.8,
+        "mission_alignment": 0.7,
+        "political_feasibility": 0.79,
+        "client_fit_score": 0.7458
+      },
+      {
+        "client": "Regional wildlife conservation NGO consortium",
+        "mandate_fit": 0.82,
+        "cross_border_power": 0.45,
+        "data_access": 0.61,
+        "implementation_capacity": 0.64,
+        "mission_alignment": 0.96,
+        "political_feasibility": 0.83,
+        "client_fit_score": 0.7
+      },
+      {
+        "client": "National park agency in a source country",
+        "mandate_fit": 0.88,
+        "cross_border_power": 0.36,
+        "data_access": 0.52,
+        "implementation_capacity": 0.58,
+        "mission_alignment": 0.92,
+        "political_feasibility": 0.68,
+        "client_fit_score": 0.6488
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+state,year,climate_multiplier,fragility_score
+Jordan,2018,1.0,0.5208
+Jordan,2022,1.035,0.5281
+Jordan,2026,1.07,0.5353
+Jordan,2030,1.105,0.5426
+Jordan,2034,1.14,0.5498
+Jordan,2038,1.175,0.5571
+Jordan,2042,1.21,0.5643
+Jordan,2046,1.245,0.5716
+Jordan,2050,1.28,0.5788

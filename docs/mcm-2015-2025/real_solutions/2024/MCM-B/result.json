@@ -1,0 +1,366 @@
+{
+  "problem_id": "2024-B",
+  "title": "Searching for Submersibles",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "official_requirements": {
+      "loss_of_communication": true,
+      "possible_loss_of_propulsion": true,
+      "predict_location_over_time": true,
+      "seafloor_or_neutral_buoyancy": true,
+      "currents_densities_and_geography": true,
+      "prepare_search_equipment": true,
+      "probability_of_finding_as_function_of_time": true,
+      "caribbean_and_multiple_submersibles": true,
+      "memo_to_greek_government": true
+    },
+    "parameters": {
+      "purpose": "deterministic rescue-planning example for the official PDF-only problem; not observed incident data",
+      "deployment_area": "Ionian Sea tourist wreck-search site near a host ship",
+      "initial_fix_error_km": 0.18,
+      "submersible_speed_kmh_before_failure": 3.0,
+      "time_since_last_fix_hours": 0.5,
+      "surface_current_kmh": 1.15,
+      "deep_current_kmh": 0.35,
+      "current_direction_degrees": 58.0,
+      "current_uncertainty_kmh": 0.24,
+      "cross_current_uncertainty_kmh": 0.14,
+      "depth_state_ambiguity_km": 0.55,
+      "seafloor_terrain_uncertainty_km": 0.35,
+      "neutral_buoyancy_share": 0.55,
+      "seafloor_share": 0.45,
+      "acoustic_range_km": 4.0
+    }
+  },
+  "location_model": {
+    "model": "current-driven dead-reckoning ellipse with two vertical states: seafloor-resting and neutral-buoyancy drifting",
+    "scenario_assumptions": {
+      "purpose": "deterministic rescue-planning example for the official PDF-only problem; not observed incident data",
+      "deployment_area": "Ionian Sea tourist wreck-search site near a host ship",
+      "initial_fix_error_km": 0.18,
+      "submersible_speed_kmh_before_failure": 3.0,
+      "time_since_last_fix_hours": 0.5,
+      "surface_current_kmh": 1.15,
+      "deep_current_kmh": 0.35,
+      "current_direction_degrees": 58.0,
+      "current_uncertainty_kmh": 0.24,
+      "cross_current_uncertainty_kmh": 0.14,
+      "depth_state_ambiguity_km": 0.55,
+      "seafloor_terrain_uncertainty_km": 0.35,
+      "neutral_buoyancy_share": 0.55,
+      "seafloor_share": 0.45,
+      "acoustic_range_km": 4.0
+    },
+    "position_uncertainty": {
+      "area_km2_after_12h": 16.9261,
+      "area_km2_after_24h": 62.5273,
+      "center_after_12h_km": [
+        2.5085,
+        1.5675
+      ],
+      "dominant_uncertainties": [
+        "unknown vertical state: seafloor versus neutral buoyancy",
+        "current magnitude and direction",
+        "time since last accurate fix",
+        "seafloor terrain trapping and density layers"
+      ]
+    },
+    "telemetry_to_reduce_uncertainty": [
+      {
+        "signal": "acoustic pinger range/bearing packet",
+        "equipment": "coded acoustic modem and emergency pinger",
+        "uncertainty_reduced": "horizontal range and bearing from host ship"
+      },
+      {
+        "signal": "depth and pressure time series",
+        "equipment": "pressure sensor with logged acoustic burst",
+        "uncertainty_reduced": "distinguishes seafloor contact from neutral-buoyancy drift"
+      },
+      {
+        "signal": "inertial dead-reckoning summary",
+        "equipment": "IMU, compass, Doppler velocity log where available",
+        "uncertainty_reduced": "motion after last GPS/USBL fix"
+      },
+      {
+        "signal": "battery, ballast, and propulsion health flags",
+        "equipment": "fault monitor tied to acoustic status messages",
+        "uncertainty_reduced": "likely mobility, ascent ability, and rescue urgency"
+      },
+      {
+        "signal": "local current and temperature-density observations",
+        "equipment": "compact current/CTD package",
+        "uncertainty_reduced": "drift model and density-layer uncertainty"
+      }
+    ]
+  },
+  "equipment_recommendations": {
+    "model": "multi-criteria equipment scoring over coverage, detection quality, readiness, usage cost, and maintenance burden",
+    "host_ship_equipment": [
+      {
+        "asset": "shipboard USBL acoustic locator",
+        "availability": "must be aboard host ship",
+        "maintenance": "medium: calibration before tourist dives",
+        "readiness_hours": 0.25,
+        "usage_cost_index": 2.0,
+        "coverage_km2_per_hour": 7.5,
+        "quality": 0.72,
+        "search_value_score": 0.5135,
+        "role": "quickly interrogate emergency pingers and reduce horizontal uncertainty"
+      },
+      {
+        "asset": "AUV with multibeam sonar",
+        "availability": "rescue vessel or prearranged regional contractor",
+        "maintenance": "high: mission planning, batteries, recovery crew",
+        "readiness_hours": 5.0,
+        "usage_cost_index": 5.0,
+        "coverage_km2_per_hour": 10.5,
+        "quality": 0.75,
+        "search_value_score": 0.455,
+        "role": "expand search when the first host-ship pattern fails"
+      },
+      {
+        "asset": "drop transponder/LBL beacons",
+        "availability": "portable kit aboard host ship",
+        "maintenance": "low-to-medium: battery and timing checks",
+        "readiness_hours": 0.8,
+        "usage_cost_index": 2.8,
+        "coverage_km2_per_hour": 4.2,
+        "quality": 0.8,
+        "search_value_score": 0.4048,
+        "role": "create a local acoustic baseline around the predicted ellipse"
+      },
+      {
+        "asset": "side-scan sonar towfish",
+        "availability": "host ship or nearby contracted survey vessel",
+        "maintenance": "medium: tow cable, fish, and winch inspection",
+        "readiness_hours": 1.2,
+        "usage_cost_index": 3.3,
+        "coverage_km2_per_hour": 5.8,
+        "quality": 0.68,
+        "search_value_score": 0.3897,
+        "role": "scan seafloor-likely sectors when the submersible has lost propulsion"
+      }
+    ],
+    "rescue_vessel_equipment": [
+      {
+        "asset": "work-class ROV with lift/umbilical tools",
+        "reason": "needed for confirmed deep contact, intervention, and connection to lifting or life-support systems"
+      },
+      {
+        "asset": "dynamic-positioning rescue vessel",
+        "reason": "keeps the rescue platform over the contact while operating tethered tools"
+      },
+      {
+        "asset": "medical decompression and survivor reception team",
+        "reason": "turns a location success into safe recovery and post-rescue care"
+      }
+    ],
+    "recommendation": "The host ship should carry acoustic localization, drop beacons, a side-scan option, and an inspection ROV; heavier lift and intervention assets can be pre-contracted for rescue-vessel arrival."
+  },
+  "search_plan": {
+    "model": "Bayesian-style survival update with deterministic swept-area coverage over the official location-model uncertainty ellipse",
+    "search_probability": {
+      "probability_found_by_12h": 0.7489,
+      "probability_found_by_24h": 0.7812,
+      "formula": "P_found(t)=1-exp(-sum_over_intervals(incremental_effective_swept_area/current_uncertainty_area))",
+      "detection_realism_factor": 0.16,
+      "detection_realism_note": "discounts nominal sensor sweep area for deep-water 3D ambiguity, acoustic multipath, terrain shadowing, and contact-confirmation delay"
+    },
+    "deployment_points": [
+      {
+        "point": "P0 predicted center",
+        "east_km": 2.509,
+        "north_km": 1.567,
+        "purpose": "deploy USBL and first drop beacon"
+      },
+      {
+        "point": "P1 down-current ellipse focus",
+        "east_km": 4.113,
+        "north_km": 2.57,
+        "purpose": "start creeping-line sonar along drift axis"
+      },
+      {
+        "point": "P2 up-current ellipse focus",
+        "east_km": 1.422,
+        "north_km": 0.888,
+        "purpose": "backtrack possible powerless descent path"
+      },
+      {
+        "point": "P3 cross-current high-uncertainty edge",
+        "east_km": 3.238,
+        "north_km": 0.399,
+        "purpose": "cover terrain and density-current ambiguity"
+      },
+      {
+        "point": "P4 opposite cross-current edge",
+        "east_km": 1.779,
+        "north_km": 2.736,
+        "purpose": "complete LBL bracket and close acoustic geometry"
+      }
+    ],
+    "search_pattern": [
+      "0-2 h: interrogate acoustic pingers from the host ship and deploy two LBL beacons around P0/P1",
+      "2-8 h: run creeping-line side-scan sonar along the drift-axis ellipse from P1 to P2",
+      "8-16 h: use ROV to inspect acoustic/sonar contacts and seafloor terrain traps",
+      "16-24 h: add AUV expanding-square search around remaining posterior mass if no confirmed contact"
+    ]
+  },
+  "extrapolation": {
+    "caribbean_adjustments": {
+      "current_uncertainty_multiplier": 1.35,
+      "terrain_adjustment": "replace Ionian seafloor-wreck bathymetry with reef wall, trench, and strong surface-current layers",
+      "communications_adjustment": "predefine tourist-route LBL boxes because warm shallow shelves may create more multipath and recreational vessel noise",
+      "environmental_data_needed": [
+        "regional current forecast",
+        "reef/trench bathymetry",
+        "shipping density",
+        "hurricane-season operating rule"
+      ]
+    },
+    "multi_submersible": {
+      "coordination_rule": "assign each submersible a unique acoustic code, maintain non-overlapping safety corridors, and partition the search posterior into Voronoi sectors around last confirmed fixes",
+      "model_change": "state vector becomes one ellipse per submersible plus a collision/communication interference constraint matrix",
+      "search_allocation": "prioritize sectors by expected lives saved per hour: posterior probability mass divided by deployment time and resource conflicts"
+    }
+  },
+  "government_memo": "Memo to the Greek government: MCMS approval should require an auditable lost-submersible plan with periodic acoustic telemetry, a host-ship localization kit, preplanned deployment points, a probability-updated search log, and a rescue-vessel mobilization trigger when the 12-hour posterior still leaves substantial uncertainty.",
+  "artifact_preview": {
+    "position_rows": [
+      {
+        "hour_after_loss": 0,
+        "center_east_km": 0.0,
+        "center_north_km": 0.0,
+        "major_axis_km": 1.0077,
+        "minor_axis_km": 0.5436,
+        "position_uncertainty_area_km2": 1.721,
+        "dominant_uncertainty": "current drift + depth-state ambiguity"
+      },
+      {
+        "hour_after_loss": 2,
+        "center_east_km": 0.4181,
+        "center_north_km": 0.2613,
+        "major_axis_km": 1.1162,
+        "minor_axis_km": 0.6115,
+        "position_uncertainty_area_km2": 2.1443,
+        "dominant_uncertainty": "current drift + depth-state ambiguity"
+      },
+      {
+        "hour_after_loss": 4,
+        "center_east_km": 0.8362,
+        "center_north_km": 0.5225,
+        "major_axis_km": 1.3918,
+        "minor_axis_km": 0.7805,
+        "position_uncertainty_area_km2": 3.4126,
+        "dominant_uncertainty": "current drift + depth-state ambiguity"
+      },
+      {
+        "hour_after_loss": 6,
+        "center_east_km": 1.2543,
+        "center_north_km": 0.7838,
+        "major_axis_km": 1.7576,
+        "minor_axis_km": 1.0006,
+        "position_uncertainty_area_km2": 5.5247,
+        "dominant_uncertainty": "current drift + depth-state ambiguity"
+      }
+    ],
+    "equipment_rows": [
+      {
+        "asset": "shipboard USBL acoustic locator",
+        "availability": "must be aboard host ship",
+        "maintenance": "medium: calibration before tourist dives",
+        "readiness_hours": 0.25,
+        "usage_cost_index": 2.0,
+        "coverage_km2_per_hour": 7.5,
+        "quality": 0.72,
+        "role": "quickly interrogate emergency pingers and reduce horizontal uncertainty",
+        "readiness_penalty": 0.05,
+        "cost_penalty": 0.4,
+        "search_value_score": 0.5135
+      },
+      {
+        "asset": "AUV with multibeam sonar",
+        "availability": "rescue vessel or prearranged regional contractor",
+        "maintenance": "high: mission planning, batteries, recovery crew",
+        "readiness_hours": 5.0,
+        "usage_cost_index": 5.0,
+        "coverage_km2_per_hour": 10.5,
+        "quality": 0.75,
+        "role": "expand search when the first host-ship pattern fails",
+        "readiness_penalty": 1.0,
+        "cost_penalty": 1.0,
+        "search_value_score": 0.455
+      },
+      {
+        "asset": "drop transponder/LBL beacons",
+        "availability": "portable kit aboard host ship",
+        "maintenance": "low-to-medium: battery and timing checks",
+        "readiness_hours": 0.8,
+        "usage_cost_index": 2.8,
+        "coverage_km2_per_hour": 4.2,
+        "quality": 0.8,
+        "role": "create a local acoustic baseline around the predicted ellipse",
+        "readiness_penalty": 0.16,
+        "cost_penalty": 0.5599999999999999,
+        "search_value_score": 0.4048
+      }
+    ],
+    "search_probability_rows": [
+      {
+        "hour_after_loss": 4,
+        "uncertainty_area_km2": 3.4126,
+        "cumulative_effective_swept_area_km2": 3.24,
+        "cumulative_detection_hazard": 0.9494,
+        "probability_found": 0.613,
+        "posterior_not_found": 0.387
+      },
+      {
+        "hour_after_loss": 8,
+        "uncertainty_area_km2": 8.4809,
+        "cumulative_effective_swept_area_km2": 5.8291,
+        "cumulative_detection_hazard": 1.2547,
+        "probability_found": 0.7148,
+        "posterior_not_found": 0.2852
+      },
+      {
+        "hour_after_loss": 12,
+        "uncertainty_area_km2": 16.9261,
+        "cumulative_effective_swept_area_km2": 7.9795,
+        "cumulative_detection_hazard": 1.3818,
+        "probability_found": 0.7489,
+        "posterior_not_found": 0.2511
+      },
+      {
+        "hour_after_loss": 16,
+        "uncertainty_area_km2": 28.7487,
+        "cumulative_effective_swept_area_km2": 10.1765,
+        "cumulative_detection_hazard": 1.4582,
+        "probability_found": 0.7673,
+        "posterior_not_found": 0.2327
+      },
+      {
+        "hour_after_loss": 20,
+        "uncertainty_area_km2": 43.9491,
+        "cumulative_effective_swept_area_km2": 12.2989,
+        "cumulative_detection_hazard": 1.5065,
+        "probability_found": 0.7783,
+        "posterior_not_found": 0.2217
+      },
+      {
+        "hour_after_loss": 24,
+        "uncertainty_area_km2": 62.5273,
+        "cumulative_effective_swept_area_km2": 13.1232,
+        "cumulative_detection_hazard": 1.5197,
+        "probability_found": 0.7812,
+        "posterior_not_found": 0.2188
+      }
+    ]
+  },
+  "artifacts": {
+    "position_uncertainty": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/position_uncertainty.csv",
+    "equipment_tradeoffs": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/equipment_tradeoffs.csv",
+    "search_probability": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/search_probability.csv",
+    "search_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/search_plan.png"
+  }
+}

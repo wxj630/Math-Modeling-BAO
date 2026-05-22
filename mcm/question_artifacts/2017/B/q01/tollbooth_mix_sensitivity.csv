@@ -1,0 +1,5 @@
+scenario,conventional_share,exact_change_share,electronic_share,weighted_service_rate_vph_per_booth,throughput_vph,mean_delay_minutes,design_effect
+mostly_conventional,0.7,0.2,0.1,390.0,3120.0,17.769231,booth service is the controlling bottleneck
+balanced_mix,0.35,0.25,0.4,577.5,4620.0,6.155844,booth service is the controlling bottleneck
+electronic_priority,0.2,0.2,0.6,690.0,5520.0,2.217391,booth service is the controlling bottleneck
+transponder_dominant,0.1,0.1,0.8,795.0,5623.481992,1.845356,merge geometry is the controlling bottleneck

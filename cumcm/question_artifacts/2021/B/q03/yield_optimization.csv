@@ -1,0 +1,3 @@
+﻿scenario,catalyst_id,temperature_c,c4_yield_percent,catalyst_combination
+overall,A2,400.0,56.583721,200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min
+below_350,A2,349.0,26.459214,200mg 2wt%Co/SiO2- 200mg HAP-乙醇浓度1.68ml/min

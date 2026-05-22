@@ -1,0 +1,794 @@
+{
+  "problem": "2025 MCM-C Models for Olympic Medal Tables",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "rows": {
+      "summerOly_medal_counts.csv": 1435,
+      "summerOly_athletes.csv": 252565,
+      "summerOly_hosts.csv": 35,
+      "summerOly_programs.csv": 74,
+      "data_dictionary.csv": 50
+    }
+  },
+  "evaluation": {
+    "holdout_year": 2024,
+    "Gold": {
+      "mae_2024": 0.782524,
+      "rmse_2024": 1.760735
+    },
+    "Total": {
+      "mae_2024": 1.709571,
+      "rmse_2024": 4.031028
+    }
+  },
+  "prediction_2028_top_total": [
+    {
+      "NOC": "United States",
+      "pred_total": 107.51955,
+      "interval80": [
+        95.971429,
+        117.075
+      ],
+      "actual_2024_total": 126,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "China",
+      "pred_total": 84.470517,
+      "interval80": [
+        66.14,
+        100.68
+      ],
+      "actual_2024_total": 91,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "France",
+      "pred_total": 58.873614,
+      "interval80": [
+        45.9,
+        83.775
+      ],
+      "actual_2024_total": 64,
+      "actual_2024_gold": 16
+    },
+    {
+      "NOC": "Great Britain",
+      "pred_total": 45.577937,
+      "interval80": [
+        17.5,
+        63.342857
+      ],
+      "actual_2024_total": 65,
+      "actual_2024_gold": 14
+    },
+    {
+      "NOC": "Australia",
+      "pred_total": 45.329872,
+      "interval80": [
+        18.5,
+        73.05
+      ],
+      "actual_2024_total": 53,
+      "actual_2024_gold": 18
+    },
+    {
+      "NOC": "Germany",
+      "pred_total": 43.744927,
+      "interval80": [
+        22.9,
+        69.0
+      ],
+      "actual_2024_total": 33,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Italy",
+      "pred_total": 42.052496,
+      "interval80": [
+        22.0,
+        58.0
+      ],
+      "actual_2024_total": 40,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Japan",
+      "pred_total": 33.888143,
+      "interval80": [
+        12.333333,
+        62.0
+      ],
+      "actual_2024_total": 45,
+      "actual_2024_gold": 20
+    },
+    {
+      "NOC": "Canada",
+      "pred_total": 31.658298,
+      "interval80": [
+        22.0,
+        43.82
+      ],
+      "actual_2024_total": 27,
+      "actual_2024_gold": 9
+    },
+    {
+      "NOC": "Netherlands",
+      "pred_total": 31.375702,
+      "interval80": [
+        21.9,
+        44.033333
+      ],
+      "actual_2024_total": 34,
+      "actual_2024_gold": 15
+    },
+    {
+      "NOC": "Refugee Olympic Team",
+      "pred_total": 23.902372,
+      "interval80": [
+        2.666667,
+        49.333333
+      ],
+      "actual_2024_total": 1,
+      "actual_2024_gold": 0
+    },
+    {
+      "NOC": "Ivory Coast",
+      "pred_total": 23.531737,
+      "interval80": [
+        2.0,
+        49.333333
+      ],
+      "actual_2024_total": 1,
+      "actual_2024_gold": 0
+    },
+    {
+      "NOC": "Spain",
+      "pred_total": 23.170459,
+      "interval80": [
+        13.966667,
+        36.011111
+      ],
+      "actual_2024_total": 18,
+      "actual_2024_gold": 5
+    },
+    {
+      "NOC": "South Korea",
+      "pred_total": 22.864341,
+      "interval80": [
+        13.0,
+        30.35
+      ],
+      "actual_2024_total": 32,
+      "actual_2024_gold": 13
+    },
+    {
+      "NOC": "Brazil",
+      "pred_total": 22.471435,
+      "interval80": [
+        14.25,
+        32.666667
+      ],
+      "actual_2024_total": 20,
+      "actual_2024_gold": 3
+    }
+  ],
+  "prediction_2028_top_gold": [
+    {
+      "NOC": "United States",
+      "pred_gold": 41.089526,
+      "interval80": [
+        36.333333,
+        46.860317
+      ],
+      "actual_2024_total": 126,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "China",
+      "pred_gold": 32.589243,
+      "interval80": [
+        23.0,
+        41.1
+      ],
+      "actual_2024_total": 91,
+      "actual_2024_gold": 40
+    },
+    {
+      "NOC": "France",
+      "pred_gold": 24.923106,
+      "interval80": [
+        14.0,
+        36.516667
+      ],
+      "actual_2024_total": 64,
+      "actual_2024_gold": 16
+    },
+    {
+      "NOC": "Australia",
+      "pred_gold": 23.25275,
+      "interval80": [
+        7.191667,
+        41.0
+      ],
+      "actual_2024_total": 53,
+      "actual_2024_gold": 18
+    },
+    {
+      "NOC": "Germany",
+      "pred_gold": 21.23934,
+      "interval80": [
+        8.655556,
+        37.0
+      ],
+      "actual_2024_total": 33,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Great Britain",
+      "pred_gold": 14.826892,
+      "interval80": [
+        4.0,
+        24.0
+      ],
+      "actual_2024_total": 65,
+      "actual_2024_gold": 14
+    },
+    {
+      "NOC": "Italy",
+      "pred_gold": 13.932317,
+      "interval80": [
+        7.49,
+        23.7
+      ],
+      "actual_2024_total": 40,
+      "actual_2024_gold": 12
+    },
+    {
+      "NOC": "Japan",
+      "pred_gold": 13.697753,
+      "interval80": [
+        4.0,
+        25.871429
+      ],
+      "actual_2024_total": 45,
+      "actual_2024_gold": 20
+    },
+    {
+      "NOC": "Netherlands",
+      "pred_gold": 10.024259,
+      "interval80": [
+        7.2,
+        13.0
+      ],
+      "actual_2024_total": 34,
+      "actual_2024_gold": 15
+    },
+    {
+      "NOC": "Canada",
+      "pred_gold": 9.922688,
+      "interval80": [
+        5.666667,
+        15.5
+      ],
+      "actual_2024_total": 27,
+      "actual_2024_gold": 9
+    },
+    {
+      "NOC": "Spain",
+      "pred_gold": 7.635556,
+      "interval80": [
+        3.0,
+        12.6
+      ],
+      "actual_2024_total": 18,
+      "actual_2024_gold": 5
+    },
+    {
+      "NOC": "South Korea",
+      "pred_gold": 7.041766,
+      "interval80": [
+        3.6625,
+        9.0
+      ],
+      "actual_2024_total": 32,
+      "actual_2024_gold": 13
+    },
+    {
+      "NOC": "New Zealand",
+      "pred_gold": 6.957873,
+      "interval80": [
+        3.25,
+        11.205
+      ],
+      "actual_2024_total": 20,
+      "actual_2024_gold": 10
+    },
+    {
+      "NOC": "Brazil",
+      "pred_gold": 6.812263,
+      "interval80": [
+        3.0,
+        12.0
+      ],
+      "actual_2024_total": 20,
+      "actual_2024_gold": 3
+    },
+    {
+      "NOC": "Refugee Olympic Team",
+      "pred_gold": 6.445373,
+      "interval80": [
+        0.5,
+        13.666667
+      ],
+      "actual_2024_total": 1,
+      "actual_2024_gold": 0
+    }
+  ],
+  "most_likely_improve": [
+    {
+      "NOC": "Refugee Olympic Team",
+      "actual_2024_total": 1,
+      "pred_2028_total": 23.902372,
+      "change": 22.902372
+    },
+    {
+      "NOC": "Ivory Coast",
+      "actual_2024_total": 1,
+      "pred_2028_total": 23.531737,
+      "change": 22.531737
+    },
+    {
+      "NOC": "Germany",
+      "actual_2024_total": 33,
+      "pred_2028_total": 43.744927,
+      "change": 10.744927
+    },
+    {
+      "NOC": "Korea",
+      "actual_2024_total": 0,
+      "pred_2028_total": 10.298167,
+      "change": 10.298167
+    },
+    {
+      "NOC": "Moldova",
+      "actual_2024_total": 4,
+      "pred_2028_total": 14.105338,
+      "change": 10.105338
+    },
+    {
+      "NOC": "Czechia",
+      "actual_2024_total": 0,
+      "pred_2028_total": 7.76505,
+      "change": 7.76505
+    },
+    {
+      "NOC": "Hong Kong",
+      "actual_2024_total": 4,
+      "pred_2028_total": 10.07823,
+      "change": 6.07823
+    },
+    {
+      "NOC": "Czech Republic",
+      "actual_2024_total": 5,
+      "pred_2028_total": 10.550329,
+      "change": 5.550329
+    },
+    {
+      "NOC": "Türkiye",
+      "actual_2024_total": 0,
+      "pred_2028_total": 5.28202,
+      "change": 5.28202
+    },
+    {
+      "NOC": "Spain",
+      "actual_2024_total": 18,
+      "pred_2028_total": 23.170459,
+      "change": 5.170459
+    }
+  ],
+  "most_likely_decline": [
+    {
+      "NOC": "Great Britain",
+      "actual_2024_total": 65,
+      "pred_2028_total": 45.577937,
+      "change": -19.422063
+    },
+    {
+      "NOC": "United States",
+      "actual_2024_total": 126,
+      "pred_2028_total": 107.51955,
+      "change": -18.48045
+    },
+    {
+      "NOC": "Japan",
+      "actual_2024_total": 45,
+      "pred_2028_total": 33.888143,
+      "change": -11.111857
+    },
+    {
+      "NOC": "South Korea",
+      "actual_2024_total": 32,
+      "pred_2028_total": 22.864341,
+      "change": -9.135659
+    },
+    {
+      "NOC": "Australia",
+      "actual_2024_total": 53,
+      "pred_2028_total": 45.329872,
+      "change": -7.670128
+    },
+    {
+      "NOC": "China",
+      "actual_2024_total": 91,
+      "pred_2028_total": 84.470517,
+      "change": -6.529483
+    },
+    {
+      "NOC": "France",
+      "actual_2024_total": 64,
+      "pred_2028_total": 58.873614,
+      "change": -5.126386
+    },
+    {
+      "NOC": "Kyrgyzstan",
+      "actual_2024_total": 6,
+      "pred_2028_total": 2.536803,
+      "change": -3.463197
+    },
+    {
+      "NOC": "Uzbekistan",
+      "actual_2024_total": 13,
+      "pred_2028_total": 9.610442,
+      "change": -3.389558
+    },
+    {
+      "NOC": "Netherlands",
+      "actual_2024_total": 34,
+      "pred_2028_total": 31.375702,
+      "change": -2.624298
+    }
+  ],
+  "first_medal_expected_count": 11.366667,
+  "sport_importance": [
+    {
+      "NOC": "United States",
+      "top_sports": [
+        {
+          "sport": "Swimming",
+          "share": 0.235584,
+          "medal_rows": 335
+        },
+        {
+          "sport": "Athletics",
+          "share": 0.161744,
+          "medal_rows": 230
+        },
+        {
+          "sport": "Basketball",
+          "share": 0.084388,
+          "medal_rows": 120
+        }
+      ]
+    },
+    {
+      "NOC": "Australia",
+      "top_sports": [
+        {
+          "sport": "Swimming",
+          "share": 0.371859,
+          "medal_rows": 222
+        },
+        {
+          "sport": "Hockey",
+          "share": 0.085427,
+          "medal_rows": 51
+        },
+        {
+          "sport": "Rowing",
+          "share": 0.080402,
+          "medal_rows": 48
+        }
+      ]
+    },
+    {
+      "NOC": "Great Britain",
+      "top_sports": [
+        {
+          "sport": "Rowing",
+          "share": 0.195349,
+          "medal_rows": 126
+        },
+        {
+          "sport": "Athletics",
+          "share": 0.128682,
+          "medal_rows": 83
+        },
+        {
+          "sport": "Cycling",
+          "share": 0.089922,
+          "medal_rows": 58
+        }
+      ]
+    },
+    {
+      "NOC": "France",
+      "top_sports": [
+        {
+          "sport": "Handball",
+          "share": 0.189983,
+          "medal_rows": 110
+        },
+        {
+          "sport": "Basketball",
+          "share": 0.103627,
+          "medal_rows": 60
+        },
+        {
+          "sport": "Judo",
+          "share": 0.098446,
+          "medal_rows": 57
+        }
+      ]
+    },
+    {
+      "NOC": "Netherlands",
+      "top_sports": [
+        {
+          "sport": "Hockey",
+          "share": 0.325967,
+          "medal_rows": 118
+        },
+        {
+          "sport": "Rowing",
+          "share": 0.209945,
+          "medal_rows": 76
+        },
+        {
+          "sport": "Athletics",
+          "share": 0.085635,
+          "medal_rows": 31
+        }
+      ]
+    },
+    {
+      "NOC": "Brazil",
+      "top_sports": [
+        {
+          "sport": "Football",
+          "share": 0.383838,
+          "medal_rows": 114
+        },
+        {
+          "sport": "Volleyball",
+          "share": 0.286195,
+          "medal_rows": 85
+        },
+        {
+          "sport": "Judo",
+          "share": 0.084175,
+          "medal_rows": 25
+        }
+      ]
+    },
+    {
+      "NOC": "China",
+      "top_sports": [
+        {
+          "sport": "Swimming",
+          "share": 0.120567,
+          "medal_rows": 85
+        },
+        {
+          "sport": "Diving",
+          "share": 0.104965,
+          "medal_rows": 74
+        },
+        {
+          "sport": "Table Tennis",
+          "share": 0.078014,
+          "medal_rows": 55
+        }
+      ]
+    },
+    {
+      "NOC": "Germany",
+      "top_sports": [
+        {
+          "sport": "Hockey",
+          "share": 0.157303,
+          "medal_rows": 84
+        },
+        {
+          "sport": "Football",
+          "share": 0.132959,
+          "medal_rows": 71
+        },
+        {
+          "sport": "Rowing",
+          "share": 0.104869,
+          "medal_rows": 56
+        }
+      ]
+    },
+    {
+      "NOC": "Canada",
+      "top_sports": [
+        {
+          "sport": "Football",
+          "share": 0.192691,
+          "medal_rows": 58
+        },
+        {
+          "sport": "Rowing",
+          "share": 0.189369,
+          "medal_rows": 57
+        },
+        {
+          "sport": "Swimming",
+          "share": 0.139535,
+          "medal_rows": 42
+        }
+      ]
+    },
+    {
+      "NOC": "Spain",
+      "top_sports": [
+        {
+          "sport": "Handball",
+          "share": 0.183486,
+          "medal_rows": 60
+        },
+        {
+          "sport": "Basketball",
+          "share": 0.146789,
+          "medal_rows": 48
+        },
+        {
+          "sport": "Football",
+          "share": 0.134557,
+          "medal_rows": 44
+        }
+      ]
+    },
+    {
+      "NOC": "Japan",
+      "top_sports": [
+        {
+          "sport": "Judo",
+          "share": 0.170732,
+          "medal_rows": 70
+        },
+        {
+          "sport": "Baseball/Softball",
+          "share": 0.095122,
+          "medal_rows": 39
+        },
+        {
+          "sport": "Swimming",
+          "share": 0.095122,
+          "medal_rows": 39
+        }
+      ]
+    },
+    {
+      "NOC": "Italy",
+      "top_sports": [
+        {
+          "sport": "Fencing",
+          "share": 0.198225,
+          "medal_rows": 67
+        },
+        {
+          "sport": "Water Polo",
+          "share": 0.115385,
+          "medal_rows": 39
+        },
+        {
+          "sport": "Volleyball",
+          "share": 0.109467,
+          "medal_rows": 37
+        }
+      ]
+    }
+  ],
+  "coach_effect_candidates": [
+    {
+      "NOC": "United States",
+      "Sport": "Baseball/Softball",
+      "Year": 2020,
+      "medal_rows": 39,
+      "jump_vs_recent_mean": 39.0
+    },
+    {
+      "NOC": "Japan",
+      "Sport": "Baseball/Softball",
+      "Year": 2020,
+      "medal_rows": 39,
+      "jump_vs_recent_mean": 39.0
+    },
+    {
+      "NOC": "Australia",
+      "Sport": "Swimming",
+      "Year": 2000,
+      "medal_rows": 46,
+      "jump_vs_recent_mean": 33.666667
+    },
+    {
+      "NOC": "Great Britain",
+      "Sport": "Athletics",
+      "Year": 2024,
+      "medal_rows": 40,
+      "jump_vs_recent_mean": 28.333333
+    },
+    {
+      "NOC": "Russia",
+      "Sport": "Water Polo",
+      "Year": 2000,
+      "medal_rows": 25,
+      "jump_vs_recent_mean": 25.0
+    },
+    {
+      "NOC": "China",
+      "Sport": "Swimming",
+      "Year": 2024,
+      "medal_rows": 36,
+      "jump_vs_recent_mean": 24.333333
+    },
+    {
+      "NOC": "South Korea",
+      "Sport": "Baseball",
+      "Year": 2000,
+      "medal_rows": 24,
+      "jump_vs_recent_mean": 24.0
+    },
+    {
+      "NOC": "Dominican Republic",
+      "Sport": "Baseball/Softball",
+      "Year": 2020,
+      "medal_rows": 24,
+      "jump_vs_recent_mean": 24.0
+    },
+    {
+      "NOC": "Serbia",
+      "Sport": "Basketball",
+      "Year": 2016,
+      "medal_rows": 24,
+      "jump_vs_recent_mean": 24.0
+    },
+    {
+      "NOC": "Russia",
+      "Sport": "Volleyball",
+      "Year": 2000,
+      "medal_rows": 24,
+      "jump_vs_recent_mean": 24.0
+    },
+    {
+      "NOC": "Australia",
+      "Sport": "Baseball",
+      "Year": 2004,
+      "medal_rows": 24,
+      "jump_vs_recent_mean": 24.0
+    },
+    {
+      "NOC": "Poland",
+      "Sport": "Athletics",
+      "Year": 2020,
+      "medal_rows": 23,
+      "jump_vs_recent_mean": 20.666667
+    }
+  ],
+  "model_features": [
+    "prev_gold",
+    "prev_total",
+    "rolling_gold_3",
+    "rolling_total_3",
+    "is_host",
+    "athlete_count",
+    "entered_sports",
+    "entered_events",
+    "event_count",
+    "sport_count"
+  ]
+}

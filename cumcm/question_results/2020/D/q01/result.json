@@ -1,0 +1,120 @@
+{
+  "problem_id": "2020-D",
+  "title": "2020年 CUMCM D题：接触式轮廓仪的自动标注",
+  "question_index": 1,
+  "question_label": "问题1",
+  "statement": "附件1中的表level是工件1在水平状态下的测量数据，其轮廓线如图4所示，请标注出轮廓线的各项参数值：槽口宽度（如等）、圆弧半径（如等）、圆心之间的距离（如等）、圆弧的长度、水平线段的长度（如等）、斜线线段的长度、斜线与水平线之间的夹角（如等）和人字形线的高度（）。",
+  "tasks": [
+    "附件1中的表level是工件1在水平状态下的测量数据，其轮廓线如图4所示，请标注出轮廓线的各项参数值：槽口宽度（如等）、圆弧半径（如等）、圆心之间的距离（如等）、圆弧的长度、水平线段的长度（如等）、斜线线段的长度、斜线与水平线之间的夹角（如等）和人字形线的高度（）"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "轮廓仪点云分段拟合与自动标注",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "半径、圆、距离、轮廓"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、参数、测量"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件1_工件1的测量数据.xlsx",
+    "rows": 143043,
+    "columns": 2,
+    "note": "本题专用算法读取附件1-4的轮廓仪x-z点列，进行倾斜估计、水平校正、平滑分段、直线/圆弧拟合和局部测量修正。"
+  },
+  "formulation": {
+    "model_type": "轮廓仪点云分段拟合与自动标注",
+    "task_breakdown": [
+      "附件1中的表level是工件1在水平状态下的测量数据，其轮廓线如图4所示，请标注出轮廓线的各项参数值：槽口宽度（如等）、圆弧半径（如等）、圆心之间的距离（如等）、圆弧的长度、水平线段的长度（如等）、斜线线段的长度、斜线与水平线之间的夹角（如等）和人字形线的高度（）"
+    ],
+    "assumptions": [
+      "接触式轮廓仪输出的 x-z 序列按扫描顺序排列，轮廓由直线段与圆弧段近似拼接而成。",
+      "单次测量的放置误差可用整体线性倾斜项近似，先估计并扣除基线斜率，再做几何标注。",
+      "粗糙噪声通过滑动均值平滑和分位数稳健统计抑制；通用基线仍保留在 cumcm/generic_baselines 作为进步过程记录。",
+      "工件2的十次整体测量先分别水平校正并平移对齐，第4问再用局部圆弧和角点数据修正半径、角度等关键参数。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,z_i): 轮廓仪采样点",
+      "theta_j: 第 j 次测量的倾斜角",
+      "S_k: 自动分段后的第 k 条直线或圆弧",
+      "(a_k,b_k,r_k): 圆弧段的圆心与半径",
+      "L_k, alpha_k: 线段长度和相对水平夹角"
+    ],
+    "constraints": [
+      "每个分段至少包含足够采样点，避免把局部噪声误判为轮廓结构。",
+      "圆弧半径取正，且只统计与轮廓尺度同量级的有效圆弧。",
+      "水平校正只移除整体倾斜，不改变局部轮廓的相对几何形状。",
+      "第4问修正值优先采用局部附件中多次重复测量的中位数，降低单次异常的影响。"
+    ],
+    "objective_or_equations": [
+      "theta = arctan(argmin_m,b sum_{i in edge}(z_i-m x_i-b)^2)",
+      "z_i^c = z_i - (m x_i + b)",
+      "line: min_{a,b} sum_i (z_i^c-a x_i-b)^2",
+      "circle: min_{a,b,r} sum_i (sqrt((x_i-a)^2+(z_i^c-b)^2)-r)^2",
+      "参数表 = 槽宽、圆弧半径、圆心距、圆弧长、水平/斜线长、夹角、人字形高度的稳健汇总"
+    ],
+    "solution_steps": [
+      "读取官方 Excel 附件中的 x-z 点列，并记录真实采样点数。",
+      "用首尾边缘点拟合整体基线，计算倾斜角并扣除线性倾斜项。",
+      "对校正后的轮廓做平滑、曲率峰值检测和分段。",
+      "每段同时拟合直线和圆，根据残差与斜率稳定性标注为 line/arc。",
+      "汇总几何参数并导出校正点云、分段表、参数表和本问实验报告。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "轮廓仪点云分段拟合与自动标注",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "profile_contour_auto_annotation",
+    "sheet": "level",
+    "input_point_count": 143043,
+    "tilt_angle_deg": -0.012461,
+    "segment_count": 13,
+    "profile_parameters": {
+      "x_span": 71.528094,
+      "z_span": 5.30089,
+      "slot_width": 47.957444,
+      "arc_radius_mean": 3.686838,
+      "arc_radius_min": 3.066273,
+      "arc_radius_max": 13.247486,
+      "center_distance_mean": 12.716152,
+      "arc_length_total": 44.940977,
+      "horizontal_line_length_total": 14.196941,
+      "slant_line_length_total": 20.643204,
+      "line_length_total": 34.840145,
+      "slant_angle_deg": 12.547916,
+      "herringbone_height": 4.171766
+    },
+    "report": [
+      "读取附件1的 level 水平测量点列，经过平滑、曲率分段、直线/圆弧拟合得到自动标注参数。",
+      "参数表 `profile_parameters.csv` 给出槽宽、半径、圆心距、线段长度、夹角和人字形高度的可复现实验值。",
+      "通用基线仍保留在 `cumcm/generic_baselines/2020/D/q01`，本结果是从通用圆拟合到轮廓分段拟合的改进版。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2020/D/q01/corrected_profile.csv",
+    "question_artifacts/2020/D/q01/contour_segments.csv",
+    "question_artifacts/2020/D/q01/profile_parameters.csv",
+    "question_artifacts/2020/D/q01/experiment_table.csv"
+  ]
+}

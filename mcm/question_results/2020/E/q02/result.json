@@ -1,0 +1,172 @@
+{
+  "problem_id": "2020-E",
+  "question": "q02",
+  "question_title": "达到环境安全水平的政策减量路径",
+  "statement": "Discuss to what extent plastic waste can be reduced to reach an environmentally safe level, considering sources, alternatives, citizen impact, and policy effectiveness.",
+  "methods": "组合包装标准、reuse/refill、生产者责任、非正规回收支持和必要替代，计算 2020-2050 三年步长的剩余 single-use waste 和海洋输入。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "official_requirements": {
+      "safe_mitigation_capacity_model": true,
+      "reduce_to_environmentally_safe_level": true,
+      "global_minimal_achievable_target": true,
+      "equity_issues": true,
+      "two_page_icm_memo": true
+    },
+    "parameters": {
+      "recycled_share": 0.09,
+      "ocean_input_low_million_tons": 4.0,
+      "ocean_input_high_million_tons": 12.0,
+      "target_year": 2050,
+      "source_note": "Official PDF statement parameters only; regional and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "policy_pathway": {
+    "timeline_rows": [
+      {
+        "year": 2020,
+        "remaining_single_use_waste_million_tons": 138.32,
+        "recycled_or_reused_share": 0.09,
+        "estimated_ocean_input_million_tons": 8.0,
+        "dominant_phase": "ban worst items"
+      },
+      {
+        "year": 2023,
+        "remaining_single_use_waste_million_tons": 98.832,
+        "recycled_or_reused_share": 0.144,
+        "estimated_ocean_input_million_tons": 5.716,
+        "dominant_phase": "ban worst items"
+      },
+      {
+        "year": 2026,
+        "remaining_single_use_waste_million_tons": 70.617,
+        "recycled_or_reused_share": 0.198,
+        "estimated_ocean_input_million_tons": 4.084,
+        "dominant_phase": "ban worst items"
+      },
+      {
+        "year": 2029,
+        "remaining_single_use_waste_million_tons": 50.457,
+        "recycled_or_reused_share": 0.252,
+        "estimated_ocean_input_million_tons": 2.918,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2032,
+        "remaining_single_use_waste_million_tons": 36.052,
+        "recycled_or_reused_share": 0.306,
+        "estimated_ocean_input_million_tons": 2.085,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2035,
+        "remaining_single_use_waste_million_tons": 25.76,
+        "recycled_or_reused_share": 0.36,
+        "estimated_ocean_input_million_tons": 1.49,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2038,
+        "remaining_single_use_waste_million_tons": 18.406,
+        "recycled_or_reused_share": 0.414,
+        "estimated_ocean_input_million_tons": 1.065,
+        "dominant_phase": "scale reuse and deposits"
+      },
+      {
+        "year": 2041,
+        "remaining_single_use_waste_million_tons": 13.151,
+        "recycled_or_reused_share": 0.468,
+        "estimated_ocean_input_million_tons": 0.761,
+        "dominant_phase": "hard-to-replace residuals"
+      },
+      {
+        "year": 2044,
+        "remaining_single_use_waste_million_tons": 9.397,
+        "recycled_or_reused_share": 0.522,
+        "estimated_ocean_input_million_tons": 0.543,
+        "dominant_phase": "hard-to-replace residuals"
+      },
+      {
+        "year": 2047,
+        "remaining_single_use_waste_million_tons": 6.714,
+        "recycled_or_reused_share": 0.576,
+        "estimated_ocean_input_million_tons": 0.388,
+        "dominant_phase": "hard-to-replace residuals"
+      },
+      {
+        "year": 2050,
+        "remaining_single_use_waste_million_tons": 4.797,
+        "recycled_or_reused_share": 0.63,
+        "estimated_ocean_input_million_tons": 0.277,
+        "dominant_phase": "hard-to-replace residuals"
+      }
+    ],
+    "combined_annual_reduction_rate": 0.106,
+    "target_row": {
+      "year": 2050,
+      "remaining_single_use_waste_million_tons": 4.797,
+      "recycled_or_reused_share": 0.63,
+      "estimated_ocean_input_million_tons": 0.277,
+      "dominant_phase": "hard-to-replace residuals"
+    }
+  },
+  "policy_packages": {
+    "policy_rows": [
+      {
+        "policy": "producer responsibility and deposit return",
+        "annual_reduction_rate": 0.03,
+        "cost_burden": 0.36,
+        "citizen_disruption": 0.22,
+        "accelerator": "audited recovery markets",
+        "net_feasibility_score": 0.4812
+      },
+      {
+        "policy": "reuse and refill infrastructure",
+        "annual_reduction_rate": 0.024,
+        "cost_burden": 0.42,
+        "citizen_disruption": 0.34,
+        "accelerator": "urban retail participation",
+        "net_feasibility_score": 0.3264
+      },
+      {
+        "policy": "single-use packaging standards",
+        "annual_reduction_rate": 0.02,
+        "cost_burden": 0.3,
+        "citizen_disruption": 0.26,
+        "accelerator": "harmonized labeling",
+        "net_feasibility_score": 0.2872
+      },
+      {
+        "policy": "informal waste-sector support",
+        "annual_reduction_rate": 0.014,
+        "cost_burden": 0.18,
+        "citizen_disruption": 0.12,
+        "accelerator": "equity finance",
+        "net_feasibility_score": 0.2188
+      },
+      {
+        "policy": "substitution for essential disposable uses",
+        "annual_reduction_rate": 0.018,
+        "cost_burden": 0.4,
+        "citizen_disruption": 0.3,
+        "accelerator": "safe alternatives",
+        "net_feasibility_score": 0.218
+      }
+    ],
+    "acceleration_conditions": [
+      "harmonized labeling",
+      "urban retail participation",
+      "audited recovery markets",
+      "equity finance",
+      "safe alternatives"
+    ],
+    "hindrance_conditions": [
+      "fragmented regulations",
+      "unsafe substitutes",
+      "insufficient transition finance",
+      "weak recycled-material markets"
+    ]
+  }
+}

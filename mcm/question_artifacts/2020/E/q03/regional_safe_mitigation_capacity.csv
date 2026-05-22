@@ -1,0 +1,6 @@
+region,waste_million_tons,mitigation_capacity,single_use_share,policy_capacity,equity_burden,single_use_waste_million_tons,safe_mitigation_capacity_million_tons,unsafe_overflow_million_tons,required_reduction_to_safe_level_pct
+middle income rapidly urbanizing economies,96.0,0.38,0.52,0.56,0.58,49.92,16.466,33.454,0.6702
+major export manufacturing hubs,74.0,0.44,0.57,0.64,0.62,42.18,16.555,25.625,0.6075
+high income coastal economies,58.0,0.62,0.44,0.82,0.34,25.52,14.968,10.552,0.4135
+landlocked consumer markets,32.0,0.46,0.38,0.6,0.4,12.16,4.922,7.238,0.5952
+small island and coastal developing states,14.0,0.24,0.61,0.42,0.86,8.54,1.693,6.847,0.8018

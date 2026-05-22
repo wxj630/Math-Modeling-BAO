@@ -1,0 +1,6 @@
+﻿segment,max_flood_exposure_days,max_low_water_exposure_days,reason
+upstream_lake_margin,10,45,slope stability and shoreline settlement risk
+mid_river_farmland,6,35,crop and soil damage
+urban_low_banks,3,30,public safety and sanitation
+hydropower_intake_reaches,7,21,turbine intake reliability
+delta_wetlands,14,25,ecological stress and salinity intrusion

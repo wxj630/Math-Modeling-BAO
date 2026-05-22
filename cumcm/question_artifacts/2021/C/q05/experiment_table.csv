@@ -1,0 +1,7 @@
+﻿item,rows,columns,value
+orders_shape,402,240,
+supply_shape,402,240,
+loss_shape,8,240,
+order_nonzero_rate,,,0.371901
+supply_nonzero_rate,,,0.267247
+loss_mean_pct,,,1.000805

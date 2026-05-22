@@ -1,0 +1,4 @@
+terrain,reflection_efficiency,usable_path_fraction,four_hop_path_km,model_change
+calm_ocean,0.94,1.0,8592.576,specular sea reflection baseline
+smooth_land,0.78,0.92,7905.17,reduce coherent reflection and add scattering loss
+mountainous_rugged,0.46,0.68,5842.952,reduce coherent reflection and add scattering loss

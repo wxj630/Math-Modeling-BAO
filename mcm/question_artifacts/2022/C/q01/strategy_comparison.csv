@@ -1,0 +1,7 @@
+strategy,final_value,total_return_percent,max_drawdown,trade_count
+buy_hold_bitcoin,73098.310721,7209.831072,-0.8337,1
+momentum_60_day,19795.597005,1879.559701,-0.816322,123
+momentum_180_day,13378.185931,1237.818593,-0.737174,50
+monthly_equal_gold_bitcoin,12742.74497,1174.274497,-0.555324,254
+buy_hold_gold,1337.927616,33.792762,-0.184148,1
+cash_only,1000.0,0.0,0.0,0

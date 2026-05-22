@@ -1,0 +1,107 @@
+{
+  "problem_id": "2024-B",
+  "title": "2024年 CUMCM B题：生产过程中的决策",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "已知两种零配件和成品次品率，请为企业生产过程的各个阶段作出决策： (1) 对零配件（零配件 1 和/或零配件 2）是否进行检测，如果对某种零配件不检测，这 种零配件将直接进入到装配环节；否则将检测出的不合格零配件丢弃； (2) 对装配好的每一件成品是否进行检测， 如果不检测， 装配后的成品直接进入到市场； 否则只有检测合格的成品进入到市场； (3) 对检测出的不合格成品是否进行拆解，如果不拆解，直接将不合格成品丢弃；否则 对拆解后的零配件，重复步骤(1)和步骤(2)； (4) 对用户购买的不合格品，企业将无条件予以调换，并产生一定的调换损失（如物流 成本、企业信誉等）。对退回的不合格品，重复步骤(3)。 请根据你们所做的决策， 对表 1 中的情形给出具体的决策方案，并给出决策的依据及相 应的指标结果。",
+  "tasks": [
+    "(3)。 请根据你们所做的决策， 对表 1 中的情形给出具体的决策方案，并给出决策的依据及相 应的指标结果"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "决策、成本、方案"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "次品"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检测"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 1,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md",
+    "rows": 49,
+    "columns": 13,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "(3)。 请根据你们所做的决策， 对表 1 中的情形给出具体的决策方案，并给出决策的依据及相 应的指标结果"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 6.221029482048296,
+    "decision": [
+      0.0,
+      0.0,
+      2.315151,
+      0.0
+    ],
+    "resource_slack": [
+      163.505151,
+      0.0,
+      0.556609
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/B/q02/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

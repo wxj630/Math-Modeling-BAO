@@ -1,0 +1,294 @@
+{
+  "problem_id": "2022-B",
+  "question": "q04",
+  "question_title": "Mexico 权利与加利福尼亚湾入海流量",
+  "statement": "Mexico has claims on residual water. Address Mexico's rights and how much water should flow into the Gulf of California after allocations.",
+  "methods": "把 Mexico 最小流和 Gulf 生态流写成显式约束，在州部门分配前保护，除非居民最低服务触发紧急重算。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "official_requirements": {
+      "series_powell_mead_operations": true,
+      "five_state_allocation": true,
+      "height_volume_relationship": true,
+      "rerun_frequency": true,
+      "mexico_rights_and_gulf_flow": true,
+      "fixed_supply_demand_operations": true,
+      "competing_water_and_electricity_criteria": true,
+      "insufficient_water_response": true,
+      "demand_renewable_conservation_changes": true,
+      "do_not_use_existing_political_agreements": true,
+      "drought_and_thirst_article": true
+    },
+    "parameters": {
+      "reservoirs": {
+        "lake_powell": {
+          "dam": "Glen Canyon Dam",
+          "stated_height_ft": 3525.0,
+          "min_power_height_ft": 3490.0,
+          "full_pool_height_ft": 3700.0,
+          "active_capacity_maf": 24.3,
+          "usable_fraction_for_planning": 0.22,
+          "annual_inflow_maf": 5.25,
+          "evaporation_maf": 0.32
+        },
+        "lake_mead": {
+          "dam": "Hoover Dam",
+          "stated_height_ft": 1065.0,
+          "min_power_height_ft": 950.0,
+          "full_pool_height_ft": 1220.0,
+          "active_capacity_maf": 26.1,
+          "usable_fraction_for_planning": 0.18,
+          "annual_inflow_maf": 0.62,
+          "evaporation_maf": 0.45
+        }
+      },
+      "negotiating_states": [
+        {
+          "state": "AZ",
+          "agriculture_maf": 1.25,
+          "industry_maf": 0.28,
+          "residential_maf": 0.68,
+          "electricity_need_gwh": 2350,
+          "equity_weight": 0.94
+        },
+        {
+          "state": "CA",
+          "agriculture_maf": 2.2,
+          "industry_maf": 0.42,
+          "residential_maf": 1.05,
+          "electricity_need_gwh": 2850,
+          "equity_weight": 0.88
+        },
+        {
+          "state": "WY",
+          "agriculture_maf": 0.42,
+          "industry_maf": 0.15,
+          "residential_maf": 0.12,
+          "electricity_need_gwh": 430,
+          "equity_weight": 1.08
+        },
+        {
+          "state": "NM",
+          "agriculture_maf": 0.54,
+          "industry_maf": 0.13,
+          "residential_maf": 0.24,
+          "electricity_need_gwh": 650,
+          "equity_weight": 1.04
+        },
+        {
+          "state": "CO",
+          "agriculture_maf": 0.76,
+          "industry_maf": 0.24,
+          "residential_maf": 0.42,
+          "electricity_need_gwh": 1080,
+          "equity_weight": 1.02
+        }
+      ],
+      "sector_priority": {
+        "residential": {
+          "priority": 1.0,
+          "minimum_service": 0.96
+        },
+        "industry": {
+          "priority": 0.7,
+          "minimum_service": 0.72
+        },
+        "agriculture": {
+          "priority": 0.52,
+          "minimum_service": 0.58
+        }
+      },
+      "mexico_min_flow_maf": 0.9,
+      "gulf_ecological_flow_maf": 0.22,
+      "source_note": "Official PDF statement parameters only; heights, demands, and priority weights are transparent deterministic scenario assumptions for an auditable workflow."
+    }
+  },
+  "mexico_and_gulf_policy": {
+    "mexico_minimum_flow_maf": 0.9,
+    "gulf_ecological_flow_maf": 0.22,
+    "rule": "Mexico receives a protected minimum flow before discretionary state-sector allocations; the Gulf receives an ecological flow unless emergency residential service falls below threshold.",
+    "rationale": "The official problem asks for Mexico's rights and Gulf flow after allocations; the model treats both as transparent constraints rather than political claims."
+  },
+  "allocation_plan": {
+    "criteria": [
+      "Do not use historical agreements or political power as allocation inputs.",
+      "Reserve minimum Mexico and Gulf ecological flows before state-sector allocation.",
+      "Meet residential minimum service first, then divide remaining shortages by transparent sector and equity weights.",
+      "Coordinate Lake Powell and Lake Mead as a series system."
+    ],
+    "reservoir_rows": [
+      {
+        "reservoir": "lake_powell",
+        "dam": "Glen Canyon Dam",
+        "stated_height_ft": 3525.0,
+        "estimated_storage_maf": 1.115,
+        "planning_storage_maf": 0.245,
+        "net_inflow_maf": 4.93,
+        "recommended_release_maf": 5.175,
+        "estimated_hydropower_gwh": 552.46
+      },
+      {
+        "reservoir": "lake_mead",
+        "dam": "Hoover Dam",
+        "stated_height_ft": 1065.0,
+        "estimated_storage_maf": 6.013,
+        "planning_storage_maf": 1.082,
+        "net_inflow_maf": 0.17,
+        "recommended_release_maf": 1.252,
+        "estimated_hydropower_gwh": 439.26
+      }
+    ],
+    "state_sector_rows": [
+      {
+        "state": "AZ",
+        "sector": "residential",
+        "demand_maf": 0.68,
+        "allocated_maf": 0.6528,
+        "deficit_maf": 0.0272,
+        "service_ratio": 0.96,
+        "priority_weight": 0.94
+      },
+      {
+        "state": "AZ",
+        "sector": "industry",
+        "demand_maf": 0.28,
+        "allocated_maf": 0.2016,
+        "deficit_maf": 0.0784,
+        "service_ratio": 0.72,
+        "priority_weight": 0.658
+      },
+      {
+        "state": "AZ",
+        "sector": "agriculture",
+        "demand_maf": 1.25,
+        "allocated_maf": 0.725,
+        "deficit_maf": 0.525,
+        "service_ratio": 0.58,
+        "priority_weight": 0.4888
+      },
+      {
+        "state": "CA",
+        "sector": "residential",
+        "demand_maf": 1.05,
+        "allocated_maf": 1.008,
+        "deficit_maf": 0.042,
+        "service_ratio": 0.96,
+        "priority_weight": 0.88
+      },
+      {
+        "state": "CA",
+        "sector": "industry",
+        "demand_maf": 0.42,
+        "allocated_maf": 0.3024,
+        "deficit_maf": 0.1176,
+        "service_ratio": 0.72,
+        "priority_weight": 0.616
+      },
+      {
+        "state": "CA",
+        "sector": "agriculture",
+        "demand_maf": 2.2,
+        "allocated_maf": 1.276,
+        "deficit_maf": 0.924,
+        "service_ratio": 0.58,
+        "priority_weight": 0.4576
+      },
+      {
+        "state": "WY",
+        "sector": "residential",
+        "demand_maf": 0.12,
+        "allocated_maf": 0.1152,
+        "deficit_maf": 0.0048,
+        "service_ratio": 0.96,
+        "priority_weight": 1.08
+      },
+      {
+        "state": "WY",
+        "sector": "industry",
+        "demand_maf": 0.15,
+        "allocated_maf": 0.108,
+        "deficit_maf": 0.042,
+        "service_ratio": 0.72,
+        "priority_weight": 0.756
+      },
+      {
+        "state": "WY",
+        "sector": "agriculture",
+        "demand_maf": 0.42,
+        "allocated_maf": 0.2436,
+        "deficit_maf": 0.1764,
+        "service_ratio": 0.58,
+        "priority_weight": 0.5616
+      },
+      {
+        "state": "NM",
+        "sector": "residential",
+        "demand_maf": 0.24,
+        "allocated_maf": 0.2304,
+        "deficit_maf": 0.0096,
+        "service_ratio": 0.96,
+        "priority_weight": 1.04
+      },
+      {
+        "state": "NM",
+        "sector": "industry",
+        "demand_maf": 0.13,
+        "allocated_maf": 0.0936,
+        "deficit_maf": 0.0364,
+        "service_ratio": 0.72,
+        "priority_weight": 0.728
+      },
+      {
+        "state": "NM",
+        "sector": "agriculture",
+        "demand_maf": 0.54,
+        "allocated_maf": 0.3132,
+        "deficit_maf": 0.2268,
+        "service_ratio": 0.58,
+        "priority_weight": 0.5408
+      },
+      {
+        "state": "CO",
+        "sector": "residential",
+        "demand_maf": 0.42,
+        "allocated_maf": 0.0382,
+        "deficit_maf": 0.3818,
+        "service_ratio": 0.091,
+        "priority_weight": 1.02
+      },
+      {
+        "state": "CO",
+        "sector": "industry",
+        "demand_maf": 0.24,
+        "allocated_maf": 0.0,
+        "deficit_maf": 0.24,
+        "service_ratio": 0.0,
+        "priority_weight": 0.714
+      },
+      {
+        "state": "CO",
+        "sector": "agriculture",
+        "demand_maf": 0.76,
+        "allocated_maf": 0.0,
+        "deficit_maf": 0.76,
+        "service_ratio": 0.0,
+        "priority_weight": 0.5304
+      }
+    ],
+    "hydropower": {
+      "estimated_generation_gwh": 991.72,
+      "negotiating_state_need_gwh": 7360.0,
+      "generation_service_ratio": 0.1347
+    },
+    "summary": {
+      "available_to_states_maf": 5.308,
+      "protected_mexico_and_gulf_flow_maf": 1.12,
+      "total_state_demand_maf": 8.9,
+      "total_state_allocation_maf": 5.308,
+      "total_state_deficit_maf": 3.592,
+      "minimum_service_met": false
+    }
+  }
+}

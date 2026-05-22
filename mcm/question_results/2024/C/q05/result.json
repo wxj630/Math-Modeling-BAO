@@ -1,0 +1,316 @@
+{
+  "problem_id": "2024-C",
+  "question": "q05",
+  "question_title": "给教练的备忘录与训练建议",
+  "statement": "Prepare a memo summarizing findings and advice to coaches about the role of momentum and how to prepare players for flow-changing events.",
+  "methods": "把势头定义、随机性证据、换向预警指标和比赛泛化结果转化为教练可执行的临场监控建议。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis",
+    "rows": {
+      "2024_Wimbledon_featured_matches.csv": 7284,
+      "2024_data_dictionary.csv": 46
+    },
+    "match_count": 31,
+    "columns": [
+      "match_id",
+      "player1",
+      "player2",
+      "elapsed_time",
+      "set_no",
+      "game_no",
+      "point_no",
+      "p1_sets",
+      "p2_sets",
+      "p1_games",
+      "p2_games",
+      "p1_score",
+      "p2_score",
+      "server",
+      "serve_no",
+      "point_victor",
+      "p1_points_won",
+      "p2_points_won",
+      "game_victor",
+      "set_victor",
+      "p1_ace",
+      "p2_ace",
+      "p1_winner",
+      "p2_winner",
+      "winner_shot_type",
+      "p1_double_fault",
+      "p2_double_fault",
+      "p1_unf_err",
+      "p2_unf_err",
+      "p1_net_pt",
+      "p2_net_pt",
+      "p1_net_pt_won",
+      "p2_net_pt_won",
+      "p1_break_pt",
+      "p2_break_pt",
+      "p1_break_pt_won",
+      "p2_break_pt_won",
+      "p1_break_pt_missed",
+      "p2_break_pt_missed",
+      "p1_distance_run",
+      "p2_distance_run",
+      "rally_count",
+      "speed_mph",
+      "serve_width",
+      "serve_depth",
+      "return_depth"
+    ]
+  },
+  "coach_memo": {
+    "message": "Treat momentum as a measurable serve-adjusted flow signal. It is useful for alerts and preparation, but it should be paired with tactical video review rather than treated as a standalone cause.",
+    "recommended_live_indicators": [
+      "abs_momentum",
+      "momentum_delta",
+      "break_point_pressure",
+      "unforced_errors",
+      "winner_rate"
+    ]
+  },
+  "flow_summary": {
+    "match_id": "2023-wimbledon-1701",
+    "player1": "Carlos Alcaraz",
+    "player2": "Novak Djokovic",
+    "points": 334,
+    "momentum_min_p1": -0.345501,
+    "momentum_max_p1": 0.397021,
+    "strong_sign_changes": 16,
+    "longest_point_streaks": [
+      {
+        "player": 2,
+        "start_point": 265,
+        "length": 7
+      },
+      {
+        "player": 1,
+        "start_point": 197,
+        "length": 6
+      },
+      {
+        "player": 1,
+        "start_point": 212,
+        "length": 6
+      },
+      {
+        "player": 1,
+        "start_point": 296,
+        "length": 6
+      },
+      {
+        "player": 2,
+        "start_point": 9,
+        "length": 5
+      }
+    ],
+    "largest_momentum_points": [
+      {
+        "point_index": 207,
+        "set_no": 3,
+        "game_no": 7,
+        "better_player": "Carlos Alcaraz",
+        "momentum_p1": 0.397021
+      },
+      {
+        "point_index": 209,
+        "set_no": 3,
+        "game_no": 7,
+        "better_player": "Carlos Alcaraz",
+        "momentum_p1": 0.366411
+      },
+      {
+        "point_index": 217,
+        "set_no": 4,
+        "game_no": 2,
+        "better_player": "Carlos Alcaraz",
+        "momentum_p1": 0.349715
+      },
+      {
+        "point_index": 275,
+        "set_no": 5,
+        "game_no": 1,
+        "better_player": "Novak Djokovic",
+        "momentum_p1": -0.345501
+      },
+      {
+        "point_index": 26,
+        "set_no": 1,
+        "game_no": 4,
+        "better_player": "Novak Djokovic",
+        "momentum_p1": -0.345028
+      },
+      {
+        "point_index": 144,
+        "set_no": 3,
+        "game_no": 1,
+        "better_player": "Carlos Alcaraz",
+        "momentum_p1": 0.339578
+      },
+      {
+        "point_index": 147,
+        "set_no": 3,
+        "game_no": 1,
+        "better_player": "Carlos Alcaraz",
+        "momentum_p1": 0.336908
+      },
+      {
+        "point_index": 271,
+        "set_no": 4,
+        "game_no": 9,
+        "better_player": "Novak Djokovic",
+        "momentum_p1": -0.335485
+      }
+    ]
+  },
+  "swing_prediction": {
+    "target": "future momentum sign change with |momentum| >= 0.08 in the next 8 points",
+    "features": [
+      "momentum_p1",
+      "abs_momentum",
+      "momentum_delta",
+      "server_is_p1",
+      "serve_no",
+      "p1_break_pt",
+      "p2_break_pt",
+      "rally_count",
+      "speed_mph",
+      "distance_diff",
+      "p1_unf_err",
+      "p2_unf_err",
+      "p1_winner",
+      "p2_winner",
+      "score_pressure"
+    ],
+    "train_rows": 6950,
+    "holdout_match_id": "2023-wimbledon-1701",
+    "holdout_rows": 334,
+    "train_metrics": {
+      "accuracy": 0.607626,
+      "brier": 0.230195,
+      "positive_rate": 0.446043,
+      "roc_auc": 0.661331,
+      "average_precision": 0.581535
+    },
+    "holdout_final_match_metrics": {
+      "accuracy": 0.607784,
+      "brier": 0.230125,
+      "positive_rate": 0.479042,
+      "roc_auc": 0.652191,
+      "average_precision": 0.601059
+    },
+    "top_coefficients_abs": [
+      {
+        "feature": "abs_momentum",
+        "coefficient": -0.606494
+      },
+      {
+        "feature": "momentum_p1",
+        "coefficient": -0.101008
+      },
+      {
+        "feature": "p2_unf_err",
+        "coefficient": -0.053191
+      },
+      {
+        "feature": "serve_no",
+        "coefficient": 0.052086
+      },
+      {
+        "feature": "server_is_p1",
+        "coefficient": 0.050661
+      },
+      {
+        "feature": "speed_mph",
+        "coefficient": 0.042079
+      },
+      {
+        "feature": "rally_count",
+        "coefficient": 0.032498
+      },
+      {
+        "feature": "momentum_delta",
+        "coefficient": 0.031298
+      },
+      {
+        "feature": "p2_break_pt",
+        "coefficient": 0.02746
+      },
+      {
+        "feature": "distance_diff",
+        "coefficient": 0.020708
+      }
+    ],
+    "highest_alert_points_final": [
+      {
+        "point_index": 74,
+        "set_no": 2,
+        "game_no": 4,
+        "probability": 0.720524,
+        "momentum_p1": -0.021249
+      },
+      {
+        "point_index": 165,
+        "set_no": 3,
+        "game_no": 4,
+        "probability": 0.704953,
+        "momentum_p1": -0.03638
+      },
+      {
+        "point_index": 290,
+        "set_no": 5,
+        "game_no": 2,
+        "probability": 0.704461,
+        "momentum_p1": -0.003825
+      },
+      {
+        "point_index": 93,
+        "set_no": 2,
+        "game_no": 7,
+        "probability": 0.700914,
+        "momentum_p1": -0.009678
+      },
+      {
+        "point_index": 310,
+        "set_no": 5,
+        "game_no": 6,
+        "probability": 0.697397,
+        "momentum_p1": -0.001492
+      },
+      {
+        "point_index": 136,
+        "set_no": 2,
+        "game_no": 13,
+        "probability": 0.695693,
+        "momentum_p1": -0.008776
+      },
+      {
+        "point_index": 243,
+        "set_no": 4,
+        "game_no": 4,
+        "probability": 0.69418,
+        "momentum_p1": 0.003416
+      },
+      {
+        "point_index": 37,
+        "set_no": 1,
+        "game_no": 6,
+        "probability": 0.689699,
+        "momentum_p1": -0.005173
+      }
+    ]
+  },
+  "generalization": {
+    "evaluated_matches": 31,
+    "last30_momentum_winner_accuracy": 0.806452,
+    "final_match_prediction": {
+      "predicted_winner_from_last30_momentum": 1,
+      "actual_point_winner": 1,
+      "correct": 1,
+      "last30_momentum_p1": 0.0264
+    },
+    "limitation": "This evaluates point-share winner, not official match winner by sets; it is a robustness check for flow signal transfer across matches."
+  }
+}

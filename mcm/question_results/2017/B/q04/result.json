@@ -1,0 +1,98 @@
+{
+  "problem_id": "2017-B",
+  "question": "q04",
+  "question_title": "收费亭类型比例敏感性与 NJTA 信",
+  "statement": "How is your solution affected by the proportions of conventional tollbooths, exact-change tollbooths, and electronic toll collection booths?",
+  "methods": "比较 mostly conventional、balanced、electronic priority 和 transponder dominant 四种收费服务率组合，判断瓶颈从收费侧转向并道侧的条件，并生成 New Jersey Turnpike Authority 信函。对应模型：服务率模型、情景扫描、非技术政策报告。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "official_problem_parameters": {
+      "example_lanes": 3,
+      "example_tollbooths": 8,
+      "condition": "BASE_TOLLBOOTHS > BASE_LANES",
+      "condition_holds": true,
+      "objectives": [
+        "accident prevention",
+        "throughput",
+        "land and road construction cost"
+      ],
+      "traffic_cases": [
+        "light traffic",
+        "heavy traffic"
+      ],
+      "booth_types": [
+        "conventional",
+        "exact_change",
+        "electronic"
+      ]
+    }
+  },
+  "tollbooth_mix_sensitivity": {
+    "rows": [
+      {
+        "scenario": "mostly_conventional",
+        "conventional_share": 0.7,
+        "exact_change_share": 0.2,
+        "electronic_share": 0.1,
+        "weighted_service_rate_vph_per_booth": 390.0,
+        "throughput_vph": 3120.0,
+        "mean_delay_minutes": 17.769231,
+        "design_effect": "booth service is the controlling bottleneck"
+      },
+      {
+        "scenario": "balanced_mix",
+        "conventional_share": 0.35,
+        "exact_change_share": 0.25,
+        "electronic_share": 0.4,
+        "weighted_service_rate_vph_per_booth": 577.5,
+        "throughput_vph": 4620.0,
+        "mean_delay_minutes": 6.155844,
+        "design_effect": "booth service is the controlling bottleneck"
+      },
+      {
+        "scenario": "electronic_priority",
+        "conventional_share": 0.2,
+        "exact_change_share": 0.2,
+        "electronic_share": 0.6,
+        "weighted_service_rate_vph_per_booth": 690.0,
+        "throughput_vph": 5520.0,
+        "mean_delay_minutes": 2.217391,
+        "design_effect": "booth service is the controlling bottleneck"
+      },
+      {
+        "scenario": "transponder_dominant",
+        "conventional_share": 0.1,
+        "exact_change_share": 0.1,
+        "electronic_share": 0.8,
+        "weighted_service_rate_vph_per_booth": 795.0,
+        "throughput_vph": 5623.481992,
+        "mean_delay_minutes": 1.845356,
+        "design_effect": "merge geometry is the controlling bottleneck"
+      }
+    ]
+  },
+  "turnpike_authority_letter": "To the New Jersey Turnpike Authority:\n\nThe official 2017 MCM-B statement asks for a toll-plaza fan-in design where B tollbooths merge to L highway lanes, with the example B=8 and L=3. Our recommendation is a staged zipper merge with 420.0 meters of controlled merge distance. The design uses lane assignment and a staged zipper merge to reduce side conflicts before vehicles enter the three-lane roadway. Under light demand the modeled throughput is 2400.0 vehicles per hour; under heavy demand it reaches 4620.0 vehicles per hour before booth service and merge capacity become binding. As electronic toll collection and cooperative autonomous vehicles increase, keep the same lane-count geometry but shorten the effective merge zone only after field verification of headway compliance. This is an auditable planning model, not a replacement for site survey, crash records, or a civil-engineering design review.",
+  "traffic_performance": {
+    "light_traffic": {
+      "traffic_case": "light_traffic",
+      "demand_vph": 2400.0,
+      "throughput_vph": 2400.0,
+      "tollbooth_capacity_vph": 4620.0,
+      "merge_capacity_vph": 5623.481992,
+      "utilization": 0.519481,
+      "mean_delay_minutes": 0.0
+    },
+    "heavy_traffic": {
+      "traffic_case": "heavy_traffic",
+      "demand_vph": 6200.0,
+      "throughput_vph": 4620.0,
+      "tollbooth_capacity_vph": 4620.0,
+      "merge_capacity_vph": 5623.481992,
+      "utilization": 1.0,
+      "mean_delay_minutes": 6.155844
+    },
+    "interpretation": "Light demand clears without queueing; heavy demand is limited by booth service and merge throat capacity, so throughput rises until the controlled bottleneck is reached."
+  }
+}

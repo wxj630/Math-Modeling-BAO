@@ -1,0 +1,5 @@
+ev_share,electric_vehicles,public_chargers_needed,fast_chargers_needed,network_form
+0.1,26000000,619048,123810,metro-first seed network
+0.3,78000000,1857143,445714,metro-first seed network
+0.5,130000000,3095238,866667,corridor plus dense city charging
+0.9,234000000,5571429,2005714,corridor plus dense city charging

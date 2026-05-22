@@ -1,0 +1,73 @@
+{
+  "problem_id": "2016-C",
+  "question": "q03",
+  "question_title": "ROI 权重稳健性与未来更新",
+  "statement": "Validate the model and discuss how the Goodgrant Foundation should assess 2016 donations and future philanthropic educational investments.",
+  "methods": "比较 base、need_priority、outcome_priority、scale_priority 四组权重场景，统计 Top20 overlap 和首选学校变化，说明 ROI 不是因果估计而是年度可更新的慈善投资指标。对应模型：敏感性分析、稳健性检验、模型更新机制。",
+  "data_source": {
+    "type": "official_comap_xlsx_zip",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
+    "scorecard_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
+    "candidate_uid_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
+    "dictionary_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
+    "ipeds_variables_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
+    "rows": {
+      "scorecard": 7804,
+      "candidate_uids": 2977,
+      "dictionary": 1953
+    }
+  },
+  "robustness": {
+    "weight_scenarios": [
+      {
+        "scenario": "base",
+        "success_w": 0.45,
+        "need_w": 0.35,
+        "leverage_w": 0.2,
+        "top20_unitids": "110653;110680;110644;110662;110635;110671;134130;230038;110583;446604;110705;110592;190512;133951;110556;122409;110529;236948;441511;156295",
+        "top20_overlap_with_base": 18,
+        "top_school": "University of California-Irvine"
+      },
+      {
+        "scenario": "need_priority",
+        "success_w": 0.3,
+        "need_w": 0.5,
+        "leverage_w": 0.2,
+        "top20_unitids": "110592;110671;110653;133951;110680;446604;227368;110556;110644;110583;110510;156295;110662;441511;110617;110495;197018;228796;190512;110529",
+        "top20_overlap_with_base": 13,
+        "top_school": "California State University-Los Angeles"
+      },
+      {
+        "scenario": "outcome_priority",
+        "success_w": 0.6,
+        "need_w": 0.25,
+        "leverage_w": 0.15,
+        "top20_unitids": "110680;110653;110662;110644;110635;134130;230038;110705;236948;110671;163286;170976;199120;139755;228778;145637;228723;123961;139959;190512",
+        "top20_overlap_with_base": 11,
+        "top_school": "University of California-San Diego"
+      },
+      {
+        "scenario": "scale_priority",
+        "success_w": 0.35,
+        "need_w": 0.25,
+        "leverage_w": 0.4,
+        "top20_unitids": "110653;110680;110644;110662;110635;110671;110592;110583;230038;133951;134130;110556;110705;190512;122409;110529;446604;110565;227368;110617",
+        "top20_overlap_with_base": 17,
+        "top_school": "University of California-Irvine"
+      }
+    ]
+  },
+  "roi_model": {
+    "definition": "Charitable ROI = weighted student-success potential, demonstrated need, and scalable leverage per grant dollar. It is appropriate for philanthropy because it values Pell-serving institutions, completion/retention/repayment/earnings outcomes, and students reached rather than private profit.",
+    "candidate_rows_after_filters": 1454,
+    "candidate_rows_scored": 1454,
+    "weights": {
+      "student_success_index": 0.45,
+      "grant_need_index": 0.35,
+      "leverage_index": 0.2,
+      "portfolio_rank_blend": "70% ROI score + 30% ROI units per million"
+    },
+    "filtering": "Official candidate UID list joined to Scorecard, current operating schools, predominant degree 3 or 4, UGDS > 500."
+  }
+}

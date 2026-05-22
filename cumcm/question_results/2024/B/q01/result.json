@@ -1,0 +1,109 @@
+{
+  "problem_id": "2024-B",
+  "title": "2024年 CUMCM B题：生产过程中的决策",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "供应商声称一批零配件（零配件 1 或零配件 2）的次品率不会超过某个标称值。 企业准备采用抽样检测方法决定是否接收从供应商购买的这批零配件， 检测费用由企业自行 承担。请为企业设计检测次数尽可能少的抽样检测方案。 如果标称值为 10%，根据你们的抽样检测方案， 针对以下两种情形， 分别给出具体结果： (1) 在 95%的信度下认定零配件次品率超过标称值，则拒收这批零配件； (2) 在 90%的信度下认定零配件次品率不超过标称值，则接收这批零配件。",
+  "tasks": [
+    "供应商声称一批零配件（零配件 1 或零配件 2）的次品率不会超过某个标称值。 企业准备采用抽样检测方法决定是否接收从供应商购买的这批零配件， 检测费用由企业自行 承担。请为企业设计检测次数尽可能少的抽样检测方案。 如果标称值为 10%，根据你们的抽样检测方案， 针对以下两种情形， 分别给出具体结果："
+  ],
+  "selected_model": {
+    "key": "probability",
+    "name": "概率统计与抽样检验",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "抽样、次品"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "方案、设计"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检测"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 1,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md",
+    "rows": 49,
+    "columns": 13,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "概率统计与抽样检验",
+    "task_breakdown": [
+      "供应商声称一批零配件（零配件 1 或零配件 2）的次品率不会超过某个标称值。 企业准备采用抽样检测方法决定是否接收从供应商购买的这批零配件， 检测费用由企业自行 承担。请为企业设计检测次数尽可能少的抽样检测方案。 如果标称值为 10%，根据你们的抽样检测方案， 针对以下两种情形， 分别给出具体结果："
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n: 抽样检测件数",
+      "X: 样本中检出的不合格件数",
+      "p0=0.10: 供应商声称的标称次品率",
+      "c_r: 拒收阈值，X>=c_r 时拒收",
+      "c_a: 接收阈值，X<=c_a 时接收"
+    ],
+    "constraints": [
+      "在 p=p0 时，错误拒收概率不超过 5%。",
+      "在 p=0.15 的劣化备择下，拒收方案检出功效不低于 80%。",
+      "在 p=p0 时，错误接收为优的概率不超过 10%。",
+      "在 p=0.05 的优质备择下，接收方案检出功效不低于 80%。"
+    ],
+    "objective_or_equations": [
+      "min n",
+      "P_{p0}(X>=c_r)<=0.05, P_{0.15}(X>=c_r)>=0.80",
+      "P_{p0}(X<=c_a)<=0.10, P_{0.05}(X<=c_a)>=0.80"
+    ],
+    "solution_steps": [
+      "把抽样检测写成二项分布 X~Binomial(n,p)。",
+      "枚举 n 和阈值，分别搜索 95% 拒收规则与 90% 接收规则。",
+      "输出最小检测次数、阈值和两类风险概率。"
+    ],
+    "model_reference": {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "exact_binomial_acceptance_sampling",
+    "nominal_defect_rate": 0.1,
+    "reject_design": {
+      "sample_size": 270,
+      "reject_if_defects_at_least": 36,
+      "false_reject_at_10pct": 0.0465956446946515,
+      "power_at_15pct": 0.8014718293371876
+    },
+    "accept_design": {
+      "sample_size": 128,
+      "accept_if_defects_at_most": 8,
+      "false_accept_as_good_at_10pct": 0.0971273790991151,
+      "power_at_5pct": 0.8081478861337388
+    },
+    "interpretation": "拒收规则面向发现次品率高于 10% 的批次；接收规则面向确认次品率显著低于 10% 的批次。"
+  },
+  "artifact_paths": [
+    "question_artifacts/2024/B/q01/experiment_table.csv"
+  ]
+}

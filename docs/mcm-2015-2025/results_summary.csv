@@ -1,0 +1,65 @@
+year,problem,success,models_run
+2015,P01 Is it sustainable,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series
+2015,P02 Managing Human Capital in Organizations,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2016,ICM-D Measuring the Evolution and Influence in Society’s Information Networks,True,fit_regression;text_feature_baseline;topsis_score;graph_analysis
+2016,ICM-E Are we heading towards a thirsty planet,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2016,ICM-F Modeling Refugee Immigration Policies,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2016,MCM-A A Hot Bath,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2016,MCM-B Space Junk,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2016,MCM-C The Goodgrant Challenge,True,forecast_time_series;fit_regression;topsis_score;text_feature_baseline
+2017,ICM-D Optimizing the Passenger Throughput at an Airport Security Checkpoint,True,graph_analysis;solve_linear_program;monte_carlo;simulate_dynamics
+2017,ICM-E Sustainable Cities Needed!,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2017,ICM-F Migration to Mars - Utopian Workforce of the 2100 Urban Society,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2017,MCM-A Managing The Zambezi River,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2017,MCM-B Merge After Toll,True,graph_analysis;solve_linear_program;monte_carlo
+2017,MCM-C “Cooperate and navigate”,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2018,"ICM-D Out of Gas and Driving on E (for electric, not empty)",True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2018,ICM-E How does climate change influence regional instability,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series
+2018,ICM-F - Cost of Privacy,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series
+2018,MCM-A Multi-hop HF Radio Propagation,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2018,MCM-B Many Languages - How Many Languages,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2018,MCM-C Energy Production,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2019,ICM-D Time to leave the Louvre,True,graph_analysis;solve_linear_program;monte_carlo;forecast_time_series
+2019,ICM-E What is the Cost of Environmental Degradation,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2019,MCM-A Game of Ecology,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2019,MCM-B Send in the Drones - Developing an Aerial Disaster Relief Response System,True,graph_analysis;solve_linear_program;monte_carlo;forecast_time_series
+2019,MCM-C The Opioid Crisis,True,graph_analysis;solve_linear_program;monte_carlo
+2019,"P06 Universal, Decentralized, Digital Currency - Is it possible",True,forecast_time_series;fit_regression;topsis_score;text_feature_baseline
+2020,ICM-D - Teaming Strategies,True,solve_linear_program;fit_regression;monte_carlo
+2020,ICM-E Drowning in Plastic,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2020,ICM-F The Place I Called Home - The Place I Called Home,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2020,MCM-A Moving North,True,solve_linear_program;fit_regression;monte_carlo
+2020,MCM-B The Longest Lasting Sandcastle(s),True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2020,MCM-C A Wealth of Data,True,forecast_time_series;fit_regression;topsis_score;text_feature_baseline
+2021,ICM-D - The Influence of Music,True,graph_analysis;solve_linear_program;monte_carlo
+2021,ICM-E Re-Optimizing Food Systems,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2021,ICM-F Checking the Pulse and Temperature of Higher Education,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2021,MCM-A Fungi,True,fit_regression;text_feature_baseline;topsis_score;simulate_dynamics
+2021,MCM-B Fighting Wildfires,True,simulate_dynamics;fit_regression;spatial_distance_model;monte_carlo;solve_linear_program
+2021,MCM-C A Confirming the Buzz about Hornets - Confirming the Buzz about Hornets,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2022,ICM-E Forestry for Carbon Sequestration,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;fit_regression
+2022,ICM-F All for One and One (Space) for All!,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series
+2022,MCM-A Power Profile of a Cyclist,True,forecast_time_series;fit_regression;topsis_score;solve_linear_program
+2022,MCM-B Water and Hydroelectric Power Sharing,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2022,MCM-C Trading Strategies,True,forecast_time_series;fit_regression;topsis_score;solve_linear_program
+2022,P01 Data Paralysis Use Our Analysis!,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2023,ICM-D Prioritizing the UN Sustainability Goals,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2023,ICM-E Light Pollution,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2023,ICM-F Green GDP,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series
+2023,ICM-F The Future of the Olympics,True,graph_analysis;solve_linear_program;monte_carlo;forecast_time_series
+2023,MCM-A Drought-Stricken Plant Communities,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;fit_regression
+2023,MCM-B Reimagining Maasai Mara,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series
+2023,MCM-C Predicting Wordle Results,True,forecast_time_series;fit_regression;topsis_score;text_feature_baseline
+2023,MCM-C Understanding Used Sailboat Prices,True,graph_analysis;solve_linear_program;monte_carlo;forecast_time_series
+2024,ICM-D Great Lakes Water Problem,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;fit_regression
+2024,ICM-E Sustainability of Property Insurance,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2024,ICM-F Reducing Illegal Wildlife Trade,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2024,MCM-A Resource Availability and Sex Ratios,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;fit_regression
+2024,MCM-B Searching for Submersibles,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo
+2024,MCM-C Momentum in Tennis,True,forecast_time_series;fit_regression;monte_carlo;solve_linear_program
+2025,ICM-D A Roadmap to a Better City,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2025,ICM-E Making Room for Agriculture,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2025,ICM-F Cyber Strong,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2025,MCM-A Testing Time - The Constant Wear On Stairs,True,simulate_dynamics;fit_regression;spatial_distance_model;monte_carlo;solve_linear_program
+2025,MCM-B Managing Sustainable Tourism,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;graph_analysis
+2025,MCM-C Models for Olympic Medal Tables,True,simulate_dynamics;solve_linear_program;topsis_score;monte_carlo;forecast_time_series

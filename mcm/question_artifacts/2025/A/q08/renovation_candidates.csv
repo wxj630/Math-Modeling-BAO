@@ -1,0 +1,3 @@
+step_id,center_wear_depth_mm,neighbor_mean_center_wear_mm,wear_jump_mm,patch_boundary_score,tool_marks_present,candidate_score,interpretation
+8,2.5,4.9,-2.4,5,1,5.35,probable replacement/patch: low wear relative to neighbors plus visible boundary/tool evidence
+9,5.0,3.6,1.4,2,1,3.0,probable replacement/patch: low wear relative to neighbors plus visible boundary/tool evidence

@@ -1,0 +1,210 @@
+{
+  "problem_id": "2017-A",
+  "title": "2017年 CUMCM A题：CT系统参数标定及成像",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "在正方形托盘上放置两个均匀固体介质组成的标定模板，模板的几何信息如图2所示，相应的数据文件见附件1，其中每一点的数值反映了该点的吸收强度，这里称为“吸收率”。对应于该模板的接收信息见附件2。请根据这一模板及其接收信息，确定CT系统旋转中心在正方形托盘中的位置、探测器单元之间的距离以及该CT系统使用的X射线的180个方向。",
+  "tasks": [
+    "请根据这一模板及其接收信息，确定CT系统旋转中心在正方形托盘中的位置、探测器单元之间的距离以及该CT系统使用的X射线的180个方向"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "CT系统投影标定与滤波反投影重建",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置、几何、距离"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、标定"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls",
+    "rows": 342026,
+    "columns": 180,
+    "note": "本题专用算法读取A题附件中的模板矩阵、模板投影、两个未知介质投影和10个查询点，完成CT标定、滤波反投影重建与problem2/problem3文件导出。"
+  },
+  "formulation": {
+    "model_type": "CT系统投影标定与滤波反投影重建",
+    "task_breakdown": [
+      "请根据这一模板及其接收信息，确定CT系统旋转中心在正方形托盘中的位置、探测器单元之间的距离以及该CT系统使用的X射线的180个方向"
+    ],
+    "assumptions": [
+      "附件1的256×256模板吸收率矩阵与附件2的512×180模板投影来自同一平行束CT系统。",
+      "探测器等距排列，180个方向近似覆盖0到179度；安装误差用角度整体偏移、探测器中心偏移和尺度因子表示。",
+      "未知介质重建采用可复现实验基线：对512维投影重采样到256维，做ramp滤波后反投影到256×256网格。",
+      "输出文件保留4位小数；通用基线保留在 `cumcm/generic_baselines`，当前结果作为附件驱动CT建模版本。"
+    ],
+    "decision_variables": [
+      "I(x,y): 托盘网格上的吸收率",
+      "s_k(theta_j): 第j个方向第k个探测器单元的投影值",
+      "c=(c_x,c_y): 旋转中心像素坐标",
+      "d: 探测器单元间距的像素尺度",
+      "theta_j: 第j个X射线方向角"
+    ],
+    "constraints": [
+      "重建网格固定为256×256，与题目要求problem2/problem3文件一致。",
+      "探测器方向单调覆盖180个方向，探测器间距为正。",
+      "吸收率非负，重建后用非负截断抑制滤波反投影振铃。",
+      "10个查询点按附件4给出的托盘坐标映射到256×256像素网格并做双线性插值。"
+    ],
+    "objective_or_equations": [
+      "calibration = argmax_shift corr(Radon(template, theta), measured_template_sinogram)",
+      "S_f(omega,theta)=|omega| FFT_s(S(s,theta))",
+      "I_hat(x,y)=int_0^pi S_f(x cos theta + y sin theta, theta) dtheta",
+      "query_value(p)=bilinear(I_hat, p_x, p_y)"
+    ],
+    "solution_steps": [
+      "读取附件1-5，识别模板、模板投影、两个未知体投影和10个查询点。",
+      "从模板矩阵生成180个模拟投影，与附件2逐角度互相关，估计角度偏移、旋转中心和探测器间距。",
+      "对附件3和附件5做ramp滤波反投影，得到两个256×256吸收率矩阵。",
+      "把附件4的10个位置映射到重建网格，输出两个未知介质在这些位置处的吸收率。",
+      "导出标定参数、重建摘要、查询点表、problem2.xls和problem3.xls。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "CT系统投影标定与滤波反投影重建",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "ct_template_projection_calibration",
+    "template_shape": [
+      256,
+      256
+    ],
+    "sinogram_shape": [
+      512,
+      180
+    ],
+    "problem2_shape": [
+      256,
+      256
+    ],
+    "problem3_shape": [
+      256,
+      256
+    ],
+    "rotation_center_pixel": [
+      126.8926,
+      127.5
+    ],
+    "template_centroid_pixel": [
+      130.4604,
+      127.5
+    ],
+    "detector_spacing_pixel": 0.5,
+    "detector_center_index": 231.2051,
+    "angle_shift_deg": 161,
+    "xray_directions_deg_sample": [
+      161.0,
+      162.0,
+      163.0,
+      164.0,
+      165.0,
+      166.0,
+      167.0,
+      168.0,
+      169.0,
+      170.0
+    ],
+    "best_projection_correlation": 0.793531,
+    "problem2_summary": {
+      "absorption_mean": 0.23737,
+      "absorption_max": 1.16557,
+      "support_threshold": 0.19828,
+      "support_pixel_count": 19464,
+      "bbox_x_min": 0,
+      "bbox_y_min": 0,
+      "bbox_x_max": 255,
+      "bbox_y_max": 255
+    },
+    "problem3_summary": {
+      "absorption_mean": 0.236658,
+      "absorption_max": 1.522363,
+      "support_threshold": 0.225602,
+      "support_pixel_count": 19464,
+      "bbox_x_min": 0,
+      "bbox_y_min": 0,
+      "bbox_x_max": 254,
+      "bbox_y_max": 250
+    },
+    "problem2_query_absorption": [
+      0.1184,
+      0.9724,
+      0.8,
+      0.2264,
+      0.7964,
+      0.1241,
+      0.1381,
+      0.7488,
+      0.1616,
+      0.1281
+    ],
+    "problem3_query_absorption": [
+      0.1979,
+      0.1907,
+      0.2881,
+      0.3422,
+      0.3299,
+      0.417,
+      0.4203,
+      0.2631,
+      0.1115,
+      0.1203
+    ],
+    "stability_scenarios": [
+      {
+        "scenario": "angle_shift_minus_1",
+        "parameter": "angle_shift_deg",
+        "value": 160,
+        "expected_effect": "边缘轻微模糊，中心和间距基本稳定"
+      },
+      {
+        "scenario": "angle_shift_plus_1",
+        "parameter": "angle_shift_deg",
+        "value": 162,
+        "expected_effect": "方向偏差使细节旋转，查询点吸收率变化"
+      },
+      {
+        "scenario": "detector_noise_1pct",
+        "parameter": "sinogram_noise",
+        "value": 0.01,
+        "expected_effect": "ramp滤波放大高频噪声，需平滑或正则化"
+      }
+    ],
+    "report": [
+      "本问读取官方A题附件，使用模板矩阵和模板投影做角度偏移、探测器中心与间距的可复现实验标定。",
+      "附件3和附件5通过ramp滤波反投影重建为256×256吸收率矩阵，并输出题目要求的problem2.xls/problem3.xls。",
+      "附件4的10个坐标点用双线性插值得到吸收率表，写入 `query_absorption_values.csv`。",
+      "第4问给出角度扰动、噪声扰动的稳定性审计和非对称多圆点阵新模板设计。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2017/A/q01/ct_calibration_parameters.csv",
+    "question_artifacts/2017/A/q01/template_projection_match.csv",
+    "question_artifacts/2017/A/q01/reconstruction_summary.csv",
+    "question_artifacts/2017/A/q01/query_absorption_values.csv",
+    "question_artifacts/2017/A/q01/problem2.xls",
+    "question_artifacts/2017/A/q01/problem3.xls",
+    "question_artifacts/2017/A/q01/improved_template_design.csv",
+    "question_artifacts/2017/A/q01/calibration_stability_audit.csv",
+    "question_artifacts/2017/A/q01/experiment_table.csv"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "problem_id": "2024-E",
+  "question": "q01",
+  "question_title": "保险公司应在什么条件下承保",
+  "statement": "Under what conditions should insurance companies underwrite policies?",
+  "methods": "官方 PDF 宏观参数 + 气候压力承保可持续性分数：综合净巨灾损失率、保障缺口导致的可负担性压力、减灾效果和资本缓冲。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "official_requirements": {
+      "underwrite_conditions": true,
+      "choose_when_to_take_risk": true,
+      "property_owner_influence": true,
+      "rising_extreme_weather_events": true,
+      "two_continents_demonstration": true,
+      "where_how_whether_to_build": true,
+      "historic_landmark_not_cape_hatteras": true,
+      "community_letter": true
+    },
+    "parameters": {
+      "recent_damage_trillion_usd": 1.0,
+      "recent_extreme_event_count": 1000,
+      "claim_increase_2022": 1.15,
+      "premium_increase_2040_range": [
+        0.3,
+        0.6
+      ],
+      "protection_gap": 0.57,
+      "source_note": "Official PDF statement parameters only; region rows below are deterministic demonstration scenarios, not observed insurance portfolios."
+    }
+  },
+  "insurance_model": {
+    "model": "deterministic climate-stress underwriting score balancing net catastrophe loss ratio, affordability, mitigation, and insurer capital buffer",
+    "underwriting_rule": {
+      "score": "higher is more sustainable to underwrite",
+      "approve_threshold": 0.62,
+      "decline_threshold": 0.4,
+      "approve": "score >= 0.62",
+      "conditional": "0.40 <= score < 0.62",
+      "decline": "score < 0.40"
+    },
+    "policy_grid_summary": {
+      "rows": 180,
+      "approve_rows": 37,
+      "conditional_rows": 84,
+      "decline_rows": 59
+    },
+    "best_cases": [
+      {
+        "hazard_frequency_index": 0.85,
+        "severity_index": 0.85,
+        "property_vulnerability": 0.45,
+        "mitigation_effect": 0.3,
+        "net_loss_ratio": 0.1594,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.8113,
+        "decision": "approve standard or lightly conditioned underwriting"
+      },
+      {
+        "hazard_frequency_index": 0.85,
+        "severity_index": 1.0,
+        "property_vulnerability": 0.45,
+        "mitigation_effect": 0.3,
+        "net_loss_ratio": 0.1875,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.7832,
+        "decision": "approve standard or lightly conditioned underwriting"
+      },
+      {
+        "hazard_frequency_index": 1.0,
+        "severity_index": 0.85,
+        "property_vulnerability": 0.45,
+        "mitigation_effect": 0.3,
+        "net_loss_ratio": 0.1875,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.7832,
+        "decision": "approve standard or lightly conditioned underwriting"
+      },
+      {
+        "hazard_frequency_index": 0.85,
+        "severity_index": 0.85,
+        "property_vulnerability": 0.6,
+        "mitigation_effect": 0.3,
+        "net_loss_ratio": 0.2125,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.7582,
+        "decision": "approve standard or lightly conditioned underwriting"
+      },
+      {
+        "hazard_frequency_index": 1.15,
+        "severity_index": 0.85,
+        "property_vulnerability": 0.45,
+        "mitigation_effect": 0.3,
+        "net_loss_ratio": 0.2156,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.7551,
+        "decision": "approve standard or lightly conditioned underwriting"
+      },
+      {
+        "hazard_frequency_index": 1.0,
+        "severity_index": 1.0,
+        "property_vulnerability": 0.45,
+        "mitigation_effect": 0.3,
+        "net_loss_ratio": 0.2206,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.7501,
+        "decision": "approve standard or lightly conditioned underwriting"
+      }
+    ],
+    "worst_cases": [
+      {
+        "hazard_frequency_index": 1.45,
+        "severity_index": 1.4,
+        "property_vulnerability": 0.75,
+        "mitigation_effect": 0.0,
+        "net_loss_ratio": 1.0663,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": -0.2005,
+        "decision": "decline new underwriting until community-level risk reduction or public-private backstop exists"
+      },
+      {
+        "hazard_frequency_index": 1.3,
+        "severity_index": 1.4,
+        "property_vulnerability": 0.75,
+        "mitigation_effect": 0.0,
+        "net_loss_ratio": 0.956,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": -0.0902,
+        "decision": "decline new underwriting until community-level risk reduction or public-private backstop exists"
+      },
+      {
+        "hazard_frequency_index": 1.45,
+        "severity_index": 1.2,
+        "property_vulnerability": 0.75,
+        "mitigation_effect": 0.0,
+        "net_loss_ratio": 0.914,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": -0.0482,
+        "decision": "decline new underwriting until community-level risk reduction or public-private backstop exists"
+      },
+      {
+        "hazard_frequency_index": 1.45,
+        "severity_index": 1.4,
+        "property_vulnerability": 0.75,
+        "mitigation_effect": 0.15,
+        "net_loss_ratio": 0.9063,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.0119,
+        "decision": "decline new underwriting until community-level risk reduction or public-private backstop exists"
+      },
+      {
+        "hazard_frequency_index": 1.45,
+        "severity_index": 1.4,
+        "property_vulnerability": 0.6,
+        "mitigation_effect": 0.0,
+        "net_loss_ratio": 0.853,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.0127,
+        "decision": "decline new underwriting until community-level risk reduction or public-private backstop exists"
+      },
+      {
+        "hazard_frequency_index": 1.15,
+        "severity_index": 1.4,
+        "property_vulnerability": 0.75,
+        "mitigation_effect": 0.0,
+        "net_loss_ratio": 0.8457,
+        "affordability_penalty": 0.0283,
+        "underwriting_viability_score": 0.0201,
+        "decision": "decline new underwriting until community-level risk reduction or public-private backstop exists"
+      }
+    ]
+  }
+}

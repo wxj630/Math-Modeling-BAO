@@ -1,0 +1,248 @@
+{
+  "problem_id": "2018-B",
+  "question": "q01",
+  "question_title": "Language influence model inputs",
+  "statement": "Consider the influence factors for language speakers and language use.",
+  "methods": "Use a transparent top-language panel and growth rates to define native and total speaker dynamics.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
+    "official_requirements": {
+      "fifty_year_language_forecast": true,
+      "top_ten_languages": true,
+      "six_new_international_offices": true,
+      "coo_memo": true
+    },
+    "parameters": {
+      "top_languages": [
+        {
+          "language": "Mandarin Chinese",
+          "native_m": 918,
+          "total_m": 1110,
+          "annual_growth": 0.002,
+          "regions": "East Asia"
+        },
+        {
+          "language": "Spanish",
+          "native_m": 460,
+          "total_m": 530,
+          "annual_growth": 0.006,
+          "regions": "Americas, Europe"
+        },
+        {
+          "language": "English",
+          "native_m": 379,
+          "total_m": 1130,
+          "annual_growth": 0.004,
+          "regions": "Global"
+        },
+        {
+          "language": "Hindi",
+          "native_m": 341,
+          "total_m": 615,
+          "annual_growth": 0.01,
+          "regions": "South Asia"
+        },
+        {
+          "language": "Arabic",
+          "native_m": 315,
+          "total_m": 422,
+          "annual_growth": 0.012,
+          "regions": "Middle East, Africa"
+        },
+        {
+          "language": "Bengali",
+          "native_m": 228,
+          "total_m": 265,
+          "annual_growth": 0.009,
+          "regions": "South Asia"
+        },
+        {
+          "language": "Portuguese",
+          "native_m": 221,
+          "total_m": 258,
+          "annual_growth": 0.005,
+          "regions": "South America, Africa"
+        },
+        {
+          "language": "Russian",
+          "native_m": 154,
+          "total_m": 258,
+          "annual_growth": -0.002,
+          "regions": "Eurasia"
+        },
+        {
+          "language": "Japanese",
+          "native_m": 128,
+          "total_m": 128,
+          "annual_growth": -0.004,
+          "regions": "East Asia"
+        },
+        {
+          "language": "French",
+          "native_m": 77,
+          "total_m": 280,
+          "annual_growth": 0.013,
+          "regions": "Europe, Africa"
+        }
+      ],
+      "office_candidates": [
+        {
+          "city": "Mexico City",
+          "language": "Spanish",
+          "region": "Americas",
+          "market_access": 0.86,
+          "cost_efficiency": 0.64,
+          "long_term_growth": 0.72
+        },
+        {
+          "city": "Lagos",
+          "language": "English",
+          "region": "West Africa",
+          "market_access": 0.78,
+          "cost_efficiency": 0.7,
+          "long_term_growth": 0.9
+        },
+        {
+          "city": "Cairo",
+          "language": "Arabic",
+          "region": "Middle East",
+          "market_access": 0.74,
+          "cost_efficiency": 0.68,
+          "long_term_growth": 0.82
+        },
+        {
+          "city": "Mumbai",
+          "language": "Hindi",
+          "region": "South Asia",
+          "market_access": 0.84,
+          "cost_efficiency": 0.66,
+          "long_term_growth": 0.88
+        },
+        {
+          "city": "Sao Paulo",
+          "language": "Portuguese",
+          "region": "South America",
+          "market_access": 0.8,
+          "cost_efficiency": 0.58,
+          "long_term_growth": 0.65
+        },
+        {
+          "city": "Shanghai",
+          "language": "Mandarin Chinese",
+          "region": "East Asia",
+          "market_access": 0.88,
+          "cost_efficiency": 0.52,
+          "long_term_growth": 0.62
+        },
+        {
+          "city": "Paris",
+          "language": "French",
+          "region": "Europe",
+          "market_access": 0.72,
+          "cost_efficiency": 0.42,
+          "long_term_growth": 0.56
+        },
+        {
+          "city": "Jakarta",
+          "language": "Indonesian",
+          "region": "Southeast Asia",
+          "market_access": 0.7,
+          "cost_efficiency": 0.74,
+          "long_term_growth": 0.86
+        }
+      ]
+    }
+  },
+  "language_projection": {
+    "projection_rows": [
+      {
+        "language": "English",
+        "native_speakers_2018_m": 379,
+        "total_speakers_2018_m": 1130,
+        "native_speakers_2068_m": 462.727,
+        "total_speakers_2068_m": 1339.008,
+        "regions": "Global"
+      },
+      {
+        "language": "Mandarin Chinese",
+        "native_speakers_2018_m": 918,
+        "total_speakers_2018_m": 1110,
+        "native_speakers_2068_m": 1014.446,
+        "total_speakers_2068_m": 1208.389,
+        "regions": "East Asia"
+      },
+      {
+        "language": "Hindi",
+        "native_speakers_2018_m": 341,
+        "total_speakers_2018_m": 615,
+        "native_speakers_2068_m": 560.819,
+        "total_speakers_2068_m": 939.01,
+        "regions": "South Asia"
+      },
+      {
+        "language": "Arabic",
+        "native_speakers_2018_m": 315,
+        "total_speakers_2018_m": 422,
+        "native_speakers_2068_m": 571.921,
+        "total_speakers_2068_m": 700.94,
+        "regions": "Middle East, Africa"
+      },
+      {
+        "language": "Spanish",
+        "native_speakers_2018_m": 460,
+        "total_speakers_2018_m": 530,
+        "native_speakers_2068_m": 620.379,
+        "total_speakers_2068_m": 683.502,
+        "regions": "Americas, Europe"
+      },
+      {
+        "language": "French",
+        "native_speakers_2018_m": 77,
+        "total_speakers_2018_m": 280,
+        "native_speakers_2068_m": 146.88,
+        "total_speakers_2068_m": 485.054,
+        "regions": "Europe, Africa"
+      },
+      {
+        "language": "Bengali",
+        "native_speakers_2018_m": 228,
+        "total_speakers_2018_m": 265,
+        "native_speakers_2068_m": 356.856,
+        "total_speakers_2068_m": 387.91,
+        "regions": "South Asia"
+      },
+      {
+        "language": "Portuguese",
+        "native_speakers_2018_m": 221,
+        "total_speakers_2018_m": 258,
+        "native_speakers_2068_m": 283.593,
+        "total_speakers_2068_m": 318.942,
+        "regions": "South America, Africa"
+      },
+      {
+        "language": "Russian",
+        "native_speakers_2018_m": 154,
+        "total_speakers_2018_m": 258,
+        "native_speakers_2068_m": 139.331,
+        "total_speakers_2068_m": 236.959,
+        "regions": "Eurasia"
+      },
+      {
+        "language": "Japanese",
+        "native_speakers_2018_m": 128,
+        "total_speakers_2018_m": 128,
+        "native_speakers_2068_m": 104.756,
+        "total_speakers_2068_m": 107.958,
+        "regions": "East Asia"
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic language-planning inputs; it does not use random placeholder data.",
+    "model_limits": [
+      "Speaker baselines are explicit modeling inputs because COMAP supplies no language database attachment."
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "problem_id": "2017-C",
+  "question": "q03",
+  "question_title": "均衡与性能突变临界点",
+  "statement": "Determine whether equilibria exist and whether there is a tipping point where performance changes markedly.",
+  "methods": "把总峰小时 vehicle-hours 作为系统性能指标，在 0%-100% AV share 网格上寻找首次比全人类驾驶基线降低 10% 的临界点，并解释该点附近的容量反馈。对应模型：离散均衡扫描、阈值分析、系统性能曲线。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "rows": {
+      "parsed mile posts": 224,
+      "definitions": 8
+    },
+    "route_ids": [
+      5,
+      90,
+      405,
+      520
+    ]
+  },
+  "tipping_point": {
+    "criterion": "first AV share where total peak vehicle-hours are at least 10% below the all-human baseline",
+    "av_share": 0.49,
+    "baseline_peak_vehicle_hours": 19781.936124,
+    "target_peak_vehicle_hours": 17803.742512,
+    "achieved_peak_vehicle_hours": 17777.667893
+  },
+  "adoption_scenarios": {
+    "model": "BPR speed model with deterministic AV capacity multiplier: 1 + 1.20*p^2 + 0.25*p*(1-p).",
+    "scenario_rows": [
+      {
+        "av_share": 0.0,
+        "capacity_multiplier": 1.0,
+        "mean_vc_ratio": 0.858012,
+        "congested_segment_share_vc_gt_1": 0.330357,
+        "total_peak_vehicle_hours": 19781.936124,
+        "vehicle_hours_saved_vs_baseline": 0.0,
+        "median_speed_mph": 55.335212
+      },
+      {
+        "av_share": 0.1,
+        "capacity_multiplier": 1.0345,
+        "mean_vc_ratio": 0.829398,
+        "congested_segment_share_vc_gt_1": 0.276786,
+        "total_peak_vehicle_hours": 19418.392267,
+        "vehicle_hours_saved_vs_baseline": 363.543857,
+        "median_speed_mph": 55.886466
+      },
+      {
+        "av_share": 0.5,
+        "capacity_multiplier": 1.3625,
+        "mean_vc_ratio": 0.629734,
+        "congested_segment_share_vc_gt_1": 0.066964,
+        "total_peak_vehicle_hours": 17747.961637,
+        "vehicle_hours_saved_vs_baseline": 2033.974487,
+        "median_speed_mph": 58.56735
+      },
+      {
+        "av_share": 0.9,
+        "capacity_multiplier": 1.9945,
+        "mean_vc_ratio": 0.430189,
+        "congested_segment_share_vc_gt_1": 0.0,
+        "total_peak_vehicle_hours": 17097.567118,
+        "vehicle_hours_saved_vs_baseline": 2684.369005,
+        "median_speed_mph": 59.682065
+      }
+    ]
+  }
+}

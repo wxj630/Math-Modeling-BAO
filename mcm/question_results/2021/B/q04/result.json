@@ -1,0 +1,286 @@
+{
+  "problem_id": "2021-B",
+  "question": "q04",
+  "question_title": "面向 Victoria State Government 的注释预算请求",
+  "statement": "Prepare a one- to two-page annotated Budget Request supported by your models for CFA to submit to the Victoria State Government.",
+  "methods": "将推荐 SSA/repeater 采购、训练备件储备、能力安全前沿和十年投影压缩成 CFA 可提交预算请求。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "official_requirements": {
+      "ssa_and_repeater_drone_mix": true,
+      "balance_capability_safety_economics": true,
+      "fire_size_frequency_parameters": true,
+      "decade_extreme_fire_likelihood": true,
+      "radio_repeater_locations_by_terrain": true,
+      "annotated_budget_request": true
+    },
+    "parameters": {
+      "drone_cost_aud": 10000,
+      "handheld_range_flat_km": 5,
+      "handheld_range_urban_km": 2,
+      "repeater_range_km": 20,
+      "repeater_power_w": 10,
+      "repeater_weight_kg": 1.3,
+      "wilee_drone": {
+        "flight_range_km": 30,
+        "max_speed_m_s": 20,
+        "max_flight_time_hr": 2.5,
+        "recharge_time_hr": 1.75,
+        "auxiliary_battery_swap": true
+      },
+      "source_note": "Official PDF statement parameters only; fire-event rows and terrain rows are deterministic planning scenarios."
+    }
+  },
+  "budget_request": "Annotated Budget Request to the Victoria State Government: CFA Rapid Bushfire Response requests AUD 153400.0 for an initial drone division. The request purchases 11 SSA drones and 2 radio-repeater drones at the official AUD 10000 unit cost, plus a training and spares reserve. The mix balances surveillance, communications, topography, event size, event frequency, firefighter safety, and economics. A decade projection is included because increasing extreme fire likelihood can require extra equipment even when drone unit cost stays constant.",
+  "drone_mix_model": {
+    "method": "grid search over SSA and radio-repeater drone counts balancing capability, safety, mission need, topography, fire size/frequency, and economics",
+    "recommended_mix": {
+      "ssa_drones": 11.0,
+      "repeater_drones": 2.0,
+      "total_drones": 13.0,
+      "purchase_cost_aud": 130000.0,
+      "capability_safety_score": 1.0,
+      "economics_penalty": 0.013,
+      "objective_score": 0.987
+    },
+    "event_need_rows": [
+      {
+        "event_class": "small grass/brush fire",
+        "area_km2": 18,
+        "annual_frequency": 18,
+        "terrain_complexity": 0.34,
+        "frontline_teams": 5,
+        "estimated_ssa_need": 1.0,
+        "estimated_repeater_need": 1.0,
+        "safety_weight": 1.247
+      },
+      {
+        "event_class": "medium forest interface fire",
+        "area_km2": 85,
+        "annual_frequency": 8,
+        "terrain_complexity": 0.58,
+        "frontline_teams": 12,
+        "estimated_ssa_need": 2.144,
+        "estimated_repeater_need": 1.0,
+        "safety_weight": 1.463
+      },
+      {
+        "event_class": "large eastern Victoria bushfire",
+        "area_km2": 420,
+        "annual_frequency": 3,
+        "terrain_complexity": 0.78,
+        "frontline_teams": 28,
+        "estimated_ssa_need": 7.467,
+        "estimated_repeater_need": 1.0,
+        "safety_weight": 1.765
+      },
+      {
+        "event_class": "extreme campaign fire",
+        "area_km2": 1200,
+        "annual_frequency": 0.8,
+        "terrain_complexity": 0.92,
+        "frontline_teams": 60,
+        "estimated_ssa_need": 19.333,
+        "estimated_repeater_need": 1.593,
+        "safety_weight": 2.226
+      }
+    ],
+    "top_candidate_rows": [
+      {
+        "ssa_drones": 11,
+        "repeater_drones": 2,
+        "total_drones": 13,
+        "purchase_cost_aud": 130000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.013,
+        "objective_score": 0.987
+      },
+      {
+        "ssa_drones": 11,
+        "repeater_drones": 3,
+        "total_drones": 14,
+        "purchase_cost_aud": 140000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.014,
+        "objective_score": 0.986
+      },
+      {
+        "ssa_drones": 12,
+        "repeater_drones": 2,
+        "total_drones": 14,
+        "purchase_cost_aud": 140000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.014,
+        "objective_score": 0.986
+      },
+      {
+        "ssa_drones": 10,
+        "repeater_drones": 2,
+        "total_drones": 12,
+        "purchase_cost_aud": 120000,
+        "capability_safety_score": 0.9977,
+        "economics_penalty": 0.012,
+        "objective_score": 0.9857
+      },
+      {
+        "ssa_drones": 13,
+        "repeater_drones": 2,
+        "total_drones": 15,
+        "purchase_cost_aud": 150000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.015,
+        "objective_score": 0.985
+      },
+      {
+        "ssa_drones": 11,
+        "repeater_drones": 4,
+        "total_drones": 15,
+        "purchase_cost_aud": 150000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.015,
+        "objective_score": 0.985
+      },
+      {
+        "ssa_drones": 12,
+        "repeater_drones": 3,
+        "total_drones": 15,
+        "purchase_cost_aud": 150000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.015,
+        "objective_score": 0.985
+      },
+      {
+        "ssa_drones": 10,
+        "repeater_drones": 3,
+        "total_drones": 13,
+        "purchase_cost_aud": 130000,
+        "capability_safety_score": 0.9977,
+        "economics_penalty": 0.013,
+        "objective_score": 0.9847
+      },
+      {
+        "ssa_drones": 9,
+        "repeater_drones": 2,
+        "total_drones": 11,
+        "purchase_cost_aud": 110000,
+        "capability_safety_score": 0.9954,
+        "economics_penalty": 0.011,
+        "objective_score": 0.9844
+      },
+      {
+        "ssa_drones": 13,
+        "repeater_drones": 3,
+        "total_drones": 16,
+        "purchase_cost_aud": 160000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.016,
+        "objective_score": 0.984
+      },
+      {
+        "ssa_drones": 12,
+        "repeater_drones": 4,
+        "total_drones": 16,
+        "purchase_cost_aud": 160000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.016,
+        "objective_score": 0.984
+      },
+      {
+        "ssa_drones": 14,
+        "repeater_drones": 2,
+        "total_drones": 16,
+        "purchase_cost_aud": 160000,
+        "capability_safety_score": 1.0,
+        "economics_penalty": 0.016,
+        "objective_score": 0.984
+      }
+    ]
+  },
+  "decade_projection": {
+    "method": "increase extreme-event likelihood each year while drone unit cost remains constant, then add equipment if capability drops below the target band",
+    "projection_rows": [
+      {
+        "year": 1,
+        "extreme_fire_likelihood_multiplier": 1.0,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 2,
+        "extreme_fire_likelihood_multiplier": 1.055,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 3,
+        "extreme_fire_likelihood_multiplier": 1.11,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 4,
+        "extreme_fire_likelihood_multiplier": 1.165,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 5,
+        "extreme_fire_likelihood_multiplier": 1.22,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 6,
+        "extreme_fire_likelihood_multiplier": 1.275,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 7,
+        "extreme_fire_likelihood_multiplier": 1.33,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 8,
+        "extreme_fire_likelihood_multiplier": 1.385,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 9,
+        "extreme_fire_likelihood_multiplier": 1.44,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      },
+      {
+        "year": 10,
+        "extreme_fire_likelihood_multiplier": 1.495,
+        "added_ssa_drones": 0,
+        "added_repeater_drones": 0,
+        "cumulative_equipment_cost_aud": 130000.0,
+        "capability_safety_score_before_purchase": 1.0
+      }
+    ]
+  }
+}

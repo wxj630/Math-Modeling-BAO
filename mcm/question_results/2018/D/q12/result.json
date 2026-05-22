@@ -1,0 +1,73 @@
+{
+  "problem_id": "2018-D",
+  "question": "q12",
+  "question_title": "Transferability to other countries",
+  "statement": "Assess whether the charging-network growth plan applies to other countries.",
+  "methods": "Score transferability by urbanization, grid reliability, and highway density.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
+    "official_requirements": {
+      "adoption_levels": [
+        0.1,
+        0.3,
+        0.5,
+        0.9
+      ],
+      "complete_switch_to_all_electric": true,
+      "urban_suburban_rural_distribution": true,
+      "country_transferability": true
+    },
+    "parameters": {
+      "vehicle_stock": 260000000,
+      "region_types": [
+        {
+          "region_type": "urban",
+          "vehicle_share": 0.42,
+          "charger_density_factor": 1.4
+        },
+        {
+          "region_type": "suburban",
+          "vehicle_share": 0.38,
+          "charger_density_factor": 0.82
+        },
+        {
+          "region_type": "rural",
+          "vehicle_share": 0.2,
+          "charger_density_factor": 0.56
+        }
+      ]
+    }
+  },
+  "transferability_model": {
+    "country_rows": [
+      {
+        "country": "United States",
+        "transferability_score": 0.822,
+        "model_adjustment": "scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+      },
+      {
+        "country": "China",
+        "transferability_score": 0.7076,
+        "model_adjustment": "scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+      },
+      {
+        "country": "Norway",
+        "transferability_score": 0.7992,
+        "model_adjustment": "scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+      },
+      {
+        "country": "India",
+        "transferability_score": 0.4852,
+        "model_adjustment": "scale by vehicle stock, grid reliability, urbanization, and corridor distance"
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic infrastructure inputs; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP supplies no vehicle registration or charger station table with this statement."
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "problem_id": "2024-D",
+  "title": "2024年 CUMCM D题：反潜航空深弹命中概率",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "投射一枚深弹，潜艇中心位置的深度定位没有误差， 两个水平坐标定位均服从 正态分布。分析投弹最大命中概率与投弹落点平面坐标及定深引信引爆深度之间的关系， 并 给出使得投弹命中概率最大的投弹方案，及相应的最大命中概率表达式。 针对以下参数值给出最大命中概率：潜艇长 100 m，宽 20 m，高 25 m，潜艇航向方位 角为 90∘，深弹杀伤半径为 20 m，潜艇中心位置的水平定位标准差 𝜎 = 120 m，潜艇中心 位置的深度定位值为 150 m.",
+  "tasks": [
+    "分析投弹最大命中概率与投弹落点平面坐标及定深引信引爆深度之间的关系， 并 给出使得投弹命中概率最大的投弹方案，及相应的最大命中概率表达式",
+    "针对以下参数值给出最大命中概率：潜艇长 100 m，宽 20 m，高 25 m，潜艇航向方位 角为 90∘，深弹杀伤半径为 20 m，潜艇中心位置的水平定位标准差 𝜎 = 120 m，潜艇中心 位置的深度定位值为 150 m."
+  ],
+  "selected_model": {
+    "key": "probability",
+    "name": "概率统计与抽样检验",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "概率、命中、误差、正态分布"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置、坐标、半径"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "参数、分析、标定"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 1,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/D.md",
+    "rows": 21,
+    "columns": 7,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "概率统计与抽样检验",
+    "task_breakdown": [
+      "分析投弹最大命中概率与投弹落点平面坐标及定深引信引爆深度之间的关系， 并 给出使得投弹命中概率最大的投弹方案，及相应的最大命中概率表达式",
+      "针对以下参数值给出最大命中概率：潜艇长 100 m，宽 20 m，高 25 m，潜艇航向方位 角为 90∘，深弹杀伤半径为 20 m，潜艇中心位置的水平定位标准差 𝜎 = 120 m，潜艇中心 位置的深度定位值为 150 m."
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n: 抽样量",
+      "c: 接收阈值",
+      "p0: 标称缺陷率/基准概率",
+      "p1: 风险备择概率"
+    ],
+    "constraints": [
+      "P_reject(p0)<=alpha",
+      "P_accept(p1)<=beta",
+      "n 为正整数，c 为非负整数"
+    ],
+    "objective_or_equations": [
+      "P_reject(p0)=1-F_Binomial(c;n,p0)",
+      "P_accept(p1)=F_Binomial(c;n,p1)",
+      "min n subject to producer/consumer risk"
+    ],
+    "solution_steps": [
+      "从题面提取标称比例。",
+      "设置生产方和使用方风险。",
+      "枚举 n 与 c 检查二项分布尾概率。",
+      "输出最小可行抽样方案。"
+    ],
+    "model_reference": {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "binomial_sampling_design",
+    "p0": 0.2,
+    "p1": 0.33000000000000007,
+    "alpha": 0.05,
+    "beta": 0.1,
+    "sample_size": 699,
+    "acceptance_number": 139,
+    "reject_good_probability": null,
+    "accept_bad_probability": null
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2024/D/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

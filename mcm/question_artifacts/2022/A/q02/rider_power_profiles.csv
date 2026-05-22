@@ -1,0 +1,21 @@
+rider,rider_type,gender_profile,duration_seconds,max_power_w,max_power_w_per_kg,critical_power_w,w_prime_kj,cda_m2
+male time trial specialist,time trial specialist,male,15,602.64,8.144,372.0,23.0,0.205
+male time trial specialist,time trial specialist,male,60,602.64,8.144,372.0,23.0,0.205
+male time trial specialist,time trial specialist,male,300,448.67,6.063,372.0,23.0,0.205
+male time trial specialist,time trial specialist,male,1200,391.17,5.286,372.0,23.0,0.205
+male time trial specialist,time trial specialist,male,3600,378.39,5.113,372.0,23.0,0.205
+female time trial specialist,time trial specialist,female,15,463.32,7.595,286.0,17.5,0.19
+female time trial specialist,time trial specialist,female,60,463.32,7.595,286.0,17.5,0.19
+female time trial specialist,time trial specialist,female,300,344.33,5.645,286.0,17.5,0.19
+female time trial specialist,time trial specialist,female,1200,300.58,4.928,286.0,17.5,0.19
+female time trial specialist,time trial specialist,female,3600,290.86,4.768,286.0,17.5,0.19
+male climber-puncheur,climber-puncheur,male,15,554.04,8.657,342.0,27.0,0.235
+male climber-puncheur,climber-puncheur,male,60,554.04,8.657,342.0,27.0,0.235
+male climber-puncheur,climber-puncheur,male,300,432.0,6.75,342.0,27.0,0.235
+male climber-puncheur,climber-puncheur,male,1200,364.5,5.695,342.0,27.0,0.235
+male climber-puncheur,climber-puncheur,male,3600,349.5,5.461,342.0,27.0,0.235
+female climber-puncheur,climber-puncheur,female,15,416.34,7.855,257.0,20.0,0.218
+female climber-puncheur,climber-puncheur,female,60,416.34,7.855,257.0,20.0,0.218
+female climber-puncheur,climber-puncheur,female,300,323.67,6.107,257.0,20.0,0.218
+female climber-puncheur,climber-puncheur,female,1200,273.67,5.164,257.0,20.0,0.218
+female climber-puncheur,climber-puncheur,female,3600,262.56,4.954,257.0,20.0,0.218

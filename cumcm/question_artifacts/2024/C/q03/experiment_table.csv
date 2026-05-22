@@ -1,0 +1,13 @@
+﻿plan,scenario_count,mean_profit_yuan,std_profit_yuan,p05_profit_yuan,p50_profit_yuan,p95_profit_yuan,year,profit_yuan,planted_area_mu,production_jin,surplus_jin,legume_area_mu
+q2_baseline,96,71233445.78,1199933.1,69408142.57,71268389.59,73290201.58,,,,,,
+low_risk_trend,96,70988842.12,1366522.15,68862428.01,70805462.58,73195094.51,,,,,,
+correlated_mild,96,70950063.48,1354097.42,68762092.15,70959759.79,73015413.74,,,,,,
+correlated_balanced,96,71110653.44,1148570.45,69495235.16,70985727.19,72950257.76,,,,,,
+correlated_conservative,96,70823115.76,1262581.34,68712197.28,70691391.39,72804649.62,,,,,,
+selected_correlated_balanced_year,,,,,,,2024,7048947.0,1334.0,1806355.0,1073700.0,812.2
+selected_correlated_balanced_year,,,,,,,2025,10399520.9,1334.0,2717820.0,1849755.78,270.0
+selected_correlated_balanced_year,,,,,,,2026,9909187.63,1334.0,2448905.0,1535775.09,341.8
+selected_correlated_balanced_year,,,,,,,2027,7401442.73,1334.0,1805750.0,1024395.0,753.2
+selected_correlated_balanced_year,,,,,,,2028,11149444.25,1334.0,2690070.0,1843175.0,342.0
+selected_correlated_balanced_year,,,,,,,2029,10619795.14,1334.0,2410005.0,1514580.0,339.8
+selected_correlated_balanced_year,,,,,,,2030,7838442.62,1334.0,1773525.0,988320.0,685.2

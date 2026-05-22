@@ -1,0 +1,2 @@
+﻿level,method,reached_finish,finish_day,final_cash,initial_water_boxes,initial_food_boxes,initial_load_kg,load_feasible,mining_days,map_note
+第一关,desert_rule_component_dynamic_programming,True,16,9700.0,232,214,1124,True,3,27节点按3x9行列网格近似重建。

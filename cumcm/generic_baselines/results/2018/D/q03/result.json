@@ -1,0 +1,98 @@
+{
+  "problem_id": "2018-D",
+  "title": "2018年 CUMCM D题：汽车总装线的配置",
+  "question_index": 3,
+  "question_label": "问题 1",
+  "statement": "每天白班和晚班都是按照先A1后A2的品牌顺序，装配当天两种品牌各一半数量的汽车。如9月17日需装配的A1和A2的汽车分别为364和96辆，则该日每班首先装配182辆A1汽车，随后装配48辆A2汽车。",
+  "tasks": [
+    "每天白班和晚班都是按照先A1后A2的品牌顺序，装配当天两种品牌各一半数量的汽车",
+    "如9月17日需装配的A1和A2的汽车分别为364和96辆，则该日每班首先装配182辆A1汽车，随后装配48辆A2汽车"
+  ],
+  "selected_model": {
+    "key": "time_series",
+    "name": "时间序列预测",
+    "chapter": "CH8",
+    "chapter_title": "时间序列",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "每天"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
+    "rows": 111,
+    "columns": 13,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "时间序列预测",
+    "task_breakdown": [
+      "每天白班和晚班都是按照先A1后A2的品牌顺序，装配当天两种品牌各一半数量的汽车",
+      "如9月17日需装配的A1和A2的汽车分别为364和96辆，则该日每班首先装配182辆A1汽车，随后装配48辆A2汽车"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "t: 时间索引",
+      "y_t: 历史观测指标",
+      "a,b: 趋势回归参数",
+      "y_{t+h}: 未来预测值"
+    ],
+    "constraints": [
+      "短期趋势用线性项近似",
+      "预测区间延续历史趋势假设"
+    ],
+    "objective_or_equations": [
+      "y_t = a + b*t + epsilon_t",
+      "forecast(t+h)=a+b*(t+h)"
+    ],
+    "solution_steps": [
+      "整理历史时间序列。",
+      "拟合线性趋势模型。",
+      "外推未来 12 期。",
+      "输出历史拟合和预测表。"
+    ],
+    "model_reference": {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "chapter_title": "时间序列",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_trend_forecast",
+    "intercept": 3659.1878787878795,
+    "slope": -16.369506844506855,
+    "r2": 0.0024771096055143937,
+    "next_12_forecast": [
+      2857.082043,
+      2840.712537,
+      2824.34303,
+      2807.973523,
+      2791.604016,
+      2775.234509,
+      2758.865002,
+      2742.495495,
+      2726.125989,
+      2709.756482,
+      2693.386975,
+      2677.017468
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2018/D/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

@@ -1,0 +1,11 @@
+﻿combination,option_count,capex_musd,annual_opex_musd,annual_revenue_musd,ten_year_debris_removed,ten_year_collision_risk_reduction_proxy,risk_score,npv_musd,risk_adjusted_score,commercially_attractive
+high_energy_lasers+laser_tracking_subscription,2,365.7,58.24,172.2,25920,0.2156,0.2935,398.981,0.644386,True
+space_based_water_jets+high_energy_lasers+laser_tracking_subscription,3,856.8,119.88,295.9,48720,0.27408,0.346,324.309,0.592873,True
+space_based_water_jets+laser_tracking_subscription,2,535.3,75.92,185.85,19440,0.21164,0.2885,202.339,0.446826,True
+high_energy_lasers+sweeper_satellites+laser_tracking_subscription,3,1260.0,163.08,328.9,88160,0.31008,0.374,-147.334,0.13743,False
+space_based_water_jets+high_energy_lasers,2,720.8,96.72,206.85,45360,0.07524,0.4155,18.181,0.046398,False
+sweeper_satellites+laser_tracking_subscription,2,916.9,117.52,217.35,56160,0.24464,0.3305,-247.033,0.004954,False
+space_based_water_jets+sweeper_satellites+laser_tracking_subscription,3,1439.2,181.44,343.2,81200,0.30576,0.37067,-353.777,-0.070969,False
+high_energy_lasers+sweeper_satellites,2,1102.4,138.32,238.35,82080,0.10824,0.4575,-431.191,-0.395474,False
+space_based_water_jets+high_energy_lasers+sweeper_satellites,3,1635.2,203.04,365.2,109040,0.15696,0.45533,-547.093,-0.471425,False
+space_based_water_jets+sweeper_satellites,2,1272.0,156.0,252.0,75600,0.10428,0.4525,-627.832,-0.613033,False

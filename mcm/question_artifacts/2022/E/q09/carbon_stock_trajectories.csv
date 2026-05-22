@@ -1,0 +1,2021 @@
+forest,plan,year,live_carbon_t_per_ha,soil_carbon_t_per_ha,product_carbon_t_per_ha,substitution_credit_t_carbon_per_ha,total_co2e_t_per_ha
+temperate mixed hardwood community forest,no_harvest,0,118.0,82.0,0.0,0.0,733.3333
+temperate mixed hardwood community forest,no_harvest,1,119.7567,82.0176,0.0,0.0,739.8391
+temperate mixed hardwood community forest,no_harvest,2,121.5028,82.035,0.0,0.0,746.3056
+temperate mixed hardwood community forest,no_harvest,3,123.2375,82.0524,0.0,0.0,752.7296
+temperate mixed hardwood community forest,no_harvest,4,124.96,82.0696,0.0,0.0,759.1085
+temperate mixed hardwood community forest,no_harvest,5,126.6695,82.0867,0.0,0.0,765.4395
+temperate mixed hardwood community forest,no_harvest,6,128.3654,82.1037,0.0,0.0,771.7199
+temperate mixed hardwood community forest,no_harvest,7,130.047,82.1205,0.0,0.0,777.9473
+temperate mixed hardwood community forest,no_harvest,8,131.7136,82.1371,0.0,0.0,784.1194
+temperate mixed hardwood community forest,no_harvest,9,133.3647,82.1536,0.0,0.0,790.2338
+temperate mixed hardwood community forest,no_harvest,10,134.9996,82.17,0.0,0.0,796.2884
+temperate mixed hardwood community forest,no_harvest,11,136.6178,82.1862,0.0,0.0,802.2811
+temperate mixed hardwood community forest,no_harvest,12,138.2188,82.2022,0.0,0.0,808.2102
+temperate mixed hardwood community forest,no_harvest,13,139.8021,82.218,0.0,0.0,814.0738
+temperate mixed hardwood community forest,no_harvest,14,141.3673,82.2337,0.0,0.0,819.8702
+temperate mixed hardwood community forest,no_harvest,15,142.9139,82.2491,0.0,0.0,825.5979
+temperate mixed hardwood community forest,no_harvest,16,144.4416,82.2644,0.0,0.0,831.2556
+temperate mixed hardwood community forest,no_harvest,17,145.9501,82.2795,0.0,0.0,836.8418
+temperate mixed hardwood community forest,no_harvest,18,147.4389,82.2944,0.0,0.0,842.3555
+temperate mixed hardwood community forest,no_harvest,19,148.9079,82.3091,0.0,0.0,847.7956
+temperate mixed hardwood community forest,no_harvest,20,150.3567,82.3236,0.0,0.0,853.161
+temperate mixed hardwood community forest,no_harvest,21,151.7852,82.3379,0.0,0.0,858.4511
+temperate mixed hardwood community forest,no_harvest,22,153.1931,82.3519,0.0,0.0,863.665
+temperate mixed hardwood community forest,no_harvest,23,154.5802,82.3658,0.0,0.0,868.8021
+temperate mixed hardwood community forest,no_harvest,24,155.9465,82.3795,0.0,0.0,873.862
+temperate mixed hardwood community forest,no_harvest,25,157.2918,82.3929,0.0,0.0,878.8441
+temperate mixed hardwood community forest,no_harvest,26,158.6161,82.4062,0.0,0.0,883.7482
+temperate mixed hardwood community forest,no_harvest,27,159.9192,82.4192,0.0,0.0,888.574
+temperate mixed hardwood community forest,no_harvest,28,161.2011,82.432,0.0,0.0,893.3214
+temperate mixed hardwood community forest,no_harvest,29,162.4618,82.4446,0.0,0.0,897.9903
+temperate mixed hardwood community forest,no_harvest,30,163.7014,82.457,0.0,0.0,902.5808
+temperate mixed hardwood community forest,no_harvest,31,164.9198,82.4692,0.0,0.0,907.0929
+temperate mixed hardwood community forest,no_harvest,32,166.117,82.4812,0.0,0.0,911.5268
+temperate mixed hardwood community forest,no_harvest,33,167.2933,82.4929,0.0,0.0,915.8828
+temperate mixed hardwood community forest,no_harvest,34,168.4486,82.5045,0.0,0.0,920.1612
+temperate mixed hardwood community forest,no_harvest,35,169.583,82.5158,0.0,0.0,924.3624
+temperate mixed hardwood community forest,no_harvest,36,170.6967,82.527,0.0,0.0,928.4868
+temperate mixed hardwood community forest,no_harvest,37,171.7898,82.5379,0.0,0.0,932.5349
+temperate mixed hardwood community forest,no_harvest,38,172.8624,82.5486,0.0,0.0,936.5072
+temperate mixed hardwood community forest,no_harvest,39,173.9148,82.5591,0.0,0.0,940.4045
+temperate mixed hardwood community forest,no_harvest,40,174.947,82.5695,0.0,0.0,944.2272
+temperate mixed hardwood community forest,no_harvest,41,175.9594,82.5796,0.0,0.0,947.9762
+temperate mixed hardwood community forest,no_harvest,42,176.952,82.5895,0.0,0.0,951.6521
+temperate mixed hardwood community forest,no_harvest,43,177.9251,82.5993,0.0,0.0,955.2558
+temperate mixed hardwood community forest,no_harvest,44,178.8788,82.6088,0.0,0.0,958.7879
+temperate mixed hardwood community forest,no_harvest,45,179.8135,82.6181,0.0,0.0,962.2495
+temperate mixed hardwood community forest,no_harvest,46,180.7294,82.6273,0.0,0.0,965.6412
+temperate mixed hardwood community forest,no_harvest,47,181.6267,82.6363,0.0,0.0,968.9641
+temperate mixed hardwood community forest,no_harvest,48,182.5056,82.6451,0.0,0.0,972.2189
+temperate mixed hardwood community forest,no_harvest,49,183.3664,82.6537,0.0,0.0,975.4068
+temperate mixed hardwood community forest,no_harvest,50,184.2093,82.6621,0.0,0.0,978.5285
+temperate mixed hardwood community forest,no_harvest,51,185.0347,82.6703,0.0,0.0,981.5852
+temperate mixed hardwood community forest,no_harvest,52,185.8427,82.6784,0.0,0.0,984.5776
+temperate mixed hardwood community forest,no_harvest,53,186.6337,82.6863,0.0,0.0,987.507
+temperate mixed hardwood community forest,no_harvest,54,187.408,82.6941,0.0,0.0,990.3742
+temperate mixed hardwood community forest,no_harvest,55,188.1657,82.7017,0.0,0.0,993.1802
+temperate mixed hardwood community forest,no_harvest,56,188.9072,82.7091,0.0,0.0,995.9261
+temperate mixed hardwood community forest,no_harvest,57,189.6327,82.7163,0.0,0.0,998.613
+temperate mixed hardwood community forest,no_harvest,58,190.3425,82.7234,0.0,0.0,1001.2417
+temperate mixed hardwood community forest,no_harvest,59,191.0369,82.7304,0.0,0.0,1003.8134
+temperate mixed hardwood community forest,no_harvest,60,191.7162,82.7372,0.0,0.0,1006.329
+temperate mixed hardwood community forest,no_harvest,61,192.3806,82.7438,0.0,0.0,1008.7896
+temperate mixed hardwood community forest,no_harvest,62,193.0305,82.7503,0.0,0.0,1011.1963
+temperate mixed hardwood community forest,no_harvest,63,193.666,82.7567,0.0,0.0,1013.5499
+temperate mixed hardwood community forest,no_harvest,64,194.2876,82.7629,0.0,0.0,1015.8516
+temperate mixed hardwood community forest,no_harvest,65,194.8953,82.769,0.0,0.0,1018.1023
+temperate mixed hardwood community forest,no_harvest,66,195.4895,82.7749,0.0,0.0,1020.303
+temperate mixed hardwood community forest,no_harvest,67,196.0706,82.7807,0.0,0.0,1022.4547
+temperate mixed hardwood community forest,no_harvest,68,196.6386,82.7864,0.0,0.0,1024.5583
+temperate mixed hardwood community forest,no_harvest,69,197.194,82.7919,0.0,0.0,1026.615
+temperate mixed hardwood community forest,no_harvest,70,197.7369,82.7974,0.0,0.0,1028.6255
+temperate mixed hardwood community forest,no_harvest,71,198.2676,82.8027,0.0,0.0,1030.5909
+temperate mixed hardwood community forest,no_harvest,72,198.7864,82.8079,0.0,0.0,1032.5122
+temperate mixed hardwood community forest,no_harvest,73,199.2935,82.8129,0.0,0.0,1034.3901
+temperate mixed hardwood community forest,no_harvest,74,199.7891,82.8179,0.0,0.0,1036.2256
+temperate mixed hardwood community forest,no_harvest,75,200.2736,82.8227,0.0,0.0,1038.0197
+temperate mixed hardwood community forest,no_harvest,76,200.747,82.8275,0.0,0.0,1039.7732
+temperate mixed hardwood community forest,no_harvest,77,201.2098,82.8321,0.0,0.0,1041.487
+temperate mixed hardwood community forest,no_harvest,78,201.6621,82.8366,0.0,0.0,1043.162
+temperate mixed hardwood community forest,no_harvest,79,202.1041,82.841,0.0,0.0,1044.799
+temperate mixed hardwood community forest,no_harvest,80,202.5361,82.8454,0.0,0.0,1046.3988
+temperate mixed hardwood community forest,no_harvest,81,202.9583,82.8496,0.0,0.0,1047.9622
+temperate mixed hardwood community forest,no_harvest,82,203.3709,82.8537,0.0,0.0,1049.4901
+temperate mixed hardwood community forest,no_harvest,83,203.7741,82.8577,0.0,0.0,1050.9833
+temperate mixed hardwood community forest,no_harvest,84,204.1681,82.8617,0.0,0.0,1052.4425
+temperate mixed hardwood community forest,no_harvest,85,204.5531,82.8655,0.0,0.0,1053.8684
+temperate mixed hardwood community forest,no_harvest,86,204.9294,82.8693,0.0,0.0,1055.2619
+temperate mixed hardwood community forest,no_harvest,87,205.2971,82.873,0.0,0.0,1056.6237
+temperate mixed hardwood community forest,no_harvest,88,205.6565,82.8766,0.0,0.0,1057.9545
+temperate mixed hardwood community forest,no_harvest,89,206.0076,82.8801,0.0,0.0,1059.255
+temperate mixed hardwood community forest,no_harvest,90,206.3508,82.8835,0.0,0.0,1060.5259
+temperate mixed hardwood community forest,no_harvest,91,206.6862,82.8869,0.0,0.0,1061.7678
+temperate mixed hardwood community forest,no_harvest,92,207.0139,82.8901,0.0,0.0,1062.9815
+temperate mixed hardwood community forest,no_harvest,93,207.3342,82.8933,0.0,0.0,1064.1675
+temperate mixed hardwood community forest,no_harvest,94,207.6471,82.8965,0.0,0.0,1065.3266
+temperate mixed hardwood community forest,no_harvest,95,207.953,82.8995,0.0,0.0,1066.4593
+temperate mixed hardwood community forest,no_harvest,96,208.2519,82.9025,0.0,0.0,1067.5662
+temperate mixed hardwood community forest,no_harvest,97,208.544,82.9054,0.0,0.0,1068.648
+temperate mixed hardwood community forest,no_harvest,98,208.8295,82.9083,0.0,0.0,1069.7052
+temperate mixed hardwood community forest,no_harvest,99,209.1085,82.9111,0.0,0.0,1070.7384
+temperate mixed hardwood community forest,no_harvest,100,209.3812,82.9138,0.0,0.0,1071.7482
+temperate mixed hardwood community forest,selective_60_year,0,118.0,82.0,0.0,0.0,733.3333
+temperate mixed hardwood community forest,selective_60_year,1,119.7567,82.0176,0.0,0.0,739.8391
+temperate mixed hardwood community forest,selective_60_year,2,121.5028,82.035,0.0,0.0,746.3056
+temperate mixed hardwood community forest,selective_60_year,3,123.2375,82.0524,0.0,0.0,752.7296
+temperate mixed hardwood community forest,selective_60_year,4,124.96,82.0696,0.0,0.0,759.1085
+temperate mixed hardwood community forest,selective_60_year,5,126.6695,82.0867,0.0,0.0,765.4395
+temperate mixed hardwood community forest,selective_60_year,6,128.3654,82.1037,0.0,0.0,771.7199
+temperate mixed hardwood community forest,selective_60_year,7,130.047,82.1205,0.0,0.0,777.9473
+temperate mixed hardwood community forest,selective_60_year,8,131.7136,82.1371,0.0,0.0,784.1194
+temperate mixed hardwood community forest,selective_60_year,9,133.3647,82.1536,0.0,0.0,790.2338
+temperate mixed hardwood community forest,selective_60_year,10,134.9996,82.17,0.0,0.0,796.2884
+temperate mixed hardwood community forest,selective_60_year,11,136.6178,82.1862,0.0,0.0,802.2811
+temperate mixed hardwood community forest,selective_60_year,12,138.2188,82.2022,0.0,0.0,808.2102
+temperate mixed hardwood community forest,selective_60_year,13,139.8021,82.218,0.0,0.0,814.0738
+temperate mixed hardwood community forest,selective_60_year,14,141.3673,82.2337,0.0,0.0,819.8702
+temperate mixed hardwood community forest,selective_60_year,15,142.9139,82.2491,0.0,0.0,825.5979
+temperate mixed hardwood community forest,selective_60_year,16,144.4416,82.2644,0.0,0.0,831.2556
+temperate mixed hardwood community forest,selective_60_year,17,145.9501,82.2795,0.0,0.0,836.8418
+temperate mixed hardwood community forest,selective_60_year,18,147.4389,82.2944,0.0,0.0,842.3555
+temperate mixed hardwood community forest,selective_60_year,19,148.9079,82.3091,0.0,0.0,847.7956
+temperate mixed hardwood community forest,selective_60_year,20,150.3567,82.3236,0.0,0.0,853.161
+temperate mixed hardwood community forest,selective_60_year,21,151.7852,82.3379,0.0,0.0,858.4511
+temperate mixed hardwood community forest,selective_60_year,22,153.1931,82.3519,0.0,0.0,863.665
+temperate mixed hardwood community forest,selective_60_year,23,154.5802,82.3658,0.0,0.0,868.8021
+temperate mixed hardwood community forest,selective_60_year,24,155.9465,82.3795,0.0,0.0,873.862
+temperate mixed hardwood community forest,selective_60_year,25,157.2918,82.3929,0.0,0.0,878.8441
+temperate mixed hardwood community forest,selective_60_year,26,158.6161,82.4062,0.0,0.0,883.7482
+temperate mixed hardwood community forest,selective_60_year,27,159.9192,82.4192,0.0,0.0,888.574
+temperate mixed hardwood community forest,selective_60_year,28,161.2011,82.432,0.0,0.0,893.3214
+temperate mixed hardwood community forest,selective_60_year,29,162.4618,82.4446,0.0,0.0,897.9903
+temperate mixed hardwood community forest,selective_60_year,30,163.7014,82.457,0.0,0.0,902.5808
+temperate mixed hardwood community forest,selective_60_year,31,164.9198,82.4692,0.0,0.0,907.0929
+temperate mixed hardwood community forest,selective_60_year,32,166.117,82.4812,0.0,0.0,911.5268
+temperate mixed hardwood community forest,selective_60_year,33,167.2933,82.4929,0.0,0.0,915.8828
+temperate mixed hardwood community forest,selective_60_year,34,168.4486,82.5045,0.0,0.0,920.1612
+temperate mixed hardwood community forest,selective_60_year,35,169.583,82.5158,0.0,0.0,924.3624
+temperate mixed hardwood community forest,selective_60_year,36,170.6967,82.527,0.0,0.0,928.4868
+temperate mixed hardwood community forest,selective_60_year,37,171.7898,82.5379,0.0,0.0,932.5349
+temperate mixed hardwood community forest,selective_60_year,38,172.8624,82.5486,0.0,0.0,936.5072
+temperate mixed hardwood community forest,selective_60_year,39,173.9148,82.5591,0.0,0.0,940.4045
+temperate mixed hardwood community forest,selective_60_year,40,174.947,82.5695,0.0,0.0,944.2272
+temperate mixed hardwood community forest,selective_60_year,41,175.9594,82.5796,0.0,0.0,947.9762
+temperate mixed hardwood community forest,selective_60_year,42,176.952,82.5895,0.0,0.0,951.6521
+temperate mixed hardwood community forest,selective_60_year,43,177.9251,82.5993,0.0,0.0,955.2558
+temperate mixed hardwood community forest,selective_60_year,44,178.8788,82.6088,0.0,0.0,958.7879
+temperate mixed hardwood community forest,selective_60_year,45,179.8135,82.6181,0.0,0.0,962.2495
+temperate mixed hardwood community forest,selective_60_year,46,180.7294,82.6273,0.0,0.0,965.6412
+temperate mixed hardwood community forest,selective_60_year,47,181.6267,82.6363,0.0,0.0,968.9641
+temperate mixed hardwood community forest,selective_60_year,48,182.5056,82.6451,0.0,0.0,972.2189
+temperate mixed hardwood community forest,selective_60_year,49,183.3664,82.6537,0.0,0.0,975.4068
+temperate mixed hardwood community forest,selective_60_year,50,184.2093,82.6621,0.0,0.0,978.5285
+temperate mixed hardwood community forest,selective_60_year,51,185.0347,82.6703,0.0,0.0,981.5852
+temperate mixed hardwood community forest,selective_60_year,52,185.8427,82.6784,0.0,0.0,984.5776
+temperate mixed hardwood community forest,selective_60_year,53,186.6337,82.6863,0.0,0.0,987.507
+temperate mixed hardwood community forest,selective_60_year,54,187.408,82.6941,0.0,0.0,990.3742
+temperate mixed hardwood community forest,selective_60_year,55,188.1657,82.7017,0.0,0.0,993.1802
+temperate mixed hardwood community forest,selective_60_year,56,188.9072,82.7091,0.0,0.0,995.9261
+temperate mixed hardwood community forest,selective_60_year,57,189.6327,82.7163,0.0,0.0,998.613
+temperate mixed hardwood community forest,selective_60_year,58,190.3425,82.7234,0.0,0.0,1001.2417
+temperate mixed hardwood community forest,selective_60_year,59,191.0369,82.7304,0.0,0.0,1003.8134
+temperate mixed hardwood community forest,selective_60_year,60,191.7162,82.7372,0.0,0.0,1006.329
+temperate mixed hardwood community forest,selective_60_year,61,138.5141,83.9289,48.4799,8.3385,1023.9585
+temperate mixed hardwood community forest,selective_60_year,62,139.7316,83.941,47.1309,8.2133,1023.0619
+temperate mixed hardwood community forest,selective_60_year,63,140.9354,83.9531,45.9044,8.0931,1022.5823
+temperate mixed hardwood community forest,selective_60_year,64,142.1253,83.965,44.7828,7.9775,1022.4522
+temperate mixed hardwood community forest,selective_60_year,65,143.3012,83.9767,43.7511,7.8659,1022.6148
+temperate mixed hardwood community forest,selective_60_year,66,144.4629,83.9884,42.7968,7.758,1023.022
+temperate mixed hardwood community forest,selective_60_year,67,145.6103,83.9998,41.9092,7.6534,1023.6332
+temperate mixed hardwood community forest,selective_60_year,68,146.7434,84.0112,41.0793,7.5518,1024.4142
+temperate mixed hardwood community forest,selective_60_year,69,147.8621,84.0224,40.2996,7.453,1025.3359
+temperate mixed hardwood community forest,selective_60_year,70,148.9663,84.0334,39.5637,7.3567,1026.3737
+temperate mixed hardwood community forest,selective_60_year,71,150.0561,84.0443,38.8661,7.2627,1027.507
+temperate mixed hardwood community forest,selective_60_year,72,151.1313,84.055,38.2022,7.171,1028.7181
+temperate mixed hardwood community forest,selective_60_year,73,152.1919,84.0656,37.5681,7.0812,1029.9921
+temperate mixed hardwood community forest,selective_60_year,74,153.238,84.0761,36.9605,6.9934,1031.3163
+temperate mixed hardwood community forest,selective_60_year,75,154.2695,84.0864,36.3766,6.9074,1032.68
+temperate mixed hardwood community forest,selective_60_year,76,155.2864,84.0966,35.814,6.8231,1034.074
+temperate mixed hardwood community forest,selective_60_year,77,156.2888,84.1066,35.2706,6.7405,1035.4906
+temperate mixed hardwood community forest,selective_60_year,78,157.2767,84.1165,34.7446,6.6594,1036.9232
+temperate mixed hardwood community forest,selective_60_year,79,158.2502,84.1262,34.2346,6.5798,1038.3661
+temperate mixed hardwood community forest,selective_60_year,80,159.2092,84.1358,33.7392,6.5016,1039.8145
+temperate mixed hardwood community forest,selective_60_year,81,160.1538,84.1453,33.2573,6.4248,1041.2643
+temperate mixed hardwood community forest,selective_60_year,82,161.0842,84.1546,32.788,6.3493,1042.7121
+temperate mixed hardwood community forest,selective_60_year,83,162.0003,84.1637,32.3304,6.2751,1044.1548
+temperate mixed hardwood community forest,selective_60_year,84,162.9023,84.1728,31.8837,6.2021,1045.59
+temperate mixed hardwood community forest,selective_60_year,85,163.7903,84.1816,31.4474,6.1303,1047.0153
+temperate mixed hardwood community forest,selective_60_year,86,164.6642,84.1904,31.0209,6.0597,1048.429
+temperate mixed hardwood community forest,selective_60_year,87,165.5243,84.199,30.6036,5.9902,1049.8294
+temperate mixed hardwood community forest,selective_60_year,88,166.3707,84.2074,30.1951,5.9219,1051.2152
+temperate mixed hardwood community forest,selective_60_year,89,167.2033,84.2158,29.795,5.8546,1052.5853
+temperate mixed hardwood community forest,selective_60_year,90,168.0225,84.224,29.403,5.7883,1053.9386
+temperate mixed hardwood community forest,selective_60_year,91,168.8282,84.232,29.0188,5.7231,1055.2743
+temperate mixed hardwood community forest,selective_60_year,92,169.6206,84.2399,28.642,5.6589,1056.5918
+temperate mixed hardwood community forest,selective_60_year,93,170.3998,84.2477,28.2723,5.5956,1057.8903
+temperate mixed hardwood community forest,selective_60_year,94,171.166,84.2554,27.9097,5.5333,1059.1695
+temperate mixed hardwood community forest,selective_60_year,95,171.9193,84.2629,27.5537,5.472,1060.4289
+temperate mixed hardwood community forest,selective_60_year,96,172.6598,84.2703,27.2042,5.4115,1061.6681
+temperate mixed hardwood community forest,selective_60_year,97,173.3877,84.2776,26.861,5.3519,1062.8869
+temperate mixed hardwood community forest,selective_60_year,98,174.1031,84.2848,26.524,5.2932,1064.0852
+temperate mixed hardwood community forest,selective_60_year,99,174.8061,84.2918,26.1929,5.2354,1065.2626
+temperate mixed hardwood community forest,selective_60_year,100,175.4969,84.2987,25.8676,5.1784,1066.4192
+temperate mixed hardwood community forest,extended_50_year,0,118.0,82.0,0.0,0.0,733.3333
+temperate mixed hardwood community forest,extended_50_year,1,119.7567,82.0176,0.0,0.0,739.8391
+temperate mixed hardwood community forest,extended_50_year,2,121.5028,82.035,0.0,0.0,746.3056
+temperate mixed hardwood community forest,extended_50_year,3,123.2375,82.0524,0.0,0.0,752.7296
+temperate mixed hardwood community forest,extended_50_year,4,124.96,82.0696,0.0,0.0,759.1085
+temperate mixed hardwood community forest,extended_50_year,5,126.6695,82.0867,0.0,0.0,765.4395
+temperate mixed hardwood community forest,extended_50_year,6,128.3654,82.1037,0.0,0.0,771.7199
+temperate mixed hardwood community forest,extended_50_year,7,130.047,82.1205,0.0,0.0,777.9473
+temperate mixed hardwood community forest,extended_50_year,8,131.7136,82.1371,0.0,0.0,784.1194
+temperate mixed hardwood community forest,extended_50_year,9,133.3647,82.1536,0.0,0.0,790.2338
+temperate mixed hardwood community forest,extended_50_year,10,134.9996,82.17,0.0,0.0,796.2884
+temperate mixed hardwood community forest,extended_50_year,11,136.6178,82.1862,0.0,0.0,802.2811
+temperate mixed hardwood community forest,extended_50_year,12,138.2188,82.2022,0.0,0.0,808.2102
+temperate mixed hardwood community forest,extended_50_year,13,139.8021,82.218,0.0,0.0,814.0738
+temperate mixed hardwood community forest,extended_50_year,14,141.3673,82.2337,0.0,0.0,819.8702
+temperate mixed hardwood community forest,extended_50_year,15,142.9139,82.2491,0.0,0.0,825.5979
+temperate mixed hardwood community forest,extended_50_year,16,144.4416,82.2644,0.0,0.0,831.2556
+temperate mixed hardwood community forest,extended_50_year,17,145.9501,82.2795,0.0,0.0,836.8418
+temperate mixed hardwood community forest,extended_50_year,18,147.4389,82.2944,0.0,0.0,842.3555
+temperate mixed hardwood community forest,extended_50_year,19,148.9079,82.3091,0.0,0.0,847.7956
+temperate mixed hardwood community forest,extended_50_year,20,150.3567,82.3236,0.0,0.0,853.161
+temperate mixed hardwood community forest,extended_50_year,21,151.7852,82.3379,0.0,0.0,858.4511
+temperate mixed hardwood community forest,extended_50_year,22,153.1931,82.3519,0.0,0.0,863.665
+temperate mixed hardwood community forest,extended_50_year,23,154.5802,82.3658,0.0,0.0,868.8021
+temperate mixed hardwood community forest,extended_50_year,24,155.9465,82.3795,0.0,0.0,873.862
+temperate mixed hardwood community forest,extended_50_year,25,157.2918,82.3929,0.0,0.0,878.8441
+temperate mixed hardwood community forest,extended_50_year,26,158.6161,82.4062,0.0,0.0,883.7482
+temperate mixed hardwood community forest,extended_50_year,27,159.9192,82.4192,0.0,0.0,888.574
+temperate mixed hardwood community forest,extended_50_year,28,161.2011,82.432,0.0,0.0,893.3214
+temperate mixed hardwood community forest,extended_50_year,29,162.4618,82.4446,0.0,0.0,897.9903
+temperate mixed hardwood community forest,extended_50_year,30,163.7014,82.457,0.0,0.0,902.5808
+temperate mixed hardwood community forest,extended_50_year,31,164.9198,82.4692,0.0,0.0,907.0929
+temperate mixed hardwood community forest,extended_50_year,32,166.117,82.4812,0.0,0.0,911.5268
+temperate mixed hardwood community forest,extended_50_year,33,167.2933,82.4929,0.0,0.0,915.8828
+temperate mixed hardwood community forest,extended_50_year,34,168.4486,82.5045,0.0,0.0,920.1612
+temperate mixed hardwood community forest,extended_50_year,35,169.583,82.5158,0.0,0.0,924.3624
+temperate mixed hardwood community forest,extended_50_year,36,170.6967,82.527,0.0,0.0,928.4868
+temperate mixed hardwood community forest,extended_50_year,37,171.7898,82.5379,0.0,0.0,932.5349
+temperate mixed hardwood community forest,extended_50_year,38,172.8624,82.5486,0.0,0.0,936.5072
+temperate mixed hardwood community forest,extended_50_year,39,173.9148,82.5591,0.0,0.0,940.4045
+temperate mixed hardwood community forest,extended_50_year,40,174.947,82.5695,0.0,0.0,944.2272
+temperate mixed hardwood community forest,extended_50_year,41,175.9594,82.5796,0.0,0.0,947.9762
+temperate mixed hardwood community forest,extended_50_year,42,176.952,82.5895,0.0,0.0,951.6521
+temperate mixed hardwood community forest,extended_50_year,43,177.9251,82.5993,0.0,0.0,955.2558
+temperate mixed hardwood community forest,extended_50_year,44,178.8788,82.6088,0.0,0.0,958.7879
+temperate mixed hardwood community forest,extended_50_year,45,179.8135,82.6181,0.0,0.0,962.2495
+temperate mixed hardwood community forest,extended_50_year,46,180.7294,82.6273,0.0,0.0,965.6412
+temperate mixed hardwood community forest,extended_50_year,47,181.6267,82.6363,0.0,0.0,968.9641
+temperate mixed hardwood community forest,extended_50_year,48,182.5056,82.6451,0.0,0.0,972.2189
+temperate mixed hardwood community forest,extended_50_year,49,183.3664,82.6537,0.0,0.0,975.4068
+temperate mixed hardwood community forest,extended_50_year,50,184.2093,82.6621,0.0,0.0,978.5285
+temperate mixed hardwood community forest,extended_50_year,51,107.3201,84.3801,69.9431,11.5795,1001.8169
+temperate mixed hardwood community forest,extended_50_year,52,108.6779,84.3936,67.7339,11.3921,998.0578
+temperate mixed hardwood community forest,extended_50_year,53,110.0293,84.4072,65.7417,11.2134,995.1026
+temperate mixed hardwood community forest,extended_50_year,54,111.374,84.4206,63.9348,11.0423,992.8295
+temperate mixed hardwood community forest,extended_50_year,55,112.7114,84.434,62.2863,10.878,991.1358
+temperate mixed hardwood community forest,extended_50_year,56,114.0413,84.4473,60.7737,10.7198,989.9343
+temperate mixed hardwood community forest,extended_50_year,57,115.3633,84.4605,59.3778,10.5669,989.1515
+temperate mixed hardwood community forest,extended_50_year,58,116.677,84.4736,58.0826,10.419,988.7251
+temperate mixed hardwood community forest,extended_50_year,59,117.9821,84.4867,56.8744,10.2756,988.6023
+temperate mixed hardwood community forest,extended_50_year,60,119.2782,84.4996,55.7418,10.1362,988.7383
+temperate mixed hardwood community forest,extended_50_year,61,120.565,84.5125,54.6751,10.0006,989.0952
+temperate mixed hardwood community forest,extended_50_year,62,121.8423,84.5253,53.666,9.8684,989.6404
+temperate mixed hardwood community forest,extended_50_year,63,123.1096,84.538,52.7075,9.7395,990.3466
+temperate mixed hardwood community forest,extended_50_year,64,124.3668,84.5505,51.7937,9.6135,991.1901
+temperate mixed hardwood community forest,extended_50_year,65,125.6136,84.563,50.9196,9.4904,992.1508
+temperate mixed hardwood community forest,extended_50_year,66,126.8497,84.5754,50.081,9.3699,993.2116
+temperate mixed hardwood community forest,extended_50_year,67,128.0749,84.5876,49.2741,9.2519,994.3577
+temperate mixed hardwood community forest,extended_50_year,68,129.2889,84.5998,48.4959,9.1363,995.5763
+temperate mixed hardwood community forest,extended_50_year,69,130.4916,84.6118,47.7436,9.0229,996.8566
+temperate mixed hardwood community forest,extended_50_year,70,131.6828,84.6237,47.0151,8.9118,998.189
+temperate mixed hardwood community forest,extended_50_year,71,132.8622,84.6355,46.3084,8.8026,999.5654
+temperate mixed hardwood community forest,extended_50_year,72,134.0297,84.6472,45.6217,8.6955,1000.9785
+temperate mixed hardwood community forest,extended_50_year,73,135.1852,84.6587,44.9536,8.5903,1002.4222
+temperate mixed hardwood community forest,extended_50_year,74,136.3285,84.6702,44.3028,8.487,1003.891
+temperate mixed hardwood community forest,extended_50_year,75,137.4594,84.6815,43.6683,8.3855,1005.3802
+temperate mixed hardwood community forest,extended_50_year,76,138.5779,84.6926,43.0489,8.2856,1006.8855
+temperate mixed hardwood community forest,extended_50_year,77,139.6838,84.7037,42.444,8.1875,1008.4031
+temperate mixed hardwood community forest,extended_50_year,78,140.7771,84.7146,41.8527,8.091,1009.9299
+temperate mixed hardwood community forest,extended_50_year,79,141.8576,84.7254,41.2743,7.9961,1011.4627
+temperate mixed hardwood community forest,extended_50_year,80,142.9253,84.7361,40.7083,7.9028,1012.9991
+temperate mixed hardwood community forest,extended_50_year,81,143.98,84.7467,40.1542,7.8109,1014.5367
+temperate mixed hardwood community forest,extended_50_year,82,145.0219,84.7571,39.6113,7.7206,1016.0733
+temperate mixed hardwood community forest,extended_50_year,83,146.0508,84.7674,39.0794,7.6316,1017.607
+temperate mixed hardwood community forest,extended_50_year,84,147.0666,84.7775,38.558,7.5441,1019.1362
+temperate mixed hardwood community forest,extended_50_year,85,148.0694,84.7876,38.0467,7.4579,1020.6593
+temperate mixed hardwood community forest,extended_50_year,86,149.0591,84.7975,37.5453,7.3731,1022.1748
+temperate mixed hardwood community forest,extended_50_year,87,150.0358,84.8072,37.0533,7.2895,1023.6816
+temperate mixed hardwood community forest,extended_50_year,88,150.9994,84.8169,36.5705,7.2073,1025.1784
+temperate mixed hardwood community forest,extended_50_year,89,151.95,84.8264,36.0967,7.1263,1026.6641
+temperate mixed hardwood community forest,extended_50_year,90,152.8875,84.8357,35.6315,7.0465,1028.1379
+temperate mixed hardwood community forest,extended_50_year,91,153.8121,84.845,35.1747,6.9679,1029.5988
+temperate mixed hardwood community forest,extended_50_year,92,154.7236,84.8541,34.7262,6.8905,1031.046
+temperate mixed hardwood community forest,extended_50_year,93,155.6222,84.8631,34.2856,6.8142,1032.4788
+temperate mixed hardwood community forest,extended_50_year,94,156.508,84.8719,33.8528,6.7391,1033.8965
+temperate mixed hardwood community forest,extended_50_year,95,157.3809,84.8807,33.4276,6.665,1035.2986
+temperate mixed hardwood community forest,extended_50_year,96,158.241,84.8893,33.0098,6.592,1036.6844
+temperate mixed hardwood community forest,extended_50_year,97,159.0884,84.8978,32.5993,6.5201,1038.0535
+temperate mixed hardwood community forest,extended_50_year,98,159.9232,84.9061,32.1957,6.4492,1039.4054
+temperate mixed hardwood community forest,extended_50_year,99,160.7454,84.9143,31.7991,6.3793,1040.7398
+temperate mixed hardwood community forest,extended_50_year,100,161.5551,84.9224,31.4091,6.3105,1042.0562
+temperate mixed hardwood community forest,current_40_year,0,118.0,82.0,0.0,0.0,733.3333
+temperate mixed hardwood community forest,current_40_year,1,119.7567,82.0176,0.0,0.0,739.8391
+temperate mixed hardwood community forest,current_40_year,2,121.5028,82.035,0.0,0.0,746.3056
+temperate mixed hardwood community forest,current_40_year,3,123.2375,82.0524,0.0,0.0,752.7296
+temperate mixed hardwood community forest,current_40_year,4,124.96,82.0696,0.0,0.0,759.1085
+temperate mixed hardwood community forest,current_40_year,5,126.6695,82.0867,0.0,0.0,765.4395
+temperate mixed hardwood community forest,current_40_year,6,128.3654,82.1037,0.0,0.0,771.7199
+temperate mixed hardwood community forest,current_40_year,7,130.047,82.1205,0.0,0.0,777.9473
+temperate mixed hardwood community forest,current_40_year,8,131.7136,82.1371,0.0,0.0,784.1194
+temperate mixed hardwood community forest,current_40_year,9,133.3647,82.1536,0.0,0.0,790.2338
+temperate mixed hardwood community forest,current_40_year,10,134.9996,82.17,0.0,0.0,796.2884
+temperate mixed hardwood community forest,current_40_year,11,136.6178,82.1862,0.0,0.0,802.2811
+temperate mixed hardwood community forest,current_40_year,12,138.2188,82.2022,0.0,0.0,808.2102
+temperate mixed hardwood community forest,current_40_year,13,139.8021,82.218,0.0,0.0,814.0738
+temperate mixed hardwood community forest,current_40_year,14,141.3673,82.2337,0.0,0.0,819.8702
+temperate mixed hardwood community forest,current_40_year,15,142.9139,82.2491,0.0,0.0,825.5979
+temperate mixed hardwood community forest,current_40_year,16,144.4416,82.2644,0.0,0.0,831.2556
+temperate mixed hardwood community forest,current_40_year,17,145.9501,82.2795,0.0,0.0,836.8418
+temperate mixed hardwood community forest,current_40_year,18,147.4389,82.2944,0.0,0.0,842.3555
+temperate mixed hardwood community forest,current_40_year,19,148.9079,82.3091,0.0,0.0,847.7956
+temperate mixed hardwood community forest,current_40_year,20,150.3567,82.3236,0.0,0.0,853.161
+temperate mixed hardwood community forest,current_40_year,21,151.7852,82.3379,0.0,0.0,858.4511
+temperate mixed hardwood community forest,current_40_year,22,153.1931,82.3519,0.0,0.0,863.665
+temperate mixed hardwood community forest,current_40_year,23,154.5802,82.3658,0.0,0.0,868.8021
+temperate mixed hardwood community forest,current_40_year,24,155.9465,82.3795,0.0,0.0,873.862
+temperate mixed hardwood community forest,current_40_year,25,157.2918,82.3929,0.0,0.0,878.8441
+temperate mixed hardwood community forest,current_40_year,26,158.6161,82.4062,0.0,0.0,883.7482
+temperate mixed hardwood community forest,current_40_year,27,159.9192,82.4192,0.0,0.0,888.574
+temperate mixed hardwood community forest,current_40_year,28,161.2011,82.432,0.0,0.0,893.3214
+temperate mixed hardwood community forest,current_40_year,29,162.4618,82.4446,0.0,0.0,897.9903
+temperate mixed hardwood community forest,current_40_year,30,163.7014,82.457,0.0,0.0,902.5808
+temperate mixed hardwood community forest,current_40_year,31,164.9198,82.4692,0.0,0.0,907.0929
+temperate mixed hardwood community forest,current_40_year,32,166.117,82.4812,0.0,0.0,911.5268
+temperate mixed hardwood community forest,current_40_year,33,167.2933,82.4929,0.0,0.0,915.8828
+temperate mixed hardwood community forest,current_40_year,34,168.4486,82.5045,0.0,0.0,920.1612
+temperate mixed hardwood community forest,current_40_year,35,169.583,82.5158,0.0,0.0,924.3624
+temperate mixed hardwood community forest,current_40_year,36,170.6967,82.527,0.0,0.0,928.4868
+temperate mixed hardwood community forest,current_40_year,37,171.7898,82.5379,0.0,0.0,932.5349
+temperate mixed hardwood community forest,current_40_year,38,172.8624,82.5486,0.0,0.0,936.5072
+temperate mixed hardwood community forest,current_40_year,39,173.9148,82.5591,0.0,0.0,940.4045
+temperate mixed hardwood community forest,current_40_year,40,174.947,82.5695,0.0,0.0,944.2272
+temperate mixed hardwood community forest,current_40_year,41,87.9797,84.5151,79.1817,12.4315,968.3963
+temperate mixed hardwood community forest,current_40_year,42,89.3486,84.5288,76.2506,12.2094,961.9038
+temperate mixed hardwood community forest,current_40_year,43,90.7175,84.5425,73.633,11.9992,956.6045
+temperate mixed hardwood community forest,current_40_year,44,92.0859,84.5562,71.2822,11.7993,952.3201
+temperate mixed hardwood community forest,current_40_year,45,93.4534,84.5699,69.159,11.6086,948.9
+temperate mixed hardwood community forest,current_40_year,46,94.8194,84.5835,67.2302,11.4261,946.2171
+temperate mixed hardwood community forest,current_40_year,47,96.1835,84.5972,65.4678,11.2507,944.1638
+temperate mixed hardwood community forest,current_40_year,48,97.5451,84.6108,63.8483,11.0819,942.6493
+temperate mixed hardwood community forest,current_40_year,49,98.9039,84.6244,62.3518,10.9188,941.5963
+temperate mixed hardwood community forest,current_40_year,50,100.2594,84.6379,60.9615,10.7611,940.9397
+temperate mixed hardwood community forest,current_40_year,51,101.611,84.6515,59.6632,10.6081,940.6238
+temperate mixed hardwood community forest,current_40_year,52,102.9584,84.6649,58.4449,10.4595,940.6017
+temperate mixed hardwood community forest,current_40_year,53,104.3011,84.6784,57.2964,10.315,940.8331
+temperate mixed hardwood community forest,current_40_year,54,105.6387,84.6917,56.2091,10.1742,941.2839
+temperate mixed hardwood community forest,current_40_year,55,106.9708,84.7051,55.1758,10.0369,941.9247
+temperate mixed hardwood community forest,current_40_year,56,108.2969,84.7183,54.1902,9.9029,942.7306
+temperate mixed hardwood community forest,current_40_year,57,109.6167,84.7315,53.2471,9.7719,943.68
+temperate mixed hardwood community forest,current_40_year,58,110.9298,84.7446,52.342,9.6438,944.7544
+temperate mixed hardwood community forest,current_40_year,59,112.2358,84.7577,51.4711,9.5184,945.9379
+temperate mixed hardwood community forest,current_40_year,60,113.5344,84.7707,50.6311,9.3956,947.2166
+temperate mixed hardwood community forest,current_40_year,61,114.8252,84.7836,49.8192,9.2753,948.5786
+temperate mixed hardwood community forest,current_40_year,62,116.1078,84.7964,49.0329,9.1574,950.0133
+temperate mixed hardwood community forest,current_40_year,63,117.382,84.8092,48.2703,9.0417,951.5116
+temperate mixed hardwood community forest,current_40_year,64,118.6474,84.8218,47.5295,8.9282,953.0655
+temperate mixed hardwood community forest,current_40_year,65,119.9038,84.8344,46.809,8.8168,954.6678
+temperate mixed hardwood community forest,current_40_year,66,121.1508,84.8469,46.1074,8.7074,956.3124
+temperate mixed hardwood community forest,current_40_year,67,122.3882,84.8592,45.4235,8.6,957.9935
+temperate mixed hardwood community forest,current_40_year,68,123.6157,84.8715,44.7563,8.4945,959.7062
+temperate mixed hardwood community forest,current_40_year,69,124.8331,84.8837,44.105,8.3908,961.4461
+temperate mixed hardwood community forest,current_40_year,70,126.0402,84.8958,43.4686,8.2889,963.209
+temperate mixed hardwood community forest,current_40_year,71,127.2366,84.9077,42.8464,8.1888,964.9914
+temperate mixed hardwood community forest,current_40_year,72,128.4222,84.9196,42.2379,8.0903,966.79
+temperate mixed hardwood community forest,current_40_year,73,129.5968,84.9313,41.6424,7.9935,968.6016
+temperate mixed hardwood community forest,current_40_year,74,130.7603,84.943,41.0594,7.8983,970.4236
+temperate mixed hardwood community forest,current_40_year,75,131.9124,84.9545,40.4885,7.8047,972.2535
+temperate mixed hardwood community forest,current_40_year,76,133.053,84.9659,39.9292,7.7125,974.0888
+temperate mixed hardwood community forest,current_40_year,77,134.1819,84.9772,39.381,7.6219,975.9274
+temperate mixed hardwood community forest,current_40_year,78,135.2991,84.9883,38.8437,7.5328,977.7674
+temperate mixed hardwood community forest,current_40_year,79,136.4043,84.9994,38.3168,7.445,979.6069
+temperate mixed hardwood community forest,current_40_year,80,137.4974,85.0103,37.8001,7.3587,981.4442
+temperate mixed hardwood community forest,current_40_year,81,69.2892,86.5455,99.6536,17.0643,999.3597
+temperate mixed hardwood community forest,current_40_year,82,70.2472,86.5551,96.848,16.8057,991.6716
+temperate mixed hardwood community forest,current_40_year,83,71.2058,86.5647,94.2985,16.5577,984.9644
+temperate mixed hardwood community forest,current_40_year,84,72.1647,86.5743,91.9683,16.3192,979.0969
+temperate mixed hardwood community forest,current_40_year,85,73.1237,86.5838,89.826,16.0892,973.9502
+temperate mixed hardwood community forest,current_40_year,86,74.0825,86.5934,87.8455,15.8668,969.4237
+temperate mixed hardwood community forest,current_40_year,87,75.0409,86.603,86.0044,15.6513,965.4323
+temperate mixed hardwood community forest,current_40_year,88,75.9987,86.6126,84.2841,15.4421,961.9038
+temperate mixed hardwood community forest,current_40_year,89,76.9556,86.6222,82.6685,15.2385,958.7774
+temperate mixed hardwood community forest,current_40_year,90,77.9112,86.6317,81.1443,15.0403,956.001
+temperate mixed hardwood community forest,current_40_year,91,78.8655,86.6413,79.7002,14.8469,953.5308
+temperate mixed hardwood community forest,current_40_year,92,79.8182,86.6508,78.3264,14.6581,951.3293
+temperate mixed hardwood community forest,current_40_year,93,80.7689,86.6603,77.0149,14.4735,949.3645
+temperate mixed hardwood community forest,current_40_year,94,81.7175,86.6698,75.7586,14.2929,947.6091
+temperate mixed hardwood community forest,current_40_year,95,82.6638,86.6792,74.5518,14.116,946.0398
+temperate mixed hardwood community forest,current_40_year,96,83.6075,86.6887,73.3892,13.9427,944.6366
+temperate mixed hardwood community forest,current_40_year,97,84.5484,86.6981,72.2667,13.7728,943.3821
+temperate mixed hardwood community forest,current_40_year,98,85.4863,86.7075,71.1806,13.6061,942.2616
+temperate mixed hardwood community forest,current_40_year,99,86.4209,86.7168,70.1276,13.4424,941.2621
+temperate mixed hardwood community forest,current_40_year,100,87.3521,86.7261,69.1052,13.2818,940.3724
+temperate mixed hardwood community forest,short_30_year,0,118.0,82.0,0.0,0.0,733.3333
+temperate mixed hardwood community forest,short_30_year,1,119.7567,82.0176,0.0,0.0,739.8391
+temperate mixed hardwood community forest,short_30_year,2,121.5028,82.035,0.0,0.0,746.3056
+temperate mixed hardwood community forest,short_30_year,3,123.2375,82.0524,0.0,0.0,752.7296
+temperate mixed hardwood community forest,short_30_year,4,124.96,82.0696,0.0,0.0,759.1085
+temperate mixed hardwood community forest,short_30_year,5,126.6695,82.0867,0.0,0.0,765.4395
+temperate mixed hardwood community forest,short_30_year,6,128.3654,82.1037,0.0,0.0,771.7199
+temperate mixed hardwood community forest,short_30_year,7,130.047,82.1205,0.0,0.0,777.9473
+temperate mixed hardwood community forest,short_30_year,8,131.7136,82.1371,0.0,0.0,784.1194
+temperate mixed hardwood community forest,short_30_year,9,133.3647,82.1536,0.0,0.0,790.2338
+temperate mixed hardwood community forest,short_30_year,10,134.9996,82.17,0.0,0.0,796.2884
+temperate mixed hardwood community forest,short_30_year,11,136.6178,82.1862,0.0,0.0,802.2811
+temperate mixed hardwood community forest,short_30_year,12,138.2188,82.2022,0.0,0.0,808.2102
+temperate mixed hardwood community forest,short_30_year,13,139.8021,82.218,0.0,0.0,814.0738
+temperate mixed hardwood community forest,short_30_year,14,141.3673,82.2337,0.0,0.0,819.8702
+temperate mixed hardwood community forest,short_30_year,15,142.9139,82.2491,0.0,0.0,825.5979
+temperate mixed hardwood community forest,short_30_year,16,144.4416,82.2644,0.0,0.0,831.2556
+temperate mixed hardwood community forest,short_30_year,17,145.9501,82.2795,0.0,0.0,836.8418
+temperate mixed hardwood community forest,short_30_year,18,147.4389,82.2944,0.0,0.0,842.3555
+temperate mixed hardwood community forest,short_30_year,19,148.9079,82.3091,0.0,0.0,847.7956
+temperate mixed hardwood community forest,short_30_year,20,150.3567,82.3236,0.0,0.0,853.161
+temperate mixed hardwood community forest,short_30_year,21,151.7852,82.3379,0.0,0.0,858.4511
+temperate mixed hardwood community forest,short_30_year,22,153.1931,82.3519,0.0,0.0,863.665
+temperate mixed hardwood community forest,short_30_year,23,154.5802,82.3658,0.0,0.0,868.8021
+temperate mixed hardwood community forest,short_30_year,24,155.9465,82.3795,0.0,0.0,873.862
+temperate mixed hardwood community forest,short_30_year,25,157.2918,82.3929,0.0,0.0,878.8441
+temperate mixed hardwood community forest,short_30_year,26,158.6161,82.4062,0.0,0.0,883.7482
+temperate mixed hardwood community forest,short_30_year,27,159.9192,82.4192,0.0,0.0,888.574
+temperate mixed hardwood community forest,short_30_year,28,161.2011,82.432,0.0,0.0,893.3214
+temperate mixed hardwood community forest,short_30_year,29,162.4618,82.4446,0.0,0.0,897.9903
+temperate mixed hardwood community forest,short_30_year,30,163.7014,82.457,0.0,0.0,902.5808
+temperate mixed hardwood community forest,short_30_year,31,69.2663,84.5736,84.175,11.9949,916.7029
+temperate mixed hardwood community forest,short_30_year,32,70.5566,84.5865,80.2493,11.7407,906.1547
+temperate mixed hardwood community forest,short_30_year,33,71.8535,84.5994,76.7862,11.503,897.3879
+temperate mixed hardwood community forest,short_30_year,34,73.1564,84.6125,73.7159,11.2797,890.1361
+temperate mixed hardwood community forest,short_30_year,35,74.4648,84.6256,70.9792,11.0689,884.1747
+temperate mixed hardwood community forest,short_30_year,36,75.7783,84.6387,68.5266,10.8692,879.3138
+temperate mixed hardwood community forest,short_30_year,37,77.0965,84.6519,66.3162,10.6792,875.3935
+temperate mixed hardwood community forest,short_30_year,38,78.4187,84.6651,64.3126,10.4977,872.2785
+temperate mixed hardwood community forest,short_30_year,39,79.7446,84.6784,62.4862,10.3239,869.8545
+temperate mixed hardwood community forest,short_30_year,40,81.0737,84.6916,60.8117,10.1569,868.0245
+temperate mixed hardwood community forest,short_30_year,41,82.4055,84.705,59.2681,9.996,866.7066
+temperate mixed hardwood community forest,short_30_year,42,83.7394,84.7183,57.8375,9.8406,865.8313
+temperate mixed hardwood community forest,short_30_year,43,85.075,84.7317,56.5047,9.6903,865.3395
+temperate mixed hardwood community forest,short_30_year,44,86.4119,84.745,55.2569,9.5447,865.1809
+temperate mixed hardwood community forest,short_30_year,45,87.7494,84.7584,54.0833,9.4032,865.3127
+temperate mixed hardwood community forest,short_30_year,46,89.0873,84.7718,52.9748,9.2657,865.6984
+temperate mixed hardwood community forest,short_30_year,47,90.4249,84.7852,51.9236,9.1317,866.3066
+temperate mixed hardwood community forest,short_30_year,48,91.7618,84.7985,50.9231,9.0012,867.1106
+temperate mixed hardwood community forest,short_30_year,49,93.0976,84.8119,49.9677,8.8739,868.0873
+temperate mixed hardwood community forest,short_30_year,50,94.4318,84.8252,49.0525,8.7496,869.2166
+temperate mixed hardwood community forest,short_30_year,51,95.7638,84.8385,48.1736,8.6281,870.4815
+temperate mixed hardwood community forest,short_30_year,52,97.0934,84.8518,47.3274,8.5092,871.8669
+temperate mixed hardwood community forest,short_30_year,53,98.42,84.8651,46.511,8.393,873.3597
+temperate mixed hardwood community forest,short_30_year,54,99.7431,84.8783,45.7217,8.2792,874.9485
+temperate mixed hardwood community forest,short_30_year,55,101.0625,84.8915,44.9574,8.1677,876.6232
+temperate mixed hardwood community forest,short_30_year,56,102.3775,84.9047,44.2161,8.0585,878.375
+temperate mixed hardwood community forest,short_30_year,57,103.688,84.9178,43.4963,7.9514,880.1958
+temperate mixed hardwood community forest,short_30_year,58,104.9933,84.9308,42.7963,7.8464,882.0786
+temperate mixed hardwood community forest,short_30_year,59,106.2932,84.9438,42.1151,7.7434,884.0172
+temperate mixed hardwood community forest,short_30_year,60,107.5873,84.9568,41.4515,7.6424,886.0057
+temperate mixed hardwood community forest,short_30_year,61,45.7275,86.3589,96.3743,15.462,894.3833
+temperate mixed hardwood community forest,short_30_year,62,46.5558,86.3672,93.1513,15.1968,884.6608
+temperate mixed hardwood community forest,short_30_year,63,47.3901,86.3755,90.2487,14.9444,876.1822
+temperate mixed hardwood community forest,short_30_year,64,48.2302,86.3839,87.6197,14.7032,868.7691
+temperate mixed hardwood community forest,short_30_year,65,49.0759,86.3924,85.2247,14.4719,862.2714
+temperate mixed hardwood community forest,short_30_year,66,49.927,86.4009,83.0303,14.2496,856.5619
+temperate mixed hardwood community forest,short_30_year,67,50.7834,86.4095,81.0083,14.0352,851.5333
+temperate mixed hardwood community forest,short_30_year,68,51.6447,86.4181,79.135,13.8281,847.0949
+temperate mixed hardwood community forest,short_30_year,69,52.5108,86.4267,77.3903,13.6275,843.1699
+temperate mixed hardwood community forest,short_30_year,70,53.3815,86.4354,75.7573,13.4329,839.6931
+temperate mixed hardwood community forest,short_30_year,71,54.2566,86.4442,74.2216,13.2438,836.6093
+temperate mixed hardwood community forest,short_30_year,72,55.1358,86.453,72.771,13.0598,833.8715
+temperate mixed hardwood community forest,short_30_year,73,56.0188,86.4618,71.3953,12.8804,831.4399
+temperate mixed hardwood community forest,short_30_year,74,56.9056,86.4707,70.0856,12.7055,829.2803
+temperate mixed hardwood community forest,short_30_year,75,57.7958,86.4796,68.8347,12.5346,827.3637
+temperate mixed hardwood community forest,short_30_year,76,58.6892,86.4885,67.6361,12.3676,825.665
+temperate mixed hardwood community forest,short_30_year,77,59.5855,86.4975,66.4844,12.2043,824.163
+temperate mixed hardwood community forest,short_30_year,78,60.4846,86.5065,65.3752,12.0444,822.8392
+temperate mixed hardwood community forest,short_30_year,79,61.3863,86.5155,64.3043,11.8878,821.6776
+temperate mixed hardwood community forest,short_30_year,80,62.2901,86.5245,63.2685,11.7344,820.6644
+temperate mixed hardwood community forest,short_30_year,81,63.196,86.5336,62.2648,11.584,819.7876
+temperate mixed hardwood community forest,short_30_year,82,64.1037,86.5427,61.2907,11.4365,819.0367
+temperate mixed hardwood community forest,short_30_year,83,65.013,86.5518,60.3441,11.2918,818.4023
+temperate mixed hardwood community forest,short_30_year,84,65.9235,86.5609,59.4231,11.1497,817.8764
+temperate mixed hardwood community forest,short_30_year,85,66.8351,86.57,58.526,11.0103,817.4516
+temperate mixed hardwood community forest,short_30_year,86,67.7476,86.5791,57.6513,10.8734,817.1215
+temperate mixed hardwood community forest,short_30_year,87,68.6606,86.5882,56.7979,10.7389,816.8803
+temperate mixed hardwood community forest,short_30_year,88,69.5739,86.5974,55.9645,10.6067,816.7227
+temperate mixed hardwood community forest,short_30_year,89,70.4874,86.6065,55.1502,10.4769,816.6439
+temperate mixed hardwood community forest,short_30_year,90,71.4008,86.6156,54.3542,10.3493,816.6395
+temperate mixed hardwood community forest,short_30_year,91,30.3718,87.5475,90.4844,15.4834,820.9193
+temperate mixed hardwood community forest,short_30_year,92,30.8596,87.5524,88.0011,15.2486,812.7592
+temperate mixed hardwood community forest,short_30_year,93,31.3503,87.5573,85.7367,15.0231,805.4467
+temperate mixed hardwood community forest,short_30_year,94,31.8438,87.5622,83.6598,14.8059,798.8631
+temperate mixed hardwood community forest,short_30_year,95,32.34,87.5672,81.7442,14.5962,792.908
+temperate mixed hardwood community forest,short_30_year,96,32.8388,87.5722,79.9676,14.3933,787.4966
+temperate mixed hardwood community forest,short_30_year,97,33.3401,87.5772,78.311,14.1965,782.5574
+temperate mixed hardwood community forest,short_30_year,98,33.8438,87.5822,76.7586,14.0052,778.0295
+temperate mixed hardwood community forest,short_30_year,99,34.3498,87.5873,75.2969,13.8191,773.8615
+temperate mixed hardwood community forest,short_30_year,100,34.858,87.5924,73.9146,13.6378,770.01
+managed pine production forest,no_harvest,0,88.0,58.0,0.0,0.0,535.3333
+managed pine production forest,no_harvest,1,90.2094,58.0221,0.0,0.0,543.5153
+managed pine production forest,no_harvest,2,92.4148,58.0441,0.0,0.0,551.6827
+managed pine production forest,no_harvest,3,94.6137,58.0661,0.0,0.0,559.8262
+managed pine production forest,no_harvest,4,96.8039,58.088,0.0,0.0,567.9369
+managed pine production forest,no_harvest,5,98.9827,58.1098,0.0,0.0,576.006
+managed pine production forest,no_harvest,6,101.148,58.1315,0.0,0.0,584.0248
+managed pine production forest,no_harvest,7,103.2975,58.153,0.0,0.0,591.9851
+managed pine production forest,no_harvest,8,105.429,58.1743,0.0,0.0,599.8789
+managed pine production forest,no_harvest,9,107.5406,58.1954,0.0,0.0,607.6986
+managed pine production forest,no_harvest,10,109.6301,58.2163,0.0,0.0,615.4368
+managed pine production forest,no_harvest,11,111.6958,58.237,0.0,0.0,623.0866
+managed pine production forest,no_harvest,12,113.7358,58.2574,0.0,0.0,630.6416
+managed pine production forest,no_harvest,13,115.7486,58.2775,0.0,0.0,638.0956
+managed pine production forest,no_harvest,14,117.7326,58.2973,0.0,0.0,645.443
+managed pine production forest,no_harvest,15,119.6864,58.3169,0.0,0.0,652.6785
+managed pine production forest,no_harvest,16,121.6086,58.3361,0.0,0.0,659.7973
+managed pine production forest,no_harvest,17,123.4982,58.355,0.0,0.0,666.7951
+managed pine production forest,no_harvest,18,125.3541,58.3735,0.0,0.0,673.668
+managed pine production forest,no_harvest,19,127.1753,58.3918,0.0,0.0,680.4126
+managed pine production forest,no_harvest,20,128.961,58.4096,0.0,0.0,687.0257
+managed pine production forest,no_harvest,21,130.7106,58.4271,0.0,0.0,693.5048
+managed pine production forest,no_harvest,22,132.4233,58.4442,0.0,0.0,699.8478
+managed pine production forest,no_harvest,23,134.0988,58.461,0.0,0.0,706.0527
+managed pine production forest,no_harvest,24,135.7367,58.4774,0.0,0.0,712.1182
+managed pine production forest,no_harvest,25,137.3366,58.4934,0.0,0.0,718.0433
+managed pine production forest,no_harvest,26,138.8985,58.509,0.0,0.0,723.8273
+managed pine production forest,no_harvest,27,140.4221,58.5242,0.0,0.0,729.4698
+managed pine production forest,no_harvest,28,141.9076,58.5391,0.0,0.0,734.971
+managed pine production forest,no_harvest,29,143.3549,58.5535,0.0,0.0,740.331
+managed pine production forest,no_harvest,30,144.7643,58.5676,0.0,0.0,745.5504
+managed pine production forest,no_harvest,31,146.1359,58.5814,0.0,0.0,750.63
+managed pine production forest,no_harvest,32,147.4701,58.5947,0.0,0.0,755.5711
+managed pine production forest,no_harvest,33,148.7673,58.6077,0.0,0.0,760.3748
+managed pine production forest,no_harvest,34,150.0277,58.6203,0.0,0.0,765.0426
+managed pine production forest,no_harvest,35,151.2519,58.6325,0.0,0.0,769.5763
+managed pine production forest,no_harvest,36,152.4404,58.6444,0.0,0.0,773.9778
+managed pine production forest,no_harvest,37,153.5938,58.6559,0.0,0.0,778.249
+managed pine production forest,no_harvest,38,154.7125,58.6671,0.0,0.0,782.3921
+managed pine production forest,no_harvest,39,155.7973,58.678,0.0,0.0,786.4094
+managed pine production forest,no_harvest,40,156.8488,58.6885,0.0,0.0,790.3033
+managed pine production forest,no_harvest,41,157.8676,58.6987,0.0,0.0,794.0763
+managed pine production forest,no_harvest,42,158.8544,58.7085,0.0,0.0,797.7307
+managed pine production forest,no_harvest,43,159.8099,58.7181,0.0,0.0,801.2694
+managed pine production forest,no_harvest,44,160.7349,58.7273,0.0,0.0,804.6949
+managed pine production forest,no_harvest,45,161.63,58.7363,0.0,0.0,808.0099
+managed pine production forest,no_harvest,46,162.4961,58.745,0.0,0.0,811.2171
+managed pine production forest,no_harvest,47,163.3337,58.7533,0.0,0.0,814.3193
+managed pine production forest,no_harvest,48,164.1438,58.7614,0.0,0.0,817.3192
+managed pine production forest,no_harvest,49,164.927,58.7693,0.0,0.0,820.2195
+managed pine production forest,no_harvest,50,165.684,58.7768,0.0,0.0,823.0231
+managed pine production forest,no_harvest,51,166.4156,58.7842,0.0,0.0,825.7325
+managed pine production forest,no_harvest,52,167.1225,58.7912,0.0,0.0,828.3505
+managed pine production forest,no_harvest,53,167.8055,58.7981,0.0,0.0,830.8797
+managed pine production forest,no_harvest,54,168.4652,58.8047,0.0,0.0,833.3229
+managed pine production forest,no_harvest,55,169.1024,58.811,0.0,0.0,835.6826
+managed pine production forest,no_harvest,56,169.7177,58.8172,0.0,0.0,837.9614
+managed pine production forest,no_harvest,57,170.3119,58.8231,0.0,0.0,840.1617
+managed pine production forest,no_harvest,58,170.8856,58.8289,0.0,0.0,842.2862
+managed pine production forest,no_harvest,59,171.4394,58.8344,0.0,0.0,844.3371
+managed pine production forest,no_harvest,60,171.974,58.8397,0.0,0.0,846.3169
+managed pine production forest,no_harvest,61,172.49,58.8449,0.0,0.0,848.228
+managed pine production forest,no_harvest,62,172.9881,58.8499,0.0,0.0,850.0725
+managed pine production forest,no_harvest,63,173.4688,58.8547,0.0,0.0,851.8527
+managed pine production forest,no_harvest,64,173.9327,58.8593,0.0,0.0,853.5707
+managed pine production forest,no_harvest,65,174.3804,58.8638,0.0,0.0,855.2287
+managed pine production forest,no_harvest,66,174.8124,58.8681,0.0,0.0,856.8287
+managed pine production forest,no_harvest,67,175.2294,58.8723,0.0,0.0,858.3727
+managed pine production forest,no_harvest,68,175.6317,58.8763,0.0,0.0,859.8627
+managed pine production forest,no_harvest,69,176.0199,58.8802,0.0,0.0,861.3004
+managed pine production forest,no_harvest,70,176.3946,58.8839,0.0,0.0,862.6878
+managed pine production forest,no_harvest,71,176.7561,58.8876,0.0,0.0,864.0267
+managed pine production forest,no_harvest,72,177.1049,58.891,0.0,0.0,865.3186
+managed pine production forest,no_harvest,73,177.4416,58.8944,0.0,0.0,866.5653
+managed pine production forest,no_harvest,74,177.7665,58.8977,0.0,0.0,867.7684
+managed pine production forest,no_harvest,75,178.08,58.9008,0.0,0.0,868.9295
+managed pine production forest,no_harvest,76,178.3825,58.9038,0.0,0.0,870.05
+managed pine production forest,no_harvest,77,178.6746,58.9067,0.0,0.0,871.1314
+managed pine production forest,no_harvest,78,178.9564,58.9096,0.0,0.0,872.1752
+managed pine production forest,no_harvest,79,179.2284,58.9123,0.0,0.0,873.1826
+managed pine production forest,no_harvest,80,179.491,58.9149,0.0,0.0,874.155
+managed pine production forest,no_harvest,81,179.7445,58.9174,0.0,0.0,875.0937
+managed pine production forest,no_harvest,82,179.9892,58.9199,0.0,0.0,875.9998
+managed pine production forest,no_harvest,83,180.2254,58.9223,0.0,0.0,876.8746
+managed pine production forest,no_harvest,84,180.4534,58.9245,0.0,0.0,877.7192
+managed pine production forest,no_harvest,85,180.6736,58.9267,0.0,0.0,878.5347
+managed pine production forest,no_harvest,86,180.8863,58.9289,0.0,0.0,879.3222
+managed pine production forest,no_harvest,87,181.0916,58.9309,0.0,0.0,880.0826
+managed pine production forest,no_harvest,88,181.2899,58.9329,0.0,0.0,880.817
+managed pine production forest,no_harvest,89,181.4814,58.9348,0.0,0.0,881.5263
+managed pine production forest,no_harvest,90,181.6664,58.9367,0.0,0.0,882.2114
+managed pine production forest,no_harvest,91,181.8452,58.9385,0.0,0.0,882.8732
+managed pine production forest,no_harvest,92,182.0178,58.9402,0.0,0.0,883.5126
+managed pine production forest,no_harvest,93,182.1846,58.9418,0.0,0.0,884.1303
+managed pine production forest,no_harvest,94,182.3458,58.9435,0.0,0.0,884.7272
+managed pine production forest,no_harvest,95,182.5015,58.945,0.0,0.0,885.304
+managed pine production forest,no_harvest,96,182.6521,58.9465,0.0,0.0,885.8615
+managed pine production forest,no_harvest,97,182.7975,58.948,0.0,0.0,886.4002
+managed pine production forest,no_harvest,98,182.9382,58.9494,0.0,0.0,886.921
+managed pine production forest,no_harvest,99,183.0741,58.9507,0.0,0.0,887.4245
+managed pine production forest,no_harvest,100,183.2055,58.9521,0.0,0.0,887.9112
+managed pine production forest,selective_60_year,0,88.0,58.0,0.0,0.0,535.3333
+managed pine production forest,selective_60_year,1,90.2094,58.0221,0.0,0.0,543.5153
+managed pine production forest,selective_60_year,2,92.4148,58.0441,0.0,0.0,551.6827
+managed pine production forest,selective_60_year,3,94.6137,58.0661,0.0,0.0,559.8262
+managed pine production forest,selective_60_year,4,96.8039,58.088,0.0,0.0,567.9369
+managed pine production forest,selective_60_year,5,98.9827,58.1098,0.0,0.0,576.006
+managed pine production forest,selective_60_year,6,101.148,58.1315,0.0,0.0,584.0248
+managed pine production forest,selective_60_year,7,103.2975,58.153,0.0,0.0,591.9851
+managed pine production forest,selective_60_year,8,105.429,58.1743,0.0,0.0,599.8789
+managed pine production forest,selective_60_year,9,107.5406,58.1954,0.0,0.0,607.6986
+managed pine production forest,selective_60_year,10,109.6301,58.2163,0.0,0.0,615.4368
+managed pine production forest,selective_60_year,11,111.6958,58.237,0.0,0.0,623.0866
+managed pine production forest,selective_60_year,12,113.7358,58.2574,0.0,0.0,630.6416
+managed pine production forest,selective_60_year,13,115.7486,58.2775,0.0,0.0,638.0956
+managed pine production forest,selective_60_year,14,117.7326,58.2973,0.0,0.0,645.443
+managed pine production forest,selective_60_year,15,119.6864,58.3169,0.0,0.0,652.6785
+managed pine production forest,selective_60_year,16,121.6086,58.3361,0.0,0.0,659.7973
+managed pine production forest,selective_60_year,17,123.4982,58.355,0.0,0.0,666.7951
+managed pine production forest,selective_60_year,18,125.3541,58.3735,0.0,0.0,673.668
+managed pine production forest,selective_60_year,19,127.1753,58.3918,0.0,0.0,680.4126
+managed pine production forest,selective_60_year,20,128.961,58.4096,0.0,0.0,687.0257
+managed pine production forest,selective_60_year,21,130.7106,58.4271,0.0,0.0,693.5048
+managed pine production forest,selective_60_year,22,132.4233,58.4442,0.0,0.0,699.8478
+managed pine production forest,selective_60_year,23,134.0988,58.461,0.0,0.0,706.0527
+managed pine production forest,selective_60_year,24,135.7367,58.4774,0.0,0.0,712.1182
+managed pine production forest,selective_60_year,25,137.3366,58.4934,0.0,0.0,718.0433
+managed pine production forest,selective_60_year,26,138.8985,58.509,0.0,0.0,723.8273
+managed pine production forest,selective_60_year,27,140.4221,58.5242,0.0,0.0,729.4698
+managed pine production forest,selective_60_year,28,141.9076,58.5391,0.0,0.0,734.971
+managed pine production forest,selective_60_year,29,143.3549,58.5535,0.0,0.0,740.331
+managed pine production forest,selective_60_year,30,144.7643,58.5676,0.0,0.0,745.5504
+managed pine production forest,selective_60_year,31,146.1359,58.5814,0.0,0.0,750.63
+managed pine production forest,selective_60_year,32,147.4701,58.5947,0.0,0.0,755.5711
+managed pine production forest,selective_60_year,33,148.7673,58.6077,0.0,0.0,760.3748
+managed pine production forest,selective_60_year,34,150.0277,58.6203,0.0,0.0,765.0426
+managed pine production forest,selective_60_year,35,151.2519,58.6325,0.0,0.0,769.5763
+managed pine production forest,selective_60_year,36,152.4404,58.6444,0.0,0.0,773.9778
+managed pine production forest,selective_60_year,37,153.5938,58.6559,0.0,0.0,778.249
+managed pine production forest,selective_60_year,38,154.7125,58.6671,0.0,0.0,782.3921
+managed pine production forest,selective_60_year,39,155.7973,58.678,0.0,0.0,786.4094
+managed pine production forest,selective_60_year,40,156.8488,58.6885,0.0,0.0,790.3033
+managed pine production forest,selective_60_year,41,157.8676,58.6987,0.0,0.0,794.0763
+managed pine production forest,selective_60_year,42,158.8544,58.7085,0.0,0.0,797.7307
+managed pine production forest,selective_60_year,43,159.8099,58.7181,0.0,0.0,801.2694
+managed pine production forest,selective_60_year,44,160.7349,58.7273,0.0,0.0,804.6949
+managed pine production forest,selective_60_year,45,161.63,58.7363,0.0,0.0,808.0099
+managed pine production forest,selective_60_year,46,162.4961,58.745,0.0,0.0,811.2171
+managed pine production forest,selective_60_year,47,163.3337,58.7533,0.0,0.0,814.3193
+managed pine production forest,selective_60_year,48,164.1438,58.7614,0.0,0.0,817.3192
+managed pine production forest,selective_60_year,49,164.927,58.7693,0.0,0.0,820.2195
+managed pine production forest,selective_60_year,50,165.684,58.7768,0.0,0.0,823.0231
+managed pine production forest,selective_60_year,51,166.4156,58.7842,0.0,0.0,825.7325
+managed pine production forest,selective_60_year,52,167.1225,58.7912,0.0,0.0,828.3505
+managed pine production forest,selective_60_year,53,167.8055,58.7981,0.0,0.0,830.8797
+managed pine production forest,selective_60_year,54,168.4652,58.8047,0.0,0.0,833.3229
+managed pine production forest,selective_60_year,55,169.1024,58.811,0.0,0.0,835.6826
+managed pine production forest,selective_60_year,56,169.7177,58.8172,0.0,0.0,837.9614
+managed pine production forest,selective_60_year,57,170.3119,58.8231,0.0,0.0,840.1617
+managed pine production forest,selective_60_year,58,170.8856,58.8289,0.0,0.0,842.2862
+managed pine production forest,selective_60_year,59,171.4394,58.8344,0.0,0.0,844.3371
+managed pine production forest,selective_60_year,60,171.974,58.8397,0.0,0.0,846.3169
+managed pine production forest,selective_60_year,61,124.1928,59.9074,43.4675,7.4764,861.8285
+managed pine production forest,selective_60_year,62,125.6681,59.9222,42.258,7.3641,862.4452
+managed pine production forest,selective_60_year,63,127.118,59.9367,41.1583,7.2563,863.3877
+managed pine production forest,selective_60_year,64,128.5424,59.9509,40.1526,7.1527,864.595
+managed pine production forest,selective_60_year,65,129.9409,59.9649,39.2276,7.0527,866.0154
+managed pine production forest,selective_60_year,66,131.3133,59.9786,38.3719,6.9559,867.6057
+managed pine production forest,selective_60_year,67,132.6595,59.9921,37.5761,6.8621,869.3292
+managed pine production forest,selective_60_year,68,133.9794,60.0053,36.832,6.771,871.155
+managed pine production forest,selective_60_year,69,135.2729,60.0182,36.1329,6.6824,873.0572
+managed pine production forest,selective_60_year,70,136.5401,60.0309,35.4731,6.5961,875.0139
+managed pine production forest,selective_60_year,71,137.7809,60.0433,34.8476,6.5118,877.0068
+managed pine production forest,selective_60_year,72,138.9954,60.0555,34.2524,6.4296,879.0204
+managed pine production forest,selective_60_year,73,140.1838,60.0673,33.6839,6.3491,881.0418
+managed pine production forest,selective_60_year,74,141.3462,60.079,33.1391,6.2704,883.0603
+managed pine production forest,selective_60_year,75,142.4826,60.0903,32.6156,6.1933,885.0667
+managed pine production forest,selective_60_year,76,143.5934,60.1014,32.1111,6.1177,887.0535
+managed pine production forest,selective_60_year,77,144.6788,60.1123,31.6239,6.0436,889.0147
+managed pine production forest,selective_60_year,78,145.739,60.1229,31.1523,5.9709,890.9451
+managed pine production forest,selective_60_year,79,146.7742,60.1333,30.695,5.8995,892.8404
+managed pine production forest,selective_60_year,80,147.7848,60.1434,30.2508,5.8294,894.6974
+managed pine production forest,selective_60_year,81,148.7712,60.1532,29.8188,5.7605,896.5134
+managed pine production forest,selective_60_year,82,149.7335,60.1628,29.398,5.6928,898.2861
+managed pine production forest,selective_60_year,83,150.6722,60.1722,28.9877,5.6263,900.014
+managed pine production forest,selective_60_year,84,151.5876,60.1814,28.5872,5.5608,901.696
+managed pine production forest,selective_60_year,85,152.4802,60.1903,28.196,5.4965,903.331
+managed pine production forest,selective_60_year,86,153.3502,60.199,27.8136,5.4332,904.9185
+managed pine production forest,selective_60_year,87,154.1981,60.2075,27.4394,5.3709,906.4583
+managed pine production forest,selective_60_year,88,155.0243,60.2158,27.0732,5.3096,907.9503
+managed pine production forest,selective_60_year,89,155.8292,60.2238,26.7145,5.2493,909.3946
+managed pine production forest,selective_60_year,90,156.6132,60.2316,26.363,5.1899,910.7914
+managed pine production forest,selective_60_year,91,157.3766,60.2393,26.0185,5.1314,912.1411
+managed pine production forest,selective_60_year,92,158.1201,60.2467,25.6806,5.0738,913.4443
+managed pine production forest,selective_60_year,93,158.8438,60.2539,25.3492,5.0171,914.7015
+managed pine production forest,selective_60_year,94,159.5484,60.261,25.024,4.9612,915.9135
+managed pine production forest,selective_60_year,95,160.2341,60.2679,24.7048,4.9062,917.081
+managed pine production forest,selective_60_year,96,160.9015,60.2745,24.3915,4.852,918.2047
+managed pine production forest,selective_60_year,97,161.5509,60.281,24.0838,4.7986,919.2856
+managed pine production forest,selective_60_year,98,162.1827,60.2873,23.7816,4.746,920.3245
+managed pine production forest,selective_60_year,99,162.7974,60.2935,23.4847,4.6941,921.3223
+managed pine production forest,selective_60_year,100,163.3954,60.2995,23.1931,4.643,922.28
+managed pine production forest,extended_50_year,0,88.0,58.0,0.0,0.0,535.3333
+managed pine production forest,extended_50_year,1,90.2094,58.0221,0.0,0.0,543.5153
+managed pine production forest,extended_50_year,2,92.4148,58.0441,0.0,0.0,551.6827
+managed pine production forest,extended_50_year,3,94.6137,58.0661,0.0,0.0,559.8262
+managed pine production forest,extended_50_year,4,96.8039,58.088,0.0,0.0,567.9369
+managed pine production forest,extended_50_year,5,98.9827,58.1098,0.0,0.0,576.006
+managed pine production forest,extended_50_year,6,101.148,58.1315,0.0,0.0,584.0248
+managed pine production forest,extended_50_year,7,103.2975,58.153,0.0,0.0,591.9851
+managed pine production forest,extended_50_year,8,105.429,58.1743,0.0,0.0,599.8789
+managed pine production forest,extended_50_year,9,107.5406,58.1954,0.0,0.0,607.6986
+managed pine production forest,extended_50_year,10,109.6301,58.2163,0.0,0.0,615.4368
+managed pine production forest,extended_50_year,11,111.6958,58.237,0.0,0.0,623.0866
+managed pine production forest,extended_50_year,12,113.7358,58.2574,0.0,0.0,630.6416
+managed pine production forest,extended_50_year,13,115.7486,58.2775,0.0,0.0,638.0956
+managed pine production forest,extended_50_year,14,117.7326,58.2973,0.0,0.0,645.443
+managed pine production forest,extended_50_year,15,119.6864,58.3169,0.0,0.0,652.6785
+managed pine production forest,extended_50_year,16,121.6086,58.3361,0.0,0.0,659.7973
+managed pine production forest,extended_50_year,17,123.4982,58.355,0.0,0.0,666.7951
+managed pine production forest,extended_50_year,18,125.3541,58.3735,0.0,0.0,673.668
+managed pine production forest,extended_50_year,19,127.1753,58.3918,0.0,0.0,680.4126
+managed pine production forest,extended_50_year,20,128.961,58.4096,0.0,0.0,687.0257
+managed pine production forest,extended_50_year,21,130.7106,58.4271,0.0,0.0,693.5048
+managed pine production forest,extended_50_year,22,132.4233,58.4442,0.0,0.0,699.8478
+managed pine production forest,extended_50_year,23,134.0988,58.461,0.0,0.0,706.0527
+managed pine production forest,extended_50_year,24,135.7367,58.4774,0.0,0.0,712.1182
+managed pine production forest,extended_50_year,25,137.3366,58.4934,0.0,0.0,718.0433
+managed pine production forest,extended_50_year,26,138.8985,58.509,0.0,0.0,723.8273
+managed pine production forest,extended_50_year,27,140.4221,58.5242,0.0,0.0,729.4698
+managed pine production forest,extended_50_year,28,141.9076,58.5391,0.0,0.0,734.971
+managed pine production forest,extended_50_year,29,143.3549,58.5535,0.0,0.0,740.331
+managed pine production forest,extended_50_year,30,144.7643,58.5676,0.0,0.0,745.5504
+managed pine production forest,extended_50_year,31,146.1359,58.5814,0.0,0.0,750.63
+managed pine production forest,extended_50_year,32,147.4701,58.5947,0.0,0.0,755.5711
+managed pine production forest,extended_50_year,33,148.7673,58.6077,0.0,0.0,760.3748
+managed pine production forest,extended_50_year,34,150.0277,58.6203,0.0,0.0,765.0426
+managed pine production forest,extended_50_year,35,151.2519,58.6325,0.0,0.0,769.5763
+managed pine production forest,extended_50_year,36,152.4404,58.6444,0.0,0.0,773.9778
+managed pine production forest,extended_50_year,37,153.5938,58.6559,0.0,0.0,778.249
+managed pine production forest,extended_50_year,38,154.7125,58.6671,0.0,0.0,782.3921
+managed pine production forest,extended_50_year,39,155.7973,58.678,0.0,0.0,786.4094
+managed pine production forest,extended_50_year,40,156.8488,58.6885,0.0,0.0,790.3033
+managed pine production forest,extended_50_year,41,157.8676,58.6987,0.0,0.0,794.0763
+managed pine production forest,extended_50_year,42,158.8544,58.7085,0.0,0.0,797.7307
+managed pine production forest,extended_50_year,43,159.8099,58.7181,0.0,0.0,801.2694
+managed pine production forest,extended_50_year,44,160.7349,58.7273,0.0,0.0,804.6949
+managed pine production forest,extended_50_year,45,161.63,58.7363,0.0,0.0,808.0099
+managed pine production forest,extended_50_year,46,162.4961,58.745,0.0,0.0,811.2171
+managed pine production forest,extended_50_year,47,163.3337,58.7533,0.0,0.0,814.3193
+managed pine production forest,extended_50_year,48,164.1438,58.7614,0.0,0.0,817.3192
+managed pine production forest,extended_50_year,49,164.927,58.7693,0.0,0.0,820.2195
+managed pine production forest,extended_50_year,50,165.684,58.7768,0.0,0.0,823.0231
+managed pine production forest,extended_50_year,51,96.5211,60.3218,62.9051,10.4143,843.9283
+managed pine production forest,extended_50_year,52,98.2588,60.3392,60.9182,10.2458,842.4606
+managed pine production forest,extended_50_year,53,99.9849,60.3565,59.1265,10.0851,841.6938
+managed pine production forest,extended_50_year,54,101.6981,60.3736,57.5014,9.9312,841.5156
+managed pine production forest,extended_50_year,55,103.3974,60.3906,56.0188,9.7834,841.8307
+managed pine production forest,extended_50_year,56,105.0818,60.4074,54.6584,9.6411,842.5585
+managed pine production forest,extended_50_year,57,106.7503,60.4241,53.4029,9.5036,843.6303
+managed pine production forest,extended_50_year,58,108.4019,60.4406,52.238,9.3706,844.9879
+managed pine production forest,extended_50_year,59,110.0358,60.457,51.1515,9.2416,846.5816
+managed pine production forest,extended_50_year,60,111.6512,60.4731,50.1328,9.1163,848.3693
+managed pine production forest,extended_50_year,61,113.2473,60.4891,49.1734,8.9943,850.315
+managed pine production forest,extended_50_year,62,114.8233,60.5049,48.2658,8.8754,852.3879
+managed pine production forest,extended_50_year,63,116.3787,60.5204,47.4038,8.7594,854.5618
+managed pine production forest,extended_50_year,64,117.9127,60.5358,46.582,8.6462,856.8141
+managed pine production forest,extended_50_year,65,119.4249,60.5509,45.7958,8.5354,859.1256
+managed pine production forest,extended_50_year,66,120.9147,60.5658,45.0416,8.427,861.4799
+managed pine production forest,extended_50_year,67,122.3817,60.5804,44.3159,8.3209,863.8627
+managed pine production forest,extended_50_year,68,123.8254,60.5949,43.616,8.2169,866.2619
+managed pine production forest,extended_50_year,69,125.2457,60.6091,42.9395,8.115,868.667
+managed pine production forest,extended_50_year,70,126.642,60.623,42.2843,8.015,871.0692
+managed pine production forest,extended_50_year,71,128.0142,60.6368,41.6486,7.9169,873.4606
+managed pine production forest,extended_50_year,72,129.3622,60.6502,41.031,7.8205,875.8346
+managed pine production forest,extended_50_year,73,130.6856,60.6635,40.4302,7.7259,878.1856
+managed pine production forest,extended_50_year,74,131.9844,60.6765,39.8449,7.633,880.5088
+managed pine production forest,extended_50_year,75,133.2586,60.6892,39.2742,7.5417,882.7998
+managed pine production forest,extended_50_year,76,134.508,60.7017,38.7171,7.4519,885.0554
+managed pine production forest,extended_50_year,77,135.7327,60.714,38.1731,7.3637,887.2723
+managed pine production forest,extended_50_year,78,136.9327,60.726,37.6413,7.2769,889.4482
+managed pine production forest,extended_50_year,79,138.1081,60.7377,37.1211,7.1915,891.5808
+managed pine production forest,extended_50_year,80,139.2589,60.7492,36.6121,7.1076,893.6685
+managed pine production forest,extended_50_year,81,140.3854,60.7605,36.1137,7.025,895.7098
+managed pine production forest,extended_50_year,82,141.4876,60.7715,35.6255,6.9437,897.7036
+managed pine production forest,extended_50_year,83,142.5658,60.7823,35.1471,6.8637,899.6489
+managed pine production forest,extended_50_year,84,143.62,60.7928,34.6781,6.785,901.5452
+managed pine production forest,extended_50_year,85,144.6507,60.8031,34.2183,6.7075,903.3919
+managed pine production forest,extended_50_year,86,145.658,60.8132,33.7673,6.6312,905.1887
+managed pine production forest,extended_50_year,87,146.6422,60.823,33.3248,6.556,906.9355
+managed pine production forest,extended_50_year,88,147.6035,60.8327,32.8906,6.4821,908.6324
+managed pine production forest,extended_50_year,89,148.5423,60.842,32.4644,6.4092,910.2793
+managed pine production forest,extended_50_year,90,149.4589,60.8512,32.0461,6.3374,911.8765
+managed pine production forest,extended_50_year,91,150.3536,60.8602,31.6353,6.2668,913.4244
+managed pine production forest,extended_50_year,92,151.2267,60.8689,31.2318,6.1971,914.9234
+managed pine production forest,extended_50_year,93,152.0786,60.8774,30.8356,6.1285,916.374
+managed pine production forest,extended_50_year,94,152.9097,60.8857,30.4464,6.0609,917.7766
+managed pine production forest,extended_50_year,95,153.7202,60.8938,30.064,5.9943,919.132
+managed pine production forest,extended_50_year,96,154.5106,60.9017,29.6882,5.9287,920.4408
+managed pine production forest,extended_50_year,97,155.2813,60.9094,29.319,5.864,921.7037
+managed pine production forest,extended_50_year,98,156.0326,60.917,28.956,5.8003,922.9214
+managed pine production forest,extended_50_year,99,156.7649,60.9243,28.5993,5.7374,924.0948
+managed pine production forest,extended_50_year,100,157.4785,60.9314,28.2486,5.6755,925.2247
+managed pine production forest,current_40_year,0,88.0,58.0,0.0,0.0,535.3333
+managed pine production forest,current_40_year,1,90.2094,58.0221,0.0,0.0,543.5153
+managed pine production forest,current_40_year,2,92.4148,58.0441,0.0,0.0,551.6827
+managed pine production forest,current_40_year,3,94.6137,58.0661,0.0,0.0,559.8262
+managed pine production forest,current_40_year,4,96.8039,58.088,0.0,0.0,567.9369
+managed pine production forest,current_40_year,5,98.9827,58.1098,0.0,0.0,576.006
+managed pine production forest,current_40_year,6,101.148,58.1315,0.0,0.0,584.0248
+managed pine production forest,current_40_year,7,103.2975,58.153,0.0,0.0,591.9851
+managed pine production forest,current_40_year,8,105.429,58.1743,0.0,0.0,599.8789
+managed pine production forest,current_40_year,9,107.5406,58.1954,0.0,0.0,607.6986
+managed pine production forest,current_40_year,10,109.6301,58.2163,0.0,0.0,615.4368
+managed pine production forest,current_40_year,11,111.6958,58.237,0.0,0.0,623.0866
+managed pine production forest,current_40_year,12,113.7358,58.2574,0.0,0.0,630.6416
+managed pine production forest,current_40_year,13,115.7486,58.2775,0.0,0.0,638.0956
+managed pine production forest,current_40_year,14,117.7326,58.2973,0.0,0.0,645.443
+managed pine production forest,current_40_year,15,119.6864,58.3169,0.0,0.0,652.6785
+managed pine production forest,current_40_year,16,121.6086,58.3361,0.0,0.0,659.7973
+managed pine production forest,current_40_year,17,123.4982,58.355,0.0,0.0,666.7951
+managed pine production forest,current_40_year,18,125.3541,58.3735,0.0,0.0,673.668
+managed pine production forest,current_40_year,19,127.1753,58.3918,0.0,0.0,680.4126
+managed pine production forest,current_40_year,20,128.961,58.4096,0.0,0.0,687.0257
+managed pine production forest,current_40_year,21,130.7106,58.4271,0.0,0.0,693.5048
+managed pine production forest,current_40_year,22,132.4233,58.4442,0.0,0.0,699.8478
+managed pine production forest,current_40_year,23,134.0988,58.461,0.0,0.0,706.0527
+managed pine production forest,current_40_year,24,135.7367,58.4774,0.0,0.0,712.1182
+managed pine production forest,current_40_year,25,137.3366,58.4934,0.0,0.0,718.0433
+managed pine production forest,current_40_year,26,138.8985,58.509,0.0,0.0,723.8273
+managed pine production forest,current_40_year,27,140.4221,58.5242,0.0,0.0,729.4698
+managed pine production forest,current_40_year,28,141.9076,58.5391,0.0,0.0,734.971
+managed pine production forest,current_40_year,29,143.3549,58.5535,0.0,0.0,740.331
+managed pine production forest,current_40_year,30,144.7643,58.5676,0.0,0.0,745.5504
+managed pine production forest,current_40_year,31,146.1359,58.5814,0.0,0.0,750.63
+managed pine production forest,current_40_year,32,147.4701,58.5947,0.0,0.0,755.5711
+managed pine production forest,current_40_year,33,148.7673,58.6077,0.0,0.0,760.3748
+managed pine production forest,current_40_year,34,150.0277,58.6203,0.0,0.0,765.0426
+managed pine production forest,current_40_year,35,151.2519,58.6325,0.0,0.0,769.5763
+managed pine production forest,current_40_year,36,152.4404,58.6444,0.0,0.0,773.9778
+managed pine production forest,current_40_year,37,153.5938,58.6559,0.0,0.0,778.249
+managed pine production forest,current_40_year,38,154.7125,58.6671,0.0,0.0,782.3921
+managed pine production forest,current_40_year,39,155.7973,58.678,0.0,0.0,786.4094
+managed pine production forest,current_40_year,40,156.8488,58.6885,0.0,0.0,790.3033
+managed pine production forest,current_40_year,41,78.9338,60.4352,71.0404,11.1533,812.3968
+managed pine production forest,current_40_year,42,80.7197,60.4531,68.4107,10.9541,808.6375
+managed pine production forest,current_40_year,43,82.5069,60.471,66.0622,10.7654,805.9534
+managed pine production forest,current_40_year,44,84.294,60.4888,63.9531,10.5861,804.1809
+managed pine production forest,current_40_year,45,86.0795,60.5067,62.0482,10.415,803.1814
+managed pine production forest,current_40_year,46,87.8622,60.5245,60.3177,10.2513,802.8375
+managed pine production forest,current_40_year,47,89.6406,60.5423,58.7366,10.094,803.049
+managed pine production forest,current_40_year,48,91.4134,60.56,57.2836,9.9425,803.7311
+managed pine production forest,current_40_year,49,93.1792,60.5777,55.9409,9.7962,804.8114
+managed pine production forest,current_40_year,50,94.9369,60.5953,54.6936,9.6546,806.228
+managed pine production forest,current_40_year,51,96.6851,60.6127,53.5287,9.5174,807.928
+managed pine production forest,current_40_year,52,98.4227,60.6301,52.4357,9.3841,809.8662
+managed pine production forest,current_40_year,53,100.1485,60.6474,51.4053,9.2545,812.0037
+managed pine production forest,current_40_year,54,101.8613,60.6645,50.4298,9.1281,814.3071
+managed pine production forest,current_40_year,55,103.5601,60.6815,49.5027,9.005,816.7475
+managed pine production forest,current_40_year,56,105.2439,60.6983,48.6185,8.8847,819.3
+managed pine production forest,current_40_year,57,106.9117,60.715,47.7724,8.7672,821.943
+managed pine production forest,current_40_year,58,108.5626,60.7315,46.9603,8.6522,824.6578
+managed pine production forest,current_40_year,59,110.1956,60.7478,46.179,8.5398,827.428
+managed pine production forest,current_40_year,60,111.81,60.764,45.4253,8.4296,830.2393
+managed pine production forest,current_40_year,61,113.405,60.7799,44.6969,8.3216,833.0794
+managed pine production forest,current_40_year,62,114.9799,60.7957,43.9915,8.2158,835.9373
+managed pine production forest,current_40_year,63,116.5341,60.8112,43.3072,8.112,838.8034
+managed pine production forest,current_40_year,64,118.0668,60.8265,42.6426,8.0102,841.6693
+managed pine production forest,current_40_year,65,119.5776,60.8417,41.9962,7.9102,844.5276
+managed pine production forest,current_40_year,66,121.066,60.8565,41.3667,7.8121,847.3717
+managed pine production forest,current_40_year,67,122.5315,60.8712,40.7531,7.7157,850.1959
+managed pine production forest,current_40_year,68,123.9738,60.8856,40.1546,7.6211,852.9952
+managed pine production forest,current_40_year,69,125.3924,60.8998,39.5702,7.5281,855.765
+managed pine production forest,current_40_year,70,126.7871,60.9138,38.9992,7.4367,858.5014
+managed pine production forest,current_40_year,71,128.1577,60.9275,38.441,7.3468,861.201
+managed pine production forest,current_40_year,72,129.5039,60.9409,37.8951,7.2585,863.8607
+managed pine production forest,current_40_year,73,130.8256,60.9541,37.3608,7.1716,866.4779
+managed pine production forest,current_40_year,74,132.1226,60.9671,36.8378,7.0862,869.0503
+managed pine production forest,current_40_year,75,133.3949,60.9798,36.3256,7.0022,871.5759
+managed pine production forest,current_40_year,76,134.6425,60.9923,35.8237,6.9196,874.053
+managed pine production forest,current_40_year,77,135.8654,61.0045,35.3319,6.8383,876.4803
+managed pine production forest,current_40_year,78,137.0635,61.0165,34.8498,6.7583,878.8564
+managed pine production forest,current_40_year,79,138.237,61.0283,34.3772,6.6795,881.1805
+managed pine production forest,current_40_year,80,139.3859,61.0397,33.9136,6.6021,883.4517
+managed pine production forest,current_40_year,81,70.2552,62.5966,96.6886,16.4529,901.9756
+managed pine production forest,current_40_year,82,71.6193,62.6102,93.9019,16.2005,895.8835
+managed pine production forest,current_40_year,83,72.9848,62.6239,91.3738,15.9587,890.7845
+managed pine production forest,current_40_year,84,74.3511,62.6376,89.067,15.7263,886.5342
+managed pine production forest,current_40_year,85,75.7175,62.6512,86.9498,15.5024,883.0103
+managed pine production forest,current_40_year,86,77.0832,62.6649,84.9956,15.2861,880.1092
+managed pine production forest,current_40_year,87,78.4475,62.6785,83.1817,15.0766,877.7429
+managed pine production forest,current_40_year,88,79.8098,62.6921,81.4893,14.8734,875.837
+managed pine production forest,current_40_year,89,81.1693,62.7057,79.9023,14.6758,874.3279
+managed pine production forest,current_40_year,90,82.5253,62.7193,78.4069,14.4834,873.1617
+managed pine production forest,current_40_year,91,83.8773,62.7328,76.9919,14.2959,872.2922
+managed pine production forest,current_40_year,92,85.2245,62.7463,75.6474,14.1128,871.68
+managed pine production forest,current_40_year,93,86.5663,62.7597,74.3651,13.9339,871.2915
+managed pine production forest,current_40_year,94,87.9021,62.7731,73.138,13.7589,871.0975
+managed pine production forest,current_40_year,95,89.2313,62.7864,71.9602,13.5876,871.0732
+managed pine production forest,current_40_year,96,90.5533,62.7996,70.8266,13.4198,871.197
+managed pine production forest,current_40_year,97,91.8675,62.8127,69.7328,13.2553,871.4502
+managed pine production forest,current_40_year,98,93.1734,62.8258,68.6751,13.0939,871.8167
+managed pine production forest,current_40_year,99,94.4705,62.8388,67.6503,12.9356,872.2822
+managed pine production forest,current_40_year,100,95.7583,62.8516,66.6557,12.7801,872.8345
+managed pine production forest,short_30_year,0,88.0,58.0,0.0,0.0,535.3333
+managed pine production forest,short_30_year,1,90.2094,58.0221,0.0,0.0,543.5153
+managed pine production forest,short_30_year,2,92.4148,58.0441,0.0,0.0,551.6827
+managed pine production forest,short_30_year,3,94.6137,58.0661,0.0,0.0,559.8262
+managed pine production forest,short_30_year,4,96.8039,58.088,0.0,0.0,567.9369
+managed pine production forest,short_30_year,5,98.9827,58.1098,0.0,0.0,576.006
+managed pine production forest,short_30_year,6,101.148,58.1315,0.0,0.0,584.0248
+managed pine production forest,short_30_year,7,103.2975,58.153,0.0,0.0,591.9851
+managed pine production forest,short_30_year,8,105.429,58.1743,0.0,0.0,599.8789
+managed pine production forest,short_30_year,9,107.5406,58.1954,0.0,0.0,607.6986
+managed pine production forest,short_30_year,10,109.6301,58.2163,0.0,0.0,615.4368
+managed pine production forest,short_30_year,11,111.6958,58.237,0.0,0.0,623.0866
+managed pine production forest,short_30_year,12,113.7358,58.2574,0.0,0.0,630.6416
+managed pine production forest,short_30_year,13,115.7486,58.2775,0.0,0.0,638.0956
+managed pine production forest,short_30_year,14,117.7326,58.2973,0.0,0.0,645.443
+managed pine production forest,short_30_year,15,119.6864,58.3169,0.0,0.0,652.6785
+managed pine production forest,short_30_year,16,121.6086,58.3361,0.0,0.0,659.7973
+managed pine production forest,short_30_year,17,123.4982,58.355,0.0,0.0,666.7951
+managed pine production forest,short_30_year,18,125.3541,58.3735,0.0,0.0,673.668
+managed pine production forest,short_30_year,19,127.1753,58.3918,0.0,0.0,680.4126
+managed pine production forest,short_30_year,20,128.961,58.4096,0.0,0.0,687.0257
+managed pine production forest,short_30_year,21,130.7106,58.4271,0.0,0.0,693.5048
+managed pine production forest,short_30_year,22,132.4233,58.4442,0.0,0.0,699.8478
+managed pine production forest,short_30_year,23,134.0988,58.461,0.0,0.0,706.0527
+managed pine production forest,short_30_year,24,135.7367,58.4774,0.0,0.0,712.1182
+managed pine production forest,short_30_year,25,137.3366,58.4934,0.0,0.0,718.0433
+managed pine production forest,short_30_year,26,138.8985,58.509,0.0,0.0,723.8273
+managed pine production forest,short_30_year,27,140.4221,58.5242,0.0,0.0,729.4698
+managed pine production forest,short_30_year,28,141.9076,58.5391,0.0,0.0,734.971
+managed pine production forest,short_30_year,29,143.3549,58.5535,0.0,0.0,740.331
+managed pine production forest,short_30_year,30,144.7643,58.5676,0.0,0.0,745.5504
+managed pine production forest,short_30_year,31,61.3771,60.4461,74.5878,10.6288,759.1455
+managed pine production forest,short_30_year,32,63.072,60.463,71.1091,10.4035,751.8412
+managed pine production forest,short_30_year,33,64.782,60.4801,68.0405,10.1928,746.15
+managed pine production forest,short_30_year,34,66.5058,60.4973,65.3199,9.995,741.8327
+managed pine production forest,short_30_year,35,68.2422,60.5147,62.8949,9.8082,738.6868
+managed pine production forest,short_30_year,36,69.9897,60.5322,60.7217,9.6312,736.5409
+managed pine production forest,short_30_year,37,71.7471,60.5498,58.763,9.4628,735.2497
+managed pine production forest,short_30_year,38,73.5128,60.5674,56.9876,9.302,734.6896
+managed pine production forest,short_30_year,39,75.2856,60.5851,55.3692,9.148,734.7559
+managed pine production forest,short_30_year,40,77.064,60.6029,53.8855,9.0,735.3589
+managed pine production forest,short_30_year,41,78.8466,60.6207,52.5177,8.8575,736.4226
+managed pine production forest,short_30_year,42,80.632,60.6386,51.25,8.7198,737.8814
+managed pine production forest,short_30_year,43,82.4187,60.6565,50.069,8.5866,739.6795
+managed pine production forest,short_30_year,44,84.2054,60.6743,48.9633,8.4575,741.7687
+managed pine production forest,short_30_year,45,85.9906,60.6922,47.9234,8.3322,744.1073
+managed pine production forest,short_30_year,46,87.7729,60.71,46.9412,8.2103,746.6596
+managed pine production forest,short_30_year,47,89.5511,60.7278,46.0097,8.0917,749.3943
+managed pine production forest,short_30_year,48,91.3237,60.7455,45.1231,7.976,752.2841
+managed pine production forest,short_30_year,49,93.0895,60.7632,44.2765,7.8632,755.3054
+managed pine production forest,short_30_year,50,94.8471,60.7808,43.4656,7.753,758.4372
+managed pine production forest,short_30_year,51,96.5954,60.7982,42.6868,7.6453,761.6611
+managed pine production forest,short_30_year,52,98.3331,60.8156,41.937,7.5401,764.9609
+managed pine production forest,short_30_year,53,100.059,60.8329,41.2135,7.437,768.3222
+managed pine production forest,short_30_year,54,101.772,60.85,40.5141,7.3362,771.732
+managed pine production forest,short_30_year,55,103.4711,60.867,39.8369,7.2374,775.1789
+managed pine production forest,short_30_year,56,105.1553,60.8838,39.1801,7.1406,778.6525
+managed pine production forest,short_30_year,57,106.8234,60.9005,38.5422,7.0458,782.1436
+managed pine production forest,short_30_year,58,108.4747,60.917,37.922,6.9527,785.6437
+managed pine production forest,short_30_year,59,110.1082,60.9334,37.3183,6.8615,789.1453
+managed pine production forest,short_30_year,60,111.7232,60.9495,36.7303,6.772,792.6415
+managed pine production forest,short_30_year,61,47.5939,62.4114,93.9948,14.926,802.7293
+managed pine production forest,short_30_year,62,48.838,62.4239,90.738,14.6651,794.438
+managed pine production forest,short_30_year,63,50.096,62.4364,87.8123,14.4171,787.4604
+managed pine production forest,short_30_year,64,51.3675,62.4492,85.1692,14.1806,781.61
+managed pine production forest,short_30_year,65,52.6517,62.462,82.7674,13.9542,776.7292
+managed pine production forest,short_30_year,66,53.9481,62.475,80.5724,13.7367,772.6846
+managed pine production forest,short_30_year,67,55.256,62.488,78.5549,13.5274,769.3633
+managed pine production forest,short_30_year,68,56.5747,62.5012,76.6904,13.3253,766.6693
+managed pine production forest,short_30_year,69,57.9036,62.5145,74.9579,13.1298,764.5212
+managed pine production forest,short_30_year,70,59.2419,62.5279,73.3398,12.9403,762.8498
+managed pine production forest,short_30_year,71,60.5889,62.5414,71.8214,12.7563,761.596
+managed pine production forest,short_30_year,72,61.944,62.5549,70.3899,12.5774,760.7093
+managed pine production forest,short_30_year,73,63.3063,62.5685,69.0347,12.4031,760.1465
+managed pine production forest,short_30_year,74,64.6751,62.5822,67.7468,12.2332,759.8704
+managed pine production forest,short_30_year,75,66.0497,62.596,66.5185,12.0674,759.849
+managed pine production forest,short_30_year,76,67.4293,62.6098,65.3432,11.9053,760.0545
+managed pine production forest,short_30_year,77,68.8132,62.6236,64.2153,11.7469,760.4631
+managed pine production forest,short_30_year,78,70.2004,62.6375,63.1302,11.5919,761.0536
+managed pine production forest,short_30_year,79,71.5904,62.6514,62.0837,11.4402,761.8077
+managed pine production forest,short_30_year,80,72.9824,62.6653,61.0724,11.2915,762.7093
+managed pine production forest,short_30_year,81,74.3755,62.6792,60.0933,11.1459,763.744
+managed pine production forest,short_30_year,82,75.769,62.6932,59.1437,11.003,764.8992
+managed pine production forest,short_30_year,83,77.1621,62.7071,58.2216,10.8629,766.1634
+managed pine production forest,short_30_year,84,78.5542,62.721,57.3248,10.7254,767.5264
+managed pine production forest,short_30_year,85,79.9444,62.7349,56.4518,10.5905,768.979
+managed pine production forest,short_30_year,86,81.332,62.7488,55.6011,10.458,770.5128
+managed pine production forest,short_30_year,87,82.7164,62.7626,54.7713,10.3279,772.1202
+managed pine production forest,short_30_year,88,84.0969,62.7764,53.9614,10.2001,773.794
+managed pine production forest,short_30_year,89,85.4726,62.7902,53.1703,10.0745,775.5277
+managed pine production forest,short_30_year,90,86.843,62.8039,52.3971,9.9511,777.3155
+managed pine production forest,short_30_year,91,37.0471,63.9431,96.6621,16.2453,784.2915
+managed pine production forest,short_30_year,92,37.9098,63.9517,93.8227,15.9901,776.1394
+managed pine production forest,short_30_year,93,38.7814,63.9604,91.2466,15.7458,769.0255
+managed pine production forest,short_30_year,94,39.6618,63.9692,88.8956,15.5111,762.805
+managed pine production forest,short_30_year,95,40.5505,63.9781,86.7377,15.2851,757.3551
+managed pine production forest,short_30_year,96,41.4474,63.9871,84.7457,15.0668,752.5723
+managed pine production forest,short_30_year,97,42.3521,63.9961,82.8969,14.8555,748.369
+managed pine production forest,short_30_year,98,43.2642,64.0053,81.172,14.6506,744.6707
+managed pine production forest,short_30_year,99,44.1835,64.0144,79.5545,14.4514,741.4144
+managed pine production forest,short_30_year,100,45.1097,64.0237,78.0307,14.2577,738.5465
+old-growth coastal conifer reserve,no_harvest,0,244.0,128.0,0.0,0.0,1364.0
+old-growth coastal conifer reserve,no_harvest,1,244.4309,128.0043,0.0,0.0,1365.5959
+old-growth coastal conifer reserve,no_harvest,2,244.856,128.0086,0.0,0.0,1367.1702
+old-growth coastal conifer reserve,no_harvest,3,245.2754,128.0128,0.0,0.0,1368.7233
+old-growth coastal conifer reserve,no_harvest,4,245.6891,128.0169,0.0,0.0,1370.2553
+old-growth coastal conifer reserve,no_harvest,5,246.0972,128.021,0.0,0.0,1371.7665
+old-growth coastal conifer reserve,no_harvest,6,246.4997,128.025,0.0,0.0,1373.2572
+old-growth coastal conifer reserve,no_harvest,7,246.8967,128.029,0.0,0.0,1374.7275
+old-growth coastal conifer reserve,no_harvest,8,247.2883,128.0329,0.0,0.0,1376.1778
+old-growth coastal conifer reserve,no_harvest,9,247.6746,128.0367,0.0,0.0,1377.6082
+old-growth coastal conifer reserve,no_harvest,10,248.0555,128.0406,0.0,0.0,1379.019
+old-growth coastal conifer reserve,no_harvest,11,248.4313,128.0443,0.0,0.0,1380.4104
+old-growth coastal conifer reserve,no_harvest,12,248.8018,128.048,0.0,0.0,1381.7826
+old-growth coastal conifer reserve,no_harvest,13,249.1672,128.0517,0.0,0.0,1383.136
+old-growth coastal conifer reserve,no_harvest,14,249.5276,128.0553,0.0,0.0,1384.4706
+old-growth coastal conifer reserve,no_harvest,15,249.883,128.0588,0.0,0.0,1385.7867
+old-growth coastal conifer reserve,no_harvest,16,250.2334,128.0623,0.0,0.0,1387.0845
+old-growth coastal conifer reserve,no_harvest,17,250.579,128.0658,0.0,0.0,1388.3643
+old-growth coastal conifer reserve,no_harvest,18,250.9198,128.0692,0.0,0.0,1389.6262
+old-growth coastal conifer reserve,no_harvest,19,251.2558,128.0726,0.0,0.0,1390.8706
+old-growth coastal conifer reserve,no_harvest,20,251.5871,128.0759,0.0,0.0,1392.0975
+old-growth coastal conifer reserve,no_harvest,21,251.9137,128.0791,0.0,0.0,1393.3072
+old-growth coastal conifer reserve,no_harvest,22,252.2358,128.0824,0.0,0.0,1394.4998
+old-growth coastal conifer reserve,no_harvest,23,252.5533,128.0855,0.0,0.0,1395.6757
+old-growth coastal conifer reserve,no_harvest,24,252.8663,128.0887,0.0,0.0,1396.835
+old-growth coastal conifer reserve,no_harvest,25,253.175,128.0917,0.0,0.0,1397.9779
+old-growth coastal conifer reserve,no_harvest,26,253.4792,128.0948,0.0,0.0,1399.1046
+old-growth coastal conifer reserve,no_harvest,27,253.7791,128.0978,0.0,0.0,1400.2153
+old-growth coastal conifer reserve,no_harvest,28,254.0747,128.1007,0.0,0.0,1401.3101
+old-growth coastal conifer reserve,no_harvest,29,254.3662,128.1037,0.0,0.0,1402.3893
+old-growth coastal conifer reserve,no_harvest,30,254.6534,128.1065,0.0,0.0,1403.4531
+old-growth coastal conifer reserve,no_harvest,31,254.9365,128.1094,0.0,0.0,1404.5017
+old-growth coastal conifer reserve,no_harvest,32,255.2156,128.1122,0.0,0.0,1405.5351
+old-growth coastal conifer reserve,no_harvest,33,255.4906,128.1149,0.0,0.0,1406.5537
+old-growth coastal conifer reserve,no_harvest,34,255.7617,128.1176,0.0,0.0,1407.5576
+old-growth coastal conifer reserve,no_harvest,35,256.0289,128.1203,0.0,0.0,1408.5469
+old-growth coastal conifer reserve,no_harvest,36,256.2921,128.1229,0.0,0.0,1409.5218
+old-growth coastal conifer reserve,no_harvest,37,256.5516,128.1255,0.0,0.0,1410.4826
+old-growth coastal conifer reserve,no_harvest,38,256.8072,128.1281,0.0,0.0,1411.4293
+old-growth coastal conifer reserve,no_harvest,39,257.0591,128.1306,0.0,0.0,1412.3622
+old-growth coastal conifer reserve,no_harvest,40,257.3073,128.1331,0.0,0.0,1413.2814
+old-growth coastal conifer reserve,no_harvest,41,257.5519,128.1355,0.0,0.0,1414.1871
+old-growth coastal conifer reserve,no_harvest,42,257.7928,128.1379,0.0,0.0,1415.0794
+old-growth coastal conifer reserve,no_harvest,43,258.0302,128.1403,0.0,0.0,1415.9585
+old-growth coastal conifer reserve,no_harvest,44,258.264,128.1426,0.0,0.0,1416.8245
+old-growth coastal conifer reserve,no_harvest,45,258.4944,128.1449,0.0,0.0,1417.6777
+old-growth coastal conifer reserve,no_harvest,46,258.7213,128.1472,0.0,0.0,1418.5181
+old-growth coastal conifer reserve,no_harvest,47,258.9449,128.1494,0.0,0.0,1419.3458
+old-growth coastal conifer reserve,no_harvest,48,259.165,128.1517,0.0,0.0,1420.1612
+old-growth coastal conifer reserve,no_harvest,49,259.3819,128.1538,0.0,0.0,1420.9642
+old-growth coastal conifer reserve,no_harvest,50,259.5954,128.156,0.0,0.0,1421.7551
+old-growth coastal conifer reserve,no_harvest,51,259.8058,128.1581,0.0,0.0,1422.534
+old-growth coastal conifer reserve,no_harvest,52,260.0129,128.1601,0.0,0.0,1423.3009
+old-growth coastal conifer reserve,no_harvest,53,260.2168,128.1622,0.0,0.0,1424.0562
+old-growth coastal conifer reserve,no_harvest,54,260.4176,128.1642,0.0,0.0,1424.7998
+old-growth coastal conifer reserve,no_harvest,55,260.6153,128.1662,0.0,0.0,1425.5319
+old-growth coastal conifer reserve,no_harvest,56,260.8099,128.1681,0.0,0.0,1426.2527
+old-growth coastal conifer reserve,no_harvest,57,261.0015,128.17,0.0,0.0,1426.9623
+old-growth coastal conifer reserve,no_harvest,58,261.1901,128.1719,0.0,0.0,1427.6608
+old-growth coastal conifer reserve,no_harvest,59,261.3758,128.1738,0.0,0.0,1428.3484
+old-growth coastal conifer reserve,no_harvest,60,261.5585,128.1756,0.0,0.0,1429.025
+old-growth coastal conifer reserve,no_harvest,61,261.7403,128.1774,0.0,0.0,1429.6984
+old-growth coastal conifer reserve,no_harvest,62,261.9213,128.1792,0.0,0.0,1430.3685
+old-growth coastal conifer reserve,no_harvest,63,262.1013,128.181,0.0,0.0,1431.0353
+old-growth coastal conifer reserve,no_harvest,64,262.2805,128.1828,0.0,0.0,1431.6987
+old-growth coastal conifer reserve,no_harvest,65,262.4588,128.1846,0.0,0.0,1432.3589
+old-growth coastal conifer reserve,no_harvest,66,262.6362,128.1864,0.0,0.0,1433.0159
+old-growth coastal conifer reserve,no_harvest,67,262.8127,128.1881,0.0,0.0,1433.6696
+old-growth coastal conifer reserve,no_harvest,68,262.9883,128.1899,0.0,0.0,1434.32
+old-growth coastal conifer reserve,no_harvest,69,263.1631,128.1916,0.0,0.0,1434.9672
+old-growth coastal conifer reserve,no_harvest,70,263.337,128.1934,0.0,0.0,1435.6112
+old-growth coastal conifer reserve,no_harvest,71,263.51,128.1951,0.0,0.0,1436.252
+old-growth coastal conifer reserve,no_harvest,72,263.6822,128.1968,0.0,0.0,1436.8896
+old-growth coastal conifer reserve,no_harvest,73,263.8535,128.1985,0.0,0.0,1437.524
+old-growth coastal conifer reserve,no_harvest,74,264.0239,128.2002,0.0,0.0,1438.1552
+old-growth coastal conifer reserve,no_harvest,75,264.1935,128.2019,0.0,0.0,1438.7833
+old-growth coastal conifer reserve,no_harvest,76,264.3623,128.2036,0.0,0.0,1439.4082
+old-growth coastal conifer reserve,no_harvest,77,264.5301,128.2053,0.0,0.0,1440.03
+old-growth coastal conifer reserve,no_harvest,78,264.6972,128.207,0.0,0.0,1440.6486
+old-growth coastal conifer reserve,no_harvest,79,264.8634,128.2086,0.0,0.0,1441.2641
+old-growth coastal conifer reserve,no_harvest,80,265.0288,128.2103,0.0,0.0,1441.8766
+old-growth coastal conifer reserve,no_harvest,81,265.1933,128.2119,0.0,0.0,1442.4859
+old-growth coastal conifer reserve,no_harvest,82,265.357,128.2136,0.0,0.0,1443.0921
+old-growth coastal conifer reserve,no_harvest,83,265.5199,128.2152,0.0,0.0,1443.6953
+old-growth coastal conifer reserve,no_harvest,84,265.6819,128.2168,0.0,0.0,1444.2954
+old-growth coastal conifer reserve,no_harvest,85,265.8431,128.2184,0.0,0.0,1444.8924
+old-growth coastal conifer reserve,no_harvest,86,266.0035,128.22,0.0,0.0,1445.4864
+old-growth coastal conifer reserve,no_harvest,87,266.1631,128.2216,0.0,0.0,1446.0774
+old-growth coastal conifer reserve,no_harvest,88,266.3219,128.2232,0.0,0.0,1446.6654
+old-growth coastal conifer reserve,no_harvest,89,266.4798,128.2248,0.0,0.0,1447.2504
+old-growth coastal conifer reserve,no_harvest,90,266.637,128.2264,0.0,0.0,1447.8323
+old-growth coastal conifer reserve,no_harvest,91,266.7933,128.2279,0.0,0.0,1448.4113
+old-growth coastal conifer reserve,no_harvest,92,266.9489,128.2295,0.0,0.0,1448.9873
+old-growth coastal conifer reserve,no_harvest,93,267.1036,128.231,0.0,0.0,1449.5604
+old-growth coastal conifer reserve,no_harvest,94,267.2576,128.2326,0.0,0.0,1450.1305
+old-growth coastal conifer reserve,no_harvest,95,267.4107,128.2341,0.0,0.0,1450.6977
+old-growth coastal conifer reserve,no_harvest,96,267.5631,128.2356,0.0,0.0,1451.2619
+old-growth coastal conifer reserve,no_harvest,97,267.7147,128.2371,0.0,0.0,1451.8233
+old-growth coastal conifer reserve,no_harvest,98,267.8654,128.2387,0.0,0.0,1452.3817
+old-growth coastal conifer reserve,no_harvest,99,268.0155,128.2402,0.0,0.0,1452.9372
+old-growth coastal conifer reserve,no_harvest,100,268.1647,128.2416,0.0,0.0,1453.4899
+old-growth coastal conifer reserve,selective_60_year,0,244.0,128.0,0.0,0.0,1364.0
+old-growth coastal conifer reserve,selective_60_year,1,244.4309,128.0043,0.0,0.0,1365.5959
+old-growth coastal conifer reserve,selective_60_year,2,244.856,128.0086,0.0,0.0,1367.1702
+old-growth coastal conifer reserve,selective_60_year,3,245.2754,128.0128,0.0,0.0,1368.7233
+old-growth coastal conifer reserve,selective_60_year,4,245.6891,128.0169,0.0,0.0,1370.2553
+old-growth coastal conifer reserve,selective_60_year,5,246.0972,128.021,0.0,0.0,1371.7665
+old-growth coastal conifer reserve,selective_60_year,6,246.4997,128.025,0.0,0.0,1373.2572
+old-growth coastal conifer reserve,selective_60_year,7,246.8967,128.029,0.0,0.0,1374.7275
+old-growth coastal conifer reserve,selective_60_year,8,247.2883,128.0329,0.0,0.0,1376.1778
+old-growth coastal conifer reserve,selective_60_year,9,247.6746,128.0367,0.0,0.0,1377.6082
+old-growth coastal conifer reserve,selective_60_year,10,248.0555,128.0406,0.0,0.0,1379.019
+old-growth coastal conifer reserve,selective_60_year,11,248.4313,128.0443,0.0,0.0,1380.4104
+old-growth coastal conifer reserve,selective_60_year,12,248.8018,128.048,0.0,0.0,1381.7826
+old-growth coastal conifer reserve,selective_60_year,13,249.1672,128.0517,0.0,0.0,1383.136
+old-growth coastal conifer reserve,selective_60_year,14,249.5276,128.0553,0.0,0.0,1384.4706
+old-growth coastal conifer reserve,selective_60_year,15,249.883,128.0588,0.0,0.0,1385.7867
+old-growth coastal conifer reserve,selective_60_year,16,250.2334,128.0623,0.0,0.0,1387.0845
+old-growth coastal conifer reserve,selective_60_year,17,250.579,128.0658,0.0,0.0,1388.3643
+old-growth coastal conifer reserve,selective_60_year,18,250.9198,128.0692,0.0,0.0,1389.6262
+old-growth coastal conifer reserve,selective_60_year,19,251.2558,128.0726,0.0,0.0,1390.8706
+old-growth coastal conifer reserve,selective_60_year,20,251.5871,128.0759,0.0,0.0,1392.0975
+old-growth coastal conifer reserve,selective_60_year,21,251.9137,128.0791,0.0,0.0,1393.3072
+old-growth coastal conifer reserve,selective_60_year,22,252.2358,128.0824,0.0,0.0,1394.4998
+old-growth coastal conifer reserve,selective_60_year,23,252.5533,128.0855,0.0,0.0,1395.6757
+old-growth coastal conifer reserve,selective_60_year,24,252.8663,128.0887,0.0,0.0,1396.835
+old-growth coastal conifer reserve,selective_60_year,25,253.175,128.0917,0.0,0.0,1397.9779
+old-growth coastal conifer reserve,selective_60_year,26,253.4792,128.0948,0.0,0.0,1399.1046
+old-growth coastal conifer reserve,selective_60_year,27,253.7791,128.0978,0.0,0.0,1400.2153
+old-growth coastal conifer reserve,selective_60_year,28,254.0747,128.1007,0.0,0.0,1401.3101
+old-growth coastal conifer reserve,selective_60_year,29,254.3662,128.1037,0.0,0.0,1402.3893
+old-growth coastal conifer reserve,selective_60_year,30,254.6534,128.1065,0.0,0.0,1403.4531
+old-growth coastal conifer reserve,selective_60_year,31,254.9365,128.1094,0.0,0.0,1404.5017
+old-growth coastal conifer reserve,selective_60_year,32,255.2156,128.1122,0.0,0.0,1405.5351
+old-growth coastal conifer reserve,selective_60_year,33,255.4906,128.1149,0.0,0.0,1406.5537
+old-growth coastal conifer reserve,selective_60_year,34,255.7617,128.1176,0.0,0.0,1407.5576
+old-growth coastal conifer reserve,selective_60_year,35,256.0289,128.1203,0.0,0.0,1408.5469
+old-growth coastal conifer reserve,selective_60_year,36,256.2921,128.1229,0.0,0.0,1409.5218
+old-growth coastal conifer reserve,selective_60_year,37,256.5516,128.1255,0.0,0.0,1410.4826
+old-growth coastal conifer reserve,selective_60_year,38,256.8072,128.1281,0.0,0.0,1411.4293
+old-growth coastal conifer reserve,selective_60_year,39,257.0591,128.1306,0.0,0.0,1412.3622
+old-growth coastal conifer reserve,selective_60_year,40,257.3073,128.1331,0.0,0.0,1413.2814
+old-growth coastal conifer reserve,selective_60_year,41,257.5519,128.1355,0.0,0.0,1414.1871
+old-growth coastal conifer reserve,selective_60_year,42,257.7928,128.1379,0.0,0.0,1415.0794
+old-growth coastal conifer reserve,selective_60_year,43,258.0302,128.1403,0.0,0.0,1415.9585
+old-growth coastal conifer reserve,selective_60_year,44,258.264,128.1426,0.0,0.0,1416.8245
+old-growth coastal conifer reserve,selective_60_year,45,258.4944,128.1449,0.0,0.0,1417.6777
+old-growth coastal conifer reserve,selective_60_year,46,258.7213,128.1472,0.0,0.0,1418.5181
+old-growth coastal conifer reserve,selective_60_year,47,258.9449,128.1494,0.0,0.0,1419.3458
+old-growth coastal conifer reserve,selective_60_year,48,259.165,128.1517,0.0,0.0,1420.1612
+old-growth coastal conifer reserve,selective_60_year,49,259.3819,128.1538,0.0,0.0,1420.9642
+old-growth coastal conifer reserve,selective_60_year,50,259.5954,128.156,0.0,0.0,1421.7551
+old-growth coastal conifer reserve,selective_60_year,51,259.8058,128.1581,0.0,0.0,1422.534
+old-growth coastal conifer reserve,selective_60_year,52,260.0129,128.1601,0.0,0.0,1423.3009
+old-growth coastal conifer reserve,selective_60_year,53,260.2168,128.1622,0.0,0.0,1424.0562
+old-growth coastal conifer reserve,selective_60_year,54,260.4176,128.1642,0.0,0.0,1424.7998
+old-growth coastal conifer reserve,selective_60_year,55,260.6153,128.1662,0.0,0.0,1425.5319
+old-growth coastal conifer reserve,selective_60_year,56,260.8099,128.1681,0.0,0.0,1426.2527
+old-growth coastal conifer reserve,selective_60_year,57,261.0015,128.17,0.0,0.0,1426.9623
+old-growth coastal conifer reserve,selective_60_year,58,261.1901,128.1719,0.0,0.0,1427.6608
+old-growth coastal conifer reserve,selective_60_year,59,261.3758,128.1738,0.0,0.0,1428.3484
+old-growth coastal conifer reserve,selective_60_year,60,261.5585,128.1756,0.0,0.0,1429.025
+old-growth coastal conifer reserve,selective_60_year,61,188.4531,129.7897,65.9586,11.3449,1450.3361
+old-growth coastal conifer reserve,selective_60_year,62,188.8793,129.794,64.1232,11.1744,1444.56
+old-growth coastal conifer reserve,selective_60_year,63,189.3047,129.7982,62.4545,11.011,1439.4178
+old-growth coastal conifer reserve,selective_60_year,64,189.7294,129.8025,60.9285,10.8536,1434.8184
+old-growth coastal conifer reserve,selective_60_year,65,190.1534,129.8067,59.5249,10.7019,1430.685
+old-growth coastal conifer reserve,selective_60_year,66,190.5765,129.811,58.2264,10.555,1426.9529
+old-growth coastal conifer reserve,selective_60_year,67,190.9989,129.8152,57.0188,10.4127,1423.5672
+old-growth coastal conifer reserve,selective_60_year,68,191.4204,129.8194,55.8898,10.2745,1420.4818
+old-growth coastal conifer reserve,selective_60_year,69,191.8412,129.8236,54.829,10.1401,1417.6574
+old-growth coastal conifer reserve,selective_60_year,70,192.2612,129.8278,53.8277,10.009,1415.061
+old-growth coastal conifer reserve,selective_60_year,71,192.6803,129.832,52.8786,9.8812,1412.6644
+old-growth coastal conifer reserve,selective_60_year,72,193.0987,129.8362,51.9754,9.7564,1410.444
+old-growth coastal conifer reserve,selective_60_year,73,193.5162,129.8404,51.1127,9.6343,1408.3795
+old-growth coastal conifer reserve,selective_60_year,74,193.9329,129.8445,50.2861,9.5148,1406.4536
+old-growth coastal conifer reserve,selective_60_year,75,194.3487,129.8487,49.4917,9.3978,1404.6517
+old-growth coastal conifer reserve,selective_60_year,76,194.7637,129.8528,48.7262,9.2831,1402.9614
+old-growth coastal conifer reserve,selective_60_year,77,195.1779,129.857,47.9868,9.1707,1401.3719
+old-growth coastal conifer reserve,selective_60_year,78,195.5912,129.8611,47.2712,9.0603,1399.8741
+old-growth coastal conifer reserve,selective_60_year,79,196.0036,129.8652,46.5773,8.952,1398.46
+old-growth coastal conifer reserve,selective_60_year,80,196.4152,129.8693,45.9033,8.8456,1397.1228
+old-growth coastal conifer reserve,selective_60_year,81,196.826,129.8735,45.2477,8.7411,1395.8568
+old-growth coastal conifer reserve,selective_60_year,82,197.2358,129.8776,44.6092,8.6384,1394.6568
+old-growth coastal conifer reserve,selective_60_year,83,197.6448,129.8816,43.9866,8.5374,1393.5182
+old-growth coastal conifer reserve,selective_60_year,84,198.0529,129.8857,43.3789,8.4381,1392.4374
+old-growth coastal conifer reserve,selective_60_year,85,198.4601,129.8898,42.7853,8.3405,1391.4107
+old-growth coastal conifer reserve,selective_60_year,86,198.8664,129.8939,42.2049,8.2444,1390.4352
+old-growth coastal conifer reserve,selective_60_year,87,199.2718,129.8979,41.6372,8.1499,1389.5083
+old-growth coastal conifer reserve,selective_60_year,88,199.6763,129.902,41.0815,8.0569,1388.6275
+old-growth coastal conifer reserve,selective_60_year,89,200.0799,129.906,40.5372,7.9653,1387.7907
+old-growth coastal conifer reserve,selective_60_year,90,200.4825,129.91,40.0038,7.8752,1386.9959
+old-growth coastal conifer reserve,selective_60_year,91,200.8843,129.914,39.481,7.7865,1386.2414
+old-growth coastal conifer reserve,selective_60_year,92,201.2851,129.918,38.9684,7.6991,1385.5257
+old-growth coastal conifer reserve,selective_60_year,93,201.685,129.922,38.4655,7.613,1384.8472
+old-growth coastal conifer reserve,selective_60_year,94,202.084,129.926,37.972,7.5283,1384.2045
+old-growth coastal conifer reserve,selective_60_year,95,202.482,129.93,37.4877,7.4448,1383.5966
+old-growth coastal conifer reserve,selective_60_year,96,202.8791,129.934,37.0122,7.3625,1383.0221
+old-growth coastal conifer reserve,selective_60_year,97,203.2753,129.9379,36.5453,7.2815,1382.48
+old-growth coastal conifer reserve,selective_60_year,98,203.6704,129.9419,36.0867,7.2016,1381.9693
+old-growth coastal conifer reserve,selective_60_year,99,204.0647,129.9458,35.6363,7.1229,1381.489
+old-growth coastal conifer reserve,selective_60_year,100,204.458,129.9498,35.1937,7.0454,1381.0383
+old-growth coastal conifer reserve,extended_50_year,0,244.0,128.0,0.0,0.0,1364.0
+old-growth coastal conifer reserve,extended_50_year,1,244.4309,128.0043,0.0,0.0,1365.5959
+old-growth coastal conifer reserve,extended_50_year,2,244.856,128.0086,0.0,0.0,1367.1702
+old-growth coastal conifer reserve,extended_50_year,3,245.2754,128.0128,0.0,0.0,1368.7233
+old-growth coastal conifer reserve,extended_50_year,4,245.6891,128.0169,0.0,0.0,1370.2553
+old-growth coastal conifer reserve,extended_50_year,5,246.0972,128.021,0.0,0.0,1371.7665
+old-growth coastal conifer reserve,extended_50_year,6,246.4997,128.025,0.0,0.0,1373.2572
+old-growth coastal conifer reserve,extended_50_year,7,246.8967,128.029,0.0,0.0,1374.7275
+old-growth coastal conifer reserve,extended_50_year,8,247.2883,128.0329,0.0,0.0,1376.1778
+old-growth coastal conifer reserve,extended_50_year,9,247.6746,128.0367,0.0,0.0,1377.6082
+old-growth coastal conifer reserve,extended_50_year,10,248.0555,128.0406,0.0,0.0,1379.019
+old-growth coastal conifer reserve,extended_50_year,11,248.4313,128.0443,0.0,0.0,1380.4104
+old-growth coastal conifer reserve,extended_50_year,12,248.8018,128.048,0.0,0.0,1381.7826
+old-growth coastal conifer reserve,extended_50_year,13,249.1672,128.0517,0.0,0.0,1383.136
+old-growth coastal conifer reserve,extended_50_year,14,249.5276,128.0553,0.0,0.0,1384.4706
+old-growth coastal conifer reserve,extended_50_year,15,249.883,128.0588,0.0,0.0,1385.7867
+old-growth coastal conifer reserve,extended_50_year,16,250.2334,128.0623,0.0,0.0,1387.0845
+old-growth coastal conifer reserve,extended_50_year,17,250.579,128.0658,0.0,0.0,1388.3643
+old-growth coastal conifer reserve,extended_50_year,18,250.9198,128.0692,0.0,0.0,1389.6262
+old-growth coastal conifer reserve,extended_50_year,19,251.2558,128.0726,0.0,0.0,1390.8706
+old-growth coastal conifer reserve,extended_50_year,20,251.5871,128.0759,0.0,0.0,1392.0975
+old-growth coastal conifer reserve,extended_50_year,21,251.9137,128.0791,0.0,0.0,1393.3072
+old-growth coastal conifer reserve,extended_50_year,22,252.2358,128.0824,0.0,0.0,1394.4998
+old-growth coastal conifer reserve,extended_50_year,23,252.5533,128.0855,0.0,0.0,1395.6757
+old-growth coastal conifer reserve,extended_50_year,24,252.8663,128.0887,0.0,0.0,1396.835
+old-growth coastal conifer reserve,extended_50_year,25,253.175,128.0917,0.0,0.0,1397.9779
+old-growth coastal conifer reserve,extended_50_year,26,253.4792,128.0948,0.0,0.0,1399.1046
+old-growth coastal conifer reserve,extended_50_year,27,253.7791,128.0978,0.0,0.0,1400.2153
+old-growth coastal conifer reserve,extended_50_year,28,254.0747,128.1007,0.0,0.0,1401.3101
+old-growth coastal conifer reserve,extended_50_year,29,254.3662,128.1037,0.0,0.0,1402.3893
+old-growth coastal conifer reserve,extended_50_year,30,254.6534,128.1065,0.0,0.0,1403.4531
+old-growth coastal conifer reserve,extended_50_year,31,254.9365,128.1094,0.0,0.0,1404.5017
+old-growth coastal conifer reserve,extended_50_year,32,255.2156,128.1122,0.0,0.0,1405.5351
+old-growth coastal conifer reserve,extended_50_year,33,255.4906,128.1149,0.0,0.0,1406.5537
+old-growth coastal conifer reserve,extended_50_year,34,255.7617,128.1176,0.0,0.0,1407.5576
+old-growth coastal conifer reserve,extended_50_year,35,256.0289,128.1203,0.0,0.0,1408.5469
+old-growth coastal conifer reserve,extended_50_year,36,256.2921,128.1229,0.0,0.0,1409.5218
+old-growth coastal conifer reserve,extended_50_year,37,256.5516,128.1255,0.0,0.0,1410.4826
+old-growth coastal conifer reserve,extended_50_year,38,256.8072,128.1281,0.0,0.0,1411.4293
+old-growth coastal conifer reserve,extended_50_year,39,257.0591,128.1306,0.0,0.0,1412.3622
+old-growth coastal conifer reserve,extended_50_year,40,257.3073,128.1331,0.0,0.0,1413.2814
+old-growth coastal conifer reserve,extended_50_year,41,257.5519,128.1355,0.0,0.0,1414.1871
+old-growth coastal conifer reserve,extended_50_year,42,257.7928,128.1379,0.0,0.0,1415.0794
+old-growth coastal conifer reserve,extended_50_year,43,258.0302,128.1403,0.0,0.0,1415.9585
+old-growth coastal conifer reserve,extended_50_year,44,258.264,128.1426,0.0,0.0,1416.8245
+old-growth coastal conifer reserve,extended_50_year,45,258.4944,128.1449,0.0,0.0,1417.6777
+old-growth coastal conifer reserve,extended_50_year,46,258.7213,128.1472,0.0,0.0,1418.5181
+old-growth coastal conifer reserve,extended_50_year,47,258.9449,128.1494,0.0,0.0,1419.3458
+old-growth coastal conifer reserve,extended_50_year,48,259.165,128.1517,0.0,0.0,1420.1612
+old-growth coastal conifer reserve,extended_50_year,49,259.3819,128.1538,0.0,0.0,1420.9642
+old-growth coastal conifer reserve,extended_50_year,50,259.5954,128.156,0.0,0.0,1421.7551
+old-growth coastal conifer reserve,extended_50_year,51,150.6873,130.5587,98.2066,16.2586,1450.9411
+old-growth coastal conifer reserve,extended_50_year,52,151.1908,130.5637,95.1046,15.9956,1440.4672
+old-growth coastal conifer reserve,extended_50_year,53,151.689,130.5687,92.3074,15.7447,1431.136
+old-growth coastal conifer reserve,extended_50_year,54,152.1821,130.5736,89.7704,15.5044,1422.7786
+old-growth coastal conifer reserve,extended_50_year,55,152.67,130.5785,87.4558,15.2737,1415.2526
+old-growth coastal conifer reserve,extended_50_year,56,153.1527,130.5833,85.3319,15.0515,1408.4378
+old-growth coastal conifer reserve,extended_50_year,57,153.6302,130.5881,83.3719,14.837,1402.2328
+old-growth coastal conifer reserve,extended_50_year,58,154.1024,130.5928,81.5533,14.6293,1396.5521
+old-growth coastal conifer reserve,extended_50_year,59,154.5695,130.5975,79.8569,14.4279,1391.3232
+old-growth coastal conifer reserve,extended_50_year,60,155.0313,130.6021,78.2667,14.2322,1386.485
+old-growth coastal conifer reserve,extended_50_year,61,155.493,130.6067,76.7689,14.0418,1382.0045
+old-growth coastal conifer reserve,extended_50_year,62,155.9545,130.6113,75.3519,13.8562,1377.8378
+old-growth coastal conifer reserve,extended_50_year,63,156.4158,130.6159,74.0061,13.6751,1373.9477
+old-growth coastal conifer reserve,extended_50_year,64,156.877,130.6206,72.7231,13.4983,1370.3026
+old-growth coastal conifer reserve,extended_50_year,65,157.3379,130.6252,71.4958,13.3254,1366.8757
+old-growth coastal conifer reserve,extended_50_year,66,157.7987,130.6298,70.3183,13.1562,1363.644
+old-growth coastal conifer reserve,extended_50_year,67,158.2592,130.6344,69.1853,12.9905,1360.5881
+old-growth coastal conifer reserve,extended_50_year,68,158.7196,130.639,68.0927,12.8282,1357.6911
+old-growth coastal conifer reserve,extended_50_year,69,159.1797,130.6436,67.0365,12.669,1354.9388
+old-growth coastal conifer reserve,extended_50_year,70,159.6395,130.6482,66.0136,12.5129,1352.3189
+old-growth coastal conifer reserve,extended_50_year,71,160.0992,130.6528,65.0213,12.3597,1349.8207
+old-growth coastal conifer reserve,extended_50_year,72,160.5585,130.6574,64.0571,12.2093,1347.4352
+old-growth coastal conifer reserve,extended_50_year,73,161.0176,130.662,63.119,12.0616,1345.1543
+old-growth coastal conifer reserve,extended_50_year,74,161.4765,130.6666,62.2053,11.9165,1342.971
+old-growth coastal conifer reserve,extended_50_year,75,161.935,130.6711,61.3143,11.774,1340.8795
+old-growth coastal conifer reserve,extended_50_year,76,162.3933,130.6757,60.4447,11.6338,1338.8742
+old-growth coastal conifer reserve,extended_50_year,77,162.8513,130.6803,59.5953,11.496,1336.9506
+old-growth coastal conifer reserve,extended_50_year,78,163.309,130.6849,58.765,11.3606,1335.1045
+old-growth coastal conifer reserve,extended_50_year,79,163.7663,130.6895,57.9529,11.2273,1333.332
+old-growth coastal conifer reserve,extended_50_year,80,164.2233,130.694,57.1582,11.0962,1331.6301
+old-growth coastal conifer reserve,extended_50_year,81,164.68,130.6986,56.3801,10.9673,1329.9955
+old-growth coastal conifer reserve,extended_50_year,82,165.1364,130.7032,55.618,10.8404,1328.4256
+old-growth coastal conifer reserve,extended_50_year,83,165.5924,130.7077,54.8711,10.7155,1326.918
+old-growth coastal conifer reserve,extended_50_year,84,166.048,130.7123,54.139,10.5926,1325.4703
+old-growth coastal conifer reserve,extended_50_year,85,166.5033,130.7168,53.4211,10.4716,1324.0805
+old-growth coastal conifer reserve,extended_50_year,86,166.9582,130.7214,52.717,10.3525,1322.7466
+old-growth coastal conifer reserve,extended_50_year,87,167.4127,130.7259,52.0262,10.2352,1321.4669
+old-growth coastal conifer reserve,extended_50_year,88,167.8668,130.7305,51.3484,10.1197,1320.2396
+old-growth coastal conifer reserve,extended_50_year,89,168.3205,130.735,50.683,10.006,1319.0633
+old-growth coastal conifer reserve,extended_50_year,90,168.7739,130.7395,50.0299,9.8939,1317.9363
+old-growth coastal conifer reserve,extended_50_year,91,169.2267,130.7441,49.3885,9.7836,1316.8574
+old-growth coastal conifer reserve,extended_50_year,92,169.6792,130.7486,48.7587,9.6749,1315.8251
+old-growth coastal conifer reserve,extended_50_year,93,170.1312,130.7531,48.1401,9.5678,1314.8383
+old-growth coastal conifer reserve,extended_50_year,94,170.5828,130.7576,47.5325,9.4623,1313.8957
+old-growth coastal conifer reserve,extended_50_year,95,171.034,130.7621,46.9355,9.3583,1312.9961
+old-growth coastal conifer reserve,extended_50_year,96,171.4846,130.7666,46.3488,9.2558,1312.1384
+old-growth coastal conifer reserve,extended_50_year,97,171.9348,130.7711,45.7724,9.1548,1311.3216
+old-growth coastal conifer reserve,extended_50_year,98,172.3846,130.7756,45.2058,9.0553,1310.5446
+old-growth coastal conifer reserve,extended_50_year,99,172.8338,130.7801,44.6488,8.9572,1309.8064
+old-growth coastal conifer reserve,extended_50_year,100,173.2825,130.7846,44.1013,8.8605,1309.1062
+old-growth coastal conifer reserve,current_40_year,0,244.0,128.0,0.0,0.0,1364.0
+old-growth coastal conifer reserve,current_40_year,1,244.4309,128.0043,0.0,0.0,1365.5959
+old-growth coastal conifer reserve,current_40_year,2,244.856,128.0086,0.0,0.0,1367.1702
+old-growth coastal conifer reserve,current_40_year,3,245.2754,128.0128,0.0,0.0,1368.7233
+old-growth coastal conifer reserve,current_40_year,4,245.6891,128.0169,0.0,0.0,1370.2553
+old-growth coastal conifer reserve,current_40_year,5,246.0972,128.021,0.0,0.0,1371.7665
+old-growth coastal conifer reserve,current_40_year,6,246.4997,128.025,0.0,0.0,1373.2572
+old-growth coastal conifer reserve,current_40_year,7,246.8967,128.029,0.0,0.0,1374.7275
+old-growth coastal conifer reserve,current_40_year,8,247.2883,128.0329,0.0,0.0,1376.1778
+old-growth coastal conifer reserve,current_40_year,9,247.6746,128.0367,0.0,0.0,1377.6082
+old-growth coastal conifer reserve,current_40_year,10,248.0555,128.0406,0.0,0.0,1379.019
+old-growth coastal conifer reserve,current_40_year,11,248.4313,128.0443,0.0,0.0,1380.4104
+old-growth coastal conifer reserve,current_40_year,12,248.8018,128.048,0.0,0.0,1381.7826
+old-growth coastal conifer reserve,current_40_year,13,249.1672,128.0517,0.0,0.0,1383.136
+old-growth coastal conifer reserve,current_40_year,14,249.5276,128.0553,0.0,0.0,1384.4706
+old-growth coastal conifer reserve,current_40_year,15,249.883,128.0588,0.0,0.0,1385.7867
+old-growth coastal conifer reserve,current_40_year,16,250.2334,128.0623,0.0,0.0,1387.0845
+old-growth coastal conifer reserve,current_40_year,17,250.579,128.0658,0.0,0.0,1388.3643
+old-growth coastal conifer reserve,current_40_year,18,250.9198,128.0692,0.0,0.0,1389.6262
+old-growth coastal conifer reserve,current_40_year,19,251.2558,128.0726,0.0,0.0,1390.8706
+old-growth coastal conifer reserve,current_40_year,20,251.5871,128.0759,0.0,0.0,1392.0975
+old-growth coastal conifer reserve,current_40_year,21,251.9137,128.0791,0.0,0.0,1393.3072
+old-growth coastal conifer reserve,current_40_year,22,252.2358,128.0824,0.0,0.0,1394.4998
+old-growth coastal conifer reserve,current_40_year,23,252.5533,128.0855,0.0,0.0,1395.6757
+old-growth coastal conifer reserve,current_40_year,24,252.8663,128.0887,0.0,0.0,1396.835
+old-growth coastal conifer reserve,current_40_year,25,253.175,128.0917,0.0,0.0,1397.9779
+old-growth coastal conifer reserve,current_40_year,26,253.4792,128.0948,0.0,0.0,1399.1046
+old-growth coastal conifer reserve,current_40_year,27,253.7791,128.0978,0.0,0.0,1400.2153
+old-growth coastal conifer reserve,current_40_year,28,254.0747,128.1007,0.0,0.0,1401.3101
+old-growth coastal conifer reserve,current_40_year,29,254.3662,128.1037,0.0,0.0,1402.3893
+old-growth coastal conifer reserve,current_40_year,30,254.6534,128.1065,0.0,0.0,1403.4531
+old-growth coastal conifer reserve,current_40_year,31,254.9365,128.1094,0.0,0.0,1404.5017
+old-growth coastal conifer reserve,current_40_year,32,255.2156,128.1122,0.0,0.0,1405.5351
+old-growth coastal conifer reserve,current_40_year,33,255.4906,128.1149,0.0,0.0,1406.5537
+old-growth coastal conifer reserve,current_40_year,34,255.7617,128.1176,0.0,0.0,1407.5576
+old-growth coastal conifer reserve,current_40_year,35,256.0289,128.1203,0.0,0.0,1408.5469
+old-growth coastal conifer reserve,current_40_year,36,256.2921,128.1229,0.0,0.0,1409.5218
+old-growth coastal conifer reserve,current_40_year,37,256.5516,128.1255,0.0,0.0,1410.4826
+old-growth coastal conifer reserve,current_40_year,38,256.8072,128.1281,0.0,0.0,1411.4293
+old-growth coastal conifer reserve,current_40_year,39,257.0591,128.1306,0.0,0.0,1412.3622
+old-growth coastal conifer reserve,current_40_year,40,257.3073,128.1331,0.0,0.0,1413.2814
+old-growth coastal conifer reserve,current_40_year,41,128.7759,130.9686,115.8983,18.196,1444.076
+old-growth coastal conifer reserve,current_40_year,42,129.3221,130.9741,111.608,17.8709,1429.1753
+old-growth coastal conifer reserve,current_40_year,43,129.8637,130.9795,107.7766,17.5632,1416.0042
+old-growth coastal conifer reserve,current_40_year,44,130.4007,130.9848,104.3359,17.2707,1404.3043
+old-growth coastal conifer reserve,current_40_year,45,130.9332,130.9902,101.2281,16.9916,1393.8578
+old-growth coastal conifer reserve,current_40_year,46,131.4611,130.9954,98.4049,16.7243,1384.4813
+old-growth coastal conifer reserve,current_40_year,47,131.9844,131.0007,95.8253,16.4677,1376.0197
+old-growth coastal conifer reserve,current_40_year,48,132.5031,131.0059,93.4549,16.2205,1368.3426
+old-growth coastal conifer reserve,current_40_year,49,133.017,131.011,91.2644,15.9819,1361.3394
+old-growth coastal conifer reserve,current_40_year,50,133.5263,131.0161,89.2294,15.751,1354.9171
+old-growth coastal conifer reserve,current_40_year,51,134.0309,131.0211,87.3291,15.5271,1348.9968
+old-growth coastal conifer reserve,current_40_year,52,134.5307,131.0261,85.5458,15.3096,1343.5118
+old-growth coastal conifer reserve,current_40_year,53,135.0258,131.0311,83.8648,15.0981,1338.4058
+old-growth coastal conifer reserve,current_40_year,54,135.5161,131.036,82.2733,14.892,1333.6308
+old-growth coastal conifer reserve,current_40_year,55,136.0016,131.0408,80.7609,14.6911,1329.1462
+old-growth coastal conifer reserve,current_40_year,56,136.4823,131.0457,79.3183,14.4949,1324.9175
+old-growth coastal conifer reserve,current_40_year,57,136.9582,131.0504,77.9379,14.3031,1320.9153
+old-growth coastal conifer reserve,current_40_year,58,137.4292,131.0551,76.6131,14.1156,1317.1146
+old-growth coastal conifer reserve,current_40_year,59,137.8954,131.0598,75.3383,13.9321,1313.4938
+old-growth coastal conifer reserve,current_40_year,60,138.3566,131.0644,74.1088,13.7524,1310.0347
+old-growth coastal conifer reserve,current_40_year,61,138.8181,131.069,72.9204,13.5763,1306.7404
+old-growth coastal conifer reserve,current_40_year,62,139.2797,131.0736,71.7695,13.4036,1303.5972
+old-growth coastal conifer reserve,current_40_year,63,139.7415,131.0782,70.6533,13.2343,1300.5935
+old-growth coastal conifer reserve,current_40_year,64,140.2034,131.0829,69.569,13.0682,1297.7192
+old-growth coastal conifer reserve,current_40_year,65,140.6655,131.0875,68.5143,12.9051,1294.9654
+old-growth coastal conifer reserve,current_40_year,66,141.1276,131.0921,67.4874,12.745,1292.3246
+old-growth coastal conifer reserve,current_40_year,67,141.59,131.0967,66.4864,12.5878,1289.79
+old-growth coastal conifer reserve,current_40_year,68,142.0524,131.1014,65.5099,12.4334,1287.3556
+old-growth coastal conifer reserve,current_40_year,69,142.5149,131.106,64.5565,12.2816,1285.0162
+old-growth coastal conifer reserve,current_40_year,70,142.9775,131.1106,63.625,12.1325,1282.7671
+old-growth coastal conifer reserve,current_40_year,71,143.4402,131.1152,62.7144,11.9859,1280.6043
+old-growth coastal conifer reserve,current_40_year,72,143.903,131.1199,61.8237,11.8418,1278.5238
+old-growth coastal conifer reserve,current_40_year,73,144.3658,131.1245,60.952,11.7001,1276.5224
+old-growth coastal conifer reserve,current_40_year,74,144.8288,131.1291,60.0987,11.5607,1274.5969
+old-growth coastal conifer reserve,current_40_year,75,145.2917,131.1337,59.2631,11.4237,1272.7447
+old-growth coastal conifer reserve,current_40_year,76,145.7547,131.1384,58.4443,11.2889,1270.963
+old-growth coastal conifer reserve,current_40_year,77,146.2177,131.143,57.642,11.1562,1269.2495
+old-growth coastal conifer reserve,current_40_year,78,146.6807,131.1476,56.8555,11.0257,1267.6019
+old-growth coastal conifer reserve,current_40_year,79,147.1438,131.1523,56.0844,10.8973,1266.0183
+old-growth coastal conifer reserve,current_40_year,80,147.6068,131.1569,55.3281,10.7709,1264.4968
+old-growth coastal conifer reserve,current_40_year,81,74.0349,132.7903,121.2177,21.1076,1280.2189
+old-growth coastal conifer reserve,current_40_year,82,74.3839,132.7938,118.0233,20.7983,1268.6642
+old-growth coastal conifer reserve,current_40_year,83,74.734,132.7973,115.1064,20.5008,1258.1745
+old-growth coastal conifer reserve,current_40_year,84,75.0851,132.8008,112.4273,20.2139,1248.5997
+old-growth coastal conifer reserve,current_40_year,85,75.4373,132.8043,109.9526,19.9366,1239.8133
+old-growth coastal conifer reserve,current_40_year,86,75.7906,132.8079,107.6541,19.6679,1231.7084
+old-growth coastal conifer reserve,current_40_year,87,76.145,132.8114,105.5078,19.407,1224.1947
+old-growth coastal conifer reserve,current_40_year,88,76.5005,132.815,103.4938,19.1533,1217.1959
+old-growth coastal conifer reserve,current_40_year,89,76.857,132.8185,101.5949,18.9061,1210.6474
+old-growth coastal conifer reserve,current_40_year,90,77.2147,132.8221,99.7967,18.6651,1204.4945
+old-growth coastal conifer reserve,current_40_year,91,77.5734,132.8257,98.087,18.4297,1198.6907
+old-growth coastal conifer reserve,current_40_year,92,77.9331,132.8293,96.4554,18.1995,1193.1968
+old-growth coastal conifer reserve,current_40_year,93,78.294,132.8329,94.8932,17.9743,1187.9792
+old-growth coastal conifer reserve,current_40_year,94,78.6558,132.8365,93.3928,17.7537,1183.0094
+old-growth coastal conifer reserve,current_40_year,95,79.0188,132.8401,91.948,17.5376,1178.2632
+old-growth coastal conifer reserve,current_40_year,96,79.3828,132.8438,90.5531,17.3257,1173.7197
+old-growth coastal conifer reserve,current_40_year,97,79.7479,132.8474,89.2036,17.1177,1169.3612
+old-growth coastal conifer reserve,current_40_year,98,80.114,132.8511,87.8956,16.9136,1165.1723
+old-growth coastal conifer reserve,current_40_year,99,80.4812,132.8548,86.6255,16.7131,1161.1399
+old-growth coastal conifer reserve,current_40_year,100,80.8495,132.8584,85.3903,16.5161,1157.2527
+old-growth coastal conifer reserve,short_30_year,0,244.0,128.0,0.0,0.0,1364.0
+old-growth coastal conifer reserve,short_30_year,1,244.4309,128.0043,0.0,0.0,1365.5959
+old-growth coastal conifer reserve,short_30_year,2,244.856,128.0086,0.0,0.0,1367.1702
+old-growth coastal conifer reserve,short_30_year,3,245.2754,128.0128,0.0,0.0,1368.7233
+old-growth coastal conifer reserve,short_30_year,4,245.6891,128.0169,0.0,0.0,1370.2553
+old-growth coastal conifer reserve,short_30_year,5,246.0972,128.021,0.0,0.0,1371.7665
+old-growth coastal conifer reserve,short_30_year,6,246.4997,128.025,0.0,0.0,1373.2572
+old-growth coastal conifer reserve,short_30_year,7,246.8967,128.029,0.0,0.0,1374.7275
+old-growth coastal conifer reserve,short_30_year,8,247.2883,128.0329,0.0,0.0,1376.1778
+old-growth coastal conifer reserve,short_30_year,9,247.6746,128.0367,0.0,0.0,1377.6082
+old-growth coastal conifer reserve,short_30_year,10,248.0555,128.0406,0.0,0.0,1379.019
+old-growth coastal conifer reserve,short_30_year,11,248.4313,128.0443,0.0,0.0,1380.4104
+old-growth coastal conifer reserve,short_30_year,12,248.8018,128.048,0.0,0.0,1381.7826
+old-growth coastal conifer reserve,short_30_year,13,249.1672,128.0517,0.0,0.0,1383.136
+old-growth coastal conifer reserve,short_30_year,14,249.5276,128.0553,0.0,0.0,1384.4706
+old-growth coastal conifer reserve,short_30_year,15,249.883,128.0588,0.0,0.0,1385.7867
+old-growth coastal conifer reserve,short_30_year,16,250.2334,128.0623,0.0,0.0,1387.0845
+old-growth coastal conifer reserve,short_30_year,17,250.579,128.0658,0.0,0.0,1388.3643
+old-growth coastal conifer reserve,short_30_year,18,250.9198,128.0692,0.0,0.0,1389.6262
+old-growth coastal conifer reserve,short_30_year,19,251.2558,128.0726,0.0,0.0,1390.8706
+old-growth coastal conifer reserve,short_30_year,20,251.5871,128.0759,0.0,0.0,1392.0975
+old-growth coastal conifer reserve,short_30_year,21,251.9137,128.0791,0.0,0.0,1393.3072
+old-growth coastal conifer reserve,short_30_year,22,252.2358,128.0824,0.0,0.0,1394.4998
+old-growth coastal conifer reserve,short_30_year,23,252.5533,128.0855,0.0,0.0,1395.6757
+old-growth coastal conifer reserve,short_30_year,24,252.8663,128.0887,0.0,0.0,1396.835
+old-growth coastal conifer reserve,short_30_year,25,253.175,128.0917,0.0,0.0,1397.9779
+old-growth coastal conifer reserve,short_30_year,26,253.4792,128.0948,0.0,0.0,1399.1046
+old-growth coastal conifer reserve,short_30_year,27,253.7791,128.0978,0.0,0.0,1400.2153
+old-growth coastal conifer reserve,short_30_year,28,254.0747,128.1007,0.0,0.0,1401.3101
+old-growth coastal conifer reserve,short_30_year,29,254.3662,128.1037,0.0,0.0,1402.3893
+old-growth coastal conifer reserve,short_30_year,30,254.6534,128.1065,0.0,0.0,1403.4531
+old-growth coastal conifer reserve,short_30_year,31,107.0733,131.3624,130.1196,18.542,1419.357
+old-growth coastal conifer reserve,short_30_year,32,107.6342,131.368,124.0511,18.149,1397.7416
+old-growth coastal conifer reserve,short_30_year,33,108.1916,131.3735,118.6978,17.7816,1378.8298
+old-growth coastal conifer reserve,short_30_year,34,108.7454,131.3791,113.9516,17.4364,1362.2125
+old-growth coastal conifer reserve,short_30_year,35,109.2957,131.3846,109.7212,17.1106,1347.5445
+old-growth coastal conifer reserve,short_30_year,36,109.8424,131.39,105.9299,16.8019,1334.5356
+old-growth coastal conifer reserve,short_30_year,37,110.3854,131.3955,102.513,16.5081,1322.9406
+old-growth coastal conifer reserve,short_30_year,38,110.9247,131.4009,99.4158,16.2276,1312.5531
+old-growth coastal conifer reserve,short_30_year,39,111.4603,131.4062,96.5925,15.9589,1303.1989
+old-growth coastal conifer reserve,short_30_year,40,111.9921,131.4115,94.0041,15.7007,1294.731
+old-growth coastal conifer reserve,short_30_year,41,112.5201,131.4168,91.618,15.452,1287.0253
+old-growth coastal conifer reserve,short_30_year,42,113.0442,131.4221,89.4064,15.2119,1279.9769
+old-growth coastal conifer reserve,short_30_year,43,113.5645,131.4273,87.3461,14.9795,1273.4972
+old-growth coastal conifer reserve,short_30_year,44,114.0808,131.4324,85.4173,14.7543,1267.511
+old-growth coastal conifer reserve,short_30_year,45,114.5931,131.4376,83.6032,14.5357,1261.9548
+old-growth coastal conifer reserve,short_30_year,46,115.1014,131.4426,81.8896,14.3231,1256.7748
+old-growth coastal conifer reserve,short_30_year,47,115.6057,131.4477,80.2647,14.1161,1251.9251
+old-growth coastal conifer reserve,short_30_year,48,116.1059,131.4527,78.7181,13.9143,1247.3668
+old-growth coastal conifer reserve,short_30_year,49,116.602,131.4576,77.2411,13.7175,1243.0669
+old-growth coastal conifer reserve,short_30_year,50,117.094,131.4626,75.8265,13.5253,1238.997
+old-growth coastal conifer reserve,short_30_year,51,117.5818,131.4674,74.4678,13.3374,1235.133
+old-growth coastal conifer reserve,short_30_year,52,118.0653,131.4723,73.1598,13.1538,1231.4541
+old-growth coastal conifer reserve,short_30_year,53,118.5447,131.4771,71.8977,12.974,1227.9427
+old-growth coastal conifer reserve,short_30_year,54,119.0198,131.4818,70.6776,12.7981,1224.5834
+old-growth coastal conifer reserve,short_30_year,55,119.4906,131.4865,69.4961,12.6258,1221.3629
+old-growth coastal conifer reserve,short_30_year,56,119.957,131.4912,68.3502,12.4569,1218.2699
+old-growth coastal conifer reserve,short_30_year,57,120.4192,131.4958,67.2375,12.2914,1215.2942
+old-growth coastal conifer reserve,short_30_year,58,120.8769,131.5004,66.1555,12.1291,1212.4273
+old-growth coastal conifer reserve,short_30_year,59,121.3303,131.5049,65.1025,11.97,1209.6613
+old-growth coastal conifer reserve,short_30_year,60,121.7792,131.5094,64.0766,11.8138,1206.9897
+old-growth coastal conifer reserve,short_30_year,61,51.336,133.0735,125.4618,20.5505,1211.5471
+old-growth coastal conifer reserve,short_30_year,62,51.603,133.0762,121.5764,20.2117,1197.0466
+old-growth coastal conifer reserve,short_30_year,63,51.871,133.0789,118.0571,19.8878,1183.9476
+old-growth coastal conifer reserve,short_30_year,64,52.1401,133.0816,114.8508,19.5773,1172.0496
+old-growth coastal conifer reserve,short_30_year,65,52.4104,133.0843,111.913,19.2788,1161.1836
+old-growth coastal conifer reserve,short_30_year,66,52.6817,133.087,109.206,18.9908,1151.207
+old-growth coastal conifer reserve,short_30_year,67,52.9541,133.0897,106.6979,18.7126,1141.9993
+old-growth coastal conifer reserve,short_30_year,68,53.2276,133.0925,104.3619,18.4431,1133.4586
+old-growth coastal conifer reserve,short_30_year,69,53.5023,133.0952,102.1752,18.1816,1125.4988
+old-growth coastal conifer reserve,short_30_year,70,53.778,133.098,100.1186,17.9274,1118.0472
+old-growth coastal conifer reserve,short_30_year,71,54.0548,133.1007,98.1759,17.68,1111.042
+old-growth coastal conifer reserve,short_30_year,72,54.3327,133.1035,96.3332,17.4389,1104.4308
+old-growth coastal conifer reserve,short_30_year,73,54.6118,133.1063,94.5789,17.2037,1098.1692
+old-growth coastal conifer reserve,short_30_year,74,54.8919,133.1091,92.903,16.9739,1092.2194
+old-growth coastal conifer reserve,short_30_year,75,55.1732,133.1119,91.2971,16.7493,1086.5491
+old-growth coastal conifer reserve,short_30_year,76,55.4555,133.1147,89.754,16.5296,1081.1309
+old-growth coastal conifer reserve,short_30_year,77,55.739,133.1176,88.2674,16.3146,1075.9414
+old-growth coastal conifer reserve,short_30_year,78,56.0236,133.1204,86.8322,16.1039,1070.9602
+old-growth coastal conifer reserve,short_30_year,79,56.3093,133.1233,85.4437,15.8974,1066.1703
+old-growth coastal conifer reserve,short_30_year,80,56.5961,133.1261,84.0982,15.695,1061.5566
+old-growth coastal conifer reserve,short_30_year,81,56.884,133.129,82.7922,15.4964,1057.1062
+old-growth coastal conifer reserve,short_30_year,82,57.173,133.1319,81.5229,15.3016,1052.808
+old-growth coastal conifer reserve,short_30_year,83,57.4632,133.1348,80.2877,15.1104,1048.6522
+old-growth coastal conifer reserve,short_30_year,84,57.7544,133.1377,79.0844,14.9226,1044.6304
+old-growth coastal conifer reserve,short_30_year,85,58.0468,133.1407,77.9112,14.7382,1040.7349
+old-growth coastal conifer reserve,short_30_year,86,58.3403,133.1436,76.7662,14.557,1036.9594
+old-growth coastal conifer reserve,short_30_year,87,58.6349,133.1465,75.648,14.379,1033.2978
+old-growth coastal conifer reserve,short_30_year,88,58.9306,133.1495,74.5553,14.2041,1029.7451
+old-growth coastal conifer reserve,short_30_year,89,59.2275,133.1525,73.4869,14.0322,1026.2965
+old-growth coastal conifer reserve,short_30_year,90,59.5255,133.1554,72.4418,13.8631,1022.9479
+old-growth coastal conifer reserve,short_30_year,91,25.1263,133.9218,101.9533,18.0481,1023.1814
+old-growth coastal conifer reserve,short_30_year,92,25.2711,133.9232,99.5277,17.7924,1013.8861
+old-growth coastal conifer reserve,short_30_year,93,25.4166,133.9247,97.2905,17.5454,1005.3166
+old-growth coastal conifer reserve,short_30_year,94,25.5629,133.9262,95.2157,17.3063,997.3737
+old-growth coastal conifer reserve,short_30_year,95,25.7099,133.9276,93.2811,17.0743,989.974
+old-growth coastal conifer reserve,short_30_year,96,25.8577,133.9291,91.4681,16.8488,983.0469
+old-growth coastal conifer reserve,short_30_year,97,26.0063,133.9306,89.7609,16.6292,976.5325
+old-growth coastal conifer reserve,short_30_year,98,26.1557,133.9321,88.1463,16.4152,970.3803
+old-growth coastal conifer reserve,short_30_year,99,26.3058,133.9336,86.6128,16.2062,964.5473
+old-growth coastal conifer reserve,short_30_year,100,26.4567,133.9351,85.1509,16.002,958.9973
+dry interior fire-adapted pine forest,no_harvest,0,104.0,54.0,0.0,0.0,579.3333
+dry interior fire-adapted pine forest,no_harvest,1,104.9691,54.0097,0.0,0.0,582.9224
+dry interior fire-adapted pine forest,no_harvest,2,105.928,54.0193,0.0,0.0,586.4732
+dry interior fire-adapted pine forest,no_harvest,3,106.8763,54.0288,0.0,0.0,589.9852
+dry interior fire-adapted pine forest,no_harvest,4,107.814,54.0381,0.0,0.0,593.4579
+dry interior fire-adapted pine forest,no_harvest,5,108.741,54.0474,0.0,0.0,596.8909
+dry interior fire-adapted pine forest,no_harvest,6,109.6571,54.0566,0.0,0.0,600.2836
+dry interior fire-adapted pine forest,no_harvest,7,110.5623,54.0656,0.0,0.0,603.6358
+dry interior fire-adapted pine forest,no_harvest,8,111.4564,54.0746,0.0,0.0,606.947
+dry interior fire-adapted pine forest,no_harvest,9,112.3394,54.0834,0.0,0.0,610.217
+dry interior fire-adapted pine forest,no_harvest,10,113.2112,54.0921,0.0,0.0,613.4456
+dry interior fire-adapted pine forest,no_harvest,11,114.0718,54.1007,0.0,0.0,616.6324
+dry interior fire-adapted pine forest,no_harvest,12,114.921,54.1092,0.0,0.0,619.7774
+dry interior fire-adapted pine forest,no_harvest,13,115.7589,54.1176,0.0,0.0,622.8804
+dry interior fire-adapted pine forest,no_harvest,14,116.5854,54.1259,0.0,0.0,625.9414
+dry interior fire-adapted pine forest,no_harvest,15,117.4006,54.134,0.0,0.0,628.9601
+dry interior fire-adapted pine forest,no_harvest,16,118.2043,54.142,0.0,0.0,631.9367
+dry interior fire-adapted pine forest,no_harvest,17,118.9967,54.15,0.0,0.0,634.871
+dry interior fire-adapted pine forest,no_harvest,18,119.7776,54.1578,0.0,0.0,637.7632
+dry interior fire-adapted pine forest,no_harvest,19,120.5472,54.1655,0.0,0.0,640.6133
+dry interior fire-adapted pine forest,no_harvest,20,121.3055,54.1731,0.0,0.0,643.4214
+dry interior fire-adapted pine forest,no_harvest,21,122.0524,54.1805,0.0,0.0,646.1875
+dry interior fire-adapted pine forest,no_harvest,22,122.7881,54.1879,0.0,0.0,648.9119
+dry interior fire-adapted pine forest,no_harvest,23,123.5125,54.1951,0.0,0.0,651.5948
+dry interior fire-adapted pine forest,no_harvest,24,124.2258,54.2023,0.0,0.0,654.2362
+dry interior fire-adapted pine forest,no_harvest,25,124.9279,54.2093,0.0,0.0,656.8365
+dry interior fire-adapted pine forest,no_harvest,26,125.619,54.2162,0.0,0.0,659.3958
+dry interior fire-adapted pine forest,no_harvest,27,126.2991,54.223,0.0,0.0,661.9145
+dry interior fire-adapted pine forest,no_harvest,28,126.9683,54.2297,0.0,0.0,664.3928
+dry interior fire-adapted pine forest,no_harvest,29,127.6267,54.2363,0.0,0.0,666.8309
+dry interior fire-adapted pine forest,no_harvest,30,128.2743,54.2427,0.0,0.0,669.2293
+dry interior fire-adapted pine forest,no_harvest,31,128.9113,54.2491,0.0,0.0,671.5882
+dry interior fire-adapted pine forest,no_harvest,32,129.5377,54.2554,0.0,0.0,673.9081
+dry interior fire-adapted pine forest,no_harvest,33,130.1537,54.2615,0.0,0.0,676.1891
+dry interior fire-adapted pine forest,no_harvest,34,130.7593,54.2676,0.0,0.0,678.4318
+dry interior fire-adapted pine forest,no_harvest,35,131.3546,54.2735,0.0,0.0,680.6364
+dry interior fire-adapted pine forest,no_harvest,36,131.9397,54.2794,0.0,0.0,682.8035
+dry interior fire-adapted pine forest,no_harvest,37,132.5149,54.2851,0.0,0.0,684.9333
+dry interior fire-adapted pine forest,no_harvest,38,133.08,54.2908,0.0,0.0,687.0264
+dry interior fire-adapted pine forest,no_harvest,39,133.6354,54.2964,0.0,0.0,689.0831
+dry interior fire-adapted pine forest,no_harvest,40,134.181,54.3018,0.0,0.0,691.1038
+dry interior fire-adapted pine forest,no_harvest,41,134.7171,54.3072,0.0,0.0,693.089
+dry interior fire-adapted pine forest,no_harvest,42,135.2437,54.3124,0.0,0.0,695.0392
+dry interior fire-adapted pine forest,no_harvest,43,135.761,54.3176,0.0,0.0,696.9548
+dry interior fire-adapted pine forest,no_harvest,44,136.269,54.3227,0.0,0.0,698.8361
+dry interior fire-adapted pine forest,no_harvest,45,136.7679,54.3277,0.0,0.0,700.6838
+dry interior fire-adapted pine forest,no_harvest,46,137.2578,54.3326,0.0,0.0,702.4982
+dry interior fire-adapted pine forest,no_harvest,47,137.7389,54.3374,0.0,0.0,704.2798
+dry interior fire-adapted pine forest,no_harvest,48,138.2113,54.3421,0.0,0.0,706.0291
+dry interior fire-adapted pine forest,no_harvest,49,138.675,54.3468,0.0,0.0,707.7465
+dry interior fire-adapted pine forest,no_harvest,50,139.1303,54.3513,0.0,0.0,709.4324
+dry interior fire-adapted pine forest,no_harvest,51,139.5772,54.3558,0.0,0.0,711.0875
+dry interior fire-adapted pine forest,no_harvest,52,140.0159,54.3602,0.0,0.0,712.7121
+dry interior fire-adapted pine forest,no_harvest,53,140.4464,54.3645,0.0,0.0,714.3066
+dry interior fire-adapted pine forest,no_harvest,54,140.869,54.3687,0.0,0.0,715.8716
+dry interior fire-adapted pine forest,no_harvest,55,141.2838,54.3728,0.0,0.0,717.4076
+dry interior fire-adapted pine forest,no_harvest,56,141.6908,54.3769,0.0,0.0,718.9149
+dry interior fire-adapted pine forest,no_harvest,57,142.0902,54.3809,0.0,0.0,720.394
+dry interior fire-adapted pine forest,no_harvest,58,142.4821,54.3848,0.0,0.0,721.8454
+dry interior fire-adapted pine forest,no_harvest,59,142.8667,54.3887,0.0,0.0,723.2696
+dry interior fire-adapted pine forest,no_harvest,60,143.244,54.3924,0.0,0.0,724.6669
+dry interior fire-adapted pine forest,no_harvest,61,143.6142,54.3961,0.0,0.0,726.0379
+dry interior fire-adapted pine forest,no_harvest,62,143.9774,54.3998,0.0,0.0,727.3829
+dry interior fire-adapted pine forest,no_harvest,63,144.3337,54.4033,0.0,0.0,728.7025
+dry interior fire-adapted pine forest,no_harvest,64,144.6833,54.4068,0.0,0.0,729.9971
+dry interior fire-adapted pine forest,no_harvest,65,145.0262,54.4103,0.0,0.0,731.267
+dry interior fire-adapted pine forest,no_harvest,66,145.3626,54.4136,0.0,0.0,732.5127
+dry interior fire-adapted pine forest,no_harvest,67,145.6925,54.4169,0.0,0.0,733.7347
+dry interior fire-adapted pine forest,no_harvest,68,146.0162,54.4202,0.0,0.0,734.9334
+dry interior fire-adapted pine forest,no_harvest,69,146.3337,54.4233,0.0,0.0,736.1091
+dry interior fire-adapted pine forest,no_harvest,70,146.6451,54.4265,0.0,0.0,737.2622
+dry interior fire-adapted pine forest,no_harvest,71,146.9505,54.4295,0.0,0.0,738.3933
+dry interior fire-adapted pine forest,no_harvest,72,147.25,54.4325,0.0,0.0,739.5026
+dry interior fire-adapted pine forest,no_harvest,73,147.5438,54.4354,0.0,0.0,740.5906
+dry interior fire-adapted pine forest,no_harvest,74,147.832,54.4383,0.0,0.0,741.6577
+dry interior fire-adapted pine forest,no_harvest,75,148.1146,54.4411,0.0,0.0,742.7042
+dry interior fire-adapted pine forest,no_harvest,76,148.3917,54.4439,0.0,0.0,743.7305
+dry interior fire-adapted pine forest,no_harvest,77,148.6635,54.4466,0.0,0.0,744.7371
+dry interior fire-adapted pine forest,no_harvest,78,148.93,54.4493,0.0,0.0,745.7241
+dry interior fire-adapted pine forest,no_harvest,79,149.1914,54.4519,0.0,0.0,746.6921
+dry interior fire-adapted pine forest,no_harvest,80,149.4477,54.4545,0.0,0.0,747.6414
+dry interior fire-adapted pine forest,no_harvest,81,149.6991,54.457,0.0,0.0,748.5722
+dry interior fire-adapted pine forest,no_harvest,82,149.9456,54.4595,0.0,0.0,749.4851
+dry interior fire-adapted pine forest,no_harvest,83,150.1873,54.4619,0.0,0.0,750.3802
+dry interior fire-adapted pine forest,no_harvest,84,150.4243,54.4642,0.0,0.0,751.258
+dry interior fire-adapted pine forest,no_harvest,85,150.6567,54.4666,0.0,0.0,752.1187
+dry interior fire-adapted pine forest,no_harvest,86,150.8846,54.4688,0.0,0.0,752.9628
+dry interior fire-adapted pine forest,no_harvest,87,151.1081,54.4711,0.0,0.0,753.7904
+dry interior fire-adapted pine forest,no_harvest,88,151.3273,54.4733,0.0,0.0,754.6019
+dry interior fire-adapted pine forest,no_harvest,89,151.5421,54.4754,0.0,0.0,755.3977
+dry interior fire-adapted pine forest,no_harvest,90,151.7528,54.4775,0.0,0.0,756.1779
+dry interior fire-adapted pine forest,no_harvest,91,151.9594,54.4796,0.0,0.0,756.943
+dry interior fire-adapted pine forest,no_harvest,92,152.162,54.4816,0.0,0.0,757.6932
+dry interior fire-adapted pine forest,no_harvest,93,152.3606,54.4836,0.0,0.0,758.4288
+dry interior fire-adapted pine forest,no_harvest,94,152.5554,54.4856,0.0,0.0,759.15
+dry interior fire-adapted pine forest,no_harvest,95,152.7463,54.4875,0.0,0.0,759.8572
+dry interior fire-adapted pine forest,no_harvest,96,152.9335,54.4893,0.0,0.0,760.5505
+dry interior fire-adapted pine forest,no_harvest,97,153.1171,54.4912,0.0,0.0,761.2304
+dry interior fire-adapted pine forest,no_harvest,98,153.2971,54.493,0.0,0.0,761.8969
+dry interior fire-adapted pine forest,no_harvest,99,153.4736,54.4947,0.0,0.0,762.5505
+dry interior fire-adapted pine forest,no_harvest,100,153.6466,54.4965,0.0,0.0,763.1912
+dry interior fire-adapted pine forest,selective_60_year,0,104.0,54.0,0.0,0.0,579.3333
+dry interior fire-adapted pine forest,selective_60_year,1,104.9691,54.0097,0.0,0.0,582.9224
+dry interior fire-adapted pine forest,selective_60_year,2,105.928,54.0193,0.0,0.0,586.4732
+dry interior fire-adapted pine forest,selective_60_year,3,106.8763,54.0288,0.0,0.0,589.9852
+dry interior fire-adapted pine forest,selective_60_year,4,107.814,54.0381,0.0,0.0,593.4579
+dry interior fire-adapted pine forest,selective_60_year,5,108.741,54.0474,0.0,0.0,596.8909
+dry interior fire-adapted pine forest,selective_60_year,6,109.6571,54.0566,0.0,0.0,600.2836
+dry interior fire-adapted pine forest,selective_60_year,7,110.5623,54.0656,0.0,0.0,603.6358
+dry interior fire-adapted pine forest,selective_60_year,8,111.4564,54.0746,0.0,0.0,606.947
+dry interior fire-adapted pine forest,selective_60_year,9,112.3394,54.0834,0.0,0.0,610.217
+dry interior fire-adapted pine forest,selective_60_year,10,113.2112,54.0921,0.0,0.0,613.4456
+dry interior fire-adapted pine forest,selective_60_year,11,114.0718,54.1007,0.0,0.0,616.6324
+dry interior fire-adapted pine forest,selective_60_year,12,114.921,54.1092,0.0,0.0,619.7774
+dry interior fire-adapted pine forest,selective_60_year,13,115.7589,54.1176,0.0,0.0,622.8804
+dry interior fire-adapted pine forest,selective_60_year,14,116.5854,54.1259,0.0,0.0,625.9414
+dry interior fire-adapted pine forest,selective_60_year,15,117.4006,54.134,0.0,0.0,628.9601
+dry interior fire-adapted pine forest,selective_60_year,16,118.2043,54.142,0.0,0.0,631.9367
+dry interior fire-adapted pine forest,selective_60_year,17,118.9967,54.15,0.0,0.0,634.871
+dry interior fire-adapted pine forest,selective_60_year,18,119.7776,54.1578,0.0,0.0,637.7632
+dry interior fire-adapted pine forest,selective_60_year,19,120.5472,54.1655,0.0,0.0,640.6133
+dry interior fire-adapted pine forest,selective_60_year,20,121.3055,54.1731,0.0,0.0,643.4214
+dry interior fire-adapted pine forest,selective_60_year,21,122.0524,54.1805,0.0,0.0,646.1875
+dry interior fire-adapted pine forest,selective_60_year,22,122.7881,54.1879,0.0,0.0,648.9119
+dry interior fire-adapted pine forest,selective_60_year,23,123.5125,54.1951,0.0,0.0,651.5948
+dry interior fire-adapted pine forest,selective_60_year,24,124.2258,54.2023,0.0,0.0,654.2362
+dry interior fire-adapted pine forest,selective_60_year,25,124.9279,54.2093,0.0,0.0,656.8365
+dry interior fire-adapted pine forest,selective_60_year,26,125.619,54.2162,0.0,0.0,659.3958
+dry interior fire-adapted pine forest,selective_60_year,27,126.2991,54.223,0.0,0.0,661.9145
+dry interior fire-adapted pine forest,selective_60_year,28,126.9683,54.2297,0.0,0.0,664.3928
+dry interior fire-adapted pine forest,selective_60_year,29,127.6267,54.2363,0.0,0.0,666.8309
+dry interior fire-adapted pine forest,selective_60_year,30,128.2743,54.2427,0.0,0.0,669.2293
+dry interior fire-adapted pine forest,selective_60_year,31,128.9113,54.2491,0.0,0.0,671.5882
+dry interior fire-adapted pine forest,selective_60_year,32,129.5377,54.2554,0.0,0.0,673.9081
+dry interior fire-adapted pine forest,selective_60_year,33,130.1537,54.2615,0.0,0.0,676.1891
+dry interior fire-adapted pine forest,selective_60_year,34,130.7593,54.2676,0.0,0.0,678.4318
+dry interior fire-adapted pine forest,selective_60_year,35,131.3546,54.2735,0.0,0.0,680.6364
+dry interior fire-adapted pine forest,selective_60_year,36,131.9397,54.2794,0.0,0.0,682.8035
+dry interior fire-adapted pine forest,selective_60_year,37,132.5149,54.2851,0.0,0.0,684.9333
+dry interior fire-adapted pine forest,selective_60_year,38,133.08,54.2908,0.0,0.0,687.0264
+dry interior fire-adapted pine forest,selective_60_year,39,133.6354,54.2964,0.0,0.0,689.0831
+dry interior fire-adapted pine forest,selective_60_year,40,134.181,54.3018,0.0,0.0,691.1038
+dry interior fire-adapted pine forest,selective_60_year,41,134.7171,54.3072,0.0,0.0,693.089
+dry interior fire-adapted pine forest,selective_60_year,42,135.2437,54.3124,0.0,0.0,695.0392
+dry interior fire-adapted pine forest,selective_60_year,43,135.761,54.3176,0.0,0.0,696.9548
+dry interior fire-adapted pine forest,selective_60_year,44,136.269,54.3227,0.0,0.0,698.8361
+dry interior fire-adapted pine forest,selective_60_year,45,136.7679,54.3277,0.0,0.0,700.6838
+dry interior fire-adapted pine forest,selective_60_year,46,137.2578,54.3326,0.0,0.0,702.4982
+dry interior fire-adapted pine forest,selective_60_year,47,137.7389,54.3374,0.0,0.0,704.2798
+dry interior fire-adapted pine forest,selective_60_year,48,138.2113,54.3421,0.0,0.0,706.0291
+dry interior fire-adapted pine forest,selective_60_year,49,138.675,54.3468,0.0,0.0,707.7465
+dry interior fire-adapted pine forest,selective_60_year,50,139.1303,54.3513,0.0,0.0,709.4324
+dry interior fire-adapted pine forest,selective_60_year,51,139.5772,54.3558,0.0,0.0,711.0875
+dry interior fire-adapted pine forest,selective_60_year,52,140.0159,54.3602,0.0,0.0,712.7121
+dry interior fire-adapted pine forest,selective_60_year,53,140.4464,54.3645,0.0,0.0,714.3066
+dry interior fire-adapted pine forest,selective_60_year,54,140.869,54.3687,0.0,0.0,715.8716
+dry interior fire-adapted pine forest,selective_60_year,55,141.2838,54.3728,0.0,0.0,717.4076
+dry interior fire-adapted pine forest,selective_60_year,56,141.6908,54.3769,0.0,0.0,718.9149
+dry interior fire-adapted pine forest,selective_60_year,57,142.0902,54.3809,0.0,0.0,720.394
+dry interior fire-adapted pine forest,selective_60_year,58,142.4821,54.3848,0.0,0.0,721.8454
+dry interior fire-adapted pine forest,selective_60_year,59,142.8667,54.3887,0.0,0.0,723.2696
+dry interior fire-adapted pine forest,selective_60_year,60,143.244,54.3924,0.0,0.0,724.6669
+dry interior fire-adapted pine forest,selective_60_year,61,103.4022,55.2808,36.1908,6.2248,737.3616
+dry interior fire-adapted pine forest,selective_60_year,62,104.0949,55.2877,35.1837,6.1313,735.8916
+dry interior fire-adapted pine forest,selective_60_year,63,104.7803,55.2946,34.2682,6.0416,734.7435
+dry interior fire-adapted pine forest,selective_60_year,64,105.4582,55.3014,33.4308,5.9553,733.8674
+dry interior fire-adapted pine forest,selective_60_year,65,106.1286,55.3081,32.6607,5.872,733.2208
+dry interior fire-adapted pine forest,selective_60_year,66,106.7915,55.3147,31.9482,5.7914,732.7683
+dry interior fire-adapted pine forest,selective_60_year,67,107.447,55.3213,31.2856,5.7134,732.4798
+dry interior fire-adapted pine forest,selective_60_year,68,108.0949,55.3277,30.6661,5.6375,732.3298
+dry interior fire-adapted pine forest,selective_60_year,69,108.7353,55.3341,30.0841,5.5637,732.2968
+dry interior fire-adapted pine forest,selective_60_year,70,109.3683,55.3405,29.5347,5.4919,732.3627
+dry interior fire-adapted pine forest,selective_60_year,71,109.9936,55.3467,29.0139,5.4217,732.512
+dry interior fire-adapted pine forest,selective_60_year,72,110.6115,55.3529,28.5183,5.3532,732.7319
+dry interior fire-adapted pine forest,selective_60_year,73,111.2219,55.359,28.045,5.2862,733.0111
+dry interior fire-adapted pine forest,selective_60_year,74,111.8248,55.365,27.5914,5.2207,733.3403
+dry interior fire-adapted pine forest,selective_60_year,75,112.4201,55.371,27.1556,5.1565,733.7116
+dry interior fire-adapted pine forest,selective_60_year,76,113.0081,55.3769,26.7355,5.0935,734.1181
+dry interior fire-adapted pine forest,selective_60_year,77,113.5886,55.3827,26.3299,5.0318,734.5541
+dry interior fire-adapted pine forest,selective_60_year,78,114.1616,55.3884,25.9372,4.9713,735.0146
+dry interior fire-adapted pine forest,selective_60_year,79,114.7273,55.3941,25.5565,4.9119,735.4955
+dry interior fire-adapted pine forest,selective_60_year,80,115.2856,55.3996,25.1867,4.8535,735.993
+dry interior fire-adapted pine forest,selective_60_year,81,115.8365,55.4051,24.8269,4.7961,736.5041
+dry interior fire-adapted pine forest,selective_60_year,82,116.3802,55.4106,24.4766,4.7398,737.0262
+dry interior fire-adapted pine forest,selective_60_year,83,116.9166,55.4159,24.135,4.6844,737.5569
+dry interior fire-adapted pine forest,selective_60_year,84,117.4457,55.4212,23.8016,4.6299,738.0942
+dry interior fire-adapted pine forest,selective_60_year,85,117.9677,55.4265,23.4758,4.5763,738.6365
+dry interior fire-adapted pine forest,selective_60_year,86,118.4825,55.4316,23.1574,4.5236,739.1822
+dry interior fire-adapted pine forest,selective_60_year,87,118.9902,55.4367,22.8459,4.4718,739.7301
+dry interior fire-adapted pine forest,selective_60_year,88,119.4909,55.4417,22.541,4.4207,740.279
+dry interior fire-adapted pine forest,selective_60_year,89,119.9845,55.4466,22.2423,4.3705,740.8279
+dry interior fire-adapted pine forest,selective_60_year,90,120.4712,55.4515,21.9497,4.321,741.3759
+dry interior fire-adapted pine forest,selective_60_year,91,120.951,55.4563,21.6628,4.2724,741.9224
+dry interior fire-adapted pine forest,selective_60_year,92,121.4239,55.461,21.3815,4.2244,742.4665
+dry interior fire-adapted pine forest,selective_60_year,93,121.89,55.4657,21.1056,4.1772,743.0078
+dry interior fire-adapted pine forest,selective_60_year,94,122.3494,55.4703,20.8348,4.1307,743.5457
+dry interior fire-adapted pine forest,selective_60_year,95,122.802,55.4748,20.5691,4.0849,744.0796
+dry interior fire-adapted pine forest,selective_60_year,96,123.248,55.4793,20.3082,4.0397,744.6093
+dry interior fire-adapted pine forest,selective_60_year,97,123.6875,55.4837,20.052,3.9953,745.1342
+dry interior fire-adapted pine forest,selective_60_year,98,124.1204,55.488,19.8004,3.9515,745.6542
+dry interior fire-adapted pine forest,selective_60_year,99,124.5468,55.4923,19.5533,3.9083,746.1688
+dry interior fire-adapted pine forest,selective_60_year,100,124.9668,55.4965,19.3104,3.8657,746.6779
+dry interior fire-adapted pine forest,extended_50_year,0,104.0,54.0,0.0,0.0,579.3333
+dry interior fire-adapted pine forest,extended_50_year,1,104.9691,54.0097,0.0,0.0,582.9224
+dry interior fire-adapted pine forest,extended_50_year,2,105.928,54.0193,0.0,0.0,586.4732
+dry interior fire-adapted pine forest,extended_50_year,3,106.8763,54.0288,0.0,0.0,589.9852
+dry interior fire-adapted pine forest,extended_50_year,4,107.814,54.0381,0.0,0.0,593.4579
+dry interior fire-adapted pine forest,extended_50_year,5,108.741,54.0474,0.0,0.0,596.8909
+dry interior fire-adapted pine forest,extended_50_year,6,109.6571,54.0566,0.0,0.0,600.2836
+dry interior fire-adapted pine forest,extended_50_year,7,110.5623,54.0656,0.0,0.0,603.6358
+dry interior fire-adapted pine forest,extended_50_year,8,111.4564,54.0746,0.0,0.0,606.947
+dry interior fire-adapted pine forest,extended_50_year,9,112.3394,54.0834,0.0,0.0,610.217
+dry interior fire-adapted pine forest,extended_50_year,10,113.2112,54.0921,0.0,0.0,613.4456
+dry interior fire-adapted pine forest,extended_50_year,11,114.0718,54.1007,0.0,0.0,616.6324
+dry interior fire-adapted pine forest,extended_50_year,12,114.921,54.1092,0.0,0.0,619.7774
+dry interior fire-adapted pine forest,extended_50_year,13,115.7589,54.1176,0.0,0.0,622.8804
+dry interior fire-adapted pine forest,extended_50_year,14,116.5854,54.1259,0.0,0.0,625.9414
+dry interior fire-adapted pine forest,extended_50_year,15,117.4006,54.134,0.0,0.0,628.9601
+dry interior fire-adapted pine forest,extended_50_year,16,118.2043,54.142,0.0,0.0,631.9367
+dry interior fire-adapted pine forest,extended_50_year,17,118.9967,54.15,0.0,0.0,634.871
+dry interior fire-adapted pine forest,extended_50_year,18,119.7776,54.1578,0.0,0.0,637.7632
+dry interior fire-adapted pine forest,extended_50_year,19,120.5472,54.1655,0.0,0.0,640.6133
+dry interior fire-adapted pine forest,extended_50_year,20,121.3055,54.1731,0.0,0.0,643.4214
+dry interior fire-adapted pine forest,extended_50_year,21,122.0524,54.1805,0.0,0.0,646.1875
+dry interior fire-adapted pine forest,extended_50_year,22,122.7881,54.1879,0.0,0.0,648.9119
+dry interior fire-adapted pine forest,extended_50_year,23,123.5125,54.1951,0.0,0.0,651.5948
+dry interior fire-adapted pine forest,extended_50_year,24,124.2258,54.2023,0.0,0.0,654.2362
+dry interior fire-adapted pine forest,extended_50_year,25,124.9279,54.2093,0.0,0.0,656.8365
+dry interior fire-adapted pine forest,extended_50_year,26,125.619,54.2162,0.0,0.0,659.3958
+dry interior fire-adapted pine forest,extended_50_year,27,126.2991,54.223,0.0,0.0,661.9145
+dry interior fire-adapted pine forest,extended_50_year,28,126.9683,54.2297,0.0,0.0,664.3928
+dry interior fire-adapted pine forest,extended_50_year,29,127.6267,54.2363,0.0,0.0,666.8309
+dry interior fire-adapted pine forest,extended_50_year,30,128.2743,54.2427,0.0,0.0,669.2293
+dry interior fire-adapted pine forest,extended_50_year,31,128.9113,54.2491,0.0,0.0,671.5882
+dry interior fire-adapted pine forest,extended_50_year,32,129.5377,54.2554,0.0,0.0,673.9081
+dry interior fire-adapted pine forest,extended_50_year,33,130.1537,54.2615,0.0,0.0,676.1891
+dry interior fire-adapted pine forest,extended_50_year,34,130.7593,54.2676,0.0,0.0,678.4318
+dry interior fire-adapted pine forest,extended_50_year,35,131.3546,54.2735,0.0,0.0,680.6364
+dry interior fire-adapted pine forest,extended_50_year,36,131.9397,54.2794,0.0,0.0,682.8035
+dry interior fire-adapted pine forest,extended_50_year,37,132.5149,54.2851,0.0,0.0,684.9333
+dry interior fire-adapted pine forest,extended_50_year,38,133.08,54.2908,0.0,0.0,687.0264
+dry interior fire-adapted pine forest,extended_50_year,39,133.6354,54.2964,0.0,0.0,689.0831
+dry interior fire-adapted pine forest,extended_50_year,40,134.181,54.3018,0.0,0.0,691.1038
+dry interior fire-adapted pine forest,extended_50_year,41,134.7171,54.3072,0.0,0.0,693.089
+dry interior fire-adapted pine forest,extended_50_year,42,135.2437,54.3124,0.0,0.0,695.0392
+dry interior fire-adapted pine forest,extended_50_year,43,135.761,54.3176,0.0,0.0,696.9548
+dry interior fire-adapted pine forest,extended_50_year,44,136.269,54.3227,0.0,0.0,698.8361
+dry interior fire-adapted pine forest,extended_50_year,45,136.7679,54.3277,0.0,0.0,700.6838
+dry interior fire-adapted pine forest,extended_50_year,46,137.2578,54.3326,0.0,0.0,702.4982
+dry interior fire-adapted pine forest,extended_50_year,47,137.7389,54.3374,0.0,0.0,704.2798
+dry interior fire-adapted pine forest,extended_50_year,48,138.2113,54.3421,0.0,0.0,706.0291
+dry interior fire-adapted pine forest,extended_50_year,49,138.675,54.3468,0.0,0.0,707.7465
+dry interior fire-adapted pine forest,extended_50_year,50,139.1303,54.3513,0.0,0.0,709.4324
+dry interior fire-adapted pine forest,extended_50_year,51,80.9548,55.6455,52.7602,8.7347,726.3489
+dry interior fire-adapted pine forest,extended_50_year,52,81.734,55.6533,51.0937,8.5934,722.6059
+dry interior fire-adapted pine forest,extended_50_year,53,82.5088,55.661,49.5909,8.4586,719.471
+dry interior fire-adapted pine forest,extended_50_year,54,83.2791,55.6687,48.2279,8.3296,716.8527
+dry interior fire-adapted pine forest,extended_50_year,55,84.0447,55.6764,46.9844,8.2056,714.6742
+dry interior fire-adapted pine forest,extended_50_year,56,84.8056,55.684,45.8434,8.0862,712.8703
+dry interior fire-adapted pine forest,extended_50_year,57,85.5615,55.6915,44.7905,7.971,711.3863
+dry interior fire-adapted pine forest,extended_50_year,58,86.3124,55.699,43.8134,7.8594,710.1756
+dry interior fire-adapted pine forest,extended_50_year,59,87.0581,55.7065,42.9021,7.7512,709.199
+dry interior fire-adapted pine forest,extended_50_year,60,87.7986,55.7139,42.0477,7.6461,708.4231
+dry interior fire-adapted pine forest,extended_50_year,61,88.5337,55.7213,41.243,7.5437,707.8198
+dry interior fire-adapted pine forest,extended_50_year,62,89.2634,55.7286,40.4818,7.4441,707.3652
+dry interior fire-adapted pine forest,extended_50_year,63,89.9874,55.7358,39.7588,7.3468,707.039
+dry interior fire-adapted pine forest,extended_50_year,64,90.7058,55.743,39.0695,7.2518,706.8237
+dry interior fire-adapted pine forest,extended_50_year,65,91.4185,55.7501,38.4102,7.1589,706.7048
+dry interior fire-adapted pine forest,extended_50_year,66,92.1253,55.7572,37.7776,7.068,706.6695
+dry interior fire-adapted pine forest,extended_50_year,67,92.8262,55.7642,37.1689,6.979,706.7072
+dry interior fire-adapted pine forest,extended_50_year,68,93.5212,55.7711,36.5819,6.8918,706.8085
+dry interior fire-adapted pine forest,extended_50_year,69,94.2101,55.778,36.0145,6.8063,706.9656
+dry interior fire-adapted pine forest,extended_50_year,70,94.8928,55.7848,35.4649,6.7224,707.1716
+dry interior fire-adapted pine forest,extended_50_year,71,95.5694,55.7916,34.9318,6.6401,707.4207
+dry interior fire-adapted pine forest,extended_50_year,72,96.2397,55.7983,34.4138,6.5593,707.7077
+dry interior fire-adapted pine forest,extended_50_year,73,96.9038,55.805,33.9098,6.4799,708.028
+dry interior fire-adapted pine forest,extended_50_year,74,97.5615,55.8115,33.4189,6.402,708.378
+dry interior fire-adapted pine forest,extended_50_year,75,98.2129,55.818,32.9403,6.3254,708.7541
+dry interior fire-adapted pine forest,extended_50_year,76,98.8578,55.8245,32.4731,6.2501,709.1534
+dry interior fire-adapted pine forest,extended_50_year,77,99.4962,55.8309,32.0168,6.1761,709.5732
+dry interior fire-adapted pine forest,extended_50_year,78,100.1282,55.8372,31.5707,6.1033,710.0112
+dry interior fire-adapted pine forest,extended_50_year,79,100.7536,55.8435,31.1345,6.0317,710.4653
+dry interior fire-adapted pine forest,extended_50_year,80,101.3725,55.8496,30.7075,5.9613,710.9337
+dry interior fire-adapted pine forest,extended_50_year,81,101.9849,55.8558,30.2895,5.892,711.4146
+dry interior fire-adapted pine forest,extended_50_year,82,102.5906,55.8618,29.88,5.8239,711.9065
+dry interior fire-adapted pine forest,extended_50_year,83,103.1898,55.8678,29.4788,5.7568,712.4081
+dry interior fire-adapted pine forest,extended_50_year,84,103.7823,55.8737,29.0855,5.6907,712.9181
+dry interior fire-adapted pine forest,extended_50_year,85,104.3682,55.8796,28.6998,5.6257,713.4355
+dry interior fire-adapted pine forest,extended_50_year,86,104.9475,55.8854,28.3215,5.5617,713.9591
+dry interior fire-adapted pine forest,extended_50_year,87,105.5201,55.8911,27.9504,5.4987,714.488
+dry interior fire-adapted pine forest,extended_50_year,88,106.0861,55.8968,27.5862,5.4367,715.0213
+dry interior fire-adapted pine forest,extended_50_year,89,106.6455,55.9024,27.2288,5.3756,715.5581
+dry interior fire-adapted pine forest,extended_50_year,90,107.1983,55.9079,26.8779,5.3154,716.0979
+dry interior fire-adapted pine forest,extended_50_year,91,107.7444,55.9134,26.5333,5.2561,716.6397
+dry interior fire-adapted pine forest,extended_50_year,92,108.2839,55.9188,26.195,5.1977,717.183
+dry interior fire-adapted pine forest,extended_50_year,93,108.8169,55.9241,25.8627,5.1402,717.7271
+dry interior fire-adapted pine forest,extended_50_year,94,109.3432,55.9293,25.5362,5.0835,718.2715
+dry interior fire-adapted pine forest,extended_50_year,95,109.863,55.9345,25.2155,5.0276,718.8156
+dry interior fire-adapted pine forest,extended_50_year,96,110.3763,55.9397,24.9003,4.9726,719.3589
+dry interior fire-adapted pine forest,extended_50_year,97,110.883,55.9447,24.5906,4.9183,719.901
+dry interior fire-adapted pine forest,extended_50_year,98,111.3832,55.9497,24.2862,4.8648,720.4413
+dry interior fire-adapted pine forest,extended_50_year,99,111.877,55.9547,23.987,4.8121,720.9795
+dry interior fire-adapted pine forest,extended_50_year,100,112.3643,55.9596,23.6928,4.7602,721.5151
+dry interior fire-adapted pine forest,current_40_year,0,104.0,54.0,0.0,0.0,579.3333
+dry interior fire-adapted pine forest,current_40_year,1,104.9691,54.0097,0.0,0.0,582.9224
+dry interior fire-adapted pine forest,current_40_year,2,105.928,54.0193,0.0,0.0,586.4732
+dry interior fire-adapted pine forest,current_40_year,3,106.8763,54.0288,0.0,0.0,589.9852
+dry interior fire-adapted pine forest,current_40_year,4,107.814,54.0381,0.0,0.0,593.4579
+dry interior fire-adapted pine forest,current_40_year,5,108.741,54.0474,0.0,0.0,596.8909
+dry interior fire-adapted pine forest,current_40_year,6,109.6571,54.0566,0.0,0.0,600.2836
+dry interior fire-adapted pine forest,current_40_year,7,110.5623,54.0656,0.0,0.0,603.6358
+dry interior fire-adapted pine forest,current_40_year,8,111.4564,54.0746,0.0,0.0,606.947
+dry interior fire-adapted pine forest,current_40_year,9,112.3394,54.0834,0.0,0.0,610.217
+dry interior fire-adapted pine forest,current_40_year,10,113.2112,54.0921,0.0,0.0,613.4456
+dry interior fire-adapted pine forest,current_40_year,11,114.0718,54.1007,0.0,0.0,616.6324
+dry interior fire-adapted pine forest,current_40_year,12,114.921,54.1092,0.0,0.0,619.7774
+dry interior fire-adapted pine forest,current_40_year,13,115.7589,54.1176,0.0,0.0,622.8804
+dry interior fire-adapted pine forest,current_40_year,14,116.5854,54.1259,0.0,0.0,625.9414
+dry interior fire-adapted pine forest,current_40_year,15,117.4006,54.134,0.0,0.0,628.9601
+dry interior fire-adapted pine forest,current_40_year,16,118.2043,54.142,0.0,0.0,631.9367
+dry interior fire-adapted pine forest,current_40_year,17,118.9967,54.15,0.0,0.0,634.871
+dry interior fire-adapted pine forest,current_40_year,18,119.7776,54.1578,0.0,0.0,637.7632
+dry interior fire-adapted pine forest,current_40_year,19,120.5472,54.1655,0.0,0.0,640.6133
+dry interior fire-adapted pine forest,current_40_year,20,121.3055,54.1731,0.0,0.0,643.4214
+dry interior fire-adapted pine forest,current_40_year,21,122.0524,54.1805,0.0,0.0,646.1875
+dry interior fire-adapted pine forest,current_40_year,22,122.7881,54.1879,0.0,0.0,648.9119
+dry interior fire-adapted pine forest,current_40_year,23,123.5125,54.1951,0.0,0.0,651.5948
+dry interior fire-adapted pine forest,current_40_year,24,124.2258,54.2023,0.0,0.0,654.2362
+dry interior fire-adapted pine forest,current_40_year,25,124.9279,54.2093,0.0,0.0,656.8365
+dry interior fire-adapted pine forest,current_40_year,26,125.619,54.2162,0.0,0.0,659.3958
+dry interior fire-adapted pine forest,current_40_year,27,126.2991,54.223,0.0,0.0,661.9145
+dry interior fire-adapted pine forest,current_40_year,28,126.9683,54.2297,0.0,0.0,664.3928
+dry interior fire-adapted pine forest,current_40_year,29,127.6267,54.2363,0.0,0.0,666.8309
+dry interior fire-adapted pine forest,current_40_year,30,128.2743,54.2427,0.0,0.0,669.2293
+dry interior fire-adapted pine forest,current_40_year,31,128.9113,54.2491,0.0,0.0,671.5882
+dry interior fire-adapted pine forest,current_40_year,32,129.5377,54.2554,0.0,0.0,673.9081
+dry interior fire-adapted pine forest,current_40_year,33,130.1537,54.2615,0.0,0.0,676.1891
+dry interior fire-adapted pine forest,current_40_year,34,130.7593,54.2676,0.0,0.0,678.4318
+dry interior fire-adapted pine forest,current_40_year,35,131.3546,54.2735,0.0,0.0,680.6364
+dry interior fire-adapted pine forest,current_40_year,36,131.9397,54.2794,0.0,0.0,682.8035
+dry interior fire-adapted pine forest,current_40_year,37,132.5149,54.2851,0.0,0.0,684.9333
+dry interior fire-adapted pine forest,current_40_year,38,133.08,54.2908,0.0,0.0,687.0264
+dry interior fire-adapted pine forest,current_40_year,39,133.6354,54.2964,0.0,0.0,689.0831
+dry interior fire-adapted pine forest,current_40_year,40,134.181,54.3018,0.0,0.0,691.1038
+dry interior fire-adapted pine forest,current_40_year,41,67.3586,55.7891,60.6227,9.5178,708.723
+dry interior fire-adapted pine forest,current_40_year,42,68.1547,55.797,58.3786,9.3477,702.8195
+dry interior fire-adapted pine forest,current_40_year,43,68.9493,55.805,56.3745,9.1867,697.8234
+dry interior fire-adapted pine forest,current_40_year,44,69.742,55.8129,54.5747,9.0337,693.5988
+dry interior fire-adapted pine forest,current_40_year,45,70.5327,55.8208,52.9492,8.8877,690.0314
+dry interior fire-adapted pine forest,current_40_year,46,71.3212,55.8287,51.4724,8.748,687.0243
+dry interior fire-adapted pine forest,current_40_year,47,72.1073,55.8365,50.1231,8.6137,684.496
+dry interior fire-adapted pine forest,current_40_year,48,72.8909,55.8444,48.8832,8.4844,682.3775
+dry interior fire-adapted pine forest,current_40_year,49,73.6718,55.8522,47.7375,8.3596,680.6106
+dry interior fire-adapted pine forest,current_40_year,50,74.4497,55.86,46.673,8.2388,679.1458
+dry interior fire-adapted pine forest,current_40_year,51,75.2247,55.8677,45.679,8.1217,677.9415
+dry interior fire-adapted pine forest,current_40_year,52,75.9964,55.8754,44.7463,8.008,676.9622
+dry interior fire-adapted pine forest,current_40_year,53,76.7647,55.8831,43.867,7.8973,676.1779
+dry interior fire-adapted pine forest,current_40_year,54,77.5295,55.8908,43.0345,7.7896,675.5628
+dry interior fire-adapted pine forest,current_40_year,55,78.2907,55.8984,42.2434,7.6844,675.0954
+dry interior fire-adapted pine forest,current_40_year,56,79.048,55.906,41.4889,7.5818,674.757
+dry interior fire-adapted pine forest,current_40_year,57,79.8014,55.9135,40.7668,7.4815,674.5318
+dry interior fire-adapted pine forest,current_40_year,58,80.5507,55.921,40.0739,7.3834,674.4061
+dry interior fire-adapted pine forest,current_40_year,59,81.2957,55.9284,39.4071,7.2874,674.3684
+dry interior fire-adapted pine forest,current_40_year,60,82.0364,55.9358,38.7639,7.1934,674.4086
+dry interior fire-adapted pine forest,current_40_year,61,82.7726,55.9432,38.1423,7.1013,674.518
+dry interior fire-adapted pine forest,current_40_year,62,83.5042,55.9505,37.5403,7.011,674.6891
+dry interior fire-adapted pine forest,current_40_year,63,84.2311,55.9578,36.9565,6.9224,674.9154
+dry interior fire-adapted pine forest,current_40_year,64,84.9532,55.965,36.3893,6.8355,675.1912
+dry interior fire-adapted pine forest,current_40_year,65,85.6704,55.9722,35.8377,6.7503,675.5116
+dry interior fire-adapted pine forest,current_40_year,66,86.3825,55.9793,35.3005,6.6665,675.8721
+dry interior fire-adapted pine forest,current_40_year,67,87.0894,55.9864,34.7769,6.5843,676.2689
+dry interior fire-adapted pine forest,current_40_year,68,87.7912,55.9934,34.2661,6.5035,676.6986
+dry interior fire-adapted pine forest,current_40_year,69,88.4876,56.0003,33.7674,6.4241,677.1581
+dry interior fire-adapted pine forest,current_40_year,70,89.1786,56.0073,33.2802,6.3461,677.6446
+dry interior fire-adapted pine forest,current_40_year,71,89.8642,56.0141,32.8039,6.2694,678.1557
+dry interior fire-adapted pine forest,current_40_year,72,90.5441,56.0209,32.338,6.1941,678.6893
+dry interior fire-adapted pine forest,current_40_year,73,91.2185,56.0277,31.8821,6.1199,679.2431
+dry interior fire-adapted pine forest,current_40_year,74,91.8871,56.0343,31.4357,6.0471,679.8155
+dry interior fire-adapted pine forest,current_40_year,75,92.55,56.041,30.9986,5.9754,680.4047
+dry interior fire-adapted pine forest,current_40_year,76,93.207,56.0475,30.5704,5.9048,681.0092
+dry interior fire-adapted pine forest,current_40_year,77,93.8582,56.0541,30.1507,5.8355,681.6274
+dry interior fire-adapted pine forest,current_40_year,78,94.5034,56.0605,29.7393,5.7672,682.2582
+dry interior fire-adapted pine forest,current_40_year,79,95.1426,56.0669,29.3359,5.7,682.9002
+dry interior fire-adapted pine forest,current_40_year,80,95.7758,56.0732,28.9404,5.6339,683.5523
+dry interior fire-adapted pine forest,current_40_year,81,48.2015,57.1399,71.9337,12.3797,695.4009
+dry interior fire-adapted pine forest,current_40_year,82,48.721,57.1451,69.9471,12.194,689.3598
+dry interior fire-adapted pine forest,current_40_year,83,49.2399,57.1503,68.1394,12.0157,683.9996
+dry interior fire-adapted pine forest,current_40_year,84,49.758,57.1555,66.4849,11.8441,679.2225
+dry interior fire-adapted pine forest,current_40_year,85,50.2752,57.1607,64.9617,11.6785,674.946
+dry interior fire-adapted pine forest,current_40_year,86,50.7915,57.1658,63.5517,11.5183,671.1002
+dry interior fire-adapted pine forest,current_40_year,87,51.3067,57.171,62.2392,11.363,667.6262
+dry interior fire-adapted pine forest,current_40_year,88,51.8207,57.1761,61.0113,11.2121,664.474
+dry interior fire-adapted pine forest,current_40_year,89,52.3334,57.1813,59.8568,11.0653,661.6015
+dry interior fire-adapted pine forest,current_40_year,90,52.8448,57.1864,58.7665,10.9222,658.9727
+dry interior fire-adapted pine forest,current_40_year,91,53.3547,57.1915,57.7324,10.7825,656.5573
+dry interior fire-adapted pine forest,current_40_year,92,53.863,57.1966,56.7477,10.6462,654.3294
+dry interior fire-adapted pine forest,current_40_year,93,54.3697,57.2016,55.8069,10.5128,652.267
+dry interior fire-adapted pine forest,current_40_year,94,54.8746,57.2067,54.905,10.3823,650.3514
+dry interior fire-adapted pine forest,current_40_year,95,55.3777,57.2117,54.0379,10.2544,648.5666
+dry interior fire-adapted pine forest,current_40_year,96,55.8789,57.2167,53.2022,10.1291,646.8987
+dry interior fire-adapted pine forest,current_40_year,97,56.378,57.2217,52.3947,10.0062,645.336
+dry interior fire-adapted pine forest,current_40_year,98,56.8751,57.2267,51.613,9.8857,643.8684
+dry interior fire-adapted pine forest,current_40_year,99,57.3699,57.2316,50.8549,9.7673,642.4871
+dry interior fire-adapted pine forest,current_40_year,100,57.8625,57.2365,50.1184,9.6511,641.1844
+dry interior fire-adapted pine forest,short_30_year,0,104.0,54.0,0.0,0.0,579.3333
+dry interior fire-adapted pine forest,short_30_year,1,104.9691,54.0097,0.0,0.0,582.9224
+dry interior fire-adapted pine forest,short_30_year,2,105.928,54.0193,0.0,0.0,586.4732
+dry interior fire-adapted pine forest,short_30_year,3,106.8763,54.0288,0.0,0.0,589.9852
+dry interior fire-adapted pine forest,short_30_year,4,107.814,54.0381,0.0,0.0,593.4579
+dry interior fire-adapted pine forest,short_30_year,5,108.741,54.0474,0.0,0.0,596.8909
+dry interior fire-adapted pine forest,short_30_year,6,109.6571,54.0566,0.0,0.0,600.2836
+dry interior fire-adapted pine forest,short_30_year,7,110.5623,54.0656,0.0,0.0,603.6358
+dry interior fire-adapted pine forest,short_30_year,8,111.4564,54.0746,0.0,0.0,606.947
+dry interior fire-adapted pine forest,short_30_year,9,112.3394,54.0834,0.0,0.0,610.217
+dry interior fire-adapted pine forest,short_30_year,10,113.2112,54.0921,0.0,0.0,613.4456
+dry interior fire-adapted pine forest,short_30_year,11,114.0718,54.1007,0.0,0.0,616.6324
+dry interior fire-adapted pine forest,short_30_year,12,114.921,54.1092,0.0,0.0,619.7774
+dry interior fire-adapted pine forest,short_30_year,13,115.7589,54.1176,0.0,0.0,622.8804
+dry interior fire-adapted pine forest,short_30_year,14,116.5854,54.1259,0.0,0.0,625.9414
+dry interior fire-adapted pine forest,short_30_year,15,117.4006,54.134,0.0,0.0,628.9601
+dry interior fire-adapted pine forest,short_30_year,16,118.2043,54.142,0.0,0.0,631.9367
+dry interior fire-adapted pine forest,short_30_year,17,118.9967,54.15,0.0,0.0,634.871
+dry interior fire-adapted pine forest,short_30_year,18,119.7776,54.1578,0.0,0.0,637.7632
+dry interior fire-adapted pine forest,short_30_year,19,120.5472,54.1655,0.0,0.0,640.6133
+dry interior fire-adapted pine forest,short_30_year,20,121.3055,54.1731,0.0,0.0,643.4214
+dry interior fire-adapted pine forest,short_30_year,21,122.0524,54.1805,0.0,0.0,646.1875
+dry interior fire-adapted pine forest,short_30_year,22,122.7881,54.1879,0.0,0.0,648.9119
+dry interior fire-adapted pine forest,short_30_year,23,123.5125,54.1951,0.0,0.0,651.5948
+dry interior fire-adapted pine forest,short_30_year,24,124.2258,54.2023,0.0,0.0,654.2362
+dry interior fire-adapted pine forest,short_30_year,25,124.9279,54.2093,0.0,0.0,656.8365
+dry interior fire-adapted pine forest,short_30_year,26,125.619,54.2162,0.0,0.0,659.3958
+dry interior fire-adapted pine forest,short_30_year,27,126.2991,54.223,0.0,0.0,661.9145
+dry interior fire-adapted pine forest,short_30_year,28,126.9683,54.2297,0.0,0.0,664.3928
+dry interior fire-adapted pine forest,short_30_year,29,127.6267,54.2363,0.0,0.0,666.8309
+dry interior fire-adapted pine forest,short_30_year,30,128.2743,54.2427,0.0,0.0,669.2293
+dry interior fire-adapted pine forest,short_30_year,31,54.1428,55.894,65.7963,9.376,679.1
+dry interior fire-adapted pine forest,short_30_year,32,54.9091,55.9017,62.7277,9.1772,669.9576
+dry interior fire-adapted pine forest,short_30_year,33,55.6768,55.9094,60.0208,8.9914,662.194
+dry interior fire-adapted pine forest,short_30_year,34,56.4456,55.9171,57.6208,8.8169,655.6013
+dry interior fire-adapted pine forest,short_30_year,35,57.2154,55.9247,55.4817,8.6522,650.0047
+dry interior fire-adapted pine forest,short_30_year,36,57.986,55.9325,53.5646,8.496,645.2564
+dry interior fire-adapted pine forest,short_30_year,37,58.7571,55.9402,51.8368,8.3475,641.2321
+dry interior fire-adapted pine forest,short_30_year,38,59.5286,55.9479,50.2706,8.2056,637.8267
+dry interior fire-adapted pine forest,short_30_year,39,60.3002,55.9556,48.843,8.0698,634.9515
+dry interior fire-adapted pine forest,short_30_year,40,61.0719,55.9633,47.5341,7.9392,632.5314
+dry interior fire-adapted pine forest,short_30_year,41,61.8433,55.971,46.3276,7.8135,630.5031
+dry interior fire-adapted pine forest,short_30_year,42,62.6144,55.9787,45.2093,7.692,628.8129
+dry interior fire-adapted pine forest,short_30_year,43,63.3848,55.9864,44.1675,7.5746,627.4154
+dry interior fire-adapted pine forest,short_30_year,44,64.1545,55.9941,43.1921,7.4607,626.2719
+dry interior fire-adapted pine forest,short_30_year,45,64.9232,56.0018,42.2748,7.3501,625.3498
+dry interior fire-adapted pine forest,short_30_year,46,65.6908,56.0095,41.4083,7.2426,624.6211
+dry interior fire-adapted pine forest,short_30_year,47,66.457,56.0172,40.5867,7.1379,624.0621
+dry interior fire-adapted pine forest,short_30_year,48,67.2217,56.0248,39.8046,7.0359,623.6526
+dry interior fire-adapted pine forest,short_30_year,49,67.9848,56.0324,39.0578,6.9364,623.3751
+dry interior fire-adapted pine forest,short_30_year,50,68.746,56.0401,38.3424,6.8392,623.2149
+dry interior fire-adapted pine forest,short_30_year,51,69.5052,56.0476,37.6554,6.7442,623.1591
+dry interior fire-adapted pine forest,short_30_year,52,70.2622,56.0552,36.994,6.6513,623.1967
+dry interior fire-adapted pine forest,short_30_year,53,71.0168,56.0628,36.3558,6.5605,623.3182
+dry interior fire-adapted pine forest,short_30_year,54,71.769,56.0703,35.7389,6.4715,623.5152
+dry interior fire-adapted pine forest,short_30_year,55,72.5184,56.0778,35.1414,6.3844,623.7806
+dry interior fire-adapted pine forest,short_30_year,56,73.2651,56.0852,34.562,6.299,624.1081
+dry interior fire-adapted pine forest,short_30_year,57,74.0087,56.0927,33.9993,6.2153,624.492
+dry interior fire-adapted pine forest,short_30_year,58,74.7492,56.1001,33.4522,6.1332,624.9275
+dry interior fire-adapted pine forest,short_30_year,59,75.4865,56.1075,32.9197,6.0527,625.4102
+dry interior fire-adapted pine forest,short_30_year,60,76.2203,56.1148,32.401,5.9738,625.9363
+dry interior fire-adapted pine forest,short_30_year,61,32.3193,57.104,71.1708,11.4931,630.9862
+dry interior fire-adapted pine forest,short_30_year,62,32.774,57.1085,68.8456,11.2984,623.4307
+dry interior fire-adapted pine forest,short_30_year,63,33.2306,57.1131,66.748,11.1128,616.75
+dry interior fire-adapted pine forest,short_30_year,64,33.6889,57.1177,64.8448,10.9353,610.8179
+dry interior fire-adapted pine forest,short_30_year,65,34.1489,57.1223,63.108,10.765,605.5283
+dry interior fire-adapted pine forest,short_30_year,66,34.6103,57.1269,61.5139,10.601,600.7913
+dry interior fire-adapted pine forest,short_30_year,67,35.0733,57.1315,60.0427,10.4429,596.5313
+dry interior fire-adapted pine forest,short_30_year,68,35.5376,57.1362,58.6774,10.2899,592.6842
+dry interior fire-adapted pine forest,short_30_year,69,36.0031,57.1408,57.404,10.1417,589.1956
+dry interior fire-adapted pine forest,short_30_year,70,36.4699,57.1455,56.2103,9.9979,586.0198
+dry interior fire-adapted pine forest,short_30_year,71,36.9377,57.1502,55.0862,9.858,583.1177
+dry interior fire-adapted pine forest,short_30_year,72,37.4065,57.1549,54.0231,9.7218,580.4564
+dry interior fire-adapted pine forest,short_30_year,73,37.8763,57.1596,53.0136,9.5891,578.0078
+dry interior fire-adapted pine forest,short_30_year,74,38.3468,57.1643,52.0516,9.4595,575.7479
+dry interior fire-adapted pine forest,short_30_year,75,38.818,57.169,51.1318,9.333,573.6563
+dry interior fire-adapted pine forest,short_30_year,76,39.2898,57.1737,50.2497,9.2092,571.7156
+dry interior fire-adapted pine forest,short_30_year,77,39.7622,57.1784,49.4014,9.0882,569.9109
+dry interior fire-adapted pine forest,short_30_year,78,40.235,57.1831,48.5838,8.9697,568.2293
+dry interior fire-adapted pine forest,short_30_year,79,40.7081,57.1879,47.794,8.8536,566.6597
+dry interior fire-adapted pine forest,short_30_year,80,41.1814,57.1926,47.0296,8.7398,565.1925
+dry interior fire-adapted pine forest,short_30_year,81,41.6549,57.1973,46.2885,8.6282,563.8196
+dry interior fire-adapted pine forest,short_30_year,82,42.1284,57.2021,45.5689,8.5188,562.5336
+dry interior fire-adapted pine forest,short_30_year,83,42.6019,57.2068,44.8694,8.4114,561.3282
+dry interior fire-adapted pine forest,short_30_year,84,43.0752,57.2115,44.1885,8.306,560.1978
+dry interior fire-adapted pine forest,short_30_year,85,43.5483,57.2163,43.525,8.2025,559.1376
+dry interior fire-adapted pine forest,short_30_year,86,44.021,57.221,42.878,8.1009,558.1431
+dry interior fire-adapted pine forest,short_30_year,87,44.4933,57.2257,42.2464,8.0011,557.2106
+dry interior fire-adapted pine forest,short_30_year,88,44.9651,57.2304,41.6296,7.903,556.3365
+dry interior fire-adapted pine forest,short_30_year,89,45.4362,57.2352,41.0268,7.8066,555.5176
+dry interior fire-adapted pine forest,short_30_year,90,45.9067,57.2399,40.4374,7.7118,554.751
+dry interior fire-adapted pine forest,short_30_year,91,19.478,57.8363,63.5312,10.9917,556.7367
+dry interior fire-adapted pine forest,short_30_year,92,19.7185,57.8387,61.8628,10.8286,550.9117
+dry interior fire-adapted pine forest,short_30_year,93,19.9594,57.8411,60.3364,10.6717,545.6319
+dry interior fire-adapted pine forest,short_30_year,94,20.2009,57.8436,58.9317,10.5204,540.8208
+dry interior fire-adapted pine forest,short_30_year,95,20.4429,57.846,57.6319,10.374,536.414
+dry interior fire-adapted pine forest,short_30_year,96,20.6853,57.8484,56.4225,10.2321,532.357
+dry interior fire-adapted pine forest,short_30_year,97,20.9281,57.8508,55.2914,10.0944,528.6038
+dry interior fire-adapted pine forest,short_30_year,98,21.1712,57.8533,54.2285,9.9604,525.1153
+dry interior fire-adapted pine forest,short_30_year,99,21.4146,57.8557,53.225,9.8298,521.8586
+dry interior fire-adapted pine forest,short_30_year,100,21.6582,57.8581,52.2736,9.7025,518.8055

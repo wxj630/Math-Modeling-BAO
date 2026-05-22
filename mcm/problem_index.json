@@ -1,0 +1,514 @@
+[
+  {
+    "problem_id": "2015-C",
+    "year": "2015",
+    "code": "C",
+    "title": "ICM-C: Managing Human Capital in Organizations",
+    "problem_path": "problems/2015/C.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2015-D",
+    "year": "2015",
+    "code": "D",
+    "title": "ICM-D: Is it sustainable?",
+    "problem_path": "problems/2015/D.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2016-A",
+    "year": "2016",
+    "code": "A",
+    "title": "MCM-A: A Hot Bath",
+    "problem_path": "problems/2016/A.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2016-B",
+    "year": "2016",
+    "code": "B",
+    "title": "MCM-B: Space Junk",
+    "problem_path": "problems/2016/B.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2016-C",
+    "year": "2016",
+    "code": "C",
+    "title": "MCM-C: The Goodgrant Challenge",
+    "problem_path": "problems/2016/C.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2016-D",
+    "year": "2016",
+    "code": "D",
+    "title": "ICM-D: Measuring the Evolution and Influence in Society's Information Networks",
+    "problem_path": "problems/2016/D.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2016-E",
+    "year": "2016",
+    "code": "E",
+    "title": "ICM-E: Are we heading towards a thirsty planet?",
+    "problem_path": "problems/2016/E.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2016-F",
+    "year": "2016",
+    "code": "F",
+    "title": "ICM-F: Modeling Refugee Immigration Policies",
+    "problem_path": "problems/2016/F.md",
+    "question_count": "12"
+  },
+  {
+    "problem_id": "2017-A",
+    "year": "2017",
+    "code": "A",
+    "title": "MCM-A: Managing The Zambezi River",
+    "problem_path": "problems/2017/A.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2017-B",
+    "year": "2017",
+    "code": "B",
+    "title": "MCM-B: Merge After Toll",
+    "problem_path": "problems/2017/B.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2017-C",
+    "year": "2017",
+    "code": "C",
+    "title": "MCM-C: Cooperate and Navigate",
+    "problem_path": "problems/2017/C.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2017-D",
+    "year": "2017",
+    "code": "D",
+    "title": "ICM-D: Optimizing the Passenger Throughput at an Airport Security Checkpoint",
+    "problem_path": "problems/2017/D.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2017-E",
+    "year": "2017",
+    "code": "E",
+    "title": "ICM-E: Sustainable Cities Needed!",
+    "problem_path": "problems/2017/E.md",
+    "question_count": "2"
+  },
+  {
+    "problem_id": "2017-F",
+    "year": "2017",
+    "code": "F",
+    "title": "ICM-F: Migration to Mars: Utopian Workforce of the 2100 Urban Society",
+    "problem_path": "problems/2017/F.md",
+    "question_count": "12"
+  },
+  {
+    "problem_id": "2018-A",
+    "year": "2018",
+    "code": "A",
+    "title": "MCM-A: Multi-hop HF Radio Propagation",
+    "problem_path": "problems/2018/A.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2018-B",
+    "year": "2018",
+    "code": "B",
+    "title": "MCM-B: How Many Languages?",
+    "problem_path": "problems/2018/B.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2018-C",
+    "year": "2018",
+    "code": "C",
+    "title": "MCM-C: Energy Production",
+    "problem_path": "problems/2018/C.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2018-D",
+    "year": "2018",
+    "code": "D",
+    "title": "ICM-D: Out of Gas and Driving on E",
+    "problem_path": "problems/2018/D.md",
+    "question_count": "12"
+  },
+  {
+    "problem_id": "2018-E",
+    "year": "2018",
+    "code": "E",
+    "title": "ICM-E: How does climate change influence regional instability?",
+    "problem_path": "problems/2018/E.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2018-F",
+    "year": "2018",
+    "code": "F",
+    "title": "ICM-F: Cost of Privacy",
+    "problem_path": "problems/2018/F.md",
+    "question_count": "12"
+  },
+  {
+    "problem_id": "2019-A",
+    "year": "2019",
+    "code": "A",
+    "title": "MCM-A: Game of Ecology",
+    "problem_path": "problems/2019/A.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2019-B",
+    "year": "2019",
+    "code": "B",
+    "title": "MCM-B: Send in the Drones: Developing an Aerial Disaster Relief Response System",
+    "problem_path": "problems/2019/B.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "code": "C",
+    "title": "MCM-C: The Opioid Crisis",
+    "problem_path": "problems/2019/C.md",
+    "question_count": "3"
+  },
+  {
+    "problem_id": "2019-D",
+    "year": "2019",
+    "code": "D",
+    "title": "ICM-D: Time to leave the Louvre",
+    "problem_path": "problems/2019/D.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2019-E",
+    "year": "2019",
+    "code": "E",
+    "title": "ICM-E: What is the Cost of Environmental Degradation?",
+    "problem_path": "problems/2019/E.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2019-P06",
+    "year": "2019",
+    "code": "P06",
+    "title": "ICM-F: Universal, Decentralized, Digital Currency: Is it possible?",
+    "problem_path": "problems/2019/P06.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2020-A",
+    "year": "2020",
+    "code": "A",
+    "title": "MCM-A: Moving North",
+    "problem_path": "problems/2020/A.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2020-B",
+    "year": "2020",
+    "code": "B",
+    "title": "MCM-B: The Longest Lasting Sandcastle(s)",
+    "problem_path": "problems/2020/B.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2020-C",
+    "year": "2020",
+    "code": "C",
+    "title": "MCM-C: A Wealth of Data",
+    "problem_path": "problems/2020/C.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2020-D",
+    "year": "2020",
+    "code": "D",
+    "title": "ICM-D: Teaming Strategies",
+    "problem_path": "problems/2020/D.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2020-E",
+    "year": "2020",
+    "code": "E",
+    "title": "ICM-E: Drowning in Plastic",
+    "problem_path": "problems/2020/E.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2020-F",
+    "year": "2020",
+    "code": "F",
+    "title": "ICM-F: The Place I Called Home...",
+    "problem_path": "problems/2020/F.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2021-A",
+    "year": "2021",
+    "code": "A",
+    "title": "MCM-A: Fungi",
+    "problem_path": "problems/2021/A.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2021-B",
+    "year": "2021",
+    "code": "B",
+    "title": "MCM-B: Fighting Wildfires",
+    "problem_path": "problems/2021/B.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2021-C",
+    "year": "2021",
+    "code": "C",
+    "title": "MCM-C: Confirming the Buzz about Hornets",
+    "problem_path": "problems/2021/C.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2021-D",
+    "year": "2021",
+    "code": "D",
+    "title": "ICM-D: The Influence of Music",
+    "problem_path": "problems/2021/D.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2021-E",
+    "year": "2021",
+    "code": "E",
+    "title": "ICM-E: Re-Optimizing Food Systems",
+    "problem_path": "problems/2021/E.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2021-F",
+    "year": "2021",
+    "code": "F",
+    "title": "ICM-F: Checking the Pulse and Temperature of Higher Education",
+    "problem_path": "problems/2021/F.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2022-A",
+    "year": "2022",
+    "code": "A",
+    "title": "MCM-A: Power Profile of a Cyclist",
+    "problem_path": "problems/2022/A.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2022-B",
+    "year": "2022",
+    "code": "B",
+    "title": "MCM-B: Water and Hydroelectric Power Sharing",
+    "problem_path": "problems/2022/B.md",
+    "question_count": "9"
+  },
+  {
+    "problem_id": "2022-C",
+    "year": "2022",
+    "code": "C",
+    "title": "MCM-C: Trading Strategies",
+    "problem_path": "problems/2022/C.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2022-E",
+    "year": "2022",
+    "code": "E",
+    "title": "ICM-E: Forestry for Carbon Sequestration",
+    "problem_path": "problems/2022/E.md",
+    "question_count": "11"
+  },
+  {
+    "problem_id": "2022-F",
+    "year": "2022",
+    "code": "F",
+    "title": "ICM-F: All for One and One (Space) for All!",
+    "problem_path": "problems/2022/F.md",
+    "question_count": "8"
+  },
+  {
+    "problem_id": "2022-P01",
+    "year": "2022",
+    "code": "P01",
+    "title": "ICM-D: Data Paralysis? Use Our Analysis!",
+    "problem_path": "problems/2022/P01.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2023-A",
+    "year": "2023",
+    "code": "A",
+    "title": "MCM-A: Drought-Stricken Plant Communities",
+    "problem_path": "problems/2023/A.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2023-B",
+    "year": "2023",
+    "code": "B",
+    "title": "MCM-B: Reimagining Maasai Mara",
+    "problem_path": "problems/2023/B.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2023-C-Boats",
+    "year": "2023",
+    "code": "C-Boats",
+    "title": "MCM-C: Understanding Used Sailboat Prices",
+    "problem_path": "problems/2023/C-Boats.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2023-C-Wordle",
+    "year": "2023",
+    "code": "C-Wordle",
+    "title": "MCM-C: Predicting Wordle Results",
+    "problem_path": "problems/2023/C-Wordle.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2023-D",
+    "year": "2023",
+    "code": "D",
+    "title": "ICM-D: Prioritizing the UN Sustainability Goals",
+    "problem_path": "problems/2023/D.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2023-E",
+    "year": "2023",
+    "code": "E",
+    "title": "ICM-E: Light Pollution",
+    "problem_path": "problems/2023/E.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2023-F",
+    "year": "2023",
+    "code": "F",
+    "title": "ICM-F: The Future of the Olympics",
+    "problem_path": "problems/2023/F.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2023-F-GreenGDP",
+    "year": "2023",
+    "code": "F-GreenGDP",
+    "title": "ICM-F: Green GDP",
+    "problem_path": "problems/2023/F-GreenGDP.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2024-A",
+    "year": "2024",
+    "code": "A",
+    "title": "MCM-A: Resource Availability and Sex Ratios",
+    "problem_path": "problems/2024/A.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2024-B",
+    "year": "2024",
+    "code": "B",
+    "title": "MCM-B: Searching for Submersibles",
+    "problem_path": "problems/2024/B.md",
+    "question_count": "4"
+  },
+  {
+    "problem_id": "2024-C",
+    "year": "2024",
+    "code": "C",
+    "title": "MCM-C: Momentum in Tennis",
+    "problem_path": "problems/2024/C.md",
+    "question_count": "5"
+  },
+  {
+    "problem_id": "2024-D",
+    "year": "2024",
+    "code": "D",
+    "title": "ICM-D: Great Lakes Water Problem",
+    "problem_path": "problems/2024/D.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2024-E",
+    "year": "2024",
+    "code": "E",
+    "title": "ICM-E: Sustainability of Property Insurance",
+    "problem_path": "problems/2024/E.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2024-F",
+    "year": "2024",
+    "code": "F",
+    "title": "ICM-F: Reducing Illegal Wildlife Trade",
+    "problem_path": "problems/2024/F.md",
+    "question_count": "10"
+  },
+  {
+    "problem_id": "2025-A",
+    "year": "2025",
+    "code": "A",
+    "title": "MCM-A: Testing Time: The Constant Wear On Stairs",
+    "problem_path": "problems/2025/A.md",
+    "question_count": "8"
+  },
+  {
+    "problem_id": "2025-B",
+    "year": "2025",
+    "code": "B",
+    "title": "MCM-B: Managing Sustainable Tourism",
+    "problem_path": "problems/2025/B.md",
+    "question_count": "3"
+  },
+  {
+    "problem_id": "2025-C",
+    "year": "2025",
+    "code": "C",
+    "title": "MCM-C: Models for Olympic Medal Tables",
+    "problem_path": "problems/2025/C.md",
+    "question_count": "6"
+  },
+  {
+    "problem_id": "2025-D",
+    "year": "2025",
+    "code": "D",
+    "title": "ICM-D: A Roadmap to a Better City",
+    "problem_path": "problems/2025/D.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2025-E",
+    "year": "2025",
+    "code": "E",
+    "title": "ICM-E: Making Room for Agriculture",
+    "problem_path": "problems/2025/E.md",
+    "question_count": "7"
+  },
+  {
+    "problem_id": "2025-F",
+    "year": "2025",
+    "code": "F",
+    "title": "ICM-F: Cyber Strong?",
+    "problem_path": "problems/2025/F.md",
+    "question_count": "3"
+  }
+]

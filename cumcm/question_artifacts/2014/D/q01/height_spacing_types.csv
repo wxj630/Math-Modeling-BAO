@@ -1,0 +1,4 @@
+﻿type_id,min_box_size_mm,max_box_size_mm,spacing_mm,anti_overlap_upper_mm,medicine_count,group_redundancy_mm
+1,28.0,55.0,59.0,59.999,612,7150.0
+2,56.0,111.0,115.0,115.999,1300,51449.0
+3,112.0,125.0,129.0,227.999,7,53.0

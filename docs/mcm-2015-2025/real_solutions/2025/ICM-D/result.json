@@ -1,0 +1,497 @@
+{
+  "problem": "2025 ICM-D A Roadmap to a Better City",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "rows": {
+      "edges_drive.csv": 91227,
+      "nodes_drive.csv": 37163,
+      "Bus_Stops.csv": 2654,
+      "Bus_Routes.csv": 66,
+      "MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv": 2398,
+      "DataDictionary.csv": 111
+    }
+  },
+  "network_summary": {
+    "drive_nodes": 37162,
+    "drive_edges": 89958,
+    "largest_weak_component_nodes": 37162,
+    "bus_routes": 66,
+    "bus_stops": 2654
+  },
+  "bridge_impact": {
+    "anchor_nodes": {
+      "Key Bridge west approach": 37283075,
+      "Key Bridge east approach": 37574794,
+      "Downtown/Inner Harbor": 49488417,
+      "Port/Curtis Bay": 49506844,
+      "Dundalk/East Baltimore": 37805412,
+      "I-95 Southwest Gateway": 37800179,
+      "Mondawmin Transit Hub": 49390032,
+      "Rogers Avenue Metro": 49494946
+    },
+    "od_impacts": [
+      {
+        "od_pair": "Key Bridge west-east approaches",
+        "from": "Key Bridge west approach",
+        "to": "Key Bridge east approach",
+        "status_after_removal": "disconnected",
+        "baseline_km": 13.083,
+        "collapse_km": null,
+        "extra_km": null,
+        "extra_pct": null
+      },
+      {
+        "od_pair": "Port to Dundalk",
+        "from": "Port/Curtis Bay",
+        "to": "Dundalk/East Baltimore",
+        "status_after_removal": "connected",
+        "baseline_km": 59.505,
+        "collapse_km": 59.505,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Southwest Gateway to Dundalk",
+        "from": "I-95 Southwest Gateway",
+        "to": "Dundalk/East Baltimore",
+        "status_after_removal": "connected",
+        "baseline_km": 57.19,
+        "collapse_km": 57.19,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Downtown to Port",
+        "from": "Downtown/Inner Harbor",
+        "to": "Port/Curtis Bay",
+        "status_after_removal": "connected",
+        "baseline_km": 9.3,
+        "collapse_km": 9.3,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Mondawmin to Port jobs",
+        "from": "Mondawmin Transit Hub",
+        "to": "Port/Curtis Bay",
+        "status_after_removal": "connected",
+        "baseline_km": 13.748,
+        "collapse_km": 13.748,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      },
+      {
+        "od_pair": "Rogers Ave to Inner Harbor",
+        "from": "Rogers Avenue Metro",
+        "to": "Downtown/Inner Harbor",
+        "status_after_removal": "connected",
+        "baseline_km": 10.565,
+        "collapse_km": 10.565,
+        "extra_km": 0.0,
+        "extra_pct": 0.0
+      }
+    ],
+    "mean_extra_km": 0.0,
+    "max_extra_pct": 0.0,
+    "disconnected_od_count": 1,
+    "removed_edge_count": 12,
+    "removed_total_km": 12.981
+  },
+  "bus_project": {
+    "total_stops": 2654,
+    "no_shelter_stops": 2295,
+    "riders_at_no_shelter_share": 0.7022,
+    "top10_no_shelter_riders": 16266,
+    "top10_no_shelter_share_all_riders": 0.0473,
+    "recommended_project": "Install shelters, lighting, ADA boarding pads, and bus-priority curb management at the highest-ridership unsheltered stops.",
+    "priority_stops": [
+      {
+        "stop_name": "MONDAWMIN METRO STATION BAY 1",
+        "riders_total": 2488,
+        "rider_on": 1381,
+        "rider_off": 1106,
+        "route_count": 1,
+        "routes": "22",
+        "nearest_drive_node": 49390032,
+        "x": -76.652913,
+        "y": 39.3181
+      },
+      {
+        "stop_name": "MONDAWMIN METRO STATION BAY 3",
+        "riders_total": 2484,
+        "rider_on": 1415,
+        "rider_off": 1069,
+        "route_count": 1,
+        "routes": "29",
+        "nearest_drive_node": 49415115,
+        "x": -76.653472,
+        "y": 39.318167
+      },
+      {
+        "stop_name": "ROGERS AVE METRO STATION BAY 1",
+        "riders_total": 1859,
+        "rider_on": 983,
+        "rider_off": 876,
+        "route_count": 1,
+        "routes": "80",
+        "nearest_drive_node": 49494946,
+        "x": -76.691605,
+        "y": 39.34458
+      },
+      {
+        "stop_name": "SAINT PAUL ST & FAYETTE ST fs sb",
+        "riders_total": 1505,
+        "rider_on": 765,
+        "rider_off": 739,
+        "route_count": 12,
+        "routes": "103,120,210,215,310,410,411,67",
+        "nearest_drive_node": 288278866,
+        "x": -76.613975,
+        "y": 39.290157
+      },
+      {
+        "stop_name": "NORTH AVE & PENNSYLVANIA AVE eb",
+        "riders_total": 1393,
+        "rider_on": 858,
+        "rider_off": 535,
+        "route_count": 1,
+        "routes": "GD",
+        "nearest_drive_node": 49457784,
+        "x": -76.642864,
+        "y": 39.309946
+      },
+      {
+        "stop_name": "THE ALAMEDA & 32ND ST fs nb",
+        "riders_total": 1374,
+        "rider_on": 707,
+        "rider_off": 667,
+        "route_count": 3,
+        "routes": "22,53,GR",
+        "nearest_drive_node": 49396365,
+        "x": -76.594268,
+        "y": 39.32696
+      },
+      {
+        "stop_name": "MONDAWMIN METRO STATION BAY 6",
+        "riders_total": 1325,
+        "rider_on": 650,
+        "rider_off": 675,
+        "route_count": 1,
+        "routes": "83",
+        "nearest_drive_node": 1383183938,
+        "x": -76.652235,
+        "y": 39.317777
+      },
+      {
+        "stop_name": "SARATOGA ST & EUTAW ST wb",
+        "riders_total": 1288,
+        "rider_on": 983,
+        "rider_off": 305,
+        "route_count": 3,
+        "routes": "115,80,BL",
+        "nearest_drive_node": 49555274,
+        "x": -76.620942,
+        "y": 39.292903
+      },
+      {
+        "stop_name": "FAYETTE ST & SAINT PAUL ST wb",
+        "riders_total": 1287,
+        "rider_on": 531,
+        "rider_off": 756,
+        "route_count": 10,
+        "routes": "105,150,160,420,56,71,78,OR",
+        "nearest_drive_node": 288278866,
+        "x": -76.613594,
+        "y": 39.290537
+      },
+      {
+        "stop_name": "WEST BALTIMORE MARC STATION BAY 2",
+        "riders_total": 1263,
+        "rider_on": 689,
+        "rider_off": 575,
+        "route_count": 1,
+        "routes": "BL",
+        "nearest_drive_node": 49519861,
+        "x": -76.652256,
+        "y": 39.293025
+      }
+    ]
+  },
+  "project_recommendations": {
+    "recommended_projects": [
+      {
+        "project": "Rebuild and harden the Francis Scott Key / I-695 harbor crossing corridor.",
+        "primary_benefit": "Restores direct connectivity for Key Bridge west-east approaches under the removal scenario.",
+        "resident_benefit": "Improves access between port-adjacent jobs, east/south neighborhoods, and regional highways.",
+        "other_stakeholders": "Port freight, commuters, emergency services, and pass-through traffic gain reliability; construction staging creates short-run delays.",
+        "disruption": "Major capital cost, detours, construction noise, and possible induced traffic unless paired with transit and safety improvements."
+      },
+      {
+        "project": "Install shelters, lighting, ADA boarding pads, and bus-priority curb management at the highest-ridership unsheltered stops.",
+        "primary_benefit": "Targets 16266 boardings/alightings at the top 10 unsheltered high-ridership stops.",
+        "resident_benefit": "Benefits bus-dependent residents directly through weather protection, safer waiting areas, and more reliable boarding.",
+        "other_stakeholders": "Transit agency operations improve, nearby businesses may gain foot traffic, drivers may face curb-management changes.",
+        "disruption": "Temporary sidewalk work, curb reallocation, and potential parking/loading conflicts near priority stops."
+      }
+    ],
+    "top_traffic_segments": [
+      {
+        "road_name": "OWINGS MILLS BLVD",
+        "station_id": "B030151",
+        "aadt_current": 36665,
+        "lanes": 4,
+        "aadt_per_lane": 9166.25,
+        "functional_class": "Minor Arterial",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "HONEYGO BLVD",
+        "station_id": "B030128",
+        "aadt_current": 34120,
+        "lanes": 4,
+        "aadt_per_lane": 8530.0,
+        "functional_class": "Minor Arterial",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "PULASKI HWY",
+        "station_id": "B030104",
+        "aadt_current": 33802,
+        "lanes": 4,
+        "aadt_per_lane": 8450.5,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "EDMONDSON AVE",
+        "station_id": "BC015",
+        "aadt_current": 33702,
+        "lanes": 6,
+        "aadt_per_lane": 5617.0,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": true,
+        "matched_length_m": 28172.95
+      },
+      {
+        "road_name": "LOCH RAVEN BLVD",
+        "station_id": "B1087",
+        "aadt_current": 31942,
+        "lanes": 4,
+        "aadt_per_lane": 7985.5,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "REISTERSTOWN RD",
+        "station_id": "B1026",
+        "aadt_current": 31442,
+        "lanes": 4,
+        "aadt_per_lane": 7860.5,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "E LOMBARD ST",
+        "station_id": "S2009240015",
+        "aadt_current": 30975,
+        "lanes": 4,
+        "aadt_per_lane": 7743.75,
+        "functional_class": "Minor Arterial",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      },
+      {
+        "road_name": "W NORTHERN PKWY",
+        "station_id": "B240076",
+        "aadt_current": 28722,
+        "lanes": 6,
+        "aadt_per_lane": 4787.0,
+        "functional_class": "Principal Arterial Other",
+        "matched_drive_edge": false,
+        "matched_length_m": 0.0
+      }
+    ]
+  },
+  "safety_priorities": {
+    "safety_strategy": "Prioritize pedestrian refuge, protected crossings, lighting, speed management, and bus-stop hardening where high-ridership stops overlap high traffic exposure.",
+    "high_exposure_roads": [
+      {
+        "road_name": "RAMP 6 FR IS 70 EB TO IS 695 SB",
+        "station_id": "V2013000177",
+        "aadt_current": 42491,
+        "lanes": 1,
+        "aadt_per_lane": 42491.0,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "RAMP 4 FR IS 795 NB TO MD 940 EB",
+        "station_id": "V2013000308",
+        "aadt_current": 32420,
+        "lanes": 1,
+        "aadt_per_lane": 32420.0,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "RAMP 4 FR IS 795 NB TO MD 940 EB",
+        "station_id": "V2013000307",
+        "aadt_current": 32420,
+        "lanes": 1,
+        "aadt_per_lane": 32420.0,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "B030038",
+        "aadt_current": 221282,
+        "lanes": 8,
+        "aadt_per_lane": 27660.25,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "B1194",
+        "aadt_current": 165202,
+        "lanes": 6,
+        "aadt_per_lane": 27533.67,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "B1213",
+        "aadt_current": 188932,
+        "lanes": 7,
+        "aadt_per_lane": 26990.29,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "P0078",
+        "aadt_current": 188084,
+        "lanes": 7,
+        "aadt_per_lane": 26869.14,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "B1099",
+        "aadt_current": 161050,
+        "lanes": 6,
+        "aadt_per_lane": 26841.67,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "P0032",
+        "aadt_current": 183437,
+        "lanes": 7,
+        "aadt_per_lane": 26205.29,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "FORT MCHENRY TUNNEL",
+        "station_id": "B240123",
+        "aadt_current": 182984,
+        "lanes": 7,
+        "aadt_per_lane": 26140.57,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "BALTO BELTWAY",
+        "station_id": "B1103",
+        "aadt_current": 156430,
+        "lanes": 6,
+        "aadt_per_lane": 26071.67,
+        "functional_class": "Interstate"
+      },
+      {
+        "road_name": "NO NAME",
+        "station_id": "B0983",
+        "aadt_current": 206491,
+        "lanes": 8,
+        "aadt_per_lane": 25811.38,
+        "functional_class": "Interstate"
+      }
+    ],
+    "high_ridership_stops": [
+      {
+        "stop_name": "NORTH AVE & PENNSYLVANIA AVE wb",
+        "riders_total": 2527,
+        "shelter": "Yes",
+        "routes": "GD,22,85,85"
+      },
+      {
+        "stop_name": "MONDAWMIN METRO STATION BAY 1",
+        "riders_total": 2488,
+        "shelter": "No",
+        "routes": "22,22"
+      },
+      {
+        "stop_name": "MONDAWMIN METRO STATION BAY 3",
+        "riders_total": 2484,
+        "shelter": "No",
+        "routes": "29,29"
+      },
+      {
+        "stop_name": "BALTIMORE ST & CHARLES ST eb",
+        "riders_total": 1978,
+        "shelter": "Yes",
+        "routes": "RD,56,71,78,105,120,150,160,210,215,310,OR,PR"
+      },
+      {
+        "stop_name": "ROGERS AVE METRO STATION BAY 1",
+        "riders_total": 1859,
+        "shelter": "No",
+        "routes": "80,80"
+      },
+      {
+        "stop_name": "PRATT ST & LIGHT ST eb",
+        "riders_total": 1845,
+        "shelter": "Yes",
+        "routes": "YW,54,65,76,94,154,BR,NV"
+      },
+      {
+        "stop_name": "PRATT ST & HOWARD ST eb",
+        "riders_total": 1724,
+        "shelter": "Yes",
+        "routes": "YW,54,76,94,154,163,BR,NV"
+      },
+      {
+        "stop_name": "EUTAW ST & PRESTON ST fs sb",
+        "riders_total": 1702,
+        "shelter": "Yes",
+        "routes": "YW,53,53,54,54,73,73,154,154,LM"
+      },
+      {
+        "stop_name": "REISTERSTOWN RD & LIBERTY HEIGHTS AVE fs sb",
+        "riders_total": 1599,
+        "shelter": "Yes",
+        "routes": "LM,85"
+      },
+      {
+        "stop_name": "SAINT PAUL ST & FAYETTE ST fs sb",
+        "riders_total": 1505,
+        "shelter": "No",
+        "routes": "SV,67,76,95,103,120,210,215,310,410,411,GR"
+      },
+      {
+        "stop_name": "NORTH AVE & PENNSYLVANIA AVE eb",
+        "riders_total": 1393,
+        "shelter": "No",
+        "routes": "GD"
+      },
+      {
+        "stop_name": "THE ALAMEDA & 32ND ST fs nb",
+        "riders_total": 1374,
+        "shelter": "No",
+        "routes": "GR,22,53"
+      }
+    ]
+  },
+  "mayor_memo": "Mayor, the model recommends a paired program: rebuild and harden the I-695 harbor crossing to restore regional freight/emergency redundancy, while immediately funding bus-stop safety upgrades at the highest-ridership unsheltered stops. The bridge project protects port access and regional reliability but causes construction disruption; the transit project directly helps daily residents at modest scale, with curb and sidewalk tradeoffs. Safety benefits are strongest if both projects include lighting, refuge crossings, speed management, and bus-priority curb design."
+}

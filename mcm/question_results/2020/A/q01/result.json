@@ -1,0 +1,846 @@
+{
+  "problem_id": "2020-A",
+  "question": "q01",
+  "question_title": "苏格兰鲱鱼和鲭鱼北迁模型",
+  "statement": "Model how Scottish herring and mackerel may move north over the next 50 years as waters warm.",
+  "methods": "用 species thermal sensitivity、stock mobility 和 best/most-likely/worst warming 情景计算 50 年 habitat center northward shift 与小渔船距离。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "official_requirements": {
+      "scottish_herring_and_mackerel": true,
+      "fifty_year_forecast": true,
+      "best_worst_most_likely_elapsed_times": true,
+      "small_fishing_company_operational_strategies": true,
+      "territorial_waters_impacts": true,
+      "hook_line_and_sinker_article": true
+    },
+    "parameters": {
+      "horizon_years": 50,
+      "species": [
+        {
+          "species": "Scottish herring",
+          "baseline_center_lat": 58.0,
+          "thermal_preference_c": 9.0,
+          "thermal_sensitivity_km_per_c": 120.0,
+          "stock_mobility": 0.62,
+          "small_boat_range_km": 130.0,
+          "current_distance_from_scotland_km": 75.0,
+          "economic_dependency": 0.58
+        },
+        {
+          "species": "Scottish mackerel",
+          "baseline_center_lat": 57.0,
+          "thermal_preference_c": 10.5,
+          "thermal_sensitivity_km_per_c": 155.0,
+          "stock_mobility": 0.74,
+          "small_boat_range_km": 170.0,
+          "current_distance_from_scotland_km": 95.0,
+          "economic_dependency": 0.72
+        }
+      ],
+      "temperature_scenarios": [
+        {
+          "scenario": "best_case_slow_warming",
+          "warming_c_50yr": 0.8,
+          "probability_weight": 0.22
+        },
+        {
+          "scenario": "most_likely_warming",
+          "warming_c_50yr": 1.6,
+          "probability_weight": 0.56
+        },
+        {
+          "scenario": "worst_case_fast_warming",
+          "warming_c_50yr": 2.6,
+          "probability_weight": 0.22
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; thermal shifts, fleet ranges, and policy rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "habitat_shift_model": {
+    "method": "temperature-driven northward habitat-center shift for Scottish herring and mackerel over 50 years",
+    "species_rows": [
+      {
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "final_northward_shift_km": 84.326,
+        "final_habitat_center_lat": 58.7597,
+        "final_accessible_to_small_fleet": false
+      },
+      {
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "final_northward_shift_km": 168.653,
+        "final_habitat_center_lat": 59.5194,
+        "final_accessible_to_small_fleet": false
+      },
+      {
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "final_northward_shift_km": 274.061,
+        "final_habitat_center_lat": 60.469,
+        "final_accessible_to_small_fleet": false
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "final_northward_shift_km": 113.683,
+        "final_habitat_center_lat": 58.0242,
+        "final_accessible_to_small_fleet": false
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "final_northward_shift_km": 227.366,
+        "final_habitat_center_lat": 59.0483,
+        "final_accessible_to_small_fleet": false
+      },
+      {
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "final_northward_shift_km": 369.47,
+        "final_habitat_center_lat": 60.3286,
+        "final_accessible_to_small_fleet": false
+      }
+    ],
+    "projection_rows": [
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.0,
+        "northward_shift_km": 0.0,
+        "habitat_center_lat": 58.0,
+        "distance_from_scottish_small_fleet_km": 75.0,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2025,
+        "year_from_start": 5,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.08,
+        "northward_shift_km": 8.433,
+        "habitat_center_lat": 58.076,
+        "distance_from_scottish_small_fleet_km": 83.433,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.16,
+        "northward_shift_km": 16.865,
+        "habitat_center_lat": 58.1519,
+        "distance_from_scottish_small_fleet_km": 91.865,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2035,
+        "year_from_start": 15,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.24,
+        "northward_shift_km": 25.298,
+        "habitat_center_lat": 58.2279,
+        "distance_from_scottish_small_fleet_km": 100.298,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.32,
+        "northward_shift_km": 33.731,
+        "habitat_center_lat": 58.3039,
+        "distance_from_scottish_small_fleet_km": 108.731,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2045,
+        "year_from_start": 25,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.4,
+        "northward_shift_km": 42.163,
+        "habitat_center_lat": 58.3798,
+        "distance_from_scottish_small_fleet_km": 117.163,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.48,
+        "northward_shift_km": 50.596,
+        "habitat_center_lat": 58.4558,
+        "distance_from_scottish_small_fleet_km": 125.596,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2055,
+        "year_from_start": 35,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.56,
+        "northward_shift_km": 59.028,
+        "habitat_center_lat": 58.5318,
+        "distance_from_scottish_small_fleet_km": 134.028,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.64,
+        "northward_shift_km": 67.461,
+        "habitat_center_lat": 58.6078,
+        "distance_from_scottish_small_fleet_km": 142.461,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2065,
+        "year_from_start": 45,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.72,
+        "northward_shift_km": 75.894,
+        "habitat_center_lat": 58.6837,
+        "distance_from_scottish_small_fleet_km": 150.894,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "species": "Scottish herring",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.8,
+        "northward_shift_km": 84.326,
+        "habitat_center_lat": 58.7597,
+        "distance_from_scottish_small_fleet_km": 159.326,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.0,
+        "northward_shift_km": 0.0,
+        "habitat_center_lat": 58.0,
+        "distance_from_scottish_small_fleet_km": 75.0,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2025,
+        "year_from_start": 5,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.16,
+        "northward_shift_km": 16.865,
+        "habitat_center_lat": 58.1519,
+        "distance_from_scottish_small_fleet_km": 91.865,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.32,
+        "northward_shift_km": 33.731,
+        "habitat_center_lat": 58.3039,
+        "distance_from_scottish_small_fleet_km": 108.731,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2035,
+        "year_from_start": 15,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.48,
+        "northward_shift_km": 50.596,
+        "habitat_center_lat": 58.4558,
+        "distance_from_scottish_small_fleet_km": 125.596,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.64,
+        "northward_shift_km": 67.461,
+        "habitat_center_lat": 58.6078,
+        "distance_from_scottish_small_fleet_km": 142.461,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2045,
+        "year_from_start": 25,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.8,
+        "northward_shift_km": 84.326,
+        "habitat_center_lat": 58.7597,
+        "distance_from_scottish_small_fleet_km": 159.326,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.96,
+        "northward_shift_km": 101.192,
+        "habitat_center_lat": 58.9116,
+        "distance_from_scottish_small_fleet_km": 176.192,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2055,
+        "year_from_start": 35,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.12,
+        "northward_shift_km": 118.057,
+        "habitat_center_lat": 59.0636,
+        "distance_from_scottish_small_fleet_km": 193.057,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.28,
+        "northward_shift_km": 134.922,
+        "habitat_center_lat": 59.2155,
+        "distance_from_scottish_small_fleet_km": 209.922,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2065,
+        "year_from_start": 45,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.44,
+        "northward_shift_km": 151.788,
+        "habitat_center_lat": 59.3675,
+        "distance_from_scottish_small_fleet_km": 226.788,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "species": "Scottish herring",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.6,
+        "northward_shift_km": 168.653,
+        "habitat_center_lat": 59.5194,
+        "distance_from_scottish_small_fleet_km": 243.653,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.0,
+        "northward_shift_km": 0.0,
+        "habitat_center_lat": 58.0,
+        "distance_from_scottish_small_fleet_km": 75.0,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2025,
+        "year_from_start": 5,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.26,
+        "northward_shift_km": 27.406,
+        "habitat_center_lat": 58.2469,
+        "distance_from_scottish_small_fleet_km": 102.406,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.52,
+        "northward_shift_km": 54.812,
+        "habitat_center_lat": 58.4938,
+        "distance_from_scottish_small_fleet_km": 129.812,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2035,
+        "year_from_start": 15,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.78,
+        "northward_shift_km": 82.218,
+        "habitat_center_lat": 58.7407,
+        "distance_from_scottish_small_fleet_km": 157.218,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.04,
+        "northward_shift_km": 109.624,
+        "habitat_center_lat": 58.9876,
+        "distance_from_scottish_small_fleet_km": 184.624,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2045,
+        "year_from_start": 25,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.3,
+        "northward_shift_km": 137.03,
+        "habitat_center_lat": 59.2345,
+        "distance_from_scottish_small_fleet_km": 212.03,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.56,
+        "northward_shift_km": 164.436,
+        "habitat_center_lat": 59.4814,
+        "distance_from_scottish_small_fleet_km": 239.436,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2055,
+        "year_from_start": 35,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.82,
+        "northward_shift_km": 191.843,
+        "habitat_center_lat": 59.7283,
+        "distance_from_scottish_small_fleet_km": 266.843,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 2.08,
+        "northward_shift_km": 219.249,
+        "habitat_center_lat": 59.9752,
+        "distance_from_scottish_small_fleet_km": 294.249,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2065,
+        "year_from_start": 45,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 2.34,
+        "northward_shift_km": 246.655,
+        "habitat_center_lat": 60.2221,
+        "distance_from_scottish_small_fleet_km": 321.655,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "species": "Scottish herring",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 2.6,
+        "northward_shift_km": 274.061,
+        "habitat_center_lat": 60.469,
+        "distance_from_scottish_small_fleet_km": 349.061,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.0,
+        "northward_shift_km": 0.0,
+        "habitat_center_lat": 57.0,
+        "distance_from_scottish_small_fleet_km": 95.0,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2025,
+        "year_from_start": 5,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.08,
+        "northward_shift_km": 11.368,
+        "habitat_center_lat": 57.1024,
+        "distance_from_scottish_small_fleet_km": 106.368,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.16,
+        "northward_shift_km": 22.737,
+        "habitat_center_lat": 57.2048,
+        "distance_from_scottish_small_fleet_km": 117.737,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2035,
+        "year_from_start": 15,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.24,
+        "northward_shift_km": 34.105,
+        "habitat_center_lat": 57.3073,
+        "distance_from_scottish_small_fleet_km": 129.105,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.32,
+        "northward_shift_km": 45.473,
+        "habitat_center_lat": 57.4097,
+        "distance_from_scottish_small_fleet_km": 140.473,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2045,
+        "year_from_start": 25,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.4,
+        "northward_shift_km": 56.842,
+        "habitat_center_lat": 57.5121,
+        "distance_from_scottish_small_fleet_km": 151.842,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.48,
+        "northward_shift_km": 68.21,
+        "habitat_center_lat": 57.6145,
+        "distance_from_scottish_small_fleet_km": 163.21,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2055,
+        "year_from_start": 35,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.56,
+        "northward_shift_km": 79.578,
+        "habitat_center_lat": 57.7169,
+        "distance_from_scottish_small_fleet_km": 174.578,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.64,
+        "northward_shift_km": 90.947,
+        "habitat_center_lat": 57.8193,
+        "distance_from_scottish_small_fleet_km": 185.947,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2065,
+        "year_from_start": 45,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.72,
+        "northward_shift_km": 102.315,
+        "habitat_center_lat": 57.9218,
+        "distance_from_scottish_small_fleet_km": 197.315,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "species": "Scottish mackerel",
+        "scenario": "best_case_slow_warming",
+        "warming_c": 0.8,
+        "northward_shift_km": 113.683,
+        "habitat_center_lat": 58.0242,
+        "distance_from_scottish_small_fleet_km": 208.683,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.0,
+        "northward_shift_km": 0.0,
+        "habitat_center_lat": 57.0,
+        "distance_from_scottish_small_fleet_km": 95.0,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2025,
+        "year_from_start": 5,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.16,
+        "northward_shift_km": 22.737,
+        "habitat_center_lat": 57.2048,
+        "distance_from_scottish_small_fleet_km": 117.737,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.32,
+        "northward_shift_km": 45.473,
+        "habitat_center_lat": 57.4097,
+        "distance_from_scottish_small_fleet_km": 140.473,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2035,
+        "year_from_start": 15,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.48,
+        "northward_shift_km": 68.21,
+        "habitat_center_lat": 57.6145,
+        "distance_from_scottish_small_fleet_km": 163.21,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.64,
+        "northward_shift_km": 90.947,
+        "habitat_center_lat": 57.8193,
+        "distance_from_scottish_small_fleet_km": 185.947,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2045,
+        "year_from_start": 25,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.8,
+        "northward_shift_km": 113.683,
+        "habitat_center_lat": 58.0242,
+        "distance_from_scottish_small_fleet_km": 208.683,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 0.96,
+        "northward_shift_km": 136.42,
+        "habitat_center_lat": 58.229,
+        "distance_from_scottish_small_fleet_km": 231.42,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2055,
+        "year_from_start": 35,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.12,
+        "northward_shift_km": 159.156,
+        "habitat_center_lat": 58.4338,
+        "distance_from_scottish_small_fleet_km": 254.156,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.28,
+        "northward_shift_km": 181.893,
+        "habitat_center_lat": 58.6387,
+        "distance_from_scottish_small_fleet_km": 276.893,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2065,
+        "year_from_start": 45,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.44,
+        "northward_shift_km": 204.63,
+        "habitat_center_lat": 58.8435,
+        "distance_from_scottish_small_fleet_km": 299.63,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "species": "Scottish mackerel",
+        "scenario": "most_likely_warming",
+        "warming_c": 1.6,
+        "northward_shift_km": 227.366,
+        "habitat_center_lat": 59.0483,
+        "distance_from_scottish_small_fleet_km": 322.366,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2020,
+        "year_from_start": 0,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.0,
+        "northward_shift_km": 0.0,
+        "habitat_center_lat": 57.0,
+        "distance_from_scottish_small_fleet_km": 95.0,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2025,
+        "year_from_start": 5,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.26,
+        "northward_shift_km": 36.947,
+        "habitat_center_lat": 57.3329,
+        "distance_from_scottish_small_fleet_km": 131.947,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2030,
+        "year_from_start": 10,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.52,
+        "northward_shift_km": 73.894,
+        "habitat_center_lat": 57.6657,
+        "distance_from_scottish_small_fleet_km": 168.894,
+        "within_small_boat_range": true
+      },
+      {
+        "calendar_year": 2035,
+        "year_from_start": 15,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 0.78,
+        "northward_shift_km": 110.841,
+        "habitat_center_lat": 57.9986,
+        "distance_from_scottish_small_fleet_km": 205.841,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2040,
+        "year_from_start": 20,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.04,
+        "northward_shift_km": 147.788,
+        "habitat_center_lat": 58.3314,
+        "distance_from_scottish_small_fleet_km": 242.788,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2045,
+        "year_from_start": 25,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.3,
+        "northward_shift_km": 184.735,
+        "habitat_center_lat": 58.6643,
+        "distance_from_scottish_small_fleet_km": 279.735,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2050,
+        "year_from_start": 30,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.56,
+        "northward_shift_km": 221.682,
+        "habitat_center_lat": 58.9971,
+        "distance_from_scottish_small_fleet_km": 316.682,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2055,
+        "year_from_start": 35,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 1.82,
+        "northward_shift_km": 258.629,
+        "habitat_center_lat": 59.33,
+        "distance_from_scottish_small_fleet_km": 353.629,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2060,
+        "year_from_start": 40,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 2.08,
+        "northward_shift_km": 295.576,
+        "habitat_center_lat": 59.6628,
+        "distance_from_scottish_small_fleet_km": 390.576,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2065,
+        "year_from_start": 45,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 2.34,
+        "northward_shift_km": 332.523,
+        "habitat_center_lat": 59.9957,
+        "distance_from_scottish_small_fleet_km": 427.523,
+        "within_small_boat_range": false
+      },
+      {
+        "calendar_year": 2070,
+        "year_from_start": 50,
+        "species": "Scottish mackerel",
+        "scenario": "worst_case_fast_warming",
+        "warming_c": 2.6,
+        "northward_shift_km": 369.47,
+        "habitat_center_lat": 60.3286,
+        "distance_from_scottish_small_fleet_km": 464.47,
+        "within_small_boat_range": false
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "The local official PDF text layer is incomplete, so requirement wording was confirmed from the official COMAP 2020 problems page while the archived local PDF remains the source asset.",
+      "COMAP did not provide sea-surface temperature grids, fish survey tracks, or vessel cost data.",
+      "Thermal shift and fleet range rows are scenario inputs and should be replaced by ICES/NOAA/UK fisheries observations and vessel economics in a full paper."
+    ]
+  }
+}

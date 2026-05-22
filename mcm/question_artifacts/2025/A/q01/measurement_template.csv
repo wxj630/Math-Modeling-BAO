@@ -1,0 +1,17 @@
+field,description,required,non_destructive_tool
+step_id,"Integer label for each stair tread, bottom to top.",yes,field sheet
+tread_width_cm,Total usable tread width measured by tape.,yes,tape measure
+tread_depth_cm,Front-to-back tread depth measured by tape.,yes,tape measure
+riser_height_cm,Vertical rise to next tread.,yes,tape measure
+center_wear_depth_mm,Maximum depression at the center walking line from straightedge/feeler gauge.,yes,straightedge + feeler gauge + scaled photo
+left_wear_depth_mm,"Depression at left walking band, same cross-section.",yes,straightedge + feeler gauge + scaled photo
+right_wear_depth_mm,"Depression at right walking band, same cross-section.",yes,straightedge + feeler gauge + scaled photo
+front_edge_rounding_mm,Rounded or lost material at the front nosing edge.,yes,caliper + scaled close photo
+back_edge_rounding_mm,Rounded or lost material at the back edge.,yes,caliper + scaled close photo
+slope_up_direction_deg,Tread surface tilt along likely upward direction from phone inclinometer.,yes,phone inclinometer
+surface_hardness_proxy,"Portable rebound/scratch class or Shore proxy, no coring.",yes,portable rebound/scratch proxy
+material_density_proxy,Non-destructive density proxy from published material match or ultrasonic meter.,yes,published material match or ultrasonic proxy
+tool_marks_present,0/1 visual indicator from raking-light photo.,yes,visual inspection + raking-light photo
+patch_boundary_score,"0-5 visual score for discontinuity, mortar line, color shift, or patch boundary.",yes,visual inspection + raking-light photo
+moisture_exposure_index,0-5 local moisture/water exposure score.,yes,visual inspection + raking-light photo
+notes,"Photograph IDs, location notes, and visible anomalies.",yes,visual inspection + raking-light photo

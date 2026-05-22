@@ -1,0 +1,6 @@
+species_count,baseline_viability_score,restoration_viability_score,restoration_gain_pct,management_action
+4,0.7821,0.8339,6.623,"seed functional guild mix, preserve habitat corridors, reduce pollution load, monitor drought-year biomass"
+6,0.7705,0.8245,7.008,"seed functional guild mix, preserve habitat corridors, reduce pollution load, monitor drought-year biomass"
+8,0.7665,0.8206,7.058,"seed functional guild mix, preserve habitat corridors, reduce pollution load, monitor drought-year biomass"
+10,0.7981,0.854,7.004,"seed functional guild mix, preserve habitat corridors, reduce pollution load, monitor drought-year biomass"
+12,0.7924,0.8527,7.61,"seed functional guild mix, preserve habitat corridors, reduce pollution load, monitor drought-year biomass"

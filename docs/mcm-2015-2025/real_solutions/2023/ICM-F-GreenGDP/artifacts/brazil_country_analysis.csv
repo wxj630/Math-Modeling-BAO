@@ -1,0 +1,5 @@
+lever,current_signal,observed_value,expected_change_under_ggdp,planning_magnitude
+natural_resource_rent_reinvestment,natural_resource_rents_pct_gdp,7.9411,"shift part of extractive rent toward restoration, monitoring, and lower-damage production",0.9367
+forest_and_biodiversity_accounting,forest_area_pct_land,58.9819,treat avoided forest loss as preserving future economic capacity instead of a hidden externality,0.7744
+carbon_damage_visibility,co2_damage_pct_gni,1.265,prefer projects whose GDP gain remains positive after CO2 damage is deducted,0.3795
+headline_metric_gap,green_gap_usd,109549016371.47,make the environmental cost of status-quo growth visible in the main national performance number,109.549

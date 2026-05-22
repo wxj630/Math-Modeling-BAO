@@ -1,0 +1,7 @@
+﻿route,entry_point,allocated_refugees,share_of_total,safety_score,accessibility_score,route_attractiveness,daily_processing_capacity,estimated_processing_days,risk_adjusted_safe_flow,capacity_binding,emergency_overflow_refugees
+West Mediterranean,Spain,55000,0.07692,0.58,0.5,0.456976,2100,26.19,31900.0,True,0
+Central Mediterranean,Italy,86000,0.12028,0.28,0.48,0.355704,2900,29.66,24080.0,True,0
+Eastern Mediterranean,Greece/Turkey,329000,0.46014,0.62,0.82,0.663699,8200,40.12,203980.0,True,45000
+West Balkans,Hungary/Serbia,162000,0.22657,0.5,0.68,0.536922,4600,35.22,81000.0,True,0
+Eastern Borders,Eastern EU border,48000,0.06713,0.54,0.36,0.388296,1350,35.56,25920.0,True,0
+Albania to Greece,Albania/Greece,35000,0.04895,0.6,0.42,0.428003,1150,30.43,21000.0,True,0

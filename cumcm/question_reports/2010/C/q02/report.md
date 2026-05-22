@@ -1,0 +1,99 @@
+# 2010-C 问题 2 建模求解实验报告
+
+## 题目原文与任务拆解
+
+- 题目：2010年 CUMCM C题：输油管的布置
+- 问题：问题 2
+- 原问：设计院目前需对一更为复杂的情形进行具体的设计。两炼油厂的具体位置由附图所示，其中A厂位于郊区（图中的I区域），B厂位于城区（图中的II区域），两个区域的分界线用图中的虚线表示。图中各字母表示的距离（单位：千米）分别为a = 5，b = 8，c = 15，l = 20。 若所有管线的铺设费用均为每千米7.2万元。 铺设在城区的管线还需增加拆迁和工程补偿等附加费用，为对此项附加费用进行估计，聘请三家工程咨询公司（其中公司一具有甲级资质，公司二和公司三具有乙级资质）进行了估算。估算结果如下表所示： 工程咨询公司 公司一 公司二 公司三 附加费用（万元/千米） 21 24 20 请为设计院给出管线布置方案及相应的费用。
+
+### 本问需要完成什么
+- 任务 1：设计院目前需对一更为复杂的情形进行具体的设计
+- 任务 2：估算结果如下表所示： 工程咨询公司 公司一 公司二 公司三 附加费用（万元/千米） 21 24 20 请为设计院给出管线布置方案及相应的费用
+
+## 适配模型
+
+- 主模型：规划优化与资源配置（CH3：函数极值与规划模型）
+- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+
+### 候选模型与适配理由
+- 规划优化与资源配置（CH3）：方案、设计；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 几何解析与运动学参数方程（CH1）：位置、距离；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+
+## 变量、约束与公式
+
+### 建模假设
+- 以题面给出的数值、约束和输出格式为第一优先级构造模型。
+- 若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。
+- 所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。
+
+### 变量定义
+- x_i: 第 i 个方案/资源的选择强度
+- c_i: 单位收益或效用
+- A_ji: 第 j 类资源消耗
+- b_j: 第 j 类资源上限
+
+### 约束条件
+- A x <= b
+- x_i >= 0
+- 资源容量按题面约束映射为 b_j
+
+### 模型公式 / 目标函数
+- `max sum_i c_i*x_i`
+- `s.t. A*x <= b, x >= 0`
+
+## Python 代码与运行方式
+
+- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2010/C/q02/solution.py
+- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2010/C/q02/solution.py`
+- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+
+### 求解步骤
+- 步骤 1：把题面目标转成收益最大或成本最小。
+- 步骤 2：把资源、时间、预算、容量写成线性不等式。
+- 步骤 3：调用 scipy.optimize.linprog 求解。
+- 步骤 4：输出决策变量、目标值和资源松弛量。
+
+## 实验结果与解释
+
+### 产物文件
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2010/C/q02/experiment_table.csv
+
+### 数据来源
+- 类型：problem_statement
+- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/C.md
+- 读取规模：9 行 x 8 列
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
+
+### result.json 核心结果
+
+```json
+{
+  "method": "linear_programming",
+  "success": true,
+  "objective_max": 17.506230872827256,
+  "decision": [
+    4.547903,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "resource_slack": [
+    2.589321,
+    0.0,
+    0.283858
+  ]
+}
+```
+
+### 结果解释
+- 本问用 `linear_programming` 将题面任务转化为可计算实验，并把关键数值写入 JSON 和 CSV 产物。
+- CSV 表是后续写论文表格、画图或替换真实附件数据的主要入口；如果题面要求 result*.xlsx，可在该表基础上按模板导出。
+- 数据来源字段会标明本问使用官方附件、题面参数还是专用题面常量；后续冲论文质量时，可在现有 CSV/JSON 基础上补充图表、误差分析和敏感性分析。
+
+## 实验报告
+
+本问的核心是：设计院目前需对一更为复杂的情形进行具体的设计。两炼油厂的具体位置由附图所示，其中A厂位于郊区（图中的I区域），B厂位于城区（图中的II区域），两个区域的分界线用图中的虚线表示。图中各字母表示的距离（单位：千米）分别为a = 5，b = 8，c = 15，l = 20。 若所有管线的铺设费用均为每千米7.2万元。 铺设在城区的管线还需增加拆迁和工程补偿等附加…
+
+建模时先将题目要求拆成 2 个任务，再选择 `规划优化与资源配置`。求解过程严格对应变量定义、约束条件和目标函数：先构造可计算数据表，再调用 Python 数值算法得到实验结果，最后把结果写入 `result.json` 与 `experiment_table.csv`。
+
+报告写作时建议按以下结构展开：问题重述、符号说明、模型假设、模型建立、算法实现、结果表格、误差/敏感性分析、模型评价。

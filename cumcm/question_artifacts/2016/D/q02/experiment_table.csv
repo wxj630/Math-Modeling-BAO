@@ -1,0 +1,2 @@
+﻿method,typical_turbine_count,wind_sample_count,model_count,recommended_model,recommended_expected_annual_energy_mwh,current_models,new_models
+wind_turbine_resource_model_matching,6,21900,5,机型Ⅰ,4558.367697,"['机型Ⅰ', '机型Ⅱ']","['机型Ⅲ', '机型Ⅳ', '机型Ⅴ']"

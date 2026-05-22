@@ -1,0 +1,3 @@
+﻿problem,absorption_mean,absorption_max,support_threshold,support_pixel_count,bbox_x_min,bbox_y_min,bbox_x_max,bbox_y_max
+problem2,0.23737,1.16557,0.19828,19464,0,0,255,255
+problem3,0.236658,1.522363,0.225602,19464,0,0,254,250

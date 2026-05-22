@@ -1,0 +1,84 @@
+{
+  "problem_id": "2024-A",
+  "title": "2024年 CUMCM A题：板凳龙”  闹元宵",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "从盘入到盘出， 舞龙队将由顺时针盘入调头切换为逆时针盘出，这需要一定的 调头空间。若调头空间是以螺线中心为圆心、直径为 9 m 的圆形区域（见图 5），请确定最 小螺距，使得龙头前把手能够沿着相应的螺线盘入到调头空间的边界。",
+  "tasks": [
+    "若调头空间是以螺线中心为圆心、直径为 9 m 的圆形区域（见图 5），请确定最 小螺距，使得龙头前把手能够沿着相应的螺线盘入到调头空间的边界"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "螺线、把手、空间、圆"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 4,
+    "path": null,
+    "rows": 0,
+    "columns": 0,
+    "note": "本题专用算法直接使用题面给出的螺距、孔距、速度和调头空间参数；附件中的 result*.xlsx 是输出模板，不作为输入数据。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "若调头空间是以螺线中心为圆心、直径为 9 m 的圆形区域（见图 5），请确定最 小螺距，使得龙头前把手能够沿着相应的螺线盘入到调头空间的边界"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "theta_i(t): 第 i 个把手在等距螺线上的极角",
+      "r_i(t)=b theta_i(t): 第 i 个把手的极径，b=p/(2*pi)",
+      "s(theta): 等距螺线从中心到 theta 的弧长函数",
+      "d_i: 龙头前把手到第 i 个把手沿龙身的累计孔距",
+      "v_0: 龙头前把手速度，题设为 1 m/s 或待求最大速度"
+    ],
+    "constraints": [
+      "相邻把手中心距离按孔距固定：龙头段 2.86 m，龙身/龙尾段 1.65 m。",
+      "盘入阶段满足 s(theta_i(t)) = s(theta_0) - v_0 t + d_i。",
+      "调头空间半径取 4.5 m；板宽碰撞安全距离按 0.30 m 估算。"
+    ],
+    "objective_or_equations": [
+      "r=b theta, b=p/(2*pi)",
+      "s(theta)=b/2*(theta*sqrt(theta^2+1)+asinh(theta))",
+      "x_i=r_i cos(theta_i), y_i=-r_i sin(theta_i)",
+      "theta_i(t)=s^{-1}(s(theta_0)-v_0 t+d_i)"
+    ],
+    "solution_steps": [
+      "令调头边界半径为 4.5 m。",
+      "对候选螺距计算龙头到达边界时全队把手坐标。",
+      "用最小非邻近距离安全裕度筛选最小可行螺距。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "pitch_grid_search_at_turning_boundary",
+    "turning_radius_m": 4.5,
+    "estimated_min_pitch_m": 0.4,
+    "clearance_m": 0.100372
+  },
+  "artifact_paths": [
+    "question_artifacts/2024/A/q03/experiment_table.csv"
+  ]
+}

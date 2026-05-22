@@ -1,0 +1,5 @@
+component,indicator_id,role,direction
+conventional_gdp,NY.GDP.MKTP.CD,base,higher measured production raises GDP and GGDP before environmental adjustment
+co2_damage_pct_gni,NY.ADJ.DCO2.GN.ZS,penalty,subtract climate damage recorded by World Bank adjusted-savings accounts
+natural_resource_depletion_pct_gni,NY.ADJ.DRES.GN.ZS,penalty,"subtract energy, mineral, and forest resource depletion"
+net_forest_depletion_pct_gni,NY.ADJ.DFOR.GN.ZS,penalty,subtract net forest depletion where observed separately

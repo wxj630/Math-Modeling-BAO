@@ -1,0 +1,4 @@
+dragon,mass_kg,flight_hours_per_day,fire_events_per_day,dominance_factor,basal_kcal_day,total_kcal_day,prey_kg_day_at_1300_kcal_per_kg,water_l_day
+Drogon,950.0,2.2,0.8,1.1,11978.18,26807.16,20.621,81.55
+Rhaegal,760.0,1.8,0.45,0.96,10132.3,20193.68,15.534,65.6
+Viserion,720.0,1.6,0.35,0.92,9729.65,18359.86,14.123,61.2

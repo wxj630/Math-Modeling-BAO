@@ -1,0 +1,13 @@
+iso3,policy_adoption_year,legal_framework,national_strategy,mandatory_reporting,incident_response,capacity_building,international_cooperation,gci_validation_note,policy_maturity_score,country,vcdb_incident_count,share_of_sample,confirmed_disclosure_count,reference_reported_count,earliest_year,latest_year,dominant_action_type,internet_users_pct,gdp_per_capita_usd,education_spending_pct_gdp,incidents_per_10m_internet_users_proxy
+USA,2015,1.0,1.0,1.0,1.0,1.0,1.0,high-capacity ITU GCI benchmark country,1.0,United States,191,0.80591,132.0,173.0,2005.0,2025.0,hacking,94.69380188,84534.0407841548,5.42038011550903,19.9595
+GBR,2016,1.0,1.0,1.0,1.0,1.0,1.0,high-capacity ITU GCI benchmark country,1.0,United Kingdom,13,0.05485,9.0,13.0,2011.0,2025.0,error,95.4720993,53246.3676145108,5.90681982040405,1.34754
+SGP,2018,1.0,1.0,1.0,1.0,1.0,1.0,high-capacity ITU GCI benchmark country,1.0,Singapore,1,0.00422,0.0,1.0,2013.0,2013.0,hacking,94.37757178,90674.066632628,2.19099857819757,0.10485
+AUS,2020,1.0,1.0,1.0,1.0,1.0,1.0,mature national strategy and reporting regime,1.0,Australia,4,0.01688,4.0,4.0,2013.0,2018.0,error,96.13140106,64603.9856308464,5.05915021896362,0.41181
+CAN,2018,1.0,1.0,1.0,1.0,1.0,1.0,mature national strategy,1.0,Canada,16,0.06751,12.0,16.0,2003.0,2019.0,hacking,94.353302,54340.3477224733,4.84426021575928,1.67797
+DEU,2016,1.0,1.0,1.0,1.0,1.0,1.0,mature EU/NIS-style legal framework,1.0,Germany,0,,,,,,,93.49999579,56103.7323182554,5.23916006088257,0.0
+FRA,2015,1.0,1.0,1.0,1.0,1.0,1.0,mature EU/NIS-style legal framework,1.0,France,1,0.00422,1.0,1.0,2016.0,2016.0,misuse,88.65381638,46103.0840855884,5.32434988021851,0.11154
+JPN,2014,1.0,1.0,0.7,1.0,1.0,1.0,mature national strategy,0.95,Japan,0,,,,,,,85.54153081,32487.0778047567,3.33663988113403,0.0
+KOR,2015,1.0,1.0,0.7,1.0,1.0,0.8,mature national strategy,0.9167,"Korea, Rep.",0,,,,,,,97.89563777,36238.639908315,5.40910005569458,0.0
+BRA,2020,0.8,1.0,0.4,0.8,0.7,0.7,developing policy maturity,0.7333,Brazil,1,0.00422,1.0,1.0,2020.0,2020.0,misuse,84.46347227,10310.5488778166,5.61920976638794,0.11701
+IND,2013,0.8,0.7,0.6,0.8,0.8,0.7,large digital population with developing policy maturity,0.7333,India,3,0.01266,2.0,3.0,2015.0,2016.0,hacking,70.0,2694.73780859961,4.09865814174589,0.42254
+CHN,2017,1.0,0.8,0.7,0.8,0.8,0.5,large digital population with strong legal apparatus,0.7667,China,0,,,,,,,91.6,13303.1481543868,3.89714002609253,0.0

@@ -1,0 +1,207 @@
+{
+  "problem_id": "2017-E",
+  "question": "q01",
+  "question_title": "Smart growth metric and current plan assessment",
+  "statement": "Define a metric for smart-growth success and assess the current development plans of two mid-sized cities on different continents.",
+  "methods": "Use the official ten smart-growth principles and three sustainability E's as weighted deterministic criteria; score Boulder and Freiburg with explicit geography, growth, and opportunity assumptions.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "official_requirements": {
+      "two_mid_sized_cities": true,
+      "different_continents": true,
+      "three_es": [
+        "economic",
+        "equity",
+        "environment"
+      ],
+      "ten_smart_growth_principles": true,
+      "population_plus_50pct_by_2050": true
+    },
+    "parameters": {
+      "selected_cities": [
+        {
+          "city": "Boulder",
+          "country": "United States",
+          "continent": "North America",
+          "population": 108250,
+          "growth_rate": 0.011,
+          "economic_opportunity": 0.78,
+          "geography_constraint": 0.64,
+          "current_plan": "compact infill, open-space boundary, multimodal corridors",
+          "environmental_pressure": 0.42
+        },
+        {
+          "city": "Freiburg im Breisgau",
+          "country": "Germany",
+          "continent": "Europe",
+          "population": 229650,
+          "growth_rate": 0.008,
+          "economic_opportunity": 0.74,
+          "geography_constraint": 0.58,
+          "current_plan": "transit-oriented districts, renewable energy, green wedges",
+          "environmental_pressure": 0.36
+        }
+      ],
+      "principles": [
+        {
+          "principle": "mixed_land_use",
+          "description": "Mix land uses",
+          "weight": 0.1,
+          "sustainability_e": "economic"
+        },
+        {
+          "principle": "compact_design",
+          "description": "Take advantage of compact building design",
+          "weight": 0.1,
+          "sustainability_e": "environmental"
+        },
+        {
+          "principle": "housing_choice",
+          "description": "Create a range of housing opportunities and choices",
+          "weight": 0.1,
+          "sustainability_e": "social"
+        },
+        {
+          "principle": "walkability",
+          "description": "Create walkable neighborhoods",
+          "weight": 0.11,
+          "sustainability_e": "social"
+        },
+        {
+          "principle": "sense_of_place",
+          "description": "Foster distinctive, attractive communities",
+          "weight": 0.08,
+          "sustainability_e": "social"
+        },
+        {
+          "principle": "open_space",
+          "description": "Preserve open space and environmental areas",
+          "weight": 0.11,
+          "sustainability_e": "environmental"
+        },
+        {
+          "principle": "infill_development",
+          "description": "Strengthen existing communities",
+          "weight": 0.1,
+          "sustainability_e": "economic"
+        },
+        {
+          "principle": "transport_choice",
+          "description": "Provide a variety of transportation choices",
+          "weight": 0.12,
+          "sustainability_e": "environmental"
+        },
+        {
+          "principle": "fair_decisions",
+          "description": "Make development decisions predictable and fair",
+          "weight": 0.09,
+          "sustainability_e": "economic"
+        },
+        {
+          "principle": "stakeholder_collaboration",
+          "description": "Encourage community collaboration",
+          "weight": 0.09,
+          "sustainability_e": "social"
+        }
+      ]
+    }
+  },
+  "smart_growth_metric": {
+    "principle_rows": [
+      {
+        "principle": "mixed_land_use",
+        "description": "Mix land uses",
+        "weight": 0.1,
+        "sustainability_e": "economic"
+      },
+      {
+        "principle": "compact_design",
+        "description": "Take advantage of compact building design",
+        "weight": 0.1,
+        "sustainability_e": "environmental"
+      },
+      {
+        "principle": "housing_choice",
+        "description": "Create a range of housing opportunities and choices",
+        "weight": 0.1,
+        "sustainability_e": "social"
+      },
+      {
+        "principle": "walkability",
+        "description": "Create walkable neighborhoods",
+        "weight": 0.11,
+        "sustainability_e": "social"
+      },
+      {
+        "principle": "sense_of_place",
+        "description": "Foster distinctive, attractive communities",
+        "weight": 0.08,
+        "sustainability_e": "social"
+      },
+      {
+        "principle": "open_space",
+        "description": "Preserve open space and environmental areas",
+        "weight": 0.11,
+        "sustainability_e": "environmental"
+      },
+      {
+        "principle": "infill_development",
+        "description": "Strengthen existing communities",
+        "weight": 0.1,
+        "sustainability_e": "economic"
+      },
+      {
+        "principle": "transport_choice",
+        "description": "Provide a variety of transportation choices",
+        "weight": 0.12,
+        "sustainability_e": "environmental"
+      },
+      {
+        "principle": "fair_decisions",
+        "description": "Make development decisions predictable and fair",
+        "weight": 0.09,
+        "sustainability_e": "economic"
+      },
+      {
+        "principle": "stakeholder_collaboration",
+        "description": "Encourage community collaboration",
+        "weight": 0.09,
+        "sustainability_e": "social"
+      }
+    ],
+    "definition": "Weighted three-E score over the ten official smart-growth principles."
+  },
+  "current_plan_assessment": {
+    "city_rows": [
+      {
+        "city": "Boulder",
+        "continent": "North America",
+        "population": 108250,
+        "current_plan": "compact infill, open-space boundary, multimodal corridors",
+        "economic_score": 0.814,
+        "equity_score": 0.5848,
+        "environment_score": 0.745,
+        "smart_growth_score": 0.6892
+      },
+      {
+        "city": "Freiburg im Breisgau",
+        "continent": "Europe",
+        "population": 229650,
+        "current_plan": "transit-oriented districts, renewable energy, green wedges",
+        "economic_score": 0.802,
+        "equity_score": 0.5956,
+        "environment_score": 0.76,
+        "smart_growth_score": 0.7
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic planning inputs; it does not use random placeholder data.",
+    "model_limits": [
+      "No COMAP numeric attachment is supplied.",
+      "City scores are auditable scenario inputs for a contest planning model, not official municipal performance statistics."
+    ]
+  }
+}

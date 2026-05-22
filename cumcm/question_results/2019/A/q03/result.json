@@ -1,0 +1,121 @@
+{
+  "problem_id": "2019-A",
+  "title": "2019年 CUMCM A题：高压油管的压力控制",
+  "question_index": 3,
+  "question_label": "问题3",
+  "statement": "在问题2的基础上，再增加一个喷油嘴，每个喷嘴喷油规律相同，喷油和供油策略应如何调整？为了更有效地控制高压油管的压力，现计划在D处安装一个单向减压阀（图5）。单向减压阀出口为直径为1.4mm的圆，打开后高压油管内的燃油可以在压力下回流到外部低压油路中，从而使得高压油管内燃油的压力减小。请给出高压油泵和减压阀的控制方案。",
+  "tasks": [
+    "请给出高压油泵和减压阀的控制方案"
+  ],
+  "selected_model": {
+    "key": "ch3",
+    "name": "高压油管质量守恒与压力控制仿真",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "reason": "油管压力由进油、喷油、减压阀回流和燃油弹性共同驱动，核心是连续时间动态仿真。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "reason": "附件1-3需要插值拟合为凸轮导数、针阀升程和弹性模量函数后才能进入方程。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "reason": "阀开时长、凸轮角速度和减压阀阈值都通过枚举/搜索最小化压力误差。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx",
+    "rows": 1125,
+    "columns": 2,
+    "note": "本题专用算法读取凸轮极径曲线、针阀升程曲线和弹性模量-压力表，建立燃油密度、进出流量和高压油管压力控制仿真。"
+  },
+  "formulation": {
+    "model_type": "高压油管质量守恒与压力控制仿真",
+    "task_breakdown": [
+      "请给出高压油泵和减压阀的控制方案"
+    ],
+    "assumptions": [
+      "高压油管视为等容腔体，内腔体积由题面500mm长度和10mm内径计算。",
+      "燃油密度随压力变化，按附件3弹性模量积分 d ln rho / dP = 1/E(P)，并以 rho(100MPa)=0.850 mg/mm3 定标。",
+      "进出流量采用题面小孔流量公式，流量系数取0.85，孔径和针阀几何参数来自题面。",
+      "喷油嘴针阀升程使用附件2；问题1缺少图2结构化数据时，用附件2升程曲线生成可复现喷油流量近似。",
+      "凸轮-柱塞供油使用附件1极径曲线，极径上升阶段折算为柱塞压油体积流量。",
+      "通用基线仍保留在 cumcm/generic_baselines，当前结果为附件驱动的机理仿真版本。"
+    ],
+    "decision_variables": [
+      "P(t): 高压油管压力(MPa)",
+      "rho(P): 燃油密度(mg/mm3)",
+      "E(P): 附件3给出的弹性模量(MPa)",
+      "tau: 问题1单向阀每周期开启时长(ms)",
+      "omega: 问题2/3凸轮角速度(rad/ms)",
+      "h(t): 附件2针阀升程(mm)",
+      "P_relief: 问题3减压阀开启压力阈值(MPa)"
+    ],
+    "constraints": [
+      "单喷嘴喷油周期为100ms，针阀升程超过附件2末端后喷油流量为0。",
+      "入口A和减压阀D直径均按1.4mm计算，喷嘴有效面积取喷孔面积与针阀圆锥环隙面积的较小值。",
+      "问题1高压油泵入口压力固定为160MPa，搜索tau时保持每100ms一次供油。",
+      "问题2凸轮每2π为一个压油周期，柱塞直径5mm，残余体积20mm3。",
+      "问题3两个喷嘴采用相同喷油规律并错开50ms，以减小压力脉动；减压阀仅在压力超过阈值时开启。"
+    ],
+    "objective_or_equations": [
+      "V_pipe = pi*(10/2)^2*500",
+      "d ln rho / dP = 1/E(P)",
+      "Q = C*A*sqrt(2*DeltaP/rho_high)",
+      "dP/dt = E(P)/(rho(P)*V_pipe) * (rho_in*Q_in - rho(P)*Q_out - rho(P)*Q_relief)",
+      "minimize RMS(P(t)-P_target) over the final stable window"
+    ],
+    "solution_steps": [
+      "在问题2机理模型基础上加入第二个喷油嘴，并将两个喷嘴相位错开50ms。",
+      "枚举凸轮角速度和减压阀开启阈值，仿真压力波动、减压阀开启次数和回流量。",
+      "选择RMS误差较小且减压阀动作不过度频繁的控制方案。",
+      "输出双喷嘴控制搜索表、压力轨迹和减压阀开启事件表。"
+    ],
+    "model_reference": {
+      "key": "ch3",
+      "name": "高压油管质量守恒与压力控制仿真",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "fuel_pipe_two_injector_relief_control",
+    "nozzle_count": 2,
+    "selected_omega_rad_per_ms": 0.07871795,
+    "selected_omega_rad_per_s": 78.71795,
+    "relief_threshold_mpa": 102.0,
+    "relief_open_event_count": 109,
+    "relief_volume_mm3": 1101.745714,
+    "controlled_rms_error_mpa": 1.102655,
+    "controlled_mean_pressure_mpa": 100.43698,
+    "controlled_pressure_span_mpa": 4.327665,
+    "report": [
+      "问题3把喷嘴相位错开50ms以削弱同相喷油造成的瞬时压降，再枚举凸轮角速度和减压阀开启阈值。",
+      "减压阀只在油管压力超过阈值时按1.4mm孔径回流，开启事件表记录每次动作起止时间。",
+      "搜索表保留所有候选控制方案，便于比较无减压、少动作和强稳压之间的权衡。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2019/A/q03/two_injector_control_search.csv",
+    "question_artifacts/2019/A/q03/two_injector_pressure_trace.csv",
+    "question_artifacts/2019/A/q03/relief_valve_events.csv",
+    "question_artifacts/2019/A/q03/experiment_table.csv"
+  ]
+}

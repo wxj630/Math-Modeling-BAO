@@ -1,0 +1,179 @@
+{
+  "problem_id": "2015-D",
+  "question": "q03",
+  "question_title": "20 年计划影响评估与最高性价比政策",
+  "statement": "Evaluate the effect your 20-year sustainability plan has on your country's sustainability measure. Determine which programs or policies produce the greatest effect on the sustainability measure for your country.",
+  "methods": "把项目年度增益作为显式规划假设累积到各组件分数，计算 20 年后总分、状态变化，并用 score gain per billion USD 排序。对应模型：系统动力学、成本效益分析、项目效率排序。",
+  "data_source": {
+    "type": "official_pdf_and_world_bank_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "selected_country": "Nepal",
+    "rows": {
+      "world_bank_nepal_indicators.csv": 462
+    },
+    "indicators": {
+      "SP.POP.TOTL": "Population, total",
+      "NY.GDP.PCAP.KD": "GDP per capita, constant 2015 US$",
+      "SI.POV.DDAY": "Poverty headcount ratio at $2.15/day",
+      "SH.H2O.BASW.ZS": "People using at least basic drinking water services",
+      "EG.ELC.ACCS.ZS": "Access to electricity",
+      "AG.LND.FRST.ZS": "Forest area",
+      "SH.STA.BASS.ZS": "People using at least basic sanitation services"
+    },
+    "official_problem_parameters": {
+      "ldc_list_size": 48,
+      "planning_horizon_years": 20,
+      "reference_world_population_2050": 9000000000,
+      "pillars_from_statement": [
+        "poverty and vulnerability",
+        "economic development",
+        "ecosystem health"
+      ]
+    }
+  },
+  "plan_evaluation": {
+    "baseline_score": 0.771044,
+    "score_after_20_years": 0.877497,
+    "score_gain": 0.106453,
+    "status_after_20_years": "sustainable",
+    "component_projection": [
+      {
+        "component": "water_access",
+        "score_after_20_years": 1.0,
+        "weighted_score_after": 0.17
+      },
+      {
+        "component": "sanitation_access",
+        "score_after_20_years": 1.0,
+        "weighted_score_after": 0.15
+      },
+      {
+        "component": "energy_access",
+        "score_after_20_years": 1.0,
+        "weighted_score_after": 0.15
+      },
+      {
+        "component": "livelihood",
+        "score_after_20_years": 0.653271,
+        "weighted_score_after": 0.104523
+      },
+      {
+        "component": "poverty_reduction",
+        "score_after_20_years": 1.0,
+        "weighted_score_after": 0.17
+      },
+      {
+        "component": "environment_health",
+        "score_after_20_years": 0.555907,
+        "weighted_score_after": 0.066709
+      },
+      {
+        "component": "population_pressure",
+        "score_after_20_years": 0.828315,
+        "weighted_score_after": 0.066265
+      }
+    ],
+    "evaluation_note": "Projection applies transparent program-effect assumptions to cached World Bank baseline indicators; it is a planning experiment, not a causal forecast."
+  },
+  "bang_for_buck": {
+    "ranking_method": "estimated 20-year sustainability score gain per billion USD",
+    "top_program": {
+      "program": "clean_water_and_sanitation",
+      "annual_cost_billion_usd": 0.18,
+      "twenty_year_cost_billion_usd": 3.6,
+      "estimated_score_gain": 0.035173,
+      "score_gain_per_billion_usd": 0.00977,
+      "description": "rural water systems, sanitation extension, and maintenance training"
+    },
+    "program_ranking": [
+      {
+        "program": "clean_water_and_sanitation",
+        "annual_cost_billion_usd": 0.18,
+        "twenty_year_cost_billion_usd": 3.6,
+        "estimated_score_gain": 0.035173,
+        "score_gain_per_billion_usd": 0.00977,
+        "description": "rural water systems, sanitation extension, and maintenance training"
+      },
+      {
+        "program": "distributed_clean_energy",
+        "annual_cost_billion_usd": 0.14,
+        "twenty_year_cost_billion_usd": 2.8,
+        "estimated_score_gain": 0.0242,
+        "score_gain_per_billion_usd": 0.008643,
+        "description": "micro-hydro, solar mini-grids, clean cooking, and resilient local maintenance"
+      },
+      {
+        "program": "forest_and_disaster_risk_management",
+        "annual_cost_billion_usd": 0.1,
+        "twenty_year_cost_billion_usd": 2.0,
+        "estimated_score_gain": 0.0146,
+        "score_gain_per_billion_usd": 0.0073,
+        "description": "community forestry, slope risk monitoring, disaster preparedness, and watershed protection"
+      },
+      {
+        "program": "education_and_livelihoods",
+        "annual_cost_billion_usd": 0.2,
+        "twenty_year_cost_billion_usd": 4.0,
+        "estimated_score_gain": 0.02488,
+        "score_gain_per_billion_usd": 0.00622,
+        "description": "technical training, women-focused entrepreneurship, and local value-chain support"
+      },
+      {
+        "program": "climate_resilient_agriculture",
+        "annual_cost_billion_usd": 0.16,
+        "twenty_year_cost_billion_usd": 3.2,
+        "estimated_score_gain": 0.01848,
+        "score_gain_per_billion_usd": 0.005775,
+        "description": "terrace stabilization, irrigation efficiency, seed resilience, and farmer cooperatives"
+      }
+    ]
+  },
+  "development_plan": {
+    "selected_country": "Nepal",
+    "horizon_years": 20,
+    "strategy": "Prioritize infrastructure that jointly improves basic needs and ecological limits, then rank programs by score gain per billion USD.",
+    "programs": [
+      {
+        "program": "clean_water_and_sanitation",
+        "annual_cost_billion_usd": 0.18,
+        "twenty_year_cost_billion_usd": 3.6,
+        "estimated_score_gain": 0.035173,
+        "score_gain_per_billion_usd": 0.00977,
+        "description": "rural water systems, sanitation extension, and maintenance training"
+      },
+      {
+        "program": "distributed_clean_energy",
+        "annual_cost_billion_usd": 0.14,
+        "twenty_year_cost_billion_usd": 2.8,
+        "estimated_score_gain": 0.0242,
+        "score_gain_per_billion_usd": 0.008643,
+        "description": "micro-hydro, solar mini-grids, clean cooking, and resilient local maintenance"
+      },
+      {
+        "program": "forest_and_disaster_risk_management",
+        "annual_cost_billion_usd": 0.1,
+        "twenty_year_cost_billion_usd": 2.0,
+        "estimated_score_gain": 0.0146,
+        "score_gain_per_billion_usd": 0.0073,
+        "description": "community forestry, slope risk monitoring, disaster preparedness, and watershed protection"
+      },
+      {
+        "program": "education_and_livelihoods",
+        "annual_cost_billion_usd": 0.2,
+        "twenty_year_cost_billion_usd": 4.0,
+        "estimated_score_gain": 0.02488,
+        "score_gain_per_billion_usd": 0.00622,
+        "description": "technical training, women-focused entrepreneurship, and local value-chain support"
+      },
+      {
+        "program": "climate_resilient_agriculture",
+        "annual_cost_billion_usd": 0.16,
+        "twenty_year_cost_billion_usd": 3.2,
+        "estimated_score_gain": 0.01848,
+        "score_gain_per_billion_usd": 0.005775,
+        "description": "terrace stabilization, irrigation efficiency, seed resilience, and farmer cooperatives"
+      }
+    ]
+  }
+}

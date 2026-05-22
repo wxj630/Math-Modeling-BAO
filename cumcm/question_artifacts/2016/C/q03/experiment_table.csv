@@ -1,0 +1,2 @@
+﻿state,reference_state,tail_ratio_state3_to_state2,observed_last_voltage_v,observed_last_time_min,predicted_end_voltage_v,predicted_end_time_min,predicted_remaining_time_min
+衰减状态3,衰减状态2,0.82279562,9.765,596.2,9.0,805.516912,209.316912

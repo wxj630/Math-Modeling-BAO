@@ -1,0 +1,165 @@
+{
+  "problem_id": "2017-F",
+  "question": "q11",
+  "question_title": "Adjusted model with subgroup constraints",
+  "statement": "Adjust the model with constraints or parameters to optimize subgroup needs without reducing global outcomes.",
+  "methods": "Add subgroup support scores to the policy frontier and identify policies that preserve global UTOPIA outcomes.",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
+    "official_requirements": {
+      "population_zero_size": 10000,
+      "years_2100_2110": true,
+      "priority_factors": [
+        "income",
+        "education",
+        "social_equality"
+      ],
+      "healthcare_excluded": true,
+      "sample_population_required": true
+    },
+    "parameters": {
+      "workforce_groups": [
+        {
+          "group": "life_support_operators",
+          "share": 0.22,
+          "skill_level": "technical",
+          "priority": "safe hours, redundancy, hazard pay"
+        },
+        {
+          "group": "habitat_builders",
+          "share": 0.2,
+          "skill_level": "skilled_trade",
+          "priority": "equipment safety, wage floor, training"
+        },
+        {
+          "group": "scientists_and_engineers",
+          "share": 0.24,
+          "skill_level": "professional",
+          "priority": "research time, autonomy, parental leave"
+        },
+        {
+          "group": "care_education_civic",
+          "share": 0.18,
+          "skill_level": "community",
+          "priority": "childcare, equal promotion, stable staffing"
+        },
+        {
+          "group": "food_and_resource_producers",
+          "share": 0.16,
+          "skill_level": "mixed",
+          "priority": "predictable shifts, family support, minimum wage"
+        }
+      ],
+      "factor_rows": [
+        {
+          "factor": "income",
+          "objective": "basic-needs wage floor plus productivity surplus",
+          "metric": "living wage coverage and Gini penalty",
+          "weight": 0.34
+        },
+        {
+          "factor": "education",
+          "objective": "skills for a high-reliability 22nd-century workforce",
+          "metric": "training seat coverage and skill redundancy",
+          "weight": 0.33
+        },
+        {
+          "factor": "social_equality",
+          "objective": "retain women and caregivers in all workforce roles",
+          "metric": "promotion parity, childcare access, and leave coverage",
+          "weight": 0.33
+        }
+      ]
+    }
+  },
+  "subgroup_equity_model": {
+    "subgroup_rows": [
+      {
+        "group": "life_support_operators",
+        "population": 2200,
+        "main_priorities": "safe hours, redundancy, hazard pay",
+        "income_needs_met": 0.7444,
+        "education_needs_met": 0.78,
+        "equality_needs_met": 0.7276
+      },
+      {
+        "group": "habitat_builders",
+        "population": 2000,
+        "main_priorities": "equipment safety, wage floor, training",
+        "income_needs_met": 0.7444,
+        "education_needs_met": 0.62,
+        "equality_needs_met": 0.7276
+      },
+      {
+        "group": "scientists_and_engineers",
+        "population": 2400,
+        "main_priorities": "research time, autonomy, parental leave",
+        "income_needs_met": 0.7444,
+        "education_needs_met": 0.78,
+        "equality_needs_met": 0.7276
+      },
+      {
+        "group": "care_education_civic",
+        "population": 1800,
+        "main_priorities": "childcare, equal promotion, stable staffing",
+        "income_needs_met": 0.7948,
+        "education_needs_met": 0.62,
+        "equality_needs_met": 0.7892
+      },
+      {
+        "group": "food_and_resource_producers",
+        "population": 1600,
+        "main_priorities": "predictable shifts, family support, minimum wage",
+        "income_needs_met": 0.7948,
+        "education_needs_met": 0.62,
+        "equality_needs_met": 0.7892
+      }
+    ]
+  },
+  "wage_and_policy_model": {
+    "policy_rows": [
+      {
+        "policy": "flat_living_wage",
+        "minimum_wage_index": 1.0,
+        "output_score": 0.72,
+        "wellbeing_score": 0.82,
+        "equality_score": 0.66,
+        "utopia_score": 0.7212
+      },
+      {
+        "policy": "progressive_skill_premium",
+        "minimum_wage_index": 1.18,
+        "output_score": 0.8,
+        "wellbeing_score": 0.76,
+        "equality_score": 0.74,
+        "utopia_score": 0.7646
+      },
+      {
+        "policy": "high_output_bonus_pool",
+        "minimum_wage_index": 1.32,
+        "output_score": 0.88,
+        "wellbeing_score": 0.61,
+        "equality_score": 0.7,
+        "utopia_score": 0.7179
+      },
+      {
+        "policy": "care_credit_and_leave_package",
+        "minimum_wage_index": 1.12,
+        "output_score": 0.75,
+        "wellbeing_score": 0.9,
+        "equality_score": 0.86,
+        "utopia_score": 0.8334
+      }
+    ],
+    "recommended_policy": {
+      "policy": "care_credit_and_leave_package",
+      "minimum_wage_index": 1.12,
+      "output_score": 0.75,
+      "wellbeing_score": 0.9,
+      "equality_score": 0.86,
+      "utopia_score": 0.8334
+    }
+  }
+}

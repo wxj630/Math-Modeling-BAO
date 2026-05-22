@@ -1,0 +1,191 @@
+{
+  "problem_id": "2024-E",
+  "title": "2024年 CUMCM E题：交通流量管控",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "根据所给数据和上述模型，对经中路和纬中路上所有交叉口的信号灯进行优 化配置，在保证车辆通行的前提下，使得两条主路上的车流平均速度最大。",
+  "tasks": [
+    "根据所给数据和上述模型，对经中路和纬中路上所有交叉口的信号灯进行优 化配置，在保证车辆通行的前提下，使得两条主路上的车流平均速度最大"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最大、配置"
+    },
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "信号"
+    },
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "交叉口"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
+    "rows": 8844996,
+    "columns": 4,
+    "note": "本题专用算法分块读取附件2的884万条车辆记录，结合附件1方向/距离信息构建交通流量、信号配时、巡游车和管控效果摘要。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "根据所给数据和上述模型，对经中路和纬中路上所有交叉口的信号灯进行优 化配置，在保证车辆通行的前提下，使得两条主路上的车流平均速度最大"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n_{t,i,d}: 时段 t、交叉口 i、方向 d 的车辆通过数",
+      "q_{t,i,p}: 时段 t、交叉口 i、相位 p 的估计流率",
+      "g_{i,p}: 交叉口 i 的相位 p 绿灯时间",
+      "v_i: 交叉口 i 所属路段的速度指数",
+      "z_m: 车牌 m 是否判定为五一巡游车辆"
+    ],
+    "constraints": [
+      "附件 2 记录的是停车线后方监控点，不直接给出左转/直行/右转，转向比例需由方向流量做可解释估计。",
+      "信号周期固定为 120 s，每个主相位最小绿灯 25 s，最大绿灯 90 s。",
+      "车辆通行能力用饱和流率和绿信比估计，速度指数用 BPR 型流量-速度关系近似。",
+      "巡游车辆需在五一期间出现次数、活动时长、覆盖交叉口数和景区出入口出现次数同时达到阈值。"
+    ],
+    "objective_or_equations": [
+      "g_EW=(C-L)*Q_EW/(Q_EW+Q_NS), g_NS=(C-L)-g_EW",
+      "speed = v_free / (1 + alpha*(flow/capacity)^beta)",
+      "maximize weighted_average_speed subject to min_green <= g <= max_green"
+    ],
+    "solution_steps": [
+      "用问题 1 的小时流量摘要计算每个交叉口东西向和南北向关键流率。",
+      "按 Webster/比例分配思想给出两相位绿灯配置，并施加最小/最大绿灯约束。",
+      "用 BPR 型速度指数比较优化前后两条主路的平均速度。",
+      "输出每个交叉口的周期、绿灯时间、关键流率和速度改善估计。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "network_signal_timing_webster_optimization",
+    "intersections": 12,
+    "cycle_s": 120.0,
+    "average_speed_before_index_kmh": 34.4306,
+    "average_speed_after_index_kmh": 37.316,
+    "average_speed_improvement_pct": 8.3801,
+    "sample_signal_rows": [
+      {
+        "intersection": "环东路-纬中路",
+        "cycle_s": 120.0,
+        "green_EW_s": 30.85,
+        "green_NS_s": 81.15,
+        "avg_EW_flow_veh_per_hour": 47.662,
+        "avg_NS_flow_veh_per_hour": 125.3727,
+        "speed_before_index_kmh": 37.9995,
+        "speed_after_index_kmh": 40.4396,
+        "speed_improvement_pct": 6.4215
+      },
+      {
+        "intersection": "环西路-纬中路",
+        "cycle_s": 120.0,
+        "green_EW_s": 66.83,
+        "green_NS_s": 45.17,
+        "avg_EW_flow_veh_per_hour": 1456.2431,
+        "avg_NS_flow_veh_per_hour": 984.39,
+        "speed_before_index_kmh": 25.2156,
+        "speed_after_index_kmh": 27.5061,
+        "speed_improvement_pct": 9.0838
+      },
+      {
+        "intersection": "纬中路-景区出入口",
+        "cycle_s": 120.0,
+        "green_EW_s": 87.0,
+        "green_NS_s": 25.0,
+        "avg_EW_flow_veh_per_hour": 602.066,
+        "avg_NS_flow_veh_per_hour": 14.8866,
+        "speed_before_index_kmh": 37.9215,
+        "speed_after_index_kmh": 40.0399,
+        "speed_improvement_pct": 5.5862
+      },
+      {
+        "intersection": "经一路-纬中路",
+        "cycle_s": 120.0,
+        "green_EW_s": 74.29,
+        "green_NS_s": 37.71,
+        "avg_EW_flow_veh_per_hour": 582.3981,
+        "avg_NS_flow_veh_per_hour": 295.6528,
+        "speed_before_index_kmh": 37.68,
+        "speed_after_index_kmh": 40.5319,
+        "speed_improvement_pct": 7.5688
+      },
+      {
+        "intersection": "经三路-纬中路",
+        "cycle_s": 120.0,
+        "green_EW_s": 67.64,
+        "green_NS_s": 44.36,
+        "avg_EW_flow_veh_per_hour": 568.6215,
+        "avg_NS_flow_veh_per_hour": 372.8646,
+        "speed_before_index_kmh": 37.5781,
+        "speed_after_index_kmh": 40.9232,
+        "speed_improvement_pct": 8.9016
+      },
+      {
+        "intersection": "经中路-环北路",
+        "cycle_s": 120.0,
+        "green_EW_s": 36.47,
+        "green_NS_s": 75.53,
+        "avg_EW_flow_veh_per_hour": 292.0648,
+        "avg_NS_flow_veh_per_hour": 604.853,
+        "speed_before_index_kmh": 37.6518,
+        "speed_after_index_kmh": 40.4177,
+        "speed_improvement_pct": 7.3458
+      },
+      {
+        "intersection": "经中路-环南路",
+        "cycle_s": 120.0,
+        "green_EW_s": 55.44,
+        "green_NS_s": 56.56,
+        "avg_EW_flow_veh_per_hour": 660.6123,
+        "avg_NS_flow_veh_per_hour": 673.8785,
+        "speed_before_index_kmh": 36.3526,
+        "speed_after_index_kmh": 40.6505,
+        "speed_improvement_pct": 11.8228
+      },
+      {
+        "intersection": "经中路-纬一路",
+        "cycle_s": 120.0,
+        "green_EW_s": 27.1,
+        "green_NS_s": 84.9,
+        "avg_EW_flow_veh_per_hour": 204.6377,
+        "avg_NS_flow_veh_per_hour": 641.1609,
+        "speed_before_index_kmh": 37.7241,
+        "speed_after_index_kmh": 39.9395,
+        "speed_improvement_pct": 5.8725
+      }
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2024/E/q02/experiment_table.csv"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "problem_id": "2020-A",
+  "title": "2020年 CUMCM A题：炉温曲线",
+  "question_index": 1,
+  "question_label": "问题1",
+  "statement": "请对焊接区域的温度变化规律建立数学模型。假设传送带过炉速度为78 cm/min，各温区温度的设定值分别为173ºC（小温区1~5）、198ºC（小温区6）、230ºC（小温区7）和257ºC（小温区8~9），请给出焊接区域中心的温度变化情况，列出小温区3、6、7中点及小温区8结束处焊接区域中心的温度，画出相应的炉温曲线，并将每隔0.5 s焊接区域中心的温度存放在提供的result.csv中。",
+  "tasks": [
+    "请对焊接区域的温度变化规律建立数学模型",
+    "假设传送带过炉速度为78 cm/min，各温区温度的设定值分别为173ºC（小温区1~5）、198ºC（小温区6）、230ºC（小温区7）和257ºC（小温区8~9），请给出焊接区域中心的温度变化情况，列出小温区3、6、7中点及小温区8结束处焊接区域中心的温度，画出相应的炉温曲线",
+    "将每隔0.5 s焊接区域中心的温度存放在提供的result.csv中"
+  ],
+  "selected_model": {
+    "key": "ode",
+    "name": "微分方程与动态仿真",
+    "chapter": "CH2",
+    "chapter_title": "微分方程与动力系统",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "reason": "温度、变化规律、炉温"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "速度"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "曲线"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/result.csv",
+    "rows": 2,
+    "columns": 1,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "微分方程与动态仿真",
+    "task_breakdown": [
+      "请对焊接区域的温度变化规律建立数学模型",
+      "假设传送带过炉速度为78 cm/min，各温区温度的设定值分别为173ºC（小温区1~5）、198ºC（小温区6）、230ºC（小温区7）和257ºC（小温区8~9），请给出焊接区域中心的温度变化情况，列出小温区3、6、7中点及小温区8结束处焊接区域中心的温度，画出相应的炉温曲线",
+      "将每隔0.5 s焊接区域中心的温度存放在提供的result.csv中"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "y(t): 系统状态",
+      "k: 调节/衰减系数",
+      "y_env: 环境或稳态值",
+      "t: 时间"
+    ],
+    "constraints": [
+      "k > 0",
+      "初值 y(0)=y0",
+      "状态向稳态单调或振荡趋近"
+    ],
+    "objective_or_equations": [
+      "dy/dt = -k*(y-y_env)",
+      "y(0)=y0"
+    ],
+    "solution_steps": [
+      "把题面动态过程抽象为一阶微分方程。",
+      "设置初值和参数。",
+      "调用 solve_ivp 数值积分。",
+      "输出时间-状态轨迹。"
+    ],
+    "model_reference": {
+      "key": "ode",
+      "name": "微分方程与动态仿真",
+      "chapter": "CH2",
+      "chapter_title": "微分方程与动力系统",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    }
+  },
+  "experiment_result": {
+    "method": "first_order_dynamic_simulation",
+    "y0": 76.15400935255848,
+    "steady_state": 16.636885170979795,
+    "k": 0.06972510164231059,
+    "final_value": 16.864722129751623
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2020/A/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

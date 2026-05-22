@@ -1,0 +1,93 @@
+{
+  "problem_id": "2023-F-GreenGDP",
+  "question": "q05",
+  "question_title": "给巴西领导人的一页非技术报告",
+  "statement": "Based on your country-specific analysis, write a one-page non-technical report to the leaders of that country on whether to support a switch to GGDP or to reject a switch and maintain GDP.",
+  "methods": "把 adjusted-savings GGDP 公式、Brazil GGDP penalty、森林/资源政策含义、全球 phased switch 建议和实施风险压缩成领导人可读报告。对应模型：政策备忘录、非技术摘要。",
+  "data_source": {
+    "type": "official_pdf_and_world_bank_api",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
+    "world_bank_api": "https://api.worldbank.org/v2/",
+    "indicator_ids": {
+      "NY.GDP.MKTP.CD": "gdp_current_usd",
+      "NY.ADJ.DCO2.GN.ZS": "co2_damage_pct_gni",
+      "NY.ADJ.DRES.GN.ZS": "natural_resource_depletion_pct_gni",
+      "NY.ADJ.DFOR.GN.ZS": "net_forest_depletion_pct_gni",
+      "AG.LND.FRST.ZS": "forest_area_pct_land",
+      "NY.GDP.TOTL.RT.ZS": "natural_resource_rents_pct_gdp"
+    },
+    "countries": [
+      "WLD",
+      "BRA",
+      "CHN",
+      "USA",
+      "IND",
+      "IDN",
+      "COD",
+      "NOR"
+    ],
+    "official_requirements": [
+      "select_ggdp_formula",
+      "simple_global_climate_impact_model",
+      "global_upside_downside_assessment",
+      "country_specific_resource_analysis",
+      "one_page_country_leader_report"
+    ]
+  },
+  "one_page_country_report": "One-page report to Brazil's economic and environmental leaders\n\nRecommendation: Brazil should support a phased switch to GGDP. Conventional GDP rewards current production even when natural capital is depleted. Using the selected adjusted-savings GGDP method, Brazil's observed environmental penalty is 5.0118% of GNI, leaving a green-GDP ratio of 0.9499. This gap is large enough to make forest protection, cleaner energy, and resource-rent reinvestment visible in the headline economic metric.\n\nExpected changes: projects that raise GDP by drawing down forests, minerals, or climate stability would face an explicit deduction. Projects that preserve forest capital, reduce CO2 damage, and reinvest resource rents would become more attractive because they protect the income base available to future generations.\n\nRisk and implementation: the switch will be politically difficult, so Brazil should support a phased international standard with audited WDI/SEEA-style accounts, publish both GDP and GGDP during a transition period, and use the GGDP gap to guide investment rather than as a punitive ranking alone.",
+  "country_case_study": {
+    "country_iso3": "BRA",
+    "country": "Brazil",
+    "green_gdp_penalty_pct_gni": 5.0118,
+    "green_gdp_ratio": 0.9499,
+    "green_gap_usd": 109549016371.47,
+    "forest_area_pct_land": 58.9819,
+    "natural_resource_rents_pct_gdp": 7.9411,
+    "future_generations_assessment": "Beneficial if adoption protects forest capital and channels resource rents into durable productivity rather than one-year GDP gains.",
+    "policy_levers": [
+      {
+        "lever": "natural_resource_rent_reinvestment",
+        "current_signal": "natural_resource_rents_pct_gdp",
+        "observed_value": 7.9411,
+        "expected_change_under_ggdp": "shift part of extractive rent toward restoration, monitoring, and lower-damage production",
+        "planning_magnitude": 0.9367
+      },
+      {
+        "lever": "forest_and_biodiversity_accounting",
+        "current_signal": "forest_area_pct_land",
+        "observed_value": 58.9819,
+        "expected_change_under_ggdp": "treat avoided forest loss as preserving future economic capacity instead of a hidden externality",
+        "planning_magnitude": 0.7744
+      },
+      {
+        "lever": "carbon_damage_visibility",
+        "current_signal": "co2_damage_pct_gni",
+        "observed_value": 1.265,
+        "expected_change_under_ggdp": "prefer projects whose GDP gain remains positive after CO2 damage is deducted",
+        "planning_magnitude": 0.3795
+      },
+      {
+        "lever": "headline_metric_gap",
+        "current_signal": "green_gap_usd",
+        "observed_value": 109549016371.47,
+        "expected_change_under_ggdp": "make the environmental cost of status-quo growth visible in the main national performance number",
+        "planning_magnitude": 109.549
+      }
+    ]
+  },
+  "global_worthwhile_assessment": {
+    "scenario_used": "phased_g20_plus_resource_exporters",
+    "recommendation": "support_switch",
+    "reasoning": "The phased strategy is the most defensible global option because it targets large emitters and resource exporters first, giving climate and resource incentives before forcing a universal statistical transition.",
+    "upside": {
+      "combined_environmental_benefit_pct_gni": 0.446,
+      "benefit_index": 14.204
+    },
+    "downside": {
+      "transition_effort_index": 0.58,
+      "effort_index": 50.46
+    },
+    "net_benefit_score": 17.381
+  }
+}

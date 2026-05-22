@@ -1,0 +1,6 @@
+strategy,access_gain,security_gain,stability_gain,sovereignty_cost,portfolio_score
+public oversight plus privacy-preserving compliance,0.2,0.34,0.24,0.2,0.2388
+regulated stable settlement layer,0.18,0.24,0.27,0.24,0.1822
+cross-border remittance corridor,0.22,0.16,0.14,0.12,0.1724
+wallet-first inclusion pilot,0.3,0.12,0.08,0.18,0.148
+full national-currency substitution,0.32,0.18,0.22,0.58,0.0648

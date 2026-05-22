@@ -1,0 +1,182 @@
+{
+  "problem_id": "2016-F",
+  "question": "q04",
+  "question_title": "政府与 NGO 协同策略",
+  "statement": "How does the inclusion of NGO's change your model and strategy?",
+  "methods": "比较 government-only 和 with-NGO 两种资源策略的 unmet need；NGO 不改变法律准入，但增加移动医疗、水、食物和临时 shelter 能力，使模型从边境处理转为分布式救援。对应模型：情景对比、资源协同、公共-非政府协作模型。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "official_problem_parameters": {
+      "asylum_applications_by_oct_2015": 715000,
+      "hungary_applications_per_100k": 1450,
+      "hungary_approval_rate_2014": 0.32,
+      "routes": [
+        "West Mediterranean",
+        "Central Mediterranean",
+        "Eastern Mediterranean",
+        "West Balkans",
+        "Eastern Borders",
+        "Albania to Greece"
+      ],
+      "most_popular_route": "Eastern Mediterranean",
+      "most_dangerous_route": "Central Mediterranean",
+      "scale_factor_required_in_task": 10
+    },
+    "assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  },
+  "ngo_strategy": {
+    "government_only": {
+      "unmet_need": 101.68,
+      "resources": [
+        {
+          "resource": "shelter",
+          "required_units": 715.0,
+          "available_units": 560.0,
+          "unmet_units": 155.0,
+          "priority_weight": 0.33,
+          "weighted_gap": 51.15,
+          "prepositioning_action": "preposition modular shelter near route bottlenecks and high-capacity destinations"
+        },
+        {
+          "resource": "water",
+          "required_units": 1036.75,
+          "available_units": 930.0,
+          "unmet_units": 106.75,
+          "priority_weight": 0.22,
+          "weighted_gap": 23.485,
+          "prepositioning_action": "stage purification, trucking, and sanitation units near camps"
+        },
+        {
+          "resource": "healthcare",
+          "required_units": 271.7,
+          "available_units": 215.0,
+          "unmet_units": 56.7,
+          "priority_weight": 0.27,
+          "weighted_gap": 15.309,
+          "prepositioning_action": "deploy mobile clinics and vaccination/triage teams at entry points"
+        },
+        {
+          "resource": "food",
+          "required_units": 915.2,
+          "available_units": 850.0,
+          "unmet_units": 65.2,
+          "priority_weight": 0.18,
+          "weighted_gap": 11.736,
+          "prepositioning_action": "stage dry rations and local procurement contracts"
+        }
+      ]
+    },
+    "with_ngo": {
+      "unmet_need": 0.0,
+      "resources": [
+        {
+          "resource": "shelter",
+          "required_units": 715.0,
+          "available_units": 730.0,
+          "unmet_units": 0.0,
+          "priority_weight": 0.33,
+          "weighted_gap": 0.0,
+          "prepositioning_action": "preposition modular shelter near route bottlenecks and high-capacity destinations"
+        },
+        {
+          "resource": "healthcare",
+          "required_units": 271.7,
+          "available_units": 310.0,
+          "unmet_units": 0.0,
+          "priority_weight": 0.27,
+          "weighted_gap": 0.0,
+          "prepositioning_action": "deploy mobile clinics and vaccination/triage teams at entry points"
+        },
+        {
+          "resource": "water",
+          "required_units": 1036.75,
+          "available_units": 1140.0,
+          "unmet_units": 0.0,
+          "priority_weight": 0.22,
+          "weighted_gap": 0.0,
+          "prepositioning_action": "stage purification, trucking, and sanitation units near camps"
+        },
+        {
+          "resource": "food",
+          "required_units": 915.2,
+          "available_units": 1040.0,
+          "unmet_units": 0.0,
+          "priority_weight": 0.18,
+          "weighted_gap": 0.0,
+          "prepositioning_action": "stage dry rations and local procurement contracts"
+        }
+      ]
+    },
+    "strategy_change": "With NGOs, the model shifts from border-only processing to distributed mobile support: health, water, food, and shelter can move toward bottlenecks before destinations reach maximum capacity."
+  },
+  "dynamic_capacity": {
+    "method": "priority ranking by weighted unmet resource units after government plus NGO prepositioning",
+    "resources": [
+      {
+        "resource": "shelter",
+        "required_units": 715.0,
+        "available_units": 730.0,
+        "unmet_units": 0.0,
+        "priority_weight": 0.33,
+        "weighted_gap": 0.0,
+        "prepositioning_action": "preposition modular shelter near route bottlenecks and high-capacity destinations"
+      },
+      {
+        "resource": "healthcare",
+        "required_units": 271.7,
+        "available_units": 310.0,
+        "unmet_units": 0.0,
+        "priority_weight": 0.27,
+        "weighted_gap": 0.0,
+        "prepositioning_action": "deploy mobile clinics and vaccination/triage teams at entry points"
+      },
+      {
+        "resource": "water",
+        "required_units": 1036.75,
+        "available_units": 1140.0,
+        "unmet_units": 0.0,
+        "priority_weight": 0.22,
+        "weighted_gap": 0.0,
+        "prepositioning_action": "stage purification, trucking, and sanitation units near camps"
+      },
+      {
+        "resource": "food",
+        "required_units": 915.2,
+        "available_units": 1040.0,
+        "unmet_units": 0.0,
+        "priority_weight": 0.18,
+        "weighted_gap": 0.0,
+        "prepositioning_action": "stage dry rations and local procurement contracts"
+      }
+    ],
+    "highest_priority_resource": "shelter",
+    "weighted_unmet_need": 0.0,
+    "dynamic_factors": [
+      "destination capacity fills fastest in the most desired countries",
+      "route safety changes after border closures or sea conditions",
+      "transport availability changes daily",
+      "local population health and safety constraints tighten when shelters remain crowded"
+    ]
+  },
+  "policy_package": {
+    "recommended_policies": [
+      "Open multiple entry points on high-volume routes to prevent single-border bottlenecks.",
+      "Shift refugees away from the Central Mediterranean when safer capacity exists.",
+      "Preposition shelter and healthcare before destinations hit maximum capacity.",
+      "Use a quota plus capacity trigger so France and Germany do not carry all resettlement burden.",
+      "Give NGOs formal logistics lanes for mobile clinics, water, food, and temporary shelter.",
+      "Protect local population health with registration, vaccination, sanitation, and transparent risk communication."
+    ],
+    "priority_resource": "shelter",
+    "policy_objective": "minimize unsafe movement and unmet basic needs while respecting legal and cultural constraints of affected countries",
+    "operational_metric": "weekly safe placements plus weighted unmet resource reduction"
+  }
+}

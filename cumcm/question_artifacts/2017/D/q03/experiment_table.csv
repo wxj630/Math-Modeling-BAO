@@ -1,0 +1,2 @@
+﻿method,point_count,edge_count,candidate_schedule_count,fixed_without_break_workers,fixed_with_break_workers,best_without_break_workers,best_with_break_workers,best_total_workers,best_start_quantum_minutes,max_cycle_violation_minutes
+inspection_staggered_shift_staffing_comparison,26,31,5,72,72,72,72,72,60,0.0

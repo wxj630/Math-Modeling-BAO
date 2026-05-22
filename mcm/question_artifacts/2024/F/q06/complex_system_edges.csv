@@ -1,0 +1,9 @@
+source,target,influence_weight,relationship
+source-area poaching,transit-route smuggling,0.85,supply chain
+transit-route smuggling,destination market availability,0.78,supply chain
+online demand signals,destination market availability,0.66,demand amplification
+financial-flow screening,transit-route smuggling,-0.42,deterrence
+customs targeting,transit-route smuggling,-0.58,interdiction
+community rewards,source-area poaching,-0.37,source reduction
+platform takedown,online demand signals,-0.45,demand reduction
+climate and livelihood stress,source-area poaching,0.31,external pressure

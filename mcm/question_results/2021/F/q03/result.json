@@ -1,0 +1,218 @@
+{
+  "problem_id": "2021-F",
+  "question": "q03",
+  "question_title": "健康且可持续的目标状态愿景",
+  "statement": "Propose an attainable and reasonable vision for your selected nation's system that supports a healthy and sustainable system of higher education.",
+  "methods": "对选定国家给出 affordability、access、funding、research 和 renewal 的目标 operating zone，而不是单一排名目标。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "official_requirements": {
+      "assess_any_nation_health": true,
+      "apply_to_several_countries": true,
+      "select_room_for_improvement": true,
+      "healthy_sustainable_state": true,
+      "policy_timeline_and_impacts": true,
+      "twenty_five_page_limit": true
+    },
+    "parameters": {
+      "transition_years": 10,
+      "health_dimensions": {
+        "access_equity": {
+          "weight": 0.18,
+          "definition": "Students can enter, persist, and complete higher education across income, region, gender, race, and first-generation status."
+        },
+        "affordability": {
+          "weight": 0.16,
+          "definition": "Tuition, debt, living cost, and public aid do not block participation or completion."
+        },
+        "degree_value": {
+          "weight": 0.16,
+          "definition": "Graduates gain durable employment, civic, and personal value from credentials."
+        },
+        "quality_and_learning": {
+          "weight": 0.14,
+          "definition": "Institutions deliver strong instruction, student support, and measurable learning."
+        },
+        "research_and_exchange": {
+          "weight": 0.12,
+          "definition": "The system supports research, exchange of ideas, and international student flows."
+        },
+        "funding_stability": {
+          "weight": 0.12,
+          "definition": "Public and private resources are stable enough for long-run planning."
+        },
+        "innovation_renewal": {
+          "weight": 0.12,
+          "definition": "The system can align around a shared vision, execute it, and renew itself over time."
+        }
+      },
+      "source_note": "Official PDF statement parameters only; national score rows are deterministic planning inputs for audit and replacement."
+    }
+  },
+  "selected_nation_transition": {
+    "selected_country": "Brazil",
+    "current_state": {
+      "year": 0,
+      "selected_country": "Brazil",
+      "health_score": 0.4844,
+      "access_equity": 0.48,
+      "affordability": 0.54,
+      "funding_stability": 0.42,
+      "innovation_renewal": 0.46
+    },
+    "healthy_sustainable_state": {
+      "year": 10,
+      "selected_country": "Brazil",
+      "health_score": 0.5717,
+      "access_equity": 0.584,
+      "affordability": 0.6809,
+      "funding_stability": 0.5316,
+      "innovation_renewal": 0.5569
+    },
+    "vision": "A more affordable, completion-oriented, research-active, and renewal-capable national higher education system.",
+    "timeline_rows": [
+      {
+        "year": 0,
+        "selected_country": "Brazil",
+        "health_score": 0.4844,
+        "access_equity": 0.48,
+        "affordability": 0.54,
+        "funding_stability": 0.42,
+        "innovation_renewal": 0.46
+      },
+      {
+        "year": 1,
+        "selected_country": "Brazil",
+        "health_score": 0.4948,
+        "access_equity": 0.506,
+        "affordability": 0.5682,
+        "funding_stability": 0.42,
+        "innovation_renewal": 0.4697
+      },
+      {
+        "year": 2,
+        "selected_country": "Brazil",
+        "health_score": 0.5097,
+        "access_equity": 0.532,
+        "affordability": 0.5964,
+        "funding_stability": 0.4386,
+        "innovation_renewal": 0.4794
+      },
+      {
+        "year": 3,
+        "selected_country": "Brazil",
+        "health_score": 0.5262,
+        "access_equity": 0.558,
+        "affordability": 0.6246,
+        "funding_stability": 0.4572,
+        "innovation_renewal": 0.4891
+      },
+      {
+        "year": 4,
+        "selected_country": "Brazil",
+        "health_score": 0.5427,
+        "access_equity": 0.584,
+        "affordability": 0.6528,
+        "funding_stability": 0.4758,
+        "innovation_renewal": 0.4988
+      },
+      {
+        "year": 5,
+        "selected_country": "Brazil",
+        "health_score": 0.5545,
+        "access_equity": 0.584,
+        "affordability": 0.6809,
+        "funding_stability": 0.4944,
+        "innovation_renewal": 0.5085
+      },
+      {
+        "year": 6,
+        "selected_country": "Brazil",
+        "health_score": 0.5618,
+        "access_equity": 0.584,
+        "affordability": 0.6809,
+        "funding_stability": 0.513,
+        "innovation_renewal": 0.5181
+      },
+      {
+        "year": 7,
+        "selected_country": "Brazil",
+        "health_score": 0.5667,
+        "access_equity": 0.584,
+        "affordability": 0.6809,
+        "funding_stability": 0.5316,
+        "innovation_renewal": 0.5278
+      },
+      {
+        "year": 8,
+        "selected_country": "Brazil",
+        "health_score": 0.5694,
+        "access_equity": 0.584,
+        "affordability": 0.6809,
+        "funding_stability": 0.5316,
+        "innovation_renewal": 0.5375
+      },
+      {
+        "year": 9,
+        "selected_country": "Brazil",
+        "health_score": 0.5705,
+        "access_equity": 0.584,
+        "affordability": 0.6809,
+        "funding_stability": 0.5316,
+        "innovation_renewal": 0.5472
+      },
+      {
+        "year": 10,
+        "selected_country": "Brazil",
+        "health_score": 0.5717,
+        "access_equity": 0.584,
+        "affordability": 0.6809,
+        "funding_stability": 0.5316,
+        "innovation_renewal": 0.5569
+      }
+    ]
+  },
+  "health_model": {
+    "method": "weighted national higher-education health model aligned with access, affordability, value, quality, research, funding, and renewal",
+    "dimension_rows": [
+      {
+        "dimension": "access_equity",
+        "weight": 0.18,
+        "definition": "Students can enter, persist, and complete higher education across income, region, gender, race, and first-generation status."
+      },
+      {
+        "dimension": "affordability",
+        "weight": 0.16,
+        "definition": "Tuition, debt, living cost, and public aid do not block participation or completion."
+      },
+      {
+        "dimension": "degree_value",
+        "weight": 0.16,
+        "definition": "Graduates gain durable employment, civic, and personal value from credentials."
+      },
+      {
+        "dimension": "quality_and_learning",
+        "weight": 0.14,
+        "definition": "Institutions deliver strong instruction, student support, and measurable learning."
+      },
+      {
+        "dimension": "research_and_exchange",
+        "weight": 0.12,
+        "definition": "The system supports research, exchange of ideas, and international student flows."
+      },
+      {
+        "dimension": "funding_stability",
+        "weight": 0.12,
+        "definition": "Public and private resources are stable enough for long-run planning."
+      },
+      {
+        "dimension": "innovation_renewal",
+        "weight": 0.12,
+        "definition": "The system can align around a shared vision, execute it, and renew itself over time."
+      }
+    ],
+    "healthy_state_rule": "A national system is healthy when every dimension is at least 0.70 and the weighted health score is at least 0.75."
+  }
+}

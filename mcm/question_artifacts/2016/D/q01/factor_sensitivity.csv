@@ -1,0 +1,6 @@
+﻿factor,direction,low_score,baseline_score,high_score,absolute_swing
+information_value,positive,0.399,0.459,0.519,0.12
+source_credibility,positive,0.407,0.459,0.511,0.104
+initial_bias,negative,0.503,0.459,0.415,0.088
+network_strength,positive,0.419,0.459,0.499,0.08
+message_form_strength,positive,0.431,0.459,0.487,0.056

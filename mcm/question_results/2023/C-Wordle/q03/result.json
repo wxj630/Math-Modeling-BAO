@@ -1,0 +1,231 @@
+{
+  "problem_id": "2023-C-Wordle",
+  "question": "q03",
+  "question_title": "答案词难度分类与 EERIE 难度",
+  "statement": "Develop and summarize a model to classify solution words by difficulty. Identify attributes associated with each classification. Using your model, how difficult is EERIE? Discuss accuracy.",
+  "methods": "用 1-6/X 百分比分布计算期望尝试次数，并按训练集三分位划分 easy/medium/hard；再用随机森林分类器从日期和词属性预测难度类别。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "records": 359,
+    "date_min": "2022-01-07",
+    "date_max": "2022-12-31",
+    "columns": [
+      "Date",
+      "Contest number",
+      "Word",
+      "Number of reported results",
+      "Number in hard mode",
+      "1 try",
+      "2 tries",
+      "3 tries",
+      "4 tries",
+      "5 tries",
+      "6 tries",
+      "7 or more tries (X)"
+    ]
+  },
+  "difficulty_model": {
+    "model": "difficulty tertiles by expected attempts plus RandomForestClassifier from date and word attributes",
+    "thresholds_expected_attempts": {
+      "easy_max": 4.033403,
+      "medium_max": 4.352357
+    },
+    "holdout_days": 45,
+    "holdout_accuracy": 0.422222,
+    "eerie_expected_attempts_from_distribution": 4.26407,
+    "eerie_class": "medium",
+    "eerie_classifier_class": "medium",
+    "feature_importance": [
+      {
+        "feature": "letter_frequency_score",
+        "importance": 0.187621
+      },
+      {
+        "feature": "days_since_start",
+        "importance": 0.132151
+      },
+      {
+        "feature": "days_since_start_sq",
+        "importance": 0.131605
+      },
+      {
+        "feature": "contest_number",
+        "importance": 0.130505
+      },
+      {
+        "feature": "rare_letter_count",
+        "importance": 0.092853
+      },
+      {
+        "feature": "weekday",
+        "importance": 0.06415
+      },
+      {
+        "feature": "repeated_letters",
+        "importance": 0.062474
+      },
+      {
+        "feature": "word_entropy",
+        "importance": 0.054908
+      },
+      {
+        "feature": "max_letter_count",
+        "importance": 0.053501
+      },
+      {
+        "feature": "unique_letters",
+        "importance": 0.034078
+      }
+    ],
+    "hardest_words": [
+      {
+        "date": "2022-09-16",
+        "word": "PARER",
+        "expected_attempts": 5.99,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-10-23",
+        "word": "MUMMY",
+        "expected_attempts": 5.475248,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-08-02",
+        "word": "COYLY",
+        "expected_attempts": 5.40404,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-04-19",
+        "word": "FOYER",
+        "expected_attempts": 5.30303,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-12-26",
+        "word": "JUDGE",
+        "expected_attempts": 5.232323,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-06-29",
+        "word": "GAWKY",
+        "expected_attempts": 5.131313,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-02-19",
+        "word": "SWILL",
+        "expected_attempts": 5.08,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-07-06",
+        "word": "FLUFF",
+        "expected_attempts": 4.98,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-03-11",
+        "word": "WATCH",
+        "expected_attempts": 4.96,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-10-07",
+        "word": "DANDY",
+        "expected_attempts": 4.95,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-07-26",
+        "word": "CINCH",
+        "expected_attempts": 4.910891,
+        "difficulty_class": "hard"
+      },
+      {
+        "date": "2022-07-20",
+        "word": "TRITE",
+        "expected_attempts": 4.91,
+        "difficulty_class": "hard"
+      }
+    ],
+    "easiest_words": [
+      {
+        "date": "2022-05-04",
+        "word": "TRAIN",
+        "expected_attempts": 3.131313,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-04-22",
+        "word": "PLANT",
+        "expected_attempts": 3.336634,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-04-09",
+        "word": "STAIR",
+        "expected_attempts": 3.386139,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-12-20",
+        "word": "THIRD",
+        "expected_attempts": 3.435644,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-11-26",
+        "word": "CLEN",
+        "expected_attempts": 3.45,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-04-29",
+        "word": "TASH",
+        "expected_attempts": 3.46,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-12-19",
+        "word": "SLATE",
+        "expected_attempts": 3.464646,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-11-09",
+        "word": "RAINY",
+        "expected_attempts": 3.475248,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-08-06",
+        "word": "ALIEN",
+        "expected_attempts": 3.484848,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-08-20",
+        "word": "TREAT",
+        "expected_attempts": 3.485149,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-01-19",
+        "word": "POINT",
+        "expected_attempts": 3.505051,
+        "difficulty_class": "easy"
+      },
+      {
+        "date": "2022-02-22",
+        "word": "THORN",
+        "expected_attempts": 3.505051,
+        "difficulty_class": "easy"
+      }
+    ]
+  }
+}

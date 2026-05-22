@@ -1,0 +1,174 @@
+{
+  "problem_id": "2024-F",
+  "question": "q10",
+  "question_title": "情境化敏感性和一页客户备忘录",
+  "statement": "Also, based on a contextualized sensitivity analysis, are there conditions or events that may disproportionately aid or harm the project's ability to reach its goal? Submit a 1-page memo with key points for your client.",
+  "methods": "列出数据共享、平台合作、社区伙伴、路线转移、腐败泄露和经济冲击等敏感事件，并输出面向客户的一页 memo。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "official_requirements": {
+      "select_client": true,
+      "realistic_client_action": true,
+      "data_driven_five_year_project": true,
+      "additional_powers_and_resources": true,
+      "measurable_impact": true,
+      "goal_probability": true,
+      "contextualized_sensitivity_analysis": true,
+      "one_page_client_memo": true
+    },
+    "parameters": {
+      "max_illegal_trade_billion_usd": 26.5,
+      "project_years": 5,
+      "fourth_largest_illegal_trade": true,
+      "program_effectiveness_discount": 0.42,
+      "source_note": "Official PDF statement parameters only; project rows are deterministic scenario assumptions, not observed enforcement data."
+    }
+  },
+  "sensitivity_analysis": {
+    "method": "one-at-a-time contextual event adjustments around the base probability of meeting the 20% reduction goal",
+    "top_helpful_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      }
+    ],
+    "top_harmful_conditions": [
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      }
+    ],
+    "all_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      }
+    ]
+  },
+  "goal_probability": {
+    "base_probability": 0.64,
+    "probability_reach_goal": 0.69,
+    "goal": "at least 20% cumulative reduction from the no-project five-year trajectory",
+    "top_helpful_conditions": [
+      {
+        "condition": "high customs data-sharing compliance",
+        "effect_on_goal_probability": 0.13,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.77
+      },
+      {
+        "condition": "platform API cooperation and rapid takedown",
+        "effect_on_goal_probability": 0.1,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.74
+      },
+      {
+        "condition": "stable source-country community partners",
+        "effect_on_goal_probability": 0.08,
+        "type": "helpful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.72
+      }
+    ],
+    "top_harmful_conditions": [
+      {
+        "condition": "trafficker route displacement to unobserved corridors",
+        "effect_on_goal_probability": -0.14,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.5
+      },
+      {
+        "condition": "corruption or leak of targeting rules",
+        "effect_on_goal_probability": -0.12,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.52
+      },
+      {
+        "condition": "economic shock increasing poaching recruitment",
+        "effect_on_goal_probability": -0.09,
+        "type": "harmful",
+        "base_probability": 0.64,
+        "adjusted_probability": 0.55
+      }
+    ]
+  },
+  "client_memo": "Memo to the World Customs Organization coordinated customs task force: adopt this 5-year corridor disruption project because illegal wildlife trade is valued up to 26.5 billion USD per year and is the fourth largest illegal trade. The program uses customs risk scoring, shared intelligence, platform takedowns, financial-flow screening, and community incentives to produce a measurable 33.83% reduction versus the no-project trajectory by year 5."
+}

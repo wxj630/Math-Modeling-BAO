@@ -1,0 +1,9 @@
+state,year,baseline_renewable_consumption_share,baseline_energy_consumption_per_capita_mmbtu,model
+AZ,2025,0.025953,227.914234,linear trend fit on 1990-2009 official SEDS variables
+AZ,2050,0.0,207.945397,linear trend fit on 1990-2009 official SEDS variables
+CA,2025,0.082612,215.105021,linear trend fit on 1990-2009 official SEDS variables
+CA,2050,0.070503,196.736156,linear trend fit on 1990-2009 official SEDS variables
+NM,2025,0.067057,324.979615,linear trend fit on 1990-2009 official SEDS variables
+NM,2050,0.110853,290.162626,linear trend fit on 1990-2009 official SEDS variables
+TX,2025,0.029067,418.008429,linear trend fit on 1990-2009 official SEDS variables
+TX,2050,0.044482,288.613201,linear trend fit on 1990-2009 official SEDS variables

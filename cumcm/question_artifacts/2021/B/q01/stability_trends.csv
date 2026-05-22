@@ -1,0 +1,4 @@
+﻿target,start_value,end_value,slope_per_min,r2
+conversion,43.547389,29.906009,-0.05276089,0.932923
+c4_selectivity,39.9,39.04,0.00275353,0.046419
+c4_yield,17.375408,11.675306,-0.01988796,0.85748

@@ -1,0 +1,365 @@
+{
+  "problem_id": "2022-P01",
+  "question": "q03",
+  "question_title": "效果衡量协议与大小港口/卡车公司迁移",
+  "statement": "Suggest effectiveness protocols, demonstrate larger or smaller seaport use, and analyze whether a trucking company could use the maturity metric.",
+  "methods": "保留相同成熟度刻度，将港口规模复杂度、客户可见性需求和卡车调度/遥测/交付证明数据替换为迁移参数。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "official_requirements": {
+      "people_technology_process_metric": true,
+      "icm_large_seaport_context": true,
+      "recommend_system_changes": true,
+      "effectiveness_protocols": true,
+      "larger_smaller_port_scaling": true,
+      "trucking_company_transfer": true,
+      "customer_letter": true
+    },
+    "parameters": {
+      "components": [
+        "people",
+        "technology",
+        "process"
+      ],
+      "maturity_scale": {
+        "1": "ad hoc",
+        "2": "repeatable",
+        "3": "managed",
+        "4": "integrated",
+        "5": "optimized"
+      },
+      "port_data_domains": [
+        {
+          "domain": "vessel arrival and berth schedule",
+          "strategic_value": 0.86,
+          "governance_risk": 0.58
+        },
+        {
+          "domain": "container and cargo manifests",
+          "strategic_value": 0.92,
+          "governance_risk": 0.72
+        },
+        {
+          "domain": "yard equipment and gate transactions",
+          "strategic_value": 0.78,
+          "governance_risk": 0.54
+        },
+        {
+          "domain": "customs and compliance documents",
+          "strategic_value": 0.82,
+          "governance_risk": 0.88
+        },
+        {
+          "domain": "customer billing and service records",
+          "strategic_value": 0.74,
+          "governance_risk": 0.7
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; KPI scores are transparent deterministic assessment inputs for a company that cannot share internal records."
+    }
+  },
+  "industry_transfer": {
+    "port_scaling": [
+      {
+        "scenario": "small feeder port",
+        "volume_factor": 0.42,
+        "complexity_factor": 0.58,
+        "customer_visibility_need": 0.54,
+        "adapted_maturity_score": 2.495,
+        "adapted_band": "repeatable",
+        "minimum_required_protocol": "lighter catalog and quality workflow"
+      },
+      {
+        "scenario": "ICM current large seaport",
+        "volume_factor": 1.0,
+        "complexity_factor": 1.0,
+        "customer_visibility_need": 0.82,
+        "adapted_maturity_score": 2.502,
+        "adapted_band": "managed",
+        "minimum_required_protocol": "full catalog, lineage, quality workflow, and customer dashboard"
+      },
+      {
+        "scenario": "mega transshipment hub",
+        "volume_factor": 1.85,
+        "complexity_factor": 1.42,
+        "customer_visibility_need": 0.92,
+        "adapted_maturity_score": 2.418,
+        "adapted_band": "repeatable",
+        "minimum_required_protocol": "full catalog, lineage, quality workflow, and customer dashboard"
+      }
+    ],
+    "trucking_company_can_use_metric": true,
+    "trucking_adaptation": {
+      "industry": "regional trucking company",
+      "shared_dimensions": [
+        "people",
+        "technology",
+        "process"
+      ],
+      "domain_changes": [
+        "replace berth and yard events with dispatch, telematics, driver-hours, and delivery proof events",
+        "measure customer visibility through ETA reliability and claims resolution rather than berth-window reliability",
+        "keep the same maturity scale so port and trucking users can compare data readiness before sharing operational data"
+      ]
+    },
+    "benefit_to_icm": [
+      "customers can submit cleaner, better-documented operational data",
+      "shared maturity scores reduce onboarding risk for data-sharing projects",
+      "ICM can use customer scores to prioritize dashboard, API, and data-quality support"
+    ]
+  },
+  "optimization_plan": {
+    "top_priority_gaps": [
+      {
+        "component": "technology",
+        "kpi": "integrated cargo data platform",
+        "component_weight": 0.31,
+        "importance": 0.3,
+        "current_score": 2.1,
+        "target_score": 4.3,
+        "gap_to_target": 2.2,
+        "weighted_gap": 0.2046
+      },
+      {
+        "component": "people",
+        "kpi": "data stewardship ownership",
+        "component_weight": 0.34,
+        "importance": 0.26,
+        "current_score": 2.2,
+        "target_score": 4.4,
+        "gap_to_target": 2.2,
+        "weighted_gap": 0.1945
+      },
+      {
+        "component": "process",
+        "kpi": "data quality incident workflow",
+        "component_weight": 0.35,
+        "importance": 0.27,
+        "current_score": 2.4,
+        "target_score": 4.4,
+        "gap_to_target": 2.0,
+        "weighted_gap": 0.189
+      },
+      {
+        "component": "technology",
+        "kpi": "metadata and lineage coverage",
+        "component_weight": 0.31,
+        "importance": 0.24,
+        "current_score": 1.9,
+        "target_score": 4.2,
+        "gap_to_target": 2.3,
+        "weighted_gap": 0.1711
+      },
+      {
+        "component": "process",
+        "kpi": "supplier and customer data protocol",
+        "component_weight": 0.35,
+        "importance": 0.25,
+        "current_score": 2.1,
+        "target_score": 4.0,
+        "gap_to_target": 1.9,
+        "weighted_gap": 0.1662
+      },
+      {
+        "component": "people",
+        "kpi": "analytics role coverage",
+        "component_weight": 0.34,
+        "importance": 0.28,
+        "current_score": 2.6,
+        "target_score": 4.2,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1523
+      }
+    ],
+    "roadmap": [
+      {
+        "phase": "0-3 months",
+        "initiative": "name data owners for cargo, vessel, gate, customer, and compliance domains",
+        "primary_component": "people",
+        "maturity_gain": 0.22,
+        "projected_maturity_score": 2.574,
+        "projected_band": "managed"
+      },
+      {
+        "phase": "3-6 months",
+        "initiative": "publish a data catalog with lineage and quality checks for customer-visible datasets",
+        "primary_component": "technology",
+        "maturity_gain": 0.31,
+        "projected_maturity_score": 2.884,
+        "projected_band": "managed"
+      },
+      {
+        "phase": "6-12 months",
+        "initiative": "launch data quality incident workflow and customer confidence dashboard",
+        "primary_component": "process",
+        "maturity_gain": 0.35,
+        "projected_maturity_score": 3.234,
+        "projected_band": "managed"
+      },
+      {
+        "phase": "12-18 months",
+        "initiative": "add model monitoring for berth, gate, and dwell-time forecasts",
+        "primary_component": "technology",
+        "maturity_gain": 0.24,
+        "projected_maturity_score": 3.474,
+        "projected_band": "managed"
+      },
+      {
+        "phase": "18-24 months",
+        "initiative": "run quarterly value reviews with port users and update the maturity score",
+        "primary_component": "process",
+        "maturity_gain": 0.2,
+        "projected_maturity_score": 3.674,
+        "projected_band": "integrated"
+      }
+    ],
+    "recommended_protocols": [
+      "monthly data quality scorecards by domain",
+      "quarterly access-control and privacy review",
+      "customer-visible service reliability dashboard",
+      "model monitoring log for operational forecasts",
+      "annual maturity reassessment using the same people-technology-process rubric"
+    ]
+  },
+  "maturity_model": {
+    "scale": "1 ad hoc to 5 optimized",
+    "component_scores": {
+      "people": 2.508,
+      "technology": 2.121,
+      "process": 2.411
+    },
+    "target_component_scores": {
+      "people": 4.186,
+      "technology": 4.161,
+      "process": 4.26
+    },
+    "current_maturity_score": 2.354,
+    "target_maturity_score": 4.204,
+    "current_band": "repeatable",
+    "target_band": "integrated",
+    "kpi_rows": [
+      {
+        "component": "technology",
+        "kpi": "integrated cargo data platform",
+        "component_weight": 0.31,
+        "importance": 0.3,
+        "current_score": 2.1,
+        "target_score": 4.3,
+        "gap_to_target": 2.2,
+        "weighted_gap": 0.2046
+      },
+      {
+        "component": "people",
+        "kpi": "data stewardship ownership",
+        "component_weight": 0.34,
+        "importance": 0.26,
+        "current_score": 2.2,
+        "target_score": 4.4,
+        "gap_to_target": 2.2,
+        "weighted_gap": 0.1945
+      },
+      {
+        "component": "process",
+        "kpi": "data quality incident workflow",
+        "component_weight": 0.35,
+        "importance": 0.27,
+        "current_score": 2.4,
+        "target_score": 4.4,
+        "gap_to_target": 2.0,
+        "weighted_gap": 0.189
+      },
+      {
+        "component": "technology",
+        "kpi": "metadata and lineage coverage",
+        "component_weight": 0.31,
+        "importance": 0.24,
+        "current_score": 1.9,
+        "target_score": 4.2,
+        "gap_to_target": 2.3,
+        "weighted_gap": 0.1711
+      },
+      {
+        "component": "process",
+        "kpi": "supplier and customer data protocol",
+        "component_weight": 0.35,
+        "importance": 0.25,
+        "current_score": 2.1,
+        "target_score": 4.0,
+        "gap_to_target": 1.9,
+        "weighted_gap": 0.1662
+      },
+      {
+        "component": "people",
+        "kpi": "analytics role coverage",
+        "component_weight": 0.34,
+        "importance": 0.28,
+        "current_score": 2.6,
+        "target_score": 4.2,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1523
+      },
+      {
+        "component": "process",
+        "kpi": "analytics value review cycle",
+        "component_weight": 0.35,
+        "importance": 0.22,
+        "current_score": 2.2,
+        "target_score": 4.1,
+        "gap_to_target": 1.9,
+        "weighted_gap": 0.1463
+      },
+      {
+        "component": "process",
+        "kpi": "access and privacy controls",
+        "component_weight": 0.35,
+        "importance": 0.26,
+        "current_score": 2.9,
+        "target_score": 4.5,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1456
+      },
+      {
+        "component": "technology",
+        "kpi": "operational model monitoring",
+        "component_weight": 0.31,
+        "importance": 0.23,
+        "current_score": 2.0,
+        "target_score": 4.0,
+        "gap_to_target": 2.0,
+        "weighted_gap": 0.1426
+      },
+      {
+        "component": "people",
+        "kpi": "cross-functional decision forums",
+        "component_weight": 0.34,
+        "importance": 0.26,
+        "current_score": 2.8,
+        "target_score": 4.1,
+        "gap_to_target": 1.3,
+        "weighted_gap": 0.1149
+      },
+      {
+        "component": "technology",
+        "kpi": "secure customer-facing analytics",
+        "component_weight": 0.31,
+        "importance": 0.23,
+        "current_score": 2.5,
+        "target_score": 4.1,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1141
+      },
+      {
+        "component": "people",
+        "kpi": "training and literacy cadence",
+        "component_weight": 0.34,
+        "importance": 0.2,
+        "current_score": 2.4,
+        "target_score": 4.0,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1088
+      }
+    ]
+  }
+}

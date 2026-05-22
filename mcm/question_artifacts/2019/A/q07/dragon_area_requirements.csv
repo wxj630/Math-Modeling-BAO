@@ -1,0 +1,4 @@
+climate,thermoregulation_multiplier,prey_density_kg_km2_year,water_stress_multiplier,nesting_penalty,annual_prey_need_kg,three_dragon_area_km2,ecological_pressure_index,primary_ecological_requirement
+arctic,1.42,310.0,0.82,0.31,26059.09,84.062,1.0,"large prey base, remote nesting area, water access, and fire-safe habitat buffer"
+arid,1.16,520.0,1.35,0.18,21287.71,40.938,1.0,"large prey base, remote nesting area, water access, and fire-safe habitat buffer"
+warm_temperate,1.0,1250.0,1.0,0.04,18351.47,14.681,1.0,"large prey base, remote nesting area, water access, and fire-safe habitat buffer"

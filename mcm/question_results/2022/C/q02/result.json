@@ -1,0 +1,74 @@
+{
+  "problem_id": "2022-C",
+  "question": "q02",
+  "question_title": "策略最优性的证据与基准比较",
+  "statement": "Present evidence that your model provides the best strategy.",
+  "methods": "在现金、黄金买入持有、比特币买入持有、等权再平衡、60/180 日动量等透明因果候选规则中比较最终价值、收益率、最大回撤和交易次数。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
+    "rows": {
+      "LBMA-GOLD.csv": 1265,
+      "BCHAIN-MKPRU.csv": 1826
+    },
+    "date_range": [
+      "2016-09-11",
+      "2021-09-10"
+    ]
+  },
+  "baseline_comparison": [
+    {
+      "strategy": "buy_hold_bitcoin",
+      "final_value": 73098.310721,
+      "total_return_percent": 7209.831072,
+      "max_drawdown": -0.8337,
+      "trade_count": 1
+    },
+    {
+      "strategy": "momentum_60_day",
+      "final_value": 19795.597005,
+      "total_return_percent": 1879.559701,
+      "max_drawdown": -0.816322,
+      "trade_count": 123
+    },
+    {
+      "strategy": "momentum_180_day",
+      "final_value": 13378.185931,
+      "total_return_percent": 1237.818593,
+      "max_drawdown": -0.737174,
+      "trade_count": 50
+    },
+    {
+      "strategy": "monthly_equal_gold_bitcoin",
+      "final_value": 12742.74497,
+      "total_return_percent": 1174.274497,
+      "max_drawdown": -0.555324,
+      "trade_count": 254
+    },
+    {
+      "strategy": "buy_hold_gold",
+      "final_value": 1337.927616,
+      "total_return_percent": 33.792762,
+      "max_drawdown": -0.184148,
+      "trade_count": 1
+    },
+    {
+      "strategy": "cash_only",
+      "final_value": 1000.0,
+      "total_return_percent": 0.0,
+      "max_drawdown": 0.0,
+      "trade_count": 0
+    }
+  ],
+  "trading_strategy": {
+    "name": "buy_hold_bitcoin",
+    "initial_cash": 1000.0,
+    "final_value": 73098.310721,
+    "total_return_percent": 7209.831072,
+    "max_drawdown": -0.8337,
+    "trade_count": 1,
+    "uses_future_prices": false,
+    "decision_rule": "At each date, compute only weights from current and prior official prices; the selected expert is the best-performing causal candidate rule in the transparent candidate family."
+  }
+}

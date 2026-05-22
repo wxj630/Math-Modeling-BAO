@@ -1,0 +1,4 @@
+﻿period,start_date,end_date,total_vehicle_records,peak_hour_records,average_speed_index_kmh,peak_active_cruising_vehicles,cruising_peak_rate,speed_delta_kmh,peak_hour_delta_pct,cruising_peak_rate_delta,effect_score
+baseline,2024-04-24,2024-04-30,1808261,20377,35.9523,0,0.0,,,,
+control,2024-05-01,2024-05-05,1412072,23959,35.7961,10391,0.433699,,,,
+effect,,,,,,,,-0.1562,17.5786,0.433699,-9.1818

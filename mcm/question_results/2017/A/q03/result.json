@@ -1,0 +1,309 @@
+{
+  "problem_id": "2017-A",
+  "question": "q03",
+  "question_title": "多坝系统正常水文周期调度策略",
+  "statement": "Include a strategy for modulating the water flow through the new multiple dam system that provides a reasonable balance between safety and costs under known or predicted normal water cycles.",
+  "methods": "把 normal wet-season 和 normal dry-season 转成 flow_index 区间，制定上游蓄水、中游错峰、下游生态脉冲和低流量补给规则。对应模型：水库群调度、规则曲线、系统动力学、风险-成本权衡。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
+    "official_problem_parameters": {
+      "options": [
+        "Repairing the existing Kariba Dam",
+        "Rebuilding the existing Kariba Dam",
+        "Removing Kariba Dam and replacing it with 10 to 20 smaller dams"
+      ],
+      "small_dam_count_range": [
+        10,
+        20
+      ],
+      "same_or_greater_water_management_required": true,
+      "brief_assessment_required_pages": "1-2",
+      "main_solution_page_limit": 20
+    },
+    "assumptions": {
+      "cost_units": "All costs are normalized planning cost units because the official statement provides no engineering bill of quantities.",
+      "river_axis": "The Zambezi reach is represented by a normalized 0-100 river coordinate from upstream Lake Kariba control to downstream exposed communities.",
+      "dam_capacity": "Each small dam contributes storage, flood attenuation, low-flow release, and redundancy; values are deterministic scenario assumptions.",
+      "water_management_index": "Composite index = 0.35 storage + 0.30 flood attenuation + 0.20 low-flow support + 0.15 redundancy.",
+      "exposure_limits": "Maximum exposure durations are planning rules for protecting river segments under flood or low-flow extremes."
+    }
+  },
+  "flow_modulation_strategy": {
+    "recommended_dam_count": 15,
+    "rules": [
+      {
+        "condition": "normal wet-season inflow",
+        "trigger_flow_index": "60-85",
+        "release_rule": "store first 30% of surplus upstream, pass 50% through mid-river buffers, reserve 20% for downstream ecological pulse",
+        "safety_cost_tradeoff": "moderate storage with low emergency spill risk"
+      },
+      {
+        "condition": "normal dry-season inflow",
+        "trigger_flow_index": "35-60",
+        "release_rule": "coordinate weekly low-flow support from downstream and mid-river dams while preserving upstream reserve",
+        "safety_cost_tradeoff": "protect water users while limiting turbine and ecology stress"
+      },
+      {
+        "condition": "flood emergency",
+        "trigger_flow_index": ">85",
+        "release_rule": "pre-release upstream dams, stagger mid-river gates by 8-12 hours, cap downstream rise rate",
+        "safety_cost_tradeoff": "higher short-term spill cost to avoid synchronized flood peak"
+      },
+      {
+        "condition": "prolonged low-water emergency",
+        "trigger_flow_index": "<35 for 30 days",
+        "release_rule": "shift to drought rationing, suspend noncritical hydropower peaking, protect drinking water and ecological minimum flow",
+        "safety_cost_tradeoff": "economic generation loss accepted to preserve health and minimum river function"
+      }
+    ],
+    "coordination_principle": "Operate the dam chain as staggered buffers rather than independent reservoirs."
+  },
+  "small_dam_system": {
+    "kariba_reference_index": 100.0,
+    "frontier": [
+      {
+        "dam_count": 10,
+        "storage_index": 89.933606,
+        "flood_attenuation_index": 60.871668,
+        "low_flow_support_index": 75.841361,
+        "redundancy_index": 77.0,
+        "water_management_index": 76.456535,
+        "normalized_cost": 94.0,
+        "safety_cost_balance": 36.976535,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 11,
+        "storage_index": 97.172639,
+        "flood_attenuation_index": 66.573741,
+        "low_flow_support_index": 81.266324,
+        "redundancy_index": 81.2,
+        "water_management_index": 82.415811,
+        "normalized_cost": 104.02,
+        "safety_cost_balance": 38.727411,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 12,
+        "storage_index": 104.303786,
+        "flood_attenuation_index": 72.249991,
+        "low_flow_support_index": 86.558506,
+        "redundancy_index": 85.4,
+        "water_management_index": 88.303024,
+        "normalized_cost": 114.48,
+        "safety_cost_balance": 40.221424,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 13,
+        "storage_index": 111.344342,
+        "flood_attenuation_index": 77.903027,
+        "low_flow_support_index": 91.73919,
+        "redundancy_index": 89.6,
+        "water_management_index": 94.129266,
+        "normalized_cost": 125.38,
+        "safety_cost_balance": 41.469666,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 14,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 83.535013,
+        "low_flow_support_index": 96.824917,
+        "redundancy_index": 93.8,
+        "water_management_index": 99.795487,
+        "normalized_cost": 136.72,
+        "safety_cost_balance": 42.373087,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 15,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 89.147773,
+        "low_flow_support_index": 101.828803,
+        "redundancy_index": 98.0,
+        "water_management_index": 103.110093,
+        "normalized_cost": 148.5,
+        "safety_cost_balance": 40.740093,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 16,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 94.742861,
+        "low_flow_support_index": 106.76142,
+        "redundancy_index": 102.2,
+        "water_management_index": 106.405142,
+        "normalized_cost": 160.72,
+        "safety_cost_balance": 38.902742,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 17,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 100.321617,
+        "low_flow_support_index": 111.631414,
+        "redundancy_index": 106.4,
+        "water_management_index": 107.882768,
+        "normalized_cost": 173.38,
+        "safety_cost_balance": 35.063168,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 18,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 105.885208,
+        "low_flow_support_index": 112.0,
+        "redundancy_index": 110.6,
+        "water_management_index": 108.455562,
+        "normalized_cost": 186.48,
+        "safety_cost_balance": 30.133962,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 19,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 111.434655,
+        "low_flow_support_index": 112.0,
+        "redundancy_index": 114.8,
+        "water_management_index": 108.950396,
+        "normalized_cost": 200.02,
+        "safety_cost_balance": 24.941996,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 20,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 116.970863,
+        "low_flow_support_index": 112.0,
+        "redundancy_index": 119.0,
+        "water_management_index": 109.441259,
+        "normalized_cost": 214.0,
+        "safety_cost_balance": 19.561259,
+        "meets_kariba_reference": true
+      }
+    ],
+    "recommended_dam_count": 15,
+    "recommended_system": {
+      "dam_count": 15,
+      "storage_index": 118.0,
+      "flood_attenuation_index": 89.147773,
+      "low_flow_support_index": 101.828803,
+      "redundancy_index": 98.0,
+      "water_management_index": 103.110093,
+      "normalized_cost": 148.5,
+      "safety_cost_balance": 40.740093,
+      "meets_kariba_reference": true
+    },
+    "placements": [
+      {
+        "dam_id": "D01",
+        "river_coordinate_0_100": 6.0,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D02",
+        "river_coordinate_0_100": 12.29,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D03",
+        "river_coordinate_0_100": 18.57,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D04",
+        "river_coordinate_0_100": 24.86,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D05",
+        "river_coordinate_0_100": 31.14,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D06",
+        "river_coordinate_0_100": 37.43,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D07",
+        "river_coordinate_0_100": 43.71,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D08",
+        "river_coordinate_0_100": 50.0,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D09",
+        "river_coordinate_0_100": 56.29,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D10",
+        "river_coordinate_0_100": 62.57,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D11",
+        "river_coordinate_0_100": 68.86,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D12",
+        "river_coordinate_0_100": 75.14,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D13",
+        "river_coordinate_0_100": 81.43,
+        "segment": "delta_ecology_protection",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "limit extreme exposure in sensitive downstream reaches"
+      },
+      {
+        "dam_id": "D14",
+        "river_coordinate_0_100": 87.71,
+        "segment": "delta_ecology_protection",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "limit extreme exposure in sensitive downstream reaches"
+      },
+      {
+        "dam_id": "D15",
+        "river_coordinate_0_100": 94.0,
+        "segment": "delta_ecology_protection",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "limit extreme exposure in sensitive downstream reaches"
+      }
+    ],
+    "recommendation": "Use a distributed 15-dam system: enough redundancy to match Kariba-level management while avoiding the coordination penalty of 18-20 dams."
+  }
+}

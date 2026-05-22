@@ -1,0 +1,8 @@
+﻿level,label,recruit_time_months,recruit_cost_sigma,positions,salary_sigma,training_cost_sigma,baseline_attrition_rate,network_weight,filled_positions,vacant_positions,annual_attrition_people,annual_recruit_training_sigma,two_year_vacancy_recovery_hires,two_year_total_hires,two_year_budget_sigma,knowledge_risk_score
+senior_manager_executive,Senior managers / executives,7,1.2,10,8.0,0.5,0.12,1.0,8.5,1.5,1.02,1.734,1.5,3.54,6.018,0.96
+junior_manager_administrator,Junior managers / administrators,6,0.7,20,4.0,0.6,0.3,0.88,17.0,3.0,5.1,6.629999999999999,3.0,13.2,17.159999999999997,1.056
+experienced_supervisor_branch,Experienced supervisors (branch),5,0.6,25,2.0,0.2,0.3,0.82,21.25,3.75,6.375,5.1000000000000005,3.75,16.5,13.200000000000001,0.49199999999999994
+inexperienced_supervisor_division,Inexperienced supervisors (division),4,0.6,25,1.5,0.3,0.28,0.72,21.25,3.75,5.95,5.3549999999999995,3.75,15.65,14.084999999999999,0.3024
+experienced_staff,Experienced staff,3,0.3,110,1.0,0.1,0.16,0.48,93.5,16.5,14.96,5.984000000000001,16.5,46.42,18.568,0.0768
+inexperienced_staff,Inexperienced staff,1,0.1,150,0.9,0.3,0.18,0.35,127.5,22.5,22.95,9.18,22.5,68.4,27.360000000000003,0.0567
+administrative_clerk,Administrative clerks,2,0.3,30,0.9,0.05,0.15,0.25,25.5,4.5,3.8249999999999997,1.3387499999999999,4.5,12.149999999999999,4.2524999999999995,0.03375

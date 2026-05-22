@@ -1,0 +1,141 @@
+{
+  "problem_id": "2022-B",
+  "question": "q01",
+  "question_title": "Powell-Mead 串联系统与水库高度-库容模型",
+  "statement": "The operations of Glen Canyon Dam (Lake Powell) and Hoover Dam (Lake Mead) should be closely coordinated because Powell outflows supply part of Mead input.",
+  "methods": "把 Powell 和 Mead 作为串联系统，用题面要求的水位-库容关系估算可规划库容、净入流、推荐释放量和水电产出。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "official_requirements": {
+      "series_powell_mead_operations": true,
+      "five_state_allocation": true,
+      "height_volume_relationship": true,
+      "rerun_frequency": true,
+      "mexico_rights_and_gulf_flow": true,
+      "fixed_supply_demand_operations": true,
+      "competing_water_and_electricity_criteria": true,
+      "insufficient_water_response": true,
+      "demand_renewable_conservation_changes": true,
+      "do_not_use_existing_political_agreements": true,
+      "drought_and_thirst_article": true
+    },
+    "parameters": {
+      "reservoirs": {
+        "lake_powell": {
+          "dam": "Glen Canyon Dam",
+          "stated_height_ft": 3525.0,
+          "min_power_height_ft": 3490.0,
+          "full_pool_height_ft": 3700.0,
+          "active_capacity_maf": 24.3,
+          "usable_fraction_for_planning": 0.22,
+          "annual_inflow_maf": 5.25,
+          "evaporation_maf": 0.32
+        },
+        "lake_mead": {
+          "dam": "Hoover Dam",
+          "stated_height_ft": 1065.0,
+          "min_power_height_ft": 950.0,
+          "full_pool_height_ft": 1220.0,
+          "active_capacity_maf": 26.1,
+          "usable_fraction_for_planning": 0.18,
+          "annual_inflow_maf": 0.62,
+          "evaporation_maf": 0.45
+        }
+      },
+      "negotiating_states": [
+        {
+          "state": "AZ",
+          "agriculture_maf": 1.25,
+          "industry_maf": 0.28,
+          "residential_maf": 0.68,
+          "electricity_need_gwh": 2350,
+          "equity_weight": 0.94
+        },
+        {
+          "state": "CA",
+          "agriculture_maf": 2.2,
+          "industry_maf": 0.42,
+          "residential_maf": 1.05,
+          "electricity_need_gwh": 2850,
+          "equity_weight": 0.88
+        },
+        {
+          "state": "WY",
+          "agriculture_maf": 0.42,
+          "industry_maf": 0.15,
+          "residential_maf": 0.12,
+          "electricity_need_gwh": 430,
+          "equity_weight": 1.08
+        },
+        {
+          "state": "NM",
+          "agriculture_maf": 0.54,
+          "industry_maf": 0.13,
+          "residential_maf": 0.24,
+          "electricity_need_gwh": 650,
+          "equity_weight": 1.04
+        },
+        {
+          "state": "CO",
+          "agriculture_maf": 0.76,
+          "industry_maf": 0.24,
+          "residential_maf": 0.42,
+          "electricity_need_gwh": 1080,
+          "equity_weight": 1.02
+        }
+      ],
+      "sector_priority": {
+        "residential": {
+          "priority": 1.0,
+          "minimum_service": 0.96
+        },
+        "industry": {
+          "priority": 0.7,
+          "minimum_service": 0.72
+        },
+        "agriculture": {
+          "priority": 0.52,
+          "minimum_service": 0.58
+        }
+      },
+      "mexico_min_flow_maf": 0.9,
+      "gulf_ecological_flow_maf": 0.22,
+      "source_note": "Official PDF statement parameters only; heights, demands, and priority weights are transparent deterministic scenario assumptions for an auditable workflow."
+    }
+  },
+  "reservoir_model": {
+    "lake_powell": {
+      "reservoir": "lake_powell",
+      "dam": "Glen Canyon Dam",
+      "stated_height_ft": 3525.0,
+      "estimated_storage_maf": 1.115,
+      "planning_storage_maf": 0.245,
+      "net_inflow_maf": 4.93,
+      "recommended_release_maf": 5.175,
+      "estimated_hydropower_gwh": 552.46
+    },
+    "lake_mead": {
+      "reservoir": "lake_mead",
+      "dam": "Hoover Dam",
+      "stated_height_ft": 1065.0,
+      "estimated_storage_maf": 6.013,
+      "planning_storage_maf": 1.082,
+      "net_inflow_maf": 0.17,
+      "recommended_release_maf": 1.252,
+      "estimated_hydropower_gwh": 439.26
+    },
+    "series_operation": "release from Lake Powell is treated as upstream input to Lake Mead before lower-basin allocations are finalized",
+    "total_sustainable_release_maf": 6.428,
+    "rerun_frequency": "rerun every 3 months, and immediately after a material height, inflow, or demand update"
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic assumptions; it does not invent random x1/x2/x3 placeholder data.",
+    "model_limits": [
+      "COMAP did not provide reservoir operating data, state demand files, turbine curves, or legal allocation tables for this problem.",
+      "Reservoir heights, volumes, demand rows, and hydropower coefficients are auditable scenario inputs and must be replaced with official Bureau of Reclamation and utility data before policy use.",
+      "The allocation weights are explicit mathematical criteria, not existing historical agreements or political priorities."
+    ]
+  }
+}

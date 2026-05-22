@@ -1,0 +1,163 @@
+{
+  "problem_id": "2017-C",
+  "question": "q01",
+  "question_title": "官方路网画像与交通流模型",
+  "statement": "Build a model of traffic-flow effects using the number of lanes, peak and/or average traffic volume, and the percentage of self-driving cooperating vehicles on I-5, I-90, I-405, and SR-520.",
+  "methods": "读取官方 2017_MCM_Problem_C_Data.xlsx 的 parsed mile posts 和 definitions 工作表，按 route/milepost/ADT/lanes 构造路段容量、峰小时流量、V/C ratio 和 BPR 速度函数。对应模型：交通流基本图、容量约束、BPR 延误函数、路网分段画像。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "rows": {
+      "parsed mile posts": 224,
+      "definitions": 8
+    },
+    "route_ids": [
+      5,
+      90,
+      405,
+      520
+    ]
+  },
+  "network_profile": {
+    "segment_count": 224,
+    "total_directional_miles": 183.97,
+    "route_summary": [
+      {
+        "route_id": 5,
+        "route_label": "I-5",
+        "segments": 135,
+        "miles": 117.4,
+        "weighted_adt_2015": 150329.727,
+        "max_adt_2015": 242000,
+        "median_lanes_per_direction": 3.0,
+        "baseline_congested_segments": 41
+      },
+      {
+        "route_id": 90,
+        "route_label": "I-90",
+        "segments": 27,
+        "miles": 23.42,
+        "weighted_adt_2015": 101108.027,
+        "max_adt_2015": 162000,
+        "median_lanes_per_direction": 3.0,
+        "baseline_congested_segments": 2
+      },
+      {
+        "route_id": 405,
+        "route_label": "I-405",
+        "segments": 47,
+        "miles": 30.32,
+        "weighted_adt_2015": 144818.602,
+        "max_adt_2015": 195000,
+        "median_lanes_per_direction": 3.0,
+        "baseline_congested_segments": 30
+      },
+      {
+        "route_id": 520,
+        "route_label": "SR-520",
+        "segments": 15,
+        "miles": 12.83,
+        "weighted_adt_2015": 75384.256,
+        "max_adt_2015": 109000,
+        "median_lanes_per_direction": 2.0,
+        "baseline_congested_segments": 1
+      }
+    ],
+    "most_congested_segments": [
+      {
+        "route_id": 5,
+        "start_milepost": 163.48,
+        "end_milepost": 164.22,
+        "adt_2015": 242000,
+        "avg_lanes_per_direction": 2.5,
+        "baseline_vc_ratio": 1.936
+      },
+      {
+        "route_id": 5,
+        "start_milepost": 163.36,
+        "end_milepost": 163.48,
+        "adt_2015": 238000,
+        "avg_lanes_per_direction": 2.5,
+        "baseline_vc_ratio": 1.904
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 10.56,
+        "end_milepost": 10.93,
+        "adt_2015": 177000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.77
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 3.3,
+        "end_milepost": 3.69,
+        "adt_2015": 172000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.72
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 9.59,
+        "end_milepost": 9.96,
+        "adt_2015": 161000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.61
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 6.72,
+        "end_milepost": 7.2,
+        "adt_2015": 154000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.54
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 4.79,
+        "end_milepost": 5.19,
+        "adt_2015": 153000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.53
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 7.69,
+        "end_milepost": 8.98,
+        "adt_2015": 152000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.52
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 8.98,
+        "end_milepost": 9.59,
+        "adt_2015": 151000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.51
+      },
+      {
+        "route_id": 405,
+        "start_milepost": 5.89,
+        "end_milepost": 6.34,
+        "adt_2015": 148000,
+        "avg_lanes_per_direction": 2.0,
+        "baseline_vc_ratio": 1.48
+      }
+    ]
+  },
+  "official_problem_parameters": {
+    "peak_hour_daily_share": 0.08,
+    "speed_limit_mph": 60,
+    "adoption_shares_required": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "human_capacity_per_lane_vph_assumption": 2000,
+    "av_lane_capacity_per_lane_vph_assumption": 3600,
+    "assumption_note": "Capacity and peak-hour conversion are explicit traffic-flow assumptions applied to the official COMAP segment workbook, not observed fields in the workbook."
+  }
+}

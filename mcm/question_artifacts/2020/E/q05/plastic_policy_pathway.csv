@@ -1,0 +1,12 @@
+year,remaining_single_use_waste_million_tons,recycled_or_reused_share,estimated_ocean_input_million_tons,dominant_phase
+2020,138.32,0.09,8.0,ban worst items
+2023,98.832,0.144,5.716,ban worst items
+2026,70.617,0.198,4.084,ban worst items
+2029,50.457,0.252,2.918,scale reuse and deposits
+2032,36.052,0.306,2.085,scale reuse and deposits
+2035,25.76,0.36,1.49,scale reuse and deposits
+2038,18.406,0.414,1.065,scale reuse and deposits
+2041,13.151,0.468,0.761,hard-to-replace residuals
+2044,9.397,0.522,0.543,hard-to-replace residuals
+2047,6.714,0.576,0.388,hard-to-replace residuals
+2050,4.797,0.63,0.277,hard-to-replace residuals

@@ -1,0 +1,4 @@
+domain,sensitivity,public_good_value,commercial_value,harm_multiplier,privacy_protection_price_index,pricing_logic
+social_media,0.54,0.28,0.48,0.52,42.36,risk and harm raise price; public-good data use lowers private exclusion price
+financial_transactions,0.82,0.22,0.68,0.86,67.4,risk and harm raise price; public-good data use lowers private exclusion price
+health_records,0.92,0.74,0.58,0.94,65.08,risk and harm raise price; public-good data use lowers private exclusion price

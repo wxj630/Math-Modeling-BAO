@@ -1,0 +1,88 @@
+{
+  "problem_id": "2011-D",
+  "title": "2011年 CUMCM D题：天然肠衣搭配",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "为提高原料使用率，总长度允许有± 0.5米的误差，总根数允许比标准少1根；",
+  "tasks": [
+    "为提高原料使用率，总长度允许有± 0.5米的误差，总根数允许比标准少1根"
+  ],
+  "selected_model": {
+    "key": "probability",
+    "name": "概率统计与抽样检验",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "误差"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 1,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/D.md",
+    "rows": 22,
+    "columns": 9,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "概率统计与抽样检验",
+    "task_breakdown": [
+      "为提高原料使用率，总长度允许有± 0.5米的误差，总根数允许比标准少1根"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "n: 抽样量",
+      "c: 接收阈值",
+      "p0: 标称缺陷率/基准概率",
+      "p1: 风险备择概率"
+    ],
+    "constraints": [
+      "P_reject(p0)<=alpha",
+      "P_accept(p1)<=beta",
+      "n 为正整数，c 为非负整数"
+    ],
+    "objective_or_equations": [
+      "P_reject(p0)=1-F_Binomial(c;n,p0)",
+      "P_accept(p1)=F_Binomial(c;n,p1)",
+      "min n subject to producer/consumer risk"
+    ],
+    "solution_steps": [
+      "从题面提取标称比例。",
+      "设置生产方和使用方风险。",
+      "枚举 n 与 c 检查二项分布尾概率。",
+      "输出最小可行抽样方案。"
+    ],
+    "model_reference": {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "binomial_sampling_design",
+    "p0": 0.005,
+    "p1": 0.0375,
+    "alpha": 0.05,
+    "beta": 0.1,
+    "sample_size": 699,
+    "acceptance_number": 3,
+    "reject_good_probability": null,
+    "accept_bad_probability": null
+  },
+  "artifact_paths": [
+    "question_artifacts/2011/D/q03/experiment_table.csv"
+  ]
+}

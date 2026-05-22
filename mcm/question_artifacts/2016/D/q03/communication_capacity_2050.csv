@@ -1,0 +1,2 @@
+﻿prediction_year,baseline_era,projected_channel_capacity_index,capacity_multiplier_vs_2010s,method
+2050,2010s_smartphone,2483.157,4.775,"log-linear extrapolation of assumed era capacity, capped for conservative reporting"

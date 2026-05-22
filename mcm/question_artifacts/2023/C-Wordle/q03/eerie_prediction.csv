@@ -1,0 +1,8 @@
+﻿bucket,predicted_percent,interval80_low,interval80_high,holdout_mae_percent_points
+1 try,0.245,0.0,0.59,0.578
+2 tries,7.01,2.614,12.716,2.617
+3 tries,22.062,15.059,28.971,6.811
+4 tries,30.668,24.759,37.614,4.12
+5 tries,22.491,18.154,27.633,4.758
+6 tries,11.839,7.173,17.043,4.958
+7 or more tries (X),5.685,0.997,14.713,2.131

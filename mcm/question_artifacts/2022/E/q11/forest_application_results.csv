@@ -1,0 +1,5 @@
+forest,region_type,best_carbon_plan,best_social_plan,recommended_plan,carbon_100_years_co2_per_ha,decision_score,include_harvest
+temperate mixed hardwood community forest,temperate,no_harvest,selective_60_year,selective_60_year,1066.4192,0.786,True
+managed pine production forest,subtropical plantation,extended_50_year,extended_50_year,extended_50_year,925.2247,0.7745,True
+old-growth coastal conifer reserve,cool wet conifer,no_harvest,no_harvest,no_harvest,1453.4899,0.7698,False
+dry interior fire-adapted pine forest,dry interior,no_harvest,selective_60_year,selective_60_year,746.6779,0.7287,True

@@ -1,0 +1,6 @@
+﻿component,raw_value,normalized_score,audit_note
+statement_specificity,176,0.419048,Longer problem statements usually expose more constraints for a first-pass model.
+numeric_anchor_count,0,0.0,Counts numeric anchors visible in the question statement and method hint.
+model_keyword_match,4,0.8,Measures how clearly the question maps to a classical modeling family.
+source_strength,official_comap_xlsx,1.0,Rewards official attachments and explicit official statement parameters.
+artifact_readiness,question_artifacts/2017/D/q04/checkpoint_wait_times.png,0.68,Rewards table-like artifacts that a baseline can inspect directly.

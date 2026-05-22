@@ -1,0 +1,218 @@
+{
+  "problem_id": "2024-C",
+  "question": "q03",
+  "question_title": "比赛流程换向预测与关键因素",
+  "statement": "Develop a model to predict when flow is about to shift from one player to the other and identify relevant factors.",
+  "methods": "以未来 8 分内强势头换向为标签，使用逻辑回归解释 `abs_momentum`、破发点、发球、速度、回合数和非受迫失误等因素。",
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis",
+    "rows": {
+      "2024_Wimbledon_featured_matches.csv": 7284,
+      "2024_data_dictionary.csv": 46
+    },
+    "match_count": 31,
+    "columns": [
+      "match_id",
+      "player1",
+      "player2",
+      "elapsed_time",
+      "set_no",
+      "game_no",
+      "point_no",
+      "p1_sets",
+      "p2_sets",
+      "p1_games",
+      "p2_games",
+      "p1_score",
+      "p2_score",
+      "server",
+      "serve_no",
+      "point_victor",
+      "p1_points_won",
+      "p2_points_won",
+      "game_victor",
+      "set_victor",
+      "p1_ace",
+      "p2_ace",
+      "p1_winner",
+      "p2_winner",
+      "winner_shot_type",
+      "p1_double_fault",
+      "p2_double_fault",
+      "p1_unf_err",
+      "p2_unf_err",
+      "p1_net_pt",
+      "p2_net_pt",
+      "p1_net_pt_won",
+      "p2_net_pt_won",
+      "p1_break_pt",
+      "p2_break_pt",
+      "p1_break_pt_won",
+      "p2_break_pt_won",
+      "p1_break_pt_missed",
+      "p2_break_pt_missed",
+      "p1_distance_run",
+      "p2_distance_run",
+      "rally_count",
+      "speed_mph",
+      "serve_width",
+      "serve_depth",
+      "return_depth"
+    ]
+  },
+  "swing_prediction": {
+    "target": "future momentum sign change with |momentum| >= 0.08 in the next 8 points",
+    "features": [
+      "momentum_p1",
+      "abs_momentum",
+      "momentum_delta",
+      "server_is_p1",
+      "serve_no",
+      "p1_break_pt",
+      "p2_break_pt",
+      "rally_count",
+      "speed_mph",
+      "distance_diff",
+      "p1_unf_err",
+      "p2_unf_err",
+      "p1_winner",
+      "p2_winner",
+      "score_pressure"
+    ],
+    "train_rows": 6950,
+    "holdout_match_id": "2023-wimbledon-1701",
+    "holdout_rows": 334,
+    "train_metrics": {
+      "accuracy": 0.607626,
+      "brier": 0.230195,
+      "positive_rate": 0.446043,
+      "roc_auc": 0.661331,
+      "average_precision": 0.581535
+    },
+    "holdout_final_match_metrics": {
+      "accuracy": 0.607784,
+      "brier": 0.230125,
+      "positive_rate": 0.479042,
+      "roc_auc": 0.652191,
+      "average_precision": 0.601059
+    },
+    "top_coefficients_abs": [
+      {
+        "feature": "abs_momentum",
+        "coefficient": -0.606494
+      },
+      {
+        "feature": "momentum_p1",
+        "coefficient": -0.101008
+      },
+      {
+        "feature": "p2_unf_err",
+        "coefficient": -0.053191
+      },
+      {
+        "feature": "serve_no",
+        "coefficient": 0.052086
+      },
+      {
+        "feature": "server_is_p1",
+        "coefficient": 0.050661
+      },
+      {
+        "feature": "speed_mph",
+        "coefficient": 0.042079
+      },
+      {
+        "feature": "rally_count",
+        "coefficient": 0.032498
+      },
+      {
+        "feature": "momentum_delta",
+        "coefficient": 0.031298
+      },
+      {
+        "feature": "p2_break_pt",
+        "coefficient": 0.02746
+      },
+      {
+        "feature": "distance_diff",
+        "coefficient": 0.020708
+      }
+    ],
+    "highest_alert_points_final": [
+      {
+        "point_index": 74,
+        "set_no": 2,
+        "game_no": 4,
+        "probability": 0.720524,
+        "momentum_p1": -0.021249
+      },
+      {
+        "point_index": 165,
+        "set_no": 3,
+        "game_no": 4,
+        "probability": 0.704953,
+        "momentum_p1": -0.03638
+      },
+      {
+        "point_index": 290,
+        "set_no": 5,
+        "game_no": 2,
+        "probability": 0.704461,
+        "momentum_p1": -0.003825
+      },
+      {
+        "point_index": 93,
+        "set_no": 2,
+        "game_no": 7,
+        "probability": 0.700914,
+        "momentum_p1": -0.009678
+      },
+      {
+        "point_index": 310,
+        "set_no": 5,
+        "game_no": 6,
+        "probability": 0.697397,
+        "momentum_p1": -0.001492
+      },
+      {
+        "point_index": 136,
+        "set_no": 2,
+        "game_no": 13,
+        "probability": 0.695693,
+        "momentum_p1": -0.008776
+      },
+      {
+        "point_index": 243,
+        "set_no": 4,
+        "game_no": 4,
+        "probability": 0.69418,
+        "momentum_p1": 0.003416
+      },
+      {
+        "point_index": 37,
+        "set_no": 1,
+        "game_no": 6,
+        "probability": 0.689699,
+        "momentum_p1": -0.005173
+      }
+    ]
+  },
+  "model_features": [
+    "momentum_p1",
+    "abs_momentum",
+    "momentum_delta",
+    "server_is_p1",
+    "serve_no",
+    "p1_break_pt",
+    "p2_break_pt",
+    "rally_count",
+    "speed_mph",
+    "distance_diff",
+    "p1_unf_err",
+    "p2_unf_err",
+    "p1_winner",
+    "p2_winner",
+    "score_pressure"
+  ]
+}

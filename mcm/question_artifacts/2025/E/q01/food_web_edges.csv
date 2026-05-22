@@ -1,0 +1,13 @@
+source,target,interaction,weight
+crop,pests,food,0.72
+wild_plants,beneficial_insects,habitat/nectar,0.58
+wild_plants,bats,edge habitat support,0.3
+wild_plants,birds,nesting habitat,0.42
+beneficial_insects,crop,pollination,0.34
+bats,pests,predation,-0.62
+birds,pests,predation,-0.38
+predators,pests,predation,-0.32
+pesticide,beneficial_insects,mortality,-0.55
+herbicide,wild_plants,mortality,-0.6
+organic_input,soil_health,nutrient recovery,0.45
+soil_health,crop,growth support,0.4

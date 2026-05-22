@@ -1,0 +1,328 @@
+{
+  "problem_id": "2016-D",
+  "question": "q02",
+  "question_title": "历史事件到今日传播的结构验证",
+  "statement": "Validate your model's reliability by using data from the past and the prediction capability of your model to predict the information communication situation for today and compare that with today's reality.",
+  "methods": "对官方题面点名的 Taylor Swift 传闻、今日重要人物遇刺、Lincoln 遇刺做确定性扩散曲线比较；验证模型是否重现从电报/报纸/火车时代到智能手机时代的 24 小时 awareness 数量级跃迁。对应模型：指数扩散、历史结构验证、情景对比。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "official_problem_parameters": {
+      "periods": [
+        "1870s_telegraph_train_newspaper",
+        "1920s_radio",
+        "1970s_television",
+        "1990s_early_internet",
+        "2010s_smartphone"
+      ],
+      "period_descriptions": {
+        "1870s_telegraph_train_newspaper": "newspapers delivered by trains and stories passed by telegraph",
+        "1920s_radio": "radios became a more common household item",
+        "1970s_television": "televisions were in most homes",
+        "1990s_early_internet": "households began connecting to the early internet",
+        "2010s_smartphone": "we can carry a connection to the world on our phones"
+      },
+      "prediction_year": 2050,
+      "example_events_named_in_statement": [
+        "Taylor Swift engagement rumor if it had happened in 1860",
+        "important person assassinated today",
+        "US President Abraham Lincoln assassination"
+      ],
+      "required_factors": [
+        "information value",
+        "initial opinion and bias",
+        "message form or source",
+        "network topology or strength"
+      ]
+    },
+    "assumptions": {
+      "era_coefficients": "media_access, transmission_speed, network_connectivity, gatekeeping_filter, and channel_capacity are transparent normalized assumptions anchored to the five eras named in the official PDF.",
+      "awareness_model": "awareness(t) = reachable_population * (1 - exp(-diffusion_rate * t)); diffusion_rate increases with speed, connectivity, information value, and source credibility.",
+      "news_filter_rule": "news_score = 0.34 value + 0.24 source credibility + 0.18 affected population + 0.14 novelty + 0.10 shareability; items above threshold qualify as news.",
+      "opinion_model": "A one-step DeGroot-style influence score estimates opinion shift from value, source credibility, bias alignment, message format, and network strength.",
+      "capacity_projection": "2050 capacity extrapolates log channel capacity against era year and caps the multiplier to avoid claiming an unbounded physical law."
+    }
+  },
+  "diffusion_comparison": {
+    "method": "deterministic exponential diffusion over each official era's assumed reach and speed",
+    "rows": [
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 1,
+        "awareness_share": 0.032325,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 3,
+        "awareness_share": 0.087722,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 6,
+        "awareness_share": 0.151954,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 12,
+        "awareness_share": 0.233426,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 24,
+        "awareness_share": 0.300528,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 48,
+        "awareness_share": 0.325363,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 72,
+        "awareness_share": 0.327415,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "taylor_swift_engagement_rumor_if_1860",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 168,
+        "awareness_share": 0.3276,
+        "information_value": 0.34,
+        "source_credibility": 0.42
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 1,
+        "awareness_share": 0.049491,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 3,
+        "awareness_share": 0.127172,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 6,
+        "awareness_share": 0.204977,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 12,
+        "awareness_share": 0.281701,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 24,
+        "awareness_share": 0.321169,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 48,
+        "awareness_share": 0.327474,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 72,
+        "awareness_share": 0.327598,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "lincoln_assassination_historical_proxy",
+        "era": "1870s_telegraph_train_newspaper",
+        "hours": 168,
+        "awareness_share": 0.3276,
+        "information_value": 1.0,
+        "source_credibility": 0.92
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 1,
+        "awareness_share": 0.550019,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 3,
+        "awareness_share": 0.8366,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 6,
+        "awareness_share": 0.881816,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 12,
+        "awareness_share": 0.884392,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 24,
+        "awareness_share": 0.8844,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 48,
+        "awareness_share": 0.8844,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 72,
+        "awareness_share": 0.8844,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "important_person_assassinated_today",
+        "era": "2010s_smartphone",
+        "hours": 168,
+        "awareness_share": 0.8844,
+        "information_value": 1.0,
+        "source_credibility": 0.95
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 1,
+        "awareness_share": 0.40727,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 3,
+        "awareness_share": 0.745529,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 6,
+        "awareness_share": 0.862594,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 12,
+        "awareness_share": 0.883862,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 24,
+        "awareness_share": 0.8844,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 48,
+        "awareness_share": 0.8844,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 72,
+        "awareness_share": 0.8844,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      },
+      {
+        "scenario": "celebrity_rumor_today",
+        "era": "2010s_smartphone",
+        "hours": 168,
+        "awareness_share": 0.8844,
+        "information_value": 0.34,
+        "source_credibility": 0.44
+      }
+    ],
+    "taylor_1860_awareness_24h": 0.300528,
+    "lincoln_awareness_24h": 0.321169,
+    "important_assassination_today_awareness_24h": 0.8844
+  },
+  "validation": {
+    "historical_proxy": "Compare a high-value assassination event under the newspaper/telegraph/train era to a high-value event under the smartphone era.",
+    "lincoln_awareness_24h": 0.321169,
+    "predicted_today_awareness_24h": 0.8844,
+    "today_to_lincoln_ratio_24h": 2.75369,
+    "reliability_note": "The validation is structural rather than archival: it checks that the model reproduces the expected order-of-magnitude shift from delayed broadcast to near-immediate connected reach."
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and explicit deterministic assumptions; it does not claim that the normalized era coefficients are observed data.",
+    "replaceable_assumptions": {
+      "era_coefficients": "media_access, transmission_speed, network_connectivity, gatekeeping_filter, and channel_capacity are transparent normalized assumptions anchored to the five eras named in the official PDF.",
+      "awareness_model": "awareness(t) = reachable_population * (1 - exp(-diffusion_rate * t)); diffusion_rate increases with speed, connectivity, information value, and source credibility.",
+      "news_filter_rule": "news_score = 0.34 value + 0.24 source credibility + 0.18 affected population + 0.14 novelty + 0.10 shareability; items above threshold qualify as news.",
+      "opinion_model": "A one-step DeGroot-style influence score estimates opinion shift from value, source credibility, bias alignment, message format, and network strength.",
+      "capacity_projection": "2050 capacity extrapolates log channel capacity against era year and caps the multiplier to avoid claiming an unbounded physical law."
+    }
+  }
+}

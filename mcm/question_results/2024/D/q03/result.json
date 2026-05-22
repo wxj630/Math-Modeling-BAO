@@ -1,0 +1,172 @@
+{
+  "problem_id": "2024-D",
+  "question": "q03",
+  "question_title": "2017 年控制效果与两坝出流敏感性",
+  "statement": "Understand sensitivity of the control algorithms for the outflow of the two control dams. Given 2017 data, would the controls improve recorded water levels?",
+  "methods": "用官方月度流量和下一月水位变化做经验响应拟合，并对 2017 年实际水位 stakeholder cost 与建议控制幅度进行评估。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "records": 2548,
+    "level_records": 1380,
+    "flow_records": 1168,
+    "sheets": [
+      "Detroit River",
+      "Lake Erie",
+      "Lake Michigan and Lake Huron",
+      "Lake Ontario",
+      "Lake St. Clair",
+      "Lake Superior",
+      "Niagara River",
+      "Ottawa River",
+      "St. Clair River",
+      "St. Lawrence River",
+      "St. Mary's River"
+    ]
+  },
+  "evaluation_2017": {
+    "year": 2017,
+    "actual_total_stakeholder_cost": 51.325,
+    "mean_control_effort_cms": 295.631961,
+    "highest_cost_months": [
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-05-01",
+        "level_m": 75.8,
+        "target_m": 75.1,
+        "deviation_m": 0.7,
+        "cost_total": 2.425
+      },
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-06-01",
+        "level_m": 75.81,
+        "target_m": 75.13,
+        "deviation_m": 0.68,
+        "cost_total": 2.39
+      },
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-07-01",
+        "level_m": 75.69,
+        "target_m": 75.09,
+        "deviation_m": 0.6,
+        "cost_total": 2.19
+      },
+      {
+        "lake": "Lake Ontario",
+        "date": "2017-08-01",
+        "level_m": 75.43,
+        "target_m": 74.95,
+        "deviation_m": 0.48,
+        "cost_total": 1.65
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-11-01",
+        "level_m": 176.85,
+        "target_m": 176.07,
+        "deviation_m": 0.78,
+        "cost_total": 1.62
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-12-01",
+        "level_m": 176.79,
+        "target_m": 176.05,
+        "deviation_m": 0.74,
+        "cost_total": 1.49
+      },
+      {
+        "lake": "Lake St. Clair",
+        "date": "2017-11-01",
+        "level_m": 175.44,
+        "target_m": 174.85,
+        "deviation_m": 0.59,
+        "cost_total": 1.415
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-10-01",
+        "level_m": 176.87,
+        "target_m": 176.14,
+        "deviation_m": 0.73,
+        "cost_total": 1.405
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-08-01",
+        "level_m": 177.0,
+        "target_m": 176.32,
+        "deviation_m": 0.68,
+        "cost_total": 1.265
+      },
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "date": "2017-09-01",
+        "level_m": 176.93,
+        "target_m": 176.24,
+        "deviation_m": 0.69,
+        "cost_total": 1.245
+      }
+    ],
+    "interpretation": "The policy is evaluated as an advisory release rule, not a full hydraulic simulator; it flags months where controlled outflow should move toward historical operating bands."
+  },
+  "sensitivity": {
+    "dam_outflow_sensitivity": [
+      {
+        "lake": "Lake Superior",
+        "control_flow": "St. Mary's River",
+        "rows": 168,
+        "rmse_m": 0.066173,
+        "standardized_outflow_sensitivity": -0.005175,
+        "interpretation": "negative means larger outflow tends to lower next-month lake level"
+      },
+      {
+        "lake": "Lake Ontario",
+        "control_flow": "St. Lawrence River",
+        "rows": 109,
+        "rmse_m": 0.136944,
+        "standardized_outflow_sensitivity": -0.122293,
+        "interpretation": "negative means larger outflow tends to lower next-month lake level"
+      }
+    ],
+    "environmental_condition_sensitivity": [
+      {
+        "lake": "Lake Michigan and Lake Huron",
+        "mean_monthly_cost": 0.624493,
+        "high_water_months": 70,
+        "low_water_months": 70,
+        "max_abs_deviation_m": 1.28
+      },
+      {
+        "lake": "Lake St. Clair",
+        "mean_monthly_cost": 0.522971,
+        "high_water_months": 71,
+        "low_water_months": 67,
+        "max_abs_deviation_m": 0.94
+      },
+      {
+        "lake": "Lake Erie",
+        "mean_monthly_cost": 0.453043,
+        "high_water_months": 72,
+        "low_water_months": 68,
+        "max_abs_deviation_m": 0.83
+      },
+      {
+        "lake": "Lake Ontario",
+        "mean_monthly_cost": 0.321993,
+        "high_water_months": 71,
+        "low_water_months": 71,
+        "max_abs_deviation_m": 0.78
+      },
+      {
+        "lake": "Lake Superior",
+        "mean_monthly_cost": 0.308841,
+        "high_water_months": 71,
+        "low_water_months": 71,
+        "max_abs_deviation_m": 0.53
+      }
+    ]
+  }
+}

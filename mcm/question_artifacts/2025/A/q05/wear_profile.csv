@@ -1,0 +1,12 @@
+step_id,tread_width_cm,tread_depth_cm,riser_height_cm,center_wear_depth_mm,left_wear_depth_mm,right_wear_depth_mm,front_edge_rounding_mm,back_edge_rounding_mm,slope_up_direction_deg,surface_hardness_proxy,material_density_proxy,tool_marks_present,patch_boundary_score,moisture_exposure_index,notes
+1,158.0,32.0,16.5,2.9,1.7,1.4,1.6,1.1,0.8,4.0,2.35,0,0,1,worked example row
+2,158.0,32.0,16.5,3.2,1.9,1.6,1.8,1.2,0.9,4.0,2.35,0,0,1,worked example row
+3,158.0,32.0,16.5,3.7,2.2,1.8,2.0,1.4,1.0,4.0,2.35,0,1,1,worked example row
+4,158.0,32.0,16.5,4.1,2.4,2.0,2.2,1.5,1.1,4.0,2.35,0,1,2,worked example row
+5,158.0,32.0,16.5,4.4,2.6,2.1,2.4,1.6,1.2,4.0,2.35,0,1,2,worked example row
+6,158.0,32.0,16.5,4.6,2.7,2.2,2.6,1.7,1.1,4.0,2.35,0,1,2,worked example row
+7,158.0,32.0,16.5,4.8,2.8,2.3,2.8,1.8,1.0,4.0,2.35,0,1,2,worked example row
+8,158.0,32.0,16.5,2.5,1.1,0.9,1.1,0.8,0.4,4.0,2.35,1,5,3,worked example row
+9,158.0,32.0,16.5,5.0,2.9,2.4,3.0,1.9,1.3,4.0,2.35,1,2,2,worked example row
+10,158.0,32.0,16.5,4.7,2.7,2.2,2.7,1.8,1.2,4.0,2.35,0,1,2,worked example row
+11,158.0,32.0,16.5,4.3,2.5,2.1,2.5,1.7,1.0,4.0,2.35,0,1,2,worked example row

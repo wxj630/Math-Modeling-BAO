@@ -1,0 +1,436 @@
+{
+  "problem_id": "2023-D",
+  "question": "q01",
+  "question_title": "17 个 SDG 的关系网络",
+  "statement": "Create a network of the relationships between the 17 SDGs.",
+  "methods": "官方 PDF 给出的 17 个 SDG 节点 + 透明确定性有向加权边，构造 SDG 影响网络；对应教程模型：复杂网络与图论模型。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "parameters": {
+      "sdg_count": 17,
+      "ten_year_horizon": 10,
+      "source_reference": "Transforming Our World: The 2030 Agenda for Sustainable Development, UN General Assembly, A/RES/70/1, 2015",
+      "requirements": [
+        "create a network of relationships between the 17 SDGs",
+        "use individual SDGs and network structure to set priorities",
+        "evaluate priority effectiveness and 10-year achievability",
+        "analyze resulting network if one SDG is achieved",
+        "discuss whether other goals should be proposed",
+        "analyze technology, pandemics, climate change, regional wars, refugees, or other crises",
+        "explain how the network approach helps other organizations set priorities"
+      ],
+      "source_note": "Official PDF statement parameters only; edge weights and crisis multipliers are deterministic scenario assumptions, not observed UN indicator data."
+    },
+    "scenario_assumption_note": "All network edges, edge weights, direct-need indices, and crisis multipliers are transparent deterministic assumptions for a reproducible network experiment; they are not observed UN indicator data."
+  },
+  "sdg_network_model": {
+    "model": "directed weighted SDG influence network based on official 17-goal list and transparent scenario edges",
+    "nodes": [
+      {
+        "sdg": 1,
+        "name": "No Poverty",
+        "category": "social"
+      },
+      {
+        "sdg": 2,
+        "name": "Zero Hunger",
+        "category": "social"
+      },
+      {
+        "sdg": 3,
+        "name": "Good Health and Well-being",
+        "category": "social"
+      },
+      {
+        "sdg": 4,
+        "name": "Quality Education",
+        "category": "social"
+      },
+      {
+        "sdg": 5,
+        "name": "Gender Equality",
+        "category": "social"
+      },
+      {
+        "sdg": 6,
+        "name": "Clean Water and Sanitation",
+        "category": "environment"
+      },
+      {
+        "sdg": 7,
+        "name": "Affordable and Clean Energy",
+        "category": "infrastructure"
+      },
+      {
+        "sdg": 8,
+        "name": "Decent Work and Economic Growth",
+        "category": "economic"
+      },
+      {
+        "sdg": 9,
+        "name": "Industry, Innovation and Infrastructure",
+        "category": "infrastructure"
+      },
+      {
+        "sdg": 10,
+        "name": "Reduced Inequality",
+        "category": "social"
+      },
+      {
+        "sdg": 11,
+        "name": "Sustainable Cities and Communities",
+        "category": "infrastructure"
+      },
+      {
+        "sdg": 12,
+        "name": "Responsible Consumption and Production",
+        "category": "environment"
+      },
+      {
+        "sdg": 13,
+        "name": "Climate Action",
+        "category": "environment"
+      },
+      {
+        "sdg": 14,
+        "name": "Life Below Water",
+        "category": "environment"
+      },
+      {
+        "sdg": 15,
+        "name": "Life on Land",
+        "category": "environment"
+      },
+      {
+        "sdg": 16,
+        "name": "Peace and Justice Strong Institutions",
+        "category": "governance"
+      },
+      {
+        "sdg": 17,
+        "name": "Partnerships to achieve the Goal",
+        "category": "governance"
+      }
+    ],
+    "sdg_network_edges": [
+      {
+        "source_sdg": 1,
+        "target_sdg": 2,
+        "weight": 0.72,
+        "relationship": "poverty reduction improves food security",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 1,
+        "target_sdg": 3,
+        "weight": 0.66,
+        "relationship": "income access improves health",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 1,
+        "target_sdg": 4,
+        "weight": 0.6,
+        "relationship": "poverty reduction keeps children in school",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 1,
+        "target_sdg": 8,
+        "weight": 0.63,
+        "relationship": "poverty and decent work reinforce each other",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 1,
+        "target_sdg": 10,
+        "weight": 0.74,
+        "relationship": "poverty reduction reduces inequality",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 2,
+        "target_sdg": 3,
+        "weight": 0.69,
+        "relationship": "nutrition improves health",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 2,
+        "target_sdg": 6,
+        "weight": 0.54,
+        "relationship": "water quality supports food systems",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 2,
+        "target_sdg": 12,
+        "weight": 0.5,
+        "relationship": "sustainable consumption affects food systems",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 2,
+        "target_sdg": 15,
+        "weight": 0.55,
+        "relationship": "land ecosystems support agriculture",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 3,
+        "target_sdg": 4,
+        "weight": 0.58,
+        "relationship": "health improves learning",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 3,
+        "target_sdg": 5,
+        "weight": 0.47,
+        "relationship": "health access affects gender outcomes",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 3,
+        "target_sdg": 6,
+        "weight": 0.61,
+        "relationship": "clean water reduces disease",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 3,
+        "target_sdg": 11,
+        "weight": 0.45,
+        "relationship": "urban design affects health",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 4,
+        "target_sdg": 5,
+        "weight": 0.7,
+        "relationship": "education promotes gender equality",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 4,
+        "target_sdg": 8,
+        "weight": 0.62,
+        "relationship": "skills support employment",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 4,
+        "target_sdg": 9,
+        "weight": 0.48,
+        "relationship": "education supports innovation",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 4,
+        "target_sdg": 16,
+        "weight": 0.42,
+        "relationship": "education supports institutions",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 5,
+        "target_sdg": 8,
+        "weight": 0.52,
+        "relationship": "gender equality expands labor participation",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 5,
+        "target_sdg": 10,
+        "weight": 0.66,
+        "relationship": "gender equity reduces inequality",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 6,
+        "target_sdg": 11,
+        "weight": 0.55,
+        "relationship": "water and sanitation support cities",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 6,
+        "target_sdg": 14,
+        "weight": 0.52,
+        "relationship": "water treatment protects oceans",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 6,
+        "target_sdg": 15,
+        "weight": 0.46,
+        "relationship": "water systems support terrestrial ecosystems",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 7,
+        "target_sdg": 8,
+        "weight": 0.59,
+        "relationship": "energy access supports economic activity",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 7,
+        "target_sdg": 9,
+        "weight": 0.67,
+        "relationship": "energy and infrastructure co-develop",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 7,
+        "target_sdg": 12,
+        "weight": 0.5,
+        "relationship": "clean energy supports responsible production",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 7,
+        "target_sdg": 13,
+        "weight": 0.71,
+        "relationship": "clean energy mitigates climate change",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 8,
+        "target_sdg": 9,
+        "weight": 0.56,
+        "relationship": "economic growth supports infrastructure",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 8,
+        "target_sdg": 10,
+        "weight": 0.44,
+        "relationship": "inclusive growth reduces inequality",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 8,
+        "target_sdg": 12,
+        "weight": -0.32,
+        "relationship": "growth can increase resource pressure without safeguards",
+        "sign": "negative"
+      },
+      {
+        "source_sdg": 9,
+        "target_sdg": 11,
+        "weight": 0.58,
+        "relationship": "infrastructure supports sustainable cities",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 9,
+        "target_sdg": 13,
+        "weight": 0.38,
+        "relationship": "innovation can support climate mitigation",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 10,
+        "target_sdg": 11,
+        "weight": 0.49,
+        "relationship": "reduced inequality improves urban inclusion",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 10,
+        "target_sdg": 16,
+        "weight": 0.53,
+        "relationship": "less inequality supports stable institutions",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 11,
+        "target_sdg": 12,
+        "weight": 0.51,
+        "relationship": "cities drive consumption systems",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 11,
+        "target_sdg": 13,
+        "weight": 0.46,
+        "relationship": "urban resilience supports climate action",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 12,
+        "target_sdg": 13,
+        "weight": 0.57,
+        "relationship": "responsible production reduces emissions",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 12,
+        "target_sdg": 14,
+        "weight": 0.62,
+        "relationship": "waste reduction protects oceans",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 12,
+        "target_sdg": 15,
+        "weight": 0.6,
+        "relationship": "resource stewardship protects land",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 13,
+        "target_sdg": 14,
+        "weight": 0.64,
+        "relationship": "climate action protects oceans",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 13,
+        "target_sdg": 15,
+        "weight": 0.66,
+        "relationship": "climate action protects land",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 14,
+        "target_sdg": 15,
+        "weight": 0.37,
+        "relationship": "ecosystem protection has cross-biome spillovers",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 16,
+        "target_sdg": 17,
+        "weight": 0.76,
+        "relationship": "institutions enable partnerships",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 17,
+        "target_sdg": 1,
+        "weight": 0.5,
+        "relationship": "partnerships finance poverty programs",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 17,
+        "target_sdg": 6,
+        "weight": 0.46,
+        "relationship": "partnerships support water projects",
+        "sign": "positive"
+      },
+      {
+        "source_sdg": 17,
+        "target_sdg": 13,
+        "weight": 0.52,
+        "relationship": "partnerships coordinate climate action",
+        "sign": "positive"
+      }
+    ],
+    "negative_tradeoff_count": 1
+  }
+}

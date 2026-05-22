@@ -1,0 +1,6 @@
+﻿scenario,debris_multiplier,revenue_multiplier,best_option,best_npv_musd,best_risk_adjusted_score,commercially_attractive
+baseline,1.0,1.0,laser_tracking_subscription,277.344,0.541494,True
+tracked_debris_doubles,2.0,1.15,laser_tracking_subscription,349.813,0.633163,True
+insurance_market_weak,1.0,0.72,laser_tracking_subscription,142.069,0.370379,True
+regulators_support_lasers,1.1,1.05,laser_tracking_subscription,301.501,0.572051,True
+launch_cost_drop_active_removal,1.35,1.0,laser_tracking_subscription,277.344,0.541494,True

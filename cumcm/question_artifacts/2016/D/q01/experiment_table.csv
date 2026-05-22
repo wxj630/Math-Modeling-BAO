@@ -1,0 +1,2 @@
+﻿method,interval_record_count,day_count,mean_wind_speed_mps,annual_energy_mwh,capacity_factor,mean_power_mw,zero_power_ratio
+wind_farm_resource_utilization_assessment,35039,365,5.668082,335336.1975,0.191402,38.28148,0.137732

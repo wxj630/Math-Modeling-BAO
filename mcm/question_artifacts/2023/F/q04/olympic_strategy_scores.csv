@@ -1,0 +1,6 @@
+strategy_id,description,timeline_years,feasibility,governance_complexity,bid_attractiveness,impact_score,total_score,economic_score,land_use_score,human_satisfaction_score,travel_score,future_improvement_score,host_prestige_score,unity_through_sport_score
+regional_rotation_with_reuse,Rotate among vetted regional host networks that reuse existing venues and share operations.,6,0.76,0.52,0.74,0.7254,0.534,0.76,0.78,0.72,0.64,0.7,0.68,0.76
+status_quo_reformed_bidding,"Keep rotating host selection but require compact venues, cost caps, and public legacy guarantees.",4,0.82,0.34,0.56,0.5933,0.4881,0.58,0.52,0.6,0.46,0.56,0.75,0.7
+distributed_existing_venue_games,Award event clusters to multiple cities with existing venues under one Games brand.,7,0.66,0.66,0.7,0.6564,0.4412,0.74,0.82,0.62,0.42,0.74,0.58,0.6
+four_season_split_games,"Split sports into Winter, Spring, Summer, and Fall Games to reduce the load on any one host.",8,0.62,0.7,0.68,0.6795,0.4252,0.72,0.76,0.7,0.5,0.78,0.55,0.68
+permanent_summer_winter_sites,Select one recurring Summer host and one recurring Winter host with permanent Olympic infrastructure.,10,0.54,0.78,0.48,0.6862,0.3471,0.82,0.86,0.66,0.58,0.72,0.42,0.62

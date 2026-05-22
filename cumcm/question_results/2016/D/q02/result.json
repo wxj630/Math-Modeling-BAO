@@ -1,0 +1,127 @@
+{
+  "problem_id": "2016-D",
+  "title": "2016年 CUMCM D题：风电场运行状况分析及优化",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "附件2给出了该风电场几个典型风机所在处的风速信息，其中4#、16#、24#风机属于一期工程，33#、49#、57#风机属于二期工程，它们的主要参数见附件3。风机生产企业还提供了部分新型号风机，它们的主要参数见附件4。试从风能资源与风机匹配角度判断新型号风机是否比现有风机更为适合。",
+  "tasks": [
+    "附件2给出了该风电场几个典型风机所在处的风速信息，其中4#、16#、24#风机属于一期工程，33#、49#、57#风机属于二期工程，它们的主要参数见附件3",
+    "试从风能资源与风机匹配角度判断新型号风机是否比现有风机更为适合"
+  ],
+  "selected_model": {
+    "key": "ch6",
+    "name": "风资源评估、机型匹配与维护排班优化",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "reason": "问题1需要综合风速、发电量、容量因子和低风停发等指标评价风资源利用情况。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "reason": "问题2需要把风速样本映射到机型功率曲线，比较现有机型和新机型的匹配程度。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "reason": "问题3是典型维护计划与人员排班优化，目标兼顾经济损失和工作量均衡。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 27,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201502.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201503.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201504.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201505.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201506.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201507.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201508.xls; ...",
+    "rows": 56940,
+    "columns": 3,
+    "note": "本题专用算法读取附件1全年15分钟风速/功率、附件2典型风机风速报表，以及附件3/4风机参数，完成风资源评估、机型匹配和维护排班。"
+  },
+  "formulation": {
+    "model_type": "风资源评估、机型匹配与维护排班优化",
+    "task_breakdown": [
+      "附件2给出了该风电场几个典型风机所在处的风速信息，其中4#、16#、24#风机属于一期工程，33#、49#、57#风机属于二期工程，它们的主要参数见附件3",
+      "试从风能资源与风机匹配角度判断新型号风机是否比现有风机更为适合"
+    ],
+    "assumptions": [
+      "附件1中功率单位为MW、风速单位为m/s，每个工作表对应一天，每天96个15分钟记录。",
+      "附件2为6台典型风机每2小时风速样本，4/16/24号代表一期，33/49/57号代表二期。",
+      "附件3现有机型I/II功率曲线按文档转换结果录入；附件4新机型III/IV/V用切入、额定、切出和额定功率构造三次功率曲线。",
+      "风机实际发电量按15分钟功率积分；装机容量按题面约20万kW取200MW计算容量因子。",
+      "维护排班把124台风机各安排两次2天维护，第二次与第一次间隔180天，满足不超过270天连续运行要求。",
+      "通用基线保留在 cumcm/generic_baselines，当前结果为附件驱动的风电场运行分析版本。"
+    ],
+    "decision_variables": [
+      "v_t: t时刻风电场平均风速",
+      "P_t: t时刻风电场实际输出功率",
+      "E_day: 日发电量",
+      "CF: 容量因子",
+      "f_m(v): 机型m在风速v下的功率曲线",
+      "x_{i,k}: 风机i第k次维护开始日期",
+      "y_{g,d}: 维修组g在日期d的任务（值班/维护/休息）"
+    ],
+    "constraints": [
+      "每台风机每年维护两次，每次连续2天。",
+      "两次维护之间间隔设置为180天，小于270天上限。",
+      "每天至少一组维修人员值班。",
+      "每组维修人员连续工作天数不超过6天。",
+      "维护尽量安排在相对低发电量时段，以降低经济损失。"
+    ],
+    "objective_or_equations": [
+      "E_day=sum_t P_t*0.25",
+      "CF=sum_day E_day/(200MW*24h*365)",
+      "available_energy_m = mean(f_m(v_t))*8760/1000",
+      "wind_match_score = expected_energy / rated_power",
+      "minimize lost_energy + workload_imbalance_penalty"
+    ],
+    "solution_steps": [
+      "读取12个月附件2典型风机报表，得到6台典型风机全年风速样本。",
+      "用附件3现有机型功率曲线和附件4新机型参数构造候选机型功率曲线。",
+      "对每台典型风机、每个候选机型计算期望发电量、容量利用指标和低风适配度。",
+      "按平均期望发电量和匹配评分判断新机型是否更适合。"
+    ],
+    "model_reference": {
+      "key": "ch6",
+      "name": "风资源评估、机型匹配与维护排班优化",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "wind_turbine_resource_model_matching",
+    "typical_turbine_count": 6,
+    "wind_sample_count": 21900,
+    "model_count": 5,
+    "recommended_model": "机型Ⅰ",
+    "recommended_expected_annual_energy_mwh": 4558.367697,
+    "current_models": [
+      "机型Ⅰ",
+      "机型Ⅱ"
+    ],
+    "new_models": [
+      "机型Ⅲ",
+      "机型Ⅳ",
+      "机型Ⅴ"
+    ],
+    "report": [
+      "问题2用附件2典型风机全年风速样本评价现有和新机型在同一风资源下的期望发电量。",
+      "机型Ⅰ/Ⅱ使用附件3实测功率曲线，机型Ⅲ/Ⅳ/Ⅴ使用附件4切入、额定、切出参数构造三次功率曲线。",
+      "比较表既保留每台典型风机结果，也保留ALL平均行，用于判断新机型是否更适配该风场风速分布。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2016/D/q02/turbine_model_energy_comparison.csv",
+    "question_artifacts/2016/D/q02/typical_turbine_wind_summary.csv",
+    "question_artifacts/2016/D/q02/experiment_table.csv"
+  ]
+}

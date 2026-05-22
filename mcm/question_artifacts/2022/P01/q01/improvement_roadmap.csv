@@ -1,0 +1,6 @@
+phase,initiative,primary_component,maturity_gain,projected_maturity_score,projected_band
+0-3 months,"name data owners for cargo, vessel, gate, customer, and compliance domains",people,0.22,2.574,managed
+3-6 months,publish a data catalog with lineage and quality checks for customer-visible datasets,technology,0.31,2.884,managed
+6-12 months,launch data quality incident workflow and customer confidence dashboard,process,0.35,3.234,managed
+12-18 months,"add model monitoring for berth, gate, and dwell-time forecasts",technology,0.24,3.474,managed
+18-24 months,run quarterly value reviews with port users and update the maturity score,process,0.2,3.674,integrated

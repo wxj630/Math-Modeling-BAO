@@ -1,0 +1,21 @@
+forest,region_type,plan,rotation_years,harvest_intensity,carbon_100_years_co2_per_ha,live_carbon_100_years_t_per_ha,product_carbon_100_years_t_per_ha,substitution_credit_100_years_t_carbon_per_ha,biodiversity_value,recreation_value,cultural_value,product_value,carbon_score,biodiversity_score,product_score,social_decision_score
+temperate mixed hardwood community forest,temperate,no_harvest,999,0.0,1071.7482,209.3812,0.0,0.0,0.92,0.86,0.88,0.1,1.0,0.7544,0.056,0.7489
+temperate mixed hardwood community forest,temperate,selective_60_year,60,0.28,1066.4192,175.4969,25.8676,5.1784,0.84,0.8,0.81,0.54,0.9823,0.6888,0.3024,0.786
+temperate mixed hardwood community forest,temperate,extended_50_year,50,0.42,1042.0562,161.5551,31.4091,6.3105,0.74,0.72,0.74,0.7,0.9016,0.6068,0.392,0.7505
+temperate mixed hardwood community forest,temperate,current_40_year,40,0.5,940.3724,87.3521,69.1052,13.2818,0.62,0.64,0.66,0.78,0.5646,0.5084,0.4368,0.6015
+temperate mixed hardwood community forest,temperate,short_30_year,30,0.58,770.01,34.858,73.9146,13.6378,0.48,0.52,0.54,0.88,0.0,0.3936,0.4928,0.3434
+managed pine production forest,subtropical plantation,no_harvest,999,0.0,887.9112,183.2055,0.0,0.0,0.92,0.86,0.88,0.1,0.8001,0.4232,0.082,0.6043
+managed pine production forest,subtropical plantation,selective_60_year,60,0.28,922.28,163.3954,23.1931,4.643,0.84,0.8,0.81,0.54,0.9842,0.3864,0.4428,0.7534
+managed pine production forest,subtropical plantation,extended_50_year,50,0.42,925.2247,157.4785,28.2486,5.6755,0.74,0.72,0.74,0.7,1.0,0.3404,0.574,0.7745
+managed pine production forest,subtropical plantation,current_40_year,40,0.5,872.8345,95.7583,66.6557,12.7801,0.62,0.64,0.66,0.78,0.7194,0.2852,0.6396,0.6628
+managed pine production forest,subtropical plantation,short_30_year,30,0.58,738.5465,45.1097,78.0307,14.2577,0.48,0.52,0.54,0.88,0.0,0.2208,0.7216,0.3642
+old-growth coastal conifer reserve,cool wet conifer,no_harvest,999,0.0,1453.4899,268.1647,0.0,0.0,0.92,0.86,0.88,0.1,1.0,0.874,0.022,0.7698
+old-growth coastal conifer reserve,cool wet conifer,selective_60_year,60,0.28,1381.0383,204.458,35.1937,7.0454,0.84,0.8,0.81,0.54,0.8535,0.798,0.1188,0.7129
+old-growth coastal conifer reserve,cool wet conifer,extended_50_year,50,0.42,1309.1062,173.2825,44.1013,8.8605,0.74,0.72,0.74,0.7,0.708,0.703,0.154,0.6318
+old-growth coastal conifer reserve,cool wet conifer,current_40_year,40,0.5,1157.2527,80.8495,85.3903,16.5161,0.62,0.64,0.66,0.78,0.4009,0.589,0.1716,0.481
+old-growth coastal conifer reserve,cool wet conifer,short_30_year,30,0.58,958.9973,26.4567,85.1509,16.002,0.48,0.52,0.54,0.88,0.0,0.456,0.1936,0.2703
+dry interior fire-adapted pine forest,dry interior,no_harvest,999,0.0,763.1912,153.6466,0.0,0.0,0.92,0.86,0.88,0.1,1.0,0.6072,0.05,0.7156
+dry interior fire-adapted pine forest,dry interior,selective_60_year,60,0.28,746.6779,124.9668,19.3104,3.8657,0.84,0.8,0.81,0.54,0.9324,0.5544,0.27,0.7287
+dry interior fire-adapted pine forest,dry interior,extended_50_year,50,0.42,721.5151,112.3643,23.6928,4.7602,0.74,0.72,0.74,0.7,0.8295,0.4884,0.35,0.6849
+dry interior fire-adapted pine forest,dry interior,current_40_year,40,0.5,641.1844,57.8625,50.1184,9.6511,0.62,0.64,0.66,0.78,0.5008,0.4092,0.39,0.5415
+dry interior fire-adapted pine forest,dry interior,short_30_year,30,0.58,518.8055,21.6582,52.2736,9.7025,0.48,0.52,0.54,0.88,0.0,0.3168,0.44,0.3106

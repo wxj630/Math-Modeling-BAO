@@ -1,0 +1,21 @@
+species,growth_rate_mm_day,moisture_tolerance,competition_rank,niche_width,moisture_index,trait_decomposition_rate,growth_moisture_tradeoff
+fast opportunist,7.8,0.3,0.82,0.22,0.2,0.02055,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+fast opportunist,7.8,0.3,0.82,0.22,0.4,0.02055,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+fast opportunist,7.8,0.3,0.82,0.22,0.6,0.0005,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+fast opportunist,7.8,0.3,0.82,0.22,0.8,0.0005,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+balanced decomposer,5.2,0.58,0.66,0.46,0.2,0.0028,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+balanced decomposer,5.2,0.58,0.66,0.46,0.4,0.01338,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+balanced decomposer,5.2,0.58,0.66,0.46,0.6,0.02184,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+balanced decomposer,5.2,0.58,0.66,0.46,0.8,0.01126,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+moisture generalist,3.4,0.78,0.5,0.7,0.2,0.0005,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+moisture generalist,3.4,0.78,0.5,0.7,0.4,0.00526,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+moisture generalist,3.4,0.78,0.5,0.7,0.6,0.01096,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+moisture generalist,3.4,0.78,0.5,0.7,0.8,0.01551,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+slow resilient strain,1.9,0.9,0.38,0.82,0.2,0.0005,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+slow resilient strain,1.9,0.9,0.38,0.82,0.4,0.00194,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+slow resilient strain,1.9,0.9,0.38,0.82,0.6,0.00491,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+slow resilient strain,1.9,0.9,0.38,0.82,0.8,0.00787,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+dryland specialist,4.1,0.42,0.58,0.36,0.2,0.0071,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+dryland specialist,4.1,0.42,0.58,0.36,0.4,0.01608,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+dryland specialist,4.1,0.42,0.58,0.36,0.6,0.00889,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions
+dryland specialist,4.1,0.42,0.58,0.36,0.8,0.0005,fast growth increases short-run decay; broad moisture tolerance improves persistence under variable conditions

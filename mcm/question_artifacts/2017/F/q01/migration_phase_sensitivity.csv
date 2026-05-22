@@ -1,0 +1,5 @@
+phase,selection_balance,expected_utopia_score,recruitment_sustainability
+population_zero,0.72,0.8192,improves with rotating skill quotas and family-unit selection
+migration_two,0.78,0.8408,improves with rotating skill quotas and family-unit selection
+migration_three,0.84,0.8624,improves with rotating skill quotas and family-unit selection
+steady_state,0.88,0.8768,improves with rotating skill quotas and family-unit selection

@@ -1,0 +1,19 @@
+:root {
+  --vp-layout-max-width: 95%;
+  --vp-sidebar-width: 304px;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc th,
+.vp-doc td {
+  vertical-align: top;
+}
+
+.vp-doc img {
+  max-height: 56vh;
+  width: auto;
+}

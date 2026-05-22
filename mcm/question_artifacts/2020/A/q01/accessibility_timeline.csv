@@ -1,0 +1,7 @@
+species,scenario,scenario_label,elapsed_years_until_small_fleet_stress,calendar_year
+Scottish herring,worst_case_fast_warming,worst,15,2035
+Scottish herring,most_likely_warming,most_likely,20,2040
+Scottish herring,best_case_slow_warming,best,35,2055
+Scottish mackerel,worst_case_fast_warming,worst,15,2035
+Scottish mackerel,most_likely_warming,most_likely,20,2040
+Scottish mackerel,best_case_slow_warming,best,35,2055

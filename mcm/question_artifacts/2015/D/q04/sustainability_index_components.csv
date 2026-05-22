@@ -1,0 +1,8 @@
+﻿component,indicator_id,indicator_name,latest_year,latest_value,weight,score,weighted_score,trend_per_year_raw
+water_access,SH.H2O.BASW.ZS,People using at least basic drinking water services,2024,93.640125,0.17,0.936401,0.159188,0.548603
+sanitation_access,SH.STA.BASS.ZS,People using at least basic sanitation services,2024,86.025981,0.15,0.86026,0.129039,3.283491
+energy_access,EG.ELC.ACCS.ZS,Access to electricity,2023,94.0,0.15,0.94,0.141,1.011111
+livelihood,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",2024,1179.812728,0.16,0.393271,0.062923,33.807677
+poverty_reduction,SI.POV.DDAY,Poverty headcount ratio at $2.15/day,2022,2.4,0.17,0.976,0.16592,-2.121053
+environment_health,AG.LND.FRST.ZS,Forest area,2023,41.590722,0.12,0.415907,0.049909,0.0
+population_pressure,SP.POP.TOTL,"Population, total",2024,29651054.0,0.08,0.788315,0.063065,203047.222222

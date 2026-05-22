@@ -1,0 +1,101 @@
+{
+  "problem_id": "2024-B",
+  "question": "q01",
+  "question_title": "失联潜水器位置预测与不确定性",
+  "statement": "Locate - Develop a model(s) that predicts the location of the submersible over time. What are the uncertainties associated with these predictions? What information can the submersible periodically send to the host ship to decrease these uncertainties prior to an incident? What kinds of equipment would the submersible need to do so?",
+  "methods": "官方 PDF 题面约束 + 失去通信/推进情景 + 洋流漂移-中性浮力/海底双状态位置椭圆 + 遥测信息对不确定性的削减清单。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "official_requirements": {
+      "loss_of_communication": true,
+      "possible_loss_of_propulsion": true,
+      "predict_location_over_time": true,
+      "seafloor_or_neutral_buoyancy": true,
+      "currents_densities_and_geography": true,
+      "prepare_search_equipment": true,
+      "probability_of_finding_as_function_of_time": true,
+      "caribbean_and_multiple_submersibles": true,
+      "memo_to_greek_government": true
+    },
+    "parameters": {
+      "purpose": "deterministic rescue-planning example for the official PDF-only problem; not observed incident data",
+      "deployment_area": "Ionian Sea tourist wreck-search site near a host ship",
+      "initial_fix_error_km": 0.18,
+      "submersible_speed_kmh_before_failure": 3.0,
+      "time_since_last_fix_hours": 0.5,
+      "surface_current_kmh": 1.15,
+      "deep_current_kmh": 0.35,
+      "current_direction_degrees": 58.0,
+      "current_uncertainty_kmh": 0.24,
+      "cross_current_uncertainty_kmh": 0.14,
+      "depth_state_ambiguity_km": 0.55,
+      "seafloor_terrain_uncertainty_km": 0.35,
+      "neutral_buoyancy_share": 0.55,
+      "seafloor_share": 0.45,
+      "acoustic_range_km": 4.0
+    }
+  },
+  "location_model": {
+    "model": "current-driven dead-reckoning ellipse with two vertical states: seafloor-resting and neutral-buoyancy drifting",
+    "scenario_assumptions": {
+      "purpose": "deterministic rescue-planning example for the official PDF-only problem; not observed incident data",
+      "deployment_area": "Ionian Sea tourist wreck-search site near a host ship",
+      "initial_fix_error_km": 0.18,
+      "submersible_speed_kmh_before_failure": 3.0,
+      "time_since_last_fix_hours": 0.5,
+      "surface_current_kmh": 1.15,
+      "deep_current_kmh": 0.35,
+      "current_direction_degrees": 58.0,
+      "current_uncertainty_kmh": 0.24,
+      "cross_current_uncertainty_kmh": 0.14,
+      "depth_state_ambiguity_km": 0.55,
+      "seafloor_terrain_uncertainty_km": 0.35,
+      "neutral_buoyancy_share": 0.55,
+      "seafloor_share": 0.45,
+      "acoustic_range_km": 4.0
+    },
+    "position_uncertainty": {
+      "area_km2_after_12h": 16.9261,
+      "area_km2_after_24h": 62.5273,
+      "center_after_12h_km": [
+        2.5085,
+        1.5675
+      ],
+      "dominant_uncertainties": [
+        "unknown vertical state: seafloor versus neutral buoyancy",
+        "current magnitude and direction",
+        "time since last accurate fix",
+        "seafloor terrain trapping and density layers"
+      ]
+    },
+    "telemetry_to_reduce_uncertainty": [
+      {
+        "signal": "acoustic pinger range/bearing packet",
+        "equipment": "coded acoustic modem and emergency pinger",
+        "uncertainty_reduced": "horizontal range and bearing from host ship"
+      },
+      {
+        "signal": "depth and pressure time series",
+        "equipment": "pressure sensor with logged acoustic burst",
+        "uncertainty_reduced": "distinguishes seafloor contact from neutral-buoyancy drift"
+      },
+      {
+        "signal": "inertial dead-reckoning summary",
+        "equipment": "IMU, compass, Doppler velocity log where available",
+        "uncertainty_reduced": "motion after last GPS/USBL fix"
+      },
+      {
+        "signal": "battery, ballast, and propulsion health flags",
+        "equipment": "fault monitor tied to acoustic status messages",
+        "uncertainty_reduced": "likely mobility, ascent ability, and rescue urgency"
+      },
+      {
+        "signal": "local current and temperature-density observations",
+        "equipment": "compact current/CTD package",
+        "uncertainty_reduced": "drift model and density-layer uncertainty"
+      }
+    ]
+  }
+}

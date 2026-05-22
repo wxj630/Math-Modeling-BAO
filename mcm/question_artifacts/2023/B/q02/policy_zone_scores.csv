@@ -1,0 +1,7 @@
+zone,wildlife_value,tourism_value,resident_pressure,conflict_exposure,habitat_fragility,recommended_policy,conservation_priority,community_priority,balance_need,management_intensity
+core migration corridor,0.96,0.84,0.36,0.58,0.91,strict habitat protection with community revenue sharing,0.8584,0.4576,0.4008,high
+riverine habitat and watering points,0.9,0.72,0.42,0.66,0.87,seasonal access zoning and riparian buffer enforcement,0.8196,0.5196,0.3,high
+community conservancy interface,0.72,0.62,0.86,0.82,0.63,co-managed conservancy with livestock compensation and grazing calendar,0.6968,0.7456,0.0488,high
+settlement and agriculture edge,0.48,0.35,0.93,0.88,0.52,"fencing hotspots, predator-proof bomas, crop protection and benefit payments",0.5424,0.8116,0.2692,high
+restoration buffer outside current boundary,0.69,0.5,0.74,0.7,0.76,"voluntary easements, grassland restoration and rotational grazing contracts",0.681,0.6796,0.0014,medium
+tourism lodge cluster,0.64,0.91,0.51,0.54,0.59,"visitor caps, concession fees, waste-water standards, local hiring quota",0.6512,0.4584,0.1928,medium

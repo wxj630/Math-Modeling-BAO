@@ -1,0 +1,5 @@
+﻿bubble_case,surface_heat_loss_reduction_factor,mean_abs_error_c,mean_spatial_range_c,final_mean_c,comfort_score
+no_bubbles,1.0,2.5754,8.1245,35.7754,0.089888
+thin_bubble_layer,1.15,2.2747,7.9717,36.2643,0.09344
+moderate_bubble_layer,1.35,1.9687,7.8132,36.7688,0.097377
+thick_bubble_layer,1.6,1.6861,7.6642,37.2412,0.101343

@@ -1,0 +1,6 @@
+policy,purpose,primary_dimension,equity_gain,implementation_difficulty,priority_score
+global benefit-sharing fund,Dedicate a transparent share of net mineral value to global public goods and countries without space capability.,benefit_sharing,0.18,0.62,0.025
+open mission data and technology access pool,"Share non-sensitive navigation, prospecting, safety, and materials data with emerging space programs.",technology_transfer,0.13,0.5,0.005
+UN space-resource license registry,"Require every extraction mission to disclose sponsor, operator, target body, safety plan, and ownership terms.",governance_voice,0.11,0.46,-0.005
+orbital-debris and reentry liability bond,"Make operators internalize debris, launch, reentry, and terrestrial environmental risks before receiving a license.",risk_and_environmental_burden,0.1,0.42,-0.005
+non-appropriation compliance review,Review resource contracts against the Outer Space Treaty principle that outer space benefits all countries.,peaceful_use_and_conflict_prevention,0.09,0.54,-0.045

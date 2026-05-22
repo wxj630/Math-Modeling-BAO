@@ -1,0 +1,144 @@
+{
+  "problem_id": "2020-B",
+  "title": "2020年 CUMCM B题：穿越沙漠",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "穿越沙漠需水和食物两种资源，它们的最小计量单位均为箱。每天玩家拥有的水和食物质量之和不能超过负重上限。若未到达终点而水或食物已耗尽，视为游戏失败。",
+  "tasks": [
+    "穿越沙漠需水和食物两种资源，它们的最小计量单位均为箱",
+    "每天玩家拥有的水和食物质量之和不能超过负重上限",
+    "若未到达终点而水或食物已耗尽，视为游戏失败"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "沙漠穿越动态规划与资源路径策略",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "每天"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最小"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 3,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
+    "rows": 6,
+    "columns": 30,
+    "note": "本题专用算法读取附件.docx中的六关参数/天气，按节点编号重建地图近似图，并为第一、二关写出Result.xlsx填报版。"
+  },
+  "formulation": {
+    "model_type": "沙漠穿越动态规划与资源路径策略",
+    "task_breakdown": [
+      "穿越沙漠需水和食物两种资源，它们的最小计量单位均为箱",
+      "每天玩家拥有的水和食物质量之和不能超过负重上限",
+      "若未到达终点而水或食物已耗尽，视为游戏失败"
+    ],
+    "assumptions": [
+      "把附件地图抽象为无向图 G=(V,E)，节点为区域，边表示有公共边界且可一天到达。",
+      "晴朗、高温、沙暴三种天气决定水和食物的基础消耗量；行走消耗为基础消耗的2倍，挖矿消耗为基础消耗的3倍。",
+      "玩家第0天在起点一次性购买计划所需资源；到达村庄后可按2倍基准价补给，本实验优先选择不触发村庄补给的可行策略。",
+      "挖矿只能在矿山连续停留的次日开始；沙暴日不能移动但可以停留或挖矿。",
+      "附件地图图形在 docx 中以 VML 组合图保存；本实验用节点编号的行列网格/链式近似重建相邻关系，并在报告中显式记录。"
+    ],
+    "decision_variables": [
+      "v_t: 第 t 天结束后所在区域节点",
+      "a_t ∈ {move, stay, mine}: 第 t 天行动",
+      "w_t, f_t: 第 t 天消耗后剩余水和食物箱数",
+      "m_t: 第 t 天消耗后剩余资金",
+      "P: 从起点到终点并可能经过矿山/村庄的行动序列"
+    ],
+    "constraints": [
+      "v_0=start, v_t=finish 后游戏结束。",
+      "若天气为沙暴，则 a_t 不能为 move。",
+      "若 a_t=move，则 (v_{t-1},v_t) ∈ E；若 a_t=stay/mine，则 v_t=v_{t-1}。",
+      "3*w_t + 2*f_t <= 1200 且 w_t,f_t >= 0。",
+      "到达矿山当天不能挖矿，只有前一日已经在同一矿山时才允许 a_t=mine。"
+    ],
+    "objective_or_equations": [
+      "max m_T + 0.5*(price_water*w_T + price_food*f_T)",
+      "consumption(a,weather)=base(weather)*multiplier(a), multiplier(stay)=1, multiplier(move)=2, multiplier(mine)=3",
+      "DP[t,node,can_mine] = best cash proxy after day t at node",
+      "known-weather uses deterministic DP; current-weather/adaptive questions compare scenario policies."
+    ],
+    "solution_steps": [
+      "从附件文本中读取各关负重、资金、截止日期、基础收益、资源参数和天气序列。",
+      "为每关构建地图图：第一/二关用行列网格近似，第三/五关用链式加矿山支路，第四/六关用5x5网格。",
+      "按天、节点、是否可挖矿做动态规划，逐日枚举停留、移动、挖矿行动。",
+      "回溯最优行动序列，计算总水/食物消耗、采购成本、挖矿收益、剩余资金和每日结果表。",
+      "对未知天气题生成保守天气场景，并与已知天气题共用同一资源可行性检查。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "沙漠穿越动态规划与资源路径策略",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "desert_rule_component_dynamic_programming",
+    "levels_solved": [
+      "第一关"
+    ],
+    "cooperative_players": 1,
+    "level_summaries": [
+      {
+        "level": "第一关",
+        "reached_finish": true,
+        "finish_day": 16,
+        "final_cash": 9700.0,
+        "initial_water_boxes": 232,
+        "initial_food_boxes": 214,
+        "initial_load_kg": 1124,
+        "load_feasible": true,
+        "purchase_cost": 3300,
+        "mining_days": 3,
+        "mining_income_total": 3000.0,
+        "route_days": [
+          2,
+          3,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          13,
+          14,
+          14,
+          15,
+          16,
+          17,
+          18,
+          27
+        ],
+        "map_note": "27节点按3x9行列网格近似重建。"
+      }
+    ],
+    "graph_reconstruction_note": "附件地图为Word VML组合图，本实验按节点编号近似重建邻接图；通用基线仍保留在 generic_baselines 作为旧版对照。",
+    "report": [
+      "本问使用 `desert_rule_component_dynamic_programming`，把穿越沙漠转化为按天展开的图上动态规划。",
+      "状态记录所在节点和是否允许挖矿，转移枚举停留、移动、挖矿，并按天气扣减水和食物。",
+      "策略表 `desert_strategy.csv` 给出每天区域、行动、天气、消耗后剩余资金/水/食物。",
+      "由于附件地图图形不是结构化边表，当前版本采用节点编号网格/链式近似；后续若人工标注完整邻接边，可直接替换 graph 字段得到更接近官方地图的结果。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2020/B/q02/desert_strategy.csv",
+    "question_artifacts/2020/B/q02/experiment_table.csv"
+  ]
+}

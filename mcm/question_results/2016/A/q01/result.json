@@ -1,0 +1,560 @@
+{
+  "problem_id": "2016-A",
+  "question": "q01",
+  "question_title": "浴缸水温空间-时间模型与加热水策略",
+  "statement": "Develop a model of the temperature of the bathtub water in space and time to determine the best strategy the person in the bathtub can adopt to keep the temperature even throughout the bathtub and as close as possible to the initial temperature without wasting too much water.",
+  "methods": "只使用官方题面物理约束，建立一维有限体积浴缸温度模型：热水从水龙头端进入，溢流端排出，水面/缸壁/人体散热，邻近单元混合。对应模型：热传导方程、对流-扩散模型、有限体积法、多目标优化。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "official_constraints": [
+      "single faucet fills hot water",
+      "simple bathtub without heater or circulating jets",
+      "constant trickle of hot water reheats the bath",
+      "overflow drain removes excess water at capacity",
+      "model must account for space and time temperature variation",
+      "bubble bath may affect model results"
+    ],
+    "assumptions": {
+      "tub": {
+        "name": "baseline_rectangular_tub",
+        "length_m": 1.55,
+        "width_m": 0.72,
+        "water_depth_m": 0.42,
+        "water_volume_l": 250.0,
+        "surface_area_m2": 1.12,
+        "wall_area_m2": 2.3
+      },
+      "person": {
+        "displaced_volume_l": 70.0,
+        "immersed_surface_area_m2": 1.15,
+        "thermal_contact_factor": 0.52
+      },
+      "model_type": "deterministic 1D finite-volume bathtub temperature model with faucet at one end and overflow removal from the other end",
+      "ambient_heat_loss_per_min": 0.01,
+      "wall_heat_loss_per_min": 0.004,
+      "person_heat_exchange_per_min": 0.006,
+      "base_mixing_per_min": 0.18,
+      "motion_mixing_multiplier": {
+        "still": 0.75,
+        "gentle_motion": 1.0,
+        "active_stirring": 1.45
+      },
+      "overflow_rule": "when hot water is added at constant trickle, the same volume leaves through overflow; this is counted as wasted water",
+      "truthfulness": "The PDF gives qualitative constraints but no measured tub/person temperatures; numeric coefficients are explicit scenario assumptions, not observed data."
+    }
+  },
+  "thermal_strategy": {
+    "objective": "keep mean bath temperature close to initial target, reduce spatial unevenness, and penalize overflow waste",
+    "recommended_strategy": {
+      "flow_l_per_min": 1.75,
+      "motion": "active_stirring",
+      "mean_abs_error_c": 2.5759,
+      "mean_spatial_range_c": 7.6766,
+      "final_mean_c": 35.772,
+      "wasted_liters": 70.0,
+      "comfort_score": 0.092875
+    },
+    "strategy_rows": [
+      {
+        "flow_l_per_min": 0.0,
+        "motion": "still",
+        "mean_abs_error_c": 4.3515,
+        "mean_spatial_range_c": 0.0,
+        "final_mean_c": 32.1447,
+        "wasted_liters": 0.0,
+        "comfort_score": 0.186864
+      },
+      {
+        "flow_l_per_min": 0.0,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 4.3515,
+        "mean_spatial_range_c": 0.0,
+        "final_mean_c": 32.1447,
+        "wasted_liters": 0.0,
+        "comfort_score": 0.186864
+      },
+      {
+        "flow_l_per_min": 0.0,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 4.3515,
+        "mean_spatial_range_c": 0.0,
+        "final_mean_c": 32.1447,
+        "wasted_liters": 0.0,
+        "comfort_score": 0.186864
+      },
+      {
+        "flow_l_per_min": 0.25,
+        "motion": "still",
+        "mean_abs_error_c": 4.0977,
+        "mean_spatial_range_c": 2.1417,
+        "final_mean_c": 32.6637,
+        "wasted_liters": 10.0,
+        "comfort_score": 0.143656
+      },
+      {
+        "flow_l_per_min": 0.25,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 4.0977,
+        "mean_spatial_range_c": 1.9651,
+        "final_mean_c": 32.6637,
+        "wasted_liters": 10.0,
+        "comfort_score": 0.146632
+      },
+      {
+        "flow_l_per_min": 0.25,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 4.0977,
+        "mean_spatial_range_c": 1.7408,
+        "final_mean_c": 32.6637,
+        "wasted_liters": 10.0,
+        "comfort_score": 0.150595
+      },
+      {
+        "flow_l_per_min": 0.5,
+        "motion": "still",
+        "mean_abs_error_c": 3.8439,
+        "mean_spatial_range_c": 3.8472,
+        "final_mean_c": 33.1827,
+        "wasted_liters": 20.0,
+        "comfort_score": 0.121629
+      },
+      {
+        "flow_l_per_min": 0.5,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 3.8439,
+        "mean_spatial_range_c": 3.5713,
+        "final_mean_c": 33.1827,
+        "wasted_liters": 20.0,
+        "comfort_score": 0.124985
+      },
+      {
+        "flow_l_per_min": 0.5,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 3.8439,
+        "mean_spatial_range_c": 3.2078,
+        "final_mean_c": 33.1827,
+        "wasted_liters": 20.0,
+        "comfort_score": 0.129698
+      },
+      {
+        "flow_l_per_min": 0.75,
+        "motion": "still",
+        "mean_abs_error_c": 3.5902,
+        "mean_spatial_range_c": 5.205,
+        "final_mean_c": 33.7017,
+        "wasted_liters": 30.0,
+        "comfort_score": 0.108646
+      },
+      {
+        "flow_l_per_min": 0.75,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 3.5902,
+        "mean_spatial_range_c": 4.882,
+        "final_mean_c": 33.7017,
+        "wasted_liters": 30.0,
+        "comfort_score": 0.111784
+      },
+      {
+        "flow_l_per_min": 0.75,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 3.5902,
+        "mean_spatial_range_c": 4.4413,
+        "final_mean_c": 33.7016,
+        "wasted_liters": 30.0,
+        "comfort_score": 0.116371
+      },
+      {
+        "flow_l_per_min": 1.0,
+        "motion": "still",
+        "mean_abs_error_c": 3.3364,
+        "mean_spatial_range_c": 6.2878,
+        "final_mean_c": 34.2207,
+        "wasted_liters": 40.0,
+        "comfort_score": 0.100334
+      },
+      {
+        "flow_l_per_min": 1.0,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 3.3364,
+        "mean_spatial_range_c": 5.9514,
+        "final_mean_c": 34.2207,
+        "wasted_liters": 40.0,
+        "comfort_score": 0.103119
+      },
+      {
+        "flow_l_per_min": 1.0,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 3.3365,
+        "mean_spatial_range_c": 5.4764,
+        "final_mean_c": 34.2204,
+        "wasted_liters": 40.0,
+        "comfort_score": 0.107324
+      },
+      {
+        "flow_l_per_min": 1.25,
+        "motion": "still",
+        "mean_abs_error_c": 3.0827,
+        "mean_spatial_range_c": 7.1541,
+        "final_mean_c": 34.7397,
+        "wasted_liters": 50.0,
+        "comfort_score": 0.094733
+      },
+      {
+        "flow_l_per_min": 1.25,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 3.0827,
+        "mean_spatial_range_c": 6.8248,
+        "final_mean_c": 34.7395,
+        "wasted_liters": 50.0,
+        "comfort_score": 0.097158
+      },
+      {
+        "flow_l_per_min": 1.25,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 3.0828,
+        "mean_spatial_range_c": 6.3439,
+        "final_mean_c": 34.7387,
+        "wasted_liters": 50.0,
+        "comfort_score": 0.10093
+      },
+      {
+        "flow_l_per_min": 1.5,
+        "motion": "still",
+        "mean_abs_error_c": 2.8289,
+        "mean_spatial_range_c": 7.8504,
+        "final_mean_c": 35.2584,
+        "wasted_liters": 60.0,
+        "comfort_score": 0.090832
+      },
+      {
+        "flow_l_per_min": 1.5,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 2.829,
+        "mean_spatial_range_c": 7.5392,
+        "final_mean_c": 35.2579,
+        "wasted_liters": 60.0,
+        "comfort_score": 0.092934
+      },
+      {
+        "flow_l_per_min": 1.5,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 2.8292,
+        "mean_spatial_range_c": 7.07,
+        "final_mean_c": 35.2562,
+        "wasted_liters": 60.0,
+        "comfort_score": 0.096291
+      },
+      {
+        "flow_l_per_min": 1.75,
+        "motion": "still",
+        "mean_abs_error_c": 2.5753,
+        "mean_spatial_range_c": 8.4127,
+        "final_mean_c": 35.7766,
+        "wasted_liters": 70.0,
+        "comfort_score": 0.088064
+      },
+      {
+        "flow_l_per_min": 1.75,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 2.5754,
+        "mean_spatial_range_c": 8.1245,
+        "final_mean_c": 35.7754,
+        "wasted_liters": 70.0,
+        "comfort_score": 0.089888
+      },
+      {
+        "flow_l_per_min": 1.75,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 2.5759,
+        "mean_spatial_range_c": 7.6766,
+        "final_mean_c": 35.772,
+        "wasted_liters": 70.0,
+        "comfort_score": 0.092875
+      },
+      {
+        "flow_l_per_min": 2.0,
+        "motion": "still",
+        "mean_abs_error_c": 2.3217,
+        "mean_spatial_range_c": 8.8685,
+        "final_mean_c": 36.2936,
+        "wasted_liters": 80.0,
+        "comfort_score": 0.086084
+      },
+      {
+        "flow_l_per_min": 2.0,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 2.322,
+        "mean_spatial_range_c": 8.6041,
+        "final_mean_c": 36.2912,
+        "wasted_liters": 80.0,
+        "comfort_score": 0.087678
+      },
+      {
+        "flow_l_per_min": 2.0,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 2.3229,
+        "mean_spatial_range_c": 8.1817,
+        "final_mean_c": 36.2852,
+        "wasted_liters": 80.0,
+        "comfort_score": 0.090348
+      },
+      {
+        "flow_l_per_min": 2.25,
+        "motion": "still",
+        "mean_abs_error_c": 2.0685,
+        "mean_spatial_range_c": 9.2383,
+        "final_mean_c": 36.8085,
+        "wasted_liters": 90.0,
+        "comfort_score": 0.084681
+      },
+      {
+        "flow_l_per_min": 2.25,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 2.0691,
+        "mean_spatial_range_c": 8.9962,
+        "final_mean_c": 36.8041,
+        "wasted_liters": 90.0,
+        "comfort_score": 0.086088
+      },
+      {
+        "flow_l_per_min": 2.25,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 2.0706,
+        "mean_spatial_range_c": 8.5999,
+        "final_mean_c": 36.7941,
+        "wasted_liters": 90.0,
+        "comfort_score": 0.088491
+      },
+      {
+        "flow_l_per_min": 2.5,
+        "motion": "still",
+        "mean_abs_error_c": 1.8157,
+        "mean_spatial_range_c": 9.5369,
+        "final_mean_c": 37.3195,
+        "wasted_liters": 100.0,
+        "comfort_score": 0.083715
+      },
+      {
+        "flow_l_per_min": 2.5,
+        "motion": "gentle_motion",
+        "mean_abs_error_c": 1.8168,
+        "mean_spatial_range_c": 9.3146,
+        "final_mean_c": 37.3122,
+        "wasted_liters": 100.0,
+        "comfort_score": 0.084973
+      },
+      {
+        "flow_l_per_min": 2.5,
+        "motion": "active_stirring",
+        "mean_abs_error_c": 1.8193,
+        "mean_spatial_range_c": 8.9429,
+        "final_mean_c": 37.2968,
+        "wasted_liters": 100.0,
+        "comfort_score": 0.087156
+      }
+    ],
+    "recommended_profile": [
+      {
+        "minute": 0.0,
+        "near_faucet_c": 40.0,
+        "middle_c": 40.0,
+        "overflow_end_c": 40.0,
+        "mean_c": 40.0,
+        "spatial_range_c": 0.0
+      },
+      {
+        "minute": 2.0,
+        "near_faucet_c": 41.6388,
+        "middle_c": 39.4662,
+        "overflow_end_c": 39.4662,
+        "mean_c": 39.6263,
+        "spatial_range_c": 2.1725
+      },
+      {
+        "minute": 4.0,
+        "near_faucet_c": 42.3838,
+        "middle_c": 38.9505,
+        "overflow_end_c": 38.9505,
+        "mean_c": 39.2752,
+        "spatial_range_c": 3.4333
+      },
+      {
+        "minute": 6.0,
+        "near_faucet_c": 42.8204,
+        "middle_c": 38.4523,
+        "overflow_end_c": 38.4522,
+        "mean_c": 38.9456,
+        "spatial_range_c": 4.3682
+      },
+      {
+        "minute": 8.0,
+        "near_faucet_c": 43.1069,
+        "middle_c": 37.9722,
+        "overflow_end_c": 37.9707,
+        "mean_c": 38.6366,
+        "spatial_range_c": 5.1362
+      },
+      {
+        "minute": 10.0,
+        "near_faucet_c": 43.3068,
+        "middle_c": 37.5132,
+        "overflow_end_c": 37.5054,
+        "mean_c": 38.347,
+        "spatial_range_c": 5.8014
+      },
+      {
+        "minute": 12.0,
+        "near_faucet_c": 43.4519,
+        "middle_c": 37.0797,
+        "overflow_end_c": 37.0559,
+        "mean_c": 38.076,
+        "spatial_range_c": 6.396
+      },
+      {
+        "minute": 14.0,
+        "near_faucet_c": 43.5602,
+        "middle_c": 36.6764,
+        "overflow_end_c": 36.6215,
+        "mean_c": 37.8225,
+        "spatial_range_c": 6.9386
+      },
+      {
+        "minute": 16.0,
+        "near_faucet_c": 43.6425,
+        "middle_c": 36.3065,
+        "overflow_end_c": 36.2018,
+        "mean_c": 37.5858,
+        "spatial_range_c": 7.4407
+      },
+      {
+        "minute": 18.0,
+        "near_faucet_c": 43.7062,
+        "middle_c": 35.9715,
+        "overflow_end_c": 35.7964,
+        "mean_c": 37.3649,
+        "spatial_range_c": 7.9097
+      },
+      {
+        "minute": 20.0,
+        "near_faucet_c": 43.756,
+        "middle_c": 35.6712,
+        "overflow_end_c": 35.4049,
+        "mean_c": 37.1591,
+        "spatial_range_c": 8.351
+      },
+      {
+        "minute": 22.0,
+        "near_faucet_c": 43.7953,
+        "middle_c": 35.404,
+        "overflow_end_c": 35.0271,
+        "mean_c": 36.9676,
+        "spatial_range_c": 8.7681
+      },
+      {
+        "minute": 24.0,
+        "near_faucet_c": 43.8266,
+        "middle_c": 35.1678,
+        "overflow_end_c": 34.6629,
+        "mean_c": 36.7897,
+        "spatial_range_c": 9.1636
+      },
+      {
+        "minute": 26.0,
+        "near_faucet_c": 43.8517,
+        "middle_c": 34.9598,
+        "overflow_end_c": 34.3124,
+        "mean_c": 36.6246,
+        "spatial_range_c": 9.5392
+      },
+      {
+        "minute": 28.0,
+        "near_faucet_c": 43.8719,
+        "middle_c": 34.7772,
+        "overflow_end_c": 33.9758,
+        "mean_c": 36.4716,
+        "spatial_range_c": 9.8961
+      },
+      {
+        "minute": 30.0,
+        "near_faucet_c": 43.8883,
+        "middle_c": 34.6172,
+        "overflow_end_c": 33.6532,
+        "mean_c": 36.3301,
+        "spatial_range_c": 10.235
+      },
+      {
+        "minute": 32.0,
+        "near_faucet_c": 43.9016,
+        "middle_c": 34.4772,
+        "overflow_end_c": 33.3451,
+        "mean_c": 36.1994,
+        "spatial_range_c": 10.5565
+      },
+      {
+        "minute": 34.0,
+        "near_faucet_c": 43.9124,
+        "middle_c": 34.3546,
+        "overflow_end_c": 33.0516,
+        "mean_c": 36.0789,
+        "spatial_range_c": 10.8608
+      },
+      {
+        "minute": 36.0,
+        "near_faucet_c": 43.9213,
+        "middle_c": 34.2472,
+        "overflow_end_c": 32.773,
+        "mean_c": 35.9679,
+        "spatial_range_c": 11.1483
+      },
+      {
+        "minute": 38.0,
+        "near_faucet_c": 43.9286,
+        "middle_c": 34.1532,
+        "overflow_end_c": 32.5094,
+        "mean_c": 35.8658,
+        "spatial_range_c": 11.4192
+      },
+      {
+        "minute": 40.0,
+        "near_faucet_c": 43.9346,
+        "middle_c": 34.0708,
+        "overflow_end_c": 32.2608,
+        "mean_c": 35.772,
+        "spatial_range_c": 11.6737
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement constraints and explicit deterministic physics assumptions; it does not claim measured bath sensor data.",
+    "replaceable_assumptions": {
+      "tub": {
+        "name": "baseline_rectangular_tub",
+        "length_m": 1.55,
+        "width_m": 0.72,
+        "water_depth_m": 0.42,
+        "water_volume_l": 250.0,
+        "surface_area_m2": 1.12,
+        "wall_area_m2": 2.3
+      },
+      "person": {
+        "displaced_volume_l": 70.0,
+        "immersed_surface_area_m2": 1.15,
+        "thermal_contact_factor": 0.52
+      },
+      "model_type": "deterministic 1D finite-volume bathtub temperature model with faucet at one end and overflow removal from the other end",
+      "ambient_heat_loss_per_min": 0.01,
+      "wall_heat_loss_per_min": 0.004,
+      "person_heat_exchange_per_min": 0.006,
+      "base_mixing_per_min": 0.18,
+      "motion_mixing_multiplier": {
+        "still": 0.75,
+        "gentle_motion": 1.0,
+        "active_stirring": 1.45
+      },
+      "overflow_rule": "when hot water is added at constant trickle, the same volume leaves through overflow; this is counted as wasted water",
+      "truthfulness": "The PDF gives qualitative constraints but no measured tub/person temperatures; numeric coefficients are explicit scenario assumptions, not observed data."
+    }
+  }
+}

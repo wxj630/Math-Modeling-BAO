@@ -1,0 +1,354 @@
+{
+  "problem_id": "2017-A",
+  "question": "q06",
+  "question_title": "ZRA 摘要报告与推荐策略",
+  "statement": "Submit a standard summary sheet, a 1-2 page brief assessment report, and the main solution for Requirement 2.",
+  "methods": "把三方案决策矩阵、推荐小坝数量、坝址、正常/极端调度、暴露限制和模型局限整理为 ZRA 管理层可读报告。对应模型：工程政策报告、执行摘要、模型限制说明。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
+    "official_problem_parameters": {
+      "options": [
+        "Repairing the existing Kariba Dam",
+        "Rebuilding the existing Kariba Dam",
+        "Removing Kariba Dam and replacing it with 10 to 20 smaller dams"
+      ],
+      "small_dam_count_range": [
+        10,
+        20
+      ],
+      "same_or_greater_water_management_required": true,
+      "brief_assessment_required_pages": "1-2",
+      "main_solution_page_limit": 20
+    },
+    "assumptions": {
+      "cost_units": "All costs are normalized planning cost units because the official statement provides no engineering bill of quantities.",
+      "river_axis": "The Zambezi reach is represented by a normalized 0-100 river coordinate from upstream Lake Kariba control to downstream exposed communities.",
+      "dam_capacity": "Each small dam contributes storage, flood attenuation, low-flow release, and redundancy; values are deterministic scenario assumptions.",
+      "water_management_index": "Composite index = 0.35 storage + 0.30 flood attenuation + 0.20 low-flow support + 0.15 redundancy.",
+      "exposure_limits": "Maximum exposure durations are planning rules for protecting river segments under flood or low-flow extremes."
+    }
+  },
+  "brief_assessment_report": "Brief assessment for ZRA management:\n\nZRA asked for a two-page comparison of repairing Kariba, rebuilding Kariba, and replacing Kariba with 10-20 smaller dams. Repair is the lowest-cost bridge, rebuild is the single-dam safety reset, and Option 3 provides the highest flexibility. In this transparent scoring model, Option 3 has the highest benefit score, while the detailed Option 3 design recommends 15 smaller dams with water management index 103.110093. Because the official statement does not provide engineering cost or hydrology tables, all costs and capacities are normalized planning assumptions.",
+  "option_assessment": {
+    "options": [
+      {
+        "option": "Option 1",
+        "description": "Repairing the existing Kariba Dam",
+        "normalized_cost": 42.0,
+        "implementation_years": 4,
+        "construction_disruption": 0.28,
+        "safety_improvement": 0.48,
+        "water_management_flexibility": 0.34,
+        "main_benefit": "lowest near-term cost and fastest reduction of urgent maintenance risk",
+        "main_risk": "keeps single-point failure and limited operational flexibility",
+        "benefit_score": 0.279,
+        "benefit_cost_ratio": 0.664286
+      },
+      {
+        "option": "Option 2",
+        "description": "Rebuilding the existing Kariba Dam",
+        "normalized_cost": 96.0,
+        "implementation_years": 8,
+        "construction_disruption": 0.66,
+        "safety_improvement": 0.82,
+        "water_management_flexibility": 0.58,
+        "main_benefit": "major safety reset while preserving Lake Kariba operating concept",
+        "main_risk": "high cost and long construction exposure",
+        "benefit_score": 0.44,
+        "benefit_cost_ratio": 0.458333
+      },
+      {
+        "option": "Option 3",
+        "description": "Removing Kariba Dam and replacing it with 10 to 20 smaller dams",
+        "normalized_cost": 118.0,
+        "implementation_years": 11,
+        "construction_disruption": 0.78,
+        "safety_improvement": 0.88,
+        "water_management_flexibility": 0.91,
+        "main_benefit": "distributed redundancy and more flexible flood/low-flow control",
+        "main_risk": "complex siting, ecological exposure, and coordination across many dams",
+        "benefit_score": 0.5585,
+        "benefit_cost_ratio": 0.473305
+      }
+    ],
+    "brief_recommendation": "Option 1 is a near-term risk bridge, but Option 3 is the strategic option if ZRA can manage multi-site construction and ecological constraints."
+  },
+  "small_dam_system": {
+    "kariba_reference_index": 100.0,
+    "frontier": [
+      {
+        "dam_count": 10,
+        "storage_index": 89.933606,
+        "flood_attenuation_index": 60.871668,
+        "low_flow_support_index": 75.841361,
+        "redundancy_index": 77.0,
+        "water_management_index": 76.456535,
+        "normalized_cost": 94.0,
+        "safety_cost_balance": 36.976535,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 11,
+        "storage_index": 97.172639,
+        "flood_attenuation_index": 66.573741,
+        "low_flow_support_index": 81.266324,
+        "redundancy_index": 81.2,
+        "water_management_index": 82.415811,
+        "normalized_cost": 104.02,
+        "safety_cost_balance": 38.727411,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 12,
+        "storage_index": 104.303786,
+        "flood_attenuation_index": 72.249991,
+        "low_flow_support_index": 86.558506,
+        "redundancy_index": 85.4,
+        "water_management_index": 88.303024,
+        "normalized_cost": 114.48,
+        "safety_cost_balance": 40.221424,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 13,
+        "storage_index": 111.344342,
+        "flood_attenuation_index": 77.903027,
+        "low_flow_support_index": 91.73919,
+        "redundancy_index": 89.6,
+        "water_management_index": 94.129266,
+        "normalized_cost": 125.38,
+        "safety_cost_balance": 41.469666,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 14,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 83.535013,
+        "low_flow_support_index": 96.824917,
+        "redundancy_index": 93.8,
+        "water_management_index": 99.795487,
+        "normalized_cost": 136.72,
+        "safety_cost_balance": 42.373087,
+        "meets_kariba_reference": false
+      },
+      {
+        "dam_count": 15,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 89.147773,
+        "low_flow_support_index": 101.828803,
+        "redundancy_index": 98.0,
+        "water_management_index": 103.110093,
+        "normalized_cost": 148.5,
+        "safety_cost_balance": 40.740093,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 16,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 94.742861,
+        "low_flow_support_index": 106.76142,
+        "redundancy_index": 102.2,
+        "water_management_index": 106.405142,
+        "normalized_cost": 160.72,
+        "safety_cost_balance": 38.902742,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 17,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 100.321617,
+        "low_flow_support_index": 111.631414,
+        "redundancy_index": 106.4,
+        "water_management_index": 107.882768,
+        "normalized_cost": 173.38,
+        "safety_cost_balance": 35.063168,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 18,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 105.885208,
+        "low_flow_support_index": 112.0,
+        "redundancy_index": 110.6,
+        "water_management_index": 108.455562,
+        "normalized_cost": 186.48,
+        "safety_cost_balance": 30.133962,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 19,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 111.434655,
+        "low_flow_support_index": 112.0,
+        "redundancy_index": 114.8,
+        "water_management_index": 108.950396,
+        "normalized_cost": 200.02,
+        "safety_cost_balance": 24.941996,
+        "meets_kariba_reference": true
+      },
+      {
+        "dam_count": 20,
+        "storage_index": 118.0,
+        "flood_attenuation_index": 116.970863,
+        "low_flow_support_index": 112.0,
+        "redundancy_index": 119.0,
+        "water_management_index": 109.441259,
+        "normalized_cost": 214.0,
+        "safety_cost_balance": 19.561259,
+        "meets_kariba_reference": true
+      }
+    ],
+    "recommended_dam_count": 15,
+    "recommended_system": {
+      "dam_count": 15,
+      "storage_index": 118.0,
+      "flood_attenuation_index": 89.147773,
+      "low_flow_support_index": 101.828803,
+      "redundancy_index": 98.0,
+      "water_management_index": 103.110093,
+      "normalized_cost": 148.5,
+      "safety_cost_balance": 40.740093,
+      "meets_kariba_reference": true
+    },
+    "placements": [
+      {
+        "dam_id": "D01",
+        "river_coordinate_0_100": 6.0,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D02",
+        "river_coordinate_0_100": 12.29,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D03",
+        "river_coordinate_0_100": 18.57,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D04",
+        "river_coordinate_0_100": 24.86,
+        "segment": "upstream_lake_control",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "replace Kariba storage and regulate lake-level transitions"
+      },
+      {
+        "dam_id": "D05",
+        "river_coordinate_0_100": 31.14,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D06",
+        "river_coordinate_0_100": 37.43,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D07",
+        "river_coordinate_0_100": 43.71,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D08",
+        "river_coordinate_0_100": 50.0,
+        "segment": "mid_river_flood_buffer",
+        "local_storage_share_pct": 7.2,
+        "primary_role": "attenuate flood peaks and distribute release timing"
+      },
+      {
+        "dam_id": "D09",
+        "river_coordinate_0_100": 56.29,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D10",
+        "river_coordinate_0_100": 62.57,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D11",
+        "river_coordinate_0_100": 68.86,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D12",
+        "river_coordinate_0_100": 75.14,
+        "segment": "downstream_power_and_irrigation",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "support low-flow releases for users"
+      },
+      {
+        "dam_id": "D13",
+        "river_coordinate_0_100": 81.43,
+        "segment": "delta_ecology_protection",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "limit extreme exposure in sensitive downstream reaches"
+      },
+      {
+        "dam_id": "D14",
+        "river_coordinate_0_100": 87.71,
+        "segment": "delta_ecology_protection",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "limit extreme exposure in sensitive downstream reaches"
+      },
+      {
+        "dam_id": "D15",
+        "river_coordinate_0_100": 94.0,
+        "segment": "delta_ecology_protection",
+        "local_storage_share_pct": 6.133,
+        "primary_role": "limit extreme exposure in sensitive downstream reaches"
+      }
+    ],
+    "recommendation": "Use a distributed 15-dam system: enough redundancy to match Kariba-level management while avoiding the coordination penalty of 18-20 dams."
+  },
+  "flow_modulation_strategy": {
+    "recommended_dam_count": 15,
+    "rules": [
+      {
+        "condition": "normal wet-season inflow",
+        "trigger_flow_index": "60-85",
+        "release_rule": "store first 30% of surplus upstream, pass 50% through mid-river buffers, reserve 20% for downstream ecological pulse",
+        "safety_cost_tradeoff": "moderate storage with low emergency spill risk"
+      },
+      {
+        "condition": "normal dry-season inflow",
+        "trigger_flow_index": "35-60",
+        "release_rule": "coordinate weekly low-flow support from downstream and mid-river dams while preserving upstream reserve",
+        "safety_cost_tradeoff": "protect water users while limiting turbine and ecology stress"
+      },
+      {
+        "condition": "flood emergency",
+        "trigger_flow_index": ">85",
+        "release_rule": "pre-release upstream dams, stagger mid-river gates by 8-12 hours, cap downstream rise rate",
+        "safety_cost_tradeoff": "higher short-term spill cost to avoid synchronized flood peak"
+      },
+      {
+        "condition": "prolonged low-water emergency",
+        "trigger_flow_index": "<35 for 30 days",
+        "release_rule": "shift to drought rationing, suspend noncritical hydropower peaking, protect drinking water and ecological minimum flow",
+        "safety_cost_tradeoff": "economic generation loss accepted to preserve health and minimum river function"
+      }
+    ],
+    "coordination_principle": "Operate the dam chain as staggered buffers rather than independent reservoirs."
+  }
+}

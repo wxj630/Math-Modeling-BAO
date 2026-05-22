@@ -1,0 +1,6 @@
+project,scale,area_ha,private_benefit_musd,direct_cost_musd,disturbance_index,mitigation_share,ecosystem_service_loss_musd,traditional_npv_musd,true_npv_after_services_musd,cost_benefit_ratio_after_services,decision
+cross-country pipeline corridor,national,1250,1400.0,910.0,0.57,0.48,26.784,490.0,463.216,1.4945,approve with service accounting
+expanded commercial waterway,national,820,960.0,640.0,0.64,0.4,22.763,320.0,297.237,1.4485,approve with service accounting
+corporate headquarters relocation,regional,180,230.0,155.0,0.38,0.5,2.472,75.0,72.528,1.4606,approve with service accounting
+new suburban housing district,regional,95,84.0,55.0,0.46,0.42,1.832,29.0,27.168,1.478,approve with service accounting
+small community road and sewer extension,community,14,7.5,4.6,0.22,0.35,0.145,2.9,2.755,1.5807,approve with service accounting

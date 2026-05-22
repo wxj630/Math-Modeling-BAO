@@ -1,0 +1,177 @@
+{
+  "problem_id": "2015-D",
+  "question": "q02",
+  "question_title": "LDC 20 年可持续发展计划",
+  "statement": "Select a country from the United Nations list of the 48 Least Developed Countries. Using your model and research from Task 1, create a 20 year sustainable development plan for your selected LDC country.",
+  "methods": "选定 Nepal 作为 LDC 示例，基于 World Bank 基线指标设计清洁水和卫生、分布式清洁能源、气候韧性农业、教育与生计、森林和灾害风险管理五类 20 年项目。对应模型：情景规划、多目标规划、项目组合设计。",
+  "data_source": {
+    "type": "official_pdf_and_world_bank_csv",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "selected_country": "Nepal",
+    "rows": {
+      "world_bank_nepal_indicators.csv": 462
+    },
+    "indicators": {
+      "SP.POP.TOTL": "Population, total",
+      "NY.GDP.PCAP.KD": "GDP per capita, constant 2015 US$",
+      "SI.POV.DDAY": "Poverty headcount ratio at $2.15/day",
+      "SH.H2O.BASW.ZS": "People using at least basic drinking water services",
+      "EG.ELC.ACCS.ZS": "Access to electricity",
+      "AG.LND.FRST.ZS": "Forest area",
+      "SH.STA.BASS.ZS": "People using at least basic sanitation services"
+    },
+    "official_problem_parameters": {
+      "ldc_list_size": 48,
+      "planning_horizon_years": 20,
+      "reference_world_population_2050": 9000000000,
+      "pillars_from_statement": [
+        "poverty and vulnerability",
+        "economic development",
+        "ecosystem health"
+      ]
+    }
+  },
+  "development_plan": {
+    "selected_country": "Nepal",
+    "horizon_years": 20,
+    "strategy": "Prioritize infrastructure that jointly improves basic needs and ecological limits, then rank programs by score gain per billion USD.",
+    "programs": [
+      {
+        "program": "clean_water_and_sanitation",
+        "annual_cost_billion_usd": 0.18,
+        "twenty_year_cost_billion_usd": 3.6,
+        "estimated_score_gain": 0.035173,
+        "score_gain_per_billion_usd": 0.00977,
+        "description": "rural water systems, sanitation extension, and maintenance training"
+      },
+      {
+        "program": "distributed_clean_energy",
+        "annual_cost_billion_usd": 0.14,
+        "twenty_year_cost_billion_usd": 2.8,
+        "estimated_score_gain": 0.0242,
+        "score_gain_per_billion_usd": 0.008643,
+        "description": "micro-hydro, solar mini-grids, clean cooking, and resilient local maintenance"
+      },
+      {
+        "program": "forest_and_disaster_risk_management",
+        "annual_cost_billion_usd": 0.1,
+        "twenty_year_cost_billion_usd": 2.0,
+        "estimated_score_gain": 0.0146,
+        "score_gain_per_billion_usd": 0.0073,
+        "description": "community forestry, slope risk monitoring, disaster preparedness, and watershed protection"
+      },
+      {
+        "program": "education_and_livelihoods",
+        "annual_cost_billion_usd": 0.2,
+        "twenty_year_cost_billion_usd": 4.0,
+        "estimated_score_gain": 0.02488,
+        "score_gain_per_billion_usd": 0.00622,
+        "description": "technical training, women-focused entrepreneurship, and local value-chain support"
+      },
+      {
+        "program": "climate_resilient_agriculture",
+        "annual_cost_billion_usd": 0.16,
+        "twenty_year_cost_billion_usd": 3.2,
+        "estimated_score_gain": 0.01848,
+        "score_gain_per_billion_usd": 0.005775,
+        "description": "terrace stabilization, irrigation efficiency, seed resilience, and farmer cooperatives"
+      }
+    ]
+  },
+  "sustainability_index": {
+    "definition": "Weighted country sustainability score over needs and limits: water, sanitation, energy, livelihoods, poverty, environment, and population pressure.",
+    "baseline_year": 2024,
+    "baseline_score": 0.771044,
+    "status_rule": "score >= 0.70 sustainable; 0.50-0.70 transitional; <0.50 unsustainable",
+    "baseline_status": "sustainable",
+    "components": [
+      {
+        "component": "water_access",
+        "indicator_id": "SH.H2O.BASW.ZS",
+        "indicator_name": "People using at least basic drinking water services",
+        "latest_year": 2024,
+        "latest_value": 93.640125,
+        "weight": 0.17,
+        "score": 0.936401,
+        "weighted_score": 0.159188,
+        "trend_per_year_raw": 0.548603
+      },
+      {
+        "component": "sanitation_access",
+        "indicator_id": "SH.STA.BASS.ZS",
+        "indicator_name": "People using at least basic sanitation services",
+        "latest_year": 2024,
+        "latest_value": 86.025981,
+        "weight": 0.15,
+        "score": 0.86026,
+        "weighted_score": 0.129039,
+        "trend_per_year_raw": 3.283491
+      },
+      {
+        "component": "energy_access",
+        "indicator_id": "EG.ELC.ACCS.ZS",
+        "indicator_name": "Access to electricity",
+        "latest_year": 2023,
+        "latest_value": 94.0,
+        "weight": 0.15,
+        "score": 0.94,
+        "weighted_score": 0.141,
+        "trend_per_year_raw": 1.011111
+      },
+      {
+        "component": "livelihood",
+        "indicator_id": "NY.GDP.PCAP.KD",
+        "indicator_name": "GDP per capita, constant 2015 US$",
+        "latest_year": 2024,
+        "latest_value": 1179.812728,
+        "weight": 0.16,
+        "score": 0.393271,
+        "weighted_score": 0.062923,
+        "trend_per_year_raw": 33.807677
+      },
+      {
+        "component": "poverty_reduction",
+        "indicator_id": "SI.POV.DDAY",
+        "indicator_name": "Poverty headcount ratio at $2.15/day",
+        "latest_year": 2022,
+        "latest_value": 2.4,
+        "weight": 0.17,
+        "score": 0.976,
+        "weighted_score": 0.16592,
+        "trend_per_year_raw": -2.121053
+      },
+      {
+        "component": "environment_health",
+        "indicator_id": "AG.LND.FRST.ZS",
+        "indicator_name": "Forest area",
+        "latest_year": 2023,
+        "latest_value": 41.590722,
+        "weight": 0.12,
+        "score": 0.415907,
+        "weighted_score": 0.049909,
+        "trend_per_year_raw": 0.0
+      },
+      {
+        "component": "population_pressure",
+        "indicator_id": "SP.POP.TOTL",
+        "indicator_name": "Population, total",
+        "latest_year": 2024,
+        "latest_value": 29651054.0,
+        "weight": 0.08,
+        "score": 0.788315,
+        "weighted_score": 0.063065,
+        "trend_per_year_raw": 203047.222222
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "COMAP supplied the PDF task statement and pointed teams to World Bank Data; this workflow uses cached World Bank API observations for Nepal plus explicit planning assumptions for intervention effects.",
+    "assumptions": {
+      "country_choice_note": "Nepal is used as one LDC example to instantiate the required 20-year plan; the numeric observations are cached from World Bank API responses.",
+      "score_range": "All component scores are clipped to [0, 1]. Percent indicators are divided by 100; GDP per capita is divided by 3000 constant 2015 US dollars and clipped at 1.",
+      "program_delta_note": "Program effects are transparent planning assumptions applied to observed baseline indicators, not historical estimates of causal impact.",
+      "population_pressure_note": "Population pressure score rewards a lower 20-year extrapolated population growth ratio, capped by a 1.6 stress reference."
+    }
+  }
+}

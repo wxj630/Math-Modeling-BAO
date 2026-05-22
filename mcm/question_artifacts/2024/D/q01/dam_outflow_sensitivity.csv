@@ -1,0 +1,3 @@
+﻿lake,control_flow,rows,rmse_m,standardized_outflow_sensitivity,interpretation
+Lake Superior,St. Mary's River,168,0.066173,-0.005175,negative means larger outflow tends to lower next-month lake level
+Lake Ontario,St. Lawrence River,109,0.136944,-0.122293,negative means larger outflow tends to lower next-month lake level

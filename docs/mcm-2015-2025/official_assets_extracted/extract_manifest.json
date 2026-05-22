@@ -1,0 +1,250 @@
+[
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_ICM_Problem_F.pdf",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "2025_ICM_Problem_F.pdf"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_ICM_Problem_D.pdf",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "2025_ICM_Problem_D.pdf"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_ICM_Problem_E.pdf",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "2025_ICM_Problem_E.pdf"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_Problem_C_Data.zip",
+    "kind": "zip",
+    "file_count": 5,
+    "files": [
+      "2025_Problem_C_Data/summerOly_programs.csv",
+      "2025_Problem_C_Data/summerOly_athletes.csv",
+      "2025_Problem_C_Data/data_dictionary.csv",
+      "2025_Problem_C_Data/summerOly_hosts.csv",
+      "2025_Problem_C_Data/summerOly_medal_counts.csv"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_MCM_Problem_B.pdf",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "2025_MCM_Problem_B.pdf"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_MCM_Problem_C.pdf",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "2025_MCM_Problem_C.pdf"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_MCM_Problem_A.pdf",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "2025_MCM_Problem_A.pdf"
+    ]
+  },
+  {
+    "year": "2025",
+    "source": "docs/mcm-2015-2025/official_assets/2025/2025_Problem_D_Data.zip",
+    "kind": "zip",
+    "file_count": 9,
+    "files": [
+      "2025_Problem_D_Data/Bus_Routes.csv",
+      "2025_Problem_D_Data/edges_all.csv",
+      "2025_Problem_D_Data/nodes_drive.csv",
+      "2025_Problem_D_Data/Bus_Stops.csv",
+      "2025_Problem_D_Data/edges_drive.csv",
+      "2025_Problem_D_Data/MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv",
+      "2025_Problem_D_Data/Edge_Names_With_Nodes.csv",
+      "2025_Problem_D_Data/nodes_all.csv",
+      "2025_Problem_D_Data/DataDictionary.csv"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Sustainability of Property Insurance",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Sustainability of Property Insurance.pdf"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Reducing Illegal Wildlife Trade",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Reducing Illegal Wildlife Trade.pdf"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Resource Availability and Sex Ratios",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Resource Availability and Sex Ratios.pdf"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Great Lakes Water Problem",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Great Lakes Water Problem.pdf"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Problem Data- Momentum in Tennis",
+    "kind": "zip",
+    "file_count": 2,
+    "files": [
+      "2024_Wimbledon_featured_matches.csv",
+      "2024_data_dictionary.csv"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Data- Great Lakes Water Problem",
+    "kind": "zip",
+    "file_count": 2,
+    "files": [
+      "2024_Problem_D_Great_Lakes.xlsx",
+      "2024_Problem_D_Addendum.pdf"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Searching for Submersibles",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Searching for Submersibles.pdf"
+    ]
+  },
+  {
+    "year": "2024",
+    "source": "docs/mcm-2015-2025/official_assets/2024/Momentum in Tennis",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Momentum in Tennis.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Drought-Stricken Plant Communities",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Drought-Stricken Plant Communities.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Prioritizing the UN Sustainability Goals",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Prioritizing the UN Sustainability Goals.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Problem Data- Understanding Used Sailboat Prices",
+    "kind": "zip",
+    "file_count": 1,
+    "files": [
+      "2023_MCM_Problem_Y_Data.xlsx"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Reimagining Maasai Mara",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Reimagining Maasai Mara.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Understanding Used Sailboat Prices",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Understanding Used Sailboat Prices.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Light Pollution",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Light Pollution.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Green GDP",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Green GDP.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Problem Data- Predicting Wordle Results",
+    "kind": "zip",
+    "file_count": 1,
+    "files": [
+      "2023_MCM_Problem_C_Data.xlsx"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/The Future of the Olympics",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "The Future of the Olympics.pdf"
+    ]
+  },
+  {
+    "year": "2023",
+    "source": "docs/mcm-2015-2025/official_assets/2023/Predicting Wordle Results",
+    "kind": "pdf",
+    "file_count": 1,
+    "files": [
+      "Predicting Wordle Results.pdf"
+    ]
+  }
+]

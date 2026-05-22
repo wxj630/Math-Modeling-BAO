@@ -1,0 +1,102 @@
+{
+  "problem_id": "2020-E",
+  "title": "2020年 CUMCM E题：校园供水系统智能管理",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "输水管网的漏损是一个严重问题。资料显示，在维护良好的公共供水网络中，平均失水在5%左右；而在比较老旧的管网中，失水则会更多。请利用附件提供的数据，建立数学模型，分析该校园供水管网的漏损情况",
+  "tasks": [
+    "而在比较老旧的管网中，失水则会更多",
+    "请利用附件提供的数据，建立数学模型，分析该校园供水管网的漏损情况"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、分析"
+    },
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "网络"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "比较"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
+    "rows": 2500,
+    "columns": 6,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "而在比较老旧的管网中，失水则会更多",
+      "请利用附件提供的数据，建立数学模型，分析该校园供水管网的漏损情况"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      1.0,
+      -0.166781,
+      1.9e-05
+    ],
+    "r2": 1.0,
+    "mean_abs_error": 3.047242828439304e-12
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2020/E/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

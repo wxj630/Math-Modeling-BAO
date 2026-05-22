@@ -1,0 +1,13 @@
+subgroup,domain,price_index,recommended_control
+minors,social_media,94.78,regulated consent floor
+minors,financial_transactions,129.54,regulated consent floor
+minors,health_records,134.24,regulated consent floor
+elderly,social_media,83.72,regulated consent floor
+elderly,financial_transactions,114.56,regulated consent floor
+elderly,health_records,117.86,regulated consent floor
+public_employees,social_media,79.56,regulated consent floor
+public_employees,financial_transactions,109.28,regulated consent floor
+public_employees,health_records,112.18,regulated consent floor
+young_adults,social_media,57.44,individual choice with disclosure
+young_adults,financial_transactions,79.32,individual choice with disclosure
+young_adults,health_records,79.42,individual choice with disclosure

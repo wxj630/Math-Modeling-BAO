@@ -1,0 +1,106 @@
+{
+  "problem_id": "2023-D",
+  "title": "2023年 CUMCM D题：圈养湖羊的空间利用率",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "不考虑不确定因素和种羊的淘汰更新，假定自然交配期 20 天，母羊都能受孕，孕 期 149 天，每胎产羔 2 只，哺乳期 40 天，羔羊育肥期 210 天，母羊空怀休整期 20 天。该湖羊 养殖场现有 112 个标准羊栏，在实现连续生产的条件下，试确定养殖场种公羊与基础母羊的合 理数量， 并估算年化出栏羊只数量的范围。 若该养殖场希望每年出栏不少于 1500 只羊，试估算 现有标准羊栏数量的缺口。",
+  "tasks": [
+    "不考虑不确定因素和种羊的淘汰更新，假定自然交配期 20 天，母羊都能受孕，孕 期 149 天，每胎产羔 2 只，哺乳期 40 天，羔羊育肥期 210 天，母羊空怀休整期 20 天",
+    "该湖羊 养殖场现有 112 个标准羊栏，在实现连续生产的条件下，试确定养殖场种公羊与基础母羊的合 理数量， 并估算年化出栏羊只数量的范围"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "不确定"
+    }
+  ],
+  "data_source": {
+    "source_type": "problem_statement",
+    "attachment_count": 0,
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2023/D.md",
+    "rows": 36,
+    "columns": 17,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "不考虑不确定因素和种羊的淘汰更新，假定自然交配期 20 天，母羊都能受孕，孕 期 149 天，每胎产羔 2 只，哺乳期 40 天，羔羊育肥期 210 天，母羊空怀休整期 20 天",
+      "该湖羊 养殖场现有 112 个标准羊栏，在实现连续生产的条件下，试确定养殖场种公羊与基础母羊的合 理数量， 并估算年化出栏羊只数量的范围"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "b: 每批开始配种的基础母羊数量",
+      "tau: 相邻批次开始配种的间隔天数",
+      "M: 基础母羊存栏数，约为 b*C/tau",
+      "R: 种公羊数量，满足不低于 1:50 且覆盖同时配种羊栏",
+      "P_t: 第 t 天总羊栏需求",
+      "Y: 年化出栏羔羊数量"
+    ],
+    "constraints": [
+      "自然交配期每栏 1 只种公羊且不超过 14 只基础母羊。",
+      "怀孕期每栏不超过 8 只待产母羊。",
+      "哺乳期每栏不超过 6 只母羊及其羔羊。",
+      "育肥期每栏不超过 14 只羔羊，空怀休整期每栏不超过 14 只母羊。",
+      "确定性问题要求 max_t P_t <= 112；缺口估算用 max_t P_t - 112。"
+    ],
+    "objective_or_equations": [
+      "P_t = mating_t + pregnant_t + lactating_t + fattening_t + resting_t + ram_t",
+      "Y = lamb_outputs_in_window / window_days * 365",
+      "max Y subject to max_t P_t <= 112"
+    ],
+    "solution_steps": [
+      "把每批配种转化为交配、怀孕、哺乳、育肥、休整五类日历区间。",
+      "逐日统计各阶段羊只数量并按容量上取整为羊栏数。",
+      "枚举批次规模和配种间隔，筛选 112 个标准羊栏内可行方案。",
+      "输出基础母羊、种公羊、最大羊栏需求、空间利用率和年化出栏量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "deterministic_hu_sheep_capacity_search",
+    "best_feasible_plan": {
+      "batch_ewes": 28,
+      "interval_days": 15,
+      "base_ewes": 428,
+      "rams": 9,
+      "annual_output": 1344.0,
+      "max_pens": 111.0,
+      "mean_pens": 110.8,
+      "utilization": 0.989286,
+      "feasible_112_pens": true
+    },
+    "annual_output_range_feasible": [
+      252.0,
+      1344.0
+    ],
+    "recommended_base_ewes": 428,
+    "recommended_rams": 9,
+    "min_required_pens_for_1500_lambs": 125.0,
+    "pen_shortage_for_1500_lambs": 13,
+    "note": "按批次排程模拟稳定年，每日羊栏需求不超过 112 时视为可行。"
+  },
+  "artifact_paths": [
+    "question_artifacts/2023/D/q01/experiment_table.csv"
+  ]
+}

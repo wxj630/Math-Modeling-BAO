@@ -1,0 +1,102 @@
+# 2024-B 问题 1 建模求解实验报告
+
+## 题目原文与任务拆解
+
+- 题目：2024年 CUMCM B题：生产过程中的决策
+- 问题：问题 1
+- 原问：供应商声称一批零配件（零配件 1 或零配件 2）的次品率不会超过某个标称值。 企业准备采用抽样检测方法决定是否接收从供应商购买的这批零配件， 检测费用由企业自行 承担。请为企业设计检测次数尽可能少的抽样检测方案。 如果标称值为 10%，根据你们的抽样检测方案， 针对以下两种情形， 分别给出具体结果： (1) 在 95%的信度下认定零配件次品率超过标称值，则拒收这批零配件； (2) 在 90%的信度下认定零配件次品率不超过标称值，则接收这批零配件。
+
+### 本问需要完成什么
+- 任务 1：供应商声称一批零配件（零配件 1 或零配件 2）的次品率不会超过某个标称值。 企业准备采用抽样检测方法决定是否接收从供应商购买的这批零配件， 检测费用由企业自行 承担。请为企业设计检测次数尽可能少的抽样检测方案。 如果标称值为 10%，根据你们的抽样检测方案， 针对以下两种情形， 分别给出具体结果：
+
+## 适配模型
+
+- 主模型：概率统计与抽样检验（CH9：机器学习与统计模型）
+- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+
+### 候选模型与适配理由
+- 概率统计与抽样检验（CH9）：抽样、次品；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 规划优化与资源配置（CH3）：方案、设计；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 机器学习与统计识别（CH9）：检测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+
+## 变量、约束与公式
+
+### 建模假设
+- 以题面给出的数值、约束和输出格式为第一优先级构造模型。
+- 若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。
+- 所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。
+
+### 变量定义
+- n: 抽样检测件数
+- X: 样本中检出的不合格件数
+- p0=0.10: 供应商声称的标称次品率
+- c_r: 拒收阈值，X>=c_r 时拒收
+- c_a: 接收阈值，X<=c_a 时接收
+
+### 约束条件
+- 在 p=p0 时，错误拒收概率不超过 5%。
+- 在 p=0.15 的劣化备择下，拒收方案检出功效不低于 80%。
+- 在 p=p0 时，错误接收为优的概率不超过 10%。
+- 在 p=0.05 的优质备择下，接收方案检出功效不低于 80%。
+
+### 模型公式 / 目标函数
+- `min n`
+- `P_{p0}(X>=c_r)<=0.05, P_{0.15}(X>=c_r)>=0.80`
+- `P_{p0}(X<=c_a)<=0.10, P_{0.05}(X<=c_a)>=0.80`
+
+## Python 代码与运行方式
+
+- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2024/B/q01/solution.py
+- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2024/B/q01/solution.py`
+- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+
+### 求解步骤
+- 步骤 1：把抽样检测写成二项分布 X~Binomial(n,p)。
+- 步骤 2：枚举 n 和阈值，分别搜索 95% 拒收规则与 90% 接收规则。
+- 步骤 3：输出最小检测次数、阈值和两类风险概率。
+
+## 实验结果与解释
+
+### 产物文件
+- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/B/q01/experiment_table.csv
+
+### 数据来源
+- 类型：problem_statement
+- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md
+- 读取规模：49 行 x 13 列
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
+
+### result.json 核心结果
+
+```json
+{
+  "method": "exact_binomial_acceptance_sampling",
+  "nominal_defect_rate": 0.1,
+  "reject_design": {
+    "sample_size": 270,
+    "reject_if_defects_at_least": 36,
+    "false_reject_at_10pct": 0.0465956446946515,
+    "power_at_15pct": 0.8014718293371876
+  },
+  "accept_design": {
+    "sample_size": 128,
+    "accept_if_defects_at_most": 8,
+    "false_accept_as_good_at_10pct": 0.0971273790991151,
+    "power_at_5pct": 0.8081478861337388
+  },
+  "interpretation": "拒收规则面向发现次品率高于 10% 的批次；接收规则面向确认次品率显著低于 10% 的批次。"
+}
+```
+
+### 结果解释
+- 本问用 `exact_binomial_acceptance_sampling` 将题面任务转化为可计算实验，并把关键数值写入 JSON 和 CSV 产物。
+- CSV 表是后续写论文表格、画图或替换真实附件数据的主要入口；如果题面要求 result*.xlsx，可在该表基础上按模板导出。
+- 数据来源字段会标明本问使用官方附件、题面参数还是专用题面常量；后续冲论文质量时，可在现有 CSV/JSON 基础上补充图表、误差分析和敏感性分析。
+
+## 实验报告
+
+本问的核心是：供应商声称一批零配件（零配件 1 或零配件 2）的次品率不会超过某个标称值。 企业准备采用抽样检测方法决定是否接收从供应商购买的这批零配件， 检测费用由企业自行 承担。请为企业设计检测次数尽可能少的抽样检测方案。 如果标称值为 10%，根据你们的抽样检测方案， 针对以下两种情形， 分别给出具体结果： (1) 在 95%的信度下认定零配件次品率超过标称值，则…
+
+建模时先将题目要求拆成 1 个任务，再选择 `概率统计与抽样检验`。求解过程严格对应变量定义、约束条件和目标函数：先构造可计算数据表，再调用 Python 数值算法得到实验结果，最后把结果写入 `result.json` 与 `experiment_table.csv`。
+
+报告写作时建议按以下结构展开：问题重述、符号说明、模型假设、模型建立、算法实现、结果表格、误差/敏感性分析、模型评价。

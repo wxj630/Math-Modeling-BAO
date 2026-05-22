@@ -1,0 +1,5 @@
+country,development_group,current_priority_score,target_priority_score,score_delta,food_insecurity_rate,environmental_pressure,recommended_implementation_years,main_gap
+Germany,developed,0.6928,0.6832,-0.0096,0.05,0.55,7,sustainability
+United States,developed,0.6912,0.5776,-0.1136,0.11,0.76,9,sustainability
+Kenya,developing,0.4216,0.4396,0.018,0.25,0.52,10,equity
+India,developing,0.4912,0.46,-0.0312,0.18,0.68,11,sustainability

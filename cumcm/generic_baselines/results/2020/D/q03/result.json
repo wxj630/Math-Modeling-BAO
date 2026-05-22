@@ -1,0 +1,102 @@
+{
+  "problem_id": "2020-D",
+  "title": "2020年 CUMCM D题：接触式轮廓仪的自动标注",
+  "question_index": 3,
+  "question_label": "问题3",
+  "statement": "在对工件作多次检测时，工件每次放置的角度、测量的起点和终点都会有偏差，这导致了每次测量实际是对整个工件中的某一部分进行检测。附件2提供了对工件2的10次测量数据，请基于这些数据完成：(1) 每次测量时工件2的倾斜角度；(2) 标注出工件2轮廓线的各项参数值（同问题1）；(3) 画出工件2的完整轮廓线。",
+  "tasks": [
+    "(2) 标注出工件2轮廓线的各项参数值（同问题1）",
+    "(3) 画出工件2的完整轮廓线"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、参数、测量"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "角度、轮廓"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检测"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件1_工件1的测量数据.xlsx",
+    "rows": 2500,
+    "columns": 2,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "(2) 标注出工件2轮廓线的各项参数值（同问题1）",
+      "(3) 画出工件2的完整轮廓线"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      1.0,
+      -0.082815,
+      0.000501
+    ],
+    "r2": 0.9999537159222597,
+    "mean_abs_error": 0.0009653284366294816
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2020/D/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

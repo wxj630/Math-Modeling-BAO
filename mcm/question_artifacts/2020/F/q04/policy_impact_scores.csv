@@ -1,0 +1,6 @@
+policy,human_rights_gain,culture_gain,cost_difficulty,choice_protection,policy_impact_score,mean_culture_risk_after_policy
+UN-triggered EDP status protocol,0.3,0.18,0.44,0.24,0.1484,0.1634
+pre-negotiated migration compacts,0.28,0.14,0.48,0.22,0.1196,0.1746
+portable citizenship and legal identity,0.22,0.12,0.34,0.26,0.1196,0.1751
+cultural continuity trust,0.1,0.3,0.28,0.12,0.1108,0.1482
+host-community adaptation finance,0.18,0.1,0.52,0.16,0.054,0.19

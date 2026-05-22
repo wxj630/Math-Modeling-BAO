@@ -1,0 +1,189 @@
+{
+  "problem_id": "2024-F",
+  "question": "q08",
+  "question_title": "如何确定上述影响",
+  "statement": "What analysis did you do to determine this?",
+  "methods": "组合多指标客户选择、资源约束项目成本、干预影响投影、复杂系统影响网络和 one-at-a-time 敏感性分析。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "official_requirements": {
+      "select_client": true,
+      "realistic_client_action": true,
+      "data_driven_five_year_project": true,
+      "additional_powers_and_resources": true,
+      "measurable_impact": true,
+      "goal_probability": true,
+      "contextualized_sensitivity_analysis": true,
+      "one_page_client_memo": true
+    },
+    "parameters": {
+      "max_illegal_trade_billion_usd": 26.5,
+      "project_years": 5,
+      "fourth_largest_illegal_trade": true,
+      "program_effectiveness_discount": 0.42,
+      "source_note": "Official PDF statement parameters only; project rows are deterministic scenario assumptions, not observed enforcement data."
+    }
+  },
+  "analysis_support": {
+    "modeling_processes": [
+      "multi-criteria client selection",
+      "deterministic intervention-impact projection",
+      "resource-constrained project costing",
+      "contextualized sensitivity analysis",
+      "complex-system influence network"
+    ],
+    "complexity_framework": {
+      "used": true,
+      "benefits": [
+        "captures route displacement and demand-channel substitution",
+        "makes synergy with anti-trafficking, financial crime, and climate/livelihood work explicit"
+      ],
+      "drawbacks": [
+        "requires scenario assumptions when official numerical network data are unavailable",
+        "can obscure accountability if every actor is treated as equally responsible"
+      ]
+    },
+    "complex_system_edges": [
+      {
+        "source": "source-area poaching",
+        "target": "transit-route smuggling",
+        "influence_weight": 0.85,
+        "relationship": "supply chain"
+      },
+      {
+        "source": "transit-route smuggling",
+        "target": "destination market availability",
+        "influence_weight": 0.78,
+        "relationship": "supply chain"
+      },
+      {
+        "source": "online demand signals",
+        "target": "destination market availability",
+        "influence_weight": 0.66,
+        "relationship": "demand amplification"
+      },
+      {
+        "source": "financial-flow screening",
+        "target": "transit-route smuggling",
+        "influence_weight": -0.42,
+        "relationship": "deterrence"
+      },
+      {
+        "source": "customs targeting",
+        "target": "transit-route smuggling",
+        "influence_weight": -0.58,
+        "relationship": "interdiction"
+      },
+      {
+        "source": "community rewards",
+        "target": "source-area poaching",
+        "influence_weight": -0.37,
+        "relationship": "source reduction"
+      },
+      {
+        "source": "platform takedown",
+        "target": "online demand signals",
+        "influence_weight": -0.45,
+        "relationship": "demand reduction"
+      },
+      {
+        "source": "climate and livelihood stress",
+        "target": "source-area poaching",
+        "influence_weight": 0.31,
+        "relationship": "external pressure"
+      }
+    ]
+  },
+  "impact_projection": {
+    "baseline_illegal_trade_value_year5_billion_usd": 31.4737,
+    "projected_illegal_trade_value_year5_billion_usd": 20.8262,
+    "final_trade_reduction_pct": 33.83,
+    "annual_rows": [
+      {
+        "year": 1,
+        "baseline_illegal_trade_value_billion_usd": 27.4275,
+        "projected_illegal_trade_value_billion_usd": 26.6609,
+        "annual_project_reduction_pct": 2.795,
+        "cumulative_trade_reduction_pct": 2.795
+      },
+      {
+        "year": 2,
+        "baseline_illegal_trade_value_billion_usd": 28.3875,
+        "projected_illegal_trade_value_billion_usd": 26.1991,
+        "annual_project_reduction_pct": 5.055,
+        "cumulative_trade_reduction_pct": 7.709
+      },
+      {
+        "year": 3,
+        "baseline_illegal_trade_value_billion_usd": 29.381,
+        "projected_illegal_trade_value_billion_usd": 25.0463,
+        "annual_project_reduction_pct": 7.633,
+        "cumulative_trade_reduction_pct": 14.754
+      },
+      {
+        "year": 4,
+        "baseline_illegal_trade_value_billion_usd": 30.4094,
+        "projected_illegal_trade_value_billion_usd": 23.2169,
+        "annual_project_reduction_pct": 10.439,
+        "cumulative_trade_reduction_pct": 23.652
+      },
+      {
+        "year": 5,
+        "baseline_illegal_trade_value_billion_usd": 31.4737,
+        "projected_illegal_trade_value_billion_usd": 20.8262,
+        "annual_project_reduction_pct": 13.331,
+        "cumulative_trade_reduction_pct": 33.83
+      }
+    ],
+    "method": "compound no-project growth path compared with deterministic yearly intervention reductions under implementation maturity"
+  },
+  "resource_needs": {
+    "additional_budget_musd": 160.395,
+    "resource_rows": [
+      {
+        "intervention": "risk-scored customs inspections on high-probability routes",
+        "client_power_required": "customs targeting authority and shipment metadata access",
+        "startup_cost_musd": 4.675,
+        "annual_cost_musd": 8.5,
+        "five_year_cost_musd": 47.175
+      },
+      {
+        "intervention": "shared wildlife-trafficking intelligence graph",
+        "client_power_required": "data-sharing MOUs, secure analytics platform, common species/product taxonomy",
+        "startup_cost_musd": 3.41,
+        "annual_cost_musd": 6.2,
+        "five_year_cost_musd": 34.41
+      },
+      {
+        "intervention": "online listing takedown and seller re-entry friction",
+        "client_power_required": "platform APIs, trust-and-safety escalation, payment account flags",
+        "startup_cost_musd": 2.09,
+        "annual_cost_musd": 3.8,
+        "five_year_cost_musd": 21.09
+      },
+      {
+        "intervention": "community informant rewards and alternative-livelihood microgrants",
+        "client_power_required": "local NGO partners, audited reward fund, community project pipeline",
+        "startup_cost_musd": 3.025,
+        "annual_cost_musd": 5.5,
+        "five_year_cost_musd": 30.525
+      },
+      {
+        "intervention": "financial-flow screening for wildlife-product typologies",
+        "client_power_required": "FIU liaison, suspicious transaction typologies, privacy-preserving watchlists",
+        "startup_cost_musd": 2.695,
+        "annual_cost_musd": 4.9,
+        "five_year_cost_musd": 27.195
+      }
+    ],
+    "additional_powers": [
+      "customs data-sharing memorandum across high-risk ports",
+      "legal authority for risk-scored inspections and controlled deliveries",
+      "platform takedown escalation channel",
+      "financial intelligence liaison for wildlife-product typologies",
+      "audited community reward and microgrant mechanism"
+    ]
+  }
+}

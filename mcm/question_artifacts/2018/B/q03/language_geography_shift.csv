@@ -1,0 +1,7 @@
+region,population_growth_pressure,migration_connectivity,language_geography_shift_score
+Africa,0.86,0.72,0.8012
+South Asia,0.78,0.68,0.738
+Americas,0.55,0.7,0.613
+Europe,0.22,0.44,0.3124
+East Asia,0.28,0.5,0.3724
+Middle East,0.62,0.64,0.6284

@@ -1,0 +1,82 @@
+{
+  "problem_id": "2023-C-Wordle",
+  "question": "q04",
+  "question_title": "Wordle 数据集的其他有趣特征",
+  "statement": "List and describe some other interesting features of this data set.",
+  "methods": "统计报告人数年度衰减、困难模式平均占比、重复字母与期望尝试次数差异、星期效应和关键相关系数。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "records": 359,
+    "date_min": "2022-01-07",
+    "date_max": "2022-12-31",
+    "columns": [
+      "Date",
+      "Contest number",
+      "Word",
+      "Number of reported results",
+      "Number in hard mode",
+      "1 try",
+      "2 tries",
+      "3 tries",
+      "4 tries",
+      "5 tries",
+      "6 tries",
+      "7 or more tries (X)"
+    ]
+  },
+  "interesting_features": {
+    "reported_results_first30_mean": 243624.47,
+    "reported_results_last30_mean": 22138.43,
+    "reported_results_change_pct_first30_to_last30": -90.91,
+    "repeated_letter_word_count": 101,
+    "non_repeated_letter_word_count": 258,
+    "repeated_letter_expected_attempts_mean": 4.435085,
+    "non_repeated_expected_attempts_mean": 4.098676,
+    "hard_mode_rate_mean": 0.077634,
+    "correlations": {
+      "Number of reported results__hard_mode_rate": -0.435233,
+      "expected_attempts__repeated_letters": 0.405087,
+      "expected_attempts__unique_letters": -0.383098,
+      "expected_attempts__vowel_count": -0.042749
+    },
+    "weekday_summary": [
+      {
+        "weekday": "Mon",
+        "mean_reported_results": 90320.06,
+        "mean_expected_attempts": 4.200015
+      },
+      {
+        "weekday": "Tue",
+        "mean_reported_results": 92754.1,
+        "mean_expected_attempts": 4.230888
+      },
+      {
+        "weekday": "Wed",
+        "mean_reported_results": 93844.39,
+        "mean_expected_attempts": 4.210129
+      },
+      {
+        "weekday": "Thu",
+        "mean_reported_results": 91749.33,
+        "mean_expected_attempts": 4.187878
+      },
+      {
+        "weekday": "Fri",
+        "mean_reported_results": 91341.69,
+        "mean_expected_attempts": 4.154165
+      },
+      {
+        "weekday": "Sat",
+        "mean_reported_results": 88160.06,
+        "mean_expected_attempts": 4.162801
+      },
+      {
+        "weekday": "Sun",
+        "mean_reported_results": 88308.31,
+        "mean_expected_attempts": 4.208731
+      }
+    ]
+  }
+}

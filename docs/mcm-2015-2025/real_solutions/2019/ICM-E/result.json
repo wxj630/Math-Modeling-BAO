@@ -1,0 +1,269 @@
+{
+  "problem_id": "2019-E",
+  "title": "What is the Cost of Environmental Degradation?",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "official_requirements": {
+      "ecosystem_service_valuation": true,
+      "land_use_cost_benefit": true,
+      "varying_project_sizes": true,
+      "model_effectiveness": true,
+      "planner_manager_implications": true,
+      "model_changes_over_time": true
+    },
+    "parameters": {
+      "ecosystem_services": [
+        {
+          "service": "water filtration",
+          "annual_value_usd_ha": 1350,
+          "degradation_sensitivity": 0.74,
+          "recovery_years": 18
+        },
+        {
+          "service": "pollination and food production support",
+          "annual_value_usd_ha": 980,
+          "degradation_sensitivity": 0.62,
+          "recovery_years": 12
+        },
+        {
+          "service": "carbon sequestration and oxygen cycling",
+          "annual_value_usd_ha": 720,
+          "degradation_sensitivity": 0.58,
+          "recovery_years": 25
+        },
+        {
+          "service": "waste assimilation",
+          "annual_value_usd_ha": 1120,
+          "degradation_sensitivity": 0.81,
+          "recovery_years": 20
+        },
+        {
+          "service": "biodiversity and habitat support",
+          "annual_value_usd_ha": 860,
+          "degradation_sensitivity": 0.88,
+          "recovery_years": 30
+        }
+      ],
+      "land_use_projects": [
+        {
+          "project": "small community road and sewer extension",
+          "scale": "community",
+          "area_ha": 14,
+          "private_benefit_musd": 7.5,
+          "direct_cost_musd": 4.6,
+          "disturbance_index": 0.22,
+          "mitigation_share": 0.35
+        },
+        {
+          "project": "new suburban housing district",
+          "scale": "regional",
+          "area_ha": 95,
+          "private_benefit_musd": 84.0,
+          "direct_cost_musd": 55.0,
+          "disturbance_index": 0.46,
+          "mitigation_share": 0.42
+        },
+        {
+          "project": "corporate headquarters relocation",
+          "scale": "regional",
+          "area_ha": 180,
+          "private_benefit_musd": 230.0,
+          "direct_cost_musd": 155.0,
+          "disturbance_index": 0.38,
+          "mitigation_share": 0.5
+        },
+        {
+          "project": "cross-country pipeline corridor",
+          "scale": "national",
+          "area_ha": 1250,
+          "private_benefit_musd": 1400.0,
+          "direct_cost_musd": 910.0,
+          "disturbance_index": 0.57,
+          "mitigation_share": 0.48
+        },
+        {
+          "project": "expanded commercial waterway",
+          "scale": "national",
+          "area_ha": 820,
+          "private_benefit_musd": 960.0,
+          "direct_cost_musd": 640.0,
+          "disturbance_index": 0.64,
+          "mitigation_share": 0.4
+        }
+      ],
+      "discount_rate": 0.03,
+      "evaluation_years": 30,
+      "source_note": "Official PDF statement categories only; monetary values, sensitivities, and project rows are explicit deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "valuation_model": {
+    "service_rows": [
+      {
+        "service": "water filtration",
+        "annual_value_usd_ha": 1350,
+        "degradation_sensitivity": 0.74,
+        "recovery_years": 18,
+        "present_value_usd_ha_30yr": 26460.6,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "pollination and food production support",
+        "annual_value_usd_ha": 980,
+        "degradation_sensitivity": 0.62,
+        "recovery_years": 12,
+        "present_value_usd_ha_30yr": 19208.43,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "carbon sequestration and oxygen cycling",
+        "annual_value_usd_ha": 720,
+        "degradation_sensitivity": 0.58,
+        "recovery_years": 25,
+        "present_value_usd_ha_30yr": 14112.32,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "waste assimilation",
+        "annual_value_usd_ha": 1120,
+        "degradation_sensitivity": 0.81,
+        "recovery_years": 20,
+        "present_value_usd_ha_30yr": 21952.49,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      },
+      {
+        "service": "biodiversity and habitat support",
+        "annual_value_usd_ha": 860,
+        "degradation_sensitivity": 0.88,
+        "recovery_years": 30,
+        "present_value_usd_ha_30yr": 16856.38,
+        "accounting_role": "include as avoided loss, mitigation target, or restoration liability in project cost-benefit analysis"
+      }
+    ],
+    "valuation_rule": "environmental cost equals area disturbed times discounted service value times degradation sensitivity after mitigation",
+    "discount_rate": 0.03,
+    "evaluation_years": 30
+  },
+  "project_cost_benefit": {
+    "project_rows": [
+      {
+        "project": "cross-country pipeline corridor",
+        "scale": "national",
+        "area_ha": 1250,
+        "private_benefit_musd": 1400.0,
+        "direct_cost_musd": 910.0,
+        "disturbance_index": 0.57,
+        "mitigation_share": 0.48,
+        "ecosystem_service_loss_musd": 26.784,
+        "traditional_npv_musd": 490.0,
+        "true_npv_after_services_musd": 463.216,
+        "cost_benefit_ratio_after_services": 1.4945,
+        "decision": "approve with service accounting"
+      },
+      {
+        "project": "expanded commercial waterway",
+        "scale": "national",
+        "area_ha": 820,
+        "private_benefit_musd": 960.0,
+        "direct_cost_musd": 640.0,
+        "disturbance_index": 0.64,
+        "mitigation_share": 0.4,
+        "ecosystem_service_loss_musd": 22.763,
+        "traditional_npv_musd": 320.0,
+        "true_npv_after_services_musd": 297.237,
+        "cost_benefit_ratio_after_services": 1.4485,
+        "decision": "approve with service accounting"
+      },
+      {
+        "project": "corporate headquarters relocation",
+        "scale": "regional",
+        "area_ha": 180,
+        "private_benefit_musd": 230.0,
+        "direct_cost_musd": 155.0,
+        "disturbance_index": 0.38,
+        "mitigation_share": 0.5,
+        "ecosystem_service_loss_musd": 2.472,
+        "traditional_npv_musd": 75.0,
+        "true_npv_after_services_musd": 72.528,
+        "cost_benefit_ratio_after_services": 1.4606,
+        "decision": "approve with service accounting"
+      },
+      {
+        "project": "new suburban housing district",
+        "scale": "regional",
+        "area_ha": 95,
+        "private_benefit_musd": 84.0,
+        "direct_cost_musd": 55.0,
+        "disturbance_index": 0.46,
+        "mitigation_share": 0.42,
+        "ecosystem_service_loss_musd": 1.832,
+        "traditional_npv_musd": 29.0,
+        "true_npv_after_services_musd": 27.168,
+        "cost_benefit_ratio_after_services": 1.478,
+        "decision": "approve with service accounting"
+      },
+      {
+        "project": "small community road and sewer extension",
+        "scale": "community",
+        "area_ha": 14,
+        "private_benefit_musd": 7.5,
+        "direct_cost_musd": 4.6,
+        "disturbance_index": 0.22,
+        "mitigation_share": 0.35,
+        "ecosystem_service_loss_musd": 0.145,
+        "traditional_npv_musd": 2.9,
+        "true_npv_after_services_musd": 2.755,
+        "cost_benefit_ratio_after_services": 1.5807,
+        "decision": "approve with service accounting"
+      }
+    ],
+    "projects_reversed_by_ecosystem_accounting": 0
+  },
+  "model_effectiveness": {
+    "effectiveness_summary": "The model is most effective as a screening and redesign tool because it exposes costs that are invisible in a traditional direct-cost ledger.",
+    "projects_flagged_for_redesign": 0,
+    "strengths": [
+      "uses transparent service categories named in the official problem statement",
+      "works across community, regional, and national land-use scales",
+      "separates direct cost, private benefit, mitigation, and residual ecological liability"
+    ],
+    "weaknesses": [
+      "service values vary by local ecosystem and should be calibrated with field or satellite data",
+      "discount rate and recovery time assumptions can change the ranking",
+      "non-market cultural and biodiversity values remain partly qualitative"
+    ]
+  },
+  "planner_implications": {
+    "implications": [
+      "project managers should budget mitigation and restoration as core capital costs",
+      "small projects can be approved quickly when cumulative service loss stays below local thresholds",
+      "large linear infrastructure needs corridor alternatives and offsets before permitting",
+      "benefit-cost ratios should be reported both before and after ecosystem-service accounting",
+      "regional planners need cumulative impact ledgers because individually small projects can combine into significant degradation"
+    ]
+  },
+  "time_update_model": {
+    "update_interval_years": 3,
+    "change_triggers": [
+      "new satellite land-cover baseline",
+      "observed water quality or air quality deterioration",
+      "species or habitat threshold crossed",
+      "carbon price or restoration cost changes"
+    ],
+    "time_rule": "update service values, degradation sensitivities, and recovery periods whenever monitoring changes the expected residual loss by more than 10 percent"
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic valuation scenarios; it does not use random placeholder data.",
+    "model_limits": [
+      "COMAP did not provide a land-cover table, project cost ledger, or local ecosystem measurements.",
+      "Dollar values are transparent planning inputs inspired by the service categories named in the statement, not observed project accounts.",
+      "A full paper should replace them with local data.gov ecosystem data, satellite land cover, restoration bids, and monitoring records."
+    ]
+  },
+  "artifacts": {
+    "service_values": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-E/artifacts/ecosystem_service_values.csv",
+    "project_true_costs": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-E/artifacts/project_true_costs.csv",
+    "frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-E/artifacts/environmental_cost_frontier.png"
+  }
+}

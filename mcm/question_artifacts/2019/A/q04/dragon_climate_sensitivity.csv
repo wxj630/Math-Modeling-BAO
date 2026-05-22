@@ -1,0 +1,4 @@
+climate,daily_kcal_three_dragons,annual_prey_kg,habitat_area_km2,water_stress_multiplier,story_guidance
+arid,75818.41,21287.48,40.937,1.35,"requires migration, supplemental feeding, or lower density"
+warm_temperate,65360.7,18351.27,14.681,1.0,best long-run ecological fit
+arctic,92812.19,26058.81,84.061,0.82,"requires migration, supplemental feeding, or lower density"

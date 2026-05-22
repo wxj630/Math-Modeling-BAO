@@ -1,0 +1,121 @@
+{
+  "problem_id": "2015-A",
+  "title": "2015年 CUMCM A题：太阳影子定位",
+  "question_index": 1,
+  "question_label": "问题 1",
+  "statement": "建立影子长度变化的数学模型，分析影子长度关于各个参数的变化规律，并应用你们建立的模型画出2015年10月22日北京时间9:00-15:00之间天安门广场（北纬39度54分26秒,东经116度23分29秒）3米高的直杆的太阳影子长度的变化曲线。",
+  "tasks": [
+    "建立影子长度变化的数学模型，分析影子长度关于各个参数的变化规律，并应用你们建立的模型画出2015年10月22日北京时间9:00-15:00之间天安门广场（北纬39度54分26秒,东经116度23分29秒）3米高的直杆的太阳影子长度的变化曲线"
+  ],
+  "selected_model": {
+    "key": "ch1",
+    "name": "太阳高度角-方位角影子定位模型",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "reason": "直杆影长由太阳高度角决定，影尖方向由太阳方位角决定，是典型几何解析模型。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "reason": "附件影尖坐标需要与理论曲线拟合，并估计坐标轴旋转、比例和残差。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    },
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "reason": "未知日期和视频问题都依赖影尖随时间变化的序列特征。",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
+    "rows": 63,
+    "columns": 3,
+    "note": "本题专用算法读取附件1-3影尖坐标，结合太阳赤纬、时差和高度角/方位角模型完成影长曲线、已知日期定位、未知日期定位；附件4当前只有下载说明，因此问题4输出视频处理流程和替代影尖序列实验。"
+  },
+  "formulation": {
+    "model_type": "太阳高度角-方位角影子定位模型",
+    "task_breakdown": [
+      "建立影子长度变化的数学模型，分析影子长度关于各个参数的变化规律，并应用你们建立的模型画出2015年10月22日北京时间9:00-15:00之间天安门广场（北纬39度54分26秒,东经116度23分29秒）3米高的直杆的太阳影子长度的变化曲线"
+    ],
+    "assumptions": [
+      "直杆垂直于水平地面，影尖坐标以杆底为原点。",
+      "北京时间按东八区中央经线120E换算为当地真太阳时，并加入近似时差方程修正。",
+      "太阳赤纬、时差、太阳高度角和方位角采用常用天文近似公式，满足数学建模竞赛精度需求。",
+      "附件影尖坐标的xy轴方向可能与正东/正北存在旋转差异，因此地点搜索时对模型影子向量拟合最优比例和旋转。",
+      "附件4视频本体未随当前可读附件落盘；问题4保留视频处理流程，并用附件2/3影尖序列演示同一定位算法的可复现实验。",
+      "通用基线继续保留在 cumcm/generic_baselines，本专用结果是从通用曲线拟合推进到太阳几何定位模型的版本。"
+    ],
+    "decision_variables": [
+      "phi: 拍摄地纬度",
+      "lambda: 拍摄地经度",
+      "n: 年积日或候选日期",
+      "H(t): 太阳时角",
+      "alpha(t): 太阳高度角",
+      "A(t): 太阳方位角",
+      "L(t): 直杆影长",
+      "s,theta: 影尖坐标与理论东西-南北坐标之间的比例和旋转"
+    ],
+    "constraints": [
+      "太阳高度角 alpha(t)>0 时才产生可用影子。",
+      "影长 L=h/tan(alpha)，h为杆高；未知杆高时由相似变换比例s吸收。",
+      "地点搜索限制在常见中国及周边经纬度网格：15N-55N、70E-140E。",
+      "已知日期问题固定为2015-04-18；未知日期问题枚举2015全年候选日期。",
+      "视频缺失时不能伪造帧级测量，只能输出可复用流程和基于已有影尖序列的替代实验。"
+    ],
+    "objective_or_equations": [
+      "B = 2*pi*(N-81)/364",
+      "EoT = 9.87*sin(2B)-7.53*cos(B)-1.5*sin(B)",
+      "solar_time = Beijing_time + EoT/60 + (longitude-120)/15",
+      "sin(alpha)=sin(phi)sin(delta)+cos(phi)cos(delta)cos(H)",
+      "shadow_vector = -h*(sun_east,sun_north)/sun_up",
+      "min RMSE || observed_xy - s R(theta) model_shadow ||"
+    ],
+    "solution_steps": [
+      "按题面给定天安门经纬度、日期、北京时间9:00-15:00逐5分钟计算太阳位置。",
+      "用影长公式 L=h/tan(alpha) 生成3米直杆影长曲线。",
+      "对纬度、经度、日期和杆高做局部敏感性扰动，分析影长变化规律。",
+      "输出影长曲线和参数敏感性表。"
+    ],
+    "model_reference": {
+      "key": "ch1",
+      "name": "太阳高度角-方位角影子定位模型",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "solar_shadow_length_ephemeris_model",
+    "sample_count": 73,
+    "pole_height_m": 3.0,
+    "date": "2015-10-22",
+    "latitude_deg": 39.90722222,
+    "longitude_deg": 116.39138889,
+    "min_shadow_length_m": 3.841232,
+    "max_shadow_length_m": 7.036536,
+    "noon_shadow_length_m": 3.841232,
+    "report": [
+      "问题1直接由太阳赤纬、时差、时角和高度角建立影长公式，输出天安门广场3米直杆9:00-15:00影长曲线。",
+      "敏感性表分别扰动纬度、经度、日期和杆高，展示影长对不同参数的响应。",
+      "通用曲线拟合基线仍保留；当前结果是可复现的天文几何模型。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2015/A/q01/tiananmen_shadow_curve.csv",
+    "question_artifacts/2015/A/q01/shadow_parameter_sensitivity.csv",
+    "question_artifacts/2015/A/q01/experiment_table.csv"
+  ]
+}

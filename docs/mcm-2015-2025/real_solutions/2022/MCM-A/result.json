@@ -1,0 +1,768 @@
+{
+  "problem_id": "2022-A",
+  "title": "Power Profile of a Cyclist",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "official_requirements": {
+      "two_rider_types_and_genders": true,
+      "tokyo_olympic_time_trial_course": true,
+      "flanders_world_championship_time_trial_course": true,
+      "custom_course_four_sharp_turns_and_nontrivial_grade": true,
+      "weather_sensitivity": true,
+      "target_power_deviation_sensitivity": true,
+      "team_time_trial_six_riders_fourth_finish": true,
+      "directeur_sportif_guidance": true
+    },
+    "parameters": {
+      "rider_profiles": [
+        {
+          "rider": "male time trial specialist",
+          "rider_type": "time trial specialist",
+          "gender_profile": "male",
+          "mass_kg": 74.0,
+          "critical_power_w": 372.0,
+          "w_prime_kj": 23.0,
+          "sustainable_energy_kj": 4300.0,
+          "cda_m2": 0.205,
+          "handling_index": 0.72
+        },
+        {
+          "rider": "female time trial specialist",
+          "rider_type": "time trial specialist",
+          "gender_profile": "female",
+          "mass_kg": 61.0,
+          "critical_power_w": 286.0,
+          "w_prime_kj": 17.5,
+          "sustainable_energy_kj": 3250.0,
+          "cda_m2": 0.19,
+          "handling_index": 0.75
+        },
+        {
+          "rider": "male climber-puncheur",
+          "rider_type": "climber-puncheur",
+          "gender_profile": "male",
+          "mass_kg": 64.0,
+          "critical_power_w": 342.0,
+          "w_prime_kj": 27.0,
+          "sustainable_energy_kj": 3900.0,
+          "cda_m2": 0.235,
+          "handling_index": 0.86
+        },
+        {
+          "rider": "female climber-puncheur",
+          "rider_type": "climber-puncheur",
+          "gender_profile": "female",
+          "mass_kg": 53.0,
+          "critical_power_w": 257.0,
+          "w_prime_kj": 20.0,
+          "sustainable_energy_kj": 2920.0,
+          "cda_m2": 0.218,
+          "handling_index": 0.88
+        }
+      ],
+      "courses": [
+        {
+          "course": "2021 Olympic Time Trial course in Tokyo",
+          "official_requirement": "listed official course name in the problem statement",
+          "segments": [
+            {
+              "segment": "Fuji Speedway exit",
+              "distance_km": 7.2,
+              "grade": 0.01,
+              "turns": 3,
+              "wind_exposure": 0.42
+            },
+            {
+              "segment": "rolling approach",
+              "distance_km": 9.6,
+              "grade": 0.028,
+              "turns": 2,
+              "wind_exposure": 0.62
+            },
+            {
+              "segment": "technical descent",
+              "distance_km": 8.1,
+              "grade": -0.018,
+              "turns": 5,
+              "wind_exposure": 0.58
+            },
+            {
+              "segment": "speedway return",
+              "distance_km": 6.7,
+              "grade": 0.004,
+              "turns": 4,
+              "wind_exposure": 0.38
+            }
+          ]
+        },
+        {
+          "course": "2021 UCI World Championship time trial course in Flanders",
+          "official_requirement": "listed official course name in the problem statement",
+          "segments": [
+            {
+              "segment": "coastal flats",
+              "distance_km": 10.4,
+              "grade": 0.002,
+              "turns": 3,
+              "wind_exposure": 0.86
+            },
+            {
+              "segment": "open crosswind sector",
+              "distance_km": 12.8,
+              "grade": 0.004,
+              "turns": 4,
+              "wind_exposure": 0.92
+            },
+            {
+              "segment": "urban approach",
+              "distance_km": 8.3,
+              "grade": 0.006,
+              "turns": 7,
+              "wind_exposure": 0.48
+            },
+            {
+              "segment": "finish boulevards",
+              "distance_km": 6.1,
+              "grade": -0.001,
+              "turns": 3,
+              "wind_exposure": 0.54
+            }
+          ]
+        },
+        {
+          "course": "custom technical loop with four sharp turns and a nontrivial road grade",
+          "official_requirement": "course designed for the report: at least four sharp turns, at least one nontrivial grade, end near start",
+          "segments": [
+            {
+              "segment": "start straight",
+              "distance_km": 4.8,
+              "grade": 0.0,
+              "turns": 1,
+              "wind_exposure": 0.48
+            },
+            {
+              "segment": "sharp-turn climb",
+              "distance_km": 5.4,
+              "grade": 0.052,
+              "turns": 4,
+              "wind_exposure": 0.44
+            },
+            {
+              "segment": "ridge wind sector",
+              "distance_km": 6.2,
+              "grade": 0.018,
+              "turns": 2,
+              "wind_exposure": 0.78
+            },
+            {
+              "segment": "technical descent",
+              "distance_km": 5.6,
+              "grade": -0.036,
+              "turns": 5,
+              "wind_exposure": 0.4
+            },
+            {
+              "segment": "return to start",
+              "distance_km": 4.9,
+              "grade": -0.004,
+              "turns": 2,
+              "wind_exposure": 0.52
+            }
+          ]
+        }
+      ],
+      "team_size": 6,
+      "finish_counting_rider": 4,
+      "source_note": "Official PDF statement parameters only; rider and segment numbers are transparent deterministic scenario assumptions for an auditable workflow."
+    }
+  },
+  "rider_power_profiles": {
+    "model": "critical-power curve with finite above-threshold work capacity and aerodynamic rider parameters",
+    "profile_rows": [
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "duration_seconds": 15,
+        "max_power_w": 602.64,
+        "max_power_w_per_kg": 8.144,
+        "critical_power_w": 372.0,
+        "w_prime_kj": 23.0,
+        "cda_m2": 0.205
+      },
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "duration_seconds": 60,
+        "max_power_w": 602.64,
+        "max_power_w_per_kg": 8.144,
+        "critical_power_w": 372.0,
+        "w_prime_kj": 23.0,
+        "cda_m2": 0.205
+      },
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "duration_seconds": 300,
+        "max_power_w": 448.67,
+        "max_power_w_per_kg": 6.063,
+        "critical_power_w": 372.0,
+        "w_prime_kj": 23.0,
+        "cda_m2": 0.205
+      },
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "duration_seconds": 1200,
+        "max_power_w": 391.17,
+        "max_power_w_per_kg": 5.286,
+        "critical_power_w": 372.0,
+        "w_prime_kj": 23.0,
+        "cda_m2": 0.205
+      },
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "duration_seconds": 3600,
+        "max_power_w": 378.39,
+        "max_power_w_per_kg": 5.113,
+        "critical_power_w": 372.0,
+        "w_prime_kj": 23.0,
+        "cda_m2": 0.205
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "duration_seconds": 15,
+        "max_power_w": 463.32,
+        "max_power_w_per_kg": 7.595,
+        "critical_power_w": 286.0,
+        "w_prime_kj": 17.5,
+        "cda_m2": 0.19
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "duration_seconds": 60,
+        "max_power_w": 463.32,
+        "max_power_w_per_kg": 7.595,
+        "critical_power_w": 286.0,
+        "w_prime_kj": 17.5,
+        "cda_m2": 0.19
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "duration_seconds": 300,
+        "max_power_w": 344.33,
+        "max_power_w_per_kg": 5.645,
+        "critical_power_w": 286.0,
+        "w_prime_kj": 17.5,
+        "cda_m2": 0.19
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "duration_seconds": 1200,
+        "max_power_w": 300.58,
+        "max_power_w_per_kg": 4.928,
+        "critical_power_w": 286.0,
+        "w_prime_kj": 17.5,
+        "cda_m2": 0.19
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "duration_seconds": 3600,
+        "max_power_w": 290.86,
+        "max_power_w_per_kg": 4.768,
+        "critical_power_w": 286.0,
+        "w_prime_kj": 17.5,
+        "cda_m2": 0.19
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "duration_seconds": 15,
+        "max_power_w": 554.04,
+        "max_power_w_per_kg": 8.657,
+        "critical_power_w": 342.0,
+        "w_prime_kj": 27.0,
+        "cda_m2": 0.235
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "duration_seconds": 60,
+        "max_power_w": 554.04,
+        "max_power_w_per_kg": 8.657,
+        "critical_power_w": 342.0,
+        "w_prime_kj": 27.0,
+        "cda_m2": 0.235
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "duration_seconds": 300,
+        "max_power_w": 432.0,
+        "max_power_w_per_kg": 6.75,
+        "critical_power_w": 342.0,
+        "w_prime_kj": 27.0,
+        "cda_m2": 0.235
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "duration_seconds": 1200,
+        "max_power_w": 364.5,
+        "max_power_w_per_kg": 5.695,
+        "critical_power_w": 342.0,
+        "w_prime_kj": 27.0,
+        "cda_m2": 0.235
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "duration_seconds": 3600,
+        "max_power_w": 349.5,
+        "max_power_w_per_kg": 5.461,
+        "critical_power_w": 342.0,
+        "w_prime_kj": 27.0,
+        "cda_m2": 0.235
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "duration_seconds": 15,
+        "max_power_w": 416.34,
+        "max_power_w_per_kg": 7.855,
+        "critical_power_w": 257.0,
+        "w_prime_kj": 20.0,
+        "cda_m2": 0.218
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "duration_seconds": 60,
+        "max_power_w": 416.34,
+        "max_power_w_per_kg": 7.855,
+        "critical_power_w": 257.0,
+        "w_prime_kj": 20.0,
+        "cda_m2": 0.218
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "duration_seconds": 300,
+        "max_power_w": 323.67,
+        "max_power_w_per_kg": 6.107,
+        "critical_power_w": 257.0,
+        "w_prime_kj": 20.0,
+        "cda_m2": 0.218
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "duration_seconds": 1200,
+        "max_power_w": 273.67,
+        "max_power_w_per_kg": 5.164,
+        "critical_power_w": 257.0,
+        "w_prime_kj": 20.0,
+        "cda_m2": 0.218
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "duration_seconds": 3600,
+        "max_power_w": 262.56,
+        "max_power_w_per_kg": 4.954,
+        "critical_power_w": 257.0,
+        "w_prime_kj": 20.0,
+        "cda_m2": 0.218
+      }
+    ],
+    "profile_note": "The official problem asks for two rider types and gender profiles; values are transparent scenario parameters for a reproducible workflow."
+  },
+  "course_strategy": {
+    "method": "segment-by-segment power targeting with energy budget, grade, turns, aerodynamic drag, and accumulated high-power load",
+    "course_results": [
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "total_distance_km": 31.6,
+        "total_time_s": 2528.39,
+        "total_time_min": 42.14,
+        "total_energy_kj": 956.38,
+        "energy_budget_kj": 4300.0,
+        "energy_budget_margin_kj": 3343.62,
+        "high_power_load_kj": 23.64
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "total_distance_km": 31.6,
+        "total_time_s": 2661.5,
+        "total_time_min": 44.358,
+        "total_energy_kj": 924.86,
+        "energy_budget_kj": 3900.0,
+        "energy_budget_margin_kj": 2975.14,
+        "high_power_load_kj": 22.34
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "total_distance_km": 31.6,
+        "total_time_s": 2691.36,
+        "total_time_min": 44.856,
+        "total_energy_kj": 782.73,
+        "energy_budget_kj": 3250.0,
+        "energy_budget_margin_kj": 2467.27,
+        "high_power_load_kj": 19.39
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "total_distance_km": 31.6,
+        "total_time_s": 2863.16,
+        "total_time_min": 47.719,
+        "total_energy_kj": 747.78,
+        "energy_budget_kj": 2920.0,
+        "energy_budget_margin_kj": 2172.22,
+        "high_power_load_kj": 18.16
+      },
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "total_distance_km": 37.6,
+        "total_time_s": 2863.18,
+        "total_time_min": 47.72,
+        "total_energy_kj": 1045.79,
+        "energy_budget_kj": 4300.0,
+        "energy_budget_margin_kj": 3254.21,
+        "high_power_load_kj": 7.29
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "total_distance_km": 37.6,
+        "total_time_s": 3045.49,
+        "total_time_min": 50.758,
+        "total_energy_kj": 1022.58,
+        "energy_budget_kj": 3900.0,
+        "energy_budget_margin_kj": 2877.42,
+        "high_power_load_kj": 7.09
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "total_distance_km": 37.6,
+        "total_time_s": 3045.52,
+        "total_time_min": 50.759,
+        "total_energy_kj": 855.21,
+        "energy_budget_kj": 3250.0,
+        "energy_budget_margin_kj": 2394.79,
+        "high_power_load_kj": 5.96
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "total_distance_km": 37.6,
+        "total_time_s": 3269.7,
+        "total_time_min": 54.495,
+        "total_energy_kj": 825.0,
+        "energy_budget_kj": 2920.0,
+        "energy_budget_margin_kj": 2095.0,
+        "high_power_load_kj": 5.72
+      },
+      {
+        "rider": "male time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "male",
+        "course": "custom technical loop with four sharp turns and a nontrivial road grade",
+        "total_distance_km": 26.9,
+        "total_time_s": 2194.01,
+        "total_time_min": 36.567,
+        "total_energy_kj": 848.48,
+        "energy_budget_kj": 4300.0,
+        "energy_budget_margin_kj": 3451.52,
+        "high_power_load_kj": 51.04
+      },
+      {
+        "rider": "male climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "male",
+        "course": "custom technical loop with four sharp turns and a nontrivial road grade",
+        "total_distance_km": 26.9,
+        "total_time_s": 2296.0,
+        "total_time_min": 38.267,
+        "total_energy_kj": 813.69,
+        "energy_budget_kj": 3900.0,
+        "energy_budget_margin_kj": 3086.31,
+        "high_power_load_kj": 46.98
+      },
+      {
+        "rider": "female time trial specialist",
+        "rider_type": "time trial specialist",
+        "gender_profile": "female",
+        "course": "custom technical loop with four sharp turns and a nontrivial road grade",
+        "total_distance_km": 26.9,
+        "total_time_s": 2335.85,
+        "total_time_min": 38.931,
+        "total_energy_kj": 694.63,
+        "energy_budget_kj": 3250.0,
+        "energy_budget_margin_kj": 2555.37,
+        "high_power_load_kj": 41.89
+      },
+      {
+        "rider": "female climber-puncheur",
+        "rider_type": "climber-puncheur",
+        "gender_profile": "female",
+        "course": "custom technical loop with four sharp turns and a nontrivial road grade",
+        "total_distance_km": 26.9,
+        "total_time_s": 2472.11,
+        "total_time_min": 41.202,
+        "total_energy_kj": 658.76,
+        "energy_budget_kj": 2920.0,
+        "energy_budget_margin_kj": 2261.24,
+        "high_power_load_kj": 38.34
+      }
+    ],
+    "guidance_case": {
+      "rider": "male time trial specialist",
+      "rider_type": "time trial specialist",
+      "gender_profile": "male",
+      "course": "2021 Olympic Time Trial course in Tokyo",
+      "total_distance_km": 31.6,
+      "total_time_s": 2528.39,
+      "total_time_min": 42.14,
+      "total_energy_kj": 956.38,
+      "energy_budget_kj": 4300.0,
+      "energy_budget_margin_kj": 3343.62,
+      "high_power_load_kj": 23.64
+    }
+  },
+  "weather_sensitivity": {
+    "method": "repeat the same segment power plan under tailwind, calm, and headwind conditions scaled by segment wind exposure",
+    "scenario_rows": [
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "wind_mps": -3.0,
+        "total_time_min": 39.495,
+        "time_change_s_vs_calm": -158.68,
+        "energy_budget_margin_kj": 3403.77
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "wind_mps": 0.0,
+        "total_time_min": 42.14,
+        "time_change_s_vs_calm": 0.0,
+        "energy_budget_margin_kj": 3343.62
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "wind_mps": 2.0,
+        "total_time_min": 44.069,
+        "time_change_s_vs_calm": 115.74,
+        "energy_budget_margin_kj": 3299.73
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "wind_mps": 5.0,
+        "total_time_min": 47.237,
+        "time_change_s_vs_calm": 305.8,
+        "energy_budget_margin_kj": 3227.64
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "wind_mps": 8.0,
+        "total_time_min": 50.767,
+        "time_change_s_vs_calm": 517.63,
+        "energy_budget_margin_kj": 3147.28
+      },
+      {
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "rider": "male time trial specialist",
+        "wind_mps": -3.0,
+        "total_time_min": 43.214,
+        "time_change_s_vs_calm": -270.33,
+        "energy_budget_margin_kj": 3352.42
+      },
+      {
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "rider": "male time trial specialist",
+        "wind_mps": 0.0,
+        "total_time_min": 47.72,
+        "time_change_s_vs_calm": 0.0,
+        "energy_budget_margin_kj": 3254.21
+      },
+      {
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "rider": "male time trial specialist",
+        "wind_mps": 2.0,
+        "total_time_min": 51.157,
+        "time_change_s_vs_calm": 206.24,
+        "energy_budget_margin_kj": 3179.33
+      },
+      {
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "rider": "male time trial specialist",
+        "wind_mps": 5.0,
+        "total_time_min": 57.078,
+        "time_change_s_vs_calm": 561.48,
+        "energy_budget_margin_kj": 3050.4
+      },
+      {
+        "course": "2021 UCI World Championship time trial course in Flanders",
+        "rider": "male time trial specialist",
+        "wind_mps": 8.0,
+        "total_time_min": 64.07,
+        "time_change_s_vs_calm": 981.03,
+        "energy_budget_margin_kj": 2898.22
+      }
+    ],
+    "interpretation": "Flanders has larger time swings because the official listed course is represented with more open wind exposure than the Tokyo rolling course."
+  },
+  "target_power_sensitivity": {
+    "method": "deterministic plus/minus target-power perturbation around the guidance plan",
+    "deviation_rows": [
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "power_deviation_pct": -8.0,
+        "total_time_min": 43.72,
+        "time_change_s_vs_target": 94.8,
+        "energy_budget_margin_kj": 3386.81,
+        "high_power_load_kj": 0.0
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "power_deviation_pct": -4.0,
+        "total_time_min": 42.902,
+        "time_change_s_vs_target": 45.75,
+        "energy_budget_margin_kj": 3365.1,
+        "high_power_load_kj": 8.71
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "power_deviation_pct": 0.0,
+        "total_time_min": 42.14,
+        "time_change_s_vs_target": 0.0,
+        "energy_budget_margin_kj": 3343.62,
+        "high_power_load_kj": 23.64
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "power_deviation_pct": 4.0,
+        "total_time_min": 41.427,
+        "time_change_s_vs_target": -42.8,
+        "energy_budget_margin_kj": 3322.36,
+        "high_power_load_kj": 53.0
+      },
+      {
+        "course": "2021 Olympic Time Trial course in Tokyo",
+        "rider": "male time trial specialist",
+        "power_deviation_pct": 8.0,
+        "total_time_min": 40.757,
+        "time_change_s_vs_target": -82.96,
+        "energy_budget_margin_kj": 3301.31,
+        "high_power_load_kj": 88.99
+      }
+    ],
+    "split_time_rule": "Use the calm-plan segment table as split targets and widen the tolerance band when the energy margin falls below 250 kJ."
+  },
+  "team_time_trial_extension": {
+    "team_size": 6,
+    "finish_counting_rider": 4,
+    "course": "2021 UCI World Championship time trial course in Flanders",
+    "estimated_fourth_rider_time_min": 54.495,
+    "extension_rule": "Optimize the fourth rider's finish time by assigning steadier pulls to time-trial specialists and shorter recovery-protected pulls to climber-puncheurs.",
+    "pull_order": [
+      {
+        "rider": "male time trial specialist",
+        "pull_role": "long steady pulls",
+        "individual_time_min": 47.72,
+        "team_pull_share": 0.24
+      },
+      {
+        "rider": "male climber-puncheur",
+        "pull_role": "short climb and acceleration pulls",
+        "individual_time_min": 50.758,
+        "team_pull_share": 0.215
+      },
+      {
+        "rider": "female time trial specialist",
+        "pull_role": "long steady pulls",
+        "individual_time_min": 50.759,
+        "team_pull_share": 0.19
+      },
+      {
+        "rider": "female climber-puncheur",
+        "pull_role": "short climb and acceleration pulls",
+        "individual_time_min": 54.495,
+        "team_pull_share": 0.165
+      }
+    ]
+  },
+  "race_guidance": "Directeur Sportif race guidance: use the Tokyo plan as a power corridor rather than a rigid second-by-second script. For the male time trial specialist, the target ride is 42.14 minutes over 31.6 km with an energy margin of 3343.62 kJ. Hold steady aero power on flat exposed sectors, allow controlled over-threshold work on climbs and exits from sharp turns, and recover on descents without letting speed collapse. If headwind rises, widen split targets on exposed sectors first; if the rider is more than 4% above target power early, call for immediate recovery because the high-power load grows faster than the time gain.",
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic assumptions; it does not invent random x1/x2/x3 placeholder data.",
+    "model_limits": [
+      "COMAP did not provide rider telemetry, GPS tracks, or measured weather files for this problem.",
+      "Rider profiles and course segments are auditable scenario inputs that a contest team should replace with power-meter history, exact route geometry, rolling resistance tests, and forecast winds.",
+      "The physics model is a planning model and should be calibrated before use for real race pacing."
+    ]
+  },
+  "artifacts": {
+    "rider_power_profiles": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/rider_power_profiles.csv",
+    "course_strategy_results": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/course_strategy_results.csv",
+    "course_segment_power_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/course_segment_power_plan.csv",
+    "weather_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/weather_sensitivity.csv",
+    "target_power_deviation": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/target_power_deviation.csv",
+    "power_course_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/power_course_frontier.png"
+  }
+}

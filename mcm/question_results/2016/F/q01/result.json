@@ -1,0 +1,72 @@
+{
+  "problem_id": "2016-F",
+  "question": "q01",
+  "question_title": "难民危机指标体系",
+  "statement": "Determine the specific factors which can either enable or inhibit the safe and efficient movement of refugees.",
+  "methods": "只使用官方题面中的 715,000+ 庇护申请、Hungary 1,450/100k、2014 年 32% 批准率和六条路线，构造可启用/抑制安全高效流动的因素列表与 route/resource/capacity 指标。对应模型：指标体系、多指标综合评价、容量约束建模。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "official_problem_parameters": {
+      "asylum_applications_by_oct_2015": 715000,
+      "hungary_applications_per_100k": 1450,
+      "hungary_approval_rate_2014": 0.32,
+      "routes": [
+        "West Mediterranean",
+        "Central Mediterranean",
+        "Eastern Mediterranean",
+        "West Balkans",
+        "Eastern Borders",
+        "Albania to Greece"
+      ],
+      "most_popular_route": "Eastern Mediterranean",
+      "most_dangerous_route": "Central Mediterranean",
+      "scale_factor_required_in_task": 10
+    },
+    "assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  },
+  "crisis_metrics": {
+    "official_scale": 715000,
+    "hungary_applications_per_100k": 1450,
+    "hungary_approval_rate_2014": 0.32,
+    "hungary_homeless_per_100k_proxy": 986.0,
+    "enabling_factors": [
+      "safe route segments",
+      "available transport",
+      "multiple entry points",
+      "destination resource capacity",
+      "legal processing capacity",
+      "NGO mobile support"
+    ],
+    "inhibiting_factors": [
+      "dangerous sea crossings",
+      "bottlenecked borders",
+      "low approval rates",
+      "shelter and healthcare scarcity",
+      "local backlash after security shocks",
+      "rapidly changing political constraints"
+    ],
+    "measure_definitions": {
+      "route_attractiveness": "0.38 accessibility + 0.34 safety + 0.18 capacity share + 0.10 legal entry support",
+      "resource_gap": "required resource units minus ready government and NGO units",
+      "system_resilience": "ability to preserve safe flow when one route loses safety or capacity"
+    }
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and explicit deterministic assumptions; it does not claim route capacity or resource bundle assumptions are observed data.",
+    "replaceable_assumptions": {
+      "route_scores": "Route safety, accessibility, and temporary capacity are normalized deterministic assumptions anchored to the six routes named in the official problem statement.",
+      "resource_units": "One shelter unit denotes capacity for 1,000 refugees; water, food, and healthcare units are comparable planning bundles per 1,000 refugees.",
+      "ngo_effect": "NGOs add mobile health, water, food distribution, and temporary shelter capacity, while governments retain legal admission and security functions.",
+      "allocation_rule": "Refugees are assigned to routes by attractiveness subject to route capacity, then resource gaps are prioritized by weighted unmet need.",
+      "scale_rule": "The 10x crisis keeps the same first-order network but activates new time-dependent parameters for disease control, childbirth, education, and social cohesion."
+    }
+  }
+}

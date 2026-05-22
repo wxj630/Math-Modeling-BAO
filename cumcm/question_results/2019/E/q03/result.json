@@ -1,0 +1,109 @@
+{
+  "problem_id": "2019-E",
+  "title": "2019年 CUMCM E题：薄利多销”分析",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "分析打折力度与商品销售额以及利润率的关系",
+  "tasks": [
+    "分析打折力度与商品销售额以及利润率的关系"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "薄利多销销售流水与折扣弹性分析模型",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "利润"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "分析"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 7,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件1.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件3.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件4.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件5.xlsx",
+    "rows": 1239845,
+    "columns": 55,
+    "note": "本题专用算法读取两份销售流水、促销信息和商品品类表，计算每日营业额/利润率、折扣力度及折扣-销售/利润关系。"
+  },
+  "formulation": {
+    "model_type": "薄利多销销售流水与折扣弹性分析模型",
+    "task_breakdown": [
+      "分析打折力度与商品销售额以及利润率的关系"
+    ],
+    "assumptions": [
+      "附件1和附件2均为销售流水，合并后仅保留已完成订单、正销售数量和正销售价记录。",
+      "营业额按 sku_cnt * sku_sale_prc 计算，标价额按 sku_cnt * sku_prc 计算。",
+      "sku_cost_prc为单品直降商品成本价；缺失成本先按一级品类有成本样本的中位利润率填补，再回退到题面20%-40%区间中值30%。",
+      "每日折扣力度用销售额加权折扣率、折扣覆盖率和促销活动覆盖率共同刻画。",
+      "关系分析在日级样本上控制星期和月份，并在一级品类层面复核折扣-销售额/利润率关系变化。",
+      "通用基线保留在 `cumcm/generic_baselines`，当前结果是从LP/TOPSIS粗模型推进到真实销售流水分析的专用版本。"
+    ],
+    "decision_variables": [
+      "R_d: 第d天营业额",
+      "M_d: 第d天利润率",
+      "D_d: 第d天折扣力度",
+      "C_i: 第i个SKU的估计成本",
+      "beta: 折扣力度对销售额/利润率的回归系数"
+    ],
+    "constraints": [
+      "完成订单 is_finished=1；退货或负数量记录不计入正向销售分析。",
+      "估计利润率限制在题面给出的20%-40%经验区间内。",
+      "折扣率 clip(1-sale_price/list_price, 0, 1)。"
+    ],
+    "objective_or_equations": [
+      "revenue = sku_cnt * sku_sale_prc。",
+      "profit = revenue - sku_cnt * estimated_cost。",
+      "discount_intensity = 0.7*revenue_weighted_discount + 0.2*discount_revenue_share + 0.1*promotion_revenue_share。",
+      "log(revenue_d)=alpha+beta*D_d+weekday+month+epsilon。",
+      "profit_rate_d=alpha+gamma*D_d+weekday+month+epsilon。"
+    ],
+    "solution_steps": [
+      "读取附件1/2销售流水、附件3促销信息、附件4商品品类表。",
+      "清洗日期、价格、数量并合并品类；用有成本样本估计品类利润率并填补非打折商品成本。",
+      "输出每日营业额、利润、利润率、订单数和销量。",
+      "构建每日折扣力度指标并输出日级折扣表。",
+      "对日级和品类-日级样本分别回归，分析折扣力度与销售额、利润率关系。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "薄利多销销售流水与折扣弹性分析模型",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "discount_sales_elasticity_relationship",
+    "daily_sample_count": 747,
+    "category_count": 29,
+    "revenue_discount_coefficient": 7.281554732,
+    "profit_rate_discount_coefficient": -0.0,
+    "category_relationship_count": 50,
+    "report": [
+      "日级回归以折扣力度解释销售额对数和利润率，并加入星期、月份控制变量。",
+      "品类层面分别估计折扣力度对各一级品类销售额和利润率的影响，用于回答进一步区分类别后的变化。",
+      "输出整体关系回归表和品类关系表，作为薄利多销效果判断依据。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2019/E/q03/daily_revenue_profit.csv",
+    "question_artifacts/2019/E/q03/daily_discount_intensity.csv",
+    "question_artifacts/2019/E/q03/category_margin_imputation.csv",
+    "question_artifacts/2019/E/q03/discount_relationship_regression.csv",
+    "question_artifacts/2019/E/q03/category_discount_relationship.csv",
+    "question_artifacts/2019/E/q03/experiment_table.csv"
+  ]
+}

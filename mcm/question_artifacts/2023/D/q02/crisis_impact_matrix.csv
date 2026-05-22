@@ -1,0 +1,6 @@
+crisis,affected_sdgs,effect_direction,network_severity_index,priority_response_sdgs,risk
+climate change,"2,6,11,13,14,15",negative,0.1123,"15,13,11",ecosystem and water stress cascades
+regional wars,"1,2,3,8,16,17",negative,0.1109,"1,17,3",institutions and partnerships are strained
+global pandemic,"1,2,3,4,8,10",negative,0.1007,"1,10,4",health shock disrupts education and work
+technological advances,"4,7,8,9,17",positive,0.0717,"17,4,8",digital divide can widen inequality
+refugee movements,"1,3,4,10,11,16",negative,0.0715,"1,10,4",service demand rises in destination communities

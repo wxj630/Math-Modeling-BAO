@@ -1,0 +1,210 @@
+{
+  "problem_id": "2022-P01",
+  "question": "q01",
+  "question_title": "ICM Corporation 当前 D&A 成熟度指标",
+  "statement": "A metric to measure the current D&A system maturity level for ICM Corporation, including KPIs for D&A people, technologies, and processes.",
+  "methods": "将官方题面的人、技术、流程三组成转成 1-5 级成熟度 rubric，按 KPI 重要度和组件权重计算当前成熟度。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "official_requirements": {
+      "people_technology_process_metric": true,
+      "icm_large_seaport_context": true,
+      "recommend_system_changes": true,
+      "effectiveness_protocols": true,
+      "larger_smaller_port_scaling": true,
+      "trucking_company_transfer": true,
+      "customer_letter": true
+    },
+    "parameters": {
+      "components": [
+        "people",
+        "technology",
+        "process"
+      ],
+      "maturity_scale": {
+        "1": "ad hoc",
+        "2": "repeatable",
+        "3": "managed",
+        "4": "integrated",
+        "5": "optimized"
+      },
+      "port_data_domains": [
+        {
+          "domain": "vessel arrival and berth schedule",
+          "strategic_value": 0.86,
+          "governance_risk": 0.58
+        },
+        {
+          "domain": "container and cargo manifests",
+          "strategic_value": 0.92,
+          "governance_risk": 0.72
+        },
+        {
+          "domain": "yard equipment and gate transactions",
+          "strategic_value": 0.78,
+          "governance_risk": 0.54
+        },
+        {
+          "domain": "customs and compliance documents",
+          "strategic_value": 0.82,
+          "governance_risk": 0.88
+        },
+        {
+          "domain": "customer billing and service records",
+          "strategic_value": 0.74,
+          "governance_risk": 0.7
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; KPI scores are transparent deterministic assessment inputs for a company that cannot share internal records."
+    }
+  },
+  "maturity_model": {
+    "scale": "1 ad hoc to 5 optimized",
+    "component_scores": {
+      "people": 2.508,
+      "technology": 2.121,
+      "process": 2.411
+    },
+    "target_component_scores": {
+      "people": 4.186,
+      "technology": 4.161,
+      "process": 4.26
+    },
+    "current_maturity_score": 2.354,
+    "target_maturity_score": 4.204,
+    "current_band": "repeatable",
+    "target_band": "integrated",
+    "kpi_rows": [
+      {
+        "component": "technology",
+        "kpi": "integrated cargo data platform",
+        "component_weight": 0.31,
+        "importance": 0.3,
+        "current_score": 2.1,
+        "target_score": 4.3,
+        "gap_to_target": 2.2,
+        "weighted_gap": 0.2046
+      },
+      {
+        "component": "people",
+        "kpi": "data stewardship ownership",
+        "component_weight": 0.34,
+        "importance": 0.26,
+        "current_score": 2.2,
+        "target_score": 4.4,
+        "gap_to_target": 2.2,
+        "weighted_gap": 0.1945
+      },
+      {
+        "component": "process",
+        "kpi": "data quality incident workflow",
+        "component_weight": 0.35,
+        "importance": 0.27,
+        "current_score": 2.4,
+        "target_score": 4.4,
+        "gap_to_target": 2.0,
+        "weighted_gap": 0.189
+      },
+      {
+        "component": "technology",
+        "kpi": "metadata and lineage coverage",
+        "component_weight": 0.31,
+        "importance": 0.24,
+        "current_score": 1.9,
+        "target_score": 4.2,
+        "gap_to_target": 2.3,
+        "weighted_gap": 0.1711
+      },
+      {
+        "component": "process",
+        "kpi": "supplier and customer data protocol",
+        "component_weight": 0.35,
+        "importance": 0.25,
+        "current_score": 2.1,
+        "target_score": 4.0,
+        "gap_to_target": 1.9,
+        "weighted_gap": 0.1662
+      },
+      {
+        "component": "people",
+        "kpi": "analytics role coverage",
+        "component_weight": 0.34,
+        "importance": 0.28,
+        "current_score": 2.6,
+        "target_score": 4.2,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1523
+      },
+      {
+        "component": "process",
+        "kpi": "analytics value review cycle",
+        "component_weight": 0.35,
+        "importance": 0.22,
+        "current_score": 2.2,
+        "target_score": 4.1,
+        "gap_to_target": 1.9,
+        "weighted_gap": 0.1463
+      },
+      {
+        "component": "process",
+        "kpi": "access and privacy controls",
+        "component_weight": 0.35,
+        "importance": 0.26,
+        "current_score": 2.9,
+        "target_score": 4.5,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1456
+      },
+      {
+        "component": "technology",
+        "kpi": "operational model monitoring",
+        "component_weight": 0.31,
+        "importance": 0.23,
+        "current_score": 2.0,
+        "target_score": 4.0,
+        "gap_to_target": 2.0,
+        "weighted_gap": 0.1426
+      },
+      {
+        "component": "people",
+        "kpi": "cross-functional decision forums",
+        "component_weight": 0.34,
+        "importance": 0.26,
+        "current_score": 2.8,
+        "target_score": 4.1,
+        "gap_to_target": 1.3,
+        "weighted_gap": 0.1149
+      },
+      {
+        "component": "technology",
+        "kpi": "secure customer-facing analytics",
+        "component_weight": 0.31,
+        "importance": 0.23,
+        "current_score": 2.5,
+        "target_score": 4.1,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1141
+      },
+      {
+        "component": "people",
+        "kpi": "training and literacy cadence",
+        "component_weight": 0.34,
+        "importance": 0.2,
+        "current_score": 2.4,
+        "target_score": 4.0,
+        "gap_to_target": 1.6,
+        "weighted_gap": 0.1088
+      }
+    ]
+  },
+  "assumption_audit": {
+    "truthfulness_note": "This workflow uses official statement parameters and transparent deterministic assessment inputs; it does not invent random x1/x2/x3 placeholder data.",
+    "model_limits": [
+      "The official problem states that ICM cannot share specific people, technology, process, or data records.",
+      "KPI scores are auditable rubric inputs and should be replaced by internal interviews, system logs, data catalog coverage, and customer surveys in a full engagement.",
+      "The maturity score is a decision-support metric, not a financial valuation of the port."
+    ]
+  }
+}

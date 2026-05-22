@@ -1,0 +1,124 @@
+{
+  "problem_id": "2020-E",
+  "title": "2020年 CUMCM E题：校园供水系统智能管理",
+  "question_index": 2,
+  "question_label": "问题 2",
+  "statement": "地下水管暗漏不容易被发现，需要花费大量人力对供水管道的漏损进行检测及定位，如果能够从水表的实时数据及时发现并确定发生漏损的位置，将极为有益。请帮助学校解决这个问题",
+  "tasks": [
+    "地下水管暗漏不容易被发现，需要花费大量人力对供水管道的漏损进行检测及定位，如果能够从水表的实时数据及时发现并确定发生漏损的位置，将极为有益"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "校园供水层级平衡、暗漏定位与维修决策",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检测"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx",
+    "rows": 3086881,
+    "columns": 15,
+    "note": "本题专用算法读取四个季度15分钟水表用量和水表层级关系，完成功能区用水特征、层级漏损平衡、暗漏定位和维修经济性决策。"
+  },
+  "formulation": {
+    "model_type": "校园供水层级平衡、暗漏定位与维修决策",
+    "task_breakdown": [
+      "地下水管暗漏不容易被发现，需要花费大量人力对供水管道的漏损进行检测及定位，如果能够从水表的实时数据及时发现并确定发生漏损的位置，将极为有益"
+    ],
+    "assumptions": [
+      "附件四个季度的15分钟水表用量为校区供水系统实测运行数据，负用量视为抄表回退或换表异常并在漏损统计中截断为0。",
+      "水表层级编码按最长前缀建立父子关系；父表用量与直接子表用量之差作为该分支表观漏损或未计量用水。",
+      "夜间0:00-5:00用水应接近低负荷，持续夜间流量偏高是暗漏或异常用水的重要信号。",
+      "维修决策用水价、人工材料费和漏损下降比例的工程假设做经济性排序，目标是选择净收益为正且收益成本比高的分支。",
+      "通用基线保留在 `cumcm/generic_baselines`，当前结果从通用拟合/分类/线性规划推进为真实附件驱动的供水网络模型。"
+    ],
+    "decision_variables": [
+      "u_{m,t}: 水表m在15分钟时段t的用水量",
+      "G=(V,E): 水表层级树，节点为水表编码，边为父子层级关系",
+      "L_b: 分支b的表观漏损量或未计量水量",
+      "r_b: 分支b的漏损率",
+      "s_m: 水表m的夜间暗漏可疑评分",
+      "x_b in {0,1}: 是否维修分支b"
+    ],
+    "constraints": [
+      "u_{m,t} >= 0，异常负读数不用于漏损收益计算。",
+      "parent(b)由层级编码最长前缀确定，只有父表和至少一个子表均有读数时计算平衡。",
+      "L_b=max(U_parent - sum U_child, 0)，r_b=L_b/max(U_parent, eps)。",
+      "暗漏候选优先选择夜间用水占比高、夜间均值高且处在高漏损分支上的水表。",
+      "维修方案仅选择预计年节水收益大于维修成本的候选项。"
+    ],
+    "objective_or_equations": [
+      "U_m=sum_t max(u_{m,t},0)",
+      "night_share_m=sum_{hour(t)<5}u_{m,t}/U_m",
+      "leak_score_m=0.40*z(night_share)+0.30*z(night_mean)+0.20*z(branch_loss_rate)+0.10*z(total_usage)",
+      "annual_saving_b = excess_loss_b * 365/observed_days * water_price * repair_effect",
+      "max sum_b x_b(annual_saving_b - repair_cost_b), subject to benefit_cost_ratio_b > 1"
+    ],
+    "solution_steps": [
+      "复用问题1的层级平衡和水表用水特征。",
+      "提取0:00-5:00夜间低负荷时段的均值、占比和持续性特征。",
+      "结合水表所在分支的漏损率生成暗漏可疑评分，并按评分排序定位候选水表/分支。",
+      "输出暗漏候选表和夜间流量特征表。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "校园供水层级平衡、暗漏定位与维修决策",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "campus_water_dark_leakage_localization",
+    "record_count": 3086788,
+    "candidate_count": 30,
+    "night_flow_meter_count": 90,
+    "top_candidate": {
+      "meter_no": "3620300300",
+      "meter_name": "64397副表",
+      "function_zone": "其他区域",
+      "total_usage_m3": 185988.92,
+      "night_usage_m3": 26346.35,
+      "night_usage_share": 0.141655,
+      "night_mean_interval_m3": 3.638999,
+      "night_active_interval_share": 0.998895,
+      "branch_loss_rate": 0.0,
+      "leak_score": 2.834522
+    },
+    "report": [
+      "暗漏定位以夜间低负荷时段为主信号，并叠加水表所在分支的层级漏损率。",
+      "候选表按可疑评分排序，包含夜间用水占比、夜间均值、分支漏损率和功能区。",
+      "输出 `dark_leak_candidates.csv` 与 `night_flow_features.csv`，用于后勤巡检定位。"
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2020/E/q02/dark_leak_candidates.csv",
+    "question_artifacts/2020/E/q02/night_flow_features.csv",
+    "question_artifacts/2020/E/q02/experiment_table.csv"
+  ]
+}

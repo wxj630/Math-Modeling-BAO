@@ -1,0 +1,11 @@
+﻿feature,standardized_correlation_with_concentration
+R,-0.844458
+G,-0.867288
+B,0.695983
+H,0.829821
+S,-0.149532
+PLS1_weight_R,0.517707
+PLS1_weight_G,0.531703
+PLS1_weight_B,-0.426682
+PLS1_weight_H,-0.508733
+PLS1_weight_S,0.091673

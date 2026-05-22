@@ -1,0 +1,4 @@
+factor,objective,metric,weight
+income,basic-needs wage floor plus productivity surplus,living wage coverage and Gini penalty,0.34
+education,skills for a high-reliability 22nd-century workforce,training seat coverage and skill redundancy,0.33
+social_equality,retain women and caregivers in all workforce roles,"promotion parity, childcare access, and leave coverage",0.33

@@ -1,0 +1,143 @@
+{
+  "problem_id": "2022-F",
+  "question": "q08",
+  "question_title": "Outer Space Treaty 更新的一页 UN 备忘录",
+  "statement": "Use the results of your analyses to make justified policy recommendations so that asteroid mining might truly benefit all humankind.",
+  "methods": "把公平指标、推荐愿景、敏感性和政策包压缩成给 UN 条约更新委员会的一页 memo。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "official_requirements": {
+      "outer_space_treaty_equity_principle": true,
+      "define_global_equity": true,
+      "measure_global_equity": true,
+      "asteroid_mining_future_vision": true,
+      "condition_sensitivity_required": true,
+      "un_policy_recommendations_required": true
+    }
+  },
+  "one_page_un_memo": "Memo to the UN committee considering an Outer Space Treaty update\n\nThe official 2022 ICM-F question asks whether asteroid mining can still benefit all humankind. Our answer is yes, but only if the sector is licensed before exclusive norms harden. The recommended vision is un_licensed_benefit_sharing_regime: public and private mining may proceed, but under UN licensing, benefit sharing, open mission data, and risk bonding. The top sensitivity result is benefit_fund_share; the strongest downside is exclusive_property_claims. The first policy to implement is global benefit-sharing fund, followed by a global benefit-sharing fund and technology access pool. Without these rules, asteroid mining is likely to concentrate profits and voice among first movers; with them, the sector can improve participation, technology diffusion, and peaceful use while remaining technically feasible.",
+  "un_policy_recommendations": {
+    "policies": [
+      {
+        "policy": "global benefit-sharing fund",
+        "purpose": "Dedicate a transparent share of net mineral value to global public goods and countries without space capability.",
+        "primary_dimension": "benefit_sharing",
+        "equity_gain": 0.18,
+        "implementation_difficulty": 0.62,
+        "priority_score": 0.025
+      },
+      {
+        "policy": "open mission data and technology access pool",
+        "purpose": "Share non-sensitive navigation, prospecting, safety, and materials data with emerging space programs.",
+        "primary_dimension": "technology_transfer",
+        "equity_gain": 0.13,
+        "implementation_difficulty": 0.5,
+        "priority_score": 0.005
+      },
+      {
+        "policy": "UN space-resource license registry",
+        "purpose": "Require every extraction mission to disclose sponsor, operator, target body, safety plan, and ownership terms.",
+        "primary_dimension": "governance_voice",
+        "equity_gain": 0.11,
+        "implementation_difficulty": 0.46,
+        "priority_score": -0.005
+      },
+      {
+        "policy": "orbital-debris and reentry liability bond",
+        "purpose": "Make operators internalize debris, launch, reentry, and terrestrial environmental risks before receiving a license.",
+        "primary_dimension": "risk_and_environmental_burden",
+        "equity_gain": 0.1,
+        "implementation_difficulty": 0.42,
+        "priority_score": -0.005
+      },
+      {
+        "policy": "non-appropriation compliance review",
+        "purpose": "Review resource contracts against the Outer Space Treaty principle that outer space benefits all countries.",
+        "primary_dimension": "peaceful_use_and_conflict_prevention",
+        "equity_gain": 0.09,
+        "implementation_difficulty": 0.54,
+        "priority_score": -0.045
+      }
+    ],
+    "package_rule": "Adopt the full package: registry and liability rules create enforceability; benefit fund and technology pool create equity gains; treaty review prevents appropriation drift."
+  },
+  "sensitivity_analysis": {
+    "method": "one-at-a-time deterministic condition sensitivity on the recommended asteroid-mining vision",
+    "condition_tests": [
+      {
+        "condition": "benefit_fund_share",
+        "change": "raise global benefit levy from low to high",
+        "dimension": "benefit_sharing",
+        "delta": 0.18,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.808,
+        "equity_score_delta": 0.0432
+      },
+      {
+        "condition": "technology_pool",
+        "change": "share mission data and low-cost participation slots",
+        "dimension": "technology_transfer",
+        "delta": 0.14,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.7872,
+        "equity_score_delta": 0.0224
+      },
+      {
+        "condition": "license_transparency",
+        "change": "publish ownership, safety, and revenue reports",
+        "dimension": "governance_voice",
+        "delta": 0.12,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.7864,
+        "equity_score_delta": 0.0216
+      },
+      {
+        "condition": "orbital_debris_liability",
+        "change": "strict liability and cleanup bonding",
+        "dimension": "risk_and_environmental_burden",
+        "delta": 0.1,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.7768,
+        "equity_score_delta": 0.012
+      },
+      {
+        "condition": "military_dual_use_pressure",
+        "change": "weak inspection of dual-use infrastructure",
+        "dimension": "peaceful_use_and_conflict_prevention",
+        "delta": -0.14,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.748,
+        "equity_score_delta": -0.0168
+      },
+      {
+        "condition": "exclusive_property_claims",
+        "change": "allow broad private exclusion rights",
+        "dimension": "governance_voice",
+        "delta": -0.16,
+        "baseline_equity_score": 0.7648,
+        "adjusted_equity_score": 0.736,
+        "equity_score_delta": -0.0288
+      }
+    ],
+    "largest_positive_condition": {
+      "condition": "benefit_fund_share",
+      "change": "raise global benefit levy from low to high",
+      "dimension": "benefit_sharing",
+      "delta": 0.18,
+      "baseline_equity_score": 0.7648,
+      "adjusted_equity_score": 0.808,
+      "equity_score_delta": 0.0432
+    },
+    "largest_negative_condition": {
+      "condition": "exclusive_property_claims",
+      "change": "allow broad private exclusion rights",
+      "dimension": "governance_voice",
+      "delta": -0.16,
+      "baseline_equity_score": 0.7648,
+      "adjusted_equity_score": 0.736,
+      "equity_score_delta": -0.0288
+    }
+  }
+}

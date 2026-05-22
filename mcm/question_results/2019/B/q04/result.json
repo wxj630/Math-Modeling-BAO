@@ -1,0 +1,577 @@
+{
+  "problem_id": "2019-B",
+  "question": "q04",
+  "question_title": "各类无人机任务配置",
+  "statement": "For each type of drone included in the DroneGo fleet, describe its role and capability.",
+  "methods": "按 payload、range、video 和 cargo bay compatibility 给每类入选 drone 分配医疗、快速小包、重载或持续观察角色。对应模型：任务分配、能力矩阵。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "official_requirements": {
+      "puerto_rico_hurricane_scenario": true,
+      "candidate_drone_attachment_table": true,
+      "medical_package_attachment_table": true,
+      "anticipated_medical_demand_table": true,
+      "up_to_three_iso_containers": true,
+      "medical_delivery_and_video_recon": true,
+      "memo_to_help_inc": true
+    },
+    "parameters": {
+      "iso_container": {
+        "length_in": 231.0,
+        "width_in": 92.0,
+        "height_in": 94.0,
+        "door_width_in": 92.0,
+        "door_height_in": 89.0
+      },
+      "drone_types": [
+        {
+          "drone": "A",
+          "length_in": 45,
+          "width_in": 45,
+          "height_in": 25,
+          "max_payload_lbs": 3.5,
+          "speed_kmh": 40,
+          "flight_time_min": 35,
+          "video": true,
+          "medical": true,
+          "cargo_bay_type": 1
+        },
+        {
+          "drone": "B",
+          "length_in": 30,
+          "width_in": 30,
+          "height_in": 22,
+          "max_payload_lbs": 8.0,
+          "speed_kmh": 79,
+          "flight_time_min": 40,
+          "video": true,
+          "medical": true,
+          "cargo_bay_type": 1
+        },
+        {
+          "drone": "C",
+          "length_in": 60,
+          "width_in": 50,
+          "height_in": 30,
+          "max_payload_lbs": 14.0,
+          "speed_kmh": 64,
+          "flight_time_min": 35,
+          "video": true,
+          "medical": true,
+          "cargo_bay_type": 2
+        },
+        {
+          "drone": "D",
+          "length_in": 25,
+          "width_in": 20,
+          "height_in": 25,
+          "max_payload_lbs": 11.0,
+          "speed_kmh": 60,
+          "flight_time_min": 18,
+          "video": true,
+          "medical": true,
+          "cargo_bay_type": 1
+        },
+        {
+          "drone": "E",
+          "length_in": 25,
+          "width_in": 20,
+          "height_in": 27,
+          "max_payload_lbs": 15.0,
+          "speed_kmh": 60,
+          "flight_time_min": 15,
+          "video": true,
+          "medical": true,
+          "cargo_bay_type": 2
+        },
+        {
+          "drone": "F",
+          "length_in": 40,
+          "width_in": 40,
+          "height_in": 25,
+          "max_payload_lbs": 22.0,
+          "speed_kmh": 79,
+          "flight_time_min": 24,
+          "video": false,
+          "medical": true,
+          "cargo_bay_type": 2
+        },
+        {
+          "drone": "G",
+          "length_in": 32,
+          "width_in": 32,
+          "height_in": 17,
+          "max_payload_lbs": 20.0,
+          "speed_kmh": 64,
+          "flight_time_min": 16,
+          "video": true,
+          "medical": true,
+          "cargo_bay_type": 2
+        },
+        {
+          "drone": "H tethered",
+          "length_in": 65,
+          "width_in": 75,
+          "height_in": 41,
+          "max_payload_lbs": 0.0,
+          "speed_kmh": 0,
+          "flight_time_min": 1440,
+          "video": false,
+          "medical": false,
+          "cargo_bay_type": 0
+        }
+      ],
+      "medical_packages": {
+        "MED1": {
+          "weight_lbs": 2.0,
+          "length_in": 14,
+          "width_in": 7,
+          "height_in": 5
+        },
+        "MED2": {
+          "weight_lbs": 2.0,
+          "length_in": 5,
+          "width_in": 8,
+          "height_in": 5
+        },
+        "MED3": {
+          "weight_lbs": 3.0,
+          "length_in": 12,
+          "width_in": 7,
+          "height_in": 4
+        }
+      },
+      "demand_locations": [
+        {
+          "location": "Caribbean Medical Center Fajardo",
+          "lat": 18.33,
+          "lon": -65.65,
+          "requirements": {
+            "MED1": 1,
+            "MED3": 1
+          }
+        },
+        {
+          "location": "Hospital HIMA San Pablo",
+          "lat": 18.22,
+          "lon": -66.03,
+          "requirements": {
+            "MED1": 2,
+            "MED3": 1
+          }
+        },
+        {
+          "location": "Hospital Pavia Santurce",
+          "lat": 18.44,
+          "lon": -66.07,
+          "requirements": {
+            "MED1": 1,
+            "MED2": 1
+          }
+        },
+        {
+          "location": "Puerto Rico Children's Hospital Bayamon",
+          "lat": 18.4,
+          "lon": -66.16,
+          "requirements": {
+            "MED1": 2,
+            "MED2": 1,
+            "MED3": 2
+          }
+        },
+        {
+          "location": "Hospital Pavia Arecibo",
+          "lat": 18.47,
+          "lon": -66.73,
+          "requirements": {
+            "MED1": 1
+          }
+        }
+      ],
+      "source_note": "Uses dimensions, payloads, speeds, flight times, package sizes, and demand rows from the official PDF attachments."
+    }
+  },
+  "fleet_package_model": {
+    "fleet_rows": [
+      {
+        "drone": "C",
+        "length_in": 60,
+        "width_in": 50,
+        "height_in": 30,
+        "max_payload_lbs": 14.0,
+        "speed_kmh": 64,
+        "flight_time_min": 35,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 29.12,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.8533,
+        "recommended_count": 9
+      },
+      {
+        "drone": "B",
+        "length_in": 30,
+        "width_in": 30,
+        "height_in": 22,
+        "max_payload_lbs": 8.0,
+        "speed_kmh": 79,
+        "flight_time_min": 40,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 1,
+        "estimated_roundtrip_range_km": 41.08,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.829,
+        "recommended_count": 6
+      },
+      {
+        "drone": "G",
+        "length_in": 32,
+        "width_in": 32,
+        "height_in": 17,
+        "max_payload_lbs": 20.0,
+        "speed_kmh": 64,
+        "flight_time_min": 16,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 13.312,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.7609,
+        "recommended_count": 9
+      },
+      {
+        "drone": "E",
+        "length_in": 25,
+        "width_in": 20,
+        "height_in": 27,
+        "max_payload_lbs": 15.0,
+        "speed_kmh": 60,
+        "flight_time_min": 15,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 11.7,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.7475,
+        "recommended_count": 0
+      },
+      {
+        "drone": "D",
+        "length_in": 25,
+        "width_in": 20,
+        "height_in": 25,
+        "max_payload_lbs": 11.0,
+        "speed_kmh": 60,
+        "flight_time_min": 18,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 1,
+        "estimated_roundtrip_range_km": 14.04,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.6737,
+        "recommended_count": 0
+      },
+      {
+        "drone": "F",
+        "length_in": 40,
+        "width_in": 40,
+        "height_in": 25,
+        "max_payload_lbs": 22.0,
+        "speed_kmh": 79,
+        "flight_time_min": 24,
+        "video": false,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 24.648,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.6554,
+        "recommended_count": 3
+      },
+      {
+        "drone": "A",
+        "length_in": 45,
+        "width_in": 45,
+        "height_in": 25,
+        "max_payload_lbs": 3.5,
+        "speed_kmh": 40,
+        "flight_time_min": 35,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 1,
+        "estimated_roundtrip_range_km": 18.2,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.4707,
+        "recommended_count": 0
+      },
+      {
+        "drone": "H tethered",
+        "length_in": 65,
+        "width_in": 75,
+        "height_in": 41,
+        "max_payload_lbs": 0.0,
+        "speed_kmh": 0,
+        "flight_time_min": 1440,
+        "video": false,
+        "medical": false,
+        "cargo_bay_type": 0,
+        "estimated_roundtrip_range_km": 0.0,
+        "package_types_fit": "",
+        "mission_score": 0.0,
+        "recommended_count": 2
+      }
+    ],
+    "recommended_fleet": [
+      {
+        "drone": "C",
+        "length_in": 60,
+        "width_in": 50,
+        "height_in": 30,
+        "max_payload_lbs": 14.0,
+        "speed_kmh": 64,
+        "flight_time_min": 35,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 29.12,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.8533,
+        "recommended_count": 9
+      },
+      {
+        "drone": "B",
+        "length_in": 30,
+        "width_in": 30,
+        "height_in": 22,
+        "max_payload_lbs": 8.0,
+        "speed_kmh": 79,
+        "flight_time_min": 40,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 1,
+        "estimated_roundtrip_range_km": 41.08,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.829,
+        "recommended_count": 6
+      },
+      {
+        "drone": "G",
+        "length_in": 32,
+        "width_in": 32,
+        "height_in": 17,
+        "max_payload_lbs": 20.0,
+        "speed_kmh": 64,
+        "flight_time_min": 16,
+        "video": true,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 13.312,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.7609,
+        "recommended_count": 9
+      },
+      {
+        "drone": "F",
+        "length_in": 40,
+        "width_in": 40,
+        "height_in": 25,
+        "max_payload_lbs": 22.0,
+        "speed_kmh": 79,
+        "flight_time_min": 24,
+        "video": false,
+        "medical": true,
+        "cargo_bay_type": 2,
+        "estimated_roundtrip_range_km": 24.648,
+        "package_types_fit": "MED1;MED2;MED3",
+        "mission_score": 0.6554,
+        "recommended_count": 3
+      },
+      {
+        "drone": "H tethered",
+        "length_in": 65,
+        "width_in": 75,
+        "height_in": 41,
+        "max_payload_lbs": 0.0,
+        "speed_kmh": 0,
+        "flight_time_min": 1440,
+        "video": false,
+        "medical": false,
+        "cargo_bay_type": 0,
+        "estimated_roundtrip_range_km": 0.0,
+        "package_types_fit": "",
+        "mission_score": 0.0,
+        "recommended_count": 2
+      }
+    ],
+    "selection_rule": "prioritize medical payload, round-trip reach, video capability, and compact container footprint using the official attachment tables"
+  },
+  "delivery_schedule": {
+    "route_rows": [
+      {
+        "base": "Ceiba east staging area",
+        "destination": "Caribbean Medical Center Fajardo",
+        "package": "MED1",
+        "daily_quantity": 1,
+        "assigned_drone": "B",
+        "round_trip_km": 15.71,
+        "sortie_minutes": 23.93,
+        "schedule_block": "morning critical care"
+      },
+      {
+        "base": "Ceiba east staging area",
+        "destination": "Caribbean Medical Center Fajardo",
+        "package": "MED3",
+        "daily_quantity": 1,
+        "assigned_drone": "C",
+        "round_trip_km": 15.71,
+        "sortie_minutes": 26.73,
+        "schedule_block": "afternoon chronic-care support"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Hospital HIMA San Pablo",
+        "package": "MED1",
+        "daily_quantity": 2,
+        "assigned_drone": "G",
+        "round_trip_km": 49.334,
+        "sortie_minutes": 58.25,
+        "schedule_block": "morning critical care"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Hospital HIMA San Pablo",
+        "package": "MED3",
+        "daily_quantity": 1,
+        "assigned_drone": "C",
+        "round_trip_km": 49.334,
+        "sortie_minutes": 58.25,
+        "schedule_block": "afternoon chronic-care support"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Hospital Pavia Santurce",
+        "package": "MED1",
+        "daily_quantity": 1,
+        "assigned_drone": "B",
+        "round_trip_km": 14.768,
+        "sortie_minutes": 23.22,
+        "schedule_block": "morning critical care"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Hospital Pavia Santurce",
+        "package": "MED2",
+        "daily_quantity": 1,
+        "assigned_drone": "B",
+        "round_trip_km": 14.768,
+        "sortie_minutes": 23.22,
+        "schedule_block": "midday resupply"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Puerto Rico Children's Hospital Bayamon",
+        "package": "MED1",
+        "daily_quantity": 2,
+        "assigned_drone": "G",
+        "round_trip_km": 34.912,
+        "sortie_minutes": 44.73,
+        "schedule_block": "morning critical care"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Puerto Rico Children's Hospital Bayamon",
+        "package": "MED2",
+        "daily_quantity": 1,
+        "assigned_drone": "B",
+        "round_trip_km": 34.912,
+        "sortie_minutes": 38.52,
+        "schedule_block": "midday resupply"
+      },
+      {
+        "base": "San Juan logistics airport",
+        "destination": "Puerto Rico Children's Hospital Bayamon",
+        "package": "MED3",
+        "daily_quantity": 2,
+        "assigned_drone": "C",
+        "round_trip_km": 34.912,
+        "sortie_minutes": 44.73,
+        "schedule_block": "afternoon chronic-care support"
+      },
+      {
+        "base": "Arecibo north staging area",
+        "destination": "Hospital Pavia Arecibo",
+        "package": "MED1",
+        "daily_quantity": 1,
+        "assigned_drone": "B",
+        "round_trip_km": 0.0,
+        "sortie_minutes": 12.0,
+        "schedule_block": "morning critical care"
+      }
+    ],
+    "tradeoff_note": "Longer Arecibo and east-coast legs make the three-container deployment much more robust than a single San Juan base."
+  },
+  "video_recon_plan": {
+    "recon_rows": [
+      {
+        "corridor": "PR-3 east coastal hospital access",
+        "base": "Ceiba east staging area",
+        "priority": 0.88,
+        "video_passes_day": 4
+      },
+      {
+        "corridor": "PR-52 San Juan to Caguas",
+        "base": "San Juan logistics airport",
+        "priority": 0.84,
+        "video_passes_day": 5
+      },
+      {
+        "corridor": "PR-22 San Juan to Arecibo",
+        "base": "Arecibo north staging area",
+        "priority": 0.78,
+        "video_passes_day": 4
+      },
+      {
+        "corridor": "San Juan metro hospital ring",
+        "base": "San Juan logistics airport",
+        "priority": 0.91,
+        "video_passes_day": 6
+      }
+    ],
+    "command_center_rule": "video-capable drones fly road corridors between medical delivery waves; tethered units remain at staging nodes for persistent local overwatch",
+    "location_score_reference": [
+      {
+        "base": "San Juan logistics airport",
+        "lat": 18.44,
+        "lon": -66.0,
+        "road_recon_score": 0.94,
+        "port_air_access": 0.96,
+        "weighted_medical_distance_km": 25.456,
+        "location_score": 0.7654,
+        "role": "primary command and west/east relay"
+      },
+      {
+        "base": "Ceiba east staging area",
+        "lat": 18.26,
+        "lon": -65.64,
+        "road_recon_score": 0.72,
+        "port_air_access": 0.74,
+        "weighted_medical_distance_km": 49.371,
+        "location_score": 0.5711,
+        "role": "regional container node"
+      },
+      {
+        "base": "Arecibo north staging area",
+        "lat": 18.47,
+        "lon": -66.73,
+        "road_recon_score": 0.7,
+        "port_air_access": 0.66,
+        "weighted_medical_distance_km": 69.952,
+        "location_score": 0.5101,
+        "role": "regional container node"
+      }
+    ]
+  }
+}

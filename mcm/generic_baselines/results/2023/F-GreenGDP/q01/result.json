@@ -1,0 +1,96 @@
+{
+  "baseline_kind": "mcm_generic_first_pass",
+  "problem_id": "2023-F-GreenGDP",
+  "year": "2023",
+  "code": "F-GreenGDP",
+  "question": "q01",
+  "question_title": "选择可审计的 Green GDP 计算方法",
+  "statement": "There are many proposed ways to calculate GGDP that have already been developed. Select one that your team believes could have a measurable impact on climate mitigation if it replaced GDP as the primary measure of economic health.",
+  "selected_model": {
+    "method": "linear_weighted_score_baseline",
+    "name": "线性加权评分基线",
+    "chapter": "CH7",
+    "matched_keywords": [
+      "指标"
+    ],
+    "rationale": "Selected by keyword overlap with the MCM question title, statement, and existing method hint."
+  },
+  "formulation": {
+    "decision_variables": [
+      "x_i: normalized evidence component score for baseline component i",
+      "w_i: fixed transparent weight assigned to component i",
+      "S: first-pass baseline readiness score"
+    ],
+    "constraints": [
+      "0 <= x_i <= 1 for every component",
+      "sum_i w_i = 1",
+      "The baseline must not replace the real-data workflow or invent hidden observations."
+    ],
+    "objective_or_equations": [
+      "S = sum_i w_i x_i",
+      "method = argmax keyword_overlap(question, model_family)"
+    ]
+  },
+  "data_source": {
+    "source_type": "mcm_question_index",
+    "indexed_source_type": "official_pdf_and_world_bank_api",
+    "indexed_solution_path": "question_solutions/2023/F-GreenGDP/q01/solution.py",
+    "indexed_result_path": "question_results/2023/F-GreenGDP/q01/result.json",
+    "indexed_artifact_path": "question_artifacts/2023/F-GreenGDP/q01/ggdp_formula_components.csv",
+    "note": "This generic baseline is derived from the MCM question index and points back to the audited real-data workflow."
+  },
+  "experiment_result": {
+    "method": "linear_weighted_score_baseline",
+    "baseline_score": 0.580171,
+    "component_rows": [
+      {
+        "component": "statement_specificity",
+        "raw_value": 230,
+        "normalized_score": 0.547619,
+        "audit_note": "Longer problem statements usually expose more constraints for a first-pass model."
+      },
+      {
+        "component": "numeric_anchor_count",
+        "raw_value": 1,
+        "normalized_score": 0.125,
+        "audit_note": "Counts numeric anchors visible in the question statement and method hint."
+      },
+      {
+        "component": "model_keyword_match",
+        "raw_value": 1,
+        "normalized_score": 0.2,
+        "audit_note": "Measures how clearly the question maps to a classical modeling family."
+      },
+      {
+        "component": "source_strength",
+        "raw_value": "official_pdf_and_world_bank_api",
+        "normalized_score": 0.92,
+        "audit_note": "Rewards official attachments and explicit official statement parameters."
+      },
+      {
+        "component": "artifact_readiness",
+        "raw_value": "question_artifacts/2023/F-GreenGDP/q01/ggdp_formula_components.csv",
+        "normalized_score": 1.0,
+        "audit_note": "Rewards table-like artifacts that a baseline can inspect directly."
+      }
+    ],
+    "extracted_numeric_tokens": [
+      2.0
+    ],
+    "numeric_token_count": 1,
+    "outline": [
+      "Read the official question and any indexed real-data workflow before adding domain assumptions.",
+      "Use this baseline only as the first scaffold for variables, constraints, and sanity checks.",
+      "Replace the generic score with a problem-specific model and cite official assets in the final solution."
+    ],
+    "method_confidence": 0.6824
+  },
+  "artifact_paths": [
+    "/Users/wuxiaojun/code/Math-Modeling-World/mcm/generic_baselines/artifacts/2023/F-GreenGDP/q01/experiment_table.csv"
+  ],
+  "limitations": [
+    "This is the intentionally minimal baseline layer, not the contest-grade real solution.",
+    "It does not introduce new empirical observations beyond the indexed official workflow metadata.",
+    "It is useful for a quick modeling starting point and for regression-checking archive coverage."
+  ]
+}

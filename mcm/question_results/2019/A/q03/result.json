@@ -1,0 +1,170 @@
+{
+  "problem_id": "2019-A",
+  "question": "q03",
+  "question_title": "支撑三条龙所需面积",
+  "statement": "How much area is required to support the three dragons?",
+  "methods": "把年度猎物需求除以不同气候猎物密度，得到三条龙在暖温带、干旱和北极情景下的 habitat footprint。对应模型：承载力估计、资源面积换算。",
+  "data_source": {
+    "type": "official_statement_parameters",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
+    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "official_requirements": {
+      "three_living_dragons": true,
+      "hatchling_10kg_one_year_30_to_40kg": true,
+      "energy_expenditure_and_caloric_intake": true,
+      "area_required_for_three_dragons": true,
+      "community_support_levels": true,
+      "arid_temperate_arctic_climates": true,
+      "letter_to_george_rr_martin": true,
+      "real_world_analogy": true
+    },
+    "parameters": {
+      "life_stages": [
+        {
+          "stage": "hatchling",
+          "mass_kg": 10.0,
+          "age_years": 0,
+          "growth_energy_share": 0.35
+        },
+        {
+          "stage": "one_year_old",
+          "mass_kg": 35.0,
+          "age_years": 1,
+          "growth_energy_share": 0.22
+        },
+        {
+          "stage": "large_living_dragon",
+          "mass_kg": 850.0,
+          "age_years": 8,
+          "growth_energy_share": 0.08
+        }
+      ],
+      "dragon_profiles": [
+        {
+          "dragon": "Drogon",
+          "mass_kg": 950.0,
+          "flight_hours_per_day": 2.2,
+          "fire_events_per_day": 0.8,
+          "dominance_factor": 1.1
+        },
+        {
+          "dragon": "Rhaegal",
+          "mass_kg": 760.0,
+          "flight_hours_per_day": 1.8,
+          "fire_events_per_day": 0.45,
+          "dominance_factor": 0.96
+        },
+        {
+          "dragon": "Viserion",
+          "mass_kg": 720.0,
+          "flight_hours_per_day": 1.6,
+          "fire_events_per_day": 0.35,
+          "dominance_factor": 0.92
+        }
+      ],
+      "climate_regions": [
+        {
+          "climate": "arid",
+          "thermoregulation_multiplier": 1.16,
+          "prey_density_kg_km2_year": 520.0,
+          "water_stress_multiplier": 1.35,
+          "nesting_penalty": 0.18
+        },
+        {
+          "climate": "warm_temperate",
+          "thermoregulation_multiplier": 1.0,
+          "prey_density_kg_km2_year": 1250.0,
+          "water_stress_multiplier": 1.0,
+          "nesting_penalty": 0.04
+        },
+        {
+          "climate": "arctic",
+          "thermoregulation_multiplier": 1.42,
+          "prey_density_kg_km2_year": 310.0,
+          "water_stress_multiplier": 0.82,
+          "nesting_penalty": 0.31
+        }
+      ],
+      "source_note": "Official PDF statement parameters only; dragon mass, prey density, and support rows are explicit deterministic modeling inputs for audit and replacement."
+    }
+  },
+  "area_requirements": {
+    "area_rows": [
+      {
+        "climate": "arctic",
+        "thermoregulation_multiplier": 1.42,
+        "prey_density_kg_km2_year": 310.0,
+        "water_stress_multiplier": 0.82,
+        "nesting_penalty": 0.31,
+        "annual_prey_need_kg": 26059.09,
+        "three_dragon_area_km2": 84.062,
+        "ecological_pressure_index": 1.0,
+        "primary_ecological_requirement": "large prey base, remote nesting area, water access, and fire-safe habitat buffer"
+      },
+      {
+        "climate": "arid",
+        "thermoregulation_multiplier": 1.16,
+        "prey_density_kg_km2_year": 520.0,
+        "water_stress_multiplier": 1.35,
+        "nesting_penalty": 0.18,
+        "annual_prey_need_kg": 21287.71,
+        "three_dragon_area_km2": 40.938,
+        "ecological_pressure_index": 1.0,
+        "primary_ecological_requirement": "large prey base, remote nesting area, water access, and fire-safe habitat buffer"
+      },
+      {
+        "climate": "warm_temperate",
+        "thermoregulation_multiplier": 1.0,
+        "prey_density_kg_km2_year": 1250.0,
+        "water_stress_multiplier": 1.0,
+        "nesting_penalty": 0.04,
+        "annual_prey_need_kg": 18351.47,
+        "three_dragon_area_km2": 14.681,
+        "ecological_pressure_index": 1.0,
+        "primary_ecological_requirement": "large prey base, remote nesting area, water access, and fire-safe habitat buffer"
+      }
+    ],
+    "three_dragon_total_area_km2": 14.681,
+    "ecological_impact_summary": "Dragons behave like mobile apex predators with concentrated thermal and nesting impacts; food demand and fire risk dominate the habitat footprint."
+  },
+  "energy_budget": {
+    "method": "allometric basal metabolism plus explicit flight, fire-breathing, growth, and trauma-reserve energy terms",
+    "dragon_rows": [
+      {
+        "dragon": "Drogon",
+        "mass_kg": 950.0,
+        "flight_hours_per_day": 2.2,
+        "fire_events_per_day": 0.8,
+        "dominance_factor": 1.1,
+        "basal_kcal_day": 11978.18,
+        "total_kcal_day": 26807.16,
+        "prey_kg_day_at_1300_kcal_per_kg": 20.621,
+        "water_l_day": 81.55
+      },
+      {
+        "dragon": "Rhaegal",
+        "mass_kg": 760.0,
+        "flight_hours_per_day": 1.8,
+        "fire_events_per_day": 0.45,
+        "dominance_factor": 0.96,
+        "basal_kcal_day": 10132.3,
+        "total_kcal_day": 20193.68,
+        "prey_kg_day_at_1300_kcal_per_kg": 15.534,
+        "water_l_day": 65.6
+      },
+      {
+        "dragon": "Viserion",
+        "mass_kg": 720.0,
+        "flight_hours_per_day": 1.6,
+        "fire_events_per_day": 0.35,
+        "dominance_factor": 0.92,
+        "basal_kcal_day": 9729.65,
+        "total_kcal_day": 18359.86,
+        "prey_kg_day_at_1300_kcal_per_kg": 14.123,
+        "water_l_day": 61.2
+      }
+    ],
+    "total_kcal_day": 65360.7,
+    "total_prey_kg_day": 50.278
+  }
+}

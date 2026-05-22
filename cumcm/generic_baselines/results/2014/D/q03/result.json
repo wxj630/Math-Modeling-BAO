@@ -1,0 +1,93 @@
+{
+  "problem_id": "2014-D",
+  "title": "2014年 CUMCM D题：储药柜的设计",
+  "question_index": 3,
+  "question_label": "问题 3",
+  "statement": "考虑补药的便利性，储药柜的宽度不超过2.5m、高度不超过2m，传送装置占用的高度为0.5m，即储药柜的最大允许有效高度为1.5m。药盒与两层横向隔板之间的间隙超出2mm的部分可视为高度冗余，平面冗余＝高度冗余×宽度冗余。在问题2计算结果的基础上，确定储药柜横向隔板间距的类型数量，使得储药柜的总平面冗余量尽可能地小，且横向隔板间距的类型数量也尽可能地少。",
+  "tasks": [
+    "在问题2计算结果的基础上，确定储药柜横向隔板间距的类型数量，使得储药柜的总平面冗余量尽可能地小，且横向隔板间距的类型数量也尽可能地少"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "最大"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 6,
+    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
+    "rows": 1919,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "在问题2计算结果的基础上，确定储药柜横向隔板间距的类型数量，使得储药柜的总平面冗余量尽可能地小，且横向隔板间距的类型数量也尽可能地少"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 20.551816232593605,
+    "decision": [
+      0.0,
+      3.550469,
+      0.0,
+      0.0
+    ],
+    "resource_slack": [
+      252.607826,
+      0.0,
+      0.297732
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2014/D/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

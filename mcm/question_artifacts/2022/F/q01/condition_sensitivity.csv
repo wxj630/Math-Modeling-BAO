@@ -1,0 +1,7 @@
+condition,change,dimension,delta,baseline_equity_score,adjusted_equity_score,equity_score_delta
+benefit_fund_share,raise global benefit levy from low to high,benefit_sharing,0.18,0.7648,0.808,0.0432
+technology_pool,share mission data and low-cost participation slots,technology_transfer,0.14,0.7648,0.7872,0.0224
+license_transparency,"publish ownership, safety, and revenue reports",governance_voice,0.12,0.7648,0.7864,0.0216
+orbital_debris_liability,strict liability and cleanup bonding,risk_and_environmental_burden,0.1,0.7648,0.7768,0.012
+military_dual_use_pressure,weak inspection of dual-use infrastructure,peaceful_use_and_conflict_prevention,-0.14,0.7648,0.748,-0.0168
+exclusive_property_claims,allow broad private exclusion rights,governance_voice,-0.16,0.7648,0.736,-0.0288

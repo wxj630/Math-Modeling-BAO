@@ -1,0 +1,93 @@
+{
+  "problem_id": "2023-C-Wordle",
+  "question": "q01",
+  "question_title": "报告人数变化、3 月 1 日预测区间与困难模式比例",
+  "statement": "The number of reported results vary daily. Develop a model to explain this variation and use your model to create a prediction interval for the number of reported results on March 1, 2023. Do any attributes of the word affect the percentage of scores reported that were played in Hard Mode?",
+  "methods": "官方 Wordle Excel 清洗 + 对数报告人数 RidgeCV 时间趋势回归 + 词属性标准化回归解释困难模式比例 + 留出集误差评估。",
+  "data_source": {
+    "type": "official_comap_xlsx",
+    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
+    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "records": 359,
+    "date_min": "2022-01-07",
+    "date_max": "2022-12-31",
+    "columns": [
+      "Date",
+      "Contest number",
+      "Word",
+      "Number of reported results",
+      "Number in hard mode",
+      "1 try",
+      "2 tries",
+      "3 tries",
+      "4 tries",
+      "5 tries",
+      "6 tries",
+      "7 or more tries (X)"
+    ]
+  },
+  "report_count_model": {
+    "model": "log-linear RidgeCV for report counts; RidgeCV for hard-mode rate",
+    "prediction_date": "2023-03-01",
+    "prediction_word": "EERIE",
+    "holdout_days": 45,
+    "holdout_mae_reported_results": 2025.209,
+    "holdout_rmse_reported_results": 3677.285,
+    "predicted_reported_results": 23612,
+    "prediction_interval_80": [
+      20365,
+      30713
+    ],
+    "hard_mode_holdout_mae_rate": 0.036428,
+    "predicted_hard_mode_rate": 0.137511,
+    "word_attribute_effects_on_hard_mode": [
+      {
+        "feature": "days_since_start",
+        "coefficient": 0.020859
+      },
+      {
+        "feature": "word_entropy",
+        "coefficient": -0.000888
+      },
+      {
+        "feature": "unique_letters",
+        "coefficient": -0.000797
+      },
+      {
+        "feature": "max_letter_count",
+        "coefficient": -0.000773
+      },
+      {
+        "feature": "vowel_count",
+        "coefficient": 0.000395
+      },
+      {
+        "feature": "rare_letter_count",
+        "coefficient": -0.000391
+      },
+      {
+        "feature": "letter_frequency_score",
+        "coefficient": -0.000355
+      },
+      {
+        "feature": "repeated_vowel_count",
+        "coefficient": 0.000261
+      }
+    ]
+  },
+  "model_features": [
+    "days_since_start",
+    "days_since_start_sq",
+    "contest_number",
+    "weekday",
+    "is_weekend",
+    "unique_letters",
+    "repeated_letters",
+    "max_letter_count",
+    "vowel_count",
+    "repeated_vowel_count",
+    "rare_letter_count",
+    "word_entropy",
+    "letter_frequency_score"
+  ]
+}
