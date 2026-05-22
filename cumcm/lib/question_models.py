@@ -162,7 +162,7 @@ def write_csv(path: Path, rows: Iterable[Dict[str, Any]]) -> str:
             if key not in fieldnames:
                 fieldnames.append(key)
     with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow(row)
@@ -367,6 +367,15 @@ def first_columns(matrix: np.ndarray | None, min_cols: int = 2) -> np.ndarray | 
 def relpath(path: Path, root: Path) -> str:
     try:
         return str(path.resolve().relative_to(root.resolve()))
+    except ValueError:
+        return str(path)
+
+
+def repo_relpath(path: Path | str) -> str:
+    path = Path(path)
+    repo_root = Path(__file__).resolve().parents[2]
+    try:
+        return str(path.resolve().relative_to(repo_root.resolve()))
     except ValueError:
         return str(path)
 
@@ -13694,7 +13703,7 @@ def solve_question_generic_baseline(payload: Dict[str, Any], artifact_dir: Path 
 def write_question_report(result: Dict[str, Any], path: Path) -> None:
     f = result["formulation"]
     root = Path(__file__).resolve().parents[1]
-    solution_path = root / "question_solutions" / result["problem_id"].split("-")[0] / result["problem_id"].split("-")[1] / f"q{result['question_index']:02d}" / "solution.py"
+    solution_path = repo_relpath(root / "question_solutions" / result["problem_id"].split("-")[0] / result["problem_id"].split("-")[1] / f"q{result['question_index']:02d}" / "solution.py")
     lines = [
         f"# {result['problem_id']} {result['question_label']} 建模求解实验报告",
         "",
@@ -13728,7 +13737,7 @@ def write_question_report(result: Dict[str, Any], path: Path) -> None:
         lines.append(f"- 步骤 {idx}：{step}")
     lines += ["", "## 实验结果与解释", "", "### 产物文件"]
     for artifact in result.get("artifact_paths", []):
-        lines.append(f"- {root / artifact}")
+        lines.append(f"- {repo_relpath(root / artifact)}")
     data_source = result.get("data_source", {})
     lines += ["", "### 数据来源"]
     lines.append(f"- 类型：{data_source.get('source_type', 'unknown')}")

@@ -450,7 +450,7 @@ def build_problem_page(
             "",
         ]
     )
-    return "\n".join(lines)
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def build_index_page(
@@ -519,10 +519,10 @@ def build_track(track: str, title: str, problem_csv: str, question_csv: str, bas
     for problem in problems:
         pid = problem["problem_id"]
         page = build_problem_page(track, problem, qgroups.get(pid, []), bgroups.get(pid, {}))
-        (problem_dir / f"{pid}.md").write_text(page + "\n", encoding="utf-8")
+        (problem_dir / f"{pid}.md").write_text(page.rstrip() + "\n", encoding="utf-8")
 
     index = build_index_page(track, title, problems, qgroups, bgroups)
-    (track_dir / "problem-index.md").write_text(index + "\n", encoding="utf-8")
+    (track_dir / "problem-index.md").write_text(index.rstrip() + "\n", encoding="utf-8")
     return len(problems), sum(len(rows) for rows in qgroups.values())
 
 

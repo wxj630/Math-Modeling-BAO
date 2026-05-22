@@ -59,7 +59,7 @@ def main() -> None:
             payload = {
                 "problem_id": problem_id,
                 "title": parsed["title"],
-                "problem_path": str(problem_path),
+                "problem_path": str(problem_path.relative_to(ROOT.parent)),
                 "question_index": qnum,
                 "question": question,
                 "attachments": attachments,
@@ -93,7 +93,7 @@ def main() -> None:
     (ROOT / "question_solution_index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
     with (ROOT / "question_solution_index.csv").open("w", encoding="utf-8-sig", newline="") as f:
         fieldnames = ["problem_id", "year", "code", "question_index", "question_label", "statement", "solution_path", "result_path", "report_path", "artifact_path", "attachment_count"]
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(index)
     print(f"generated {len(generated)} question solution scripts")

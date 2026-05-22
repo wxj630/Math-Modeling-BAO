@@ -1,0 +1,101 @@
+{
+  "problem_id": "2023-C",
+  "title": "2023年 CUMCM C题：蔬菜类商品的自动定价与补货决策",
+  "question_index": 4,
+  "question_label": "问题4",
+  "statement": "为了更好地制定蔬菜商品的补货和定价决策，商超还需要采集哪些相关数据， 这些数据对解决上述问题有何帮助，请给出你们的意见和理由。 附件1 6 个蔬菜品类的商品信息 附件2 销售流水明细数据 附件3 蔬菜类商品的批发价格 附件4 蔬菜类商品的近期损耗率 注 (1) 附件1 中，部分单品名称包含的数字编号表示不同的供应来源。 (2) 附件4 中的损耗率反映了近期商品的损耗情况，通过近期盘点周期的数据计算得到。 2023 年高教社杯全国大学生数学建模竞赛题目 （请先阅读“全国大学生数学建模竞赛论文格式规范”）",
+  "tasks": [
+    "为了更好地制定蔬菜商品的补货和定价决策，商超还需要采集哪些相关数据， 这些数据对解决上述问题有何帮助，请给出你们的意见和理由。 附件1 6 个蔬菜品类的商品信息 附件2 销售流水明细数据 附件3 蔬菜类商品的批发价格 附件4 蔬菜类商品的近期损耗率 注",
+    "(2) 附件4 中的损耗率反映了近期商品的损耗情况，通过近期盘点周期的数据计算得到。 2023 年高教社杯全国大学生数学建模竞赛题目 （请先阅读“全国大学生数学建模竞赛论文格式规范”）"
+  ],
+  "selected_model": {
+    "key": "optimization",
+    "name": "规划优化与资源配置",
+    "chapter": "CH3",
+    "chapter_title": "函数极值与规划模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "决策"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题/附件1.xlsx",
+    "rows": 252,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "规划优化与资源配置",
+    "task_breakdown": [
+      "为了更好地制定蔬菜商品的补货和定价决策，商超还需要采集哪些相关数据， 这些数据对解决上述问题有何帮助，请给出你们的意见和理由。 附件1 6 个蔬菜品类的商品信息 附件2 销售流水明细数据 附件3 蔬菜类商品的批发价格 附件4 蔬菜类商品的近期损耗率 注",
+      "(2) 附件4 中的损耗率反映了近期商品的损耗情况，通过近期盘点周期的数据计算得到。 2023 年高教社杯全国大学生数学建模竞赛题目 （请先阅读“全国大学生数学建模竞赛论文格式规范”）"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x_i: 第 i 个方案/资源的选择强度",
+      "c_i: 单位收益或效用",
+      "A_ji: 第 j 类资源消耗",
+      "b_j: 第 j 类资源上限"
+    ],
+    "constraints": [
+      "A x <= b",
+      "x_i >= 0",
+      "资源容量按题面约束映射为 b_j"
+    ],
+    "objective_or_equations": [
+      "max sum_i c_i*x_i",
+      "s.t. A*x <= b, x >= 0"
+    ],
+    "solution_steps": [
+      "把题面目标转成收益最大或成本最小。",
+      "把资源、时间、预算、容量写成线性不等式。",
+      "调用 scipy.optimize.linprog 求解。",
+      "输出决策变量、目标值和资源松弛量。"
+    ],
+    "model_reference": {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "chapter_title": "函数极值与规划模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "linear_programming",
+    "success": true,
+    "objective_max": 5.7763291263739855,
+    "decision": [
+      1.474718,
+      0.0,
+      0.0,
+      0.801792
+    ],
+    "resource_slack": [
+      3.255199,
+      0.0,
+      0.0
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2023/C/q04/experiment_table.csv"
+  ]
+}

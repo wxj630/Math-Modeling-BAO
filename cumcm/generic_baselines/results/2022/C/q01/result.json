@@ -1,0 +1,95 @@
+{
+  "problem_id": "2022-C",
+  "title": "2022年 CUMCM C题：古代玻璃制品的成分分析与鉴别",
+  "question_index": 1,
+  "question_label": "问题1",
+  "statement": "对这些玻璃文物的表面风化与其玻璃类型、纹饰和颜色的关系进行分析；结合玻 璃的类型，分析文物样品表面有无风化化学成分含量的统计规律，并根据风化点检测数据，预 测其风化前的化学成分含量。",
+  "tasks": [
+    "对这些玻璃文物的表面风化与其玻璃类型、纹饰和颜色的关系进行分析",
+    "结合玻 璃的类型，分析文物样品表面有无风化化学成分含量的统计规律，并根据风化点检测数据，预 测其风化前的化学成分含量"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、分析"
+    },
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "检测"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/C题/附件.xlsx",
+    "rows": 138,
+    "columns": 16,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "对这些玻璃文物的表面风化与其玻璃类型、纹饰和颜色的关系进行分析",
+      "结合玻 璃的类型，分析文物样品表面有无风化化学成分含量的统计规律，并根据风化点检测数据，预 测其风化前的化学成分含量"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      119.923119,
+      -0.239178,
+      -0.000884
+    ],
+    "r2": 0.06272752773065504,
+    "mean_abs_error": 49.58238418035579
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2022/C/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

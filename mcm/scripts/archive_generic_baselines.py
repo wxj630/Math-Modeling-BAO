@@ -192,7 +192,7 @@ def main() -> None:
             "artifact_dir",
             "real_solution_path",
         ]
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(index_rows)
     write_readme(base, index_rows)
@@ -201,4 +201,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

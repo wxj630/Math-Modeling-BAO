@@ -236,7 +236,7 @@ def write_manifest_csv(path: Path, rows: list[dict[str, object]]) -> None:
         "storage_mode",
     ]
     with path.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

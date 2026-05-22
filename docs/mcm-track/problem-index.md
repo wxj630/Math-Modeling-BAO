@@ -120,4 +120,3 @@
 | [2025-D](./problems/2025-D.md) | ICM-D: A Roadmap to a Better City | 7 | Key Bridge 坍塌/重建的路网影响 | evidence_table_baseline；network_path_baseline；report_outline_baseline |
 | [2025-E](./problems/2025-E.md) | ICM-E: Making Room for Agriculture | 7 | 自然过程与森林转农田框架 | evidence_table_baseline；first_order_dynamic_baseline；linear_weighted_score_baseline；report_out… |
 | [2025-F](./problems/2025-F.md) | ICM-F: Cyber Strong? | 3 | 全球网络犯罪分布与报告偏差 | network_path_baseline；report_outline_baseline |
-

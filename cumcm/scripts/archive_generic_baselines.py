@@ -39,6 +39,13 @@ ARTIFACT_DIR = ROOT / "generic_baselines" / "artifacts" / "{year}" / "{code}" / 
 
 
 def write_generic_report(result: dict, solution_path: Path) -> None:
+    def repo_rel(path: Path | str) -> str:
+        path = Path(path)
+        try:
+            return str(path.resolve().relative_to(ROOT.parent.resolve()))
+        except ValueError:
+            return str(path)
+
     f = result["formulation"]
     lines = [
         f"# {{result['problem_id']}} {{result['question_label']}} 通用基线报告",
@@ -67,12 +74,12 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines += ["", "### 模型公式 / 目标函数"]
     lines.extend(f"- `{{item}}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
-    lines.append(f"- 通用代码：{{solution_path}}")
-    lines.append(f"- 单问运行：`.venv/bin/python {{solution_path}}`")
-    lines.append(f"- 结果 JSON：{{RESULT_PATH}}")
-    lines.append(f"- 实验报告：{{REPORT_PATH}}")
+    lines.append(f"- 通用代码：{{repo_rel(solution_path)}}")
+    lines.append(f"- 单问运行：`.venv/bin/python {{repo_rel(solution_path)}}`")
+    lines.append(f"- 结果 JSON：{{repo_rel(RESULT_PATH)}}")
+    lines.append(f"- 实验报告：{{repo_rel(REPORT_PATH)}}")
     for artifact in result.get("artifact_paths", []):
-        lines.append(f"- 实验产物：{{ROOT / artifact}}")
+        lines.append(f"- 实验产物：{{repo_rel(ROOT / artifact)}}")
     lines += ["", "## 数据来源", ""]
     ds = result.get("data_source", {{}})
     lines.append(f"- 类型：{{ds.get('source_type', 'unknown')}}")
@@ -119,7 +126,7 @@ def iter_payloads(problem_filter: set[str] | None = None) -> list[dict]:
                 "code": code,
                 "question_index": qnum,
                 "title": parsed["title"],
-                "problem_path": str(problem_path),
+                "problem_path": str(problem_path.relative_to(ROOT.parent)),
                 "question": question,
                 "attachments": attachments,
             })
@@ -214,7 +221,7 @@ def main() -> None:
     (GENERIC_ROOT / "generic_baseline_index.json").write_text(json.dumps(index_rows, ensure_ascii=False, indent=2), encoding="utf-8")
     with (GENERIC_ROOT / "generic_baseline_index.csv").open("w", encoding="utf-8-sig", newline="") as f:
         fieldnames = ["problem_id", "year", "code", "question_index", "question_label", "method", "solution_path", "result_path", "report_path", "artifact_dir"]
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(index_rows)
     write_readme(index_rows)

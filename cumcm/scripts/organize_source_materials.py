@@ -237,7 +237,7 @@ def organize(target_root: Path, stages: tuple[SourceStage, ...]) -> dict[str, ob
     ]
     manifest_csv = target_root / "manifest.csv"
     with manifest_csv.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

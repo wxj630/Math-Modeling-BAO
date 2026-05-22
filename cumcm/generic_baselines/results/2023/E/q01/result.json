@@ -1,0 +1,98 @@
+{
+  "problem_id": "2023-E",
+  "title": "2023年 CUMCM E题：黄河水沙监测数据分析",
+  "question_index": 1,
+  "question_label": "问题1",
+  "statement": "研究该水文站黄河水的含沙量与时间、水位、水流量的关系，并估算近6 年该水 文站的年总水流量和年总排沙量。",
+  "tasks": [
+    "研究该水文站黄河水的含沙量与时间、水位、水流量的关系，并估算近6 年该水 文站的年总水流量和年总排沙量"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "通用优化建模"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "通用数据建模"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 9,
+    "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/E题/附件1.xlsx",
+    "rows": 2500,
+    "columns": 7,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "研究该水文站黄河水的含沙量与时间、水位、水流量的关系，并估算近6 年该水 文站的年总水流量和年总排沙量"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "G=(V,E): 交通/转运/关系网络",
+      "w_ij: 边成本、距离或时间",
+      "d_i: 从源点到节点 i 的最短距离",
+      "pre_i: 最短路前驱节点"
+    ],
+    "constraints": [
+      "边权非负",
+      "路径必须由网络中已有边组成"
+    ],
+    "objective_or_equations": [
+      "d_j = min_i(d_i + w_ij)",
+      "min path_cost(source, target)"
+    ],
+    "solution_steps": [
+      "把题面地点、平台或转运关系抽象为图。",
+      "构造边权矩阵。",
+      "运行 Dijkstra 最短路。",
+      "输出各节点最短距离和前驱。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "dijkstra_shortest_path",
+    "node_count": 3,
+    "source": 0,
+    "distances": [
+      0.0,
+      0.133333,
+      0.266667
+    ],
+    "predecessors": [
+      -9999,
+      0,
+      0
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2023/E/q01/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

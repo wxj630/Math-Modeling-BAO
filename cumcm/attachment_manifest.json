@@ -1753,6 +1753,337 @@
       }
     ]
   },
+  "2022-A": {
+    "problem_id": "2022-A",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题/A题.pdf",
+        "name": "A题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 988984,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题/result1-1.xlsx",
+        "name": "result1-1.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 10168,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题/result1-2.xlsx",
+        "name": "result1-2.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 10168,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题/result3.xlsx",
+        "name": "result3.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 10415,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题/附件3.xlsx",
+        "name": "附件3.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 10771,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题/附件4.xlsx",
+        "name": "附件4.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 10532,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/A题.rar",
+        "name": "A题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 7749890,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/B题.pdf",
+        "name": "B题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 568238,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/C题.rar",
+        "name": "C题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 764520,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/D题.pdf",
+        "name": "D题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 529148,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/E题.rar",
+        "name": "E题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 1278086,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
+  "2022-C": {
+    "problem_id": "2022-C",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/C题/C题.pdf",
+        "name": "C题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 708530,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/C题/附件.xlsx",
+        "name": "附件.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 94507,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
+  "2022-E": {
+    "problem_id": "2022-E",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/E题/E题.pdf",
+        "name": "E题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 640657,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/E题/附件.xlsx",
+        "name": "附件.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 675320,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
+  "2023-A": {
+    "problem_id": "2023-A",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/A题/A题.pdf",
+        "name": "A题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 882999,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/A题/result2.xlsx",
+        "name": "result2.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 9113,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/A题/result3.xlsx",
+        "name": "result3.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 9113,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/A题/附件.xlsx",
+        "name": "附件.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 41752,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
+  "2023-B": {
+    "problem_id": "2023-B",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/B题/B题.pdf",
+        "name": "B题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 899651,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/B题/result1.xlsx",
+        "name": "result1.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 9222,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/B题/result2.xlsx",
+        "name": "result2.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 9445,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/B题/附件.xlsx",
+        "name": "附件.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 313543,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
+  "2023-C": {
+    "problem_id": "2023-C",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题/C题.pdf",
+        "name": "C题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 361842,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题/附件1.xlsx",
+        "name": "附件1.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 17803,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题/附件2.xlsx",
+        "name": "附件2.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 39150980,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题/附件3.xlsx",
+        "name": "附件3.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 1150765,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题/附件4.xlsx",
+        "name": "附件4.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 18678,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
+  "2023-E": {
+    "problem_id": "2023-E",
+    "attachments": [
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/A题.rar",
+        "name": "A题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 877589,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/B题.rar",
+        "name": "B题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 1168748,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/C题.rar",
+        "name": "C题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 38172817,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/D题.pdf",
+        "name": "D题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 416221,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/E题/E题.pdf",
+        "name": "E题.pdf",
+        "suffix": ".pdf",
+        "kind": "document",
+        "size_bytes": 480525,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/E题/附件1.xlsx",
+        "name": "附件1.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 660315,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/E题/附件2.xlsx",
+        "name": "附件2.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 26402,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/E题/附件3.xlsx",
+        "name": "附件3.xlsx",
+        "suffix": ".xlsx",
+        "kind": "data",
+        "size_bytes": 38257,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      },
+      {
+        "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/E题.rar",
+        "name": "E题.rar",
+        "suffix": ".rar",
+        "kind": "media_or_archive",
+        "size_bytes": 1163790,
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
+      }
+    ]
+  },
   "2024-A": {
     "problem_id": "2024-A",
     "attachments": [

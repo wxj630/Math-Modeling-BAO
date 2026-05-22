@@ -104,7 +104,7 @@ def main() -> None:
     (ROOT / "attachment_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     with (ROOT / "attachment_manifest.csv").open("w", encoding="utf-8-sig", newline="") as f:
         fieldnames = ["problem_id", "kind", "suffix", "name", "path", "size_bytes"]
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for pid, data in sorted(manifest.items()):
             for item in data["attachments"]:

@@ -388,12 +388,30 @@
   },
   {
     "year": "2022",
+    "code": "A",
+    "problem_id": "2022-A",
+    "problem": "cumcm/problems/2022/A.md",
+    "solution": "cumcm/solutions/2022/A/solution.py",
+    "result": "cumcm/results/2022/A/result.json",
+    "report": "cumcm/reports/2022/A/report.md"
+  },
+  {
+    "year": "2022",
     "code": "B",
     "problem_id": "2022-B",
     "problem": "cumcm/problems/2022/B.md",
     "solution": "cumcm/solutions/2022/B/solution.py",
     "result": "cumcm/results/2022/B/result.json",
     "report": "cumcm/reports/2022/B/report.md"
+  },
+  {
+    "year": "2022",
+    "code": "C",
+    "problem_id": "2022-C",
+    "problem": "cumcm/problems/2022/C.md",
+    "solution": "cumcm/solutions/2022/C/solution.py",
+    "result": "cumcm/results/2022/C/result.json",
+    "report": "cumcm/reports/2022/C/report.md"
   },
   {
     "year": "2022",
@@ -405,6 +423,42 @@
     "report": "cumcm/reports/2022/D/report.md"
   },
   {
+    "year": "2022",
+    "code": "E",
+    "problem_id": "2022-E",
+    "problem": "cumcm/problems/2022/E.md",
+    "solution": "cumcm/solutions/2022/E/solution.py",
+    "result": "cumcm/results/2022/E/result.json",
+    "report": "cumcm/reports/2022/E/report.md"
+  },
+  {
+    "year": "2023",
+    "code": "A",
+    "problem_id": "2023-A",
+    "problem": "cumcm/problems/2023/A.md",
+    "solution": "cumcm/solutions/2023/A/solution.py",
+    "result": "cumcm/results/2023/A/result.json",
+    "report": "cumcm/reports/2023/A/report.md"
+  },
+  {
+    "year": "2023",
+    "code": "B",
+    "problem_id": "2023-B",
+    "problem": "cumcm/problems/2023/B.md",
+    "solution": "cumcm/solutions/2023/B/solution.py",
+    "result": "cumcm/results/2023/B/result.json",
+    "report": "cumcm/reports/2023/B/report.md"
+  },
+  {
+    "year": "2023",
+    "code": "C",
+    "problem_id": "2023-C",
+    "problem": "cumcm/problems/2023/C.md",
+    "solution": "cumcm/solutions/2023/C/solution.py",
+    "result": "cumcm/results/2023/C/result.json",
+    "report": "cumcm/reports/2023/C/report.md"
+  },
+  {
     "year": "2023",
     "code": "D",
     "problem_id": "2023-D",
@@ -412,6 +466,15 @@
     "solution": "cumcm/solutions/2023/D/solution.py",
     "result": "cumcm/results/2023/D/result.json",
     "report": "cumcm/reports/2023/D/report.md"
+  },
+  {
+    "year": "2023",
+    "code": "E",
+    "problem_id": "2023-E",
+    "problem": "cumcm/problems/2023/E.md",
+    "solution": "cumcm/solutions/2023/E/solution.py",
+    "result": "cumcm/results/2023/E/result.json",
+    "report": "cumcm/reports/2023/E/report.md"
   },
   {
     "year": "2024",

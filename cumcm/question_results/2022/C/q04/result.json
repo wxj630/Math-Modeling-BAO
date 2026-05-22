@@ -1,0 +1,98 @@
+{
+  "problem_id": "2022-C",
+  "title": "2022年 CUMCM C题：古代玻璃制品的成分分析与鉴别",
+  "question_index": 4,
+  "question_label": "问题4",
+  "statement": "针对不同类别的玻璃文物样品，分析其化学成分之间的关联关系，并比较不同类 别之间的化学成分关联关系的差异性。 附件 表单1 玻璃文物的基本信息 表单2 已分类玻璃文物的化学成分比例，其中 (1) 文物采样点为该编号文物表面某部位的随机采样，其风化属性与附件表单1 中相应文 物一致。 (2) 部位1 和部位2 是文物造型上不同的两个部位，其成分与含量可能存在差异。 (3) 未风化点是风化文物表面未风化区域内的点。 (4) 严重风化点取自风化层。 表单3 未分类玻璃文物的化学成分比例",
+  "tasks": [
+    "针对不同类别的玻璃文物样品，分析其化学成分之间的关联关系，并比较不同类 别之间的化学成分关联关系的差异性。 附件 表单1 玻璃文物的基本信息 表单2 已分类玻璃文物的化学成分比例，其中"
+  ],
+  "selected_model": {
+    "key": "ml",
+    "name": "机器学习与统计识别",
+    "chapter": "CH9",
+    "chapter_title": "机器学习与统计模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "分类"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "分析"
+    },
+    {
+      "key": "evaluation",
+      "name": "综合评价与权重决策",
+      "chapter": "CH7",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "reason": "比较"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/C题/附件.xlsx",
+    "rows": 138,
+    "columns": 16,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "机器学习与统计识别",
+    "task_breakdown": [
+      "针对不同类别的玻璃文物样品，分析其化学成分之间的关联关系，并比较不同类 别之间的化学成分关联关系的差异性。 附件 表单1 玻璃文物的基本信息 表单2 已分类玻璃文物的化学成分比例，其中"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "X: 样本特征矩阵",
+      "y: 类别/状态标签",
+      "theta: 逻辑回归参数",
+      "z_i: 聚类标签"
+    ],
+    "constraints": [
+      "特征标准化或同量纲",
+      "类别概率位于 [0,1]"
+    ],
+    "objective_or_equations": [
+      "P(y=1|x)=sigmoid(theta^T*x)",
+      "min cross_entropy(y, sigmoid(X*theta))",
+      "min within_cluster_sum_of_squares"
+    ],
+    "solution_steps": [
+      "构造或读取样本特征。",
+      "训练逻辑回归分类器。",
+      "用 KMeans 做无监督对照。",
+      "输出准确率、聚类数量和 PCA 投影。"
+    ],
+    "model_reference": {
+      "key": "ml",
+      "name": "机器学习与统计识别",
+      "chapter": "CH9",
+      "chapter_title": "机器学习与统计模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "logistic_regression_plus_kmeans",
+    "training_accuracy": 0.717391304347826,
+    "cluster_counts": [
+      69,
+      69
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2022/C/q04/experiment_table.csv"
+  ]
+}

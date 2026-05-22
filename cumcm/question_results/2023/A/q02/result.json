@@ -1,0 +1,103 @@
+{
+  "problem_id": "2023-A",
+  "title": "2023年 CUMCM A题：定日镜场的优化设计",
+  "question_index": 2,
+  "question_label": "问题2",
+  "statement": "按设计要求，定日镜场的额定年平均输出热功率（以下简称额定功率）为60 MW。 若所有定日镜尺寸及安装高度相同，请设计定日镜场的以下参数：吸收塔的位置坐标、定日镜 尺寸、安装高度、定日镜数目、定日镜位置，使得定日镜场在达到额定功率的条件下，单位镜 面面积年平均输出热功率尽量大。请将结果分别按表1、2、3 的格式填入表格，并将吸收塔 的位置坐标、定日镜尺寸、安装高度、位置坐标按模板规定的格式保存到result2.xlsx 文件中。",
+  "tasks": [
+    "按设计要求，定日镜场的额定年平均输出热功率（以下简称额定功率）为60 MW",
+    "若所有定日镜尺寸及安装高度相同，请设计定日镜场的以下参数：吸收塔的位置坐标、定日镜 尺寸、安装高度、定日镜数目、定日镜位置，使得定日镜场在达到额定功率的条件下，单位镜 面面积年平均输出热功率尽量大",
+    "请将结果分别按表1、2、3 的格式填入表格，并将吸收塔 的位置坐标、定日镜尺寸、安装高度、位置坐标按模板规定的格式保存到result2.xlsx 文件中"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置、坐标"
+    },
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "年平均"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "设计"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 4,
+    "path": "../../Documents/Playground/cumcm_unzipped/2023_Y20WPner9fa62862794e6dc82731a5561ce1132f/A题/result2.xlsx",
+    "rows": 7,
+    "columns": 1,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "按设计要求，定日镜场的额定年平均输出热功率（以下简称额定功率）为60 MW",
+      "若所有定日镜尺寸及安装高度相同，请设计定日镜场的以下参数：吸收塔的位置坐标、定日镜 尺寸、安装高度、定日镜数目、定日镜位置，使得定日镜场在达到额定功率的条件下，单位镜 面面积年平均输出热功率尽量大",
+      "请将结果分别按表1、2、3 的格式填入表格，并将吸收塔 的位置坐标、定日镜尺寸、安装高度、位置坐标按模板规定的格式保存到result2.xlsx 文件中"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      0.659819,
+      1.842246
+    ],
+    "radius": 4.116994028950783,
+    "mean_squared_error": 0.00256695862388454,
+    "success": true
+  },
+  "artifact_paths": [
+    "question_artifacts/2023/A/q02/experiment_table.csv"
+  ]
+}

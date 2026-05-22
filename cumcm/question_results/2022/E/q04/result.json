@@ -1,0 +1,92 @@
+{
+  "problem_id": "2022-E",
+  "title": "2022年 CUMCM E题：小批量物料的生产安排",
+  "question_index": 4,
+  "question_label": "问题4",
+  "statement": "如果本周计划生产的物料只能在两周及以后使用，请重新考虑问题2 和问题3。能 否将你们的方法推广到一般情况，即如果本周计划生产的物料只能在 𝑘 (≥2) 周及以后使用， 应如何制定生产计划。 附件 2019~2022 年的需求数据 附录 说明 (1) 将附件数据第1 次出现的时间（2019 年1 月2 日）所在的周设定为第1 周，以后的每 周从周一开始至周日结束，例如，2019 年1 月7 日至13 日为第2 周，以此类推。 (2) 在制定本周的生产计划时，可以使用任何历史数据、需求特征以及预测数据，但不能 使用本周及本周以后的实际需求数据。 (3) 服务水平= 1 − 缺货量 实际需求量。 (4) 库存量和缺货量分别指物料在周末的库存量和缺货量。",
+  "tasks": [
+    "(2) 在制定本周的生产计划时，可以使用任何历史数据、需求特征以及预测数据，但不能 使用本周及本周以后的实际需求数据"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据、预测"
+    },
+    {
+      "key": "time_series",
+      "name": "时间序列预测",
+      "chapter": "CH8",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "reason": "预测"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 2,
+    "path": "../../Documents/Playground/cumcm_unzipped/2022_5eWlbmTt28f88a0815a79d555da8b7072f971633/E题/附件.xlsx",
+    "rows": 2500,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "(2) 在制定本周的生产计划时，可以使用任何历史数据、需求特征以及预测数据，但不能 使用本周及本周以后的实际需求数据"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      0.927314,
+      276098.705416,
+      -3.174141
+    ],
+    "r2": 0.9999999965953736,
+    "mean_abs_error": 9986.500744688507
+  },
+  "artifact_paths": [
+    "question_artifacts/2022/E/q04/experiment_table.csv"
+  ]
+}

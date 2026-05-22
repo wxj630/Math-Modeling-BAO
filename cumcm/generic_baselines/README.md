@@ -18,13 +18,13 @@
 
 ## 方法分布
 
-- `linear_programming`：57 问
-- `quadratic_least_squares`：57 问
-- `least_squares_geometry_fit`：27 问
+- `quadratic_least_squares`：67 问
+- `linear_programming`：63 问
+- `least_squares_geometry_fit`：33 问
 - `linear_trend_forecast`：14 问
-- `first_order_dynamic_simulation`：10 问
-- `dijkstra_shortest_path`：9 问
-- `logistic_regression_plus_kmeans`：7 问
-- `std_weight_topsis`：7 问
+- `first_order_dynamic_simulation`：11 问
+- `dijkstra_shortest_path`：10 问
+- `logistic_regression_plus_kmeans`：9 问
+- `std_weight_topsis`：8 问
 - `binomial_sampling_design`：6 问
 - `fft_feature_extraction`：2 问
