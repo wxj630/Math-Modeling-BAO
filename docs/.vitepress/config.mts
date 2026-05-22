@@ -53,10 +53,8 @@ export default defineConfig({
         items: [
           { text: 'MCM/ICM 赛题入口', link: '/mcm-track/' },
           { text: 'MCM/ICM 赛题整体索引', link: '/mcm-track/problem-index' },
-          { text: 'MCM/ICM 逐问材料索引', link: '/mcm-track/solution-index' },
           { text: 'CUMCM 赛题入口', link: '/cumcm-track/' },
-          { text: 'CUMCM 赛题整体索引', link: '/cumcm-track/problem-index' },
-          { text: 'CUMCM 逐问材料索引', link: '/cumcm-track/solution-index' }
+          { text: 'CUMCM 赛题整体索引', link: '/cumcm-track/problem-index' }
         ]
       },
       {

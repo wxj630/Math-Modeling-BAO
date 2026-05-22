@@ -7,7 +7,6 @@ MCM/ICM 教程现在以完整赛题为入口。每个赛题页先展示整题主
 | 入口 | 用途 |
 |---|---|
 | [MCM/ICM 赛题整体索引](./problem-index.md) | 按年份浏览每一道赛题，进入赛题页。 |
-| [MCM/ICM 逐问材料索引](./solution-index.md) | 作为附录快速查找某个小问的 baseline/advanced report。 |
 | [2015-C 人力资本网络案例](/case-studies/mcm-2015-c) | 重点示范同一赛题的小问如何递进。 |
 | [2024-C 网球势头案例](/case-studies/mcm-2024-c) | 展示真实附件数据如何支撑整题模型链。 |
 
