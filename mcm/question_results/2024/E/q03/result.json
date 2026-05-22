@@ -6,8 +6,8 @@
   "methods": "比较屋顶加固、抬高设施、防火围护、社区排水预警、参数化准备金等减灾行动的风险降低、成本负担和保险信心增益。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
     "official_requirements": {
       "underwrite_conditions": true,
       "choose_when_to_take_risk": true,

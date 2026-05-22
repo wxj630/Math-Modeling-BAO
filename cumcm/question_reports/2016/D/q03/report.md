@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：风资源评估、机型匹配与维护排班优化（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 综合评价与权重决策（CH7）：问题1需要综合风速、发电量、容量因子和低风停发等指标评价风资源利用情况。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
-- 数据拟合与回归分析（CH6）：问题2需要把风速样本映射到机型功率曲线，比较现有机型和新机型的匹配程度。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 规划优化与资源配置（CH3）：问题3是典型维护计划与人员排班优化，目标兼顾经济损失和工作量均衡。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 综合评价与权重决策（CH7）：问题1需要综合风速、发电量、容量因子和低风停发等指标评价风资源利用情况。；参考 ../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
+- 数据拟合与回归分析（CH6）：问题2需要把风速样本映射到机型功率曲线，比较现有机型和新机型的匹配程度。；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 规划优化与资源配置（CH3）：问题3是典型维护计划与人员排班优化，目标兼顾经济损失和工作量均衡。；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ## 变量、约束与公式
 
@@ -54,9 +54,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2016/D/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2016/D/q03/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2016/D/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2016/D/q03/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：利用附件1日发电量识别相对低损失维护窗口。
@@ -67,14 +67,14 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/D/q03/maintenance_plan.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/D/q03/crew_daily_schedule.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/D/q03/maintenance_economic_loss.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/D/q03/experiment_table.csv
+- cumcm/question_artifacts/2016/D/q03/maintenance_plan.csv
+- cumcm/question_artifacts/2016/D/q03/crew_daily_schedule.csv
+- cumcm/question_artifacts/2016/D/q03/maintenance_economic_loss.csv
+- cumcm/question_artifacts/2016/D/q03/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201502.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201503.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201504.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201505.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201506.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201507.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201508.xls; ...
+- 附件：../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201502.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201503.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201504.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201505.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201506.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201507.xls; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201508.xls; ...
 - 读取规模：56940 行 x 3 列
 - 说明：本题专用算法读取附件1全年15分钟风速/功率、附件2典型风机风速报表，以及附件3/4风机参数，完成风资源评估、机型匹配和维护排班。
 

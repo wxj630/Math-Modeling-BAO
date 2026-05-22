@@ -6,8 +6,8 @@
   "methods": "设计农业节水、污水回用和卫生、漏损控制、海水淡化+可再生能源、雨水收集和地下水回补五类组合计划，并记录周边生态影响。对应模型：干预组合设计、成本效益分析、生态外部性评估。",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "selected_region": "Jordan",
     "rows": {
       "world_bank_jordan_water_indicators.csv": 528

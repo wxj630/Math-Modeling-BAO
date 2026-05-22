@@ -6,7 +6,7 @@
   "methods": "只使用官方题面中的 370 个岗位、46 个 7 人部门、12 个 4 人办公室、85% 填补率、8%-10% 主动招聘范围和岗位层级表；构造层级、工作单元、流失影响、培训依赖四层人力资本网络。对应模型：多层网络、组织结构图建模、多指标 HR 健康指数。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "parameters": {
       "total_positions": 370,
       "seven_person_departments": 46,

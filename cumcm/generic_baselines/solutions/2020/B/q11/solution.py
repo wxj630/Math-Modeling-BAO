@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2020-B",
   "question_index": 11,
   "title": "2020年 CUMCM B题：穿越沙漠",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2020/B.md",
+  "problem_path": "cumcm/problems/2020/B.md",
   "question": {
     "label": "问题 3",
     "statement": "现有名玩家，他们有相同的初始资金，且同时从起点出发。若某天其中的任意名玩家均从区域A行走到区域B()，则他们中的任一位消耗的资源数量均为基础消耗量的倍；若某天其中的任意名玩家在同一矿山挖矿，则他们中的任一位消耗的资源数量均为基础消耗量的倍，且每名玩家一天可通过挖矿获得的资金是基础收益的；若某天其中的任意名玩家在同一村庄购买资源，每箱价格均为基准价格的倍。其他情况下消耗资源数量与资源价格与单人游戏相同。",
@@ -37,28 +37,28 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx",
       "name": "2020B-穿越沙漠.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 44282,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
       "name": "Result.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 11164,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
       "name": "附件.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 259622,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -97,7 +97,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

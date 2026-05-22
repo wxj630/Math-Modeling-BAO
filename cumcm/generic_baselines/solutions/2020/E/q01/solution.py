@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2020-E",
   "question_index": 1,
   "title": "2020年 CUMCM E题：校园供水系统智能管理",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2020/E.md",
+  "problem_path": "cumcm/problems/2020/E.md",
   "question": {
     "label": "问题 1",
     "statement": "输水管网的漏损是一个严重问题。资料显示，在维护良好的公共供水网络中，平均失水在5%左右；而在比较老旧的管网中，失水则会更多。请利用附件提供的数据，建立数学模型，分析该校园供水管网的漏损情况",
@@ -50,52 +50,52 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/2020E-校园供水系统智能管理.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/2020E-校园供水系统智能管理.docx",
       "name": "2020E-校园供水系统智能管理.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 21902,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
       "name": "附件_一季度.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 23157112,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx",
       "name": "附件_三季度.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 25667855,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx",
       "name": "附件_二季度.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 25030494,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx",
       "name": "附件_四季度.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 25483604,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx",
       "name": "附件_水表层级.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 13802,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -134,7 +134,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

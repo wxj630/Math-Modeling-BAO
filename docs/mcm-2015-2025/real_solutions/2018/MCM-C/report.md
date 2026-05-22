@@ -2,8 +2,8 @@
 
 ## 数据真实性
 
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Energy Production.pdf`。
-- 官方 workbook：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production/2018_MCM_Problem_C_Data.xlsx`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2018/Energy Production.pdf`。
+- 官方 workbook：`docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production/2018_MCM_Problem_C_Data.xlsx`。
 - 行数：`{'seseds': 105744, 'msncodes': 605}`。
 - 本解法只读取 COMAP 官方 workbook，不生成随机 `x1/x2/x3` 数据。
 

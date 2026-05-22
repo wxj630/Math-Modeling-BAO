@@ -68,7 +68,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{{item}}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{{solution_path}}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {{solution_path}}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {{solution_path}}`")
     lines.append(f"- 结果 JSON：{{RESULT_PATH}}")
     lines.append(f"- 实验报告：{{REPORT_PATH}}")
     for artifact in result.get("artifact_paths", []):
@@ -146,7 +146,7 @@ def write_readme(index_rows: list[dict]) -> None:
         "## 重新生成",
         "",
         "```bash",
-        "/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/archive_generic_baselines.py --all",
+        ".venv/bin/python cumcm/scripts/archive_generic_baselines.py --all",
         "```",
         "",
         "## 方法分布",

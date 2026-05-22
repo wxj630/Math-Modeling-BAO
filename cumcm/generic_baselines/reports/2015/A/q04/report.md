@@ -11,7 +11,7 @@
 ## 通用模型选择
 
 - 模型：图像文本与信号特征（CH10：图像、文本与信号数据）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md
 - 通用方法：`fft_feature_extraction`
 
 ## 变量、约束与公式
@@ -33,16 +33,16 @@
 
 ## 运行与产物
 
-- 通用代码：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2015/A/q04/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2015/A/q04/solution.py`
-- 结果 JSON：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/results/2015/A/q04/result.json
-- 实验报告：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/reports/2015/A/q04/report.md
-- 实验产物：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/artifacts/2015/A/q04/experiment_table.csv
+- 通用代码：cumcm/generic_baselines/solutions/2015/A/q04/solution.py
+- 单问运行：`.venv/bin/python cumcm/generic_baselines/solutions/2015/A/q04/solution.py`
+- 结果 JSON：cumcm/generic_baselines/results/2015/A/q04/result.json
+- 实验报告：cumcm/generic_baselines/reports/2015/A/q04/report.md
+- 实验产物：cumcm/generic_baselines/artifacts/2015/A/q04/experiment_table.csv
 
 ## 数据来源
 
 - 类型：attachment
-- 路径：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls
+- 路径：../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls
 - 说明：本问优先使用官方附件中的数值表生成实验结果。
 
 ## 核心结果

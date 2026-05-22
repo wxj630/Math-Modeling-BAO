@@ -8,7 +8,7 @@ Consider how cultural norms may impact the way in which passengers process throu
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint`。
 - 行数/记录数：{'Sheet1': 58}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -41,9 +41,9 @@ Consider how cultural norms may impact the way in which passengers process throu
 - 排队仿真是按官方样本确定性回放；PreCheck 加速、取物时间归一化、文化/旅客风格乘数和流程修改均为显式假设，正式论文应补充小时级真实排队、成本、安检失败率和多机场数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2017/D/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2017/D/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2017/D/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2017/D/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2017/D/q03`
+- `mcm/question_results/2017/D/q03/result.json`
+- `mcm/question_reports/2017/D/q03/report.md`
+- `mcm/question_artifacts/2017/D/q03`

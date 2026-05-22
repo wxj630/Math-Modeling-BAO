@@ -8,7 +8,7 @@ Determine how information value, people's initial opinion and bias, form of the 
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2016`。
 - 行数/记录数：{'official_problem_parameters': 5, 'official_periods': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -46,9 +46,9 @@ Determine how information value, people's initial opinion and bias, form of the 
 - media access、transmission speed、network connectivity、gatekeeping filter、channel capacity 和观点影响权重是显式归一化假设，不是新闻传播观测数据；正式论文应补充报纸发行、广播/电视普及、互联网使用、智能手机渗透和平台转发级联数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2016/D/q05/solution.py`
+`.venv/bin/python mcm/question_solutions/2016/D/q05/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2016/D/q05/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2016/D/q05/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2016/D/q05`
+- `mcm/question_results/2016/D/q05/result.json`
+- `mcm/question_reports/2016/D/q05/report.md`
+- `mcm/question_artifacts/2016/D/q05`

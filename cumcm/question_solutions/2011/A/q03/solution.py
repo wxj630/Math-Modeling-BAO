@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2011-A",
   "title": "2011年 CUMCM A题：城市表层土壤重金属污染分析",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/A.md",
+  "problem_path": "cumcm/problems/2011/A.md",
   "question_index": 3,
   "question": {
     "label": "问题 3",
@@ -41,20 +41,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A.doc",
       "name": "cumcm2011A.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 33792,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A附件_数据.xls",
+      "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A附件_数据.xls",
       "name": "cumcm2011A附件_数据.xls",
       "suffix": ".xls",
       "kind": "data",
       "size_bytes": 76288,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }

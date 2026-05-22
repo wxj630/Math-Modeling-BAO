@@ -2,8 +2,8 @@
   "problem_id": "2015-D",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
     "selected_country": "Nepal",
     "rows": {
       "world_bank_nepal_indicators.csv": 462

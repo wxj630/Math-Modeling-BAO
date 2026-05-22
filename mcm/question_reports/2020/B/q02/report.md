@@ -8,7 +8,7 @@ Using your model, determine an optimal sand-to-water mixture proportion for the 
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets`。
 - 行数/记录数：{'official_parameters': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -19,9 +19,9 @@ Using your model, determine an optimal sand-to-water mixture proportion for the 
 - 形状、比例、降雨和策略参数是显式确定性物理情景输入，不是实测冲刷数据；正式论文应补充沙粒级配、含水率、压实度、潮汐、波速和降雨入渗校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2020/B/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2020/B/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2020/B/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2020/B/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2020/B/q02`
+- `mcm/question_results/2020/B/q02/result.json`
+- `mcm/question_reports/2020/B/q02/report.md`
+- `mcm/question_artifacts/2020/B/q02`

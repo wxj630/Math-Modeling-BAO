@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：规划优化与资源配置（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 规划优化与资源配置（CH3）：最优、成本、方案；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
-- 时间序列预测（CH8）：未来；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 规划优化与资源配置（CH3）：最优、成本、方案；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 时间序列预测（CH8）：未来；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
 
 ## 变量、约束与公式
 
@@ -48,9 +48,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2024/C/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2024/C/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2024/C/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2024/C/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件 1 的地块面积/类型和作物适宜地，读取附件 2 的 2023 种植与亩产成本价格。
@@ -62,15 +62,15 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/C/q01/experiment_table.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/C/q01/result1_1_plan.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/C/q01/result1_2_plan.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/C/q01/result1_1.xlsx
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2024/C/q01/result1_2.xlsx
+- cumcm/question_artifacts/2024/C/q01/experiment_table.csv
+- cumcm/question_artifacts/2024/C/q01/result1_1_plan.csv
+- cumcm/question_artifacts/2024/C/q01/result1_2_plan.csv
+- cumcm/question_artifacts/2024/C/q01/result1_1.xlsx
+- cumcm/question_artifacts/2024/C/q01/result1_2.xlsx
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件2.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件1.xlsx; ../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件2.xlsx
 - 读取规模：289 行 x 23 列
 - 说明：本题专用算法使用附件1的地块/作物清单、附件2的2023种植情况和亩产成本价格，并按附件3模板导出 result*.xlsx。
 

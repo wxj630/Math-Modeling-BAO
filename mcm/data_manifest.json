@@ -3,7 +3,7 @@
     "problem_id": "2015-D",
     "year": "2015",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
     "size_bytes": "88945"
   },
@@ -11,7 +11,7 @@
     "problem_id": "2015-C",
     "year": "2015",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "size_bytes": "181114"
   },
@@ -19,7 +19,7 @@
     "problem_id": "2015-D",
     "year": "2015",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable/world_bank_nepal_indicators.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable/world_bank_nepal_indicators.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable/world_bank_nepal_indicators.csv",
     "size_bytes": "87299"
   },
@@ -27,7 +27,7 @@
     "problem_id": "2016-A",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
     "size_bytes": "75127"
   },
@@ -35,7 +35,7 @@
     "problem_id": "2016-E",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "size_bytes": "92578"
   },
@@ -43,7 +43,7 @@
     "problem_id": "2016-D",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "size_bytes": "155359"
   },
@@ -51,7 +51,7 @@
     "problem_id": "2016-F",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "size_bytes": "104543"
   },
@@ -59,7 +59,7 @@
     "problem_id": "2016-E",
     "year": "2016",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
     "size_bytes": "109278"
   },
@@ -67,7 +67,7 @@
     "problem_id": "2016-C",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
     "size_bytes": "176780"
   },
@@ -75,7 +75,7 @@
     "problem_id": "2016-C",
     "year": "2016",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
     "size_bytes": "105426"
   },
@@ -83,7 +83,7 @@
     "problem_id": "2016-C",
     "year": "2016",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
     "size_bytes": "134500"
   },
@@ -91,7 +91,7 @@
     "problem_id": "2016-C",
     "year": "2016",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
     "size_bytes": "5371791"
   },
@@ -99,7 +99,7 @@
     "problem_id": "2016-B",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
     "size_bytes": "79384"
   },
@@ -107,7 +107,7 @@
     "problem_id": "2016-C",
     "year": "2016",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
     "size_bytes": "98137"
   },
@@ -115,7 +115,7 @@
     "problem_id": "2017-C",
     "year": "2017",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
     "size_bytes": "722864"
   },
@@ -123,7 +123,7 @@
     "problem_id": "2017-A",
     "year": "2017",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
     "size_bytes": "20553"
   },
@@ -131,7 +131,7 @@
     "problem_id": "2017-B",
     "year": "2017",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
     "size_bytes": "111655"
   },
@@ -139,7 +139,7 @@
     "problem_id": "2017-D",
     "year": "2017",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
     "size_bytes": "276192"
   },
@@ -147,7 +147,7 @@
     "problem_id": "2017-D",
     "year": "2017",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
     "size_bytes": "12103"
   },
@@ -155,7 +155,7 @@
     "problem_id": "2017-C",
     "year": "2017",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
     "size_bytes": "20391"
   },
@@ -163,7 +163,7 @@
     "problem_id": "2018-C",
     "year": "2018",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Energy Production.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2018/Energy Production.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2018/Energy Production.pdf",
     "size_bytes": "2963538"
   },
@@ -171,7 +171,7 @@
     "problem_id": "2018-C",
     "year": "2018",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production/2018_MCM_Problem_C_Data.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production/2018_MCM_Problem_C_Data.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production/2018_MCM_Problem_C_Data.xlsx",
     "size_bytes": "2846241"
   },
@@ -179,7 +179,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
     "size_bytes": "3775"
   },
@@ -187,7 +187,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02_metadata.csv",
     "size_bytes": "49527"
   },
@@ -195,7 +195,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02_with_ann.csv",
     "size_bytes": "1225582"
   },
@@ -203,7 +203,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -211,7 +211,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
     "size_bytes": "3727"
   },
@@ -219,7 +219,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_metadata.csv",
     "size_bytes": "48186"
   },
@@ -227,7 +227,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_with_ann.csv",
     "size_bytes": "1220210"
   },
@@ -235,7 +235,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -243,7 +243,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
     "size_bytes": "4213"
   },
@@ -251,7 +251,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02_metadata.csv",
     "size_bytes": "48186"
   },
@@ -259,7 +259,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02_with_ann.csv",
     "size_bytes": "1225784"
   },
@@ -267,7 +267,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -275,7 +275,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
     "size_bytes": "4341"
   },
@@ -283,7 +283,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_metadata.csv",
     "size_bytes": "62697"
   },
@@ -291,7 +291,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_with_ann.csv",
     "size_bytes": "1262587"
   },
@@ -299,7 +299,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -307,7 +307,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
     "size_bytes": "4351"
   },
@@ -315,7 +315,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02_metadata.csv",
     "size_bytes": "62697"
   },
@@ -323,7 +323,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02_with_ann.csv",
     "size_bytes": "1260006"
   },
@@ -331,7 +331,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -339,7 +339,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
     "size_bytes": "5300"
   },
@@ -347,7 +347,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_metadata.csv",
     "size_bytes": "63053"
   },
@@ -355,7 +355,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_with_ann.csv",
     "size_bytes": "1260240"
   },
@@ -363,7 +363,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -371,7 +371,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
     "size_bytes": "5313"
   },
@@ -379,7 +379,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02_metadata.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02_metadata.csv",
     "size_bytes": "63053"
   },
@@ -387,7 +387,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02_with_ann.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02_with_ann.csv",
     "size_bytes": "1260535"
   },
@@ -395,7 +395,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/aff_download_readme_ann.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/aff_download_readme_ann.txt",
     "size_bytes": "1062"
   },
@@ -403,7 +403,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/MCM_NFLIS_Data.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/MCM_NFLIS_Data.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/MCM_NFLIS_Data.xlsx",
     "size_bytes": "1267410"
   },
@@ -411,7 +411,7 @@
     "problem_id": "2019-C",
     "year": "2019",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
     "size_bytes": "409514"
   },
@@ -419,7 +419,7 @@
     "problem_id": "2020-D",
     "year": "2020",
     "kind": "txt",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
     "size_bytes": "5168"
   },
@@ -427,7 +427,7 @@
     "problem_id": "2020-D",
     "year": "2020",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/fullevents.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/fullevents.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/fullevents.csv",
     "size_bytes": "5145702"
   },
@@ -435,7 +435,7 @@
     "problem_id": "2020-D",
     "year": "2020",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/matches.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/matches.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/matches.csv",
     "size_bytes": "1343"
   },
@@ -443,7 +443,7 @@
     "problem_id": "2020-D",
     "year": "2020",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/passingevents.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/passingevents.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/passingevents.csv",
     "size_bytes": "1918348"
   },
@@ -451,7 +451,7 @@
     "problem_id": "2020-D",
     "year": "2020",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
     "size_bytes": "151563"
   },
@@ -459,7 +459,7 @@
     "problem_id": "2021-C",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
     "size_bytes": "5163240"
   },
@@ -467,7 +467,7 @@
     "problem_id": "2021-C",
     "year": "2021",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCMProblemC_DataSet.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCMProblemC_DataSet.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCMProblemC_DataSet.xlsx",
     "size_bytes": "622429"
   },
@@ -475,7 +475,7 @@
     "problem_id": "2021-C",
     "year": "2021",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_ Images_by_GlobalID.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_ Images_by_GlobalID.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_ Images_by_GlobalID.xlsx",
     "size_bytes": "183517"
   },
@@ -483,7 +483,7 @@
     "problem_id": "2021-C",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
     "size_bytes": "3909091"
   },
@@ -491,7 +491,7 @@
     "problem_id": "2021-D",
     "year": "2021",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/data_by_artist.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/data_by_artist.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/data_by_artist.csv",
     "size_bytes": "759542"
   },
@@ -499,7 +499,7 @@
     "problem_id": "2021-D",
     "year": "2021",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/data_by_year.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/data_by_year.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/data_by_year.csv",
     "size_bytes": "13385"
   },
@@ -507,7 +507,7 @@
     "problem_id": "2021-D",
     "year": "2021",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/full_music_data.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/full_music_data.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/full_music_data.csv",
     "size_bytes": "13765979"
   },
@@ -515,7 +515,7 @@
     "problem_id": "2021-D",
     "year": "2021",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/influence_data.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/influence_data.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data/influence_data.csv",
     "size_bytes": "2852303"
   },
@@ -523,7 +523,7 @@
     "problem_id": "2021-D",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
     "size_bytes": "6773549"
   },
@@ -531,7 +531,7 @@
     "problem_id": "2022-C",
     "year": "2022",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/BCHAIN-MKPRU.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/BCHAIN-MKPRU.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/BCHAIN-MKPRU.csv",
     "size_bytes": "32693"
   },
@@ -539,7 +539,7 @@
     "problem_id": "2022-C",
     "year": "2022",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/LBMA-GOLD.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/LBMA-GOLD.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/LBMA-GOLD.csv",
     "size_bytes": "20625"
   },
@@ -547,7 +547,7 @@
     "problem_id": "2022-C",
     "year": "2022",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
     "size_bytes": "489103"
   },
@@ -555,7 +555,7 @@
     "problem_id": "2023-A",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "size_bytes": "314471"
   },
@@ -563,7 +563,7 @@
     "problem_id": "2023-F-GreenGDP",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
     "size_bytes": "380561"
   },
@@ -571,7 +571,7 @@
     "problem_id": "2023-E",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
     "size_bytes": "533962"
   },
@@ -579,7 +579,7 @@
     "problem_id": "2023-C-Wordle",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
     "size_bytes": "530619"
   },
@@ -587,7 +587,7 @@
     "problem_id": "2023-D",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
     "size_bytes": "321963"
   },
@@ -595,7 +595,7 @@
     "problem_id": "2023-C-Wordle",
     "year": "2023",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
     "size_bytes": "37162"
   },
@@ -603,7 +603,7 @@
     "problem_id": "2023-C-Boats",
     "year": "2023",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
     "size_bytes": "159495"
   },
@@ -611,7 +611,7 @@
     "problem_id": "2023-B",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
     "size_bytes": "212232"
   },
@@ -619,7 +619,7 @@
     "problem_id": "2023-F",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
     "size_bytes": "218302"
   },
@@ -627,7 +627,7 @@
     "problem_id": "2023-C-Boats",
     "year": "2023",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Understanding Used Sailboat Prices.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Understanding Used Sailboat Prices.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Understanding Used Sailboat Prices.pdf",
     "size_bytes": "518290"
   },
@@ -635,7 +635,7 @@
     "problem_id": "2024-D",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
     "size_bytes": "2106837"
   },
@@ -643,7 +643,7 @@
     "problem_id": "2024-D",
     "year": "2024",
     "kind": "xlsx",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
     "size_bytes": "46692"
   },
@@ -651,7 +651,7 @@
     "problem_id": "2024-D",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
     "size_bytes": "2665237"
   },
@@ -659,7 +659,7 @@
     "problem_id": "2024-C",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
     "size_bytes": "862380"
   },
@@ -667,7 +667,7 @@
     "problem_id": "2024-C",
     "year": "2024",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
     "size_bytes": "1194113"
   },
@@ -675,7 +675,7 @@
     "problem_id": "2024-C",
     "year": "2024",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
     "size_bytes": "3178"
   },
@@ -683,7 +683,7 @@
     "problem_id": "2024-F",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
     "size_bytes": "553859"
   },
@@ -691,7 +691,7 @@
     "problem_id": "2024-A",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
     "size_bytes": "396786"
   },
@@ -699,7 +699,7 @@
     "problem_id": "2024-B",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
     "size_bytes": "448248"
   },
@@ -707,7 +707,7 @@
     "problem_id": "2024-E",
     "year": "2024",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
     "size_bytes": "492022"
   },
@@ -715,7 +715,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
     "size_bytes": "341287"
   },
@@ -723,7 +723,7 @@
     "problem_id": "2025-E",
     "year": "2025",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
     "size_bytes": "340992"
   },
@@ -731,7 +731,7 @@
     "problem_id": "2025-F",
     "year": "2025",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
     "size_bytes": "233064"
   },
@@ -739,7 +739,7 @@
     "problem_id": "2025-A",
     "year": "2025",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "size_bytes": "246321"
   },
@@ -747,7 +747,7 @@
     "problem_id": "2025-B",
     "year": "2025",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
     "size_bytes": "200244"
   },
@@ -755,7 +755,7 @@
     "problem_id": "2025-C",
     "year": "2025",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
     "size_bytes": "5119355"
   },
@@ -763,7 +763,7 @@
     "problem_id": "2025-C",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/data_dictionary.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/data_dictionary.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/data_dictionary.csv",
     "size_bytes": "3736"
   },
@@ -771,7 +771,7 @@
     "problem_id": "2025-C",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_athletes.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_athletes.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_athletes.csv",
     "size_bytes": "23809049"
   },
@@ -779,7 +779,7 @@
     "problem_id": "2025-C",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_hosts.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_hosts.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_hosts.csv",
     "size_bytes": "1187"
   },
@@ -787,7 +787,7 @@
     "problem_id": "2025-C",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_medal_counts.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_medal_counts.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_medal_counts.csv",
     "size_bytes": "38303"
   },
@@ -795,7 +795,7 @@
     "problem_id": "2025-C",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_programs.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_programs.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_programs.csv",
     "size_bytes": "7539"
   },
@@ -803,7 +803,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Bus_Routes.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Bus_Routes.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Bus_Routes.csv",
     "size_bytes": "7321"
   },
@@ -811,7 +811,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Bus_Stops.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Bus_Stops.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Bus_Stops.csv",
     "size_bytes": "367203"
   },
@@ -819,7 +819,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/DataDictionary.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/DataDictionary.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/DataDictionary.csv",
     "size_bytes": "14698"
   },
@@ -827,7 +827,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Edge_Names_With_Nodes.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Edge_Names_With_Nodes.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/Edge_Names_With_Nodes.csv",
     "size_bytes": "967326"
   },
@@ -835,7 +835,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv",
     "size_bytes": "1230387"
   },
@@ -843,7 +843,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/edges_all.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/edges_all.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/edges_all.csv",
     "size_bytes": "117099710"
   },
@@ -851,7 +851,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/edges_drive.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/edges_drive.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/edges_drive.csv",
     "size_bytes": "25891190"
   },
@@ -859,7 +859,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/nodes_all.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/nodes_all.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/nodes_all.csv",
     "size_bytes": "15784033"
   },
@@ -867,7 +867,7 @@
     "problem_id": "2025-D",
     "year": "2025",
     "kind": "csv",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/nodes_drive.csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/nodes_drive.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data/nodes_drive.csv",
     "size_bytes": "2663316"
   },
@@ -875,7 +875,7 @@
     "problem_id": "2019-A",
     "year": "2019",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "relative_path": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "size_bytes": "142475"
   },
@@ -883,7 +883,7 @@
     "problem_id": "2017-E",
     "year": "2017",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
     "size_bytes": "134817"
   },
@@ -891,7 +891,7 @@
     "problem_id": "2017-F",
     "year": "2017",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
     "size_bytes": "197563"
   },
@@ -899,7 +899,7 @@
     "problem_id": "2018-A",
     "year": "2018",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
+    "path": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
     "relative_path": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
     "size_bytes": "136271"
   },
@@ -907,7 +907,7 @@
     "problem_id": "2018-B",
     "year": "2018",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
+    "path": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
     "relative_path": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
     "size_bytes": "848893"
   },
@@ -915,7 +915,7 @@
     "problem_id": "2018-D",
     "year": "2018",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
+    "path": "docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
     "relative_path": "docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
     "size_bytes": "245827"
   },
@@ -923,7 +923,7 @@
     "problem_id": "2018-E",
     "year": "2018",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "path": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
     "relative_path": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
     "size_bytes": "143540"
   },
@@ -931,7 +931,7 @@
     "problem_id": "2018-F",
     "year": "2018",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
+    "path": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
     "relative_path": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
     "size_bytes": "144393"
   },
@@ -939,7 +939,7 @@
     "problem_id": "2019-B",
     "year": "2019",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "relative_path": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "size_bytes": "810625"
   },
@@ -947,7 +947,7 @@
     "problem_id": "2019-D",
     "year": "2019",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
     "relative_path": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
     "size_bytes": "433395"
   },
@@ -955,7 +955,7 @@
     "problem_id": "2019-E",
     "year": "2019",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "path": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
     "relative_path": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
     "size_bytes": "146409"
   },
@@ -963,7 +963,7 @@
     "problem_id": "2019-P06",
     "year": "2019",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
     "relative_path": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
     "size_bytes": "237801"
   },
@@ -971,7 +971,7 @@
     "problem_id": "2020-A",
     "year": "2020",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "path": "docs/mcm-2015-2025/official_assets/2020/Moving North",
     "relative_path": "docs/mcm-2015-2025/official_assets/2020/Moving North",
     "size_bytes": "707257"
   },
@@ -979,7 +979,7 @@
     "problem_id": "2020-B",
     "year": "2020",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "path": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
     "relative_path": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
     "size_bytes": "29210"
   },
@@ -987,7 +987,7 @@
     "problem_id": "2020-C",
     "year": "2020",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "path": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
     "relative_path": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
     "size_bytes": "322370"
   },
@@ -995,7 +995,7 @@
     "problem_id": "2020-C",
     "year": "2020",
     "kind": "zip",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "path": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
     "relative_path": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
     "size_bytes": "5031847"
   },
@@ -1003,7 +1003,7 @@
     "problem_id": "2020-E",
     "year": "2020",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "path": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
     "relative_path": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
     "size_bytes": "144430"
   },
@@ -1011,7 +1011,7 @@
     "problem_id": "2020-F",
     "year": "2020",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "path": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "relative_path": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "size_bytes": "528936"
   },
@@ -1019,7 +1019,7 @@
     "problem_id": "2021-A",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Fungi",
     "relative_path": "docs/mcm-2015-2025/official_assets/2021/Fungi",
     "size_bytes": "382665"
   },
@@ -1027,7 +1027,7 @@
     "problem_id": "2021-B",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
     "relative_path": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
     "size_bytes": "547677"
   },
@@ -1035,7 +1035,7 @@
     "problem_id": "2021-E",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
     "relative_path": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
     "size_bytes": "136925"
   },
@@ -1043,7 +1043,7 @@
     "problem_id": "2021-F",
     "year": "2021",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "relative_path": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "size_bytes": "136536"
   },
@@ -1051,7 +1051,7 @@
     "problem_id": "2022-A",
     "year": "2022",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
     "relative_path": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
     "size_bytes": "199388"
   },
@@ -1059,7 +1059,7 @@
     "problem_id": "2022-B",
     "year": "2022",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
     "relative_path": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
     "size_bytes": "236603"
   },
@@ -1067,7 +1067,7 @@
     "problem_id": "2022-P01",
     "year": "2022",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
     "relative_path": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
     "size_bytes": "324648"
   },
@@ -1075,7 +1075,7 @@
     "problem_id": "2022-E",
     "year": "2022",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "relative_path": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "size_bytes": "323224"
   },
@@ -1083,7 +1083,7 @@
     "problem_id": "2022-F",
     "year": "2022",
     "kind": "pdf",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "path": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
     "relative_path": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
     "size_bytes": "265104"
   }

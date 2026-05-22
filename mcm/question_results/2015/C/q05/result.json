@@ -6,7 +6,7 @@
   "methods": "对 junior managers 和 experienced supervisors 施加官方要求的 30% 流失冲击，比较无外部招聘与资深主管/初级主管/资深员工内部晋升链；晋升池比例为显式假设。对应模型：晋升链仿真、岗位替补模型、瓶颈分析。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "parameters": {
       "total_positions": 370,
       "seven_person_departments": 46,

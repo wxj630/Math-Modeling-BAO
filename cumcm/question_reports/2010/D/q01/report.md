@@ -13,11 +13,11 @@
 ## 适配模型
 
 - 主模型：综合评价与权重决策（CH7：权重生成与评价模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
 
 ### 候选模型与适配理由
-- 综合评价与权重决策（CH7）：评价、综合、比较、经济性、舒适性；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
-- 规划优化与资源配置（CH3）：方案、设计；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 综合评价与权重决策（CH7）：评价、综合、比较、经济性、舒适性；参考 ../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
+- 规划优化与资源配置（CH3）：方案、设计；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ## 变量、约束与公式
 
@@ -43,9 +43,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2010/D/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2010/D/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2010/D/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2010/D/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：构造评价指标矩阵。
@@ -56,11 +56,11 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2010/D/q01/experiment_table.csv
+- cumcm/question_artifacts/2010/D/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：problem_statement
-- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/D.md
+- 附件：cumcm/problems/2010/D.md
 - 读取规模：2 行 x 2 列
 - 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 

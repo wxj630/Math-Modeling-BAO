@@ -6,8 +6,8 @@
   "methods": "按官方题面 100 年评估要求，建立活树、土壤、长中短寿命林产品和替代信用的逐年确定性碳账户。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "official_requirements": {
       "hundred_year_carbon_accounting": true,
       "forest_products_lifecycle": true,

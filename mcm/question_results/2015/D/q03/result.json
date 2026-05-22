@@ -6,8 +6,8 @@
   "methods": "把项目年度增益作为显式规划假设累积到各组件分数，计算 20 年后总分、状态变化，并用 score gain per billion USD 排序。对应模型：系统动力学、成本效益分析、项目效率排序。",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
     "selected_country": "Nepal",
     "rows": {
       "world_bank_nepal_indicators.csv": 462

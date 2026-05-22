@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：校园供水层级平衡、暗漏定位与维修决策（CH4：复杂网络与图论模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
 
 ### 候选模型与适配理由
-- 机器学习与统计识别（CH9）：检测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
-- 几何解析与运动学参数方程（CH1）：位置；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 数据拟合与回归分析（CH6）：数据；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 机器学习与统计识别（CH9）：检测；参考 ../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 几何解析与运动学参数方程（CH1）：位置；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：数据；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -52,9 +52,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/E/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/E/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2020/E/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2020/E/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：复用问题1的层级平衡和水表用水特征。
@@ -65,13 +65,13 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/E/q02/dark_leak_candidates.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/E/q02/night_flow_features.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/E/q02/experiment_table.csv
+- cumcm/question_artifacts/2020/E/q02/dark_leak_candidates.csv
+- cumcm/question_artifacts/2020/E/q02/night_flow_features.csv
+- cumcm/question_artifacts/2020/E/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx
 - 读取规模：3086881 行 x 15 列
 - 说明：本题专用算法读取四个季度15分钟水表用量和水表层级关系，完成功能区用水特征、层级漏损平衡、暗漏定位和维修经济性决策。
 

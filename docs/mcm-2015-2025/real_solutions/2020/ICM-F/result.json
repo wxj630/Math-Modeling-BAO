@@ -3,8 +3,8 @@
   "title": "The Place I Called Home...",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "official_requirements": {
       "edp_scope_and_culture_risk": true,
       "human_rights_and_cultural_preservation_policies": true,
@@ -1215,10 +1215,10 @@
     ]
   },
   "artifacts": {
-    "edp_scope_projection": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/edp_scope_projection.csv",
-    "culture_risk_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/culture_risk_scores.csv",
-    "policy_impact_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/policy_impact_scores.csv",
-    "climate_migration_policy_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/climate_migration_policy_frontier.png",
-    "culture_risk_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/culture_risk_frontier.png"
+    "edp_scope_projection": "docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/edp_scope_projection.csv",
+    "culture_risk_scores": "docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/culture_risk_scores.csv",
+    "policy_impact_scores": "docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/policy_impact_scores.csv",
+    "climate_migration_policy_frontier": "docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/climate_migration_policy_frontier.png",
+    "culture_risk_frontier": "docs/mcm-2015-2025/real_solutions/2020/ICM-F/artifacts/culture_risk_frontier.png"
   }
 }

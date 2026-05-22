@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2024-D",
   "question_index": 1,
   "title": "2024年 CUMCM D题：反潜航空深弹命中概率",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/D.md",
+  "problem_path": "cumcm/problems/2024/D.md",
   "question": {
     "label": "问题 1",
     "statement": "投射一枚深弹，潜艇中心位置的深度定位没有误差， 两个水平坐标定位均服从 正态分布。分析投弹最大命中概率与投弹落点平面坐标及定深引信引爆深度之间的关系， 并 给出使得投弹命中概率最大的投弹方案，及相应的最大命中概率表达式。 针对以下参数值给出最大命中概率：潜艇长 100 m，宽 20 m，高 25 m，潜艇航向方位 角为 90∘，深弹杀伤半径为 20 m，潜艇中心位置的水平定位标准差 𝜎 = 120 m，潜艇中心 位置的深度定位值为 150 m.",
@@ -44,12 +44,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/D题/D题.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/D题/D题.pdf",
       "name": "D题.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 890096,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -88,7 +88,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

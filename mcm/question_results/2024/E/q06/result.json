@@ -6,8 +6,8 @@
   "methods": "构造文化、历史、经济和社区意义加权分，并乘以灾害暴露形成保护紧迫度，排除 Cape Hatteras Lighthouse 后选择 St. Augustine Lighthouse 做应用。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
     "official_requirements": {
       "underwrite_conditions": true,
       "choose_when_to_take_risk": true,

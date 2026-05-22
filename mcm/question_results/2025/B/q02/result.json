@@ -6,8 +6,8 @@
   "methods": "把朱诺模型的容量、收费、居民接受度和资源健康指标迁移到 Barcelona overtourism district，用文化景点拥挤替代冰川退缩约束。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
     "parameters": {
       "juneau_population": 30000,
       "annual_cruise_passengers_2023": 1600000,

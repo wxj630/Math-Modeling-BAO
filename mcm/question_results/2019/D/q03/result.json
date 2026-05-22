@@ -6,8 +6,8 @@
   "methods": "把 Affluences 风格实时 wait-time/app routing 扩展为多语言出口指引、服务出口管控、楼层限流和季度演练政策。对应模型：实施路线图、应急管理政策。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
     "official_requirements": {
       "five_floors": true,
       "two_underground_floors": true,

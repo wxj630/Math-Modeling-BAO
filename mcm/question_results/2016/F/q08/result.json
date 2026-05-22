@@ -6,8 +6,8 @@
   "methods": "对 West Balkans、Eastern Mediterranean 等高流量路线施加安全和处理容量下降，输出各路线 post-event safety/capacity 与 queue spillover 解释。对应模型：网络级联、瓶颈传播、压力测试。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

@@ -6,8 +6,8 @@
   "methods": "把指标框架、策略评分、推荐路线、永久举办地/四季分拆的备选价值和下一步治理动作压缩成 IOC 可读备忘录。对应模型：非技术政策报告、执行摘要。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
     "official_requirements": {
       "impact_dimensions": [
         "economic",

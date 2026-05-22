@@ -33,10 +33,10 @@
 
 ## 运行与产物
 
-- 通用代码：/Users/wuxiaojun/code/Math-Modeling-World/mcm/generic_baselines/solutions/2016/B/q04/solution.py
-- 结果 JSON：/Users/wuxiaojun/code/Math-Modeling-World/mcm/generic_baselines/results/2016/B/q04/result.json
-- 实验报告：/Users/wuxiaojun/code/Math-Modeling-World/mcm/generic_baselines/reports/2016/B/q04/report.md
-- 实验产物：/Users/wuxiaojun/code/Math-Modeling-World/mcm/generic_baselines/artifacts/2016/B/q04/experiment_table.csv
+- 通用代码：mcm/generic_baselines/solutions/2016/B/q04/solution.py
+- 结果 JSON：mcm/generic_baselines/results/2016/B/q04/result.json
+- 实验报告：mcm/generic_baselines/reports/2016/B/q04/report.md
+- 实验产物：mcm/generic_baselines/artifacts/2016/B/q04/experiment_table.csv
 
 ## 数据来源
 

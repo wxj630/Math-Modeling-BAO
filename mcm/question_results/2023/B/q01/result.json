@@ -6,8 +6,8 @@
   "methods": "官方 PDF 题面 + Maasai Mara 分区多指标评价：wildlife value、habitat fragility、resident pressure、conflict exposure、tourism value；对应教程模型：综合评价与权重决策、空间分区。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
     "parameters": {
       "wildlife_act_year": 2013,
       "management_amendment_year": 2020,

@@ -6,8 +6,8 @@
   "methods": "把碳账户、森林差异、为什么不是所有森林都砍伐、以及渐进式过渡写成社区可读说明。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "official_requirements": {
       "hundred_year_carbon_accounting": true,
       "forest_products_lifecycle": true,

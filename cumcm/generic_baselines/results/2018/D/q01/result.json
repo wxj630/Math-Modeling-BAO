@@ -14,35 +14,35 @@
     "name": "规划优化与资源配置",
     "chapter": "CH3",
     "chapter_title": "函数极值与规划模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
   },
   "candidate_models": [
     {
       "key": "time_series",
       "name": "时间序列预测",
       "chapter": "CH8",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
       "reason": "每天"
     },
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "配置"
     },
     {
       "key": "ode",
       "name": "微分方程与动态仿真",
       "chapter": "CH2",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
       "reason": "动力"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 2,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
     "rows": 111,
     "columns": 13,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -85,7 +85,7 @@
       "name": "规划优化与资源配置",
       "chapter": "CH3",
       "chapter_title": "函数极值与规划模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
     }
   },
   "experiment_result": {

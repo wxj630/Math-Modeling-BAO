@@ -6,8 +6,8 @@
   "methods": "用高生物多样性敏感度、低产品需求和 no-harvest 决策得分阈值识别保留不采伐条件。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "official_requirements": {
       "hundred_year_carbon_accounting": true,
       "forest_products_lifecycle": true,

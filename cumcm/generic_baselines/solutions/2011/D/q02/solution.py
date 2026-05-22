@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2011-D",
   "question_index": 2,
   "title": "2011年 CUMCM D题：天然肠衣搭配",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/D.md",
+  "problem_path": "cumcm/problems/2011/D.md",
   "question": {
     "label": "问题 2",
     "statement": "对于成品捆数相同的方案，最短长度最长的成品越多，方案越好；",
@@ -33,12 +33,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/D/cumcm2011D.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/D/cumcm2011D.doc",
       "name": "cumcm2011D.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 54784,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -77,7 +77,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

@@ -6,8 +6,8 @@
   "methods": "官方 PDF 题面 + 题面引用 VCDB/VERIS 公开事件样本：按受害国统计事件、披露事件和有公开引用的报告事件，并明确起诉/挫败字段在 VCDB 中不可完整观测。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
     "official_requirements": {
       "use_existing_cybersecurity_measures": true,
       "do_not_create_new_cybersecurity_index": true,

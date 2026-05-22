@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2010-B",
   "question_index": 1,
   "title": "2010年 CUMCM B题：2010年上海世博会影响力的定量评估",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/B.md",
+  "problem_path": "cumcm/problems/2010/B.md",
   "question": {
     "label": "问题 1",
     "statement": "2010年上海世博会是首次在中国举办的世界博览会。从1851年伦敦的“万国工业博览会”开始，世博会正日益成为各国人民交流历史文化、展示科技成果、体现合作精神、展望未来发展等的重要舞台。请你们选择感兴趣的某个侧面，建立数学模型，利用互联网数据，定量评估2010年上海世博会的影响力",
@@ -49,20 +49,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
       "name": "cumcm2010B.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 27136,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
       "name": "cumcm2010B.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 27136,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -101,7 +101,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

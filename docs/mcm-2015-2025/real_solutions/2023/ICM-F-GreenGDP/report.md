@@ -1,7 +1,7 @@
 # 2023 ICM-F Green GDP Official PDF + World Bank Workflow
 
 ## Data Source
-- Official PDF: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf`.
+- Official PDF: `docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf`.
 - Public data: World Bank WDI latest available GDP, adjusted-savings CO2 damage, resource depletion, forest depletion, forest area, and resource-rent indicators.
 - Cache: `artifacts/cache/world_bank_green_gdp_panel.csv`.
 
@@ -28,9 +28,9 @@ Expected changes: projects that raise GDP by drawing down forests, minerals, or 
 Risk and implementation: the switch will be politically difficult, so Brazil should support a phased international standard with audited WDI/SEEA-style accounts, publish both GDP and GGDP during a transition period, and use the GGDP gap to guide investment rather than as a punitive ranking alone.
 
 ## Output Files
-- `result.json`: /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/result.json
-- `ggdp_formula_components.csv`: /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/ggdp_formula_components.csv
-- `world_bank_green_gdp_panel.csv`: /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/world_bank_green_gdp_panel.csv
-- `global_impact_scenarios.csv`: /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/global_impact_scenarios.csv
-- `brazil_country_analysis.csv`: /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/brazil_country_analysis.csv
-- `green_gdp_policy_frontier.png`: /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/green_gdp_policy_frontier.png
+- `result.json`: docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/result.json
+- `ggdp_formula_components.csv`: docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/ggdp_formula_components.csv
+- `world_bank_green_gdp_panel.csv`: docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/world_bank_green_gdp_panel.csv
+- `global_impact_scenarios.csv`: docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/global_impact_scenarios.csv
+- `brazil_country_analysis.csv`: docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/brazil_country_analysis.csv
+- `green_gdp_policy_frontier.png`: docs/mcm-2015-2025/real_solutions/2023/ICM-F-GreenGDP/artifacts/green_gdp_policy_frontier.png

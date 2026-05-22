@@ -6,7 +6,7 @@
   "methods": "把每届项目数、运动数量、运动员参赛规模、参赛项目数作为预测特征，并用 2008-2024 奖牌运动员记录统计各国优势运动占比。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
     "rows": {
       "summerOly_medal_counts.csv": 1435,
       "summerOly_athletes.csv": 252565,

@@ -6,8 +6,8 @@
   "methods": "将五个官方时期的 channel capacity 指数做保守 log-linear 外推，并给出 human-to-human、human-to-platform、machine-to-machine、local-to-global 四类关系变化。对应模型：趋势外推、技术扩散、容量预测、网络关系图谱。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "official_problem_parameters": {
       "periods": [
         "1870s_telegraph_train_newspaper",

@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2024-B",
   "question_index": 3,
   "title": "2024年 CUMCM B题：生产过程中的决策",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md",
+  "problem_path": "cumcm/problems/2024/B.md",
   "question": {
     "label": "问题 3",
     "statement": "对 𝑚 道工序、𝑛 个零配件，已知零配件、半成品和成品的次品率，重复问题 2， 给出生产过程的决策方案。图 1 给出了 2 道工序、8 个零配件的情况，具体数值由表 2 给 出。",
@@ -35,12 +35,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
       "name": "B题.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 636910,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -79,7 +79,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

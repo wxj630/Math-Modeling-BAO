@@ -6,9 +6,9 @@
   "methods": "按时间排序计算 previous-20-review mean rating，比较低评分环境和高评分环境之后的评论数量与评论长度。",
   "data_source": {
     "type": "official_comap_tsv_zip",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
-    "source_zip": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "source_zip": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
     "rows": {
       "hair_dryer.tsv": 11470,
       "microwave.tsv": 1615,

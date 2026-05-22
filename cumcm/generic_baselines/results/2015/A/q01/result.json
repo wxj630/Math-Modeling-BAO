@@ -12,28 +12,28 @@
     "name": "数据拟合与回归分析",
     "chapter": "CH6",
     "chapter_title": "数据处理与拟合模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
   },
   "candidate_models": [
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
       "reason": "参数、分析、曲线"
     },
     {
       "key": "ode",
       "name": "微分方程与动态仿真",
       "chapter": "CH2",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
       "reason": "变化规律"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 6,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
+    "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
     "rows": 64,
     "columns": 3,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -73,7 +73,7 @@
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
       "chapter_title": "数据处理与拟合模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
     }
   },
   "experiment_result": {

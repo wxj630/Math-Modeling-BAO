@@ -1,8 +1,8 @@
 # 2021 ICM-D The Influence of Music
 
 ## 数据与真实性
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf`。
-- 官方附件目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf`。
+- 官方附件目录：`docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data`。
 - 只使用 COMAP 提供的 `influence_data.csv`、`full_music_data.csv`、`data_by_artist.csv`、`data_by_year.csv`；没有随机数、没有外部 Spotify 抓取、没有 x1/x2/x3 占位数据。
 - 行数：`{'influence_data.csv': 42770, 'full_music_data.csv': 98340, 'data_by_artist.csv': 5854, 'data_by_year.csv': 100}`。
 

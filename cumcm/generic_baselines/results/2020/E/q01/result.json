@@ -13,35 +13,35 @@
     "name": "数据拟合与回归分析",
     "chapter": "CH6",
     "chapter_title": "数据处理与拟合模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
   },
   "candidate_models": [
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
       "reason": "数据、分析"
     },
     {
       "key": "graph",
       "name": "图论网络与路径调度",
       "chapter": "CH4",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
       "reason": "网络"
     },
     {
       "key": "evaluation",
       "name": "综合评价与权重决策",
       "chapter": "CH7",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
       "reason": "比较"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 6,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
     "rows": 2500,
     "columns": 6,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -82,7 +82,7 @@
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
       "chapter_title": "数据处理与拟合模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
     }
   },
   "experiment_result": {

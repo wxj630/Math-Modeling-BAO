@@ -8,7 +8,7 @@ Write a concise memo to the Governors of Arizona, California, New Mexico, and Te
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2018/Problem Data- Energy Production`。
 - 行数/记录数：{'seseds': 105744, 'msncodes': 605}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -44,9 +44,9 @@ To the Governors of Arizona, California, New Mexico, and Texas: the official SED
 - 2025/2050 结果是题目要求的 no-policy baseline 线性外推，不是未来真实观测；compact target 和政策行动是基于官方历史数据的规划建议，正式论文应补充最新 EIA/州能源政策数据做情景校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2018/C/q06/solution.py`
+`.venv/bin/python mcm/question_solutions/2018/C/q06/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2018/C/q06/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2018/C/q06/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2018/C/q06`
+- `mcm/question_results/2018/C/q06/result.json`
+- `mcm/question_reports/2018/C/q06/report.md`
+- `mcm/question_artifacts/2018/C/q06`

@@ -6,7 +6,7 @@
   "methods": "综合模型特征、2028 预测变化、优势运动集中度和候选教练效应，形成面向奥委会的资源配置解释。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
     "rows": {
       "summerOly_medal_counts.csv": 1435,
       "summerOly_athletes.csv": 252565,

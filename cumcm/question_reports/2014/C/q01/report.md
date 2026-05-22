@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：数据拟合与回归分析（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 规划优化与资源配置（CH3）：利润、策略；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
-- 数据拟合与回归分析（CH6）：曲线、预测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 时间序列预测（CH8）：预测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 规划优化与资源配置（CH3）：利润、策略；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 数据拟合与回归分析（CH6）：曲线、预测；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 时间序列预测（CH8）：预测；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
 
 ## 变量、约束与公式
 
@@ -42,9 +42,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2014/C/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2014/C/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2014/C/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2014/C/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：抽取题面数值范围并构造实验样本。
@@ -55,11 +55,11 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/C/q01/experiment_table.csv
+- cumcm/question_artifacts/2014/C/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：problem_statement
-- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/C.md
+- 附件：cumcm/problems/2014/C.md
 - 读取规模：10 行 x 4 列
 - 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 

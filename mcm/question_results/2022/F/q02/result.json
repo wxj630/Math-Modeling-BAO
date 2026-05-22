@@ -6,8 +6,8 @@
   "methods": "比较 private first mover、state-led blocs、UN licensed benefit sharing、open science coalition 四种未来愿景，计算公平、可行性和条约对齐得分。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "root": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
     "official_requirements": {
       "outer_space_treaty_equity_principle": true,
       "define_global_equity": true,

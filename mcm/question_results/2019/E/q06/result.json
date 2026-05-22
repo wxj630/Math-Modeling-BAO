@@ -6,8 +6,8 @@
   "methods": "设置三年更新周期和触发条件：卫星土地覆盖、水/空气质量、物种阈值、碳价和修复成本变化。对应模型：动态更新、监测触发规则。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
     "official_requirements": {
       "ecosystem_service_valuation": true,
       "land_use_cost_benefit": true,

@@ -1,7 +1,7 @@
 # 2019 ICM-F Universal, Decentralized, Digital Currency
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-`.
 - No numeric COMAP attachment is supplied; this workflow uses official statement factors and explicit deterministic policy inputs.
 
 ## Model Summary

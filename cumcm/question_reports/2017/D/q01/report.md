@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：周期巡检路径排班与人员优化（CH4：复杂网络与图论模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
 
 ### 候选模型与适配理由
-- 图论网络与路径调度（CH4）：附件给出巡检点连通关系，必须先用最短路把厂区路网转化为任意点间通行时间。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
-- 规划优化与资源配置（CH3）：每问都要在周期、班次、休息和人员数量约束下安排路线，本质是资源配置与排班优化。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 图论网络与路径调度（CH4）：附件给出巡检点连通关系，必须先用最短路把厂区路网转化为任意点间通行时间。；参考 ../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+- 规划优化与资源配置（CH3）：每问都要在周期、班次、休息和人员数量约束下安排路线，本质是资源配置与排班优化。；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ## 变量、约束与公式
 
@@ -54,9 +54,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/D/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/D/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2017/D/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2017/D/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件基本信息和连通关系，构建26点31边无向图。
@@ -67,14 +67,14 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/D/q01/inspection_fixed_shift_timetable.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/D/q01/inspection_fixed_shift_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/D/q01/inspection_cycle_check.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/D/q01/experiment_table.csv
+- cumcm/question_artifacts/2017/D/q01/inspection_fixed_shift_timetable.csv
+- cumcm/question_artifacts/2017/D/q01/inspection_fixed_shift_summary.csv
+- cumcm/question_artifacts/2017/D/q01/inspection_cycle_check.csv
+- cumcm/question_artifacts/2017/D/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/D/CUMCM-2017-appendix-D.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/D/CUMCM-2017-appendix-D.xlsx
 - 读取规模：58 行 x 6 列
 - 说明：本题专用算法读取26个巡检点的周期/耗时和31条连通边，构建最短路网络并生成固定班次、带休息班次和错峰班次巡检时间表。
 

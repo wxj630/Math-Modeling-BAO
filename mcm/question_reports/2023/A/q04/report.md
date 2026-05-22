@@ -8,7 +8,7 @@ What are the impact of a greater frequency and wider variation of the occurrence
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025`。
+- 官方数据目录：`docs/mcm-2015-2025`。
 - 行数/记录数：{'official_parameters': 6}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -55,9 +55,9 @@ What are the impact of a greater frequency and wider variation of the occurrence
 - 物种性状、干旱时间表、污染负荷和栖息地质量是显式确定性情景参数，不是野外观测；正式论文应补充样方长期监测、降水、土壤、污染和群落功能性状数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2023/A/q04/solution.py`
+`.venv/bin/python mcm/question_solutions/2023/A/q04/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2023/A/q04/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2023/A/q04/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2023/A/q04`
+- `mcm/question_results/2023/A/q04/result.json`
+- `mcm/question_reports/2023/A/q04/report.md`
+- `mcm/question_artifacts/2023/A/q04`

@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2019-B",
   "question_index": 4,
   "title": "2019年 CUMCM B题：同心协力”策略研究",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2019/B.md",
+  "problem_path": "cumcm/problems/2019/B.md",
   "question": {
     "label": "问题 4",
     "statement": "当鼓面发生倾斜时， 球跳动方向不再竖直， 于是需要队员调整拉绳策略。 假设人数为 10，绳长为 2m，球的反弹高度为 60cm，相对于竖直方向产生 1 度 的倾斜角度，且倾斜方向在水平面的投影指向某两位队员之间， 与这两位队员的 夹角之比为 1:2。为了将球调整为竖直状态弹跳，请给出在可精确控制条件下所 有队员的发力时机及力度，并分析在现实情形中这种调整策略的实施效果。",
@@ -41,20 +41,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.docx",
       "name": "CUMCM-1019-Problem-B-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 60187,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.pdf",
       "name": "CUMCM-1019-Problem-B-Chinese.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 390962,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -93,7 +93,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

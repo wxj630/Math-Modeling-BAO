@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2010-D",
   "question_index": 1,
   "title": "2010年 CUMCM D题：对学生宿舍设计方案的评价",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/D.md",
+  "problem_path": "cumcm/problems/2010/D.md",
   "question": {
     "label": "问题 1",
     "statement": "附件是四种比较典型的学生宿舍的设计方案。请你们用数学建模的方法就它们的经济性、舒适性和安全性作出综合量化评价和比较",
@@ -45,84 +45,84 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
       "name": "Design1.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8187386,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
       "name": "Design2.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8187386,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
       "name": "Design3.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8187386,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
       "name": "Design4.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8200476,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
       "name": "cumcm2010D.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 28160,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
       "name": "Design1.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8187386,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
       "name": "Design2.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8187386,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
       "name": "Design3.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8187386,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
       "name": "Design4.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 8200476,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
       "name": "cumcm2010D.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 28160,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -161,7 +161,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

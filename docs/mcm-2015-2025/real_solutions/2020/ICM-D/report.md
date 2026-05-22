@@ -2,8 +2,8 @@
 
 ## 数据真实性
 
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf`。
-- 官方附件目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf`。
+- 官方附件目录：`docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA`。
 - 行数：`{'matches.csv': 38, 'passingevents.csv': 23429, 'fullevents.csv': 59271}`。
 - 本解法只读取 COMAP 官方 CSV 和 README，不生成随机 `x1/x2/x3` 数据。
 

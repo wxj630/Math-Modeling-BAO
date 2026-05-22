@@ -13,28 +13,28 @@
     "name": "规划优化与资源配置",
     "chapter": "CH3",
     "chapter_title": "函数极值与规划模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
   },
   "candidate_models": [
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "方案、设计"
     },
     {
       "key": "geometry",
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
       "reason": "距离"
     }
   ],
   "data_source": {
     "source_type": "problem_statement",
     "attachment_count": 2,
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/C.md",
+    "path": "cumcm/problems/2010/C.md",
     "rows": 8,
     "columns": 5,
     "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
@@ -76,7 +76,7 @@
       "name": "规划优化与资源配置",
       "chapter": "CH3",
       "chapter_title": "函数极值与规划模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
     }
   },
   "experiment_result": {

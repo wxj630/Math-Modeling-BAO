@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2023-D",
   "title": "2023年 CUMCM D题：圈养湖羊的空间利用率",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2023/D.md",
+  "problem_path": "cumcm/problems/2023/D.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",

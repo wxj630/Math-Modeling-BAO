@@ -1,7 +1,7 @@
 # 2025 MCM-A Testing Time: The Constant Wear On Stairs
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf`。
 - 本题无官方数值附件；代码只使用官方题面约束、显式测量模板和确定性 worked example 反演，不使用随机占位数据。
 - `worked_example_assumptions` 只演示考古队填完测量表后如何反推，不冒充实际楼梯观测。
 
@@ -43,4 +43,4 @@
 - 判断：mixed ceremonial peaks plus regular low-intensity circulation。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/solution.py`
+`.venv/bin/python docs/mcm-2015-2025/real_solutions/2025/MCM-A/solution.py`

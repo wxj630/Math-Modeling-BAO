@@ -8,7 +8,7 @@ Use your model to determine the extent to which your strategy depends upon the s
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf`。
 - 行数/记录数：{}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -61,9 +61,9 @@ Use your model to determine the extent to which your strategy depends upon the s
 - 浴缸尺寸、热损失、人体体积/温度、混合强度和泡泡浴隔热系数是显式物理情景假设，不是实测浴缸数据；正式论文应补充浴缸几何和多点温度传感器数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2016/A/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2016/A/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2016/A/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2016/A/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2016/A/q02`
+- `mcm/question_results/2016/A/q02/result.json`
+- `mcm/question_reports/2016/A/q02/report.md`
+- `mcm/question_artifacts/2016/A/q02`

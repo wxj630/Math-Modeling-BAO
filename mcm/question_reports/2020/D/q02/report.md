@@ -8,7 +8,7 @@ Identify performance indicators that reflect successful teamwork such as diversi
 
 ## 数据与真实性
 - 数据类型：official_comap_csv。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA`。
 - 行数/记录数：{'matches.csv': 38, 'passingevents.csv': 23429, 'fullevents.csv': 59271}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -69,9 +69,9 @@ Identify performance indicators that reflect successful teamwork such as diversi
 - 球队成功模型使用前 30 场训练、后 8 场留出，只说明官方赛季样本内的协作指标可解释性；正式论文应补充更多赛季、对手强度、球员伤停和战术视频标注。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2020/D/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2020/D/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2020/D/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2020/D/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2020/D/q02`
+- `mcm/question_results/2020/D/q02/result.json`
+- `mcm/question_reports/2020/D/q02/report.md`
+- `mcm/question_artifacts/2020/D/q02`

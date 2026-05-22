@@ -1,8 +1,8 @@
 # 2015 ICM-D Is it sustainable? 官方 PDF + World Bank 实验报告
 
 ## 数据来源
-- COMAP 官方 PDF：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf`。
-- World Bank 缓存数据：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable/world_bank_nepal_indicators.csv`。
+- COMAP 官方 PDF：`docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf`。
+- World Bank 缓存数据：`docs/mcm-2015-2025/official_assets_extracted/2015/Problem Data- Is it sustainable/world_bank_nepal_indicators.csv`。
 - 选定 LDC 示例：Nepal。题面要求从 48 个 LDC 中选择一个国家；本实验选择 Nepal，并只把缓存 World Bank API 指标作为观测值。
 - 没有观测到的指标不补造；项目影响系数在 `assumption_audit` 中标为规划假设。
 
@@ -26,9 +26,9 @@
 - 局限：World Bank 年度指标粒度较粗，项目效应不是因果估计；正式论文应补充本地项目成本、气候灾害、治理稳定性和微观贫困数据。
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2015/ICM-D/result.json
-- `world_bank_indicator_panel.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/world_bank_indicator_panel.csv
-- `sustainability_index_components.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/sustainability_index_components.csv
-- `development_plan.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/development_plan.csv
-- `policy_efficiency.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/policy_efficiency.csv
-- `sustainability_projection.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/sustainability_projection.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2015/ICM-D/result.json
+- `world_bank_indicator_panel.csv`：docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/world_bank_indicator_panel.csv
+- `sustainability_index_components.csv`：docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/sustainability_index_components.csv
+- `development_plan.csv`：docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/development_plan.csv
+- `policy_efficiency.csv`：docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/policy_efficiency.csv
+- `sustainability_projection.png`：docs/mcm-2015-2025/real_solutions/2015/ICM-D/artifacts/sustainability_projection.png

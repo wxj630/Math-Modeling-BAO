@@ -6,8 +6,8 @@
   "methods": "用收费亭服务率、下游车道容量和并道冲突惩罚估算 light/heavy demand 下的通过量、瓶颈和平均延误，确保所有容量参数可审计替换。对应模型：通行能力、瓶颈分析、排队延误估计。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
     "official_problem_parameters": {
       "example_lanes": 3,
       "example_tollbooths": 8,

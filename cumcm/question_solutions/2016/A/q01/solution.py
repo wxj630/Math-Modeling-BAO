@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2016-A",
   "title": "2016年 CUMCM A题：系泊系统的设计",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2016/A.md",
+  "problem_path": "cumcm/problems/2016/A.md",
   "question_index": 1,
   "question": {
     "label": "问题1",
@@ -42,68 +42,68 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
+      "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
       "name": "CUMCM-2016C-Chinese.rar",
       "suffix": ".rar",
       "kind": "media_or_archive",
       "size_bytes": 125596,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
+      "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
       "name": "CUMCM-2016D-Chinese.rar",
       "suffix": ".rar",
       "kind": "media_or_archive",
       "size_bytes": 474125,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
       "name": "CUMCM2016-problem-A-Chinese-version.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 75264,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
       "name": "CUMCM2016-problem-B-Chinese-version.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 40448,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
+      "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
       "name": "CUMCM-2016C-Chinese.rar",
       "suffix": ".rar",
       "kind": "media_or_archive",
       "size_bytes": 125596,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
+      "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
       "name": "CUMCM-2016D-Chinese.rar",
       "suffix": ".rar",
       "kind": "media_or_archive",
       "size_bytes": 474125,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
       "name": "CUMCM2016-problem-A-Chinese-version.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 75264,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
       "name": "CUMCM2016-problem-B-Chinese-version.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 40448,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }

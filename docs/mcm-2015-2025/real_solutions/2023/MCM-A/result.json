@@ -3,8 +3,8 @@
   "title": "Drought-Stricken Plant Communities",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "parameters": {
       "species_benefit_observation": 4,
       "single_species_risk_observation": 1,

@@ -12,28 +12,28 @@
     "name": "规划优化与资源配置",
     "chapter": "CH3",
     "chapter_title": "函数极值与规划模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
   },
   "candidate_models": [
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "方案"
     },
     {
       "key": "evaluation",
       "name": "综合评价与权重决策",
       "chapter": "CH7",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
       "reason": "评价"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 4,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls",
+    "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls",
     "rows": 835,
     "columns": 5,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -74,7 +74,7 @@
       "name": "规划优化与资源配置",
       "chapter": "CH3",
       "chapter_title": "函数极值与规划模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
     }
   },
   "experiment_result": {

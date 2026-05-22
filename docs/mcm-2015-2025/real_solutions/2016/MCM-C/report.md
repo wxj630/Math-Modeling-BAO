@@ -1,8 +1,8 @@
 # 2016 MCM-C The Goodgrant Challenge：官方 Scorecard/IPEDS 实验报告
 
 ## 数据来源
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf`。
-- 官方附件目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf`。
+- 官方附件目录：`docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge`。
 - Scorecard 行数：7804。
 - 候选 UID 行数：2977。
 - 本实验不使用随机生成的 x1/x2/x3；ROI 是透明 charitable-return 指数，不声明因果。

@@ -6,8 +6,8 @@
   "methods": "比较 migration compacts、portable citizenship、cultural continuity trust、host adaptation finance 和 UN-triggered EDP protocol。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "official_requirements": {
       "edp_scope_and_culture_risk": true,
       "human_rights_and_cultural_preservation_policies": true,

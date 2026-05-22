@@ -1,7 +1,7 @@
 # 2022 ICM-D Data Paralysis? Use Our Analysis!
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!`。
+- 官方来源：`docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!`。
 - 本题明确说明公司无法分享内部人员、技术、流程或数据细节；脚本只使用官方题面约束和透明确定性 KPI rubric，不使用随机占位数据。
 
 ## 成熟度模型

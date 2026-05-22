@@ -6,8 +6,8 @@
   "methods": "把保护夜空、暖色全截光、夜间调光、标识限光、生态迁徙和睡眠/安全收益压缩成一页公众宣传 flyer。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
     "official_requirements": {
       "four_location_types": [
         "protected_land",

@@ -6,8 +6,8 @@
   "methods": "扫描 0%-80% 自动驾驶比例，用车头时距容量倍率和建议并道长度调整估计是否需要保留 staged zipper 或设置协同并道车道。对应模型：混合交通容量、敏感性分析、政策阈值。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
     "official_problem_parameters": {
       "example_lanes": 3,
       "example_tollbooths": 8,

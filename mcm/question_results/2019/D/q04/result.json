@@ -6,8 +6,8 @@
   "methods": "用官方数量级做容量 sanity check，说明没有公开全部出口清单的限制，并给出体育馆、机场、商场等结构的迁移步骤。对应模型：模型验证、迁移应用。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
     "official_requirements": {
       "five_floors": true,
       "two_underground_floors": true,

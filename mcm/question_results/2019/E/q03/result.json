@@ -6,8 +6,8 @@
   "methods": "对社区道路、郊区住房、总部搬迁、跨国管线和商业水道扩展逐项计算 traditional NPV 与加入生态服务损失后的 true NPV。对应模型：全成本核算、残余生态负债。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
     "official_requirements": {
       "ecosystem_service_valuation": true,
       "land_use_cost_benefit": true,

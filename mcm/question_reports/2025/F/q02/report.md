@@ -8,7 +8,7 @@ As you explore the published national security policies of various countries and
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted`。
 - 行数/记录数：{'official_parameters': 3}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -83,9 +83,9 @@ As you explore the published national security policies of various countries and
 - VCDB 是公开报告事件样本，不是全球网络犯罪全集；政策特征矩阵是透明 rubric，不应解释为严格因果估计。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2025/F/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2025/F/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2025/F/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2025/F/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2025/F/q02`
+- `mcm/question_results/2025/F/q02/result.json`
+- `mcm/question_reports/2025/F/q02/report.md`
+- `mcm/question_artifacts/2025/F/q02`

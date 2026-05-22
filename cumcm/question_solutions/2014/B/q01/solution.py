@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2014-B",
   "title": "2014年 CUMCM B题：创意平板折叠桌",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/B.md",
+  "problem_path": "cumcm/problems/2014/B.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",
@@ -49,36 +49,36 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
       "name": "CUMCM-2014B-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 1233408,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
       "name": "CUMCM-2014B-附件.mp4",
       "suffix": ".mp4",
       "kind": "media_or_archive",
       "size_bytes": 2876285,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
       "name": "CUMCM-2014B-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 1233408,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
       "name": "CUMCM-2014B-附件.mp4",
       "suffix": ".mp4",
       "kind": "media_or_archive",
       "size_bytes": 2876285,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }

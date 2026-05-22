@@ -12,35 +12,35 @@
     "name": "红外光谱预处理、特征降维与药材鉴别",
     "chapter": "CH9",
     "chapter_title": "机器学习与统计模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
   },
   "candidate_models": [
     {
       "key": "signal",
       "name": "图像文本与信号特征",
       "chapter": "CH10",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
       "reason": "光谱"
     },
     {
       "key": "ml",
       "name": "机器学习与统计识别",
       "chapter": "CH9",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
       "reason": "鉴别"
     },
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
       "reason": "数据"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 5,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件4.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件4.xlsx",
     "rows": 399,
     "columns": 5999,
     "note": "本题专用算法读取中药材近/中红外光谱附件，按题问分别完成无监督类别分群、OP产地分类、近/中红外融合分类以及Class+OP联合填表预测。"
@@ -87,7 +87,7 @@
       "name": "红外光谱预处理、特征降维与药材鉴别",
       "chapter": "CH9",
       "chapter_title": "机器学习与统计模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
     }
   },
   "experiment_result": {

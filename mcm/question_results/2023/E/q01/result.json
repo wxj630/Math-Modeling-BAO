@@ -6,8 +6,8 @@
   "methods": "官方 PDF 题面现象 + 0-100 综合评价指标：sky glow、生态暴露、人类健康、安全眩光和夜空损失；对应教程模型：综合评价与权重决策。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
     "official_requirements": {
       "four_location_types": [
         "protected_land",

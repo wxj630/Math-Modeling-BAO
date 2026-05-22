@@ -6,8 +6,8 @@
   "methods": "对选定国家给出 affordability、access、funding、research 和 renewal 的目标 operating zone，而不是单一排名目标。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "official_requirements": {
       "assess_any_nation_health": true,
       "apply_to_several_countries": true,

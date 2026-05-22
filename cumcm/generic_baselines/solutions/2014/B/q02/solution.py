@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2014-B",
   "question_index": 2,
   "title": "2014年 CUMCM B题：创意平板折叠桌",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/B.md",
+  "problem_path": "cumcm/problems/2014/B.md",
   "question": {
     "label": "问题 2",
     "statement": "折叠桌的设计应做到产品稳固性好、加工方便、用材最少。对于任意给定的折叠桌高度和圆形桌面直径的设计要求，讨论长方形平板材料和折叠桌的最优设计加工参数，例如，平板尺寸、钢筋位置、开槽长度等。对于桌高70 cm，桌面直径80 cm的情形，确定最优设计加工参数。",
@@ -36,36 +36,36 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
       "name": "CUMCM-2014B-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 1233408,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
       "name": "CUMCM-2014B-附件.mp4",
       "suffix": ".mp4",
       "kind": "media_or_archive",
       "size_bytes": 2876285,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
       "name": "CUMCM-2014B-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 1233408,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
       "name": "CUMCM-2014B-附件.mp4",
       "suffix": ".mp4",
       "kind": "media_or_archive",
       "size_bytes": 2876285,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -104,7 +104,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

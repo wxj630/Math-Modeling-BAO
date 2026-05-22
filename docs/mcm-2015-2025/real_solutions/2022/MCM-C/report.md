@@ -1,8 +1,8 @@
 # 2022 MCM-C Trading Strategies
 
 ## 数据与真实性
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf`。
-- 官方附件：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/LBMA-GOLD.csv` 与 `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/BCHAIN-MKPRU.csv`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf`。
+- 官方附件：`docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/LBMA-GOLD.csv` 与 `docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies/BCHAIN-MKPRU.csv`。
 - 只使用 COMAP 提供的两个价格序列；没有随机数、没有外部行情、没有 x1/x2/x3 占位数据。
 
 ## 核心模型

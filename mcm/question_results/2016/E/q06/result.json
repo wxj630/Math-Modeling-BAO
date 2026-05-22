@@ -6,8 +6,8 @@
   "methods": "把官方 PDF、World Bank 数据、基线水压力、无干预预测、干预计划、有干预预测和模型限制整理为 ICM 可读报告。对应模型：实验报告、政策备忘录、模型限制说明。",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "selected_region": "Jordan",
     "rows": {
       "world_bank_jordan_water_indicators.csv": 528

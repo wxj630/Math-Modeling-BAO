@@ -12,28 +12,28 @@
     "name": "沙漠穿越动态规划与资源路径策略",
     "chapter": "CH3",
     "chapter_title": "函数极值与规划模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
   },
   "candidate_models": [
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "通用优化建模"
     },
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
       "reason": "通用数据建模"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 3,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
     "rows": 6,
     "columns": 30,
     "note": "本题专用算法读取附件.docx中的六关参数/天气，按节点编号重建地图近似图，并为第一、二关写出Result.xlsx填报版。"
@@ -82,7 +82,7 @@
       "name": "沙漠穿越动态规划与资源路径策略",
       "chapter": "CH3",
       "chapter_title": "函数极值与规划模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
     }
   },
   "experiment_result": {

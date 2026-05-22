@@ -6,8 +6,8 @@
   "methods": "以 SDG 1 达成为情景，衰减其紧急依赖边，重算网络优先级，并提出 Digital Public Trust and Resilience 作为技术/危机治理补充目标。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
     "parameters": {
       "sdg_count": 17,
       "ten_year_horizon": 10,

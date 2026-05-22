@@ -3,8 +3,8 @@
   "title": "Power Profile of a Cyclist",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
     "official_requirements": {
       "two_rider_types_and_genders": true,
       "tokyo_olympic_time_trial_course": true,
@@ -758,11 +758,11 @@
     ]
   },
   "artifacts": {
-    "rider_power_profiles": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/rider_power_profiles.csv",
-    "course_strategy_results": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/course_strategy_results.csv",
-    "course_segment_power_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/course_segment_power_plan.csv",
-    "weather_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/weather_sensitivity.csv",
-    "target_power_deviation": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/target_power_deviation.csv",
-    "power_course_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/power_course_frontier.png"
+    "rider_power_profiles": "docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/rider_power_profiles.csv",
+    "course_strategy_results": "docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/course_strategy_results.csv",
+    "course_segment_power_plan": "docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/course_segment_power_plan.csv",
+    "weather_sensitivity": "docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/weather_sensitivity.csv",
+    "target_power_deviation": "docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/target_power_deviation.csv",
+    "power_course_frontier": "docs/mcm-2015-2025/real_solutions/2022/MCM-A/artifacts/power_course_frontier.png"
   }
 }

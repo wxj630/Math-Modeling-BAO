@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：高压油管质量守恒与压力控制仿真（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 微分方程与动态仿真（CH2）：油管压力由进油、喷油、减压阀回流和燃油弹性共同驱动，核心是连续时间动态仿真。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
-- 数据拟合与回归分析（CH6）：附件1-3需要插值拟合为凸轮导数、针阀升程和弹性模量函数后才能进入方程。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 规划优化与资源配置（CH3）：阀开时长、凸轮角速度和减压阀阈值都通过枚举/搜索最小化压力误差。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 微分方程与动态仿真（CH2）：油管压力由进油、喷油、减压阀回流和燃油弹性共同驱动，核心是连续时间动态仿真。；参考 ../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
+- 数据拟合与回归分析（CH6）：附件1-3需要插值拟合为凸轮导数、针阀升程和弹性模量函数后才能进入方程。；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 规划优化与资源配置（CH3）：阀开时长、凸轮角速度和减压阀阈值都通过枚举/搜索最小化压力误差。；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ## 变量、约束与公式
 
@@ -54,9 +54,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2019/A/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2019/A/q03/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2019/A/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2019/A/q03/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：在问题2机理模型基础上加入第二个喷油嘴，并将两个喷嘴相位错开50ms。
@@ -67,14 +67,14 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/A/q03/two_injector_control_search.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/A/q03/two_injector_pressure_trace.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/A/q03/relief_valve_events.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/A/q03/experiment_table.csv
+- cumcm/question_artifacts/2019/A/q03/two_injector_control_search.csv
+- cumcm/question_artifacts/2019/A/q03/two_injector_pressure_trace.csv
+- cumcm/question_artifacts/2019/A/q03/relief_valve_events.csv
+- cumcm/question_artifacts/2019/A/q03/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx
 - 读取规模：1125 行 x 2 列
 - 说明：本题专用算法读取凸轮极径曲线、针阀升程曲线和弹性模量-压力表，建立燃油密度、进出流量和高压油管压力控制仿真。
 

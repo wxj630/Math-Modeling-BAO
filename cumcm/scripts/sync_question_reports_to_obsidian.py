@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
-REPO = Path("/Users/wuxiaojun/code/Math-Modeling-World")
+REPO = Path(".")
 CUMCM = REPO / "cumcm"
-VAULT = Path("/Users/wuxiaojun/Documents/Obsidian Vault/数学建模/CUMCM")
+VAULT = Path(os.environ.get("CUMCM_OBSIDIAN_VAULT", "../../Documents/Obsidian Vault/数学建模/CUMCM"))
 START = "<!-- CUMCM_QUESTION_SOLUTIONS_START -->"
 END = "<!-- CUMCM_QUESTION_SOLUTIONS_END -->"
 
@@ -49,7 +50,7 @@ def main() -> None:
         lines = [START, "", "## 逐问代码、结果与实验报告", ""]
         lines.append("下面链接来自 `Math-Modeling-World/cumcm`，每一问均可用仓库 `.venv` 单独运行并复现实验结果。")
         if generic_rows:
-            lines.append("通用解法集中保存在 `/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines`，这里仅链接对应基线，避免把过程稿和专用解法混在一起。")
+            lines.append("通用解法集中保存在 `cumcm/generic_baselines`，这里仅链接对应基线，避免把过程稿和专用解法混在一起。")
         lines.append("")
         for item in sorted(items, key=lambda x: int(x["question_index"])):
             q = int(item["question_index"])

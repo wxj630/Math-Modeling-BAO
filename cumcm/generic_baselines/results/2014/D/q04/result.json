@@ -14,28 +14,28 @@
     "name": "规划优化与资源配置",
     "chapter": "CH3",
     "chapter_title": "函数极值与规划模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
   },
   "candidate_models": [
     {
       "key": "time_series",
       "name": "时间序列预测",
       "chapter": "CH8",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
       "reason": "每天"
     },
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "最大"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 6,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
+    "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
     "rows": 1919,
     "columns": 4,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -78,7 +78,7 @@
       "name": "规划优化与资源配置",
       "chapter": "CH3",
       "chapter_title": "函数极值与规划模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
     }
   },
   "experiment_result": {

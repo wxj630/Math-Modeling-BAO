@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2024-B",
   "title": "2024年 CUMCM B题：生产过程中的决策",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md",
+  "problem_path": "cumcm/problems/2024/B.md",
   "question_index": 4,
   "question": {
     "label": "问题 4",
@@ -44,12 +44,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
       "name": "B题.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 636910,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }

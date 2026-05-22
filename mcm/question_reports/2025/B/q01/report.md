@@ -8,7 +8,7 @@ Build a model for a sustainable tourism industry in Juneau, Alaska. Consider vis
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2025`。
 - 行数/记录数：{'official_parameters': 8}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -74,9 +74,9 @@ Build a model for a sustainable tourism industry in Juneau, Alaska. Consider vis
 - 价格弹性、隐性成本和支出反馈是显式建模假设，正式论文应通过城市公开预算、港口客流和居民调查进一步校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2025/B/q01/solution.py`
+`.venv/bin/python mcm/question_solutions/2025/B/q01/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2025/B/q01/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2025/B/q01/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2025/B/q01`
+- `mcm/question_results/2025/B/q01/result.json`
+- `mcm/question_reports/2025/B/q01/report.md`
+- `mcm/question_artifacts/2025/B/q01`

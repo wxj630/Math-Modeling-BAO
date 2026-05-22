@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2021-B",
   "question_index": 4,
   "title": "2021年 CUMCM B题：乙醇偶合制备 C4 烯烃",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2021/B.md",
+  "problem_path": "cumcm/problems/2021/B.md",
   "question": {
     "label": "问题 4",
     "statement": "如果允许再增加 5 次实验，应如何设计，并给出详细理由。 附录：名词解释与附件说明 温度：反应温度。 选择性：某一个产物在所有产物中的占比。 时间：催化剂在乙醇氛围下的反应时间，单位分钟（min）。 Co 负载量： Co 与 SiO2 的重量之比。例如，“Co 负载量为 1wt%”表示 Co 与 SiO2 的重量之比为 1:100，记作“1wt%Co/SiO2”，依次类推。 HAP：一种催化剂载体，中文名称羟基磷灰石。 Co /SiO2 和 HAP 装料比：指 Co/SiO2 和 HAP 的质量比。 例如附件 1 中编号为 A14 的 催化剂组合 “33mg 1wt%Co/SiO2-67mg HAP -乙 醇浓度 1.68ml/min” 指 Co/SiO2 和 HAP 质量比为 33mg：67mg 且乙醇按每分钟 1.68 毫升加入，依次类推。 乙醇转化率：单位时间内乙醇的单程转化率，其值为 100 %  (乙醇进气量-乙 醇剩余量)/乙醇进气量。 C4 烯烃收率：其值为乙醇转化率  C4 烯烃的选择性。 附件 1：性能数据表。表中乙烯、C4 烯烃、乙醛、碳数为 4-12 脂肪醇等均为 反应的生成物；编号 A1~A14 的催化剂实验中使用装料方式 I，B1～B7 的催化剂实 验中使用装料方式 II。 附件 2：350 度时给定的某种催化剂组合的测试数据。",
@@ -49,28 +49,28 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/CUMCM2021-B.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/CUMCM2021-B.pdf",
       "name": "CUMCM2021-B.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 170032,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx",
       "name": "附件1.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 20897,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
       "name": "附件2.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 11200,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -109,7 +109,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

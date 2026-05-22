@@ -6,8 +6,8 @@
   "methods": "把 shelter、healthcare、water、food 作为每千名难民的资源包，比较需求、政府可用量和 NGO 加成后的缺口，按 weighted unmet need 识别优先资源和前置行动。对应模型：系统动力学、资源配置、库存-流量模型、优先级排序。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

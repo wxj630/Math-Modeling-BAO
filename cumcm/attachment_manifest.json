@@ -3,52 +3,52 @@
     "problem_id": "2010-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc",
         "name": "cumcm2010A.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 96768,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls",
         "name": "问题A附件1：实验采集数据表.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 59392,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls",
         "name": "问题A附件2：实际采集数据表.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 83456,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc",
         "name": "cumcm2010A.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 96768,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls",
         "name": "问题A附件1：实验采集数据表.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 59392,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls",
         "name": "问题A附件2：实际采集数据表.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 83456,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -56,20 +56,20 @@
     "problem_id": "2010-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
         "name": "cumcm2010B.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 27136,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010B/cumcm2010B.doc",
         "name": "cumcm2010B.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 27136,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -77,20 +77,20 @@
     "problem_id": "2010-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
         "name": "cumcm2010C.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 43008,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
         "name": "cumcm2010C.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 43008,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -98,84 +98,84 @@
     "problem_id": "2010-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
         "name": "Design1.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8187386,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
         "name": "Design2.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8187386,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
         "name": "Design3.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8187386,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
         "name": "Design4.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8200476,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
         "name": "cumcm2010D.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 28160,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design1.tif",
         "name": "Design1.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8187386,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design2.tif",
         "name": "Design2.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8187386,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design3.tif",
         "name": "Design3.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8187386,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/Design4.tif",
         "name": "Design4.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 8200476,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010D/cumcm2010D.doc",
         "name": "cumcm2010D.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 28160,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -183,20 +183,20 @@
     "problem_id": "2011-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A.doc",
         "name": "cumcm2011A.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 33792,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A附件_数据.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/A/cumcm2011A附件_数据.xls",
         "name": "cumcm2011A附件_数据.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 76288,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -204,28 +204,28 @@
     "problem_id": "2011-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B.doc",
         "name": "cumcm2011B.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 33792,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件1_A区和全市六区交通网络与平台设置的示意图.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件1_A区和全市六区交通网络与平台设置的示意图.doc",
         "name": "cumcm2011B附件1_A区和全市六区交通网络与平台设置的示意图.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 102912,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件2_全市六区交通网路和平台设置的数据表.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件2_全市六区交通网路和平台设置的数据表.xls",
         "name": "cumcm2011B附件2_全市六区交通网路和平台设置的数据表.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 116736,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -233,36 +233,36 @@
     "problem_id": "2011-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C.doc",
         "name": "cumcm2011C.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 34816,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls",
         "name": "cumcm2011C附件1_山东省职工平均工资.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 16384,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件2_某企业分年龄职工数量及薪酬分布表.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件2_某企业分年龄职工数量及薪酬分布表.xls",
         "name": "cumcm2011C附件2_某企业分年龄职工数量及薪酬分布表.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 16384,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件3_养老金的计算办法.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件3_养老金的计算办法.doc",
         "name": "cumcm2011C附件3_养老金的计算办法.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 62464,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -270,12 +270,12 @@
     "problem_id": "2011-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/D/cumcm2011D.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/D/cumcm2011D.doc",
         "name": "cumcm2011D.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 54784,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -283,84 +283,84 @@
     "problem_id": "2014-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
         "name": "CUMCM-2014A-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 41472,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
         "name": "附件1 问题的背景与参考资料(9.3定).doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 252416,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
         "name": "附件2 嫦娥三号软着陆过程(9.3定).doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 1195008,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
         "name": "附件3 距2400m处的数字高程图.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 12432744,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
         "name": "附件4 距月面100m处的数字高程图.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 1021808,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
         "name": "CUMCM-2014A-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 41472,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
         "name": "附件1 问题的背景与参考资料(9.3定).doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 252416,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
         "name": "附件2 嫦娥三号软着陆过程(9.3定).doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 1195008,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
         "name": "附件3 距2400m处的数字高程图.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 12432744,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
         "name": "附件4 距月面100m处的数字高程图.tif",
         "suffix": ".tif",
         "kind": "media_or_archive",
         "size_bytes": 1021808,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -368,36 +368,36 @@
     "problem_id": "2014-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
         "name": "CUMCM-2014B-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 1233408,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
         "name": "CUMCM-2014B-附件.mp4",
         "suffix": ".mp4",
         "kind": "media_or_archive",
         "size_bytes": 2876285,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-Chinese.doc",
         "name": "CUMCM-2014B-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 1233408,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/B/CUMCM-2014B-附件.mp4",
         "name": "CUMCM-2014B-附件.mp4",
         "suffix": ".mp4",
         "kind": "media_or_archive",
         "size_bytes": 2876285,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -405,20 +405,20 @@
     "problem_id": "2014-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
         "name": "CUMCM2014C-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 40568,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
         "name": "CUMCM2014C-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 40568,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -426,52 +426,52 @@
     "problem_id": "2014-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
         "name": "CUMCM-2014D-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 524288,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
         "name": "附件1-药盒型号.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 125952,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls",
         "name": "附件2-药品需求量.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 97792,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
         "name": "CUMCM-2014D-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 524288,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls",
         "name": "附件1-药盒型号.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 125952,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls",
+        "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls",
         "name": "附件2-药品需求量.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 97792,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -479,52 +479,52 @@
     "problem_id": "2015-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/CUMCM-2015-problem A-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/CUMCM-2015-problem A-Chinese.doc",
         "name": "CUMCM-2015-problem A-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 23040,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
         "name": "附件1-3.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 29184,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
         "name": "附件4下载说明.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 22528,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/CUMCM-2015-problem A-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/CUMCM-2015-problem A-Chinese.doc",
         "name": "CUMCM-2015-problem A-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 23040,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
         "name": "附件1-3.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 29184,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
         "name": "附件4下载说明.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 22528,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -532,20 +532,20 @@
     "problem_id": "2015-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
         "name": "CUMCM-2015-problem B-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 25088,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
         "name": "CUMCM-2015-problem B-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 25088,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -553,20 +553,20 @@
     "problem_id": "2015-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
         "name": "CUMCM-2015-problem C-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 15072,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
         "name": "CUMCM-2015-problem C-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 15072,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -574,68 +574,68 @@
     "problem_id": "2015-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
         "name": "CUMCM-2015-Problem D-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 16384,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
         "name": "附件1 赛题所需的相关数据.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 54784,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
         "name": "附件2 中华人民共和国土地增值税暂行条例.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 222573,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
         "name": "附件3 其他相关说明.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 134443,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
         "name": "CUMCM-2015-Problem D-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 16384,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
         "name": "附件1 赛题所需的相关数据.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 54784,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
         "name": "附件2 中华人民共和国土地增值税暂行条例.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 222573,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
+        "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
         "name": "附件3 其他相关说明.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 134443,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -643,68 +643,68 @@
     "problem_id": "2016-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
         "name": "CUMCM-2016C-Chinese.rar",
         "suffix": ".rar",
         "kind": "media_or_archive",
         "size_bytes": 125596,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
         "name": "CUMCM-2016D-Chinese.rar",
         "suffix": ".rar",
         "kind": "media_or_archive",
         "size_bytes": 474125,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
         "name": "CUMCM2016-problem-A-Chinese-version.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 75264,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
         "name": "CUMCM2016-problem-B-Chinese-version.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 40448,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
+        "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese.rar",
         "name": "CUMCM-2016C-Chinese.rar",
         "suffix": ".rar",
         "kind": "media_or_archive",
         "size_bytes": 125596,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
+        "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese.rar",
         "name": "CUMCM-2016D-Chinese.rar",
         "suffix": ".rar",
         "kind": "media_or_archive",
         "size_bytes": 474125,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-A-Chinese-version.doc",
         "name": "CUMCM2016-problem-A-Chinese-version.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 75264,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
+        "path": "../../Documents/Playground/cumcm_reextract/2016/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM2016-problem-B-Chinese-version.doc",
         "name": "CUMCM2016-problem-B-Chinese-version.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 40448,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+        "source_root": "../../Documents/Playground/cumcm_reextract"
       }
     ]
   },
@@ -712,20 +712,20 @@
     "problem_id": "2016-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx",
         "name": "CUMCM2016-C-Appendix-Chinese.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 135587,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-Problem-C-Chinese-version.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-Problem-C-Chinese-version.docx",
         "name": "CUMCM2016-Problem-C-Chinese-version.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 22502,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -733,220 +733,220 @@
     "problem_id": "2016-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls",
         "name": "201501.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 169984,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201502.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201502.xls",
         "name": "201502.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 201728,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201503.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201503.xls",
         "name": "201503.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 220672,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201504.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201504.xls",
         "name": "201504.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 163840,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201505.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201505.xls",
         "name": "201505.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 221696,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201506.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201506.xls",
         "name": "201506.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 215552,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201507.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201507.xls",
         "name": "201507.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 169984,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201508.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201508.xls",
         "name": "201508.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 169984,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201509.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201509.xls",
         "name": "201509.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 215552,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201510.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201510.xls",
         "name": "201510.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 220672,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201511.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201511.xls",
         "name": "201511.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 165376,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201512.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201512.xls",
         "name": "201512.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 169472,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/01.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/01.xls",
         "name": "01.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 82944,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/02.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/02.xls",
         "name": "02.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 69632,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/03.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/03.xls",
         "name": "03.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 74240,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/04.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/04.xls",
         "name": "04.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 73216,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/05.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/05.xls",
         "name": "05.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 126976,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/06.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/06.xls",
         "name": "06.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 72704,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/07.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/07.xls",
         "name": "07.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 75264,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/08.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/08.xls",
         "name": "08.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 76288,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/09.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/09.xls",
         "name": "09.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 126976,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/10.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/10.xls",
         "name": "10.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 79872,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/11.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/11.xls",
         "name": "11.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 126464,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/12.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件2  风电场典型风机报表/12.xls",
         "name": "12.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 79872,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件3  风电场风机型号及其参数.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件3  风电场风机型号及其参数.doc",
         "name": "附件3  风电场风机型号及其参数.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 69120,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件4  风机生产企业提供的新型号风机主要参数.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件4  风机生产企业提供的新型号风机主要参数.doc",
         "name": "附件4  风机生产企业提供的新型号风机主要参数.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 33280,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-problem-D-Chinese-version.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-problem-D-Chinese-version.doc",
         "name": "CUMCM2016-problem-D-Chinese-version.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 39424,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -954,20 +954,20 @@
     "problem_id": "2017-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls",
         "name": "A题附件.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 4231680,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/CUMCM-2017-problem-A.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/CUMCM-2017-problem-A.docx",
         "name": "CUMCM-2017-problem-A.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 106223,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -975,36 +975,36 @@
     "problem_id": "2017-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/CUMCM-2017-problem-B.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/CUMCM-2017-problem-B.docx",
         "name": "CUMCM-2017-problem-B.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 19133,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls",
         "name": "附件一：已结束项目任务数据.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 105472,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件三：新项目任务数据.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件三：新项目任务数据.xls",
         "name": "附件三：新项目任务数据.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 186880,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx",
         "name": "附件二：会员信息数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 102334,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1012,36 +1012,36 @@
     "problem_id": "2017-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/CUMCM-2017-problem-C.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/CUMCM-2017-problem-C.docx",
         "name": "CUMCM-2017-problem-C.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 17043,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data1.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data1.xls",
         "name": "Data1.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 146944,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data2.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data2.xls",
         "name": "Data2.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 13824,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/readme.txt",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/readme.txt",
         "name": "readme.txt",
         "suffix": ".txt",
         "kind": "media_or_archive",
         "size_bytes": 389,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1049,20 +1049,20 @@
     "problem_id": "2017-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/D/CUMCM-2017-appendix-D.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/D/CUMCM-2017-appendix-D.xlsx",
         "name": "CUMCM-2017-appendix-D.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 141022,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/D/CUMCM-2017-problem-D.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/D/CUMCM-2017-problem-D.docx",
         "name": "CUMCM-2017-problem-D.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 19636,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1070,20 +1070,20 @@
     "problem_id": "2018-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
         "name": "CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 79229,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx",
         "name": "CUMCM-2018-Problem-A-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 27099,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1091,60 +1091,60 @@
     "problem_id": "2018-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_1_result.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_1_result.xls",
         "name": "Case_1_result.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 37376,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_2_result.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_2_result.xls",
         "name": "Case_2_result.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 31744,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_3_result_1.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_3_result_1.xls",
         "name": "Case_3_result_1.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 35840,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_3_result_2.xls",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2/Case_3_result_2.xls",
         "name": "Case_3_result_2.xls",
         "suffix": ".xls",
         "kind": "data",
         "size_bytes": 37888,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2.rar",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix-2.rar",
         "name": "CUMCM-2018-Problem-B-Chinese-Appendix-2.rar",
         "suffix": ".rar",
         "kind": "media_or_archive",
         "size_bytes": 32472,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix1.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese-Appendix1.doc",
         "name": "CUMCM-2018-Problem-B-Chinese-Appendix1.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 1284608,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-B-Chinese/CUMCM-2018-Problem-B-Chinese.doc",
         "name": "CUMCM-2018-Problem-B-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 119808,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1152,20 +1152,20 @@
     "problem_id": "2018-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-C-Chinese/CUMCM-2018-Problem C-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-C-Chinese/CUMCM-2018-Problem C-Chinese.docx",
         "name": "CUMCM-2018-Problem C-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 19919,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-C-Chinese/readme.txt",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-C-Chinese/readme.txt",
         "name": "readme.txt",
         "suffix": ".txt",
         "kind": "media_or_archive",
         "size_bytes": 51,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1173,20 +1173,20 @@
     "problem_id": "2018-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
         "name": "CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 135903,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-problem-D-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-problem-D-Chinese.docx",
         "name": "CUMCM-2018-problem-D-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 30849,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1194,44 +1194,44 @@
     "problem_id": "2019-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/CUMCM-2019-Problem-A-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/CUMCM-2019-Problem-A-Chinese.docx",
         "name": "CUMCM-2019-Problem-A-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 72736,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/CUMCM-2019-Problem-A-Chinese.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/CUMCM-2019-Problem-A-Chinese.pdf",
         "name": "CUMCM-2019-Problem-A-Chinese.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 558858,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx",
         "name": "附件1-凸轮边缘曲线.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 23145,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx",
         "name": "附件2-针阀运动曲线.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 12607,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx",
         "name": "附件3-弹性模量与压力.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 17165,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1239,20 +1239,20 @@
     "problem_id": "2019-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.docx",
         "name": "CUMCM-1019-Problem-B-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 60187,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.pdf",
         "name": "CUMCM-1019-Problem-B-Chinese.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 390962,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1260,20 +1260,20 @@
     "problem_id": "2019-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/C-2019中文/CUMCM-2019-Problem-C-Chinese.doc",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/C-2019中文/CUMCM-2019-Problem-C-Chinese.doc",
         "name": "CUMCM-2019-Problem-C-Chinese.doc",
         "suffix": ".doc",
         "kind": "document",
         "size_bytes": 32768,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/C-2019中文/CUMCM-2019-Problem-C-Chinese.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/C-2019中文/CUMCM-2019-Problem-C-Chinese.pdf",
         "name": "CUMCM-2019-Problem-C-Chinese.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 154538,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1281,44 +1281,44 @@
     "problem_id": "2019-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.docx",
         "name": "CUMCM-2019-Problem-D-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 397135,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.pdf",
         "name": "CUMCM-2019-Problem-D-Chinese.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 327274,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv",
         "name": "附件1.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 154092,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv",
         "name": "附件2.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 13524487,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx",
         "name": "附件3.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 17970,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1326,60 +1326,60 @@
     "problem_id": "2019-E",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/CUMCM-2019-Problem-E-Chinese.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/CUMCM-2019-Problem-E-Chinese.docx",
         "name": "CUMCM-2019-Problem-E-Chinese.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 21724,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/CUMCM-2019-Problem-E-Chinese.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/CUMCM-2019-Problem-E-Chinese.pdf",
         "name": "CUMCM-2019-Problem-E-Chinese.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 215893,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件1.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件1.csv",
         "name": "附件1.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 54635677,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件2.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件2.csv",
         "name": "附件2.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 61806709,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件3.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件3.csv",
         "name": "附件3.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 2166871,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件4.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件4.csv",
         "name": "附件4.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 589429,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件5.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件5.xlsx",
         "name": "附件5.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 14738,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1387,28 +1387,28 @@
     "problem_id": "2020-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/2020A-炉温曲线.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/2020A-炉温曲线.docx",
         "name": "2020A-炉温曲线.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 385398,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/result.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/result.csv",
         "name": "result.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 32,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/附件.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/附件.xlsx",
         "name": "附件.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 22940,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1416,28 +1416,28 @@
     "problem_id": "2020-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/2020B-穿越沙漠.docx",
         "name": "2020B-穿越沙漠.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 44282,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
         "name": "Result.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 11164,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/附件.docx",
         "name": "附件.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 259622,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1445,36 +1445,36 @@
     "problem_id": "2020-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/2020C-中小微企业的信贷决策.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/2020C-中小微企业的信贷决策.docx",
         "name": "2020C-中小微企业的信贷决策.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 23624,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx",
         "name": "附件1：123家有信贷记录企业的相关数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 21273447,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件2：302家无信贷记录企业的相关数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件2：302家无信贷记录企业的相关数据.xlsx",
         "name": "附件2：302家无信贷记录企业的相关数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 41682618,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx",
         "name": "附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 13576,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1482,44 +1482,44 @@
     "problem_id": "2020-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/2020D-接触式轮廓仪的自动标注.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/2020D-接触式轮廓仪的自动标注.docx",
         "name": "2020D-接触式轮廓仪的自动标注.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 338796,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件1_工件1的测量数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件1_工件1的测量数据.xlsx",
         "name": "附件1_工件1的测量数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 7407027,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件2_工件2的整体测量数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件2_工件2的整体测量数据.xlsx",
         "name": "附件2_工件2的整体测量数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 20515708,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件3_工件2的局部测量数据（圆）.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件3_工件2的局部测量数据（圆）.xlsx",
         "name": "附件3_工件2的局部测量数据（圆）.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 15871647,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件4_工件2的局部测量数据（角）.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件4_工件2的局部测量数据（角）.xlsx",
         "name": "附件4_工件2的局部测量数据（角）.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 5941285,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1527,52 +1527,52 @@
     "problem_id": "2020-E",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/2020E-校园供水系统智能管理.docx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/2020E-校园供水系统智能管理.docx",
         "name": "2020E-校园供水系统智能管理.docx",
         "suffix": ".docx",
         "kind": "document",
         "size_bytes": 21902,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_一季度.xlsx",
         "name": "附件_一季度.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 23157112,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_三季度.xlsx",
         "name": "附件_三季度.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 25667855,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_二季度.xlsx",
         "name": "附件_二季度.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 25030494,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_四季度.xlsx",
         "name": "附件_四季度.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 25483604,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/E/附件_水表层级.xlsx",
         "name": "附件_水表层级.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 13802,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1580,44 +1580,44 @@
     "problem_id": "2021-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/CUMCM2021-A.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/CUMCM2021-A.pdf",
         "name": "CUMCM2021-A.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 481705,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv",
         "name": "附件1.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 75107,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件2.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件2.csv",
         "name": "附件2.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 137593,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件3.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件3.csv",
         "name": "附件3.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 65581,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件4.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件4.xlsx",
         "name": "附件4.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 10110,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1625,28 +1625,28 @@
     "problem_id": "2021-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/CUMCM2021-B.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/CUMCM2021-B.pdf",
         "name": "CUMCM2021-B.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 170032,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx",
         "name": "附件1.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 20897,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
         "name": "附件2.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 11200,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1654,44 +1654,44 @@
     "problem_id": "2021-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/CUMCM2021-C.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/CUMCM2021-C.pdf",
         "name": "CUMCM2021-C.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 217723,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件1 近5年402家供应商的相关数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件1 近5年402家供应商的相关数据.xlsx",
         "name": "附件1 近5年402家供应商的相关数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 673200,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件2 近5年8家转运商的相关数据.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件2 近5年8家转运商的相关数据.xlsx",
         "name": "附件2 近5年8家转运商的相关数据.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 22122,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件A 订购方案数据结果.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件A 订购方案数据结果.xlsx",
         "name": "附件A 订购方案数据结果.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 99251,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件B 转运方案数据结果.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件B 转运方案数据结果.xlsx",
         "name": "附件B 转运方案数据结果.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 620902,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1699,12 +1699,12 @@
     "problem_id": "2021-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/D/CUMCM2021-D.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/D/CUMCM2021-D.pdf",
         "name": "CUMCM2021-D.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 245779,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1712,44 +1712,44 @@
     "problem_id": "2021-E",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/CUMCM2021-E.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/CUMCM2021-E.pdf",
         "name": "CUMCM2021-E.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 607884,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件1.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件1.xlsx",
         "name": "附件1.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 9195442,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件2.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件2.xlsx",
         "name": "附件2.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 15610996,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件3.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件3.xlsx",
         "name": "附件3.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 13464909,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件4.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件4.xlsx",
         "name": "附件4.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 13314618,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1757,36 +1757,36 @@
     "problem_id": "2024-A",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/A题.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/A题.pdf",
         "name": "A题.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 758066,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
         "name": "result1.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 517064,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result2.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result2.xlsx",
         "name": "result2.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 15292,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result4.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result4.xlsx",
         "name": "result4.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 346204,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1794,12 +1794,12 @@
     "problem_id": "2024-B",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
         "name": "B题.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 636910,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1807,52 +1807,52 @@
     "problem_id": "2024-C",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/C题.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/C题.pdf",
         "name": "C题.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 558863,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件1.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件1.xlsx",
         "name": "附件1.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 17147,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件2.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件2.xlsx",
         "name": "附件2.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 21976,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件3/result1_1.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件3/result1_1.xlsx",
         "name": "result1_1.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 81837,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件3/result1_2.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件3/result1_2.xlsx",
         "name": "result1_2.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 81836,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件3/result2.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/C题/附件3/result2.xlsx",
         "name": "result2.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 81836,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1860,12 +1860,12 @@
     "problem_id": "2024-D",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/D题/D题.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/D题/D题.pdf",
         "name": "D题.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 890096,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   },
@@ -1873,36 +1873,36 @@
     "problem_id": "2024-E",
     "attachments": [
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/E题.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/E题.pdf",
         "name": "E题.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 400794,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx",
         "name": "附件1.xlsx",
         "suffix": ".xlsx",
         "kind": "data",
         "size_bytes": 10647,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv",
         "name": "附件2.csv",
         "suffix": ".csv",
         "kind": "data",
         "size_bytes": 490590626,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       },
       {
-        "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
+        "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
         "name": "附件3.pdf",
         "suffix": ".pdf",
         "kind": "document",
         "size_bytes": 409599,
-        "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+        "source_root": "../../Documents/Playground/cumcm_unzipped"
       }
     ]
   }

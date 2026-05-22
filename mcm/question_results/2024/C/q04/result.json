@@ -6,7 +6,7 @@
   "methods": "用全体 31 场比赛最后 30 分平均势头预测点数优势方，并把温网决赛作为留出比赛检查。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis",
     "rows": {
       "2024_Wimbledon_featured_matches.csv": 7284,
       "2024_data_dictionary.csv": 46

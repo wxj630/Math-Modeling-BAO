@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2015-C",
   "title": "2015年 CUMCM C题：月上柳梢头",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/C.md",
+  "problem_path": "cumcm/problems/2015/C.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",
@@ -36,20 +36,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
       "name": "CUMCM-2015-problem C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 15072,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
       "name": "CUMCM-2015-problem C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 15072,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }

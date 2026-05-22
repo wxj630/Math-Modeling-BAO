@@ -6,8 +6,8 @@
   "methods": "PageRank、介数中心性、出边强度、入边支持和直接需求指数综合评价，生成 17 个目标排序和 10 年 first-wave priority portfolio。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
     "parameters": {
       "sdg_count": 17,
       "ten_year_horizon": 10,

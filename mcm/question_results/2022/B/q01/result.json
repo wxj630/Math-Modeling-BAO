@@ -6,8 +6,8 @@
   "methods": "把 Powell 和 Mead 作为串联系统，用题面要求的水位-库容关系估算可规划库容、净入流、推荐释放量和水电产出。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
     "official_requirements": {
       "series_powell_mead_operations": true,
       "five_state_allocation": true,

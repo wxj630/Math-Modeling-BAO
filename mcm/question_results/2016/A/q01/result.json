@@ -6,8 +6,8 @@
   "methods": "只使用官方题面物理约束，建立一维有限体积浴缸温度模型：热水从水龙头端进入，溢流端排出，水面/缸壁/人体散热，邻近单元混合。对应模型：热传导方程、对流-扩散模型、有限体积法、多目标优化。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
     "official_constraints": [
       "single faucet fills hot water",
       "simple bathtub without heater or circulating jets",

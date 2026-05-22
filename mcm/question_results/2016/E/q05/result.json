@@ -6,8 +6,8 @@
   "methods": "对比无干预和有干预 15 年 stress index，判断是否降低易受缺水影响以及是否仍为 critical。对应模型：反事实预测、情景对比、政策效果评估。",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "selected_region": "Jordan",
     "rows": {
       "world_bank_jordan_water_indicators.csv": 528

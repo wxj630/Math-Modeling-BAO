@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2015-D",
   "title": "2015年 CUMCM D题：众筹筑屋规划方案设计",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/D.md",
+  "problem_path": "cumcm/problems/2015/D.md",
   "question_index": 2,
   "question": {
     "label": "问题 2",
@@ -34,68 +34,68 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
       "name": "CUMCM-2015-Problem D-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 16384,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
       "name": "附件1 赛题所需的相关数据.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 54784,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
       "name": "附件2 中华人民共和国土地增值税暂行条例.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 222573,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
       "name": "附件3 其他相关说明.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 134443,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/CUMCM-2015-Problem D-Chinese.doc",
       "name": "CUMCM-2015-Problem D-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 16384,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件1 赛题所需的相关数据.doc",
       "name": "附件1 赛题所需的相关数据.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 54784,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件2 中华人民共和国土地增值税暂行条例.pdf",
       "name": "附件2 中华人民共和国土地增值税暂行条例.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 222573,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/D/附件3 其他相关说明.pdf",
       "name": "附件3 其他相关说明.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 134443,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }

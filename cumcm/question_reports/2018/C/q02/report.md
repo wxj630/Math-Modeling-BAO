@@ -12,10 +12,10 @@
 ## 适配模型
 
 - 主模型：机器学习与统计识别（CH9：机器学习与统计模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
 
 ### 候选模型与适配理由
-- 机器学习与统计识别（CH9）：识别；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 机器学习与统计识别（CH9）：识别；参考 ../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
 
 ## 变量、约束与公式
 
@@ -41,9 +41,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2018/C/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2018/C/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2018/C/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2018/C/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：构造或读取样本特征。
@@ -54,11 +54,11 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/C/q02/experiment_table.csv
+- cumcm/question_artifacts/2018/C/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：problem_statement
-- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2018/C.md
+- 附件：cumcm/problems/2018/C.md
 - 读取规模：8 行 x 3 列
 - 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 

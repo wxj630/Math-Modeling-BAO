@@ -3,8 +3,8 @@
   "title": "Moving North",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/Moving North",
     "official_requirements": {
       "scottish_herring_and_mackerel": true,
       "fifty_year_forecast": true,
@@ -1029,11 +1029,11 @@
     ]
   },
   "artifacts": {
-    "habitat_shift_projection": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/habitat_shift_projection.csv",
-    "accessibility_timeline": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/accessibility_timeline.csv",
-    "fishery_strategy_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/fishery_strategy_scores.csv",
-    "territorial_waters_pressure": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/territorial_waters_pressure.csv",
-    "moving_north_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/moving_north_frontier.png",
-    "fishery_strategy_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/fishery_strategy_frontier.png"
+    "habitat_shift_projection": "docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/habitat_shift_projection.csv",
+    "accessibility_timeline": "docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/accessibility_timeline.csv",
+    "fishery_strategy_scores": "docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/fishery_strategy_scores.csv",
+    "territorial_waters_pressure": "docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/territorial_waters_pressure.csv",
+    "moving_north_frontier": "docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/moving_north_frontier.png",
+    "fishery_strategy_frontier": "docs/mcm-2015-2025/real_solutions/2020/MCM-A/artifacts/fishery_strategy_frontier.png"
   }
 }

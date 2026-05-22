@@ -13,11 +13,11 @@
 ## 适配模型
 
 - 主模型：汽车总装线约束排产与喷涂线分配（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 时间序列预测（CH8）：每天；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
-- 数据拟合与回归分析（CH6）：数据；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 时间序列预测（CH8）：每天；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 数据拟合与回归分析（CH6）：数据；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -49,9 +49,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2018/D/q08/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2018/D/q08/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2018/D/q08/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2018/D/q08/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：解析附件中7天A1/A2左右两块生产计划，把颜色、配置、动力、驱动转换为车型需求表。
@@ -63,19 +63,19 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/production_plan_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/brand_shift_split.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/spacing_audit.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/color_paint_audit.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/cost_audit.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/weekly_schedule.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/schedule_2018-09-20.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/schedule.xlsx
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/D/q08/experiment_table.csv
+- cumcm/question_artifacts/2018/D/q08/production_plan_summary.csv
+- cumcm/question_artifacts/2018/D/q08/brand_shift_split.csv
+- cumcm/question_artifacts/2018/D/q08/spacing_audit.csv
+- cumcm/question_artifacts/2018/D/q08/color_paint_audit.csv
+- cumcm/question_artifacts/2018/D/q08/cost_audit.csv
+- cumcm/question_artifacts/2018/D/q08/weekly_schedule.csv
+- cumcm/question_artifacts/2018/D/q08/schedule_2018-09-20.csv
+- cumcm/question_artifacts/2018/D/q08/schedule.xlsx
+- cumcm/question_artifacts/2018/D/q08/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx
 - 读取规模：111 行 x 15 列
 - 说明：本题专用算法读取附件中的9月17日至9月23日车型计划，按品牌/配置/动力/驱动/颜色生成一周总装顺序、喷涂线分配和schedule.xlsx。
 

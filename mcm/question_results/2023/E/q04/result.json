@@ -6,8 +6,8 @@
   "methods": "对 protected_land 和 urban 两类地点枚举干预策略，在风险降低、安全惩罚和可行性约束下选择 post-intervention risk 最低方案。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
     "official_requirements": {
       "four_location_types": [
         "protected_land",

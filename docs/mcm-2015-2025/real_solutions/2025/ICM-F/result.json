@@ -3,8 +3,8 @@
   "title": "Cyber Strong?",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
     "official_requirements": {
       "use_existing_cybersecurity_measures": true,
       "do_not_create_new_cybersecurity_index": true,
@@ -698,11 +698,11 @@
   },
   "leader_memo": "Memo for leaders attending the ITU Cybersecurity Summit\n\nObjective: identify policy patterns that help countries reduce cybercrime harm without inventing a new cybersecurity index. Our analysis uses the official ICM-F problem statement, a VCDB incident sample, World Bank national context indicators, and the ITU GCI concept of legal, technical, organizational, capacity-building, and cooperation pillars.\n\nTheory: cyber-strong countries combine enforceable cyber law, mandatory reporting, a national strategy, operational incident response, workforce capacity, and cross-border cooperation. The data warning is important: countries with stronger reporting systems may show more recorded incidents, not necessarily more insecurity.\n\nFindings: visible cybercrime concentrates in high-connectivity, high-reporting economies; disclosure counts are a better harm proxy than raw event counts; and demographics such as internet access and GDP can confound policy evaluation. Leaders should judge policy by reduced harm, faster detection, higher reporting completeness, prosecution capacity, and international cooperation, not by raw incident counts alone.",
   "artifacts": {
-    "vcdb_country_distribution": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/vcdb_country_distribution.csv",
-    "policy_feature_matrix": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/policy_feature_matrix.csv",
-    "cyber_country_panel": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/cyber_country_panel.csv",
-    "demographic_correlations": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/demographic_correlations.csv",
-    "cyber_policy_map": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/cyber_policy_map.png",
-    "vcdb_cache": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/cache/vcdb_records_sample.jsonl"
+    "vcdb_country_distribution": "docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/vcdb_country_distribution.csv",
+    "policy_feature_matrix": "docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/policy_feature_matrix.csv",
+    "cyber_country_panel": "docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/cyber_country_panel.csv",
+    "demographic_correlations": "docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/demographic_correlations.csv",
+    "cyber_policy_map": "docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/cyber_policy_map.png",
+    "vcdb_cache": "docs/mcm-2015-2025/real_solutions/2025/ICM-F/artifacts/cache/vcdb_records_sample.jsonl"
   }
 }

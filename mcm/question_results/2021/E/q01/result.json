@@ -6,8 +6,8 @@
   "methods": "将官方题面四类优先级扩展为 efficiency、profitability、sustainability、equity 和 nutrition resilience 的透明加权指标，比较当前效率-利润导向与再优化方案。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
     "official_requirements": {
       "optimize_efficiency_profitability_sustainability_equity": true,
       "developed_and_developing_country_applications": true,

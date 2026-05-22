@@ -6,8 +6,8 @@
   "methods": "读取 2010-2016 官方 ACS DP02 CSV，按 FIPS/year 合并 NFLIS opioid_rate_per_1000_drug_reports，计算教育、退伍军人、残障、外来出生、居住稳定性等特征的描述性相关。对应模型：面板合并、相关分析、社会特征解释。",
   "data_source": {
     "type": "official_comap_xlsx_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
     "rows": {
       "MCM_NFLIS_Data.xlsx": 24062,
       "ACS county-year rows": 3245

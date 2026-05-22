@@ -31,7 +31,7 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.metrics import r2_score
 
-INTRO_ROOT = Path("/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs")
+INTRO_ROOT = Path("../My-Agent/intro-mathmodel/docs")
 
 MODEL_LIBRARY = {
     "geometry": {
@@ -13723,7 +13723,7 @@ def write_question_report(result: Dict[str, Any], path: Path) -> None:
     lines += ["", "### 模型公式 / 目标函数"]
     for item in f["objective_or_equations"]:
         lines.append(f"- `{item}`")
-    lines += ["", "## Python 代码与运行方式", "", f"- 代码文件：{solution_path}", f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`", "- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`", "", "### 求解步骤"]
+    lines += ["", "## Python 代码与运行方式", "", f"- 代码文件：{solution_path}", f"- 单问运行：`.venv/bin/python {solution_path}`", "- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`", "", "### 求解步骤"]
     for idx, step in enumerate(f["solution_steps"], 1):
         lines.append(f"- 步骤 {idx}：{step}")
     lines += ["", "## 实验结果与解释", "", "### 产物文件"]

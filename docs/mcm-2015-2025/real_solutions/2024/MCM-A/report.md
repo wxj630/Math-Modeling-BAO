@@ -1,7 +1,7 @@
 # 2024 MCM-A Resource Availability and Sex Ratios
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf`。
 - 本题无 COMAP 数值附件；脚本只使用官方 PDF 中的性别比例端点和显式系统动力学假设，不使用随机占位数据。
 
 ## 官方题面参数

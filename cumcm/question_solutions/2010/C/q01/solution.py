@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2010-C",
   "title": "2010年 CUMCM C题：输油管的布置",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/C.md",
+  "problem_path": "cumcm/problems/2010/C.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",
@@ -35,20 +35,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
       "name": "cumcm2010C.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 43008,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
       "name": "cumcm2010C.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 43008,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }

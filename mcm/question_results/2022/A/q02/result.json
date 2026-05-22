@@ -6,8 +6,8 @@
   "methods": "把官方列名路线和自定义技术环线拆成坡度、转弯、风暴露段，按空气阻力、滚阻、坡度和能量预算逐段求目标功率与用时。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
     "official_requirements": {
       "two_rider_types_and_genders": true,
       "tokyo_olympic_time_trial_course": true,

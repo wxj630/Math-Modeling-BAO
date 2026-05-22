@@ -6,8 +6,8 @@
   "methods": "官方 PDF 题面参数 + 非破坏测量模板 + Archard 型磨损守恒反演：由中心磨损深度、材料磨损系数和年龄先验估计累计通行量与日均使用人数。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "official_requirements": {
       "non_destructive": true,
       "low_cost": true,
@@ -104,7 +104,7 @@
         "tool": "visual inspection + raking-light photo"
       }
     ],
-    "measurement_template": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
+    "measurement_template": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
   },
   "worked_example_assumptions": {
     "purpose": "deterministic calibration example showing how a filled measurement sheet is inverted; values are not official observations",

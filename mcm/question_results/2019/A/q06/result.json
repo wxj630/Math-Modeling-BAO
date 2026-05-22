@@ -6,8 +6,8 @@
   "methods": "复用气候敏感性表解释迁移造成的猎物、水源、热损失和巢址变化，强调暖温带为最低支撑压力情景。对应模型：迁移情景分析、资源压力比较。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "official_requirements": {
       "three_living_dragons": true,
       "hatchling_10kg_one_year_30_to_40kg": true,

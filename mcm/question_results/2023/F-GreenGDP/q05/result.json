@@ -6,8 +6,8 @@
   "methods": "把 adjusted-savings GGDP 公式、Brazil GGDP penalty、森林/资源政策含义、全球 phased switch 建议和实施风险压缩成领导人可读报告。对应模型：政策备忘录、非技术摘要。",
   "data_source": {
     "type": "official_pdf_and_world_bank_api",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
     "world_bank_api": "https://api.worldbank.org/v2/",
     "indicator_ids": {
       "NY.GDP.MKTP.CD": "gdp_current_usd",

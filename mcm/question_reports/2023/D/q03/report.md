@@ -8,7 +8,7 @@ If one of the SDGs is achieved (for example, there is no poverty or no hunger), 
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025`。
+- 官方数据目录：`docs/mcm-2015-2025`。
 - 行数/记录数：{'official_parameters': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -67,9 +67,9 @@ If one of the SDGs is achieved (for example, there is no poverty or no hunger), 
 - 边权、直接需求指数、危机乘数和新增目标情景是显式确定性建模假设，不是 UN 指标数据库观测；正式论文应补充 UN SDG indicator panel、国家分组、资金约束和专家打分校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2023/D/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2023/D/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2023/D/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2023/D/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2023/D/q03`
+- `mcm/question_results/2023/D/q03/result.json`
+- `mcm/question_reports/2023/D/q03/report.md`
+- `mcm/question_artifacts/2023/D/q03`

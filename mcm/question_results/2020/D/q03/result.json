@@ -6,9 +6,9 @@
   "methods": "比较胜/负场协作指标差异与决策树特征重要性，形成互惠传球、midfield-forward 三角、传球多样性、赛后监测四类建议，并给出面向教练的非技术备忘录。对应模型：对比分析、特征重要性、策略决策表。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
-    "readme": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
+    "readme": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
     "rows": {
       "matches.csv": 38,
       "passingevents.csv": 23429,

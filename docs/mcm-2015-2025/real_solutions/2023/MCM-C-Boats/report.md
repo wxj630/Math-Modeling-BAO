@@ -1,7 +1,7 @@
 # 2023 MCM-C/Problem Y 二手帆船价格真实数据实验报告
 
 ## 数据来源
-- 官方附件：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx`。
+- 官方附件：`docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx`。
 - 清洗后记录数：3491，单体船 2346，双体船 1145。
 - 香港市场补充样本只用于 Q3 情景比较；训练和主模型必须读取 COMAP 官方 Excel。
 
@@ -37,9 +37,9 @@ The COMAP workbook has no Hong Kong rows; the Hong Kong effect is therefore a tr
 For the Hong Kong broker, the COMAP workbook supports a reliable baseline for Europe, USA, and Caribbean listings, with a holdout MAPE of 0.161752 on official rows. Catamarans have a median price of $431,654, compared with $193,182 for monohulls, a median premium of 123.444%. Region matters after controlling for length, age, and hull type, but the effect is not identical for monohulls and catamarans. The official workbook contains no Hong Kong listings, so the Hong Kong analysis uses a separately documented current-listing scenario: catamaran: median HK effect 61.486% from 4 listings; monohull: median HK effect -2.396% from 3 listings. Treat these Hong Kong effects as broker calibration signals, not as COMAP official data. For pricing practice, quote an interval around the model price, then adjust for local inventory scarcity, survey condition, and equipment quality.
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/result.json
-- `clean_boat_data.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/clean_boat_data.csv
-- `variant_precision.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/variant_precision.csv
-- `region_effects.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/region_effects.csv
-- `hong_kong_comparables.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/hong_kong_comparables.csv
-- `price_by_region_hull.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/price_by_region_hull.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/result.json
+- `clean_boat_data.csv`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/clean_boat_data.csv
+- `variant_precision.csv`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/variant_precision.csv
+- `region_effects.csv`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/region_effects.csv
+- `hong_kong_comparables.csv`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/hong_kong_comparables.csv
+- `price_by_region_hull.png`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Boats/artifacts/price_by_region_hull.png

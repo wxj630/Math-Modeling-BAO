@@ -6,8 +6,8 @@
   "methods": "把年度猎物需求除以不同气候猎物密度，得到三条龙在暖温带、干旱和北极情景下的 habitat footprint。对应模型：承载力估计、资源面积换算。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "official_requirements": {
       "three_living_dragons": true,
       "hatchling_10kg_one_year_30_to_40kg": true,

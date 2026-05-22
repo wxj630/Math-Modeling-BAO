@@ -6,8 +6,8 @@
   "methods": "在资源水平和七鳃鳗控制压力上做确定性网格，比较自适应性别比与固定 1:1 性别比的稳定性指标。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
     "official_requirements": {
       "resource_dependent_lamprey_sex_ratio": true,
       "ecosystem_interactions": true,

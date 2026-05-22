@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2010-C",
   "question_index": 3,
   "title": "2010年 CUMCM C题：输油管的布置",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/C.md",
+  "problem_path": "cumcm/problems/2010/C.md",
   "question": {
     "label": "问题 3",
     "statement": "在该实际问题中，为进一步节省费用，可以根据炼油厂的生产能力，选用相适应的油管。这时的管线铺设费用将分别降为输送A厂成品油的每千米5.6万元，输送B厂成品油的每千米6.0万元，共用管线费用为每千米7.2万元，拆迁等附加费用同上。请给出管线最佳布置方案及相应的费用。",
@@ -33,20 +33,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
       "name": "cumcm2010C.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 43008,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010C/cumcm2010C.doc",
       "name": "cumcm2010C.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 43008,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -85,7 +85,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

@@ -12,28 +12,28 @@
     "name": "CT系统投影标定与滤波反投影重建",
     "chapter": "CH6",
     "chapter_title": "数据处理与拟合模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
   },
   "candidate_models": [
     {
       "key": "geometry",
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
       "reason": "位置、几何、形状"
     },
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
       "reason": "数据、参数、标定"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 2,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls",
+    "path": "../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls",
     "rows": 342026,
     "columns": 180,
     "note": "本题专用算法读取A题附件中的模板矩阵、模板投影、两个未知介质投影和10个查询点，完成CT标定、滤波反投影重建与problem2/problem3文件导出。"
@@ -80,7 +80,7 @@
       "name": "CT系统投影标定与滤波反投影重建",
       "chapter": "CH6",
       "chapter_title": "数据处理与拟合模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
     }
   },
   "experiment_result": {

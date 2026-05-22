@@ -6,8 +6,8 @@
   "methods": "多指标装备评价：覆盖面积、探测质量、准备时间、使用成本和维护负担加权，区分主船常备设备与救援船重型设备。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
     "official_requirements": {
       "loss_of_communication": true,
       "possible_loss_of_propulsion": true,

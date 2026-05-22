@@ -1,7 +1,7 @@
 # 2025 ICM-E Making Room for Agriculture
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf`。
 - 本题无官方 CSV/XLSX 附件；代码只使用官方题面结构和显式情景参数，不使用随机生成样本。
 - 月度轨迹是确定性系统动力学实验，用来展示模型求解过程和可替换参数接口。
 

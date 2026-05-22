@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2021-D",
   "question_index": 1,
   "title": "2021年 CUMCM D题：连铸切割的",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2021/D.md",
+  "problem_path": "cumcm/problems/2021/D.md",
   "question": {
     "label": "问题 1",
     "statement": "在满足基本要求和正常要求的条件下，依据尾坯长度制定出最优的 切割方案。假定用户目标值为 9.5 米，目标范围为 9.0~10.0 米，对以下尾坯长 度：109.0、93.4、80.9、72.0、62.7、52.5、44.9、42.7、31.6、22.7、14.5 和13.7（单位：米） ，按“尾坯长度、切割方案、切割损失”等内容列表给出具 体的最优切割方案。",
@@ -34,12 +34,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/D/CUMCM2021-D.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/D/CUMCM2021-D.pdf",
       "name": "CUMCM2021-D.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 245779,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -78,7 +78,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

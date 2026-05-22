@@ -6,7 +6,7 @@
   "methods": "对 Soo Locks/St. Mary's 与 Moses-Saunders/St. Lawrence 两个可控出流采用目标偏差比例控制，并按历史月度 10%-90% 流量裁剪。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
     "records": 2548,
     "level_records": 1380,
     "flow_records": 1168,

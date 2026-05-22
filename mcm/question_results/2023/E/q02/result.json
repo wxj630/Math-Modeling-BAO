@@ -6,8 +6,8 @@
   "methods": "对 protected_land、rural、suburban、urban 四类题面地点分别设置可替换确定性场景参数，计算风险分、风险等级和主要成分解释。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
     "official_requirements": {
       "four_location_types": [
         "protected_land",

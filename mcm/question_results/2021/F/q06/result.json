@@ -6,8 +6,8 @@
   "methods": "把每项政策的 start year、full effect year、dimension gain 和 implementation difficulty 映射为逐年健康度提升，检查是否达到健康阈值。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "official_requirements": {
       "assess_any_nation_health": true,
       "apply_to_several_countries": true,

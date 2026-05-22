@@ -6,8 +6,8 @@
   "methods": "对推荐策略生成 IOC 治理里程碑，显式记录 feasibility、timeline years、governance complexity 和 impact score，避免把策略推荐变成不可审计口号。对应模型：实施路线图、治理复杂度评分。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
     "official_requirements": {
       "impact_dimensions": [
         "economic",

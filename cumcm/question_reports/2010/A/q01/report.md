@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：储油罐变位识别与罐容表标定（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 几何解析与运动学参数方程（CH1）：圆、油位；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 数据拟合与回归分析（CH6）：数据、标定；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 几何解析与运动学参数方程（CH1）：圆、油位；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：数据、标定；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -45,9 +45,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2010/A/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2010/A/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2010/A/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2010/A/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1四张实验表，解析累加进/出油量和油位高度。
@@ -59,14 +59,14 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2010/A/q01/small_tank_tilted_capacity_1cm.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2010/A/q01/small_tank_tilted_fit_samples.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2010/A/q01/small_tank_tilt_impact_by_height.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2010/A/q01/experiment_table.csv
+- cumcm/question_artifacts/2010/A/q01/small_tank_tilted_capacity_1cm.csv
+- cumcm/question_artifacts/2010/A/q01/small_tank_tilted_fit_samples.csv
+- cumcm/question_artifacts/2010/A/q01/small_tank_tilt_impact_by_height.csv
+- cumcm/question_artifacts/2010/A/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls
+- 附件：../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; ../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; ../../Documents/Playground/cumcm_unzipped/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls; ../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/cumcm2010A.doc; ../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件1：实验采集数据表.xls; ../../Documents/Playground/cumcm_reextract/2010/2010_rd4LEPmmd1095c70a7fb9d0898a08495837d8c93/2010A/问题A附件2：实际采集数据表.xls
 - 读取规模：864 行 x 14 列
 - 说明：本题专用算法读取附件1小椭圆罐四组进/出油实验和附件2实际罐检测数据，完成倾斜罐容表、变位参数识别和流量守恒验证。
 

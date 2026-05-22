@@ -6,8 +6,8 @@
   "methods": "对 West/Central/Eastern Mediterranean、West Balkans、Eastern Borders、Albania to Greece 六条官方路线建立安全性、可达性、临时容量和日处理能力参数；按吸引力和容量进行整数分配，容量不足时显式记录 emergency overflow。对应模型：网络流、容量约束分配、整数流量分配、瓶颈分析。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

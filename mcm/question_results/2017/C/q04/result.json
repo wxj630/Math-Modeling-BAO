@@ -6,9 +6,9 @@
   "methods": "对 lanes>=3 且 AV share>=50% 的路段比较混行与一条 AV-only lane 的 peak vehicle-hours，若专用车道不能改善则输出不设专用车道的约束性政策。对应模型：瓶颈容量比较、车道分配优化、政策约束规则。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
-    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "workbook": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
     "rows": {
       "parsed mile posts": 224,
       "definitions": 8

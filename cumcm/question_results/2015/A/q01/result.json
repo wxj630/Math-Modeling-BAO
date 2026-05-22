@@ -12,7 +12,7 @@
     "name": "太阳高度角-方位角影子定位模型",
     "chapter": "CH1",
     "chapter_title": "解析方法与几何模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
   },
   "candidate_models": [
     {
@@ -20,27 +20,27 @@
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
       "reason": "直杆影长由太阳高度角决定，影尖方向由太阳方位角决定，是典型几何解析模型。",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
     },
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
       "reason": "附件影尖坐标需要与理论曲线拟合，并估计坐标轴旋转、比例和残差。",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
     },
     {
       "key": "time_series",
       "name": "时间序列预测",
       "chapter": "CH8",
       "reason": "未知日期和视频问题都依赖影尖随时间变化的序列特征。",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 6,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
+    "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; ../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc; ../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; ../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc",
     "rows": 63,
     "columns": 3,
     "note": "本题专用算法读取附件1-3影尖坐标，结合太阳赤纬、时差和高度角/方位角模型完成影长曲线、已知日期定位、未知日期定位；附件4当前只有下载说明，因此问题4输出视频处理流程和替代影尖序列实验。"
@@ -94,7 +94,7 @@
       "name": "太阳高度角-方位角影子定位模型",
       "chapter": "CH1",
       "chapter_title": "解析方法与几何模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
     }
   },
   "experiment_result": {

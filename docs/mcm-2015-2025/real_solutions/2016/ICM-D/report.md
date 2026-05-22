@@ -1,7 +1,7 @@
 # 2016 ICM-D Society Information Networks 题面参数实验报告
 
 ## 数据来源
-- 官方 PDF：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf`。
+- 官方 PDF：`docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf`。
 - 官方题面明确给出五个时期：1870s newspaper/train/telegraph、1920s radio、1970s television、1990s early internet、2010s smartphone。
 - 本题没有独立 CSV/XLSX 附件；时代速度、覆盖率、连通性、过滤强度和容量指数均为显式可替换建模假设。
 
@@ -25,9 +25,9 @@
 - 最敏感因素：information_value。
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-D/result.json
-- `era_parameters.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/era_parameters.csv
-- `diffusion_comparison.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/diffusion_comparison.csv
-- `opinion_influence_scenarios.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/opinion_influence_scenarios.csv
-- `communication_capacity_2050.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/communication_capacity_2050.csv
-- `information_spread_curves.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/information_spread_curves.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2016/ICM-D/result.json
+- `era_parameters.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/era_parameters.csv
+- `diffusion_comparison.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/diffusion_comparison.csv
+- `opinion_influence_scenarios.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/opinion_influence_scenarios.csv
+- `communication_capacity_2050.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/communication_capacity_2050.csv
+- `information_spread_curves.png`：docs/mcm-2015-2025/real_solutions/2016/ICM-D/artifacts/information_spread_curves.png

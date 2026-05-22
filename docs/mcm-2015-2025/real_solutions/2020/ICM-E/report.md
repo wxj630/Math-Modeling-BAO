@@ -1,7 +1,7 @@
 # 2020 ICM-E Drowning in Plastic
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic`.
 - No COMAP numeric attachment is supplied; this workflow uses official statement figures and explicit deterministic planning inputs.
 
 ## Target

@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2022-B",
   "question_index": 1,
   "title": "2022年 CUMCM B题：无人机遂行编队飞行中的纯方位无源定位",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/B.md",
+  "problem_path": "cumcm/problems/2022/B.md",
   "question": {
     "label": "问题 1",
     "statement": "编队由 10 架无人机组成，形成圆形编队，其中 9 架无人机（编号 FY01~FY09）均 匀分布在某一圆周上，另 1 架无人机（编号 FY00）位于圆心（见图 2）。无人机基于自身感知 的高度信息，均保持在同一个高度上飞行。",
@@ -77,7 +77,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

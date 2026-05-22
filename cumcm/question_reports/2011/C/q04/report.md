@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：养老金工资预测与基金收支平衡模型（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 规划优化与资源配置（CH3）：通用优化建模；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
-- 数据拟合与回归分析（CH6）：通用数据建模；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 规划优化与资源配置（CH3）：通用优化建模；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 数据拟合与回归分析（CH6）：通用数据建模；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -50,9 +50,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2011/C/q04/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2011/C/q04/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2011/C/q04/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2011/C/q04/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1，拟合对数工资趋势并计算历史增长率。
@@ -64,18 +64,18 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/wage_forecast_2011_2035.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/wage_model_fit.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/age_wage_index.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/replacement_rate_scenarios.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/fund_gap_cashflow.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/break_even_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/policy_scenarios.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/C/q04/experiment_table.csv
+- cumcm/question_artifacts/2011/C/q04/wage_forecast_2011_2035.csv
+- cumcm/question_artifacts/2011/C/q04/wage_model_fit.csv
+- cumcm/question_artifacts/2011/C/q04/age_wage_index.csv
+- cumcm/question_artifacts/2011/C/q04/replacement_rate_scenarios.csv
+- cumcm/question_artifacts/2011/C/q04/fund_gap_cashflow.csv
+- cumcm/question_artifacts/2011/C/q04/break_even_summary.csv
+- cumcm/question_artifacts/2011/C/q04/policy_scenarios.csv
+- cumcm/question_artifacts/2011/C/q04/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C.doc; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件2_某企业分年龄职工数量及薪酬分布表.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件3_养老金的计算办法.doc
+- 附件：../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C.doc; ../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls; ../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件2_某企业分年龄职工数量及薪酬分布表.xls; ../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件3_养老金的计算办法.doc
 - 读取规模：43 行 x 9 列
 - 说明：本题专用算法读取山东省职工平均工资和企业年龄段薪酬分布，按养老金计算办法进行工资预测、替代率、基金缺口和政策方案分析。
 

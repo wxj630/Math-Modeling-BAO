@@ -6,8 +6,8 @@
   "methods": "在 arid、semi-arid、temperate、arboreal、tropical rain forest 五种环境下枚举 moisture variability 倍数，比较最终分解和优势种迁移。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Fungi",
     "official_requirements": {
       "growth_rate_and_moisture_tolerance_traits": true,
       "multi_species_interactions": true,

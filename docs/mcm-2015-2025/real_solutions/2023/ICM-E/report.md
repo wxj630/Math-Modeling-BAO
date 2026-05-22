@@ -8,7 +8,7 @@
 ## Metric
 - Scale: 0-100.
 - Formula: 100*(0.24*sky_glow + 0.25*ecological + 0.20*human_health + 0.16*safety_glare + 0.15*night_sky_loss).
-- Tutorial model references: comprehensive evaluation, sensitivity analysis, and policy optimization from `/Users/wuxiaojun/code/My-Agent/intro-mathmodel`.
+- Tutorial model references: comprehensive evaluation, sensitivity analysis, and policy optimization from `../My-Agent/intro-mathmodel`.
 
 ## Flyer
 Flyer: Protect the Night, Keep the Light. Use shielded warm lights, dim lights after peak hours, and cap sign lighting. This lowers sky glow, protects wildlife migration and plant cycles, improves sleep, and keeps necessary safety lighting where people need it.

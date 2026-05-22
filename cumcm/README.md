@@ -24,13 +24,13 @@ python cumcm/scripts/run_all.py
 本仓库当前推荐使用已有虚拟环境运行：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/run_all.py
+.venv/bin/python cumcm/scripts/run_all.py
 ```
 
 依赖安装统一使用 `uv`，例如旧版 `.xls` 附件读取依赖 `xlrd`：
 
 ```bash
-uv pip install --python /Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python -r requirements.txt
+uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
 运行单题示例：
@@ -108,54 +108,54 @@ python cumcm/solutions/2020/A/solution.py
 - `generic_baselines/`：每一问的第一版通用基线代码、结果、报告和实验表，用来保留从通用模型到题意专用模型的改进过程。
 - `question_solution_index.csv`：逐问代码、结果、报告路径总表。
 - `question_solution_index.json`：同上，JSON 版本。
-- `attachment_manifest.json` / `attachment_manifest.csv`：从 `/Users/wuxiaojun/Documents/Playground/cumcm_unzipped` 与 `cumcm_reextract` 扫描得到的官方附件清单。
+- `attachment_manifest.json` / `attachment_manifest.csv`：从 `../../Documents/Playground/cumcm_unzipped` 与 `cumcm_reextract` 扫描得到的官方附件清单。
 
 运行全部逐问实验：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/run_question_all.py
+.venv/bin/python cumcm/scripts/run_question_all.py
 ```
 
 重新生成逐问脚本：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/build_question_solutions.py
+.venv/bin/python cumcm/scripts/build_question_solutions.py
 ```
 
 重新扫描官方附件：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/build_attachment_manifest.py
+.venv/bin/python cumcm/scripts/build_attachment_manifest.py
 ```
 
 整理赛题原文件、下载数据和附件：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/organize_source_materials.py
+.venv/bin/python cumcm/scripts/organize_source_materials.py
 ```
 
 验证逐问产物是否齐全：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/verify_question_outputs.py
+.venv/bin/python cumcm/scripts/verify_question_outputs.py
 ```
 
 验证附件是否接入逐问实验：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/verify_attachment_integration.py
+.venv/bin/python cumcm/scripts/verify_attachment_integration.py
 ```
 
 归档或重建通用基线：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/archive_generic_baselines.py --all
+.venv/bin/python cumcm/scripts/archive_generic_baselines.py --all
 ```
 
 同步逐问报告链接到 Obsidian：
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/sync_question_reports_to_obsidian.py
+.venv/bin/python cumcm/scripts/sync_question_reports_to_obsidian.py
 ```
 
 ### 当前完成度说明

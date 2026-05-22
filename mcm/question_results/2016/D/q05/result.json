@@ -6,8 +6,8 @@
   "methods": "在同一观点影响公式上做 one-at-a-time 敏感性分析，识别 information value、source credibility、initial bias、message form、network strength 中最能改变传播和观点结果的因素。对应模型：敏感性分析、影响因子排序、舆论传播策略设计。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "official_problem_parameters": {
       "periods": [
         "1870s_telegraph_train_newspaper",

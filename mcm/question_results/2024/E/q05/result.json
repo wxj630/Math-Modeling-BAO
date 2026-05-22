@@ -6,8 +6,8 @@
   "methods": "把承保模型迁移为建址评分：危险暴露、公共服务可行性、社区需求和韧性成本共同决定 build / conditional build / avoid。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
     "official_requirements": {
       "underwrite_conditions": true,
       "choose_when_to_take_risk": true,

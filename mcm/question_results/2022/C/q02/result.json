@@ -6,8 +6,8 @@
   "methods": "在现金、黄金买入持有、比特币买入持有、等权再平衡、60/180 日动量等透明因果候选规则中比较最终价值、收益率、最大回撤和交易次数。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2022/Trading Strategies.pdf",
     "rows": {
       "LBMA-GOLD.csv": 1265,
       "BCHAIN-MKPRU.csv": 1826

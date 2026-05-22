@@ -6,9 +6,9 @@
   "methods": "读取官方 4440 条 sightings workbook，按 Positive ID 时间和经纬度构建阳性时间线与空间聚类；用题面 30km 新蜂后范围解释可预测精度边界。对应模型：空间统计、时间序列描述、风险地图。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
-    "background_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
+    "background_pdf": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
     "rows": {
       "2021MCMProblemC_DataSet.xlsx": 4440,
       "2021MCM_ProblemC_ Images_by_GlobalID.xlsx": 3305

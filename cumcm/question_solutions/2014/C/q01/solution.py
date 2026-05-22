@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2014-C",
   "title": "2014年 CUMCM C题：生猪养殖场的经营管理",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/C.md",
+  "problem_path": "cumcm/problems/2014/C.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",
@@ -50,20 +50,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
       "name": "CUMCM2014C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 40568,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
       "name": "CUMCM2014C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 40568,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }

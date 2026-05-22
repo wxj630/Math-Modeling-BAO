@@ -6,7 +6,7 @@
   "methods": "基于官方驾车路网构建加权有向图，移除 I-695/Baltimore Beltway 港口桥梁走廊边，比较关键 OD 最短路和断连状态。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
     "rows": {
       "edges_drive.csv": 91227,
       "nodes_drive.csv": 37163,

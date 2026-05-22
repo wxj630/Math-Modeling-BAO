@@ -8,7 +8,7 @@
 ## Model
 - State variable: species biomass by year.
 - Core mechanism: logistic biomass growth, drought penalty moderated by species traits, biodiversity facilitation after four or more persistent species, pollution penalty, and habitat carrying capacity.
-- Typical tutorial models: differential/difference equations, sensitivity analysis, comprehensive evaluation, and policy optimization from `/Users/wuxiaojun/code/My-Agent/intro-mathmodel`.
+- Typical tutorial models: differential/difference equations, sensitivity analysis, comprehensive evaluation, and policy optimization from `../My-Agent/intro-mathmodel`.
 
 ## Results
 - Estimated minimum species for benefit: 4.

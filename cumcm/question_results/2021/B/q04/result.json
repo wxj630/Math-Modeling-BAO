@@ -12,35 +12,35 @@
     "name": "乙醇偶合C4烯烃响应面拟合与实验设计",
     "chapter": "CH6",
     "chapter_title": "数据处理与拟合模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
   },
   "candidate_models": [
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "设计"
     },
     {
       "key": "ode",
       "name": "微分方程与动态仿真",
       "chapter": "CH2",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
       "reason": "温度"
     },
     {
       "key": "metaheuristic",
       "name": "启发式搜索与群体智能",
       "chapter": "CH5",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md",
       "reason": "组合"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 3,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx",
     "rows": 121,
     "columns": 18,
     "note": "本题专用算法读取附件1性能数据表和附件2稳定性测试，解析催化剂组合特征，计算C4烯烃收率并做响应面优化与新增实验设计。"
@@ -92,7 +92,7 @@
       "name": "乙醇偶合C4烯烃响应面拟合与实验设计",
       "chapter": "CH6",
       "chapter_title": "数据处理与拟合模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
     }
   },
   "experiment_result": {

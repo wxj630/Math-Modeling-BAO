@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：乙醇偶合C4烯烃响应面拟合与实验设计（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 启发式搜索与群体智能（CH5）：组合；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md
-- 数据拟合与回归分析（CH6）：分析；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 启发式搜索与群体智能（CH5）：组合；参考 ../My-Agent/intro-mathmodel/docs/CH5/第五章-进化计算与群体智能.md
+- 数据拟合与回归分析（CH6）：分析；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -54,9 +54,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/B/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/B/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2021/B/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2021/B/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1性能数据并补全催化剂编号，按催化剂分别拟合转化率、选择性与温度的二次关系。
@@ -66,13 +66,13 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/B/q01/temperature_response_by_catalyst.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/B/q01/stability_trends.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/B/q01/experiment_table.csv
+- cumcm/question_artifacts/2021/B/q01/temperature_response_by_catalyst.csv
+- cumcm/question_artifacts/2021/B/q01/stability_trends.csv
+- cumcm/question_artifacts/2021/B/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件1.xlsx; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/B/附件2.xlsx
 - 读取规模：121 行 x 18 列
 - 说明：本题专用算法读取附件1性能数据表和附件2稳定性测试，解析催化剂组合特征，计算C4烯烃收率并做响应面优化与新增实验设计。
 

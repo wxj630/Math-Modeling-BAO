@@ -15,8 +15,8 @@
 ## 运行
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/run_question_all.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/verify_real_data_integration.py
+.venv/bin/python mcm/scripts/run_question_all.py
+.venv/bin/python mcm/scripts/verify_real_data_integration.py
 ```
 
 ## 当前真实实验覆盖

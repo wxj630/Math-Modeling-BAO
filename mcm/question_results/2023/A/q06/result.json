@@ -6,8 +6,8 @@
   "methods": "把物种数阈值、功能性状、干旱敏感性和污染栖息地压力合成为管理前沿，给出最少功能物种数、恢复缓冲和大环境影响备忘录。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "parameters": {
       "species_benefit_observation": 4,
       "single_species_risk_observation": 1,

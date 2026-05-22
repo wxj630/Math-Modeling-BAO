@@ -6,8 +6,8 @@
   "methods": "比较 government-only 和 with-NGO 两种资源策略的 unmet need；NGO 不改变法律准入，但增加移动医疗、水、食物和临时 shelter 能力，使模型从边境处理转为分布式救援。对应模型：情景对比、资源协同、公共-非政府协作模型。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

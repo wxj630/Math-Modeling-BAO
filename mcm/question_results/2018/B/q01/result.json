@@ -6,8 +6,8 @@
   "methods": "Use a transparent top-language panel and growth rates to define native and total speaker dynamics.",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
     "official_requirements": {
       "fifty_year_language_forecast": true,
       "top_ten_languages": true,

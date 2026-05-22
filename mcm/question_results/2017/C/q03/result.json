@@ -6,9 +6,9 @@
   "methods": "把总峰小时 vehicle-hours 作为系统性能指标，在 0%-100% AV share 网格上寻找首次比全人类驾驶基线降低 10% 的临界点，并解释该点附近的容量反馈。对应模型：离散均衡扫描、阈值分析、系统性能曲线。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
-    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "workbook": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
     "rows": {
       "parsed mile posts": 224,
       "definitions": 8

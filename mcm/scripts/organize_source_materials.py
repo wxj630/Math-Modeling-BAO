@@ -266,7 +266,7 @@ def write_readme(output_root: Path, rows: list[dict[str, object]], storage: str)
         "## 重新生成",
         "",
         "```bash",
-        "/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/organize_source_materials.py --all",
+        ".venv/bin/python mcm/scripts/organize_source_materials.py --all",
         "```",
         "",
         f"默认存储方式：`{storage}`。脚本会优先使用 hardlink，让资料夹可直接浏览，同时避免在磁盘上重复复制大数据集。",

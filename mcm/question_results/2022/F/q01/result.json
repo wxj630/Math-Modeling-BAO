@@ -6,8 +6,8 @@
   "methods": "将 Outer Space Treaty 的 benefit of all countries 原则转为 benefit_sharing、participation、technology_transfer、governance_voice、risk burden、peaceful use 六维公平指标。对应模型：多指标评价、政策指标体系。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "root": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
     "official_requirements": {
       "outer_space_treaty_equity_principle": true,
       "define_global_equity": true,

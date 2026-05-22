@@ -6,8 +6,8 @@
   "methods": "形成 EDP status protocol、迁移协定、文化基金、portable legal identity 和高排放/高能力国家融资责任的建议框架。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "official_requirements": {
       "edp_scope_and_culture_risk": true,
       "human_rights_and_cultural_preservation_policies": true,

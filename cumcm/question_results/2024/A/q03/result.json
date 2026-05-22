@@ -12,14 +12,14 @@
     "name": "几何解析与运动学参数方程",
     "chapter": "CH1",
     "chapter_title": "解析方法与几何模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
   },
   "candidate_models": [
     {
       "key": "geometry",
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
       "reason": "螺线、把手、空间、圆"
     }
   ],
@@ -69,7 +69,7 @@
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
       "chapter_title": "解析方法与几何模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
     }
   },
   "experiment_result": {

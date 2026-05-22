@@ -6,8 +6,8 @@
   "methods": "Compare public-good value with private harm in the domain price model.",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
     "official_requirements": {
       "three_domains": [
         "social_media",

@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：红外光谱预处理、特征降维与药材鉴别（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 图像文本与信号特征（CH10）：光谱；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md
-- 机器学习与统计识别（CH9）：鉴别；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
-- 数据拟合与回归分析（CH6）：数据；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 图像文本与信号特征（CH10）：光谱；参考 ../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md
+- 机器学习与统计识别（CH9）：鉴别；参考 ../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 数据拟合与回归分析（CH6）：数据；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -50,9 +50,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/E/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/E/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2021/E/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2021/E/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1中红外光谱，整理No和3348个波数吸光度特征。
@@ -62,13 +62,13 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/E/q01/class_cluster_predictions.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/E/q01/class_cluster_centers.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/E/q01/experiment_table.csv
+- cumcm/question_artifacts/2021/E/q01/class_cluster_predictions.csv
+- cumcm/question_artifacts/2021/E/q01/class_cluster_centers.csv
+- cumcm/question_artifacts/2021/E/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件1.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/E/附件1.xlsx
 - 读取规模：425 行 x 3349 列
 - 说明：本题专用算法读取中药材近/中红外光谱附件，按题问分别完成无监督类别分群、OP产地分类、近/中红外融合分类以及Class+OP联合填表预测。
 

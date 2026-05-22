@@ -8,7 +8,7 @@ Prepare a one- to two-page article of your findings suitable for publication in 
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets`。
 - 行数/记录数：{'official_parameters': 6}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -19,9 +19,9 @@ Prepare a one- to two-page article of your findings suitable for publication in 
 - 水位、库容曲线、部门需水和水电系数是显式确定性场景输入，不是 BOR/电网实测数据；正式论文应补充官方水文、用水、电力、生态和跨境流量数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2022/B/q09/solution.py`
+`.venv/bin/python mcm/question_solutions/2022/B/q09/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2022/B/q09/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2022/B/q09/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2022/B/q09`
+- `mcm/question_results/2022/B/q09/result.json`
+- `mcm/question_reports/2022/B/q09/report.md`
+- `mcm/question_artifacts/2022/B/q09`

@@ -6,8 +6,8 @@
   "methods": "读取官方 MCM_NFLIS_Data.xlsx，按 FIPS/year/state/county 汇总 heroin 与 synthetic_or_other_analgesic 报告，构建县-年面板；用最早阳性县和 2010-2017 每县 OLS 趋势识别起点和 2020 高风险阈值。对应模型：时空面板、趋势回归、阈值预警。",
   "data_source": {
     "type": "official_comap_xlsx_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
     "rows": {
       "MCM_NFLIS_Data.xlsx": 24062,
       "ACS county-year rows": 3245

@@ -6,8 +6,8 @@
   "methods": "分析临时 camp capacity、route popularity、daily transport 等参数在长期/超大规模危机中如何让位于住房吸收、国际负担分担、疾病控制和教育连续性。对应模型：尺度转移、参数有效性审计、长期系统动力学。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

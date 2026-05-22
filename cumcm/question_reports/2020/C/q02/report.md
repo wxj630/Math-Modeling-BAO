@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：企业信用风险评分与授信组合优化（CH9：机器学习与统计模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
 
 ### 候选模型与适配理由
-- 时间序列预测（CH8）：年度；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
-- 概率统计与抽样检验（CH9）：风险；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
-- 规划优化与资源配置（CH3）：策略；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 时间序列预测（CH8）：年度；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 概率统计与抽样检验（CH9）：风险；参考 ../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 规划优化与资源配置（CH3）：策略；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ## 变量、约束与公式
 
@@ -54,9 +54,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/C/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/C/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2020/C/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2020/C/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件2的302家无信贷记录企业发票数据，使用附件1企业特征分布作为风险参照。
@@ -67,13 +67,13 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/C/q02/credit_risk_scores.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/C/q02/loan_strategy.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/C/q02/experiment_table.csv
+- cumcm/question_artifacts/2020/C/q02/credit_risk_scores.csv
+- cumcm/question_artifacts/2020/C/q02/loan_strategy.csv
+- cumcm/question_artifacts/2020/C/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件2：302家无信贷记录企业的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件2：302家无信贷记录企业的相关数据.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx
 - 读取规模：1099896 行 x 42 列
 - 说明：本题专用算法读取附件1/2企业信息和进销项发票，聚合经营特征；读取附件3利率-客户流失率曲线，用于风险评分、利率选择和年度授信额度分配。
 

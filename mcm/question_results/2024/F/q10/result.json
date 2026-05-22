@@ -6,8 +6,8 @@
   "methods": "列出数据共享、平台合作、社区伙伴、路线转移、腐败泄露和经济冲击等敏感事件，并输出面向客户的一页 memo。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
     "official_requirements": {
       "select_client": true,
       "realistic_client_action": true,

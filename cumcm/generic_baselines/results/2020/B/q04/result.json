@@ -13,21 +13,21 @@
     "name": "时间序列预测",
     "chapter": "CH8",
     "chapter_title": "时间序列",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
   },
   "candidate_models": [
     {
       "key": "time_series",
       "name": "时间序列预测",
       "chapter": "CH8",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
       "reason": "每天"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 3,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/B/Result.xlsx",
     "rows": 33,
     "columns": 4,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -68,7 +68,7 @@
       "name": "时间序列预测",
       "chapter": "CH8",
       "chapter_title": "时间序列",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
     }
   },
   "experiment_result": {

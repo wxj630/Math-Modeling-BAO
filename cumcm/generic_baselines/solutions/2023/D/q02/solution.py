@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2023-D",
   "question_index": 2,
   "title": "2023年 CUMCM D题：圈养湖羊的空间利用率",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2023/D.md",
+  "problem_path": "cumcm/problems/2023/D.md",
   "question": {
     "label": "问题 2",
     "statement": "在问题 1 的基础上，对 112 个标准羊栏给出具体的生产计划（包括种公羊与基础 母羊的配种时机和数量、羊栏的使用方案、年化出栏羊只数量等），使得年化出栏羊只数量最 大。",
@@ -68,7 +68,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

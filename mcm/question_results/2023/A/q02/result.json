@@ -6,8 +6,8 @@
   "methods": "以单物种为基线，枚举 1-12 个物种，计算末 20 年生物量、存活比例、干旱代际生物量和稳定性综合得分，识别至少 4 个物种的受益阈值。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "parameters": {
       "species_benefit_observation": 4,
       "single_species_risk_observation": 1,

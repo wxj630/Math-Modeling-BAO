@@ -6,7 +6,7 @@
   "methods": "特征工程 + 随机森林回归 + 2024 留出检验 + 树分布 80% 预测区间。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
     "rows": {
       "summerOly_medal_counts.csv": 1435,
       "summerOly_athletes.csv": 252565,

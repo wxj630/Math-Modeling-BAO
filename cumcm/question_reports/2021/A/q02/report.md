@@ -14,11 +14,11 @@
 ## 适配模型
 
 - 主模型：FAST主动反射面几何调节与反射接收评估（CH1：解析方法与几何模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
 
 ### 候选模型与适配理由
-- 几何解析与运动学参数方程（CH1）：位置、坐标；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 图论网络与路径调度（CH4）：节点；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+- 几何解析与运动学参数方程（CH1）：位置、坐标；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 图论网络与路径调度（CH4）：节点；参考 ../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
 
 ## 变量、约束与公式
 
@@ -56,9 +56,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/A/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/A/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2021/A/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2021/A/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1节点、附件2促动器、附件3面板与附件4模板。
@@ -69,14 +69,14 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/A/q02/adjusted_nodes.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/A/q02/actuator_strokes.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/A/q02/experiment_table.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/A/q02/result_filled.xlsx
+- cumcm/question_artifacts/2021/A/q02/adjusted_nodes.csv
+- cumcm/question_artifacts/2021/A/q02/actuator_strokes.csv
+- cumcm/question_artifacts/2021/A/q02/experiment_table.csv
+- cumcm/question_artifacts/2021/A/q02/result_filled.xlsx
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件3.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件4.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件2.csv; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件3.csv; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件4.xlsx
 - 读取规模：8752 行 x 14 列
 - 说明：本题专用算法读取附件1主索节点坐标、附件2促动器上下端点、附件3三角反射面板和附件4结果模板，建立理想抛物面、径向伸缩调节和几何光线接收比实验。
 

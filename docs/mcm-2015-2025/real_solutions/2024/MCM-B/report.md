@@ -1,7 +1,7 @@
 # 2024 MCM-B Searching for Submersibles
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf`。
 - 本题无 COMAP 数值附件；脚本只使用官方 PDF 任务约束和显式救援预案情景，不使用随机占位数据。
 - `scenario_assumptions` 是可替换的确定性预案参数，不是声称采集到的真实事故观测。
 

@@ -6,8 +6,8 @@
   "methods": "相邻踏步磨损跳变、patch boundary score 和 tool-mark 指标加权，输出可能替换/补丁踏步候选表。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "official_requirements": {
       "non_destructive": true,
       "low_cost": true,
@@ -129,6 +129,6 @@
         "tool": "visual inspection + raking-light photo"
       }
     ],
-    "measurement_template": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
+    "measurement_template": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
   }
 }

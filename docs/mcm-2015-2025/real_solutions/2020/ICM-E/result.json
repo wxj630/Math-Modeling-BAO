@@ -3,8 +3,8 @@
   "title": "Drowning in Plastic",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
     "official_requirements": {
       "safe_mitigation_capacity_model": true,
       "reduce_to_environmentally_safe_level": true,
@@ -285,10 +285,10 @@
     ]
   },
   "artifacts": {
-    "regional_safe_mitigation_capacity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/regional_safe_mitigation_capacity.csv",
-    "plastic_policy_pathway": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_policy_pathway.csv",
-    "plastic_equity_analysis": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_equity_analysis.csv",
-    "plastic_policy_package_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_policy_package_scores.csv",
-    "plastic_waste_reduction_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_waste_reduction_frontier.png"
+    "regional_safe_mitigation_capacity": "docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/regional_safe_mitigation_capacity.csv",
+    "plastic_policy_pathway": "docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_policy_pathway.csv",
+    "plastic_equity_analysis": "docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_equity_analysis.csv",
+    "plastic_policy_package_scores": "docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_policy_package_scores.csv",
+    "plastic_waste_reduction_frontier": "docs/mcm-2015-2025/real_solutions/2020/ICM-E/artifacts/plastic_waste_reduction_frontier.png"
   }
 }

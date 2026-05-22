@@ -6,8 +6,8 @@
   "methods": "以 2050 年剩余 single-use waste 是否低于全球安全容量作为目标判据，并说明对生活方式、环境和塑料产业的影响。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
     "official_requirements": {
       "safe_mitigation_capacity_model": true,
       "reduce_to_environmentally_safe_level": true,

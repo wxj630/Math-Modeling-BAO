@@ -6,8 +6,8 @@
   "methods": "把分阶段试点、受监管清算层、隐私保护合规、审计稳定机制和保留本币选择权整理为国家领导人政策建议。对应模型：政策备忘录、风险治理。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
     "official_requirements": {
       "universal_decentralized_digital_currency": true,
       "growth_access_security_stability": true,

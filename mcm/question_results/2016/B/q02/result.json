@@ -6,8 +6,8 @@
   "methods": "对 water jets、high energy lasers、sweeper satellites、tracking subscription 逐项估计 capex、opex、revenue、10 年移除数量、技术风险、监管风险和 scalability。对应模型：多指标综合评价、成本效益分析、风险矩阵。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
     "official_problem_parameters": {
       "tracked_debris_count": 500000,
       "reference_collision_year": 2009,

@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2011-B",
   "title": "2011年 CUMCM B题：交巡警服务平台的设置与调度",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/B.md",
+  "problem_path": "cumcm/problems/2011/B.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",
@@ -54,28 +54,28 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B.doc",
       "name": "cumcm2011B.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 33792,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件1_A区和全市六区交通网络与平台设置的示意图.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件1_A区和全市六区交通网络与平台设置的示意图.doc",
       "name": "cumcm2011B附件1_A区和全市六区交通网络与平台设置的示意图.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 102912,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件2_全市六区交通网路和平台设置的数据表.xls",
+      "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/B/cumcm2011B附件2_全市六区交通网路和平台设置的数据表.xls",
       "name": "cumcm2011B附件2_全市六区交通网路和平台设置的数据表.xls",
       "suffix": ".xls",
       "kind": "data",
       "size_bytes": 116736,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }

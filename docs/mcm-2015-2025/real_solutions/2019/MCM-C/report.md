@@ -2,8 +2,8 @@
 
 ## 数据真实性
 
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf`。
-- 官方附件目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf`。
+- 官方附件目录：`docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA`。
 - 行数：`{'MCM_NFLIS_Data.xlsx': 24062, 'ACS county-year rows': 3245}`。
 - ACS 年份：`[2010, 2011, 2012, 2013, 2014, 2015, 2016]`。
 - NFLIS 文件实际州别：`['KY', 'OH', 'PA', 'VA', 'WV']`。

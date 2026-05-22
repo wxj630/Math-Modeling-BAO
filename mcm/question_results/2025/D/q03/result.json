@@ -6,7 +6,7 @@
   "methods": "综合桥梁韧性和高客流公交站升级，量化直接连通性恢复和无候车亭高客流覆盖。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
     "rows": {
       "edges_drive.csv": 91227,
       "nodes_drive.csv": 37163,

@@ -3,8 +3,8 @@
   "title": "Testing Time: The Constant Wear On Stairs",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "official_requirements": {
       "non_destructive": true,
       "low_cost": true,
@@ -101,7 +101,7 @@
         "tool": "visual inspection + raking-light photo"
       }
     ],
-    "measurement_template": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
+    "measurement_template": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
   },
   "worked_example_assumptions": {
     "purpose": "deterministic calibration example showing how a filled measurement sheet is inverted; values are not official observations",
@@ -249,11 +249,11 @@
     ]
   },
   "artifacts": {
-    "measurement_template": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv",
-    "wear_profile": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/wear_profile.csv",
-    "age_reliability_grid": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/age_reliability_grid.csv",
-    "renovation_candidates": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/renovation_candidates.csv",
-    "traffic_pattern_summary": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/traffic_pattern_summary.csv",
-    "wear_cross_section": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/wear_cross_section.png"
+    "measurement_template": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv",
+    "wear_profile": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/wear_profile.csv",
+    "age_reliability_grid": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/age_reliability_grid.csv",
+    "renovation_candidates": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/renovation_candidates.csv",
+    "traffic_pattern_summary": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/traffic_pattern_summary.csv",
+    "wear_cross_section": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/wear_cross_section.png"
   }
 }

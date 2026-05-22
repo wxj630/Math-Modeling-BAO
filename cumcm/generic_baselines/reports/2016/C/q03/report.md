@@ -11,7 +11,7 @@
 ## 通用模型选择
 
 - 模型：数据拟合与回归分析（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 - 通用方法：`quadratic_least_squares`
 
 ## 变量、约束与公式
@@ -32,16 +32,16 @@
 
 ## 运行与产物
 
-- 通用代码：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2016/C/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2016/C/q03/solution.py`
-- 结果 JSON：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/results/2016/C/q03/result.json
-- 实验报告：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/reports/2016/C/q03/report.md
-- 实验产物：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/artifacts/2016/C/q03/experiment_table.csv
+- 通用代码：cumcm/generic_baselines/solutions/2016/C/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/generic_baselines/solutions/2016/C/q03/solution.py`
+- 结果 JSON：cumcm/generic_baselines/results/2016/C/q03/result.json
+- 实验报告：cumcm/generic_baselines/reports/2016/C/q03/report.md
+- 实验产物：cumcm/generic_baselines/artifacts/2016/C/q03/experiment_table.csv
 
 ## 数据来源
 
 - 类型：attachment
-- 路径：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx
+- 路径：../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx
 - 说明：本问优先使用官方附件中的数值表生成实验结果。
 
 ## 核心结果

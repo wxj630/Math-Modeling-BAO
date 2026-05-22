@@ -8,7 +8,7 @@ Present evidence that your model provides the best strategy.
 
 ## 数据与真实性
 - 数据类型：official_comap_csv。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2022/Problem Data- Trading Strategies`。
 - 行数/记录数：{'LBMA-GOLD.csv': 1265, 'BCHAIN-MKPRU.csv': 1826}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -39,9 +39,9 @@ Present evidence that your model provides the best strategy.
 - 候选策略最优性只在脚本中列出的透明因果规则族内成立；正式论文应扩展到风险约束、效用函数、滚动交叉验证和更严格的在线学习证明。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2022/C/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2022/C/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2022/C/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2022/C/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2022/C/q02`
+- `mcm/question_results/2022/C/q02/result.json`
+- `mcm/question_reports/2022/C/q02/report.md`
+- `mcm/question_artifacts/2022/C/q02`

@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2019-B",
   "title": "2019年 CUMCM B题：同心协力”策略研究",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2019/B.md",
+  "problem_path": "cumcm/problems/2019/B.md",
   "question_index": 3,
   "question": {
     "label": "问题 3",
@@ -41,20 +41,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.docx",
       "name": "CUMCM-1019-Problem-B-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 60187,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/B-2019中文/CUMCM-1019-Problem-B-Chinese.pdf",
       "name": "CUMCM-1019-Problem-B-Chinese.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 390962,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }

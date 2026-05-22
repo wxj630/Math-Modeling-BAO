@@ -6,8 +6,8 @@
   "methods": "把日均使用人数、候选年龄区间、中心通行槽、补丁边界和相邻踏步突变放入一致性检查表，识别需要降权的维修踏步。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "official_requirements": {
       "non_destructive": true,
       "low_cost": true,

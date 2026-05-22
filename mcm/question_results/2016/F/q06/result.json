@@ -6,8 +6,8 @@
   "methods": "把安全路线分流、多个入口点、容量触发配额、shelter/healthcare 前置、NGO 物流通道和本地居民健康安全合并为政策包，并写给 UN Secretary General 和 Chief of Migration 的一页政策信。对应模型：政策优化、执行摘要、风险治理、健康安全约束。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

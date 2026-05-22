@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2021-D",
   "question_index": 2,
   "title": "2021年 CUMCM D题：连铸切割的",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2021/D.md",
+  "problem_path": "cumcm/problems/2021/D.md",
   "question": {
     "label": "问题 2",
     "statement": "在结晶器出现异常时，给出实时的最优切割方案：(1)在钢坯第 1 次出现报废段时，给出此段钢坯的切割方案；(2)在出现新的报废段后 （如图2）， 给出新一段钢坯的切割方案和当前段钢坯切割的调整方案，或声明不作调整。 假设结晶器出现异常的时刻在 0.0、45.6、98.6、131.5、190.8、233.3、 266.0、270.7 和327.9（单位：分钟） ， 用户目标值是9.5 米， 目标范围是9.0~10.0 米。在满足基本要求和正常要求的条件下， 按 “初始切割方案、 调整后的切割方 案、切割损失”等内容列表给出这些时刻具体的最优切割方案。",
@@ -36,12 +36,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/D/CUMCM2021-D.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/D/CUMCM2021-D.pdf",
       "name": "CUMCM2021-D.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 245779,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -80,7 +80,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

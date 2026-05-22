@@ -6,8 +6,8 @@
   "methods": "只使用官方题面给出的五个传播时期，构造 media access、transmission speed、network connectivity、gatekeeping filter 和 channel capacity 的显式时代参数；用加权 news score 判断 presidential assassination、war news、celebrity rumor、local storm、viral video 是否达到新闻阈值。对应模型：信息扩散、新闻价值评分、多指标综合评价、阈值分类。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "official_problem_parameters": {
       "periods": [
         "1870s_telegraph_train_newspaper",

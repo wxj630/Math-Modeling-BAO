@@ -13,7 +13,7 @@
     "name": "高压油管质量守恒与压力控制仿真",
     "chapter": "CH2",
     "chapter_title": "微分方程与动力系统",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
   },
   "candidate_models": [
     {
@@ -21,27 +21,27 @@
       "name": "微分方程与动态仿真",
       "chapter": "CH2",
       "reason": "油管压力由进油、喷油、减压阀回流和燃油弹性共同驱动，核心是连续时间动态仿真。",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
     },
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
       "reason": "附件1-3需要插值拟合为凸轮导数、针阀升程和弹性模量函数后才能进入方程。",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
     },
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
       "reason": "阀开时长、凸轮角速度和减压阀阈值都通过枚举/搜索最小化压力误差。",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 5,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件1-凸轮边缘曲线.xlsx; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件2-针阀运动曲线.xlsx; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/A-2019中文/附件3-弹性模量与压力.xlsx",
     "rows": 1125,
     "columns": 2,
     "note": "本题专用算法读取凸轮极径曲线、针阀升程曲线和弹性模量-压力表，建立燃油密度、进出流量和高压油管压力控制仿真。"
@@ -94,7 +94,7 @@
       "name": "高压油管质量守恒与压力控制仿真",
       "chapter": "CH2",
       "chapter_title": "微分方程与动力系统",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md"
     }
   },
   "experiment_result": {

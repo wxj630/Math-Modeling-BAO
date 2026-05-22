@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2019-D",
   "title": "2019年 CUMCM D题：空气质量数据的校准",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2019/D.md",
+  "problem_path": "cumcm/problems/2019/D.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",
@@ -33,44 +33,44 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.docx",
       "name": "CUMCM-2019-Problem-D-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 397135,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/CUMCM-2019-Problem-D-Chinese.pdf",
       "name": "CUMCM-2019-Problem-D-Chinese.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 327274,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv",
       "name": "附件1.csv",
       "suffix": ".csv",
       "kind": "data",
       "size_bytes": 154092,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv",
       "name": "附件2.csv",
       "suffix": ".csv",
       "kind": "data",
       "size_bytes": 13524487,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx",
       "name": "附件3.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 17970,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }

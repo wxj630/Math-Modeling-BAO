@@ -6,8 +6,8 @@
   "methods": "把成熟度指标、质量检查、访问控制、客户可见仪表盘和卡车伙伴共享标准压缩成 port users 可读客户信。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
     "official_requirements": {
       "people_technology_process_metric": true,
       "icm_large_seaport_context": true,

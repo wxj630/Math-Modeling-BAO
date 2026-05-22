@@ -6,8 +6,8 @@
   "methods": "用 100 年 CO2e、林产品需求、生物多样性敏感度和社会得分解释推荐方案。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "official_requirements": {
       "hundred_year_carbon_accounting": true,
       "forest_products_lifecycle": true,

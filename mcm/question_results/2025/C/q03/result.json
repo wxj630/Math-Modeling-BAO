@@ -6,7 +6,7 @@
   "methods": "将有参赛记录但历史总奖牌为 0 的国家纳入候选，用随机森林树预测分布估计 P(total >= 0.5)，再求期望数量。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
     "rows": {
       "summerOly_medal_counts.csv": 1435,
       "summerOly_athletes.csv": 252565,

@@ -1,7 +1,7 @@
 # 2016 MCM-A A Hot Bath 题面参数实验报告
 
 ## 数据来源
-- 官方 PDF：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf`。
+- 官方 PDF：`docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf`。
 - 本题没有独立 CSV/XLSX 附件；模型只使用题面的物理约束：单水龙头、简单浴缸、无循环加热、热水恒定细流、满水后溢流排出。
 - 浴缸尺寸、热损失、人体体积/温度、泡泡浴隔热系数都是显式可替换假设。
 
@@ -23,8 +23,8 @@
 For a simple bathtub, the practical strategy is a small continuous trickle of hot water plus gentle motion. In the baseline scenario the model selects about 1.75 L/min with active_stirring, wasting about 70.0 L over a 40 minute bath. Hot water enters near the faucet, cooler water leaves near the overflow, and heat is constantly lost to air, tub walls, and the bather, so perfectly uniform temperature is physically difficult. Gentle stirring matters because it reduces hot and cold spots without requiring a much larger overflow. Bubble bath helps by insulating the surface, but it should not replace mixing.
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/MCM-A/result.json
-- `temperature_strategy_grid.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/temperature_strategy_grid.csv
-- `tub_shape_sensitivity.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/tub_shape_sensitivity.csv
-- `bubble_bath_sensitivity.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/bubble_bath_sensitivity.csv
-- `temperature_profiles.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/temperature_profiles.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2016/MCM-A/result.json
+- `temperature_strategy_grid.csv`：docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/temperature_strategy_grid.csv
+- `tub_shape_sensitivity.csv`：docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/tub_shape_sensitivity.csv
+- `bubble_bath_sensitivity.csv`：docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/bubble_bath_sensitivity.csv
+- `temperature_profiles.png`：docs/mcm-2015-2025/real_solutions/2016/MCM-A/artifacts/temperature_profiles.png

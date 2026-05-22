@@ -6,8 +6,8 @@
   "methods": "官方 PDF 题面观察 + 多物种生物量差分方程 + 干旱压力时间序列 + 物种互补促进项；对应教程模型：微分/差分方程、敏感性分析。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "parameters": {
       "species_benefit_observation": 4,
       "single_species_risk_observation": 1,

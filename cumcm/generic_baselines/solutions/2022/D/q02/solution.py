@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2022-D",
   "question_index": 2,
   "title": "2022年 CUMCM D题：气象报文信息卫星通信传输",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/D.md",
+  "problem_path": "cumcm/problems/2022/D.md",
   "question": {
     "label": "问题 2",
     "statement": "为了提高气象信息的地理密度，除了实现主站间气象报文的信息共享外，还需要 使用副站气象信息加以补充。 (1) 若要求在 𝐾 分钟内完成 𝑁 个主站间气象报文的信息共享，且每个主站满足条件：对 每支分队， 成功接收该分队至少一个副站的气象报文的概率不低于0.9。 请就 𝐾 (≥ 5) 的情形， 研究 𝑁 的最大值与 𝐾 的关系，并建立 𝐾 分钟内满足以上条件的信息传输的一般模型。若主 站间气象报文信息共享的传输方案与问题 1 相同，则只需给出副站气象报文的传输方案。 (2) 对于 𝐾 = 7， 给出 𝑁 的最大值， 并根据一般传输模型给出此时副站气象报文的传输方 案，将结果按表 2 的格式填报。求出在你们的传输方案下平均有多少个主站能成功接收每支分 队至少一个副站的气象报文，以及任一主站平均能成功接收多少个副站的气象报文。",
@@ -69,7 +69,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

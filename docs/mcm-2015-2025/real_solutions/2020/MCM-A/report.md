@@ -1,7 +1,7 @@
 # 2020 MCM-A Moving North
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2020/Moving North`.
 - No COMAP numeric attachment is supplied; this workflow uses official statement requirements and explicit deterministic planning inputs.
 
 ## Model Summary

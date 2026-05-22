@@ -1,7 +1,7 @@
 # 2021 MCM-A Fungi
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi`。
+- 官方来源：`docs/mcm-2015-2025/official_assets/2021/Fungi`。
 - 本题无 COMAP 数值附件；脚本只使用官方题面中的 growth rate、moisture tolerance、环境类型和显式确定性 trait 情景。
 
 ## 分解模型

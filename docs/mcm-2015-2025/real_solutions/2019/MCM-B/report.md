@@ -1,7 +1,7 @@
 # 2019 MCM-B Send in the Drones
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System`.
 - Uses official attachment tables embedded in the PDF: drone dimensions/capabilities, cargo-bay dimensions, MED package dimensions, and Puerto Rico demand rows.
 
 ## Recommended System

@@ -6,8 +6,8 @@
   "methods": "选择 Jordan 作为 heavily overloaded 地区；用 World Bank 总取水占内部资源比例、农业/生活/工业取水份额、饮水和卫生覆盖解释物理稀缺与经济稀缺。对应模型：指标诊断、社会-环境驱动分析。",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "selected_region": "Jordan",
     "rows": {
       "world_bank_jordan_water_indicators.csv": 528

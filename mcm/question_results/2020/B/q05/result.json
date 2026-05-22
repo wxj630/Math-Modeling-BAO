@@ -6,8 +6,8 @@
   "methods": "将形状、比例、降雨和策略结论转写为面向 vacation magazine 读者的非技术说明。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
     "official_requirements": {
       "same_sand_same_volume_same_distance": true,
       "same_water_to_sand_proportion_for_shape_comparison": true,

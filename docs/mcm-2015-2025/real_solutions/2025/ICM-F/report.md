@@ -1,7 +1,7 @@
 # 2025 ICM-F Cyber Strong?
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf`。
 - 本题无 COMAP 数值附件；代码使用题面引用的 VCDB、World Bank 指标和 ITU GCI 框架做可审计公开源工作流。
 - 所有网络数据都会缓存到 artifacts/cache；政策特征矩阵是透明 rubric，不是随机造数。
 

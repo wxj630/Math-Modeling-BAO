@@ -15,28 +15,28 @@
     "name": "时间序列预测",
     "chapter": "CH8",
     "chapter_title": "时间序列",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
   },
   "candidate_models": [
     {
       "key": "time_series",
       "name": "时间序列预测",
       "chapter": "CH8",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
       "reason": "日期"
     },
     {
       "key": "fitting",
       "name": "数据拟合与回归分析",
       "chapter": "CH6",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
       "reason": "分析"
     }
   ],
   "data_source": {
     "source_type": "problem_statement",
     "attachment_count": 2,
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/C.md",
+    "path": "cumcm/problems/2015/C.md",
     "rows": 7,
     "columns": 3,
     "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
@@ -79,7 +79,7 @@
       "name": "时间序列预测",
       "chapter": "CH8",
       "chapter_title": "时间序列",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
     }
   },
   "experiment_result": {

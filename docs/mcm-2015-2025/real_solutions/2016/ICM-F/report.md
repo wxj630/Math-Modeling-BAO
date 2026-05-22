@@ -1,7 +1,7 @@
 # 2016 ICM-F Modeling Refugee Immigration Policies 题面参数实验报告
 
 ## 数据来源
-- 官方 PDF：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf`。
+- 官方 PDF：`docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf`。
 - 官方题面参数：2015 年 10 月底欧洲收到超过 715,000 份庇护申请；Hungary 约 1,450/100k；2014 年批准率 32%；六条路线；Eastern Mediterranean 最热门，Central Mediterranean 最危险。
 - 本题没有独立 CSV/XLSX 附件；路线容量、资源包和 NGO 增益是显式可替换规划假设。
 
@@ -32,10 +32,10 @@ To the UN Secretary General and the Chief of Migration:
 ICM-RUN recommends a capacity-triggered refugee movement policy for the 715,000 applications reported by the end of October 2015. The model keeps the official six routes visible, shifts volume toward safer capacity such as Eastern Mediterranean, and flags shelter as the current priority resource. The UN should authorize multiple entry points, preposition shelter and healthcare, give NGOs formal logistics roles, and use quota triggers before Germany and France absorb a disproportionate burden. The policy should remain resilient to external security shocks by maintaining contingency entry points, humanitarian screening lanes, and transparent public health communication.
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/result.json
-- `route_flow_plan.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/route_flow_plan.csv
-- `resource_prepositioning.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/resource_prepositioning.csv
-- `ngo_strategy_comparison.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/ngo_strategy_comparison.csv
-- `exogenous_event_stress.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/exogenous_event_stress.csv
-- `scalability_10x.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/scalability_10x.csv
-- `refugee_flow_network.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/refugee_flow_network.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/result.json
+- `route_flow_plan.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/route_flow_plan.csv
+- `resource_prepositioning.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/resource_prepositioning.csv
+- `ngo_strategy_comparison.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/ngo_strategy_comparison.csv
+- `exogenous_event_stress.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/exogenous_event_stress.csv
+- `scalability_10x.csv`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/scalability_10x.csv
+- `refugee_flow_network.png`：docs/mcm-2015-2025/real_solutions/2016/ICM-F/artifacts/refugee_flow_network.png

@@ -3,8 +3,8 @@
   "title": "The Longest Lasting Sandcastle(s)",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
     "official_requirements": {
       "same_sand_same_volume_same_distance": true,
       "same_water_to_sand_proportion_for_shape_comparison": true,
@@ -456,10 +456,10 @@
     ]
   },
   "artifacts": {
-    "sandcastle_shape_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sandcastle_shape_scores.csv",
-    "sand_water_mixture_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sand_water_mixture_scores.csv",
-    "rain_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/rain_sensitivity.csv",
-    "longevity_strategies": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/longevity_strategies.csv",
-    "sandcastle_longevity_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sandcastle_longevity_frontier.png"
+    "sandcastle_shape_scores": "docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sandcastle_shape_scores.csv",
+    "sand_water_mixture_scores": "docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sand_water_mixture_scores.csv",
+    "rain_sensitivity": "docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/rain_sensitivity.csv",
+    "longevity_strategies": "docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/longevity_strategies.csv",
+    "sandcastle_longevity_frontier": "docs/mcm-2015-2025/real_solutions/2020/MCM-B/artifacts/sandcastle_longevity_frontier.png"
   }
 }

@@ -3,8 +3,8 @@
   "title": "Game of Ecology",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "official_requirements": {
       "three_living_dragons": true,
       "hatchling_10kg_one_year_30_to_40kg": true,
@@ -244,11 +244,11 @@
     ]
   },
   "artifacts": {
-    "energy_budget": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_energy_budget.csv",
-    "area_requirements": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_area_requirements.csv",
-    "community_support": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_community_support.csv",
-    "climate_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_climate_sensitivity.csv",
-    "resource_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_resource_frontier.png",
-    "community_support_plot": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_community_support.png"
+    "energy_budget": "docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_energy_budget.csv",
+    "area_requirements": "docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_area_requirements.csv",
+    "community_support": "docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_community_support.csv",
+    "climate_sensitivity": "docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_climate_sensitivity.csv",
+    "resource_frontier": "docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_resource_frontier.png",
+    "community_support_plot": "docs/mcm-2015-2025/real_solutions/2019/MCM-A/artifacts/dragon_community_support.png"
   }
 }

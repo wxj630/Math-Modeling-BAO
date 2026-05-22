@@ -13,12 +13,12 @@
 ## 适配模型
 
 - 主模型：太阳高度角-方位角影子定位模型（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 几何解析与运动学参数方程（CH1）：直杆影长由太阳高度角决定，影尖方向由太阳方位角决定，是典型几何解析模型。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 数据拟合与回归分析（CH6）：附件影尖坐标需要与理论曲线拟合，并估计坐标轴旋转、比例和残差。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 时间序列预测（CH8）：未知日期和视频问题都依赖影尖随时间变化的序列特征。；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 几何解析与运动学参数方程（CH1）：直杆影长由太阳高度角决定，影尖方向由太阳方位角决定，是典型几何解析模型。；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：附件影尖坐标需要与理论曲线拟合，并估计坐标轴旋转、比例和残差。；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 时间序列预测（CH8）：未知日期和视频问题都依赖影尖随时间变化的序列特征。；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
 
 ## 变量、约束与公式
 
@@ -57,9 +57,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2015/A/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2015/A/q03/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2015/A/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2015/A/q03/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：分别读取附件2和附件3影尖坐标。
@@ -70,13 +70,13 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2015/A/q03/unknown_date_location_candidates.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2015/A/q03/unknown_date_best_fit_traces.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2015/A/q03/experiment_table.csv
+- cumcm/question_artifacts/2015/A/q03/unknown_date_location_candidates.csv
+- cumcm/question_artifacts/2015/A/q03/unknown_date_best_fit_traces.csv
+- cumcm/question_artifacts/2015/A/q03/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc
+- 附件：../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; ../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc; ../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls; ../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件4下载说明.doc
 - 读取规模：63 行 x 3 列
 - 说明：本题专用算法读取附件1-3影尖坐标，结合太阳赤纬、时差和高度角/方位角模型完成影长曲线、已知日期定位、未知日期定位；附件4当前只有下载说明，因此问题4输出视频处理流程和替代影尖序列实验。
 

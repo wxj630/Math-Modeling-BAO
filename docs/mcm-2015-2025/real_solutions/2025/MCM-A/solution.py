@@ -409,7 +409,7 @@ def build_report(result: dict[str, object]) -> None:
         f"- 判断：{result['daily_use_pattern']['short_burst_vs_long_duration']}。",
         "",
         "## 运行方式",
-        f"`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {Path(__file__).resolve()}`",
+        f"`.venv/bin/python {Path(__file__).resolve()}`",
     ]
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 

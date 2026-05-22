@@ -12,28 +12,28 @@
     "name": "图像文本与信号特征",
     "chapter": "CH10",
     "chapter_title": "图像、文本与信号数据",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
   },
   "candidate_models": [
     {
       "key": "signal",
       "name": "图像文本与信号特征",
       "chapter": "CH10",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
       "reason": "信号"
     },
     {
       "key": "ode",
       "name": "微分方程与动态仿真",
       "chapter": "CH2",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md",
       "reason": "传播"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 5,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv",
+    "path": "../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv",
     "rows": 2226,
     "columns": 4,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -74,7 +74,7 @@
       "name": "图像文本与信号特征",
       "chapter": "CH10",
       "chapter_title": "图像、文本与信号数据",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
     }
   },
   "experiment_result": {

@@ -3,8 +3,8 @@
   "title": "Fighting Wildfires",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
     "official_requirements": {
       "ssa_and_repeater_drone_mix": true,
       "balance_capability_safety_economics": true,
@@ -327,10 +327,10 @@
     ]
   },
   "artifacts": {
-    "drone_mix_optimization": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/drone_mix_optimization.csv",
-    "decade_cost_projection": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/decade_cost_projection.csv",
-    "repeater_location_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/repeater_location_plan.csv",
-    "annotated_budget_request": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/annotated_budget_request.csv",
-    "wildfire_budget_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/wildfire_budget_frontier.png"
+    "drone_mix_optimization": "docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/drone_mix_optimization.csv",
+    "decade_cost_projection": "docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/decade_cost_projection.csv",
+    "repeater_location_plan": "docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/repeater_location_plan.csv",
+    "annotated_budget_request": "docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/annotated_budget_request.csv",
+    "wildfire_budget_frontier": "docs/mcm-2015-2025/real_solutions/2021/MCM-B/artifacts/wildfire_budget_frontier.png"
   }
 }

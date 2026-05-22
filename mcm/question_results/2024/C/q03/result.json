@@ -6,7 +6,7 @@
   "methods": "以未来 8 分内强势头换向为标签，使用逻辑回归解释 `abs_momentum`、破发点、发球、速度、回合数和非受迫失误等因素。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis",
     "rows": {
       "2024_Wimbledon_featured_matches.csv": 7284,
       "2024_data_dictionary.csv": 46

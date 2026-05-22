@@ -6,8 +6,8 @@
   "methods": "保留相同成熟度刻度，将港口规模复杂度、客户可见性需求和卡车调度/遥测/交付证明数据替换为迁移参数。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
     "official_requirements": {
       "people_technology_process_metric": true,
       "icm_large_seaport_context": true,

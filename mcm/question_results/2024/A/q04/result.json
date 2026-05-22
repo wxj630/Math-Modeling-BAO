@@ -6,8 +6,8 @@
   "methods": "从宿主鱼、七鳃鳗寄生者、捕食者/人类食物资源三类受益方分析可变性别比稳定七鳃鳗丰度后的间接收益与代价。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
     "official_requirements": {
       "resource_dependent_lamprey_sex_ratio": true,
       "ecosystem_interactions": true,

@@ -3,9 +3,9 @@
   "title": "A Wealth of Data",
   "data_source": {
     "type": "official_comap_tsv_zip",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
-    "source_zip": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "source_zip": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
     "rows": {
       "hair_dryer.tsv": 11470,
       "microwave.tsv": 1615,
@@ -304,11 +304,11 @@
     ]
   },
   "artifacts": {
-    "product_review_measures": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/product_review_measures.csv",
-    "monthly_reputation_trends": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/monthly_reputation_trends.csv",
-    "text_descriptor_rating_lift": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/text_descriptor_rating_lift.csv",
-    "success_failure_signals": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/success_failure_signals.csv",
-    "star_rating_incitement": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/star_rating_incitement.csv",
-    "product_reputation_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/product_reputation_frontier.png"
+    "product_review_measures": "docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/product_review_measures.csv",
+    "monthly_reputation_trends": "docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/monthly_reputation_trends.csv",
+    "text_descriptor_rating_lift": "docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/text_descriptor_rating_lift.csv",
+    "success_failure_signals": "docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/success_failure_signals.csv",
+    "star_rating_incitement": "docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/star_rating_incitement.csv",
+    "product_reputation_frontier": "docs/mcm-2015-2025/real_solutions/2020/MCM-C/artifacts/product_reputation_frontier.png"
   }
 }

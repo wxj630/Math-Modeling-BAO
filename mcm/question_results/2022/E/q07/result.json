@@ -6,8 +6,8 @@
   "methods": "将同一碳账户和社会决策模型应用于温带混交林、松木生产林、老龄针叶林和干旱内陆松林。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "official_requirements": {
       "hundred_year_carbon_accounting": true,
       "forest_products_lifecycle": true,

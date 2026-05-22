@@ -3,8 +3,8 @@
   "title": "Time to leave the Louvre",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
     "official_requirements": {
       "five_floors": true,
       "two_underground_floors": true,
@@ -280,9 +280,9 @@
     ]
   },
   "artifacts": {
-    "baseline": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_evacuation_baseline.csv",
-    "bottlenecks": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_bottlenecks.csv",
-    "threat_scenarios": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_threat_scenarios.csv",
-    "evacuation_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_evacuation_frontier.png"
+    "baseline": "docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_evacuation_baseline.csv",
+    "bottlenecks": "docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_bottlenecks.csv",
+    "threat_scenarios": "docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_threat_scenarios.csv",
+    "evacuation_frontier": "docs/mcm-2015-2025/real_solutions/2019/ICM-D/artifacts/louvre_evacuation_frontier.png"
   }
 }

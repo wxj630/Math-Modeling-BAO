@@ -1,7 +1,7 @@
 # 2019 ICM-D Time to leave the Louvre
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre`.
 - No numeric COMAP attachment is supplied; this workflow uses official statement facts and explicit deterministic evacuation inputs.
 
 ## Model Summary

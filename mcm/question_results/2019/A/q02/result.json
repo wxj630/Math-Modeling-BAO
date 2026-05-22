@@ -6,8 +6,8 @@
   "methods": "用异速代谢基线叠加飞行、喷火、生长和创伤储备项，输出三条龙每日 kcal、猎物 kg 和饮水需求；所有质量和能量系数作为显式可替换假设。对应模型：异速生理模型、能量预算。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "official_requirements": {
       "three_living_dragons": true,
       "hatchling_10kg_one_year_30_to_40kg": true,

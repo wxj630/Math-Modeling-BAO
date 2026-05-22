@@ -3,8 +3,8 @@
   "title": "Data Paralysis? Use Our Analysis!",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
     "official_requirements": {
       "people_technology_process_metric": true,
       "icm_large_seaport_context": true,
@@ -369,9 +369,9 @@
     ]
   },
   "artifacts": {
-    "maturity_component_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/maturity_component_scores.csv",
-    "improvement_roadmap": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/improvement_roadmap.csv",
-    "port_scaling_scenarios": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/port_scaling_scenarios.csv",
-    "maturity_radar": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/maturity_radar.png"
+    "maturity_component_scores": "docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/maturity_component_scores.csv",
+    "improvement_roadmap": "docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/improvement_roadmap.csv",
+    "port_scaling_scenarios": "docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/port_scaling_scenarios.csv",
+    "maturity_radar": "docs/mcm-2015-2025/real_solutions/2022/ICM-D/artifacts/maturity_radar.png"
   }
 }

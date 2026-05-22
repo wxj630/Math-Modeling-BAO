@@ -6,8 +6,8 @@
   "methods": "把泡泡浴作为表面热阻/隔热因子，比较无泡沫、薄泡沫、中等泡沫和厚泡沫下的温度误差、空间温差和 comfort score。对应模型：边界热阻模型、情景分析、表面散热修正。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/A Hot Bath.pdf",
     "official_constraints": [
       "single faucet fills hot water",
       "simple bathtub without heater or circulating jets",

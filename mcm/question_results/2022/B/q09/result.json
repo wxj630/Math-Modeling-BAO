@@ -6,8 +6,8 @@
   "methods": "把串联系统、透明分配标准、Mexico/Gulf flow、短缺触发和季度重算写成面向美国西南水基础设施经理的文章。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
     "official_requirements": {
       "series_powell_mead_operations": true,
       "five_state_allocation": true,

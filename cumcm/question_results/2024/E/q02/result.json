@@ -12,35 +12,35 @@
     "name": "图论网络与路径调度",
     "chapter": "CH4",
     "chapter_title": "复杂网络与图论模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
   },
   "candidate_models": [
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "最大、配置"
     },
     {
       "key": "signal",
       "name": "图像文本与信号特征",
       "chapter": "CH10",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
       "reason": "信号"
     },
     {
       "key": "graph",
       "name": "图论网络与路径调度",
       "chapter": "CH4",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
       "reason": "交叉口"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 4,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
+    "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx; ../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件2.csv; ../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件3.pdf",
     "rows": 8844996,
     "columns": 4,
     "note": "本题专用算法分块读取附件2的884万条车辆记录，结合附件1方向/距离信息构建交通流量、信号配时、巡游车和管控效果摘要。"
@@ -84,7 +84,7 @@
       "name": "图论网络与路径调度",
       "chapter": "CH4",
       "chapter_title": "复杂网络与图论模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
     }
   },
   "experiment_result": {

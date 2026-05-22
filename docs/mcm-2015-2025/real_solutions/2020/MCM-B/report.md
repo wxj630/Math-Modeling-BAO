@@ -1,7 +1,7 @@
 # 2020 MCM-B The Longest Lasting Sandcastle(s)
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)`.
 - No COMAP numeric attachment is supplied; this workflow uses official statement constraints and explicit deterministic modeling inputs.
 
 ## Recommendation

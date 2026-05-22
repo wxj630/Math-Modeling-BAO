@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：轮廓仪点云分段拟合与自动标注（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 数据拟合与回归分析（CH6）：数据、参数、测量；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 几何解析与运动学参数方程（CH1）：圆、轮廓；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：数据、参数、测量；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 几何解析与运动学参数方程（CH1）：圆、轮廓；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
 
 ## 变量、约束与公式
 
@@ -48,9 +48,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/D/q04/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/D/q04/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2020/D/q04/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2020/D/q04/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取官方 Excel 附件中的 x-z 点列，并记录真实采样点数。
@@ -62,18 +62,18 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/measurement_tilts.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/reconstructed_full_profile.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/merged_contour_segments.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/workpiece2_profile_parameters.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/local_circle_refinement.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/local_angle_refinement.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/refined_profile_parameters.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/D/q04/experiment_table.csv
+- cumcm/question_artifacts/2020/D/q04/measurement_tilts.csv
+- cumcm/question_artifacts/2020/D/q04/reconstructed_full_profile.csv
+- cumcm/question_artifacts/2020/D/q04/merged_contour_segments.csv
+- cumcm/question_artifacts/2020/D/q04/workpiece2_profile_parameters.csv
+- cumcm/question_artifacts/2020/D/q04/local_circle_refinement.csv
+- cumcm/question_artifacts/2020/D/q04/local_angle_refinement.csv
+- cumcm/question_artifacts/2020/D/q04/refined_profile_parameters.csv
+- cumcm/question_artifacts/2020/D/q04/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件2_工件2的整体测量数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件3_工件2的局部测量数据（圆）.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件4_工件2的局部测量数据（角）.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件2_工件2的整体测量数据.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件3_工件2的局部测量数据（圆）.xlsx; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/D/附件4_工件2的局部测量数据（角）.xlsx
 - 读取规模：1502138 行 x 2 列
 - 说明：本题专用算法读取附件1-4的轮廓仪x-z点列，进行倾斜估计、水平校正、平滑分段、直线/圆弧拟合和局部测量修正。
 

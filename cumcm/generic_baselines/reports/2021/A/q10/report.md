@@ -11,7 +11,7 @@
 ## 通用模型选择
 
 - 模型：图论网络与路径调度（CH4：复杂网络与图论模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
 - 通用方法：`dijkstra_shortest_path`
 
 ## 变量、约束与公式
@@ -32,16 +32,16 @@
 
 ## 运行与产物
 
-- 通用代码：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2021/A/q10/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/solutions/2021/A/q10/solution.py`
-- 结果 JSON：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/results/2021/A/q10/result.json
-- 实验报告：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/reports/2021/A/q10/report.md
-- 实验产物：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/generic_baselines/artifacts/2021/A/q10/experiment_table.csv
+- 通用代码：cumcm/generic_baselines/solutions/2021/A/q10/solution.py
+- 单问运行：`.venv/bin/python cumcm/generic_baselines/solutions/2021/A/q10/solution.py`
+- 结果 JSON：cumcm/generic_baselines/results/2021/A/q10/result.json
+- 实验报告：cumcm/generic_baselines/reports/2021/A/q10/report.md
+- 实验产物：cumcm/generic_baselines/artifacts/2021/A/q10/experiment_table.csv
 
 ## 数据来源
 
 - 类型：attachment
-- 路径：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv
+- 路径：../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/A/附件1.csv
 - 说明：本问优先使用官方附件中的数值表生成实验结果。
 
 ## 核心结果

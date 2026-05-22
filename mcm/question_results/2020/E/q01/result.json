@@ -6,8 +6,8 @@
   "methods": "使用官方 9% recycling、4-12 million tons ocean input 等题面数字，按区域 waste、single-use share、mitigation capacity 和 policy capacity 估算安全处理容量和溢出。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
     "official_requirements": {
       "safe_mitigation_capacity_model": true,
       "reduce_to_environmentally_safe_level": true,

@@ -1,7 +1,7 @@
 # 2021 ICM-E Re-Optimizing Food Systems
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems`.
 - No COMAP numeric attachment is supplied; this workflow uses official statement parameters and explicit deterministic planning inputs.
 
 ## Model Summary

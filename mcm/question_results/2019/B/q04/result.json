@@ -6,8 +6,8 @@
   "methods": "按 payload、range、video 和 cargo bay compatibility 给每类入选 drone 分配医疗、快速小包、重载或持续观察角色。对应模型：任务分配、能力矩阵。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "official_requirements": {
       "puerto_rico_hurricane_scenario": true,
       "candidate_drone_attachment_table": true,

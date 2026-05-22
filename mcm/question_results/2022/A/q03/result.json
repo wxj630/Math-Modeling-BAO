@@ -6,8 +6,8 @@
   "methods": "在同一逐段功率计划下枚举顺风、静风和逆风，把风速按赛段暴露系数折算到空气阻力项，输出完赛时间变化。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
     "official_requirements": {
       "two_rider_types_and_genders": true,
       "tokyo_olympic_time_trial_course": true,

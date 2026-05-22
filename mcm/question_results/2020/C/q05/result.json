@@ -6,9 +6,9 @@
   "methods": "把最可信建议压缩为 low-star share、helpfulness-weighted review length 和 descriptor lift 的上市后监测方案。",
   "data_source": {
     "type": "official_comap_tsv_zip",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
-    "source_zip": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "source_zip": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
     "rows": {
       "hair_dryer.tsv": 11470,
       "microwave.tsv": 1615,

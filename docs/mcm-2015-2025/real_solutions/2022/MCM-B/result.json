@@ -3,8 +3,8 @@
   "title": "Water and Hydroelectric Power Sharing",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
     "official_requirements": {
       "series_powell_mead_operations": true,
       "five_state_allocation": true,
@@ -449,10 +449,10 @@
     ]
   },
   "artifacts": {
-    "reservoir_allocation_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/reservoir_allocation_plan.csv",
-    "state_sector_allocations": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/state_sector_allocations.csv",
-    "shortage_response_scenarios": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/shortage_response_scenarios.csv",
-    "demand_change_scenarios": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/demand_change_scenarios.csv",
-    "reservoir_allocation_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/reservoir_allocation_frontier.png"
+    "reservoir_allocation_plan": "docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/reservoir_allocation_plan.csv",
+    "state_sector_allocations": "docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/state_sector_allocations.csv",
+    "shortage_response_scenarios": "docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/shortage_response_scenarios.csv",
+    "demand_change_scenarios": "docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/demand_change_scenarios.csv",
+    "reservoir_allocation_frontier": "docs/mcm-2015-2025/real_solutions/2022/MCM-B/artifacts/reservoir_allocation_frontier.png"
   }
 }

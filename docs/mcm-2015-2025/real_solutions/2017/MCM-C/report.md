@@ -1,8 +1,8 @@
 # 2017 MCM-C Cooperate and Navigate：官方交通 workbook 实验报告
 
 ## 数据来源
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf`。
-- 官方 workbook：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf`。
+- 官方 workbook：`docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx`。
 - `parsed mile posts` 行数：224。
 - `definitions` 行数：8。
 - 本实验不使用随机生成的 x1/x2/x3 数据；10%、50%、90% 是题目要求讨论的自动驾驶渗透率情景。

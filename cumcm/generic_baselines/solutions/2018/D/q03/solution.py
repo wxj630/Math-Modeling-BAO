@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2018-D",
   "question_index": 3,
   "title": "2018年 CUMCM D题：汽车总装线的配置",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2018/D.md",
+  "problem_path": "cumcm/problems/2018/D.md",
   "question": {
     "label": "问题 1",
     "statement": "每天白班和晚班都是按照先A1后A2的品牌顺序，装配当天两种品牌各一半数量的汽车。如9月17日需装配的A1和A2的汽车分别为364和96辆，则该日每班首先装配182辆A1汽车，随后装配48辆A2汽车。",
@@ -42,20 +42,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
       "name": "CUMCM-2018-Problem-D-Chinese-Appendix.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 135903,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-problem-D-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-D-Chinese/CUMCM-2018-problem-D-Chinese.docx",
       "name": "CUMCM-2018-problem-D-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 30849,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -94,7 +94,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

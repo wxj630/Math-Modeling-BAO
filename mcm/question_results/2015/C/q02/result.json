@@ -6,7 +6,7 @@
   "methods": "把官方 18% 年流失率和中层高流失描述转化为确定性层级流失风险，叠加网络影响、职业阻塞和 salary-sigma 加权生产率损失；所有非题面系数写入 assumption_audit。对应模型：Markov 人员流动、网络影响扩散、生产率损失函数。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "parameters": {
       "total_positions": 370,
       "seven_person_departments": 46,

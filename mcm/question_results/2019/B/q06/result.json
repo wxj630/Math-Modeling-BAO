@@ -6,8 +6,8 @@
   "methods": "把 PR-3、PR-52、PR-22 和 San Juan metro hospital ring 作为视频侦察走廊，安排 video-capable drones 在医疗波次之间巡检。对应模型：覆盖路径规划、侦察调度。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "official_requirements": {
       "puerto_rico_hurricane_scenario": true,
       "candidate_drone_attachment_table": true,

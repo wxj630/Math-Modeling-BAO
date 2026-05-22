@@ -6,8 +6,8 @@
   "methods": "为每个医院需求行选择最近 staging base 和合适 drone type，计算 round-trip km、sortie minutes 和 morning/midday/afternoon schedule block。对应模型：车辆路径近似、日程调度。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "official_requirements": {
       "puerto_rico_hurricane_scenario": true,
       "candidate_drone_attachment_table": true,

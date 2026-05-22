@@ -6,8 +6,8 @@
   "methods": "用 human rights gain、culture gain、choice protection 和 cost difficulty 对政策排序，并用平均文化风险下降检验政策组合。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "official_requirements": {
       "edp_scope_and_culture_risk": true,
       "human_rights_and_cultural_preservation_policies": true,

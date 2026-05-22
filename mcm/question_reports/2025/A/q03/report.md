@@ -8,7 +8,7 @@ How many people used the stairs simultaneously? For example, did pairs of people
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted`。
 - 行数/记录数：{'official_parameters': 3}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -16,7 +16,7 @@ How many people used the stairs simultaneously? For example, did pairs of people
 
 ### 非破坏测量方案
 - 原则：non_destructive, low_cost, small_team_minimal_tools。
-- 测量模板：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv`。
+- 测量模板：`docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv`。
 
 #### 推荐字段
 
@@ -57,9 +57,9 @@ How many people used the stairs simultaneously? For example, did pairs of people
 - `worked_example_assumptions` 只是展示考古队填完非破坏测量表后如何反演；正式论文应把现场测量值替换进模板，并对材料磨损系数做来源校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2025/A/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2025/A/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2025/A/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2025/A/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2025/A/q03`
+- `mcm/question_results/2025/A/q03/result.json`
+- `mcm/question_reports/2025/A/q03/report.md`
+- `mcm/question_artifacts/2025/A/q03`

@@ -6,8 +6,8 @@
   "methods": "触发短缺协议：居民优先、农业/工业分摊缺口、Mexico flow 保护、水电缺口用可再生替代和需求响应处理。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
     "official_requirements": {
       "series_powell_mead_operations": true,
       "five_state_allocation": true,

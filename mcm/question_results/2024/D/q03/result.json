@@ -6,7 +6,7 @@
   "methods": "用官方月度流量和下一月水位变化做经验响应拟合，并对 2017 年实际水位 stakeholder cost 与建议控制幅度进行评估。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
     "records": 2548,
     "level_records": 1380,
     "flow_records": 1168,

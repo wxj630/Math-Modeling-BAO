@@ -12,28 +12,28 @@
     "name": "几何解析与运动学参数方程",
     "chapter": "CH1",
     "chapter_title": "解析方法与几何模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
   },
   "candidate_models": [
     {
       "key": "geometry",
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
       "reason": "角度、形状"
     },
     {
       "key": "graph",
       "name": "图论网络与路径调度",
       "chapter": "CH4",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
       "reason": "节点"
     }
   ],
   "data_source": {
     "source_type": "problem_statement",
     "attachment_count": 8,
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2016/A.md",
+    "path": "cumcm/problems/2016/A.md",
     "rows": 20,
     "columns": 15,
     "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
@@ -73,7 +73,7 @@
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
       "chapter_title": "解析方法与几何模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
     }
   },
   "experiment_result": {

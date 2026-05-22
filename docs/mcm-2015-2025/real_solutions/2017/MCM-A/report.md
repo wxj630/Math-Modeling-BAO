@@ -1,7 +1,7 @@
 # 2017 MCM-A Managing The Zambezi River 题面参数实验报告
 
 ## 数据来源
-- 官方 PDF：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf`。
+- 官方 PDF：`docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf`。
 - 官方题面参数：三种方案；Option 3 必须移除 Kariba 并用 10-20 座较小水坝替代；新系统需具有与 Kariba 相同或更高的总体水量管理能力。
 - 本题没有独立 CSV/XLSX 附件；成本、坝址坐标、容量和流量指数都是显式可替换规划假设。
 
@@ -23,10 +23,10 @@ ZRA asked for a two-page comparison of repairing Kariba, rebuilding Kariba, and 
 - 暴露限制河段数：5。
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/result.json
-- `option_assessment.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/option_assessment.csv
-- `dam_placement_plan.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/dam_placement_plan.csv
-- `flow_modulation_policy.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/flow_modulation_policy.csv
-- `extreme_flow_guidance.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/extreme_flow_guidance.csv
-- `exposure_restrictions.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/exposure_restrictions.csv
-- `dam_system_frontier.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/dam_system_frontier.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/result.json
+- `option_assessment.csv`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/option_assessment.csv
+- `dam_placement_plan.csv`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/dam_placement_plan.csv
+- `flow_modulation_policy.csv`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/flow_modulation_policy.csv
+- `extreme_flow_guidance.csv`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/extreme_flow_guidance.csv
+- `exposure_restrictions.csv`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/exposure_restrictions.csv
+- `dam_system_frontier.png`：docs/mcm-2015-2025/real_solutions/2017/MCM-A/artifacts/dam_system_frontier.png

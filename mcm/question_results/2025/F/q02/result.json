@@ -6,8 +6,8 @@
   "methods": "构建透明政策特征矩阵：法律框架、国家战略、强制报告、事件响应、能力建设和国际合作；用 ITU GCI 框架验证而不新造网络安全指数。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
     "official_requirements": {
       "use_existing_cybersecurity_measures": true,
       "do_not_create_new_cybersecurity_index": true,

@@ -6,8 +6,8 @@
   "methods": "在五年步长上寻找 habitat center 超出 small boat range 的首次年份，输出 best/worst/most_likely elapsed times。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/Moving North",
     "official_requirements": {
       "scottish_herring_and_mackerel": true,
       "fifty_year_forecast": true,

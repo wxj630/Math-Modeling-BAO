@@ -8,7 +8,7 @@ Include a one-page letter to a farmer who is exploring organic farming practices
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted`。
 - 行数/记录数：{'official_parameters': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -59,9 +59,9 @@ COMAP ecosystem modeling team
 - 情景参数、经济指数和系统动力学系数是显式假设；正式论文应补充本地作物、害虫监测、土壤检测、投入成本和有机溢价数据进行校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2025/E/q06/solution.py`
+`.venv/bin/python mcm/question_solutions/2025/E/q06/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2025/E/q06/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2025/E/q06/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2025/E/q06`
+- `mcm/question_results/2025/E/q06/result.json`
+- `mcm/question_reports/2025/E/q06/report.md`
+- `mcm/question_artifacts/2025/E/q06`

@@ -3,8 +3,8 @@
   "title": "Reducing Illegal Wildlife Trade",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
     "official_requirements": {
       "select_client": true,
       "realistic_client_action": true,
@@ -423,11 +423,11 @@
   },
   "client_memo": "Memo to the World Customs Organization coordinated customs task force: adopt this 5-year corridor disruption project because illegal wildlife trade is valued up to 26.5 billion USD per year and is the fourth largest illegal trade. The program uses customs risk scoring, shared intelligence, platform takedowns, financial-flow screening, and community incentives to produce a measurable 33.83% reduction versus the no-project trajectory by year 5.",
   "artifacts": {
-    "client_project_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/client_project_scores.csv",
-    "resource_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/resource_plan.csv",
-    "intervention_impact_projection": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/intervention_impact_projection.csv",
-    "sensitivity_analysis": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/sensitivity_analysis.csv",
-    "complex_system_edges": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/complex_system_edges.csv",
-    "wildlife_trade_project_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/wildlife_trade_project_frontier.png"
+    "client_project_scores": "docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/client_project_scores.csv",
+    "resource_plan": "docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/resource_plan.csv",
+    "intervention_impact_projection": "docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/intervention_impact_projection.csv",
+    "sensitivity_analysis": "docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/sensitivity_analysis.csv",
+    "complex_system_edges": "docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/complex_system_edges.csv",
+    "wildlife_trade_project_frontier": "docs/mcm-2015-2025/real_solutions/2024/ICM-F/artifacts/wildlife_trade_project_frontier.png"
   }
 }

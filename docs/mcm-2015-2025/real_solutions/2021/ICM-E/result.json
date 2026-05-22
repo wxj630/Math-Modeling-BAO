@@ -3,8 +3,8 @@
   "title": "Re-Optimizing Food Systems",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
     "official_requirements": {
       "optimize_efficiency_profitability_sustainability_equity": true,
       "developed_and_developing_country_applications": true,
@@ -356,12 +356,12 @@
     ]
   },
   "artifacts": {
-    "food_system_priority_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_priority_scores.csv",
-    "country_food_system_applications": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/country_food_system_applications.csv",
-    "food_system_transition_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_transition_plan.csv",
-    "food_system_benefit_cost": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_benefit_cost.csv",
-    "food_system_priority_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_priority_frontier.png",
-    "country_food_system_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/country_food_system_scores.png",
+    "food_system_priority_scores": "docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_priority_scores.csv",
+    "country_food_system_applications": "docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/country_food_system_applications.csv",
+    "food_system_transition_plan": "docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_transition_plan.csv",
+    "food_system_benefit_cost": "docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_benefit_cost.csv",
+    "food_system_priority_frontier": "docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/food_system_priority_frontier.png",
+    "country_food_system_scores": "docs/mcm-2015-2025/real_solutions/2021/ICM-E/artifacts/country_food_system_scores.png",
     "transition_rows": 15,
     "benefit_cost_rows": 5
   }

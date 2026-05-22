@@ -1,7 +1,7 @@
 # 2019 ICM-E What is the Cost of Environmental Degradation?
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-`.
 - No numeric COMAP attachment is supplied; this workflow uses official statement categories and explicit deterministic valuation inputs.
 
 ## Model Summary

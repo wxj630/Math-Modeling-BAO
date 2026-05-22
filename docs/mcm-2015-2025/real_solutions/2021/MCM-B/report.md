@@ -1,7 +1,7 @@
 # 2021 MCM-B Fighting Wildfires
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires`。
+- 官方来源：`docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires`。
 - 本题无 COMAP 数值附件；脚本只使用官方题面中的无人机、无线电和任务参数，以及显式确定性火场情景。
 
 ## 推荐装备组合

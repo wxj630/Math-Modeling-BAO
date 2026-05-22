@@ -3,8 +3,8 @@
   "title": "Searching for Submersibles",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
     "official_requirements": {
       "loss_of_communication": true,
       "possible_loss_of_propulsion": true,
@@ -358,9 +358,9 @@
     ]
   },
   "artifacts": {
-    "position_uncertainty": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/position_uncertainty.csv",
-    "equipment_tradeoffs": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/equipment_tradeoffs.csv",
-    "search_probability": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/search_probability.csv",
-    "search_plan": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/search_plan.png"
+    "position_uncertainty": "docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/position_uncertainty.csv",
+    "equipment_tradeoffs": "docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/equipment_tradeoffs.csv",
+    "search_probability": "docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/search_probability.csv",
+    "search_plan": "docs/mcm-2015-2025/real_solutions/2024/MCM-B/artifacts/search_plan.png"
   }
 }

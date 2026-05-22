@@ -6,8 +6,8 @@
   "methods": "给出石材/木材的非破坏材料代理测量流程：硬度、密度、纹理、工具痕和反推磨损系数必须与候选采石场或木材参考范围重叠。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "official_requirements": {
       "non_destructive": true,
       "low_cost": true,
@@ -124,6 +124,6 @@
         "tool": "visual inspection + raking-light photo"
       }
     ],
-    "measurement_template": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
+    "measurement_template": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
   }
 }

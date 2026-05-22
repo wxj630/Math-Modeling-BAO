@@ -6,8 +6,8 @@
   "methods": "把横截面磨损剖面拆成中心带和左右侧带，使用侧带/中心磨损比估计 single-file、side-by-side 或 mixed 的同时使用模式。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_A.pdf",
     "official_requirements": {
       "non_destructive": true,
       "low_cost": true,
@@ -104,7 +104,7 @@
         "tool": "visual inspection + raking-light photo"
       }
     ],
-    "measurement_template": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
+    "measurement_template": "docs/mcm-2015-2025/real_solutions/2025/MCM-A/artifacts/measurement_template.csv"
   },
   "inverse_wear_model": {
     "usage_frequency": {

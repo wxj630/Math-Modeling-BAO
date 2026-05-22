@@ -8,7 +8,7 @@ In your chosen region, use your model to show what the water situation will be i
 
 ## 数据与真实性
 - 数据类型：official_pdf_and_world_bank_csv。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet`。
 - 行数/记录数：{'world_bank_jordan_water_indicators.csv': 528}。
 - 本脚本只使用 COMAP 官方 PDF、题面推荐的 World Bank 官方公共数据和显式规划假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -51,9 +51,9 @@ In your chosen region, use your model to show what the water situation will be i
 - 干预效果、成本和年度降压百分点是显式规划假设，不是历史因果估计；正式论文应补充流域水文、月度供水、地下水、漏损、价格和项目成本数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2016/E/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2016/E/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2016/E/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2016/E/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2016/E/q03`
+- `mcm/question_results/2016/E/q03/result.json`
+- `mcm/question_reports/2016/E/q03/report.md`
+- `mcm/question_artifacts/2016/E/q03`

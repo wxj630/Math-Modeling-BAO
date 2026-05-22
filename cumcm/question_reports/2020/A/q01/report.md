@@ -14,12 +14,12 @@
 ## 适配模型
 
 - 主模型：回焊炉温度曲线机理模型与制程优化（CH2：微分方程与动力系统）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
 
 ### 候选模型与适配理由
-- 微分方程与动态仿真（CH2）：温度、变化规律、炉温；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
-- 几何解析与运动学参数方程（CH1）：速度；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 数据拟合与回归分析（CH6）：曲线；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 微分方程与动态仿真（CH2）：温度、变化规律、炉温；参考 ../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
+- 几何解析与运动学参数方程（CH1）：速度；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：曲线；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -59,9 +59,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/A/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2020/A/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2020/A/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2020/A/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件.xlsx实测炉温曲线，用实验设定175/195/235/255摄氏度和70 cm/min标定tau。
@@ -72,13 +72,13 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/A/q01/reflow_curve.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/A/q01/process_metrics.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2020/A/q01/result_filled.csv
+- cumcm/question_artifacts/2020/A/q01/reflow_curve.csv
+- cumcm/question_artifacts/2020/A/q01/process_metrics.csv
+- cumcm/question_artifacts/2020/A/q01/result_filled.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/result.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/附件.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/result.csv; ../../Documents/Playground/cumcm_unzipped/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/A/附件.xlsx
 - 读取规模：709 行 x 2 列
 - 说明：本题专用算法读取附件.xlsx的实测炉温曲线标定一阶热惯性模型，并按result.csv模板输出0.5秒采样的炉温曲线。
 

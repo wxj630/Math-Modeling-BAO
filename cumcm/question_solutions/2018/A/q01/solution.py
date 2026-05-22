@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2018-A",
   "title": "2018年 CUMCM A题：高温作业专用服装设计",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2018/A.md",
+  "problem_path": "cumcm/problems/2018/A.md",
   "question_index": 1,
   "question": {
     "label": "问题 2",
@@ -41,20 +41,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
       "name": "CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
       "suffix": ".xlsx",
       "kind": "data",
       "size_bytes": 79229,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx",
       "name": "CUMCM-2018-Problem-A-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 27099,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }

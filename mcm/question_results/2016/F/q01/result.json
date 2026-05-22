@@ -6,8 +6,8 @@
   "methods": "只使用官方题面中的 715,000+ 庇护申请、Hungary 1,450/100k、2014 年 32% 批准率和六条路线，构造可启用/抑制安全高效流动的因素列表与 route/resource/capacity 指标。对应模型：指标体系、多指标综合评价、容量约束建模。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
     "official_problem_parameters": {
       "asylum_applications_by_oct_2015": 715000,
       "hungary_applications_per_100k": 1450,

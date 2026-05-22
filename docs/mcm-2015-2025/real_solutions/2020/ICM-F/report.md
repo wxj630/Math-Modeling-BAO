@@ -1,7 +1,7 @@
 # 2020 ICM-F The Place I Called Home...
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...`.
 - No COMAP numeric attachment is supplied; this workflow uses official statement requirements and explicit deterministic planning inputs.
 
 ## Model Summary

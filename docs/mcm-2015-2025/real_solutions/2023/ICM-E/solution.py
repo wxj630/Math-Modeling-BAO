@@ -243,7 +243,7 @@ def write_report(result: dict[str, object]) -> None:
         "## Metric",
         f"- Scale: {metric['scale']}.",
         f"- Formula: {metric['formula']}.",
-        "- Tutorial model references: comprehensive evaluation, sensitivity analysis, and policy optimization from `/Users/wuxiaojun/code/My-Agent/intro-mathmodel`.",
+        "- Tutorial model references: comprehensive evaluation, sensitivity analysis, and policy optimization from `../My-Agent/intro-mathmodel`.",
         "",
         "## Flyer",
         result["promotion_flyer"],

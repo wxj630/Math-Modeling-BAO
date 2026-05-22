@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：颜色读数与物质浓度辨识模型（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 数据拟合与回归分析（CH6）：数据、分析；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 概率统计与抽样检验（CH9）：误差；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 数据拟合与回归分析（CH6）：数据、分析；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 概率统计与抽样检验（CH9）：误差；参考 ../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
 
 ## 变量、约束与公式
 
@@ -46,9 +46,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/C/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/C/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2017/C/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2017/C/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：清洗Data1/Data2，前向填充物质名和浓度，水样转为0ppm。
@@ -59,14 +59,14 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/C/q02/data2_prediction_errors.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/C/q02/data2_error_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/C/q02/data2_feature_coefficients.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/C/q02/experiment_table.csv
+- cumcm/question_artifacts/2017/C/q02/data2_prediction_errors.csv
+- cumcm/question_artifacts/2017/C/q02/data2_error_summary.csv
+- cumcm/question_artifacts/2017/C/q02/data2_feature_coefficients.csv
+- cumcm/question_artifacts/2017/C/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data1.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data2.xls
+- 附件：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data1.xls; ../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data2.xls
 - 读取规模：73 行 x 7 列
 - 说明：本题专用算法读取Data1的5种物质多浓度颜色读数和Data2二氧化硫重复测量数据，完成可辨识性排序、浓度预测模型和误差分析。
 

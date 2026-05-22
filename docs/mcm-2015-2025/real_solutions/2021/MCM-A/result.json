@@ -3,8 +3,8 @@
   "title": "Fungi",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Fungi",
     "official_requirements": {
       "growth_rate_and_moisture_tolerance_traits": true,
       "multi_species_interactions": true,
@@ -689,12 +689,12 @@
     ]
   },
   "artifacts": {
-    "fungal_trait_table": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungal_trait_table.csv",
-    "fungal_environment_trajectories": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungal_environment_trajectories.csv",
-    "decomposition_environment_results": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/decomposition_environment_results.csv",
-    "environmental_variability_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/environmental_variability_sensitivity.csv",
-    "persistence_predictions": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/persistence_predictions.csv",
-    "biodiversity_sensitivity": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/biodiversity_sensitivity.csv",
-    "fungi_decomposition_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungi_decomposition_frontier.png"
+    "fungal_trait_table": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungal_trait_table.csv",
+    "fungal_environment_trajectories": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungal_environment_trajectories.csv",
+    "decomposition_environment_results": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/decomposition_environment_results.csv",
+    "environmental_variability_sensitivity": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/environmental_variability_sensitivity.csv",
+    "persistence_predictions": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/persistence_predictions.csv",
+    "biodiversity_sensitivity": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/biodiversity_sensitivity.csv",
+    "fungi_decomposition_frontier": "docs/mcm-2015-2025/real_solutions/2021/MCM-A/artifacts/fungi_decomposition_frontier.png"
   }
 }

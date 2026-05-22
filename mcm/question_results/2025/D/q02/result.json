@@ -6,7 +6,7 @@
   "methods": "用官方公交站客流、候车亭字段和最近驾车节点，筛选高客流无候车亭站点，形成公交站安全与可达性升级项目。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
     "rows": {
       "edges_drive.csv": 91227,
       "nodes_drive.csv": 37163,

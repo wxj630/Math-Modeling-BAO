@@ -8,7 +8,7 @@ Using your model, what would constitute evidence that the pest has been eradicat
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data`。
 - 行数/记录数：{'2021MCMProblemC_DataSet.xlsx': 4440, '2021MCM_ProblemC_ Images_by_GlobalID.xlsx': 3305}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -54,9 +54,9 @@ Using your model, what would constitute evidence that the pest has been eradicat
 - Positive ID 只有 14 条，因此分类留出指标不应被解释成根除证明；正式论文应补充主动诱捕、搜巢、季节性监测和实验室复核记录。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2021/C/q05/solution.py`
+`.venv/bin/python mcm/question_solutions/2021/C/q05/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2021/C/q05/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2021/C/q05/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2021/C/q05`
+- `mcm/question_results/2021/C/q05/result.json`
+- `mcm/question_reports/2021/C/q05/report.md`
+- `mcm/question_artifacts/2021/C/q05`

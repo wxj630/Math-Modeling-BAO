@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2014-D",
   "question_index": 2,
   "title": "2014年 CUMCM D题：储药柜的设计",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/D.md",
+  "problem_path": "cumcm/problems/2014/D.md",
   "question": {
     "label": "问题 2",
     "statement": "药盒与两侧竖向隔板之间的间隙超出2mm的部分可视为宽度冗余。增加竖向隔板的间距类型数量可以有效地减少宽度冗余，但会增加储药柜的加工成本，同时降低了储药槽的适应能力。设计时希望总宽度冗余尽可能小，同时也希望间距的类型数量尽可能少。仍利用附件1的数据，给出合理的竖向隔板间距类型的数量以及每种类型对应的药品编号。",
@@ -43,52 +43,52 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
       "name": "CUMCM-2014D-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 524288,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
       "name": "附件1-药盒型号.xls",
       "suffix": ".xls",
       "kind": "data",
       "size_bytes": 125952,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls",
       "name": "附件2-药品需求量.xls",
       "suffix": ".xls",
       "kind": "data",
       "size_bytes": 97792,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc",
       "name": "CUMCM-2014D-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 524288,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls",
       "name": "附件1-药盒型号.xls",
       "suffix": ".xls",
       "kind": "data",
       "size_bytes": 125952,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls",
       "name": "附件2-药品需求量.xls",
       "suffix": ".xls",
       "kind": "data",
       "size_bytes": 97792,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -127,7 +127,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

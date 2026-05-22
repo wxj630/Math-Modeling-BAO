@@ -6,7 +6,7 @@
   "methods": "用偏离分月目标带的高水位/月低水位月数、平均 stakeholder cost 和最大偏离量作为环境冲击敏感性指标。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
     "records": 2548,
     "level_records": 1380,
     "flow_records": 1168,

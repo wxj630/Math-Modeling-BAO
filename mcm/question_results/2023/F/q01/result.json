@@ -6,8 +6,8 @@
   "methods": "把官方题面列出的经济、土地利用、人类满意度、旅行、未来改进、主办声望和体育团结转成 7 维权重指标，并写入可审计 metric framework。对应模型：多指标评价、权重评分、政策指标体系。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
     "official_requirements": {
       "impact_dimensions": [
         "economic",

@@ -6,7 +6,7 @@
   "methods": "把人力资本网络扩展为信息流、信任、影响力、友谊和培训依赖的 multiplex 网络，用跨层中心性识别关键员工和关键岗位。对应模型：团队科学、多层网络、multiplex centrality、组织网络分析。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "parameters": {
       "total_positions": 370,
       "seven_person_departments": 46,

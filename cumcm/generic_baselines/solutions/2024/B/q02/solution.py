@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2024-B",
   "question_index": 2,
   "title": "2024年 CUMCM B题：生产过程中的决策",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/B.md",
+  "problem_path": "cumcm/problems/2024/B.md",
   "question": {
     "label": "问题 2",
     "statement": "已知两种零配件和成品次品率，请为企业生产过程的各个阶段作出决策： (1) 对零配件（零配件 1 和/或零配件 2）是否进行检测，如果对某种零配件不检测，这 种零配件将直接进入到装配环节；否则将检测出的不合格零配件丢弃； (2) 对装配好的每一件成品是否进行检测， 如果不检测， 装配后的成品直接进入到市场； 否则只有检测合格的成品进入到市场； (3) 对检测出的不合格成品是否进行拆解，如果不拆解，直接将不合格成品丢弃；否则 对拆解后的零配件，重复步骤(1)和步骤(2)； (4) 对用户购买的不合格品，企业将无条件予以调换，并产生一定的调换损失（如物流 成本、企业信誉等）。对退回的不合格品，重复步骤(3)。 请根据你们所做的决策， 对表 1 中的情形给出具体的决策方案，并给出决策的依据及相 应的指标结果。",
@@ -51,12 +51,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/B题/B题.pdf",
       "name": "B题.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 636910,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -95,7 +95,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

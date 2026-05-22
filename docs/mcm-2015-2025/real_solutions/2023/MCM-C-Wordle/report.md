@@ -1,7 +1,7 @@
 # 2023 MCM-C Wordle 真实数据实验报告
 
 ## 数据来源
-- 官方附件：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx`。
+- 官方附件：`docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx`。
 - 清洗后记录数：359，日期范围：2022-01-07 到 2022-12-31。
 - 读取字段包括日期、比赛编号、答案词、报告人数、困难模式人数和 1/2/3/4/5/6/X 百分比分布。
 
@@ -48,8 +48,8 @@ Sincerely,
 MCM modeling team
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/result.json
-- `wordle_clean_data.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/wordle_clean_data.csv
-- `eerie_prediction.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/eerie_prediction.csv
-- `reported_results_forecast.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/reported_results_forecast.png
-- `eerie_distribution.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/eerie_distribution.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/result.json
+- `wordle_clean_data.csv`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/wordle_clean_data.csv
+- `eerie_prediction.csv`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/eerie_prediction.csv
+- `reported_results_forecast.png`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/reported_results_forecast.png
+- `eerie_distribution.png`：docs/mcm-2015-2025/real_solutions/2023/MCM-C-Wordle/artifacts/eerie_distribution.png

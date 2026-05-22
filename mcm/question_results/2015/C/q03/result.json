@@ -6,7 +6,7 @@
   "methods": "按官方每层招聘时间、招聘成本、人数、工资和年度培训成本，计算两年内替换预计离职人员并恢复 15% 空缺所需的招聘 sigma、培训 sigma 和总 sigma。对应模型：预算预测、招聘容量模型、培训成本模型。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf",
     "parameters": {
       "total_positions": 370,
       "seven_person_departments": 46,

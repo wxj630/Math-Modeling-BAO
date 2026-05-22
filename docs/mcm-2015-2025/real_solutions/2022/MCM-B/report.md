@@ -1,7 +1,7 @@
 # 2022 MCM-B Water and Hydroelectric Power Sharing
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing`。
+- 官方来源：`docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing`。
 - 本题无 COMAP 数值附件；脚本只使用官方题面约束和透明确定性水库/需求场景，不使用随机占位数据。
 
 ## 水库串联系统

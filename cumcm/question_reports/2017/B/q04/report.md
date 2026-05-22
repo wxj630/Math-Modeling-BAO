@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：众包任务地理供需定价与完成概率模型（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 几何解析与运动学参数方程（CH1）：位置；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 综合评价与权重决策（CH7）：比较；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
+- 几何解析与运动学参数方程（CH1）：位置；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 综合评价与权重决策（CH7）：比较；参考 ../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
 
 ## 变量、约束与公式
 
@@ -49,9 +49,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/B/q04/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/B/q04/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2017/B/q04/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2017/B/q04/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件一历史任务、附件二会员和附件三新任务，并清洗GPS坐标。
@@ -63,19 +63,19 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/historical_task_features.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/unfinished_reason_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/repricing_scheme.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/pricing_comparison.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/bundle_pricing.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/new_project_pricing.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/new_project_effect_evaluation.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/completion_model_coefficients.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/B/q04/experiment_table.csv
+- cumcm/question_artifacts/2017/B/q04/historical_task_features.csv
+- cumcm/question_artifacts/2017/B/q04/unfinished_reason_summary.csv
+- cumcm/question_artifacts/2017/B/q04/repricing_scheme.csv
+- cumcm/question_artifacts/2017/B/q04/pricing_comparison.csv
+- cumcm/question_artifacts/2017/B/q04/bundle_pricing.csv
+- cumcm/question_artifacts/2017/B/q04/new_project_pricing.csv
+- cumcm/question_artifacts/2017/B/q04/new_project_effect_evaluation.csv
+- cumcm/question_artifacts/2017/B/q04/completion_model_coefficients.csv
+- cumcm/question_artifacts/2017/B/q04/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件三：新项目任务数据.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls; ../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件三：新项目任务数据.xls; ../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx
 - 读取规模：4778 行 x 5 列
 - 说明：本题专用算法读取历史任务、会员信息和新项目任务，构建地理供需特征、完成概率模型、重定价方案、打包聚类和新项目定价评估。
 

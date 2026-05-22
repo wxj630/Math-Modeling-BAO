@@ -6,8 +6,8 @@
   "methods": "Evaluate initiative gains against the same auditable metric, then stress the selected city plans under the official 2050 plus-50-percent growth condition.",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
     "official_requirements": {
       "two_mid_sized_cities": true,
       "different_continents": true,

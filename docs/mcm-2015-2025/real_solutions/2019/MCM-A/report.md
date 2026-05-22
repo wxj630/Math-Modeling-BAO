@@ -1,7 +1,7 @@
 # 2019 MCM-A Game of Ecology
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2019/Game of Ecology`.
 - No numeric COMAP attachment is supplied; this workflow uses official statement requirements and explicit deterministic ecological inputs.
 
 ## Key Results

@@ -6,8 +6,8 @@
   "methods": "官方 PDF 给出的 17 个 SDG 节点 + 透明确定性有向加权边，构造 SDG 影响网络；对应教程模型：复杂网络与图论模型。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
     "parameters": {
       "sdg_count": 17,
       "ten_year_horizon": 10,

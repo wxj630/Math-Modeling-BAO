@@ -3,8 +3,8 @@
   "title": "Sustainability of Property Insurance",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf",
     "official_requirements": {
       "underwrite_conditions": true,
       "choose_when_to_take_risk": true,
@@ -448,11 +448,11 @@
   },
   "community_letter": "Dear community members, our insurance and preservation models recommend protecting St. Augustine Lighthouse in place over the next seven years, beginning with inspections, floodproof utilities, roof and lantern-room hardening, and clear storm-closure triggers. The plan preserves a high-value cultural and tourism asset while keeping future insurance conditional on verified risk reduction.",
   "artifacts": {
-    "underwriting_policy_grid": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/underwriting_policy_grid.csv",
-    "regional_risk_comparison": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/regional_risk_comparison.csv",
-    "mitigation_levers": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/mitigation_levers.csv",
-    "site_build_decisions": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/site_build_decisions.csv",
-    "preservation_priority": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/preservation_priority.csv",
-    "insurance_preservation_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/insurance_preservation_frontier.png"
+    "underwriting_policy_grid": "docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/underwriting_policy_grid.csv",
+    "regional_risk_comparison": "docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/regional_risk_comparison.csv",
+    "mitigation_levers": "docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/mitigation_levers.csv",
+    "site_build_decisions": "docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/site_build_decisions.csv",
+    "preservation_priority": "docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/preservation_priority.csv",
+    "insurance_preservation_frontier": "docs/mcm-2015-2025/real_solutions/2024/ICM-E/artifacts/insurance_preservation_frontier.png"
   }
 }

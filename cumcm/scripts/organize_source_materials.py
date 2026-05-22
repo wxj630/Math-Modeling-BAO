@@ -11,6 +11,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import shutil
 from collections import Counter
@@ -20,7 +21,7 @@ from typing import Iterable
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TARGET_ROOT = REPO_ROOT / "cumcm" / "source_materials"
-DEFAULT_PLAYGROUND_ROOT = Path("/Users/wuxiaojun/Documents/Playground")
+DEFAULT_PLAYGROUND_ROOT = Path(os.environ.get("CUMCM_PLAYGROUND_ROOT", "../../Documents/Playground"))
 
 
 @dataclass(frozen=True)
@@ -171,7 +172,7 @@ def build_readme(target_root: Path, stages: tuple[SourceStage, ...], counts: Cou
         "- `summary.json`: 各阶段文件数量、总大小和整理脚本信息。\n\n"
         "## 复跑方式\n\n"
         "```bash\n"
-        "cd /Users/wuxiaojun/code/Math-Modeling-World\n"
+        "cd .\n"
         ".venv/bin/python cumcm/scripts/organize_source_materials.py\n"
         "```\n\n"
         f"当前 manifest 覆盖 `{sum(counts.values())}` 个文件，源文件总大小约 `{size_mb:.2f} MiB`。\n",

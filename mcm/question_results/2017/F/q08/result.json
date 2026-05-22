@@ -6,8 +6,8 @@
   "methods": "Evaluate care-credit and leave policies as equality and retention levers in the deterministic Mars workforce model.",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
     "official_requirements": {
       "population_zero_size": 10000,
       "years_2100_2110": true,

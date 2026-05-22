@@ -13,7 +13,7 @@
 ## 重新生成
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/archive_generic_baselines.py --all
+.venv/bin/python mcm/scripts/archive_generic_baselines.py --all
 ```
 
 ## 方法分布

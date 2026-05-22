@@ -8,7 +8,7 @@ Identify under what conditions, if any, lanes should be dedicated to self-drivin
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate`。
 - 行数/记录数：{'parsed mile posts': 224, 'definitions': 8}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -35,9 +35,9 @@ Identify under what conditions, if any, lanes should be dedicated to self-drivin
 - 峰小时占比、每车道容量、AV 容量倍率和 BPR 速度函数是显式交通流假设，用于把官方 ADT/车道数转换成可比较性能指标；正式论文应补充小时级探测器速度、OD 需求和实际 AV 行为数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2017/C/q04/solution.py`
+`.venv/bin/python mcm/question_solutions/2017/C/q04/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2017/C/q04/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2017/C/q04/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2017/C/q04`
+- `mcm/question_results/2017/C/q04/result.json`
+- `mcm/question_reports/2017/C/q04/report.md`
+- `mcm/question_artifacts/2017/C/q04`

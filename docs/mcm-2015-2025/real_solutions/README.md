@@ -28,11 +28,11 @@
 ## 运行
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python docs/mcm-2015-2025/real_solutions/2024/MCM-C/solution.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python docs/mcm-2015-2025/real_solutions/2024/ICM-D/solution.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python docs/mcm-2015-2025/real_solutions/2025/MCM-C/solution.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python docs/mcm-2015-2025/real_solutions/2025/ICM-D/solution.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python scripts/build_mcm_real_archive.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/run_question_all.py
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/verify_real_data_integration.py
+.venv/bin/python docs/mcm-2015-2025/real_solutions/2024/MCM-C/solution.py
+.venv/bin/python docs/mcm-2015-2025/real_solutions/2024/ICM-D/solution.py
+.venv/bin/python docs/mcm-2015-2025/real_solutions/2025/MCM-C/solution.py
+.venv/bin/python docs/mcm-2015-2025/real_solutions/2025/ICM-D/solution.py
+.venv/bin/python scripts/build_mcm_real_archive.py
+.venv/bin/python mcm/scripts/run_question_all.py
+.venv/bin/python mcm/scripts/verify_real_data_integration.py
 ```

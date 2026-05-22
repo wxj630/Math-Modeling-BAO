@@ -13,28 +13,28 @@
     "name": "综合评价与权重决策",
     "chapter": "CH7",
     "chapter_title": "权重生成与评价模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
   },
   "candidate_models": [
     {
       "key": "evaluation",
       "name": "综合评价与权重决策",
       "chapter": "CH7",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md",
       "reason": "评价、综合、比较、经济性、舒适性"
     },
     {
       "key": "optimization",
       "name": "规划优化与资源配置",
       "chapter": "CH3",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
       "reason": "方案、设计"
     }
   ],
   "data_source": {
     "source_type": "problem_statement",
     "attachment_count": 10,
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2010/D.md",
+    "path": "cumcm/problems/2010/D.md",
     "rows": 2,
     "columns": 2,
     "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
@@ -76,7 +76,7 @@
       "name": "综合评价与权重决策",
       "chapter": "CH7",
       "chapter_title": "权重生成与评价模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
     }
   },
   "experiment_result": {

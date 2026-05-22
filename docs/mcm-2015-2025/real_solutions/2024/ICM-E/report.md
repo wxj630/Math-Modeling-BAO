@@ -1,7 +1,7 @@
 # 2024 ICM-E Sustainability of Property Insurance
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2024/Sustainability of Property Insurance.pdf`。
 - 本题无 COMAP 数值附件；脚本只使用官方 PDF 中的宏观数字和显式地区/建筑情景假设，不使用随机占位数据。
 - 地区和地标行是 deterministic demonstration scenarios，不是保险公司真实组合数据。
 

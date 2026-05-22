@@ -3,8 +3,8 @@
   "title": "Multi-hop HF Radio Propagation",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
     "official_requirements": {
       "one_reflection_off_ionosphere": true,
       "multi_hop_reflections": true,

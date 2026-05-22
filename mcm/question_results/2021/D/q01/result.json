@@ -6,8 +6,8 @@
   "methods": "读取 COMAP 官方 influence_data.csv，构建 influencer -> follower 有向图，计算入度、出度、PageRank、综合 influence_score，并给出 Pop/Rock 子网络规模；对应教程模型：图论网络中心性、复杂网络分析。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
     "rows": {
       "influence_data.csv": 42770,
       "full_music_data.csv": 98340,

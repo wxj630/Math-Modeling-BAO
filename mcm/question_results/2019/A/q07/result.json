@@ -6,8 +6,8 @@
   "methods": "把生态足迹、气候迁移和社区支持结论整理为作者建议信，并迁移到大型顶级捕食者重引入/迁地保护问题。对应模型：非技术政策信、模型迁移。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "official_requirements": {
       "three_living_dragons": true,
       "hatchling_10kg_one_year_30_to_40kg": true,

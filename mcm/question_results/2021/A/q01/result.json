@@ -6,8 +6,8 @@
   "methods": "将题面指定的 growth rate 与 moisture tolerance 两个 trait 转成分解率、竞争权重和环境适配项，模拟固定 patch 的凋落物质量损失。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Fungi",
     "official_requirements": {
       "growth_rate_and_moisture_tolerance_traits": true,
       "multi_species_interactions": true,

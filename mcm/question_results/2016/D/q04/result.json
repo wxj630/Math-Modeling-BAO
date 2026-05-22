@@ -6,8 +6,8 @@
   "methods": "用 DeGroot 风格一阶观点更新，把 information value、source credibility、initial bias、message form 和 network strength 转成 persuasion index 与 final support share，比较公共卫生警告、低可信党派声明、名人传闻、官方本地灾害信息、科学纠错等情景。对应模型：观点动力学、DeGroot 模型、阈值说服、情景仿真。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "official_problem_parameters": {
       "periods": [
         "1870s_telegraph_train_newspaper",

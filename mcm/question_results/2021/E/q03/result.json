@@ -6,8 +6,8 @@
   "methods": "将相同评分模型应用到 United States、Germany、India 和 Kenya，显式标注 developed/developing 分组、当前分、目标分和主要缺口。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
     "official_requirements": {
       "optimize_efficiency_profitability_sustainability_equity": true,
       "developed_and_developing_country_applications": true,

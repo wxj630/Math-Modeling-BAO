@@ -3,8 +3,8 @@
   "title": "Universal, Decentralized, Digital Currency: Is it possible?",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
     "official_requirements": {
       "universal_decentralized_digital_currency": true,
       "growth_access_security_stability": true,
@@ -287,9 +287,9 @@
     ]
   },
   "artifacts": {
-    "adoption_viability": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_adoption_viability.csv",
-    "strategy_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_strategy_scores.csv",
-    "long_term_effects": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_long_term_effects.csv",
-    "viability_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_viability_frontier.png"
+    "adoption_viability": "docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_adoption_viability.csv",
+    "strategy_scores": "docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_strategy_scores.csv",
+    "long_term_effects": "docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_long_term_effects.csv",
+    "viability_frontier": "docs/mcm-2015-2025/real_solutions/2019/ICM-F/artifacts/currency_viability_frontier.png"
   }
 }

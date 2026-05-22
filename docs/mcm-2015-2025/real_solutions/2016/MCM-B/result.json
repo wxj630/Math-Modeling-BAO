@@ -2,8 +2,8 @@
   "problem_id": "2016-B",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
     "official_problem_parameters": {
       "tracked_debris_count": 500000,
       "reference_collision_year": 2009,

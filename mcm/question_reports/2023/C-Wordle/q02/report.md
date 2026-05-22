@@ -8,7 +8,7 @@ For a given future solution word on a future date, develop a model that allows y
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results`。
 - 行数/记录数：{'records': 359}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -34,9 +34,9 @@ For a given future solution word on a future date, develop a model that allows y
 - 官方数据来自 Twitter 报告样本，不等同于全体玩家；预测 2023-03-01 属于外推，正式论文应补充新日期真实结果或滚动更新检验。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2023/C-Wordle/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2023/C-Wordle/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2023/C-Wordle/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2023/C-Wordle/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2023/C-Wordle/q02`
+- `mcm/question_results/2023/C-Wordle/q02/result.json`
+- `mcm/question_reports/2023/C-Wordle/q02/report.md`
+- `mcm/question_artifacts/2023/C-Wordle/q02`

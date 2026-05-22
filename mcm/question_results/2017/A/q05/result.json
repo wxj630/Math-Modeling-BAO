@@ -6,8 +6,8 @@
   "methods": "把河道分成 upstream lake margin、mid-river farmland、urban low banks、hydropower intake reaches、delta wetlands，给出 flood/low-water 最大暴露天数和原因。对应模型：风险分区、暴露约束、韧性规划。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
     "official_problem_parameters": {
       "options": [
         "Repairing the existing Kariba Dam",

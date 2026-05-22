@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：几何解析与运动学参数方程（CH1：解析方法与几何模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
 
 ### 候选模型与适配理由
-- 几何解析与运动学参数方程（CH1）：空间；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 数据拟合与回归分析（CH6）：分析；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 综合评价与权重决策（CH7）：污染程度；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
+- 几何解析与运动学参数方程（CH1）：空间；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：分析；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 综合评价与权重决策（CH7）：污染程度；参考 ../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md
 
 ## 变量、约束与公式
 
@@ -42,9 +42,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2011/A/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2011/A/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2011/A/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2011/A/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：把坐标、角度、距离条件转成几何参数。
@@ -55,11 +55,11 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2011/A/q01/experiment_table.csv
+- cumcm/question_artifacts/2011/A/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：problem_statement
-- 附件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/A.md
+- 附件：cumcm/problems/2011/A.md
 - 读取规模：12 行 x 5 列
 - 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 

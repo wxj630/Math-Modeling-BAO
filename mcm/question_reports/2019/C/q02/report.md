@@ -8,7 +8,7 @@ Using the U.S. Census socio-economic data provided, determine whether use or tre
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx_csv。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA`。
 - 行数/记录数：{'MCM_NFLIS_Data.xlsx': 24062, 'ACS county-year rows': 3245}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -64,9 +64,9 @@ Using the U.S. Census socio-economic data provided, determine whether use or tre
 - 官方 NFLIS workbook 实际包含 KY/OH/PA/VA/WV 五州记录，本脚本不补造题面文字中提到但文件缺失的 Tennessee；ACS 相关性是描述性，不等同于成瘾或流行传播的因果解释。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2019/C/q02/solution.py`
+`.venv/bin/python mcm/question_solutions/2019/C/q02/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2019/C/q02/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2019/C/q02/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2019/C/q02`
+- `mcm/question_results/2019/C/q02/result.json`
+- `mcm/question_reports/2019/C/q02/report.md`
+- `mcm/question_artifacts/2019/C/q02`

@@ -6,9 +6,9 @@
   "methods": "读取官方 2017_ICM_Problem_D_Data.xlsx 的 TSA Pre-Check/Regular 到达时间、ID 检查、毫米波、X-ray 和取物样本，构造确定性 G/G/c 排队模型；基线采用题面 one PreCheck lane for every three regular lanes。对应模型：排队论、离散事件仿真、瓶颈分析。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
-    "workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf",
+    "workbook": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx",
     "rows": {
       "Sheet1": 58
     },

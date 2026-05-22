@@ -1,7 +1,7 @@
 # 2021 ICM-F Checking the Pulse and Temperature of Higher Education
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education`.
 - No COMAP numeric attachment is supplied; this workflow uses official statement parameters and explicit deterministic planning inputs.
 
 ## Model Summary

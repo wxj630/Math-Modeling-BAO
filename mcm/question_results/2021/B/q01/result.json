@@ -6,8 +6,8 @@
   "methods": "使用官方 AUD 10000 单价、30km 航程、20m/s、2.5h 续航、1.75h 充电、10W/20km repeater 参数，对 SSA/repeater 组合网格搜索。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
     "official_requirements": {
       "ssa_and_repeater_drone_mix": true,
       "balance_capability_safety_economics": true,

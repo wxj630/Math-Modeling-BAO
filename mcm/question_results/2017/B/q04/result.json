@@ -6,8 +6,8 @@
   "methods": "比较 mostly conventional、balanced、electronic priority 和 transponder dominant 四种收费服务率组合，判断瓶颈从收费侧转向并道侧的条件，并生成 New Jersey Turnpike Authority 信函。对应模型：服务率模型、情景扫描、非技术政策报告。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
     "official_problem_parameters": {
       "example_lanes": 3,
       "example_tollbooths": 8,

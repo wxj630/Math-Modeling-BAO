@@ -292,7 +292,7 @@ def write_report(result: dict[str, object]) -> None:
         "- “伟大教练”效应候选：在 NOC-运动-年份层面寻找相对近三届均值的突增，作为后续人工核验教练迁移的证据候选。",
         "",
         "## 运行方式",
-        f"- `/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {ROOT / 'solution.py'}`",
+        f"- `.venv/bin/python {ROOT / 'solution.py'}`",
         "",
         "## 关键结果",
         f"- 2024 留出集 Gold MAE：{result['evaluation']['Gold']['mae_2024']}，Total MAE：{result['evaluation']['Total']['mae_2024']}",

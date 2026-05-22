@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：多层服装热阻-热容传热与厚度优化模型（CH2：微分方程与动力系统）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
 
 ### 候选模型与适配理由
-- 数据拟合与回归分析（CH6）：参数、测量；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 规划优化与资源配置（CH3）：最优；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
-- 微分方程与动态仿真（CH2）：温度；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
+- 数据拟合与回归分析（CH6）：参数、测量；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 规划优化与资源配置（CH3）：最优；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 微分方程与动态仿真（CH2）：温度；参考 ../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
 
 ## 变量、约束与公式
 
@@ -48,9 +48,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2018/A/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2018/A/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2018/A/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2018/A/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1材料热物性参数和附件2实测皮肤外侧温度。
@@ -61,15 +61,15 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/A/q02/thermal_calibration.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/A/q02/joint_thickness_search.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/A/q02/optimized_temperature_profile.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/A/q02/optimized_temperature_profile.xlsx
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2018/A/q02/experiment_table.csv
+- cumcm/question_artifacts/2018/A/q02/thermal_calibration.csv
+- cumcm/question_artifacts/2018/A/q02/joint_thickness_search.csv
+- cumcm/question_artifacts/2018/A/q02/optimized_temperature_profile.csv
+- cumcm/question_artifacts/2018/A/q02/optimized_temperature_profile.xlsx
+- cumcm/question_artifacts/2018/A/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx
+- 附件：../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx; ../../Documents/Playground/cumcm_unzipped/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese.docx
 - 读取规模：5405 行 x 7 列
 - 说明：本题专用算法读取附件1四层材料热物性参数和附件2皮肤外侧实测温度，标定热阻-热容模型并搜索II/IV层厚度。
 

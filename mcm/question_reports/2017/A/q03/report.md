@@ -8,7 +8,7 @@ Include a strategy for modulating the water flow through the new multiple dam sy
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2017`。
 - 行数/记录数：{'official_problem_parameters': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -55,9 +55,9 @@ Include a strategy for modulating the water flow through the new multiple dam sy
 - 成本、坝址坐标、容量、流量指数和暴露天数是显式工程规划假设，不是实测水文或施工数据；正式论文应补充 Zambezi 历史径流、Kariba 库容曲线、生态影响、地形地质、移民和工程造价数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2017/A/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2017/A/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2017/A/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2017/A/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2017/A/q03`
+- `mcm/question_results/2017/A/q03/result.json`
+- `mcm/question_reports/2017/A/q03/report.md`
+- `mcm/question_artifacts/2017/A/q03`

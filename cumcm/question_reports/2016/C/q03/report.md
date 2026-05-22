@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：铅酸电池放电曲线与剩余时间预测模型（CH8：时间序列）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
 
 ### 候选模型与适配理由
-- 数据拟合与回归分析（CH6）：数据、预测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
-- 时间序列预测（CH8）：预测；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
-- 微分方程与动态仿真（CH2）：放电；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
+- 数据拟合与回归分析（CH6）：数据、预测；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 时间序列预测（CH8）：预测；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 微分方程与动态仿真（CH2）：放电；参考 ../My-Agent/intro-mathmodel/docs/CH2/第2章-微分方程与动力系统.md
 
 ## 变量、约束与公式
 
@@ -48,9 +48,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2016/C/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2016/C/q03/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2016/C/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2016/C/q03/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1完整放电曲线，按电流分别提取有效时间-电压样本。
@@ -61,17 +61,17 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/curve_fit_mre_by_current.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/remaining_time_at_9_8v.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/current_model_mre.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/discharge_curve_55a.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/degradation_state_lifetime.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/state3_completion_prediction.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2016/C/q03/experiment_table.csv
+- cumcm/question_artifacts/2016/C/q03/curve_fit_mre_by_current.csv
+- cumcm/question_artifacts/2016/C/q03/remaining_time_at_9_8v.csv
+- cumcm/question_artifacts/2016/C/q03/current_model_mre.csv
+- cumcm/question_artifacts/2016/C/q03/discharge_curve_55a.csv
+- cumcm/question_artifacts/2016/C/q03/degradation_state_lifetime.csv
+- cumcm/question_artifacts/2016/C/q03/state3_completion_prediction.csv
+- cumcm/question_artifacts/2016/C/q03/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-Problem-C-Chinese-version.docx
+- 附件：../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-C-Appendix-Chinese.xlsx; ../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016C-Chinese/CUMCM2016-Problem-C-Chinese-version.docx
 - 读取规模：2188 行 x 17 列
 - 说明：本题专用算法读取附件1九条新电池放电曲线和附件2衰减状态电压-时间表，完成剩余时间预测、电流插值曲线和状态3寿命外推。
 

@@ -6,8 +6,8 @@
   "methods": "用 critical-power + W prime 曲线定义 time trial specialist 与 climber-puncheur，并给出男女 profile、CdA、质量和能量预算。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
     "official_requirements": {
       "two_rider_types_and_genders": true,
       "tokyo_olympic_time_trial_course": true,

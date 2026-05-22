@@ -3,8 +3,8 @@
   "title": "Resource Availability and Sex Ratios",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
     "official_requirements": {
       "resource_dependent_lamprey_sex_ratio": true,
       "ecosystem_interactions": true,
@@ -478,10 +478,10 @@
     "tradeoff": "variable sex ratios can indirectly help parasites and lamprey consumers by stabilizing lamprey persistence, but high lamprey density harms host fish"
   },
   "artifacts": {
-    "sex_ratio_response": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/sex_ratio_response.csv",
-    "ecosystem_trajectories": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/ecosystem_trajectories.csv",
-    "scenario_summary": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/scenario_summary.csv",
-    "stability_surface": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/stability_surface.csv",
-    "lamprey_tradeoff_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/lamprey_tradeoff_frontier.png"
+    "sex_ratio_response": "docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/sex_ratio_response.csv",
+    "ecosystem_trajectories": "docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/ecosystem_trajectories.csv",
+    "scenario_summary": "docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/scenario_summary.csv",
+    "stability_surface": "docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/stability_surface.csv",
+    "lamprey_tradeoff_frontier": "docs/mcm-2015-2025/real_solutions/2024/MCM-A/artifacts/lamprey_tradeoff_frontier.png"
   }
 }

@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2015-C",
   "question_index": 1,
   "title": "2015年 CUMCM C题：月上柳梢头",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/C.md",
+  "problem_path": "cumcm/problems/2015/C.md",
   "question": {
     "label": "问题 1",
     "statement": "根据所建立的模型，分析2016年北京地区“月上柳梢头，人约黄昏后”发生的日期与时间。根据模型判断2016年在哈尔滨、上海、广州、昆明、成都、乌鲁木齐是否能发生这一情景？如果能，请给出相应的日期与时间；如果不能，请给出原因",
@@ -36,20 +36,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
       "name": "CUMCM-2015-problem C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 15072,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/C/CUMCM-2015-problem C-Chinese.docx",
       "name": "CUMCM-2015-problem C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 15072,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -88,7 +88,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

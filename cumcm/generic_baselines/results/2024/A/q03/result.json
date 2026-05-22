@@ -12,21 +12,21 @@
     "name": "几何解析与运动学参数方程",
     "chapter": "CH1",
     "chapter_title": "解析方法与几何模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
   },
   "candidate_models": [
     {
       "key": "geometry",
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
       "reason": "螺线、把手、空间、圆"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 4,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/A题/附件/result1.xlsx",
     "rows": 674,
     "columns": 301,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -66,7 +66,7 @@
       "name": "几何解析与运动学参数方程",
       "chapter": "CH1",
       "chapter_title": "解析方法与几何模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
     }
   },
   "experiment_result": {

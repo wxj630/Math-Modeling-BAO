@@ -6,8 +6,8 @@
   "methods": "组合包装标准、reuse/refill、生产者责任、非正规回收支持和必要替代，计算 2020-2050 三年步长的剩余 single-use waste 和海洋输入。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
     "official_requirements": {
       "safe_mitigation_capacity_model": true,
       "reduce_to_environmentally_safe_level": true,

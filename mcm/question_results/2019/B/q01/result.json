@@ -6,8 +6,8 @@
   "methods": "读取官方 PDF 附件表中的 drone 尺寸、载荷、速度、飞行时间、货舱、MED 包尺寸和需求地点，构造三集装箱 DroneGo 响应系统。对应模型：设施选址、配送调度、装箱规划。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "official_requirements": {
       "puerto_rico_hurricane_scenario": true,
       "candidate_drone_attachment_table": true,

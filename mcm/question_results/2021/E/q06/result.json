@@ -6,8 +6,8 @@
   "methods": "总结替换国家/地区输入后的可扩展条件、最低数据需求，并形成面向 International Comestibles Management Committee 的简明备忘录。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
     "official_requirements": {
       "optimize_efficiency_profitability_sustainability_equity": true,
       "developed_and_developing_country_applications": true,

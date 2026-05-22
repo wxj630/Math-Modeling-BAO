@@ -87,7 +87,7 @@
     "method_confidence": 0.6384
   },
   "artifact_paths": [
-    "/Users/wuxiaojun/code/Math-Modeling-World/mcm/generic_baselines/artifacts/2020/A/q02/experiment_table.csv"
+    "mcm/generic_baselines/artifacts/2020/A/q02/experiment_table.csv"
   ],
   "limitations": [
     "This is the intentionally minimal baseline layer, not the contest-grade real solution.",

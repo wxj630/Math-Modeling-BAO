@@ -8,7 +8,7 @@ Your model should be able to assess independent alternatives as well as combinat
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf`。
 - 行数/记录数：{'official_problem_parameters': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -51,9 +51,9 @@ Your model should be able to assess independent alternatives as well as combinat
 - 成本、收入、技术风险、监管风险、移除能力和协同效应是显式商业情景假设，不是实测轨道/合同数据；正式论文应补充公开 TLE/Space-Track、任务成本、保险费率和监管许可数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2016/B/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2016/B/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2016/B/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2016/B/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2016/B/q03`
+- `mcm/question_results/2016/B/q03/result.json`
+- `mcm/question_reports/2016/B/q03/report.md`
+- `mcm/question_artifacts/2016/B/q03`

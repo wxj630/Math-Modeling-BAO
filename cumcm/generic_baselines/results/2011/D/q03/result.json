@@ -12,21 +12,21 @@
     "name": "概率统计与抽样检验",
     "chapter": "CH9",
     "chapter_title": "机器学习与统计模型",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
   },
   "candidate_models": [
     {
       "key": "probability",
       "name": "概率统计与抽样检验",
       "chapter": "CH9",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
       "reason": "误差"
     }
   ],
   "data_source": {
     "source_type": "problem_statement",
     "attachment_count": 1,
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2011/D.md",
+    "path": "cumcm/problems/2011/D.md",
     "rows": 22,
     "columns": 9,
     "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
@@ -68,7 +68,7 @@
       "name": "概率统计与抽样检验",
       "chapter": "CH9",
       "chapter_title": "机器学习与统计模型",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
     }
   },
   "experiment_result": {

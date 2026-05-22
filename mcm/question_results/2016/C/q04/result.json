@@ -6,12 +6,12 @@
   "methods": "把官方数据来源、ROI 定义、推荐学校组合、年度预算和稳健性检查压缩成 CFO 可读的非技术信。对应模型：非技术政策报告、投资组合说明、ROI 解释。",
   "data_source": {
     "type": "official_comap_xlsx_zip",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
-    "scorecard_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
-    "candidate_uid_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
-    "dictionary_workbook": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
-    "ipeds_variables_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
+    "scorecard_workbook": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - Most Recent Cohorts Data (Scorecard Elements).xlsx",
+    "candidate_uid_workbook": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - IPEDS UID for Potential Candidate Schools.xlsx",
+    "dictionary_workbook": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx",
+    "ipeds_variables_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
     "rows": {
       "scorecard": 7804,
       "candidate_uids": 2977,

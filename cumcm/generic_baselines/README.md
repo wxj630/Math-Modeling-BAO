@@ -13,7 +13,7 @@
 ## 重新生成
 
 ```bash
-/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python cumcm/scripts/archive_generic_baselines.py --all
+.venv/bin/python cumcm/scripts/archive_generic_baselines.py --all
 ```
 
 ## 方法分布

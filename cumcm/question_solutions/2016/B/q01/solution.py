@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2016-B",
   "title": "2016年 CUMCM B题：小区开放对道路通行的影响",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2016/B.md",
+  "problem_path": "cumcm/problems/2016/B.md",
   "question_index": 1,
   "question": {
     "label": "问题 1",

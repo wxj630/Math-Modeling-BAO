@@ -6,7 +6,7 @@
   "methods": "对 Lake Ontario 分析高低水位月份、目标偏离、与 Niagara/Ottawa/St. Lawrence 流量相关性和最高 stakeholder cost 月份。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
     "records": 2548,
     "level_records": 1380,
     "flow_records": 1168,

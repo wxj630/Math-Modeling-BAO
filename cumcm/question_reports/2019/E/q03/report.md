@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：薄利多销销售流水与折扣弹性分析模型（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 规划优化与资源配置（CH3）：利润；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
-- 数据拟合与回归分析（CH6）：分析；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 规划优化与资源配置（CH3）：利润；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 数据拟合与回归分析（CH6）：分析；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -49,9 +49,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2019/E/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2019/E/q03/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2019/E/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2019/E/q03/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1/2销售流水、附件3促销信息、附件4商品品类表。
@@ -63,16 +63,16 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/E/q03/daily_revenue_profit.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/E/q03/daily_discount_intensity.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/E/q03/category_margin_imputation.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/E/q03/discount_relationship_regression.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/E/q03/category_discount_relationship.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/E/q03/experiment_table.csv
+- cumcm/question_artifacts/2019/E/q03/daily_revenue_profit.csv
+- cumcm/question_artifacts/2019/E/q03/daily_discount_intensity.csv
+- cumcm/question_artifacts/2019/E/q03/category_margin_imputation.csv
+- cumcm/question_artifacts/2019/E/q03/discount_relationship_regression.csv
+- cumcm/question_artifacts/2019/E/q03/category_discount_relationship.csv
+- cumcm/question_artifacts/2019/E/q03/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件1.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件3.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件4.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件5.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件1.csv; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件2.csv; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件3.csv; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件4.csv; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/E-2019中文/data/附件5.xlsx
 - 读取规模：1239845 行 x 55 列
 - 说明：本题专用算法读取两份销售流水、促销信息和商品品类表，计算每日营业额/利润率、折扣力度及折扣-销售/利润关系。
 

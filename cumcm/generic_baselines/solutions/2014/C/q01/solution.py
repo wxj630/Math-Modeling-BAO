@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2014-C",
   "question_index": 1,
   "title": "2014年 CUMCM C题：生猪养殖场的经营管理",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/C.md",
+  "problem_path": "cumcm/problems/2014/C.md",
   "question": {
     "label": "问题 1",
     "statement": "已知从母猪配种到所产的猪仔长成肉猪出栏需要约9个月时间。假设该养猪场估计9个月后三年内生猪价格变化的预测曲线如图2所示，请根据此价格预测确定该养猪场的最佳经营策略，计算这三年内的平均年利润，并给出在此策略下的母猪及肉猪存栏数曲线",
@@ -50,20 +50,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
       "name": "CUMCM2014C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 40568,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/C/CUMCM2014C-Chinese.docx",
       "name": "CUMCM2014C-Chinese.docx",
       "suffix": ".docx",
       "kind": "document",
       "size_bytes": 40568,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -102,7 +102,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

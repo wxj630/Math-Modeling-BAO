@@ -8,7 +8,7 @@ If the project is carried out what will happen?
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted`。
 - 行数/记录数：{'official_parameters': 5}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -48,9 +48,9 @@ If the project is carried out what will happen?
 - 客户评分、干预减幅、预算和达标概率是显式确定性项目情景，不是执法数据库观测；正式论文应补充 seizure records、CITES/UNODC 路线资料、平台下架数据和地方伙伴调研校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2024/F/q06/solution.py`
+`.venv/bin/python mcm/question_solutions/2024/F/q06/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2024/F/q06/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2024/F/q06/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2024/F/q06`
+- `mcm/question_results/2024/F/q06/result.json`
+- `mcm/question_reports/2024/F/q06/report.md`
+- `mcm/question_artifacts/2024/F/q06`

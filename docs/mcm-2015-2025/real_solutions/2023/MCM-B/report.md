@@ -9,7 +9,7 @@
 - Zone model: multi-criteria evaluation over wildlife value, habitat fragility, resident pressure, conflict exposure, and tourism value.
 - Policy model: weighted ecological/resident/economic/feasibility score with implementation cost penalty.
 - Projection model: annual discrete dynamics for conflict, wildlife index, resident acceptance, tourism revenue, and community benefit.
-- Tutorial model references: comprehensive evaluation, graph/spatial zoning, optimization, and dynamic systems from `/Users/wuxiaojun/code/My-Agent/intro-mathmodel`.
+- Tutorial model references: comprehensive evaluation, graph/spatial zoning, optimization, and dynamic systems from `../My-Agent/intro-mathmodel`.
 
 ## Results
 - Highest-ranked policy: compensation and predator-proof livestock program with composite score 0.1945.

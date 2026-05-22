@@ -3,8 +3,8 @@
   "title": "Checking the Pulse and Temperature of Higher Education",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "official_requirements": {
       "assess_any_nation_health": true,
       "apply_to_several_countries": true,
@@ -663,13 +663,13 @@
     ]
   },
   "artifacts": {
-    "higher_ed_health_dimensions": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_health_dimensions.csv",
-    "higher_ed_country_applications": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_country_applications.csv",
-    "higher_ed_health_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_health_scores.csv",
-    "higher_ed_policy_timeline": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_policy_timeline.csv",
-    "higher_ed_impact_assessment": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_impact_assessment.csv",
-    "higher_ed_transition_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_transition_frontier.png",
-    "higher_ed_transition_timeline": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_transition_timeline.png",
+    "higher_ed_health_dimensions": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_health_dimensions.csv",
+    "higher_ed_country_applications": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_country_applications.csv",
+    "higher_ed_health_scores": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_health_scores.csv",
+    "higher_ed_policy_timeline": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_policy_timeline.csv",
+    "higher_ed_impact_assessment": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_impact_assessment.csv",
+    "higher_ed_transition_frontier": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_transition_frontier.png",
+    "higher_ed_transition_timeline": "docs/mcm-2015-2025/real_solutions/2021/ICM-F/artifacts/higher_ed_transition_timeline.png",
     "dimension_rows": 7,
     "policy_timeline_rows": 36,
     "impact_rows": 5

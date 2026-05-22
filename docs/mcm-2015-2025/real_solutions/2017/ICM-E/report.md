@@ -1,7 +1,7 @@
 # 2017 ICM-E Sustainable Cities Needed!
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf`.
 - COMAP did not provide a numeric attachment for this problem; the workflow uses official statement requirements and explicit deterministic planning inputs.
 
 ## Audit Note

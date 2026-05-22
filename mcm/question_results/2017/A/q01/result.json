@@ -6,8 +6,8 @@
   "methods": "只使用官方题面给出的三个选项，构造 normalized cost、implementation years、construction disruption、safety improvement 和 water management flexibility 的可替换评分表。对应模型：多指标综合评价、成本收益分析、决策矩阵。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Managing The Zambezi River.pdf",
     "official_problem_parameters": {
       "options": [
         "Repairing the existing Kariba Dam",

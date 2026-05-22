@@ -6,8 +6,8 @@
   "methods": "对 Maldives、Tuvalu、Kiribati 和 Marshall Islands 在 managed/middle/high sea-level scenarios 下投影 80 年 population at risk，并计算 culture loss risk。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
     "official_requirements": {
       "edp_scope_and_culture_risk": true,
       "human_rights_and_cultural_preservation_policies": true,

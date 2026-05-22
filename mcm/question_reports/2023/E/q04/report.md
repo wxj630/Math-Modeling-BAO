@@ -8,7 +8,7 @@ Choose two of your locations and use your metric to determine which of your inte
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025`。
+- 官方数据目录：`docs/mcm-2015-2025`。
 - 行数/记录数：{}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -52,9 +52,9 @@ Choose two of your locations and use your metric to determine which of your inte
 - 地点画像、权重、干预降幅、成本和可行性是显式确定性情景参数，不是实地照度、卫星夜光或事故/生态监测数据；正式论文应补充 VIIRS 夜光、地面照度、交通事故、犯罪、睡眠健康和物种迁徙数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2023/E/q04/solution.py`
+`.venv/bin/python mcm/question_solutions/2023/E/q04/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2023/E/q04/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2023/E/q04/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2023/E/q04`
+- `mcm/question_results/2023/E/q04/result.json`
+- `mcm/question_reports/2023/E/q04/report.md`
+- `mcm/question_artifacts/2023/E/q04`

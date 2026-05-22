@@ -6,8 +6,8 @@
   "methods": "读取 World Bank Jordan 缓存指标，用 freshwater withdrawals/internal renewable resources 构造物理水压力，并用基础饮水、卫生服务和 GDP/capita 修正经济稀缺。对应模型：水资源压力指数、系统动力学、多指标评价。",
   "data_source": {
     "type": "official_pdf_and_world_bank_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
     "selected_region": "Jordan",
     "rows": {
       "world_bank_jordan_water_indicators.csv": 528

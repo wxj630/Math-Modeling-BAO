@@ -6,8 +6,8 @@
   "methods": "只使用官方题面参数 L、B、B > L 和 3 车道/8 收费亭示例，构造 short taper、staged zipper、collector-distributor 和 metered merge 四类可替换几何方案，按冲突指数、吞吐能力和土地/控制成本评分。对应模型：道路几何规划、多目标评分、成本-安全权衡。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2017",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2017/Merge After Toll.pdf",
     "official_problem_parameters": {
       "example_lanes": 3,
       "example_tollbooths": 8,

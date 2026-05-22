@@ -12,10 +12,10 @@
 ## 适配模型
 
 - 主模型：储药柜隔板间距聚类与容量规划模型（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 规划优化与资源配置（CH3）：最大；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 规划优化与资源配置（CH3）：最大；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ## 变量、约束与公式
 
@@ -49,9 +49,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2014/D/q03/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2014/D/q03/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2014/D/q03/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2014/D/q03/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1药盒长高宽和附件2日最大需求量。
@@ -63,19 +63,19 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/width_spacing_types.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/medicine_width_assignment.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/width_type_tradeoff.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/height_spacing_types.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/medicine_height_assignment.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/plane_redundancy_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/slot_requirement_by_medicine.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/cabinet_capacity_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2014/D/q03/experiment_table.csv
+- cumcm/question_artifacts/2014/D/q03/width_spacing_types.csv
+- cumcm/question_artifacts/2014/D/q03/medicine_width_assignment.csv
+- cumcm/question_artifacts/2014/D/q03/width_type_tradeoff.csv
+- cumcm/question_artifacts/2014/D/q03/height_spacing_types.csv
+- cumcm/question_artifacts/2014/D/q03/medicine_height_assignment.csv
+- cumcm/question_artifacts/2014/D/q03/plane_redundancy_summary.csv
+- cumcm/question_artifacts/2014/D/q03/slot_requirement_by_medicine.csv
+- cumcm/question_artifacts/2014/D/q03/cabinet_capacity_summary.csv
+- cumcm/question_artifacts/2014/D/q03/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls; /Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls
+- 附件：../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc; ../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls; ../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件2-药品需求量.xls; ../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/CUMCM-2014D-Chinese.doc; ../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件1-药盒型号.xls; ../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/D/附件2-药品需求量.xls
 - 读取规模：3838 行 x 4 列
 - 说明：本题专用算法读取药盒长高宽和日最大需求量，完成隔板间距类型设计、宽高冗余、储药槽数量和最少储药柜数量计算。
 

@@ -6,8 +6,8 @@
   "methods": "用官方 ISO 内部尺寸、drone shipping dimensions、cargo bay type 和 MED1/MED2/MED3 尺寸约束，选择 C/G/B/F/H 组合并分配三地 container cells。对应模型：三维装箱近似、载荷约束筛选。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
     "official_requirements": {
       "puerto_rico_hurricane_scenario": true,
       "candidate_drone_attachment_table": true,

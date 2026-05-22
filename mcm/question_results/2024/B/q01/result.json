@@ -6,8 +6,8 @@
   "methods": "官方 PDF 题面约束 + 失去通信/推进情景 + 洋流漂移-中性浮力/海底双状态位置椭圆 + 遥测信息对不确定性的削减清单。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Searching for Submersibles.pdf",
     "official_requirements": {
       "loss_of_communication": true,
       "possible_loss_of_propulsion": true,

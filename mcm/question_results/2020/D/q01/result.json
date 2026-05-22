@@ -6,9 +6,9 @@
   "methods": "读取 COMAP 官方 matches.csv、passingevents.csv、fullevents.csv；以 Huskies 球员为节点、有向传球为加权边，计算二元边、三角 motif、互惠率、PageRank、介数中心性、密度、加权聚类和位置份额。对应模型：图论网络中心性、复杂网络、多尺度团队结构分析。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
-    "readme": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2020/Teaming Strategies.pdf",
+    "readme": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
     "rows": {
       "matches.csv": 38,
       "passingevents.csv": 23429,

@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2016-B",
   "question_index": 3,
   "title": "2016年 CUMCM B题：小区开放对道路通行的影响",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2016/B.md",
+  "problem_path": "cumcm/problems/2016/B.md",
   "question": {
     "label": "问题 3",
     "statement": "小区开放产生的效果，可能会与小区结构及周边道路结构、车流量有关。请选取或构建不同类型的小区，应用你们建立的模型，定量比较各类型小区开放前后对道路通行的影响。",
@@ -77,7 +77,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

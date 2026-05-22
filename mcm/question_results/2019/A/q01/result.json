@@ -6,8 +6,8 @@
   "methods": "只使用官方题面中三条现存龙、孵化约 10kg、一年 30-40kg、持续生长、飞行、喷火和抗创伤等约束，构造顶级捕食者食物、栖息地、水源、巢址和火风险需求。对应模型：生态承载力、多指标影响评价、情景参数审计。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
     "official_requirements": {
       "three_living_dragons": true,
       "hatchling_10kg_one_year_30_to_40kg": true,

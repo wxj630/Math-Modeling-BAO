@@ -6,8 +6,8 @@
   "methods": "用官方历史分布训练多输出随机森林回归，预测 1/2/3/4/5/6/X 七个百分比桶，非负裁剪并归一化到 100%，用树分布和留出误差给出不确定性。",
   "data_source": {
     "type": "official_comap_xlsx",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
-    "path": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
     "records": 359,
     "date_min": "2022-01-07",
     "date_max": "2022-12-31",

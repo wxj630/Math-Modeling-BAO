@@ -8,7 +8,7 @@ What are the benefits and costs of changing the priorities of a food system? Whe
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets`。
 - 行数/记录数：{'official_parameters': 7}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -19,9 +19,9 @@ What are the benefits and costs of changing the priorities of a food system? Whe
 - 国家分数、政策收益、成本和 15 年路线图是显式确定性规划输入，不是 FAO/World Bank/国家营养监测实测数据；正式论文应补充粮食安全、营养、生产者收入、排放、水足迹和治理能力数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2021/E/q04/solution.py`
+`.venv/bin/python mcm/question_solutions/2021/E/q04/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2021/E/q04/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2021/E/q04/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2021/E/q04`
+- `mcm/question_results/2021/E/q04/result.json`
+- `mcm/question_reports/2021/E/q04/report.md`
+- `mcm/question_artifacts/2021/E/q04`

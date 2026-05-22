@@ -3,8 +3,8 @@
   "title": "Forestry for Carbon Sequestration",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
     "official_requirements": {
       "hundred_year_carbon_accounting": true,
       "forest_products_lifecycle": true,
@@ -788,10 +788,10 @@
     ]
   },
   "artifacts": {
-    "carbon_stock_trajectories": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/carbon_stock_trajectories.csv",
-    "management_plan_scores": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/management_plan_scores.csv",
-    "forest_application_results": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/forest_application_results.csv",
-    "transition_schedule": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/transition_schedule.csv",
-    "management_tradeoff_frontier": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/management_tradeoff_frontier.png"
+    "carbon_stock_trajectories": "docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/carbon_stock_trajectories.csv",
+    "management_plan_scores": "docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/management_plan_scores.csv",
+    "forest_application_results": "docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/forest_application_results.csv",
+    "transition_schedule": "docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/transition_schedule.csv",
+    "management_tradeoff_frontier": "docs/mcm-2015-2025/real_solutions/2022/ICM-E/artifacts/management_tradeoff_frontier.png"
   }
 }

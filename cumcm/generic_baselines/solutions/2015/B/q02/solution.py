@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2015-B",
   "question_index": 2,
   "title": "2015年 CUMCM B题：互联网+”时代的出租车资源配置",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2015/B.md",
+  "problem_path": "cumcm/problems/2015/B.md",
   "question": {
     "label": "问题 2",
     "statement": "分析各公司的出租车补贴方案是否对“缓解打车难”有帮助？",
@@ -33,20 +33,20 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
       "name": "CUMCM-2015-problem B-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 25088,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2015/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/B/CUMCM-2015-problem B-Chinese.doc",
       "name": "CUMCM-2015-problem B-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 25088,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -85,7 +85,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

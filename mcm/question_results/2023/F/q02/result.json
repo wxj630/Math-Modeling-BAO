@@ -6,8 +6,8 @@
   "methods": "在官方点名的 permanent_summer_winter_sites、four_season_split_games 基础上加入 status quo reform、regional rotation 和 distributed existing venues，对各策略做确定性多目标评分。对应模型：情景分析、多目标决策。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2023",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
     "official_requirements": {
       "impact_dimensions": [
         "economic",

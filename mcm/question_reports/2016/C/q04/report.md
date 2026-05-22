@@ -8,7 +8,7 @@ Include a letter to the Chief Financial Officer of the Goodgrant Foundation, Mr.
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx_zip。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge`。
 - 行数/记录数：{'scorecard': 7804, 'candidate_uids': 2977, 'dictionary': 1953}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -50,9 +50,9 @@ Dear Mr. Alpha Chiang: We recommend that the Goodgrant Foundation invest the ann
 - ROI 是慈善投资组合评分，不是严格因果效应；正式论文应补充学校项目执行计划、边际资金吸收能力、地区公平约束、重复资助排除和后续年度 Scorecard 更新。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2016/C/q04/solution.py`
+`.venv/bin/python mcm/question_solutions/2016/C/q04/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2016/C/q04/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2016/C/q04/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2016/C/q04`
+- `mcm/question_results/2016/C/q04/result.json`
+- `mcm/question_reports/2016/C/q04/report.md`
+- `mcm/question_artifacts/2016/C/q04`

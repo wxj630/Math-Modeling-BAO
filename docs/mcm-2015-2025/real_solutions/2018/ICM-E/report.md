@@ -1,7 +1,7 @@
 # 2018 ICM-E Climate and Regional Instability
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-`.
 - COMAP did not provide a numeric attachment for this problem; the workflow uses official statement requirements and explicit deterministic planning inputs.
 
 ## Audit Note

@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2022-B",
   "title": "2022年 CUMCM B题：无人机遂行编队飞行中的纯方位无源定位",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/B.md",
+  "problem_path": "cumcm/problems/2022/B.md",
   "question_index": 2,
   "question": {
     "label": "问题 2",

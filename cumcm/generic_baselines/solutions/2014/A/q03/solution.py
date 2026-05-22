@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2014-A",
   "question_index": 3,
   "title": "2014年 CUMCM A题：嫦娥三号软着陆轨道设计与控制策略",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2014/A.md",
+  "problem_path": "cumcm/problems/2014/A.md",
   "question": {
     "label": "问题 3",
     "statement": "对于你们设计的着陆轨道和控制策略做相应的误差分析和敏感性分析。 附件1： 问题的背景与参考资料； 附件2： 嫦娥三号着陆过程的六个阶段及其状态要求； 附件3：距月面2400m处的数字高程图； 附件4：距月面100m处的数字高程图。",
@@ -42,84 +42,84 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
       "name": "CUMCM-2014A-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 41472,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
       "name": "附件1 问题的背景与参考资料(9.3定).doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 252416,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
       "name": "附件2 嫦娥三号软着陆过程(9.3定).doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 1195008,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
       "name": "附件3 距2400m处的数字高程图.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 12432744,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
+      "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
       "name": "附件4 距月面100m处的数字高程图.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 1021808,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/CUMCM-2014A-Chinese.doc",
       "name": "CUMCM-2014A-Chinese.doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 41472,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件1 问题的背景与参考资料(9.3定).doc",
       "name": "附件1 问题的背景与参考资料(9.3定).doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 252416,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件2 嫦娥三号软着陆过程(9.3定).doc",
       "name": "附件2 嫦娥三号软着陆过程(9.3定).doc",
       "suffix": ".doc",
       "kind": "document",
       "size_bytes": 1195008,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件3 距2400m处的数字高程图.tif",
       "name": "附件3 距2400m处的数字高程图.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 12432744,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     },
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
+      "path": "../../Documents/Playground/cumcm_reextract/2014/2014_cumcm2014problems/A/附件4 距月面100m处的数字高程图.tif",
       "name": "附件4 距月面100m处的数字高程图.tif",
       "suffix": ".tif",
       "kind": "media_or_archive",
       "size_bytes": 1021808,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_reextract"
+      "source_root": "../../Documents/Playground/cumcm_reextract"
     }
   ]
 }
@@ -158,7 +158,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

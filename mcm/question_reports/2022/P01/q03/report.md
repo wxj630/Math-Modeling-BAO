@@ -8,7 +8,7 @@ Suggest effectiveness protocols, demonstrate larger or smaller seaport use, and 
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets`。
 - 行数/记录数：{'official_parameters': 4}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -19,9 +19,9 @@ Suggest effectiveness protocols, demonstrate larger or smaller seaport use, and 
 - KPI 当前分、目标分和路线图收益是显式 rubric 输入，不是 ICM 内部审计记录；正式咨询应补充访谈、系统日志、数据目录覆盖率、质量事件和客户满意度调查校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2022/P01/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2022/P01/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2022/P01/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2022/P01/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2022/P01/q03`
+- `mcm/question_results/2022/P01/q03/result.json`
+- `mcm/question_reports/2022/P01/q03/report.md`
+- `mcm/question_artifacts/2022/P01/q03`

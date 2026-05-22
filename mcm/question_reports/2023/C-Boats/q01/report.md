@@ -8,7 +8,7 @@ Develop a mathematical model that explains the listing price of each sailboat in
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices`。
 - 行数/记录数：{'monohull': 2346, 'catamaran': 1145}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -54,9 +54,9 @@ Develop a mathematical model that explains the listing price of each sailboat in
 - COMAP 官方数据不含香港记录；香港部分使用带 URL 的补充挂牌样本做情景比较，正式论文应继续扩充香港本地成交/挂牌样本并记录抓取日期。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2023/C-Boats/q01/solution.py`
+`.venv/bin/python mcm/question_solutions/2023/C-Boats/q01/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2023/C-Boats/q01/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2023/C-Boats/q01/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2023/C-Boats/q01`
+- `mcm/question_results/2023/C-Boats/q01/result.json`
+- `mcm/question_reports/2023/C-Boats/q01/report.md`
+- `mcm/question_artifacts/2023/C-Boats/q01`

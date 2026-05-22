@@ -12,28 +12,28 @@
     "name": "时间序列预测",
     "chapter": "CH8",
     "chapter_title": "时间序列",
-    "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+    "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
   },
   "candidate_models": [
     {
       "key": "time_series",
       "name": "时间序列预测",
       "chapter": "CH8",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md",
       "reason": "时段"
     },
     {
       "key": "graph",
       "name": "图论网络与路径调度",
       "chapter": "CH4",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
       "reason": "交叉口"
     }
   ],
   "data_source": {
     "source_type": "attachment",
     "attachment_count": 4,
-    "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx",
+    "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/E题/附件1.xlsx",
     "rows": 7,
     "columns": 3,
     "note": "本问优先使用官方附件中的数值表生成实验结果。"
@@ -73,7 +73,7 @@
       "name": "时间序列预测",
       "chapter": "CH8",
       "chapter_title": "时间序列",
-      "doc": "/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
+      "doc": "../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md"
     }
   },
   "experiment_result": {

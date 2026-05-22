@@ -6,8 +6,8 @@
   "methods": "构建食物网边表和 120 个月季节性差分方程，比较化学基线下生产者、消费者、害虫压力和生态稳定性。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
     "official_requirements": {
       "forest_to_farm_transition": true,
       "include_natural_processes": true,

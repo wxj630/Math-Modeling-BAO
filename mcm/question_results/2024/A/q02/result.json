@@ -6,8 +6,8 @@
   "methods": "比较低食物高雄性比例与高食物低雄性比例情景，量化配对成功、七鳃鳗丰度、宿主损害和种群持续性权衡。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2024/Resource Availability and Sex Ratios.pdf",
     "official_requirements": {
       "resource_dependent_lamprey_sex_ratio": true,
       "ecosystem_interactions": true,

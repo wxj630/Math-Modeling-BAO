@@ -1,7 +1,7 @@
 # 2022 MCM-A Power Profile of a Cyclist
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist`。
+- 官方来源：`docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist`。
 - 本题无 COMAP 数值附件；脚本只使用官方题面要求和透明确定性骑手/赛道参数，不使用随机占位数据。
 
 ## 骑手功率模型

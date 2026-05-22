@@ -6,8 +6,8 @@
   "methods": "把分区策略、政策排名、长期趋势、社区收益、风险和迁移价值压缩为 Kenyan Tourism and Wildlife Committee 可读的非技术报告。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
+    "root": "docs/mcm-2015-2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2023/Reimagining Maasai Mara.pdf",
     "parameters": {
       "wildlife_act_year": 2013,
       "management_amendment_year": 2020,

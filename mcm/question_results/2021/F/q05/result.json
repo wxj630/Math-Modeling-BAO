@@ -6,8 +6,8 @@
   "methods": "按年排布 need-based affordability compact、completion advising、funding floor、teaching quality feedback、research exchange recovery 和 renewal councils。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "official_requirements": {
       "assess_any_nation_health": true,
       "apply_to_several_countries": true,

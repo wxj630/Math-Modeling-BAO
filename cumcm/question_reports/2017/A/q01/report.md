@@ -12,11 +12,11 @@
 ## 适配模型
 
 - 主模型：CT系统投影标定与滤波反投影重建（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 几何解析与运动学参数方程（CH1）：位置、几何、距离；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
-- 数据拟合与回归分析（CH6）：数据、标定；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 几何解析与运动学参数方程（CH1）：位置、几何、距离；参考 ../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md
+- 数据拟合与回归分析（CH6）：数据、标定；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -47,9 +47,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/A/q01/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2017/A/q01/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2017/A/q01/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2017/A/q01/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取附件1-5，识别模板、模板投影、两个未知体投影和10个查询点。
@@ -61,19 +61,19 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/ct_calibration_parameters.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/template_projection_match.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/reconstruction_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/query_absorption_values.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/problem2.xls
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/problem3.xls
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/improved_template_design.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/calibration_stability_audit.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2017/A/q01/experiment_table.csv
+- cumcm/question_artifacts/2017/A/q01/ct_calibration_parameters.csv
+- cumcm/question_artifacts/2017/A/q01/template_projection_match.csv
+- cumcm/question_artifacts/2017/A/q01/reconstruction_summary.csv
+- cumcm/question_artifacts/2017/A/q01/query_absorption_values.csv
+- cumcm/question_artifacts/2017/A/q01/problem2.xls
+- cumcm/question_artifacts/2017/A/q01/problem3.xls
+- cumcm/question_artifacts/2017/A/q01/improved_template_design.csv
+- cumcm/question_artifacts/2017/A/q01/calibration_stability_audit.csv
+- cumcm/question_artifacts/2017/A/q01/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls
+- 附件：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/A/A题附件.xls
 - 读取规模：342026 行 x 180 列
 - 说明：本题专用算法读取A题附件中的模板矩阵、模板投影、两个未知介质投影和10个查询点，完成CT标定、滤波反投影重建与problem2/problem3文件导出。
 

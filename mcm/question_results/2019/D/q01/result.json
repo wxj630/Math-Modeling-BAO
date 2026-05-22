@@ -6,8 +6,8 @@
   "methods": "使用官方 5 层、2 层地下、8.1M 2017 访客、72,735 m2、380,000 展品、四主入口和 480m 翼长等题面参数，构造楼层负载、出口容量和基线疏散时间。对应模型：容量约束疏散、瓶颈分析。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
     "official_requirements": {
       "five_floors": true,
       "two_underground_floors": true,

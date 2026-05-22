@@ -6,8 +6,8 @@
   "methods": "基于 2020 预测设置 high/watch 县阈值，测试 lab feedback、treatment/prescriber outreach、combined supply/treatment 三类情景的报告减少幅度，并输出 DEA/NFLIS memo。对应模型：情景仿真、阈值政策、敏感性边界。",
   "data_source": {
     "type": "official_comap_xlsx_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
     "rows": {
       "MCM_NFLIS_Data.xlsx": 24062,
       "ACS county-year rows": 3245

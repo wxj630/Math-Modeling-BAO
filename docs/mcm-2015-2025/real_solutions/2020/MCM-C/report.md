@@ -1,8 +1,8 @@
 # 2020 MCM-C A Wealth of Data
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/A Wealth of Data`.
-- Official ZIP asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2020/A Wealth of Data`.
+- Official ZIP asset: `docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data`.
 - Rows: {'hair_dryer.tsv': 11470, 'microwave.tsv': 1615, 'pacifier.tsv': 18939}.
 
 ## Recommendation

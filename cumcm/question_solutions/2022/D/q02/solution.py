@@ -12,7 +12,7 @@ from question_models import solve_question, write_question_report
 PAYLOAD = {
   "problem_id": "2022-D",
   "title": "2022年 CUMCM D题：气象报文信息卫星通信传输",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/D.md",
+  "problem_path": "cumcm/problems/2022/D.md",
   "question_index": 2,
   "question": {
     "label": "问题 2",

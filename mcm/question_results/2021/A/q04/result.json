@@ -6,8 +6,8 @@
   "methods": "比较 1-5 个 species pool 在高波动 temperate 环境下的 Shannon diversity 与 mass loss，形成面向大学生物教材的非技术文章。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Fungi",
     "official_requirements": {
       "growth_rate_and_moisture_tolerance_traits": true,
       "multi_species_interactions": true,

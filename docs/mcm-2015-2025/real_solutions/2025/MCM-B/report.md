@@ -1,7 +1,7 @@
 # 2025 MCM-B Sustainable Tourism 题面参数实验报告
 
 ## 数据来源
-- 官方 PDF：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf`。
+- 官方 PDF：`docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf`。
 - 本题没有独立 CSV/XLSX 附件；模型只使用题面给出的朱诺人口、游客量、峰值游客、收入和冰川退缩参数，并把其他参数作为显式假设。
 
 ## Q1 朱诺可持续旅游模型
@@ -34,8 +34,8 @@ Spend new fee revenue on glacier and trail conservation, water/waste/dock infras
 Recommendation: adopt a moderate cap-fee package, publish transparent annual indicators, and reserve enough fee revenue for visible resident benefits.
 
 ## 输出文件
-- `result.json`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/result.json
-- `policy_grid.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/policy_grid.csv
-- `frontier_policies.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/frontier_policies.csv
-- `sensitivity.csv`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/sensitivity.csv
-- `tourism_policy_frontier.png`：/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/tourism_policy_frontier.png
+- `result.json`：docs/mcm-2015-2025/real_solutions/2025/MCM-B/result.json
+- `policy_grid.csv`：docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/policy_grid.csv
+- `frontier_policies.csv`：docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/frontier_policies.csv
+- `sensitivity.csv`：docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/sensitivity.csv
+- `tourism_policy_frontier.png`：docs/mcm-2015-2025/real_solutions/2025/MCM-B/artifacts/tourism_policy_frontier.png

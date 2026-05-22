@@ -12,10 +12,10 @@
 ## 适配模型
 
 - 主模型：空气质量自建点数据校准模型（CH6：数据处理与拟合模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ### 候选模型与适配理由
-- 数据拟合与回归分析（CH6）：数据、分析；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
+- 数据拟合与回归分析（CH6）：数据、分析；参考 ../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md
 
 ## 变量、约束与公式
 
@@ -46,9 +46,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2019/D/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2019/D/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2019/D/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2019/D/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：读取GBK编码CSV，解析时间并将附件2自建点分钟数据按小时聚合。
@@ -60,15 +60,15 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/D/q02/hourly_aligned_air_quality.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/D/q02/pollutant_eda_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/D/q02/residual_factor_importance.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/D/q02/residual_weather_correlations.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2019/D/q02/experiment_table.csv
+- cumcm/question_artifacts/2019/D/q02/hourly_aligned_air_quality.csv
+- cumcm/question_artifacts/2019/D/q02/pollutant_eda_summary.csv
+- cumcm/question_artifacts/2019/D/q02/residual_factor_importance.csv
+- cumcm/question_artifacts/2019/D/q02/residual_weather_correlations.csv
+- cumcm/question_artifacts/2019/D/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx
+- 附件：../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件1.csv; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件2.csv; ../../Documents/Playground/cumcm_unzipped/2019_TSIsGxZuf258d48a22a7c7e628cd90482e1c25a2/D-2019中文/附件3.docx
 - 读取规模：238917 行 x 19 列
 - 说明：本题专用算法读取国控点小时数据和自建点分钟级污染物/气象数据，完成小时对齐、差异因素分析和多污染物校准。
 

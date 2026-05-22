@@ -8,7 +8,7 @@ Is there anything a property owner could do to influence this decision?
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted`。
 - 行数/记录数：{'official_parameters': 6}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -60,9 +60,9 @@ Is there anything a property owner could do to influence this decision?
 - 两个地区、建址和地标保护行是显式确定性演示情景，不是保险公司真实承保组合；正式论文应补充当地灾害频率、赔付率、建筑清单、工程造价和社区调查数据校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2024/E/q03/solution.py`
+`.venv/bin/python mcm/question_solutions/2024/E/q03/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2024/E/q03/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2024/E/q03/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2024/E/q03`
+- `mcm/question_results/2024/E/q03/result.json`
+- `mcm/question_reports/2024/E/q03/report.md`
+- `mcm/question_artifacts/2024/E/q03`

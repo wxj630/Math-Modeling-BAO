@@ -6,8 +6,8 @@
   "methods": "用官方题面参数构建日游客上限、游客费和保护支出比例的确定性政策网格，最大化经济、环境和居民接受度加权可持续得分。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
     "parameters": {
       "juneau_population": 30000,
       "annual_cruise_passengers_2023": 1600000,

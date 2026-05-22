@@ -8,7 +8,7 @@
 ## Model
 - Directed weighted network over the 17 official SDGs.
 - Priority score combines PageRank, betweenness, outgoing influence, incoming support, and direct need.
-- Tutorial model references: complex networks/graph theory, comprehensive evaluation, and scenario sensitivity from `/Users/wuxiaojun/code/My-Agent/intro-mathmodel`.
+- Tutorial model references: complex networks/graph theory, comprehensive evaluation, and scenario sensitivity from `../My-Agent/intro-mathmodel`.
 
 ## Top Priorities
 - SDG 1 No Poverty: priority score 0.5962.

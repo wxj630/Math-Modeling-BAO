@@ -1,7 +1,7 @@
 # 2018 ICM-F Cost of Privacy
 
 ## Data Source
-- Official PDF asset: `/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/Cost of Privacy`.
+- Official PDF asset: `docs/mcm-2015-2025/official_assets/2018/Cost of Privacy`.
 - COMAP did not provide a numeric attachment for this problem; the workflow uses official statement requirements and explicit deterministic planning inputs.
 
 ## Audit Note

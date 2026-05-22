@@ -6,8 +6,8 @@
   "methods": "Rank intervention cost-effectiveness and document city, country, and continent scale modifications.",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
     "official_requirements": {
       "fragile_vulnerable_stable_classification": true,
       "top10_fragile_state_case": true,

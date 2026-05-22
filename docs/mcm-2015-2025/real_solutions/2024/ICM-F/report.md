@@ -1,7 +1,7 @@
 # 2024 ICM-F Reducing Illegal Wildlife Trade
 
 ## 数据真实性
-- 官方来源：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf`。
+- 官方来源：`docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf`。
 - 本题无 COMAP 数值附件；脚本只使用官方 PDF 中的 26.5B USD/year、第四大非法贸易和 5 年项目要求。
 - 客户评分、干预效果、成本和敏感性是显式确定性项目情景，不是声称拥有真实执法数据库。
 

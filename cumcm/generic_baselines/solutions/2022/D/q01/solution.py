@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2022-D",
   "question_index": 1,
   "title": "2022年 CUMCM D题：气象报文信息卫星通信传输",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2022/D.md",
+  "problem_path": "cumcm/problems/2022/D.md",
   "question": {
     "label": "问题 1",
     "statement": "(1) 要求在 𝐾 分钟内完成 𝑁 (≥ 5) 支分队主站间气象报文的信息共享，请研究 𝐾 的最小值与 𝑁 的关系，并建立 𝐾 分钟内实现 𝑁 个主站间气象报文信息共享的一般传输 模型。 (2) 在上述模型中， 取 𝑁 = 9， 给出 𝐾 的相应最小值， 并根据一般传输模型给出此时主站 间气象报文的信息共享方案，将结果按表 1 的格式填报。填报结果时，注意消息的完整性，例 如：在“发送信息所属站点序号”一栏中填写“5”，表示本轮所发送消息来自于第 5 号主站，",
@@ -69,7 +69,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

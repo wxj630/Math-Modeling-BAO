@@ -1,6 +1,6 @@
 # intro-mathmodel 典型模型索引
 
-本文件将 `/Users/wuxiaojun/code/My-Agent/intro-mathmodel` 中的章节整理为 MCM/ICM 赛题可直接引用的模型索引。
+本文件将 `../My-Agent/intro-mathmodel` 中的章节整理为 MCM/ICM 赛题可直接引用的模型索引。
 
 | 教程章节 | 典型模型 | 适用问题 | 源章节 |
 |---|---|---|---|

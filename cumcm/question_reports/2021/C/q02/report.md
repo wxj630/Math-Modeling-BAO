@@ -12,12 +12,12 @@
 ## 适配模型
 
 - 主模型：订购-转运联合规划优化（CH3：函数极值与规划模型）
-- 教程参考：/Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
 
 ### 候选模型与适配理由
-- 规划优化与资源配置（CH3）：方案、订购；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
-- 时间序列预测（CH8）：未来；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
-- 图论网络与路径调度（CH4）：转运；参考 /Users/wuxiaojun/code/My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
+- 规划优化与资源配置（CH3）：方案、订购；参考 ../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md
+- 时间序列预测（CH8）：未来；参考 ../My-Agent/intro-mathmodel/docs/CH8/第8章-时间序列.md
+- 图论网络与路径调度（CH4）：转运；参考 ../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md
 
 ## 变量、约束与公式
 
@@ -48,9 +48,9 @@
 
 ## Python 代码与运行方式
 
-- 代码文件：/Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/C/q02/solution.py
-- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_solutions/2021/C/q02/solution.py`
-- 批量运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/cumcm/scripts/run_question_all.py`
+- 代码文件：cumcm/question_solutions/2021/C/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/question_solutions/2021/C/q02/solution.py`
+- 批量运行：`.venv/bin/python cumcm/scripts/run_question_all.py`
 
 ### 求解步骤
 - 步骤 1：先按问题1重要性得分排序，逐个累加稳健产能得到满足生产需求的最少供应商数。
@@ -61,17 +61,17 @@
 ## 实验结果与解释
 
 ### 产物文件
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_supplier_scores.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_weekly_summary.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_order_plan.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_transport_plan.csv
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_附件A_订购方案填报.xlsx
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/q2_cost_min_附件B_转运方案填报.xlsx
-- /Users/wuxiaojun/code/Math-Modeling-World/cumcm/question_artifacts/2021/C/q02/experiment_table.csv
+- cumcm/question_artifacts/2021/C/q02/q2_cost_min_supplier_scores.csv
+- cumcm/question_artifacts/2021/C/q02/q2_cost_min_weekly_summary.csv
+- cumcm/question_artifacts/2021/C/q02/q2_cost_min_order_plan.csv
+- cumcm/question_artifacts/2021/C/q02/q2_cost_min_transport_plan.csv
+- cumcm/question_artifacts/2021/C/q02/q2_cost_min_附件A_订购方案填报.xlsx
+- cumcm/question_artifacts/2021/C/q02/q2_cost_min_附件B_转运方案填报.xlsx
+- cumcm/question_artifacts/2021/C/q02/experiment_table.csv
 
 ### 数据来源
 - 类型：attachment
-- 附件：/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件1 近5年402家供应商的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件2 近5年8家转运商的相关数据.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件A 订购方案数据结果.xlsx; /Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件B 转运方案数据结果.xlsx
+- 附件：../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件1 近5年402家供应商的相关数据.xlsx; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件2 近5年8家转运商的相关数据.xlsx; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件A 订购方案数据结果.xlsx; ../../Documents/Playground/cumcm_unzipped/2021_HtbJEt9Nb655e46bebfa2a66ec63f940e2da156b/C/附件B 转运方案数据结果.xlsx
 - 读取规模：410 行 x 240 列
 - 说明：本题专用算法读取附件1的402家供应商240周订货/供货量、附件2的8家转运商240周损耗率，并按附件A/B模板生成24周订购与转运方案。
 

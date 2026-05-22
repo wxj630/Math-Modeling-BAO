@@ -6,8 +6,8 @@
   "methods": "把同一健康度模型应用到 Germany、United States、Japan、Australia 和 Brazil，按 current score、room for improvement 和 weakest dimension 选择转型对象。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "root": "docs/mcm-2015-2025/official_assets",
+    "source_pdf": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
     "official_requirements": {
       "assess_any_nation_health": true,
       "apply_to_several_countries": true,

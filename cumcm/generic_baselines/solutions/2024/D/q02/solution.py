@@ -13,7 +13,7 @@ PAYLOAD = {
   "problem_id": "2024-D",
   "question_index": 2,
   "title": "2024年 CUMCM D题：反潜航空深弹命中概率",
-  "problem_path": "/Users/wuxiaojun/code/Math-Modeling-World/cumcm/problems/2024/D.md",
+  "problem_path": "cumcm/problems/2024/D.md",
   "question": {
     "label": "问题 2",
     "statement": "仍投射一枚深弹，潜艇中心位置各方向的定位均有误差。 请给出投弹命中概率 的表达式。 针对以下参数，设计定深引信引爆深度， 使得投弹命中概率最大： 潜艇中心位置的深度 定位值为 150 m，标准差 𝜎𝑧 = 40 m，潜艇中心位置实际深度的最小值为 120 m，其他参 数同问题 1。",
@@ -42,12 +42,12 @@ PAYLOAD = {
   },
   "attachments": [
     {
-      "path": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/D题/D题.pdf",
+      "path": "../../Documents/Playground/cumcm_unzipped/2024_pmkWxf8H9cfe9984c1a1a5b1263e5dd3b5596ed5/CUMCM2024Problems/D题/D题.pdf",
       "name": "D题.pdf",
       "suffix": ".pdf",
       "kind": "document",
       "size_bytes": 890096,
-      "source_root": "/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"
+      "source_root": "../../Documents/Playground/cumcm_unzipped"
     }
   ]
 }
@@ -86,7 +86,7 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
     lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python {solution_path}`")
+    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
     lines.append(f"- 结果 JSON：{RESULT_PATH}")
     lines.append(f"- 实验报告：{REPORT_PATH}")
     for artifact in result.get("artifact_paths", []):

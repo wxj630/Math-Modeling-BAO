@@ -67,7 +67,7 @@ def write_readme(base: Path, index_rows: list[dict[str, str]]) -> None:
     method_counts: dict[str, int] = {}
     for row in index_rows:
         method_counts[row["method"]] = method_counts.get(row["method"], 0) + 1
-    command_base = "/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python mcm/scripts/archive_generic_baselines.py --all"
+    command_base = ".venv/bin/python mcm/scripts/archive_generic_baselines.py --all"
     lines = [
         "# MCM 通用基线归档",
         "",

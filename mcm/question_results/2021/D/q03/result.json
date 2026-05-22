@@ -6,8 +6,8 @@
   "methods": "将 full_music_data.csv 的 artist_id 合并到 influence_data 的流派标签，按 year 和 genre 聚合音频特征，用线性趋势斜率描述流派演化，并用流派中心相似矩阵识别相关流派。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2021/The Influence of Music.pdf",
     "rows": {
       "influence_data.csv": 42770,
       "full_music_data.csv": 98340,

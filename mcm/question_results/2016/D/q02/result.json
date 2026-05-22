@@ -6,8 +6,8 @@
   "methods": "对官方题面点名的 Taylor Swift 传闻、今日重要人物遇刺、Lincoln 遇刺做确定性扩散曲线比较；验证模型是否重现从电报/报纸/火车时代到智能手机时代的 24 小时 awareness 数量级跃迁。对应模型：指数扩散、历史结构验证、情景对比。",
   "data_source": {
     "type": "official_statement_parameters",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016",
-    "source_pdf": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2016",
+    "source_pdf": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
     "official_problem_parameters": {
       "periods": [
         "1870s_telegraph_train_newspaper",

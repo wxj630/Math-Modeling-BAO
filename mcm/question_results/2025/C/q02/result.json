@@ -6,7 +6,7 @@
   "methods": "用 2024 国家状态外推到 2028，设置美国东道主变量，比较预测总奖牌与 2024 实际总奖牌。",
   "data_source": {
     "type": "official_comap_csv",
-    "root": "/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data",
     "rows": {
       "summerOly_medal_counts.csv": 1435,
       "summerOly_athletes.csv": 252565,

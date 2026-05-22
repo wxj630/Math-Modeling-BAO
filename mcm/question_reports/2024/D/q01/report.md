@@ -8,7 +8,7 @@ Determine optimal water levels of the five Great Lakes at any time of year, cons
 
 ## 数据与真实性
 - 数据类型：official_comap_xlsx。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx`。
 - 行数/记录数：{'records': 2548, 'level_records': 1380, 'flow_records': 1168}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -41,9 +41,9 @@ Determine optimal water levels of the five Great Lakes at any time of year, cons
 - 对异常国家/代表队名称、教练履历、项目规则变化等，需要在竞赛论文中追加人工核验和敏感性分析。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2024/D/q01/solution.py`
+`.venv/bin/python mcm/question_solutions/2024/D/q01/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2024/D/q01/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2024/D/q01/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2024/D/q01`
+- `mcm/question_results/2024/D/q01/result.json`
+- `mcm/question_reports/2024/D/q01/report.md`
+- `mcm/question_artifacts/2024/D/q01`

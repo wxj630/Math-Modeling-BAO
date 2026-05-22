@@ -1,8 +1,8 @@
 # 2017 ICM-D Airport Security Checkpoint：官方 TSA workbook 实验报告
 
 ## 数据来源
-- 官方题面：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf`。
-- 官方 workbook：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx`。
+- 官方题面：`docs/mcm-2015-2025/official_assets_extracted/2017/Optimizing Passenger Throughput at an Airport Security Checkpoint.pdf`。
+- 官方 workbook：`docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Airport Security Checkpoint/2017_ICM_Problem_D_Data.xlsx`。
 - Sheet1 行数：58。
 - PreCheck 到达样本：58；Regular 到达样本：47。
 - 本实验不使用随机生成的 x1/x2/x3；文化和流程改变是显式确定性敏感性情景。

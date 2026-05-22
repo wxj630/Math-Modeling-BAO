@@ -8,7 +8,7 @@ Write a 20-page report introducing your organizational model, its functions, and
 
 ## 数据与真实性
 - 数据类型：official_statement_parameters。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2015/Managing Human Capital in Organizations.pdf`。
 - 行数/记录数：{'official_parameters': 11}。
 - 本脚本只使用 COMAP 官方题面参数和显式建模假设，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -75,9 +75,9 @@ If 30% of junior managers and experienced supervisors leave, internal promotions
 - 流失影响权重、招聘吞吐折减和内部晋升池比例是显式确定性假设，不是员工观测数据；正式论文应补充员工级组织图、绩效评价、离职历史、招聘流水和匿名关系网络校准。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2015/C/q07/solution.py`
+`.venv/bin/python mcm/question_solutions/2015/C/q07/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2015/C/q07/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2015/C/q07/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2015/C/q07`
+- `mcm/question_results/2015/C/q07/result.json`
+- `mcm/question_reports/2015/C/q07/report.md`
+- `mcm/question_artifacts/2015/C/q07`

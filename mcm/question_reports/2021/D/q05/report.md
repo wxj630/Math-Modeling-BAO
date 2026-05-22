@@ -8,7 +8,7 @@ Identify if there are characteristics that might signify revolutions or major le
 
 ## 数据与真实性
 - 数据类型：official_comap_csv。
-- 官方数据目录：`/Users/wuxiaojun/code/Math-Modeling-World/docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data`。
+- 官方数据目录：`docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- The Influence of Music/2021_ICM_Problem_D_Data`。
 - 行数/记录数：{'influence_data.csv': 42770, 'full_music_data.csv': 98340, 'data_by_artist.csv': 5854, 'data_by_year.csv': 100}。
 - 本脚本只调用 COMAP 官方附件数据运行结果，不使用随机生成的 `x1/x2/x3` 占位数据。
 
@@ -56,9 +56,9 @@ Identify if there are characteristics that might signify revolutions or major le
 - 影响网络来自题面给定的艺术家/专家影响关系，音频特征来自官方子集；相似性和相关性不能单独证明严格因果，正式论文应补充歌词、地理、合作、发行时间线和历史事件数据。
 
 ## 运行方式
-`/Users/wuxiaojun/code/Math-Modeling-World/.venv/bin/python /Users/wuxiaojun/code/Math-Modeling-World/mcm/question_solutions/2021/D/q05/solution.py`
+`.venv/bin/python mcm/question_solutions/2021/D/q05/solution.py`
 
 ## 输出
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_results/2021/D/q05/result.json`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_reports/2021/D/q05/report.md`
-- `/Users/wuxiaojun/code/Math-Modeling-World/mcm/question_artifacts/2021/D/q05`
+- `mcm/question_results/2021/D/q05/result.json`
+- `mcm/question_reports/2021/D/q05/report.md`
+- `mcm/question_artifacts/2021/D/q05`

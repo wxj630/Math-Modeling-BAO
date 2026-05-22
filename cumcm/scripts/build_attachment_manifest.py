@@ -10,8 +10,8 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_ROOTS = [
-    Path("/Users/wuxiaojun/Documents/Playground/cumcm_unzipped"),
-    Path("/Users/wuxiaojun/Documents/Playground/cumcm_reextract"),
+    Path("../../Documents/Playground/cumcm_unzipped"),
+    Path("../../Documents/Playground/cumcm_reextract"),
 ]
 DATA_EXTS = {".csv", ".xlsx", ".xls"}
 DOC_EXTS = {".pdf", ".doc", ".docx"}
