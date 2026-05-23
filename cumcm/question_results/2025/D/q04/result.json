@@ -1,0 +1,108 @@
+{
+  "problem_id": "2025-D",
+  "title": "2025年 CUMCM D题：矿井突水水流漫延模型与逃生方案",
+  "question_index": 4,
+  "question_label": "问题4",
+  "statement": "当矿井出现第二个突水点后，安全生产部门即刻监控到突水情况，并尽快调整 逃生方案。请协助安全生产部门调整最佳逃生路径。 在前面问题的基础上，假设在第二突水点突水1 分钟后，安全生产部门发布调整后的逃 生方案。对附件1 和附件2 给出的两个矿井巷道网络，分别给出各矿工调整后的最佳逃生路 径。请将结果分别保存到文件result4-1.xlsx 和result4-2.xlsx 中（模板文件在附件3 中）。 附件说明 附件1.xlsx、附件2.xlsx 两个矿井的巷道网络数据，均包含“端点”和“巷道”两个 工作表。“端点”工作表记录了巷道中各端点的三维坐标 (X, Y, Z)（其中 XY 为水平面，Z 为 高程）；“巷道”工作表记录了各巷道的两个端点编号。 附件3 计算结果模板文件夹，其中 result𝑖-𝑗.xlsx 问题 𝑖 中矿井 𝑗 的结果文件模板",
+  "tasks": [
+    "对附件1 和附件2 给出的两个矿井巷道网络，分别给出各矿工调整后的最佳逃生路 径",
+    "请将结果分别保存到文件result4-1.xlsx 和result4-2.xlsx 中（模板文件在附件3 中）",
+    "附件3 计算结果模板文件夹，其中 result𝑖-𝑗.xlsx 问题 𝑖 中矿井 𝑗 的结果文件模板"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "路径、网络"
+    },
+    {
+      "key": "optimization",
+      "name": "规划优化与资源配置",
+      "chapter": "CH3",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md",
+      "reason": "方案"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "坐标"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 11,
+    "path": "../../Documents/Playground/cumcm_unzipped/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/D题/附件/附件1.xlsx",
+    "rows": 1643,
+    "columns": 4,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "对附件1 和附件2 给出的两个矿井巷道网络，分别给出各矿工调整后的最佳逃生路 径",
+      "请将结果分别保存到文件result4-1.xlsx 和result4-2.xlsx 中（模板文件在附件3 中）",
+      "附件3 计算结果模板文件夹，其中 result𝑖-𝑗.xlsx 问题 𝑖 中矿井 𝑗 的结果文件模板"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "G=(V,E): 交通/转运/关系网络",
+      "w_ij: 边成本、距离或时间",
+      "d_i: 从源点到节点 i 的最短距离",
+      "pre_i: 最短路前驱节点"
+    ],
+    "constraints": [
+      "边权非负",
+      "路径必须由网络中已有边组成"
+    ],
+    "objective_or_equations": [
+      "d_j = min_i(d_i + w_ij)",
+      "min path_cost(source, target)"
+    ],
+    "solution_steps": [
+      "把题面地点、平台或转运关系抽象为图。",
+      "构造边权矩阵。",
+      "运行 Dijkstra 最短路。",
+      "输出各节点最短距离和前驱。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "dijkstra_shortest_path",
+    "node_count": 3,
+    "source": 0,
+    "distances": [
+      0.0,
+      0.000607,
+      1.000911
+    ],
+    "predecessors": [
+      -9999,
+      0,
+      1
+    ]
+  },
+  "artifact_paths": [
+    "question_artifacts/2025/D/q04/experiment_table.csv"
+  ]
+}

@@ -40,9 +40,9 @@
 
 ## 数据来源
 
-- 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls
-- 说明：本问优先使用官方附件中的数值表生成实验结果。
+- 类型：problem_statement
+- 路径：cumcm/problems/2011/C.md
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 
 ## 核心结果
 
@@ -50,11 +50,11 @@
 {
   "method": "quadratic_least_squares",
   "coefficients": [
-    9376.206145,
-    -828.18141,
-    0.414973
+    879.898031,
+    -43.873607,
+    0.021682
   ],
-  "r2": 0.7819480295250987,
-  "mean_abs_error": 3300.9459768207125
+  "r2": 0.17012644997948434,
+  "mean_abs_error": 726.5703466583565
 }
 ```

@@ -32,12 +32,12 @@
     }
   ],
   "data_source": {
-    "source_type": "attachment",
+    "source_type": "problem_statement",
     "attachment_count": 27,
-    "path": "../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls",
-    "rows": 75,
-    "columns": 12,
-    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+    "path": "cumcm/problems/2016/D.md",
+    "rows": 15,
+    "columns": 9,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
   },
   "formulation": {
     "model_type": "几何解析与运动学参数方程",
@@ -81,11 +81,11 @@
   "experiment_result": {
     "method": "least_squares_geometry_fit",
     "center": [
-      2.291499,
-      0.206145
+      1.73866,
+      1.773417
     ],
-    "radius": 2.6971297449493727,
-    "mean_squared_error": 0.018940261363720644,
+    "radius": 2.8555501618773786,
+    "mean_squared_error": 0.0138147225256281,
     "success": true
   },
   "artifact_paths": [

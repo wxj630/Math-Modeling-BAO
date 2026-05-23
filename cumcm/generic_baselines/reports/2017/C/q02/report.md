@@ -40,9 +40,9 @@
 
 ## 数据来源
 
-- 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/C/Data1.xls
-- 说明：本问优先使用官方附件中的数值表生成实验结果。
+- 类型：problem_statement
+- 路径：cumcm/problems/2017/C.md
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 
 ## 核心结果
 
@@ -50,11 +50,11 @@
 {
   "method": "quadratic_least_squares",
   "coefficients": [
-    106.47962,
-    0.012635,
-    -7e-06
+    2.595485,
+    0.573066,
+    -0.000285
   ],
-  "r2": 0.0018541719688406344,
-  "mean_abs_error": 22.71687923976884
+  "r2": 0.6315160822422177,
+  "mean_abs_error": 1.0176154079296245
 }
 ```

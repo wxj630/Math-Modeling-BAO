@@ -73,8 +73,8 @@
   },
   "experiment_result": {
     "method": "linear_trend_forecast",
-    "intercept": -2.0359848484848477,
-    "slope": 0.9575534759358288,
+    "intercept": -2.035984848484844,
+    "slope": 0.9575534759358286,
     "r2": 0.9846845049200885,
     "next_12_forecast": [
       44.884135,

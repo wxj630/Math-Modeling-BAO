@@ -32,12 +32,12 @@
     }
   ],
   "data_source": {
-    "source_type": "attachment",
+    "source_type": "problem_statement",
     "attachment_count": 4,
-    "path": "../../Documents/Playground/cumcm_unzipped/2011_LOsf8a1w1cfbe73ef037f2f60e5c144c0f96a94f/C/cumcm2011C附件1_山东省职工平均工资.xls",
-    "rows": 35,
-    "columns": 2,
-    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+    "path": "cumcm/problems/2011/C.md",
+    "rows": 22,
+    "columns": 8,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
   },
   "formulation": {
     "model_type": "数据拟合与回归分析",
@@ -81,12 +81,12 @@
   "experiment_result": {
     "method": "quadratic_least_squares",
     "coefficients": [
-      9376.206145,
-      -828.18141,
-      0.414973
+      879.898031,
+      -43.873607,
+      0.021682
     ],
-    "r2": 0.7819480295250987,
-    "mean_abs_error": 3300.9459768207125
+    "r2": 0.17012644997948434,
+    "mean_abs_error": 726.5703466583565
   },
   "artifact_paths": [
     "generic_baselines/artifacts/2011/C/q02/experiment_table.csv"

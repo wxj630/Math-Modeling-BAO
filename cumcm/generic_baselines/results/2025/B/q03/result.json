@@ -1,0 +1,97 @@
+{
+  "problem_id": "2025-B",
+  "title": "2025年 CUMCM B题：碳化硅外延层厚度的确定",
+  "question_index": 3,
+  "question_label": "问题3",
+  "statement": "光波可以在外延层界面和衬底界面产生多次反射和透射（图2），从而产生多光 束干涉。请推导产生多光束干涉的必要条件，以及多光束干涉对外延层厚度计算精度可能产 生的影响。 请根据多光束干涉的必要条件，分析附件3 和附件4 提供的硅晶圆片的测试结果是否 出现多光束干涉，给出确定硅外延层厚度计算的数学模型和算法，以及相应的计算结果。 如果你们认为，多光束干涉也会出现在碳化硅晶圆片的测试结果（附件1 和附件2）中， 从而影响到碳化硅外延层厚度计算的精度，请设法消除其影响，并给出消除影响后的计算结 果。",
+  "tasks": [
+    "请推导产生多光束干涉的必要条件，以及多光束干涉对外延层厚度计算精度可能产 生的影响",
+    "请根据多光束干涉的必要条件，分析附件3 和附件4 提供的硅晶圆片的测试结果是否 出现多光束干涉，给出确定硅外延层厚度计算的数学模型和算法，以及相应的计算结果",
+    "如果你们认为，多光束干涉也会出现在碳化硅晶圆片的测试结果（附件1 和附件2）中， 从而影响到碳化硅外延层厚度计算的精度，请设法消除其影响，并给出消除影响后的计算结 果"
+  ],
+  "selected_model": {
+    "key": "fitting",
+    "name": "数据拟合与回归分析",
+    "chapter": "CH6",
+    "chapter_title": "数据处理与拟合模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "圆"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "分析"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 5,
+    "path": "../../Documents/Playground/cumcm_unzipped/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件1.xlsx",
+    "rows": 2500,
+    "columns": 2,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "数据拟合与回归分析",
+    "task_breakdown": [
+      "请推导产生多光束干涉的必要条件，以及多光束干涉对外延层厚度计算精度可能产 生的影响",
+      "请根据多光束干涉的必要条件，分析附件3 和附件4 提供的硅晶圆片的测试结果是否 出现多光束干涉，给出确定硅外延层厚度计算的数学模型和算法，以及相应的计算结果",
+      "如果你们认为，多光束干涉也会出现在碳化硅晶圆片的测试结果（附件1 和附件2）中， 从而影响到碳化硅外延层厚度计算的精度，请设法消除其影响，并给出消除影响后的计算结 果"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "x: 题面影响因素或测量自变量",
+      "y: 待解释/待标定指标",
+      "beta: 回归参数",
+      "epsilon: 随机误差"
+    ],
+    "constraints": [
+      "样本点按题面数值范围或标准化区间构造",
+      "最小二乘残差平方和最小"
+    ],
+    "objective_or_equations": [
+      "min_beta sum_i (y_i - beta0 - beta1*x_i - beta2*x_i^2)^2",
+      "R^2 = 1 - SSE/SST"
+    ],
+    "solution_steps": [
+      "抽取题面数值范围并构造实验样本。",
+      "建立二次回归设计矩阵。",
+      "用 numpy.linalg.lstsq 求解参数。",
+      "输出拟合值、残差和 R^2。"
+    ],
+    "model_reference": {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "chapter_title": "数据处理与拟合模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "quadratic_least_squares",
+    "coefficients": [
+      2.077919,
+      0.01761,
+      7.8e-05
+    ],
+    "r2": 0.6581379761412045,
+    "mean_abs_error": 2.255123483439905
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2025/B/q03/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

@@ -1,0 +1,114 @@
+{
+  "problem_id": "2025-E",
+  "title": "2025年 CUMCM E题：AI 辅助智能体测",
+  "question_index": 2,
+  "question_label": "问题2",
+  "statement": "经过短时间的专业训练，跳远成绩便可有较大幅度的提升。附件3 是一些立定 跳远运动者在纠正前、教练纠正姿势后的跳远视频、位置信息和跳远成绩。附件4 是运动 者的个人体质报告，包括年龄、身高、体重和体脂率等。请根据相关资料，分析影响运动 者跳远成绩的主要因素。",
+  "tasks": [
+    "请根据相关资料，分析影响运动 者跳远成绩的主要因素"
+  ],
+  "selected_model": {
+    "key": "signal",
+    "name": "图像文本与信号特征",
+    "chapter": "CH10",
+    "chapter_title": "图像、文本与信号数据",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+  },
+  "candidate_models": [
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "视频"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "置信"
+    },
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 76,
+    "path": "../../Documents/Playground/cumcm_unzipped/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/E题/附件/附件1/运动者1的跳远位置信息.xlsx",
+    "rows": 302,
+    "columns": 67,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图像文本与信号特征",
+    "task_breakdown": [
+      "请根据相关资料，分析影响运动 者跳远成绩的主要因素"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "s_t: 信号/图像/文本序列特征",
+      "S_k: 傅里叶谱",
+      "k*: 主要频率成分",
+      "E: 信号能量"
+    ],
+    "constraints": [
+      "输入序列先中心化",
+      "主要特征取谱幅值最大的频段"
+    ],
+    "objective_or_equations": [
+      "S_k=|FFT(s_t-mean(s))|",
+      "E=sum_t s_t^2",
+      "top_k=argsort(S_k)"
+    ],
+    "solution_steps": [
+      "把图像/文本/信号转成数值序列。",
+      "中心化并计算 FFT。",
+      "提取主要频率幅值。",
+      "输出谱特征表。"
+    ],
+    "model_reference": {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "chapter_title": "图像、文本与信号数据",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+    }
+  },
+  "experiment_result": {
+    "method": "fft_feature_extraction",
+    "top_frequency_bins": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "top_amplitudes": [
+      14515.818864,
+      7258.286605,
+      4839.276864,
+      3629.897806,
+      2904.371078,
+      2420.770579,
+      2075.413706,
+      1816.459166
+    ],
+    "signal_energy": 2294975.4966887417
+  },
+  "artifact_paths": [
+    "question_artifacts/2025/E/q02/experiment_table.csv"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "problem_id": "2025-E",
+  "title": "2025年 CUMCM E题：AI 辅助智能体测",
+  "question_index": 4,
+  "question_label": "问题4",
+  "statement": "在问题3 的基础上，给出短时间内提升运动者11 跳远成绩的姿势训练建议， 以及经过短期训练后该运动者可能达到的理想跳远成绩。 附件说明 附件1 运动者1 和2 的运动信息数据 附件2 人体关键节点示意图 附件3 姿势调整前、调整后运动者的运动信息数据 附件4 运动者体质报告 附件5 运动者11 的运动信息数据",
+  "tasks": [
+    "在问题3 的基础上，给出短时间内提升运动者11 跳远成绩的姿势训练建议， 以及经过短期训练后该运动者可能达到的理想跳远成绩"
+  ],
+  "selected_model": {
+    "key": "graph",
+    "name": "图论网络与路径调度",
+    "chapter": "CH4",
+    "chapter_title": "复杂网络与图论模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md",
+      "reason": "节点"
+    },
+    {
+      "key": "fitting",
+      "name": "数据拟合与回归分析",
+      "chapter": "CH6",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md",
+      "reason": "数据"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 76,
+    "path": "../../Documents/Playground/cumcm_unzipped/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/E题/附件/附件1/运动者1的跳远位置信息.xlsx",
+    "rows": 302,
+    "columns": 67,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "图论网络与路径调度",
+    "task_breakdown": [
+      "在问题3 的基础上，给出短时间内提升运动者11 跳远成绩的姿势训练建议， 以及经过短期训练后该运动者可能达到的理想跳远成绩"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "G=(V,E): 交通/转运/关系网络",
+      "w_ij: 边成本、距离或时间",
+      "d_i: 从源点到节点 i 的最短距离",
+      "pre_i: 最短路前驱节点"
+    ],
+    "constraints": [
+      "边权非负",
+      "路径必须由网络中已有边组成"
+    ],
+    "objective_or_equations": [
+      "d_j = min_i(d_i + w_ij)",
+      "min path_cost(source, target)"
+    ],
+    "solution_steps": [
+      "把题面地点、平台或转运关系抽象为图。",
+      "构造边权矩阵。",
+      "运行 Dijkstra 最短路。",
+      "输出各节点最短距离和前驱。"
+    ],
+    "model_reference": {
+      "key": "graph",
+      "name": "图论网络与路径调度",
+      "chapter": "CH4",
+      "chapter_title": "复杂网络与图论模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "dijkstra_shortest_path",
+    "node_count": 3,
+    "source": 0,
+    "distances": [
+      0.0,
+      0.005046,
+      0.010092
+    ],
+    "predecessors": [
+      -9999,
+      0,
+      0
+    ]
+  },
+  "artifact_paths": [
+    "generic_baselines/artifacts/2025/E/q04/experiment_table.csv"
+  ],
+  "baseline_note": "generic_first_pass_before_problem_specific_specialization"
+}

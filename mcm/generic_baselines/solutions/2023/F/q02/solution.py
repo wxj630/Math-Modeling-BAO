@@ -5,8 +5,8 @@ import sys
 from pathlib import Path
 
 
-REPO_ROOT = Path('.')
-BASE = Path('mcm/generic_baselines')
+REPO_ROOT = Path(__file__).resolve().parents[6]
+BASE = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "mcm" / "lib"))
 from generic_baseline import solve_question_generic_baseline, write_generic_report
 
@@ -15,14 +15,14 @@ PAYLOAD = {
   "year": "2023",
   "code": "F",
   "question": "q02",
-  "question_title": "永久举办地与四季分拆等策略评分",
-  "statement": "Consider potential strategies such as permanent Summer/Winter locations or splitting Olympic sports into four smaller Games.",
-  "methods": "在官方点名的 permanent_summer_winter_sites、four_season_split_games 基础上加入 status quo reform、regional rotation 和 distributed existing venues，对各策略做确定性多目标评分。对应模型：情景分析、多目标决策。",
-  "source_type": "official_statement_parameters",
-  "solution_path": "question_solutions/2023/F/q02/solution.py",
-  "result_path": "question_results/2023/F/q02/result.json",
-  "report_path": "question_reports/2023/F/q02/report.md",
-  "artifact_path": "question_artifacts/2023/F/q02/olympic_strategy_scores.csv"
+  "question_title": "GGDP 替代 GDP 的全球气候影响模型",
+  "statement": "Make a simple model that is easily defendable to estimate the expected global impact on climate mitigation if your selected GGDP is adopted as the primary measure of the economic health of a nation.",
+  "methods": "调用 World Bank WDI 最新可用 GDP、CO2 damage、资源耗减、森林耗减、森林面积和资源租金指标，构建全球与国家面板并估计 GGDP penalty。对应模型：公开数据面板、确定性情景模型。",
+  "source_type": "official_pdf_and_world_bank_api",
+  "solution_path": "question_solutions/2023/F-GreenGDP/q02/solution.py",
+  "result_path": "question_results/2023/F-GreenGDP/q02/result.json",
+  "report_path": "question_reports/2023/F-GreenGDP/q02/report.md",
+  "artifact_path": "question_artifacts/2023/F-GreenGDP/q02/world_bank_green_gdp_panel.csv"
 }
 RESULT_PATH = BASE / "results" / '2023' / 'F' / 'q02' / "result.json"
 REPORT_PATH = BASE / "reports" / '2023' / 'F' / 'q02' / "report.md"

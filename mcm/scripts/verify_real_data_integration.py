@@ -68,8 +68,8 @@ if not any(item.get("problem_id") == "2019-D" and item.get("kind") == "pdf" for 
     errors.append("data manifest missing 2019-D official statement pdf")
 if not any(item.get("problem_id") == "2019-E" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2019-E official statement pdf")
-if not any(item.get("problem_id") == "2019-P06" and item.get("kind") == "pdf" for item in manifest):
-    errors.append("data manifest missing 2019-P06 official statement pdf")
+if not any(item.get("problem_id") == "2019-F" and item.get("kind") == "pdf" for item in manifest):
+    errors.append("data manifest missing 2019-F official statement pdf")
 if not any(item.get("problem_id") == "2020-A" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2020-A official statement pdf")
 if not any(item.get("problem_id") == "2020-B" and item.get("kind") == "pdf" for item in manifest):
@@ -110,8 +110,8 @@ if not any(item.get("problem_id") == "2022-C" and item.get("kind") == "csv" for 
     errors.append("data manifest missing 2022-C csv assets")
 if not any(item.get("problem_id") == "2022-C" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2022-C official statement pdf")
-if not any(item.get("problem_id") == "2022-P01" and item.get("kind") == "pdf" for item in manifest):
-    errors.append("data manifest missing 2022-P01 official statement pdf")
+if not any(item.get("problem_id") == "2022-D" and item.get("kind") == "pdf" for item in manifest):
+    errors.append("data manifest missing 2022-D official statement pdf")
 if not any(item.get("problem_id") == "2022-E" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2022-E official statement pdf")
 if not any(item.get("problem_id") == "2022-F" and item.get("kind") == "pdf" for item in manifest):
@@ -124,10 +124,10 @@ if not any(item.get("problem_id") == "2024-D" and item.get("kind") == "xlsx" for
     errors.append("data manifest missing 2024-D xlsx assets")
 if not any(item.get("problem_id") == "2025-D" and item.get("kind") == "csv" for item in manifest):
     errors.append("data manifest missing 2025-D csv assets")
-if not any(item.get("problem_id") == "2023-C-Wordle" and item.get("kind") == "xlsx" for item in manifest):
-    errors.append("data manifest missing 2023-C-Wordle xlsx assets")
-if not any(item.get("problem_id") == "2023-C-Boats" and item.get("kind") == "xlsx" for item in manifest):
-    errors.append("data manifest missing 2023-C-Boats xlsx assets")
+if not any(item.get("problem_id") == "2023-C" and item.get("kind") == "xlsx" for item in manifest):
+    errors.append("data manifest missing 2023-C xlsx assets")
+if not any(item.get("problem_id") == "2023-Y" and item.get("kind") == "xlsx" for item in manifest):
+    errors.append("data manifest missing 2023-Y xlsx assets")
 if not any(item.get("problem_id") == "2023-A" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2023-A official statement pdf")
 if not any(item.get("problem_id") == "2023-B" and item.get("kind") == "pdf" for item in manifest):
@@ -138,8 +138,12 @@ if not any(item.get("problem_id") == "2023-E" and item.get("kind") == "pdf" for 
     errors.append("data manifest missing 2023-E official statement pdf")
 if not any(item.get("problem_id") == "2023-F" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2023-F official statement pdf")
-if not any(item.get("problem_id") == "2023-F-GreenGDP" and item.get("kind") == "pdf" for item in manifest):
-    errors.append("data manifest missing 2023-F-GreenGDP official statement pdf")
+if not any(item.get("problem_id") == "2023-Z" and item.get("kind") == "pdf" for item in manifest):
+    errors.append("data manifest missing 2023-Z official statement pdf")
+if not any(item.get("problem_id") == "2015-A" and item.get("kind") == "html" for item in manifest):
+    errors.append("data manifest missing 2015-A official HTML statement")
+if not any(item.get("problem_id") == "2015-B" and item.get("kind") == "html" for item in manifest):
+    errors.append("data manifest missing 2015-B official HTML statement")
 if not any(item.get("problem_id") == "2024-A" and item.get("kind") == "pdf" for item in manifest):
     errors.append("data manifest missing 2024-A official statement pdf")
 if not any(item.get("problem_id") == "2024-B" and item.get("kind") == "pdf" for item in manifest):

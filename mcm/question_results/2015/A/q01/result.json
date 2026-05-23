@@ -1,0 +1,93 @@
+{
+  "baseline_kind": "mcm_generic_first_pass",
+  "problem_id": "2015-A",
+  "year": "2015",
+  "code": "A",
+  "question": "q01",
+  "question_title": "Ebola 传播、药物生产与配送优化模型",
+  "statement": "Build a realistic, sensible, and useful model that considers Ebola spread, medicine demand, feasible delivery systems, delivery locations, manufacturing speed, and other critical factors to optimize eradication or containment.",
+  "selected_model": {
+    "method": "first_order_dynamic_baseline",
+    "name": "一阶动态仿真基线",
+    "chapter": "CH2",
+    "matched_keywords": [
+      "spread",
+      "敏感性"
+    ],
+    "rationale": "Selected by keyword overlap with the MCM question title, statement, and existing method hint."
+  },
+  "formulation": {
+    "decision_variables": [
+      "x_i: normalized evidence component score for baseline component i",
+      "w_i: fixed transparent weight assigned to component i",
+      "S: first-pass baseline readiness score"
+    ],
+    "constraints": [
+      "0 <= x_i <= 1 for every component",
+      "sum_i w_i = 1",
+      "The baseline must not replace the real-data workflow or invent hidden observations."
+    ],
+    "objective_or_equations": [
+      "S = sum_i w_i x_i",
+      "method = argmax keyword_overlap(question, model_family)"
+    ]
+  },
+  "data_source": {
+    "type": "official_html_statement",
+    "root": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2015/problems/",
+    "source_url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2015/problems/",
+    "note": "COMAP official 2015 MCM problem page provides A/B statements as HTML text rather than downloadable PDFs."
+  },
+  "experiment_result": {
+    "method": "first_order_dynamic_baseline",
+    "baseline_score": 0.498857,
+    "component_rows": [
+      {
+        "component": "statement_specificity",
+        "raw_value": 226,
+        "normalized_score": 0.538095,
+        "audit_note": "Longer problem statements usually expose more constraints for a first-pass model."
+      },
+      {
+        "component": "numeric_anchor_count",
+        "raw_value": 0,
+        "normalized_score": 0.0,
+        "audit_note": "Counts numeric anchors visible in the question statement and method hint."
+      },
+      {
+        "component": "model_keyword_match",
+        "raw_value": 2,
+        "normalized_score": 0.4,
+        "audit_note": "Measures how clearly the question maps to a classical modeling family."
+      },
+      {
+        "component": "source_strength",
+        "raw_value": "official_html_statement",
+        "normalized_score": 0.55,
+        "audit_note": "Rewards official attachments and explicit official statement parameters."
+      },
+      {
+        "component": "artifact_readiness",
+        "raw_value": "question_artifacts/2015/A/q01/experiment_table.csv",
+        "normalized_score": 1.0,
+        "audit_note": "Rewards table-like artifacts that a baseline can inspect directly."
+      }
+    ],
+    "extracted_numeric_tokens": [],
+    "numeric_token_count": 0,
+    "outline": [
+      "Read the official question and any indexed real-data workflow before adding domain assumptions.",
+      "Use this baseline only as the first scaffold for variables, constraints, and sanity checks.",
+      "Replace the generic score with a problem-specific model and cite official assets in the final solution."
+    ],
+    "method_confidence": 0.731
+  },
+  "artifact_paths": [
+    "mcm/question_artifacts/2015/A/q01/experiment_table.csv"
+  ],
+  "limitations": [
+    "This is the intentionally minimal baseline layer, not the contest-grade real solution.",
+    "It does not introduce new empirical observations beyond the indexed official workflow metadata.",
+    "It is useful for a quick modeling starting point and for regression-checking archive coverage."
+  ]
+}

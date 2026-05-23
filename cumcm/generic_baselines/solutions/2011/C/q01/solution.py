@@ -81,6 +81,13 @@ ARTIFACT_DIR = ROOT / "generic_baselines" / "artifacts" / "2011" / "C" / "q01"
 
 
 def write_generic_report(result: dict, solution_path: Path) -> None:
+    def repo_rel(path: Path | str) -> str:
+        path = Path(path)
+        try:
+            return str(path.resolve().relative_to(ROOT.parent.resolve()))
+        except ValueError:
+            return str(path)
+
     f = result["formulation"]
     lines = [
         f"# {result['problem_id']} {result['question_label']} 通用基线报告",
@@ -109,12 +116,12 @@ def write_generic_report(result: dict, solution_path: Path) -> None:
     lines += ["", "### 模型公式 / 目标函数"]
     lines.extend(f"- `{item}`" for item in f.get("objective_or_equations", []))
     lines += ["", "## 运行与产物", ""]
-    lines.append(f"- 通用代码：{solution_path}")
-    lines.append(f"- 单问运行：`.venv/bin/python {solution_path}`")
-    lines.append(f"- 结果 JSON：{RESULT_PATH}")
-    lines.append(f"- 实验报告：{REPORT_PATH}")
+    lines.append(f"- 通用代码：{repo_rel(solution_path)}")
+    lines.append(f"- 单问运行：`.venv/bin/python {repo_rel(solution_path)}`")
+    lines.append(f"- 结果 JSON：{repo_rel(RESULT_PATH)}")
+    lines.append(f"- 实验报告：{repo_rel(REPORT_PATH)}")
     for artifact in result.get("artifact_paths", []):
-        lines.append(f"- 实验产物：{ROOT / artifact}")
+        lines.append(f"- 实验产物：{repo_rel(ROOT / artifact)}")
     lines += ["", "## 数据来源", ""]
     ds = result.get("data_source", {})
     lines.append(f"- 类型：{ds.get('source_type', 'unknown')}")

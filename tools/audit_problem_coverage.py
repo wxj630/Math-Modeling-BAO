@@ -35,7 +35,7 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 def normalized_title(text: str) -> str:
     first = text.splitlines()[0].lstrip("# ").strip() if text.splitlines() else ""
     first = re.sub(r"^\d{4}[-年]\S+\s*", "", first)
-    first = first.replace("MCM-C:", "").replace("ICM-C:", "").replace("ICM-D:", "")
+    first = re.sub(r"\b(?:MCM|ICM)-[A-Z]+:\s*", "", first)
     first = re.sub(r"\s+", " ", first)
     return first.lower().strip(" ：:-")
 
@@ -147,7 +147,8 @@ def write_report(cumcm: Coverage, mcm: Coverage, path: Path) -> None:
         "",
         f"- CUMCM 本地归档题面：{len(cumcm.expected)} 题；教程索引：{len(cumcm.indexed)} 题；当前缺口：{len(cumcm.missing_from_index)} 题。",
         f"- MCM/ICM 本地规范索引：{len(mcm.expected)} 题；教程索引：{len(mcm.indexed)} 题；当前唯一题目缺口：{len(mcm.missing_from_index)} 题。",
-        "- CUMCM 这次的根因是 2022/2023 年 A-E 已经解压到 `cumcm/source_materials/extracted/`，但旧清洗阶段只转出了 2022-B、2022-D、2023-D 三个 markdown，因此后续 `cumcm/problems`、逐问索引和教程页都只看到了这些题。",
+        "- CUMCM 2025 的根因是官方压缩包已经进入 `cumcm/source_materials/raw_downloads/archives/`，但中文文件名没有正确解压成 A-E 题面 PDF，因此旧清洗阶段只看到了 `format2025.doc`。",
+        "- MCM 2015 只显示 C/D 的根因是本地早期归档只下载了 ICM C/D PDF；MCM A/B 在 COMAP 2015 官方网页中以 HTML 题面出现，没有独立 PDF 文件。",
         "",
         "## CUMCM 缺口",
         "",

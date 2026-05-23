@@ -32,12 +32,12 @@
     }
   ],
   "data_source": {
-    "source_type": "attachment",
+    "source_type": "problem_statement",
     "attachment_count": 6,
-    "path": "../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls",
-    "rows": 64,
-    "columns": 3,
-    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+    "path": "cumcm/problems/2015/A.md",
+    "rows": 20,
+    "columns": 15,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
   },
   "formulation": {
     "model_type": "几何解析与运动学参数方程",
@@ -81,11 +81,11 @@
   "experiment_result": {
     "method": "least_squares_geometry_fit",
     "center": [
-      3.85948,
-      -0.275895
+      1.330419,
+      0.983322
     ],
-    "radius": 4.1191377206736846,
-    "mean_squared_error": 0.004260155881486349,
+    "radius": 2.176450239742945,
+    "mean_squared_error": 2.8090691385244205e-05,
     "success": true
   },
   "artifact_paths": [

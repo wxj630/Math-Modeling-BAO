@@ -24,12 +24,12 @@
     }
   ],
   "data_source": {
-    "source_type": "attachment",
+    "source_type": "problem_statement",
     "attachment_count": 6,
-    "path": "../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls",
-    "rows": 1919,
-    "columns": 4,
-    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+    "path": "cumcm/problems/2014/D.md",
+    "rows": 26,
+    "columns": 6,
+    "note": "未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。"
   },
   "formulation": {
     "model_type": "规划优化与资源配置",
@@ -73,17 +73,17 @@
   "experiment_result": {
     "method": "linear_programming",
     "success": true,
-    "objective_max": 20.551816232593605,
+    "objective_max": 13.626321625782456,
     "decision": [
       0.0,
-      3.550469,
       0.0,
-      0.0
+      0.0,
+      2.415571
     ],
     "resource_slack": [
-      252.607826,
+      213.215783,
       0.0,
-      0.297732
+      0.527902
     ]
   },
   "artifact_paths": [

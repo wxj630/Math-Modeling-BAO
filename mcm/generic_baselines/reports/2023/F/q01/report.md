@@ -5,15 +5,15 @@
 ## 题目与任务
 
 - 题目：2023-F
-- 小问：q01 奥运会举办影响指标框架
-- 原问：Build metrics for the impacts of hosting the games from economic, land use, human satisfaction, travel, opportunity for future improvements, host city/nation prestige, and other criteria.
+- 小问：q01 选择可审计的 Green GDP 计算方法
+- 原问：There are many proposed ways to calculate GGDP that have already been developed. Select one that your team believes could have a measurable impact on climate mitigation if it replaced GDP as the primary measure of economic health.
 
 ## 通用模型选择
 
 - 模型：线性加权评分基线
 - 方法键：`linear_weighted_score_baseline`
 - 章节提示：CH7
-- 命中关键词：metric, 评价, 指标, 权重
+- 命中关键词：指标
 
 ## 变量、约束与公式
 
@@ -41,20 +41,20 @@
 ## 数据来源
 
 - 类型：mcm_question_index
-- 真实工作流：question_solutions/2023/F/q01/solution.py
-- 真实产物：question_artifacts/2023/F/q01/metric_framework.csv
+- 真实工作流：question_solutions/2023/F-GreenGDP/q01/solution.py
+- 真实产物：question_artifacts/2023/F-GreenGDP/q01/ggdp_formula_components.csv
 
 ## 核心结果
 
 ```json
 {
   "method": "linear_weighted_score_baseline",
-  "baseline_score": 0.637743,
+  "baseline_score": 0.580171,
   "component_rows": [
     {
       "component": "statement_specificity",
-      "raw_value": 187,
-      "normalized_score": 0.445238,
+      "raw_value": 230,
+      "normalized_score": 0.547619,
       "audit_note": "Longer problem statements usually expose more constraints for a first-pass model."
     },
     {
@@ -65,25 +65,25 @@
     },
     {
       "component": "model_keyword_match",
-      "raw_value": 4,
-      "normalized_score": 0.8,
+      "raw_value": 1,
+      "normalized_score": 0.2,
       "audit_note": "Measures how clearly the question maps to a classical modeling family."
     },
     {
       "component": "source_strength",
-      "raw_value": "official_statement_parameters",
-      "normalized_score": 0.72,
+      "raw_value": "official_pdf_and_world_bank_api",
+      "normalized_score": 0.92,
       "audit_note": "Rewards official attachments and explicit official statement parameters."
     },
     {
       "component": "artifact_readiness",
-      "raw_value": "question_artifacts/2023/F/q01/metric_framework.csv",
+      "raw_value": "question_artifacts/2023/F-GreenGDP/q01/ggdp_formula_components.csv",
       "normalized_score": 1.0,
       "audit_note": "Rewards table-like artifacts that a baseline can inspect directly."
     }
   ],
   "extracted_numeric_tokens": [
-    7.0
+    2.0
   ],
   "numeric_token_count": 1,
   "outline": [
@@ -91,7 +91,7 @@
     "Use this baseline only as the first scaffold for variables, constraints, and sanity checks.",
     "Replace the generic score with a problem-specific model and cite official assets in the final solution."
   ],
-  "method_confidence": 1.0
+  "method_confidence": 0.6824
 }
 ```
 

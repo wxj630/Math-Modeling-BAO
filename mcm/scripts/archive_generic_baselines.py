@@ -23,8 +23,8 @@ import sys
 from pathlib import Path
 
 
-REPO_ROOT = Path({repo_root!r})
-BASE = Path({base!r})
+REPO_ROOT = Path(__file__).resolve().parents[6]
+BASE = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "mcm" / "lib"))
 from generic_baseline import solve_question_generic_baseline, write_generic_report
 
@@ -140,8 +140,6 @@ def main() -> None:
         solution.parent.mkdir(parents=True, exist_ok=True)
         solution.write_text(
             SCRIPT_TEMPLATE.format(
-                repo_root=str(REPO_ROOT),
-                base=str(base),
                 payload=json.dumps(payload, ensure_ascii=False, indent=2),
                 year=year,
                 code=code,

@@ -1,0 +1,99 @@
+{
+  "problem_id": "2025-E",
+  "title": "2025年 CUMCM E题：AI 辅助智能体测",
+  "question_index": 1,
+  "question_label": "问题1",
+  "statement": "附件1 是两位立定跳远运动者的跳远视频、位置信息和跳远成绩。其中，位置 信息包含运动者在整个跳远过程中的33 个关键节点（见附件2）在视频不同帧的位置坐标。 请确定运动者在跳远过程中的起跳和落地时刻，并描述滞空阶段（从起跳到落地）的运动 过程。",
+  "tasks": [
+    "请确定运动者在跳远过程中的起跳和落地时刻，并描述滞空阶段（从起跳到落地）的运动 过程"
+  ],
+  "selected_model": {
+    "key": "geometry",
+    "name": "几何解析与运动学参数方程",
+    "chapter": "CH1",
+    "chapter_title": "解析方法与几何模型",
+    "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+  },
+  "candidate_models": [
+    {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md",
+      "reason": "位置、坐标"
+    },
+    {
+      "key": "signal",
+      "name": "图像文本与信号特征",
+      "chapter": "CH10",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md",
+      "reason": "视频"
+    },
+    {
+      "key": "probability",
+      "name": "概率统计与抽样检验",
+      "chapter": "CH9",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md",
+      "reason": "置信"
+    }
+  ],
+  "data_source": {
+    "source_type": "attachment",
+    "attachment_count": 76,
+    "path": "../../Documents/Playground/cumcm_unzipped/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/E题/附件/附件1/运动者1的跳远位置信息.xlsx",
+    "rows": 302,
+    "columns": 67,
+    "note": "本问优先使用官方附件中的数值表生成实验结果。"
+  },
+  "formulation": {
+    "model_type": "几何解析与运动学参数方程",
+    "task_breakdown": [
+      "请确定运动者在跳远过程中的起跳和落地时刻，并描述滞空阶段（从起跳到落地）的运动 过程"
+    ],
+    "assumptions": [
+      "以题面给出的数值、约束和输出格式为第一优先级构造模型。",
+      "若原始附件尚未能被当前环境直接读取，脚本优先抽取题目原文中的参数和表格数字，并在数据来源中显式记录。",
+      "所有结果由本问 solution.py 运行生成，result.json 与 experiment_table.csv 保持同步。"
+    ],
+    "decision_variables": [
+      "p_i=(x_i,y_i): 几何观测点",
+      "c=(a,b): 中心或定位参数",
+      "r: 半径/尺度参数",
+      "e_i: 几何残差"
+    ],
+    "constraints": [
+      "r >= 0",
+      "观测点满足题面几何关系的近似约束"
+    ],
+    "objective_or_equations": [
+      "min_{a,b,r} mean_i (||p_i-c||_2-r)^2",
+      "e_i=||p_i-c||_2-r"
+    ],
+    "solution_steps": [
+      "把坐标、角度、距离条件转成几何参数。",
+      "构造最小二乘残差。",
+      "用 scipy.optimize.minimize 求解。",
+      "输出拟合参数和残差。"
+    ],
+    "model_reference": {
+      "key": "geometry",
+      "name": "几何解析与运动学参数方程",
+      "chapter": "CH1",
+      "chapter_title": "解析方法与几何模型",
+      "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+    }
+  },
+  "experiment_result": {
+    "method": "least_squares_geometry_fit",
+    "center": [
+      0.191661,
+      -0.160736
+    ],
+    "radius": 1.3877604185373116,
+    "mean_squared_error": 0.13671668593294262,
+    "success": true
+  },
+  "artifact_paths": [
+    "question_artifacts/2025/E/q01/experiment_table.csv"
+  ]
+}

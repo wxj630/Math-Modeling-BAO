@@ -5,15 +5,15 @@
 ## 题目与任务
 
 - 题目：2023-F
-- 小问：q02 永久举办地与四季分拆等策略评分
-- 原问：Consider potential strategies such as permanent Summer/Winter locations or splitting Olympic sports into four smaller Games.
+- 小问：q02 GGDP 替代 GDP 的全球气候影响模型
+- 原问：Make a simple model that is easily defendable to estimate the expected global impact on climate mitigation if your selected GGDP is adopted as the primary measure of the economic health of a nation.
 
 ## 通用模型选择
 
-- 模型：证据表基线
-- 方法键：`evidence_table_baseline`
-- 章节提示：CH6
-- 命中关键词：generic
+- 模型：线性加权评分基线
+- 方法键：`linear_weighted_score_baseline`
+- 章节提示：CH7
+- 命中关键词：指标
 
 ## 变量、约束与公式
 
@@ -41,26 +41,26 @@
 ## 数据来源
 
 - 类型：mcm_question_index
-- 真实工作流：question_solutions/2023/F/q02/solution.py
-- 真实产物：question_artifacts/2023/F/q02/olympic_strategy_scores.csv
+- 真实工作流：question_solutions/2023/F-GreenGDP/q02/solution.py
+- 真实产物：question_artifacts/2023/F-GreenGDP/q02/world_bank_green_gdp_panel.csv
 
 ## 核心结果
 
 ```json
 {
-  "method": "evidence_table_baseline",
-  "baseline_score": 0.458743,
+  "method": "linear_weighted_score_baseline",
+  "baseline_score": 0.566457,
   "component_rows": [
     {
       "component": "statement_specificity",
-      "raw_value": 124,
-      "normalized_score": 0.295238,
+      "raw_value": 198,
+      "normalized_score": 0.471429,
       "audit_note": "Longer problem statements usually expose more constraints for a first-pass model."
     },
     {
       "component": "numeric_anchor_count",
-      "raw_value": 0,
-      "normalized_score": 0.0,
+      "raw_value": 1,
+      "normalized_score": 0.125,
       "audit_note": "Counts numeric anchors visible in the question statement and method hint."
     },
     {
@@ -71,25 +71,27 @@
     },
     {
       "component": "source_strength",
-      "raw_value": "official_statement_parameters",
-      "normalized_score": 0.72,
+      "raw_value": "official_pdf_and_world_bank_api",
+      "normalized_score": 0.92,
       "audit_note": "Rewards official attachments and explicit official statement parameters."
     },
     {
       "component": "artifact_readiness",
-      "raw_value": "question_artifacts/2023/F/q02/olympic_strategy_scores.csv",
+      "raw_value": "question_artifacts/2023/F-GreenGDP/q02/world_bank_green_gdp_panel.csv",
       "normalized_score": 1.0,
       "audit_note": "Rewards table-like artifacts that a baseline can inspect directly."
     }
   ],
-  "extracted_numeric_tokens": [],
-  "numeric_token_count": 0,
+  "extracted_numeric_tokens": [
+    2.0
+  ],
+  "numeric_token_count": 1,
   "outline": [
     "Read the official question and any indexed real-data workflow before adding domain assumptions.",
     "Use this baseline only as the first scaffold for variables, constraints, and sanity checks.",
     "Replace the generic score with a problem-specific model and cite official assets in the final solution."
   ],
-  "method_confidence": 0.6384
+  "method_confidence": 0.6824
 }
 ```
 

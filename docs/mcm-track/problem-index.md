@@ -6,6 +6,8 @@
 
 | 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
 |---|---|---:|---|---|
+| [2015-A](./problems/2015-A.md) | MCM-A: Eradicating Ebola | 2 | Ebola 传播、药物生产与配送优化模型 | first_order_dynamic_baseline；report_outline_baseline |
+| [2015-B](./problems/2015-B.md) | MCM-B: Searching for a Lost Plane | 2 | 失联飞机开放水域搜索规划模型 | linear_trend_forecast_baseline；network_path_baseline |
 | [2015-C](./problems/2015-C.md) | ICM-C: Managing Human Capital in Organizations | 7 | ICM 组织人力资本网络模型 | evidence_table_baseline；first_order_dynamic_baseline；network_path_baseline；report_outline_base… |
 | [2015-D](./problems/2015-D.md) | ICM-D: Is it sustainable? | 4 | 国家可持续性评价模型 | linear_weighted_score_baseline；report_outline_baseline |
 
@@ -51,7 +53,7 @@
 | [2019-C](./problems/2019-C.md) | MCM-C: The Opioid Crisis | 3 | NFLIS 县域传播、起始位置与 2020 风险预测 | linear_trend_forecast_baseline；report_outline_baseline |
 | [2019-D](./problems/2019-D.md) | ICM-D: Time to leave the Louvre | 4 | 卢浮宫基线疏散模型与瓶颈识别 | evidence_table_baseline；network_path_baseline |
 | [2019-E](./problems/2019-E.md) | ICM-E: What is the Cost of Environmental Degradation? | 6 | 生态系统服务估值模型 | first_order_dynamic_baseline；report_outline_baseline；resource_allocation_baseline |
-| [2019-P06](./problems/2019-P06.md) | ICM-F: Universal, Decentralized, Digital Currency: Is it possible? | 4 | 全球去中心化数字金融可行性模型 | linear_weighted_score_baseline；report_outline_baseline；resource_allocation_baseline；threshold_… |
+| [2019-F](./problems/2019-F.md) | ICM-F: Universal, Decentralized, Digital Currency: Is it possible? | 4 | 全球去中心化数字金融可行性模型 | linear_weighted_score_baseline；report_outline_baseline；resource_allocation_baseline；threshold_… |
 
 ## 2020
 
@@ -82,9 +84,9 @@
 | [2022-A](./problems/2022-A.md) | MCM-A: Power Profile of a Cyclist | 5 | 两类骑手与不同性别的功率 profile | first_order_dynamic_baseline；network_path_baseline；report_outline_baseline；resource_allocation… |
 | [2022-B](./problems/2022-B.md) | MCM-B: Water and Hydroelectric Power Sharing | 9 | Powell-Mead 串联系统与水库高度-库容模型 | evidence_table_baseline；first_order_dynamic_baseline；linear_weighted_score_baseline；network_pa… |
 | [2022-C](./problems/2022-C.md) | MCM-C: Trading Strategies | 4 | 仅用历史价格的每日交易策略 | evidence_table_baseline；report_outline_baseline；resource_allocation_baseline |
+| [2022-D](./problems/2022-D.md) | ICM-D: Data Paralysis? Use Our Analysis! | 4 | ICM Corporation 当前 D&A 成熟度指标 | linear_weighted_score_baseline；network_path_baseline；report_outline_baseline |
 | [2022-E](./problems/2022-E.md) | ICM-E: Forestry for Carbon Sequestration | 11 | 森林与林产品 100 年碳封存模型 | evidence_table_baseline；linear_weighted_score_baseline；report_outline_baseline；resource_alloca… |
 | [2022-F](./problems/2022-F.md) | ICM-F: All for One and One (Space) for All! | 8 | 外层空间条约承诺与全球公平定义 | first_order_dynamic_baseline；linear_trend_forecast_baseline；linear_weighted_score_baseline；rep… |
-| [2022-P01](./problems/2022-P01.md) | ICM-D: Data Paralysis? Use Our Analysis! | 4 | ICM Corporation 当前 D&A 成熟度指标 | linear_weighted_score_baseline；network_path_baseline；report_outline_baseline |
 
 ## 2023
 
@@ -92,12 +94,12 @@
 |---|---|---:|---|---|
 | [2023-A](./problems/2023-A.md) | MCM-A: Drought-Stricken Plant Communities | 6 | 不规则天气与干旱循环下的植物群落动态模型 | evidence_table_baseline；first_order_dynamic_baseline；linear_trend_forecast_baseline；report_out… |
 | [2023-B](./problems/2023-B.md) | MCM-B: Reimagining Maasai Mara | 4 | 保护区内不同区域的政策和管理策略 | linear_trend_forecast_baseline；linear_weighted_score_baseline；report_outline_baseline |
-| [2023-C-Boats](./problems/2023-C-Boats.md) | MCM-C: Understanding Used Sailboat Prices | 5 | 二手帆船挂牌价解释模型与估计精度 | evidence_table_baseline；linear_trend_forecast_baseline；report_outline_baseline |
-| [2023-C-Wordle](./problems/2023-C-Wordle.md) | MCM-C: Predicting Wordle Results | 5 | 报告人数变化、3 月 1 日预测区间与困难模式比例 | linear_trend_forecast_baseline；report_outline_baseline；threshold_classification_baseline |
+| [2023-C](./problems/2023-C.md) | MCM-C: Predicting Wordle Results | 5 | 报告人数变化、3 月 1 日预测区间与困难模式比例 | linear_trend_forecast_baseline；report_outline_baseline；threshold_classification_baseline |
 | [2023-D](./problems/2023-D.md) | ICM-D: Prioritizing the UN Sustainability Goals | 5 | 17 个 SDG 的关系网络 | linear_weighted_score_baseline；network_path_baseline |
 | [2023-E](./problems/2023-E.md) | ICM-E: Light Pollution | 5 | 通用光污染风险指标 | evidence_table_baseline；linear_weighted_score_baseline；threshold_classification_baseline |
-| [2023-F](./problems/2023-F.md) | ICM-F: The Future of the Olympics | 4 | 奥运会举办影响指标框架 | evidence_table_baseline；linear_weighted_score_baseline；report_outline_baseline |
-| [2023-F-GreenGDP](./problems/2023-F-GreenGDP.md) | ICM-F: Green GDP | 5 | 选择可审计的 Green GDP 计算方法 | linear_trend_forecast_baseline；linear_weighted_score_baseline；report_outline_baseline |
+| [2023-F](./problems/2023-F.md) | ICM-F: Green GDP | 5 | 选择可审计的 Green GDP 计算方法 | linear_trend_forecast_baseline；linear_weighted_score_baseline；report_outline_baseline |
+| [2023-Y](./problems/2023-Y.md) | MCM-Y: Understanding Used Sailboat Prices | 5 | 二手帆船挂牌价解释模型与估计精度 | evidence_table_baseline；linear_trend_forecast_baseline；report_outline_baseline |
+| [2023-Z](./problems/2023-Z.md) | ICM-Z: The Future of the Olympics | 4 | 奥运会举办影响指标框架 | evidence_table_baseline；linear_weighted_score_baseline；report_outline_baseline |
 
 ## 2024
 

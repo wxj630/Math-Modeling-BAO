@@ -1,4 +1,6 @@
 ﻿problem_id,year,code,title,problem_path,question_count
+2015-A,2015,A,MCM-A: Eradicating Ebola,problems/2015/A.md,2
+2015-B,2015,B,MCM-B: Searching for a Lost Plane,problems/2015/B.md,2
 2015-C,2015,C,ICM-C: Managing Human Capital in Organizations,problems/2015/C.md,7
 2015-D,2015,D,ICM-D: Is it sustainable?,problems/2015/D.md,4
 2016-A,2016,A,MCM-A: A Hot Bath,problems/2016/A.md,4
@@ -24,7 +26,7 @@
 2019-C,2019,C,MCM-C: The Opioid Crisis,problems/2019/C.md,3
 2019-D,2019,D,ICM-D: Time to leave the Louvre,problems/2019/D.md,4
 2019-E,2019,E,ICM-E: What is the Cost of Environmental Degradation?,problems/2019/E.md,6
-2019-P06,2019,P06,"ICM-F: Universal, Decentralized, Digital Currency: Is it possible?",problems/2019/P06.md,4
+2019-F,2019,F,"ICM-F: Universal, Decentralized, Digital Currency: Is it possible?",problems/2019/F.md,4
 2020-A,2020,A,MCM-A: Moving North,problems/2020/A.md,5
 2020-B,2020,B,MCM-B: The Longest Lasting Sandcastle(s),problems/2020/B.md,5
 2020-C,2020,C,MCM-C: A Wealth of Data,problems/2020/C.md,5
@@ -40,17 +42,17 @@
 2022-A,2022,A,MCM-A: Power Profile of a Cyclist,problems/2022/A.md,5
 2022-B,2022,B,MCM-B: Water and Hydroelectric Power Sharing,problems/2022/B.md,9
 2022-C,2022,C,MCM-C: Trading Strategies,problems/2022/C.md,4
+2022-D,2022,D,ICM-D: Data Paralysis? Use Our Analysis!,problems/2022/D.md,4
 2022-E,2022,E,ICM-E: Forestry for Carbon Sequestration,problems/2022/E.md,11
 2022-F,2022,F,ICM-F: All for One and One (Space) for All!,problems/2022/F.md,8
-2022-P01,2022,P01,ICM-D: Data Paralysis? Use Our Analysis!,problems/2022/P01.md,4
 2023-A,2023,A,MCM-A: Drought-Stricken Plant Communities,problems/2023/A.md,6
 2023-B,2023,B,MCM-B: Reimagining Maasai Mara,problems/2023/B.md,4
-2023-C-Boats,2023,C-Boats,MCM-C: Understanding Used Sailboat Prices,problems/2023/C-Boats.md,5
-2023-C-Wordle,2023,C-Wordle,MCM-C: Predicting Wordle Results,problems/2023/C-Wordle.md,5
+2023-C,2023,C,MCM-C: Predicting Wordle Results,problems/2023/C.md,5
 2023-D,2023,D,ICM-D: Prioritizing the UN Sustainability Goals,problems/2023/D.md,5
 2023-E,2023,E,ICM-E: Light Pollution,problems/2023/E.md,5
-2023-F,2023,F,ICM-F: The Future of the Olympics,problems/2023/F.md,4
-2023-F-GreenGDP,2023,F-GreenGDP,ICM-F: Green GDP,problems/2023/F-GreenGDP.md,5
+2023-F,2023,F,ICM-F: Green GDP,problems/2023/F.md,5
+2023-Y,2023,Y,MCM-Y: Understanding Used Sailboat Prices,problems/2023/Y.md,5
+2023-Z,2023,Z,ICM-Z: The Future of the Olympics,problems/2023/Z.md,4
 2024-A,2024,A,MCM-A: Resource Availability and Sex Ratios,problems/2024/A.md,4
 2024-B,2024,B,MCM-B: Searching for Submersibles,problems/2024/B.md,4
 2024-C,2024,C,MCM-C: Momentum in Tennis,problems/2024/C.md,5

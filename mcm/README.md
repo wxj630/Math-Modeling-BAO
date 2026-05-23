@@ -1,395 +1,64 @@
-# MCM Real-Data Archive
+# MCM/ICM Tutorial Archive
 
-本目录参考 `cumcm/` 的组织方式，只收录读取官方题面参数或官方附件数据的 MCM/ICM 解法。
+本目录保存 MCM/ICM 教程使用的赛题索引、逐问 advanced 解法、通用 baseline 归档、运行结果、实验报告和轻量产物。教程站以“赛题”为入口，逐问内容只作为同一道题内部的递进链条。
+
+## 当前覆盖
+
+- 赛题：66 道。
+- 逐问 advanced 实验：371 个。
+- 通用 baseline 归档：371 个。
+- 覆盖年份与题号：
+  - 2015：A, B, C, D
+  - 2016-2022：A, B, C, D, E, F
+  - 2023：A, B, C, D, E, F, Y, Z
+  - 2024-2025：A, B, C, D, E, F
+
+## 本次补齐说明
+
+- `2015-A` 和 `2015-B` 原先缺失，是因为本地早期归档只收到了 ICM 的 C/D PDF；COMAP 2015 官方页面中 MCM A/B 是网页正文题面，不是独立 PDF。现在已将 A/B 题面整理进索引，并补了逐问代码、结果、报告和 baseline。
+- 早期抓取中出现过非标准别名，例如 `2019-P06`、`2022-P01`、`2023-C-Wordle`、`2023-C-Boats`、`2023-F-GreenGDP`。教程索引现在统一到官方/教学用 canonical id：`2019-F`、`2022-D`、`2023-C`、`2023-Y`、`2023-F`，原物理代码路径仍保留以复用已有实验结果。
+- `2023-Y` 与 `2023-Z` 是用于保留同年额外归档题面的教学编号，避免和官方 A-F 主线冲突。
 
 ## 目录
 
-- `problems/`：按年份和题号整理的题面与任务。
-- `question_solutions/`：逐问真实数据 `solution.py`。
-- `question_results/`：逐问运行得到的 `result.json`。
-- `question_reports/`：逐问实验报告。
-- `question_artifacts/`：实验表、图、JSON 辅助产物。
-- `data_manifest.csv/json`：官方资产和附件数据清单。
-- `question_solution_index.csv/json`：真实数据解法索引。
+| 路径 | 说明 |
+|---|---|
+| `problem_index.csv/json` | 赛题级索引，教程页的主入口数据源。 |
+| `question_solution_index.csv/json` | 逐问 advanced 解法索引。 |
+| `question_solutions/` | 每一问一个可运行 `solution.py`。 |
+| `question_results/` | advanced 运行得到的 `result.json`。 |
+| `question_reports/` | advanced 逐问实验报告。 |
+| `question_artifacts/` | 实验表、图和辅助 JSON 等轻量产物。 |
+| `generic_baselines/` | 每一问的通用 baseline 代码、结果、报告和实验表。 |
+| `data_manifest.csv/json` | 官方题面与数据资产清单。 |
+| `scripts/` | 索引构建、归档和验证脚本。 |
 
-## 运行
+大体积官方原始材料与解压附件不进 Git；线上教程只保存阅读和复现所需的轻量内容。
+
+## 常用命令
+
+运行或重建 advanced 逐问索引：
 
 ```bash
 .venv/bin/python mcm/scripts/run_question_all.py
 .venv/bin/python mcm/scripts/verify_real_data_integration.py
 ```
 
-## 当前真实实验覆盖
+重建通用 baseline：
 
-- 真实逐问实验：367 个。
-- 官方资产/数据文件：136 个。
+```bash
+.venv/bin/python mcm/scripts/archive_generic_baselines.py --all
+.venv/bin/python mcm/scripts/verify_generic_baselines.py
+```
 
-| problem_id | question | source_type | report |
-|---|---|---|---|
-| 2015-C | q01 | official_statement_parameters | [question_reports/2015/C/q01/report.md](question_reports/2015/C/q01/report.md) |
-| 2015-C | q02 | official_statement_parameters | [question_reports/2015/C/q02/report.md](question_reports/2015/C/q02/report.md) |
-| 2015-C | q03 | official_statement_parameters | [question_reports/2015/C/q03/report.md](question_reports/2015/C/q03/report.md) |
-| 2015-C | q04 | official_statement_parameters | [question_reports/2015/C/q04/report.md](question_reports/2015/C/q04/report.md) |
-| 2015-C | q05 | official_statement_parameters | [question_reports/2015/C/q05/report.md](question_reports/2015/C/q05/report.md) |
-| 2015-C | q06 | official_statement_parameters | [question_reports/2015/C/q06/report.md](question_reports/2015/C/q06/report.md) |
-| 2015-C | q07 | official_statement_parameters | [question_reports/2015/C/q07/report.md](question_reports/2015/C/q07/report.md) |
-| 2015-D | q01 | official_pdf_and_world_bank_csv | [question_reports/2015/D/q01/report.md](question_reports/2015/D/q01/report.md) |
-| 2015-D | q02 | official_pdf_and_world_bank_csv | [question_reports/2015/D/q02/report.md](question_reports/2015/D/q02/report.md) |
-| 2015-D | q03 | official_pdf_and_world_bank_csv | [question_reports/2015/D/q03/report.md](question_reports/2015/D/q03/report.md) |
-| 2015-D | q04 | official_pdf_and_world_bank_csv | [question_reports/2015/D/q04/report.md](question_reports/2015/D/q04/report.md) |
-| 2016-A | q01 | official_statement_parameters | [question_reports/2016/A/q01/report.md](question_reports/2016/A/q01/report.md) |
-| 2016-A | q02 | official_statement_parameters | [question_reports/2016/A/q02/report.md](question_reports/2016/A/q02/report.md) |
-| 2016-A | q03 | official_statement_parameters | [question_reports/2016/A/q03/report.md](question_reports/2016/A/q03/report.md) |
-| 2016-A | q04 | official_statement_parameters | [question_reports/2016/A/q04/report.md](question_reports/2016/A/q04/report.md) |
-| 2016-B | q01 | official_statement_parameters | [question_reports/2016/B/q01/report.md](question_reports/2016/B/q01/report.md) |
-| 2016-B | q02 | official_statement_parameters | [question_reports/2016/B/q02/report.md](question_reports/2016/B/q02/report.md) |
-| 2016-B | q03 | official_statement_parameters | [question_reports/2016/B/q03/report.md](question_reports/2016/B/q03/report.md) |
-| 2016-B | q04 | official_statement_parameters | [question_reports/2016/B/q04/report.md](question_reports/2016/B/q04/report.md) |
-| 2016-D | q01 | official_statement_parameters | [question_reports/2016/D/q01/report.md](question_reports/2016/D/q01/report.md) |
-| 2016-D | q02 | official_statement_parameters | [question_reports/2016/D/q02/report.md](question_reports/2016/D/q02/report.md) |
-| 2016-D | q03 | official_statement_parameters | [question_reports/2016/D/q03/report.md](question_reports/2016/D/q03/report.md) |
-| 2016-D | q04 | official_statement_parameters | [question_reports/2016/D/q04/report.md](question_reports/2016/D/q04/report.md) |
-| 2016-D | q05 | official_statement_parameters | [question_reports/2016/D/q05/report.md](question_reports/2016/D/q05/report.md) |
-| 2016-F | q01 | official_statement_parameters | [question_reports/2016/F/q01/report.md](question_reports/2016/F/q01/report.md) |
-| 2016-F | q02 | official_statement_parameters | [question_reports/2016/F/q02/report.md](question_reports/2016/F/q02/report.md) |
-| 2016-F | q03 | official_statement_parameters | [question_reports/2016/F/q03/report.md](question_reports/2016/F/q03/report.md) |
-| 2016-F | q04 | official_statement_parameters | [question_reports/2016/F/q04/report.md](question_reports/2016/F/q04/report.md) |
-| 2016-F | q05 | official_statement_parameters | [question_reports/2016/F/q05/report.md](question_reports/2016/F/q05/report.md) |
-| 2016-F | q06 | official_statement_parameters | [question_reports/2016/F/q06/report.md](question_reports/2016/F/q06/report.md) |
-| 2016-F | q07 | official_statement_parameters | [question_reports/2016/F/q07/report.md](question_reports/2016/F/q07/report.md) |
-| 2016-F | q08 | official_statement_parameters | [question_reports/2016/F/q08/report.md](question_reports/2016/F/q08/report.md) |
-| 2016-F | q09 | official_statement_parameters | [question_reports/2016/F/q09/report.md](question_reports/2016/F/q09/report.md) |
-| 2016-F | q10 | official_statement_parameters | [question_reports/2016/F/q10/report.md](question_reports/2016/F/q10/report.md) |
-| 2016-F | q11 | official_statement_parameters | [question_reports/2016/F/q11/report.md](question_reports/2016/F/q11/report.md) |
-| 2016-F | q12 | official_statement_parameters | [question_reports/2016/F/q12/report.md](question_reports/2016/F/q12/report.md) |
-| 2016-E | q01 | official_pdf_and_world_bank_csv | [question_reports/2016/E/q01/report.md](question_reports/2016/E/q01/report.md) |
-| 2016-E | q02 | official_pdf_and_world_bank_csv | [question_reports/2016/E/q02/report.md](question_reports/2016/E/q02/report.md) |
-| 2016-E | q03 | official_pdf_and_world_bank_csv | [question_reports/2016/E/q03/report.md](question_reports/2016/E/q03/report.md) |
-| 2016-E | q04 | official_pdf_and_world_bank_csv | [question_reports/2016/E/q04/report.md](question_reports/2016/E/q04/report.md) |
-| 2016-E | q05 | official_pdf_and_world_bank_csv | [question_reports/2016/E/q05/report.md](question_reports/2016/E/q05/report.md) |
-| 2016-E | q06 | official_pdf_and_world_bank_csv | [question_reports/2016/E/q06/report.md](question_reports/2016/E/q06/report.md) |
-| 2016-C | q01 | official_comap_xlsx_zip | [question_reports/2016/C/q01/report.md](question_reports/2016/C/q01/report.md) |
-| 2016-C | q02 | official_comap_xlsx_zip | [question_reports/2016/C/q02/report.md](question_reports/2016/C/q02/report.md) |
-| 2016-C | q03 | official_comap_xlsx_zip | [question_reports/2016/C/q03/report.md](question_reports/2016/C/q03/report.md) |
-| 2016-C | q04 | official_comap_xlsx_zip | [question_reports/2016/C/q04/report.md](question_reports/2016/C/q04/report.md) |
-| 2017-A | q01 | official_statement_parameters | [question_reports/2017/A/q01/report.md](question_reports/2017/A/q01/report.md) |
-| 2017-A | q02 | official_statement_parameters | [question_reports/2017/A/q02/report.md](question_reports/2017/A/q02/report.md) |
-| 2017-A | q03 | official_statement_parameters | [question_reports/2017/A/q03/report.md](question_reports/2017/A/q03/report.md) |
-| 2017-A | q04 | official_statement_parameters | [question_reports/2017/A/q04/report.md](question_reports/2017/A/q04/report.md) |
-| 2017-A | q05 | official_statement_parameters | [question_reports/2017/A/q05/report.md](question_reports/2017/A/q05/report.md) |
-| 2017-A | q06 | official_statement_parameters | [question_reports/2017/A/q06/report.md](question_reports/2017/A/q06/report.md) |
-| 2017-B | q01 | official_statement_parameters | [question_reports/2017/B/q01/report.md](question_reports/2017/B/q01/report.md) |
-| 2017-B | q02 | official_statement_parameters | [question_reports/2017/B/q02/report.md](question_reports/2017/B/q02/report.md) |
-| 2017-B | q03 | official_statement_parameters | [question_reports/2017/B/q03/report.md](question_reports/2017/B/q03/report.md) |
-| 2017-B | q04 | official_statement_parameters | [question_reports/2017/B/q04/report.md](question_reports/2017/B/q04/report.md) |
-| 2017-C | q01 | official_comap_xlsx | [question_reports/2017/C/q01/report.md](question_reports/2017/C/q01/report.md) |
-| 2017-C | q02 | official_comap_xlsx | [question_reports/2017/C/q02/report.md](question_reports/2017/C/q02/report.md) |
-| 2017-C | q03 | official_comap_xlsx | [question_reports/2017/C/q03/report.md](question_reports/2017/C/q03/report.md) |
-| 2017-C | q04 | official_comap_xlsx | [question_reports/2017/C/q04/report.md](question_reports/2017/C/q04/report.md) |
-| 2017-C | q05 | official_comap_xlsx | [question_reports/2017/C/q05/report.md](question_reports/2017/C/q05/report.md) |
-| 2017-D | q01 | official_comap_xlsx | [question_reports/2017/D/q01/report.md](question_reports/2017/D/q01/report.md) |
-| 2017-D | q02 | official_comap_xlsx | [question_reports/2017/D/q02/report.md](question_reports/2017/D/q02/report.md) |
-| 2017-D | q03 | official_comap_xlsx | [question_reports/2017/D/q03/report.md](question_reports/2017/D/q03/report.md) |
-| 2017-D | q04 | official_comap_xlsx | [question_reports/2017/D/q04/report.md](question_reports/2017/D/q04/report.md) |
-| 2018-C | q01 | official_comap_xlsx | [question_reports/2018/C/q01/report.md](question_reports/2018/C/q01/report.md) |
-| 2018-C | q02 | official_comap_xlsx | [question_reports/2018/C/q02/report.md](question_reports/2018/C/q02/report.md) |
-| 2018-C | q03 | official_comap_xlsx | [question_reports/2018/C/q03/report.md](question_reports/2018/C/q03/report.md) |
-| 2018-C | q04 | official_comap_xlsx | [question_reports/2018/C/q04/report.md](question_reports/2018/C/q04/report.md) |
-| 2018-C | q05 | official_comap_xlsx | [question_reports/2018/C/q05/report.md](question_reports/2018/C/q05/report.md) |
-| 2018-C | q06 | official_comap_xlsx | [question_reports/2018/C/q06/report.md](question_reports/2018/C/q06/report.md) |
-| 2019-A | q01 | official_statement_parameters | [question_reports/2019/A/q01/report.md](question_reports/2019/A/q01/report.md) |
-| 2019-A | q02 | official_statement_parameters | [question_reports/2019/A/q02/report.md](question_reports/2019/A/q02/report.md) |
-| 2019-A | q03 | official_statement_parameters | [question_reports/2019/A/q03/report.md](question_reports/2019/A/q03/report.md) |
-| 2019-A | q04 | official_statement_parameters | [question_reports/2019/A/q04/report.md](question_reports/2019/A/q04/report.md) |
-| 2019-A | q05 | official_statement_parameters | [question_reports/2019/A/q05/report.md](question_reports/2019/A/q05/report.md) |
-| 2019-A | q06 | official_statement_parameters | [question_reports/2019/A/q06/report.md](question_reports/2019/A/q06/report.md) |
-| 2019-A | q07 | official_statement_parameters | [question_reports/2019/A/q07/report.md](question_reports/2019/A/q07/report.md) |
-| 2019-B | q01 | official_statement_parameters | [question_reports/2019/B/q01/report.md](question_reports/2019/B/q01/report.md) |
-| 2019-B | q02 | official_statement_parameters | [question_reports/2019/B/q02/report.md](question_reports/2019/B/q02/report.md) |
-| 2019-B | q03 | official_statement_parameters | [question_reports/2019/B/q03/report.md](question_reports/2019/B/q03/report.md) |
-| 2019-B | q04 | official_statement_parameters | [question_reports/2019/B/q04/report.md](question_reports/2019/B/q04/report.md) |
-| 2019-B | q05 | official_statement_parameters | [question_reports/2019/B/q05/report.md](question_reports/2019/B/q05/report.md) |
-| 2019-B | q06 | official_statement_parameters | [question_reports/2019/B/q06/report.md](question_reports/2019/B/q06/report.md) |
-| 2019-B | q07 | official_statement_parameters | [question_reports/2019/B/q07/report.md](question_reports/2019/B/q07/report.md) |
-| 2019-C | q01 | official_comap_xlsx_csv | [question_reports/2019/C/q01/report.md](question_reports/2019/C/q01/report.md) |
-| 2019-C | q02 | official_comap_xlsx_csv | [question_reports/2019/C/q02/report.md](question_reports/2019/C/q02/report.md) |
-| 2019-C | q03 | official_comap_xlsx_csv | [question_reports/2019/C/q03/report.md](question_reports/2019/C/q03/report.md) |
-| 2019-D | q01 | official_statement_parameters | [question_reports/2019/D/q01/report.md](question_reports/2019/D/q01/report.md) |
-| 2019-D | q02 | official_statement_parameters | [question_reports/2019/D/q02/report.md](question_reports/2019/D/q02/report.md) |
-| 2019-D | q03 | official_statement_parameters | [question_reports/2019/D/q03/report.md](question_reports/2019/D/q03/report.md) |
-| 2019-D | q04 | official_statement_parameters | [question_reports/2019/D/q04/report.md](question_reports/2019/D/q04/report.md) |
-| 2019-E | q01 | official_statement_parameters | [question_reports/2019/E/q01/report.md](question_reports/2019/E/q01/report.md) |
-| 2019-E | q02 | official_statement_parameters | [question_reports/2019/E/q02/report.md](question_reports/2019/E/q02/report.md) |
-| 2019-E | q03 | official_statement_parameters | [question_reports/2019/E/q03/report.md](question_reports/2019/E/q03/report.md) |
-| 2019-E | q04 | official_statement_parameters | [question_reports/2019/E/q04/report.md](question_reports/2019/E/q04/report.md) |
-| 2019-E | q05 | official_statement_parameters | [question_reports/2019/E/q05/report.md](question_reports/2019/E/q05/report.md) |
-| 2019-E | q06 | official_statement_parameters | [question_reports/2019/E/q06/report.md](question_reports/2019/E/q06/report.md) |
-| 2019-P06 | q01 | official_statement_parameters | [question_reports/2019/P06/q01/report.md](question_reports/2019/P06/q01/report.md) |
-| 2019-P06 | q02 | official_statement_parameters | [question_reports/2019/P06/q02/report.md](question_reports/2019/P06/q02/report.md) |
-| 2019-P06 | q03 | official_statement_parameters | [question_reports/2019/P06/q03/report.md](question_reports/2019/P06/q03/report.md) |
-| 2019-P06 | q04 | official_statement_parameters | [question_reports/2019/P06/q04/report.md](question_reports/2019/P06/q04/report.md) |
-| 2020-A | q01 | official_statement_parameters | [question_reports/2020/A/q01/report.md](question_reports/2020/A/q01/report.md) |
-| 2020-A | q02 | official_statement_parameters | [question_reports/2020/A/q02/report.md](question_reports/2020/A/q02/report.md) |
-| 2020-A | q03 | official_statement_parameters | [question_reports/2020/A/q03/report.md](question_reports/2020/A/q03/report.md) |
-| 2020-A | q04 | official_statement_parameters | [question_reports/2020/A/q04/report.md](question_reports/2020/A/q04/report.md) |
-| 2020-A | q05 | official_statement_parameters | [question_reports/2020/A/q05/report.md](question_reports/2020/A/q05/report.md) |
-| 2020-B | q01 | official_statement_parameters | [question_reports/2020/B/q01/report.md](question_reports/2020/B/q01/report.md) |
-| 2020-B | q02 | official_statement_parameters | [question_reports/2020/B/q02/report.md](question_reports/2020/B/q02/report.md) |
-| 2020-B | q03 | official_statement_parameters | [question_reports/2020/B/q03/report.md](question_reports/2020/B/q03/report.md) |
-| 2020-B | q04 | official_statement_parameters | [question_reports/2020/B/q04/report.md](question_reports/2020/B/q04/report.md) |
-| 2020-B | q05 | official_statement_parameters | [question_reports/2020/B/q05/report.md](question_reports/2020/B/q05/report.md) |
-| 2020-C | q01 | official_comap_tsv_zip | [question_reports/2020/C/q01/report.md](question_reports/2020/C/q01/report.md) |
-| 2020-C | q02 | official_comap_tsv_zip | [question_reports/2020/C/q02/report.md](question_reports/2020/C/q02/report.md) |
-| 2020-C | q03 | official_comap_tsv_zip | [question_reports/2020/C/q03/report.md](question_reports/2020/C/q03/report.md) |
-| 2020-C | q04 | official_comap_tsv_zip | [question_reports/2020/C/q04/report.md](question_reports/2020/C/q04/report.md) |
-| 2020-C | q05 | official_comap_tsv_zip | [question_reports/2020/C/q05/report.md](question_reports/2020/C/q05/report.md) |
-| 2020-D | q01 | official_comap_csv | [question_reports/2020/D/q01/report.md](question_reports/2020/D/q01/report.md) |
-| 2020-D | q02 | official_comap_csv | [question_reports/2020/D/q02/report.md](question_reports/2020/D/q02/report.md) |
-| 2020-D | q03 | official_comap_csv | [question_reports/2020/D/q03/report.md](question_reports/2020/D/q03/report.md) |
-| 2020-D | q04 | official_comap_csv | [question_reports/2020/D/q04/report.md](question_reports/2020/D/q04/report.md) |
-| 2020-E | q01 | official_statement_parameters | [question_reports/2020/E/q01/report.md](question_reports/2020/E/q01/report.md) |
-| 2020-E | q02 | official_statement_parameters | [question_reports/2020/E/q02/report.md](question_reports/2020/E/q02/report.md) |
-| 2020-E | q03 | official_statement_parameters | [question_reports/2020/E/q03/report.md](question_reports/2020/E/q03/report.md) |
-| 2020-E | q04 | official_statement_parameters | [question_reports/2020/E/q04/report.md](question_reports/2020/E/q04/report.md) |
-| 2020-E | q05 | official_statement_parameters | [question_reports/2020/E/q05/report.md](question_reports/2020/E/q05/report.md) |
-| 2020-F | q01 | official_statement_parameters | [question_reports/2020/F/q01/report.md](question_reports/2020/F/q01/report.md) |
-| 2020-F | q02 | official_statement_parameters | [question_reports/2020/F/q02/report.md](question_reports/2020/F/q02/report.md) |
-| 2020-F | q03 | official_statement_parameters | [question_reports/2020/F/q03/report.md](question_reports/2020/F/q03/report.md) |
-| 2020-F | q04 | official_statement_parameters | [question_reports/2020/F/q04/report.md](question_reports/2020/F/q04/report.md) |
-| 2020-F | q05 | official_statement_parameters | [question_reports/2020/F/q05/report.md](question_reports/2020/F/q05/report.md) |
-| 2021-A | q01 | official_statement_parameters | [question_reports/2021/A/q01/report.md](question_reports/2021/A/q01/report.md) |
-| 2021-A | q02 | official_statement_parameters | [question_reports/2021/A/q02/report.md](question_reports/2021/A/q02/report.md) |
-| 2021-A | q03 | official_statement_parameters | [question_reports/2021/A/q03/report.md](question_reports/2021/A/q03/report.md) |
-| 2021-A | q04 | official_statement_parameters | [question_reports/2021/A/q04/report.md](question_reports/2021/A/q04/report.md) |
-| 2021-B | q01 | official_statement_parameters | [question_reports/2021/B/q01/report.md](question_reports/2021/B/q01/report.md) |
-| 2021-B | q02 | official_statement_parameters | [question_reports/2021/B/q02/report.md](question_reports/2021/B/q02/report.md) |
-| 2021-B | q03 | official_statement_parameters | [question_reports/2021/B/q03/report.md](question_reports/2021/B/q03/report.md) |
-| 2021-B | q04 | official_statement_parameters | [question_reports/2021/B/q04/report.md](question_reports/2021/B/q04/report.md) |
-| 2021-C | q01 | official_comap_xlsx | [question_reports/2021/C/q01/report.md](question_reports/2021/C/q01/report.md) |
-| 2021-C | q02 | official_comap_xlsx | [question_reports/2021/C/q02/report.md](question_reports/2021/C/q02/report.md) |
-| 2021-C | q03 | official_comap_xlsx | [question_reports/2021/C/q03/report.md](question_reports/2021/C/q03/report.md) |
-| 2021-C | q04 | official_comap_xlsx | [question_reports/2021/C/q04/report.md](question_reports/2021/C/q04/report.md) |
-| 2021-C | q05 | official_comap_xlsx | [question_reports/2021/C/q05/report.md](question_reports/2021/C/q05/report.md) |
-| 2021-C | q06 | official_comap_xlsx | [question_reports/2021/C/q06/report.md](question_reports/2021/C/q06/report.md) |
-| 2021-D | q01 | official_comap_csv | [question_reports/2021/D/q01/report.md](question_reports/2021/D/q01/report.md) |
-| 2021-D | q02 | official_comap_csv | [question_reports/2021/D/q02/report.md](question_reports/2021/D/q02/report.md) |
-| 2021-D | q03 | official_comap_csv | [question_reports/2021/D/q03/report.md](question_reports/2021/D/q03/report.md) |
-| 2021-D | q04 | official_comap_csv | [question_reports/2021/D/q04/report.md](question_reports/2021/D/q04/report.md) |
-| 2021-D | q05 | official_comap_csv | [question_reports/2021/D/q05/report.md](question_reports/2021/D/q05/report.md) |
-| 2021-D | q06 | official_comap_csv | [question_reports/2021/D/q06/report.md](question_reports/2021/D/q06/report.md) |
-| 2021-D | q07 | official_comap_csv | [question_reports/2021/D/q07/report.md](question_reports/2021/D/q07/report.md) |
-| 2021-E | q01 | official_statement_parameters | [question_reports/2021/E/q01/report.md](question_reports/2021/E/q01/report.md) |
-| 2021-E | q02 | official_statement_parameters | [question_reports/2021/E/q02/report.md](question_reports/2021/E/q02/report.md) |
-| 2021-E | q03 | official_statement_parameters | [question_reports/2021/E/q03/report.md](question_reports/2021/E/q03/report.md) |
-| 2021-E | q04 | official_statement_parameters | [question_reports/2021/E/q04/report.md](question_reports/2021/E/q04/report.md) |
-| 2021-E | q05 | official_statement_parameters | [question_reports/2021/E/q05/report.md](question_reports/2021/E/q05/report.md) |
-| 2021-E | q06 | official_statement_parameters | [question_reports/2021/E/q06/report.md](question_reports/2021/E/q06/report.md) |
-| 2021-F | q01 | official_statement_parameters | [question_reports/2021/F/q01/report.md](question_reports/2021/F/q01/report.md) |
-| 2021-F | q02 | official_statement_parameters | [question_reports/2021/F/q02/report.md](question_reports/2021/F/q02/report.md) |
-| 2021-F | q03 | official_statement_parameters | [question_reports/2021/F/q03/report.md](question_reports/2021/F/q03/report.md) |
-| 2021-F | q04 | official_statement_parameters | [question_reports/2021/F/q04/report.md](question_reports/2021/F/q04/report.md) |
-| 2021-F | q05 | official_statement_parameters | [question_reports/2021/F/q05/report.md](question_reports/2021/F/q05/report.md) |
-| 2021-F | q06 | official_statement_parameters | [question_reports/2021/F/q06/report.md](question_reports/2021/F/q06/report.md) |
-| 2021-F | q07 | official_statement_parameters | [question_reports/2021/F/q07/report.md](question_reports/2021/F/q07/report.md) |
-| 2022-A | q01 | official_statement_parameters | [question_reports/2022/A/q01/report.md](question_reports/2022/A/q01/report.md) |
-| 2022-A | q02 | official_statement_parameters | [question_reports/2022/A/q02/report.md](question_reports/2022/A/q02/report.md) |
-| 2022-A | q03 | official_statement_parameters | [question_reports/2022/A/q03/report.md](question_reports/2022/A/q03/report.md) |
-| 2022-A | q04 | official_statement_parameters | [question_reports/2022/A/q04/report.md](question_reports/2022/A/q04/report.md) |
-| 2022-A | q05 | official_statement_parameters | [question_reports/2022/A/q05/report.md](question_reports/2022/A/q05/report.md) |
-| 2022-B | q01 | official_statement_parameters | [question_reports/2022/B/q01/report.md](question_reports/2022/B/q01/report.md) |
-| 2022-B | q02 | official_statement_parameters | [question_reports/2022/B/q02/report.md](question_reports/2022/B/q02/report.md) |
-| 2022-B | q03 | official_statement_parameters | [question_reports/2022/B/q03/report.md](question_reports/2022/B/q03/report.md) |
-| 2022-B | q04 | official_statement_parameters | [question_reports/2022/B/q04/report.md](question_reports/2022/B/q04/report.md) |
-| 2022-B | q05 | official_statement_parameters | [question_reports/2022/B/q05/report.md](question_reports/2022/B/q05/report.md) |
-| 2022-B | q06 | official_statement_parameters | [question_reports/2022/B/q06/report.md](question_reports/2022/B/q06/report.md) |
-| 2022-B | q07 | official_statement_parameters | [question_reports/2022/B/q07/report.md](question_reports/2022/B/q07/report.md) |
-| 2022-B | q08 | official_statement_parameters | [question_reports/2022/B/q08/report.md](question_reports/2022/B/q08/report.md) |
-| 2022-B | q09 | official_statement_parameters | [question_reports/2022/B/q09/report.md](question_reports/2022/B/q09/report.md) |
-| 2022-C | q01 | official_comap_csv | [question_reports/2022/C/q01/report.md](question_reports/2022/C/q01/report.md) |
-| 2022-C | q02 | official_comap_csv | [question_reports/2022/C/q02/report.md](question_reports/2022/C/q02/report.md) |
-| 2022-C | q03 | official_comap_csv | [question_reports/2022/C/q03/report.md](question_reports/2022/C/q03/report.md) |
-| 2022-C | q04 | official_comap_csv | [question_reports/2022/C/q04/report.md](question_reports/2022/C/q04/report.md) |
-| 2022-P01 | q01 | official_statement_parameters | [question_reports/2022/P01/q01/report.md](question_reports/2022/P01/q01/report.md) |
-| 2022-P01 | q02 | official_statement_parameters | [question_reports/2022/P01/q02/report.md](question_reports/2022/P01/q02/report.md) |
-| 2022-P01 | q03 | official_statement_parameters | [question_reports/2022/P01/q03/report.md](question_reports/2022/P01/q03/report.md) |
-| 2022-P01 | q04 | official_statement_parameters | [question_reports/2022/P01/q04/report.md](question_reports/2022/P01/q04/report.md) |
-| 2022-E | q01 | official_statement_parameters | [question_reports/2022/E/q01/report.md](question_reports/2022/E/q01/report.md) |
-| 2022-E | q02 | official_statement_parameters | [question_reports/2022/E/q02/report.md](question_reports/2022/E/q02/report.md) |
-| 2022-E | q03 | official_statement_parameters | [question_reports/2022/E/q03/report.md](question_reports/2022/E/q03/report.md) |
-| 2022-E | q04 | official_statement_parameters | [question_reports/2022/E/q04/report.md](question_reports/2022/E/q04/report.md) |
-| 2022-E | q05 | official_statement_parameters | [question_reports/2022/E/q05/report.md](question_reports/2022/E/q05/report.md) |
-| 2022-E | q06 | official_statement_parameters | [question_reports/2022/E/q06/report.md](question_reports/2022/E/q06/report.md) |
-| 2022-E | q07 | official_statement_parameters | [question_reports/2022/E/q07/report.md](question_reports/2022/E/q07/report.md) |
-| 2022-E | q08 | official_statement_parameters | [question_reports/2022/E/q08/report.md](question_reports/2022/E/q08/report.md) |
-| 2022-E | q09 | official_statement_parameters | [question_reports/2022/E/q09/report.md](question_reports/2022/E/q09/report.md) |
-| 2022-E | q10 | official_statement_parameters | [question_reports/2022/E/q10/report.md](question_reports/2022/E/q10/report.md) |
-| 2022-E | q11 | official_statement_parameters | [question_reports/2022/E/q11/report.md](question_reports/2022/E/q11/report.md) |
-| 2022-F | q01 | official_statement_parameters | [question_reports/2022/F/q01/report.md](question_reports/2022/F/q01/report.md) |
-| 2022-F | q02 | official_statement_parameters | [question_reports/2022/F/q02/report.md](question_reports/2022/F/q02/report.md) |
-| 2022-F | q03 | official_statement_parameters | [question_reports/2022/F/q03/report.md](question_reports/2022/F/q03/report.md) |
-| 2022-F | q04 | official_statement_parameters | [question_reports/2022/F/q04/report.md](question_reports/2022/F/q04/report.md) |
-| 2022-F | q05 | official_statement_parameters | [question_reports/2022/F/q05/report.md](question_reports/2022/F/q05/report.md) |
-| 2022-F | q06 | official_statement_parameters | [question_reports/2022/F/q06/report.md](question_reports/2022/F/q06/report.md) |
-| 2022-F | q07 | official_statement_parameters | [question_reports/2022/F/q07/report.md](question_reports/2022/F/q07/report.md) |
-| 2022-F | q08 | official_statement_parameters | [question_reports/2022/F/q08/report.md](question_reports/2022/F/q08/report.md) |
-| 2023-A | q01 | official_statement_parameters | [question_reports/2023/A/q01/report.md](question_reports/2023/A/q01/report.md) |
-| 2023-A | q02 | official_statement_parameters | [question_reports/2023/A/q02/report.md](question_reports/2023/A/q02/report.md) |
-| 2023-A | q03 | official_statement_parameters | [question_reports/2023/A/q03/report.md](question_reports/2023/A/q03/report.md) |
-| 2023-A | q04 | official_statement_parameters | [question_reports/2023/A/q04/report.md](question_reports/2023/A/q04/report.md) |
-| 2023-A | q05 | official_statement_parameters | [question_reports/2023/A/q05/report.md](question_reports/2023/A/q05/report.md) |
-| 2023-A | q06 | official_statement_parameters | [question_reports/2023/A/q06/report.md](question_reports/2023/A/q06/report.md) |
-| 2023-B | q01 | official_statement_parameters | [question_reports/2023/B/q01/report.md](question_reports/2023/B/q01/report.md) |
-| 2023-B | q02 | official_statement_parameters | [question_reports/2023/B/q02/report.md](question_reports/2023/B/q02/report.md) |
-| 2023-B | q03 | official_statement_parameters | [question_reports/2023/B/q03/report.md](question_reports/2023/B/q03/report.md) |
-| 2023-B | q04 | official_statement_parameters | [question_reports/2023/B/q04/report.md](question_reports/2023/B/q04/report.md) |
-| 2023-D | q01 | official_statement_parameters | [question_reports/2023/D/q01/report.md](question_reports/2023/D/q01/report.md) |
-| 2023-D | q02 | official_statement_parameters | [question_reports/2023/D/q02/report.md](question_reports/2023/D/q02/report.md) |
-| 2023-D | q03 | official_statement_parameters | [question_reports/2023/D/q03/report.md](question_reports/2023/D/q03/report.md) |
-| 2023-D | q04 | official_statement_parameters | [question_reports/2023/D/q04/report.md](question_reports/2023/D/q04/report.md) |
-| 2023-D | q05 | official_statement_parameters | [question_reports/2023/D/q05/report.md](question_reports/2023/D/q05/report.md) |
-| 2023-E | q01 | official_statement_parameters | [question_reports/2023/E/q01/report.md](question_reports/2023/E/q01/report.md) |
-| 2023-E | q02 | official_statement_parameters | [question_reports/2023/E/q02/report.md](question_reports/2023/E/q02/report.md) |
-| 2023-E | q03 | official_statement_parameters | [question_reports/2023/E/q03/report.md](question_reports/2023/E/q03/report.md) |
-| 2023-E | q04 | official_statement_parameters | [question_reports/2023/E/q04/report.md](question_reports/2023/E/q04/report.md) |
-| 2023-E | q05 | official_statement_parameters | [question_reports/2023/E/q05/report.md](question_reports/2023/E/q05/report.md) |
-| 2023-F | q01 | official_statement_parameters | [question_reports/2023/F/q01/report.md](question_reports/2023/F/q01/report.md) |
-| 2023-F | q02 | official_statement_parameters | [question_reports/2023/F/q02/report.md](question_reports/2023/F/q02/report.md) |
-| 2023-F | q03 | official_statement_parameters | [question_reports/2023/F/q03/report.md](question_reports/2023/F/q03/report.md) |
-| 2023-F | q04 | official_statement_parameters | [question_reports/2023/F/q04/report.md](question_reports/2023/F/q04/report.md) |
-| 2023-F-GreenGDP | q01 | official_pdf_and_world_bank_api | [question_reports/2023/F-GreenGDP/q01/report.md](question_reports/2023/F-GreenGDP/q01/report.md) |
-| 2023-F-GreenGDP | q02 | official_pdf_and_world_bank_api | [question_reports/2023/F-GreenGDP/q02/report.md](question_reports/2023/F-GreenGDP/q02/report.md) |
-| 2023-F-GreenGDP | q03 | official_pdf_and_world_bank_api | [question_reports/2023/F-GreenGDP/q03/report.md](question_reports/2023/F-GreenGDP/q03/report.md) |
-| 2023-F-GreenGDP | q04 | official_pdf_and_world_bank_api | [question_reports/2023/F-GreenGDP/q04/report.md](question_reports/2023/F-GreenGDP/q04/report.md) |
-| 2023-F-GreenGDP | q05 | official_pdf_and_world_bank_api | [question_reports/2023/F-GreenGDP/q05/report.md](question_reports/2023/F-GreenGDP/q05/report.md) |
-| 2023-C-Wordle | q01 | official_comap_xlsx | [question_reports/2023/C-Wordle/q01/report.md](question_reports/2023/C-Wordle/q01/report.md) |
-| 2023-C-Wordle | q02 | official_comap_xlsx | [question_reports/2023/C-Wordle/q02/report.md](question_reports/2023/C-Wordle/q02/report.md) |
-| 2023-C-Wordle | q03 | official_comap_xlsx | [question_reports/2023/C-Wordle/q03/report.md](question_reports/2023/C-Wordle/q03/report.md) |
-| 2023-C-Wordle | q04 | official_comap_xlsx | [question_reports/2023/C-Wordle/q04/report.md](question_reports/2023/C-Wordle/q04/report.md) |
-| 2023-C-Wordle | q05 | official_comap_xlsx | [question_reports/2023/C-Wordle/q05/report.md](question_reports/2023/C-Wordle/q05/report.md) |
-| 2023-C-Boats | q01 | official_comap_xlsx | [question_reports/2023/C-Boats/q01/report.md](question_reports/2023/C-Boats/q01/report.md) |
-| 2023-C-Boats | q02 | official_comap_xlsx | [question_reports/2023/C-Boats/q02/report.md](question_reports/2023/C-Boats/q02/report.md) |
-| 2023-C-Boats | q03 | official_comap_xlsx | [question_reports/2023/C-Boats/q03/report.md](question_reports/2023/C-Boats/q03/report.md) |
-| 2023-C-Boats | q04 | official_comap_xlsx | [question_reports/2023/C-Boats/q04/report.md](question_reports/2023/C-Boats/q04/report.md) |
-| 2023-C-Boats | q05 | official_comap_xlsx | [question_reports/2023/C-Boats/q05/report.md](question_reports/2023/C-Boats/q05/report.md) |
-| 2024-A | q01 | official_statement_parameters | [question_reports/2024/A/q01/report.md](question_reports/2024/A/q01/report.md) |
-| 2024-A | q02 | official_statement_parameters | [question_reports/2024/A/q02/report.md](question_reports/2024/A/q02/report.md) |
-| 2024-A | q03 | official_statement_parameters | [question_reports/2024/A/q03/report.md](question_reports/2024/A/q03/report.md) |
-| 2024-A | q04 | official_statement_parameters | [question_reports/2024/A/q04/report.md](question_reports/2024/A/q04/report.md) |
-| 2024-B | q01 | official_statement_parameters | [question_reports/2024/B/q01/report.md](question_reports/2024/B/q01/report.md) |
-| 2024-B | q02 | official_statement_parameters | [question_reports/2024/B/q02/report.md](question_reports/2024/B/q02/report.md) |
-| 2024-B | q03 | official_statement_parameters | [question_reports/2024/B/q03/report.md](question_reports/2024/B/q03/report.md) |
-| 2024-B | q04 | official_statement_parameters | [question_reports/2024/B/q04/report.md](question_reports/2024/B/q04/report.md) |
-| 2025-A | q01 | official_statement_parameters | [question_reports/2025/A/q01/report.md](question_reports/2025/A/q01/report.md) |
-| 2025-A | q02 | official_statement_parameters | [question_reports/2025/A/q02/report.md](question_reports/2025/A/q02/report.md) |
-| 2025-A | q03 | official_statement_parameters | [question_reports/2025/A/q03/report.md](question_reports/2025/A/q03/report.md) |
-| 2025-A | q04 | official_statement_parameters | [question_reports/2025/A/q04/report.md](question_reports/2025/A/q04/report.md) |
-| 2025-A | q05 | official_statement_parameters | [question_reports/2025/A/q05/report.md](question_reports/2025/A/q05/report.md) |
-| 2025-A | q06 | official_statement_parameters | [question_reports/2025/A/q06/report.md](question_reports/2025/A/q06/report.md) |
-| 2025-A | q07 | official_statement_parameters | [question_reports/2025/A/q07/report.md](question_reports/2025/A/q07/report.md) |
-| 2025-A | q08 | official_statement_parameters | [question_reports/2025/A/q08/report.md](question_reports/2025/A/q08/report.md) |
-| 2025-B | q01 | official_statement_parameters | [question_reports/2025/B/q01/report.md](question_reports/2025/B/q01/report.md) |
-| 2025-B | q02 | official_statement_parameters | [question_reports/2025/B/q02/report.md](question_reports/2025/B/q02/report.md) |
-| 2025-B | q03 | official_statement_parameters | [question_reports/2025/B/q03/report.md](question_reports/2025/B/q03/report.md) |
-| 2024-C | q01 | official_comap_csv | [question_reports/2024/C/q01/report.md](question_reports/2024/C/q01/report.md) |
-| 2024-C | q02 | official_comap_csv | [question_reports/2024/C/q02/report.md](question_reports/2024/C/q02/report.md) |
-| 2024-C | q03 | official_comap_csv | [question_reports/2024/C/q03/report.md](question_reports/2024/C/q03/report.md) |
-| 2024-C | q04 | official_comap_csv | [question_reports/2024/C/q04/report.md](question_reports/2024/C/q04/report.md) |
-| 2024-C | q05 | official_comap_csv | [question_reports/2024/C/q05/report.md](question_reports/2024/C/q05/report.md) |
-| 2024-D | q01 | official_comap_xlsx | [question_reports/2024/D/q01/report.md](question_reports/2024/D/q01/report.md) |
-| 2024-D | q02 | official_comap_xlsx | [question_reports/2024/D/q02/report.md](question_reports/2024/D/q02/report.md) |
-| 2024-D | q03 | official_comap_xlsx | [question_reports/2024/D/q03/report.md](question_reports/2024/D/q03/report.md) |
-| 2024-D | q04 | official_comap_xlsx | [question_reports/2024/D/q04/report.md](question_reports/2024/D/q04/report.md) |
-| 2024-D | q05 | official_comap_xlsx | [question_reports/2024/D/q05/report.md](question_reports/2024/D/q05/report.md) |
-| 2024-D | q06 | official_comap_xlsx | [question_reports/2024/D/q06/report.md](question_reports/2024/D/q06/report.md) |
-| 2024-E | q01 | official_statement_parameters | [question_reports/2024/E/q01/report.md](question_reports/2024/E/q01/report.md) |
-| 2024-E | q02 | official_statement_parameters | [question_reports/2024/E/q02/report.md](question_reports/2024/E/q02/report.md) |
-| 2024-E | q03 | official_statement_parameters | [question_reports/2024/E/q03/report.md](question_reports/2024/E/q03/report.md) |
-| 2024-E | q04 | official_statement_parameters | [question_reports/2024/E/q04/report.md](question_reports/2024/E/q04/report.md) |
-| 2024-E | q05 | official_statement_parameters | [question_reports/2024/E/q05/report.md](question_reports/2024/E/q05/report.md) |
-| 2024-E | q06 | official_statement_parameters | [question_reports/2024/E/q06/report.md](question_reports/2024/E/q06/report.md) |
-| 2024-E | q07 | official_statement_parameters | [question_reports/2024/E/q07/report.md](question_reports/2024/E/q07/report.md) |
-| 2024-F | q01 | official_statement_parameters | [question_reports/2024/F/q01/report.md](question_reports/2024/F/q01/report.md) |
-| 2024-F | q02 | official_statement_parameters | [question_reports/2024/F/q02/report.md](question_reports/2024/F/q02/report.md) |
-| 2024-F | q03 | official_statement_parameters | [question_reports/2024/F/q03/report.md](question_reports/2024/F/q03/report.md) |
-| 2024-F | q04 | official_statement_parameters | [question_reports/2024/F/q04/report.md](question_reports/2024/F/q04/report.md) |
-| 2024-F | q05 | official_statement_parameters | [question_reports/2024/F/q05/report.md](question_reports/2024/F/q05/report.md) |
-| 2024-F | q06 | official_statement_parameters | [question_reports/2024/F/q06/report.md](question_reports/2024/F/q06/report.md) |
-| 2024-F | q07 | official_statement_parameters | [question_reports/2024/F/q07/report.md](question_reports/2024/F/q07/report.md) |
-| 2024-F | q08 | official_statement_parameters | [question_reports/2024/F/q08/report.md](question_reports/2024/F/q08/report.md) |
-| 2024-F | q09 | official_statement_parameters | [question_reports/2024/F/q09/report.md](question_reports/2024/F/q09/report.md) |
-| 2024-F | q10 | official_statement_parameters | [question_reports/2024/F/q10/report.md](question_reports/2024/F/q10/report.md) |
-| 2025-C | q01 | official_comap_csv | [question_reports/2025/C/q01/report.md](question_reports/2025/C/q01/report.md) |
-| 2025-C | q02 | official_comap_csv | [question_reports/2025/C/q02/report.md](question_reports/2025/C/q02/report.md) |
-| 2025-C | q03 | official_comap_csv | [question_reports/2025/C/q03/report.md](question_reports/2025/C/q03/report.md) |
-| 2025-C | q04 | official_comap_csv | [question_reports/2025/C/q04/report.md](question_reports/2025/C/q04/report.md) |
-| 2025-C | q05 | official_comap_csv | [question_reports/2025/C/q05/report.md](question_reports/2025/C/q05/report.md) |
-| 2025-C | q06 | official_comap_csv | [question_reports/2025/C/q06/report.md](question_reports/2025/C/q06/report.md) |
-| 2025-D | q01 | official_comap_csv | [question_reports/2025/D/q01/report.md](question_reports/2025/D/q01/report.md) |
-| 2025-D | q02 | official_comap_csv | [question_reports/2025/D/q02/report.md](question_reports/2025/D/q02/report.md) |
-| 2025-D | q03 | official_comap_csv | [question_reports/2025/D/q03/report.md](question_reports/2025/D/q03/report.md) |
-| 2025-D | q04 | official_comap_csv | [question_reports/2025/D/q04/report.md](question_reports/2025/D/q04/report.md) |
-| 2025-D | q05 | official_comap_csv | [question_reports/2025/D/q05/report.md](question_reports/2025/D/q05/report.md) |
-| 2025-D | q06 | official_comap_csv | [question_reports/2025/D/q06/report.md](question_reports/2025/D/q06/report.md) |
-| 2025-D | q07 | official_comap_csv | [question_reports/2025/D/q07/report.md](question_reports/2025/D/q07/report.md) |
-| 2025-E | q01 | official_statement_parameters | [question_reports/2025/E/q01/report.md](question_reports/2025/E/q01/report.md) |
-| 2025-E | q02 | official_statement_parameters | [question_reports/2025/E/q02/report.md](question_reports/2025/E/q02/report.md) |
-| 2025-E | q03 | official_statement_parameters | [question_reports/2025/E/q03/report.md](question_reports/2025/E/q03/report.md) |
-| 2025-E | q04 | official_statement_parameters | [question_reports/2025/E/q04/report.md](question_reports/2025/E/q04/report.md) |
-| 2025-E | q05 | official_statement_parameters | [question_reports/2025/E/q05/report.md](question_reports/2025/E/q05/report.md) |
-| 2025-E | q06 | official_statement_parameters | [question_reports/2025/E/q06/report.md](question_reports/2025/E/q06/report.md) |
-| 2025-E | q07 | official_statement_parameters | [question_reports/2025/E/q07/report.md](question_reports/2025/E/q07/report.md) |
-| 2025-F | q01 | official_statement_parameters | [question_reports/2025/F/q01/report.md](question_reports/2025/F/q01/report.md) |
-| 2025-F | q02 | official_statement_parameters | [question_reports/2025/F/q02/report.md](question_reports/2025/F/q02/report.md) |
-| 2025-F | q03 | official_statement_parameters | [question_reports/2025/F/q03/report.md](question_reports/2025/F/q03/report.md) |
-| 2017-E | q01 | official_statement_parameters | [question_reports/2017/E/q01/report.md](question_reports/2017/E/q01/report.md) |
-| 2017-E | q02 | official_statement_parameters | [question_reports/2017/E/q02/report.md](question_reports/2017/E/q02/report.md) |
-| 2017-F | q01 | official_statement_parameters | [question_reports/2017/F/q01/report.md](question_reports/2017/F/q01/report.md) |
-| 2017-F | q02 | official_statement_parameters | [question_reports/2017/F/q02/report.md](question_reports/2017/F/q02/report.md) |
-| 2017-F | q03 | official_statement_parameters | [question_reports/2017/F/q03/report.md](question_reports/2017/F/q03/report.md) |
-| 2017-F | q04 | official_statement_parameters | [question_reports/2017/F/q04/report.md](question_reports/2017/F/q04/report.md) |
-| 2017-F | q05 | official_statement_parameters | [question_reports/2017/F/q05/report.md](question_reports/2017/F/q05/report.md) |
-| 2017-F | q06 | official_statement_parameters | [question_reports/2017/F/q06/report.md](question_reports/2017/F/q06/report.md) |
-| 2017-F | q07 | official_statement_parameters | [question_reports/2017/F/q07/report.md](question_reports/2017/F/q07/report.md) |
-| 2017-F | q08 | official_statement_parameters | [question_reports/2017/F/q08/report.md](question_reports/2017/F/q08/report.md) |
-| 2017-F | q09 | official_statement_parameters | [question_reports/2017/F/q09/report.md](question_reports/2017/F/q09/report.md) |
-| 2017-F | q10 | official_statement_parameters | [question_reports/2017/F/q10/report.md](question_reports/2017/F/q10/report.md) |
-| 2017-F | q11 | official_statement_parameters | [question_reports/2017/F/q11/report.md](question_reports/2017/F/q11/report.md) |
-| 2017-F | q12 | official_statement_parameters | [question_reports/2017/F/q12/report.md](question_reports/2017/F/q12/report.md) |
-| 2018-A | q01 | official_statement_parameters | [question_reports/2018/A/q01/report.md](question_reports/2018/A/q01/report.md) |
-| 2018-A | q02 | official_statement_parameters | [question_reports/2018/A/q02/report.md](question_reports/2018/A/q02/report.md) |
-| 2018-A | q03 | official_statement_parameters | [question_reports/2018/A/q03/report.md](question_reports/2018/A/q03/report.md) |
-| 2018-A | q04 | official_statement_parameters | [question_reports/2018/A/q04/report.md](question_reports/2018/A/q04/report.md) |
-| 2018-B | q01 | official_statement_parameters | [question_reports/2018/B/q01/report.md](question_reports/2018/B/q01/report.md) |
-| 2018-B | q02 | official_statement_parameters | [question_reports/2018/B/q02/report.md](question_reports/2018/B/q02/report.md) |
-| 2018-B | q03 | official_statement_parameters | [question_reports/2018/B/q03/report.md](question_reports/2018/B/q03/report.md) |
-| 2018-B | q04 | official_statement_parameters | [question_reports/2018/B/q04/report.md](question_reports/2018/B/q04/report.md) |
-| 2018-B | q05 | official_statement_parameters | [question_reports/2018/B/q05/report.md](question_reports/2018/B/q05/report.md) |
-| 2018-D | q01 | official_statement_parameters | [question_reports/2018/D/q01/report.md](question_reports/2018/D/q01/report.md) |
-| 2018-D | q02 | official_statement_parameters | [question_reports/2018/D/q02/report.md](question_reports/2018/D/q02/report.md) |
-| 2018-D | q03 | official_statement_parameters | [question_reports/2018/D/q03/report.md](question_reports/2018/D/q03/report.md) |
-| 2018-D | q04 | official_statement_parameters | [question_reports/2018/D/q04/report.md](question_reports/2018/D/q04/report.md) |
-| 2018-D | q05 | official_statement_parameters | [question_reports/2018/D/q05/report.md](question_reports/2018/D/q05/report.md) |
-| 2018-D | q06 | official_statement_parameters | [question_reports/2018/D/q06/report.md](question_reports/2018/D/q06/report.md) |
-| 2018-D | q07 | official_statement_parameters | [question_reports/2018/D/q07/report.md](question_reports/2018/D/q07/report.md) |
-| 2018-D | q08 | official_statement_parameters | [question_reports/2018/D/q08/report.md](question_reports/2018/D/q08/report.md) |
-| 2018-D | q09 | official_statement_parameters | [question_reports/2018/D/q09/report.md](question_reports/2018/D/q09/report.md) |
-| 2018-D | q10 | official_statement_parameters | [question_reports/2018/D/q10/report.md](question_reports/2018/D/q10/report.md) |
-| 2018-D | q11 | official_statement_parameters | [question_reports/2018/D/q11/report.md](question_reports/2018/D/q11/report.md) |
-| 2018-D | q12 | official_statement_parameters | [question_reports/2018/D/q12/report.md](question_reports/2018/D/q12/report.md) |
-| 2018-E | q01 | official_statement_parameters | [question_reports/2018/E/q01/report.md](question_reports/2018/E/q01/report.md) |
-| 2018-E | q02 | official_statement_parameters | [question_reports/2018/E/q02/report.md](question_reports/2018/E/q02/report.md) |
-| 2018-E | q03 | official_statement_parameters | [question_reports/2018/E/q03/report.md](question_reports/2018/E/q03/report.md) |
-| 2018-E | q04 | official_statement_parameters | [question_reports/2018/E/q04/report.md](question_reports/2018/E/q04/report.md) |
-| 2018-E | q05 | official_statement_parameters | [question_reports/2018/E/q05/report.md](question_reports/2018/E/q05/report.md) |
-| 2018-F | q01 | official_statement_parameters | [question_reports/2018/F/q01/report.md](question_reports/2018/F/q01/report.md) |
-| 2018-F | q02 | official_statement_parameters | [question_reports/2018/F/q02/report.md](question_reports/2018/F/q02/report.md) |
-| 2018-F | q03 | official_statement_parameters | [question_reports/2018/F/q03/report.md](question_reports/2018/F/q03/report.md) |
-| 2018-F | q04 | official_statement_parameters | [question_reports/2018/F/q04/report.md](question_reports/2018/F/q04/report.md) |
-| 2018-F | q05 | official_statement_parameters | [question_reports/2018/F/q05/report.md](question_reports/2018/F/q05/report.md) |
-| 2018-F | q06 | official_statement_parameters | [question_reports/2018/F/q06/report.md](question_reports/2018/F/q06/report.md) |
-| 2018-F | q07 | official_statement_parameters | [question_reports/2018/F/q07/report.md](question_reports/2018/F/q07/report.md) |
-| 2018-F | q08 | official_statement_parameters | [question_reports/2018/F/q08/report.md](question_reports/2018/F/q08/report.md) |
-| 2018-F | q09 | official_statement_parameters | [question_reports/2018/F/q09/report.md](question_reports/2018/F/q09/report.md) |
-| 2018-F | q10 | official_statement_parameters | [question_reports/2018/F/q10/report.md](question_reports/2018/F/q10/report.md) |
-| 2018-F | q11 | official_statement_parameters | [question_reports/2018/F/q11/report.md](question_reports/2018/F/q11/report.md) |
-| 2018-F | q12 | official_statement_parameters | [question_reports/2018/F/q12/report.md](question_reports/2018/F/q12/report.md) |
+重建教程赛题页：
+
+```bash
+.venv/bin/python tools/build_problem_pages.py
+```
+
+覆盖审计：
+
+```bash
+.venv/bin/python tools/audit_problem_coverage.py
+```

@@ -5,8 +5,8 @@ import sys
 from pathlib import Path
 
 
-REPO_ROOT = Path('.')
-BASE = Path('mcm/generic_baselines')
+REPO_ROOT = Path(__file__).resolve().parents[6]
+BASE = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "mcm" / "lib"))
 from generic_baseline import solve_question_generic_baseline, write_generic_report
 
@@ -15,14 +15,14 @@ PAYLOAD = {
   "year": "2023",
   "code": "F",
   "question": "q03",
-  "question_title": "可行性、实施时间线和影响评估",
-  "statement": "Consider the feasibility, timeline to implement, and impact of potential strategies on your metrics.",
-  "methods": "对推荐策略生成 IOC 治理里程碑，显式记录 feasibility、timeline years、governance complexity 和 impact score，避免把策略推荐变成不可审计口号。对应模型：实施路线图、治理复杂度评分。",
-  "source_type": "official_statement_parameters",
-  "solution_path": "question_solutions/2023/F/q03/solution.py",
-  "result_path": "question_results/2023/F/q03/result.json",
-  "report_path": "question_reports/2023/F/q03/report.md",
-  "artifact_path": "question_artifacts/2023/F/q03/implementation_timeline.csv"
+  "question_title": "全球尺度替换 GDP 的收益与阻力权衡",
+  "statement": "Determine if your model indicates that the switch is worthwhile at a global scale, comparing both the potential upside of climate mitigation impact and the potential downside of the effort required to replace the status quo.",
+  "methods": "对 cautious pilot、phased G20/resource exporters、full primary metric switch 三种情景比较 climate/resource benefit index、transition effort index 和 net benefit score。对应模型：成本收益、多情景评价。",
+  "source_type": "official_pdf_and_world_bank_api",
+  "solution_path": "question_solutions/2023/F-GreenGDP/q03/solution.py",
+  "result_path": "question_results/2023/F-GreenGDP/q03/result.json",
+  "report_path": "question_reports/2023/F-GreenGDP/q03/report.md",
+  "artifact_path": "question_artifacts/2023/F-GreenGDP/q03/global_impact_scenarios.csv"
 }
 RESULT_PATH = BASE / "results" / '2023' / 'F' / 'q03' / "result.json"
 REPORT_PATH = BASE / "reports" / '2023' / 'F' / 'q03' / "report.md"

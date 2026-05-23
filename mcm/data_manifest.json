@@ -1,11 +1,19 @@
 [
   {
-    "problem_id": "2015-D",
+    "problem_id": "2015-A",
     "year": "2015",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
-    "size_bytes": "88945"
+    "kind": "html",
+    "path": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2015/problems/",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2015/2015_MCM_Problems.html",
+    "size_bytes": "0"
+  },
+  {
+    "problem_id": "2015-B",
+    "year": "2015",
+    "kind": "html",
+    "path": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2015/problems/",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2015/2015_MCM_Problems.html",
+    "size_bytes": "0"
   },
   {
     "problem_id": "2015-C",
@@ -24,6 +32,14 @@
     "size_bytes": "87299"
   },
   {
+    "problem_id": "2015-D",
+    "year": "2015",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2015/Is it sustainable.pdf",
+    "size_bytes": "88945"
+  },
+  {
     "problem_id": "2016-A",
     "year": "2016",
     "kind": "pdf",
@@ -32,36 +48,12 @@
     "size_bytes": "75127"
   },
   {
-    "problem_id": "2016-E",
+    "problem_id": "2016-B",
     "year": "2016",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
-    "size_bytes": "92578"
-  },
-  {
-    "problem_id": "2016-D",
-    "year": "2016",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
-    "size_bytes": "155359"
-  },
-  {
-    "problem_id": "2016-F",
-    "year": "2016",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
-    "size_bytes": "104543"
-  },
-  {
-    "problem_id": "2016-E",
-    "year": "2016",
-    "kind": "csv",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
-    "size_bytes": "109278"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
+    "size_bytes": "79384"
   },
   {
     "problem_id": "2016-C",
@@ -70,6 +62,14 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- The Goodgrant Challenge/IPEDS Variables for Data Selection.pdf",
     "size_bytes": "176780"
+  },
+  {
+    "problem_id": "2016-C",
+    "year": "2016",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
+    "size_bytes": "98137"
   },
   {
     "problem_id": "2016-C",
@@ -96,28 +96,36 @@
     "size_bytes": "5371791"
   },
   {
-    "problem_id": "2016-B",
+    "problem_id": "2016-D",
     "year": "2016",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Space Junk.pdf",
-    "size_bytes": "79384"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Measuring the Evolution and Influence in Society's Information Networks.pdf",
+    "size_bytes": "155359"
   },
   {
-    "problem_id": "2016-C",
+    "problem_id": "2016-E",
+    "year": "2016",
+    "kind": "csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Problem Data- Are we heading towards a thirsty planet/world_bank_jordan_water_indicators.csv",
+    "size_bytes": "109278"
+  },
+  {
+    "problem_id": "2016-E",
     "year": "2016",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/The Goodgrant Challenge.pdf",
-    "size_bytes": "98137"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Are we heading towards a thirsty planet.pdf",
+    "size_bytes": "92578"
   },
   {
-    "problem_id": "2017-C",
-    "year": "2017",
+    "problem_id": "2016-F",
+    "year": "2016",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
-    "size_bytes": "722864"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2016/Modeling Refugee Immigration Policies.pdf",
+    "size_bytes": "104543"
   },
   {
     "problem_id": "2017-A",
@@ -136,6 +144,22 @@
     "size_bytes": "111655"
   },
   {
+    "problem_id": "2017-C",
+    "year": "2017",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Cooperate and Navigate.pdf",
+    "size_bytes": "722864"
+  },
+  {
+    "problem_id": "2017-C",
+    "year": "2017",
+    "kind": "xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
+    "size_bytes": "20391"
+  },
+  {
     "problem_id": "2017-D",
     "year": "2017",
     "kind": "pdf",
@@ -152,12 +176,36 @@
     "size_bytes": "12103"
   },
   {
-    "problem_id": "2017-C",
+    "problem_id": "2017-E",
     "year": "2017",
-    "kind": "xlsx",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2017/Problem Data- Cooperate and Navigate/2017_MCM_Problem_C_Data.xlsx",
-    "size_bytes": "20391"
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
+    "size_bytes": "134817"
+  },
+  {
+    "problem_id": "2017-F",
+    "year": "2017",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
+    "size_bytes": "197563"
+  },
+  {
+    "problem_id": "2018-A",
+    "year": "2018",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
+    "size_bytes": "136271"
+  },
+  {
+    "problem_id": "2018-B",
+    "year": "2018",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
+    "size_bytes": "848893"
   },
   {
     "problem_id": "2018-C",
@@ -176,12 +224,44 @@
     "size_bytes": "2846241"
   },
   {
-    "problem_id": "2019-C",
+    "problem_id": "2018-D",
+    "year": "2018",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
+    "size_bytes": "245827"
+  },
+  {
+    "problem_id": "2018-E",
+    "year": "2018",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
+    "size_bytes": "143540"
+  },
+  {
+    "problem_id": "2018-F",
+    "year": "2018",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
+    "size_bytes": "144393"
+  },
+  {
+    "problem_id": "2019-A",
     "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
-    "size_bytes": "3775"
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
+    "size_bytes": "142475"
+  },
+  {
+    "problem_id": "2019-B",
+    "year": "2019",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
+    "size_bytes": "810625"
   },
   {
     "problem_id": "2019-C",
@@ -202,22 +282,6 @@
   {
     "problem_id": "2019-C",
     "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
-    "size_bytes": "1062"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
-    "size_bytes": "3727"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
     "kind": "csv",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_metadata.csv",
@@ -230,22 +294,6 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02_with_ann.csv",
     "size_bytes": "1220210"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
-    "size_bytes": "1062"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
-    "size_bytes": "4213"
   },
   {
     "problem_id": "2019-C",
@@ -266,22 +314,6 @@
   {
     "problem_id": "2019-C",
     "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
-    "size_bytes": "1062"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
-    "size_bytes": "4341"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
     "kind": "csv",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_metadata.csv",
@@ -294,22 +326,6 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02_with_ann.csv",
     "size_bytes": "1262587"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
-    "size_bytes": "1062"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
-    "size_bytes": "4351"
   },
   {
     "problem_id": "2019-C",
@@ -330,22 +346,6 @@
   {
     "problem_id": "2019-C",
     "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
-    "size_bytes": "1062"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
-    "size_bytes": "5300"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
     "kind": "csv",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_metadata.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_metadata.csv",
@@ -358,22 +358,6 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_with_ann.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02_with_ann.csv",
     "size_bytes": "1260240"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
-    "size_bytes": "1062"
-  },
-  {
-    "problem_id": "2019-C",
-    "year": "2019",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
-    "size_bytes": "5313"
   },
   {
     "problem_id": "2019-C",
@@ -394,6 +378,118 @@
   {
     "problem_id": "2019-C",
     "year": "2019",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
+    "size_bytes": "409514"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/ACS_10_5YR_DP02.txt",
+    "size_bytes": "3775"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02/aff_download_readme_ann.txt",
+    "size_bytes": "1062"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/ACS_11_5YR_DP02.txt",
+    "size_bytes": "3727"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_11_5YR_DP02/aff_download_readme_ann.txt",
+    "size_bytes": "1062"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/ACS_12_5YR_DP02.txt",
+    "size_bytes": "4213"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_12_5YR_DP02/aff_download_readme_ann.txt",
+    "size_bytes": "1062"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/ACS_13_5YR_DP02.txt",
+    "size_bytes": "4341"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_13_5YR_DP02/aff_download_readme_ann.txt",
+    "size_bytes": "1062"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/ACS_14_5YR_DP02.txt",
+    "size_bytes": "4351"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_14_5YR_DP02/aff_download_readme_ann.txt",
+    "size_bytes": "1062"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/ACS_15_5YR_DP02.txt",
+    "size_bytes": "5300"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_15_5YR_DP02/aff_download_readme_ann.txt",
+    "size_bytes": "1062"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/ACS_16_5YR_DP02.txt",
+    "size_bytes": "5313"
+  },
+  {
+    "problem_id": "2019-C",
+    "year": "2019",
     "kind": "txt",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/aff_download_readme_ann.txt",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_16_5YR_DP02/aff_download_readme_ann.txt",
@@ -408,20 +504,60 @@
     "size_bytes": "1267410"
   },
   {
-    "problem_id": "2019-C",
+    "problem_id": "2019-D",
     "year": "2019",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2019/The Opioid Crisis.pdf",
-    "size_bytes": "409514"
+    "path": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
+    "size_bytes": "433395"
   },
   {
-    "problem_id": "2020-D",
+    "problem_id": "2019-E",
+    "year": "2019",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
+    "size_bytes": "146409"
+  },
+  {
+    "problem_id": "2019-F",
+    "year": "2019",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
+    "size_bytes": "237801"
+  },
+  {
+    "problem_id": "2020-A",
     "year": "2020",
-    "kind": "txt",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
-    "size_bytes": "5168"
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2020/Moving North",
+    "size_bytes": "707257"
+  },
+  {
+    "problem_id": "2020-B",
+    "year": "2020",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
+    "size_bytes": "29210"
+  },
+  {
+    "problem_id": "2020-C",
+    "year": "2020",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
+    "size_bytes": "322370"
+  },
+  {
+    "problem_id": "2020-C",
+    "year": "2020",
+    "kind": "zip",
+    "path": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
+    "size_bytes": "5031847"
   },
   {
     "problem_id": "2020-D",
@@ -456,12 +592,60 @@
     "size_bytes": "151563"
   },
   {
+    "problem_id": "2020-D",
+    "year": "2020",
+    "kind": "txt",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2020/Problem Data- Teaming Strategies/2020_Problem_D_DATA/README.txt",
+    "size_bytes": "5168"
+  },
+  {
+    "problem_id": "2020-E",
+    "year": "2020",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
+    "size_bytes": "144430"
+  },
+  {
+    "problem_id": "2020-F",
+    "year": "2020",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
+    "size_bytes": "528936"
+  },
+  {
+    "problem_id": "2021-A",
+    "year": "2021",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Fungi",
+    "size_bytes": "382665"
+  },
+  {
+    "problem_id": "2021-B",
+    "year": "2021",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
+    "size_bytes": "547677"
+  },
+  {
     "problem_id": "2021-C",
     "year": "2021",
     "kind": "pdf",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Confirming the Buzz about Hornets.pdf",
     "size_bytes": "5163240"
+  },
+  {
+    "problem_id": "2021-C",
+    "year": "2021",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
+    "size_bytes": "3909091"
   },
   {
     "problem_id": "2021-C",
@@ -478,14 +662,6 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_ Images_by_GlobalID.xlsx",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_ Images_by_GlobalID.xlsx",
     "size_bytes": "183517"
-  },
-  {
-    "problem_id": "2021-C",
-    "year": "2021",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2021/Problem Data- Confirming the Buzz about Hornets/2021_MCM_Problem_C_Data/2021MCM_ProblemC_Vespamandarina.pdf",
-    "size_bytes": "3909091"
   },
   {
     "problem_id": "2021-D",
@@ -528,6 +704,38 @@
     "size_bytes": "6773549"
   },
   {
+    "problem_id": "2021-E",
+    "year": "2021",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
+    "size_bytes": "136925"
+  },
+  {
+    "problem_id": "2021-F",
+    "year": "2021",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
+    "size_bytes": "136536"
+  },
+  {
+    "problem_id": "2022-A",
+    "year": "2022",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
+    "size_bytes": "199388"
+  },
+  {
+    "problem_id": "2022-B",
+    "year": "2022",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
+    "size_bytes": "236603"
+  },
+  {
     "problem_id": "2022-C",
     "year": "2022",
     "kind": "csv",
@@ -552,60 +760,36 @@
     "size_bytes": "489103"
   },
   {
+    "problem_id": "2022-D",
+    "year": "2022",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
+    "size_bytes": "324648"
+  },
+  {
+    "problem_id": "2022-E",
+    "year": "2022",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
+    "size_bytes": "323224"
+  },
+  {
+    "problem_id": "2022-F",
+    "year": "2022",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "relative_path": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
+    "size_bytes": "265104"
+  },
+  {
     "problem_id": "2023-A",
     "year": "2023",
     "kind": "pdf",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Drought-Stricken Plant Communities.pdf",
     "size_bytes": "314471"
-  },
-  {
-    "problem_id": "2023-F-GreenGDP",
-    "year": "2023",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
-    "size_bytes": "380561"
-  },
-  {
-    "problem_id": "2023-E",
-    "year": "2023",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
-    "size_bytes": "533962"
-  },
-  {
-    "problem_id": "2023-C-Wordle",
-    "year": "2023",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
-    "size_bytes": "530619"
-  },
-  {
-    "problem_id": "2023-D",
-    "year": "2023",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
-    "size_bytes": "321963"
-  },
-  {
-    "problem_id": "2023-C-Wordle",
-    "year": "2023",
-    "kind": "xlsx",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
-    "size_bytes": "37162"
-  },
-  {
-    "problem_id": "2023-C-Boats",
-    "year": "2023",
-    "kind": "xlsx",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
-    "size_bytes": "159495"
   },
   {
     "problem_id": "2023-B",
@@ -616,15 +800,47 @@
     "size_bytes": "212232"
   },
   {
+    "problem_id": "2023-C",
+    "year": "2023",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Predicting Wordle Results.pdf",
+    "size_bytes": "530619"
+  },
+  {
+    "problem_id": "2023-C",
+    "year": "2023",
+    "kind": "xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Predicting Wordle Results/2023_MCM_Problem_C_Data.xlsx",
+    "size_bytes": "37162"
+  },
+  {
+    "problem_id": "2023-D",
+    "year": "2023",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Prioritizing the UN Sustainability Goals.pdf",
+    "size_bytes": "321963"
+  },
+  {
+    "problem_id": "2023-E",
+    "year": "2023",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Light Pollution.pdf",
+    "size_bytes": "533962"
+  },
+  {
     "problem_id": "2023-F",
     "year": "2023",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
-    "size_bytes": "218302"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Green GDP.pdf",
+    "size_bytes": "380561"
   },
   {
-    "problem_id": "2023-C-Boats",
+    "problem_id": "2023-Y",
     "year": "2023",
     "kind": "pdf",
     "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Understanding Used Sailboat Prices.pdf",
@@ -632,60 +848,20 @@
     "size_bytes": "518290"
   },
   {
-    "problem_id": "2024-D",
-    "year": "2024",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
-    "size_bytes": "2106837"
-  },
-  {
-    "problem_id": "2024-D",
-    "year": "2024",
+    "problem_id": "2023-Y",
+    "year": "2023",
     "kind": "xlsx",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
-    "size_bytes": "46692"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/Problem Data- Understanding Used Sailboat Prices/2023_MCM_Problem_Y_Data.xlsx",
+    "size_bytes": "159495"
   },
   {
-    "problem_id": "2024-D",
-    "year": "2024",
+    "problem_id": "2023-Z",
+    "year": "2023",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
-    "size_bytes": "2665237"
-  },
-  {
-    "problem_id": "2024-C",
-    "year": "2024",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
-    "size_bytes": "862380"
-  },
-  {
-    "problem_id": "2024-C",
-    "year": "2024",
-    "kind": "csv",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
-    "size_bytes": "1194113"
-  },
-  {
-    "problem_id": "2024-C",
-    "year": "2024",
-    "kind": "csv",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
-    "size_bytes": "3178"
-  },
-  {
-    "problem_id": "2024-F",
-    "year": "2024",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
-    "size_bytes": "553859"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2023/The Future of the Olympics.pdf",
+    "size_bytes": "218302"
   },
   {
     "problem_id": "2024-A",
@@ -704,6 +880,54 @@
     "size_bytes": "448248"
   },
   {
+    "problem_id": "2024-C",
+    "year": "2024",
+    "kind": "csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv",
+    "size_bytes": "1194113"
+  },
+  {
+    "problem_id": "2024-C",
+    "year": "2024",
+    "kind": "csv",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv",
+    "size_bytes": "3178"
+  },
+  {
+    "problem_id": "2024-C",
+    "year": "2024",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Momentum in Tennis.pdf",
+    "size_bytes": "862380"
+  },
+  {
+    "problem_id": "2024-D",
+    "year": "2024",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Addendum.pdf",
+    "size_bytes": "2106837"
+  },
+  {
+    "problem_id": "2024-D",
+    "year": "2024",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Great Lakes Water Problem.pdf",
+    "size_bytes": "2665237"
+  },
+  {
+    "problem_id": "2024-D",
+    "year": "2024",
+    "kind": "xlsx",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Data- Great Lakes Water Problem/2024_Problem_D_Great_Lakes.xlsx",
+    "size_bytes": "46692"
+  },
+  {
     "problem_id": "2024-E",
     "year": "2024",
     "kind": "pdf",
@@ -712,28 +936,12 @@
     "size_bytes": "492022"
   },
   {
-    "problem_id": "2025-D",
-    "year": "2025",
+    "problem_id": "2024-F",
+    "year": "2024",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
-    "size_bytes": "341287"
-  },
-  {
-    "problem_id": "2025-E",
-    "year": "2025",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
-    "size_bytes": "340992"
-  },
-  {
-    "problem_id": "2025-F",
-    "year": "2025",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
-    "size_bytes": "233064"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2024/Reducing Illegal Wildlife Trade.pdf",
+    "size_bytes": "553859"
   },
   {
     "problem_id": "2025-A",
@@ -750,14 +958,6 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_B.pdf",
     "size_bytes": "200244"
-  },
-  {
-    "problem_id": "2025-C",
-    "year": "2025",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
-    "size_bytes": "5119355"
   },
   {
     "problem_id": "2025-C",
@@ -798,6 +998,14 @@
     "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_programs.csv",
     "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_C_Data.zip/2025_Problem_C_Data/summerOly_programs.csv",
     "size_bytes": "7539"
+  },
+  {
+    "problem_id": "2025-C",
+    "year": "2025",
+    "kind": "pdf",
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_MCM_Problem_C.pdf",
+    "size_bytes": "5119355"
   },
   {
     "problem_id": "2025-D",
@@ -872,219 +1080,27 @@
     "size_bytes": "2663316"
   },
   {
-    "problem_id": "2019-A",
-    "year": "2019",
+    "problem_id": "2025-D",
+    "year": "2025",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Game of Ecology",
-    "size_bytes": "142475"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_D.pdf",
+    "size_bytes": "341287"
   },
   {
-    "problem_id": "2017-E",
-    "year": "2017",
+    "problem_id": "2025-E",
+    "year": "2025",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_E.pdf",
-    "size_bytes": "134817"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_E.pdf",
+    "size_bytes": "340992"
   },
   {
-    "problem_id": "2017-F",
-    "year": "2017",
+    "problem_id": "2025-F",
+    "year": "2025",
     "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2017/2017_ICM_Problem_F.pdf",
-    "size_bytes": "197563"
-  },
-  {
-    "problem_id": "2018-A",
-    "year": "2018",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2018/Multi-hop HF Radio Propagation",
-    "size_bytes": "136271"
-  },
-  {
-    "problem_id": "2018-B",
-    "year": "2018",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2018/How Many Languages-",
-    "size_bytes": "848893"
-  },
-  {
-    "problem_id": "2018-D",
-    "year": "2018",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2018/Out of Gas and Driving on E (for electric, not empty)",
-    "size_bytes": "245827"
-  },
-  {
-    "problem_id": "2018-E",
-    "year": "2018",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2018/How does climate change influence regional instability-",
-    "size_bytes": "143540"
-  },
-  {
-    "problem_id": "2018-F",
-    "year": "2018",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2018/Cost of Privacy",
-    "size_bytes": "144393"
-  },
-  {
-    "problem_id": "2019-B",
-    "year": "2019",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Send in the Drones- Developing an Aerial Disaster Relief Response System",
-    "size_bytes": "810625"
-  },
-  {
-    "problem_id": "2019-D",
-    "year": "2019",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Time to leave the Louvre",
-    "size_bytes": "433395"
-  },
-  {
-    "problem_id": "2019-E",
-    "year": "2019",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2019/What is the Cost of Environmental Degradation-",
-    "size_bytes": "146409"
-  },
-  {
-    "problem_id": "2019-P06",
-    "year": "2019",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2019/Universal, Decentralized, Digital Currency- Is it possible-",
-    "size_bytes": "237801"
-  },
-  {
-    "problem_id": "2020-A",
-    "year": "2020",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2020/Moving North",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2020/Moving North",
-    "size_bytes": "707257"
-  },
-  {
-    "problem_id": "2020-B",
-    "year": "2020",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2020/The Longest Lasting Sandcastle(s)",
-    "size_bytes": "29210"
-  },
-  {
-    "problem_id": "2020-C",
-    "year": "2020",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2020/A Wealth of Data",
-    "size_bytes": "322370"
-  },
-  {
-    "problem_id": "2020-C",
-    "year": "2020",
-    "kind": "zip",
-    "path": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2020/Problem Data- A Wealth of Data",
-    "size_bytes": "5031847"
-  },
-  {
-    "problem_id": "2020-E",
-    "year": "2020",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2020/Drowning in Plastic",
-    "size_bytes": "144430"
-  },
-  {
-    "problem_id": "2020-F",
-    "year": "2020",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2020/The Place I Called Home...",
-    "size_bytes": "528936"
-  },
-  {
-    "problem_id": "2021-A",
-    "year": "2021",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2021/Fungi",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Fungi",
-    "size_bytes": "382665"
-  },
-  {
-    "problem_id": "2021-B",
-    "year": "2021",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Fighting Wildfires",
-    "size_bytes": "547677"
-  },
-  {
-    "problem_id": "2021-E",
-    "year": "2021",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Re-Optimizing Food Systems",
-    "size_bytes": "136925"
-  },
-  {
-    "problem_id": "2021-F",
-    "year": "2021",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2021/Checking the Pulse and Temperature of Higher Education",
-    "size_bytes": "136536"
-  },
-  {
-    "problem_id": "2022-A",
-    "year": "2022",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Power Profile of a Cyclist",
-    "size_bytes": "199388"
-  },
-  {
-    "problem_id": "2022-B",
-    "year": "2022",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Water and Hydroelectric Power Sharing",
-    "size_bytes": "236603"
-  },
-  {
-    "problem_id": "2022-P01",
-    "year": "2022",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Data Paralysis- Use Our Analysis!",
-    "size_bytes": "324648"
-  },
-  {
-    "problem_id": "2022-E",
-    "year": "2022",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2022/Forestry for Carbon Sequestration",
-    "size_bytes": "323224"
-  },
-  {
-    "problem_id": "2022-F",
-    "year": "2022",
-    "kind": "pdf",
-    "path": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
-    "relative_path": "docs/mcm-2015-2025/official_assets/2022/All for One and One (Space) for All!",
-    "size_bytes": "265104"
+    "path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "relative_path": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_ICM_Problem_F.pdf",
+    "size_bytes": "233064"
   }
 ]

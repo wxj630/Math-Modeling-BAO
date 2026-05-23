@@ -1,5 +1,21 @@
 [
   {
+    "problem_id": "2015-A",
+    "year": "2015",
+    "code": "A",
+    "title": "MCM-A: Eradicating Ebola",
+    "problem_path": "problems/2015/A.md",
+    "question_count": "2"
+  },
+  {
+    "problem_id": "2015-B",
+    "year": "2015",
+    "code": "B",
+    "title": "MCM-B: Searching for a Lost Plane",
+    "problem_path": "problems/2015/B.md",
+    "question_count": "2"
+  },
+  {
     "problem_id": "2015-C",
     "year": "2015",
     "code": "C",
@@ -200,11 +216,11 @@
     "question_count": "6"
   },
   {
-    "problem_id": "2019-P06",
+    "problem_id": "2019-F",
     "year": "2019",
-    "code": "P06",
+    "code": "F",
     "title": "ICM-F: Universal, Decentralized, Digital Currency: Is it possible?",
-    "problem_path": "problems/2019/P06.md",
+    "problem_path": "problems/2019/F.md",
     "question_count": "4"
   },
   {
@@ -328,6 +344,14 @@
     "question_count": "4"
   },
   {
+    "problem_id": "2022-D",
+    "year": "2022",
+    "code": "D",
+    "title": "ICM-D: Data Paralysis? Use Our Analysis!",
+    "problem_path": "problems/2022/D.md",
+    "question_count": "4"
+  },
+  {
     "problem_id": "2022-E",
     "year": "2022",
     "code": "E",
@@ -342,14 +366,6 @@
     "title": "ICM-F: All for One and One (Space) for All!",
     "problem_path": "problems/2022/F.md",
     "question_count": "8"
-  },
-  {
-    "problem_id": "2022-P01",
-    "year": "2022",
-    "code": "P01",
-    "title": "ICM-D: Data Paralysis? Use Our Analysis!",
-    "problem_path": "problems/2022/P01.md",
-    "question_count": "4"
   },
   {
     "problem_id": "2023-A",
@@ -368,19 +384,11 @@
     "question_count": "4"
   },
   {
-    "problem_id": "2023-C-Boats",
+    "problem_id": "2023-C",
     "year": "2023",
-    "code": "C-Boats",
-    "title": "MCM-C: Understanding Used Sailboat Prices",
-    "problem_path": "problems/2023/C-Boats.md",
-    "question_count": "5"
-  },
-  {
-    "problem_id": "2023-C-Wordle",
-    "year": "2023",
-    "code": "C-Wordle",
+    "code": "C",
     "title": "MCM-C: Predicting Wordle Results",
-    "problem_path": "problems/2023/C-Wordle.md",
+    "problem_path": "problems/2023/C.md",
     "question_count": "5"
   },
   {
@@ -403,17 +411,25 @@
     "problem_id": "2023-F",
     "year": "2023",
     "code": "F",
-    "title": "ICM-F: The Future of the Olympics",
+    "title": "ICM-F: Green GDP",
     "problem_path": "problems/2023/F.md",
-    "question_count": "4"
+    "question_count": "5"
   },
   {
-    "problem_id": "2023-F-GreenGDP",
+    "problem_id": "2023-Y",
     "year": "2023",
-    "code": "F-GreenGDP",
-    "title": "ICM-F: Green GDP",
-    "problem_path": "problems/2023/F-GreenGDP.md",
+    "code": "Y",
+    "title": "MCM-Y: Understanding Used Sailboat Prices",
+    "problem_path": "problems/2023/Y.md",
     "question_count": "5"
+  },
+  {
+    "problem_id": "2023-Z",
+    "year": "2023",
+    "code": "Z",
+    "title": "ICM-Z: The Future of the Olympics",
+    "problem_path": "problems/2023/Z.md",
+    "question_count": "4"
   },
   {
     "problem_id": "2024-A",

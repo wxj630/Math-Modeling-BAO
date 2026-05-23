@@ -5,8 +5,8 @@ import sys
 from pathlib import Path
 
 
-REPO_ROOT = Path('.')
-BASE = Path('mcm/generic_baselines')
+REPO_ROOT = Path(__file__).resolve().parents[6]
+BASE = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "mcm" / "lib"))
 from generic_baseline import solve_question_generic_baseline, write_generic_report
 
@@ -15,14 +15,14 @@ PAYLOAD = {
   "year": "2023",
   "code": "F",
   "question": "q04",
-  "question_title": "写给 IOC 的一页政策备忘录",
-  "statement": "Write a one-page memorandum to the IOC describing your strategy and policy recommendations.",
-  "methods": "把指标框架、策略评分、推荐路线、永久举办地/四季分拆的备选价值和下一步治理动作压缩成 IOC 可读备忘录。对应模型：非技术政策报告、执行摘要。",
-  "source_type": "official_statement_parameters",
-  "solution_path": "question_solutions/2023/F/q04/solution.py",
-  "result_path": "question_results/2023/F/q04/result.json",
-  "report_path": "question_reports/2023/F/q04/report.md",
-  "artifact_path": "question_artifacts/2023/F/q04/strategy_frontier.png"
+  "question_title": "巴西国家案例：自然资源、森林和未来世代",
+  "statement": "Select a country and provide a more in-depth analysis of how this shift might impact them, explicitly tied to the changes between how GDP and GGDP are calculated.",
+  "methods": "选择 Brazil，使用 World Bank 观察到的 natural resource rents、forest area、CO2 damage 和 GGDP gap，解释资源租金再投资、森林资本和碳损害可见性。对应模型：国家案例、多指标解释。",
+  "source_type": "official_pdf_and_world_bank_api",
+  "solution_path": "question_solutions/2023/F-GreenGDP/q04/solution.py",
+  "result_path": "question_results/2023/F-GreenGDP/q04/result.json",
+  "report_path": "question_reports/2023/F-GreenGDP/q04/report.md",
+  "artifact_path": "question_artifacts/2023/F-GreenGDP/q04/brazil_country_analysis.csv"
 }
 RESULT_PATH = BASE / "results" / '2023' / 'F' / 'q04' / "result.json"
 REPORT_PATH = BASE / "reports" / '2023' / 'F' / 'q04' / "report.md"

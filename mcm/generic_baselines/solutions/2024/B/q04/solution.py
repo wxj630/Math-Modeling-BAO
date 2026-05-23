@@ -5,8 +5,8 @@ import sys
 from pathlib import Path
 
 
-REPO_ROOT = Path('.')
-BASE = Path('mcm/generic_baselines')
+REPO_ROOT = Path(__file__).resolve().parents[6]
+BASE = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "mcm" / "lib"))
 from generic_baseline import solve_question_generic_baseline, write_generic_report
 

@@ -40,9 +40,9 @@
 
 ## 数据来源
 
-- 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2016_UxYMjfW4fd0a5cd7a21951b49232088d2af3f4e8/CUMCM-2016D-Chinese/CUMCM2016-D-Appendix-Chinese/附件1  平均风速和风电场日实际输出功率表/201501.xls
-- 说明：本问优先使用官方附件中的数值表生成实验结果。
+- 类型：problem_statement
+- 路径：cumcm/problems/2016/D.md
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 
 ## 核心结果
 
@@ -50,11 +50,11 @@
 {
   "method": "quadratic_least_squares",
   "coefficients": [
-    46.393142,
-    -11.125929,
-    0.000265
+    27.607761,
+    -0.097015,
+    4.2e-05
   ],
-  "r2": 0.0036810413025210043,
-  "mean_abs_error": 28.546858464562767
+  "r2": 0.01678477481307683,
+  "mean_abs_error": 32.86604986445022
 }
 ```

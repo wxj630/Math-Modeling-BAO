@@ -41,9 +41,9 @@
 
 ## 数据来源
 
-- 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2014_cumcm2014problems/D/附件1-药盒型号.xls
-- 说明：本问优先使用官方附件中的数值表生成实验结果。
+- 类型：problem_statement
+- 路径：cumcm/problems/2014/D.md
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 
 ## 核心结果
 
@@ -51,17 +51,17 @@
 {
   "method": "linear_programming",
   "success": true,
-  "objective_max": 20.551816232593605,
+  "objective_max": 13.94977818963209,
   "decision": [
     0.0,
-    3.550469,
     0.0,
-    0.0
+    0.0,
+    2.415266
   ],
   "resource_slack": [
-    252.607826,
+    213.214282,
     0.0,
-    0.297732
+    0.527933
   ]
 }
 ```

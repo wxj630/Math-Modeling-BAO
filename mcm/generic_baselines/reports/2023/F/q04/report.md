@@ -5,15 +5,15 @@
 ## 题目与任务
 
 - 题目：2023-F
-- 小问：q04 写给 IOC 的一页政策备忘录
-- 原问：Write a one-page memorandum to the IOC describing your strategy and policy recommendations.
+- 小问：q04 巴西国家案例：自然资源、森林和未来世代
+- 原问：Select a country and provide a more in-depth analysis of how this shift might impact them, explicitly tied to the changes between how GDP and GGDP are calculated.
 
 ## 通用模型选择
 
-- 模型：报告提纲基线
-- 方法键：`report_outline_baseline`
-- 章节提示：CH0
-- 命中关键词：memo, recommendation, write, 报告, 备忘录
+- 模型：线性趋势预测基线
+- 方法键：`linear_trend_forecast_baseline`
+- 章节提示：CH8
+- 命中关键词：未来
 
 ## 变量、约束与公式
 
@@ -41,55 +41,57 @@
 ## 数据来源
 
 - 类型：mcm_question_index
-- 真实工作流：question_solutions/2023/F/q04/solution.py
-- 真实产物：question_artifacts/2023/F/q04/strategy_frontier.png
+- 真实工作流：question_solutions/2023/F-GreenGDP/q04/solution.py
+- 真实产物：question_artifacts/2023/F-GreenGDP/q04/brazil_country_analysis.csv
 
 ## 核心结果
 
 ```json
 {
-  "method": "report_outline_baseline",
-  "baseline_score": 0.5694,
+  "method": "linear_trend_forecast_baseline",
+  "baseline_score": 0.551029,
   "component_rows": [
     {
       "component": "statement_specificity",
-      "raw_value": 91,
-      "normalized_score": 0.216667,
+      "raw_value": 162,
+      "normalized_score": 0.385714,
       "audit_note": "Longer problem statements usually expose more constraints for a first-pass model."
     },
     {
       "component": "numeric_anchor_count",
-      "raw_value": 0,
-      "normalized_score": 0.0,
+      "raw_value": 1,
+      "normalized_score": 0.125,
       "audit_note": "Counts numeric anchors visible in the question statement and method hint."
     },
     {
       "component": "model_keyword_match",
-      "raw_value": 5,
-      "normalized_score": 1.0,
+      "raw_value": 1,
+      "normalized_score": 0.2,
       "audit_note": "Measures how clearly the question maps to a classical modeling family."
     },
     {
       "component": "source_strength",
-      "raw_value": "official_statement_parameters",
-      "normalized_score": 0.72,
+      "raw_value": "official_pdf_and_world_bank_api",
+      "normalized_score": 0.92,
       "audit_note": "Rewards official attachments and explicit official statement parameters."
     },
     {
       "component": "artifact_readiness",
-      "raw_value": "question_artifacts/2023/F/q04/strategy_frontier.png",
-      "normalized_score": 0.68,
+      "raw_value": "question_artifacts/2023/F-GreenGDP/q04/brazil_country_analysis.csv",
+      "normalized_score": 1.0,
       "audit_note": "Rewards table-like artifacts that a baseline can inspect directly."
     }
   ],
-  "extracted_numeric_tokens": [],
-  "numeric_token_count": 0,
+  "extracted_numeric_tokens": [
+    2.0
+  ],
+  "numeric_token_count": 1,
   "outline": [
     "Read the official question and any indexed real-data workflow before adding domain assumptions.",
     "Use this baseline only as the first scaffold for variables, constraints, and sanity checks.",
     "Replace the generic score with a problem-specific model and cite official assets in the final solution."
   ],
-  "method_confidence": 1.0
+  "method_confidence": 0.6824
 }
 ```
 

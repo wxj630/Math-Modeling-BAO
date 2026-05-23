@@ -40,9 +40,9 @@
 
 ## 数据来源
 
-- 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2015_m00L7uGp5743fadb9289f545d4ed5a1b300622fa/A/附件1-3.xls
-- 说明：本问优先使用官方附件中的数值表生成实验结果。
+- 类型：problem_statement
+- 路径：cumcm/problems/2015/A.md
+- 说明：未找到可直接读取的数值附件，本问改用题目原文中的参数/表格数字生成实验结果。
 
 ## 核心结果
 
@@ -50,11 +50,11 @@
 {
   "method": "least_squares_geometry_fit",
   "center": [
-    3.85948,
-    -0.275895
+    1.330419,
+    0.983322
   ],
-  "radius": 4.1191377206736846,
-  "mean_squared_error": 0.004260155881486349,
+  "radius": 2.176450239742945,
+  "mean_squared_error": 2.8090691385244205e-05,
   "success": true
 }
 ```

@@ -41,7 +41,7 @@
 ## 数据来源
 
 - 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls
+- 路径：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx
 - 说明：本问优先使用官方附件中的数值表生成实验结果。
 
 ## 核心结果
@@ -50,11 +50,11 @@
 {
   "method": "quadratic_least_squares",
   "coefficients": [
-    22.401557,
-    0.005402,
-    -1e-05
+    1516.855916,
+    -1.84285,
+    0.00065
   ],
-  "r2": 0.5854868010297067,
-  "mean_abs_error": 0.1542426128942712
+  "r2": 0.1139475411818851,
+  "mean_abs_error": 499.5408895582633
 }
 ```

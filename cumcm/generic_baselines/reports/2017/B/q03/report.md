@@ -42,7 +42,7 @@
 ## 数据来源
 
 - 类型：attachment
-- 路径：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件一：已结束项目任务数据.xls
+- 路径：../../Documents/Playground/cumcm_unzipped/2017_IqAO5Qqi8f23d8738a07a0604b8629ce9bb061ad/CUMCM2017Problems/B/附件二：会员信息数据.xlsx
 - 说明：本问优先使用官方附件中的数值表生成实验结果。
 
 ## 核心结果
@@ -51,17 +51,17 @@
 {
   "method": "linear_programming",
   "success": true,
-  "objective_max": 817.1254116788557,
+  "objective_max": 99.66574887720479,
   "decision": [
     0.0,
     0.0,
-    2.673079,
-    0.0
+    0.0,
+    7.708333
   ],
   "resource_slack": [
-    134.350861,
+    605.289706,
     0.0,
-    0.511517
+    0.306
   ]
 }
 ```

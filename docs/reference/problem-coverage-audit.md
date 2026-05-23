@@ -4,9 +4,10 @@
 
 ## 结论
 
-- CUMCM 本地归档题面：58 题；教程索引：58 题；当前缺口：0 题。
-- MCM/ICM 本地规范索引：64 题；教程索引：64 题；当前唯一题目缺口：0 题。
-- CUMCM 这次的根因是 2022/2023 年 A-E 已经解压到 `cumcm/source_materials/extracted/`，但旧清洗阶段只转出了 2022-B、2022-D、2023-D 三个 markdown，因此后续 `cumcm/problems`、逐问索引和教程页都只看到了这些题。
+- CUMCM 本地归档题面：63 题；教程索引：63 题；当前缺口：0 题。
+- MCM/ICM 本地规范索引：66 题；教程索引：66 题；当前唯一题目缺口：0 题。
+- CUMCM 2025 的根因是官方压缩包已经进入 `cumcm/source_materials/raw_downloads/archives/`，但中文文件名没有正确解压成 A-E 题面 PDF，因此旧清洗阶段只看到了 `format2025.doc`。
+- MCM 2015 只显示 C/D 的根因是本地早期归档只下载了 ICM C/D PDF；MCM A/B 在 COMAP 2015 官方网页中以 HTML 题面出现，没有独立 PDF 文件。
 
 ## CUMCM 缺口
 
@@ -26,7 +27,11 @@
 | --- | --- |
 | 2015-P01 | 2015-D |
 | 2015-P02 | 2015-C |
-| 2023-C | 2023-C-Boats |
+| 2019-P06 | 2019-F |
+| 2022-P01 | 2022-D |
+| 2023-C-Boats | 2023-Y |
+| 2023-C-Wordle | 2023-C |
+| 2023-F-GreenGDP | 2023-F |
 
 这些重复别名来自早期抽取或命名方式，不代表新的独立赛题；教程只保留规范题号，避免同一题出现两套入口。
 
@@ -35,20 +40,24 @@
 ```json
 {
   "cumcm": {
-    "expected": 58,
-    "indexed": 58,
+    "expected": 63,
+    "indexed": 63,
     "missing_from_index": [],
     "extra_indexed": []
   },
   "mcm": {
-    "expected": 64,
-    "indexed": 64,
+    "expected": 66,
+    "indexed": 66,
     "missing_from_index": [],
     "extra_indexed": [],
     "duplicate_aliases": {
       "2015-P01": "2015-D",
       "2015-P02": "2015-C",
-      "2023-C": "2023-C-Boats"
+      "2019-P06": "2019-F",
+      "2022-P01": "2022-D",
+      "2023-C-Boats": "2023-Y",
+      "2023-C-Wordle": "2023-C",
+      "2023-F-GreenGDP": "2023-F"
     }
   }
 }

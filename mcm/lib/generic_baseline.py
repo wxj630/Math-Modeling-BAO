@@ -54,6 +54,8 @@ MODEL_RULES = [
     },
 ]
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
 
 def normalize_text(text: object) -> str:
     return re.sub(r"\s+", " ", str(text or "")).strip()
@@ -128,6 +130,14 @@ def artifact_strength(path: str) -> float:
     if suffix in {".md", ".txt"}:
         return 0.52
     return 0.45
+
+
+def repo_relpath(path: Path | str) -> str:
+    path = Path(path)
+    try:
+        return str(path.resolve().relative_to(REPO_ROOT.resolve()))
+    except ValueError:
+        return str(path)
 
 
 def build_experiment_rows(payload: dict[str, Any], model: dict[str, Any]) -> list[dict[str, Any]]:
@@ -249,7 +259,7 @@ def solve_question_generic_baseline(payload: dict[str, Any], artifact_dir: Path)
             "outline": outline,
             "method_confidence": round(min(1.0, 0.35 + 0.13 * len(model.get("matched_keywords", [])) + 0.22 * source_strength(normalize_text(payload.get("source_type")))), 6),
         },
-        "artifact_paths": [str(artifact_dir / "experiment_table.csv")],
+        "artifact_paths": [repo_relpath(artifact_dir / "experiment_table.csv")],
         "limitations": [
             "This is the intentionally minimal baseline layer, not the contest-grade real solution.",
             "It does not introduce new empirical observations beyond the indexed official workflow metadata.",
@@ -294,12 +304,12 @@ def write_generic_report(result: dict[str, Any], report_path: Path, solution_pat
         "",
         "## 运行与产物",
         "",
-        f"- 通用代码：{solution_path}",
-        f"- 结果 JSON：{result_path}",
-        f"- 实验报告：{report_path}",
+        f"- 通用代码：{repo_relpath(solution_path)}",
+        f"- 结果 JSON：{repo_relpath(result_path)}",
+        f"- 实验报告：{repo_relpath(report_path)}",
     ]
     for artifact in result.get("artifact_paths", []):
-        lines.append(f"- 实验产物：{artifact}")
+        lines.append(f"- 实验产物：{repo_relpath(artifact)}")
     lines += [
         "",
         "## 数据来源",

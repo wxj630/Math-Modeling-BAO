@@ -19,10 +19,10 @@
 ## 方法分布
 
 - `linear_weighted_score_baseline`：68 问
-- `report_outline_baseline`：58 问
-- `network_path_baseline`：53 问
+- `report_outline_baseline`：59 问
+- `network_path_baseline`：54 问
 - `evidence_table_baseline`：51 问
 - `resource_allocation_baseline`：47 问
-- `first_order_dynamic_baseline`：42 问
-- `linear_trend_forecast_baseline`：35 问
+- `first_order_dynamic_baseline`：43 问
+- `linear_trend_forecast_baseline`：36 问
 - `threshold_classification_baseline`：13 问

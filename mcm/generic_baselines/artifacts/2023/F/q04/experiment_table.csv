@@ -1,6 +1,6 @@
 ﻿component,raw_value,normalized_score,audit_note
-statement_specificity,91,0.216667,Longer problem statements usually expose more constraints for a first-pass model.
-numeric_anchor_count,0,0.0,Counts numeric anchors visible in the question statement and method hint.
-model_keyword_match,5,1.0,Measures how clearly the question maps to a classical modeling family.
-source_strength,official_statement_parameters,0.72,Rewards official attachments and explicit official statement parameters.
-artifact_readiness,question_artifacts/2023/F/q04/strategy_frontier.png,0.68,Rewards table-like artifacts that a baseline can inspect directly.
+statement_specificity,162,0.385714,Longer problem statements usually expose more constraints for a first-pass model.
+numeric_anchor_count,1,0.125,Counts numeric anchors visible in the question statement and method hint.
+model_keyword_match,1,0.2,Measures how clearly the question maps to a classical modeling family.
+source_strength,official_pdf_and_world_bank_api,0.92,Rewards official attachments and explicit official statement parameters.
+artifact_readiness,question_artifacts/2023/F-GreenGDP/q04/brazil_country_analysis.csv,1.0,Rewards table-like artifacts that a baseline can inspect directly.

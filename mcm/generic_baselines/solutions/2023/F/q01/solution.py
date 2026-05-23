@@ -5,8 +5,8 @@ import sys
 from pathlib import Path
 
 
-REPO_ROOT = Path('.')
-BASE = Path('mcm/generic_baselines')
+REPO_ROOT = Path(__file__).resolve().parents[6]
+BASE = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO_ROOT / "mcm" / "lib"))
 from generic_baseline import solve_question_generic_baseline, write_generic_report
 
@@ -15,14 +15,14 @@ PAYLOAD = {
   "year": "2023",
   "code": "F",
   "question": "q01",
-  "question_title": "奥运会举办影响指标框架",
-  "statement": "Build metrics for the impacts of hosting the games from economic, land use, human satisfaction, travel, opportunity for future improvements, host city/nation prestige, and other criteria.",
-  "methods": "把官方题面列出的经济、土地利用、人类满意度、旅行、未来改进、主办声望和体育团结转成 7 维权重指标，并写入可审计 metric framework。对应模型：多指标评价、权重评分、政策指标体系。",
-  "source_type": "official_statement_parameters",
-  "solution_path": "question_solutions/2023/F/q01/solution.py",
-  "result_path": "question_results/2023/F/q01/result.json",
-  "report_path": "question_reports/2023/F/q01/report.md",
-  "artifact_path": "question_artifacts/2023/F/q01/metric_framework.csv"
+  "question_title": "选择可审计的 Green GDP 计算方法",
+  "statement": "There are many proposed ways to calculate GGDP that have already been developed. Select one that your team believes could have a measurable impact on climate mitigation if it replaced GDP as the primary measure of economic health.",
+  "methods": "选用 World Bank adjusted-savings 风格的 GGDP：GDP 扣除 CO2 damage、natural resource depletion 和 net forest depletion，并将公式组件写入可审计表。对应模型：环境会计、指标体系。",
+  "source_type": "official_pdf_and_world_bank_api",
+  "solution_path": "question_solutions/2023/F-GreenGDP/q01/solution.py",
+  "result_path": "question_results/2023/F-GreenGDP/q01/result.json",
+  "report_path": "question_reports/2023/F-GreenGDP/q01/report.md",
+  "artifact_path": "question_artifacts/2023/F-GreenGDP/q01/ggdp_formula_components.csv"
 }
 RESULT_PATH = BASE / "results" / '2023' / 'F' / 'q01' / "result.json"
 REPORT_PATH = BASE / "reports" / '2023' / 'F' / 'q01' / "report.md"

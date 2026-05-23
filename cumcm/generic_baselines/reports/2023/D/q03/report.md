@@ -49,8 +49,8 @@
 ```json
 {
   "method": "linear_trend_forecast",
-  "intercept": 55.247460317460316,
-  "slope": 0.6756628056628057,
+  "intercept": 55.24746031746031,
+  "slope": 0.6756628056628061,
   "r2": 0.00044783657210945016,
   "next_12_forecast": [
     88.354938,

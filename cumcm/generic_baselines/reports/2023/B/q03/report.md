@@ -51,7 +51,7 @@
 {
   "method": "linear_programming",
   "success": true,
-  "objective_max": 29.814529194667156,
+  "objective_max": 29.814529194667152,
   "decision": [
     0.0,
     0.652559,

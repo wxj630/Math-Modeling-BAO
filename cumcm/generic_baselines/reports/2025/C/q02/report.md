@@ -1,0 +1,59 @@
+# 2025-C 问题2 通用基线报告
+
+> 这是题目专用化之前的第一版通用模型。它用于保留建模进步过程，不代表最终竞赛级解法。
+
+## 题目与任务
+
+- 题目：2025年 CUMCM C题：NIPT 的时点选择与胎儿的异常判定
+- 问题：问题2
+- 原问：临床证明，男胎孕妇的BMI 是影响胎儿Y 染色体浓度的最早达标时间（即浓度达到或超 过4%的最早时间）的主要因素。试对男胎孕妇的BMI 进行合理分组，给出每组的BMI 区间和最佳NIPT 时点，使得孕妇可能的潜在风险最小，并分析检测误差对结果的影响。
+
+## 通用模型选择
+
+- 模型：机器学习与统计识别（CH9：机器学习与统计模型）
+- 教程参考：../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md
+- 通用方法：`logistic_regression_plus_kmeans`
+
+## 变量、约束与公式
+
+### 变量定义
+- X: 样本特征矩阵
+- y: 类别/状态标签
+- theta: 逻辑回归参数
+- z_i: 聚类标签
+
+### 约束条件
+- 特征标准化或同量纲
+- 类别概率位于 [0,1]
+
+### 模型公式 / 目标函数
+- `P(y=1|x)=sigmoid(theta^T*x)`
+- `min cross_entropy(y, sigmoid(X*theta))`
+- `min within_cluster_sum_of_squares`
+
+## 运行与产物
+
+- 通用代码：cumcm/generic_baselines/solutions/2025/C/q02/solution.py
+- 单问运行：`.venv/bin/python cumcm/generic_baselines/solutions/2025/C/q02/solution.py`
+- 结果 JSON：cumcm/generic_baselines/results/2025/C/q02/result.json
+- 实验报告：cumcm/generic_baselines/reports/2025/C/q02/report.md
+- 实验产物：cumcm/generic_baselines/artifacts/2025/C/q02/experiment_table.csv
+
+## 数据来源
+
+- 类型：attachment
+- 路径：../../Documents/Playground/cumcm_unzipped/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/C题/附件.xlsx
+- 说明：本问优先使用官方附件中的数值表生成实验结果。
+
+## 核心结果
+
+```json
+{
+  "method": "logistic_regression_plus_kmeans",
+  "training_accuracy": 1.0,
+  "cluster_counts": [
+    133,
+    107
+  ]
+}
+```
