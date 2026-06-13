@@ -33,6 +33,12 @@ python mcm/scripts/verify_real_data_integration.py
 python mcm/scripts/archive_generic_baselines.py --all
 ```
 
+运行已复现的 outstanding 获奖论文样例：
+
+```bash
+python mcm/outstanding_solutions/2025/C/2505964/solution.py
+```
+
 ## 运行 CUMCM 解法
 
 运行全部逐问 advanced 解法：

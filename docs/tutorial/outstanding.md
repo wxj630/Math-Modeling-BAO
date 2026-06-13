@@ -1,30 +1,47 @@
 # Outstanding Solution
 
-Outstanding solution 是按“整道赛题”打磨出来的论文级版本。它不是把每个小问单独加长，而是让整题主线更可信、更漂亮、更像高质量竞赛论文。
+Outstanding solution 是按“整道赛题”打磨出来的论文级版本。它不是把每个小问单独加长，而是选择一篇官方获奖论文，复现其中可验证的模型链、代码、实验结果和论文级分析。
 
-## 建议目录
+## 已落地样例
 
-后续可以在仓库中新增：
+当前第一个样例是 [MCM/ICM 2025-C](/mcm-track/problems/2025-C) 的获奖论文复现：
+
+| 项目 | 内容 |
+|---|---|
+| 论文编号 | `2505964` |
+| 论文题名 | `2028 Olympic Medal Predictions Based on Random Forest Model` |
+| 题型 | 数据建模、随机森林、Monte Carlo 仿真、Poisson 回归、教练效应分析 |
+| 代码 | `mcm/outstanding_solutions/2025/C/2505964/solution.py` |
+| 报告 | `mcm/outstanding_solutions/2025/C/2505964/report.md` |
+| 结果 | `mcm/outstanding_solutions/2025/C/2505964/result.json` |
+
+这个样例复现了论文的核心思路：先在运动员/团队参赛条目上构造历史能力特征，再按运动训练随机森林分类器，最后通过 Monte Carlo 把单项概率分配成国家奖牌榜；同时补充 USA Swimming、CHN Table Tennis 的项目数量弹性和 Great Coach 候选分析。
+
+运行命令：
+
+```bash
+python mcm/outstanding_solutions/2025/C/2505964/solution.py
+```
+
+## 目录约定
+
+仓库按赛题组织 outstanding，而不是按小问散放：
 
 ```text
 mcm/outstanding_solutions/
 cumcm/outstanding_solutions/
 ```
 
-建议按赛题组织，而不是只按小问散放：
-
 ```text
 outstanding_solutions/<year>/<code>/
-  paper_outline.md
-  assumptions.md
-  sensitivity.md
-  figures/
-  q01/
-  q02/
-  ...
+  <paper_id>/
+    solution.py
+    result.json
+    report.md
+    artifacts/
 ```
 
-每个 `qXX/` 可以继续保留 `solution.py`、`result.json`、`report.md` 和 artifacts，但赛题级文件要负责统一假设、符号、图表风格和论文叙事。
+同一道题可以有多篇获奖论文复现，先用 `outstanding_solution_index.csv` 决定教程页展示哪一篇作为当前主样例。
 
 ## 进入 outstanding 前的检查
 
@@ -48,4 +65,4 @@ outstanding_solutions/<year>/<code>/
 
 ## 教程中的预留位
 
-每个赛题页的小问都会保留 outstanding 位置。后续补写某道题时，优先补赛题级 `paper_outline.md` 和统一假设，再补各小问的算法与图表。
+没有复现的赛题页仍会保留 outstanding 位置。补写某道题时，优先选择 A/B/C 这类可验证题型：微分方程、运筹优化、数据建模、仿真或可计算决策问题。社会科学论述型题目可以等可验证样例足够多之后再处理。

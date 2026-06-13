@@ -17,6 +17,14 @@ def read_csv(path: str) -> list[dict[str, str]]:
         return list(csv.DictReader(file))
 
 
+def read_optional_csv(path: str) -> list[dict[str, str]]:
+    file_path = ROOT / path
+    if not file_path.exists():
+        return []
+    with file_path.open("r", encoding="utf-8-sig", newline="") as file:
+        return list(csv.DictReader(file))
+
+
 def read_json(track: str, path: str | None) -> dict:
     local_path = repo_path(track, path)
     if not local_path:
@@ -178,6 +186,28 @@ def model_summary(result: dict, row: dict[str, str], baseline: dict[str, str] | 
 
 
 def result_summary(result: dict) -> str:
+    if isinstance(result.get("monte_carlo_summary_top_total"), list):
+        top_rows = result.get("monte_carlo_summary_top_total") or []
+        top = top_rows[0] if top_rows and isinstance(top_rows[0], dict) else {}
+        parts = []
+        if top:
+            parts.append(
+                f"2028 Top1 {top.get('NOC')} expected_total={scalar(top.get('expected_total'))}, "
+                f"expected_gold={scalar(top.get('expected_gold'))}"
+            )
+        if result.get("expected_first_medal_countries") is not None:
+            parts.append(f"首枚奖牌国家期望={scalar(result.get('expected_first_medal_countries'))}")
+        evaluation = result.get("model_evaluation") if isinstance(result.get("model_evaluation"), dict) else {}
+        if evaluation:
+            parts.append(
+                f"2024 holdout accuracy={scalar(evaluation.get('mean_accuracy_2024'))}, "
+                f"F1={scalar(evaluation.get('mean_f1_2024'))}"
+            )
+        poisson = result.get("poisson_event_elasticity") if isinstance(result.get("poisson_event_elasticity"), list) else []
+        if poisson and isinstance(poisson[0], dict):
+            parts.append(f"Poisson {poisson[0].get('case')} beta={scalar(poisson[0].get('beta_num_events'))}")
+        return cell("；".join(parts) or "见 result.json")
+
     ordered_keys = [
         "experiment_result",
         "flow_summary",
@@ -341,6 +371,50 @@ def build_advantage_report(
     return lines
 
 
+def build_outstanding_global_report(
+    track: str,
+    problem: dict[str, str],
+    outstanding: dict[str, str],
+) -> list[str]:
+    result = read_json(track, outstanding.get("result_path"))
+    paper_id = cell(outstanding.get("paper_id") or "outstanding")
+    paper_title = cell(outstanding.get("paper_title") or "获奖论文复现")
+    methods = cell(outstanding.get("methods") or model_summary(result, outstanding))
+    source = cell(
+        outstanding.get("source_path")
+        or result.get("paper_source_ocr")
+        or result.get("paper_source_pdf")
+        or "见本地获奖论文 OCR/PDF"
+    )
+    code_links = (
+        f"{repo_link(track, 'solution.py', outstanding.get('solution_path'))} / "
+        f"{repo_link(track, 'report.md', outstanding.get('report_path'))} / "
+        f"{repo_link(track, 'result.json', outstanding.get('result_path'))}"
+    )
+    artifact = outstanding.get("artifact_dir")
+    scope = cell(result.get("reproduction_scope") or outstanding.get("scope") or "复现获奖论文的可验证模型链和主要实验产物")
+    advantage = cell(
+        result.get("difference_from_advanced")
+        or outstanding.get("difference_from_advanced")
+        or "在 advanced 的整题预测基础上，进一步对齐获奖论文的特征工程、仿真、不确定性和论文叙事。"
+    )
+    lines = [
+        "## Outstanding 全局报告",
+        "",
+        f"本层复现 `{paper_id}`：{paper_title}。它是 `{problem['problem_id']}` 的第一篇获奖论文复现样例，用来示范如何从 baseline/advanced 继续走到可验证的获奖论文级模型链。",
+        "",
+        f"- 论文来源：{source}",
+        f"- 复现范围：{scope}",
+        f"- 核心方法：{methods}",
+        f"- 代码入口：{code_links}",
+        f"- 实验产物：{repo_link(track, 'artifact', artifact)}",
+        f"- 关键结果：{result_summary(result)}",
+        f"- 相对 advanced 的优势：{advantage}",
+        "",
+    ]
+    return lines
+
+
 def role_for(index: int, total: int, label: str) -> str:
     label_lower = label.lower()
     if total == 1:
@@ -365,6 +439,7 @@ def build_problem_page(
     problem: dict[str, str],
     questions: list[dict[str, str]],
     baselines: dict[str, dict[str, str]],
+    outstanding: dict[str, str] | None = None,
 ) -> str:
     pid = problem["problem_id"]
     title = problem["title"]
@@ -377,7 +452,8 @@ def build_problem_page(
     lines: list[str] = [
         f"# {pid} {title}",
         "",
-        f"> 这是一个赛题整体入口。先看整题主线，再进入 {total} 个小问的 baseline、advanced 和 outstanding 预留位。",
+        f"> 这是一个赛题整体入口。先看整题主线，再进入 {total} 个小问的 baseline、advanced"
+        + (" 和 outstanding 获奖论文复现。" if outstanding else " 和 outstanding 预留位。"),
         "",
         "## 整题主线",
         "",
@@ -412,6 +488,8 @@ def build_problem_page(
     lines.extend(build_baseline_global_report(track, questions, baselines))
     lines.extend(build_advanced_global_report(track, questions, baselines))
     lines.extend(build_advantage_report(track, questions, baselines))
+    if outstanding:
+        lines.extend(build_outstanding_global_report(track, problem, outstanding))
     lines.extend(["## 小问递进链", ""])
 
     for idx, qrow in enumerate(questions, start=1):
@@ -426,6 +504,17 @@ def build_problem_page(
         advanced_label = cell(source) or model_summary(advanced_result, qrow)
         artifact = qrow.get("artifact_path") or base.get("artifact_dir")
 
+        if outstanding:
+            outstanding_line = (
+                f"- Outstanding：复现 {cell(outstanding.get('paper_id')) or '获奖论文'} 的整题模型链；"
+                f"核心方法：{cell(outstanding.get('methods')) or '见 outstanding 全局报告'}；"
+                f"代码入口：{repo_link(track, 'solution.py', outstanding.get('solution_path'))} / "
+                f"{repo_link(track, 'report.md', outstanding.get('report_path'))} / "
+                f"{repo_link(track, 'result.json', outstanding.get('result_path'))}"
+            )
+        else:
+            outstanding_line = "- Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。"
+
         lines.extend(
             [
                 f"### {qid} {label}",
@@ -437,7 +526,7 @@ def build_problem_page(
                 f"- Baseline：从 `{cell(method) or 'baseline'}` 的通用脚手架开始；代码入口：{repo_link(track, 'solution.py', base.get('solution_path'))} / {repo_link(track, 'report.md', base.get('report_path'))} / {repo_link(track, 'result.json', base.get('result_path'))}；实验结果：{result_summary(base_result)}",
                 f"- Advanced：{advanced_label}；代码入口：{repo_link(track, 'solution.py', qrow.get('solution_path'))} / {repo_link(track, 'report.md', qrow.get('report_path'))} / {repo_link(track, 'result.json', qrow.get('result_path'))}；实验结果：{result_summary(advanced_result)}",
                 f"- 实验产物：{repo_link(track, 'artifact', artifact)}",
-                "- Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。",
+                outstanding_line,
                 "",
             ]
         )
@@ -503,10 +592,26 @@ def group_baselines(rows: list[dict[str, str]]) -> dict[str, dict[str, dict[str,
     return grouped
 
 
-def build_track(track: str, title: str, problem_csv: str, question_csv: str, baseline_csv: str) -> tuple[int, int]:
+def group_outstanding(rows: list[dict[str, str]]) -> dict[str, dict[str, str]]:
+    grouped: dict[str, dict[str, str]] = {}
+    for row in rows:
+        if row.get("problem_id"):
+            grouped[row["problem_id"]] = row
+    return grouped
+
+
+def build_track(
+    track: str,
+    title: str,
+    problem_csv: str,
+    question_csv: str,
+    baseline_csv: str,
+    outstanding_csv: str | None = None,
+) -> tuple[int, int]:
     problems = read_csv(problem_csv)
     questions = read_csv(question_csv)
     baselines = read_csv(baseline_csv)
+    outstanding = group_outstanding(read_optional_csv(outstanding_csv)) if outstanding_csv else {}
     qgroups = group_by_problem(questions)
     bgroups = group_baselines(baselines)
 
@@ -518,7 +623,7 @@ def build_track(track: str, title: str, problem_csv: str, question_csv: str, bas
 
     for problem in problems:
         pid = problem["problem_id"]
-        page = build_problem_page(track, problem, qgroups.get(pid, []), bgroups.get(pid, {}))
+        page = build_problem_page(track, problem, qgroups.get(pid, []), bgroups.get(pid, {}), outstanding.get(pid))
         (problem_dir / f"{pid}.md").write_text(page.rstrip() + "\n", encoding="utf-8")
 
     index = build_index_page(track, title, problems, qgroups, bgroups)
@@ -533,6 +638,7 @@ def main() -> None:
         "mcm/problem_index.csv",
         "mcm/question_solution_index.csv",
         "mcm/generic_baselines/generic_baseline_index.csv",
+        "mcm/outstanding_solutions/outstanding_solution_index.csv",
     )
     cumcm_count, cumcm_questions = build_track(
         "cumcm-track",
@@ -540,6 +646,7 @@ def main() -> None:
         "cumcm/problem_index.csv",
         "cumcm/question_solution_index.csv",
         "cumcm/generic_baselines/generic_baseline_index.csv",
+        "cumcm/outstanding_solutions/outstanding_solution_index.csv",
     )
     print(f"MCM/ICM: {mcm_count} problems, {mcm_questions} questions")
     print(f"CUMCM: {cumcm_count} problems, {cumcm_questions} questions")
