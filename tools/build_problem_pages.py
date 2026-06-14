@@ -595,7 +595,8 @@ def group_baselines(rows: list[dict[str, str]]) -> dict[str, dict[str, dict[str,
 def group_outstanding(rows: list[dict[str, str]]) -> dict[str, dict[str, str]]:
     grouped: dict[str, dict[str, str]] = {}
     for row in rows:
-        if row.get("problem_id"):
+        status = (row.get("status") or "implemented").strip().lower()
+        if row.get("problem_id") and status in {"implemented", "ready"}:
             grouped[row["problem_id"]] = row
     return grouped
 

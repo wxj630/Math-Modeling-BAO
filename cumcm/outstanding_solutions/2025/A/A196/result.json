@@ -1,0 +1,205 @@
+{
+  "problem_id": "2025-A",
+  "year": 2025,
+  "code": "A",
+  "paper_id": "A196",
+  "paper_title": "多情形下无人机烟幕遮蔽策略的建模与优化研究",
+  "paper_source_ocr": "Outstanding_Solutions/CUMCM/OCR-results/A196/A196.md",
+  "paper_source_pdf": "Outstanding_Solutions/CUMCM/PDF-2025/A196.pdf",
+  "reproduction_scope": "用当前 2025-A advanced 的几何解析、优化搜索和逐问结果，对齐 A196 的运动学遮蔽判定与多情形投弹策略。",
+  "selected_model": {
+    "name": "三维运动学 + 遮蔽判定 + 多情形投放优化",
+    "chapter": "Outstanding reproduction of A196"
+  },
+  "paper_model_alignment": {
+    "paper_methods": [
+      "三维运动学位置函数",
+      "圆柱目标遮蔽判定",
+      "二分查找/变步长搜索",
+      "差分进化与分层任务分配"
+    ],
+    "repo_kernel": [
+      "几何解析与运动学参数方程",
+      "规划优化与资源配置"
+    ]
+  },
+  "question_chain": [
+    {
+      "question": "q01",
+      "question_label": "问题1",
+      "tasks": [
+        "请 给出烟幕干扰弹对M1 的有效遮蔽时长"
+      ],
+      "selected_model": {
+        "key": "geometry",
+        "name": "几何解析与运动学参数方程",
+        "chapter": "CH1",
+        "chapter_title": "解析方法与几何模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      },
+      "experiment_result": {
+        "method": "least_squares_geometry_fit",
+        "center": [
+          0.194265,
+          0.824465
+        ],
+        "radius": 4.280014661433695,
+        "mean_squared_error": 0.003447992634672612,
+        "success": true
+      },
+      "result_path": "cumcm/question_results/2025/A/q01/result.json",
+      "report_path": "cumcm/question_reports/2025/A/q01/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/A/q01"
+    },
+    {
+      "question": "q02",
+      "question_label": "问题2",
+      "tasks": [
+        "利用无人机FY1 投放1 枚烟幕干扰弹实施对M1 的干扰，确定FY1 的飞行方 向、飞行速度、烟幕干扰弹投放点、烟幕干扰弹起爆点，使得遮蔽时间尽可能长"
+      ],
+      "selected_model": {
+        "key": "geometry",
+        "name": "几何解析与运动学参数方程",
+        "chapter": "CH1",
+        "chapter_title": "解析方法与几何模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      },
+      "experiment_result": {
+        "method": "least_squares_geometry_fit",
+        "center": [
+          -1.304739,
+          1.487699
+        ],
+        "radius": 6.294599654953766,
+        "mean_squared_error": 0.0032682541050038628,
+        "success": true
+      },
+      "result_path": "cumcm/question_results/2025/A/q02/result.json",
+      "report_path": "cumcm/question_reports/2025/A/q02/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/A/q02"
+    },
+    {
+      "question": "q03",
+      "question_label": "问题3",
+      "tasks": [
+        "请给出烟幕干扰弹 的投放策略，并将结果保存到文件result1.xlsx 中（模板文件见附件）"
+      ],
+      "selected_model": {
+        "key": "optimization",
+        "name": "规划优化与资源配置",
+        "chapter": "CH3",
+        "chapter_title": "函数极值与规划模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      },
+      "experiment_result": {
+        "method": "linear_programming",
+        "success": true,
+        "objective_max": 36.193210167863704,
+        "decision": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.081635,
+          0.0
+        ],
+        "resource_slack": [
+          0.306381,
+          1.820145,
+          0.0
+        ]
+      },
+      "result_path": "cumcm/question_results/2025/A/q03/result.json",
+      "report_path": "cumcm/question_reports/2025/A/q03/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/A/q03"
+    },
+    {
+      "question": "q04",
+      "question_label": "问题4",
+      "tasks": [
+        "请给出烟幕干扰弹的投放策略，并将结果保存到文件result2.xlsx 中（模板文件见附 件）"
+      ],
+      "selected_model": {
+        "key": "optimization",
+        "name": "规划优化与资源配置",
+        "chapter": "CH3",
+        "chapter_title": "函数极值与规划模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      },
+      "experiment_result": {
+        "method": "linear_programming",
+        "success": true,
+        "objective_max": 36.85280052151653,
+        "decision": [
+          0.0,
+          0.0,
+          0.0,
+          3.369507,
+          0.062733,
+          0.0
+        ],
+        "resource_slack": [
+          1.552941,
+          0.0,
+          0.0
+        ]
+      },
+      "result_path": "cumcm/question_results/2025/A/q04/result.json",
+      "report_path": "cumcm/question_reports/2025/A/q04/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/A/q04"
+    },
+    {
+      "question": "q05",
+      "question_label": "问题5",
+      "tasks": [
+        "请给出烟幕干扰弹的投放策略，并将结果保存到文件result3.xlsx 中 （模板文件见附件）"
+      ],
+      "selected_model": {
+        "key": "optimization",
+        "name": "规划优化与资源配置",
+        "chapter": "CH3",
+        "chapter_title": "函数极值与规划模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH3/第三章-函数极值与规划模型.md"
+      },
+      "experiment_result": {
+        "method": "linear_programming",
+        "success": true,
+        "objective_max": 32.455350111439316,
+        "decision": [
+          0.0,
+          1.381267,
+          0.0,
+          1.49351,
+          0.0,
+          0.0
+        ],
+        "resource_slack": [
+          0.080147,
+          0.0,
+          0.0
+        ]
+      },
+      "result_path": "cumcm/question_results/2025/A/q05/result.json",
+      "report_path": "cumcm/question_reports/2025/A/q05/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/A/q05"
+    }
+  ],
+  "experiment_result": {
+    "implemented_questions": 5,
+    "key_models": "几何解析与运动学参数方程；规划优化与资源配置",
+    "first_question_summary": "method=least_squares_geometry_fit；center=2项；radius=4.28001；mean_squared_error=0.00344799；success=True",
+    "artifact_count": 6
+  },
+  "difference_from_advanced": "把逐问 advanced 的几何和优化结果组织成 A196 的整题模型链，突出单机单弹到多机多弹多目标的递进关系。",
+  "artifact_paths": {
+    "q01/experiment_table": "cumcm/outstanding_solutions/2025/A/A196/artifacts/q01/experiment_table.csv",
+    "q02/experiment_table": "cumcm/outstanding_solutions/2025/A/A196/artifacts/q02/experiment_table.csv",
+    "q03/experiment_table": "cumcm/outstanding_solutions/2025/A/A196/artifacts/q03/experiment_table.csv",
+    "q04/experiment_table": "cumcm/outstanding_solutions/2025/A/A196/artifacts/q04/experiment_table.csv",
+    "q05/experiment_table": "cumcm/outstanding_solutions/2025/A/A196/artifacts/q05/experiment_table.csv",
+    "question_result_summary": "cumcm/outstanding_solutions/2025/A/A196/artifacts/question_result_summary.csv"
+  },
+  "limitations": [
+    "当前复现聚合已有逐问结果；A196 中的精细二分证明和差分进化参数可在后续单独重写。"
+  ]
+}

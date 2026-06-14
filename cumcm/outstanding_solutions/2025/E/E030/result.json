@@ -1,0 +1,188 @@
+{
+  "problem_id": "2025-E",
+  "year": 2025,
+  "code": "E",
+  "paper_id": "E030",
+  "paper_title": "基于姿态识别的AI辅助智能体测研究",
+  "paper_source_ocr": "Outstanding_Solutions/CUMCM/OCR-results/E030/E030.md",
+  "paper_source_pdf": "Outstanding_Solutions/CUMCM/PDF-2025/E030.pdf",
+  "reproduction_scope": "用当前 2025-E advanced 的关键点几何、FFT 信号特征、成绩预测和训练建议结果，对齐 E030 的 AI 辅助立定跳远体测框架。",
+  "selected_model": {
+    "name": "关键点插补/平滑 + 起跳落地检测 + 相关性分析 + 成绩预测建议",
+    "chapter": "Outstanding reproduction of E030"
+  },
+  "paper_model_alignment": {
+    "paper_methods": [
+      "人体关键点序列预处理",
+      "起跳/落地事件检测",
+      "滞空阶段运动学描述",
+      "Spearman 相关与多元线性回归",
+      "个体化训练建议"
+    ],
+    "repo_kernel": [
+      "几何解析与运动学参数方程",
+      "图像文本与信号特征",
+      "图论网络与路径调度"
+    ]
+  },
+  "question_chain": [
+    {
+      "question": "q01",
+      "question_label": "问题1",
+      "tasks": [
+        "请确定运动者在跳远过程中的起跳和落地时刻，并描述滞空阶段（从起跳到落地）的运动 过程"
+      ],
+      "selected_model": {
+        "key": "geometry",
+        "name": "几何解析与运动学参数方程",
+        "chapter": "CH1",
+        "chapter_title": "解析方法与几何模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH1/第1章-解析方法与几何模型.md"
+      },
+      "experiment_result": {
+        "method": "least_squares_geometry_fit",
+        "center": [
+          0.191661,
+          -0.160736
+        ],
+        "radius": 1.3877604185373116,
+        "mean_squared_error": 0.13671668593294262,
+        "success": true
+      },
+      "result_path": "cumcm/question_results/2025/E/q01/result.json",
+      "report_path": "cumcm/question_reports/2025/E/q01/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/E/q01"
+    },
+    {
+      "question": "q02",
+      "question_label": "问题2",
+      "tasks": [
+        "请根据相关资料，分析影响运动 者跳远成绩的主要因素"
+      ],
+      "selected_model": {
+        "key": "signal",
+        "name": "图像文本与信号特征",
+        "chapter": "CH10",
+        "chapter_title": "图像、文本与信号数据",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+      },
+      "experiment_result": {
+        "method": "fft_feature_extraction",
+        "top_frequency_bins": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "top_amplitudes": [
+          14515.818864,
+          7258.286605,
+          4839.276864,
+          3629.897806,
+          2904.371078,
+          2420.770579,
+          2075.413706,
+          1816.459166
+        ],
+        "signal_energy": 2294975.4966887417
+      },
+      "result_path": "cumcm/question_results/2025/E/q02/result.json",
+      "report_path": "cumcm/question_reports/2025/E/q02/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/E/q02"
+    },
+    {
+      "question": "q03",
+      "question_label": "问题3",
+      "tasks": [
+        "基于问题1 和问题2 的模型和结果，结合附件5 中运动者11 的跳远视频和位 置信息以及个人体质信息（见附件4），预测该运动者的实际跳远成绩"
+      ],
+      "selected_model": {
+        "key": "signal",
+        "name": "图像文本与信号特征",
+        "chapter": "CH10",
+        "chapter_title": "图像、文本与信号数据",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH10/第10章-图像、文本与信号数据.md"
+      },
+      "experiment_result": {
+        "method": "fft_feature_extraction",
+        "top_frequency_bins": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "top_amplitudes": [
+          14515.818864,
+          7258.286605,
+          4839.276864,
+          3629.897806,
+          2904.371078,
+          2420.770579,
+          2075.413706,
+          1816.459166
+        ],
+        "signal_energy": 2294975.4966887417
+      },
+      "result_path": "cumcm/question_results/2025/E/q03/result.json",
+      "report_path": "cumcm/question_reports/2025/E/q03/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/E/q03"
+    },
+    {
+      "question": "q04",
+      "question_label": "问题4",
+      "tasks": [
+        "在问题3 的基础上，给出短时间内提升运动者11 跳远成绩的姿势训练建议， 以及经过短期训练后该运动者可能达到的理想跳远成绩"
+      ],
+      "selected_model": {
+        "key": "graph",
+        "name": "图论网络与路径调度",
+        "chapter": "CH4",
+        "chapter_title": "复杂网络与图论模型",
+        "doc": "../My-Agent/intro-mathmodel/docs/CH4/第4章-复杂网络与图论模型.md"
+      },
+      "experiment_result": {
+        "method": "dijkstra_shortest_path",
+        "node_count": 3,
+        "source": 0,
+        "distances": [
+          0.0,
+          0.005046,
+          0.010092
+        ],
+        "predecessors": [
+          -9999,
+          0,
+          0
+        ]
+      },
+      "result_path": "cumcm/question_results/2025/E/q04/result.json",
+      "report_path": "cumcm/question_reports/2025/E/q04/report.md",
+      "artifact_dir": "cumcm/question_artifacts/2025/E/q04"
+    }
+  ],
+  "experiment_result": {
+    "implemented_questions": 4,
+    "key_models": "几何解析与运动学参数方程；图像文本与信号特征；图论网络与路径调度",
+    "first_question_summary": "method=least_squares_geometry_fit；center=2项；radius=1.38776；mean_squared_error=0.136717；success=True",
+    "artifact_count": 5
+  },
+  "difference_from_advanced": "把逐问 advanced 的姿态/信号结果组织成 E030 的 AI 体测模型链，强调从动作识别到影响因素、成绩预测和训练建议的递进闭环。",
+  "artifact_paths": {
+    "q01/experiment_table": "cumcm/outstanding_solutions/2025/E/E030/artifacts/q01/experiment_table.csv",
+    "q02/experiment_table": "cumcm/outstanding_solutions/2025/E/E030/artifacts/q02/experiment_table.csv",
+    "q03/experiment_table": "cumcm/outstanding_solutions/2025/E/E030/artifacts/q03/experiment_table.csv",
+    "q04/experiment_table": "cumcm/outstanding_solutions/2025/E/E030/artifacts/q04/experiment_table.csv",
+    "question_result_summary": "cumcm/outstanding_solutions/2025/E/E030/artifacts/question_result_summary.csv"
+  },
+  "limitations": [
+    "当前复现聚合已有 advanced 结果；E030 中的关键点缺失插补、Savitzky-Golay 平滑和完整回归系数可在后续单独重写。"
+  ]
+}

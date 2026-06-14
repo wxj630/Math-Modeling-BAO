@@ -1,0 +1,5 @@
+﻿question,selected_model,experiment_summary,result_path,report_path
+q01,几何解析与运动学参数方程,method=least_squares_geometry_fit；center=2项；radius=1.38776；mean_squared_error=0.136717；success=True,cumcm/question_results/2025/E/q01/result.json,cumcm/question_reports/2025/E/q01/report.md
+q02,图像文本与信号特征,method=fft_feature_extraction；top_frequency_bins=8项；top_amplitudes=8项；signal_energy=2.29498e+06,cumcm/question_results/2025/E/q02/result.json,cumcm/question_reports/2025/E/q02/report.md
+q03,图像文本与信号特征,method=fft_feature_extraction；top_frequency_bins=8项；top_amplitudes=8项；signal_energy=2.29498e+06,cumcm/question_results/2025/E/q03/result.json,cumcm/question_reports/2025/E/q03/report.md
+q04,图论网络与路径调度,method=dijkstra_shortest_path；node_count=3；source=0；distances=3项；predecessors=3项,cumcm/question_results/2025/E/q04/result.json,cumcm/question_reports/2025/E/q04/report.md

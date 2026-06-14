@@ -1,0 +1,5 @@
+﻿question,selected_model,experiment_summary,result_path,report_path
+q01,综合评价与权重决策,method=std_weight_topsis；weights=2项；scores=40项；best_option=1,cumcm/question_results/2025/C/q01/result.json,cumcm/question_reports/2025/C/q01/report.md
+q02,机器学习与统计识别,method=logistic_regression_plus_kmeans；training_accuracy=1；cluster_counts=2项,cumcm/question_results/2025/C/q02/result.json,cumcm/question_reports/2025/C/q02/report.md
+q03,机器学习与统计识别,method=logistic_regression_plus_kmeans；training_accuracy=1；cluster_counts=2项,cumcm/question_results/2025/C/q03/result.json,cumcm/question_reports/2025/C/q03/report.md
+q04,综合评价与权重决策,method=std_weight_topsis；weights=2项；scores=40项；best_option=1,cumcm/question_results/2025/C/q04/result.json,cumcm/question_reports/2025/C/q04/report.md

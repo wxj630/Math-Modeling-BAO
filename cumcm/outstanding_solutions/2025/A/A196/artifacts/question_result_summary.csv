@@ -1,0 +1,6 @@
+﻿question,selected_model,experiment_summary,result_path,report_path
+q01,几何解析与运动学参数方程,method=least_squares_geometry_fit；center=2项；radius=4.28001；mean_squared_error=0.00344799；success=True,cumcm/question_results/2025/A/q01/result.json,cumcm/question_reports/2025/A/q01/report.md
+q02,几何解析与运动学参数方程,method=least_squares_geometry_fit；center=2项；radius=6.2946；mean_squared_error=0.00326825；success=True,cumcm/question_results/2025/A/q02/result.json,cumcm/question_reports/2025/A/q02/report.md
+q03,规划优化与资源配置,method=linear_programming；success=True；objective_max=36.1932；decision=6项；resource_slack=3项,cumcm/question_results/2025/A/q03/result.json,cumcm/question_reports/2025/A/q03/report.md
+q04,规划优化与资源配置,method=linear_programming；success=True；objective_max=36.8528；decision=6项；resource_slack=3项,cumcm/question_results/2025/A/q04/result.json,cumcm/question_reports/2025/A/q04/report.md
+q05,规划优化与资源配置,method=linear_programming；success=True；objective_max=32.4554；decision=6项；resource_slack=3项,cumcm/question_results/2025/A/q05/result.json,cumcm/question_reports/2025/A/q05/report.md

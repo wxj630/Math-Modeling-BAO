@@ -1,6 +1,11 @@
 from __future__ import annotations
 
-from build_problem_pages import build_problem_page, group_baselines, group_by_problem, read_csv
+from pathlib import Path
+
+from build_problem_pages import build_problem_page, group_baselines, group_by_problem, group_outstanding, read_csv
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_problem_page_contains_global_reports() -> None:
@@ -88,8 +93,53 @@ def test_problem_page_summarizes_outstanding_experiment_results() -> None:
     assert not missing, f"missing fragments: {missing}"
 
 
+def test_planned_outstanding_rows_are_not_rendered_as_implemented() -> None:
+    rows = [
+        {
+            "problem_id": "2025-A",
+            "status": "planned",
+            "paper_id": "2501909",
+            "paper_title": "Stair Wear: Traces of History",
+        },
+        {
+            "problem_id": "2025-C",
+            "status": "implemented",
+            "paper_id": "2505964",
+            "paper_title": "2028 Olympic Medal Predictions Based on Random Forest Model",
+        },
+    ]
+
+    grouped = group_outstanding(rows)
+
+    assert "2025-A" not in grouped
+    assert grouped["2025-C"]["paper_id"] == "2505964"
+
+
+def test_outstanding_index_covers_2025_verifiable_problems() -> None:
+    expected = {
+        "mcm": {"2025-A", "2025-B", "2025-C", "2025-D", "2025-E", "2025-F"},
+        "cumcm": {"2025-A", "2025-B", "2025-C", "2025-D", "2025-E"},
+    }
+
+    for track, problem_ids in expected.items():
+        rows = {row["problem_id"]: row for row in read_csv(f"{track}/outstanding_solutions/outstanding_solution_index.csv")}
+        missing = sorted(problem_ids - set(rows))
+        assert not missing, f"{track} missing outstanding rows: {missing}"
+
+        not_implemented = sorted(pid for pid in problem_ids if rows[pid].get("status") != "implemented")
+        assert not not_implemented, f"{track} outstanding rows not implemented: {not_implemented}"
+
+        for pid in sorted(problem_ids):
+            row = rows[pid]
+            for key in ("solution_path", "result_path", "report_path"):
+                path = ROOT / row[key]
+                assert path.exists(), f"{track} {pid} missing {key}: {row[key]}"
+
+
 if __name__ == "__main__":
     test_problem_page_contains_global_reports()
     test_problem_page_renders_outstanding_report_when_available()
     test_problem_page_summarizes_outstanding_experiment_results()
+    test_planned_outstanding_rows_are_not_rendered_as_implemented()
+    test_outstanding_index_covers_2025_verifiable_problems()
     print("ok")

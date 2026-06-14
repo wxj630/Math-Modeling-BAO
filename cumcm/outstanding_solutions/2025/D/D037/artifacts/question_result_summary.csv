@@ -1,0 +1,5 @@
+﻿question,selected_model,experiment_summary,result_path,report_path
+q01,图论网络与路径调度,method=dijkstra_shortest_path；node_count=3；source=0；distances=3项；predecessors=3项,cumcm/question_results/2025/D/q01/result.json,cumcm/question_reports/2025/D/q01/report.md
+q02,图论网络与路径调度,method=dijkstra_shortest_path；node_count=3；source=0；distances=3项；predecessors=3项,cumcm/question_results/2025/D/q02/result.json,cumcm/question_reports/2025/D/q02/report.md
+q03,图论网络与路径调度,method=dijkstra_shortest_path；node_count=3；source=0；distances=3项；predecessors=3项,cumcm/question_results/2025/D/q03/result.json,cumcm/question_reports/2025/D/q03/report.md
+q04,图论网络与路径调度,method=dijkstra_shortest_path；node_count=3；source=0；distances=3项；predecessors=3项,cumcm/question_results/2025/D/q04/result.json,cumcm/question_reports/2025/D/q04/report.md

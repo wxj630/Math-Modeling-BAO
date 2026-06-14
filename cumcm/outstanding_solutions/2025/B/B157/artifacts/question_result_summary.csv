@@ -1,0 +1,4 @@
+﻿question,selected_model,experiment_summary,result_path,report_path
+q01,数据拟合与回归分析,method=quadratic_least_squares；coefficients=3项；r2=0.658138；mean_abs_error=2.25512,cumcm/question_results/2025/B/q01/result.json,cumcm/question_reports/2025/B/q01/report.md
+q02,数据拟合与回归分析,method=quadratic_least_squares；coefficients=3项；r2=0.658138；mean_abs_error=2.25512,cumcm/question_results/2025/B/q02/result.json,cumcm/question_reports/2025/B/q02/report.md
+q03,数据拟合与回归分析,method=quadratic_least_squares；coefficients=3项；r2=0.658138；mean_abs_error=2.25512,cumcm/question_results/2025/B/q03/result.json,cumcm/question_reports/2025/B/q03/report.md

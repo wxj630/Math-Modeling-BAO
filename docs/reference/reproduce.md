@@ -36,7 +36,12 @@ python mcm/scripts/archive_generic_baselines.py --all
 运行已复现的 outstanding 获奖论文样例：
 
 ```bash
+python mcm/outstanding_solutions/2025/A/2501909/solution.py
+python mcm/outstanding_solutions/2025/B/2504448/solution.py
 python mcm/outstanding_solutions/2025/C/2505964/solution.py
+python mcm/outstanding_solutions/2025/D/2507692/solution.py
+python mcm/outstanding_solutions/2025/E/2508861/solution.py
+python mcm/outstanding_solutions/2025/F/2517199/solution.py
 ```
 
 ## 运行 CUMCM 解法
@@ -63,6 +68,16 @@ python cumcm/scripts/verify_attachment_integration.py
 
 ```bash
 python cumcm/scripts/archive_generic_baselines.py --all
+```
+
+运行已复现的 outstanding 获奖论文样例：
+
+```bash
+python cumcm/outstanding_solutions/2025/A/A196/solution.py
+python cumcm/outstanding_solutions/2025/B/B157/solution.py
+python cumcm/outstanding_solutions/2025/C/C023/solution.py
+python cumcm/outstanding_solutions/2025/D/D037/solution.py
+python cumcm/outstanding_solutions/2025/E/E030/solution.py
 ```
 
 ## 运行教程站

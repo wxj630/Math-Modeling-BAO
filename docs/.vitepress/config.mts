@@ -70,6 +70,7 @@ export default defineConfig({
         items: [
           { text: '归档路径说明', link: '/reference/archive-map' },
           { text: '运行与复现', link: '/reference/reproduce' },
+          { text: 'Outstanding 覆盖清单', link: '/reference/outstanding-coverage-audit' },
           { text: 'MCM 原始归档', link: '/mcm-2015-2025/' }
         ]
       }

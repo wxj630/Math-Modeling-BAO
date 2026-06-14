@@ -1,0 +1,62 @@
+{
+  "problem_id": "2025-D",
+  "year": 2025,
+  "code": "D",
+  "paper_id": "2507692",
+  "paper_title": "Optimizing Baltimore Multi-Layer Traffic Network Model Based on Graph Theory & Clustering Algorithm",
+  "paper_source_ocr": "Outstanding_Solutions/MCM/OCR-results/D/2507692/2507692.md",
+  "paper_source_pdf": "Outstanding_Solutions/MCM/PDF-2025/D/2507692.pdf",
+  "reproduction_scope": "用当前 ICM-D real solution 的官方 Baltimore 路网、公交、OD 冲击和安全优先级结果，对齐 2507692 的多层交通网络优化论文主线。",
+  "selected_model": {
+    "name": "多层交通网络 + 图论指标 + 聚类改造优先级",
+    "chapter": "Outstanding reproduction of 2507692"
+  },
+  "data_source": {
+    "type": "official_comap_csv",
+    "root": "docs/mcm-2015-2025/official_assets_extracted/2025/2025_Problem_D_Data.zip/2025_Problem_D_Data",
+    "rows": {
+      "edges_drive.csv": 91227,
+      "nodes_drive.csv": 37163,
+      "Bus_Stops.csv": 2654,
+      "Bus_Routes.csv": 66,
+      "MDOT_SHA_Annual_Average_Daily_Traffic_Baltimore.csv": 2398,
+      "DataDictionary.csv": 111
+    }
+  },
+  "paper_model_alignment": {
+    "paper_methods": [
+      "多层交通网络建模",
+      "OD 最短路冲击分析",
+      "公交站点客流优先级",
+      "道路暴露指标",
+      "聚类/分区式改造建议"
+    ],
+    "repo_kernel": [
+      "official COMAP Baltimore CSV",
+      "drive graph connectivity and shortest paths",
+      "bridge removal OD impacts",
+      "bus shelter priority ranking",
+      "traffic exposure safety ranking"
+    ]
+  },
+  "experiment_result": {
+    "drive_nodes": 37162,
+    "drive_edges": 89958,
+    "disconnected_od_count": 1,
+    "no_shelter_stops": 2295,
+    "top10_no_shelter_riders": 16266,
+    "recommended_project": "Rebuild and harden the Francis Scott Key / I-695 harbor crossing corridor."
+  },
+  "difference_from_advanced": "把 advanced 的路网、公交和安全结果整理为 2507692 的多层网络优化框架，强调道路层、公交层和桥梁失效层之间的交互，以及从图论指标到建设建议的整题叙事。",
+  "artifact_paths": {
+    "bridge_od_impacts.csv": "mcm/outstanding_solutions/2025/D/2507692/artifacts/bridge_od_impacts.csv",
+    "bridge_od_impacts.png": "mcm/outstanding_solutions/2025/D/2507692/artifacts/bridge_od_impacts.png",
+    "high_exposure_roads.csv": "mcm/outstanding_solutions/2025/D/2507692/artifacts/high_exposure_roads.csv",
+    "priority_bus_stops.csv": "mcm/outstanding_solutions/2025/D/2507692/artifacts/priority_bus_stops.csv",
+    "priority_bus_stops.png": "mcm/outstanding_solutions/2025/D/2507692/artifacts/priority_bus_stops.png"
+  },
+  "advanced_result_path": "docs/mcm-2015-2025/real_solutions/2025/ICM-D/result.json",
+  "limitations": [
+    "当前复现使用官方数据和可验证图指标；原论文中的完整聚类参数、社区划分图和多目标权重可在后续单独重写。"
+  ]
+}

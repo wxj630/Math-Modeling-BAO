@@ -1,0 +1,13 @@
+iso3,policy_adoption_year,legal_framework,national_strategy,mandatory_reporting,incident_response,capacity_building,international_cooperation,gci_validation_note,policy_maturity_score,country,vcdb_incident_count,share_of_sample,confirmed_disclosure_count,reference_reported_count,earliest_year,latest_year,dominant_action_type
+USA,2015,1.0,1.0,1.0,1.0,1.0,1.0,high-capacity ITU GCI benchmark country,1.0,United States,191,0.80591,132.0,173.0,2005.0,2025.0,hacking
+GBR,2016,1.0,1.0,1.0,1.0,1.0,1.0,high-capacity ITU GCI benchmark country,1.0,United Kingdom,13,0.05485,9.0,13.0,2011.0,2025.0,error
+SGP,2018,1.0,1.0,1.0,1.0,1.0,1.0,high-capacity ITU GCI benchmark country,1.0,Singapore,1,0.00422,0.0,1.0,2013.0,2013.0,hacking
+AUS,2020,1.0,1.0,1.0,1.0,1.0,1.0,mature national strategy and reporting regime,1.0,Australia,4,0.01688,4.0,4.0,2013.0,2018.0,error
+CAN,2018,1.0,1.0,1.0,1.0,1.0,1.0,mature national strategy,1.0,Canada,16,0.06751,12.0,16.0,2003.0,2019.0,hacking
+DEU,2016,1.0,1.0,1.0,1.0,1.0,1.0,mature EU/NIS-style legal framework,1.0,Germany,0,,,,,,
+FRA,2015,1.0,1.0,1.0,1.0,1.0,1.0,mature EU/NIS-style legal framework,1.0,France,1,0.00422,1.0,1.0,2016.0,2016.0,misuse
+JPN,2014,1.0,1.0,0.7,1.0,1.0,1.0,mature national strategy,0.95,Japan,0,,,,,,
+KOR,2015,1.0,1.0,0.7,1.0,1.0,0.8,mature national strategy,0.9167,"Korea, Rep.",0,,,,,,
+BRA,2020,0.8,1.0,0.4,0.8,0.7,0.7,developing policy maturity,0.7333,Brazil,1,0.00422,1.0,1.0,2020.0,2020.0,misuse
+IND,2013,0.8,0.7,0.6,0.8,0.8,0.7,large digital population with developing policy maturity,0.7333,India,3,0.01266,2.0,3.0,2015.0,2016.0,hacking
+CHN,2017,1.0,0.8,0.7,0.8,0.8,0.5,large digital population with strong legal apparatus,0.7667,China,0,,,,,,

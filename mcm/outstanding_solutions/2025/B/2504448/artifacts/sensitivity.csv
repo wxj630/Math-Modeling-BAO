@@ -1,0 +1,7 @@
+﻿factor,correlation_with_score,score_change_from_p10_to_p90,interpretation
+fee_revenue_usd,0.919311,0.112079,funds available for mitigation raises the score in this grid.
+visitor_fee_usd,0.909965,0.142135,added revenue and price response raises the score in this grid.
+annual_visitors,-0.868509,-0.112079,volume after cap and fee response reduces the score in this grid.
+hidden_cost_usd,-0.743621,-0.20902,"infrastructure, crowding, and carbon burden reduces the score in this grid."
+conservation_share,0.227667,0.0,fee allocation toward attraction health raises the score in this grid.
+daily_cap,-0.117707,-0.0235,daily crowding pressure and maximum seasonal volume reduces the score in this grid.
