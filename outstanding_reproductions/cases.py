@@ -1135,6 +1135,29 @@ CASES: dict[str, dict[str, Any]] = {
     "cumcm-2025-C-C023": standalone_case("cumcm", 2025, "C", "C023"),
 }
 
+BATCH1_CASE_IDS = [
+    "mcm-2015-A-35532",
+    "cumcm-2018-A-A466",
+    "mcm-2017-B-69427",
+    "cumcm-2020-B-B108",
+    "mcm-2019-C-1901213",
+    "cumcm-2020-C-C227",
+]
+
+BATCH2_CASE_IDS = [
+    "mcm-2023-A-2309229",
+    "mcm-2023-B-2315379",
+    "mcm-2023-C-2307946",
+    "mcm-2024-A-2407093",
+    "mcm-2024-B-2419984",
+    "mcm-2024-C-2401298",
+    "mcm-2025-A-2501909",
+    "mcm-2025-B-2504448",
+    "mcm-2025-C-2505964",
+]
+
+FORMAL_CASE_IDS = BATCH1_CASE_IDS + BATCH2_CASE_IDS
+
 
 def run_case(case_id: str, output_dir: Path | None = None) -> dict[str, Any]:
     if case_id not in CASES:

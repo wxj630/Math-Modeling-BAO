@@ -1,28 +1,54 @@
 # Outstanding 覆盖清单
 
-本页记录 2025 年官方获奖论文复现的选题状态。规则是：每一道可验证赛题选一篇与当前 baseline/advanced 最接近、但模型链更完整的获奖论文；`implemented` 表示已经生成代码、结果、报告和 artifacts，`planned` 表示已经选定论文但尚未接入赛题页。
+本页记录官方获奖论文复现的当前对外口径。规则是：只有已经进入 README、Best Practice、统一 runner `--formal` 的条目，才标记为“正式复现”。其它已经整理 PDF/OCR、甚至已有实验脚本的条目，先归为候选或实验材料，避免完成数口径混乱。
 
-## MCM/ICM 2025
+## 正式复现：15 篇
 
-| 赛题 | 状态 | 论文 | 选择理由 |
-|---|---|---|---|
-| 2025-A | implemented | `2501909` Stair Wear: Traces of History | 已复现 WVM/WDM 论文主线，使用当前 stair wear real solution 结果和 artifacts。 |
-| 2025-B | implemented | `2504448` Sustainable Tourism Management in Juneau | 已复现多目标旅游管理论文主线，使用当前 sustainable tourism policy frontier 结果和 artifacts。 |
-| 2025-C | implemented | `2505964` 2028 Olympic Medal Predictions Based on Random Forest Model | 已复现运动员能力特征、随机森林、Monte Carlo、Poisson 和 Great Coach 模型。 |
-| 2025-D | implemented | `2507692` Optimizing Baltimore Multi-Layer Traffic Network Model | 已复现多层路网、桥梁冲击、公交站点和安全优先级论文主线。 |
-| 2025-E | implemented | `2508861` Symphony of Eco-Agriculture | 已复现食物网动力学、情景仿真和有机转型建议论文主线。 |
-| 2025-F | implemented | `2517199` Data-Driven Policy Effectiveness Evaluation | 已复现 VCDB 国家面板、政策特征矩阵和描述性有效性评价主线。 |
+### Batch 1：三大题型 × MCM/CUMCM
 
-## CUMCM 2025
+| 序号 | 赛题 | 类型 | O 论文 | 入口 |
+|---:|---|---|---|---|
+| 01 | MCM 2015-A | 微分方程/动态系统 | `35532` Containing Ebola and Future Infectious Diseases | [Best Practice](/best_practie/bao-mcm-2015-a-ebola) |
+| 02 | CUMCM 2018-A | 微分方程/动态系统 | `A466` 高温作业专用服装设计 | [Best Practice](/best_practie/bao-cumcm-2018-a-heat-clothing) |
+| 03 | MCM 2017-B | 运筹优化 | `69427` Merge After Toll | [Best Practice](/best_practie/bao-mcm-2017-b-toll-plaza) |
+| 04 | CUMCM 2020-B | 运筹优化 | `B108` 穿越沙漠 | [Best Practice](/best_practie/bao-cumcm-2020-b-desert-crossing) |
+| 05 | MCM 2019-C | 数据建模 | `1901213` Opioids Spread as a Contagious Disease | [Best Practice](/best_practie/bao-mcm-2019-c-opioid) |
+| 06 | CUMCM 2020-C | 数据建模 | `C227` 中小微企业的信贷决策 | [Best Practice](/best_practie/bao-cumcm-2020-c-credit) |
 
-| 赛题 | 状态 | 论文 | 选择理由 |
-|---|---|---|---|
-| 2025-A | implemented | `A196` 多情形下无人机烟幕遮蔽策略的建模与优化研究 | 已复现三维运动学、遮蔽判定和多情形投放优化主线。 |
-| 2025-B | implemented | `B157` 碳化硅外延层厚度的双光束和多光束干涉法测量研究 | 已复现双光束/多光束干涉测厚统一建模主线。 |
-| 2025-C | implemented | `C023` 基于混合效应模型的NIPT时点优化与胎儿异常判定 | 已复现 NIPT 重复测量、混合效应和检测时点优化主线。 |
-| 2025-D | implemented | `D037` 矿井突水水流漫延模型与逃生方案问题 | 已复现巷道图、水流传播时间和动态逃生路径主线。 |
-| 2025-E | implemented | `E030` 基于姿态识别的AI辅助智能体测研究 | 已复现关键点姿态、起跳落地检测和成绩解释主线。 |
+### Batch 2：2023-2025 MCM ABC
 
-## 当前实现顺序
+| 序号 | 赛题 | 类型 | O 论文 | 入口 |
+|---:|---|---|---|---|
+| 07 | MCM 2023-A | 动态系统/生态模型 | `2309229` | [Best Practice](/best_practie/bao-mcm-2023-a-plant-community) |
+| 08 | MCM 2023-B | 运筹优化/空间分区 | `2315379` | [Best Practice](/best_practie/bao-mcm-2023-b-maasai-mara) |
+| 09 | MCM 2023-C | 数据建模/预测分类 | `2307946` | [Best Practice](/best_practie/bao-mcm-2023-c-wordle) |
+| 10 | MCM 2024-A | 动态系统/生态模型 | `2407093` | [Best Practice](/best_practie/bao-mcm-2024-a-lamprey) |
+| 11 | MCM 2024-B | 运筹优化/搜索救援 | `2419984` | [Best Practice](/best_practie/bao-mcm-2024-b-submersible-search) |
+| 12 | MCM 2024-C | 数据建模/统计推断 | `2401298` | [Best Practice](/best_practie/bao-mcm-2024-c-tennis-momentum) |
+| 13 | MCM 2025-A | 物理反演/动态磨损 | `2501909` | [Best Practice](/best_practie/bao-mcm-2025-a-stair-wear) |
+| 14 | MCM 2025-B | 运筹优化/可持续旅游 | `2504448` | [Best Practice](/best_practie/bao-mcm-2025-b-juneau-tourism) |
+| 15 | MCM 2025-C | 数据建模/预测排序 | `2505964` | [Best Practice](/best_practie/bao-mcm-2025-c-olympic-medals) |
 
-当前 2025 年可验证题已经完成第一批 paper-guided reproduction。后续迭代重点是把这些聚合式复现逐题升级为更贴近原论文算法细节的复写版本。
+运行命令：
+
+```bash
+python tools/run_outstanding_reproductions.py --formal --keep-going
+```
+
+## 候选与实验材料
+
+下面这些条目有 PDF/OCR、文档或实验脚本，但当前不计入正式 15 篇。后续如果转正，需要同步更新 README、Best Practice、runner 和赛题页。
+
+| 类别 | 条目 |
+|---|---|
+| CUMCM 2023 ABC 候选 | `A175` 定日镜场、`B226` 多波束测线、`C050` 蔬菜定价 |
+| CUMCM 2024 ABC 候选 | `A016` 板凳龙、`B159` 生产决策、`C038` 农作物规划 |
+| CUMCM 2025 ABC 候选 | `A196` 烟幕遮蔽、`B157` 碳化硅测厚、`C023` NIPT |
+| 2024/2025 扩展题候选 | MCM 2024-D、CUMCM 2024-D/E、MCM 2025-D/E/F、CUMCM 2025-D/E 等 |
+
+## 读者如何判断状态
+
+- README 和 Best Practice 中列出的 15 篇，是当前正式复现口径。
+- 赛题索引的 `BAO PDF` 列会显示该题所有可读 PDF，不代表每一篇 O 奖 PDF 都已经代码复现。
+- `tools/run_outstanding_reproductions.py --formal --list` 会列出当前正式 runner 覆盖范围。
+- 候选案例可以阅读，但不能在教程正文里写成“已经完成的 O 奖复现”。

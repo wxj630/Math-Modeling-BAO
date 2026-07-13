@@ -186,9 +186,11 @@ def write_markdown(rows: list[ReportPdf], doc_path: Path, csv_path: Path, base_u
     status = "已生成公开下载链接" if base_url else "尚未配置公开下载基座，表格中的 PDF 链接显示为待上传"
 
     lines = [
-        "# PDF 论文库",
+        "# PDF 下载清单",
         "",
-        "这个页面只保存 PDF 的索引和下载入口，PDF 文件本体不进入主仓库。主仓库负责教程、代码、轻量结果和 manifest；PDF 原文放在外部资料库中。",
+        "这个页面是 MCM/CUMCM 赛题索引背后的完整 PDF manifest，不是新的学习路线。日常阅读请先进入赛题整体索引，通过每道题的 `BAO PDF` 列打开 Baseline、Advanced 和 Outstanding PDF。",
+        "",
+        "PDF 文件本体不进入主仓库。主仓库负责教程、代码、轻量结果和 manifest；PDF 原文放在外部资料库中。",
         "",
         "## 分享方案",
         "",

@@ -1,136 +1,136 @@
 # CUMCM 赛题整体索引
 
-这个索引以完整赛题为入口。进入某个赛题页后，再沿着小问递进链查看 baseline、advanced、实验结果和 outstanding 预留位。
+这个索引以完整赛题为入口。进入某个赛题页后，再沿着小问递进链查看 baseline、advanced、实验结果和 outstanding 预留位；PDF 材料直接并入每道赛题的 BAO PDF 列。
 
 ## 2010
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2010-A](./problems/2010-A.md) | 2010年 CUMCM A题：储油罐的变位识别与罐容表标定 | 2 | 问题 1 | 机器学习与统计(CH9)；几何与方程模型(CH1)；微分方程与动力系统(CH2)；数据处理与拟合(CH6) |
-| [2010-B](./problems/2010-B.md) | 2010年 CUMCM B题：2010年上海世博会影响力的定量评估 | 1 | 问题 1 | 评价与决策模型(CH7)；数据处理与拟合(CH6)；时间序列模型(CH8)；规划优化模型(CH3) |
-| [2010-C](./problems/2010-C.md) | 2010年 CUMCM C题：输油管的布置 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
-| [2010-D](./problems/2010-D.md) | 2010年 CUMCM D题：对学生宿舍设计方案的评价 | 1 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2010-A](./problems/2010-A.md) | 2010年 CUMCM A题：储油罐的变位识别与罐容表标定 | 2 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-A/advanced/main.pdf) | 问题 1 | 机器学习与统计(CH9)；几何与方程模型(CH1)；微分方程与动力系统(CH2)；数据处理与拟合(CH6) |
+| [2010-B](./problems/2010-B.md) | 2010年 CUMCM B题：2010年上海世博会影响力的定量评估 | 1 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-B/advanced/main.pdf) | 问题 1 | 评价与决策模型(CH7)；数据处理与拟合(CH6)；时间序列模型(CH8)；规划优化模型(CH3) |
+| [2010-C](./problems/2010-C.md) | 2010年 CUMCM C题：输油管的布置 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-C/advanced/main.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
+| [2010-D](./problems/2010-D.md) | 2010年 CUMCM D题：对学生宿舍设计方案的评价 | 1 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2010-D/advanced/main.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6) |
 
 ## 2011
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2011-A](./problems/2011-A.md) | 2011年 CUMCM A题：城市表层土壤重金属污染分析 | 4 | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
-| [2011-B](./problems/2011-B.md) | 2011年 CUMCM B题：交巡警服务平台的设置与调度 | 2 | 问题 1 | 规划优化模型(CH3)；图论与复杂网络(CH4)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
-| [2011-C](./problems/2011-C.md) | 2011年 CUMCM C题：企业退休职工养老金制度的改革 | 4 | 问题一 | 数据处理与拟合(CH6)；时间序列模型(CH8)；评价与决策模型(CH7)；规划优化模型(CH3) |
-| [2011-D](./problems/2011-D.md) | 2011年 CUMCM D题：天然肠衣搭配 | 5 | 问题 1 | 规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7)；图像文本与信号(CH10) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2011-A](./problems/2011-A.md) | 2011年 CUMCM A题：城市表层土壤重金属污染分析 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-A/advanced/main.pdf) | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
+| [2011-B](./problems/2011-B.md) | 2011年 CUMCM B题：交巡警服务平台的设置与调度 | 2 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-B/advanced/main.pdf) | 问题 1 | 规划优化模型(CH3)；图论与复杂网络(CH4)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
+| [2011-C](./problems/2011-C.md) | 2011年 CUMCM C题：企业退休职工养老金制度的改革 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-C/advanced/main.pdf) | 问题一 | 数据处理与拟合(CH6)；时间序列模型(CH8)；评价与决策模型(CH7)；规划优化模型(CH3) |
+| [2011-D](./problems/2011-D.md) | 2011年 CUMCM D题：天然肠衣搭配 | 5 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2011-D/advanced/main.pdf) | 问题 1 | 规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7)；图像文本与信号(CH10) |
 
 ## 2014
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2014-A](./problems/2014-A.md) | 2014年 CUMCM A题：嫦娥三号软着陆轨道设计与控制策略 | 3 | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
-| [2014-B](./problems/2014-B.md) | 2014年 CUMCM B题：创意平板折叠桌 | 3 | 问题 1 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；数据处理与拟合(CH6)；几何与方程模型(CH1) |
-| [2014-C](./problems/2014-C.md) | 2014年 CUMCM C题：生猪养殖场的经营管理 | 1 | 问题 1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；规划优化模型(CH3)；几何与方程模型(CH1) |
-| [2014-D](./problems/2014-D.md) | 2014年 CUMCM D题：储药柜的设计 | 4 | 问题 1 | 规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7)；图像文本与信号(CH10) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2014-A](./problems/2014-A.md) | 2014年 CUMCM A题：嫦娥三号软着陆轨道设计与控制策略 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-A/advanced/main.pdf) | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
+| [2014-B](./problems/2014-B.md) | 2014年 CUMCM B题：创意平板折叠桌 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-B/advanced/main.pdf) | 问题 1 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；数据处理与拟合(CH6)；几何与方程模型(CH1) |
+| [2014-C](./problems/2014-C.md) | 2014年 CUMCM C题：生猪养殖场的经营管理 | 1 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-C/advanced/main.pdf) | 问题 1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；规划优化模型(CH3)；几何与方程模型(CH1) |
+| [2014-D](./problems/2014-D.md) | 2014年 CUMCM D题：储药柜的设计 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2014-D/advanced/main.pdf) | 问题 1 | 规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7)；图像文本与信号(CH10) |
 
 ## 2015
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2015-A](./problems/2015-A.md) | 2015年 CUMCM A题：太阳影子定位 | 4 | 问题 1 | 微分方程与动力系统(CH2)；图像文本与信号(CH10)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
-| [2015-B](./problems/2015-B.md) | 2015年 CUMCM B题：互联网+”时代的出租车资源配置 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；图论与复杂网络(CH4)；数据处理与拟合(CH6) |
-| [2015-C](./problems/2015-C.md) | 2015年 CUMCM C题：月上柳梢头 | 1 | 问题 1 | 评价与决策模型(CH7)；几何与方程模型(CH1)；时间序列模型(CH8)；规划优化模型(CH3) |
-| [2015-D](./problems/2015-D.md) | 2015年 CUMCM D题：众筹筑屋规划方案设计 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2015-A](./problems/2015-A.md) | 2015年 CUMCM A题：太阳影子定位 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-A/advanced/main.pdf) / [O×2](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-A/outstanding/A095.pdf) | 问题 1 | 微分方程与动力系统(CH2)；图像文本与信号(CH10)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
+| [2015-B](./problems/2015-B.md) | 2015年 CUMCM B题：互联网+”时代的出租车资源配置 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-B/advanced/main.pdf) / [O×5](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-B/outstanding/B006.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；图论与复杂网络(CH4)；数据处理与拟合(CH6) |
+| [2015-C](./problems/2015-C.md) | 2015年 CUMCM C题：月上柳梢头 | 1 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-C/advanced/main.pdf) | 问题 1 | 评价与决策模型(CH7)；几何与方程模型(CH1)；时间序列模型(CH8)；规划优化模型(CH3) |
+| [2015-D](./problems/2015-D.md) | 2015年 CUMCM D题：众筹筑屋规划方案设计 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2015-D/advanced/main.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
 
 ## 2016
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2016-A](./problems/2016-A.md) | 2016年 CUMCM A题：系泊系统的设计 | 3 | 问题1 | 几何与方程模型(CH1)；微分方程与动力系统(CH2)；评价与决策模型(CH7)；规划优化模型(CH3) |
-| [2016-B](./problems/2016-B.md) | 2016年 CUMCM B题：小区开放对道路通行的影响 | 4 | 问题 1 | 评价与决策模型(CH7)；图论与复杂网络(CH4)；几何与方程模型(CH1)；规划优化模型(CH3) |
-| [2016-C](./problems/2016-C.md) | 2016年 CUMCM C题：电池剩余放电时间预测 | 3 | 问题1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；评价与决策模型(CH7)；时间序列模型(CH8) |
-| [2016-D](./problems/2016-D.md) | 2016年 CUMCM D题：风电场运行状况分析及优化 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2016-A](./problems/2016-A.md) | 2016年 CUMCM A题：系泊系统的设计 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-A/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-A/outstanding/A028.pdf) | 问题1 | 几何与方程模型(CH1)；微分方程与动力系统(CH2)；评价与决策模型(CH7)；规划优化模型(CH3) |
+| [2016-B](./problems/2016-B.md) | 2016年 CUMCM B题：小区开放对道路通行的影响 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-B/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-B/outstanding/B022.pdf) | 问题 1 | 评价与决策模型(CH7)；图论与复杂网络(CH4)；几何与方程模型(CH1)；规划优化模型(CH3) |
+| [2016-C](./problems/2016-C.md) | 2016年 CUMCM C题：电池剩余放电时间预测 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-C/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-C/outstanding/C014.pdf) | 问题1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；评价与决策模型(CH7)；时间序列模型(CH8) |
+| [2016-D](./problems/2016-D.md) | 2016年 CUMCM D题：风电场运行状况分析及优化 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-D/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2016-D/outstanding/D056.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
 
 ## 2017
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2017-A](./problems/2017-A.md) | 2017年 CUMCM A题：CT系统参数标定及成像 | 5 | 问题 1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
-| [2017-B](./problems/2017-B.md) | 2017年 CUMCM B题：拍照赚钱”的任务定价 | 5 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；图论与复杂网络(CH4)；数据处理与拟合(CH6) |
-| [2017-C](./problems/2017-C.md) | 2017年 CUMCM C题：颜色与物质浓度辨识 | 2 | 问题 1 | 评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6)；规划优化模型(CH3) |
-| [2017-D](./problems/2017-D.md) | 2017年 CUMCM D题：巡检线路的排班 | 3 | 问题1 | 规划优化模型(CH3)；图论与复杂网络(CH4)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2017-A](./problems/2017-A.md) | 2017年 CUMCM A题：CT系统参数标定及成像 | 5 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-A/advanced/main.pdf) / [O×5](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-A/outstanding/A053.pdf) | 问题 1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
+| [2017-B](./problems/2017-B.md) | 2017年 CUMCM B题：拍照赚钱”的任务定价 | 5 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-B/advanced/main.pdf) / [O×7](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-B/outstanding/B104.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；图论与复杂网络(CH4)；数据处理与拟合(CH6) |
+| [2017-C](./problems/2017-C.md) | 2017年 CUMCM C题：颜色与物质浓度辨识 | 2 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-C/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-C/outstanding/C002.pdf) | 问题 1 | 评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6)；规划优化模型(CH3) |
+| [2017-D](./problems/2017-D.md) | 2017年 CUMCM D题：巡检线路的排班 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-D/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2017-D/outstanding/D002.pdf) | 问题1 | 规划优化模型(CH3)；图论与复杂网络(CH4)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
 
 ## 2018
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2018-A](./problems/2018-A.md) | 2018年 CUMCM A题：高温作业专用服装设计 | 2 | 问题 2 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
-| [2018-B](./problems/2018-B.md) | 2018年 CUMCM B题：赛题 | 3 | 问题 1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
-| [2018-C](./problems/2018-C.md) | 2018年 CUMCM C题：大型百货商场会员画像描绘 | 5 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6) |
-| [2018-D](./problems/2018-D.md) | 2018年 CUMCM D题：汽车总装线的配置 | 8 | 问题 一 | 规划优化模型(CH3)；微分方程与动力系统(CH2)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2018-A](./problems/2018-A.md) | 2018年 CUMCM A题：高温作业专用服装设计 | 2 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-A/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-A/outstanding/A466.pdf) | 问题 2 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
+| [2018-B](./problems/2018-B.md) | 2018年 CUMCM B题：赛题 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-B/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-B/outstanding/B203.pdf) | 问题 1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
+| [2018-C](./problems/2018-C.md) | 2018年 CUMCM C题：大型百货商场会员画像描绘 | 5 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-C/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-C/outstanding/C008.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6) |
+| [2018-D](./problems/2018-D.md) | 2018年 CUMCM D题：汽车总装线的配置 | 8 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-D/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2018-D/outstanding/D014.pdf) | 问题 一 | 规划优化模型(CH3)；微分方程与动力系统(CH2)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
 
 ## 2019
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2019-A](./problems/2019-A.md) | 2019年 CUMCM A题：高压油管的压力控制 | 3 | 问题1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；几何与方程模型(CH1)；规划优化模型(CH3) |
-| [2019-B](./problems/2019-B.md) | 2019年 CUMCM B题：同心协力”策略研究 | 4 | 问题 1 | 评价与决策模型(CH7)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
-| [2019-C](./problems/2019-C.md) | 2019年 CUMCM C题：赛题 | 4 | 问题 1 | 评价与决策模型(CH7)；规划优化模型(CH3)；微分方程与动力系统(CH2)；数据处理与拟合(CH6) |
-| [2019-D](./problems/2019-D.md) | 2019年 CUMCM D题：空气质量数据的校准 | 3 | 问题 1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；机器学习与统计(CH9)；评价与决策模型(CH7) |
-| [2019-E](./problems/2019-E.md) | 2019年 CUMCM E题：薄利多销”分析 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2019-A](./problems/2019-A.md) | 2019年 CUMCM A题：高压油管的压力控制 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-A/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-A/outstanding/A023.pdf) | 问题1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；几何与方程模型(CH1)；规划优化模型(CH3) |
+| [2019-B](./problems/2019-B.md) | 2019年 CUMCM B题：同心协力”策略研究 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-B/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-B/outstanding/B047.pdf) | 问题 1 | 评价与决策模型(CH7)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
+| [2019-C](./problems/2019-C.md) | 2019年 CUMCM C题：赛题 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-C/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-C/outstanding/C044.pdf) | 问题 1 | 评价与决策模型(CH7)；规划优化模型(CH3)；微分方程与动力系统(CH2)；数据处理与拟合(CH6) |
+| [2019-D](./problems/2019-D.md) | 2019年 CUMCM D题：空气质量数据的校准 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-D/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-D/outstanding/D001.pdf) | 问题 1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；机器学习与统计(CH9)；评价与决策模型(CH7) |
+| [2019-E](./problems/2019-E.md) | 2019年 CUMCM E题：薄利多销”分析 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-E/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2019-E/outstanding/E003.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
 
 ## 2020
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2020-A](./problems/2020-A.md) | 2020年 CUMCM A题：炉温曲线 | 4 | 问题1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；规划优化模型(CH3)；评价与决策模型(CH7) |
-| [2020-B](./problems/2020-B.md) | 2020年 CUMCM B题：穿越沙漠 | 13 | 问题 1 | 规划优化模型(CH3)；时间序列模型(CH8)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
-| [2020-C](./problems/2020-C.md) | 2020年 CUMCM C题：中小微企业的信贷决策 | 10 | 问题 1 | 评价与决策模型(CH7)；规划优化模型(CH3)；数据处理与拟合(CH6)；机器学习与统计(CH9) |
-| [2020-D](./problems/2020-D.md) | 2020年 CUMCM D题：接触式轮廓仪的自动标注 | 4 | 问题1 | 几何与方程模型(CH1)；评价与决策模型(CH7)；机器学习与统计(CH9)；图像文本与信号(CH10) |
-| [2020-E](./problems/2020-E.md) | 2020年 CUMCM E题：校园供水系统智能管理 | 3 | 问题 1 | 规划优化模型(CH3)；微分方程与动力系统(CH2)；评价与决策模型(CH7)；机器学习与统计(CH9) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2020-A](./problems/2020-A.md) | 2020年 CUMCM A题：炉温曲线 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-A/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-A/outstanding/A070.pdf) | 问题1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；规划优化模型(CH3)；评价与决策模型(CH7) |
+| [2020-B](./problems/2020-B.md) | 2020年 CUMCM B题：穿越沙漠 | 13 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-B/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-B/outstanding/B108.pdf) | 问题 1 | 规划优化模型(CH3)；时间序列模型(CH8)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
+| [2020-C](./problems/2020-C.md) | 2020年 CUMCM C题：中小微企业的信贷决策 | 10 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-C/advanced/main.pdf) / [O×5](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-C/outstanding/C227.pdf) | 问题 1 | 评价与决策模型(CH7)；规划优化模型(CH3)；数据处理与拟合(CH6)；机器学习与统计(CH9) |
+| [2020-D](./problems/2020-D.md) | 2020年 CUMCM D题：接触式轮廓仪的自动标注 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-D/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-D/outstanding/D008.pdf) | 问题1 | 几何与方程模型(CH1)；评价与决策模型(CH7)；机器学习与统计(CH9)；图像文本与信号(CH10) |
+| [2020-E](./problems/2020-E.md) | 2020年 CUMCM E题：校园供水系统智能管理 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-E/advanced/main.pdf) / [O×2](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2020-E/outstanding/E029.pdf) | 问题 1 | 规划优化模型(CH3)；微分方程与动力系统(CH2)；评价与决策模型(CH7)；机器学习与统计(CH9) |
 
 ## 2021
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2021-A](./problems/2021-A.md) | 2021年 CUMCM A题：FAST”主动反射面的形状调节 | 11 | 问题 1 | 几何与方程模型(CH1)；评价与决策模型(CH7)；微分方程与动力系统(CH2)；规划优化模型(CH3) |
-| [2021-B](./problems/2021-B.md) | 2021年 CUMCM B题：乙醇偶合制备 C4 烯烃 | 4 | 问题 1 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
-| [2021-C](./problems/2021-C.md) | 2021年 CUMCM C题：生产企业原材料的订购与运输 | 6 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；时间序列模型(CH8) |
-| [2021-D](./problems/2021-D.md) | 2021年 CUMCM D题：连铸切割的 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
-| [2021-E](./problems/2021-E.md) | 2021年 CUMCM E题：中药材的鉴别 | 4 | 问题 1 | 微分方程与动力系统(CH2)；评价与决策模型(CH7)；数据处理与拟合(CH6)；机器学习与统计(CH9) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2021-A](./problems/2021-A.md) | 2021年 CUMCM A题：FAST”主动反射面的形状调节 | 11 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-A/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-A/outstanding/A028.pdf) | 问题 1 | 几何与方程模型(CH1)；评价与决策模型(CH7)；微分方程与动力系统(CH2)；规划优化模型(CH3) |
+| [2021-B](./problems/2021-B.md) | 2021年 CUMCM B题：乙醇偶合制备 C4 烯烃 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-B/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-B/outstanding/B007.pdf) | 问题 1 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
+| [2021-C](./problems/2021-C.md) | 2021年 CUMCM C题：生产企业原材料的订购与运输 | 6 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-C/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-C/outstanding/C006.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；时间序列模型(CH8) |
+| [2021-D](./problems/2021-D.md) | 2021年 CUMCM D题：连铸切割的 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-D/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-D/outstanding/D017.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
+| [2021-E](./problems/2021-E.md) | 2021年 CUMCM E题：中药材的鉴别 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-E/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2021-E/outstanding/E014.pdf) | 问题 1 | 微分方程与动力系统(CH2)；评价与决策模型(CH7)；数据处理与拟合(CH6)；机器学习与统计(CH9) |
 
 ## 2022
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2022-A](./problems/2022-A.md) | 2022年 CUMCM A题：波浪能最大输出功率设计 | 4 | 问题1 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；几何与方程模型(CH1)；评价与决策模型(CH7) |
-| [2022-B](./problems/2022-B.md) | 2022年 CUMCM B题：无人机遂行编队飞行中的纯方位无源定位 | 2 | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
-| [2022-C](./problems/2022-C.md) | 2022年 CUMCM C题：古代玻璃制品的成分分析与鉴别 | 4 | 问题1 | 机器学习与统计(CH9)；微分方程与动力系统(CH2)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
-| [2022-D](./problems/2022-D.md) | 2022年 CUMCM D题：气象报文信息卫星通信传输 | 3 | 问题 1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；评价与决策模型(CH7) |
-| [2022-E](./problems/2022-E.md) | 2022年 CUMCM E题：小批量物料的生产安排 | 4 | 问题1 | 数据处理与拟合(CH6)；评价与决策模型(CH7)；时间序列模型(CH8)；规划优化模型(CH3) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2022-A](./problems/2022-A.md) | 2022年 CUMCM A题：波浪能最大输出功率设计 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-A/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-A/outstanding/A001.pdf) | 问题1 | 微分方程与动力系统(CH2)；规划优化模型(CH3)；几何与方程模型(CH1)；评价与决策模型(CH7) |
+| [2022-B](./problems/2022-B.md) | 2022年 CUMCM B题：无人机遂行编队飞行中的纯方位无源定位 | 2 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-B/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-B/outstanding/B030.pdf) | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6)；评价与决策模型(CH7) |
+| [2022-C](./problems/2022-C.md) | 2022年 CUMCM C题：古代玻璃制品的成分分析与鉴别 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-C/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-C/outstanding/C065.pdf) | 问题1 | 机器学习与统计(CH9)；微分方程与动力系统(CH2)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
+| [2022-D](./problems/2022-D.md) | 2022年 CUMCM D题：气象报文信息卫星通信传输 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-D/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-D/outstanding/D999.pdf) | 问题 1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；评价与决策模型(CH7) |
+| [2022-E](./problems/2022-E.md) | 2022年 CUMCM E题：小批量物料的生产安排 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-E/advanced/main.pdf) / [O×2](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2022-E/outstanding/E014.pdf) | 问题1 | 数据处理与拟合(CH6)；评价与决策模型(CH7)；时间序列模型(CH8)；规划优化模型(CH3) |
 
 ## 2023
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2023-A](./problems/2023-A.md) | 2023年 CUMCM A题：定日镜场的优化设计 | 3 | 问题1 | 几何与方程模型(CH1)；微分方程与动力系统(CH2)；规划优化模型(CH3)；数据处理与拟合(CH6) |
-| [2023-B](./problems/2023-B.md) | 2023年 CUMCM B题：多波束测线问题 | 4 | 问题1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
-| [2023-C](./problems/2023-C.md) | 2023年 CUMCM C题：蔬菜类商品的自动定价与补货决策 | 4 | 问题1 | 规划优化模型(CH3)；评价与决策模型(CH7)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
-| [2023-D](./problems/2023-D.md) | 2023年 CUMCM D题：圈养湖羊的空间利用率 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；时间序列模型(CH8)；几何与方程模型(CH1) |
-| [2023-E](./problems/2023-E.md) | 2023年 CUMCM E题：黄河水沙监测数据分析 | 4 | 问题1 | 规划优化模型(CH3)；微分方程与动力系统(CH2)；时间序列模型(CH8)；数据处理与拟合(CH6) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2023-A](./problems/2023-A.md) | 2023年 CUMCM A题：定日镜场的优化设计 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-A/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-A/outstanding/A092.pdf) | 问题1 | 几何与方程模型(CH1)；微分方程与动力系统(CH2)；规划优化模型(CH3)；数据处理与拟合(CH6) |
+| [2023-B](./problems/2023-B.md) | 2023年 CUMCM B题：多波束测线问题 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-B/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-B/outstanding/B226.pdf) | 问题1 | 微分方程与动力系统(CH2)；几何与方程模型(CH1)；规划优化模型(CH3)；数据处理与拟合(CH6) |
+| [2023-C](./problems/2023-C.md) | 2023年 CUMCM C题：蔬菜类商品的自动定价与补货决策 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-C/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-C/outstanding/C050.pdf) | 问题1 | 规划优化模型(CH3)；评价与决策模型(CH7)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
+| [2023-D](./problems/2023-D.md) | 2023年 CUMCM D题：圈养湖羊的空间利用率 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-D/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-D/outstanding/D039.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；时间序列模型(CH8)；几何与方程模型(CH1) |
+| [2023-E](./problems/2023-E.md) | 2023年 CUMCM E题：黄河水沙监测数据分析 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-E/advanced/main.pdf) / [O×2](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2023-E/outstanding/E032.pdf) | 问题1 | 规划优化模型(CH3)；微分方程与动力系统(CH2)；时间序列模型(CH8)；数据处理与拟合(CH6) |
 
 ## 2024
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2024-A](./problems/2024-A.md) | 2024年 CUMCM A题：板凳龙”  闹元宵 | 5 | 问题 1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；几何与方程模型(CH1)；图论与复杂网络(CH4) |
-| [2024-B](./problems/2024-B.md) | 2024年 CUMCM B题：生产过程中的决策 | 4 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6) |
-| [2024-C](./problems/2024-C.md) | 2024年 CUMCM C题：农作物的种植策略 | 3 | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；时间序列模型(CH8)；数据处理与拟合(CH6) |
-| [2024-D](./problems/2024-D.md) | 2024年 CUMCM D题：反潜航空深弹命中概率 | 3 | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
-| [2024-E](./problems/2024-E.md) | 2024年 CUMCM E题：交通流量管控 | 4 | 问题 1 | 评价与决策模型(CH7)；规划优化模型(CH3)；图论与复杂网络(CH4)；数据处理与拟合(CH6) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2024-A](./problems/2024-A.md) | 2024年 CUMCM A题：板凳龙”  闹元宵 | 5 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-A/advanced/main.pdf) / [O×5](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-A/outstanding/A016.pdf) | 问题 1 | 微分方程与动力系统(CH2)；数据处理与拟合(CH6)；几何与方程模型(CH1)；图论与复杂网络(CH4) |
+| [2024-B](./problems/2024-B.md) | 2024年 CUMCM B题：生产过程中的决策 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-B/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-B/outstanding/B159.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6) |
+| [2024-C](./problems/2024-C.md) | 2024年 CUMCM C题：农作物的种植策略 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-C/advanced/main.pdf) / [O×4](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-C/outstanding/C038.pdf) | 问题 1 | 规划优化模型(CH3)；评价与决策模型(CH7)；时间序列模型(CH8)；数据处理与拟合(CH6) |
+| [2024-D](./problems/2024-D.md) | 2024年 CUMCM D题：反潜航空深弹命中概率 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-D/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-D/outstanding/D033.pdf) | 问题 1 | 几何与方程模型(CH1)；规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6) |
+| [2024-E](./problems/2024-E.md) | 2024年 CUMCM E题：交通流量管控 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-E/advanced/main.pdf) / [O×3](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2024-E/outstanding/E010.pdf) | 问题 1 | 评价与决策模型(CH7)；规划优化模型(CH3)；图论与复杂网络(CH4)；数据处理与拟合(CH6) |
 
 ## 2025
 
-| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |
-|---|---|---:|---|---|
-| [2025-A](./problems/2025-A.md) | 2025年 CUMCM A题：烟幕干扰弹的投放策略 | 5 | 问题1 | 规划优化模型(CH3)；评价与决策模型(CH7)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
-| [2025-B](./problems/2025-B.md) | 2025年 CUMCM B题：碳化硅外延层厚度的确定 | 3 | 问题1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
-| [2025-C](./problems/2025-C.md) | 2025年 CUMCM C题：NIPT 的时点选择与胎儿的异常判定 | 4 | 问题1 | 评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6)；规划优化模型(CH3) |
-| [2025-D](./problems/2025-D.md) | 2025年 CUMCM D题：矿井突水水流漫延模型与逃生方案 | 4 | 问题1 | 微分方程与动力系统(CH2)；图论与复杂网络(CH4)；几何与方程模型(CH1)；规划优化模型(CH3) |
-| [2025-E](./problems/2025-E.md) | 2025年 CUMCM E题：AI 辅助智能体测 | 4 | 问题1 | 图像文本与信号(CH10)；几何与方程模型(CH1)；数据处理与拟合(CH6)；图论与复杂网络(CH4) |
+| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |
+|---|---|---:|---|---|---|
+| [2025-A](./problems/2025-A.md) | 2025年 CUMCM A题：烟幕干扰弹的投放策略 | 5 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-A/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-A/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-A/outstanding/A196.pdf) | 问题1 | 规划优化模型(CH3)；评价与决策模型(CH7)；几何与方程模型(CH1)；数据处理与拟合(CH6) |
+| [2025-B](./problems/2025-B.md) | 2025年 CUMCM B题：碳化硅外延层厚度的确定 | 3 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-B/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-B/advanced/main.pdf) / [O×2](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-B/outstanding/B060.pdf) | 问题1 | 规划优化模型(CH3)；评价与决策模型(CH7)；数据处理与拟合(CH6)；图像文本与信号(CH10) |
+| [2025-C](./problems/2025-C.md) | 2025年 CUMCM C题：NIPT 的时点选择与胎儿的异常判定 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-C/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-C/advanced/main.pdf) / [O×2](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-C/outstanding/C023.pdf) | 问题1 | 评价与决策模型(CH7)；机器学习与统计(CH9)；数据处理与拟合(CH6)；规划优化模型(CH3) |
+| [2025-D](./problems/2025-D.md) | 2025年 CUMCM D题：矿井突水水流漫延模型与逃生方案 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-D/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-D/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-D/outstanding/D037.pdf) | 问题1 | 微分方程与动力系统(CH2)；图论与复杂网络(CH4)；几何与方程模型(CH1)；规划优化模型(CH3) |
+| [2025-E](./problems/2025-E.md) | 2025年 CUMCM E题：AI 辅助智能体测 | 4 | [B](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-E/baseline/main.pdf) / [A](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-E/advanced/main.pdf) / [O×1](https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master/pdfs/cumcm/2025-E/outstanding/E030.pdf) | 问题1 | 图像文本与信号(CH10)；几何与方程模型(CH1)；数据处理与拟合(CH6)；图论与复杂网络(CH4) |

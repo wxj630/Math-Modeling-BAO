@@ -1,6 +1,6 @@
 # LLM 时代 Outstanding 论文有什么变化
 
-这里的“LLM 时代”主要指 2023、2024、2025 这些赛季之后的论文风格。当前本地已经把 2023-2025 年 MCM/CUMCM ABC 共 18 篇 O 奖复现纳入统一 runner；这篇文档仍然用若干代表题讲共性，不把它写成所有 O 奖论文的逐篇文学评论。
+这里的“LLM 时代”主要指 2023、2024、2025 这些赛季之后的论文风格。当前正式口径把 2023-2025 年 MCM ABC 共 9 篇纳入 Batch 2；CUMCM 2023-2025 ABC 保留为候选材料。这篇文档用代表题讲共性，不把它写成所有 O 奖论文的逐篇文学评论。
 
 ## 一句话结论
 
@@ -62,7 +62,7 @@ MCM 2024-C 是最干净的例子：官方给了 Wimbledon 逐分 CSV，所以 ad
 - 结果能和论文表格或图形对照。
 - 灵敏度分析、稳定性分析或鲁棒性检验能重复。
 
-这正是我们写 B/A/O 教程时要强调的：不是只写论文，也要能把 `result.json`、图表和关键表格追出来。当前 18 篇的统一审计入口见 [outstanding-reproduction-audit-2023-2025-abc.md](./outstanding-reproduction-audit-2023-2025-abc.md)。
+这正是我们写 B/A/O 教程时要强调的：不是只写论文，也要能把 `result.json`、图表和关键表格追出来。当前 9 篇现代正式样板的统一审计入口见 [outstanding-reproduction-audit-2023-2025-abc.md](./outstanding-reproduction-audit-2023-2025-abc.md)。
 
 ## LLM 时代的风险
 

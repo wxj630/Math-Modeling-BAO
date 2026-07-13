@@ -2,47 +2,45 @@
 
 Outstanding solution 是按“整道赛题”打磨出来的论文级版本。它不是把每个小问单独加长，而是选择一篇官方获奖论文，复现其中可验证的模型链、代码、实验结果和论文级分析。
 
-## 已落地样例
+当前正式口径是 **15 篇 O 奖复现**：Batch 1 的 6 篇用于理解三大题型在 MCM/CUMCM 中的基本形态，Batch 2 的 9 篇用于观察 2023-2025 MCM ABC 题在 LLM 时代之后的论文风格。
 
-当前已经为 2025 年可验证题建立了“一题一篇”的第一批 outstanding 复现。MCM/ICM 与 CUMCM 的每道题都选一篇和当前 baseline/advanced 最接近的官方获奖论文；其中 MCM 2025-C 是完整运动员级复现，其余题先使用当前已验证的 advanced/real solution 作为计算核，对齐获奖论文模型链。
+## Batch 1：三大题型 × MCM/CUMCM
 
-| 赛题 | 论文编号 | 论文题名 | 复现状态 |
+| 题型 | 赛题 | 论文编号 | 文档 |
 |---|---|---|---|
-| MCM/ICM 2025-A | `2501909` | `Stair Wear: Traces of History` | WVM/WDM paper-guided reproduction |
-| MCM/ICM 2025-B | `2504448` | `Sustainable Tourism Management in Juneau` | multi-objective tourism paper-guided reproduction |
-| MCM/ICM 2025-C | `2505964` | `2028 Olympic Medal Predictions Based on Random Forest Model` | athlete-level RF + Monte Carlo reproduction |
-| MCM/ICM 2025-D | `2507692` | `Optimizing Baltimore Multi-Layer Traffic Network Model Based on Graph Theory & Clustering Algorithm` | multilayer traffic network paper-guided reproduction |
-| MCM/ICM 2025-E | `2508861` | `Symphony of Eco-Agriculture` | ecosystem dynamics paper-guided reproduction |
-| MCM/ICM 2025-F | `2517199` | `Data-Driven Policy Effectiveness Evaluation` | cyber policy data-panel paper-guided reproduction |
-| CUMCM 2025-A | `A196` | `多情形下无人机烟幕遮蔽策略的建模与优化研究` | smoke-screen kinematics paper-guided reproduction |
-| CUMCM 2025-B | `B157` | `碳化硅外延层厚度的双光束和多光束干涉法测量研究` | interference thickness paper-guided reproduction |
-| CUMCM 2025-C | `C023` | `基于混合效应模型的NIPT时点优化与胎儿异常判定` | NIPT mixed-effects paper-guided reproduction |
-| CUMCM 2025-D | `D037` | `矿井突水水流漫延模型与逃生方案问题` | mine water-spread graph paper-guided reproduction |
-| CUMCM 2025-E | `E030` | `基于姿态识别的AI辅助智能体测研究` | pose recognition paper-guided reproduction |
+| 微分方程/动态系统 | MCM 2015-A Ebola | `35532` | [B/A/O 案例](/best_practie/bao-mcm-2015-a-ebola) |
+| 微分方程/动态系统 | CUMCM 2018-A 高温作业服装 | `A466` | [B/A/O 案例](/best_practie/bao-cumcm-2018-a-heat-clothing) |
+| 运筹优化 | MCM 2017-B Merge After Toll | `69427` | [B/A/O 案例](/best_practie/bao-mcm-2017-b-toll-plaza) |
+| 运筹优化 | CUMCM 2020-B 穿越沙漠 | `B108` | [B/A/O 案例](/best_practie/bao-cumcm-2020-b-desert-crossing) |
+| 数据建模 | MCM 2019-C Opioids | `1901213` | [B/A/O 案例](/best_practie/bao-mcm-2019-c-opioid) |
+| 数据建模 | CUMCM 2020-C 中小微企业信贷 | `C227` | [B/A/O 案例](/best_practie/bao-cumcm-2020-c-credit) |
 
-2025-C 复现了论文的核心思路：先在运动员/团队参赛条目上构造历史能力特征，再按运动训练随机森林分类器，最后通过 Monte Carlo 把单项概率分配成国家奖牌榜；同时补充 USA Swimming、CHN Table Tennis 的项目数量弹性和 Great Coach 候选分析。
+## Batch 2：2023-2025 MCM ABC
 
-所有 2025 年可验证题的论文选择记录在 [Outstanding 覆盖清单](/reference/outstanding-coverage-audit)。尚未复现的题目只进入清单，不会在赛题页里显示成已完成版本。
+| 年份 | A：动态/机制 | B：优化/决策 | C：数据建模 |
+|---|---|---|---|
+| 2023 | `2309229` [Plant Community](/best_practie/bao-mcm-2023-a-plant-community) | `2315379` [Maasai Mara](/best_practie/bao-mcm-2023-b-maasai-mara) | `2307946` [Wordle](/best_practie/bao-mcm-2023-c-wordle) |
+| 2024 | `2407093` [Lamprey](/best_practie/bao-mcm-2024-a-lamprey) | `2419984` [Submersible Search](/best_practie/bao-mcm-2024-b-submersible-search) | `2401298` [Tennis Momentum](/best_practie/bao-mcm-2024-c-tennis-momentum) |
+| 2025 | `2501909` [Stair Wear](/best_practie/bao-mcm-2025-a-stair-wear) | `2504448` [Juneau Tourism](/best_practie/bao-mcm-2025-b-juneau-tourism) | `2505964` [Olympic Medals](/best_practie/bao-mcm-2025-c-olympic-medals) |
 
-MCM/ICM 运行命令：
+## 运行正式复现
+
+运行正式 15 篇：
 
 ```bash
-python mcm/outstanding_solutions/2025/A/2501909/solution.py
-python mcm/outstanding_solutions/2025/B/2504448/solution.py
-python mcm/outstanding_solutions/2025/C/2505964/solution.py
-python mcm/outstanding_solutions/2025/D/2507692/solution.py
-python mcm/outstanding_solutions/2025/E/2508861/solution.py
-python mcm/outstanding_solutions/2025/F/2517199/solution.py
+python tools/run_outstanding_reproductions.py --formal --keep-going
 ```
 
-CUMCM 运行命令：
+只运行 Batch 1：
 
 ```bash
-python cumcm/outstanding_solutions/2025/A/A196/solution.py
-python cumcm/outstanding_solutions/2025/B/B157/solution.py
-python cumcm/outstanding_solutions/2025/C/C023/solution.py
-python cumcm/outstanding_solutions/2025/D/D037/solution.py
-python cumcm/outstanding_solutions/2025/E/E030/solution.py
+python tools/run_outstanding_reproductions.py --batch 1 --keep-going
+```
+
+只运行 Batch 2：
+
+```bash
+python tools/run_outstanding_reproductions.py --batch 2 --keep-going
 ```
 
 ## 目录约定
@@ -63,7 +61,7 @@ outstanding_solutions/<year>/<code>/
     artifacts/
 ```
 
-同一道题可以有多篇获奖论文复现，先用 `outstanding_solution_index.csv` 决定教程页展示哪一篇作为当前主样例。
+同一道题可以有多篇获奖论文 PDF，但当前正式复现只认一篇主样例。其它 PDF 作为阅读和后续复现候选，放在赛题索引的 `BAO PDF` 列和 [PDF 下载清单](/reference/report-pdf-library) 中。
 
 ## 进入 outstanding 前的检查
 
@@ -84,7 +82,3 @@ outstanding_solutions/<year>/<code>/
 | 鲁棒性 | 加入参数敏感性、交叉验证、留出评估、置信区间、极端情景或误差传播。 |
 | 可视化 | 用一到三张关键图讲清主结果，不堆图，不让表格淹没结论。 |
 | 审计 | 明确哪些结论来自官方数据，哪些来自假设，哪些只是情景分析。 |
-
-## 教程中的预留位
-
-没有复现的赛题页仍会保留 outstanding 位置。补写某道题时，优先选择 A/B/C 这类可验证题型：微分方程、运筹优化、数据建模、仿真或可计算决策问题。社会科学论述型题目可以等可验证样例足够多之后再处理。

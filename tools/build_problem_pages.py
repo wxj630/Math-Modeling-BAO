@@ -10,6 +10,24 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 GITHUB_BLOB = "https://github.com/wxj630/Math-Modeling-BAO/blob/main/"
+REPORT_PDF_MANIFEST = DOCS / "public" / "reference" / "report-pdf-manifest.csv"
+FORMAL_OUTSTANDING_PAPERS = {
+    ("mcm", "2015-A"): "35532",
+    ("cumcm", "2018-A"): "A466",
+    ("mcm", "2017-B"): "69427",
+    ("cumcm", "2020-B"): "B108",
+    ("mcm", "2019-C"): "1901213",
+    ("cumcm", "2020-C"): "C227",
+    ("mcm", "2023-A"): "2309229",
+    ("mcm", "2023-B"): "2315379",
+    ("mcm", "2023-C"): "2307946",
+    ("mcm", "2024-A"): "2407093",
+    ("mcm", "2024-B"): "2419984",
+    ("mcm", "2024-C"): "2401298",
+    ("mcm", "2025-A"): "2501909",
+    ("mcm", "2025-B"): "2504448",
+    ("mcm", "2025-C"): "2505964",
+}
 
 
 def read_csv(path: str) -> list[dict[str, str]]:
@@ -67,6 +85,87 @@ def repo_link(track: str, label: str, path: str | None) -> str:
     if not path:
         return "—"
     return f"[{label}]({GITHUB_BLOB}{quote(path, safe='/._-')})"
+
+
+def track_contest(track: str) -> str:
+    return "mcm" if track == "mcm-track" else "cumcm"
+
+
+def read_pdf_manifest() -> dict[tuple[str, str], list[dict[str, str]]]:
+    grouped: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
+    if not REPORT_PDF_MANIFEST.exists():
+        return grouped
+    with REPORT_PDF_MANIFEST.open("r", encoding="utf-8-sig", newline="") as file:
+        for row in csv.DictReader(file):
+            pid = f"{row.get('year', '')}-{row.get('problem', '')}"
+            grouped[(row.get("contest", ""), pid)].append(row)
+    level_order = {"baseline": 0, "advanced": 1, "outstanding": 2}
+    for key in grouped:
+        preferred = FORMAL_OUTSTANDING_PAPERS.get(key)
+        grouped[key].sort(
+            key=lambda row: (
+                level_order.get(row.get("level", ""), 9),
+                0 if row.get("entry_id") == preferred else 1,
+                row.get("entry_id", ""),
+            )
+        )
+    return grouped
+
+
+def pdf_link(row: dict[str, str], label: str) -> str:
+    url = row.get("public_url") or ""
+    if not url:
+        return label
+    return f"[{label}]({url})"
+
+
+def pdf_rows(
+    pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None,
+    contest: str,
+    pid: str,
+    level: str,
+) -> list[dict[str, str]]:
+    if not pdf_manifest:
+        return []
+    return [row for row in pdf_manifest.get((contest, pid), []) if row.get("level") == level]
+
+
+def compact_pdf_links(
+    pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None,
+    contest: str,
+    pid: str,
+) -> str:
+    baseline = pdf_rows(pdf_manifest, contest, pid, "baseline")
+    advanced = pdf_rows(pdf_manifest, contest, pid, "advanced")
+    outstanding = pdf_rows(pdf_manifest, contest, pid, "outstanding")
+    links: list[str] = []
+    if baseline:
+        links.append(pdf_link(baseline[0], "B"))
+    if advanced:
+        links.append(pdf_link(advanced[0], "A"))
+    if outstanding:
+        links.append(pdf_link(outstanding[0], f"O×{len(outstanding)}"))
+    return " / ".join(links) or "—"
+
+
+def full_pdf_links(
+    pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None,
+    contest: str,
+    pid: str,
+) -> str:
+    baseline = pdf_rows(pdf_manifest, contest, pid, "baseline")
+    advanced = pdf_rows(pdf_manifest, contest, pid, "advanced")
+    outstanding = pdf_rows(pdf_manifest, contest, pid, "outstanding")
+    links: list[str] = []
+    if baseline:
+        links.append(pdf_link(baseline[0], "Baseline PDF"))
+    if advanced:
+        links.append(pdf_link(advanced[0], "Advanced PDF"))
+    if outstanding:
+        labels = [pdf_link(row, row.get("entry_id", "O")) for row in outstanding[:6]]
+        suffix = f" 等 {len(outstanding)} 篇" if len(outstanding) > 6 else ""
+        links.append("Outstanding PDF：" + "、".join(labels) + suffix)
+    return "；".join(links) or "见 PDF 下载清单"
 
 
 def qkey(value: str | None) -> str:
@@ -440,6 +539,7 @@ def build_problem_page(
     questions: list[dict[str, str]],
     baselines: dict[str, dict[str, str]],
     outstanding: dict[str, str] | None = None,
+    pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None = None,
 ) -> str:
     pid = problem["problem_id"]
     title = problem["title"]
@@ -448,6 +548,7 @@ def build_problem_page(
         sorted({row.get("method", "") for row in baselines.values() if row.get("method")})
     )
     source_text = "；".join(sorted({row.get("source_type", "") for row in questions if row.get("source_type")}))
+    contest = track_contest(track)
 
     lines: list[str] = [
         f"# {pid} {title}",
@@ -481,6 +582,7 @@ def build_problem_page(
             f"| 小问数 | {total} |",
             f"| 推荐模型族 | {cell(model_text) or '见各小问方法'} |",
             f"| 数据来源 | {cell(source_text) or '见各小问报告'} |",
+            f"| BAO PDF | {full_pdf_links(pdf_manifest, contest, pid)} |",
             "",
         ]
     )
@@ -548,11 +650,13 @@ def build_index_page(
     problems: list[dict[str, str]],
     qgroups: dict[str, list[dict[str, str]]],
     bgroups: dict[str, dict[str, dict[str, str]]],
+    pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None = None,
 ) -> str:
+    contest = track_contest(track)
     lines = [
         f"# {title}",
         "",
-        "这个索引以完整赛题为入口。进入某个赛题页后，再沿着小问递进链查看 baseline、advanced、实验结果和 outstanding 预留位。",
+        "这个索引以完整赛题为入口。进入某个赛题页后，再沿着小问递进链查看 baseline、advanced、实验结果和 outstanding 预留位；PDF 材料直接并入每道赛题的 BAO PDF 列。",
         "",
     ]
 
@@ -561,7 +665,7 @@ def build_index_page(
         by_year[problem["year"]].append(problem)
 
     for year in sorted(by_year):
-        lines.extend([f"## {year}", "", "| 赛题 | 题名 | 小问 | 第一问入口 | 模型/主题 |", "|---|---|---:|---|---|"])
+        lines.extend([f"## {year}", "", "| 赛题 | 题名 | 小问 | BAO PDF | 第一问入口 | 模型/主题 |", "|---|---|---:|---|---|---|"])
         for problem in sorted(by_year[year], key=lambda row: row["problem_id"]):
             pid = problem["problem_id"]
             questions = sorted(qgroups.get(pid, []), key=qsort_key)
@@ -570,7 +674,7 @@ def build_index_page(
                 sorted({row.get("method", "") for row in bgroups.get(pid, {}).values() if row.get("method")})
             )
             lines.append(
-                f"| [{pid}](./problems/{pid}.md) | {cell(problem['title'])} | {len(questions)} | {cell(first)} | {clip(model, 95)} |"
+                f"| [{pid}](./problems/{pid}.md) | {cell(problem['title'])} | {len(questions)} | {compact_pdf_links(pdf_manifest, contest, pid)} | {cell(first)} | {clip(model, 95)} |"
             )
         lines.append("")
     return "\n".join(lines)
@@ -608,31 +712,47 @@ def build_track(
     question_csv: str,
     baseline_csv: str,
     outstanding_csv: str | None = None,
+    index_only: bool = False,
 ) -> tuple[int, int]:
     problems = read_csv(problem_csv)
     questions = read_csv(question_csv)
     baselines = read_csv(baseline_csv)
     outstanding = group_outstanding(read_optional_csv(outstanding_csv)) if outstanding_csv else {}
+    pdf_manifest = read_pdf_manifest()
     qgroups = group_by_problem(questions)
     bgroups = group_baselines(baselines)
 
     track_dir = DOCS / track
     problem_dir = track_dir / "problems"
-    problem_dir.mkdir(parents=True, exist_ok=True)
-    for old in problem_dir.glob("*.md"):
-        old.unlink()
+    if not index_only:
+        problem_dir.mkdir(parents=True, exist_ok=True)
+        for old in problem_dir.glob("*.md"):
+            old.unlink()
 
-    for problem in problems:
-        pid = problem["problem_id"]
-        page = build_problem_page(track, problem, qgroups.get(pid, []), bgroups.get(pid, {}), outstanding.get(pid))
-        (problem_dir / f"{pid}.md").write_text(page.rstrip() + "\n", encoding="utf-8")
+        for problem in problems:
+            pid = problem["problem_id"]
+            page = build_problem_page(
+                track,
+                problem,
+                qgroups.get(pid, []),
+                bgroups.get(pid, {}),
+                outstanding.get(pid),
+                pdf_manifest,
+            )
+            (problem_dir / f"{pid}.md").write_text(page.rstrip() + "\n", encoding="utf-8")
 
-    index = build_index_page(track, title, problems, qgroups, bgroups)
+    index = build_index_page(track, title, problems, qgroups, bgroups, pdf_manifest)
     (track_dir / "problem-index.md").write_text(index.rstrip() + "\n", encoding="utf-8")
     return len(problems), sum(len(rows) for rows in qgroups.values())
 
 
 def main() -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--index-only", action="store_true", help="Only rebuild track problem-index.md files.")
+    args = parser.parse_args()
+
     mcm_count, mcm_questions = build_track(
         "mcm-track",
         "MCM/ICM 赛题整体索引",
@@ -640,6 +760,7 @@ def main() -> None:
         "mcm/question_solution_index.csv",
         "mcm/generic_baselines/generic_baseline_index.csv",
         "mcm/outstanding_solutions/outstanding_solution_index.csv",
+        index_only=args.index_only,
     )
     cumcm_count, cumcm_questions = build_track(
         "cumcm-track",
@@ -648,6 +769,7 @@ def main() -> None:
         "cumcm/question_solution_index.csv",
         "cumcm/generic_baselines/generic_baseline_index.csv",
         "cumcm/outstanding_solutions/outstanding_solution_index.csv",
+        index_only=args.index_only,
     )
     print(f"MCM/ICM: {mcm_count} problems, {mcm_questions} questions")
     print(f"CUMCM: {cumcm_count} problems, {cumcm_questions} questions")

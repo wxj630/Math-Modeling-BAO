@@ -33,15 +33,10 @@ python mcm/scripts/verify_real_data_integration.py
 python mcm/scripts/archive_generic_baselines.py --all
 ```
 
-运行已复现的 outstanding 获奖论文样例：
+运行正式 outstanding 获奖论文复现：
 
 ```bash
-python mcm/outstanding_solutions/2025/A/2501909/solution.py
-python mcm/outstanding_solutions/2025/B/2504448/solution.py
-python mcm/outstanding_solutions/2025/C/2505964/solution.py
-python mcm/outstanding_solutions/2025/D/2507692/solution.py
-python mcm/outstanding_solutions/2025/E/2508861/solution.py
-python mcm/outstanding_solutions/2025/F/2517199/solution.py
+python tools/run_outstanding_reproductions.py --formal --keep-going
 ```
 
 ## 运行 CUMCM 解法
@@ -70,14 +65,16 @@ python cumcm/scripts/verify_attachment_integration.py
 python cumcm/scripts/archive_generic_baselines.py --all
 ```
 
-运行已复现的 outstanding 获奖论文样例：
+只运行 Batch 1（三大题型 × MCM/CUMCM）：
 
 ```bash
-python cumcm/outstanding_solutions/2025/A/A196/solution.py
-python cumcm/outstanding_solutions/2025/B/B157/solution.py
-python cumcm/outstanding_solutions/2025/C/C023/solution.py
-python cumcm/outstanding_solutions/2025/D/D037/solution.py
-python cumcm/outstanding_solutions/2025/E/E030/solution.py
+python tools/run_outstanding_reproductions.py --batch 1 --keep-going
+```
+
+只运行 Batch 2（2023-2025 MCM ABC）：
+
+```bash
+python tools/run_outstanding_reproductions.py --batch 2 --keep-going
 ```
 
 ## 运行教程站
@@ -102,7 +99,13 @@ npm run docs:build
 
 ## 重建赛题页
 
-赛题整体索引和每道赛题页由现有 CSV 生成，不会重跑实验：
+只重建赛题整体索引，不覆盖单题页面：
+
+```bash
+python tools/build_problem_pages.py --index-only
+```
+
+完整重建赛题整体索引和每道赛题页，不会重跑实验：
 
 ```bash
 python tools/build_problem_pages.py
