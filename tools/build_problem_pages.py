@@ -187,6 +187,29 @@ def bao_pdf_block(
     ]
 
 
+def official_problem_block(track: str, problem: dict[str, str], questions: list[dict[str, str]]) -> list[str]:
+    problem_path = problem.get("problem_path")
+    lines = [
+        "## 官方题面与问题",
+        "",
+        f"- 完整题面：{repo_link(track, 'problem.md', problem_path)}",
+        "",
+    ]
+
+    if questions:
+        lines.extend(["| 小问 | 官方任务摘要 |", "|---|---|"])
+        for row in questions:
+            label = question_label(row)
+            statement = row.get("statement") or label
+            lines.append(f"| {qkey(row.get('question') or row.get('question_index'))} {cell(label)} | {clip(statement, 210)} |")
+        lines.append("")
+    elif problem.get("core"):
+        lines.extend([readable_sentence(problem["core"]), ""])
+    else:
+        lines.extend(["本页暂未抽取到小问拆解，先从完整题面链接阅读原题。", ""])
+    return lines
+
+
 def qkey(value: str | None) -> str:
     value = (value or "").strip()
     if not value:
@@ -576,6 +599,7 @@ def build_problem_page(
         + (" 和 outstanding 获奖论文复现。" if outstanding else " 和 outstanding 预留位。"),
         "",
     ]
+    lines.extend(official_problem_block(track, problem, questions))
     lines.extend(bao_pdf_block(pdf_manifest, contest, pid))
     lines.extend(["## 整题主线", ""])
 
@@ -601,6 +625,7 @@ def build_problem_page(
             f"| 小问数 | {total} |",
             f"| 推荐模型族 | {cell(model_text) or '见各小问方法'} |",
             f"| 数据来源 | {cell(source_text) or '见各小问报告'} |",
+            "| 官方题面 | 见上方官方题面与问题 |",
             "| BAO PDF | 见上方 BAO PDF 入口 |",
             "",
         ]
