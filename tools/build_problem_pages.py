@@ -148,24 +148,43 @@ def compact_pdf_links(
     return " / ".join(links) or "—"
 
 
-def full_pdf_links(
+def bao_pdf_label(contest: str, pid: str, row: dict[str, str]) -> str:
+    level = row.get("level", "")
+    if level == "baseline":
+        return "Baseline PDF"
+    if level == "advanced":
+        return "Advanced PDF"
+    entry_id = row.get("entry_id") or "Outstanding PDF"
+    if FORMAL_OUTSTANDING_PAPERS.get((contest, pid)) == entry_id:
+        return f"{entry_id}（复现）"
+    return entry_id
+
+
+def bao_pdf_links(
     pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None,
     contest: str,
     pid: str,
+    level: str,
 ) -> str:
-    baseline = pdf_rows(pdf_manifest, contest, pid, "baseline")
-    advanced = pdf_rows(pdf_manifest, contest, pid, "advanced")
-    outstanding = pdf_rows(pdf_manifest, contest, pid, "outstanding")
-    links: list[str] = []
-    if baseline:
-        links.append(pdf_link(baseline[0], "Baseline PDF"))
-    if advanced:
-        links.append(pdf_link(advanced[0], "Advanced PDF"))
-    if outstanding:
-        labels = [pdf_link(row, row.get("entry_id", "O")) for row in outstanding[:6]]
-        suffix = f" 等 {len(outstanding)} 篇" if len(outstanding) > 6 else ""
-        links.append("Outstanding PDF：" + "、".join(labels) + suffix)
-    return "；".join(links) or "见 PDF 下载清单"
+    rows = pdf_rows(pdf_manifest, contest, pid, level)
+    return "、".join(pdf_link(row, bao_pdf_label(contest, pid, row)) for row in rows) or "暂未收录"
+
+
+def bao_pdf_block(
+    pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None,
+    contest: str,
+    pid: str,
+) -> list[str]:
+    return [
+        "## BAO PDF",
+        "",
+        "| 层级 | 完整论文 PDF |",
+        "|---|---|",
+        f"| Baseline | {bao_pdf_links(pdf_manifest, contest, pid, 'baseline')} |",
+        f"| Advanced | {bao_pdf_links(pdf_manifest, contest, pid, 'advanced')} |",
+        f"| Outstanding | {bao_pdf_links(pdf_manifest, contest, pid, 'outstanding')} |",
+        "",
+    ]
 
 
 def qkey(value: str | None) -> str:
@@ -556,9 +575,9 @@ def build_problem_page(
         f"> 这是一个赛题整体入口。先看整题主线，再进入 {total} 个小问的 baseline、advanced"
         + (" 和 outstanding 获奖论文复现。" if outstanding else " 和 outstanding 预留位。"),
         "",
-        "## 整题主线",
-        "",
     ]
+    lines.extend(bao_pdf_block(pdf_manifest, contest, pid))
+    lines.extend(["## 整题主线", ""])
 
     if problem.get("core"):
         lines.extend([readable_sentence(problem["core"]), ""])
@@ -582,7 +601,7 @@ def build_problem_page(
             f"| 小问数 | {total} |",
             f"| 推荐模型族 | {cell(model_text) or '见各小问方法'} |",
             f"| 数据来源 | {cell(source_text) or '见各小问报告'} |",
-            f"| BAO PDF | {full_pdf_links(pdf_manifest, contest, pid)} |",
+            "| BAO PDF | 见上方 BAO PDF 入口 |",
             "",
         ]
     )
