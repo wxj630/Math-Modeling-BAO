@@ -2,127 +2,117 @@
   "problem_id": "2025-B",
   "year": 2025,
   "code": "B",
+  "reproduction_level": "algorithmic",
   "paper_id": "B157",
   "paper_title": "碳化硅外延层厚度的双光束和多光束干涉法测量研究",
   "paper_source_ocr": "Outstanding_Solutions/CUMCM/OCR-results/B157/B157.md",
   "paper_source_pdf": "Outstanding_Solutions/CUMCM/PDF-2025/B157.pdf",
-  "reproduction_scope": "用当前 2025-B advanced 的干涉模型、厚度反演和多光束讨论结果，对齐 B157 的双光束/多光束统一测厚框架。",
+  "reproduction_scope": "独立实现 B157 的 Snell/Fresnel/Cauchy、FFT 初值、非线性最小二乘和 Airy 多光束修正测厚链。",
   "selected_model": {
-    "name": "Snell/Fresnel 干涉模型 + FFT 初值 + 非线性最小二乘 + 多光束修正",
-    "chapter": "Outstanding reproduction of B157"
+    "name": "two-beam interference + Cauchy dispersion + nonlinear least squares + Airy correction"
   },
-  "paper_model_alignment": {
-    "paper_methods": [
-      "Snell 入射角修正",
-      "Fresnel 反射与 Cauchy 色散",
-      "FFT 周期初值",
-      "非线性最小二乘联合拟合",
-      "Airy 多光束修正"
-    ],
-    "repo_kernel": [
-      "数据拟合与回归分析"
+  "data_source": {
+    "type": "official_cumcm_xlsx",
+    "root": "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题",
+    "files": [
+      "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件1.xlsx",
+      "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件2.xlsx",
+      "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件3.xlsx",
+      "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件4.xlsx"
     ]
   },
-  "question_chain": [
+  "single_angle_fits": [
     {
-      "question": "q01",
-      "question_label": "问题1",
-      "tasks": [
-        "如果考虑外延层和衬底界面只有一次反射、透射所产生的干涉条纹的情形（图 1），建立确定外延层厚度的数学模型"
-      ],
-      "selected_model": {
-        "key": "fitting",
-        "name": "数据拟合与回归分析",
-        "chapter": "CH6",
-        "chapter_title": "数据处理与拟合模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
-      },
-      "experiment_result": {
-        "method": "quadratic_least_squares",
-        "coefficients": [
-          2.077919,
-          0.01761,
-          7.8e-05
-        ],
-        "r2": 0.6581379761412045,
-        "mean_abs_error": 2.255123483439905
-      },
-      "result_path": "cumcm/question_results/2025/B/q01/result.json",
-      "report_path": "cumcm/question_reports/2025/B/q01/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/B/q01"
+      "sample": "SiC",
+      "angle_deg": 10.0,
+      "source_file": "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件1.xlsx",
+      "rows": 7468,
+      "fringe_peak_count": 9,
+      "period_cm_minus_1": 122.6985,
+      "fft_peak_initial_thickness_um": 16.014,
+      "two_beam_thickness_um": 15.5109,
+      "two_beam_rmse_pct": 16.4333,
+      "airy_thickness_um": 15.5108,
+      "airy_finesse": 0.8966,
+      "airy_rmse_pct": 16.4328,
+      "multi_beam_detected": false
     },
     {
-      "question": "q02",
-      "question_label": "问题2",
-      "tasks": [
-        "请根据问题1 的数学模型，设计确定外延层厚度的算法",
-        "对附件1 和附件2 提 供的碳化硅晶圆片的光谱实测数据，给出计算结果，并分析结果的可靠性"
-      ],
-      "selected_model": {
-        "key": "fitting",
-        "name": "数据拟合与回归分析",
-        "chapter": "CH6",
-        "chapter_title": "数据处理与拟合模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
-      },
-      "experiment_result": {
-        "method": "quadratic_least_squares",
-        "coefficients": [
-          2.077919,
-          0.01761,
-          7.8e-05
-        ],
-        "r2": 0.6581379761412045,
-        "mean_abs_error": 2.255123483439905
-      },
-      "result_path": "cumcm/question_results/2025/B/q02/result.json",
-      "report_path": "cumcm/question_reports/2025/B/q02/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/B/q02"
+      "sample": "SiC",
+      "angle_deg": 15.0,
+      "source_file": "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件2.xlsx",
+      "rows": 7468,
+      "fringe_peak_count": 11,
+      "period_cm_minus_1": 111.1278,
+      "fft_peak_initial_thickness_um": 17.7319,
+      "two_beam_thickness_um": 17.548,
+      "two_beam_rmse_pct": 17.6696,
+      "airy_thickness_um": 1.9609,
+      "airy_finesse": 11.7781,
+      "airy_rmse_pct": 15.6836,
+      "multi_beam_detected": true
     },
     {
-      "question": "q03",
-      "question_label": "问题3",
-      "tasks": [
-        "请推导产生多光束干涉的必要条件，以及多光束干涉对外延层厚度计算精度可能产 生的影响",
-        "请根据多光束干涉的必要条件，分析附件3 和附件4 提供的硅晶圆片的测试结果是否 出现多光束干涉，给出确定硅外延层厚度计算的数学模型和算法，以及相应的计算结果",
-        "如果你们认为，多光束干涉也会出现在碳化硅晶圆片的测试结果（附件1 和附件2）中， 从而影响到碳化硅外延层厚度计算的精度，请设法消除其影响，并给出消除影响后的计算结 果"
-      ],
-      "selected_model": {
-        "key": "fitting",
-        "name": "数据拟合与回归分析",
-        "chapter": "CH6",
-        "chapter_title": "数据处理与拟合模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH6/第六章-数据处理与拟合模型.md"
-      },
-      "experiment_result": {
-        "method": "quadratic_least_squares",
-        "coefficients": [
-          2.077919,
-          0.01761,
-          7.8e-05
-        ],
-        "r2": 0.6581379761412045,
-        "mean_abs_error": 2.255123483439905
-      },
-      "result_path": "cumcm/question_results/2025/B/q03/result.json",
-      "report_path": "cumcm/question_reports/2025/B/q03/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/B/q03"
+      "sample": "Si",
+      "angle_deg": 10.0,
+      "source_file": "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件3.xlsx",
+      "rows": 7468,
+      "fringe_peak_count": 11,
+      "period_cm_minus_1": 154.5181,
+      "fft_peak_initial_thickness_um": 9.4733,
+      "two_beam_thickness_um": 9.6149,
+      "two_beam_rmse_pct": 12.2041,
+      "airy_thickness_um": 9.6135,
+      "airy_finesse": 0.0583,
+      "airy_rmse_pct": 12.2041,
+      "multi_beam_detected": false
+    },
+    {
+      "sample": "Si",
+      "angle_deg": 15.0,
+      "source_file": "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/B题/附件/附件4.xlsx",
+      "rows": 7468,
+      "fringe_peak_count": 12,
+      "period_cm_minus_1": 127.2791,
+      "fft_peak_initial_thickness_um": 11.5189,
+      "two_beam_thickness_um": 11.5181,
+      "two_beam_rmse_pct": 13.6137,
+      "airy_thickness_um": 11.5194,
+      "airy_finesse": 0.0542,
+      "airy_rmse_pct": 13.6138,
+      "multi_beam_detected": false
+    }
+  ],
+  "joint_thickness_summary": [
+    {
+      "sample": "Si",
+      "joint_two_beam_thickness_um": 10.5145,
+      "joint_airy_corrected_thickness_um": 10.5144,
+      "angle_spread_um": 1.9032,
+      "multi_beam_any_angle": false,
+      "recommended_model": "two-beam least-squares"
+    },
+    {
+      "sample": "SiC",
+      "joint_two_beam_thickness_um": 16.4925,
+      "joint_airy_corrected_thickness_um": 8.9815,
+      "angle_spread_um": 2.0371,
+      "multi_beam_any_angle": true,
+      "recommended_model": "Airy multi-beam correction"
     }
   ],
   "experiment_result": {
-    "implemented_questions": 3,
-    "key_models": "数据拟合与回归分析",
-    "first_question_summary": "method=quadratic_least_squares；coefficients=3项；r2=0.658138；mean_abs_error=2.25512",
-    "artifact_count": 4
+    "sic_recommended_thickness_um": 8.9815,
+    "si_recommended_thickness_um": 10.5145,
+    "multi_beam_samples": [
+      "SiC"
+    ]
   },
-  "difference_from_advanced": "把逐问 advanced 的厚度公式、算法和多光束讨论统一成 B157 的物理反演模型链，并保留逐问实验摘要。",
+  "difference_from_advanced": "从厚度公式和摘要升级为 O 奖级反演流程：直接处理四个光谱附件，先由 FFT/峰间距给初值，再做双角非线性拟合和 Airy 多光束误差校正，并输出残差图验证可靠性。",
   "artifact_paths": {
-    "q01/experiment_table": "cumcm/outstanding_solutions/2025/B/B157/artifacts/q01/experiment_table.csv",
-    "q02/experiment_table": "cumcm/outstanding_solutions/2025/B/B157/artifacts/q02/experiment_table.csv",
-    "q03/experiment_table": "cumcm/outstanding_solutions/2025/B/B157/artifacts/q03/experiment_table.csv",
-    "question_result_summary": "cumcm/outstanding_solutions/2025/B/B157/artifacts/question_result_summary.csv"
-  },
-  "limitations": [
-    "当前复现使用已有 advanced 实验表；原论文中的残差正态性检验和双角联合全参拟合可后续细化。"
-  ]
+    "thickness_fit_table": "cumcm/outstanding_solutions/2025/B/B157/artifacts/thickness_fit_table.csv",
+    "joint_thickness_summary": "cumcm/outstanding_solutions/2025/B/B157/artifacts/joint_thickness_summary.csv",
+    "spectra_fit_plot": "cumcm/outstanding_solutions/2025/B/B157/artifacts/spectra_fit_plot.png",
+    "residual_plot": "cumcm/outstanding_solutions/2025/B/B157/artifacts/residual_plot.png"
+  }
 }

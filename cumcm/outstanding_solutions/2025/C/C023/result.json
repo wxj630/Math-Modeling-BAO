@@ -2,233 +2,428 @@
   "problem_id": "2025-C",
   "year": 2025,
   "code": "C",
+  "reproduction_level": "algorithmic",
   "paper_id": "C023",
   "paper_title": "基于混合效应模型的NIPT时点优化与胎儿异常判定",
   "paper_source_ocr": "Outstanding_Solutions/CUMCM/OCR-results/C023/C023.md",
   "paper_source_pdf": "Outstanding_Solutions/CUMCM/PDF-2025/C023.pdf",
-  "reproduction_scope": "用当前 2025-C advanced 的统计建模、风险分组和异常判定结果，对齐 C023 的混合效应 NIPT 检测时点优化框架。",
+  "reproduction_scope": "独立实现 C023 的 logit(FF) 混合效应近似、BMI 时点优化和女胎异常判定。",
   "selected_model": {
-    "name": "logit 变换 + 线性混合效应模型 + 达标时间优化 + 异常判定",
-    "chapter": "Outstanding reproduction of C023"
+    "name": "logit fetal fraction mixed-effect proxy + BMI timing optimizer + abnormality classifier"
   },
-  "paper_model_alignment": {
-    "paper_methods": [
-      "logit(FF) 响应变量",
-      "GA/BMI 二次项",
-      "随机截距与随机斜率 LMM",
-      "最早达标时间优化",
-      "女胎异常综合判定"
-    ],
-    "repo_kernel": [
-      "机器学习与统计识别",
-      "综合评价与权重决策"
-    ]
+  "data_source": {
+    "type": "official_cumcm_xlsx",
+    "file": "cumcm/source_materials/extracted/2025_SvpohSGacdffe718bcaa3b6e835c03ae3461cab1/C题/附件.xlsx",
+    "male_rows": 1082,
+    "female_rows": 605
   },
-  "question_chain": [
+  "male_lmm": {
+    "method": "logit fetal fraction fixed effects plus empirical random intercept/slope by mother code",
+    "rows": 1082,
+    "mother_count": 267,
+    "rmse_fetal_fraction": 0.01056,
+    "pseudo_r2": 0.90064,
+    "residual_sigma_logit": 0.47707
+  },
+  "male_coefficients": [
     {
-      "question": "q01",
-      "question_label": "问题1",
-      "tasks": [
-        "试分析胎儿Y 染色体浓度与孕妇的孕周数和BMI 等指标的相关特性，给出相应的关系模 型，并检验其显著性"
-      ],
-      "selected_model": {
-        "key": "evaluation",
-        "name": "综合评价与权重决策",
-        "chapter": "CH7",
-        "chapter_title": "权重生成与评价模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
-      },
-      "experiment_result": {
-        "method": "std_weight_topsis",
-        "weights": [
-          0.888593,
-          0.111407
-        ],
-        "scores": [
-          0.998597,
-          0.000156,
-          0.001649,
-          0.003288,
-          0.004929,
-          0.006576,
-          0.008216,
-          0.009857,
-          0.011498,
-          0.01314,
-          0.014786,
-          0.016427,
-          0.018068,
-          0.01971,
-          0.021351,
-          0.022993,
-          0.024638,
-          0.02628,
-          0.027921,
-          0.029563,
-          0.031208,
-          0.03285,
-          0.034491,
-          0.036133,
-          0.037778,
-          0.03942,
-          0.041061,
-          0.042703,
-          0.044348,
-          0.045989,
-          0.047631,
-          0.049273,
-          0.050914,
-          0.052559,
-          0.054201,
-          0.055842,
-          0.057484,
-          0.059129,
-          0.060771,
-          0.062412
-        ],
-        "best_option": 1
-      },
-      "result_path": "cumcm/question_results/2025/C/q01/result.json",
-      "report_path": "cumcm/question_reports/2025/C/q01/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/C/q01"
+      "term": "Intercept",
+      "coef": -2.582519,
+      "std_error": 0.014503,
+      "t_value": -178.0644,
+      "p_value": 0.0
     },
     {
-      "question": "q02",
-      "question_label": "问题2",
-      "tasks": [
-        "临床证明，男胎孕妇的BMI 是影响胎儿Y 染色体浓度的最早达标时间（即浓度达到或超 过4%的最早时间）的主要因素",
-        "试对男胎孕妇的BMI 进行合理分组，给出每组的BMI 区间和最佳NIPT 时点，使得孕妇可能的潜在风险最小，并分析检测误差对结果的影响"
-      ],
-      "selected_model": {
-        "key": "ml",
-        "name": "机器学习与统计识别",
-        "chapter": "CH9",
-        "chapter_title": "机器学习与统计模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
-      },
-      "experiment_result": {
-        "method": "logistic_regression_plus_kmeans",
-        "training_accuracy": 1.0,
-        "cluster_counts": [
-          107,
-          133
-        ]
-      },
-      "result_path": "cumcm/question_results/2025/C/q02/result.json",
-      "report_path": "cumcm/question_reports/2025/C/q02/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/C/q02"
+      "term": "gest_week",
+      "coef": -0.336645,
+      "std_error": 0.197525,
+      "t_value": -1.7043,
+      "p_value": 0.088613
     },
     {
-      "question": "q03",
-      "question_label": "问题3",
-      "tasks": [
-        "男胎Y 染色体浓度达标时间受多种因素(身高、体重、年龄等)的影响，试综合考虑这些因 素、检测误差和胎儿的Y 染色体浓度达标比例（即浓度达到或超过4%的比例），根据男胎孕妇的BMI， 给出合理分组以及每组的最佳NIPT 时点，使得孕妇潜在风险最小，并分析检测误差对结果的影响"
-      ],
-      "selected_model": {
-        "key": "ml",
-        "name": "机器学习与统计识别",
-        "chapter": "CH9",
-        "chapter_title": "机器学习与统计模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH9/第九章-机器学习与统计模型.md"
-      },
-      "experiment_result": {
-        "method": "logistic_regression_plus_kmeans",
-        "training_accuracy": 1.0,
-        "cluster_counts": [
-          129,
-          111
-        ]
-      },
-      "result_path": "cumcm/question_results/2025/C/q03/result.json",
-      "report_path": "cumcm/question_reports/2025/C/q03/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/C/q03"
+      "term": "孕妇BMI",
+      "coef": 0.917274,
+      "std_error": 0.250534,
+      "t_value": 3.6613,
+      "p_value": 0.000263
     },
     {
-      "question": "q04",
-      "question_label": "问题4",
-      "tasks": [
-        "试以女胎孕妇的21 号、18 号和13 号染色体非整倍体（AB 列）为判定结果，综合考虑X 染色体及上述染色体的Z 值、GC 含量、读段数及相关比例、BMI 等因素，给出女胎异常的判定方法",
-        "附录1 附件中各列数据的说明 附录2 Z 值（Z-score） Z 值（Z-score）的计算公式： 𝑍= 𝑋−𝜇 𝜎 其中X 为待检测样本中目标染色体的相对计数比例，𝜇 为正常对照群体中该染色体计数比例的均值，𝜎 为正常群体中该比例的标准差",
-        "在NIPT 中，对于常见染色体非整倍体检测，通常采用Z 值分析方法进 行统计判定",
-        "列 说明 列 说明 A 样本序号 Q 13 号染色体的Z 值 B 孕妇代码 R 18 号染色体的Z 值 C 孕妇年龄 S 21 号染色体的Z 值 D 孕妇身高 T X 染色体的Z 值 E 孕妇体重 U Y 染色体的Z 值（女胎数据此列为空白） F 末次月经时间 V Y 染色体浓度，即Y 染色体游离DNA 片 段的比例（女胎数据此列为空白） G IVF 妊娠方式 W X 染色体浓度（其数值是通过生物信息学在 一定假设下通过数据分析估计得出，可能出 现负值） H 检测时间 X 13 号染色体的GC 含量 I 检测抽血次数 Y 18 号染色体的GC 含量 J 孕妇本次检测时的孕周（周数+天数） Z 21 号染色体的GC 含量 K 孕妇BMI 指标 AA 被过滤掉的读段数占总读段数的比例 L 原始测序数据的总读段数（个） AB 检测出的13 号，18 号，21 号染色体非整 倍体，即数量异常，空白即为无异常 M 总读段数中在参考基因组上比对的比例 AC 孕妇的怀孕次数 N 总读段数中重复读段的比例 AD 孕妇的生产次数 O 总读段数中唯一比对的读段数（个） AE 胎儿是否健康（婴儿出生后的结果） P GC 含量，序列中碱基 G（鸟嘌呤）和 C （胞嘧啶）所占的比例，是测序数据质量 评估中的一个重要指标，正常 GC 含量范 围为40% ~ 60%，GC 含量过高、过低、 或分布异常可能意味着测序质量存在问题"
-      ],
-      "selected_model": {
-        "key": "evaluation",
-        "name": "综合评价与权重决策",
-        "chapter": "CH7",
-        "chapter_title": "权重生成与评价模型",
-        "doc": "../My-Agent/intro-mathmodel/docs/CH7/第7章-权重生成与评价模型.md"
-      },
-      "experiment_result": {
-        "method": "std_weight_topsis",
-        "weights": [
-          0.888593,
-          0.111407
-        ],
-        "scores": [
-          0.998597,
-          0.000156,
-          0.001649,
-          0.003288,
-          0.004929,
-          0.006576,
-          0.008216,
-          0.009857,
-          0.011498,
-          0.01314,
-          0.014786,
-          0.016427,
-          0.018068,
-          0.01971,
-          0.021351,
-          0.022993,
-          0.024638,
-          0.02628,
-          0.027921,
-          0.029563,
-          0.031208,
-          0.03285,
-          0.034491,
-          0.036133,
-          0.037778,
-          0.03942,
-          0.041061,
-          0.042703,
-          0.044348,
-          0.045989,
-          0.047631,
-          0.049273,
-          0.050914,
-          0.052559,
-          0.054201,
-          0.055842,
-          0.057484,
-          0.059129,
-          0.060771,
-          0.062412
-        ],
-        "best_option": 1
-      },
-      "result_path": "cumcm/question_results/2025/C/q04/result.json",
-      "report_path": "cumcm/question_reports/2025/C/q04/report.md",
-      "artifact_dir": "cumcm/question_artifacts/2025/C/q04"
+      "term": "年龄",
+      "coef": -0.050453,
+      "std_error": 0.014659,
+      "t_value": -3.4418,
+      "p_value": 0.0006
+    },
+    {
+      "term": "身高",
+      "coef": 0.314968,
+      "std_error": 0.15391,
+      "t_value": 2.0464,
+      "p_value": 0.040957
+    },
+    {
+      "term": "体重",
+      "coef": -0.648459,
+      "std_error": 0.279353,
+      "t_value": -2.3213,
+      "p_value": 0.020459
+    },
+    {
+      "term": "原始读段数",
+      "coef": -0.073431,
+      "std_error": 0.014992,
+      "t_value": -4.8981,
+      "p_value": 1e-06
+    },
+    {
+      "term": "在参考基因组上比对的比例",
+      "coef": -0.032761,
+      "std_error": 0.015163,
+      "t_value": -2.1606,
+      "p_value": 0.030947
+    },
+    {
+      "term": "重复读段的比例",
+      "coef": 0.042533,
+      "std_error": 0.014928,
+      "t_value": 2.8491,
+      "p_value": 0.004468
+    },
+    {
+      "term": "GC含量",
+      "coef": -0.004746,
+      "std_error": 0.014613,
+      "t_value": -0.3248,
+      "p_value": 0.74541
+    },
+    {
+      "term": "被过滤掉读段数的比例",
+      "coef": 0.042149,
+      "std_error": 0.015236,
+      "t_value": 2.7665,
+      "p_value": 0.005765
+    },
+    {
+      "term": "ga2",
+      "coef": 0.175175,
+      "std_error": 0.143881,
+      "t_value": 1.2175,
+      "p_value": 0.223681
+    },
+    {
+      "term": "bmi2",
+      "coef": -0.588238,
+      "std_error": 0.172498,
+      "t_value": -3.4101,
+      "p_value": 0.000674
+    },
+    {
+      "term": "ga_bmi",
+      "coef": 0.246451,
+      "std_error": 0.17753,
+      "t_value": 1.3882,
+      "p_value": 0.16536
     }
   ],
+  "male_correlations": [
+    {
+      "variable": "gest_week",
+      "spearman_rho": 0.0843,
+      "p_value": 0.005533,
+      "rows": 1082
+    },
+    {
+      "variable": "孕妇BMI",
+      "spearman_rho": -0.155,
+      "p_value": 0.0,
+      "rows": 1082
+    },
+    {
+      "variable": "年龄",
+      "spearman_rho": -0.1172,
+      "p_value": 0.000112,
+      "rows": 1082
+    },
+    {
+      "variable": "身高",
+      "spearman_rho": -0.1011,
+      "p_value": 0.000865,
+      "rows": 1082
+    },
+    {
+      "variable": "体重",
+      "spearman_rho": -0.167,
+      "p_value": 0.0,
+      "rows": 1082
+    },
+    {
+      "variable": "GC含量",
+      "spearman_rho": -0.0166,
+      "p_value": 0.584408,
+      "rows": 1082
+    },
+    {
+      "variable": "被过滤掉读段数的比例",
+      "spearman_rho": 0.086,
+      "p_value": 0.004625,
+      "rows": 1082
+    }
+  ],
+  "bmi_timing": {
+    "method": "BMI quantile groups; choose the earliest week minimizing late-window risk plus model-based nonqualification probability",
+    "threshold": "Y chromosome concentration >= 4%",
+    "groups": [
+      {
+        "bmi_group": "(20.701999999999998, 30.585]",
+        "sample_count": 67,
+        "bmi_min": 20.7,
+        "bmi_max": 30.52,
+        "recommended_week": 12.0,
+        "qualified_probability": 0.7645,
+        "failure_rate": 0.2355,
+        "detection_error_penalty": 0.277,
+        "risk_score": 2.2349
+      },
+      {
+        "bmi_group": "(30.585, 32.337]",
+        "sample_count": 67,
+        "bmi_min": 30.65,
+        "bmi_max": 32.34,
+        "recommended_week": 12.0,
+        "qualified_probability": 0.7339,
+        "failure_rate": 0.2661,
+        "detection_error_penalty": 0.233,
+        "risk_score": 2.3831
+      },
+      {
+        "bmi_group": "(32.337, 34.399]",
+        "sample_count": 66,
+        "bmi_min": 32.35,
+        "bmi_max": 34.37,
+        "recommended_week": 12.0,
+        "qualified_probability": 0.7493,
+        "failure_rate": 0.2507,
+        "detection_error_penalty": 0.2489,
+        "risk_score": 2.303
+      },
+      {
+        "bmi_group": "(34.399, 46.875]",
+        "sample_count": 67,
+        "bmi_min": 34.43,
+        "bmi_max": 46.88,
+        "recommended_week": 20.0,
+        "qualified_probability": 0.809,
+        "failure_rate": 0.191,
+        "detection_error_penalty": 0.2344,
+        "risk_score": 3.2937
+      }
+    ]
+  },
+  "female_abnormality": {
+    "method": "random forest classifier on chromosome Z scores, GC/read-quality features, X concentration, and BMI; fallback to Z-score rule if positives are too sparse",
+    "rows": 604,
+    "positive_count": 67,
+    "leave_one_out_accuracy": 0.8659,
+    "leave_one_out_f1": 0.3721,
+    "feature_importance": [
+      {
+        "feature": "X染色体浓度",
+        "importance": 0.20974
+      },
+      {
+        "feature": "13号染色体的GC含量",
+        "importance": 0.09928
+      },
+      {
+        "feature": "孕妇BMI",
+        "importance": 0.08411
+      },
+      {
+        "feature": "18号染色体的GC含量",
+        "importance": 0.07833
+      },
+      {
+        "feature": "21号染色体的GC含量",
+        "importance": 0.07492
+      },
+      {
+        "feature": "重复读段的比例",
+        "importance": 0.05389
+      },
+      {
+        "feature": "被过滤掉读段数的比例",
+        "importance": 0.05085
+      },
+      {
+        "feature": "18号染色体的Z值",
+        "importance": 0.05074
+      },
+      {
+        "feature": "GC含量",
+        "importance": 0.04843
+      },
+      {
+        "feature": "年龄",
+        "importance": 0.04654
+      },
+      {
+        "feature": "13号染色体的Z值",
+        "importance": 0.04166
+      },
+      {
+        "feature": "21号染色体的Z值",
+        "importance": 0.04096
+      },
+      {
+        "feature": "X染色体的Z值",
+        "importance": 0.04083
+      },
+      {
+        "feature": "原始读段数",
+        "importance": 0.04074
+      },
+      {
+        "feature": "在参考基因组上比对的比例",
+        "importance": 0.03896
+      }
+    ],
+    "top_flagged_cases": [
+      {
+        "孕妇代码": "B020",
+        "gest_week": 16.0,
+        "abnormal_probability": 0.982,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      },
+      {
+        "孕妇代码": "B092",
+        "gest_week": 12.29,
+        "abnormal_probability": 0.9746,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13T18"
+      },
+      {
+        "孕妇代码": "B057",
+        "gest_week": 17.14,
+        "abnormal_probability": 0.9728,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13T18"
+      },
+      {
+        "孕妇代码": "B092",
+        "gest_week": 17.29,
+        "abnormal_probability": 0.9715,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13T18"
+      },
+      {
+        "孕妇代码": "B024",
+        "gest_week": 15.57,
+        "abnormal_probability": 0.9711,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13T18"
+      },
+      {
+        "孕妇代码": "B024",
+        "gest_week": 12.57,
+        "abnormal_probability": 0.9706,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      },
+      {
+        "孕妇代码": "B007",
+        "gest_week": 16.57,
+        "abnormal_probability": 0.9669,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13"
+      },
+      {
+        "孕妇代码": "B145",
+        "gest_week": 16.29,
+        "abnormal_probability": 0.9664,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      },
+      {
+        "孕妇代码": "B093",
+        "gest_week": 23.86,
+        "abnormal_probability": 0.9662,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      },
+      {
+        "孕妇代码": "B117",
+        "gest_week": 24.0,
+        "abnormal_probability": 0.9654,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18T21"
+      },
+      {
+        "孕妇代码": "B057",
+        "gest_week": 19.57,
+        "abnormal_probability": 0.965,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13T18"
+      },
+      {
+        "孕妇代码": "B040",
+        "gest_week": 20.29,
+        "abnormal_probability": 0.9632,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      },
+      {
+        "孕妇代码": "B040",
+        "gest_week": 24.29,
+        "abnormal_probability": 0.9627,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      },
+      {
+        "孕妇代码": "B018",
+        "gest_week": 16.0,
+        "abnormal_probability": 0.9617,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T13"
+      },
+      {
+        "孕妇代码": "B069",
+        "gest_week": 26.43,
+        "abnormal_probability": 0.9613,
+        "predicted_abnormal": 1,
+        "observed_abnormal": 1,
+        "reported_aneuploidy": "T18"
+      }
+    ]
+  },
   "experiment_result": {
-    "implemented_questions": 4,
-    "key_models": "机器学习与统计识别；综合评价与权重决策",
-    "first_question_summary": "method=std_weight_topsis；weights=2项；scores=40项；best_option=1",
-    "artifact_count": 5
+    "male_pseudo_r2": 0.90064,
+    "earliest_recommended_week": 12.0,
+    "latest_recommended_week": 20.0,
+    "female_loo_accuracy": 0.8659,
+    "top_female_feature": "X染色体浓度"
   },
-  "difference_from_advanced": "把逐问 advanced 的统计与决策结果组织为 C023 的混合效应模型主线，强调个体差异、检测风险和异常判定的闭环。",
+  "difference_from_advanced": "从逐问统计摘要升级为 O 奖论文式闭环：用官方重复检测数据拟合 logit 胎儿浓度模型，显式估计个体随机效应，按 BMI 最小化达标风险，并用女胎多指标模型输出异常概率。",
   "artifact_paths": {
-    "q01/experiment_table": "cumcm/outstanding_solutions/2025/C/C023/artifacts/q01/experiment_table.csv",
-    "q02/experiment_table": "cumcm/outstanding_solutions/2025/C/C023/artifacts/q02/experiment_table.csv",
-    "q03/experiment_table": "cumcm/outstanding_solutions/2025/C/C023/artifacts/q03/experiment_table.csv",
-    "q04/experiment_table": "cumcm/outstanding_solutions/2025/C/C023/artifacts/q04/experiment_table.csv",
-    "question_result_summary": "cumcm/outstanding_solutions/2025/C/C023/artifacts/question_result_summary.csv"
-  },
-  "limitations": [
-    "当前复现聚合已有 advanced 结果；REML/MLE 参数估计、似然比检验和 ICC 可在后续单独重写。"
-  ]
+    "male_model_coefficients": "cumcm/outstanding_solutions/2025/C/C023/artifacts/male_model_coefficients.csv",
+    "bmi_nipt_timing": "cumcm/outstanding_solutions/2025/C/C023/artifacts/bmi_nipt_timing.csv",
+    "female_abnormal_scores": "cumcm/outstanding_solutions/2025/C/C023/artifacts/female_abnormal_scores.csv",
+    "correlations": "cumcm/outstanding_solutions/2025/C/C023/artifacts/male_y_correlations.csv",
+    "nipt_timing_plot": "cumcm/outstanding_solutions/2025/C/C023/artifacts/nipt_timing_plot.png",
+    "female_feature_importance_plot": "cumcm/outstanding_solutions/2025/C/C023/artifacts/female_feature_importance.png"
+  }
 }

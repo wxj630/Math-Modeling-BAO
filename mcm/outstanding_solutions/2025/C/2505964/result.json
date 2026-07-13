@@ -2,6 +2,7 @@
   "problem_id": "2025-C",
   "year": 2025,
   "code": "C",
+  "reproduction_level": "algorithmic",
   "paper_id": "2505964",
   "paper_title": "2028 Olympic Medal Predictions Based on Random Forest Model",
   "paper_source_ocr": "Outstanding_Solutions/MCM/OCR-results/C/2505964/2505964.md",
@@ -32,9 +33,9 @@
       "MedalBinary:fallback_mean": 7,
       "MedalBinary:random_forest": 43
     },
-    "mean_accuracy_2024": 0.851046,
-    "mean_f1_2024": 0.287507,
-    "mean_brier_2024": 0.142693,
+    "mean_accuracy_2024": 0.850591,
+    "mean_f1_2024": 0.287348,
+    "mean_brier_2024": 0.142806,
     "metric_rows": [
       {
         "sport": "3x3 Basketball",
@@ -64,7 +65,7 @@
         "positive_rate_2024": 0.11811,
         "accuracy_2024": 0.88189,
         "f1_2024": 0.516129,
-        "brier_2024": 0.141779
+        "brier_2024": 0.140821
       },
       {
         "sport": "Archery",
@@ -74,7 +75,7 @@
         "positive_rate_2024": 0.03937,
         "accuracy_2024": 0.980315,
         "f1_2024": 0.8,
-        "brier_2024": 0.041218
+        "brier_2024": 0.040816
       },
       {
         "sport": "Artistic Gymnastics",
@@ -82,9 +83,9 @@
         "status": "random_forest",
         "holdout_rows": 1236,
         "positive_rate_2024": 0.054207,
-        "accuracy_2024": 0.901294,
-        "f1_2024": 0.440367,
-        "brier_2024": 0.121515
+        "accuracy_2024": 0.898867,
+        "f1_2024": 0.434389,
+        "brier_2024": 0.12141
       },
       {
         "sport": "Artistic Gymnastics",
@@ -124,7 +125,7 @@
         "positive_rate_2024": 0.097789,
         "accuracy_2024": 0.859694,
         "f1_2024": 0.414894,
-        "brier_2024": 0.185821
+        "brier_2024": 0.186192
       },
       {
         "sport": "Athletics",
@@ -132,9 +133,9 @@
         "status": "random_forest",
         "holdout_rows": 2352,
         "positive_rate_2024": 0.033163,
-        "accuracy_2024": 0.867347,
-        "f1_2024": 0.242718,
-        "brier_2024": 0.168169
+        "accuracy_2024": 0.868197,
+        "f1_2024": 0.243902,
+        "brier_2024": 0.167818
       },
       {
         "sport": "Badminton",
@@ -144,7 +145,7 @@
         "positive_rate_2024": 0.134831,
         "accuracy_2024": 0.837079,
         "f1_2024": 0.591549,
-        "brier_2024": 0.151891
+        "brier_2024": 0.152085
       },
       {
         "sport": "Badminton",
@@ -154,7 +155,7 @@
         "positive_rate_2024": 0.044944,
         "accuracy_2024": 0.853933,
         "f1_2024": 0.35,
-        "brier_2024": 0.103656
+        "brier_2024": 0.104215
       },
       {
         "sport": "Basketball",
@@ -164,7 +165,7 @@
         "positive_rate_2024": 0.25,
         "accuracy_2024": 0.916667,
         "f1_2024": 0.8,
-        "brier_2024": 0.152709
+        "brier_2024": 0.152775
       },
       {
         "sport": "Basketball",
@@ -174,7 +175,7 @@
         "positive_rate_2024": 0.083333,
         "accuracy_2024": 1.0,
         "f1_2024": 1.0,
-        "brier_2024": 0.03026
+        "brier_2024": 0.030267
       },
       {
         "sport": "Beach Volleyball",
@@ -184,7 +185,7 @@
         "positive_rate_2024": 0.125,
         "accuracy_2024": 0.760417,
         "f1_2024": 0.08,
-        "brier_2024": 0.18979
+        "brier_2024": 0.191197
       },
       {
         "sport": "Beach Volleyball",
@@ -194,7 +195,7 @@
         "positive_rate_2024": 0.041667,
         "accuracy_2024": 0.854167,
         "f1_2024": 0.0,
-        "brier_2024": 0.100262
+        "brier_2024": 0.101626
       },
       {
         "sport": "Boxing",
@@ -204,7 +205,7 @@
         "positive_rate_2024": 0.209677,
         "accuracy_2024": 0.673387,
         "f1_2024": 0.319328,
-        "brier_2024": 0.240466
+        "brier_2024": 0.240551
       },
       {
         "sport": "Boxing",
@@ -244,7 +245,7 @@
         "positive_rate_2024": 0.180233,
         "accuracy_2024": 0.811047,
         "f1_2024": 0.591195,
-        "brier_2024": 0.179065
+        "brier_2024": 0.178946
       },
       {
         "sport": "Canoe Sprint",
@@ -252,9 +253,9 @@
         "status": "random_forest",
         "holdout_rows": 344,
         "positive_rate_2024": 0.05814,
-        "accuracy_2024": 0.848837,
-        "f1_2024": 0.315789,
-        "brier_2024": 0.118196
+        "accuracy_2024": 0.843023,
+        "f1_2024": 0.307692,
+        "brier_2024": 0.119192
       },
       {
         "sport": "Cycling BMX Freestyle",
@@ -344,7 +345,7 @@
         "positive_rate_2024": 0.179204,
         "accuracy_2024": 0.776549,
         "f1_2024": 0.402367,
-        "brier_2024": 0.167641
+        "brier_2024": 0.167617
       },
       {
         "sport": "Cycling Track",
@@ -354,7 +355,7 @@
         "positive_rate_2024": 0.059735,
         "accuracy_2024": 0.882743,
         "f1_2024": 0.253521,
-        "brier_2024": 0.109985
+        "brier_2024": 0.11011
       },
       {
         "sport": "Diving",
@@ -364,7 +365,7 @@
         "positive_rate_2024": 0.209302,
         "accuracy_2024": 0.790698,
         "f1_2024": 0.560976,
-        "brier_2024": 0.161344
+        "brier_2024": 0.162601
       },
       {
         "sport": "Diving",
@@ -372,9 +373,9 @@
         "status": "random_forest",
         "holdout_rows": 172,
         "positive_rate_2024": 0.069767,
-        "accuracy_2024": 0.965116,
-        "f1_2024": 0.8,
-        "brier_2024": 0.065733
+        "accuracy_2024": 0.959302,
+        "f1_2024": 0.774194,
+        "brier_2024": 0.066564
       },
       {
         "sport": "Equestrian",
@@ -384,7 +385,7 @@
         "positive_rate_2024": 0.108434,
         "accuracy_2024": 0.831325,
         "f1_2024": 0.453125,
-        "brier_2024": 0.148355
+        "brier_2024": 0.148382
       },
       {
         "sport": "Equestrian",
@@ -394,7 +395,7 @@
         "positive_rate_2024": 0.036145,
         "accuracy_2024": 0.93253,
         "f1_2024": 0.363636,
-        "brier_2024": 0.06665
+        "brier_2024": 0.066061
       },
       {
         "sport": "Fencing",
@@ -402,9 +403,9 @@
         "status": "random_forest",
         "holdout_rows": 404,
         "positive_rate_2024": 0.222772,
-        "accuracy_2024": 0.70297,
-        "f1_2024": 0.478261,
-        "brier_2024": 0.224697
+        "accuracy_2024": 0.705446,
+        "f1_2024": 0.475771,
+        "brier_2024": 0.223354
       },
       {
         "sport": "Fencing",
@@ -412,9 +413,9 @@
         "status": "random_forest",
         "holdout_rows": 404,
         "positive_rate_2024": 0.074257,
-        "accuracy_2024": 0.730198,
-        "f1_2024": 0.215827,
-        "brier_2024": 0.189006
+        "accuracy_2024": 0.725248,
+        "f1_2024": 0.201439,
+        "brier_2024": 0.189226
       },
       {
         "sport": "Football",
@@ -434,7 +435,7 @@
         "positive_rate_2024": 0.071429,
         "accuracy_2024": 0.928571,
         "f1_2024": 0.0,
-        "brier_2024": 0.100344
+        "brier_2024": 0.099212
       },
       {
         "sport": "Golf",
@@ -474,7 +475,7 @@
         "positive_rate_2024": 0.083333,
         "accuracy_2024": 0.916667,
         "f1_2024": 0.5,
-        "brier_2024": 0.107632
+        "brier_2024": 0.107114
       },
       {
         "sport": "Hockey",
@@ -482,9 +483,9 @@
         "status": "random_forest",
         "holdout_rows": 415,
         "positive_rate_2024": 0.245783,
-        "accuracy_2024": 0.742169,
-        "f1_2024": 0.415301,
-        "brier_2024": 0.177608
+        "accuracy_2024": 0.73253,
+        "f1_2024": 0.358382,
+        "brier_2024": 0.176656
       },
       {
         "sport": "Hockey",
@@ -492,9 +493,9 @@
         "status": "random_forest",
         "holdout_rows": 415,
         "positive_rate_2024": 0.084337,
-        "accuracy_2024": 0.918072,
-        "f1_2024": 0.5,
-        "brier_2024": 0.110167
+        "accuracy_2024": 0.925301,
+        "f1_2024": 0.523077,
+        "brier_2024": 0.106575
       },
       {
         "sport": "Judo",
@@ -504,7 +505,7 @@
         "positive_rate_2024": 0.187835,
         "accuracy_2024": 0.765653,
         "f1_2024": 0.498084,
-        "brier_2024": 0.214847
+        "brier_2024": 0.214792
       },
       {
         "sport": "Judo",
@@ -542,9 +543,9 @@
         "status": "random_forest",
         "holdout_rows": 72,
         "positive_rate_2024": 0.083333,
-        "accuracy_2024": 0.875,
-        "f1_2024": 0.307692,
-        "brier_2024": 0.15275
+        "accuracy_2024": 0.861111,
+        "f1_2024": 0.285714,
+        "brier_2024": 0.152854
       },
       {
         "sport": "Modern Pentathlon",
@@ -554,7 +555,7 @@
         "positive_rate_2024": 0.027778,
         "accuracy_2024": 0.916667,
         "f1_2024": 0.0,
-        "brier_2024": 0.092243
+        "brier_2024": 0.093302
       },
       {
         "sport": "Rhythmic Gymnastics",
@@ -564,7 +565,7 @@
         "positive_rate_2024": 0.191489,
         "accuracy_2024": 0.808511,
         "f1_2024": 0.4,
-        "brier_2024": 0.157536
+        "brier_2024": 0.157827
       },
       {
         "sport": "Rhythmic Gymnastics",
@@ -582,9 +583,9 @@
         "status": "random_forest",
         "holdout_rows": 504,
         "positive_rate_2024": 0.285714,
-        "accuracy_2024": 0.686508,
-        "f1_2024": 0.387597,
-        "brier_2024": 0.223336
+        "accuracy_2024": 0.688492,
+        "f1_2024": 0.389105,
+        "brier_2024": 0.223238
       },
       {
         "sport": "Rowing",
@@ -594,7 +595,7 @@
         "positive_rate_2024": 0.095238,
         "accuracy_2024": 0.799603,
         "f1_2024": 0.240602,
-        "brier_2024": 0.201071
+        "brier_2024": 0.201527
       },
       {
         "sport": "Rugby Sevens",
@@ -604,7 +605,7 @@
         "positive_rate_2024": 0.246057,
         "accuracy_2024": 0.719243,
         "f1_2024": 0.368794,
-        "brier_2024": 0.186848
+        "brier_2024": 0.190391
       },
       {
         "sport": "Rugby Sevens",
@@ -614,7 +615,7 @@
         "positive_rate_2024": 0.078864,
         "accuracy_2024": 0.867508,
         "f1_2024": 0.16,
-        "brier_2024": 0.099935
+        "brier_2024": 0.100649
       },
       {
         "sport": "Sailing",
@@ -624,7 +625,7 @@
         "positive_rate_2024": 0.127273,
         "accuracy_2024": 0.812121,
         "f1_2024": 0.261905,
-        "brier_2024": 0.177995
+        "brier_2024": 0.178321
       },
       {
         "sport": "Sailing",
@@ -634,7 +635,7 @@
         "positive_rate_2024": 0.042424,
         "accuracy_2024": 0.884848,
         "f1_2024": 0.136364,
-        "brier_2024": 0.142159
+        "brier_2024": 0.142045
       },
       {
         "sport": "Shooting",
@@ -644,7 +645,7 @@
         "positive_rate_2024": 0.097297,
         "accuracy_2024": 0.789189,
         "f1_2024": 0.282209,
-        "brier_2024": 0.184061
+        "brier_2024": 0.183388
       },
       {
         "sport": "Shooting",
@@ -654,7 +655,7 @@
         "positive_rate_2024": 0.032432,
         "accuracy_2024": 0.814414,
         "f1_2024": 0.14876,
-        "brier_2024": 0.155705
+        "brier_2024": 0.156141
       },
       {
         "sport": "Skateboarding",
@@ -722,9 +723,9 @@
         "status": "random_forest",
         "holdout_rows": 1587,
         "positive_rate_2024": 0.134846,
-        "accuracy_2024": 0.848141,
-        "f1_2024": 0.592217,
-        "brier_2024": 0.150499
+        "accuracy_2024": 0.848771,
+        "f1_2024": 0.59322,
+        "brier_2024": 0.150516
       },
       {
         "sport": "Swimming",
@@ -733,8 +734,8 @@
         "holdout_rows": 1587,
         "positive_rate_2024": 0.045369,
         "accuracy_2024": 0.84184,
-        "f1_2024": 0.296919,
-        "brier_2024": 0.137034
+        "f1_2024": 0.300836,
+        "brier_2024": 0.136898
       },
       {
         "sport": "Table Tennis",
@@ -744,7 +745,7 @@
         "positive_rate_2024": 0.114504,
         "accuracy_2024": 0.874046,
         "f1_2024": 0.507463,
-        "brier_2024": 0.108524
+        "brier_2024": 0.108309
       },
       {
         "sport": "Table Tennis",
@@ -754,7 +755,7 @@
         "positive_rate_2024": 0.038168,
         "accuracy_2024": 0.980916,
         "f1_2024": 0.8,
-        "brier_2024": 0.026313
+        "brier_2024": 0.026336
       },
       {
         "sport": "Taekwondo",
@@ -764,7 +765,7 @@
         "positive_rate_2024": 0.238806,
         "accuracy_2024": 0.656716,
         "f1_2024": 0.394737,
-        "brier_2024": 0.233817
+        "brier_2024": 0.234059
       },
       {
         "sport": "Taekwondo",
@@ -772,9 +773,9 @@
         "status": "random_forest",
         "holdout_rows": 134,
         "positive_rate_2024": 0.059701,
-        "accuracy_2024": 0.858209,
-        "f1_2024": 0.296296,
-        "brier_2024": 0.164973
+        "accuracy_2024": 0.850746,
+        "f1_2024": 0.285714,
+        "brier_2024": 0.16523
       },
       {
         "sport": "Tennis",
@@ -782,9 +783,9 @@
         "status": "random_forest",
         "holdout_rows": 294,
         "positive_rate_2024": 0.081633,
-        "accuracy_2024": 0.863946,
-        "f1_2024": 0.090909,
-        "brier_2024": 0.157834
+        "accuracy_2024": 0.857143,
+        "f1_2024": 0.192308,
+        "brier_2024": 0.159053
       },
       {
         "sport": "Tennis",
@@ -792,9 +793,9 @@
         "status": "random_forest",
         "holdout_rows": 294,
         "positive_rate_2024": 0.027211,
-        "accuracy_2024": 0.901361,
-        "f1_2024": 0.064516,
-        "brier_2024": 0.108869
+        "accuracy_2024": 0.897959,
+        "f1_2024": 0.0625,
+        "brier_2024": 0.108687
       },
       {
         "sport": "Trampoline Gymnastics",
@@ -824,7 +825,7 @@
         "positive_rate_2024": 0.054054,
         "accuracy_2024": 0.90991,
         "f1_2024": 0.375,
-        "brier_2024": 0.115584
+        "brier_2024": 0.115888
       },
       {
         "sport": "Triathlon",
@@ -834,7 +835,7 @@
         "positive_rate_2024": 0.018018,
         "accuracy_2024": 0.990991,
         "f1_2024": 0.666667,
-        "brier_2024": 0.068035
+        "brier_2024": 0.069439
       },
       {
         "sport": "Volleyball",
@@ -854,7 +855,7 @@
         "positive_rate_2024": 0.083333,
         "accuracy_2024": 0.916667,
         "f1_2024": 0.0,
-        "brier_2024": 0.105507
+        "brier_2024": 0.106832
       },
       {
         "sport": "Water Polo",
@@ -862,9 +863,9 @@
         "status": "random_forest",
         "holdout_rows": 286,
         "positive_rate_2024": 0.272727,
-        "accuracy_2024": 0.548951,
-        "f1_2024": 0.167742,
-        "brier_2024": 0.234189
+        "accuracy_2024": 0.555944,
+        "f1_2024": 0.169935,
+        "brier_2024": 0.233859
       },
       {
         "sport": "Water Polo",
@@ -874,7 +875,7 @@
         "positive_rate_2024": 0.090909,
         "accuracy_2024": 0.940559,
         "f1_2024": 0.604651,
-        "brier_2024": 0.083434
+        "brier_2024": 0.086243
       },
       {
         "sport": "Weightlifting",
@@ -884,7 +885,7 @@
         "positive_rate_2024": 0.245902,
         "accuracy_2024": 0.803279,
         "f1_2024": 0.5,
-        "brier_2024": 0.205306
+        "brier_2024": 0.204881
       },
       {
         "sport": "Weightlifting",
@@ -894,7 +895,7 @@
         "positive_rate_2024": 0.081967,
         "accuracy_2024": 0.877049,
         "f1_2024": 0.482759,
-        "brier_2024": 0.172212
+        "brier_2024": 0.172158
       },
       {
         "sport": "Wrestling",
@@ -904,7 +905,7 @@
         "positive_rate_2024": 0.247423,
         "accuracy_2024": 0.790378,
         "f1_2024": 0.541353,
-        "brier_2024": 0.215538
+        "brier_2024": 0.215601
       },
       {
         "sport": "Wrestling",
@@ -914,7 +915,7 @@
         "positive_rate_2024": 0.061856,
         "accuracy_2024": 0.865979,
         "f1_2024": 0.380952,
-        "brier_2024": 0.178206
+        "brier_2024": 0.178337
       }
     ]
   },
@@ -926,43 +927,43 @@
   "monte_carlo_summary_top_total": [
     {
       "NOC": "USA",
-      "expected_total": 139.928,
-      "total_interval95_low": 124.0,
+      "expected_total": 139.012,
+      "total_interval95_low": 123.475,
       "total_interval95_high": 155.0,
-      "expected_gold": 54.762,
+      "expected_gold": 53.846,
       "gold_interval95_low": 44.0,
-      "gold_interval95_high": 65.525,
+      "gold_interval95_high": 64.0,
       "actual_2024_total": 122,
       "actual_2024_gold": 39
     },
     {
       "NOC": "CHN",
-      "expected_total": 92.932,
+      "expected_total": 92.274,
       "total_interval95_low": 80.0,
-      "total_interval95_high": 106.525,
-      "expected_gold": 36.712,
-      "gold_interval95_low": 29.0,
+      "total_interval95_high": 104.0,
+      "expected_gold": 36.554,
+      "gold_interval95_low": 28.475,
       "gold_interval95_high": 45.0,
       "actual_2024_total": 91,
       "actual_2024_gold": 40
     },
     {
       "NOC": "GBR",
-      "expected_total": 64.486,
-      "total_interval95_low": 53.0,
-      "total_interval95_high": 76.0,
-      "expected_gold": 20.506,
+      "expected_total": 64.286,
+      "total_interval95_low": 52.0,
+      "total_interval95_high": 77.0,
+      "expected_gold": 20.546,
       "gold_interval95_low": 14.0,
-      "gold_interval95_high": 27.0,
+      "gold_interval95_high": 28.0,
       "actual_2024_total": 63,
       "actual_2024_gold": 13
     },
     {
       "NOC": "AUS",
-      "expected_total": 56.342,
-      "total_interval95_low": 47.0,
-      "total_interval95_high": 66.0,
-      "expected_gold": 19.708,
+      "expected_total": 56.168,
+      "total_interval95_low": 45.0,
+      "total_interval95_high": 67.0,
+      "expected_gold": 19.652,
       "gold_interval95_low": 13.0,
       "gold_interval95_high": 27.0,
       "actual_2024_total": 52,
@@ -970,54 +971,54 @@
     },
     {
       "NOC": "JPN",
-      "expected_total": 49.962,
-      "total_interval95_low": 40.0,
+      "expected_total": 50.126,
+      "total_interval95_low": 41.475,
       "total_interval95_high": 60.0,
-      "expected_gold": 19.772,
-      "gold_interval95_low": 14.0,
+      "expected_gold": 19.756,
+      "gold_interval95_low": 13.0,
       "gold_interval95_high": 26.0,
       "actual_2024_total": 45,
       "actual_2024_gold": 20
     },
     {
-      "NOC": "ITA",
-      "expected_total": 48.208,
-      "total_interval95_low": 37.0,
-      "total_interval95_high": 59.0,
-      "expected_gold": 17.17,
-      "gold_interval95_low": 11.0,
-      "gold_interval95_high": 24.0,
-      "actual_2024_total": 36,
-      "actual_2024_gold": 12
-    },
-    {
       "NOC": "FRA",
-      "expected_total": 47.776,
-      "total_interval95_low": 37.0,
+      "expected_total": 47.986,
+      "total_interval95_low": 36.0,
       "total_interval95_high": 58.0,
-      "expected_gold": 14.73,
+      "expected_gold": 14.686,
       "gold_interval95_low": 9.0,
       "gold_interval95_high": 21.0,
       "actual_2024_total": 64,
       "actual_2024_gold": 16
     },
     {
+      "NOC": "ITA",
+      "expected_total": 47.918,
+      "total_interval95_low": 37.0,
+      "total_interval95_high": 59.0,
+      "expected_gold": 17.078,
+      "gold_interval95_low": 10.475,
+      "gold_interval95_high": 24.0,
+      "actual_2024_total": 36,
+      "actual_2024_gold": 12
+    },
+    {
       "NOC": "GER",
-      "expected_total": 39.94,
-      "total_interval95_low": 31.0,
-      "total_interval95_high": 49.0,
-      "expected_gold": 12.65,
-      "gold_interval95_low": 7.475,
-      "gold_interval95_high": 18.0,
+      "expected_total": 40.318,
+      "total_interval95_low": 30.475,
+      "total_interval95_high": 50.0,
+      "expected_gold": 12.716,
+      "gold_interval95_low": 8.0,
+      "gold_interval95_high": 18.525,
       "actual_2024_total": 31,
       "actual_2024_gold": 11
     },
     {
       "NOC": "NED",
-      "expected_total": 32.774,
-      "total_interval95_low": 23.0,
+      "expected_total": 32.54,
+      "total_interval95_low": 24.0,
       "total_interval95_high": 41.0,
-      "expected_gold": 12.8,
+      "expected_gold": 12.76,
       "gold_interval95_low": 8.0,
       "gold_interval95_high": 18.0,
       "actual_2024_total": 34,
@@ -1025,21 +1026,21 @@
     },
     {
       "NOC": "KOR",
-      "expected_total": 26.62,
-      "total_interval95_low": 20.0,
-      "total_interval95_high": 33.0,
-      "expected_gold": 10.398,
-      "gold_interval95_low": 6.0,
+      "expected_total": 26.632,
+      "total_interval95_low": 19.475,
+      "total_interval95_high": 34.0,
+      "expected_gold": 10.6,
+      "gold_interval95_low": 7.0,
       "gold_interval95_high": 15.0,
       "actual_2024_total": 32,
       "actual_2024_gold": 13
     },
     {
       "NOC": "BRA",
-      "expected_total": 23.038,
+      "expected_total": 23.198,
       "total_interval95_low": 16.0,
       "total_interval95_high": 30.0,
-      "expected_gold": 6.384,
+      "expected_gold": 6.64,
       "gold_interval95_low": 3.0,
       "gold_interval95_high": 11.0,
       "actual_2024_total": 20,
@@ -1047,10 +1048,10 @@
     },
     {
       "NOC": "NZL",
-      "expected_total": 19.554,
-      "total_interval95_low": 13.0,
-      "total_interval95_high": 26.0,
-      "expected_gold": 7.988,
+      "expected_total": 19.744,
+      "total_interval95_low": 14.0,
+      "total_interval95_high": 26.525,
+      "expected_gold": 7.91,
       "gold_interval95_low": 4.0,
       "gold_interval95_high": 12.0,
       "actual_2024_total": 20,
@@ -1058,10 +1059,10 @@
     },
     {
       "NOC": "CAN",
-      "expected_total": 19.488,
+      "expected_total": 19.554,
       "total_interval95_low": 13.0,
       "total_interval95_high": 27.0,
-      "expected_gold": 5.446,
+      "expected_gold": 5.456,
       "gold_interval95_low": 2.0,
       "gold_interval95_high": 10.0,
       "actual_2024_total": 27,
@@ -1069,10 +1070,10 @@
     },
     {
       "NOC": "HUN",
-      "expected_total": 18.54,
+      "expected_total": 18.72,
       "total_interval95_low": 13.0,
-      "total_interval95_high": 24.0,
-      "expected_gold": 7.016,
+      "total_interval95_high": 25.0,
+      "expected_gold": 7.082,
       "gold_interval95_low": 4.0,
       "gold_interval95_high": 11.0,
       "actual_2024_total": 18,
@@ -1080,10 +1081,10 @@
     },
     {
       "NOC": "ESP",
-      "expected_total": 17.348,
-      "total_interval95_low": 10.0,
+      "expected_total": 17.542,
+      "total_interval95_low": 11.475,
       "total_interval95_high": 25.0,
-      "expected_gold": 4.486,
+      "expected_gold": 4.488,
       "gold_interval95_low": 1.0,
       "gold_interval95_high": 9.0,
       "actual_2024_total": 18,
@@ -1093,81 +1094,81 @@
   "first_medal_top_candidates": [
     {
       "NOC": "SAM",
-      "first_medal_probability": 0.388,
-      "expected_total_if_any": 1.28866
-    },
-    {
-      "NOC": "LBN",
-      "first_medal_probability": 0.31,
-      "expected_total_if_any": 1.180645
+      "first_medal_probability": 0.41,
+      "expected_total_if_any": 1.219512
     },
     {
       "NOC": "GUM",
-      "first_medal_probability": 0.3,
-      "expected_total_if_any": 1.066667
+      "first_medal_probability": 0.322,
+      "expected_total_if_any": 1.15528
+    },
+    {
+      "NOC": "LBN",
+      "first_medal_probability": 0.322,
+      "expected_total_if_any": 1.180124
     },
     {
       "NOC": "ANG",
-      "first_medal_probability": 0.296,
-      "expected_total_if_any": 1.162162
+      "first_medal_probability": 0.284,
+      "expected_total_if_any": 1.15493
     },
     {
       "NOC": "GBS",
-      "first_medal_probability": 0.292,
-      "expected_total_if_any": 1.10274
+      "first_medal_probability": 0.258,
+      "expected_total_if_any": 1.100775
     },
     {
       "NOC": "PNG",
-      "first_medal_probability": 0.278,
-      "expected_total_if_any": 1.129496
+      "first_medal_probability": 0.254,
+      "expected_total_if_any": 1.149606
     },
     {
       "NOC": "PLE",
-      "first_medal_probability": 0.266,
-      "expected_total_if_any": 1.120301
-    },
-    {
-      "NOC": "ESA",
       "first_medal_probability": 0.25,
-      "expected_total_if_any": 1.112
-    },
-    {
-      "NOC": "ARU",
-      "first_medal_probability": 0.248,
-      "expected_total_if_any": 1.137097
+      "expected_total_if_any": 1.088
     },
     {
       "NOC": "MLI",
-      "first_medal_probability": 0.228,
-      "expected_total_if_any": 1.096491
+      "first_medal_probability": 0.226,
+      "expected_total_if_any": 1.097345
+    },
+    {
+      "NOC": "ESA",
+      "first_medal_probability": 0.22,
+      "expected_total_if_any": 1.172727
     },
     {
       "NOC": "NCA",
-      "first_medal_probability": 0.204,
-      "expected_total_if_any": 1.107843
-    },
-    {
-      "NOC": "COD",
-      "first_medal_probability": 0.202,
-      "expected_total_if_any": 1.039604
-    },
-    {
-      "NOC": "COM",
-      "first_medal_probability": 0.196,
-      "expected_total_if_any": 1.05102
+      "first_medal_probability": 0.212,
+      "expected_total_if_any": 1.113208
     },
     {
       "NOC": "GAM",
-      "first_medal_probability": 0.194,
-      "expected_total_if_any": 1.134021
+      "first_medal_probability": 0.212,
+      "expected_total_if_any": 1.132075
     },
     {
-      "NOC": "LBA",
-      "first_medal_probability": 0.18,
-      "expected_total_if_any": 1.1
+      "NOC": "ARU",
+      "first_medal_probability": 0.21,
+      "expected_total_if_any": 1.07619
+    },
+    {
+      "NOC": "COM",
+      "first_medal_probability": 0.202,
+      "expected_total_if_any": 1.059406
+    },
+    {
+      "NOC": "GUI",
+      "first_medal_probability": 0.19,
+      "expected_total_if_any": 1.094737
+    },
+    {
+      "NOC": "COD",
+      "first_medal_probability": 0.182,
+      "expected_total_if_any": 1.054945
     }
   ],
-  "expected_first_medal_countries": 7.5,
+  "expected_first_medal_countries": 7.574,
   "poisson_event_elasticity": [
     {
       "case": "USA Swimming",
