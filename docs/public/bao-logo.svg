@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="84" viewBox="0 0 320 84" role="img" aria-labelledby="title desc">
+  <title id="title">Math Modeling BAO logo</title>
+  <desc id="desc">Three progression colors for Baseline, Advanced, and Outstanding.</desc>
+  <rect width="320" height="84" rx="8" fill="#ffffff"/>
+  <g transform="translate(16 14)">
+    <path d="M0 0h60l16 28-16 28H0z" fill="#2563eb"/>
+    <path d="M70 0h60l16 28-16 28H70l16-28z" fill="#f59e0b"/>
+    <path d="M140 0h60l16 28-16 28h-60l16-28z" fill="#e11d48"/>
+    <text x="30" y="39" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">B</text>
+    <text x="100" y="39" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">A</text>
+    <text x="170" y="39" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">O</text>
+  </g>
+  <g transform="translate(238 19)">
+    <text x="0" y="18" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">BAO</text>
+    <text x="0" y="39" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#475569">modeling pack</text>
+  </g>
+</svg>

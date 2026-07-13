@@ -5,6 +5,9 @@ hero:
   name: 'Math Modeling BAO'
   text: '以赛题为入口的可复现建模教程'
   tagline: 先按 Best Practice 建立读法，再进入赛题索引，对照 Baseline、Advanced、Outstanding 和 BAO PDF。
+  image:
+    src: /bao-progression-banner.svg
+    alt: Baseline Advanced Outstanding progression
   actions:
     - theme: brand
       text: 先读 Best Practice

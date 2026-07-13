@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">BAO progression banner</title>
+  <desc id="desc">Baseline, Advanced, and Outstanding are shown as three connected stages.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="760" height="360" rx="8" fill="#f8fafc"/>
+  <g filter="url(#shadow)">
+    <path d="M70 112h168l36 68-36 68H70z" fill="#2563eb"/>
+    <path d="M256 112h168l36 68-36 68H256l36-68z" fill="#f59e0b"/>
+    <path d="M442 112h168l36 68-36 68H442l36-68z" fill="#e11d48"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#ffffff" text-anchor="middle">
+    <text x="151" y="173" font-size="54" font-weight="850">B</text>
+    <text x="151" y="206" font-size="18" font-weight="750">Baseline</text>
+    <text x="337" y="173" font-size="54" font-weight="850">A</text>
+    <text x="337" y="206" font-size="18" font-weight="750">Advanced</text>
+    <text x="523" y="173" font-size="54" font-weight="850">O</text>
+    <text x="523" y="206" font-size="18" font-weight="750">Outstanding</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#334155">
+    <text x="70" y="72" font-size="22" font-weight="800">Baseline -> Advanced -> Outstanding</text>
+    <text x="70" y="288" font-size="17" font-weight="650">same problem, stronger assumptions, richer models, better evidence</text>
+  </g>
+  <path d="M74 316h564" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M74 316h188" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M262 316h188" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M450 316h188" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
+</svg>

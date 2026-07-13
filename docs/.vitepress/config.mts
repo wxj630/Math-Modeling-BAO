@@ -12,6 +12,11 @@ export default defineConfig({
     math: true
   },
   themeConfig: {
+    logo: {
+      light: '/bao-logo.svg',
+      dark: '/bao-logo.svg',
+      alt: 'Math Modeling BAO'
+    },
     nav: [
       { text: 'Best Practice', link: '/best_practie/' },
       { text: '学习路线', link: '/tutorial/' },
