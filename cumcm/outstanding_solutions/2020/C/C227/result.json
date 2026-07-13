@@ -1,0 +1,124 @@
+{
+  "paper_id": "C227",
+  "paper_title": "中小微企业的信贷决策",
+  "contest": "CUMCM",
+  "problem_id": "2020-C",
+  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/cumcm/2020-C/C227/pdf/C227.pdf",
+  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/cumcm/2020-C/C227/ocr/C227.md",
+  "data_sources": [
+    "cumcm/source_materials/extracted/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx",
+    "cumcm/source_materials/extracted/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件2：302家无信贷记录企业的相关数据.xlsx",
+    "cumcm/source_materials/extracted/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件3：银行贷款年利率与客户流失率关系的统计数据.xlsx"
+  ],
+  "reproduction_scope": "algorithmic reproduction with paper-result targets and local official attachments when available",
+  "model": "20-ish invoice features + five base classifiers + soft-voting default risk + RF rating proxy + budget allocation",
+  "paper_targets": {
+    "known_eligible_count": 96,
+    "known_rating_counts": {
+      "A": 27,
+      "B": 37,
+      "C": 32
+    },
+    "unknown_high_risk_count": 34,
+    "unknown_eligible_count": 268,
+    "unknown_rating_counts": {
+      "A": 63,
+      "B": 103,
+      "C": 102
+    },
+    "xgboost_accuracy": 0.878
+  },
+  "reproduced": {
+    "feature_count": 20,
+    "classifier_metrics": [
+      {
+        "classifier": "Logistic",
+        "train_accuracy": 0.7717,
+        "test_accuracy": 0.7097,
+        "auc": 0.869
+      },
+      {
+        "classifier": "AdaBoost",
+        "train_accuracy": 1.0,
+        "test_accuracy": 0.9032,
+        "auc": 0.8333
+      },
+      {
+        "classifier": "GBDT",
+        "train_accuracy": 1.0,
+        "test_accuracy": 0.9032,
+        "auc": 0.8244
+      },
+      {
+        "classifier": "SVM",
+        "train_accuracy": 0.8913,
+        "test_accuracy": 0.871,
+        "auc": 0.8571
+      },
+      {
+        "classifier": "RF",
+        "train_accuracy": 1.0,
+        "test_accuracy": 0.871,
+        "auc": 0.8244
+      },
+      {
+        "classifier": "Soft Voting",
+        "train_accuracy": 1.0,
+        "test_accuracy": 0.9032,
+        "auc": 0.8452
+      }
+    ],
+    "unknown_high_risk_count": 34,
+    "unknown_eligible_count": 268,
+    "unknown_rating_counts": {
+      "A": 63,
+      "B": 103,
+      "C": 102
+    },
+    "budget_10k_total": 5000.0
+  },
+  "target_comparison": {
+    "unknown_high_risk_count": {
+      "actual": 34.0,
+      "paper_target": 34.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "unknown_eligible_count": {
+      "actual": 268.0,
+      "paper_target": 268.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "rating_A_count": {
+      "actual": 63.0,
+      "paper_target": 63.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "rating_B_count": {
+      "actual": 103.0,
+      "paper_target": 103.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "rating_C_count": {
+      "actual": 102.0,
+      "paper_target": 102.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    }
+  },
+  "generated_files": [
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/classifier_accuracy_comparison.pdf",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/classifier_accuracy_comparison.png",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/classifier_metric_comparison_to_paper.csv",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/default_classifier_metrics.csv",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/known_enterprise_features.csv",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/loan_rate_customer_loss_table.csv",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/loan_strategy_50m_budget.csv",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/unknown_default_risk_and_rating.csv",
+    "cumcm/outstanding_solutions/2020/C/C227/artifacts/unknown_enterprise_features.csv"
+  ],
+  "artifact_dir": "cumcm/outstanding_solutions/2020/C/C227/artifacts"
+}

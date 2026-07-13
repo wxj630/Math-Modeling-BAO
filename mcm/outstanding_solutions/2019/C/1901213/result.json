@@ -1,0 +1,139 @@
+{
+  "paper_id": "1901213",
+  "paper_title": "Opioids: Modeling the Spread of Addiction as a Contagious Disease",
+  "contest": "MCM",
+  "problem_id": "2019-C",
+  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/mcm/2019-C/1901213/pdf/1901213.pdf",
+  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/mcm/2019-C/1901213/ocr/1901213.md",
+  "data_sources": [
+    "mcm/source_materials/official_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/MCM_NFLIS_Data.xlsx",
+    "mcm/source_materials/official_extracted/2019/Problem Data- The Opioid Crisis/2018_MCMProblemC_DATA/ACS_10_5YR_DP02 ... ACS_16_5YR_DP02"
+  ],
+  "reproduction_scope": "algorithmic reproduction with paper-result targets and local official attachments when available",
+  "model": "official NFLIS county panel + distance/FIPS-weighted spatial Markov transition approximation + per-county trend forecast",
+  "paper_targets": {
+    "core_claim": "opioid addiction spread modeled as deterministic/Markovian disease process between neighboring counties"
+  },
+  "reproduced": {
+    "county_year_rows": 3480,
+    "transition_edges": 1745,
+    "top_estimated_epicenters": [
+      {
+        "source_fips": 39061,
+        "source": "HAMILTON, OH",
+        "attributed_growth_reports": 4578.026
+      },
+      {
+        "source_fips": 42101,
+        "source": "PHILADELPHIA, PA",
+        "attributed_growth_reports": 3991.222
+      },
+      {
+        "source_fips": 42003,
+        "source": "ALLEGHENY, PA",
+        "attributed_growth_reports": 3033.816
+      },
+      {
+        "source_fips": 39113,
+        "source": "MONTGOMERY, OH",
+        "attributed_growth_reports": 3032.171
+      },
+      {
+        "source_fips": 39035,
+        "source": "CUYAHOGA, OH",
+        "attributed_growth_reports": 2843.451
+      }
+    ],
+    "top_2020_forecast_counties": [
+      {
+        "FIPS_Combined": 39061,
+        "state": "OH",
+        "county": "HAMILTON",
+        "slope_reports_per_year": 909.4405,
+        "observed_2017_reports": 9995,
+        "forecast_2020_reports": 11277.99
+      },
+      {
+        "FIPS_Combined": 39035,
+        "state": "OH",
+        "county": "CUYAHOGA",
+        "slope_reports_per_year": 859.7381,
+        "observed_2017_reports": 7381,
+        "forecast_2020_reports": 9042.05
+      },
+      {
+        "FIPS_Combined": 42101,
+        "state": "PA",
+        "county": "PHILADELPHIA",
+        "slope_reports_per_year": 337.381,
+        "observed_2017_reports": 9156,
+        "forecast_2020_reports": 8544.23
+      },
+      {
+        "FIPS_Combined": 42003,
+        "state": "PA",
+        "county": "ALLEGHENY",
+        "slope_reports_per_year": 258.7262,
+        "observed_2017_reports": 4653,
+        "forecast_2020_reports": 5830.85
+      },
+      {
+        "FIPS_Combined": 39049,
+        "state": "OH",
+        "county": "FRANKLIN",
+        "slope_reports_per_year": 322.9881,
+        "observed_2017_reports": 3016,
+        "forecast_2020_reports": 4292.05
+      },
+      {
+        "FIPS_Combined": 39113,
+        "state": "OH",
+        "county": "MONTGOMERY",
+        "slope_reports_per_year": 239.5119,
+        "observed_2017_reports": 3560,
+        "forecast_2020_reports": 4278.2
+      },
+      {
+        "FIPS_Combined": 39085,
+        "state": "OH",
+        "county": "LAKE",
+        "slope_reports_per_year": 265.7976,
+        "observed_2017_reports": 2127,
+        "forecast_2020_reports": 2922.56
+      },
+      {
+        "FIPS_Combined": 42045,
+        "state": "PA",
+        "county": "DELAWARE",
+        "slope_reports_per_year": 118.1667,
+        "observed_2017_reports": 1667,
+        "forecast_2020_reports": 2119.83
+      },
+      {
+        "FIPS_Combined": 21111,
+        "state": "KY",
+        "county": "JEFFERSON",
+        "slope_reports_per_year": 45.6786,
+        "observed_2017_reports": 2124,
+        "forecast_2020_reports": 2044.29
+      },
+      {
+        "FIPS_Combined": 39017,
+        "state": "OH",
+        "county": "BUTLER",
+        "slope_reports_per_year": 109.2857,
+        "observed_2017_reports": 1275,
+        "forecast_2020_reports": 1616.11
+      }
+    ]
+  },
+  "generated_files": [
+    "mcm/outstanding_solutions/2019/C/1901213/artifacts/county_year_opioid_panel.csv",
+    "mcm/outstanding_solutions/2019/C/1901213/artifacts/estimated_epicenters.csv",
+    "mcm/outstanding_solutions/2019/C/1901213/artifacts/opioid_forecast_2020.csv",
+    "mcm/outstanding_solutions/2019/C/1901213/artifacts/opioid_state_trends.pdf",
+    "mcm/outstanding_solutions/2019/C/1901213/artifacts/opioid_state_trends.png",
+    "mcm/outstanding_solutions/2019/C/1901213/artifacts/spatial_markov_transition_edges.csv"
+  ],
+  "artifact_dir": "mcm/outstanding_solutions/2019/C/1901213/artifacts"
+}

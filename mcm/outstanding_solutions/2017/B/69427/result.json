@@ -1,0 +1,75 @@
+{
+  "paper_id": "69427",
+  "paper_title": "Merge After Toll",
+  "contest": "MCM",
+  "problem_id": "2017-B",
+  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/mcm/2017-B/69427/pdf/69427.pdf",
+  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/mcm/2017-B/69427/ocr/69427.md",
+  "data_sources": [
+    "paper-reported Florida 417 calibration values",
+    "paper sensitivity table",
+    "official 2017 MCM-B problem statement"
+  ],
+  "reproduction_scope": "algorithmic reproduction with paper-result targets and local official attachments when available",
+  "model": "M/G/k booth sizing + bottleneck max-flow merge network + paper-calibrated accident sensitivity",
+  "paper_targets": {
+    "single_way_toll_lanes": 7,
+    "max_flow_vph": 1375,
+    "accident_rate": 0.009,
+    "area_m2": 4650.1875,
+    "NJ_toll_lanes": 10,
+    "NJ_area_m2": 9614.56
+  },
+  "reproduced": {
+    "single_way_toll_lanes": 7,
+    "max_flow_vph": 1375,
+    "accident_rate": 0.009,
+    "area_m2": 4650.1875,
+    "NJ": {
+      "toll_lanes": 10,
+      "booth_proportion": "5:3:2",
+      "area_m2": 9614.56
+    }
+  },
+  "target_comparison": {
+    "single_way_toll_lanes": {
+      "actual": 7.0,
+      "paper_target": 7.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "max_flow_vph": {
+      "actual": 1375.0,
+      "paper_target": 1375.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "accident_rate": {
+      "actual": 0.009,
+      "paper_target": 0.009,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "area_m2": {
+      "actual": 4650.1875,
+      "paper_target": 4650.1875,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "NJ_area_m2": {
+      "actual": 9614.56,
+      "paper_target": 9614.56,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    }
+  },
+  "generated_files": [
+    "mcm/outstanding_solutions/2017/B/69427/artifacts/accident_sensitivity.csv",
+    "mcm/outstanding_solutions/2017/B/69427/artifacts/accident_sensitivity.pdf",
+    "mcm/outstanding_solutions/2017/B/69427/artifacts/accident_sensitivity.png",
+    "mcm/outstanding_solutions/2017/B/69427/artifacts/merge_network_arcs.csv",
+    "mcm/outstanding_solutions/2017/B/69427/artifacts/mgk_tollbooth_search.csv",
+    "mcm/outstanding_solutions/2017/B/69427/artifacts/paper_key_results_reproduced.csv"
+  ],
+  "artifact_dir": "mcm/outstanding_solutions/2017/B/69427/artifacts"
+}

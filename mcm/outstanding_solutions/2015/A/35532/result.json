@@ -1,0 +1,70 @@
+{
+  "paper_id": "35532",
+  "paper_title": "Containing Ebola and Future Infectious Diseases",
+  "contest": "MCM",
+  "problem_id": "2015-A",
+  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/mcm/2015-A/35532/pdf/35532.pdf",
+  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/mcm/2015-A/35532/ocr/35532.md",
+  "data_sources": [
+    "Paper Table 7 initial epidemic states",
+    "paper-reported epidemiological parameters",
+    "paper medical-center covering summary"
+  ],
+  "reproduction_scope": "algorithmic reproduction with paper-result targets and local official attachments when available",
+  "model": "SEIQR infectious-disease ODE + logistic drug-output threshold + greedy set covering for medical centers",
+  "paper_targets": {
+    "minimum_daily_drug_output_to_control": 4000,
+    "medical_center_count": 7
+  },
+  "reproduced": {
+    "minimum_daily_drug_output_to_control": 4000,
+    "medical_center_count": 7,
+    "selected_centers": [
+      "Freetown",
+      "Makeni",
+      "Bo",
+      "Pujehun",
+      "Kenema",
+      "Kabala",
+      "Koidu"
+    ],
+    "drug_allocation_at_Gm4000": [
+      {
+        "country": "Guinea",
+        "drug_allocation_at_Gm4000": 1084.8942925848385
+      },
+      {
+        "country": "Liberia",
+        "drug_allocation_at_Gm4000": 1575.1903204201835
+      },
+      {
+        "country": "Sierra Leone",
+        "drug_allocation_at_Gm4000": 1339.9153869949778
+      }
+    ]
+  },
+  "target_comparison": {
+    "Gm_threshold": {
+      "actual": 4000.0,
+      "paper_target": 4000.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "center_count": {
+      "actual": 7.0,
+      "paper_target": 7.0,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    }
+  },
+  "generated_files": [
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/drug_output_sensitivity.csv",
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/paper_table7_initial_state.csv",
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/seiqr_country_trajectories.csv",
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/seiqr_drug_threshold.pdf",
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/seiqr_drug_threshold.png",
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/selected_medical_centers.csv",
+    "mcm/outstanding_solutions/2015/A/35532/artifacts/topsis_like_drug_allocation.csv"
+  ],
+  "artifact_dir": "mcm/outstanding_solutions/2015/A/35532/artifacts"
+}

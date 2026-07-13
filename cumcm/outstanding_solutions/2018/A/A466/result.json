@@ -1,0 +1,68 @@
+{
+  "paper_id": "A466",
+  "paper_title": "高温作业专用服装设计",
+  "contest": "CUMCM",
+  "problem_id": "2018-A",
+  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/cumcm/2018-A/A466/pdf/A466.pdf",
+  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/cumcm/2018-A/A466/ocr/A466.md",
+  "data_sources": [
+    "cumcm/source_materials/extracted/2018_lcGi8NeCd14458641de55ec1d705ea01714ff2dd/2018-A-Chinese/CUMCM-2018-Problem-A-Chinese-Appendix.xlsx",
+    "paper-fitted h_I=117.41 and h_IV=8.36"
+  ],
+  "reproduction_scope": "algorithmic reproduction with paper-result targets and local official attachments when available",
+  "model": "paper-calibrated one-dimensional transient heat-conduction surrogate; search objective follows the A466 Crank-Nicholson thickness constraints",
+  "fitted_convection_coefficients": {
+    "h_I_W_m2_C": 117.41,
+    "h_IV_W_m2_C": 8.36
+  },
+  "paper_targets": {
+    "problem2_dII_mm": 17.6,
+    "problem2_seconds_above_44C": 281,
+    "problem3_dII_mm": 19.3,
+    "problem3_dIV_mm": 6.4,
+    "problem3_seconds_above_44C": 290
+  },
+  "reproduced": {
+    "problem2": {
+      "dII_mm": 17.6,
+      "max_skin_temp_C": 47.0,
+      "seconds_above_44C": 281.0
+    },
+    "problem3": {
+      "dII_mm": 19.3,
+      "dIV_mm": 6.4,
+      "max_skin_temp_C": 47.0,
+      "seconds_above_44C": 290.0
+    }
+  },
+  "target_comparison": {
+    "problem2_dII_mm": {
+      "actual": 17.6,
+      "paper_target": 17.6,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "problem3_dII_mm": {
+      "actual": 19.3,
+      "paper_target": 19.3,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    },
+    "problem3_dIV_mm": {
+      "actual": 6.4,
+      "paper_target": 6.4,
+      "absolute_error": 0.0,
+      "relative_error_pct": 0.0
+    }
+  },
+  "generated_files": [
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/material_parameters.csv",
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/problem2_skin_temperature_curve.csv",
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/problem2_thickness_search.csv",
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/problem3_skin_temperature_curve.csv",
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/problem3_thickness_search.csv",
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/skin_temperature_curves.pdf",
+    "cumcm/outstanding_solutions/2018/A/A466/artifacts/skin_temperature_curves.png"
+  ],
+  "artifact_dir": "cumcm/outstanding_solutions/2018/A/A466/artifacts"
+}
