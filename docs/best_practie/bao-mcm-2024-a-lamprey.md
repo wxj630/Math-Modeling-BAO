@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2024-A/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2024/A/q01/solution.py` 到 `q04/solution.py` | `Math-Modeling-World/mcm/generic_baselines/results/2024/A/q01/result.json` 到 `q04/result.json` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2024-A/advanced/main.pdf` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/solution.py`；逐问包装器在 `mcm/question_solutions/2024/A/` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/result.json`；逐问结果在 `mcm/question_results/2024/A/` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2024-A/2407093/pdf/2407093.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2024/A/2407093/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2024/A/2407093/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2024-A/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2024/A/q01/solution.py` 到 `q04/solution.py` | `Math-Modeling-BAO/mcm/generic_baselines/results/2024/A/q01/result.json` 到 `q04/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2024-A/advanced/main.pdf` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2024/MCM-A/solution.py`；逐问包装器在 `mcm/question_solutions/2024/A/` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2024/MCM-A/result.json`；逐问结果在 `mcm/question_results/2024/A/` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2024-A/2407093/pdf/2407093.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/A/2407093/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/A/2407093/result.json` |
 
-OCR 文本在 `Math-Modeling-World-Reports/outstanding/mcm/2024-A/2407093/ocr/2407093.md`。
+OCR 文本在 `Math-Modeling-BAO-Reports/outstanding/mcm/2024-A/2407093/ocr/2407093.md`。
 
 ## 数据和求解库
 
@@ -44,7 +44,7 @@ Baseline 的逐问模型仍然是通用基线：
 Advanced 的整题实现放在：
 
 ```text
-Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-A/solution.py
+Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2024/MCM-A/solution.py
 ```
 
 它做了三件关键事：

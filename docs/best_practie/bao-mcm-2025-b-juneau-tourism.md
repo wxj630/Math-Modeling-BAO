@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2025-B/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2025/B` | `Math-Modeling-World/mcm/generic_baselines/results/2025/B` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2025-B/advanced/main.pdf` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/solution.py` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-B/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2025-B/2504448/pdf/2504448.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2025/B/2504448/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2025/B/2504448/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2025-B/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2025/B` | `Math-Modeling-BAO/mcm/generic_baselines/results/2025/B` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2025-B/advanced/main.pdf` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2025/MCM-B/solution.py` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2025/MCM-B/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2025-B/2504448/pdf/2504448.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2025/B/2504448/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2025/B/2504448/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/mcm/2025-B/2504448/ocr/2504448.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/mcm/2025-B/2504448/ocr/2504448.md`。
 
 ## 数据来源
 
@@ -63,11 +63,11 @@ Advanced 的进步是：游客流量、环境承载、居民满意度和政策�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/mcm/outstanding_solutions/2025/B/2504448/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/mcm/outstanding_solutions/2025/B/2504448/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py mcm-2025-B-2504448
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py mcm-2025-B-2504448
 ```

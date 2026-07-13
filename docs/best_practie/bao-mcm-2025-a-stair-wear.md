@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2025-A/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2025/A` | `Math-Modeling-World/mcm/generic_baselines/results/2025/A` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2025-A/advanced/main.pdf` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/solution.py` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2025/MCM-A/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2025-A/2501909/pdf/2501909.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2025/A/2501909/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2025/A/2501909/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2025-A/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2025/A` | `Math-Modeling-BAO/mcm/generic_baselines/results/2025/A` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2025-A/advanced/main.pdf` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2025/MCM-A/solution.py` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2025/MCM-A/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2025-A/2501909/pdf/2501909.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2025/A/2501909/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2025/A/2501909/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/mcm/2025-A/2501909/ocr/2501909.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/mcm/2025-A/2501909/ocr/2501909.md`。
 
 ## 数据来源
 
@@ -64,11 +64,11 @@ Advanced 的进步是：磨损几何、交通强度、年龄反演和不确定�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/mcm/outstanding_solutions/2025/A/2501909/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/mcm/outstanding_solutions/2025/A/2501909/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py mcm-2025-A-2501909
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py mcm-2025-A-2501909
 ```

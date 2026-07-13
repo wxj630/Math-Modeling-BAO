@@ -6,9 +6,9 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/cumcm/2018-A/baseline/main.pdf` | `Math-Modeling-World-Reports/cumcm/2018-A/baseline/sections/A_code.tex`；`Math-Modeling-World/cumcm/generic_baselines/solutions/2018/A/q01/solution.py` | `Math-Modeling-World/cumcm/generic_baselines/results/2018/A/q01/result.json` |
-| Advanced | `Math-Modeling-World-Reports/cumcm/2018-A/advanced/main.pdf` | `Math-Modeling-World-Reports/cumcm/2018-A/advanced/sections/A_code.tex`；`Math-Modeling-World/cumcm/question_solutions/2018/A/q01/solution.py` | `Math-Modeling-World/cumcm/question_results/2018/A/q01/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/cumcm/2018-A/A466/pdf/A466.pdf` | `Math-Modeling-World/cumcm/outstanding_solutions/2018/A/A466/solution.py` | `Math-Modeling-World/cumcm/outstanding_solutions/2018/A/A466/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/cumcm/2018-A/baseline/main.pdf` | `Math-Modeling-BAO-Reports/cumcm/2018-A/baseline/sections/A_code.tex`；`Math-Modeling-BAO/cumcm/generic_baselines/solutions/2018/A/q01/solution.py` | `Math-Modeling-BAO/cumcm/generic_baselines/results/2018/A/q01/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/cumcm/2018-A/advanced/main.pdf` | `Math-Modeling-BAO-Reports/cumcm/2018-A/advanced/sections/A_code.tex`；`Math-Modeling-BAO/cumcm/question_solutions/2018/A/q01/solution.py` | `Math-Modeling-BAO/cumcm/question_results/2018/A/q01/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/cumcm/2018-A/A466/pdf/A466.pdf` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2018/A/A466/solution.py` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2018/A/A466/result.json` |
 
 ## Baseline：用微分方程/动态仿真建立起点
 

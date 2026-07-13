@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/cumcm/2025-B/baseline/main.pdf` | `Math-Modeling-World/cumcm/generic_baselines/solutions/2025/B` | `Math-Modeling-World/cumcm/generic_baselines/results/2025/B` |
-| Advanced | `Math-Modeling-World-Reports/cumcm/2025-B/advanced/main.pdf` | `Math-Modeling-World/cumcm/question_solutions/2025/B` | `Math-Modeling-World/cumcm/question_results/2025/B` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/cumcm/2025-B/B157/pdf/B157.pdf` | `Math-Modeling-World/cumcm/outstanding_solutions/2025/B/B157/solution.py` | `Math-Modeling-World/cumcm/outstanding_solutions/2025/B/B157/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/cumcm/2025-B/baseline/main.pdf` | `Math-Modeling-BAO/cumcm/generic_baselines/solutions/2025/B` | `Math-Modeling-BAO/cumcm/generic_baselines/results/2025/B` |
+| Advanced | `Math-Modeling-BAO-Reports/cumcm/2025-B/advanced/main.pdf` | `Math-Modeling-BAO/cumcm/question_solutions/2025/B` | `Math-Modeling-BAO/cumcm/question_results/2025/B` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/cumcm/2025-B/B157/pdf/B157.pdf` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2025/B/B157/solution.py` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2025/B/B157/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/cumcm/2025-B/B157/ocr/B157.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/cumcm/2025-B/B157/ocr/B157.md`。
 
 ## 数据来源
 
@@ -67,11 +67,11 @@ Advanced 的进步是：干涉光谱预处理、厚度拟合、残差检查和�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/cumcm/outstanding_solutions/2025/B/B157/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/cumcm/outstanding_solutions/2025/B/B157/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py cumcm-2025-B-B157
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py cumcm-2025-B-B157
 ```

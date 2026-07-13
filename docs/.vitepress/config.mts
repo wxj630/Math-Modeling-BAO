@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
 
 const isEdgeOne = process.env.EDGEONE === '1'
-const baseConfig = isEdgeOne ? '/' : '/Math-Modeling-World/'
+const baseConfig = isEdgeOne ? '/' : '/Math-Modeling-BAO/'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Math Modeling World',
+  title: 'Math Modeling BAO',
   description: 'MCM 与 CUMCM 可复现建模解法教程',
   base: baseConfig,
   markdown: {
@@ -17,7 +17,7 @@ export default defineConfig({
       { text: 'MCM 赛题库', link: '/mcm-track/problem-index' },
       { text: 'CUMCM 赛题库', link: '/cumcm-track/problem-index' },
       { text: '复现指南', link: '/reference/reproduce' },
-      { text: 'GitHub', link: 'https://github.com/wxj630/Math-Modeling-World' }
+      { text: 'GitHub', link: 'https://github.com/wxj630/Math-Modeling-BAO' }
     ],
     search: {
       provider: 'local',
@@ -76,14 +76,14 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/wxj630/Math-Modeling-World' }
+      { icon: 'github', link: 'https://github.com/wxj630/Math-Modeling-BAO' }
     ],
     editLink: {
-      pattern: 'https://github.com/wxj630/Math-Modeling-World/blob/main/docs/:path',
+      pattern: 'https://github.com/wxj630/Math-Modeling-BAO/blob/main/docs/:path',
       text: '在 GitHub 上编辑此页'
     },
     footer: {
-      message: 'Math Modeling World tutorial site',
+      message: 'Math Modeling BAO tutorial site',
       copyright: 'Released for learning, reproducible modeling, and archive review.'
     }
   }

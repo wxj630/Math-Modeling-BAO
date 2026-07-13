@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 'Math Modeling World'
+  name: 'Math Modeling BAO'
   text: '以赛题为入口的可复现建模教程'
   tagline: 先把一道赛题当成完整项目读懂，再沿小问递进链对照 baseline、advanced 和 outstanding 预留位。
   actions:

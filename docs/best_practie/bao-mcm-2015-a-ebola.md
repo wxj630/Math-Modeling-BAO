@@ -6,9 +6,9 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2015-A/baseline/main.pdf` | `Math-Modeling-World-Reports/mcm/2015-A/baseline/sections/A_code.tex`；`Math-Modeling-World/mcm/generic_baselines/solutions/2015/A/q01/solution.py` | `Math-Modeling-World/mcm/generic_baselines/results/2015/A/q01/result.json` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2015-A/advanced/main.pdf` | `Math-Modeling-World-Reports/mcm/2015-A/advanced/sections/A_code.tex`；`Math-Modeling-World/mcm/question_solutions/2015/A/q01/solution.py` | `Math-Modeling-World/mcm/question_results/2015/A/q01/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2015-A/35532/pdf/35532.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2015/A/35532/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2015/A/35532/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2015-A/baseline/main.pdf` | `Math-Modeling-BAO-Reports/mcm/2015-A/baseline/sections/A_code.tex`；`Math-Modeling-BAO/mcm/generic_baselines/solutions/2015/A/q01/solution.py` | `Math-Modeling-BAO/mcm/generic_baselines/results/2015/A/q01/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2015-A/advanced/main.pdf` | `Math-Modeling-BAO-Reports/mcm/2015-A/advanced/sections/A_code.tex`；`Math-Modeling-BAO/mcm/question_solutions/2015/A/q01/solution.py` | `Math-Modeling-BAO/mcm/question_results/2015/A/q01/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2015-A/35532/pdf/35532.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2015/A/35532/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2015/A/35532/result.json` |
 
 ## Baseline：先把动态过程跑起来
 

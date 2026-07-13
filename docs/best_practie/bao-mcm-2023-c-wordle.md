@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2023-C/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2023/C` | `Math-Modeling-World/mcm/generic_baselines/results/2023/C` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2023-C/advanced/main.pdf` | `Math-Modeling-World/mcm/question_solutions/2023/C-Wordle` | `Math-Modeling-World/mcm/question_results/2023/C-Wordle` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2023-C/2307946/pdf/2307946.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2023/C/2307946/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2023/C/2307946/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2023-C/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2023/C` | `Math-Modeling-BAO/mcm/generic_baselines/results/2023/C` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2023-C/advanced/main.pdf` | `Math-Modeling-BAO/mcm/question_solutions/2023/C-Wordle` | `Math-Modeling-BAO/mcm/question_results/2023/C-Wordle` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2023-C/2307946/pdf/2307946.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2023/C/2307946/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2023/C/2307946/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/mcm/2023-C/2307946/ocr/2307946.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/mcm/2023-C/2307946/ocr/2307946.md`。
 
 ## 数据来源
 
@@ -62,11 +62,11 @@ Advanced 的进步是：官方 Wordle Excel 清洗、RidgeCV 时间趋势、词�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/mcm/outstanding_solutions/2023/C/2307946/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/mcm/outstanding_solutions/2023/C/2307946/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py mcm-2023-C-2307946
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py mcm-2023-C-2307946
 ```

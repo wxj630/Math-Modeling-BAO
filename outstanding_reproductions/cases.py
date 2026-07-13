@@ -40,7 +40,7 @@ from sklearn.svm import SVC
 
 WORLD_ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE_ROOT = WORLD_ROOT.parent
-REPORTS_ROOT = WORKSPACE_ROOT / "Math-Modeling-World-Reports"
+REPORTS_ROOT = WORKSPACE_ROOT / "Math-Modeling-BAO-Reports"
 
 
 def repo_rel(path: Path) -> str:

@@ -3,8 +3,8 @@
   "paper_title": "中小微企业的信贷决策",
   "contest": "CUMCM",
   "problem_id": "2020-C",
-  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/cumcm/2020-C/C227/pdf/C227.pdf",
-  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-World-Reports/outstanding/cumcm/2020-C/C227/ocr/C227.md",
+  "paper_pdf": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-BAO-Reports/outstanding/cumcm/2020-C/C227/pdf/C227.pdf",
+  "paper_ocr": "/Volumes/PSSD/code/Mathematical_Modeling/Math-Modeling-BAO-Reports/outstanding/cumcm/2020-C/C227/ocr/C227.md",
   "data_sources": [
     "cumcm/source_materials/extracted/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件1：123家有信贷记录企业的相关数据.xlsx",
     "cumcm/source_materials/extracted/2020_05k6B8WT92d3955f5c5e95dd086e59163e5f584b/C/附件2：302家无信贷记录企业的相关数据.xlsx",

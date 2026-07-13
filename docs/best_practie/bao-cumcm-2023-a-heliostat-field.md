@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/cumcm/2023-A/baseline/main.pdf` | `Math-Modeling-World/cumcm/generic_baselines/solutions/2023/A` | `Math-Modeling-World/cumcm/generic_baselines/results/2023/A` |
-| Advanced | `Math-Modeling-World-Reports/cumcm/2023-A/advanced/main.pdf` | `Math-Modeling-World/cumcm/question_solutions/2023/A` | `Math-Modeling-World/cumcm/question_results/2023/A` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/cumcm/2023-A/A175/pdf/A175.pdf` | `Math-Modeling-World/cumcm/outstanding_solutions/2023/A/A175/solution.py` | `Math-Modeling-World/cumcm/outstanding_solutions/2023/A/A175/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/cumcm/2023-A/baseline/main.pdf` | `Math-Modeling-BAO/cumcm/generic_baselines/solutions/2023/A` | `Math-Modeling-BAO/cumcm/generic_baselines/results/2023/A` |
+| Advanced | `Math-Modeling-BAO-Reports/cumcm/2023-A/advanced/main.pdf` | `Math-Modeling-BAO/cumcm/question_solutions/2023/A` | `Math-Modeling-BAO/cumcm/question_results/2023/A` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/cumcm/2023-A/A175/pdf/A175.pdf` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2023/A/A175/solution.py` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2023/A/A175/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/cumcm/2023-A/A175/ocr/A175.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/cumcm/2023-A/A175/ocr/A175.md`。
 
 ## 数据来源
 
@@ -61,11 +61,11 @@ Advanced 的进步是：逐问计算光学效率、镜场参数和布局搜索�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/cumcm/outstanding_solutions/2023/A/A175/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/cumcm/outstanding_solutions/2023/A/A175/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py cumcm-2023-A-A175
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py cumcm-2023-A-A175
 ```

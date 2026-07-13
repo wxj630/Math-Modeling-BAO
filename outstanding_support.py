@@ -19,7 +19,7 @@ import pandas as pd
 def case_roots(current_file: str | Path) -> tuple[Path, Path, Path, Path]:
     root = Path(current_file).resolve().parent
     repo_root = Path(current_file).resolve().parents[5]
-    reports_root = repo_root.parent / "Math-Modeling-World-Reports"
+    reports_root = repo_root.parent / "Math-Modeling-BAO-Reports"
     artifact_dir = root / "artifacts"
     artifact_dir.mkdir(parents=True, exist_ok=True)
     return root, repo_root, reports_root, artifact_dir

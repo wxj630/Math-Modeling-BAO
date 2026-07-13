@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2023-A/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2023/A` | `Math-Modeling-World/mcm/generic_baselines/results/2023/A` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2023-A/advanced/main.pdf` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-A/solution.py` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-A/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2023-A/2309229/pdf/2309229.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2023/A/2309229/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2023/A/2309229/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2023-A/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2023/A` | `Math-Modeling-BAO/mcm/generic_baselines/results/2023/A` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2023-A/advanced/main.pdf` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2023/MCM-A/solution.py` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2023/MCM-A/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2023-A/2309229/pdf/2309229.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2023/A/2309229/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2023/A/2309229/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/mcm/2023-A/2309229/ocr/2309229.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/mcm/2023-A/2309229/ocr/2309229.md`。
 
 ## 数据来源
 
@@ -62,11 +62,11 @@ Advanced 的进步是：多物种差分方程、干旱压力、互补促进项�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/mcm/outstanding_solutions/2023/A/2309229/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/mcm/outstanding_solutions/2023/A/2309229/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py mcm-2023-A-2309229
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py mcm-2023-A-2309229
 ```

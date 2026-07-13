@@ -18,9 +18,9 @@
 
 | 题目 | O 论文 | PDF/OCR | 复现代码 | 复现结果 |
 |---|---|---|---|---|
-| MCM 2024-A | 2407093 | `Math-Modeling-World-Reports/outstanding/mcm/2024-A/2407093/` | `Math-Modeling-World/mcm/outstanding_solutions/2024/A/2407093/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2024/A/2407093/result.json` |
-| MCM 2024-B | 2419984 | `Math-Modeling-World-Reports/outstanding/mcm/2024-B/2419984/` | `Math-Modeling-World/mcm/outstanding_solutions/2024/B/2419984/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2024/B/2419984/result.json` |
-| MCM 2024-C | 2401298 | `Math-Modeling-World-Reports/outstanding/mcm/2024-C/2401298/` | `Math-Modeling-World/mcm/outstanding_solutions/2024/C/2401298/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2024/C/2401298/result.json` |
+| MCM 2024-A | 2407093 | `Math-Modeling-BAO-Reports/outstanding/mcm/2024-A/2407093/` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/A/2407093/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/A/2407093/result.json` |
+| MCM 2024-B | 2419984 | `Math-Modeling-BAO-Reports/outstanding/mcm/2024-B/2419984/` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/B/2419984/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/B/2419984/result.json` |
+| MCM 2024-C | 2401298 | `Math-Modeling-BAO-Reports/outstanding/mcm/2024-C/2401298/` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/C/2401298/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/C/2401298/result.json` |
 
 ## 方法链核对
 
@@ -43,7 +43,7 @@
 已新建复现专用环境：
 
 ```text
-Math-Modeling-World/.venv-repro
+Math-Modeling-BAO/.venv-repro
 Python 3.12.13
 ```
 

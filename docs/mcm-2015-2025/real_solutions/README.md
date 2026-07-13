@@ -16,7 +16,7 @@
 
 ## CUMCM 风格逐问归档
 
-顶层 [`mcm/`](https://github.com/wxj630/Math-Modeling-World/tree/main/mcm) 会把这些真实解法拆成逐问 `solution.py`、`result.json`、`report.md` 和实验产物。
+顶层 [`mcm/`](https://github.com/wxj630/Math-Modeling-BAO/tree/main/mcm) 会把这些真实解法拆成逐问 `solution.py`、`result.json`、`report.md` 和实验产物。
 
 当前逐问覆盖：
 

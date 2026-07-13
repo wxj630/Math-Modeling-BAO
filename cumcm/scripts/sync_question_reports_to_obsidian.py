@@ -48,7 +48,7 @@ def main() -> None:
         if not note.exists():
             continue
         lines = [START, "", "## 逐问代码、结果与实验报告", ""]
-        lines.append("下面链接来自 `Math-Modeling-World/cumcm`，每一问均可用仓库 `.venv` 单独运行并复现实验结果。")
+        lines.append("下面链接来自 `Math-Modeling-BAO/cumcm`，每一问均可用仓库 `.venv` 单独运行并复现实验结果。")
         if generic_rows:
             lines.append("通用解法集中保存在 `cumcm/generic_baselines`，这里仅链接对应基线，避免把过程稿和专用解法混在一起。")
         lines.append("")

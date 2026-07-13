@@ -9,7 +9,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-GITHUB_BLOB = "https://github.com/wxj630/Math-Modeling-World/blob/main/"
+GITHUB_BLOB = "https://github.com/wxj630/Math-Modeling-BAO/blob/main/"
 
 
 def read_csv(path: str) -> list[dict[str, str]]:

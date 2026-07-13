@@ -58,9 +58,9 @@ sol = solve_ivp(
 对应代码：
 
 ```text
-Math-Modeling-World/outstanding_reproductions/cases.py
-Math-Modeling-World/mcm/outstanding_solutions/2015/A/35532/solution.py
-Math-Modeling-World/cumcm/outstanding_solutions/2018/A/A466/solution.py
+Math-Modeling-BAO/outstanding_reproductions/cases.py
+Math-Modeling-BAO/mcm/outstanding_solutions/2015/A/35532/solution.py
+Math-Modeling-BAO/cumcm/outstanding_solutions/2018/A/A466/solution.py
 ```
 
 ## 运筹优化类：先判断是连续、线性、图，还是离散规则
@@ -120,9 +120,9 @@ DP/枚举适合这类题：
 对应代码：
 
 ```text
-Math-Modeling-World/outstanding_reproductions/cases.py
-Math-Modeling-World/mcm/outstanding_solutions/2017/B/69427/solution.py
-Math-Modeling-World/cumcm/outstanding_solutions/2020/B/B108/solution.py
+Math-Modeling-BAO/outstanding_reproductions/cases.py
+Math-Modeling-BAO/mcm/outstanding_solutions/2017/B/69427/solution.py
+Math-Modeling-BAO/cumcm/outstanding_solutions/2020/B/B108/solution.py
 ```
 
 ## 数据建模类：核心是 `特征工程 + sklearn.fit`
@@ -188,9 +188,9 @@ print(accuracy_score(y_test, pred), roc_auc_score(y_test, prob))
 对应代码：
 
 ```text
-Math-Modeling-World/outstanding_reproductions/cases.py
-Math-Modeling-World/mcm/outstanding_solutions/2019/C/1901213/solution.py
-Math-Modeling-World/cumcm/outstanding_solutions/2020/C/C227/solution.py
+Math-Modeling-BAO/outstanding_reproductions/cases.py
+Math-Modeling-BAO/mcm/outstanding_solutions/2019/C/1901213/solution.py
+Math-Modeling-BAO/cumcm/outstanding_solutions/2020/C/C227/solution.py
 ```
 
 ## 如何判断“该不该调用现有求解器”
@@ -248,20 +248,20 @@ Math-Modeling-World/cumcm/outstanding_solutions/2020/C/C227/solution.py
 单篇 outstanding 可以直接运行各自目录下的 `solution.py`。整批运行：
 
 ```bash
-python Math-Modeling-World/tools/run_outstanding_reproductions.py --keep-going
+python Math-Modeling-BAO/tools/run_outstanding_reproductions.py --keep-going
 ```
 
 共享实现位置：
 
 ```text
-Math-Modeling-World/outstanding_reproductions/cases.py
+Math-Modeling-BAO/outstanding_reproductions/cases.py
 ```
 
 通用题库实现里也大量使用这些工具：
 
 ```text
-Math-Modeling-World/cumcm/lib/question_models.py
-Math-Modeling-World/mcm/question_solutions/
-Math-Modeling-World/cumcm/question_solutions/
-Math-Modeling-World/docs/mcm-2015-2025/real_solutions/
+Math-Modeling-BAO/cumcm/lib/question_models.py
+Math-Modeling-BAO/mcm/question_solutions/
+Math-Modeling-BAO/cumcm/question_solutions/
+Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/
 ```

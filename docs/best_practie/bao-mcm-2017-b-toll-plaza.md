@@ -6,9 +6,9 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2017-B/baseline/main.pdf` | `Math-Modeling-World-Reports/mcm/2017-B/baseline/sections/A_code.tex`；`Math-Modeling-World/mcm/generic_baselines/solutions/2017/B/q01/solution.py` | `Math-Modeling-World/mcm/generic_baselines/results/2017/B/q01/result.json` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2017-B/advanced/main.pdf` | `Math-Modeling-World-Reports/mcm/2017-B/advanced/sections/A_code.tex`；`Math-Modeling-World/mcm/question_solutions/2017/B/q01/solution.py` | `Math-Modeling-World/mcm/question_results/2017/B/q01/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2017-B/69427/pdf/69427.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2017/B/69427/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2017/B/69427/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2017-B/baseline/main.pdf` | `Math-Modeling-BAO-Reports/mcm/2017-B/baseline/sections/A_code.tex`；`Math-Modeling-BAO/mcm/generic_baselines/solutions/2017/B/q01/solution.py` | `Math-Modeling-BAO/mcm/generic_baselines/results/2017/B/q01/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2017-B/advanced/main.pdf` | `Math-Modeling-BAO-Reports/mcm/2017-B/advanced/sections/A_code.tex`；`Math-Modeling-BAO/mcm/question_solutions/2017/B/q01/solution.py` | `Math-Modeling-BAO/mcm/question_results/2017/B/q01/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2017-B/69427/pdf/69427.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2017/B/69427/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2017/B/69427/result.json` |
 
 ## Baseline：把问题看成资源配置和证据表
 

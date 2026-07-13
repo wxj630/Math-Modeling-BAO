@@ -6,9 +6,9 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/cumcm/2020-B/baseline/main.pdf` | `Math-Modeling-World-Reports/cumcm/2020-B/baseline/sections/A_code.tex`；`Math-Modeling-World/cumcm/generic_baselines/solutions/2020/B/q01/solution.py` | `Math-Modeling-World/cumcm/generic_baselines/results/2020/B/q01/result.json` |
-| Advanced | `Math-Modeling-World-Reports/cumcm/2020-B/advanced/main.pdf` | `Math-Modeling-World-Reports/cumcm/2020-B/advanced/sections/A_code.tex`；`Math-Modeling-World/cumcm/question_solutions/2020/B/q01/solution.py` | `Math-Modeling-World/cumcm/question_results/2020/B/q01/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/cumcm/2020-B/B108/pdf/B108.pdf` | `Math-Modeling-World/cumcm/outstanding_solutions/2020/B/B108/solution.py` | `Math-Modeling-World/cumcm/outstanding_solutions/2020/B/B108/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/cumcm/2020-B/baseline/main.pdf` | `Math-Modeling-BAO-Reports/cumcm/2020-B/baseline/sections/A_code.tex`；`Math-Modeling-BAO/cumcm/generic_baselines/solutions/2020/B/q01/solution.py` | `Math-Modeling-BAO/cumcm/generic_baselines/results/2020/B/q01/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/cumcm/2020-B/advanced/main.pdf` | `Math-Modeling-BAO-Reports/cumcm/2020-B/advanced/sections/A_code.tex`；`Math-Modeling-BAO/cumcm/question_solutions/2020/B/q01/solution.py` | `Math-Modeling-BAO/cumcm/question_results/2020/B/q01/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/cumcm/2020-B/B108/pdf/B108.pdf` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2020/B/B108/solution.py` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2020/B/B108/result.json` |
 
 ## Baseline：从时间序列/资源配置开始
 

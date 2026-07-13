@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/cumcm/2025-C/baseline/main.pdf` | `Math-Modeling-World/cumcm/generic_baselines/solutions/2025/C` | `Math-Modeling-World/cumcm/generic_baselines/results/2025/C` |
-| Advanced | `Math-Modeling-World-Reports/cumcm/2025-C/advanced/main.pdf` | `Math-Modeling-World/cumcm/question_solutions/2025/C` | `Math-Modeling-World/cumcm/question_results/2025/C` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/cumcm/2025-C/C023/pdf/C023.pdf` | `Math-Modeling-World/cumcm/outstanding_solutions/2025/C/C023/solution.py` | `Math-Modeling-World/cumcm/outstanding_solutions/2025/C/C023/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/cumcm/2025-C/baseline/main.pdf` | `Math-Modeling-BAO/cumcm/generic_baselines/solutions/2025/C` | `Math-Modeling-BAO/cumcm/generic_baselines/results/2025/C` |
+| Advanced | `Math-Modeling-BAO-Reports/cumcm/2025-C/advanced/main.pdf` | `Math-Modeling-BAO/cumcm/question_solutions/2025/C` | `Math-Modeling-BAO/cumcm/question_results/2025/C` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/cumcm/2025-C/C023/pdf/C023.pdf` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2025/C/C023/solution.py` | `Math-Modeling-BAO/cumcm/outstanding_solutions/2025/C/C023/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/cumcm/2025-C/C023/ocr/C023.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/cumcm/2025-C/C023/ocr/C023.md`。
 
 ## 数据来源
 
@@ -64,11 +64,11 @@ Advanced 的进步是：孕周/BMI 特征、回归显著性、分组时点和异
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/cumcm/outstanding_solutions/2025/C/C023/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/cumcm/outstanding_solutions/2025/C/C023/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py cumcm-2025-C-C023
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py cumcm-2025-C-C023
 ```

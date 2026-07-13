@@ -87,7 +87,7 @@ def ensure_pdf_exists() -> None:
 
 
 def http_json(url: str, timeout: int = 30) -> Any:
-    request = urllib.request.Request(url, headers={"User-Agent": "Math-Modeling-World-MCM-F/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "Math-Modeling-BAO-MCM-F/1.0"})
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return json.loads(response.read().decode("utf-8"))
 

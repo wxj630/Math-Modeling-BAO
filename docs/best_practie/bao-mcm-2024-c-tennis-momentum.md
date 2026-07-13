@@ -6,19 +6,19 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2024-C/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2024/C/q01/solution.py` 到 `q05/solution.py` | `Math-Modeling-World/mcm/generic_baselines/results/2024/C/q01/result.json` 到 `q05/result.json` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2024-C/advanced/main.pdf` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-C/solution.py`；逐问包装器在 `mcm/question_solutions/2024/C/` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-C/result.json`；逐问结果在 `mcm/question_results/2024/C/` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2024-C/2401298/pdf/2401298.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2024/C/2401298/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2024/C/2401298/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2024-C/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2024/C/q01/solution.py` 到 `q05/solution.py` | `Math-Modeling-BAO/mcm/generic_baselines/results/2024/C/q01/result.json` 到 `q05/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2024-C/advanced/main.pdf` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2024/MCM-C/solution.py`；逐问包装器在 `mcm/question_solutions/2024/C/` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2024/MCM-C/result.json`；逐问结果在 `mcm/question_results/2024/C/` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2024-C/2401298/pdf/2401298.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/C/2401298/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2024/C/2401298/result.json` |
 
-OCR 文本在 `Math-Modeling-World-Reports/outstanding/mcm/2024-C/2401298/ocr/2401298.md`。
+OCR 文本在 `Math-Modeling-BAO-Reports/outstanding/mcm/2024-C/2401298/ocr/2401298.md`。
 
 ## 数据和求解库
 
 这题有官方数据，是三题里数据最干净的一题：
 
 ```text
-Math-Modeling-World/mcm/source_materials/official_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv
-Math-Modeling-World/mcm/source_materials/official_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv
+Math-Modeling-BAO/mcm/source_materials/official_extracted/2024/Problem Data- Momentum in Tennis/2024_Wimbledon_featured_matches.csv
+Math-Modeling-BAO/mcm/source_materials/official_extracted/2024/Problem Data- Momentum in Tennis/2024_data_dictionary.csv
 ```
 
 Advanced 使用：
@@ -56,7 +56,7 @@ baseline 已经能产出一些图表路径，例如 `final_match_momentum_flow.p
 Advanced 的整题实现放在：
 
 ```text
-Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2024/MCM-C/solution.py
+Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2024/MCM-C/solution.py
 ```
 
 它的主线是：

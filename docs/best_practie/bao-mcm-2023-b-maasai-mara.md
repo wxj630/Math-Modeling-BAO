@@ -6,11 +6,11 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2023-B/baseline/main.pdf` | `Math-Modeling-World/mcm/generic_baselines/solutions/2023/B` | `Math-Modeling-World/mcm/generic_baselines/results/2023/B` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2023-B/advanced/main.pdf` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-B/solution.py` | `Math-Modeling-World/docs/mcm-2015-2025/real_solutions/2023/MCM-B/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2023-B/2315379/pdf/2315379.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2023/B/2315379/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2023/B/2315379/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2023-B/baseline/main.pdf` | `Math-Modeling-BAO/mcm/generic_baselines/solutions/2023/B` | `Math-Modeling-BAO/mcm/generic_baselines/results/2023/B` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2023-B/advanced/main.pdf` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2023/MCM-B/solution.py` | `Math-Modeling-BAO/docs/mcm-2015-2025/real_solutions/2023/MCM-B/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2023-B/2315379/pdf/2315379.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2023/B/2315379/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2023/B/2315379/result.json` |
 
-OCR 文本：`Math-Modeling-World-Reports/outstanding/mcm/2023-B/2315379/ocr/2315379.md`。
+OCR 文本：`Math-Modeling-BAO-Reports/outstanding/mcm/2023-B/2315379/ocr/2315379.md`。
 
 ## 数据来源
 
@@ -63,11 +63,11 @@ Advanced 的进步是：网格化空间评价、冲突风险、经济收益和�
 单篇运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/mcm/outstanding_solutions/2023/B/2315379/solution.py
+/opt/homebrew/bin/python3 Math-Modeling-BAO/mcm/outstanding_solutions/2023/B/2315379/solution.py
 ```
 
 统一 runner 运行：
 
 ```bash
-/opt/homebrew/bin/python3 Math-Modeling-World/tools/run_outstanding_reproductions.py mcm-2023-B-2315379
+/opt/homebrew/bin/python3 Math-Modeling-BAO/tools/run_outstanding_reproductions.py mcm-2023-B-2315379
 ```

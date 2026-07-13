@@ -6,9 +6,9 @@
 
 | 层级 | PDF | 代码 | 结果 |
 |---|---|---|---|
-| Baseline | `Math-Modeling-World-Reports/mcm/2019-C/baseline/main.pdf` | `Math-Modeling-World-Reports/mcm/2019-C/baseline/sections/A_code.tex`；`Math-Modeling-World/mcm/generic_baselines/solutions/2019/C/q01/solution.py` | `Math-Modeling-World/mcm/generic_baselines/results/2019/C/q01/result.json` |
-| Advanced | `Math-Modeling-World-Reports/mcm/2019-C/advanced/main.pdf` | `Math-Modeling-World-Reports/mcm/2019-C/advanced/sections/A_code.tex`；`Math-Modeling-World/mcm/question_solutions/2019/C/q01/solution.py` | `Math-Modeling-World/mcm/question_results/2019/C/q01/result.json` |
-| Outstanding | `Math-Modeling-World-Reports/outstanding/mcm/2019-C/1901213/pdf/1901213.pdf` | `Math-Modeling-World/mcm/outstanding_solutions/2019/C/1901213/solution.py` | `Math-Modeling-World/mcm/outstanding_solutions/2019/C/1901213/result.json` |
+| Baseline | `Math-Modeling-BAO-Reports/mcm/2019-C/baseline/main.pdf` | `Math-Modeling-BAO-Reports/mcm/2019-C/baseline/sections/A_code.tex`；`Math-Modeling-BAO/mcm/generic_baselines/solutions/2019/C/q01/solution.py` | `Math-Modeling-BAO/mcm/generic_baselines/results/2019/C/q01/result.json` |
+| Advanced | `Math-Modeling-BAO-Reports/mcm/2019-C/advanced/main.pdf` | `Math-Modeling-BAO-Reports/mcm/2019-C/advanced/sections/A_code.tex`；`Math-Modeling-BAO/mcm/question_solutions/2019/C/q01/solution.py` | `Math-Modeling-BAO/mcm/question_results/2019/C/q01/result.json` |
+| Outstanding | `Math-Modeling-BAO-Reports/outstanding/mcm/2019-C/1901213/pdf/1901213.pdf` | `Math-Modeling-BAO/mcm/outstanding_solutions/2019/C/1901213/solution.py` | `Math-Modeling-BAO/mcm/outstanding_solutions/2019/C/1901213/result.json` |
 
 ## Baseline：县级线性趋势预测
 
