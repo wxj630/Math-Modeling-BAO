@@ -168,11 +168,16 @@ celerybeat.pid
 .env
 .envrc
 .venv
+.venv*/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Heavy local reproduction intermediates
+**/artifacts/dynamic_policy_grid.csv
+**/artifacts/daily_item_panel.csv
 
 # Spyder project settings
 .spyderproject

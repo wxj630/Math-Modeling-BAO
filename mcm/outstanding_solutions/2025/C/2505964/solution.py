@@ -741,6 +741,7 @@ def main() -> None:
         "problem_id": "2025-C",
         "year": 2025,
         "code": "C",
+        "reproduction_level": "algorithmic",
         "paper_id": PAPER_ID,
         "paper_title": PAPER_TITLE,
         "paper_source_ocr": PAPER_SOURCE_OCR,
