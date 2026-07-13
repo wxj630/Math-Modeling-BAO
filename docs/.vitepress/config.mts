@@ -13,6 +13,7 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
+      { text: 'Best Practice', link: '/best_practie/' },
       { text: '学习路线', link: '/tutorial/' },
       { text: 'MCM 赛题库', link: '/mcm-track/problem-index' },
       { text: 'CUMCM 赛题库', link: '/cumcm-track/problem-index' },
@@ -40,6 +41,20 @@ export default defineConfig({
       }
     },
     sidebar: [
+      {
+        text: 'Best Practice',
+        items: [
+          { text: 'Best Practice 索引', link: '/best_practie/' },
+          { text: '评奖标准', link: '/best_practie/award-evaluation-rules' },
+          { text: 'B/A/O 递进方法', link: '/best_practie/solution-levels-and-judging-rubric' },
+          { text: '求解器选择', link: '/best_practie/solver-selection-guide' },
+          { text: '混合题型', link: '/best_practie/mixed-problem-patterns' },
+          { text: '数据来源', link: '/best_practie/data-source-practice' },
+          { text: '文献综述', link: '/best_practie/literature-review-practice' },
+          { text: '数模论文 vs 科研论文', link: '/best_practie/modeling-paper-vs-research-paper' },
+          { text: 'LLM 时代 O 奖观察', link: '/best_practie/llm-era-outstanding-patterns' }
+        ]
+      },
       {
         text: '教程主线',
         items: [
