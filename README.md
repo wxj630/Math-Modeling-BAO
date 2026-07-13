@@ -1,7 +1,11 @@
 # Math-Modeling-BAO
 
-<p>
+<p align="center">
   <img src="docs/public/bao-logo.svg" alt="Math Modeling BAO progression logo" width="260">
+</p>
+
+<p align="center">
+  <img src="docs/public/bao-progression-banner.svg" alt="Baseline to Advanced to Outstanding progression banner" width="720">
 </p>
 
 **BAO** 有两层含义：一是 **Baseline -> Advanced -> Outstanding** 的递进建模路线，帮助同一道赛题从能跑的基础模型，逐步进阶到贴近优秀论文的完整模型链；二是中文里的“包”，表示这里是一个面向数学建模学习的材料包，包含教程、真题、模型、代码、结果和论文复现。
