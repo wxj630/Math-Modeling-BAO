@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import quote
@@ -11,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 GITHUB_BLOB = "https://github.com/wxj630/Math-Modeling-BAO/blob/main/"
 REPORT_PDF_MANIFEST = DOCS / "public" / "reference" / "report-pdf-manifest.csv"
+BAO_CASE_DIR = DOCS / "best_practie"
 FORMAL_OUTSTANDING_PAPERS = {
     ("mcm", "2015-A"): "35532",
     ("cumcm", "2018-A"): "A466",
@@ -28,6 +30,7 @@ FORMAL_OUTSTANDING_PAPERS = {
     ("mcm", "2025-B"): "2504448",
     ("mcm", "2025-C"): "2505964",
 }
+BAO_CASE_RE = re.compile(r"^bao-(mcm|cumcm)-(\d{4})-([a-z])-.*\.md$")
 
 
 def read_csv(path: str) -> list[dict[str, str]]:
@@ -41,6 +44,30 @@ def read_optional_csv(path: str) -> list[dict[str, str]]:
         return []
     with file_path.open("r", encoding="utf-8-sig", newline="") as file:
         return list(csv.DictReader(file))
+
+
+def read_bao_cases() -> dict[tuple[str, str], dict[str, str]]:
+    cases: dict[tuple[str, str], dict[str, str]] = {}
+    if not BAO_CASE_DIR.exists():
+        return cases
+    for path in sorted(BAO_CASE_DIR.glob("bao-*.md")):
+        match = BAO_CASE_RE.match(path.name)
+        if not match:
+            continue
+        contest, year, code = match.groups()
+        title = path.stem
+        try:
+            first_line = path.read_text(encoding="utf-8").splitlines()[0]
+        except (IndexError, OSError, UnicodeDecodeError):
+            first_line = ""
+        if first_line.startswith("# "):
+            title = first_line[2:].strip().split("：", 1)[0]
+        pid = f"{year}-{code.upper()}"
+        cases[(contest, pid)] = {
+            "title": title,
+            "link": f"/best_practie/{path.stem}",
+        }
+    return cases
 
 
 def read_json(track: str, path: str | None) -> dict:
@@ -89,6 +116,11 @@ def repo_link(track: str, label: str, path: str | None) -> str:
 
 def track_contest(track: str) -> str:
     return "mcm" if track == "mcm-track" else "cumcm"
+
+
+def bao_case_link(case: dict[str, str]) -> str:
+    title = cell(case.get("title") or "代表案例")
+    return f"[完整 B/A/O 代表案例：{title}]({case.get('link')})"
 
 
 def read_pdf_manifest() -> dict[tuple[str, str], list[dict[str, str]]]:
@@ -556,6 +588,15 @@ def build_outstanding_global_report(
     return lines
 
 
+def build_bao_case_report(case: dict[str, str]) -> list[str]:
+    return [
+        "## Outstanding 代表案例",
+        "",
+        f"本题已有 O 奖论文与代码复现，完整 baseline → advanced → outstanding 递进讲解见 {bao_case_link(case)}。这里讲得更详细：包括论文链接、代码入口、实验结果，以及相对 advanced 的改进点。",
+        "",
+    ]
+
+
 def role_for(index: int, total: int, label: str) -> str:
     label_lower = label.lower()
     if total == 1:
@@ -582,6 +623,7 @@ def build_problem_page(
     baselines: dict[str, dict[str, str]],
     outstanding: dict[str, str] | None = None,
     pdf_manifest: dict[tuple[str, str], list[dict[str, str]]] | None = None,
+    bao_cases: dict[tuple[str, str], dict[str, str]] | None = None,
 ) -> str:
     pid = problem["problem_id"]
     title = problem["title"]
@@ -591,12 +633,15 @@ def build_problem_page(
     )
     source_text = "；".join(sorted({row.get("source_type", "") for row in questions if row.get("source_type")}))
     contest = track_contest(track)
+    bao_cases = read_bao_cases() if bao_cases is None else bao_cases
+    bao_case = bao_cases.get((contest, pid))
+    has_outstanding = bool(outstanding or bao_case)
 
     lines: list[str] = [
         f"# {pid} {title}",
         "",
         f"> 这是一个赛题整体入口。先看整题主线，再进入 {total} 个小问的 baseline、advanced"
-        + (" 和 outstanding 获奖论文复现。" if outstanding else " 和 outstanding 预留位。"),
+        + (" 和 outstanding 获奖论文复现。" if has_outstanding else " 和 outstanding 预留位。"),
         "",
     ]
     lines.extend(official_problem_block(track, problem, questions))
@@ -627,6 +672,7 @@ def build_problem_page(
             f"| 数据来源 | {cell(source_text) or '见各小问报告'} |",
             "| 官方题面 | 见上方官方题面与问题 |",
             "| BAO PDF | 见上方 BAO PDF 入口 |",
+            f"| B/A/O 代表案例 | {bao_case_link(bao_case) if bao_case else '暂未整理'} |",
             "",
         ]
     )
@@ -636,6 +682,8 @@ def build_problem_page(
     lines.extend(build_advantage_report(track, questions, baselines))
     if outstanding:
         lines.extend(build_outstanding_global_report(track, problem, outstanding))
+    if bao_case:
+        lines.extend(build_bao_case_report(bao_case))
     lines.extend(["## 小问递进链", ""])
 
     for idx, qrow in enumerate(questions, start=1):
@@ -651,13 +699,17 @@ def build_problem_page(
         artifact = qrow.get("artifact_path") or base.get("artifact_dir")
 
         if outstanding:
+            case_suffix = f"；详细讲解：{bao_case_link(bao_case)}" if bao_case else ""
             outstanding_line = (
                 f"- Outstanding：复现 {cell(outstanding.get('paper_id')) or '获奖论文'} 的整题模型链；"
                 f"核心方法：{cell(outstanding.get('methods')) or '见 outstanding 全局报告'}；"
                 f"代码入口：{repo_link(track, 'solution.py', outstanding.get('solution_path'))} / "
                 f"{repo_link(track, 'report.md', outstanding.get('report_path'))} / "
                 f"{repo_link(track, 'result.json', outstanding.get('result_path'))}"
+                f"{case_suffix}"
             )
+        elif bao_case:
+            outstanding_line = f"- Outstanding：本题已有 O 奖论文与代码复现，详细递进讲解见 {bao_case_link(bao_case)}。"
         else:
             outstanding_line = "- Outstanding：预留，用来补强鲁棒性、误差分析、论文图表和整题叙事。"
 
@@ -763,6 +815,7 @@ def build_track(
     baselines = read_csv(baseline_csv)
     outstanding = group_outstanding(read_optional_csv(outstanding_csv)) if outstanding_csv else {}
     pdf_manifest = read_pdf_manifest()
+    bao_cases = read_bao_cases()
     qgroups = group_by_problem(questions)
     bgroups = group_baselines(baselines)
 
@@ -782,6 +835,7 @@ def build_track(
                 bgroups.get(pid, {}),
                 outstanding.get(pid),
                 pdf_manifest,
+                bao_cases,
             )
             (problem_dir / f"{pid}.md").write_text(page.rstrip() + "\n", encoding="utf-8")
 
