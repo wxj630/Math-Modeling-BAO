@@ -116,6 +116,29 @@ def collect_pdfs(reports_root: Path, base_url: str, url_style: str) -> list[Repo
     return sorted(rows, key=lambda item: item.sort_key)
 
 
+def collect_dataset_manifest(manifest_path: Path, base_url: str, url_style: str) -> list[ReportPdf]:
+    rows: list[ReportPdf] = []
+    with manifest_path.open(encoding="utf-8", newline="") as fp:
+        reader = csv.DictReader(fp)
+        for item in reader:
+            dataset_path = item.get("dataset_relative_path", "").strip()
+            if not dataset_path:
+                continue
+            rows.append(
+                ReportPdf(
+                    contest=item["contest"],
+                    year=item["year"],
+                    problem=item["problem"],
+                    level=item["level"],
+                    entry_id=item["entry_id"],
+                    relative_path=dataset_path,
+                    public_url=public_url(base_url, dataset_path, url_style),
+                    size_mb=item["size_mb"],
+                )
+            )
+    return sorted(rows, key=lambda item: item.sort_key)
+
+
 def write_csv(rows: list[ReportPdf], csv_path: Path) -> None:
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open("w", encoding="utf-8", newline="") as fp:
@@ -169,7 +192,8 @@ def write_markdown(rows: list[ReportPdf], doc_path: Path, csv_path: Path, base_u
         "",
         "## 分享方案",
         "",
-        "- 推荐：把 `Math-Modeling-BAO-Reports` 上传到 Hugging Face Dataset、S3/R2 或其它能保留目录结构的对象存储，然后用相同目录结构生成下载链接。",
+        "- 国内访问推荐：使用 ModelScope Dataset 托管纯 PDF 数据集，教程站只保存索引和下载链接。",
+        "- 也可以把 `Math-Modeling-BAO-Reports` 上传到 Hugging Face Dataset、S3/R2 或其它能保留目录结构的对象存储，然后用相同目录结构生成下载链接。",
         "- 备选：使用 GitHub Release 存放 PDF asset，主仓库仍保持轻量；这种方式需要把路径扁平化为 asset 名。",
         "- 若某些论文或 OCR 文件没有明确再分发权限，只在 manifest 中放官方来源链接或访问说明，不直接公开文件。",
         "",
@@ -229,6 +253,14 @@ def write_markdown(rows: list[ReportPdf], doc_path: Path, csv_path: Path, base_u
             "python tools/build_report_pdf_library.py",
             "```",
             "",
+            "ModelScope 纯 PDF 数据集：",
+            "",
+            "```bash",
+            "python tools/build_report_pdf_library.py \\",
+            "  --dataset-manifest ../open-source/Math-Modeling-BAO/manifest.csv \\",
+            "  --public-base-url https://www.modelscope.cn/datasets/wuxiaojun/Math-Modeling-BAO/resolve/master",
+            "```",
+            "",
             "GitHub Release 这类扁平 asset 存储：",
             "",
             "```bash",
@@ -245,13 +277,17 @@ def write_markdown(rows: list[ReportPdf], doc_path: Path, csv_path: Path, base_u
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--reports-root", type=Path, default=DEFAULT_REPORTS_ROOT)
+    parser.add_argument("--dataset-manifest", type=Path)
     parser.add_argument("--public-base-url", default=DEFAULT_PUBLIC_BASE_URL)
     parser.add_argument("--url-style", choices=["path", "github-release"], default="path")
     parser.add_argument("--doc", type=Path, default=DEFAULT_DOC)
     parser.add_argument("--csv", type=Path, default=DEFAULT_CSV)
     args = parser.parse_args()
 
-    rows = collect_pdfs(args.reports_root, args.public_base_url.strip(), args.url_style)
+    if args.dataset_manifest:
+        rows = collect_dataset_manifest(args.dataset_manifest, args.public_base_url.strip(), args.url_style)
+    else:
+        rows = collect_pdfs(args.reports_root, args.public_base_url.strip(), args.url_style)
     write_csv(rows, args.csv)
     write_markdown(rows, args.doc, args.csv, args.public_base_url.strip(), args.url_style)
     print(f"indexed {len(rows)} PDFs")
