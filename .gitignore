@@ -15,6 +15,8 @@ binomial_verification.png
 docs/superpowers/
 
 # Large/raw contest source material kept outside Git
+Math-Modeling-BAO-Reports/
+Math-Modeling-World-Reports/
 mcm/source_materials/
 cumcm/source_materials/
 cumcm/cache/
@@ -26,6 +28,12 @@ cumcm/solutions/
 docs/mcm-2015-2025/[0-9][0-9][0-9][0-9]/*/
 docs/mcm-2015-2025/official_assets/[0-9][0-9][0-9][0-9]*/
 docs/mcm-2015-2025/official_assets_extracted/[0-9][0-9][0-9][0-9]*/
+*.pdf
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
 *.rar
 
 # Byte-compiled / optimized / DLL files
