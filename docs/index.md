@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 浏览赛题库
       link: /mcm-track/problem-index
+    - theme: alt
+      text: PDF 论文库
+      link: /reference/report-pdf-library
 
 features:
   - title: 赛题整体入口
@@ -20,4 +23,6 @@ features:
     details: 每个小问继续保留 baseline、advanced 和 outstanding 预留位，但它们服务于整题模型链。
   - title: 代码结果沿用
     details: 教程只重组阅读方式，代码、result.json、report.md 和 artifacts 仍使用现有归档。
+  - title: PDF 论文索引
+    details: PDF 原文放在外部资料库，教程入口只维护 manifest、来源、大小和公开下载链接。
 ---

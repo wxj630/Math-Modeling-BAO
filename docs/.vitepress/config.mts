@@ -16,6 +16,7 @@ export default defineConfig({
       { text: '学习路线', link: '/tutorial/' },
       { text: 'MCM 赛题库', link: '/mcm-track/problem-index' },
       { text: 'CUMCM 赛题库', link: '/cumcm-track/problem-index' },
+      { text: 'PDF 论文库', link: '/reference/report-pdf-library' },
       { text: '复现指南', link: '/reference/reproduce' },
       { text: 'GitHub', link: 'https://github.com/wxj630/Math-Modeling-BAO' }
     ],
@@ -70,6 +71,7 @@ export default defineConfig({
         items: [
           { text: '归档路径说明', link: '/reference/archive-map' },
           { text: '运行与复现', link: '/reference/reproduce' },
+          { text: 'PDF 论文库', link: '/reference/report-pdf-library' },
           { text: 'Outstanding 覆盖清单', link: '/reference/outstanding-coverage-audit' },
           { text: 'MCM 原始归档', link: '/mcm-2015-2025/' }
         ]
