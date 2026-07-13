@@ -176,6 +176,7 @@ env.bak/
 venv.bak/
 
 # Heavy local reproduction intermediates
+**/outstanding_solutions/**/artifacts/
 **/artifacts/dynamic_policy_grid.csv
 **/artifacts/daily_item_panel.csv
 
