@@ -98,7 +98,13 @@ python tools/run_outstanding_reproductions.py --formal --keep-going
 
 ## 致谢与参考
 
-本项目 Baseline 层的构建参考了 Datawhale 开源项目 [datawhalechina/intro-mathmodel](https://github.com/datawhalechina/intro-mathmodel) 的数学建模入门组织方式与基础题解思路。在此基础上，BAO 进一步按同一赛题的 `Baseline -> Advanced -> Outstanding` 路线整理为可复现代码、结果、论文和教程索引。
+本项目在构建过程中参考和受益于以下开源工作：
+
+- [datawhalechina/intro-mathmodel](https://github.com/datawhalechina/intro-mathmodel)：BAO 的 Baseline 层参考了该项目的数学建模入门组织方式与基础题解思路。
+- [DataArcTech/Awesome-LLMs-for-Mathematical-Modeling](https://github.com/DataArcTech/Awesome-LLMs-for-Mathematical-Modeling)：为理解 LLM 时代数学建模资料、工具和实践生态提供了重要参考。
+- [jihe520/MathModelAgent](https://github.com/jihe520/MathModelAgent)：为数学建模 Agent 化工作流和自动化建模实践提供了有价值的启发。
+
+在这些工作的基础上，BAO 进一步按同一赛题的 `Baseline -> Advanced -> Outstanding` 路线整理为可复现代码、结果、论文和教程索引。
 
 ## 本地预览
 
