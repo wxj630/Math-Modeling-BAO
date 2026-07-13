@@ -96,6 +96,10 @@ python tools/run_outstanding_reproductions.py --formal --keep-going
 
 大体积官方附件、原始压缩包、解压数据、本地实验草稿和 PDF 本体不进入主仓库，相关规则写在 `.gitignore`。
 
+## 致谢与参考
+
+本项目 Baseline 层的构建参考了 Datawhale 开源项目 [datawhalechina/intro-mathmodel](https://github.com/datawhalechina/intro-mathmodel) 的数学建模入门组织方式与基础题解思路。在此基础上，BAO 进一步按同一赛题的 `Baseline -> Advanced -> Outstanding` 路线整理为可复现代码、结果、论文和教程索引。
+
 ## 本地预览
 
 ```bash
