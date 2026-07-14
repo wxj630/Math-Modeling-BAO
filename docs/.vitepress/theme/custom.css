@@ -74,6 +74,95 @@
   filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.28));
 }
 
+.bao-abstract-showcase {
+  max-width: 1160px;
+  margin: 12px auto 72px;
+  padding: 0 24px;
+}
+
+.bao-section-eyebrow {
+  color: var(--bao-baseline);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.bao-abstract-showcase h2 {
+  margin: 8px 0 12px;
+  color: var(--vp-c-text-1);
+  font-size: 30px;
+  line-height: 1.24;
+}
+
+.bao-abstract-showcase p {
+  max-width: 780px;
+  margin: 0 0 26px;
+  color: var(--vp-c-text-2);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.bao-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.bao-preview-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-top: 5px solid var(--bao-baseline);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.bao-preview-card:hover {
+  border-color: color-mix(in srgb, var(--bao-baseline), var(--vp-c-divider) 42%);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.bao-preview-advanced {
+  border-top-color: var(--bao-advanced);
+}
+
+.bao-preview-outstanding {
+  border-top-color: var(--bao-outstanding);
+}
+
+.bao-preview-level {
+  color: var(--vp-c-text-1);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.bao-preview-caption {
+  min-height: 22px;
+  margin: 2px 0 12px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.bao-preview-card img {
+  display: block;
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 0.707;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: #fff;
+}
+
 @media (max-width: 640px) {
   .VPNavBarTitle .title {
     max-width: 48px;
@@ -94,6 +183,19 @@
 
   .VPHero .image-src {
     max-width: min(320px, 82vw);
+  }
+
+  .bao-abstract-showcase {
+    margin: 4px auto 48px;
+    padding: 0 24px;
+  }
+
+  .bao-abstract-showcase h2 {
+    font-size: 24px;
+  }
+
+  .bao-preview-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -8,6 +8,18 @@
   <img src="docs/public/bao-progression-banner.svg" alt="Baseline to Advanced to Outstanding progression banner" width="720">
 </p>
 
+## 一眼看 B/A/O 论文长什么样
+
+以 MCM 2015-A Ebola 为例，同一道赛题的 Baseline、Advanced 和 Outstanding 摘要页是这样的：
+
+<table>
+  <tr>
+    <td align="center"><strong>Baseline</strong><br><img src="docs/public/bao-previews/mcm-2015-a-baseline-abstract.png" alt="MCM 2015-A Baseline abstract page" width="260"></td>
+    <td align="center"><strong>Advanced</strong><br><img src="docs/public/bao-previews/mcm-2015-a-advanced-abstract.png" alt="MCM 2015-A Advanced abstract page" width="260"></td>
+    <td align="center"><strong>Outstanding</strong><br><img src="docs/public/bao-previews/mcm-2015-a-outstanding-abstract.png" alt="MCM 2015-A Outstanding paper summary page" width="260"></td>
+  </tr>
+</table>
+
 **BAO** 有两层含义：一是 **Baseline -> Advanced -> Outstanding** 的递进建模路线，帮助同一道赛题从能跑的基础模型，逐步进阶到贴近优秀论文的完整模型链；二是中文里的“包”，表示这里是一个面向数学建模学习的材料包，包含教程、真题、模型、代码、结果和论文复现。
 
 在线站点：
